@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<base href="/">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no">
+
+	<title>Hotel - Cyclone</title>
+
+	<!-- 	<link rel="shortcut icon" href="client/images/favicon.ico"> -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+	<script src="client/js/core/hotel.js" type="module"></script>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" href="client/css/hotel.css">
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!-- <div class="mod-tools">
+			<div id="mod-tools-title"><strong>
+					<font face="Ubuntu" size="2" color="#000000">Mod Tools</font>
+				</strong></div>
+			<div id="mod-room-info"><img src="client/images/mod_tools/room_tool_icon.png"><strong>
+					<font face="Ubuntu" size="1" color="#000000">Room tool for this room</font>
+			</div>
+			<div id="mod-chatlog"><strong>
+					<font face="Ubuntu" size="1" color="#000000">Chatlog for this room</font>
+			</div>
+			<div id="mod-user-info"><strong>
+					<font face="Ubuntu" size="1" color="#000000">User info: Player</font>
+			</div>
+			<div id="mod-ticket-issues"><strong>
+					<font face="Ubuntu" size="1" color="#000000">Ticket Browser</font>
+			</div>
+		</div> -->
+		<div class="grid-purse">
+			<div class="currencies">
+				<div id="diamonds-amount">0</div>
+			</div>
+			<!-- <div id="room-event"></div> -->
+		</div>
+		<div class="toolbar">
+			<div id="left-arrow-icon" onclick="compactToolbar()"></div>
+			<div id="hotel-view-icon"></div>
+			<div id="navigator-icon"></div>
+			<div id="shop-icon"></div>
+			<div id="inventory-icon"></div>
+			<div id="avatar-bar"></div>
+			<div id="camera-icon"></div>
+			<div id="bubble-chat"></div>
+			<div id="chat-bar">
+				<form action="#sendMessage">
+					<input type="text" placeholder="Clicca qui per parlare..." spellcheck="false">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<div id="help-chat-bar-button"></div>
+			<div id="search-friends"></div>
+			<div id="right-arrow-icon"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function () {
+			$(".mod-tools").draggable({ scroll: false });
+		});
+
+		function compactToolbar() {
+			document.getElementById('hotel-view-icon').style.visibility = 'hidden';
+			document.getElementById('navigator-icon').style.visibility = 'hidden';
+		};
+	</script>
+
+</body>
+
+</html>
