@@ -1,3 +1,5 @@
+![](https://media.discordapp.net/attachments/557261127847772161/557591227709521922/1803003194_edd50080-e5ee-4490-8da1-b7927a8383a6.png)
+
 # Cyclone
 Cyclone is a HTML5 version of Habbo Hotel created in NodeJS with a fully functional CMS
 
