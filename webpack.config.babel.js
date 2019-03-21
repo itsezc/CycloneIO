@@ -1,5 +1,6 @@
 import Webpack from 'webpack'
 import Path from 'path'
+import Config from './config.json'
 
 import htmlWebpackPlugin from 'html-webpack-plugin'
 
@@ -13,18 +14,19 @@ module.exports = (env, argv) => {
 
 		plugins: [
 			new htmlWebpackPlugin({
-				template: 'pug-loader!./source/web/index.page'
+				template: 'pug-loader!./source/web/themes/' + Config.hotel.theme + '/structure.page'
 			})
 		],
 
 		devServer: {
 			contentBase: Path.join(__dirname, 'dist/web'),
 			compress: true,
-			port: 8081
+			port: 8081,
+			historyApiFallback: true,
 	  	},
 
 		entry: {
-			client: './client/js/core/hotel.js',
+			// client: './client/js/core/hotel.js',
 			web: './web/engine.js'
 		},
 
@@ -41,6 +43,12 @@ module.exports = (env, argv) => {
 					exclude: /node_modules/,
 					use: [
 					  'babel-loader'
+					]
+				},
+				{
+					test: /\.styl$/,
+					use: [
+						'stylus-loader'
 					]
 				}
 			]

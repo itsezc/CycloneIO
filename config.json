@@ -2,5 +2,17 @@
 	"hotel": {
 		"name": "Habbay",
 		"theme": "material"
+	},
+	"user": {
+		"registration": {
+			"currencies": {
+				"duckets": 2500,
+				"credits": 1000,
+				"diamonds": 0
+			},
+			"furniture": [
+				{ "id": 10, "amount": 1 }
+			]
+		}
 	}
 }

@@ -10,7 +10,7 @@
     "build:server:dev": "babel-watch --watch source/server source/server/environment.js",
     "build:common": "babel source/common --out-dir dist/common",
     "build:web:server:dev": "babel-watch --watch source/web source/web/core/app.js",
-	"build:web:dev": "webpack-dev-server --open"
+    "build:web:dev": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -52,6 +52,7 @@
     "pug-loader": "^2.4.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
