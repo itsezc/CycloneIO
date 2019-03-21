@@ -8,15 +8,18 @@ import Home from './themes/material/pages/home'
 import Logout from './themes/material/pages/logout'
 import Register from './themes/material/pages/register'
 
+import Client from './themes/material/pages/client'
+
 class App extends Component {
   render() {
     return (
 		<Router>
 			<div>
 				<Route exact path='/' component={Home} />
-				<Route  path='/account/logout' component={Logout} />
+				<Route exact path='/client' component={Client} />
+				<Route exact path='/logout' component={Logout} />
 				<Route exact path='/register' component={Register} />
-				Hello {this.props.name}
+				{ /* Hello {this.props.name} */ }
 			</div>
 		</Router>
 	)

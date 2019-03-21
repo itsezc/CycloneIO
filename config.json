@@ -14,5 +14,12 @@
 				{ "id": 10, "amount": 1 }
 			]
 		}
+	},
+	"database": {
+		"port": "",
+		"prefix": "cyclone",
+		"hostname": "",
+		"username": "",
+		"password": ""
 	}
 }

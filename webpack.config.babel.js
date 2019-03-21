@@ -3,6 +3,7 @@ import Path from 'path'
 import Config from './config.json'
 
 import htmlWebpackPlugin from 'html-webpack-plugin'
+import htmlPugWebpackPlugin from 'html-webpack-pug-plugin'
 
 module.exports = (env, argv) => {
 	const { mode = 'development' } = argv
@@ -26,7 +27,7 @@ module.exports = (env, argv) => {
 	  	},
 
 		entry: {
-			// client: './client/js/core/hotel.js',
+			client: './client/js/environment.js',
 			web: './web/engine.js'
 		},
 
@@ -49,6 +50,12 @@ module.exports = (env, argv) => {
 					test: /\.styl$/,
 					use: [
 						'stylus-loader'
+					]
+				},
+				{
+					test: /\.(pug)$/,
+					use: [
+						'pug-loader'
 					]
 				}
 			]

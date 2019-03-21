@@ -35,23 +35,6 @@ class Logout extends Component {
 				<div className='parallax-container'>
 					<div className='parallax'>
 						<img src='https://i.imgur.com/GkLHzA4.png' />
-						<div className='valign-wrapper'>
-							<div className='container'>
-								<div className='row'>
-
-									<div className='col s12 m12 l8'>
-										<div className='valign-wrapper'>
-											<a className='waves-effect waves-light btn-large'>REGISTER NOW</a>
-										</div>
-									</div>
-
-									<div className='col s12 m12 l4'>
-										<Login />
-
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 				<div className='section white'>

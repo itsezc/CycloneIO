@@ -2,20 +2,22 @@ import Phaser from 'phaser'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-var config = {
-	type: Phaser.AUTO,
-	width: 800,
-	height: 600,
-	physics: {
-		default: 'arcade',
-		arcade: {
-		    gravity: { y: 200 }
-		}
-	},
-	scene: {
-		preload: preload,
-		create: create
-	}
+import RoomScene from './rooms/scene.js'
+
+const config = {
+    type: Phaser.CANVAS,
+    physics: {
+        default: 'arcade'
+    },
+    pixelArt: true,
+    antialias: false,
+    scale: {
+        mode: Phaser.Scale.RESIZE
+    },
+    audio: {
+        disableWebAudio: true
+    },
+    scene: RoomScene,
 }
 
-var game = new Phaser.Game(config)
+const Game = new Phaser.Game(config)

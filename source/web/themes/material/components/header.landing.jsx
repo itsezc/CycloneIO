@@ -12,7 +12,7 @@ class HeaderLanding extends Component {
 						 </a>
 
 						 <ul id='nav-mobile' className='right hide-on-med-and-down'>
-						   <li><a className='green waves-effect waves-light btn' href='/account/logout'>Register</a></li>
+						   <li><a className='green waves-effect waves-light btn' href='/logout'>Register</a></li>
 						 </ul>
 						</div>
 					</div>

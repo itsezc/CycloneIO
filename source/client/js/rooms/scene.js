@@ -1,3 +1,6 @@
+import Phaser from 'phaser'
+import SocketIO from 'socket.io-client'
+
 import { ROOM } from '../constants/scenes.js'
 import { PROTOCOL, HOST, PORT } from '../constants/config.js'
 import { TILE, PLAYER } from '../constants/assets.js'
@@ -11,13 +14,13 @@ class RoomScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.path = "web-build/"
+        this.load.path = 'web-build/'
         this.load.image(TILE, 'images/tile.png', { frameWidth: 32, frameHeight: 32 })
         this.load.spritesheet(PLAYER, 'sprites/player.png', { frameWidth: 32, frameHeight: 32 })
     }
 
     init() {
-        let socket = io(`${PROTOCOL}://${HOST}:${PORT}`)
+        let socket = SocketIO(`${PROTOCOL}://${HOST}:${PORT}`)
         this.room = new Room(this, socket, 0)
         this.player = new Player(this, socket, 0, { x: 0, y: 0, direction: DOWN })
     }

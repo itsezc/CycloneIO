@@ -13,11 +13,11 @@ class Login extends Component {
 						<form className='col s12'>
 							<div className='input-field col s12'>
 								<input id='username' type='text' className='validate' />
-								<label htmlFor='username'>Username</label>
+								<label for='username'>Username</label>
 							</div>
 							<div className='input-field col s12'>
 								<input id='password' type='password' className='validate' />
-								<label htmlFor='password'>Password</label>
+								<label for='password'>Password</label>
 							</div>
 							<div className='input-field col s12'>
 								<a>Forgot password or username?</a>
