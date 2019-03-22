@@ -28,8 +28,8 @@ import Config from '../../config.json'
 		method: 'GET',
 		path: '/{param*}',
 		handler: (request, h) => {
-			console.log(Path.join(__dirname, '../index.html'))
-			return h.file(Path.join(__dirname, '../index.html'))
+			console.log(Path.join(__dirname, '../structure.html'))
+			return h.file(Path.join(__dirname, '../structure.html'))
 		}
 	})
 

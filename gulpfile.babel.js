@@ -1,4 +1,4 @@
-import Readline from 'readline'
+import Config from './config.json'
 
 import Gulp from 'gulp'
 import Run from 'gulp-run'
@@ -11,6 +11,8 @@ import EslintConfig from './.eslintrc.js'
 
 import Webpack from 'webpack'
 import GulpWebpack from 'webpack-stream'
+
+import Pug from 'gulp-pug'
 
 import BrowserSync from 'browser-sync'
 
@@ -49,7 +51,13 @@ Gulp.task('client:build:development', Gulp.series('client:build', () => {
 	Gulp.watch('source/client/**/*', Gulp.series('client:build'))
 }))
 
-Gulp.task('web:build', () => {
+Gulp.task('web:build:index', () => {
+	return Gulp.src('source/web/themes/' + Config.hotel.theme + '/structure.page')
+				.pipe(Pug())
+				.pipe(Gulp.dest('dist/'))
+})
+
+Gulp.task('web:build', Gulp.series('web:build:index', () => {
 	return Gulp.src('./source/web/engine.js')
 				.pipe(Eslint(EslintConfig))
 				.pipe(Eslint.format())
@@ -84,11 +92,12 @@ Gulp.task('web:build', () => {
 					}
 				}))
 				.pipe(Gulp.dest('web-build/assets/'))
-})
+}))
 
 Gulp.task('web:build:development', Gulp.series('web:build', () => {
 	Gulp.watch('source/web/**/*', Gulp.series('web:build'))
 }))
+
 
 Gulp.task('http:build', () => {
 	return Gulp.src('source/http/**/*.js')
@@ -138,6 +147,10 @@ Gulp.task('server:build:development', Gulp.series('server:build', 'server:run', 
 }))
 
 Gulp.task('default', Gulp.series('client:build', 'web:build', 'http:build', 'common:build', 'server:build'))
+
+Gulp.task('build:development', Gulp.series('default', Gulp.parallel('server:run', 'http:run'), () => {
+	Gulp.watch('source/**/*', Gulp.series('default', Gulp.parallel('server:run', 'http:run')))
+}))
 
 // Things to do:
 // [✅] Build Client with Webpack and Live Reload - BrowserSync (?)
