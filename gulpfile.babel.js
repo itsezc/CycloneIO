@@ -102,11 +102,9 @@ Gulp.task('server:build:development', Gulp.series('server:run', () => {
 Gulp.task('default', Gulp.series('client.build', 'web:build', 'http:build', 'common:build', 'server:build'))
 
 // Things to do:
-// [] Create Live Reload with HTTP Server
-// [✅] Create Live Reload with Emulation Server
 // [] Build Client with Webpack
-// [] Build CMS with Webpack
+// [] Build Web CMS with Webpack and Export via Gulp
 // [] Fix Webpack warnings
-// [✅] Build Common Utils with Babel to dist
-// [✅] Build Server with Babel to dist
-// [✅] Build HTTP ( / API ) Server with Babel to dist
+// [✅] Build Common Utils with Babel to dist and Live Reload
+// [✅] Build Emulation Server with Babel to dist with Live Reload
+// [✅] Build HTTP ( / API ) Server with Babel to dist with Live Reload
