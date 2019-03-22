@@ -6,7 +6,6 @@
   "scripts": {
     "build": "gulp",
     "build:dev": "gulp build:development",
-    "build:resources": "gulp  build:resources",
     "client:build": "gulp client:build",
     "client:build:dev": "gulp client:build:development",
     "common:build": "gulp common:build",
@@ -70,7 +69,6 @@
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "terser-webpack-plugin": "^1.2.3",
     "typeface-ubuntu-condensed": "0.0.72",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",

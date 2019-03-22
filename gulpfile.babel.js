@@ -23,15 +23,6 @@ import BrowserSync from 'browser-sync'
 // Check all Files are linted with Eslint on Webpack with Jest
 // Fix Input for Gulp Run to be used on Server Emulator
 
-
-/**
-	Tests
-
-	Client Dev Build Works
-
-
-**/
-
 Gulp.task('resources:build', () => {
 	return Gulp.src('./source/client/js/environment.js')
 				.pipe(Eslint(EslintConfig))
@@ -89,53 +80,6 @@ Gulp.task('resources:build:index', () => {
 Gulp.task('resources:build:development', () => {
 	Gulp.watch(['source/client/**/*', 'source/web/**/*'], Gulp.series('resources:build:index', 'resources:build'))
 })
-
-// Gulp.task('client:build:development', () => {
-// 	Gulp.watch('source/client/**/*', Gulp.series('client:build'))
-// })
-//
-//
-// Gulp.task('web:build', Gulp.series('web:build:index', () => {
-// 	return Gulp.src('./source/web/engine.js')
-// 				.pipe(Eslint(EslintConfig))
-// 				.pipe(Eslint.format())
-// 				.pipe(Eslint.failAfterError())
-// 				.pipe(GulpWebpack({
-// 					mode: 'development',
-// 					output: {
-// 						filename: 'web.js'
-// 					},
-// 					module: {
-// 						rules: [
-// 							{
-// 								test: /\.(js|jsx)$/,
-// 								exclude: /node_modules/,
-// 								use: [
-// 								  'babel-loader'
-// 								]
-// 							},
-// 							{
-// 								test: /\.styl$/,
-// 								use: [
-// 									'stylus-loader'
-// 								]
-// 							},
-// 							{
-// 								test: /\.(pug|page)$/,
-// 								use: [
-// 									'pug-loader'
-// 								]
-// 							}
-// 						]
-// 					}
-// 				}))
-// 				.pipe(Gulp.dest('web-build/'))
-// }))
-//
-// Gulp.task('web:build:development', Gulp.series('web:build', () => {
-// 	Gulp.watch('source/web/**/*', Gulp.series('web:build'))
-// }))
-
 
 Gulp.task('http:build', () => {
 	return Gulp.src('source/http/**/*.js')
