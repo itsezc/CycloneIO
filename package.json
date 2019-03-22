@@ -15,9 +15,11 @@
     "build:api:dev": "babel-watch --watch source/api source/api/server.js",
     "start:api": "node ./dist/api/server.js",
     "build:all": "gulp",
-	"client:build": "gulp client:build", 
+	"client:build": "gulp client:build",
     "server:start": "node ./dist/server/environment.js",
     "server:build:dev": "gulp server:build:development",
+	"web:build": "gulp web:build",
+	"web:build:dev": "gulp web:build:development",
     "http:start": "node ./dist/http/server.js",
     "http:build": "gulp http:build",
     "http:build:dev": "gulp http:build:development"

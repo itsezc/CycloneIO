@@ -16,7 +16,8 @@ import BrowserSync from 'browser-sync'
 
 // Need to complete BrowserSync
 // Webpack Code Splitting
-// Add Eslint to JS files
+// [✅] Add Eslint to JS files
+// Check all Files are linted with Eslint on Webpack with Jest
 // Fix Input for Gulp Run to be used on Server Emulator
 
 Gulp.task('client:build', () => {
@@ -44,9 +45,9 @@ Gulp.task('client:build', () => {
 				.pipe(Gulp.dest('web-build/assets/'))
 })
 
-Gulp.task('client:build:development', () => {
+Gulp.task('client:build:development', Gulp.series('client:build', () => {
 	Gulp.watch('source/client/**/*', Gulp.series('client:build'))
-})
+}))
 
 Gulp.task('web:build', () => {
 	return Gulp.src('./source/web/engine.js')
@@ -85,6 +86,10 @@ Gulp.task('web:build', () => {
 				.pipe(Gulp.dest('web-build/assets/'))
 })
 
+Gulp.task('web:build:development', Gulp.series('web:build', () => {
+	Gulp.watch('source/web/**/*', Gulp.series('web:build'))
+}))
+
 Gulp.task('http:build', () => {
 	return Gulp.src('source/http/**/*.js')
 				.pipe(Eslint(EslintConfig))
@@ -98,7 +103,7 @@ Gulp.task('http:run', () => {
 	return Run('npm run http:start').exec()
 })
 
-Gulp.task('http:build:development', Gulp.series('http:run', () => {
+Gulp.task('http:build:development', Gulp.series('http:build', 'http:run', () => {
 	Gulp.watch('source/http/**/*', Gulp.series('http:build', 'http:run'))
 }))
 
@@ -111,9 +116,9 @@ Gulp.task('common:build', () => {
 				.pipe(Gulp.dest('dist/common'))
 })
 
-Gulp.task('common:build:development', () => {
+Gulp.task('common:build:development', Gulp.series('common:build', () => {
 	Gulp.watch('source/common/**/*.js', Gulp.series('common:build'))
-})
+}))
 
 Gulp.task('server:build', () => {
 	return Gulp.src('source/server/**/*.js')
@@ -128,7 +133,7 @@ Gulp.task('server:run', () => {
 	return Run('npm run server:start').exec()
 })
 
-Gulp.task('server:build:development', Gulp.series('server:run', () => {
+Gulp.task('server:build:development', Gulp.series('server:build', 'server:run', () => {
 	Gulp.watch('source/server/**/*', Gulp.series('server:build', 'server:run'))
 }))
 
@@ -136,7 +141,7 @@ Gulp.task('default', Gulp.series('client:build', 'web:build', 'http:build', 'com
 
 // Things to do:
 // [✅] Build Client with Webpack and Live Reload - BrowserSync (?)
-// [] Build Web CMS with Webpack and Export via Gulp
+// [✅] Build Web CMS with Webpack and Export, with Live Reload via Gulp
 // [] Fix Webpack warnings
 // [✅] Build Common Utils with Babel to dist and Live Reload
 // [✅] Build Emulation Server with Babel to dist with Live Reload
