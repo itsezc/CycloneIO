@@ -38,7 +38,7 @@ import Config from '../../config.json'
 		path: '/assets/{param*}',
 		handler: {
 		    directory: {
-		        path: Path.join(__dirname, '../web/assets'),
+		        path: Path.join(__dirname, '../web/assets/'),
 				listing: true
 		    }
 		}

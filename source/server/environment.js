@@ -163,6 +163,9 @@ const rl = readline.createInterface({
     output: process.stdouts
 })
 
+rl.setPrompt('> ')
+rl.prompt()
+
 rl.on('line', (line) => {
     if (line.startsWith('/')) {
         switch (line) {
@@ -184,10 +187,13 @@ rl.on('line', (line) => {
                 Log.getLogger().error(`${line} is an unnamed command.`.substr(1))
                 break
         }
+
+		rl.prompt()
     }
 
     else if (line) {
         Log.getLogger().error('Please specify a command to execute.')
+		rl.prompt()
     }
 }).on('close', () => {
     process.exit(0)
