@@ -14,4 +14,4 @@ html(lang='en')
 	body
 		#app
 			
-		script(src='/web-build/assets/web.js')
+		script(src='/web-build/dist/web.js')

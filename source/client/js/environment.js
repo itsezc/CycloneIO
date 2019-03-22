@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom'
 
 import RoomScene from './rooms/scene.js'
 
+
 const config = {
 	type: Phaser.CANVAS,
 	physics: {

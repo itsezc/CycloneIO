@@ -5,7 +5,7 @@ class Register extends Component {
 	componentDidMount() {
 		const script = document.createElement('script');
 
-        script.src = '/web-build/assets/client.js';
+        script.src = '/web-build/dist/client.js';
         script.async = true;
 
         document.body.appendChild(script);
