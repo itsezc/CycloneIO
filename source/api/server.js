@@ -27,21 +27,19 @@ import Config from '../../config.json'
 	Server.route({
 		method: 'GET',
 		path: '{param*}',
-		handler: {
-			directory: {
-				path: Path.join(__dirname, '../web/')
-			}
+		handler: (request, h) => {
+			return h.file(Path.join(__dirname, '../web/index.html'))
 		}
 	})
 
 	Server.route({
 		method: 'GET',
-	    path: '/web-build/{param*}',
-	    handler: {
-	        directory: {
-	            path: Path.join(__dirname, '../../web-build')
-	        }
-	    }
+		path: '/web-build/{param*}',
+		handler: {
+		    directory: {
+		        path: Path.join(__dirname, '../../web-build')
+		    }
+		}
 	})
 
 	try {

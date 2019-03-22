@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
 
 		plugins: [
 			new htmlWebpackPlugin({
-				template: 'pug-loader!./source/web/themes/' + Config.hotel.theme + '/structure.page'
+				template: './web/themes/' + Config.hotel.theme + '/structure.page'
 			})
 		],
 
@@ -53,7 +53,7 @@ module.exports = (env, argv) => {
 					]
 				},
 				{
-					test: /\.(pug)$/,
+					test: /\.(pug|page)$/,
 					use: [
 						'pug-loader'
 					]
