@@ -15,6 +15,11 @@
 			]
 		}
 	},
+	"server": {
+		"protocol": "http",
+		"host": "localhost",
+		"port": 90
+	},
 	"database": {
 		"port": "",
 		"prefix": "cyclone",

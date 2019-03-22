@@ -1,6 +1,6 @@
 import { CONNECT, NEW_PLAYER, ALL_PLAYERS, MOVE, STOP, REMOVE } from '../../../common/constants/actions/player.js'
 import { PLAYER } from '../constants/assets.js'
-import { HOST} from '../constants/config.js'
+import Config from '../../../../config.json'
 
 class RoomPlayer {
     constructor(scene, socket, room, position) {
@@ -13,7 +13,7 @@ class RoomPlayer {
 
     create() {
         this.socket.on(CONNECT, () => {
-            console.log(`Server connected on ${HOST}`)
+            console.log(`Server connected on ${Config.server.host}`)
         })
 
         this.socket.emit(NEW_PLAYER, this.room, this.position)

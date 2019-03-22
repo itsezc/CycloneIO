@@ -22,6 +22,15 @@ import BrowserSync from 'browser-sync'
 // Check all Files are linted with Eslint on Webpack with Jest
 // Fix Input for Gulp Run to be used on Server Emulator
 
+
+/**
+	Tests
+
+	Client Dev Build Works
+
+
+**/
+
 Gulp.task('client:build', () => {
 	return Gulp.src('./source/client/js/environment.js')
 				.pipe(Eslint(EslintConfig))
@@ -29,6 +38,7 @@ Gulp.task('client:build', () => {
 				.pipe(Eslint.failAfterError())
 				.pipe(GulpWebpack({
 					mode: 'production',
+					watch: true,
 					output: {
 						filename: 'client.js'
 					},
@@ -47,9 +57,9 @@ Gulp.task('client:build', () => {
 				.pipe(Gulp.dest('web-build/assets/'))
 })
 
-Gulp.task('client:build:development', Gulp.series('client:build', () => {
+Gulp.task('client:build:development', () => {
 	Gulp.watch('source/client/**/*', Gulp.series('client:build'))
-}))
+})
 
 Gulp.task('web:build:index', () => {
 	return Gulp.src('source/web/themes/' + Config.hotel.theme + '/structure.page')
@@ -64,6 +74,7 @@ Gulp.task('web:build', Gulp.series('web:build:index', () => {
 				.pipe(Eslint.failAfterError())
 				.pipe(GulpWebpack({
 					mode: 'development',
+					watch: true,
 					output: {
 						filename: 'web.js'
 					},
@@ -112,9 +123,9 @@ Gulp.task('http:run', () => {
 	return Run('npm run http:start').exec()
 })
 
-Gulp.task('http:build:development', Gulp.series('http:build', 'http:run', () => {
+Gulp.task('http:build:development', () => {
 	Gulp.watch('source/http/**/*', Gulp.series('http:build', 'http:run'))
-}))
+})
 
 Gulp.task('common:build', () => {
 	return Gulp.src('source/common/**/*.js')
@@ -142,15 +153,19 @@ Gulp.task('server:run', () => {
 	return Run('npm run server:start').exec()
 })
 
-Gulp.task('server:build:development', Gulp.series('server:build', 'server:run', () => {
+Gulp.task('server:build:development', () => {
 	Gulp.watch('source/server/**/*', Gulp.series('server:build', 'server:run'))
-}))
+})
 
 Gulp.task('default', Gulp.series('client:build', 'web:build', 'http:build', 'common:build', 'server:build'))
 
 Gulp.task('build:development', Gulp.series('default', Gulp.parallel('server:run', 'http:run'), () => {
 	Gulp.watch('source/**/*', Gulp.series('default', Gulp.parallel('server:run', 'http:run')))
 }))
+
+Gulp.task('build:resources', () => {
+	Gulp.watch('source/**/*', Gulp.series('client:build', 'common:build', 'web:build'))
+})
 
 // Things to do:
 // [✅] Build Client with Webpack and Live Reload - BrowserSync (?)

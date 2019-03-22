@@ -2,7 +2,7 @@ import Phaser from 'phaser'
 import SocketIO from 'socket.io-client'
 
 import { ROOM } from '../constants/scenes.js'
-import { PROTOCOL, HOST, PORT } from '../constants/config.js'
+import Config from '../../../../config.json'
 import { TILE, PLAYER } from '../constants/assets.js'
 import { UP, LEFT, DOWN, RIGHT } from '../../../common/constants/directions.js'
 import Room from './room.js'
@@ -20,7 +20,7 @@ class RoomScene extends Phaser.Scene {
     }
 
     init() {
-        let socket = SocketIO(`${PROTOCOL}://${HOST}:${PORT}`)
+        let socket = SocketIO(`${Config.server.protocol}://${Config.server.host}:${Config.server.port}`)
         this.room = new Room(this, socket, 0)
         this.player = new Player(this, socket, 0, { x: 0, y: 0, direction: DOWN })
     }
