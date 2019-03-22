@@ -14,6 +14,7 @@ import BrowserSync from 'browser-sync'
 Gulp.task('client:build', () => {
 	return Gulp.src('./source/client/js/environment.js')
 				.pipe(GulpWebpack({
+					mode: 'production',
 					output: {
 						filename: 'client.js'
 					},
@@ -39,6 +40,7 @@ Gulp.task('client:build:development', () => {
 Gulp.task('web:build', () => {
 	return Gulp.src('./source/web/engine.js')
 				.pipe(GulpWebpack({
+					mode: 'production',
 					output: {
 						filename: 'web.js'
 					},
@@ -107,7 +109,7 @@ Gulp.task('server:build:development', Gulp.series('server:run', () => {
 	Gulp.watch('source/server/**/*', Gulp.series('server:build', 'server:run'))
 }))
 
-Gulp.task('default', Gulp.series('client.build', 'web:build', 'http:build', 'common:build', 'server:build'))
+Gulp.task('default', Gulp.series('client:build', 'web:build', 'http:build', 'common:build', 'server:build'))
 
 // Things to do:
 // [✅] Build Client with Webpack and Live Reload (?)
