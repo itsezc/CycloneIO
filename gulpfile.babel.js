@@ -4,12 +4,18 @@ import Run from 'gulp-run'
 import Babel from 'gulp-babel'
 import BabelConfig from './babel.config.js'
 
+import Eslint from 'gulp-eslint'
+import EslintConfig from './.eslintrc.js'
+
 import Webpack from 'webpack'
 import GulpWebpack from 'webpack-stream'
 
 import BrowserSync from 'browser-sync'
 
 // Need to complete BrowserSync
+// Webpack Code Splitting
+// Add Eslint to JS files
+// Fix Input for Gulp Run to be used on Server Emulator
 
 Gulp.task('client:build', () => {
 	return Gulp.src('./source/client/js/environment.js')
@@ -72,7 +78,7 @@ Gulp.task('web:build', () => {
 })
 
 Gulp.task('http:build', () => {
-	return Gulp.src('source/api/**/*.js')
+	return Gulp.src('source/http/**/*.js')
 				.pipe(Babel(BabelConfig))
 				.pipe(Gulp.dest('dist/http'))
 })
@@ -112,7 +118,7 @@ Gulp.task('server:build:development', Gulp.series('server:run', () => {
 Gulp.task('default', Gulp.series('client:build', 'web:build', 'http:build', 'common:build', 'server:build'))
 
 // Things to do:
-// [✅] Build Client with Webpack and Live Reload (?)
+// [✅] Build Client with Webpack and Live Reload - BrowserSync (?)
 // [] Build Web CMS with Webpack and Export via Gulp
 // [] Fix Webpack warnings
 // [✅] Build Common Utils with Babel to dist and Live Reload
