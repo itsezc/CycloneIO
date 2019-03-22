@@ -3,7 +3,6 @@ import Path from 'path'
 import Config from './config.json'
 
 import htmlWebpackPlugin from 'html-webpack-plugin'
-import htmlPugWebpackPlugin from 'html-webpack-pug-plugin'
 
 module.exports = (env, argv) => {
 	const { mode = 'development' } = argv
@@ -26,13 +25,14 @@ module.exports = (env, argv) => {
 			historyApiFallback: true,
 	  	},
 
-		entry: {
-			client: './client/js/environment.js',
-			web: './web/engine.js'
-		},
+		// entry: {
+		// 	client: './client/js/environment.js',
+		// 	web: './web/engine.js'
+		// },
 
 		output: {
-			path: Path.join(__dirname, './dist'),
+			// path: Path.join(__dirname, './dist'),
+			// filename: './web/assets/[name].js'
 			filename: '[name].js'
 		},
 
@@ -61,9 +61,8 @@ module.exports = (env, argv) => {
 			]
 		},
 
-		externals: {
+	    externals: {
 		   uws: 'uws'
-	   }
-
+	   	}
 	}
 }

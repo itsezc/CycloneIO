@@ -26,9 +26,21 @@ import Config from '../../config.json'
 
 	Server.route({
 		method: 'GET',
-		path: '{param*}',
+		path: '/{param*}',
 		handler: (request, h) => {
-			return h.file(Path.join(__dirname, '../web/index.html'))
+			console.log(Path.join(__dirname, '../index.html'))
+			return h.file(Path.join(__dirname, '../index.html'))
+		}
+	})
+
+	Server.route({
+		method: 'GET',
+		path: '/assets/{param*}',
+		handler: {
+		    directory: {
+		        path: Path.join(__dirname, '../web/assets'),
+				listing: true
+		    }
 		}
 	})
 
@@ -37,7 +49,8 @@ import Config from '../../config.json'
 		path: '/web-build/{param*}',
 		handler: {
 		    directory: {
-		        path: Path.join(__dirname, '../../web-build')
+		        path: Path.join(__dirname, '../../web-build'),
+				listing: true
 		    }
 		}
 	})

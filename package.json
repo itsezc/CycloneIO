@@ -13,7 +13,8 @@
     "build:web:dev": "webpack-dev-server --open",
     "build:api": "babel source/api --out-dir dist/api",
     "build:api:dev": "babel-watch --watch source/api source/api/server.js",
-    "start:api": "node ./dist/api/server.js"
+    "start:api": "node ./dist/api/server.js",
+    "build:all": "gulp"
   },
   "repository": {
     "type": "git",
@@ -44,8 +45,9 @@
     "eslint": "^5.15.3",
     "eslint-loader": "^2.1.2",
     "eslint-plugin-react": "^7.12.4",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "html-webpack-pug-plugin": "^0.3.0",
     "jest": "^24.5.0",
     "log4js": "^4.0.2",
     "phaser": "^3.16.2",
@@ -64,7 +66,8 @@
     "typeface-ubuntu-condensed": "0.0.72",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.2.1",
+    "webpack-stream": "^5.2.1"
   },
   "dependencies": {
     "cluster": "^0.7.7",
