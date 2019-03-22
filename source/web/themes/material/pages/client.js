@@ -3,6 +3,13 @@ import React, { Component } from 'react'
 
 class Register extends Component {
 	componentDidMount() {
+		const script = document.createElement('script');
+
+        script.src = '/web-build/assets/client.js';
+        script.async = true;
+
+        document.body.appendChild(script);
+
 		window.PhaserGlobal = {
 			hideBanner: true
 		}
@@ -10,9 +17,7 @@ class Register extends Component {
 
 	render() {
 		return (
-			<div>
-				<script src='./client.js'></script>
-			</div>
+			<div></div>
 		)
 	}
 }

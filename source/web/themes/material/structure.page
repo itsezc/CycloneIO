@@ -13,3 +13,5 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body
 		#app
+			
+		script(src='/web-build/assets/web.js')

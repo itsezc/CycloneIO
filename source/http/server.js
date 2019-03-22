@@ -35,17 +35,6 @@ import Config from '../../config.json'
 
 	Server.route({
 		method: 'GET',
-		path: '/assets/{param*}',
-		handler: {
-			directory: {
-				path: Path.join(__dirname, '../web/assets/'),
-				listing: true
-			}
-		}
-	})
-
-	Server.route({
-		method: 'GET',
 		path: '/web-build/{param*}',
 		handler: {
 			directory: {

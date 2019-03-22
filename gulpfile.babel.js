@@ -63,7 +63,7 @@ Gulp.task('web:build', Gulp.series('web:build:index', () => {
 				.pipe(Eslint.format())
 				.pipe(Eslint.failAfterError())
 				.pipe(GulpWebpack({
-					mode: 'production',
+					mode: 'development',
 					output: {
 						filename: 'web.js'
 					},
