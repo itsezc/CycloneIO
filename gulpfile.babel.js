@@ -7,6 +7,10 @@ import BabelConfig from './babel.config.js'
 import Webpack from 'webpack'
 import GulpWebpack from 'webpack-stream'
 
+import BrowserSync from 'browser-sync'
+
+// Need to complete BrowserSync
+
 Gulp.task('client:build', () => {
 	return Gulp.src('./source/client/js/environment.js')
 				.pipe(GulpWebpack({
@@ -26,6 +30,10 @@ Gulp.task('client:build', () => {
 					}
 				}))
 				.pipe(Gulp.dest('web-build/assets/'))
+})
+
+Gulp.task('client:build:development', () => {
+	Gulp.watch('source/client/**/*', Gulp.series('client:build'))
 })
 
 Gulp.task('web:build', () => {
@@ -102,7 +110,7 @@ Gulp.task('server:build:development', Gulp.series('server:run', () => {
 Gulp.task('default', Gulp.series('client.build', 'web:build', 'http:build', 'common:build', 'server:build'))
 
 // Things to do:
-// [] Build Client with Webpack
+// [✅] Build Client with Webpack and Live Reload (?)
 // [] Build Web CMS with Webpack and Export via Gulp
 // [] Fix Webpack warnings
 // [✅] Build Common Utils with Babel to dist and Live Reload

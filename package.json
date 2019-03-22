@@ -15,11 +15,11 @@
     "build:api:dev": "babel-watch --watch source/api source/api/server.js",
     "start:api": "node ./dist/api/server.js",
     "build:all": "gulp",
-	"server:start": "node ./dist/server/environment.js",
-	"server:build:dev": "gulp server:build:development",
-	"http:start": "node ./dist/http/server.js",
-	"http:build": "gulp http:build",
-	"http:build:dev": "gulp http:build:development"
+    "server:start": "node ./dist/server/environment.js",
+    "server:build:dev": "gulp server:build:development",
+    "http:start": "node ./dist/http/server.js",
+    "http:build": "gulp http:build",
+    "http:build:dev": "gulp http:build:development"
   },
   "repository": {
     "type": "git",
@@ -46,6 +46,7 @@
     "@babel/runtime": "^7.3.4",
     "babel-loader": "^8.0.5",
     "babel-watch": "^7.0.0",
+    "browser-sync": "^2.26.3",
     "css-loader": "^2.1.1",
     "eslint": "^5.15.3",
     "eslint-loader": "^2.1.2",
