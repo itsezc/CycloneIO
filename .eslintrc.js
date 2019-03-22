@@ -5,10 +5,6 @@ module.exports = {
         "node": true
     },
     "extends": "eslint:recommended",
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -16,13 +12,10 @@ module.exports = {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
     "rules": {
-		"no-mixed-spaces-and-tabs": "off",
 		"no-undef": "off",
 		"no-unused-vars": "off",
+		"no-console": "off",
         "indent": [
             "error",
             "tab"

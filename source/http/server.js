@@ -37,10 +37,10 @@ import Config from '../../config.json'
 		method: 'GET',
 		path: '/assets/{param*}',
 		handler: {
-		    directory: {
-		        path: Path.join(__dirname, '../web/assets/'),
+			directory: {
+				path: Path.join(__dirname, '../web/assets/'),
 				listing: true
-		    }
+			}
 		}
 	})
 
@@ -48,10 +48,10 @@ import Config from '../../config.json'
 		method: 'GET',
 		path: '/web-build/{param*}',
 		handler: {
-		    directory: {
-		        path: Path.join(__dirname, '../../web-build'),
+			directory: {
+				path: Path.join(__dirname, '../../web-build'),
 				listing: true
-		    }
+			}
 		}
 	})
 

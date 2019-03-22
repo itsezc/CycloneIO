@@ -1,3 +1,5 @@
+import Readline from 'readline'
+
 import Gulp from 'gulp'
 import Run from 'gulp-run'
 
@@ -19,6 +21,9 @@ import BrowserSync from 'browser-sync'
 
 Gulp.task('client:build', () => {
 	return Gulp.src('./source/client/js/environment.js')
+				.pipe(Eslint(EslintConfig))
+				.pipe(Eslint.format())
+				.pipe(Eslint.failAfterError())
 				.pipe(GulpWebpack({
 					mode: 'production',
 					output: {
@@ -45,6 +50,9 @@ Gulp.task('client:build:development', () => {
 
 Gulp.task('web:build', () => {
 	return Gulp.src('./source/web/engine.js')
+				.pipe(Eslint(EslintConfig))
+				.pipe(Eslint.format())
+				.pipe(Eslint.failAfterError())
 				.pipe(GulpWebpack({
 					mode: 'production',
 					output: {
@@ -79,6 +87,9 @@ Gulp.task('web:build', () => {
 
 Gulp.task('http:build', () => {
 	return Gulp.src('source/http/**/*.js')
+				.pipe(Eslint(EslintConfig))
+				.pipe(Eslint.format())
+				.pipe(Eslint.failAfterError())
 				.pipe(Babel(BabelConfig))
 				.pipe(Gulp.dest('dist/http'))
 })
@@ -93,6 +104,9 @@ Gulp.task('http:build:development', Gulp.series('http:run', () => {
 
 Gulp.task('common:build', () => {
 	return Gulp.src('source/common/**/*.js')
+				.pipe(Eslint(EslintConfig))
+				.pipe(Eslint.format())
+				.pipe(Eslint.failAfterError())
 				.pipe(Babel(BabelConfig))
 				.pipe(Gulp.dest('dist/common'))
 })
@@ -103,6 +117,9 @@ Gulp.task('common:build:development', () => {
 
 Gulp.task('server:build', () => {
 	return Gulp.src('source/server/**/*.js')
+				.pipe(Eslint(EslintConfig))
+				.pipe(Eslint.format())
+				.pipe(Eslint.failAfterError())
 				.pipe(Babel(BabelConfig))
 				.pipe(Gulp.dest('dist/server'))
 })
