@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
 	head
-		title Cyclone - Index
+		title Cyclone - Hotel
 		
 		link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css')
 		link(rel='stylesheet', href='//cdn.jsdelivr.net/npm/typeface-ubuntu-condensed@0.0.72/index.min.css')
@@ -13,5 +13,5 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body
 		#app
-			
+		script(src='http://localhost:35729/livereload.js')
 		script(src='/web-build/dist/web.js')

@@ -9,12 +9,18 @@ import Orango, { EVENTS } from 'orango'
 import Config from '../../config.json'
 
 
-(async () => {
 
+(async () => {
+	console.log('Testing Jason')
 
 	const Server = Hapi.server({
 		host: 'localhost',
-		port: 8080
+		port: 8080,
+		routes: {
+			files: {
+				relativeTo: Path.join(__dirname, '../../dist')
+			}
+		}
 	})
 
 	await Server.register(Inert)
@@ -23,8 +29,8 @@ import Config from '../../config.json'
 		method: 'GET',
 		path: '/{param*}',
 		handler: (request, h) => {
-			console.log(Path.join(__dirname, '../structure.html'))
-			return h.file(Path.join(__dirname, '../structure.html'))
+			//console.log(Path.join(__dirname, './structure.html'))
+			return h.file('./structure.html')
 		}
 	})
 

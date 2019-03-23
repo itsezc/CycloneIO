@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 
 import RoomScene from './rooms/scene.js'
 
-
+console.log('Test')
 const config = {
 	type: Phaser.CANVAS,
 	physics: {

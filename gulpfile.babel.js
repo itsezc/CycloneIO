@@ -11,7 +11,8 @@ import EslintConfig from './.eslintrc.js'
 
 import Webpack from 'webpack'
 import GulpWebpack from 'webpack-stream'
-import TerserWebpackPlugin from 'terser-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import LiveReloadWebpackPlugin from 'webpack-livereload-plugin'
 
 import Pug from 'gulp-pug'
 
@@ -30,6 +31,16 @@ Gulp.task('resources:build', () => {
 				.pipe(Eslint.failAfterError())
 				.pipe(GulpWebpack({
 					mode: 'development',
+					plugins: [
+						new LiveReloadWebpackPlugin({
+							appendScriptTag: true
+						}),
+						new HtmlWebpackPlugin({
+							filename: '../../dist/structure.html',
+							template: `./source/web/themes/${Config.hotel.theme}/structure.page`,
+							inject: false
+						})
+					],
 					entry: {
 						web: './source/web/engine.js',
 						client: './source/client/js/environment.js'
@@ -78,7 +89,7 @@ Gulp.task('resources:build:index', () => {
 })
 
 Gulp.task('resources:build:development', () => {
-	Gulp.watch(['source/client/**/*', 'source/web/**/*'], Gulp.series('resources:build:index', 'resources:build'))
+	Gulp.watch(['source/client/**/*', 'source/web/**/*'], Gulp.series('resources:build'))
 })
 
 Gulp.task('http:build', () => {
@@ -94,9 +105,12 @@ Gulp.task('http:run', () => {
 	return Run('npm run http:start').exec()
 })
 
-Gulp.task('http:build:development', () => {
-	Gulp.watch('source/http/**/*', Gulp.series('http:build', 'http:run'))
-})
+Gulp.task('http:build:development', Gulp.series('http:build', () => {
+	Gulp.watch('source/http/**/*', () => {
+		console.log('Building and running HTTP Server')
+		Run('node ./dist/http/server.js')
+	})
+}))
 
 Gulp.task('common:build', () => {
 	return Gulp.src('source/common/**/*.js')
