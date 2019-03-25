@@ -16,14 +16,14 @@ class RoomScene extends Phaser.Scene {
 
 	preload() {
 		this.load.path = 'web-build/'
-		this.load.image(Constants.client.assets.TILE, 'images/assets/tile.png', { frameWidth: 32, frameHeight: 32 })
-		this.load.image('hover_tile', 'images/assets/hover_tile.png', { frameWidth: 32, frameHeight: 32 })
-		this.load.image("wall_right", "images/assets/wall_right.png");
-		this.load.image("wall_left", "images/assets/wall_left.png");
-		this.load.image("door", "images/assets/door.png");
-		this.load.image("player", "images/assets/player.png");
-		this.load.image("walk", "images/assets/walk.png");
-		this.load.image('room_bg', 'images/assets/bg.png')
+		this.load.image(Constants.client.assets.TILE, 'v2/images/assets/tile.png', { frameWidth: 32, frameHeight: 32 })
+		this.load.image('hover_tile', 'v2/images/assets/hover_tile.png', { frameWidth: 32, frameHeight: 32 })
+		this.load.image('wall_right', 'v2/images/assets/wall_right.png');
+		this.load.image('wall_left', 'v2/images/assets/wall_left.png');
+		this.load.image('door', 'v2/images/assets/door.png');
+		this.load.image('player', 'v2/images/assets/player.png');
+		this.load.image('walk', 'v2/images/assets/walk.png');
+		this.load.image('room_bg', 'v2/images/assets/bg.png')
 	}
 
 	init() {
@@ -54,7 +54,7 @@ class RoomScene extends Phaser.Scene {
         this.room.create()
         this.player.create()
 
-		let room = new Room(0, "Test 1", "Testing", false)
+		let room = new Room(0, 'Test 1', 'Testing', false)
 
 		// var s = this.add.sprite(-100, 0, 'room_bg')
 		 let gameMap = new GameMap(this,
@@ -97,8 +97,6 @@ class RoomScene extends Phaser.Scene {
 			 [2, 0, 0, 0, 0, 0, 0]
 		   ]
 		 );
-
-
 
 		 let roomModel = new RoomModel(this, gameMap)
 		 roomModel.createRoom(room)
