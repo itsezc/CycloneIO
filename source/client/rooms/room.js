@@ -1,5 +1,4 @@
-import { NEW_ROOM } from '../../../common/constants/room.js'
-import { TILE } from '../constants/assets.js'
+import Constants from '../../network/constants.json'
 
 class Room {
     constructor(scene, socket, id) {
@@ -10,9 +9,9 @@ class Room {
     }
 
     create() {
-        this.socket.emit(NEW_ROOM, this.id, [[0, 0]], { x: 0, y: 0 })
+        this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [[0, 0]], { x: 0, y: 0 })
 
-        this.socket.on(NEW_ROOM, (room) => {
+        this.socket.on(Constants.common.actions.room.NEW_ROOM, (room) => {
             this.addRoom(room.id, room.rows, room.columns)
         })
     }

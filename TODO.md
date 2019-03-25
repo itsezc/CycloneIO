@@ -1,38 +1,16 @@
-[] Hotel view
-[] Rooms
-	[] Room Backgrounds
-	[] Floorplan
-	[] Floors & Spaces
-	[] Moodlight
-[] Chat
-	[] Chat Bubbles
-	[] Private Messenger
-	[] Forums
-	[] Ignore / Block
-[] Player
-	[] Dance, Walk, Sit etc. Animations
-	[] Avatar Generator / Wardrobe
-	[] Effects
-	[] Friends
-	[] Habbo Citizen
-	[] Respect
-	[] Trading
-[] Habbo Club
-[] Groups
-[] Mod Tools
-[] Catalogue
-[] Furniture
-	[] Rollers
-	[] Dice
-	[] Wired
-[] Navigator
-[] Camera
-[] Commands
-[] Bots
-	[] Bot Speech
-	[] Bot Looks
-[] Trax
-[] Quests
-[] Pets
-	[] Levels, Upgrades etc.
-	[] Horse Saddle Riding
+Build:
+
+✅ /client/ needs to be bundled into client.min.js => /web-build/dist/client.min.js
+✅ /web/ needs to be bundled into web.min.js => /web-build/dist/web.min.js
+✅ /web/themes/{theme}/structure.page needs to be compiled => /web-build/dist/structure.html
+✅ source/** => dist/** (exclude /source/client and /source/web)
+✅ Run all 4 process together with 1 command
+
+Dev Build:
+
+Build + Live Reload (Watch for Client / Webpack Dev Server for Web)
+source/** => dist/** (exclude /source/client and /source/web) & executed with readline
+
+
+[] Fix Folder Namespaces
+[] Fix Index/Main file

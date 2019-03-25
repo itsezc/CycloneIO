@@ -1,30 +1,12 @@
 {
+	"license": "XXXX-XXXX-XXXX-XXXX",
 	"hotel": {
 		"name": "Habbay",
 		"theme": "material"
 	},
-	"user": {
-		"registration": {
-			"currencies": {
-				"duckets": 2500,
-				"credits": 1000,
-				"diamonds": 0
-			},
-			"furniture": [
-				{ "id": 10, "amount": 1 }
-			]
-		}
-	},
 	"server": {
 		"protocol": "http",
 		"host": "localhost",
-		"port": 90
-	},
-	"database": {
-		"port": "",
-		"prefix": "cyclone",
-		"hostname": "",
-		"username": "",
-		"password": ""
+		"port": "8081"
 	}
 }

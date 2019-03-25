@@ -13,5 +13,4 @@ html(lang='en')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body
 		#app
-		script(src='http://localhost:35729/livereload.js')
-		script(src='/web-build/dist/web.js')
+		script(src='/web-build/dist/web.min.js')

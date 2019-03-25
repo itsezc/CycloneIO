@@ -1,6 +1,5 @@
-import { CONNECT, NEW_PLAYER, ALL_PLAYERS, MOVE, STOP, REMOVE } from '../../../common/constants/actions/player.js'
-import { PLAYER } from '../constants/assets.js'
-import Config from '../../../../config.json'
+import Constants from '../../network/constants.json'
+import Config from '../../../config.json'
 
 class RoomPlayer {
     constructor(scene, socket, room, position) {
@@ -12,19 +11,18 @@ class RoomPlayer {
     }
 
     create() {
-        this.socket.on(CONNECT, () => {
+        this.socket.on(Constants.common.actions.player.CONNECT, () => {
             console.log(`Server connected on ${Config.server.host}`)
         })
 
-        this.socket.emit(NEW_PLAYER, this.room, this.position)
-        console.log('new player emitted')
+        this.socket.emit(Constants.common.actions.player.NEW_PLAYER, this.room, this.position)
 
-        this.socket.on(NEW_PLAYER, (player) => {
+        this.socket.on(Constants.common.actions.player.NEW_PLAYER, (player) => {
             console.log('new player')
             this.addPlayer(player.id, player.x, player.y, player.direction)
         })
 
-        this.socket.on(ALL_PLAYERS, (players) => {
+        this.socket.on(Constants.common.actions.player.ALL_PLAYERS, (players) => {
             this.scene.scene.setVisible(true, this.room)
 
             for (let i = 0; i < players.length; i++) {
@@ -33,19 +31,19 @@ class RoomPlayer {
 
             this.players[this.socket.id].setCollideWorldBounds(true)
 
-            this.socket.on(MOVE, (data) => {
+            this.socket.on(Constants.common.actions.player.MOVE, (data) => {
                 this.players[data.id].x = data.x
                 this.players[data.id].y = data.y
                 this.players[data.id].anims.play(data.direction, true)
             })
 
-            this.socket.on(STOP, (data) => {
+            this.socket.on(Constants.common.actions.player.STOP, (data) => {
                 this.players[data.id].x = data.x
                 this.players[data.id].y = data.y
                 this.players[data.id].anims.stop()
             })
 
-            this.socket.on(REMOVE, (id) => {
+            this.socket.on(Constants.common.actions.player.REMOVE, (id) => {
                 this.players[id].destroy()
                 delete this.players[id]
             })
@@ -55,7 +53,7 @@ class RoomPlayer {
     }
 
     addPlayer(id, x, y, direction) {
-        this.players[id] = this.scene.physics.add.sprite(x, y, PLAYER)
+        this.players[id] = this.scene.physics.add.sprite(x, y, 'player')
         this.players[id].anims.play(direction)
         this.players[id].anims.stop()
     }

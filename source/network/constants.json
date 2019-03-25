@@ -1,0 +1,39 @@
+{
+  "common": {
+    "actions": {
+      "player": {
+        "CONNECT": "connect",
+        "DISCONNECT": "disconnect",
+        "NEW_PLAYER": "newPlayer",
+        "ALL_PLAYERS": "allPlayers",
+		"CURRENT_PLAYERS": "currentPlayers",
+        "CHAT": "chat",
+        "MOVE": "move",
+        "PLAYER_MOVED": "playerMoved",
+        "STOP": "REMOVE"
+      },
+      "room": {
+        "NEW_ROOM": "newRoom"
+      }
+    },
+    "directions": {
+      "UP": "up",
+      "LEFT": "left",
+      "DOWN": "down",
+      "RIGHT": "right"
+    },
+    "server": {
+      "CONNECTION": "connection",
+      "SHUTDOWN": "shutdown"
+    }
+  },
+  "client": {
+    "assets": {
+      "TILE": "tile",
+      "PLAYER": "player"
+    },
+    "scenes": {
+      "ROOM": "room"
+    }
+  }
+}
