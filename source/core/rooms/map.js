@@ -1,6 +1,5 @@
 class RoomMap {
-	constructor(room, map, doorX, doorY) {
-		this.room = room
+	constructor(map, doorX, doorY) {
 		this.map = map
 		this.doorX = doorX
 		this.doorY = doorY

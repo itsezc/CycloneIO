@@ -1,0 +1,1 @@
+{"version":3,"file":"xhr.js","sourceRoot":"","sources":["../../../src/util/xhr.ts"],"names":[],"mappings":";;AAGA,kBAAe,OAAO,CAAC,KAAK,CAGV,CAAC","sourcesContent":["import { ClientRequest } from \"http\";\nimport { Errback } from \"./types\";\n\nexport default require(\"xhr\") as (\n  options: any,\n  cb: Errback<Response>\n) => ClientRequest;\n"]}

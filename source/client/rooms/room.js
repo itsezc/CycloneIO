@@ -1,40 +1,38 @@
 import Constants from '../../network/constants.json'
 
 class Room {
-    constructor(scene, socket, id) {
-        this.scene = scene
-        this.socket = socket
-        this.id = id
-        this.rooms = {}
+  constructor(scene, socket, id) {
+    this.scene = scene
+    this.socket = socket
+    this.id = id
+    this.rooms = {}
+  }
+
+  create() {
+    this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
+      [0, 0],
+      [0, 0]
+    ], {
+      x: 0,
+      y: 0
+    })
+
+    this.socket.on(Constants.common.actions.room.NEW_ROOM, (room, rows, columns) => {
+      console.log('new room ' + JSON.stringify(room, null, 4))
+      this.addRoom(room.id, rows, columns)
+    })
+  }
+
+  addRoom(id, rows, columns) {
+    for (let i = 0; i < rows; i++) {
+      for (let j = 0; j < columns; j++) {
+        var x = (i * 32) - (j * 32)
+        var y = ((i * 32) + (j * 32)) / 2
+
+        this.rooms[id] = this.scene.add.image(x, y, Constants.client.assets.TILE).setOrigin(0)
+      }
     }
-
-    create() {
-        this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [[0, 0]], { x: 0, y: 0 })
-
-        this.socket.on(Constants.common.actions.room.NEW_ROOM, (room) => {
-            this.addRoom(room.id, room.rows, room.columns)
-        })
-    }
-
-    addRoom(id, rows, columns) {
-        for (let i = 0; i < rows; i++) {
-            for (let j = 0; j < columns; j++) {
-                var x = j * 32
-                var y = i * 32
-
-                var isometric = isometric(x, y)
-
-                this.rooms[id].push(this.scene.physics.add.image(isometric.x, isometric.y, TILE))
-            }
-        }
-    }
-
-    isometric(cartesian) {
-        var coordinates = new Phaser.Geom.Point()
-        coordinates.x = cartesian.x - cartesian.y
-        coordinates.y = (cartesian.x + cartesian.y) / 2
-        return (coordinates)
-    }
+  }
 }
 
 export default Room

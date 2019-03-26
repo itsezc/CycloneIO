@@ -1,0 +1,1 @@
+{"version":3,"file":"joinPath.js","sourceRoot":"","sources":["../../../src/util/joinPath.ts"],"names":[],"mappings":";;AAAA,+BAA6B;AAChB,QAAA,QAAQ,GAAG,YAAK,CAAC,IAAI,CAAC","sourcesContent":["import { posix } from \"path\";\nexport const joinPath = posix.join;\n"]}
