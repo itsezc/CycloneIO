@@ -14,3 +14,9 @@ source/** => dist/** (exclude /source/client and /source/web) & executed with re
 
 [] Fix Folder Namespaces
 [] Fix Index/Main file
+
+Client:
+
+✅ Add room
+[] Fix player body
+[] Better camera centering

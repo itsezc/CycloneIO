@@ -24,8 +24,8 @@ class Room {
   }
 
   addRoom(id, rows, columns) {
-    for (let i = 0; i < rows; i++) {
-      for (let j = 0; j < columns; j++) {
+    for (var i = 0; i < rows; i++) {
+      for (var j = 0; j < columns; j++) {
         var x = (i * 32) - (j * 32)
         var y = ((i * 32) + (j * 32)) / 2
 

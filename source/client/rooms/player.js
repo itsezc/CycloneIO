@@ -18,18 +18,13 @@ class RoomPlayer {
         this.socket.emit(Constants.common.actions.player.NEW_PLAYER, this.room, this.position)
 
         this.socket.on(Constants.common.actions.player.NEW_PLAYER, (player) => {
-            console.log('new player')
             this.addPlayer(player.id, player.x, player.y, player.direction)
         })
 
         this.socket.on(Constants.common.actions.player.ALL_PLAYERS, (players) => {
-            this.scene.scene.setVisible(true, this.room)
-
-            for (let i = 0; i < players.length; i++) {
+            for (var i = 0; i < players.length; i++) {
                 this.addPlayer(players[i].id, players[i].x, players[i].y, players[i].direction)
             }
-
-            this.players[this.socket.id].setCollideWorldBounds(true)
 
             this.socket.on(Constants.common.actions.player.MOVE, (data) => {
                 this.players[data.id].x = data.x
@@ -53,9 +48,9 @@ class RoomPlayer {
     }
 
     addPlayer(id, x, y, direction) {
-        this.players[id] = this.scene.physics.add.sprite(x, y, 'player')
-        this.players[id].anims.play(direction)
-        this.players[id].anims.stop()
+        this.players[id] = this.scene.add.sprite(x, y, Constants.client.assets.HH_HUMAN_BODY)
+        // this.players[id].anims.play(direction)
+        // this.players[id].anims.stop()
     }
 
     left() {

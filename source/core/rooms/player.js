@@ -14,25 +14,25 @@ class RoomPlayer extends RoomEntity {
     	room = new Room(id, map, { x: 0, y: 0 })
     	Room.list[id] = room
 
-    	socketIO.sockets.in(id).emit(Constants.common.actions.room.NEW_ROOM, room, room.rows, room.columns)
+    	socketIO.to(id).emit(Constants.common.actions.room.NEW_ROOM, room, room.rows, room.columns)
     })
 
-    socket.on(Constants.common.actions.player.NEW_PLAYER, (roomID, position) => {
-      socket.join(roomID)
-      socket.room = roomID
+    socket.on(Constants.common.actions.player.NEW_PLAYER, (room, position) => {
+      socket.join(room)
+      socket.room = room
 
       player = new RoomPlayer(socket.id, position)
-      RoomPlayer.list[roomID][socket.id] = player
+      RoomPlayer.list[room][socket.id] = player
 
-      let players = []
+      var players = []
 
-      for (let i in RoomPlayer.list[roomID]) {
-        players.push(RoomPlayer.list[roomID][i])
+      for (var i in RoomPlayer.list[room]) {
+        players.push(RoomPlayer.list[room][i])
       }
 
       socket.emit(Constants.common.actions.player.ALL_PLAYERS, players)
 
-      socket.broadcast.to(roomID).emit(Constants.common.actions.player.NEW_PLAYER, player)
+      socket.broadcast.to(room).emit(Constants.common.actions.player.NEW_PLAYER, player)
     })
 
     socket.on(Constants.common.actions.player.CHAT, (message) => {
