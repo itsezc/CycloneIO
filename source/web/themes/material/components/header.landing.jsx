@@ -1,6 +1,4 @@
-import React, { Component } from 'react'
-
-class HeaderLanding extends Component {
+class HeaderLanding extends React.Component {
 	render() {
 		return (
 			<div>

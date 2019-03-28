@@ -20,3 +20,7 @@ Client:
 ✅ Add room
 [] Fix player body
 [] Better camera centering
+
+Web:
+
+[] Fix page routes

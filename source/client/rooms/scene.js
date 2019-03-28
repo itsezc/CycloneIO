@@ -1,6 +1,3 @@
-import Phaser from 'phaser'
-import SocketIO from 'socket.io-client'
-
 import Constants from '../../network/constants.json'
 import Config from '../../../config.json'
 
@@ -31,7 +28,7 @@ class RoomScene extends Phaser.Scene {
   }
 
   init() {
-    this.socket = SocketIO(`${Config.server.host}:${Config.server.port}`)
+    this.socket = io(`${Config.server.host}:${Config.server.port}`)
     this.camera = this.cameras.main
     this.room = new Room(this, this.socket, 0)
     this.player = new RoomPlayer(this, this.socket, 0, {
@@ -40,7 +37,7 @@ class RoomScene extends Phaser.Scene {
       direction: Constants.common.directions.DOWN
     })
 
-    // [] better camera centering
+    // TODO: better camera centering
     this.camera.centerOn(this.camera.centerX / 4, this.camera.centerY / 4)
 
     this.input.on('pointermove', pointer => {

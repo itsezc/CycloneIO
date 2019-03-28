@@ -11,7 +11,7 @@ class RoomPlayer extends RoomEntity {
       socket.join(id)
       socket.room = id
 
-    	room = new Room(id, map, { x: 0, y: 0 })
+    	room = new Room(map, { x: 0, y: 0 }, id)
     	Room.list[id] = room
 
     	socketIO.to(id).emit(Constants.common.actions.room.NEW_ROOM, room, room.rows, room.columns)

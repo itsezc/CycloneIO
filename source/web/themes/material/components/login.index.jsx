@@ -1,6 +1,4 @@
-import React, { Component } from 'react'
-
-class Login extends Component {
+class Login extends React.Component {
 	render() {
 		return (
 			<div className='card'>

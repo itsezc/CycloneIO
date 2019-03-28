@@ -1,7 +1,7 @@
-import RoomMap from './map'
+import RoomModel from './model'
 
-class Room extends RoomMap {
-  constructor(id, map, door) {
+class Room extends RoomModel {
+  constructor(map, door, id) {
     super(map, door.X, door.Y)
     this.id = id
   }

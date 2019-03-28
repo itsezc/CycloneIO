@@ -11,9 +11,7 @@ import Routes from './http/routes'
 import RoomPlayer from '../core/rooms/player'
 
 class Server {
-
   constructor() {
-
     this.players = 0
 
     this.HTTP = new Hapi.Server({
@@ -60,7 +58,4 @@ class Server {
   }
 }
 
-export {
-  Server as
-  default
-}
+export default Server
