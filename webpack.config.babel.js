@@ -4,6 +4,7 @@ import Webpack from 'webpack'
 import Path from 'path'
 
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import BrowserSyncPlugin from 'browser-sync-webpack-plugin'
 
 module.exports = (env, argv) => {
   return {
@@ -12,11 +13,15 @@ module.exports = (env, argv) => {
     context: Path.resolve(__dirname, 'source'),
 
     plugins: [
+
       new HtmlWebpackPlugin({
         filename: 'structure.html',
         template: `./web/themes/${Config.hotel.theme}/structure.page`,
         inject: false
       }),
+      new BrowserSyncPlugin({
+        proxy: 'http://localhost:8081'
+      })
     ],
 
     entry: {

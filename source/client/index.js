@@ -1,6 +1,6 @@
 import RoomScene from './rooms/scene.js'
 
-console.log('Hello')
+console.log('dsddo')
 
 const config = {
 	type: Phaser.CANVAS,
