@@ -9,6 +9,7 @@ class App extends React.Component {
   render() {
         return (
           <ReactRouterDOM.BrowserRouter>
+            <ReactRouterDOM.Route exact path='/' component={Home} />
           		<ReactRouterDOM.Route exact path='/client' component={Client} />
           </ReactRouterDOM.BrowserRouter>
         			// <ReactRouterDOM.Router>

@@ -4,7 +4,8 @@ import Webpack from 'webpack'
 import Path from 'path'
 
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import BrowserSyncPlugin from 'browser-sync-webpack-plugin'
+
+//console.log(__dirname)
 
 module.exports = (env, argv) => {
   return {
@@ -13,14 +14,10 @@ module.exports = (env, argv) => {
     context: Path.resolve(__dirname, 'source'),
 
     plugins: [
-
       new HtmlWebpackPlugin({
-        filename: 'structure.html',
+        filename: 'index.html',
         template: `./web/themes/${Config.hotel.theme}/structure.page`,
         inject: false
-      }),
-      new BrowserSyncPlugin({
-        proxy: 'http://localhost:8081'
       })
     ],
 
@@ -30,6 +27,7 @@ module.exports = (env, argv) => {
     },
 
     devServer: {
+      compress: true,
       historyApiFallback: true
     },
 
@@ -37,6 +35,7 @@ module.exports = (env, argv) => {
       path: Path.join(__dirname, './web-build/dist'),
       filename: '[name].min.js'
     },
+
     devtool: 'source-map',
     module: {
       rules: [{

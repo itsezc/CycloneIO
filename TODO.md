@@ -14,7 +14,7 @@ source/** => dist/** (exclude /source/client and /source/web) & executed with re
 
 [] Fix Folder Namespaces
 [] Fix Index/Main file
-[] Fix live reloading
+✅ Fix live reloading
 
 Client:
 
