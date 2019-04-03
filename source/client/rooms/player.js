@@ -48,9 +48,9 @@ class RoomPlayer {
     }
 
     addPlayer(id, x, y, direction) {
-        this.players[id] = this.scene.add.sprite(x, y, Constants.client.assets.HH_HUMAN_BODY)
-        // this.players[id].anims.play(direction)
-        // this.players[id].anims.stop()
+        this.players[id] = this.scene.physics.add.sprite(x, y, Constants.client.assets.HH_HUMAN_BODY)
+        this.players[id].anims.play(direction)
+        //this.players[id].anims.stop()
     }
 
     left() {

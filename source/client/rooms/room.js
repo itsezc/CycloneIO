@@ -29,7 +29,7 @@ class Room {
         var x = (i * 32) - (j * 32)
         var y = ((i * 32) + (j * 32)) / 2
 
-        this.rooms[id] = this.scene.add.image(x, y, Constants.client.assets.TILE).setOrigin(0)
+        this.rooms[id] = this.scene.add.image(x, y, Constants.client.assets.TILE)
       }
     }
   }
