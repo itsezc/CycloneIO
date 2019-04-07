@@ -31,7 +31,6 @@ class User {
 			volume: Joi.number().min(0).max(15).default(10),
 
 			muted: Joi.boolean().default(false),
-
 		}, {
 			indexes: [
 				{
@@ -40,6 +39,7 @@ class User {
 				}
 			]
 		})
+
 
 		return Orango.model('User', this.schema)
 	}

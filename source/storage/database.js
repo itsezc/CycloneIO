@@ -13,8 +13,21 @@ import Faker from 'faker'
 class Database {
 	constructor() {
 		this.connection = Orango.get(Config.database.name)
+		this.collections = [
+			'bans',
+			'bots',
+			'commands',
+			'furniture',
+			'groups',
+			'news',
+			'quests',
+			'ranks',
+			'rooms',
+			'users'
+		]
 
 		Logger.info('[🥑] Connecting to Database...')
+
 		this.init()
 
 		this.connection.events.once(EVENTS.CONNECTED, connection => {
@@ -24,31 +37,40 @@ class Database {
 		this.connection.events.once(EVENTS.READY, () => {
 			Logger.info('[🥑] Database is ready for connections')
 		})
+
+		return this.connection
 	}
 
 	async init() {
 		try {
-			new Users(this.connection)
-			// Users.insert({
-			// 	email: 'chirub@foretag.co',
-			// 	username: 'EZ-C',
-			// 	password: 'password',
-			// 	pin: '123456'
-			// })
+
+			let User = new Users(this.connection)
+			User.insert({
+				email: 'chirub@foretag.co',
+				username: 'EZ-C',
+				password: 'password',
+				pin: '123456'
+			})
 			await this.connection.connect({
 				url: Config.database.host,
 				username: Config.database.user,
 				password: Config.database.pass
 			})
+			this.healthCheck()
 		} catch (error) {
 			Logger.error(error)
 		}
 	}
 
-	clean() {
+	async healthCheck() {
+		this.connection.checkConnected()
 
+		await this.collections.forEach((collection) => {
+			this.connection.createCollection(collection)
+		})
+
+		await this.connection.createEdgeCollection('friendships')
 	}
-
 }
 
 export default Database
