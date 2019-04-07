@@ -7,7 +7,6 @@ const { EVENTS } = Orango.consts
 
 class Database {
 	constructor() {
-
 		this.connection = Orango.get(Config.database.name)
 
 		Logger.info('Connecting to DB...')
@@ -23,7 +22,6 @@ class Database {
 	}
 
 	async init() {
-
 		try {
 			await this.connection.connect({
 				url: Config.database.host,
@@ -34,8 +32,6 @@ class Database {
 			Logger.error(error)
 		}
 	}
-
-
 }
 
 export default Database
