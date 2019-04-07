@@ -1,3 +1,4 @@
+import Chalk from 'chalk'
 import Logger from '../utils/logger'
 
 import Constants from './constants.json'
@@ -37,7 +38,7 @@ class Server {
 	      process.exit(1)
 	    }
 
-	    Logger.info(`Server running on port ${Server.HTTP.info.port}.`)
+	    Logger.info(`[⚙️ ] HTTP(S) and Websockets started on port ${Chalk.green.bold(Server.HTTP.info.port)}`)
 	  }
 
 	  shutdown() {
