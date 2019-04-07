@@ -25,13 +25,13 @@ class Cyclone {
 
   async init() {
     try {
-      Server.start()
+      this.server = new Server()
 
-      ReadLineSync.promptLoop((command) => {
-        console.log('-- You said "' + command + '"');
-      }, {
-				limit: '1-6'
-			})
+      // ReadLineSync.promptLoop((command) => {
+      //   console.log('-- You said "' + command + '"');
+      // }, {
+			// 	limit: '1-6'
+			// })
       //
       // rl.on('line', (line) => {
       //
