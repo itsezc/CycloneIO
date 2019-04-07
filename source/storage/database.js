@@ -12,7 +12,6 @@ import Faker from 'faker'
 
 class Database {
 	constructor() {
-
 		this.connection = Orango.get(Config.database.name)
 
 		Logger.info('[🥑] Connecting to Database...')
@@ -28,7 +27,6 @@ class Database {
 	}
 
 	async init() {
-
 		try {
 			new Users(this.connection)
 			// Users.insert({
