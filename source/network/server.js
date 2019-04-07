@@ -11,40 +11,44 @@ import Routes from './http/routes'
 import RoomPlayer from '../core/rooms/player'
 
 class Server {
-  static async start() {
-    // Server.SocketIO.on(Constants.common.server.CONNECTION, (socket) => {
-    //   RoomPlayer.onConnect(Server.SocketIO, socket)
-    //   Logger.info(`Player ${socket.id} connected.`)
-    //   RoomPlayer.list[socket.room]++
-    //
-    //   socket.on(Constants.common.actions.player.DISCONNECT, () => {
-    //     RoomPlayer.onDisconnect(Server.SocketIO, socket)
-    //     Logger.info(`Player ${socket.id} disconnected.`)
-    //     RoomPlayer.list[socket.room]--
-    //   })
-    // })
+	constructor() {
+		this.start()
+	}
 
-    try {
-      await Server.HTTP.register(Inert)
-      await Server.HTTP.route(Routes)
-      await Server.HTTP.start()
-    } catch (error) {
-      Logger.error(error)
-      process.exit(1)
-    }
+	async start() {
+	    // Server.SocketIO.on(Constants.common.server.CONNECTION, (socket) => {
+	    //   RoomPlayer.onConnect(Server.SocketIO, socket)
+	    //   Logger.info(`Player ${socket.id} connected.`)
+	    //   RoomPlayer.list[socket.room]++
+	    //
+	    //   socket.on(Constants.common.actions.player.DISCONNECT, () => {
+	    //     RoomPlayer.onDisconnect(Server.SocketIO, socket)
+	    //     Logger.info(`Player ${socket.id} disconnected.`)
+	    //     RoomPlayer.list[socket.room]--
+	    //   })
+	    // })
 
-    Logger.info(`Server running on port ${Server.HTTP.info.port}.`)
-  }
+	    try {
+	      await Server.HTTP.register(Inert)
+	      await Server.HTTP.route(Routes)
+	      await Server.HTTP.start()
+	    } catch (error) {
+	      Logger.error(error)
+	      process.exit(1)
+	    }
 
-  static shutdown() {
-    Server.SocketIO.emit(Constants.common.server.SHUTDOWN)
+	    Logger.info(`Server running on port ${Server.HTTP.info.port}.`)
+	  }
 
-    Server.HTTP.stop({
-      timeout: 100000
-    }).then((error) => {
-      Logger.info('Server gracefully stopped.')
-    })
-  }
+	  shutdown() {
+	    Server.SocketIO.emit(Constants.common.server.SHUTDOWN)
+
+	    Server.HTTP.stop({
+	      timeout: 100000
+	    }).then((error) => {
+	      Logger.info('Server gracefully stopped.')
+	    })
+	  }
 }
 
 Server.HTTP = new Hapi.Server({

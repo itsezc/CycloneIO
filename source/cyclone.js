@@ -1,6 +1,8 @@
 import Chalk from 'chalk'
 import ReadLineSync from 'readline-sync'
 
+import Database from './storage/database'
+
 import Logger from './utils/logger'
 import Server from './network/server'
 
@@ -20,18 +22,19 @@ class Cyclone {
     console.log(`Version: ${Chalk.magenta.bold('1.0.0')} | License key : ${Chalk.magenta.bold(Config.license)}`)
     console.log(`Created by ${Chalk.red.bold('EZ-C 💖 Amor')}, ${Chalk.blue.bold('Sapphire')} and ${Chalk.green.bold('Rebel')} of ${Chalk.yellow.bold('Habbay')}\n`)
 
+	this.db = new Database()
     this.init()
   }
 
   async init() {
     try {
-      Server.start()
+      this.server = new Server()
 
-      ReadLineSync.promptLoop((command) => {
-        console.log('-- You said "' + command + '"');
-      }, {
-				limit: '1-6'
-			})
+      // ReadLineSync.promptLoop((command) => {
+      //   console.log('-- You said "' + command + '"')
+      // }, {
+		// limit: '1-6'
+	  // })
       //
       // rl.on('line', (line) => {
       //
