@@ -1,11 +1,12 @@
 import RoomEntity from './entity'
 import Constants from '../../network/constants.json'
 import Room from './room'
+import Logger from '../../utils/logger'
 
 class RoomPlayer extends RoomEntity {
   static onConnect(socketIO, socket) {
-    let room
-    let player
+    var room
+    var player
 
     socket.on(Constants.common.actions.room.NEW_ROOM, (id, map) => {
       socket.join(id)
@@ -48,6 +49,8 @@ class RoomPlayer extends RoomEntity {
       player.updatePosition(position)
       socket.broadcast.to(socket.room).emit(Constants.common.actions.player.STOP, player)
     })
+
+    Logger.info(`Player ${socket.id} connected.`)
   }
 
   static onDisconnect(socketIO, socket) {
@@ -56,6 +59,8 @@ class RoomPlayer extends RoomEntity {
     }
 
     socketIO.to(socket.room).emit(Constants.common.actions.player.REMOVE, socket.id)
+
+    Logger.info(`Player ${socket.id} disconnected.`)
   }
 
   constructor(id, position) {
