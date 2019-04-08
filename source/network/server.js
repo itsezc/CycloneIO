@@ -1,3 +1,4 @@
+import Chalk from 'chalk'
 import Logger from '../utils/logger'
 
 import Constants from './constants.json'

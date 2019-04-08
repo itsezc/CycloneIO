@@ -20,15 +20,15 @@ class Cyclone {
     console.log(Chalk.bold.blue('        \\/\\/         \\/                 \\/     \\/ \n\n'))
 
     console.log(`Version: ${Chalk.magenta.bold('1.0.0')} | License key : ${Chalk.magenta.bold(Config.license)}`)
-    console.log(`Created by ${Chalk.red.bold('EZ-C 💖 Amor')}, ${Chalk.blue.bold('Sapphire')} and ${Chalk.green.bold('Rebel')} of ${Chalk.yellow.bold('Habbay')}\n`)
+    console.log(`Created by ${Chalk.red.bold('EZ-C 💖 Amor')} and ${Chalk.blue.bold('Sapphire')} of ${Chalk.yellow.bold('Habbay')}\n`)
 
-    this.db = new Database()
     this.init()
   }
 
   async init() {
     try {
-      const server = new Server()
+      this.database = await new Database()
+      this.server = await new Server()
 
       // ReadLineSync.promptLoop((command) => {
       //   console.log('-- You said "' + command + '"');
