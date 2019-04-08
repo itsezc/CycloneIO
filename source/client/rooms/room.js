@@ -31,8 +31,6 @@ class Room {
         var y = ((i * 32) + (j * 32)) / 2
 
         this.drawTile(x, y)
-
-        this.rooms[id] = this.scene.add.image(x, y, 'tile').setOrigin(-2)
       }
     }
   }
@@ -44,7 +42,7 @@ class Room {
 
     var tile = this.scene.add.graphics()
 
-    tile.lineStyle(0.5, 0x8E8E5E)
+    tile.lineStyle(1, 0x8E8E5E)
     tile.fillStyle(0x989865)
 
     tile.beginPath()
@@ -54,36 +52,36 @@ class Room {
     tile.lineTo(x, y + height)
     tile.lineTo(x + width / 2, y + height / 2)
     tile.lineTo(x, y)
-
+	tile.closePath()
     tile.strokePath()
     tile.fillPath()
 
     if (thick > 0) {
-      tile.lineStyle(0.5, 0x7A7A51)
+      tile.lineStyle(1, 0x7A7A51)
       tile.fillStyle(0x838357)
 
       tile.beginPath()
 
-      tile.moveTo((x - width / 2) - 0.5, y + height / 2)
-      tile.lineTo((x - width / 2) - 0.5, y + height / 2 + thick)
-      tile.lineTo(x - 0.5, y + height + thick)
-      tile.lineTo(x - 0.5, y + height)
-
+      tile.moveTo((x - width / 2), y + height / 2)
+      tile.lineTo((x - width / 2), y + height / 2 + thick)
+      tile.lineTo(x, y + height + thick)
+      tile.lineTo(x, y + height)
+	  tile.closePath()
       tile.strokePath()
       tile.fillPath()
 
-      tile.fillStyle(0x6F6F49)
-      tile.lineStyle(0.5, 0x676744)
-
-      tile.beginPath()
-
-      tile.moveTo((x + width / 2) + 0.5, y + height / 2)
-      tile.lineTo((x + width / 2) + 0.5, y + height / 2 + thick)
-      tile.lineTo(x + 0.5, y + height + thick)
-      tile.lineTo(x + 0.5, y + height)
-
-      tile.fillPath()
-      tile.strokePath()
+      // tile.fillStyle(0x6F6F49)
+      // tile.lineStyle(1, 0x676744)
+	  //
+      // tile.beginPath()
+	  //
+      // tile.moveTo((x + width / 2) + 0.5, y + height / 2)
+      // tile.lineTo((x + width / 2) + 0.5, y + height / 2 + thick)
+      // tile.lineTo(x + 0.5, y + height + thick)
+      // tile.lineTo(x + 0.5, y + height)
+	  //
+      // tile.fillPath()
+      // tile.strokePath()
     }
   }
 }

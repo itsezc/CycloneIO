@@ -13,7 +13,7 @@ class RoomScene extends Phaser.Scene {
 
   preload() {
     this.load.path = 'web-build/'
-    this.load.image(Constants.client.assets.TILE, 'room/tile.png')
+
     this.load.atlas(Constants.client.assets.HH_HUMAN_BODY, 'sprites/hh_human_body.png', 'sprites/hh_human_body.json')
 
     // this.load.image('hover_tile', 'assets/hover_tile.png')
