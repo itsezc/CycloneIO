@@ -28,7 +28,7 @@ class Cyclone {
 
   async init() {
     try {
-      this.server = new Server()
+      const server = new Server()
 
       // ReadLineSync.promptLoop((command) => {
       //   console.log('-- You said "' + command + '"');

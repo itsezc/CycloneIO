@@ -10,6 +10,7 @@ class Database {
 		this.connection = Orango.get(Config.database.name)
 
 		Logger.info('Connecting to DB...')
+		
 		this.init()
 
 		this.connection.events.once(EVENTS.CONNECTED, connection => {
