@@ -40,7 +40,6 @@ class User {
 			]
 		})
 
-
 		return Orango.model('User', this.schema)
 	}
 }

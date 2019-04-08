@@ -1,6 +1,7 @@
 import RoomEntity from './entity'
 import Constants from '../../network/constants.json'
 import Room from './room'
+import Environment from '../../environment'
 import Logger from '../../utils/logger'
 
 class RoomPlayer extends RoomEntity {
@@ -13,7 +14,10 @@ class RoomPlayer extends RoomEntity {
       socket.room = id
 
     	room = new Room(map, { x: 0, y: 0 }, id)
-    	Room.list[id] = room
+
+      //console.log(Environment.game)
+    	// Environment.Game.RoomManager.add(room)
+      // console.log(Environment.Game.RoomManager.count)
 
     	socketIO.to(id).emit(Constants.common.actions.room.NEW_ROOM, room, room.rows, room.columns)
     })

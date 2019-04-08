@@ -5,10 +5,15 @@ import Database from './storage/database'
 
 import Logger from './utils/logger'
 import Server from './network/server'
+import Game from './core/game'
 
 import Config from '../config.json'
 
-class Cyclone {
+class Environment {
+  static test(){
+    console.log('hi')
+  }
+
   constructor() {
     console.clear()
 
@@ -27,43 +32,22 @@ class Cyclone {
 
   async init() {
     try {
-      this.database = await new Database()
       this.server = await new Server()
+      this.database = await new Database()
+      this.game = await new Game()
 
       // ReadLineSync.promptLoop((command) => {
       //   console.log('-- You said "' + command + '"');
       // }, {
       // 	limit: '1-6'
       // })
-      //
-      // rl.on('line', (line) => {
-      //
-      //   if (line.startsWith('/')) {
-      //     switch (line) {
-      //       // case '/stats':
-      //       //   this.getPlayers = this.Server.players
-      //       //   Logger.info('There are currently ' + this.getPlayers + ' players')
-      //       //   break
-      //
-      //       case '/clear':
-      //         console.clear()
-      //         break
-      //
-      //       case '/shutdown':
-      //         Server.shutdown()
-      //         break
-      //
-      //       default:
-      //         console.log('sjsjs')
-      //         Logger.error(`${line} is an unnamed command.`)
-      //         break;
-      //     }
-      //   }
-      // })
+
     } catch (error) {
       Logger.error(error)
     }
   }
 }
 
-let App = new Cyclone()
+export default Environment
+
+let environment = new Environment()

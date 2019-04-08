@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run server:build && npm run build:resources && cp source/network/constants.json dist/network/",
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",
-    "build:dev": "babel-watch --watch source source/cyclone.js --exclude 'source/web' --exclude 'source/client'",
+    "build:dev": "babel-watch --watch source source/environment.js --exclude 'source/web' --exclude 'source/client'",
     "build:resources": "webpack --mode=production",
     "build:resources:dev": "webpack-dev-server"
   },

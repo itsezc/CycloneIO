@@ -1,4 +1,4 @@
 require('module-alias/register')
 
-var Cyclone = require('@/cyclone').default
-var App = new Cyclone()
+var Environment = require('@/environment').default
+var App = new Environment()

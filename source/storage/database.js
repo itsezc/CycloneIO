@@ -43,7 +43,6 @@ class Database {
 
 	async init() {
 		try {
-
 			let User = new Users(this.connection)
 			User.insert({
 				email: 'chirub@foretag.co',
@@ -51,11 +50,13 @@ class Database {
 				password: 'password',
 				pin: '123456'
 			})
+
 			await this.connection.connect({
 				url: Config.database.host,
 				username: Config.database.user,
 				password: Config.database.pass
 			})
+
 			this.healthCheck()
 		} catch (error) {
 			Logger.error(error)
