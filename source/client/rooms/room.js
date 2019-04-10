@@ -1,5 +1,6 @@
 import Constants from '../../network/constants.json'
 
+// Messy class
 class Room {
   constructor(scene, socket, id) {
     this.scene = scene
@@ -24,8 +25,8 @@ class Room {
   }
 
   addRoom(id, rows, columns) {
-    console.log('Rows : ', rows)
-    console.log('Cols : ', columns)
+    // console.log('Rows : ', rows)
+    // console.log('Cols : ', columns)
     for (var i = 0; i < rows; i++) {
       for (var j = 0; j < columns; j++) {
         var x = (i * 32) - (j * 32)
@@ -34,6 +35,7 @@ class Room {
 
 
         /* rows.forEach(function(element) {
+          TODO: do this process on server (?)
           //console.log(element)
           element.find(function(instance, index) {
             if(instance < 1) { //Check if its a tile
@@ -56,6 +58,7 @@ class Room {
   }
 
   drawTile(x, y, border = false) {
+    // TODO: rewrite this
     const width = 64
     const height = 32
     const thick = 7.5 // default is 7.5

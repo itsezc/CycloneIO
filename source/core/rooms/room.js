@@ -7,6 +7,4 @@ class Room extends RoomModel {
   }
 }
 
-Room.list = {}
-
 export default Room

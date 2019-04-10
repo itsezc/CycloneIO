@@ -5,15 +5,10 @@ import Database from './storage/database'
 
 import Logger from './utils/logger'
 import Server from './network/server'
-import Game from './core/game'
 
 import Config from '../config.json'
 
 class Environment {
-  static test(){
-    console.log('hi')
-  }
-
   constructor() {
     console.clear()
 
@@ -34,7 +29,6 @@ class Environment {
     try {
       this.server = await new Server()
       this.database = await new Database()
-      this.game = await new Game()
 
       // ReadLineSync.promptLoop((command) => {
       //   console.log('-- You said "' + command + '"');
@@ -47,7 +41,5 @@ class Environment {
     }
   }
 }
-
-export default Environment
 
 let environment = new Environment()

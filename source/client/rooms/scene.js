@@ -16,6 +16,8 @@ class RoomScene extends Phaser.Scene {
 
     this.load.atlas(Constants.client.assets.HH_HUMAN_BODY, 'sprites/hh_human_body.png', 'sprites/hh_human_body.json')
 
+    // This is very messy as well
+
     // this.load.image('hover_tile', 'assets/hover_tile.png')
     // this.load.image('wall_right', 'assets/wall_right.png');
     // this.load.image('wall_left', 'assets/wall_left.png');
