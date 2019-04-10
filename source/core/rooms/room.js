@@ -1,10 +1,9 @@
 import RoomModel from './model'
 
-class Room extends RoomModel {
-  constructor(map, door, id) {
-    super(map, door.X, door.Y)
+export default class Room {
+  constructor(id, map) {
     this.id = id
+    this.map = map
+    this.model = new RoomModel(this.map)
   }
 }
-
-export default Room

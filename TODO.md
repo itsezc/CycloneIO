@@ -16,6 +16,9 @@ source/** => dist/** (exclude /source/client and /source/web) & executed with re
 [] Fix Index/Main file
 ✅ Fix live reloading
 
+Server:
+[] Room Manager handling (?)
+
 Client:
 
 ✅ Add room

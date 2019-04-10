@@ -11,12 +11,12 @@ import Routes from './http/routes'
 
 import RoomPlayer from '../core/rooms/player'
 
-class Server {
+export default class Server {
   constructor() {
     this.HTTP = new Hapi.Server({
       port: 8081
     })
-    this.SocketIO = new SocketIO(this.HTTP.listener)
+    this.socketIO = new SocketIO(this.HTTP.listener)
 
     this.start()
   }
@@ -33,17 +33,17 @@ class Server {
 
     Logger.info(`Server running on port ${this.HTTP.info.port}.`)
 
-    this.SocketIO.on(Constants.common.server.CONNECTION, (socket) => {
-      RoomPlayer.onConnect(this.SocketIO, socket)
+    this.socketIO.on(Constants.common.server.CONNECTION, (socket) => {
+      RoomPlayer.onConnect(this.socketIO, socket)
 
       socket.on(Constants.common.actions.player.DISCONNECT, () => {
-        RoomPlayer.onDisconnect(this.SocketIO, socket)
+        RoomPlayer.onDisconnect(this.socketIO, socket)
       })
     })
   }
 
   shutdown() {
-    this.SocketIO.emit(Constants.common.this.SHUTDOWN)
+    this.socketIO.emit(Constants.common.this.SHUTDOWN)
 
     this.HTTP.stop({
       timeout: 100000
@@ -55,5 +55,3 @@ class Server {
     process.exit(0)
   }
 }
-
-export default Server

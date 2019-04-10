@@ -10,7 +10,7 @@ const { EVENTS, SCHEMA } = Orango.consts
 import Joi from 'joi'
 import Faker from 'faker'
 
-class Database {
+export default class Database {
 	constructor() {
 		this.connection = Orango.get(Config.database.name)
 		this.collections = [
@@ -73,5 +73,3 @@ class Database {
 		await this.connection.createEdgeCollection('friendships')
 	}
 }
-
-export default Database

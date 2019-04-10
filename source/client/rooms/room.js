@@ -1,7 +1,6 @@
 import Constants from '../../network/constants.json'
 
-// Messy class
-class Room {
+export default class Room {
   constructor(scene, socket, id) {
     this.scene = scene
     this.socket = socket
@@ -10,9 +9,9 @@ class Room {
 
   create() {
     this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
-      [0, 0, 0, 0],
-      [0, 0, 1, 0],
-      [0, 0, 0, 0]
+      [0, 0, 0],
+      [0, 0, 1],
+      [0, 0, 0]
     ], {
       x: 0,
       y: 0
@@ -109,5 +108,3 @@ class Room {
     }
   }
 }
-
-export default Room

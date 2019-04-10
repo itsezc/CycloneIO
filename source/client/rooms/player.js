@@ -1,7 +1,7 @@
 import Constants from '../../network/constants.json'
 import Config from '../../../config.json'
 
-class RoomPlayer {
+export default class RoomPlayer {
     constructor(scene, socket, room, position) {
         this.scene = scene
         this.socket = socket
@@ -88,5 +88,3 @@ class RoomPlayer {
 
     }
 }
-
-export default RoomPlayer

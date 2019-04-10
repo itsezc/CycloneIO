@@ -5,10 +5,11 @@ import Database from './storage/database'
 
 import Logger from './utils/logger'
 import Server from './network/server'
+import RoomManager from './core/rooms/manager'
 
 import Config from '../config.json'
 
-class Environment {
+export default class Environment {
   constructor() {
     console.clear()
 
@@ -29,6 +30,7 @@ class Environment {
     try {
       this.server = await new Server()
       this.database = await new Database()
+      this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 
       // ReadLineSync.promptLoop((command) => {
       //   console.log('-- You said "' + command + '"');
@@ -42,4 +44,4 @@ class Environment {
   }
 }
 
-let environment = new Environment()
+Environment.instance = new Environment()

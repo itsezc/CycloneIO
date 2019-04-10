@@ -4,7 +4,7 @@ import Config from '../../../config.json'
 import Room from './room'
 import RoomPlayer from './player'
 
-class RoomScene extends Phaser.Scene {
+export default class RoomScene extends Phaser.Scene {
   constructor() {
     super({
       key: Constants.client.scenes.ROOM
@@ -64,5 +64,3 @@ class RoomScene extends Phaser.Scene {
     // })
   }
 }
-
-export default RoomScene

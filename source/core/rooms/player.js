@@ -1,13 +1,13 @@
 import RoomEntity from './entity'
-import RoomManager from './manager'
 import Room from './room'
+
+import Environment from '../../environment'
 
 import Constants from '../../network/constants.json'
 import Logger from '../../utils/logger'
 
-class RoomPlayer extends RoomEntity {
+export default class RoomPlayer extends RoomEntity {
   static onConnect(socketIO, socket) {
-    var roomManager
     var room
     var player
 
@@ -15,15 +15,12 @@ class RoomPlayer extends RoomEntity {
       socket.join(id)
       socket.room = id
 
-      roomManager = new RoomManager()
-      room = new Room(map, {
-        x: 0,
-        y: 0
-      }, id)
+      room = new Room(id, map)
+      console.log(room.model.mapSizeY)
 
-      roomManager.add(room)
+      Environment.instance.roomManager.add(room)
 
-      socketIO.to(id).emit(Constants.common.actions.room.NEW_ROOM, room, room.map)
+      socketIO.to(id).emit(Constants.common.actions.room.NEW_ROOM, room, room.model)
     })
 
     socket.on(Constants.common.actions.player.NEW_PLAYER, (room, position) => {
@@ -89,5 +86,3 @@ class RoomPlayer extends RoomEntity {
 
 RoomPlayer.list = {}
 RoomPlayer.list[0] = {}
-
-export default RoomPlayer

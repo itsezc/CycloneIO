@@ -3,7 +3,7 @@ import Orango from 'orango'
 const { SCHEMA } = Orango.consts
 import Joi from 'joi'
 
-class User {
+export default class User {
 	constructor(Database) {
 		this.schema = new Database.Schema({
 			email: Joi.string().email({ minDomainAtoms: 2 }).required(),
@@ -43,8 +43,6 @@ class User {
 		return Orango.model('User', this.schema)
 	}
 }
-
-export default User
 
 // const defaultAvatar = Config.hotel.registration.avatar || avatar
 
