@@ -37,8 +37,8 @@ export default class Room {
     tile.lineTo(x + width / 2, y + height / 2)
     tile.lineTo(x, y)
 
-    tile.strokePath()
     tile.fillPath()
+    tile.strokePath()
 
     if (leftBorder && thickness > 0) {
       tile.lineStyle(1, 0x7A7A51)
