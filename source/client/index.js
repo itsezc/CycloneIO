@@ -17,3 +17,6 @@ const config = {
 }
 
 const game = new Phaser.Game(config)
+
+//FPS
+console.log('FPS', game.loop.actualFps)

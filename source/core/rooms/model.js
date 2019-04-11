@@ -1,6 +1,7 @@
 export default class RoomModel {
-  constructor(map) {
+  constructor(map, options) {
     this.map = map
+	this.options = options
   }
 
   // create() {
@@ -22,7 +23,7 @@ export default class RoomModel {
   }
 
   get mapSizeY() {
-    //return this.map.reduce((max, b) => Math.max(max, b));
+    return this.map.reduce((max, b) => Math.max(max, b))
   }
 
   get leftEdge() {

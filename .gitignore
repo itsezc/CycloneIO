@@ -2,13 +2,14 @@ package-lock.json
 
 dist
 
+_temp
+
 web-build
 web-build/dist
 
 #Plans
 
 node_modules
-node_modules/.cache/
 
 .DS_Store
 

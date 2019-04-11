@@ -13,18 +13,6 @@ import Faker from 'faker'
 export default class Database {
 	constructor() {
 		this.connection = Orango.get(Config.database.name)
-		this.collections = [
-			'bans',
-			'bots',
-			'commands',
-			'furniture',
-			'groups',
-			'news',
-			'quests',
-			'ranks',
-			'rooms',
-			'users'
-		]
 
 		Logger.info('[🥑] Connecting to Database...')
 
@@ -65,11 +53,5 @@ export default class Database {
 
 	async healthCheck() {
 		this.connection.checkConnected()
-
-		await this.collections.forEach((collection) => {
-			this.connection.createCollection(collection)
-		})
-
-		await this.connection.createEdgeCollection('friendships')
 	}
 }
