@@ -11,27 +11,7 @@ export default class Room {
 
     create() {
         this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
-            [0, 0, 0, 0],
-            [0, 0, 1, 0],
-            [0, 0, 0, 0]
-        ], {
-            x: 0,
-            y: 0
-        })
-
-        this.socket.on(Constants.common.actions.room.NEW_ROOM, (room, model) => {
-            // console.log(model)
-            console.log(JSON.stringify(room, null, 4))
-            this.addRoom(room.id, 10, 15)
-        })
-    }
-
-    addRoom(id, rows, columns) {
-        // console.log('Rows : ', rows)
-        // console.log('Cols : ', columns)
-
-        var i = [
-        	[1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
+			[1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
         	[1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0],
         	[0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
         	[0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0],
@@ -40,37 +20,22 @@ export default class Room {
         	[0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
         	[0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         	[0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-        ]
-
-        let mapRows = i.length
-        var mapColumns = 0
-        i.forEach((row) => {
-            if (row.length > mapColumns) {
-                mapColumns = row.length
-            }
+        ], {
+            x: 0,
+            y: 0
         })
 
-		console.log(i)
+        this.socket.on(Constants.common.actions.room.NEW_ROOM, (room, model) => {
+            console.log(JSON.stringify(room, null, 4))
+            this.addRoom(room.id, room.map)
+        })
+    }
 
-		i.forEach((row, rowIndex) => {
-		  var nextRow = i[i.indexOf(row) + 1]
-		  row.find((tile, columnIndex) => {
-			if (tile === 1) {
-			  if (nextRow !== undefined) {
-				if (nextRow[columnIndex] === 0) {
-				  console.log('Row ', rowIndex , '[', columnIndex ,'] is bottom')
-				}
-			  } else {
-				return
-			  }
-			}
-		  })
-		})
-
-        i.forEach((row, rowIndex) => {
+    addRoom(id, model) {
+        model.forEach((row, rowIndex) => {
             row.find((tile, columnIndex) => {
                 var leftTile = row[columnIndex - 1]
-				var nextRow = i[i.indexOf(row) + 1]
+				var nextRow = model[model.indexOf(row) + 1]
                 var x = (rowIndex * 32) + (columnIndex * 32)
                 var y = ((rowIndex * 32) - (columnIndex * 32)) / 2
 
@@ -91,7 +56,6 @@ export default class Room {
 						} else {
 							this.drawTile(x, y, true, true)
 						}
-
 					} else { //Last row
 						if (leftTile !== undefined) {
 							if (leftTile === 0) {
