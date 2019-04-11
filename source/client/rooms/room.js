@@ -46,10 +46,10 @@ export default class Room {
 
       tile.beginPath()
 
-      tile.moveTo(x - width / 2, y + height / 2)
-      tile.lineTo(x - width / 2, y + height / 2 + thickness)
-      tile.lineTo(x + 0.5, y + height + thickness)
-      tile.lineTo(x + 0.5, y + height)
+      tile.moveTo((x - width / 2) - 0.5, y + height / 2)
+      tile.lineTo((x - width / 2) - 0.5, y + height / 2 + thickness)
+      tile.lineTo(x - 0.5, y + height + thickness)
+      tile.lineTo(x - 0.5, y + height)
 
       tile.fillPath()
       tile.strokePath()
@@ -61,10 +61,10 @@ export default class Room {
 
       tile.beginPath()
 
-      tile.moveTo(x + width / 2, y + height / 2)
-      tile.lineTo(x + width / 2, y + height / 2 + thickness)
-      tile.lineTo(x - 0.5, y + height + thickness)
-      tile.lineTo(x - 0.5, y + height)
+      tile.moveTo((x + width / 2) + 0.5, y + height / 2)
+      tile.lineTo((x + width / 2) + 0.5, y + height / 2 + thickness)
+      tile.lineTo(x + 0.5, y + height + thickness)
+      tile.lineTo(x + 0.5, y + height)
 
       tile.fillPath()
       tile.strokePath()
