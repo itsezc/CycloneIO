@@ -7,23 +7,16 @@ import Constants from '../../network/constants.json'
 import Logger from '../../utils/logger'
 
 export default class RoomPlayer extends RoomEntity {
-  static onConnect(socketIO, socket) {
-    var room
+  static onConnect(socket) {
     var player
 
     socket.on(Constants.common.actions.room.NEW_ROOM, (id, map) => {
       socket.join(id)
       socket.room = id
 
-      room = new Room(id, map, {
-		  	wall: {
-				thickness: 7.5
-	  		}
-		})
+      const room = new Room(id, map)
 
       Environment.instance.roomManager.add(room)
-
-      socketIO.to(id).emit(Constants.common.actions.room.NEW_ROOM, room, room.model)
     })
 
     socket.on(Constants.common.actions.player.NEW_PLAYER, (room, position) => {
@@ -43,30 +36,30 @@ export default class RoomPlayer extends RoomEntity {
 
       socket.broadcast.to(room).emit(Constants.common.actions.player.NEW_PLAYER, player)
     })
-
-    socket.on(Constants.common.actions.player.CHAT, (message) => {
-      socketIO.to(socket.room).emit(CHAT, socket.id.substring(0, 5), message)
-    })
-
-    socket.on(Constants.common.actions.player.MOVE, (direction, position) => {
-      player.update(direction, position)
-      socketIO.to(socket.room).emit(Constants.common.actions.player.PLAYER_MOVED, player)
-    })
-
-    socket.on(Constants.common.actions.player.STOP, (position) => {
-      player.updatePosition(position)
-      socket.broadcast.to(socket.room).emit(Constants.common.actions.player.STOP, player)
-    })
+    //
+    // socket.on(Constants.common.actions.player.CHAT, (message) => {
+    //   socketIO.to(socket.room).emit(CHAT, socket.id.substring(0, 5), message)
+    // })
+    //
+    // socket.on(Constants.common.actions.player.MOVE, (direction, position) => {
+    //   player.update(direction, position)
+    //   socketIO.to(socket.room).emit(Constants.common.actions.player.PLAYER_MOVED, player)
+    // })
+    //
+    // socket.on(Constants.common.actions.player.STOP, (position) => {
+    //   player.updatePosition(position)
+    //   socket.broadcast.to(socket.room).emit(Constants.common.actions.player.STOP, player)
+    // })
 
     Logger.info(`Player ${socket.id} connected.`)
   }
 
-  static onDisconnect(socketIO, socket) {
+  static onDisconnect(socket) {
     if (RoomPlayer.list[socket.room]) {
       delete RoomPlayer.list[socket.room][socket.id]
     }
 
-    socketIO.to(socket.room).emit(Constants.common.actions.player.REMOVE, socket.id)
+    Environment.instance.server.socketIO.to(socket.room).emit(Constants.common.actions.player.REMOVE, socket.id)
 
     Logger.info(`Player ${socket.id} disconnected.`)
   }

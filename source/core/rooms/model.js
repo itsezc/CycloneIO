@@ -1,71 +1,55 @@
+import Environment from '../../environment'
+import Constants from '../../network/constants.json'
+
 export default class RoomModel {
-  constructor(map, options) {
+  constructor(roomID, map) {
+    this.roomID = roomID
     this.map = map
-	this.options = options
   }
 
-  // create() {
-  //   this.map.forEach((row) => {
-  //     row.forEach((tile, index) => {
-  //       if (this.leftEdge) {
-  //
-  //       } else if (this.bottomEdge) {
-  //
-  //       } else {
-  //         return
-  //       }
-  //     })
-  //   })
-  // }
+  init() {
+    this.map.forEach((row, rowIndex) => {
+      row.forEach((tile, tileIndex) => {
+        var x = (rowIndex * 32) + (tileIndex * 32)
+        var y = ((rowIndex * 32) - (tileIndex * 32)) / 2
 
-  get mapSizeX() {
-    return this.map.length
-  }
-
-  get mapSizeY() {
-    return this.map.reduce((max, b) => Math.max(max, b))
-  }
-
-  get leftEdge() {
-    this.map.forEach((row) => {
-      row.find((tile, index) => {
-        var leftTile = row[index - 1]
-
-        if (tile === this.squareState.OPEN) {
-          if (leftTile !== undefined) {
-            if (leftTile === this.squareState.CLOSE) {
-              return true
-            }
-          } else {
-            return true
-          }
+        if (tile === this.squareType.TILE) {
+          Environment.instance.server.socketIO.to(this.roomID).emit(Constants.common.actions.room.NEW_TILE, 7.5, x, y, this.leftEdge(row, tile, tileIndex), this.bottomEdge(rowIndex, tile, tileIndex))
         }
       })
     })
   }
 
-  get bottomEdge() {
-    this.map.forEach((row) => {
-      var nextRow = this.map[this.map.indexOf(row) + 1]
+  leftEdge(row, tile, tileIndex) {
+    var leftTile = row[tileIndex - 1]
 
-      row.find((tile, index) => {
-        if (tile === 0) {
-          if (nextRow !== undefined) {
-            if (nextRow[index] === this.squareState.CLOSE) {
-              return true
-            }
-          } else {
-            return true
-          }
-        }
-      })
-    })
+    if (leftTile !== this.squareType.TILE) {
+      return true
+    } else {
+      return false
+    }
   }
 
-  get squareState() {
+  bottomEdge(rowIndex, tile, tileIndex) {
+    var bottomRow = this.map[rowIndex + 1]
+
+    if (bottomRow !== undefined) {
+      var bottomTile = this.map[rowIndex + 1][tileIndex]
+
+      if (bottomTile !== this.squareType.TILE) {
+        return true
+      } else {
+        return false
+      }
+    } else {
+      return true
+    }
+  }
+
+  get squareType() {
     return {
-      OPEN: 0,
-      CLOSE: 1
+      BLANK: 0,
+      TILE: 1,
     }
   }
 }

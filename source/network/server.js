@@ -34,10 +34,10 @@ export default class Server {
     Logger.info(`Server running on port ${this.HTTP.info.port}.`)
 
     this.socketIO.on(Constants.common.server.CONNECTION, (socket) => {
-      RoomPlayer.onConnect(this.socketIO, socket)
+      RoomPlayer.onConnect(socket)
 
       socket.on(Constants.common.actions.player.DISCONNECT, () => {
-        RoomPlayer.onDisconnect(this.socketIO, socket)
+        RoomPlayer.onDisconnect(socket)
       })
     })
   }

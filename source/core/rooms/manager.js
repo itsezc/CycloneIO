@@ -5,7 +5,5 @@ export default class RoomManager {
 
   add(room){
     this.rooms.push(room)
-    //console.log(room.model.mapSizeY)
-    //room.model.create()
   }
 }
