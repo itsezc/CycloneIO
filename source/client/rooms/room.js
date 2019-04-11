@@ -11,11 +11,8 @@ export default class Room {
 
   create() {
     this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
-      [1, 1, 1, 0, 1, 0],
-      [1, 0, 1],
-      [0, 1, 0, 1, 0, 1, 0, 0, 0, 1],
-      [0, 0, 1, 0, 1, 0, 0, 0, 1],
-      [0, 1, 0, 0]
+      [1, 1, 1, 1],
+      [1, 1, 1, 1]
     ])
 
     this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, thickness, leftBorder, bottomBorder) => {
@@ -23,14 +20,13 @@ export default class Room {
     })
   }
 
-
   drawTile(x, y, thickness, leftBorder, bottomBorder) {
     const width = 64
     const height = 32
 
     var tile = this.scene.add.graphics()
 
-    tile.lineStyle(1, 0x8E8E5E)
+    tile.lineStyle(0.5, 0x8E8E5E)
     tile.fillStyle(0x989865)
 
     tile.beginPath()
@@ -41,12 +37,11 @@ export default class Room {
     tile.lineTo(x + width / 2, y + height / 2)
     tile.lineTo(x, y)
 
-    tile.closePath()
-    tile.strokePath()
     tile.fillPath()
+    tile.strokePath()
 
     if (leftBorder && thickness > 0) {
-      tile.lineStyle(1, 0x7A7A51)
+      tile.lineStyle(0.5, 0x7A7A51)
       tile.fillStyle(0x838357)
 
       tile.beginPath()
@@ -56,14 +51,14 @@ export default class Room {
       tile.lineTo(x, y + height + thickness)
       tile.lineTo(x, y + height)
 
-      tile.closePath()
-      tile.strokePath()
+
       tile.fillPath()
+      tile.strokePath()
     }
 
     if (bottomBorder && thickness > 0) {
       tile.fillStyle(0x6F6F49)
-      tile.lineStyle(1, 0x676744)
+      tile.lineStyle(0.5, 0x676744)
 
       tile.beginPath()
 
@@ -72,9 +67,8 @@ export default class Room {
       tile.lineTo(x, y + height + thickness)
       tile.lineTo(x, y + height)
 
-      tile.closePath()
-      tile.strokePath()
       tile.fillPath()
+      tile.strokePath()
     }
   }
 }
