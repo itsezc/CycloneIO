@@ -19,7 +19,8 @@ export default class Room {
         	[0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0],
         	[0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0],
         	[0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        	[0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        	[0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+			[1, 1, 0]
         ], {
             x: 0,
             y: 0
@@ -27,7 +28,7 @@ export default class Room {
 
         this.socket.on(Constants.common.actions.room.NEW_ROOM, (room, model) => {
             console.log(JSON.stringify(room, null, 4))
-            this.addRoom(room.id, room.map)
+            this.addRoom(room.id, room.model.map)
         })
     }
 
@@ -43,13 +44,13 @@ export default class Room {
 					if (nextRow !== undefined) { //Not the last row
 						if(leftTile !== undefined) { //Left tile exists
 							if (leftTile === 0) {
-								if (nextRow[columnIndex] === 0) { //If bottom is empty
+								if (nextRow[columnIndex] === 0 || nextRow[columnIndex] === undefined) { //If bottom is empty
 									this.drawTile(x, y, true, true)
 								} else { //Else draw only left border
 									this.drawTile(x, y, true)
 								}
 							} else {
-								if (nextRow[columnIndex] === 0) { //If bottom is empty
+								if (nextRow[columnIndex] === 0 || nextRow[columnIndex] === undefined) { //If bottom is empty
 									this.drawTile(x, y, false, true)
 								}
 							}
@@ -57,12 +58,15 @@ export default class Room {
 							this.drawTile(x, y, true, true)
 						}
 					} else { //Last row
-						if (leftTile !== undefined) {
+						if (leftTile !== undefined) { //If left tile exists
 							if (leftTile === 0) {
 								this.drawTile(x, y, true, true)
+							} else {
+								this.drawTile(x, y, false, true)
 							}
+						} else {
+							this.drawTile(x, y, true, true)
 						}
-						this.drawTile(x, y, false, true)
 					}
 
 					this.drawTile(x, y)
@@ -122,15 +126,3 @@ export default class Room {
         }
     }
 }
-
-// placeHoverTile(tile) {
-//   var hoverTile = this.tiles.create(
-// 	  tile.x,
-// 	  tile.y,
-// 	  'hover_tile'
-//   ).setOrigin(0).setDepth(5)
-//
-//   tile.on('pointerout', () => {
-// 	  hoverTile.destroy()
-//   })
-// }
