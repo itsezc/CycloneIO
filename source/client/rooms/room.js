@@ -26,7 +26,8 @@ export default class Room {
             y: 0
         })
 
-        this.socket.on(Constants.common.actions.room.NEW_ROOM, (room, model) => {
+        this.socket.on(Constants.common.actions.room.NEW_ROOM, (room) => {
+			this.room = room
             console.log(JSON.stringify(room, null, 4))
             this.addRoom(room.id, room.model.map)
         })
@@ -78,7 +79,7 @@ export default class Room {
     drawTile(x, y, borderLeft = false, borderBottom = false) {
         const width = 64
         const height = 32
-        const thick = 7.5 // default is 7.5
+        const thick = this.room.properties.wall.thickness // default is 7.5
 
         var tile = this.scene.add.graphics()
 

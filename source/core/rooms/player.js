@@ -15,8 +15,11 @@ export default class RoomPlayer extends RoomEntity {
       socket.join(id)
       socket.room = id
 
-      room = new Room(id, map)
-      console.log(room.model.mapSizeY)
+      room = new Room(id, map, {
+		  	wall: {
+				thickness: 7.5
+	  		}
+		})
 
       Environment.instance.roomManager.add(room)
 
