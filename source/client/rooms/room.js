@@ -13,16 +13,18 @@ export default class Room {
     this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
       [1, 1, 1, 0, 1, 0],
       [1, 0, 1],
-      [0, 1, 0, 1, 0, 1, 0]
+      [0, 1, 0, 1, 0, 1, 0, 0, 0, 1],
+      [0, 0, 1, 0, 1, 0, 0, 0, 1],
+      [0, 1, 0, 0]
     ])
 
-    this.socket.on(Constants.common.actions.room.NEW_TILE, (thickness, x, y, leftBorder, bottomBorder) => {
-      this.drawTile(thickness, x, y, leftBorder, bottomBorder)
+    this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, thickness, leftBorder, bottomBorder) => {
+      this.drawTile(x, y, thickness, leftBorder, bottomBorder)
     })
   }
 
 
-  drawTile(thickness, x, y, leftBorder, bottomBorder) {
+  drawTile(x, y, thickness, leftBorder, bottomBorder) {
     const width = 64
     const height = 32
 
@@ -39,39 +41,37 @@ export default class Room {
     tile.lineTo(x + width / 2, y + height / 2)
     tile.lineTo(x, y)
 
-    tile.closePath()
     tile.strokePath()
     tile.fillPath()
 
-    if (thickness > 0) {
-      if (leftBorder) {
-        tile.lineStyle(1, 0x7A7A51)
-        tile.fillStyle(0x838357)
+    if (leftBorder && thickness > 0) {
+      tile.lineStyle(1, 0x7A7A51)
+      tile.fillStyle(0x838357)
 
-        tile.beginPath()
+      tile.beginPath()
 
-        tile.moveTo((x - width / 2), y + height / 2)
-        tile.lineTo((x - width / 2), y + height / 2 + thickness)
-        tile.lineTo(x, y + height + thickness)
-        tile.lineTo(x, y + height)
+      tile.moveTo((x - width / 2) - 0.5, y + height / 2)
+      tile.lineTo((x - width / 2) - 0.5, y + height / 2 + thickness)
+      tile.lineTo(x - 0.5, y + height + thickness)
+      tile.lineTo(x - 0.5, y + height)
 
-        tile.closePath()
-        tile.strokePath()
-        tile.fillPath()
-      } if (bottomBorder) {
-        tile.fillStyle(0x6F6F49)
-        tile.lineStyle(1, 0x676744)
+      tile.strokePath()
+      tile.fillPath()
+    }
 
-        tile.beginPath()
+    if (bottomBorder && thickness > 0) {
+      tile.fillStyle(0x6F6F49)
+      tile.lineStyle(1, 0x676744)
 
-        tile.moveTo((x + width / 2) + 0.5, y + height / 2)
-        tile.lineTo((x + width / 2) + 0.5, y + height / 2 + thickness)
-        tile.lineTo(x + 0.5, y + height + thickness)
-        tile.lineTo(x + 0.5, y + height)
+      tile.beginPath()
 
-        tile.fillPath()
-        tile.strokePath()
-      }
+      tile.moveTo((x + width / 2) + 0.5, y + height / 2)
+      tile.lineTo((x + width / 2) + 0.5, y + height / 2 + thickness)
+      tile.lineTo(x + 0.5, y + height + thickness)
+      tile.lineTo(x + 0.5, y + height)
+
+      tile.strokePath()
+      tile.fillPath()
     }
   }
 }

@@ -14,7 +14,7 @@ export default class RoomModel {
         var y = ((rowIndex * 32) - (tileIndex * 32)) / 2
 
         if (tile === this.squareType.TILE) {
-          Environment.instance.server.socketIO.to(this.roomID).emit(Constants.common.actions.room.NEW_TILE, 7.5, x, y, this.leftEdge(row, tile, tileIndex), this.bottomEdge(rowIndex, tile, tileIndex))
+          Environment.instance.server.socketIO.to(this.roomID).emit(Constants.common.actions.room.NEW_TILE, x, y, 7.5, this.leftEdge(row, tile, tileIndex), this.bottomEdge(rowIndex, tile, tileIndex))
         }
       })
     })
