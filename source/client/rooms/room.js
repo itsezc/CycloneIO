@@ -26,7 +26,7 @@ export default class Room {
 
     var tile = this.scene.add.graphics()
 
-    tile.lineStyle(0.5, 0x8E8E5E)
+    tile.lineStyle(1, 0x8E8E5E)
     tile.fillStyle(0x989865)
 
     tile.beginPath()
@@ -39,10 +39,9 @@ export default class Room {
 
     tile.fillPath()
     tile.strokePath()
-    tile.closePath()
 
     if (leftBorder && thickness > 0) {
-      tile.lineStyle(1, 0x7A7A51)
+      tile.lineStyle(0.5, 0x7A7A51)
       tile.fillStyle(0x838357)
 
       tile.beginPath()
@@ -54,12 +53,11 @@ export default class Room {
 
       tile.fillPath()
       tile.strokePath()
-      tile.closePath()
     }
 
     if (bottomBorder && thickness > 0) {
       tile.fillStyle(0x6F6F49)
-      tile.lineStyle(1, 0x676744)
+      tile.lineStyle(0.5, 0x676744)
 
       tile.beginPath()
 
@@ -70,7 +68,6 @@ export default class Room {
 
       tile.fillPath()
       tile.strokePath()
-      tile.closePath()
     }
   }
 }
