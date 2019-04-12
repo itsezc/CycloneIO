@@ -12,46 +12,46 @@ import Routes from './http/routes'
 import RoomPlayer from '../core/rooms/player'
 
 export default class Server {
-  constructor() {
-    this.HTTP = new Hapi.Server({
-      port: 8081
-    })
-    this.socketIO = new SocketIO(this.HTTP.listener)
+	constructor() {
+		this.HTTP = new Hapi.Server({
+			port: 8081
+		})
+		this.socketIO = new SocketIO(this.HTTP.listener)
 
-    this.start()
-  }
+		this.start()
+	}
 
-  async start() {
-    try {
-      await this.HTTP.register(Inert)
-      await this.HTTP.route(Routes)
-      await this.HTTP.start()
-    } catch (error) {
-      Logger.error(error)
-      process.exit(1)
-    }
+	async start() {
+		try {
+			await this.HTTP.register(Inert)
+			await this.HTTP.route(Routes)
+			await this.HTTP.start()
+		} catch (error) {
+			Logger.error(error)
+			process.exit(1)
+		}
 
-    Logger.info(`Server running on port ${this.HTTP.info.port}.`)
+		Logger.info(`Server running on port ${this.HTTP.info.port}.`)
 
-    this.socketIO.on(Constants.common.server.CONNECTION, (socket) => {
-      RoomPlayer.onConnect(socket)
+		this.socketIO.on(Constants.common.server.CONNECTION, (socket) => {
+			RoomPlayer.onConnect(socket)
 
-      socket.on(Constants.common.actions.player.DISCONNECT, () => {
-        RoomPlayer.onDisconnect(socket)
-      })
-    })
-  }
+			socket.on(Constants.common.actions.player.DISCONNECT, () => {
+				RoomPlayer.onDisconnect(socket)
+			})
+		})
+	}
 
-  shutdown() {
-    this.socketIO.emit(Constants.common.this.SHUTDOWN)
+	shutdown() {
+		this.socketIO.emit(Constants.common.this.SHUTDOWN)
 
-    this.HTTP.stop({
-      timeout: 100000
-    }).then((error) => {
-      Logger.error(error)
-    })
+		this.HTTP.stop({
+			timeout: 100000
+		}).then((error) => {
+			Logger.error(error)
+		})
 
-    Logger.info('Server shutted down.')
-    process.exit(0)
-  }
+		Logger.info('Server shutted down.')
+		process.exit(0)
+	}
 }
