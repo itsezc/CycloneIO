@@ -8,7 +8,8 @@
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",
     "build:dev": "babel-watch --watch source source/environment.js --exclude 'source/web' --exclude 'source/client'",
     "build:resources": "webpack --mode=production",
-    "build:resources:dev": "webpack-dev-server"
+    "build:resources:dev": "webpack-dev-server",
+	"desktop": "electron ./resources/desktop/index.js"
   },
   "repository": {
     "type": "git",
