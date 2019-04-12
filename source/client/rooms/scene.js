@@ -61,4 +61,8 @@ export default class RoomScene extends Phaser.Scene {
 		//   repeat: -1
 		// })
 	}
+
+	update() {
+		this.room.update()
+	}
 }
