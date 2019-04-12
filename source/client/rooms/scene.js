@@ -43,7 +43,7 @@ export default class RoomScene extends Phaser.Scene {
         pointer.downX = pointer.x;
         this.camera.scrollY += pointer.downY - pointer.y;
         pointer.downY = pointer.y;
-      }
+		}
     })
   }
 

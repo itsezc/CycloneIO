@@ -1,0 +1,19 @@
+version: '2'
+services:
+    node:
+        image: 'node:11'
+        user: 'node'
+        working_dir: /home/node/cyclone
+        environemnt:
+            - NODE_ENV=production
+        volumnes:
+            - ./:/home/node/cyclone
+        expose:
+            - '8081'
+        command: 'npm start'
+
+    database:
+        image: 'arangodb:3.4'
+        expose:
+            - '8529'
+            
