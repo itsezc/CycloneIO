@@ -2,7 +2,7 @@ const Routes = [{
 		method: 'GET',
 		path: '/{param*}',
 		handler: (request, h) => {
-			return h.file('./web-build/dist/structure.html')
+			return h.file('./web-build/dist/index.html')
 		}
 	},
 	{
