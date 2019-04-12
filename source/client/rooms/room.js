@@ -9,12 +9,12 @@ export default class Room {
         this.tiles = this.scene.add.group()
     }
 
-  create() {
-    this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
-      [1, 1, 1, 1],
-      [1, 1, 1, 1],
-      [1, 0, 1, 0]
-    ])
+    create() {
+        this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
+            [1, 1, 1, 1],
+            [1, 1, 1, 1],
+            [1, 0, 1, 0]
+        ])
 
         this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, thickness, leftBorder, bottomBorder) => {
             this.drawTile(x, y, thickness, leftBorder, bottomBorder)
