@@ -2,54 +2,58 @@ import Environment from '../../environment'
 import Constants from '../../network/constants.json'
 
 export default class RoomModel {
-  constructor(roomID, map) {
-    this.roomID = roomID
-    this.map = map
-  }
+	constructor(id, map) {
+		this.id = id
+		this.map = map
 
-  init() {
-    this.map.forEach((row, rowIndex) => {
-      row.forEach((tile, tileIndex) => {
-        var x = (rowIndex * 32) + (tileIndex * 32)
-        var y = ((rowIndex * 32) - (tileIndex * 32)) / 2
+		this.init()
+	}
 
-        if (tile === this.squareType.TILE) {
-          Environment.instance.server.socketIO.to(this.roomID).emit(Constants.common.actions.room.NEW_TILE, x, y, 7.5, this.leftEdge(row, tile, tileIndex), this.bottomEdge(rowIndex, tile, tileIndex))
-        }
-      })
-    })
-  }
+	init() {
+		const currentRoom = Environment.instance.roomManager.roomByID(this.id)
 
-  leftEdge(row, tile, tileIndex) {
-    var leftTile = row[tileIndex - 1]
+		this.map.forEach((tiles, row) => {
+			tiles.forEach((tile, index) => {
+				const x = (row * 32) + (index * 32)
+				const y = ((row * 32) - (index * 32)) / 2
 
-    if (leftTile !== this.squareType.TILE) {
-      return true
-    } else {
-      return false
-    }
-  }
+				if (tile === this.squareType.TILE) {
+					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE, x, y, currentRoom.properties.wall.thickness, this.leftEdge(tiles, index), this.bottomEdge(row, index))
+				}
+			})
+		})
+	}
 
-  bottomEdge(rowIndex, tile, tileIndex) {
-    var bottomRow = this.map[rowIndex + 1]
+	leftEdge(tiles, index) {
+		const leftTile = tiles[index - 1]
 
-    if (bottomRow !== undefined) {
-      var bottomTile = this.map[rowIndex + 1][tileIndex]
+		if (leftTile !== this.squareType.TILE) {
+			return true
+		} else {
+			return false
+		}
+	}
 
-      if (bottomTile !== this.squareType.TILE) {
-        return true
-      } else {
-        return false
-      }
-    } else {
-      return true
-    }
-  }
+	bottomEdge(row, index) {
+		const bottomTiles = this.map[row + 1]
 
-  get squareType() {
-    return {
-      BLANK: 0,
-      TILE: 1,
-    }
-  }
+		if (bottomTiles !== undefined) {
+			const bottomTile = bottomTiles[index]
+
+			if (bottomTile !== this.squareType.TILE) {
+				return true
+			} else {
+				return false
+			}
+		} else {
+			return true
+		}
+	}
+
+	get squareType() {
+		return {
+			BLANK: 0,
+			TILE: 1,
+		}
+	}
 }

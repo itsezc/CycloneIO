@@ -5,7 +5,10 @@ import Config from '../../config.json'
 import Users from './models/users'
 
 import Orango from 'orango'
-const { EVENTS, SCHEMA } = Orango.consts
+const {
+	EVENTS,
+	SCHEMA
+} = Orango.consts
 
 import Joi from 'joi'
 import Faker from 'faker'

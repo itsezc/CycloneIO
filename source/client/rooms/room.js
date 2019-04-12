@@ -12,7 +12,8 @@ export default class Room {
   create() {
     this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
       [1, 1, 1, 1],
-      [1, 1, 1, 1]
+      [1, 1, 1, 1],
+      [1, 0, 1, 0]
     ])
 
     this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, thickness, leftBorder, bottomBorder) => {
