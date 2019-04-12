@@ -11,13 +11,18 @@ export default class Room {
 
   create() {
     this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
+      [0, 0, 0, 0],
       [1, 1, 1, 1],
-      [1, 1, 1, 1],
-      [1, 0, 1, 0]
+      [1, 1, 1, 1]
     ])
 
     this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, thickness, leftBorder, bottomBorder) => {
-      this.drawTile(x, y, thickness, leftBorder, bottomBorder)
+      const tile = this.drawTile(x, y, thickness, leftBorder, bottomBorder)
+
+	  tile.setInteractive()
+	  tile.on('pointerover', () => {
+		  console.log('hi')
+	  })
     })
   }
 
@@ -25,7 +30,7 @@ export default class Room {
     const width = 64
     const height = 32
 
-    var tile = this.scene.add.graphics()
+    const tile = this.scene.add.graphics()
 
     tile.lineStyle(1, 0x8E8E5E)
     tile.fillStyle(0x989865)
@@ -70,5 +75,7 @@ export default class Room {
       tile.fillPath()
       tile.strokePath()
     }
+
+	return tile
   }
 }

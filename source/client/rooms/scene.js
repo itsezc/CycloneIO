@@ -13,17 +13,12 @@ export default class RoomScene extends Phaser.Scene {
 
   preload() {
     this.load.path = 'web-build/'
+	this.load.svg(Constants.client.assets.TILE_HOVER, 'room/tile_hover.svg')
 
-    //this.load.atlas(Constants.client.assets.HH_HUMAN_BODY, 'sprites/hh_human_body.png', 'sprites/hh_human_body.json')
-
-    this.load.svg('hover_tile', 'room/tile2.svg', {
-      height: 800,
-      width: 360
-    })
     // this.load.image('wall_right', 'assets/wall_right.png')
     // this.load.image('wall_left', 'assets/wall_left.png')
     // this.load.image('door', 'assets/door.png')
-    //this.load.image(Constants.client.assets.PLAYER, 'assets/player.png')
+    // this.load.image(Constants.client.assets.PLAYER, 'assets/player.png')
     // this.load.image('walk', 'assets/walk.png')
     // this.load.image('room_bg', 'assets/bg.png')
 
@@ -54,6 +49,8 @@ export default class RoomScene extends Phaser.Scene {
 
   create() {
     this.room.create()
+
+	var test = this.add.image(0, 0, Constants.client.assets.TILE_HOVER)
     // var test = this.add.sprite(0, 0, Constants.client.assets.HH_HUMAN_BODY, '167_hh_human_body_h_blw_rh_1_7_1')
     // this.anims.create({
     //   key: 'walk',
