@@ -1,7 +1,7 @@
 const Config = require('../../config.json')
 const {
     app,
-	Menu,
+    Menu,
     BrowserWindow,
     session
 } = require('electron')
@@ -12,10 +12,10 @@ let createWindow = () => {
     window = new BrowserWindow({
         width: 1280,
         height: 720,
-		frame: false,
+        frame: false,
         title: Config.hotel.name
     })
-	Menu.setApplicationMenu(null)
+    Menu.setApplicationMenu(null)
     window.maximize()
     window.loadURL(Config.hotel.url[0] + '/client')
 
