@@ -50,7 +50,6 @@ export default class RoomScene extends Phaser.Scene {
 	create() {
 		this.room.create()
 
-		var test = this.add.image(0, 0, Constants.client.assets.TILE_HOVER)
 		// var test = this.add.sprite(0, 0, Constants.client.assets.HH_HUMAN_BODY, '167_hh_human_body_h_blw_rh_1_7_1')
 		// this.anims.create({
 		//   key: 'walk',
@@ -60,9 +59,5 @@ export default class RoomScene extends Phaser.Scene {
 		//   frameRate: 10,
 		//   repeat: -1
 		// })
-	}
-
-	update() {
-		this.room.update()
 	}
 }

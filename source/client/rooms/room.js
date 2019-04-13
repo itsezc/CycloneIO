@@ -8,8 +8,6 @@ export default class Room {
 	}
 
 	create() {
-		this.tiles = this.scene.add.group()
-
 		this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
 			[0, 0, 0, 0],
 			[1, 1, 1, 1],
@@ -17,25 +15,15 @@ export default class Room {
 		])
 
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, thickness, leftBorder, bottomBorder) => {
-			const tile = this.drawTile(x, y, thickness, leftBorder, bottomBorder)
+			var tile = this.drawTile(x, y, thickness, leftBorder, bottomBorder)
+			var hover
 
-			this.tiles.add(tile)
-			// tile.setInteractive()
-			// tile.on('pointerover', () => {
-			// 	console.log('hi')
-			// })
-			//
-			// console.log(tile)
-		})
+			tile.on(Constants.client.events.MOUSE_HOVER, () => {
+				hover = this.scene.add.image(x, y, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1)
+			})
 
-
-	}
-
-	update() {
-		this.tiles.getChildren().forEach((tile) => {
-			//console.log('hi')
-			tile.on('pointerover', () => {
-				console.log('hi')
+			tile.on(Constants.client.events.MOUSE_OUT, () => {
+				hover.destroy()
 			})
 		})
 	}
@@ -44,7 +32,6 @@ export default class Room {
 		const width = 64
 		const height = 32
 
-		const tile = this.scene.add.graphics()
 		const vertices = {
 			left: {
 				x: x,
@@ -64,6 +51,17 @@ export default class Room {
 			}
 		}
 
+		const surface = new Phaser.Geom.Polygon([
+			vertices.left.x, vertices.left.y,
+			vertices.top.x, vertices.top.y,
+			vertices.bottom.x, vertices.bottom.y,
+			vertices.right.x, vertices.right.y,
+		])
+
+		var tile = this.scene.add.graphics()
+
+		tile.generateTexture(Constants.client.textures.TILE)
+
 		tile.lineStyle(1, 0x8E8E5E)
 		tile.fillStyle(0x989865)
 
@@ -77,40 +75,38 @@ export default class Room {
 
 		tile.fillPath()
 		tile.strokePath()
-		//
-		// tile.setInteractive({
-		// 	pixelPerfect: true
-		// })
-		//
-		// if (leftBorder && thickness > 0) {
-		// 	tile.lineStyle(1, 0x7A7A51)
-		// 	tile.fillStyle(0x838357)
-		//
-		// 	tile.beginPath()
-		//
-		// 	tile.moveTo(x - width / 2, y + height / 2)
-		// 	tile.lineTo(x - width / 2, y + height / 2 + thickness)
-		// 	tile.lineTo(x, y + height + thickness)
-		// 	tile.lineTo(x, y + height)
-		//
-		// 	tile.fillPath()
-		// 	tile.strokePath()
-		// }
-		//
-		// if (bottomBorder && thickness > 0) {
-		// 	tile.fillStyle(0x6F6F49)
-		// 	tile.lineStyle(1, 0x676744)
-		//
-		// 	tile.beginPath()
-		//
-		// 	tile.moveTo(x + width / 2, y + height / 2)
-		// 	tile.lineTo(x + width / 2, y + height / 2 + thickness)
-		// 	tile.lineTo(x, y + height + thickness)
-		// 	tile.lineTo(x, y + height)
-		//
-		// 	tile.fillPath()
-		// 	tile.strokePath()
-		// }
+
+		tile.setInteractive(surface, Phaser.Geom.Polygon.Contains)
+
+		if (leftBorder && thickness > 0) {
+			tile.lineStyle(1, 0x7A7A51)
+			tile.fillStyle(0x838357)
+
+			tile.beginPath()
+
+			tile.moveTo(x - width / 2, y + height / 2)
+			tile.lineTo(x - width / 2, y + height / 2 + thickness)
+			tile.lineTo(x, y + height + thickness)
+			tile.lineTo(x, y + height)
+
+			tile.fillPath()
+			tile.strokePath()
+		}
+
+		if (bottomBorder && thickness > 0) {
+			tile.fillStyle(0x6F6F49)
+			tile.lineStyle(1, 0x676744)
+
+			tile.beginPath()
+
+			tile.moveTo(x + width / 2, y + height / 2)
+			tile.lineTo(x + width / 2, y + height / 2 + thickness)
+			tile.lineTo(x, y + height + thickness)
+			tile.lineTo(x, y + height)
+
+			tile.fillPath()
+			tile.strokePath()
+		}
 
 		return tile
 	}
