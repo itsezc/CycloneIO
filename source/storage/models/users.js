@@ -6,9 +6,15 @@ import Joi from 'joi'
 export default class User {
 	constructor(Database) {
 		this.schema = new Database.Schema({
-			email: Joi.string().email({ minDomainAtoms: 2 }).required(),
+			email: Joi.string()
+					.email({ minDomainAtoms: 2 })
+					.required(),
 
-			username: Joi.string().alphanum().min(Config.hotel.registration.name.length.min).max(Config.hotel.registration.name.length.max).required(),
+			username: Joi.string()
+						.alphanum()
+						.min(Config.hotel.registration.name.length.min)
+						.max(Config.hotel.registration.name.length.max)
+						.required(),
 
 			password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/).required(),
 
