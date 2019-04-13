@@ -39,7 +39,7 @@ export default class Environment {
 			// })
 
 		} catch (error) {
-			Logger.error(error)
+			Logger.log('error', error)
 		}
 	}
 }

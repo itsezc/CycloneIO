@@ -31,7 +31,7 @@ export default class Server {
 			process.exit(1)
 		}
 
-		Logger.info(`[⚙️ ] Server running on port ${this.HTTP.info.port}`)
+		Logger.server(`Server running on port ${this.HTTP.info.port}`)
 
 		this.socketIO.on(Constants.common.server.CONNECTION, (socket) => {
 			RoomPlayer.onConnect(socket)

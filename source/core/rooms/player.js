@@ -58,7 +58,7 @@ export default class RoomPlayer extends RoomEntity {
 		//   socket.broadcast.to(socket.room).emit(Constants.common.actions.player.STOP, player)
 		// })
 
-		Logger.info(`Player ${socket.id} connected.`)
+		Logger.network(`User (${socket.id}) connected`)
 	}
 
 	static onDisconnect(socket) {
@@ -68,7 +68,7 @@ export default class RoomPlayer extends RoomEntity {
 
 		Environment.instance.server.socketIO.to(socket.room).emit(Constants.common.actions.player.REMOVE, socket.id)
 
-		Logger.info(`Player ${socket.id} disconnected.`)
+		Logger.network(`User (${socket.id}) disconnected`)
 	}
 
 	constructor(id, position) {
