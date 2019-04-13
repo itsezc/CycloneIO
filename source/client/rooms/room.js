@@ -9,7 +9,7 @@ export default class Room {
 
 	create() {
 		this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
-			[0, 0, 0, 0],
+			[1, 0, 1, 1],
 			[1, 1, 1, 1],
 			[1, 1, 1, 1]
 		])
@@ -51,7 +51,7 @@ export default class Room {
 			}
 		}
 
-		const surface = new Phaser.Geom.Polygon([
+		const hitArea = new Phaser.Geom.Polygon([
 			vertices.left.x, vertices.left.y,
 			vertices.top.x, vertices.top.y,
 			vertices.bottom.x, vertices.bottom.y,
@@ -60,7 +60,7 @@ export default class Room {
 
 		var tile = this.scene.add.graphics()
 
-		tile.generateTexture(Constants.client.textures.TILE)
+		tile.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
 		tile.lineStyle(1, 0x8E8E5E)
 		tile.fillStyle(0x989865)
@@ -68,15 +68,13 @@ export default class Room {
 		tile.beginPath()
 
 		tile.moveTo(vertices.left.x, vertices.left.y)
-		tile.lineTo(vertices.top.x, vertices.top.y)
-		tile.lineTo(vertices.bottom.x, vertices.bottom.y)
-		tile.lineTo(vertices.right.x, vertices.right.y)
-		tile.lineTo(vertices.left.x, vertices.left.y)
+
+		hitArea.points.forEach((point) => {
+			tile.lineTo(point.x, point.y)
+		})
 
 		tile.fillPath()
 		tile.strokePath()
-
-		tile.setInteractive(surface, Phaser.Geom.Polygon.Contains)
 
 		if (leftBorder && thickness > 0) {
 			tile.lineStyle(1, 0x7A7A51)
@@ -84,10 +82,10 @@ export default class Room {
 
 			tile.beginPath()
 
-			tile.moveTo(x - width / 2, y + height / 2)
-			tile.lineTo(x - width / 2, y + height / 2 + thickness)
-			tile.lineTo(x, y + height + thickness)
-			tile.lineTo(x, y + height)
+			tile.moveTo(vertices.top.x, vertices.top.y)
+			tile.lineTo(vertices.top.x, vertices.top.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y)
 
 			tile.fillPath()
 			tile.strokePath()
@@ -99,10 +97,10 @@ export default class Room {
 
 			tile.beginPath()
 
-			tile.moveTo(x + width / 2, y + height / 2)
-			tile.lineTo(x + width / 2, y + height / 2 + thickness)
-			tile.lineTo(x, y + height + thickness)
-			tile.lineTo(x, y + height)
+			tile.moveTo(vertices.right.x, vertices.right.y)
+			tile.lineTo(vertices.right.x, vertices.right.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y)
 
 			tile.fillPath()
 			tile.strokePath()
