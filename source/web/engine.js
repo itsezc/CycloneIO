@@ -6,26 +6,19 @@ import Register from './themes/material/pages/register'
 import Client from './themes/material/pages/client'
 
 class App extends React.Component {
-  render() {
+    render() {
         return (
-          <ReactRouterDOM.BrowserRouter>
-            <ReactRouterDOM.Route exact path='/' component={Home} />
-          		<ReactRouterDOM.Route exact path='/client' component={Client} />
-          </ReactRouterDOM.BrowserRouter>
-        			// <ReactRouterDOM.Router>
-        			// 	 <div>
-        			// 	 	<ReactRouterDOM.Route exact path='/' component={Home} />
-        			// 		<ReactRouterDOM.Route exact path='/client' component={Client} />
-        			// 		<ReactRouterDOM.Route exact path='/logout' component={Logout} />
-        			// 		<ReactRouterDOM.Route exact path='/register' component={Register} />
-        			// 		{ /* Hello {this.props.name} */ }
-        			// 	 </div>
-        			// </ReactRouterDOM.Router>
-        	)
-      }
-  }
+			<ReactRouterDOM.BrowserRouter >
+	            <ReactRouterDOM.Route exact path = '/' component = {Home} />
+				<ReactRouterDOM.Route exact path = '/register' component = {Register} />
+				<ReactRouterDOM.Route exact path = '/logout' component = {Logout} />
+				<ReactRouterDOM.Route exact path = '/client' component = {Client}/>
+			</ReactRouterDOM.BrowserRouter>
+        )
+    }
+}
 
-ReactDOM.render(
- 	<App name='Chiru' />,
- 	document.getElementById('app')
+ReactDOM.render( <
+    App name = 'Chiru' / > ,
+    document.getElementById('app')
 )

@@ -1,3 +1,4 @@
+import Chalk from 'chalk'
 import Winston, {
 	transports,
 	format,
@@ -12,7 +13,6 @@ const {
 
 const Logger = createLogger({
 	format: combine(
-		colorize(),
 		timestamp(),
 		printf((info) => {
 			const {
@@ -22,11 +22,35 @@ const Logger = createLogger({
 				...args
 			} = info
 
+			var levelOutput
+			switch (level) {
+				case 'server':
+					levelOutput = '[⚙️ ]'
+					break
+				case 'database':
+					levelOutput = '[🥑]'
+					break
+				case 'network':
+					levelOutput = '[🔌]'
+					break
+				default:
+
+			}
+
 			const ts = timestamp.slice(0, 19).replace('T', ' ')
-			return `${ts} [${level}] - ${message}`;
+			return `${ts} ${levelOutput} - ${message}`;
 		}),
 	),
-	level: 'info',
+	level: 'ui',
+	levels: {
+		error: 0,
+		info: 1,
+		server: 2,
+		network: 3,
+		database: 4,
+		client: 5,
+		ui: 6
+	},
 	transports: [
 		new transports.Console()
 	]

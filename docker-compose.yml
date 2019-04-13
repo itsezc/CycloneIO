@@ -1,19 +1,21 @@
-version: '2'
+version: '3'
 services:
     node:
-        image: 'node:11'
+        image: node:11
         user: 'node'
         working_dir: /home/node/cyclone
         environemnt:
             - NODE_ENV=production
-        volumnes:
+        volumes:
             - ./:/home/node/cyclone
         expose:
             - '8081'
         command: 'npm start'
 
     database:
-        image: 'arangodb:3.4'
+        image: arangodb:3.4
         expose:
             - '8529'
-            
+        environment:
+            - ARANGO_RANDOM_ROOT_PASSWORD=1
+            - ARANGO_STORAGE_ENGINE=rocksdb

@@ -5,7 +5,7 @@ class Header extends React.Component {
 				<nav className='blue'>
 					<div className='container'>
 						<div className='nav-wrapper'>
-						 <a href='#' className='brand-logo'>
+						 <a href='#' className='brand-logo' style='padding: 15 !important;'>
 						 	<img src='https://upload.wikimedia.org/wikipedia/commons/6/6f/Habbo-logo.png' width='150' />
 						 </a>
 						 <ul id='nav-mobile' className='right hide-on-med-and-down'>

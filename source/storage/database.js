@@ -17,16 +17,16 @@ export default class Database {
 	constructor() {
 		this.connection = Orango.get(Config.database.name)
 
-		Logger.info('[🥑] Connecting to Database...')
+		Logger.database('Connecting to Database...')
 
 		this.init()
 
 		this.connection.events.once(EVENTS.CONNECTED, connection => {
-			Logger.info('[🥑] Connected to Database')
+			Logger.database('Connected to Database')
 		})
 
 		this.connection.events.once(EVENTS.READY, () => {
-			Logger.info('[🥑] Database is ready for connections')
+			Logger.database('Database is ready for connections')
 		})
 
 		return this.connection

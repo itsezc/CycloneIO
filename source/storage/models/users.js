@@ -8,7 +8,7 @@ export default class User {
 		this.schema = new Database.Schema({
 			email: Joi.string().email({ minDomainAtoms: 2 }).required(),
 
-			username: Joi.string().alphanum().min(3).max(30).required(),
+			username: Joi.string().alphanum().min(Config.hotel.registration.name.length.min).max(Config.hotel.registration.name.length.max).required(),
 
 			password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/).required(),
 
@@ -18,7 +18,7 @@ export default class User {
 
 			verified: Joi.boolean().default(false),
 
-			motto: Joi.string().max(50).default(Config.hotel.registration.motto),
+			motto: Joi.string().max(38).default(Config.hotel.registration.motto),
 
 			rank: Joi.number().default(Config.hotel.registration.rank),
 
