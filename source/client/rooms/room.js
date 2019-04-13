@@ -46,23 +46,21 @@ export default class Room {
 
 		const tile = this.scene.add.graphics()
 		const vertices = {
-			surface: {
-				left: {
-					x: x,
-					y: y
-				},
-				top: {
-					x: x - width / 2,
-					y: y + height / 2
-				},
-				bottom: {
-					x: x,
-					y: y + height
-				},
-				right: {
-					x: x + width / 2,
-					y: y + height / 2
-				}
+			left: {
+				x: x,
+				y: y
+			},
+			top: {
+				x: x - width / 2,
+				y: y + height / 2
+			},
+			bottom: {
+				x: x,
+				y: y + height
+			},
+			right: {
+				x: x + width / 2,
+				y: y + height / 2
 			}
 		}
 
@@ -71,11 +69,11 @@ export default class Room {
 
 		tile.beginPath()
 
-		tile.moveTo(vertices.surface.left.x, vertices.surface.left.y)
-		tile.lineTo(vertices.surface.top.x, vertices.surface.top.y)
-		tile.lineTo(vertices.surface.bottom.x, vertices.surface.bottom.y)
-		tile.lineTo(vertices.surface.right.x, vertices.surface.right.y)
-		tile.lineTo(vertices.surface.left.x, vertices.surface.left.y)
+		tile.moveTo(vertices.left.x, vertices.left.y)
+		tile.lineTo(vertices.top.x, vertices.top.y)
+		tile.lineTo(vertices.bottom.x, vertices.bottom.y)
+		tile.lineTo(vertices.right.x, vertices.right.y)
+		tile.lineTo(vertices.left.x, vertices.left.y)
 
 		tile.fillPath()
 		tile.strokePath()
