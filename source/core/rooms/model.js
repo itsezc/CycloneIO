@@ -2,6 +2,7 @@ import Environment from '../../environment'
 import Constants from '../../network/constants.json'
 
 export default class RoomModel {
+
 	constructor(id, map) {
 		this.id = id
 		this.map = map
@@ -12,41 +13,80 @@ export default class RoomModel {
 	init() {
 		const currentRoom = Environment.instance.roomManager.roomByID(this.id)
 
-		this.map.forEach((tiles, row) => {
-			tiles.forEach((tile, index) => {
-				const x = (row * 32) + (index * 32)
-				const y = ((row * 32) - (index * 32)) / 2
+		this.map.forEach((squares, row) => {
 
-				if (tile === this.squareType.TILE) {
-					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE, x, y, currentRoom.properties.wall.thickness, this.leftEdge(tiles, index), this.bottomEdge(row, index))
+			squares.forEach((square, index) => {
+
+				if (square !== this.squareType.BLANK) {
+
+					const x = (row * 32) + (index * 32)
+					const y = ((row * 32) - (index * 32)) / 2
+					const z = square[1] * 3 || 0
+
+					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE,
+						x, y, z, currentRoom.properties.floor.thickness, this.leftEdge(z, row, index), this.bottomEdge(z, row, index))
 				}
 			})
 		})
 	}
 
-	leftEdge(tiles, index) {
-		const leftTile = tiles[index - 1]
+	leftEdge(height, row, index) {
+		const leftSquare = row[index - 1]
 
-		if (leftTile !== this.squareType.TILE) {
+		if (height) {
+
+			if (leftSquare) {
+
+				const leftHeight = leftSquare[1]
+
+				if (leftHeight) {
+
+					if (leftHeight !== height) {
+						return true
+					}
+
+				} else {
+					return true
+				}
+
+			} else {
+				return true
+			}
+
+		} else if (leftSquare !== this.squareType.TILE) {
 			return true
-		} else {
-			return false
 		}
 	}
 
-	bottomEdge(row, index) {
-		const bottomTiles = this.map[row + 1]
+	bottomEdge(height, row, index) {
+		const bottomSquares = this.map[row + 1]
 
-		if (bottomTiles !== undefined) {
-			const bottomTile = bottomTiles[index]
+		if (height) {
+			if (bottomSquares) {
+				const bottomHeight = bottomSquares[1]
 
-			if (bottomTile !== this.squareType.TILE) {
-				return true
+				if (bottomHeight) {
+					if (bottomHeight !== height) {
+						return true
+					}
+				}
+
 			} else {
-				return false
+				return true
 			}
+
 		} else {
-			return true
+
+			if (bottomSquares) {
+				const bottomSquare = bottomSquares[index]
+
+				if (bottomSquare !== this.squareType.TILE) {
+					return true
+				}
+
+			} else {
+				return true
+			}
 		}
 	}
 

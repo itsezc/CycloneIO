@@ -1,6 +1,7 @@
 import Constants from '../../network/constants.json'
 
 export default class Room {
+
 	constructor(scene, socket, id) {
 		this.scene = scene
 		this.socket = socket
@@ -8,18 +9,22 @@ export default class Room {
 	}
 
 	create() {
-		this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id, [
-			[1, 0, 1, 1],
-			[1, 1, 1, 1],
-			[1, 1, 1, 1]
-		])
 
-		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, thickness, leftBorder, bottomBorder) => {
-			var tile = this.drawTile(x, y, thickness, leftBorder, bottomBorder)
+		this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id,
+			[
+				[1, 0, 1],
+				[1, [1, 1]]
+			]
+		)
+
+		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, leftBorder, bottomBorder) => {
+			var tile = this.drawTile(x, y * z, thickness, leftBorder, bottomBorder)
 			var hover
 
+			console.log(z)
+
 			tile.on(Constants.client.events.MOUSE_HOVER, () => {
-				hover = this.scene.add.image(x, y, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1)
+				hover = this.scene.add.image(x, y * z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1)
 			})
 
 			tile.on(Constants.client.events.MOUSE_OUT, () => {

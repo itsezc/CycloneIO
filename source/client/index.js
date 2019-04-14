@@ -1,7 +1,7 @@
 import RoomScene from './rooms/scene.js'
 
 const config = {
-  type: Phaser.AUTO,
+  type: Phaser.WEBGL,
   physics: {
     default: 'arcade'
   },

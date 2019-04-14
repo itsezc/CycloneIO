@@ -16,7 +16,7 @@ export default class RoomPlayer extends RoomEntity {
 			socket.room = id
 
 			const room = new Room(id, {
-				wall: {
+				floor: {
 					thickness: 7.5
 				}
 			})
