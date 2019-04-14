@@ -21,7 +21,7 @@ export default class RoomModel {
 
 					const x = (row * 32) + (index * 32)
 					const y = ((row * 32) - (index * 32)) / 2
-					const z = square[1] * 3 || 0
+					const z = square[1] * 20 || 0
 
 					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE,
 						x, y, z, currentRoom.properties.floor.thickness, this.leftEdge(z, row, index), this.bottomEdge(z, row, index))
