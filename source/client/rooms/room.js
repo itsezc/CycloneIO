@@ -150,7 +150,7 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
-			wall.lineStyle(1, 0xB6B8C7)
+			wall.lineStyle(0, 0xB6B8C7)
 			wall.fillStyle(0xB6B8C7)
 
 			wall.beginPath()
@@ -206,7 +206,6 @@ export default class Room {
 
 			wall.fillPath()
 			wall.strokePath()
-
 		}
 
 		wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
