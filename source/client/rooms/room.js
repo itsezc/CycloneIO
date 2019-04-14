@@ -12,7 +12,8 @@ export default class Room {
 
 		this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id,
 			[
-				[1, 1, 1, [1, 1], 0, 0],
+				[1, 1, 1, 1, 0, 0],
+				[1, 1, 1, 1, 1, 0, [1, 2], 0, 0, [1, 3]]
 			]
 		)
 
@@ -79,7 +80,7 @@ export default class Room {
 
 		tile.fillPath()
 		tile.strokePath()
-
+		
 		if (leftBorder && thickness > 0) {
 			tile.lineStyle(1, 0x7A7A51)
 			tile.fillStyle(0x838357)
