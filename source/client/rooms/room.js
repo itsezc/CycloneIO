@@ -18,13 +18,13 @@ export default class Room {
 		)
 
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, leftBorder, bottomBorder) => {
-			var tile = this.drawTile(x, y * (z || 1), thickness, leftBorder, bottomBorder)
+			var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder)
 			var hover
 
 			console.log(z)
 
 			tile.on(Constants.client.events.MOUSE_HOVER, () => {
-				hover = this.scene.add.image(x, y * (z || 1), Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1)
+				hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1)
 			})
 
 			tile.on(Constants.client.events.MOUSE_OUT, () => {
