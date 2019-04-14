@@ -21,21 +21,23 @@ export default class RoomModel {
 
 					const x = (row * 32) + (index * 32)
 					const y = ((row * 32) - (index * 32)) / 2
-					const z = square[1] * 20 || 0
+					const z = (square[1] * 20) || 0
+					const height = square[1]
 
 					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE,
-						x, y, z, currentRoom.properties.floor.thickness, this.leftEdge(z, row, index), this.bottomEdge(z, row, index))
+						x, y, z, currentRoom.properties.floor.thickness,
+						this.leftEdge(height, squares, index), this.bottomEdge(height, row, index))
 				}
 			})
 		})
 	}
 
-	leftEdge(height, row, index) {
-		const leftSquare = row[index - 1]
+	leftEdge(height, squares, index) {
+		const leftSquare = squares[index - 1]
 
 		if (height) {
-
 			if (leftSquare) {
+				console.log(leftSquare)
 
 				const leftHeight = leftSquare[1]
 

@@ -12,8 +12,7 @@ export default class Room {
 
 		this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id,
 			[
-				[1, 0, [1, 1]],
-				[1, 0]
+				[1, 1, 1, [1, 1], 0, 0],
 			]
 		)
 
