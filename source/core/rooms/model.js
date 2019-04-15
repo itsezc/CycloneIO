@@ -64,13 +64,13 @@ export default class RoomModel {
 		const bottomSquares = this.map[row + 1]
 
 		if (height) {
-			if (bottomSquares) {
+			const bottomSquare = bottomSquares[index]
+
+			if (bottomSquare) {
 				const bottomHeight = bottomSquares[1]
 
-				if (bottomHeight) {
-					if (bottomHeight !== height) {
-						return true
-					}
+				if (bottomHeight && bottomHeight !== height) {
+					return true
 				}
 
 			} else {
