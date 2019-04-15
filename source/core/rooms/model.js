@@ -1,6 +1,8 @@
 import Environment from '../../environment'
 import Constants from '../../network/constants.json'
 
+import Room from './room'
+
 export default class RoomModel {
 
 	constructor(id, map) {
@@ -25,7 +27,7 @@ export default class RoomModel {
 					const height = square[1]
 
 					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE,
-						x, y, z, currentRoom.properties.floor.thickness,
+						x, y, z, currentRoom.properties.floor.thickness, Room.depth.TILE,
 						this.leftEdge(height, squares, index), this.bottomEdge(height, row, index))
 				}
 			})
@@ -36,8 +38,8 @@ export default class RoomModel {
 		const leftSquare = squares[index - 1]
 
 		if (height) {
+			
 			if (leftSquare) {
-				console.log(leftSquare)
 
 				const leftHeight = leftSquare[1]
 

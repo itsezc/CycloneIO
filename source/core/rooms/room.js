@@ -5,4 +5,11 @@ export default class Room {
 		this.id = id
 		this.properties = properties
 	}
+
+	static get depth(){
+		return {
+			TILE: 0,
+			WALL: 1
+		}
+	}
 }
