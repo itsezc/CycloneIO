@@ -148,7 +148,7 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
-			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
 			wall.lineStyle(1, 0xB6B8C7)
 			wall.fillStyle(0xB6B8C7)
@@ -224,9 +224,9 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
-			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.lineStyle(0.5, 0x90929E)
+			wall.lineStyle(1, 0x90929E)
 			wall.fillStyle(0x90929E)
 
 			wall.beginPath()
@@ -271,10 +271,10 @@ export default class Room {
 				wall.strokePath()
 			}
 		}
-
-		wall.on('pointerdown', () => {
-			console.log('Clicked wall')
-		})
+		//
+		// wall.on('pointerdown', () => {
+		// 	console.log('Clicked wall')
+		// })
 
 		return wall
 	}
