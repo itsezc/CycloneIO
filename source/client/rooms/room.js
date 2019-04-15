@@ -167,7 +167,7 @@ export default class Room {
 
 			if (thickness > 0) {
 
-				wall.lineStyle(0, 0xBBBECD)
+				wall.lineStyle(1, 0xBBBECD)
 				wall.fillStyle(0xBBBECD)
 
 				wall.beginPath()
@@ -227,7 +227,7 @@ export default class Room {
 
 			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.lineStyle(0.5, 0xB6B8C7)
+			wall.lineStyle(1, 0xB6B8C7)
 			wall.fillStyle(0xB6B8C7)
 
 			wall.beginPath()
@@ -248,11 +248,11 @@ export default class Room {
 
 				wall.beginPath()
 
-				wall.moveTo(vertices.bottom.x + 1, vertices.bottom.y + depth)
+				wall.moveTo(vertices.bottom.x, vertices.bottom.y + depth)
 
 				wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + depth)
 				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
-				wall.lineTo(vertices.right.x + 1 , vertices.right.y)
+				wall.lineTo(vertices.right.x , vertices.right.y)
 
 				wall.fillPath()
 				wall.strokePath()
