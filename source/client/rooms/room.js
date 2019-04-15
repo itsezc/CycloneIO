@@ -10,11 +10,7 @@ export default class Room {
 
 	create() {
 
-		this.socket.emit(Constants.common.actions.room.NEW_ROOM, this.id,
-			[
-				[1]
-			]
-		)
+		this.socket.emit(Constants.common.actions.room.NEW_ROOM)
 
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, leftBorder, bottomBorder) => {
 			var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder)
@@ -28,11 +24,11 @@ export default class Room {
 				hover.destroy()
 			})
 
-			this.drawWall(x, y, 120, 7.5, thickness, true, true)
+			//this.drawWall(x, y, 120, 7.5, thickness, true, true)
 		})
 	}
 
-	drawTile(x, y, thickness, leftBorder, bottomBorder) {
+	drawTile(x, y,  thickness, leftBorder, bottomBorder) {
 		const width = 32
 		const height = 32
 

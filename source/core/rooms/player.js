@@ -11,7 +11,9 @@ export default class RoomPlayer extends RoomEntity {
 	static onConnect(socket) {
 		var player
 
-		socket.on(Constants.common.actions.room.NEW_ROOM, (id, map) => {
+		socket.on(Constants.common.actions.room.NEW_ROOM, () => {
+			var id = 0 // To make this dynamic
+
 			socket.join(id)
 			socket.room = id
 
@@ -23,7 +25,10 @@ export default class RoomPlayer extends RoomEntity {
 
 			Environment.instance.roomManager.add(room)
 
-			const model = new RoomModel(id, map)
+			const model = new RoomModel(id, [
+				[1, 0, 0, 1, 1, 0, 0, [1, 3]],
+				[1, 0, 1, 1]
+			])
 		})
 
 		socket.on(Constants.common.actions.player.NEW_PLAYER, (room, position) => {

@@ -21,7 +21,7 @@ export default class RoomModel {
 
 					const x = (row * 32) + (index * 32)
 					const y = ((row * 32) - (index * 32)) / 2
-					const z = (square[1] * 20) || 0
+					const z = square[1] * 32 || 0
 					const height = square[1]
 
 					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE,
