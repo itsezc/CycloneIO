@@ -1,23 +1,32 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 
-//import './client.styl'
+import './client.styl'
 
 export default class Client extends Component {
 
 	constructor(props) {
 		super(props)
 
-		this.state = {}
+		this.state = {
+			loaded: true
+		}
 	}
 
 	render() {
 
-		return(
-			<div>
-				This is the client
-			</div>
-		)
+		if (this.state.loaded == false) {
+			return (
+				<Redirect to='/' />
+			)
+		} else {
+			return(
+				<div className='client'>
+					<div className='hotel'></div>
+					<div className='toolbar'></div>
+				</div>
+			)
+		}
 
 	}
-
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Redirect } from 'react-router-dom'
 
 import './loading.styl'
 
@@ -13,15 +14,9 @@ export default class Loading extends Component {
 
 	 componentDidMount() {
 		 this.interval = setInterval(() => {
-			 if(this.state.percent > 99) {
-				 this.setState({
-					 percent: 0
-				 })
-			 } else {
-				 this.setState({
-					 percent: this.state.percent + 10
-				 })
-			 }
+			 this.setState({
+				 percent: this.state.percent + 10
+			 })
 		 }, 500)
 	 }
 
@@ -31,19 +26,26 @@ export default class Loading extends Component {
 
 	 render() {
 
-		 return(
-			 <div className='loading'>
-			 	<div className='splash'>
-					<div className='photo'></div>
-					<div className='frame'></div>
-				</div>
-			 	<div className='text'>Please wait while {this.props.hotelName} is loading</div>
-			 	<div className='progress'>
-					<div className='bar' style={{width: this.state.percent + '%' }}>
-					</div>
-				</div>
-				<div className='percent'>{this.state.percent}%</div>
-			</div>
-		)
+		if(this.state.percent > 99) {
+			return(
+				<Redirect to='/hotel' />
+			)
+		} else {
+			return(
+   			 <div className='loading'>
+   			 	<div className='splash'>
+   					<div className='photo'></div>
+   					<div className='frame'></div>
+   				</div>
+   			 	<div className='text'>Please wait while {this.props.hotelName} is loading</div>
+   			 	<div className='progress'>
+   					<div className='bar' style={{width: this.state.percent + '%' }}>
+   					</div>
+   				</div>
+   				<div className='percent'>{this.state.percent}%</div>
+   			</div>
+   		)
+		}
+
 	 }
 }

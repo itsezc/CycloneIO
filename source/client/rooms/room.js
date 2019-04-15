@@ -14,18 +14,19 @@ export default class Room {
 
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, depth, leftBorder, bottomBorder) => {
 
-			var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder).setDepth(depth)
+			var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder).setDepth(1)
 			var hover
 
 			tile.on(Constants.client.events.MOUSE_HOVER, () => {
-				hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1)
+				hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1).setDepth(2)
 			})
 
 			tile.on(Constants.client.events.MOUSE_OUT, () => {
 				hover.destroy()
 			})
 
-			this.drawWall(x, y, 120, 7.5, thickness, true, true)
+			var wall = this.drawWall(x, y, 120, 7.5, thickness, true, true)
+			wall.setDepth(0)
 		})
 	}
 
@@ -120,82 +121,6 @@ export default class Room {
 
 		const width = 32
 
-		if (rightBorder) {
-
-			vertices = {
-				left: {
-					x: x,
-					y: y
-				},
-				top: {
-					x: x,
-					y: y - height
-				},
-				right: {
-					x: x + width,
-					y: y + width / 2 - height
-				},
-				bottom: {
-					x: x + width,
-					y: y + width / 2
-				}
-			}
-
-			hitArea = new Phaser.Geom.Polygon([
-				vertices.left.x, vertices.left.y,
-				vertices.top.x, vertices.top.y,
-				vertices.right.x, vertices.right.y,
-				vertices.bottom.x, vertices.bottom.y,
-			])
-
-			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
-
-			wall.lineStyle(1, 0xB6B8C7)
-			wall.fillStyle(0xB6B8C7)
-
-			wall.beginPath()
-
-			wall.moveTo(vertices.left.x, vertices.left.y)
-
-			hitArea.points.forEach((point) => {
-				wall.lineTo(point.x, point.y)
-			})
-
-			wall.fillPath()
-			wall.strokePath()
-
-			if (thickness > 0) {
-
-				wall.lineStyle(1, 0x9597A3)
-				wall.fillStyle(0x9597A3)
-
-				wall.beginPath()
-
-				wall.moveTo(vertices.bottom.x, vertices.bottom.y + depth)
-
-				wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + depth)
-				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
-				wall.lineTo(vertices.right.x, vertices.right.y)
-
-				wall.fillPath()
-				wall.strokePath()
-
-				wall.lineStyle(1, 0x6F717A)
-				wall.fillStyle(0x6F717A)
-
-				wall.beginPath()
-
-				wall.moveTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
-
-				wall.lineTo(vertices.top.x, vertices.top.y - thickness)
-				wall.lineTo(vertices.top.x, vertices.top.y)
-				wall.lineTo(vertices.right.x, vertices.right.y)
-
-				wall.fillPath()
-				wall.strokePath()
-			}
-		}
-
 		if (topBorder) {
 
 			vertices = {
@@ -242,7 +167,7 @@ export default class Room {
 
 			if (thickness > 0) {
 
-				wall.lineStyle(1, 0xBBBECD)
+				wall.lineStyle(0, 0xBBBECD)
 				wall.fillStyle(0xBBBECD)
 
 				wall.beginPath()
@@ -271,6 +196,84 @@ export default class Room {
 				wall.strokePath()
 			}
 		}
+
+		if (rightBorder) {
+
+			vertices = {
+				left: {
+					x: x,
+					y: y
+				},
+				top: {
+					x: x,
+					y: y - height
+				},
+				right: {
+					x: x + width,
+					y: y + width / 2 - height
+				},
+				bottom: {
+					x: x + width,
+					y: y + width / 2
+				}
+			}
+
+			hitArea = new Phaser.Geom.Polygon([
+				vertices.left.x, vertices.left.y,
+				vertices.top.x, vertices.top.y,
+				vertices.right.x, vertices.right.y,
+				vertices.bottom.x, vertices.bottom.y,
+			])
+
+			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+
+			wall.lineStyle(0.5, 0xB6B8C7)
+			wall.fillStyle(0xB6B8C7)
+
+			wall.beginPath()
+
+			wall.moveTo(vertices.left.x, vertices.left.y)
+
+			hitArea.points.forEach((point) => {
+				wall.lineTo(point.x, point.y)
+			})
+
+			wall.fillPath()
+			wall.strokePath()
+
+			if (thickness > 0) {
+
+				wall.lineStyle(1, 0x9597A3)
+				wall.fillStyle(0x9597A3)
+
+				wall.beginPath()
+
+				wall.moveTo(vertices.bottom.x + 1, vertices.bottom.y + depth)
+
+				wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + depth)
+				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
+				wall.lineTo(vertices.right.x + 1 , vertices.right.y)
+
+				wall.fillPath()
+				wall.strokePath()
+
+				wall.lineStyle(1, 0x6F717A)
+				wall.fillStyle(0x6F717A)
+
+				wall.beginPath()
+
+				wall.moveTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
+
+				wall.lineTo(vertices.top.x, vertices.top.y - thickness)
+				wall.lineTo(vertices.top.x, vertices.top.y)
+				wall.lineTo(vertices.right.x, vertices.right.y)
+
+				wall.fillPath()
+				wall.strokePath()
+			}
+		}
+
+
 		//
 		// wall.on('pointerdown', () => {
 		// 	console.log('Clicked wall')
