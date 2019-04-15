@@ -29,7 +29,10 @@ export default class Room {
 		})
 	}
 
-	drawTile(x, y,  thickness, leftBorder, bottomBorder) {
+	drawTile(x, y, thickness, leftBorder, bottomBorder) {
+
+		var tile = this.scene.add.graphics()
+
 		const width = 32
 		const height = 32
 
@@ -58,8 +61,6 @@ export default class Room {
 			vertices.bottom.x, vertices.bottom.y,
 			vertices.right.x, vertices.right.y,
 		])
-
-		var tile = this.scene.add.graphics()
 
 		tile.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
@@ -113,11 +114,11 @@ export default class Room {
 	}
 
 	drawWall(x, y, height, thickness, depth, rightBorder, topBorder) {
-		const width = 32
-
 		var wall = this.scene.add.graphics()
 		var vertices
 		var hitArea
+
+		const width = 32
 
 		if (rightBorder) {
 
@@ -147,6 +148,8 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
+			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+
 			wall.lineStyle(1, 0xB6B8C7)
 			wall.fillStyle(0xB6B8C7)
 
@@ -161,9 +164,9 @@ export default class Room {
 			wall.fillPath()
 			wall.strokePath()
 
-			if (thickness > 0){
+			if (thickness > 0) {
 
-				wall.lineStyle(0.5, 0x9597A3)
+				wall.lineStyle(1, 0x9597A3)
 				wall.fillStyle(0x9597A3)
 
 				wall.beginPath()
@@ -171,7 +174,7 @@ export default class Room {
 				wall.moveTo(vertices.bottom.x, vertices.bottom.y + depth)
 
 				wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + depth)
-				wall.lineTo(vertices.right.x + thickness,  vertices.right.y - thickness / 2)
+				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
 				wall.lineTo(vertices.right.x, vertices.right.y)
 
 				wall.fillPath()
@@ -217,9 +220,11 @@ export default class Room {
 			hitArea = new Phaser.Geom.Polygon([
 				vertices.right.x, vertices.right.y,
 				vertices.top.x, vertices.top.y,
-			    vertices.left.x, vertices.left.y,
+				vertices.left.x, vertices.left.y,
 				vertices.bottom.x, vertices.bottom.y,
 			])
+
+			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
 			wall.lineStyle(0.5, 0x90929E)
 			wall.fillStyle(0x90929E)
@@ -235,7 +240,7 @@ export default class Room {
 			wall.fillPath()
 			wall.strokePath()
 
-			if (thickness > 0){
+			if (thickness > 0) {
 
 				wall.lineStyle(1, 0xBBBECD)
 				wall.fillStyle(0xBBBECD)
@@ -266,8 +271,6 @@ export default class Room {
 				wall.strokePath()
 			}
 		}
-
-		wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
 		wall.on('pointerdown', () => {
 			console.log('Clicked wall')
