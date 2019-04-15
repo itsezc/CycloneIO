@@ -147,7 +147,7 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
-			wall.lineStyle(1, 0xB6B8C7)
+			wall.lineStyle(0.5, 0xB6B8C7)
 			wall.fillStyle(0xB6B8C7)
 
 			wall.beginPath()
@@ -177,7 +177,7 @@ export default class Room {
 				wall.fillPath()
 				wall.strokePath()
 
-				wall.lineStyle(1, 0x6F717A)
+				wall.lineStyle(0.5, 0x6F717A)
 				wall.fillStyle(0x6F717A)
 
 				wall.beginPath()
