@@ -77,41 +77,43 @@ export default class Room {
 		})
 
 		tile.closePath()
-		tile.fillPath()
 		tile.strokePath()
+		tile.fillPath()
 
-		// if (leftBorder && thickness > 0) {
-		//
-		// 	tile.lineStyle(1, 0x7A7A51)
-		// 	tile.fillStyle(0x838357)
-		//
-		// 	tile.beginPath()
-		//
-		// 	tile.moveTo(vertices.top.x, vertices.top.y)
-		// 	tile.lineTo(vertices.top.x, vertices.top.y + thickness)
-		// 	tile.lineTo(vertices.bottom.x, vertices.bottom.y + thickness)
-		// 	tile.lineTo(vertices.bottom.x, vertices.bottom.y)
-		//
-		// 	tile.fillPath()
-		// 	tile.strokePath()
-		// }
-		//
-		//
-		// if (bottomBorder && thickness > 0) {
-		//
-		// 	tile.fillStyle(0x6F6F49)
-		// 	tile.lineStyle(1, 0x676744)
-		//
-		// 	tile.beginPath()
-		//
-		// 	tile.moveTo(vertices.right.x, vertices.right.y)
-		// 	tile.lineTo(vertices.right.x, vertices.right.y + thickness)
-		// 	tile.lineTo(vertices.bottom.x, vertices.bottom.y + thickness)
-		// 	tile.lineTo(vertices.bottom.x, vertices.bottom.y)
-		//
-		// 	tile.fillPath()
-		// 	tile.strokePath()
-		// }
+		if (leftBorder && thickness > 0) {
+
+			tile.lineStyle(1, 0x7A7A51)
+			tile.fillStyle(0x838357)
+
+			tile.beginPath()
+
+			tile.moveTo(vertices.top.x, vertices.top.y)
+			tile.lineTo(vertices.top.x, vertices.top.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y)
+
+			tile.closePath()
+			tile.strokePath()
+			tile.fillPath()
+		}
+
+
+		if (bottomBorder && thickness > 0) {
+
+			tile.fillStyle(0x6F6F49)
+			tile.lineStyle(1, 0x676744)
+
+			tile.beginPath()
+
+			tile.moveTo(vertices.right.x, vertices.right.y)
+			tile.lineTo(vertices.right.x, vertices.right.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y + thickness)
+			tile.lineTo(vertices.bottom.x, vertices.bottom.y)
+
+			tile.closePath()
+			tile.strokePath()
+			tile.fillPath()
+		}
 
 		return tile
 	}
@@ -151,9 +153,9 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
-			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.lineStyle(0.5, 0xB6B8C7)
+			wall.lineStyle(1, 0xB6B8C7)
 			wall.fillStyle(0xB6B8C7)
 
 			wall.beginPath()
@@ -164,8 +166,9 @@ export default class Room {
 				wall.lineTo(point.x, point.y)
 			})
 
-			wall.fillPath()
+			wall.closePath()
 			wall.strokePath()
+			wall.fillPath()
 
 			if (thickness > 0) {
 
@@ -174,28 +177,31 @@ export default class Room {
 
 				wall.beginPath()
 
-				wall.moveTo(vertices.bottom.x, vertices.bottom.y + depth)
+				wall.moveTo(vertices.bottom.x + 1, vertices.bottom.y + depth - 1)
 
-				wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + depth)
-				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
-				wall.lineTo(vertices.right.x, vertices.right.y)
+				wall.lineTo(vertices.bottom.x + thickness + 1, vertices.bottom.y - thickness / 2 + depth - 1)
+				wall.lineTo(vertices.right.x + thickness + 1, vertices.right.y - thickness / 2 + 1)
+				wall.lineTo(vertices.right.x + 1, vertices.right.y + 1)
 
-				wall.fillPath()
+				wall.closePath()
 				wall.strokePath()
-				//
-				// wall.lineStyle(1, 0x6F717A)
-				// wall.fillStyle(0x6F717A)
-				//
-				// wall.beginPath()
-				//
-				// wall.moveTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
-				//
-				// wall.lineTo(vertices.top.x, vertices.top.y - thickness)
-				// wall.lineTo(vertices.top.x, vertices.top.y)
-				// wall.lineTo(vertices.right.x, vertices.right.y)
-				//
-				// wall.fillPath()
-				// wall.strokePath()
+				wall.fillPath()
+
+				wall.lineStyle(1, 0x6F717A)
+				wall.fillStyle(0x6F717A)
+
+				wall.beginPath()
+
+				wall.moveTo(vertices.right.x + thickness + 2, vertices.right.y - thickness / 2 + 1)
+
+				wall.lineTo(vertices.top.x, vertices.top.y - thickness)
+				//wall.lineTo(vertices.top.x, vertices.top.y)
+				//wall.lineTo(vertices.right.x, vertices.right.y)
+
+				//wall.fillPath()
+				wall.closePath()
+				wall.strokePath()
+				//wall.fillPath()
 			}
 		}
 
@@ -221,7 +227,7 @@ export default class Room {
 			}
 
 			hitArea = new Phaser.Geom.Polygon([
-				vertices.right.x, vertices.right.y,
+				vertices.right.x - 1, vertices.right.y,
 				vertices.top.x, vertices.top.y,
 				vertices.left.x, vertices.left.y,
 				vertices.bottom.x, vertices.bottom.y,
@@ -229,7 +235,7 @@ export default class Room {
 
 			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.lineStyle(0.5, 0x90929E)
+			wall.lineStyle(1, 0x90929E)
 			wall.fillStyle(0x90929E)
 
 			wall.beginPath()
@@ -240,46 +246,47 @@ export default class Room {
 				wall.lineTo(point.x, point.y)
 			})
 
-			wall.fillPath()
+			wall.closePath()
 			wall.strokePath()
+			wall.fillPath()
 
-			if (thickness > 0) {
-
-				wall.lineStyle(1, 0xBBBECD)
-				wall.fillStyle(0xBBBECD)
-
-				wall.beginPath()
-
-				wall.moveTo(vertices.bottom.x, vertices.bottom.y + depth)
-
-				wall.lineTo(vertices.bottom.x - thickness, vertices.bottom.y - thickness / 2 + depth)
-				wall.lineTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
-				wall.lineTo(vertices.left.x, vertices.left.y)
-
-				wall.fillPath()
-				wall.strokePath()
-				// 
-				// wall.lineStyle(0, 0x6F717A)
-				// wall.fillStyle(0x6F717A)
-
-				// wall.beginPath()
-				//
-				// wall.moveTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
-				//
-				// wall.lineTo(vertices.top.x, vertices.top.y - thickness)
-				// wall.lineTo(vertices.top.x, vertices.top.y)
-				// wall.lineTo(vertices.left.x, vertices.left.y)
-				//
-				// wall.fillPath()
-				// wall.strokePath()
-			}
-		}
-
+		// if (thickness > 0) {
 		//
-		// wall.on('pointerdown', () => {
-		// 	console.log('Clicked wall')
-		// })
+		// 	wall.lineStyle(1, 0xBBBECD)
+		// 	wall.fillStyle(0xBBBECD)
+		//
+		// 	wall.beginPath()
+		//
+		// 	wall.moveTo(vertices.bottom.x, vertices.bottom.y + depth)
+		//
+		// 	wall.lineTo(vertices.bottom.x - thickness, vertices.bottom.y - thickness / 2 + depth)
+		// 	wall.lineTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
+		// 	wall.lineTo(vertices.left.x, vertices.left.y)
+		//
+		// 	wall.fillPath()
+		// 	wall.strokePath()
+		//
+		// 	wall.lineStyle(0, 0x6F717A)
+		// 	wall.fillStyle(0x6F717A)
+		//
+		// 	wall.beginPath()
+		//
+		// 	wall.moveTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
+		//
+		// 	wall.lineTo(vertices.top.x, vertices.top.y - thickness)
+		// 	wall.lineTo(vertices.top.x, vertices.top.y)
+		// 	wall.lineTo(vertices.left.x, vertices.left.y)
+		//
+		// 	wall.fillPath()
+		// 	wall.strokePath()
+		//
+		}
 
 		return wall
 	}
+
+	//
+	// wall.on('pointerdown', () => {
+	// 	console.log('Clicked wall')
+	// })
 }
