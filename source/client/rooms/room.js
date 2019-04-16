@@ -177,11 +177,11 @@ export default class Room {
 
 				wall.beginPath()
 
-				wall.moveTo(vertices.bottom.x + 1, vertices.bottom.y + depth - 1)
+				wall.moveTo(vertices.bottom.x, vertices.bottom.y + depth)
 
-				wall.lineTo(vertices.bottom.x + thickness + 1, vertices.bottom.y - thickness / 2 + depth - 1)
-				wall.lineTo(vertices.right.x + thickness + 1, vertices.right.y - thickness / 2 + 1)
-				wall.lineTo(vertices.right.x + 1, vertices.right.y + 1)
+				wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + depth)
+				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
+				wall.lineTo(vertices.right.x, vertices.right.y)
 
 				wall.closePath()
 				wall.strokePath()
@@ -192,7 +192,7 @@ export default class Room {
 
 				wall.beginPath()
 
-				wall.moveTo(vertices.right.x + thickness + 2, vertices.right.y - thickness / 2 + 1)
+				wall.moveTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
 
 				wall.lineTo(vertices.top.x, vertices.top.y - thickness)
 				//wall.lineTo(vertices.top.x, vertices.top.y)
@@ -227,7 +227,7 @@ export default class Room {
 			}
 
 			hitArea = new Phaser.Geom.Polygon([
-				vertices.right.x - 1, vertices.right.y,
+				vertices.right.x, vertices.right.y,
 				vertices.top.x, vertices.top.y,
 				vertices.left.x, vertices.left.y,
 				vertices.bottom.x, vertices.bottom.y,
