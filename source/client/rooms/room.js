@@ -14,18 +14,18 @@ export default class Room {
 
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, depth, leftBorder, bottomBorder) => {
 
-			// var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder).setDepth(0)
-			// var hover
-			//
-			// tile.on(Constants.client.events.MOUSE_HOVER, () => {
-			// 	hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1).setDepth(2)
-			// })
-			//
-			// tile.on(Constants.client.events.MOUSE_OUT, () => {
-			// 	hover.destroy()
-			// })
+			var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder).setDepth(1)
+			var hover
 
-			var wall = this.drawWall(x, y, 120, 7.5, thickness, true, true).setDepth(0).setScale(1)
+			tile.on(Constants.client.events.MOUSE_HOVER, () => {
+				hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1).setDepth(2)
+			})
+
+			tile.on(Constants.client.events.MOUSE_OUT, () => {
+				hover.destroy()
+			})
+
+			var wall = this.drawWall(x, y, 120, 7.5, thickness, true, true).setDepth(0)
 		})
 	}
 
@@ -78,9 +78,9 @@ export default class Room {
 			tile.lineTo(point.x, point.y)
 		})
 
+		tile.fillPath()
 		tile.closePath()
 		tile.strokePath()
-		tile.fillPath()
 
 		if (leftBorder && thickness > 0) {
 
@@ -94,9 +94,9 @@ export default class Room {
 			tile.lineTo(vertices.bottom.x, vertices.bottom.y + thickness)
 			tile.lineTo(vertices.bottom.x, vertices.bottom.y)
 
+			tile.fillPath()
 			tile.closePath()
 			tile.strokePath()
-			tile.fillPath()
 		}
 
 
@@ -112,9 +112,9 @@ export default class Room {
 			tile.lineTo(vertices.left.x, vertices.left.y)
 			tile.lineTo(vertices.left.x, vertices.left.y + thickness)
 
+			tile.fillPath()
 			tile.closePath()
 			tile.strokePath()
-			tile.fillPath()
 		}
 
 		return tile
@@ -159,9 +159,9 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
-			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.lineStyle(1, 0xfff)
+			wall.lineStyle(1, 0xB6B8C7)
 			wall.fillStyle(0xB6B8C7)
 
 			wall.beginPath()
@@ -172,41 +172,41 @@ export default class Room {
 				wall.lineTo(point.x, point.y)
 			})
 
+			wall.fillPath()
 			wall.closePath()
 			wall.strokePath()
-			//wall.fillPath()
 
 			if (thickness > 0) {
 
-				// wall.lineStyle(0.5, 0x9597A3)
-				// wall.fillStyle(0x9597A3)
-				//
-				// wall.beginPath()
-				//
-				// wall.moveTo(vertices.bottom.x, vertices.bottom.y + tileThickness)
-				//
-				// wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + tileThickness)
-				// wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
-				// wall.lineTo(vertices.right.x, vertices.right.y)
-				//
-				// wall.closePath()
-				// wall.strokePath()
-				// wall.fillPath()
+				wall.lineStyle(1, 0x9597A3)
+				wall.fillStyle(0x9597A3)
 
-				// wall.lineStyle(0.5, 0x6F717A)
-				// wall.fillStyle(0x6F717A)
-				//
-				// wall.beginPath()
-				//
-				// wall.moveTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
-				//
-				// wall.lineTo(vertices.top.x, vertices.top.y - thickness)
-				// wall.lineTo(vertices.top.x, vertices.top.y)
-				// wall.lineTo(vertices.right.x, vertices.right.y)
-				//
-				// wall.closePath()
-				// wall.strokePath()
-				// wall.fillPath()
+				wall.beginPath()
+
+				wall.moveTo(vertices.bottom.x, vertices.bottom.y + tileThickness)
+
+				wall.lineTo(vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + tileThickness)
+				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
+				wall.lineTo(vertices.right.x, vertices.right.y)
+
+				wall.fillPath()
+				wall.closePath()
+				wall.strokePath()
+
+				wall.lineStyle(1, 0x6F717A)
+				wall.fillStyle(0x6F717A)
+
+				wall.beginPath()
+
+				wall.moveTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
+
+				wall.lineTo(vertices.top.x, vertices.top.y - thickness)
+				wall.lineTo(vertices.top.x, vertices.top.y)
+				wall.lineTo(vertices.right.x, vertices.right.y)
+
+				wall.fillPath()
+				wall.closePath()
+				wall.strokePath()
 			}
 		}
 
@@ -244,50 +244,53 @@ export default class Room {
 
 			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			// wall.fillStyle(0x90929E)
-			//
-			// wall.beginPath()
-			//
-			// wall.moveTo(vertices.right.x - 1, vertices.right.y)
-			//
-			// hitArea.points.forEach((point) => {
-			// 	wall.lineTo(point.x, point.y)
-			// })
-			//
-			// wall.fillPath()
-		//
-		// 	if (thickness > 0) {
-		//
-		// 		wall.lineStyle(0.5, 0xBBBECD)
-		// 		wall.fillStyle(0xBBBECD)
-		//
-		// 		wall.beginPath()
-		//
-		// 		wall.moveTo(vertices.bottom.x, vertices.bottom.y + tileThickness)
-		//
-		// 		wall.lineTo(vertices.bottom.x - thickness, vertices.bottom.y - thickness / 2 + tileThickness)
-		// 		wall.lineTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
-		// 		wall.lineTo(vertices.left.x, vertices.left.y)
-		//
-		// 		wall.closePath()
-		// 		wall.strokePath()
-		// 		wall.fillPath()
-		// 		//
-		// 		// wall.lineStyle(0.5, 0x6F717A)
-		// 		// wall.fillStyle(0x6F717A)
-		// 		//
-		// 		// wall.beginPath()
-		// 		//
-		// 		// wall.moveTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
-		// 		//
-		// 		// wall.lineTo(vertices.top.x, vertices.top.y - thickness)
-		// 		// wall.lineTo(vertices.top.x, vertices.top.y)
-		// 		// wall.lineTo(vertices.left.x, vertices.left.y)
-		// 		//
-		// 		// wall.closePath()
-		// 		// wall.strokePath()
-		// 		// wall.fillPath()
-		// 	}
+			wall.lineStyle(1, 0x90929E)
+			wall.fillStyle(0x90929E)
+
+			wall.beginPath()
+
+			wall.moveTo(vertices.right.x, vertices.right.y)
+
+			hitArea.points.forEach((point) => {
+				wall.lineTo(point.x, point.y)
+			})
+
+			wall.fillPath()
+			wall.closePath()
+			wall.strokePath()
+
+			if (thickness > 0) {
+
+				wall.lineStyle(1, 0xBBBECD)
+				wall.fillStyle(0xBBBECD)
+
+				wall.beginPath()
+
+				wall.moveTo(vertices.bottom.x, vertices.bottom.y + tileThickness)
+
+				wall.lineTo(vertices.bottom.x - thickness, vertices.bottom.y - thickness / 2 + tileThickness)
+				wall.lineTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
+				wall.lineTo(vertices.left.x, vertices.left.y)
+
+				wall.fillPath()
+				wall.closePath()
+				wall.strokePath()
+
+				wall.lineStyle(1, 0x6F717A)
+				wall.fillStyle(0x6F717A)
+
+				wall.beginPath()
+
+				wall.moveTo(vertices.left.x - thickness, vertices.left.y - thickness / 2)
+
+				wall.lineTo(vertices.top.x, vertices.top.y - thickness)
+				wall.lineTo(vertices.top.x, vertices.top.y)
+				wall.lineTo(vertices.left.x, vertices.left.y)
+
+				wall.fillPath()
+				wall.closePath()
+				wall.strokePath()
+			}
 		}
 
 		return wall
