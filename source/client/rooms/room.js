@@ -232,10 +232,10 @@ export default class Room {
 			}
 
 			hitArea = new Phaser.Geom.Polygon([
-				vertices.bottom.x, vertices.bottom.y,
-				vertices.left.x, vertices.left.y,
-				vertices.top.x, vertices.top.y,
-				vertices.right.x, vertices.right.y,
+				vertices.bottom.x - 1, vertices.bottom.y,
+				vertices.left.x - 1, vertices.left.y,
+				vertices.top.x - 1, vertices.top.y,
+				vertices.right.x - 1, vertices.right.y,
 			])
 
 			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
@@ -244,7 +244,7 @@ export default class Room {
 
 			wall.beginPath()
 
-			wall.moveTo(vertices.right.x, vertices.right.y)
+			wall.moveTo(vertices.right.x - 1, vertices.right.y)
 
 			hitArea.points.forEach((point) => {
 				wall.lineTo(point.x, point.y)
