@@ -1,11 +1,19 @@
 @import '../../fonts'
 @import '../../variables'
+@import '../../components/index.styl'
+
 
 .client
+	z-index: 0
+	display: block
+	position: fixed
+	height: 100%
+	width: 100%
+
 	& .hotel
-		z-index: 0
+		z-index: 1
 		display block
-		position fixed
+		position: fixed
 		height: calc(100% - 53px)
 		width: 100%
 		background-color: #68E5FF
@@ -20,7 +28,327 @@
 		position: fixed
 		bottom: 0
 		background: rgba(46, 46, 44, 0.6)
+		min-width: 900px
 		width: 100%
 		height: 50px
 		border-top: 2px solid #41403D
 		border-bottom: 1px solid #41403D
+
+		& .icons
+			padding: 8px;
+			position: relative;
+			padding-left: 25px;
+			overflow: hidden;
+			float: left;
+			border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+
+			& span
+				float: left;
+				margin-right: 10px;
+				cursor: pointer;
+
+				&:last-child
+					margin-right: 0px;
+
+				&:hover
+					position: relative;
+					top: -2px;
+					left: -2px;
+
+			& .house
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/house.png?raw=true);
+				width: 32px;
+				display: inline-block;
+				height: 30px;
+
+			& .rooms
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/rooms.png?raw=true);
+				background-repeat: no-repeat;
+				width: 44px;
+				display: inline-block;
+				height: 30px;
+
+			& .catalogue-icon
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/catalogue.png?raw=true);
+				background-repeat: no-repeat;
+				width: 37px;
+				display: inline-block;
+				height: 36px;
+				margin-top: -4px;
+
+			& .builders-club
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/bc.png?raw=true);
+				background-repeat: no-repeat;
+				width: 37px;
+				display: inline-block;
+				height: 37px;
+
+			& .inventory
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/inventory.png?raw=true)
+				background-repeat: no-repeat;
+				width: 44px;
+				display: inline-block;
+				height: 41px;
+				margin-top: -4px;
+
+			& .user
+				width: 60px;
+				height: 45px;
+				overflow: hidden;
+				margin-top: -5px;
+				margin-left: -5px;
+
+				& img
+					margin-top: -18px;
+
+
+		& .friends
+			padding: 8px;
+			padding-right: 20px;
+			position: relative;
+			padding-left: 25px;
+			overflow: hidden;
+			padding-left: 10px;
+			//border-left: 1px solid rgba(255, 255, 255, 0.1);
+			float: right;
+
+			& .icons
+				float: left;
+				margin-right: 30px;
+				padding: 0
+				padding-left: 20px
+				border-left: 1px solid rgba(255, 255, 255, 0.1);
+				border-right: 0
+
+				& span
+					float: left;
+					margin-right: 15px;
+					cursor: pointer;
+
+					&:hover
+						position: relative;
+						top: -2px;
+						left: -2px;
+
+				& .all
+					background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/friends.png?raw=true);
+					background-repeat: no-repeat;
+					width: 32px;
+					display: inline-block;
+					height: 33px;
+				& .search
+					background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/search_friends.png?raw=true);
+					background-repeat: no-repeat;
+					width: 29px;
+					display: inline-block;
+					height: 33px;
+
+			& .slots
+				float: left;
+
+				& .slot
+					padding: 1px;
+					padding-left: 35px;
+					padding-right: 30px;
+					border-radius: 4px;
+					font-weight: 600;
+					margin-right: 5px
+					color: #fff;
+					font-size: 13px;
+					display: inline-block;
+					margin-left: 2px;
+					cursor: pointer;
+					box-shadow: 0px 2px 0px 0px #000;
+					position: relative;
+					line-height: 13px;
+					border: 2px solid #73DAF9;
+					background-color: #5C8F9C;
+
+					& img
+						position: absolute;
+						left: 0;
+						top: -4px;
+
+	& .purse
+		z-index: 1
+		position: fixed
+		width: 210px
+		background-color: rgba(40,40,40,.65)
+		border: 2px solid rgba(255,255,255,.2)
+		border-top: 0px
+		border-bottom-left-radius: 6px
+		border-bottom-right-radius: 6px
+		right: 10px
+		top: 0px
+		padding: 2px 5px
+		box-shadow: 0in 2px 0pc 0px rgba(0,0,0,.7), 1px 0px 0pc 0pc rgba(0,0,0,.7), -1px 0pt 0pt 0in rgba(0,0,0,.7)
+
+		> *
+			float: left
+			width: 33.3%
+
+		& .currencies
+			overflow: hidden
+			padding: 0
+			margin: 0
+			margin-top: 10px
+
+			& .currency
+				text-align: right
+				display: block
+				font-weight: 600
+				font-size: 12px
+				text-shadow: 0.2px 0.2px 0.2px 2px #000000
+				overflow: hidden
+				line-height: 23px
+				margin-top: -4px
+
+				& i
+					float: right
+
+				& .icon.credits
+					background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/credit.png?raw=true);
+					width: 23px;
+					height: 22px;
+					display: inline-block;
+
+				& .icon.duckets
+					background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/ducket.png?raw=true);
+					width: 23px;
+					height: 22px;
+					display: inline-block;
+
+				& .icon.diamonds
+					background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/diamond.png?raw=true);
+					width: 15px;
+					height: 15px;
+					display: inline-block;
+					margin-top: 5px;
+					margin-right: 4px;
+					margin-left: 4px;
+
+			& .credits
+				color #D3AD21
+
+			& .duckets
+				color: #D686D6
+
+			& .diamonds
+				color: #37C6E6
+
+		& .club
+			margin: 3px
+			width: 25%
+			background-color: #3B423F
+			border-radius: 6px
+			text-align: center
+			font-size: 13px
+			font-weight: 600
+			height: 60px
+			padding-top: 10px
+			color: #00C0C3
+			cursor: pointer
+
+			.icon.hc
+				background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/hc.png?raw=true);
+				margin-top: 10px
+				width: 15px;
+				height: 15px;
+				display: inline-block
+
+			& p
+				line-height: 0
+				margin-top 5px
+
+			& .icon
+				display: block
+				margin: 0 auto
+				margin-bottom: 5px
+
+		& .buttons
+			width: 33%;
+			padding: 0
+			margin: 0
+			margin-top 5px
+			padding-left: 5px;
+			margin-left: 5px;
+			border-left: 1px solid #444444
+
+			& .window-manager-button
+				color: #fff;
+				font-size: 12px;
+				text-align: center;
+				cursor: pointer;
+				display: block;
+				font-weight: 400;
+				border-radius: 4px;
+				border: 1px solid #000;
+				margin-bottom: 2px;
+				box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+
+				&:hover
+					box-shadow: inset 0 0 0 1px #000;
+
+			& .blue
+				background-color: #207AB4;
+				height: 18px
+				line-height: 18px
+
+			& .red
+				background-color: #DD5246;
+
+
+			& .purple
+				background-color: #716A85;
+
+
+			& .red.icon, .purple.icon
+				position: relative;
+				top: 2px;
+
+
+.more
+	height: 40px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	position: absolute;
+	line-height: 35px;
+	left: 0;
+	cursor: pointer;
+	top: 4px;
+	padding: 2px;
+	padding-right: 4px;
+	background-color: #3A3832;
+	color: #9C9791;
+	font-weight: 600;
+
+.more.more-friends
+	left: auto;
+	right: 0;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+	& img
+		padding-right: 2px
+		-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+
+.icon-logout
+	background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/logout.png?raw=true);
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+
+
+.icon-settings
+	background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/settings.png?raw=true);
+	height: 15px;
+	width: 15px;
+	display: inline-block;
