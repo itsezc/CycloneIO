@@ -233,7 +233,7 @@ export default class Room {
 
 			hitArea = new Phaser.Geom.Polygon([
 				vertices.bottom.x, vertices.bottom.y,
-				vertices.left.x, vertices.left.y,
+				vertices.left.x - 0.5, vertices.left.y,
 				vertices.top.x, vertices.top.y,
 				vertices.right.x, vertices.right.y,
 			])
