@@ -14,16 +14,16 @@ export default class Room {
 
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, depth, leftBorder, bottomBorder) => {
 
-			var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder).setDepth(0)
-			var hover
-
-			tile.on(Constants.client.events.MOUSE_HOVER, () => {
-				hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1).setDepth(2)
-			})
-
-			tile.on(Constants.client.events.MOUSE_OUT, () => {
-				hover.destroy()
-			})
+			// var tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder).setDepth(0)
+			// var hover
+			//
+			// tile.on(Constants.client.events.MOUSE_HOVER, () => {
+			// 	hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER).setOrigin(0.5, 0.1).setDepth(2)
+			// })
+			//
+			// tile.on(Constants.client.events.MOUSE_OUT, () => {
+			// 	hover.destroy()
+			// })
 
 			var wall = this.drawWall(x, y, 120, 7.5, thickness, true, true).setDepth(0)
 		})
@@ -79,8 +79,8 @@ export default class Room {
 		})
 
 		tile.closePath()
-		tile.fillPath()
 		tile.strokePath()
+				tile.fillPath()
 
 		if (leftBorder && thickness > 0) {
 
