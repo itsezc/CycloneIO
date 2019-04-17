@@ -8,9 +8,10 @@
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",
     "build:dev": "babel-watch --watch source source/environment.js --exclude 'source/web' --exclude 'source/client'",
     "build:resources": "webpack --mode=production",
-    "build:resources:dev": "webpack-dev-server",
+    "build:resources:dev": "webpack-dev-server --host 0.0.0.0",
     "desktop": "electron ./resources/desktop/index.js",
-    "dev:ui:r63b": "webpack-dev-server --open --config ./resources/ui/r63b/webpack.config.babel.js"
+    "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r63b/webpack.config.babel.js",
+	"dev:ui:r63b:cypress": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -69,13 +70,14 @@
     "webpack-hot-middleware": "^2.24.3"
   },
   "dependencies": {
-    "browser-sync": "^2.26.3",
     "chalk": "^2.4.2",
+    "cypress": "^3.2.0",
     "hapi": "^18.1.0",
     "hapi-webpack-plugin": "^3.0.0",
     "module-alias": "^2.2.0",
     "npm": "^6.9.0",
     "orango": "^1.0.0-alpha-2.5",
+    "progress": "^2.0.3",
     "readline-sync": "^1.4.9",
     "socket.io": "^2.2.0",
     "winston": "^3.2.1"
