@@ -25,14 +25,11 @@ export default class Room {
 			// 	hover.destroy()
 			// })
 
-			var wall = this.drawWall(x, y, 120, 7.5, thickness, true, true)
-			wall.setDepth(1)
+			this.drawWall(x, y, 120, 7.5, thickness, true, true)
 		})
 	}
 
 	drawTile(x, y, thickness, leftBorder, bottomBorder) {
-
-		var tile = this.scene.add.graphics()
 
 		const width = 32
 		const height = 32
@@ -65,6 +62,8 @@ export default class Room {
 			vertices.right.x, vertices.right.y,
 			vertices.bottom.x, vertices.bottom.y
 		])
+
+		var tile = this.scene.add.graphics()
 
 		tile.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
@@ -121,14 +120,18 @@ export default class Room {
 		return tile
 	}
 
-	drawWall(x, y, height, thickness, depth, rightBorder, topBorder) {
-		var wall = this.scene.add.graphics()
-		var vertices
-		var hitArea
+	drawWall(x, y, height, thickness, tileThickness, rightBorder, topBorder) {
 
 		const width = 32
 
+		var vertices
+		var hitArea
+
 		if (rightBorder) {
+
+			var rightWall = this.scene.add.graphics()
+
+			rightWall.setDepth(0)
 
 			vertices = {
 				left: {
@@ -159,22 +162,22 @@ export default class Room {
 				vertices.bottom.x, vertices.bottom.y,
 			])
 
-			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+			//rightWall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.lineStyle(1, 0xB6B8C7)
-			wall.fillStyle(0xB6B8C7)
+			rightWall.lineStyle(1, 0xB6B8C7)
+			rightWall.fillStyle(0xB6B8C7)
 
-			wall.beginPath()
+			rightWall.beginPath()
 
-			wall.moveTo(vertices.right.x, vertices.right.y)
+			rightWall.moveTo(vertices.right.x, vertices.right.y)
 
 			hitArea.points.forEach((point) => {
-				wall.lineTo(point.x, point.y)
+				rightWall.lineTo(point.x, point.y)
 			})
 
-			wall.closePath()
+			rightWall.closePath()
 			//wall.fillPath()
-			wall.strokePath()
+			rightWall.strokePath()
 
 			if (thickness > 0) {
 
@@ -212,6 +215,10 @@ export default class Room {
 
 		if (topBorder) {
 
+			var leftWall = this.scene.add.graphics()
+
+			leftWall.setDepth(1)
+
 			vertices = {
 				right: {
 					x: x,
@@ -235,28 +242,28 @@ export default class Room {
 			}
 
 			hitArea = new Phaser.Geom.Polygon([
-				vertices.right.x, vertices.right.y,
 				vertices.bottom.x, vertices.bottom.y,
 				vertices.left.x, vertices.left.y,
 				vertices.top.x, vertices.top.y,
+				vertices.right.x, vertices.right.y,
 			])
 
 			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.lineStyle(1, 0x90929E)
-			wall.fillStyle(0x90929E)
+			leftWall.lineStyle(1, 0x90929E)
+			leftWall.fillStyle(0x90929E)
 
-			wall.beginPath()
+			leftWall.beginPath()
 
-			wall.moveTo(vertices.right.x, vertices.right.y)
+			leftWall.moveTo(vertices.right.x, vertices.right.y)
 
 			hitArea.points.forEach((point) => {
-				wall.lineTo(point.x, point.y)
+				leftWall.lineTo(point.x, point.y)
 			})
 
-			//wall.closePath()
+			leftWall.closePath()
 			//wall.fillPath()
-			wall.strokePath()
+			leftWall.strokePath()
 
 			if (thickness > 0) {
 
@@ -292,8 +299,6 @@ export default class Room {
 
 			}
 		}
-
-		return wall
 	}
 
 	//
