@@ -25,7 +25,7 @@ export default class Room {
 			// 	hover.destroy()
 			// })
 
-			var wall = this.drawWall(x, y, 120, 7.5, thickness, true, true).setDepth(0)
+			var wall = this.drawWall(x, y, 120, 7.5, thickness, true, true).setDepth(0).scale(x, y)
 		})
 	}
 
