@@ -244,7 +244,7 @@ export default class Room {
 
 			wall.beginPath()
 
-			wall.moveTo(vertices.right.x - 1, vertices.right.y)
+			wall.moveTo(vertices.right.x - 0.5, vertices.right.y)
 
 			hitArea.points.forEach((point) => {
 				wall.lineTo(point.x, point.y)
