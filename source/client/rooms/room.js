@@ -178,6 +178,7 @@ export default class Room {
 
 			if (thickness > 0) {
 
+				wall.lineStyle(0.5, 0x9597A3)
 				wall.fillStyle(0x9597A3)
 
 				wall.beginPath()
@@ -188,8 +189,11 @@ export default class Room {
 				wall.lineTo(vertices.right.x + thickness, vertices.right.y - thickness / 2)
 				wall.lineTo(vertices.right.x, vertices.right.y)
 
+				wall.closePath()
+				wall.strokePath()
 				wall.fillPath()
 
+				wall.lineStyle(1, 0x6F717A)
 				wall.fillStyle(0x6F717A)
 
 				wall.beginPath()
@@ -200,6 +204,8 @@ export default class Room {
 				wall.lineTo(vertices.top.x, vertices.top.y)
 				wall.lineTo(vertices.right.x, vertices.right.y)
 
+				wall.closePath()
+				wall.strokePath()
 				wall.fillPath()
 			}
 		}
