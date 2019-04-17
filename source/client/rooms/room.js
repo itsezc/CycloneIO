@@ -161,6 +161,7 @@ export default class Room {
 
 			wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
+			wall.lineStyle(1, 0xfff)
 			wall.fillStyle(0xB6B8C7)
 
 			wall.beginPath()
@@ -171,7 +172,9 @@ export default class Room {
 				wall.lineTo(point.x, point.y)
 			})
 
-			wall.fillPath()
+			wall.closePath()
+			wall.strokePath()
+			//wall.fillPath()
 
 			if (thickness > 0) {
 
@@ -233,24 +236,25 @@ export default class Room {
 
 			hitArea = new Phaser.Geom.Polygon([
 				vertices.bottom.x, vertices.bottom.y,
-				vertices.left.x - 0.5, vertices.left.y,
+				vertices.left.x, vertices.left.y,
 				vertices.top.x, vertices.top.y,
 				vertices.right.x, vertices.right.y,
 			])
 
+
 			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			wall.fillStyle(0x90929E)
-
-			wall.beginPath()
-
-			wall.moveTo(vertices.right.x - 0.5, vertices.right.y)
-
-			hitArea.points.forEach((point) => {
-				wall.lineTo(point.x, point.y)
-			})
-
-			wall.fillPath()
+			// wall.fillStyle(0x90929E)
+			//
+			// wall.beginPath()
+			//
+			// wall.moveTo(vertices.right.x - 1, vertices.right.y)
+			//
+			// hitArea.points.forEach((point) => {
+			// 	wall.lineTo(point.x, point.y)
+			// })
+			//
+			// wall.fillPath()
 		//
 		// 	if (thickness > 0) {
 		//
