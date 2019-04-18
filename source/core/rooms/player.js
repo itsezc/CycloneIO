@@ -9,15 +9,15 @@ import Logger from '../../utils/logger'
 
 export default class RoomPlayer extends RoomEntity {
 	static onConnect(socket) {
-		var player
+		let player
 
 		socket.on(Constants.common.actions.room.NEW_ROOM, () => {
-			var id = 0 // To make this dynamic
+			let id = 0 // To make this dynamic
 
 			socket.join(id)
 			socket.room = id
 
-			const room = new Room(id, {
+			let room = new Room(id, {
 				floor: {
 					thickness: 7.5
 				}
@@ -25,7 +25,7 @@ export default class RoomPlayer extends RoomEntity {
 
 			Environment.instance.roomManager.add(room)
 
-			const model = new RoomModel(id, [
+			let model = new RoomModel(id, [
 				[1]
 			])
 		})

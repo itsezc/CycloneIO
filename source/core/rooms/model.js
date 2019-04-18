@@ -21,13 +21,13 @@ export default class RoomModel {
 
 				if (square !== this.squareType.BLANK) {
 
-					const x = (row * 32) + (index * 32)
-					const y = ((row * 32) - (index * 32)) / 2
-					const z = square[1] * 32 || 0
-					const height = square[1]
+					let x = (row * 32) + (index * 32)
+					let y = ((row * 32) - (index * 32)) / 2
+					let z = square[1] * 32 || 0
+					let height = square[1]
 
 					Environment.instance.server.socketIO.to(this.id).emit(Constants.common.actions.room.NEW_TILE,
-						x, y, z, currentRoom.properties.floor.thickness, Room.depth.TILE,
+						x, y, z, currentRoom.properties.floor.thickness,
 						this.leftEdge(height, squares, index), this.bottomEdge(height, row, index))
 				}
 			})
@@ -35,13 +35,13 @@ export default class RoomModel {
 	}
 
 	leftEdge(height, squares, index) {
-		const leftSquare = squares[index - 1]
+		let leftSquare = squares[index - 1]
 
 		if (height) {
-			
+
 			if (leftSquare) {
 
-				const leftHeight = leftSquare[1]
+				let leftHeight = leftSquare[1]
 
 				if (leftHeight) {
 
@@ -63,12 +63,10 @@ export default class RoomModel {
 	}
 
 	bottomEdge(height, row, index) {
-		const bottomSquares = this.map[row + 1]
+		let bottomSquares = this.map[row + 1]
 
 		if (height) {
-			const bottomSquare = bottomSquares[index]
-
-			if (bottomSquare) {
+			if (bottomSquares) {
 				const bottomHeight = bottomSquares[1]
 
 				if (bottomHeight && bottomHeight !== height) {
@@ -82,7 +80,7 @@ export default class RoomModel {
 		} else {
 
 			if (bottomSquares) {
-				const bottomSquare = bottomSquares[index]
+				let bottomSquare = bottomSquares[index]
 
 				if (bottomSquare !== this.squareType.TILE) {
 					return true
