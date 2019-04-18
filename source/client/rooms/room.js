@@ -116,7 +116,7 @@ export default class Room {
 			tile.closePath()
 			tile.strokePath()
 		}
-
+		
 		return tile
 	}
 

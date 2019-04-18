@@ -28,7 +28,7 @@ export default class Environment {
 
 	async init() {
 		try {
-			//this.database = await new Database()
+			this.database = await new Database()
 			this.server = await new Server()
 			this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 

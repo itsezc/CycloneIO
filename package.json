@@ -10,6 +10,7 @@
     "build:resources": "webpack --mode=production",
     "build:resources:dev": "webpack-dev-server --host 0.0.0.0",
     "desktop": "electron ./resources/desktop/index.js",
+	"dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r63b/webpack.config.babel.js",
 	"dev:ui:r63b:cypress": "cypress open"
   },

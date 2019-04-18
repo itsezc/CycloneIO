@@ -14,6 +14,13 @@ const Routes = [{
 				listing: true
 			}
 		}
+	},
+	{
+		method: 'GET',
+		path: '/housekeeping/{param*}',
+		handler: (request, h) => {
+			return h.file('./public/housekeeping/index.html')
+		}
 	}
 ]
 

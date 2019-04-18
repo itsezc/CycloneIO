@@ -2,6 +2,7 @@ import Logger from '../utils/logger'
 
 import Config from '../../config.json'
 
+import Bots from './models/bots'
 import Users from './models/users'
 
 import Orango from 'orango'
@@ -10,7 +11,6 @@ const {
 	SCHEMA
 } = Orango.consts
 
-import Joi from 'joi'
 import Faker from 'faker'
 
 export default class Database {
@@ -34,13 +34,6 @@ export default class Database {
 
 	async init() {
 		try {
-			let User = new Users(this.connection)
-			User.insert({
-				email: 'chirub@foretag.co',
-				username: 'EZ-C',
-				password: 'password',
-				pin: '123456'
-			})
 
 			await this.connection.connect({
 				url: Config.database.host,
@@ -49,6 +42,16 @@ export default class Database {
 			})
 
 			this.healthCheck()
+
+			// let User = new Users(this.connection)
+			//
+			// User.insert({
+			// 	email: 'chirub@foretag.co',
+			// 	username: 'EZ-C',
+			// 	password: 'password',
+			// 	pin: '123456'
+			// })
+
 		} catch (error) {
 			Logger.error(error)
 		}
