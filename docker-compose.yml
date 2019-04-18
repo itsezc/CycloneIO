@@ -1,21 +1,25 @@
 version: '3'
 services:
-    node:
-        image: node:11
-        user: 'node'
-        working_dir: /home/node/cyclone
-        environemnt:
-            - NODE_ENV=production
-        volumes:
-            - ./:/home/node/cyclone
-        expose:
-            - '8081'
-        command: 'npm start'
-
-    database:
-        image: arangodb:3.4
-        expose:
-            - '8529'
+    postgres:
+        image: postgres
+        restart: always
         environment:
-            - ARANGO_RANDOM_ROOT_PASSWORD=1
-            - ARANGO_STORAGE_ENGINE=rocksdb
+            POSTGRES_USER: root
+            POSTGRES_PASSWORD: cyclone129
+
+    prisma:
+        image: prismagraphql/prisma:1.31
+        restart: always
+        ports:
+            - '4466:4466'
+        environment:
+            PRISMA_CONFIG: |
+                port: 4466
+                databases:
+                    default:
+                        connector: postgres
+                        host: postgres
+                        port: 5432
+                        user: root
+                        password: cyclone129
+                        migrations: true

@@ -30,8 +30,11 @@ const Logger = createLogger({
 				case 'database':
 					levelOutput = '[🥑]'
 					break
+				case 'apollo':
+					levelOutput = '[⚛️ ]'
+					break
 				case 'network':
-					levelOutput = '[🔌]'
+					levelOutput = '[🎇]'
 					break
 				default:
 
@@ -48,8 +51,9 @@ const Logger = createLogger({
 		server: 2,
 		network: 3,
 		database: 4,
-		client: 5,
-		ui: 6
+		apollo: 5,
+		client: 6,
+		ui: 7
 	},
 	transports: [
 		new transports.Console()

@@ -28,8 +28,8 @@ export default class Environment {
 
 	async init() {
 		try {
-			this.database = await new Database()
 			this.server = await new Server()
+
 			this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 
 			// ReadLineSync.promptLoop((command) => {
@@ -39,7 +39,7 @@ export default class Environment {
 			// })
 
 		} catch (error) {
-			Logger.log('error', error)
+			Logger.error(error)
 		}
 	}
 }

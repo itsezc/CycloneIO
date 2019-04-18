@@ -1,20 +1,17 @@
 package-lock.json
+node_modules
+.env
 
 config.json
-dist
 
 CREDITS.md
 
 _temp
 
+dist
+generated
 web-build/dist
-
-#Plans
-
-node_modules
 
 cypress
 
 .DS_Store
-
-TODO.md
