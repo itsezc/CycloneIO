@@ -1,0 +1,4976 @@
+{
+	"textures": [
+		{
+			"image": "hh_human_body1-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 256,
+				"h": 713
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "83_hh_human_body_h_wlk_bd_1_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 40,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 55
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 40,
+						"h": 55
+					}
+				},
+				{
+					"filename": "79_hh_human_body_h_wlk_bd_1_2_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 36,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 35,
+						"h": 57
+					},
+					"frame": {
+						"x": 1,
+						"y": 58,
+						"w": 35,
+						"h": 57
+					}
+				},
+				{
+					"filename": "31_hh_human_body_h_wlk_bd_1_1_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 53
+					},
+					"frame": {
+						"x": 43,
+						"y": 1,
+						"w": 39,
+						"h": 53
+					}
+				},
+				{
+					"filename": "32_hh_human_body_h_wlk_bd_1_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 53
+					},
+					"frame": {
+						"x": 84,
+						"y": 1,
+						"w": 39,
+						"h": 53
+					}
+				},
+				{
+					"filename": "144_hh_human_body_h_lay_bd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 56,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 56,
+						"h": 35
+					},
+					"frame": {
+						"x": 125,
+						"y": 1,
+						"w": 56,
+						"h": 35
+					}
+				},
+				{
+					"filename": "124_hh_human_body_h_sit_bd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 36,
+						"h": 49
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 36,
+						"h": 49
+					},
+					"frame": {
+						"x": 1,
+						"y": 117,
+						"w": 36,
+						"h": 49
+					}
+				},
+				{
+					"filename": "154_hh_human_body_h_std_bd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 57
+					},
+					"frame": {
+						"x": 1,
+						"y": 168,
+						"w": 25,
+						"h": 57
+					}
+				},
+				{
+					"filename": "81_hh_human_body_h_wlk_bd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 57
+					},
+					"frame": {
+						"x": 1,
+						"y": 227,
+						"w": 25,
+						"h": 57
+					}
+				},
+				{
+					"filename": "77_hh_human_body_h_wlk_bd_1_2_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 59
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 59
+					},
+					"frame": {
+						"x": 1,
+						"y": 286,
+						"w": 22,
+						"h": 59
+					}
+				},
+				{
+					"filename": "82_hh_human_body_h_wlk_bd_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 58
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 58
+					},
+					"frame": {
+						"x": 1,
+						"y": 347,
+						"w": 22,
+						"h": 58
+					}
+				},
+				{
+					"filename": "131_hh_human_body_h_std_bd_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 407,
+						"w": 25,
+						"h": 56
+					}
+				},
+				{
+					"filename": "89_hh_human_body_h_wlk_bd_1_0_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 465,
+						"w": 25,
+						"h": 56
+					}
+				},
+				{
+					"filename": "87_hh_human_body_h_wlk_bd_1_0_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 56
+					},
+					"frame": {
+						"x": 1,
+						"y": 523,
+						"w": 23,
+						"h": 56
+					}
+				},
+				{
+					"filename": "137_hh_human_body_h_wlk_bd_1_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 55
+					},
+					"frame": {
+						"x": 1,
+						"y": 581,
+						"w": 24,
+						"h": 55
+					}
+				},
+				{
+					"filename": "140_hh_human_body_h_wlk_bd_1_3_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 55
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 55
+					},
+					"frame": {
+						"x": 1,
+						"y": 638,
+						"w": 24,
+						"h": 55
+					}
+				},
+				{
+					"filename": "187_hh_human_body_h_std_sd_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 34,
+						"h": 17
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 34,
+						"h": 17
+					},
+					"frame": {
+						"x": 1,
+						"y": 695,
+						"w": 34,
+						"h": 17
+					}
+				},
+				{
+					"filename": "92_hh_human_body_h_sit_bd_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 39,
+						"h": 38
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 39,
+						"h": 38
+					},
+					"frame": {
+						"x": 183,
+						"y": 1,
+						"w": 39,
+						"h": 38
+					}
+				},
+				{
+					"filename": "108_hh_human_body_h_blw_rh_1_6_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 31,
+						"h": 19
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 31,
+						"h": 19
+					},
+					"frame": {
+						"x": 224,
+						"y": 1,
+						"w": 31,
+						"h": 19
+					}
+				},
+				{
+					"filename": "133_hh_human_body_h_wlk_bd_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 54
+					},
+					"frame": {
+						"x": 28,
+						"y": 168,
+						"w": 24,
+						"h": 54
+					}
+				},
+				{
+					"filename": "136_hh_human_body_h_wlk_bd_1_3_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 54
+					},
+					"frame": {
+						"x": 28,
+						"y": 224,
+						"w": 24,
+						"h": 54
+					}
+				},
+				{
+					"filename": "155_hh_human_body_h_std_bd_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 54
+					},
+					"frame": {
+						"x": 38,
+						"y": 58,
+						"w": 24,
+						"h": 54
+					}
+				},
+				{
+					"filename": "19_hh_human_body_h_wlk_bd_1_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 52
+					},
+					"frame": {
+						"x": 39,
+						"y": 114,
+						"w": 23,
+						"h": 52
+					}
+				},
+				{
+					"filename": "84_hh_human_body_h_wlk_bd_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 54
+					},
+					"frame": {
+						"x": 64,
+						"y": 56,
+						"w": 23,
+						"h": 54
+					}
+				},
+				{
+					"filename": "26_hh_human_body_h_wlk_bd_1_7_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 52
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 52
+					},
+					"frame": {
+						"x": 64,
+						"y": 112,
+						"w": 23,
+						"h": 52
+					}
+				},
+				{
+					"filename": "20_hh_human_body_h_wlk_bd_1_7_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 51
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 51
+					},
+					"frame": {
+						"x": 89,
+						"y": 56,
+						"w": 23,
+						"h": 51
+					}
+				},
+				{
+					"filename": "22_hh_human_body_h_wlk_bd_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 51
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 51
+					},
+					"frame": {
+						"x": 89,
+						"y": 109,
+						"w": 23,
+						"h": 51
+					}
+				},
+				{
+					"filename": "143_hh_human_body_h_std_bd_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 53
+					},
+					"frame": {
+						"x": 114,
+						"y": 56,
+						"w": 20,
+						"h": 53
+					}
+				},
+				{
+					"filename": "34_hh_human_body_h_wlk_bd_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 53
+					},
+					"frame": {
+						"x": 114,
+						"y": 111,
+						"w": 20,
+						"h": 53
+					}
+				},
+				{
+					"filename": "33_hh_human_body_h_wlk_bd_1_1_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 53
+					},
+					"frame": {
+						"x": 54,
+						"y": 168,
+						"w": 17,
+						"h": 53
+					}
+				},
+				{
+					"filename": "99_hh_human_body_h_std_bd_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 51
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 51
+					},
+					"frame": {
+						"x": 54,
+						"y": 223,
+						"w": 23,
+						"h": 51
+					}
+				},
+				{
+					"filename": "10_hh_human_body_h_respect_lh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 37
+					},
+					"frame": {
+						"x": 73,
+						"y": 166,
+						"w": 14,
+						"h": 37
+					}
+				},
+				{
+					"filename": "49_hh_human_body_h_std_bd_999_0_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 56
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 34
+					},
+					"frame": {
+						"x": 89,
+						"y": 162,
+						"w": 23,
+						"h": 34
+					}
+				},
+				{
+					"filename": "205_hh_human_body_h_std_bd_999_2_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 57
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 33
+					},
+					"frame": {
+						"x": 114,
+						"y": 166,
+						"w": 23,
+						"h": 33
+					}
+				},
+				{
+					"filename": "163_hh_human_body_h_crr_lh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 16
+					},
+					"frame": {
+						"x": 125,
+						"y": 38,
+						"w": 22,
+						"h": 16
+					}
+				},
+				{
+					"filename": "107_hh_human_body_h_lay_hd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 149,
+						"y": 38,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "55_hh_human_body_h_sit_sd_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 40,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 40,
+						"h": 22
+					},
+					"frame": {
+						"x": 183,
+						"y": 41,
+						"w": 40,
+						"h": 22
+					}
+				},
+				{
+					"filename": "61_hh_human_body_h_sit_rh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 11,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 33
+					},
+					"frame": {
+						"x": 136,
+						"y": 56,
+						"w": 11,
+						"h": 33
+					}
+				},
+				{
+					"filename": "48_hh_human_body_h_sit_sd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 38,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 38,
+						"h": 22
+					},
+					"frame": {
+						"x": 149,
+						"y": 65,
+						"w": 38,
+						"h": 22
+					}
+				},
+				{
+					"filename": "113_hh_human_body_h_lsp_hd_2_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 189,
+						"y": 65,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "114_hh_human_body_h_lsp_hd_2_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 223,
+						"y": 65,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "1_hh_human_body_h_respect_lh_1_4_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 37
+					},
+					"frame": {
+						"x": 136,
+						"y": 91,
+						"w": 14,
+						"h": 37
+					}
+				},
+				{
+					"filename": "146_hh_human_body_h_spk_hd_3_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 34
+					},
+					"frame": {
+						"x": 152,
+						"y": 89,
+						"w": 26,
+						"h": 34
+					}
+				},
+				{
+					"filename": "191_hh_human_body_h_spk_hd_4_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 34
+					},
+					"frame": {
+						"x": 136,
+						"y": 130,
+						"w": 26,
+						"h": 34
+					}
+				},
+				{
+					"filename": "56_hh_human_body_h_spk_hd_2_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 34
+					},
+					"frame": {
+						"x": 139,
+						"y": 166,
+						"w": 26,
+						"h": 34
+					}
+				},
+				{
+					"filename": "196_hh_human_body_h_lay_hd_2_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 180,
+						"y": 92,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "221_hh_human_body_h_lsp_hd_3_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 214,
+						"y": 92,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "233_hh_human_body_h_wlk_rh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 7,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 7,
+						"h": 30
+					},
+					"frame": {
+						"x": 248,
+						"y": 92,
+						"w": 7,
+						"h": 30
+					}
+				},
+				{
+					"filename": "52_hh_human_body_h_blw_rh_1_5_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 30,
+						"h": 17
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 30,
+						"h": 17
+					},
+					"frame": {
+						"x": 224,
+						"y": 22,
+						"w": 30,
+						"h": 17
+					}
+				},
+				{
+					"filename": "138_hh_human_body_h_blw_rh_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 22
+					},
+					"frame": {
+						"x": 225,
+						"y": 41,
+						"w": 27,
+						"h": 22
+					}
+				},
+				{
+					"filename": "14_hh_human_body_h_respect_lh_1_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 37
+					},
+					"frame": {
+						"x": 164,
+						"y": 125,
+						"w": 17,
+						"h": 37
+					}
+				},
+				{
+					"filename": "161_hh_human_body_h_spk_hd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 33
+					},
+					"frame": {
+						"x": 183,
+						"y": 119,
+						"w": 26,
+						"h": 33
+					}
+				},
+				{
+					"filename": "169_hh_human_body_h_spk_hd_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 33
+					},
+					"frame": {
+						"x": 211,
+						"y": 119,
+						"w": 26,
+						"h": 33
+					}
+				},
+				{
+					"filename": "230_hh_human_body_h_wav_lh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 35
+					},
+					"frame": {
+						"x": 239,
+						"y": 124,
+						"w": 16,
+						"h": 35
+					}
+				},
+				{
+					"filename": "15_hh_human_body_h_respect_lh_1_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 36
+					},
+					"frame": {
+						"x": 167,
+						"y": 164,
+						"w": 14,
+						"h": 36
+					}
+				},
+				{
+					"filename": "231_hh_human_body_h_respect_lh_1_6_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 24,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 34
+					},
+					"frame": {
+						"x": 183,
+						"y": 154,
+						"w": 24,
+						"h": 34
+					}
+				},
+				{
+					"filename": "44_hh_human_body_h_spk_hd_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 28,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 28,
+						"h": 29
+					},
+					"frame": {
+						"x": 209,
+						"y": 154,
+						"w": 28,
+						"h": 29
+					}
+				},
+				{
+					"filename": "9_hh_human_body_h_respect_lh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 35
+					},
+					"frame": {
+						"x": 239,
+						"y": 161,
+						"w": 16,
+						"h": 35
+					}
+				},
+				{
+					"filename": "43_hh_human_body_h_spk_hd_1_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 28,
+						"h": 28
+					},
+					"frame": {
+						"x": 209,
+						"y": 185,
+						"w": 28,
+						"h": 28
+					}
+				},
+				{
+					"filename": "101_hh_human_body_h_sig_lh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 34
+					},
+					"frame": {
+						"x": 239,
+						"y": 198,
+						"w": 16,
+						"h": 34
+					}
+				},
+				{
+					"filename": "212_hh_human_body_h_std_bd_999_3_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 24,
+						"h": 54
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 31
+					},
+					"frame": {
+						"x": 183,
+						"y": 190,
+						"w": 24,
+						"h": 31
+					}
+				},
+				{
+					"filename": "67_hh_human_body_h_std_hd_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 28,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 28,
+						"h": 28
+					},
+					"frame": {
+						"x": 209,
+						"y": 215,
+						"w": 28,
+						"h": 28
+					}
+				},
+				{
+					"filename": "168_hh_human_body_h_sig_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 32
+					},
+					"frame": {
+						"x": 239,
+						"y": 234,
+						"w": 16,
+						"h": 32
+					}
+				},
+				{
+					"filename": "170_hh_human_body_h_wav_lh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 36
+					},
+					"frame": {
+						"x": 25,
+						"y": 286,
+						"w": 14,
+						"h": 36
+					}
+				},
+				{
+					"filename": "228_hh_human_body_h_respect_lh_1_6_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 36
+					},
+					"frame": {
+						"x": 25,
+						"y": 324,
+						"w": 19,
+						"h": 36
+					}
+				},
+				{
+					"filename": "13_hh_human_body_h_respect_lh_1_5_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 36
+					},
+					"frame": {
+						"x": 25,
+						"y": 362,
+						"w": 18,
+						"h": 36
+					}
+				},
+				{
+					"filename": "172_hh_human_body_h_wav_lh_1_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 36
+					},
+					"frame": {
+						"x": 28,
+						"y": 400,
+						"w": 18,
+						"h": 36
+					}
+				},
+				{
+					"filename": "12_hh_human_body_h_respect_lh_1_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 35
+					},
+					"frame": {
+						"x": 28,
+						"y": 438,
+						"w": 21,
+						"h": 35
+					}
+				},
+				{
+					"filename": "236_hh_human_body_h_wav_lh_1_6_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 35
+					},
+					"frame": {
+						"x": 28,
+						"y": 475,
+						"w": 21,
+						"h": 35
+					}
+				},
+				{
+					"filename": "234_hh_human_body_h_wav_lh_1_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 35
+					},
+					"frame": {
+						"x": 41,
+						"y": 280,
+						"w": 20,
+						"h": 35
+					}
+				},
+				{
+					"filename": "237_hh_human_body_h_sig_lh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 35
+					},
+					"frame": {
+						"x": 63,
+						"y": 276,
+						"w": 14,
+						"h": 35
+					}
+				},
+				{
+					"filename": "4_hh_human_body_h_respect_lh_1_4_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 35
+					},
+					"frame": {
+						"x": 46,
+						"y": 317,
+						"w": 17,
+						"h": 35
+					}
+				},
+				{
+					"filename": "16_hh_human_body_h_respect_lh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 13,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 13,
+						"h": 35
+					},
+					"frame": {
+						"x": 65,
+						"y": 313,
+						"w": 13,
+						"h": 35
+					}
+				},
+				{
+					"filename": "72_hh_human_body_h_wlk_rh_1_2_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 36
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 36
+					},
+					"frame": {
+						"x": 45,
+						"y": 362,
+						"w": 9,
+						"h": 36
+					}
+				},
+				{
+					"filename": "70_hh_human_body_h_wlk_rh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 35
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 35
+					},
+					"frame": {
+						"x": 48,
+						"y": 400,
+						"w": 10,
+						"h": 35
+					}
+				},
+				{
+					"filename": "59_hh_human_body_h_sit_rh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 10,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 10,
+						"h": 34
+					},
+					"frame": {
+						"x": 51,
+						"y": 437,
+						"w": 10,
+						"h": 34
+					}
+				},
+				{
+					"filename": "5_hh_human_body_h_respect_lh_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 20,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 20,
+						"h": 34
+					},
+					"frame": {
+						"x": 51,
+						"y": 473,
+						"w": 20,
+						"h": 34
+					}
+				},
+				{
+					"filename": "109_hh_human_body_h_wlk_lh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 34
+					},
+					"frame": {
+						"x": 26,
+						"y": 523,
+						"w": 8,
+						"h": 34
+					}
+				},
+				{
+					"filename": "174_hh_human_body_h_sig_lh_1_6_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 34
+					},
+					"frame": {
+						"x": 36,
+						"y": 512,
+						"w": 19,
+						"h": 34
+					}
+				},
+				{
+					"filename": "178_hh_human_body_h_wav_lh_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 34
+					},
+					"frame": {
+						"x": 57,
+						"y": 509,
+						"w": 18,
+						"h": 34
+					}
+				},
+				{
+					"filename": "128_hh_human_body_h_wlk_lh_1_3_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 34
+					},
+					"frame": {
+						"x": 56,
+						"y": 354,
+						"w": 8,
+						"h": 34
+					}
+				},
+				{
+					"filename": "186_hh_human_body_h_wav_lh_1_5_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 34
+					},
+					"frame": {
+						"x": 66,
+						"y": 350,
+						"w": 18,
+						"h": 34
+					}
+				},
+				{
+					"filename": "189_hh_human_body_h_wav_lh_1_5_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 34
+					},
+					"frame": {
+						"x": 79,
+						"y": 223,
+						"w": 17,
+						"h": 34
+					}
+				},
+				{
+					"filename": "7_hh_human_body_h_respect_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 34
+					},
+					"frame": {
+						"x": 79,
+						"y": 259,
+						"w": 17,
+						"h": 34
+					}
+				},
+				{
+					"filename": "142_hh_human_body_h_crr_rh_1_5_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 23
+					},
+					"frame": {
+						"x": 89,
+						"y": 198,
+						"w": 22,
+						"h": 23
+					}
+				},
+				{
+					"filename": "176_hh_human_body_h_wav_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 15,
+						"h": 34
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 34
+					},
+					"frame": {
+						"x": 98,
+						"y": 223,
+						"w": 15,
+						"h": 34
+					}
+				},
+				{
+					"filename": "11_hh_human_body_h_respect_lh_1_5_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 33
+					},
+					"frame": {
+						"x": 98,
+						"y": 259,
+						"w": 21,
+						"h": 33
+					}
+				},
+				{
+					"filename": "53_hh_human_body_h_blw_rh_1_5_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 20
+					},
+					"frame": {
+						"x": 113,
+						"y": 201,
+						"w": 23,
+						"h": 20
+					}
+				},
+				{
+					"filename": "235_hh_human_body_h_wav_lh_1_6_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 33
+					},
+					"frame": {
+						"x": 115,
+						"y": 223,
+						"w": 25,
+						"h": 33
+					}
+				},
+				{
+					"filename": "17_hh_human_body_h_respect_lh_1_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 33
+					},
+					"frame": {
+						"x": 121,
+						"y": 258,
+						"w": 18,
+						"h": 33
+					}
+				},
+				{
+					"filename": "75_hh_human_body_h_blw_rh_1_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 29,
+						"h": 17
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 29,
+						"h": 17
+					},
+					"frame": {
+						"x": 138,
+						"y": 202,
+						"w": 29,
+						"h": 17
+					}
+				},
+				{
+					"filename": "145_hh_human_body_h_spk_hd_3_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 32
+					},
+					"frame": {
+						"x": 142,
+						"y": 221,
+						"w": 26,
+						"h": 32
+					}
+				},
+				{
+					"filename": "86_hh_human_body_h_std_rh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 11,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 11,
+						"h": 33
+					},
+					"frame": {
+						"x": 170,
+						"y": 202,
+						"w": 11,
+						"h": 33
+					}
+				},
+				{
+					"filename": "141_hh_human_body_h_blw_rh_1_2_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 24,
+						"h": 23
+					},
+					"frame": {
+						"x": 183,
+						"y": 223,
+						"w": 24,
+						"h": 23
+					}
+				},
+				{
+					"filename": "45_hh_human_body_h_lay_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 28,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 28,
+						"h": 14
+					},
+					"frame": {
+						"x": 209,
+						"y": 245,
+						"w": 28,
+						"h": 14
+					}
+				},
+				{
+					"filename": "206_hh_human_body_h_std_rh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 33
+					},
+					"frame": {
+						"x": 141,
+						"y": 258,
+						"w": 9,
+						"h": 33
+					}
+				},
+				{
+					"filename": "185_hh_human_body_h_wav_lh_1_4_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 33
+					},
+					"frame": {
+						"x": 152,
+						"y": 255,
+						"w": 18,
+						"h": 33
+					}
+				},
+				{
+					"filename": "192_hh_human_body_h_spk_hd_4_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 32
+					},
+					"frame": {
+						"x": 172,
+						"y": 248,
+						"w": 26,
+						"h": 32
+					}
+				},
+				{
+					"filename": "222_hh_human_body_h_lsp_hd_3_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 200,
+						"y": 261,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "91_hh_human_body_h_crr_rh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 21,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 21,
+						"h": 29
+					},
+					"frame": {
+						"x": 234,
+						"y": 268,
+						"w": 21,
+						"h": 29
+					}
+				},
+				{
+					"filename": "162_hh_human_body_h_spk_hd_3_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 29
+					},
+					"frame": {
+						"x": 172,
+						"y": 282,
+						"w": 26,
+						"h": 29
+					}
+				},
+				{
+					"filename": "225_hh_human_body_h_lay_hd_4_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 200,
+						"y": 288,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "217_hh_human_body_h_wav_lh_1_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 32
+					},
+					"frame": {
+						"x": 152,
+						"y": 290,
+						"w": 18,
+						"h": 32
+					}
+				},
+				{
+					"filename": "54_hh_human_body_h_drk_rh_1_5_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 20
+					},
+					"frame": {
+						"x": 172,
+						"y": 313,
+						"w": 26,
+						"h": 20
+					}
+				},
+				{
+					"filename": "27_hh_human_body_h_lay_hd_3_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 200,
+						"y": 315,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "98_hh_human_body_h_sig_lh_1_5_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 32
+					},
+					"frame": {
+						"x": 234,
+						"y": 299,
+						"w": 18,
+						"h": 32
+					}
+				},
+				{
+					"filename": "57_hh_human_body_h_spk_hd_2_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 32
+					},
+					"frame": {
+						"x": 80,
+						"y": 295,
+						"w": 26,
+						"h": 32
+					}
+				},
+				{
+					"filename": "46_hh_human_body_h_blw_rh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 19
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 80,
+						"y": 329,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "69_hh_human_body_h_wlk_rh_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 13,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 13,
+						"h": 33
+					},
+					"frame": {
+						"x": 86,
+						"y": 350,
+						"w": 13,
+						"h": 33
+					}
+				},
+				{
+					"filename": "158_hh_human_body_h_sig_lh_1_4_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 33
+					},
+					"frame": {
+						"x": 108,
+						"y": 294,
+						"w": 14,
+						"h": 33
+					}
+				},
+				{
+					"filename": "134_hh_human_body_h_std_hd_2_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 31
+					},
+					"frame": {
+						"x": 124,
+						"y": 293,
+						"w": 26,
+						"h": 31
+					}
+				},
+				{
+					"filename": "147_hh_human_body_h_spk_hd_3_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 32
+					},
+					"frame": {
+						"x": 101,
+						"y": 329,
+						"w": 25,
+						"h": 32
+					}
+				},
+				{
+					"filename": "201_hh_human_body_h_spk_hd_4_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 32
+					},
+					"frame": {
+						"x": 128,
+						"y": 326,
+						"w": 25,
+						"h": 32
+					}
+				},
+				{
+					"filename": "71_hh_human_body_h_wlk_rh_1_2_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 15,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 32
+					},
+					"frame": {
+						"x": 155,
+						"y": 324,
+						"w": 15,
+						"h": 32
+					}
+				},
+				{
+					"filename": "148_hh_human_body_h_std_hd_3_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 31
+					},
+					"frame": {
+						"x": 172,
+						"y": 335,
+						"w": 26,
+						"h": 31
+					}
+				},
+				{
+					"filename": "28_hh_human_body_h_lsp_hd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 200,
+						"y": 342,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "184_hh_human_body_h_wav_lh_1_4_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 33
+					},
+					"frame": {
+						"x": 234,
+						"y": 333,
+						"w": 14,
+						"h": 33
+					}
+				},
+				{
+					"filename": "179_hh_human_body_h_wlk_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 27
+					},
+					"frame": {
+						"x": 250,
+						"y": 333,
+						"w": 5,
+						"h": 27
+					}
+				},
+				{
+					"filename": "29_hh_human_body_h_lsp_hd_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 101,
+						"y": 363,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "151_hh_human_body_h_spk_hd_4_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 135,
+						"y": 360,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "95_hh_human_body_h_lsp_hd_4_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 164,
+						"y": 368,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "96_hh_human_body_h_lsp_hd_4_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 25
+					},
+					"frame": {
+						"x": 198,
+						"y": 369,
+						"w": 32,
+						"h": 25
+					}
+				},
+				{
+					"filename": "21_hh_human_body_h_std_bd_999_7_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 23,
+						"h": 51
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 29
+					},
+					"frame": {
+						"x": 232,
+						"y": 369,
+						"w": 23,
+						"h": 29
+					}
+				},
+				{
+					"filename": "120_hh_human_body_h_wlk_rh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 33
+					},
+					"frame": {
+						"x": 60,
+						"y": 400,
+						"w": 8,
+						"h": 33
+					}
+				},
+				{
+					"filename": "129_hh_human_body_h_wlk_lh_1_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 33
+					},
+					"frame": {
+						"x": 63,
+						"y": 435,
+						"w": 8,
+						"h": 33
+					}
+				},
+				{
+					"filename": "18_hh_human_body_h_respect_lh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 33
+					},
+					"frame": {
+						"x": 70,
+						"y": 400,
+						"w": 14,
+						"h": 33
+					}
+				},
+				{
+					"filename": "58_hh_human_body_h_spk_hd_2_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 32
+					},
+					"frame": {
+						"x": 73,
+						"y": 435,
+						"w": 25,
+						"h": 32
+					}
+				},
+				{
+					"filename": "164_hh_human_body_h_spk_hd_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 31
+					},
+					"frame": {
+						"x": 73,
+						"y": 469,
+						"w": 26,
+						"h": 31
+					}
+				},
+				{
+					"filename": "165_hh_human_body_h_spk_hd_1_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 31
+					},
+					"frame": {
+						"x": 77,
+						"y": 502,
+						"w": 26,
+						"h": 31
+					}
+				},
+				{
+					"filename": "210_hh_human_body_h_std_rh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 33
+					},
+					"frame": {
+						"x": 86,
+						"y": 400,
+						"w": 8,
+						"h": 33
+					}
+				},
+				{
+					"filename": "197_hh_human_body_h_std_hd_4_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 31
+					},
+					"frame": {
+						"x": 96,
+						"y": 390,
+						"w": 26,
+						"h": 31
+					}
+				},
+				{
+					"filename": "152_hh_human_body_h_spk_hd_4_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 124,
+						"y": 391,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "23_hh_human_body_h_wlk_lh_1_1_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 29
+					},
+					"frame": {
+						"x": 153,
+						"y": 391,
+						"w": 9,
+						"h": 29
+					}
+				},
+				{
+					"filename": "193_hh_human_body_h_spk_hd_2_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 164,
+						"y": 395,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "198_hh_human_body_h_spk_hd_2_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 193,
+						"y": 396,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "122_hh_human_body_h_std_hd_3_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 222,
+						"y": 400,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "3_hh_human_body_h_wlk_lh_1_1_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 19
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 19
+					},
+					"frame": {
+						"x": 251,
+						"y": 400,
+						"w": 4,
+						"h": 19
+					}
+				},
+				{
+					"filename": "64_hh_human_body_h_std_hd_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 31
+					},
+					"frame": {
+						"x": 100,
+						"y": 423,
+						"w": 26,
+						"h": 31
+					}
+				},
+				{
+					"filename": "66_hh_human_body_h_std_hd_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 31
+					},
+					"frame": {
+						"x": 128,
+						"y": 422,
+						"w": 26,
+						"h": 31
+					}
+				},
+				{
+					"filename": "35_hh_human_body_h_spk_hd_3_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 156,
+						"y": 426,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "38_hh_human_body_h_spk_hd_3_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 185,
+						"y": 427,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "39_hh_human_body_h_spk_hd_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 214,
+						"y": 430,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "177_hh_human_body_h_wlk_rh_1_0_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 32
+					},
+					"frame": {
+						"x": 243,
+						"y": 430,
+						"w": 12,
+						"h": 32
+					}
+				},
+				{
+					"filename": "118_hh_human_body_h_std_hd_2_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 31
+					},
+					"frame": {
+						"x": 101,
+						"y": 456,
+						"w": 25,
+						"h": 31
+					}
+				},
+				{
+					"filename": "182_hh_human_body_h_spk_hd_4_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 29
+					},
+					"frame": {
+						"x": 128,
+						"y": 455,
+						"w": 26,
+						"h": 29
+					}
+				},
+				{
+					"filename": "130_hh_human_body_h_std_hd_2_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 156,
+						"y": 457,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "132_hh_human_body_h_std_hd_3_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 185,
+						"y": 458,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "153_hh_human_body_h_spk_hd_4_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 214,
+						"y": 461,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "40_hh_human_body_h_wav_lh_1_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 31
+					},
+					"frame": {
+						"x": 243,
+						"y": 464,
+						"w": 12,
+						"h": 31
+					}
+				},
+				{
+					"filename": "125_hh_human_body_h_std_hd_3_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 31
+					},
+					"frame": {
+						"x": 105,
+						"y": 489,
+						"w": 25,
+						"h": 31
+					}
+				},
+				{
+					"filename": "76_hh_human_body_h_blw_rh_1_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 25
+					},
+					"frame": {
+						"x": 132,
+						"y": 486,
+						"w": 22,
+						"h": 25
+					}
+				},
+				{
+					"filename": "156_hh_human_body_h_spk_hd_4_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 156,
+						"y": 487,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "181_hh_human_body_h_std_hd_4_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 185,
+						"y": 488,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "194_hh_human_body_h_spk_hd_2_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 214,
+						"y": 491,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "42_hh_human_body_h_wav_lh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 31
+					},
+					"frame": {
+						"x": 243,
+						"y": 497,
+						"w": 12,
+						"h": 31
+					}
+				},
+				{
+					"filename": "199_hh_human_body_h_spk_hd_2_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 105,
+						"y": 522,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "190_hh_human_body_h_spk_hd_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 29
+					},
+					"frame": {
+						"x": 77,
+						"y": 535,
+						"w": 26,
+						"h": 29
+					}
+				},
+				{
+					"filename": "68_hh_human_body_h_blw_rh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 26
+					},
+					"frame": {
+						"x": 57,
+						"y": 545,
+						"w": 18,
+						"h": 26
+					}
+				},
+				{
+					"filename": "6_hh_human_body_h_blw_rh_1_4_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 19,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 19,
+						"h": 21
+					},
+					"frame": {
+						"x": 36,
+						"y": 548,
+						"w": 19,
+						"h": 21
+					}
+				},
+				{
+					"filename": "207_hh_human_body_h_std_hd_4_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 105,
+						"y": 552,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "80_hh_human_body_h_spk_hd_2_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 29
+					},
+					"frame": {
+						"x": 77,
+						"y": 566,
+						"w": 26,
+						"h": 29
+					}
+				},
+				{
+					"filename": "36_hh_human_body_h_spk_hd_3_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 105,
+						"y": 582,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "216_hh_human_body_h_wav_lh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 32
+					},
+					"frame": {
+						"x": 134,
+						"y": 513,
+						"w": 14,
+						"h": 32
+					}
+				},
+				{
+					"filename": "37_hh_human_body_h_spk_hd_3_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 150,
+						"y": 517,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "149_hh_human_body_h_spk_hd_3_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 31
+					},
+					"frame": {
+						"x": 134,
+						"y": 547,
+						"w": 25,
+						"h": 31
+					}
+				},
+				{
+					"filename": "202_hh_human_body_h_spk_hd_4_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 31
+					},
+					"frame": {
+						"x": 134,
+						"y": 580,
+						"w": 25,
+						"h": 31
+					}
+				},
+				{
+					"filename": "41_hh_human_body_h_spk_hd_1_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 179,
+						"y": 518,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "62_hh_human_body_h_std_hd_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 208,
+						"y": 521,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "223_hh_human_body_h_drk_rh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 25
+					},
+					"frame": {
+						"x": 237,
+						"y": 530,
+						"w": 18,
+						"h": 25
+					}
+				},
+				{
+					"filename": "139_hh_human_body_h_sig_lh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 14,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 14,
+						"h": 31
+					},
+					"frame": {
+						"x": 161,
+						"y": 547,
+						"w": 14,
+						"h": 31
+					}
+				},
+				{
+					"filename": "85_hh_human_body_h_std_hd_2_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 28
+					},
+					"frame": {
+						"x": 177,
+						"y": 548,
+						"w": 27,
+						"h": 28
+					}
+				},
+				{
+					"filename": "100_hh_human_body_h_std_hd_2_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 28
+					},
+					"frame": {
+						"x": 206,
+						"y": 551,
+						"w": 26,
+						"h": 28
+					}
+				},
+				{
+					"filename": "209_hh_human_body_h_std_hd_4_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 31
+					},
+					"frame": {
+						"x": 161,
+						"y": 580,
+						"w": 25,
+						"h": 31
+					}
+				},
+				{
+					"filename": "65_hh_human_body_h_crr_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 16,
+						"h": 23
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 16,
+						"h": 23
+					},
+					"frame": {
+						"x": 188,
+						"y": 578,
+						"w": 16,
+						"h": 23
+					}
+				},
+				{
+					"filename": "51_hh_human_body_h_drk_rh_1_6_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 27,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 27,
+						"h": 21
+					},
+					"frame": {
+						"x": 206,
+						"y": 581,
+						"w": 27,
+						"h": 21
+					}
+				},
+				{
+					"filename": "50_hh_human_body_h_spk_hd_2_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 31
+					},
+					"frame": {
+						"x": 27,
+						"y": 571,
+						"w": 25,
+						"h": 31
+					}
+				},
+				{
+					"filename": "121_hh_human_body_h_std_hd_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 28
+					},
+					"frame": {
+						"x": 27,
+						"y": 604,
+						"w": 26,
+						"h": 28
+					}
+				},
+				{
+					"filename": "166_hh_human_body_h_spk_hd_3_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 28
+					},
+					"frame": {
+						"x": 27,
+						"y": 634,
+						"w": 26,
+						"h": 28
+					}
+				},
+				{
+					"filename": "8_hh_human_body_h_std_bd_999_1_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 20,
+						"h": 53
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 29
+					},
+					"frame": {
+						"x": 27,
+						"y": 664,
+						"w": 17,
+						"h": 29
+					}
+				},
+				{
+					"filename": "105_hh_human_body_h_wlk_rh_1_1_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 24
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 24
+					},
+					"frame": {
+						"x": 54,
+						"y": 573,
+						"w": 18,
+						"h": 24
+					}
+				},
+				{
+					"filename": "195_hh_human_body_h_spk_hd_1_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 28
+					},
+					"frame": {
+						"x": 55,
+						"y": 599,
+						"w": 26,
+						"h": 28
+					}
+				},
+				{
+					"filename": "200_hh_human_body_h_std_hd_4_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 28
+					},
+					"frame": {
+						"x": 55,
+						"y": 629,
+						"w": 26,
+						"h": 28
+					}
+				},
+				{
+					"filename": "175_hh_human_body_h_wlk_rh_1_0_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 15,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 27
+					},
+					"frame": {
+						"x": 83,
+						"y": 597,
+						"w": 15,
+						"h": 27
+					}
+				},
+				{
+					"filename": "63_hh_human_body_h_std_hd_3_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 28
+					},
+					"frame": {
+						"x": 83,
+						"y": 626,
+						"w": 26,
+						"h": 28
+					}
+				},
+				{
+					"filename": "126_hh_human_body_h_crr_rh_1_4_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 17,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 17,
+						"h": 22
+					},
+					"frame": {
+						"x": 234,
+						"y": 557,
+						"w": 17,
+						"h": 22
+					}
+				},
+				{
+					"filename": "227_hh_human_body_h_std_lh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 33
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 33
+					},
+					"frame": {
+						"x": 46,
+						"y": 664,
+						"w": 8,
+						"h": 33
+					}
+				},
+				{
+					"filename": "78_hh_human_body_h_spk_hd_2_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 28
+					},
+					"frame": {
+						"x": 56,
+						"y": 659,
+						"w": 26,
+						"h": 28
+					}
+				},
+				{
+					"filename": "93_hh_human_body_h_drk_rh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 22
+					},
+					"frame": {
+						"x": 84,
+						"y": 656,
+						"w": 25,
+						"h": 22
+					}
+				},
+				{
+					"filename": "188_hh_human_body_h_drk_rh_1_4_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 15,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 22
+					},
+					"frame": {
+						"x": 235,
+						"y": 581,
+						"w": 15,
+						"h": 22
+					}
+				},
+				{
+					"filename": "97_hh_human_body_h_drk_rh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 26,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 26,
+						"h": 20
+					},
+					"frame": {
+						"x": 56,
+						"y": 689,
+						"w": 26,
+						"h": 20
+					}
+				},
+				{
+					"filename": "112_hh_human_body_h_wlk_lh_1_7_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 32
+					},
+					"frame": {
+						"x": 84,
+						"y": 680,
+						"w": 8,
+						"h": 32
+					}
+				},
+				{
+					"filename": "115_hh_human_body_h_wlk_lh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 32
+					},
+					"frame": {
+						"x": 94,
+						"y": 680,
+						"w": 8,
+						"h": 32
+					}
+				},
+				{
+					"filename": "119_hh_human_body_h_wlk_rh_1_3_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 32
+					},
+					"frame": {
+						"x": 104,
+						"y": 680,
+						"w": 8,
+						"h": 32
+					}
+				},
+				{
+					"filename": "213_hh_human_body_h_wlk_lh_1_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 16
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 16
+					},
+					"frame": {
+						"x": 73,
+						"y": 205,
+						"w": 5,
+						"h": 16
+					}
+				},
+				{
+					"filename": "173_hh_human_body_h_wlk_rh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 30
+					},
+					"frame": {
+						"x": 111,
+						"y": 612,
+						"w": 12,
+						"h": 30
+					}
+				},
+				{
+					"filename": "171_hh_human_body_h_wlk_rh_1_0_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 29
+					},
+					"frame": {
+						"x": 111,
+						"y": 644,
+						"w": 12,
+						"h": 29
+					}
+				},
+				{
+					"filename": "106_hh_human_body_h_lay_rh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 25,
+						"h": 21
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 25,
+						"h": 21
+					},
+					"frame": {
+						"x": 125,
+						"y": 613,
+						"w": 25,
+						"h": 21
+					}
+				},
+				{
+					"filename": "226_hh_human_body_h_crr_rh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 22,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 22,
+						"h": 22
+					},
+					"frame": {
+						"x": 125,
+						"y": 636,
+						"w": 22,
+						"h": 22
+					}
+				},
+				{
+					"filename": "74_hh_human_body_h_blw_rh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 20
+					},
+					"frame": {
+						"x": 152,
+						"y": 613,
+						"w": 23,
+						"h": 20
+					}
+				},
+				{
+					"filename": "220_hh_human_body_h_std_rh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 32
+					},
+					"frame": {
+						"x": 114,
+						"y": 675,
+						"w": 8,
+						"h": 32
+					}
+				},
+				{
+					"filename": "157_hh_human_body_h_crr_rh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 23,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 23,
+						"h": 18
+					},
+					"frame": {
+						"x": 125,
+						"y": 660,
+						"w": 23,
+						"h": 18
+					}
+				},
+				{
+					"filename": "229_hh_human_body_h_wlk_rh_1_7_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 32
+					},
+					"frame": {
+						"x": 124,
+						"y": 680,
+						"w": 8,
+						"h": 32
+					}
+				},
+				{
+					"filename": "103_hh_human_body_h_wlk_rh_1_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 13,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 13,
+						"h": 27
+					},
+					"frame": {
+						"x": 134,
+						"y": 680,
+						"w": 13,
+						"h": 27
+					}
+				},
+				{
+					"filename": "116_hh_human_body_h_crr_rh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 27
+					},
+					"frame": {
+						"x": 177,
+						"y": 613,
+						"w": 12,
+						"h": 27
+					}
+				},
+				{
+					"filename": "111_hh_human_body_h_wlk_lh_1_7_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 31
+					},
+					"frame": {
+						"x": 191,
+						"y": 603,
+						"w": 8,
+						"h": 31
+					}
+				},
+				{
+					"filename": "60_hh_human_body_h_crr_lh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 27
+					},
+					"frame": {
+						"x": 201,
+						"y": 604,
+						"w": 12,
+						"h": 27
+					}
+				},
+				{
+					"filename": "183_hh_human_body_h_drk_rh_1_3_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 18,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 18,
+						"h": 18
+					},
+					"frame": {
+						"x": 215,
+						"y": 604,
+						"w": 18,
+						"h": 18
+					}
+				},
+				{
+					"filename": "47_hh_human_body_h_blw_rh_1_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 19,
+						"h": 18
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 19,
+						"h": 18
+					},
+					"frame": {
+						"x": 235,
+						"y": 605,
+						"w": 19,
+						"h": 18
+					}
+				},
+				{
+					"filename": "159_hh_human_body_h_crr_lh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 17
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 17
+					},
+					"frame": {
+						"x": 37,
+						"y": 695,
+						"w": 4,
+						"h": 17
+					}
+				},
+				{
+					"filename": "204_hh_human_body_h_wlk_lh_1_2_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 27
+					},
+					"frame": {
+						"x": 149,
+						"y": 680,
+						"w": 5,
+						"h": 27
+					}
+				},
+				{
+					"filename": "2_hh_human_body_h_blw_rh_1_4_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 15,
+						"h": 22
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 15,
+						"h": 22
+					},
+					"frame": {
+						"x": 149,
+						"y": 636,
+						"w": 15,
+						"h": 22
+					}
+				},
+				{
+					"filename": "25_hh_human_body_h_wlk_lh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 29
+					},
+					"frame": {
+						"x": 166,
+						"y": 635,
+						"w": 9,
+						"h": 29
+					}
+				},
+				{
+					"filename": "30_hh_human_body_h_std_rh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 29
+					},
+					"frame": {
+						"x": 177,
+						"y": 642,
+						"w": 9,
+						"h": 29
+					}
+				},
+				{
+					"filename": "123_hh_human_body_h_wlk_rh_1_3_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 31
+					},
+					"frame": {
+						"x": 188,
+						"y": 642,
+						"w": 8,
+						"h": 31
+					}
+				},
+				{
+					"filename": "208_hh_human_body_h_std_lh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 31
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 31
+					},
+					"frame": {
+						"x": 198,
+						"y": 636,
+						"w": 8,
+						"h": 31
+					}
+				},
+				{
+					"filename": "127_hh_human_body_h_wlk_lh_1_3_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 30
+					},
+					"frame": {
+						"x": 208,
+						"y": 633,
+						"w": 8,
+						"h": 30
+					}
+				},
+				{
+					"filename": "232_hh_human_body_h_wlk_rh_1_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 30
+					},
+					"frame": {
+						"x": 218,
+						"y": 624,
+						"w": 8,
+						"h": 30
+					}
+				},
+				{
+					"filename": "211_hh_human_body_h_wlk_lh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 27
+					},
+					"frame": {
+						"x": 228,
+						"y": 624,
+						"w": 5,
+						"h": 27
+					}
+				},
+				{
+					"filename": "88_hh_human_body_h_std_lh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 29
+					},
+					"frame": {
+						"x": 235,
+						"y": 625,
+						"w": 9,
+						"h": 29
+					}
+				},
+				{
+					"filename": "102_hh_human_body_h_wlk_rh_1_1_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 28
+					},
+					"frame": {
+						"x": 246,
+						"y": 625,
+						"w": 9,
+						"h": 28
+					}
+				},
+				{
+					"filename": "104_hh_human_body_h_wlk_rh_1_1_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 28
+					},
+					"frame": {
+						"x": 246,
+						"y": 655,
+						"w": 9,
+						"h": 28
+					}
+				},
+				{
+					"filename": "90_hh_human_body_h_std_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 27
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 27
+					},
+					"frame": {
+						"x": 156,
+						"y": 685,
+						"w": 5,
+						"h": 27
+					}
+				},
+				{
+					"filename": "214_hh_human_body_h_wlk_lh_1_0_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 26
+					},
+					"frame": {
+						"x": 163,
+						"y": 685,
+						"w": 5,
+						"h": 26
+					}
+				},
+				{
+					"filename": "219_hh_human_body_h_std_lh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 26
+					},
+					"frame": {
+						"x": 170,
+						"y": 685,
+						"w": 5,
+						"h": 26
+					}
+				},
+				{
+					"filename": "180_hh_human_body_h_wlk_lh_1_2_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 28
+					},
+					"frame": {
+						"x": 177,
+						"y": 673,
+						"w": 9,
+						"h": 28
+					}
+				},
+				{
+					"filename": "110_hh_human_body_h_wlk_lh_1_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 29
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 29
+					},
+					"frame": {
+						"x": 188,
+						"y": 675,
+						"w": 8,
+						"h": 29
+					}
+				},
+				{
+					"filename": "117_hh_human_body_h_wlk_rh_1_3_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 28
+					},
+					"frame": {
+						"x": 198,
+						"y": 669,
+						"w": 8,
+						"h": 28
+					}
+				},
+				{
+					"filename": "218_hh_human_body_h_wlk_rh_1_7_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 28
+					},
+					"frame": {
+						"x": 208,
+						"y": 665,
+						"w": 8,
+						"h": 28
+					}
+				},
+				{
+					"filename": "215_hh_human_body_h_wlk_lh_1_0_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 8,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 8,
+						"h": 26
+					},
+					"frame": {
+						"x": 218,
+						"y": 656,
+						"w": 8,
+						"h": 26
+					}
+				},
+				{
+					"filename": "224_hh_human_body_h_sit_lh_1_0_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 26
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 26
+					},
+					"frame": {
+						"x": 228,
+						"y": 653,
+						"w": 5,
+						"h": 26
+					}
+				},
+				{
+					"filename": "167_hh_human_body_h_blw_rh_1_7_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 9,
+						"h": 14
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 9,
+						"h": 14
+					},
+					"frame": {
+						"x": 235,
+						"y": 656,
+						"w": 9,
+						"h": 14
+					}
+				},
+				{
+					"filename": "24_hh_human_body_h_wlk_lh_1_1_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 9
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 9
+					},
+					"frame": {
+						"x": 28,
+						"y": 512,
+						"w": 5,
+						"h": 9
+					}
+				},
+				{
+					"filename": "203_hh_human_body_h_wlk_lh_1_2_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 4,
+						"h": 12
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 4,
+						"h": 12
+					},
+					"frame": {
+						"x": 100,
+						"y": 612,
+						"w": 4,
+						"h": 12
+					}
+				},
+				{
+					"filename": "150_hh_human_body_h_crr_rh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 6,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 6,
+						"h": 20
+					},
+					"frame": {
+						"x": 218,
+						"y": 684,
+						"w": 6,
+						"h": 20
+					}
+				},
+				{
+					"filename": "94_hh_human_body_h_sit_lh_1_2_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 25
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 25
+					},
+					"frame": {
+						"x": 226,
+						"y": 684,
+						"w": 5,
+						"h": 25
+					}
+				},
+				{
+					"filename": "73_hh_human_body_h_crr_lh_1_7_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 6,
+						"h": 20
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 6,
+						"h": 20
+					},
+					"frame": {
+						"x": 233,
+						"y": 685,
+						"w": 6,
+						"h": 20
+					}
+				},
+				{
+					"filename": "135_hh_human_body_h_crr_rh_1_6_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 5,
+						"h": 19
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 5,
+						"h": 19
+					},
+					"frame": {
+						"x": 241,
+						"y": 685,
+						"w": 5,
+						"h": 19
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:1a9cae9b20109b150c082cba3c7411ca:0b33e719b227c1d4d88daa30a4e95e96:c0e46a26c405e38404c7748854eadcb9$"
+	}
+}

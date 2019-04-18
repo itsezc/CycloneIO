@@ -70,7 +70,7 @@ export default class RoomScene extends Phaser.Scene {
 		// this.moodlightPreview.setDepth(4)
 
 		// Zoom
-		//this.camera.setZoom(2)
+		// this.camera.setZoom(5)
 
 		// Room Background Color
 		//this.camera.backgroundColor.setTo(0,255,255)
@@ -81,8 +81,8 @@ export default class RoomScene extends Phaser.Scene {
 		// Room up side down
 		//this.camera.setAngle(180)
 
-		this.soundSample = this.sound.add('credits')
-		this.soundSample.play()
+		// this.soundSample = this.sound.add('credits')
+		// this.soundSample.play()
 
 		// this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
 		// this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
