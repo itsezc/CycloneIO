@@ -15,8 +15,7 @@ export default class Room {
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, leftBorder, bottomBorder) => {
 
 			let tile = this.drawTile(x, y - z, thickness, leftBorder, bottomBorder)
-			tile.generateTexture('test', 32, 32)
-
+			tile.generateTexture('test')
 			this.scene.add.image(x, y, 'test')
 			// let hover
 			//
@@ -70,9 +69,9 @@ export default class Room {
 			add: false
 		})
 
-		// tile.fillStyle(0x989865)
-		//
-		// tile.fillPoints(hitArea.points, true)
+		tile.fillStyle(0x989865)
+
+		tile.fillPoints(hitArea.points, true)
 
 		tile.lineStyle(1, 0x8E8E5E)
 
