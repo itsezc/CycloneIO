@@ -15,6 +15,7 @@ export default class Room {
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, leftBorder, bottomBorder) => {
 
 			this.drawTile(x, y - z, thickness, leftBorder, bottomBorder)
+
 			// tile.generateTexture('test')
 			// this.scene.add.image(x, y, 'test')
 			// let hover
@@ -67,7 +68,7 @@ export default class Room {
 			32, 16
 		])
 
-		let wall = this.scene.add.graphics() // testing
+		let tile = this.scene.add.graphics() // testing
 
 		// let top = this.scene.add.graphics()
 		// let left = this.scene.add.graphics()
@@ -76,9 +77,9 @@ export default class Room {
 		// wall.fillStyle(0x989865)
 		// wall.fillPoints(hitArea.points)
 
-		wall.lineStyle(1, 0x8E8E5E)
-		wall.lineBetween(0, 0, 32, -16)
-		wall.lineBetween(32, -16, 64, 0)
+		tile.lineStyle(0.5, 0x8E8E5E)
+		tile.lineBetween(0.5, 0, 32, -16)
+		tile.lineBetween(31.5, -16, 63.5, 0)
 
 		let leftEdge = new Phaser.Geom.Polygon([
 			0, 8,
@@ -87,14 +88,18 @@ export default class Room {
 			30, 23
 		])
 
-		wall.fillStyle(0x838357)
-		wall.fillPoints(leftEdge.points)
+		// tile.fillStyle(0x838357)
+		// tile.fillPoints(leftEdge.points)
 
-		wall.lineStyle(1, 0x7A7A51)
-		wall.lineBetween(0, 8, 1, 1)
-
-		wall.lineStyle(0.5, 0x7A7A51)
-		wall.lineBetween(0.5, 0.5, 31, 16)
+		// tile.lineStyle(1, 0x7A7A51)
+		// tile.lineBetween(0, 9, 0, 0)
+		// tile.lineBetween(0.5, 0.5, 31, 16)
+		//
+		// tile.lineStyle(1, 0x676744)
+		// tile.lineBetween(64, 15, 30, 22)
+		//
+		// tile.lineStyle(0.5, 0x676744)
+		// tile.lineBetween(31, 16, 61, 2)
 
 		// wall.lineStyle(0.5, 0x7A7A51)
 		// wall.lineBetween(1, 0, 32, 16)
