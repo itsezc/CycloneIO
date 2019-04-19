@@ -27,7 +27,7 @@ export default class Room {
 			// 	hover.destroy()
 			// })
 			//
-			this.drawWall(x, y, 120, 7.5, thickness, true, true)
+			// this.drawWall(x, y, 120, 7.5, thickness, true, true)
 
 		})
 	}
@@ -79,7 +79,7 @@ export default class Room {
 		top.lineBetween(vertices.bottom.x, vertices.bottom.y, vertices.right.x, vertices.right.y)
 		top.lineBetween(vertices.top.x, vertices.top.x, vertices.left.x, vertices.left.y)
 
-		top.lineStyle(0.5, 0x8E8E5E)
+		top.lineStyle(1, 0x8E8E5E)
 		top.lineBetween(vertices.right.x, vertices.right.y, vertices.top.x, vertices.top.y)
 
 		top.setDepth(2)
