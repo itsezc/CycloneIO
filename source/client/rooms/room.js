@@ -160,7 +160,7 @@ export default class Room {
 			bottomFront.lineStyle(1, 0x90929E)
 			bottomFront.strokePoints(hitArea.points, true)
 
-			bottomFront.setDepth(3)
+			bottomFront.setDepth(4)
 
 			// if (thickness > 0) {
 			//
