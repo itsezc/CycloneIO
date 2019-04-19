@@ -14,7 +14,7 @@ export default class Room {
 
 		this.socket.on(Constants.common.actions.room.NEW_TILE, (x, y, z, thickness, leftBorder, bottomBorder) => {
 
-			this.drawTile(x, y - z, thickness, leftBorder, bottomBorder)
+			// this.drawTile(x, y - z, thickness, leftBorder, bottomBorder)
 			// tile.generateTexture('test')
 			// this.scene.add.image(x, y, 'test')
 			// let hover
@@ -27,7 +27,7 @@ export default class Room {
 			// 	hover.destroy()
 			// })
 			//
-			// this.drawWall(x, y, 120, 7.5, thickness, true, true)
+			this.drawWall(x, y, 120, 7.5, thickness, true, true)
 
 		})
 	}
