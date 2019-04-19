@@ -234,7 +234,7 @@ export default class Room {
 			rightFront.fillPoints(hitArea.points, true)
 
 			rightFront.lineStyle(1, 0xB6B8C7)
-			rightFront.strokePoints(hitArea.points)
+			rightFront.strokePoints(hitArea.points, true)
 
 			rightFront.setDepth(3)
 
