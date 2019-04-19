@@ -9,13 +9,17 @@ const config = {
     pixelArt: true,
     antialias: true,
     scale: {
-        mode: Phaser.Scale.RESIZE
+        mode: Phaser.Scale.RESIZE,
+		width: window.innerWidth * window.devicePixelRatio,
+		height: window.innerHeight * window.devicePixelRatio,
+		zoom: 1 / window.devicePixelRatio
     },
     audio: {
         disableWebAudio: true
     },
     scene: RoomScene
 }
+
 
 const game = new Phaser.Game(config)
 
