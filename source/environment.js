@@ -26,7 +26,7 @@ export default class Environment {
 
 	async init() {
 		try {
-			this.server = await new Server()
+			this.server = await new Server(Config)
 
 			this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 

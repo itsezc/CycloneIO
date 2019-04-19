@@ -14,7 +14,10 @@ import { ApolloServer, gql as GQL } from 'apollo-server-hapi'
 import RoomPlayer from '../core/rooms/player'
 
 export default class Server {
-	constructor() {
+	constructor(config) {
+
+		this.config = config
+
 		this.HTTP = new Hapi.Server({
 			port: 8081
 		})
@@ -48,13 +51,23 @@ export default class Server {
 			  },
 			};
 
-			this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: true, playground: true, })
+
+			Logger.apollo('Started Apollo [GraphQL] listener')
+
+			if(this.config.mode == 'production') {
+				 this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: false, playground: false })
+				 Logger.apollo('Production environment detected, playground and introspection disabled')
+			 } else {
+				 this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: true, playground: true, })
+				 Logger.apollo('Development environment detected, playground and introspection enabled')
+			 }
+
 			await this.apolloServer.applyMiddleware({
 				app: HTTPServer
 			})
 			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
-			Logger.apollo('Started Apollo [GraphQL] listener')
-			Logger.apollo('Development environment detected, playground and introspection enabled')
+
+
 
 			Logger.database('Switched to PostgreSQL connector')
 			Logger.database('Connected to Prisma [GraphQL] successfully')
