@@ -157,8 +157,8 @@ export default class Room {
 			bottomFront.fillStyle(0x90929E)
 			bottomFront.fillPoints(hitArea.points, true)
 
-			// bottomFront.lineStyle(0.5, 0x90929E)
-			// bottomFront.strokePoints(hitArea.points, true)
+			bottomFront.lineStyle(1, 0x90929E)
+			bottomFront.strokePoints(hitArea.points, true)
 
 			bottomFront.setDepth(3)
 
@@ -232,10 +232,10 @@ export default class Room {
 
 			rightFront.fillStyle(0xB6B8C7)
 			rightFront.fillPoints(hitArea.points, true)
-			// //
-			// rightFront.lineStyle(0.5, 0xB6B8C7)
-			// rightFront.strokePoints(hitArea.points)
-			//
+
+			rightFront.lineStyle(1, 0xB6B8C7)
+			rightFront.strokePoints(hitArea.points)
+
 			rightFront.setDepth(3)
 
 			if (thickness > 0) {
