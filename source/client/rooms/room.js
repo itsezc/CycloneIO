@@ -72,50 +72,37 @@ export default class Room {
 		let bottom = this.scene.add.graphics()
 
 		top.fillStyle(0x989865)
-		top.fillPoints(hitArea.points, true)
+		top.fillPoints(hitArea.points)
 
 		top.lineStyle(1, 0x8E8E5E)
-		top.strokePoints(hitArea.points, true)
+		top.lineBetween(vertices.left.x, vertices.left.y, vertices.bottom.x, vertices.bottom.y)
+		top.lineBetween(vertices.bottom.x, vertices.bottom.y, vertices.right.x, vertices.right.y)
+		top.lineBetween(vertices.top.x, vertices.top.x, vertices.left.x, vertices.left.y)
 
-		top.setDepth(1)
+		top.lineStyle(0.5, 0x8E8E5E)
+		top.lineBetween(vertices.right.x, vertices.right.y, vertices.top.x, vertices.top.y)
+
+		top.setDepth(2)
 
 		top.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-		if (leftBorder && thickness > 0) {
-
-			let leftEdge = new Phaser.Geom.Polygon([
-				vertices.bottom.x, vertices.bottom.y + thickness,
-				vertices.bottom.x, vertices.bottom.y,
-				vertices.left.x, vertices.left.y,
-				vertices.left.x, vertices.left.y + thickness
-			])
-
-			left.fillStyle(0x6F6F49)
-			left.fillPoints(leftEdge.points, true)
-
-			left.lineStyle(0.5, 0x676744)
-			left.strokePoints(leftEdge.points, true)
-
-			left.setDepth(2)
-		}
-
-		if (bottomBorder && thickness > 0) {
-
-			let bottomEdge = new Phaser.Geom.Polygon([
-				vertices.right.x, vertices.right.y + thickness,
-				vertices.right.x, vertices.right.y,
-				vertices.bottom.x, vertices.bottom.y,
-				vertices.bottom.x, vertices.bottom.y + thickness
-			])
-
-			bottom.fillStyle(0x6F6F49)
-			bottom.fillPoints(bottomEdge.points, true)
-
-			bottom.lineStyle(0.5, 0x676744)
-			bottom.strokePoints(bottomEdge.points, true)
-
-			bottom.setDepth(3)
-		}
+		// if (bottomBorder && thickness > 0) {
+		//
+		// 	let bottomEdge = new Phaser.Geom.Polygon([
+		// 		vertices.right.x, vertices.right.y + thickness,
+		// 		vertices.right.x, vertices.right.y,
+		// 		vertices.bottom.x, vertices.bottom.y,
+		// 		vertices.bottom.x, vertices.bottom.y + thickness
+		// 	])
+		//
+		// 	bottom.fillStyle(0x6F6F49)
+		// 	bottom.fillPoints(bottomEdge.points, true)
+		//
+		// 	bottom.lineStyle(0.5, 0x676744)
+		// 	bottom.strokePoints(bottomEdge.points, true)
+		//
+		// 	bottom.setDepth(4)
+		// }
 	}
 
 	drawWall(x, y, height, thickness, squareThickness, rightBorder, topBorder) {
@@ -170,44 +157,44 @@ export default class Room {
 			bottomFront.fillStyle(0x90929E)
 			bottomFront.fillPoints(hitArea.points, true)
 
-			bottomFront.lineStyle(0.5, 0x90929E)
-			bottomFront.strokePoints(hitArea.points, true)
+			// bottomFront.lineStyle(0.5, 0x90929E)
+			// bottomFront.strokePoints(hitArea.points, true)
 
-			bottomFront.setDepth(0)
+			bottomFront.setDepth(3)
 
-			if (thickness > 0) {
-
-				let bottomEdgeShape = new Phaser.Geom.Polygon([
-					vertices.bottom.x, vertices.bottom.y + squareThickness,
-					vertices.bottom.x - thickness, vertices.bottom.y - thickness / 2 + squareThickness,
-					vertices.left.x - thickness, vertices.left.y - thickness / 2,
-					vertices.left.x, vertices.left.y,
-					vertices.bottom.x, vertices.bottom.y + squareThickness
-				])
-
-				bottomEdge.fillStyle(0xBBBECD)
-				bottomEdge.fillPoints(bottomEdgeShape.points, true)
-
-				bottomEdge.lineStyle(0.5, 0xBBBECD)
-				bottomEdge.strokePoints(bottomEdgeShape.points, true)
-
-				bottomEdge.setDepth(4)
-
-				let bottomTopEdgeShape = new Phaser.Geom.Polygon([
-					vertices.left.x - thickness, vertices.left.y - thickness / 2,
-					vertices.top.x, vertices.top.y - thickness,
-					vertices.top.x, vertices.top.y,
-					vertices.left.x, vertices.left.y
-				])
-
-				bottomTopEdge.fillStyle(0x6F717A)
-				bottomTopEdge.fillPoints(bottomTopEdgeShape.points, true)
-
-				bottomTopEdge.lineStyle(0.5, 0x6F717A)
-				bottomTopEdge.strokePoints(bottomTopEdgeShape.points, true)
-
-				bottomTopEdge.setDepth(3)
-			}
+			// if (thickness > 0) {
+			//
+			// 	let bottomEdgeShape = new Phaser.Geom.Polygon([
+			// 		vertices.bottom.x, vertices.bottom.y + squareThickness,
+			// 		vertices.bottom.x - thickness, vertices.bottom.y - thickness / 2 + squareThickness,
+			// 		vertices.left.x - thickness, vertices.left.y - thickness / 2,
+			// 		vertices.left.x, vertices.left.y,
+			// 		vertices.bottom.x, vertices.bottom.y + squareThickness
+			// 	])
+			//
+			// 	bottomEdge.fillStyle(0xBBBECD)
+			// 	bottomEdge.fillPoints(bottomEdgeShape.points, true)
+			//
+			// 	bottomEdge.lineStyle(0.5, 0xBBBECD)
+			// 	bottomEdge.strokePoints(bottomEdgeShape.points, true)
+			//
+			// 	bottomEdge.setDepth(5)
+			//
+			// 	let bottomTopEdgeShape = new Phaser.Geom.Polygon([
+			// 		vertices.left.x - thickness, vertices.left.y - thickness / 2,
+			// 		vertices.top.x, vertices.top.y - thickness,
+			// 		vertices.top.x, vertices.top.y,
+			// 		vertices.left.x, vertices.left.y
+			// 	])
+			//
+			// 	bottomTopEdge.fillStyle(0x6F717A)
+			// 	bottomTopEdge.fillPoints(bottomTopEdgeShape.points, true)
+			//
+			// 	bottomTopEdge.lineStyle(0.5, 0x6F717A)
+			// 	bottomTopEdge.strokePoints(bottomTopEdgeShape.points, true)
+			//
+			// 	bottomTopEdge.setDepth(1)
+			// }
 		}
 
 		if (rightBorder) {
@@ -243,46 +230,46 @@ export default class Room {
 
 			// wall.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-			// rightFront.fillStyle(0xB6B8C7)
-			// rightFront.fillPoints(hitArea.points, true)
+			rightFront.fillStyle(0xB6B8C7)
+			rightFront.fillPoints(hitArea.points, true)
 			// //
 			// rightFront.lineStyle(0.5, 0xB6B8C7)
-			// rightFront.strokePoints(hitArea.points, true)
+			// rightFront.strokePoints(hitArea.points)
 			//
-			// rightFront.setDepth(0)
-			//
-			// if (thickness > 0) {
-			//
-			// 	let rightEdgeShape = new Phaser.Geom.Polygon([
-			// 		vertices.bottom.x, vertices.bottom.y + squareThickness,
-			// 		vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + squareThickness,
-			// 		vertices.right.x + thickness, vertices.right.y - thickness / 2,
-			// 		vertices.right.x, vertices.right.y
-			// 	])
-			//
-			// 	rightEdge.fillStyle(0x9597A3)
-			// 	rightEdge.fillPoints(rightEdgeShape.points, true)
-			//
-			// 	// rightEdge.lineStyle(0.5, 0x9597A3)
-			// 	// rightEdge.strokePoints(rightEdgeShape.points, true)
-			//
-			// 	rightEdge.setDepth(4)
-			//
-			// 	let rightTopEdgeShape = new Phaser.Geom.Polygon([
-			// 		vertices.right.x + thickness, vertices.right.y - thickness / 2,
-			// 		vertices.top.x, vertices.top.y - thickness,
-			// 		vertices.top.x, vertices.top.y,
-			// 		vertices.right.x, vertices.right.y
-			// 	])
-			//
-			// 	rightTopEdge.fillStyle(0x6F717A)
-			// 	rightTopEdge.fillPoints(rightTopEdgeShape.points, true)
-			//
-			// 	rightTopEdge.lineStyle(0.5, 0x6F717A)
-			// 	rightTopEdge.strokePoints(rightTopEdgeShape.points, true)
-			//
-			// 	rightTopEdge.setDepth(3)
-			// }
+			rightFront.setDepth(3)
+
+			if (thickness > 0) {
+
+				let rightEdgeShape = new Phaser.Geom.Polygon([
+					vertices.right.x + thickness, vertices.right.y - thickness / 2,
+					vertices.right.x, vertices.right.y,
+					vertices.bottom.x, vertices.bottom.y + squareThickness,
+					vertices.bottom.x + thickness, vertices.bottom.y - thickness / 2 + squareThickness,
+				])
+
+				// rightEdge.fillStyle(0x9597A3)
+				// rightEdge.fillPoints(rightEdgeShape.points, true)
+				//
+				// rightEdge.lineStyle(0.5, 0x9597A3)
+				// rightEdge.strokePoints(rightEdgeShape.points, true)
+				//
+				// rightEdge.setDepth(5)
+
+				// let rightTopEdgeShape = new Phaser.Geom.Polygon([
+				// 	vertices.right.x + thickness, vertices.right.y - thickness / 2,
+				// 	vertices.top.x, vertices.top.y - thickness,
+				// 	vertices.top.x, vertices.top.y,
+				// 	vertices.right.x, vertices.right.y
+				// ])
+				//
+				// rightTopEdge.fillStyle(0x6F717A)
+				// rightTopEdge.fillPoints(rightTopEdgeShape.points, true)
+				//
+				// rightTopEdge.lineStyle(0.5, 0x6F717A)
+				// rightTopEdge.strokePoints(rightTopEdgeShape.points, true)
+				//
+				// rightTopEdge.setDepth(3)
+			}
 		}
 	}
 
