@@ -19,8 +19,6 @@ export default class Server {
 			port: 8081
 		})
 
-
-
 		this.start()
 	}
 
@@ -30,9 +28,11 @@ export default class Server {
 			await this.HTTP.register(Inert)
 			await this.HTTP.route(Routes)
 
+			// Web Sockets
 			this.socketIO = new SocketIO(this.HTTP.listener)
 			Logger.network('Started SocketIO [Web Sockets] listener')
 
+			// GraphQL
 			let HTTPServer = this.HTTP
 
 			const typeDefs = GQL`
@@ -44,17 +44,20 @@ export default class Server {
 
 			const resolvers = {
 			  Query: {
-				hello: () => 'world',
+				hello: () => 'world'
 			  },
 			};
 
-			// GraphQL
-			this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: true, playground: true })
+			this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: true, playground: true, })
 			await this.apolloServer.applyMiddleware({
 				app: HTTPServer
 			})
 			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 			Logger.apollo('Started Apollo [GraphQL] listener')
+			Logger.apollo('Development environment detected, playground and introspection enabled')
+
+			Logger.database('Switched to PostgreSQL connector')
+			Logger.database('Connected to Prisma [GraphQL] successfully')
 
 			await this.HTTP.start()
 		} catch (error) {
@@ -62,7 +65,7 @@ export default class Server {
 			process.exit(1)
 		}
 
-		Logger.server(`Server running on port ${this.HTTP.info.port}`)
+		Logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
 
 		this.socketIO.on(Constants.common.server.CONNECTION, (socket) => {

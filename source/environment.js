@@ -1,8 +1,6 @@
 import Chalk from 'chalk'
 import ReadLineSync from 'readline-sync'
 
-import Database from './storage/database'
-
 import Logger from './utils/logger'
 import Server from './network/server'
 import RoomManager from './core/rooms/manager'

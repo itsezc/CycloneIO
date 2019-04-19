@@ -25,16 +25,16 @@ const Logger = createLogger({
 			var levelOutput
 			switch (level) {
 				case 'server':
-					levelOutput = '[⚙️ ]'
+					levelOutput = '[🌪 ]'
 					break
 				case 'database':
-					levelOutput = '[🥑]'
+					levelOutput = '[🗄️ ]'
 					break
 				case 'apollo':
 					levelOutput = '[⚛️ ]'
 					break
 				case 'network':
-					levelOutput = '[🎇]'
+					levelOutput = '[⚙️ ]'
 					break
 				default:
 

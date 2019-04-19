@@ -29,8 +29,10 @@
 		"port": "8081"
 	},
 	"database": {
-		"name": "",
+		"type": "",
 		"host": "",
+		"port": ,
+		"name": "",
 		"user": "",
 		"pass": ""
 	}
