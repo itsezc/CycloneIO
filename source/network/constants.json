@@ -30,7 +30,11 @@
     },
     "client": {
         "assets": {
+			"TILE": "tile",
             "TILE_HOVER": "tile_hover",
+			"WALL_LEFT": "wall_left",
+			"WALL_RIGHT": "wall_right",
+			"STAIR_RIGHT": "stair_right",
             "HH_HUMAN_BODY": "hh_human_body"
         },
         "scenes": {
