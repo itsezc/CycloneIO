@@ -12,10 +12,13 @@ export default class RoomScene extends Phaser.Scene {
 	}
 
 	preload() {
+
 		this.load.path = 'web-build/'
 
 		this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
+		this.load.svg('tile', 'room/tile.svg')
+		this.load.image('tile2', 'room/tile.png')
 		this.load.svg(Constants.client.assets.TILE_HOVER, 'room/tile_hover.svg')
 
 		this.load.audio('credits', 'audio/credits.mp3')
@@ -37,6 +40,8 @@ export default class RoomScene extends Phaser.Scene {
 		this.lights.enable()
 		this.camera = this.cameras.main
 
+		this.camera.setRoundPixels(true)
+
 		this.socket = io(`${Config.server.host}:${Config.server.port}`)
 		this.room = new Room(this, this.socket)
 
@@ -47,6 +52,7 @@ export default class RoomScene extends Phaser.Scene {
 		// })
 
 		this.camera.centerOn(this.camera.midPoint.x / window.innerWidth, this.camera.midPoint.y / window.innerHeight)
+
 
 		this.input.on('pointermove', pointer => {
 			if (pointer.primaryDown) {

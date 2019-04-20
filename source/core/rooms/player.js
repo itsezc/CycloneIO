@@ -26,7 +26,7 @@ export default class RoomPlayer extends RoomEntity {
 			Environment.instance.roomManager.add(room)
 
 			let model = new RoomModel(id, [
-				[1]
+				[1, 1, 1, 1]
 			])
 		})
 
