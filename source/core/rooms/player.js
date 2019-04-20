@@ -25,9 +25,23 @@ export default class RoomPlayer extends RoomEntity {
 
 			Environment.instance.roomManager.add(room)
 
-			let model = new RoomModel(id, [
-				[1, 1, 1, 1]
-			])
+
+			var ground = []; // Initialize array
+			for (var i = 0 ; i < 256; i++) {
+			    ground[i] = []; // Initialize inner array
+			    for (var j = 0; j < 16; j++) { // i++ needs to be j++
+			        ground[i][j] = 1;
+			    }
+			}
+
+			let model = new RoomModel(id, ground
+				// [
+				// 	[1, 1, 1, 1],
+				// 	[1, 1, 1, 1],
+				// 	[1, 0, 1, 1],
+				// 	[1, 1, 1, 1]
+				// ]
+			)
 		})
 
 		socket.on(Constants.common.actions.player.NEW_PLAYER, (room, position) => {
