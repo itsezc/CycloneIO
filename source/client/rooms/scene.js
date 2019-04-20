@@ -4,6 +4,8 @@ import Config from '../../../config.json'
 import Room from './room'
 import RoomPlayer from './player'
 
+import '../../../web-build/phaser/plugins/webworkers.min.js'
+
 export default class RoomScene extends Phaser.Scene {
 	constructor() {
 		super({
@@ -15,6 +17,7 @@ export default class RoomScene extends Phaser.Scene {
 
 		this.load.path = 'web-build/'
 
+		this.add.plugin(PhaserWebWorkers.plugin)
 		this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
 		this.load.svg('tile', 'room/tile.svg')
