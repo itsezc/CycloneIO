@@ -1,4 +1,3 @@
-import Constants from '../../network/constants.json'
 import Config from '../../../config.json'
 
 import Room from './room'
@@ -7,7 +6,7 @@ import RoomPlayer from './player'
 export default class RoomScene extends Phaser.Scene {
 	constructor() {
 		super({
-			key: Constants.client.scenes.ROOM
+			key: 'room'
 		})
 	}
 
@@ -17,12 +16,12 @@ export default class RoomScene extends Phaser.Scene {
 
 		this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-		this.load.svg(Constants.client.assets.TILE, 'room/tile.svg')
-		this.load.image('tile2', 'room/tile.png')
-		this.load.svg(Constants.client.assets.TILE_HOVER, 'room/tile_hover.svg')
-		this.load.svg(Constants.client.assets.WALL_LEFT, 'room/wall_left.svg')
-		this.load.image(Constants.client.assets.WALL_RIGHT, 'room/wall_right.png')
-		this.load.svg(Constants.client.assets.STAIR_RIGHT, 'room/stair_right.svg')
+		this.load.svg('tile', 'room/tile.svg')
+		this.load.svg('tile_hover', 'room/tile_hover.svg')
+		this.load.svg('wall_left', 'room/wall_left.svg')
+		this.load.image('wall_right', 'room/wall_right.png')
+		this.load.svg('stair_top', 'room/stair_top.svg')
+		this.load.svg('stair_right', 'room/stair_right.svg')
 
 		this.load.audio('credits', 'audio/credits.mp3')
 		this.load.audio('chat', 'audio/chat.mp3')
@@ -30,13 +29,6 @@ export default class RoomScene extends Phaser.Scene {
 		this.load.audio('report', 'audio/report.mp3')
 		this.load.audio('achievement', 'audio/achievement.mp3')
 		this.load.audio('respect', 'audio/respect.mp3')
-
-		// this.load.image('wall_right', 'assets/wall_right.png')
-		// this.load.image('wall_left', 'assets/wall_left.png')
-		// this.load.image('door', 'assets/door.png')
-		// this.load.image(Constants.client.assets.PLAYER, 'assets/player.png')
-		// this.load.image('walk', 'assets/walk.png')
-		// this.load.image('room_bg', 'assets/bg.png')
 	}
 
 	init() {

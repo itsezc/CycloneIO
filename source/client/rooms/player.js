@@ -1,4 +1,3 @@
-import Constants from '../../network/constants.json'
 import Config from '../../../config.json'
 
 export default class RoomPlayer {
@@ -11,34 +10,34 @@ export default class RoomPlayer {
     }
 
     create() {
-        this.socket.on(Constants.common.actions.player.CONNECT, () => {
+        this.socket.on('connect', () => {
             console.log(`Server connected on ${Config.server.host}`)
         })
 
-        this.socket.emit(Constants.common.actions.player.NEW_PLAYER, this.room, this.position)
+        this.socket.emit('newPlayer', this.room, this.position)
 
-        this.socket.on(Constants.common.actions.player.NEW_PLAYER, (player) => {
+        this.socket.on('newPlayer', (player) => {
             this.addPlayer(player.id, player.x, player.y, player.direction)
         })
 
-        this.socket.on(Constants.common.actions.player.ALL_PLAYERS, (players) => {
+        this.socket.on('allPlayers', (players) => {
             for (var i = 0; i < players.length; i++) {
                 this.addPlayer(players[i].id, players[i].x, players[i].y, players[i].direction)
             }
 
-            this.socket.on(Constants.common.actions.player.MOVE, (data) => {
+            this.socket.on('move', (data) => {
                 this.players[data.id].x = data.x
                 this.players[data.id].y = data.y
                 this.players[data.id].anims.play(data.direction, true)
             })
 
-            this.socket.on(Constants.common.actions.player.STOP, (data) => {
+            this.socket.on('stop', (data) => {
                 this.players[data.id].x = data.x
                 this.players[data.id].y = data.y
                 this.players[data.id].anims.stop()
             })
 
-            this.socket.on(Constants.common.actions.player.REMOVE, (id) => {
+            this.socket.on('remove', (id) => {
                 this.players[id].destroy()
                 delete this.players[id]
             })

@@ -1,5 +1,3 @@
-import Constants from '../../network/constants.json'
-
 export default class Room {
 
 	constructor(scene, socket, id) {
@@ -8,107 +6,205 @@ export default class Room {
 	}
 
 	create() {
+		this.tiles = this.scene.add.group()
+		this.stairs = this.scene.add.group()
+		this.walls = this.scene.add.group()
 
-		this.socket.emit(Constants.common.actions.room.NEW_ROOM)
+		this.socket.emit('newRoom')
 
-		this.socket.on(Constants.common.actions.room.NEW_ROOM, (map) => {
+		this.socket.on('newRoom', (map) => {
 
 			map.forEach((squares, row) => {
 
-				squares.forEach((square, index) => {
+				let topSquares = map[row - 1]
 
-					// Awful code
+				squares.forEach((square, index) => {
 
 					let x = (row * 32) + (index * 32)
 					let y = ((row * 32) - (index * 32)) / 2
 					let z = square[1] * 32 || 0
-					let height = square[1] || 0
-					let depth = row - index
-					let wallLeft
-					let wallRight
 
-					if (map[row - 1] === undefined) {
-						wallLeft = this.scene.add.image(x, y, Constants.client.assets.WALL_LEFT)
-						wallLeft.setOrigin(1, 0.97)
-						wallLeft.setDepth(depth - 1)
-					}
+					this.drawTile(x, y)
+					//
+					// let depth = row - index
+					//
+					// let topSquares = map[row - 1]
+					// let bottomSquares = map[row + 1]
+					// let leftSquare = squares[index - 1]
+					// let rightSquare = map[row][index + 1]
+					//
+					// if (square === this.squareType.TILE) {
+					// 	let height = square[1] || 0
+					//
+					// 	if (rightSquare !== undefined) {
+					//
+					// 		let rightSquareHeight = rightSquare[1] || 0
+					//
+					// 		if (rightSquareHeight > height && rightSquareHeight - height === 1) {
+					// 			this.addRightStair(x, y, z, depth)
+					//
+					// 		} else {
+					// 			this.addTile(x, y, z, depth)
+					// 		}
+					// 	}
+					//
+					// 	// if (he)
+					//
+					// 	else {
+					// 		this.addTile(x, y, z, depth)
+					// 	}
 
-					if (squares[index + 1] === undefined) {
-						wallRight = this.scene.add.image(x, y, Constants.client.assets.WALL_RIGHT)
-						wallRight.setOrigin(0, 0.97)
-						wallRight.setDepth(depth - 1)
-					}
-
-					if (square !== 0) {
-
-						let tile
-						let hover
-						let stairRight
-
-						if (squares[index + 1] !== undefined) {
-							let rightHeight = squares[index + 1][1] || 0
-							let deltaHeight = Math.abs(rightHeight - height)
-
-							if (deltaHeight === 1) {
-								stairRight = this.scene.add.image(x, y - z, Constants.client.assets.STAIR_RIGHT)
-
-								stairRight.setOrigin(0.49, 0.72)
-								stairRight.setDepth(depth)
-								stairRight.setInteractive({
-									pixelPerfect: true
-								})
-
-								stairRight.on(Constants.client.events.MOUSE_HOVER, () => {
-									hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER)
-									hover.setOrigin(0.5, 0.6)
-									hover.setDepth(depth + 1)
-								})
-
-								stairRight.on(Constants.client.events.MOUSE_OUT, () => {
-									hover.destroy()
-								})
-							} else {
-								tile = this.scene.add.image(x, y - z, Constants.client.assets.TILE)
-
-								tile.setDepth(depth)
-								tile.setInteractive({
-									pixelPerfect: true
-								})
-
-								tile.on(Constants.client.events.MOUSE_HOVER, () => {
-									hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER)
-									hover.setOrigin(0.5, 0.6)
-									hover.setDepth(depth + 1)
-								})
-
-								tile.on(Constants.client.events.MOUSE_OUT, () => {
-									hover.destroy()
-								})
-							}
-
-						} else {
-							tile = this.scene.add.image(x, y - z, Constants.client.assets.TILE)
-
-							tile.setDepth(depth)
-							tile.setInteractive({
-								pixelPerfect: true
-							})
-
-							tile.on(Constants.client.events.MOUSE_HOVER, () => {
-								hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER)
-								hover.setOrigin(0.5, 0.6)
-								hover.setDepth(depth + 1)
-							})
-
-							tile.on(Constants.client.events.MOUSE_OUT, () => {
-								hover.destroy()
-							})
-						}
-					}
+					// if (topSquares !== undefined) {
+					//
+					// 	let topSquare = topSquares[index]
+					// 	let topSquareHeight = topSquare[1]
+					//
+					// 	if (Math.abs(topSquareHeight - height) === 1) {
+					// 		this.addTopStair(x, y, z, depth)
+					//
+					// 	}
+					// 	// else {
+					// 	// 	this.addTile(x, y, z, depth)
+					// 	// }
+					//
+					// }
 				})
 			})
 		})
+
+		// else {
+		// 	this.addTile(x, y, z, depth)
+		// }
+		// else {
+		// 	this.addTile(x, y, z, depth)
+		// }
 	}
+
+	// if (topSquares === undefined) {
+	// 	this.walls.create(x, y, Constants.client.assets.WALL_LEFT).setDepth(depth - 1).setOrigin(1, 0.97)
+	// 		.setInteractive({
+	// 			pixelPerfect: true
+	// 		})
+	// }
+	//
+	// if (rightSquare === undefined) {
+	// 	this.walls.create(x, y, Constants.client.assets.WALL_RIGHT).setDepth(depth - 1).setOrigin(0, 0.97).setInteractive({
+	// 		pixelPerfect: true
+	// 	})
+	// }
+
+
+
+
+
+	// 	if (map[row - 1] === undefined) {
+	// 		wallLeft = this.scene.add.image(x, y, Constants.client.assets.WALL_LEFT)
+	// 		wallLeft.setOrigin(1, 0.97)
+	// 		wallLeft.setDepth(depth - 1)
+	// 	}
+	//
+	// 	if (squares[index + 1] === undefined) {
+	// 		wallRight = this.scene.add.image(x, y, Constants.client.assets.WALL_RIGHT)
+	// 		wallRight.setOrigin(0, 0.97)
+	// 		wallRight.setDepth(depth - 1)
+	// 	}
+	//
+	// 	if (square !== 0) {
+	//
+	// 		let tile
+	// 		let hover
+	// 		let stairRight
+	//
+	// 		if (squares[index + 1] !== undefined) {
+	// 			let rightHeight = squares[index + 1][1] || 0
+	// 			let deltaHeight = Math.abs(rightHeight - height)
+	//
+	// 			if (deltaHeight === 1) {
+	// 				stairRight = this.scene.add.image(x, y - z, Constants.client.assets.STAIR_RIGHT)
+	//
+	// 				stairRight.setOrigin(0.49, 0.72)
+	// 				stairRight.setDepth(depth)
+	// 				stairRight.setInteractive({
+	// 					pixelPerfect: true
+	// 				})
+	//
+	// 				stairRight.on(Constants.client.events.MOUSE_HOVER, () => {
+	// 					hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER)
+	// 					hover.setOrigin(0.5, 0.6)
+	// 					hover.setDepth(depth + 1)
+	// 				})
+	//
+	// 				stairRight.on(Constants.client.events.MOUSE_OUT, () => {
+	// 					hover.destroy()
+	// 				})
+	// 			} else {
+	// 				tile = this.scene.add.image(x, y - z, Constants.client.assets.TILE)
+	//
+	// 				tile.setDepth(depth)
+	// 				tile.setInteractive({
+	// 					pixelPerfect: true
+	// 				})
+	//
+	// 				tile.on(Constants.client.events.MOUSE_HOVER, () => {
+	// 					hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER)
+	// 					hover.setOrigin(0.5, 0.6)
+	// 					hover.setDepth(depth + 1)
+	// 				})
+	//
+	// 				tile.on(Constants.client.events.MOUSE_OUT, () => {
+	// 					hover.destroy()
+	// 				})
+	// 			}
+	//
+	// 		// } else {
+	// 		// 	tile = this.scene.add.image(x, y - z, Constants.client.assets.TILE)
+	// 		//
+	// 		// 	tile.setDepth(depth)
+	// 		// 	tile.setInteractive({
+	// 		// 		pixelPerfect: true
+	// 		// 	})
+	// 		//
+	// 		// 	tile.on(Constants.client.events.MOUSE_HOVER, () => {
+	// 		// 		hover = this.scene.add.image(x, y - z, Constants.client.assets.TILE_HOVER)
+	// 		// 		hover.setOrigin(0.5, 0.6)
+	// 		// 		hover.setDepth(depth + 1)
+	// 		// 	})
+	// 		//
+	// 		// 	tile.on(Constants.client.events.MOUSE_OUT, () => {
+	// 		// 		hover.destroy()
+	// 		// 	})
+	// 		// }
+	// 	}
+	// })
+
+	//
+	// addTile(x, y, z, depth) {
+	// 	this.tiles.create(x, y - z, Constants.client.assets.TILE).setDepth(depth)
+	// 		.setInteractive({
+	// 			pixelPerfect: true
+	// 		})
+	// }
+	//
+	// addTopStair(x, y, z, depth) {
+	// 	this.stairs.create(x, y - z, Constants.client.assets.STAIR_TOP).setDepth(depth).setOrigin(0.49, 0.72)
+	// 		.setInteractive({
+	// 			pixelPerfect: true
+	// 		})
+	// }
+	//
+	// addRightStair(x, y, z, depth) {
+	// 	this.stairs.create(x, y - z, Constants.client.assets.STAIR_RIGHT).setDepth(depth).setOrigin(0.49, 0.27)
+	// 		.setInteractive({
+	// 			pixelPerfect: true
+	// 		})
+	// }
+	//
+	// get squareType() {
+	// 	return {
+	// 		BLANK: 0,
+	// 		TILE: 1
+	// 	}
+	// }
 	//
 	// ground.forEach((squares, row) => {
 	//
@@ -166,119 +262,137 @@ export default class Room {
 	// 	//this.drawWall(x, y, 120, 7.5, thickness, true, true)
 	//
 	// })
-}
 
-//
-//     drawTile(x, y, index) {
-//
-//         this.tiles.create(
-//             x, y, 'tile').setOrigin(0).setDepth(index)
-//
-//         // let width = 32
-//         // let height = 32
-//         //
-//         // let vertices = {
-//         // 	left: {
-//         // 		x: x - width,
-//         // 		y: y + height / 2
-//         // 	},
-//         //
-//         // 	top: {
-//         // 		x: x,
-//         // 		y: y
-//         // 	},
-//         //
-//         // 	bottom: {
-//         // 		x: x,
-//         // 		y: y + height
-//         // 	},
-//         //
-//         // 	right: {
-//         // 		x: x + width,
-//         // 		y: y + height / 2
-//         // 	}
-//         // }
-//         //
-//         // let hitArea = new Phaser.Geom.Polygon([
-//         // 	0, 0,
-//         // 	32, -16,
-//         // 	64, 0,
-//         // 	32, 16
-//         // ])
-//         //
-//         // let wall = this.scene.add.graphics() // testing
-//         //
-//         // // let top = this.scene.add.graphics()
-//         // // let left = this.scene.add.graphics()
-//         // // let bottom = this.scene.add.graphics()
-//         //
-//         // // wall.fillStyle(0x989865)
-//         // // wall.fillPoints(hitArea.points)
-//         //
-//         // wall.lineStyle(1, 0x8E8E5E)
-//         // wall.lineBetween(0, 0, 32, -16)
-//         // wall.lineBetween(32, -16, 64, 0)
-//         //
-//         // let leftEdge = new Phaser.Geom.Polygon([
-//         // 	0, 8,
-//         // 	0, 0,
-//         // 	30, 15,
-//         // 	30, 23
-//         // ])
-//         //
-//         // wall.fillStyle(0x838357)
-//         // wall.fillPoints(leftEdge.points)
-//         //
-//         // wall.lineStyle(1, 0x7A7A51)
-//         // wall.lineBetween(0, 8, 1, 1)
-//         //
-//         // wall.lineStyle(0.5, 0x7A7A51)
-//         // wall.lineBetween(0.5, 0.5, 31, 16)
-//         //
-//         // // wall.lineStyle(0.5, 0x7A7A51)
-//         // // wall.lineBetween(1, 0, 32, 16)
-//         // // wall.lineBetween(64, 0, 32, 16)
-//         // // top.lineBetween(vertices.bottom.x, vertices.bottom.y, vertices.right.x, vertices.right.y)
-//         // // top.lineBetween(vertices.top.x, vertices.top.x, vertices.left.x, vertices.left.y)
-//         // //
-//         // // top.lineStyle(1, 0x8E8E5E)
-//         // // top.lineBetween(vertices.right.x, vertices.right.y, vertices.top.x, vertices.top.y)
-//         // // top.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
-//         //
-//         // if (leftBorder && thickness > 0) {
-//         //
-//         // 	// let leftEdge = new Phaser.Geom.Polygon([
-//         // 	// 	vertices.bottom.x, vertices.bottom.y + thickness,
-//         // 	// 	vertices.bottom.x, vertices.bottom.y,
-//         // 	// 	vertices.left.x, vertices.left.y,
-//         // 	// 	vertices.left.x, vertices.left.y + thickness
-//         // 	// ])
-//         // 	//
-//         // 	// left.fillStyle(0x838357)
-//         // 	// left.fillPoints(leftEdge.points)
-//         // 	//
-//         // 	// left.lineStyle(1, 0x7A7A51)
-//         // 	// left.strokePoints(leftEdge.points, true)
-//         // }
-//         //
-//         // if (bottomBorder && thickness > 0) {
-//         //
-//         // 	// let bottomEdge = new Phaser.Geom.Polygon([
-//         // 	// 	vertices.right.x, vertices.right.y + thickness,
-//         // 	// 	vertices.right.x, vertices.right.y,
-//         // 	// 	vertices.bottom.x, vertices.bottom.y,
-//         // 	// 	vertices.bottom.x, vertices.bottom.y + thickness
-//         // 	// ])
-//         // 	//
-//         // 	// bottom.fillStyle(0x6F6F49)
-//         // 	// bottom.fillPoints(bottomEdge.points, true)
-//         // 	//
-//         // 	// bottom.lineStyle(0.5, 0x676744)
-//         // 	// bottom.strokePoints(bottomEdge.points, true)
-//         // }
-//         //
-//         // wall.setScale(this.scaleRatio / 3)
-//     }
+
+	//
+	drawTile(x, y) {
+
+		let width = 32
+		let height = 32
+
+		let top
+		let left
+		let bottom
+
+		let vertices = {
+
+			top: {
+				x: x,
+				y: y
+			},
+
+			right: {
+				x: x + width,
+				y: y + height / 2
+			},
+
+			bottom: {
+				x: x,
+				y: y + height
+			},
+
+			left: {
+				x: x - width,
+				y: y + height / 2
+			},
+		}
+
+		let hitArea = new Phaser.Geom.Polygon([
+			vertices.top.x, vertices.top.y,
+			vertices.right.x, vertices.right.y,
+			vertices.bottom.x, vertices.bottom.y,
+			vertices.left.x, vertices.left.y
+		])
+
+		top = this.scene.add.polygon(x, y, hitArea.points, 0x989865)
+
+		top.setStrokeStyle(1, 0x8E8E5E)
+
+		// let leftEdge = new Phaser.Geom.Polygon([
+		// 	vertices.bottom.x - 16, vertices.bottom.y + 7.5,
+		// 	vertices.bottom.x - 16, vertices.bottom.y - 3,
+		// 	vertices.left.x - 16, vertices.left.y - 3,
+		// 	vertices.left.x - 16, vertices.left.y + 7.5
+		// ])
+		//
+		// left = this.scene.add.polygon(x, y, leftEdge.points, 0x838357)
+		//
+		// left.setStrokeStyle(1, 0x7A7A51)
+		// let wall = this.scene.add.graphics() // testing
+		//
+		// // let top = this.scene.add.graphics()
+		// // let left = this.scene.add.graphics()
+		// // let bottom = this.scene.add.graphics()
+		//
+		// // wall.fillStyle(0x989865)
+		// // wall.fillPoints(hitArea.points)
+		//
+		// wall.lineStyle(1, 0x8E8E5E)
+		// wall.lineBetween(0, 0, 32, -16)
+		// wall.lineBetween(32, -16, 64, 0)
+		//
+		// let leftEdge = new Phaser.Geom.Polygon([
+		// 	0, 8,
+		// 	0, 0,
+		// 	30, 16,
+		// 	30, 24
+		// ])
+		//
+		// left = this.scene.add.polygon(x, y, leftEdge.points, 0x838357)
+
+		// wall.fillStyle(0x838357)
+		// wall.fillPoints(leftEdge.points)
+		//
+		// wall.lineStyle(1, 0x7A7A51)
+		// wall.lineBetween(0, 8, 1, 1)
+		//
+		// wall.lineStyle(0.5, 0x7A7A51)
+		// wall.lineBetween(0.5, 0.5, 31, 16)
+
+		// wall.lineStyle(0.5, 0x7A7A51)
+		// wall.lineBetween(1, 0, 32, 16)
+		// wall.lineBetween(64, 0, 32, 16)
+		// top.lineBetween(vertices.bottom.x, vertices.bottom.y, vertices.right.x, vertices.right.y)
+		// top.lineBetween(vertices.top.x, vertices.top.x, vertices.left.x, vertices.left.y)
+		//
+		// top.lineStyle(1, 0x8E8E5E)
+		// top.lineBetween(vertices.right.x, vertices.right.y, vertices.top.x, vertices.top.y)
+		// top.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+
+		// if (/*leftBorder &&*/ thickness > 0) {
+		//
+		// 	// let leftEdge = new Phaser.Geom.Polygon([
+		// 	// 	vertices.bottom.x, vertices.bottom.y + thickness,
+		// 	// 	vertices.bottom.x, vertices.bottom.y,
+		// 	// 	vertices.left.x, vertices.left.y,
+		// 	// 	vertices.left.x, vertices.left.y + thickness
+		// 	// ])
+		// 	//
+		// 	// left.fillStyle(0x838357)
+		// 	// left.fillPoints(leftEdge.points)
+		// 	//
+		// 	// left.lineStyle(1, 0x7A7A51)
+		// 	// left.strokePoints(leftEdge.points, true)
+		// }
+
+		// if (/*bottomBorder && */thickness > 0) {
+		//
+		// 	// let bottomEdge = new Phaser.Geom.Polygon([
+		// 	// 	vertices.right.x, vertices.right.y + thickness,
+		// 	// 	vertices.right.x, vertices.right.y,
+		// 	// 	vertices.bottom.x, vertices.bottom.y,
+		// 	// 	vertices.bottom.x, vertices.bottom.y + thickness
+		// 	// ])
+		// 	//
+		// 	// bottom.fillStyle(0x6F6F49)
+		// 	// bottom.fillPoints(bottomEdge.points, true)
+		// 	//
+		// 	// bottom.lineStyle(0.5, 0x676744)
+		// 	// bottom.strokePoints(bottomEdge.points, true)
+		// }
+
+	}
+}
 //
 //     drawWall(x, y, height, thickness, squareThickness, rightBorder, topBorder) {
 //

@@ -2,15 +2,13 @@ import RoomEntity from './entity'
 import Room from './room'
 
 import Environment from '../../environment'
-
-import Constants from '../../network/constants.json'
 import Logger from '../../utils/logger'
 
 export default class RoomPlayer extends RoomEntity {
 	static onConnect(socket) {
 		let player
 
-		socket.on(Constants.common.actions.room.NEW_ROOM, () => {
+		socket.on('newRoom', () => {
 			let id = 0 // To make this dynamic
 
 			socket.join(id)
@@ -24,15 +22,12 @@ export default class RoomPlayer extends RoomEntity {
 
 			Environment.instance.roomManager.add(room)
 
-			Environment.instance.server.socketIO.to(id).emit(Constants.common.actions.room.NEW_ROOM, [
-				[1, 1, 1, 1],
-				[1, 1, 1, 1],
-				[1, 1, 0, 0],
-				[1, 1, 1, [1, 1]]
+			Environment.instance.server.socketIO.to(id).emit('newRoom', [
+				[1]
 			])
 		})
 
-		socket.on(Constants.common.actions.player.NEW_PLAYER, (room, position) => {
+		socket.on('newPlayer', (room, position) => {
 			socket.join(room)
 			socket.room = room
 
@@ -72,7 +67,7 @@ export default class RoomPlayer extends RoomEntity {
 			delete RoomPlayer.list[socket.room][socket.id]
 		}
 
-		Environment.instance.server.socketIO.to(socket.room).emit(Constants.common.actions.player.REMOVE, socket.id)
+		Environment.instance.server.socketIO.to(socket.room).emit('remove', socket.id)
 
 		Logger.network(`User (${socket.id}) disconnected`)
 	}

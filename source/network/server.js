@@ -1,8 +1,6 @@
 import Chalk from 'chalk'
 import Logger from '../utils/logger'
 
-import Constants from './constants.json'
-
 import SocketIO from 'socket.io'
 
 import Hapi from 'hapi'
@@ -14,6 +12,7 @@ import { ApolloServer, gql as GQL } from 'apollo-server-hapi'
 import RoomPlayer from '../core/rooms/player'
 
 export default class Server {
+
 	constructor(config) {
 
 		this.config = config
@@ -67,12 +66,11 @@ export default class Server {
 			})
 			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-
-
 			Logger.database('Switched to PostgreSQL connector')
 			Logger.database('Connected to Prisma [GraphQL] successfully')
 
 			await this.HTTP.start()
+
 		} catch (error) {
 			Logger.error(error)
 			process.exit(1)
@@ -81,17 +79,17 @@ export default class Server {
 		Logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
 
-		this.socketIO.on(Constants.common.server.CONNECTION, (socket) => {
+		this.socketIO.on('connection', (socket) => {
 			RoomPlayer.onConnect(socket)
 
-			socket.on(Constants.common.actions.player.DISCONNECT, () => {
+			socket.on('disconnect', () => {
 				RoomPlayer.onDisconnect(socket)
 			})
 		})
 	}
 
 	shutdown() {
-		this.socketIO.emit(Constants.common.this.SHUTDOWN)
+		this.socketIO.emit('shutdown')
 
 		this.HTTP.stop({
 			timeout: 100000
