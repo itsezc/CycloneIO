@@ -1,4 +1,114 @@
-type User {
-  id: ID! @id
-  name: String!
+enum banType {
+	USER,
+	IP,
+	MACHINE
+}
+
+enum banStatus {
+	BANNED,
+	APPEALING,
+	REJECTED
+}
+
+type Ban @pgTable(name: "bans") {
+	id: ID!@id
+	reason: String
+	status: banStatus
+	type: banType
+	user: Int
+	ip: String
+	machine: String
+	by: Int
+	createdAt: DateTime @createdAt
+	updatedAt: DateTime @updatedAt
+}
+
+type Badge @pgTable(name: "badges") {
+	id: ID!@id
+	code: String!@unique
+	description: String
+}
+
+type Bot @pgTable(name: "bots") {
+	id: ID!@id
+	name: String
+	motto: String
+	inventory: Boolean
+	owner: Int
+	gender: Boolean
+	figure: String
+	type: String
+	state: [String] @scalarList(strategy:RELATION)
+	action:	[String] @scalarList(strategy:RELATION)
+	position: [Int] @scalarList(strategy:RELATION)
+	messages: String
+	chatBubble: Int
+	chatAuto: Int
+	chatRandom: Boolean
+	chatDelay: Int @default(value: 4)
+}
+
+type CatalogItem @pgTable(name: "catalog_items") {
+	id: ID!@id
+	page: Int
+	item: Int
+	name: String
+	price: Currencies
+	amount: Int
+	limited: Boolean
+	maximum: Int @default(value: -1)
+	stack: Boolean @default(value: true)
+	active: Boolean
+}
+
+type Currencies {
+	id: ID!@id
+	name: String!
+	value: Int
+}
+
+type Room @pgTable(name: "rooms") {
+	id: ID!@id
+	name: String!
+	description: String
+	tag: [String] @scalarList(strategy:RELATION)
+	likes: Int
+	password: String
+	type: Int
+	category: Int
+	owner: Int
+	max: Int
+	background: [Int] @scalarList(strategy:RELATION)
+	wallpaper: Int
+	floor: Int
+	landscape: Int
+	wallThickness: Int
+	tileThickness: Int
+	trading: Boolean
+	effects: Boolean
+	pets: Boolean
+	petsEat: Boolean
+	hideWired: Boolean
+	staffPicks: Boolean @default(value: false)
+	createdAt: DateTime @createdAt
+	updatedAt: DateTime @updatedAt
+}
+
+type User @pgTable(name: "users") {
+    id: ID!@id
+    name: String!@unique
+    email: String
+    password: String
+    pin: Int
+    motto: String
+    figure: String
+	rank: Int
+	vip: Int
+    online: Boolean
+    verified: Int
+	home: Int
+	volume: Int
+	muted: Boolean
+	createdAt: DateTime @createdAt
+	updatedAt: DateTime @updatedAt
 }

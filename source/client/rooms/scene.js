@@ -3,6 +3,8 @@ import Config from '../../../config.json'
 import Room from './room'
 import RoomPlayer from './player'
 
+//import '../../../web-build/phaser/plugins/webworkers.min.js'
+
 export default class RoomScene extends Phaser.Scene {
 	constructor() {
 		super({
@@ -14,6 +16,7 @@ export default class RoomScene extends Phaser.Scene {
 
 		this.load.path = 'web-build/'
 
+		//this.add.plugin(PhaserWebWorkers.plugin)
 		this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
 		this.load.svg('tile', 'room/tile.svg')
@@ -35,10 +38,13 @@ export default class RoomScene extends Phaser.Scene {
 		this.lights.enable()
 		this.camera = this.cameras.main
 
+
 		this.camera.setRoundPixels(true)
 
 		this.socket = io(`${Config.server.host}:${Config.server.port}`)
 		this.room = new Room(this, this.socket)
+
+
 
 		// this.player = new RoomPlayer(this, this.socket, 0, {
 		//   x: 0,
@@ -60,7 +66,7 @@ export default class RoomScene extends Phaser.Scene {
 	}
 
 	create() {
-
+		this.add.image(0, 0, 'tile2')
 		this.room.create()
 
 		// this.moodlightPreview = this.add.graphics()
