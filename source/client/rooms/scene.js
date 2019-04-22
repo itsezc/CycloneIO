@@ -66,7 +66,6 @@ export default class RoomScene extends Phaser.Scene {
 	}
 
 	create() {
-		this.add.image(0, 0, 'tile2')
 		this.room.create()
 
 		// this.moodlightPreview = this.add.graphics()

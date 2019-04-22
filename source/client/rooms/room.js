@@ -266,58 +266,62 @@ export default class Room {
 
 	//
 	drawTile(x, y) {
-
-		let width = 32
-		let height = 32
-
-		let top
-		let left
-		let bottom
-
-		let vertices = {
-
-			top: {
-				x: x,
-				y: y
-			},
-
-			right: {
-				x: x + width,
-				y: y + height / 2
-			},
-
-			bottom: {
-				x: x,
-				y: y + height
-			},
-
-			left: {
-				x: x - width,
-				y: y + height / 2
-			},
-		}
-
-		let hitArea = new Phaser.Geom.Polygon([
-			vertices.top.x, vertices.top.y,
-			vertices.right.x, vertices.right.y,
-			vertices.bottom.x, vertices.bottom.y,
-			vertices.left.x, vertices.left.y
-		])
-
-		top = this.scene.add.polygon(x, y, hitArea.points, 0x989865)
-
-		top.setStrokeStyle(1, 0x8E8E5E)
-
-		// let leftEdge = new Phaser.Geom.Polygon([
-		// 	vertices.bottom.x - 16, vertices.bottom.y + 7.5,
-		// 	vertices.bottom.x - 16, vertices.bottom.y - 3,
-		// 	vertices.left.x - 16, vertices.left.y - 3,
-		// 	vertices.left.x - 16, vertices.left.y + 7.5
-		// ])
 		//
-		// left = this.scene.add.polygon(x, y, leftEdge.points, 0x838357)
+		// let width = 64
+		// let height = 64
+
+		// let top
+		// let left
+		// let bottom
+
+		// let vertices = {
+		// 	left: {
+		// 		x: 0,
+		// 		y: 0
+		// 	},
+		//
+		// 	bottom: {
+		// 		x: width / 2,
+		// 		y: height / 4
+		// 	},
+		//
+		// 	right: {
+		// 		x: width,
+		// 		y: 0
+		// 	},
+		//
+		// 	top: {
+		// 		x: 32,
+		// 		y: height / 4
+		// 	},
+		// }
+		//
+		// console.log(vertices.top.y)
+
+		let points = [
+			0, 0,
+			32, 16,
+			64, 0,
+			32, -16
+		]
+
+		let polygon = this.scene.add.polygon(x, y, points, 0x989865)
+
+		polygon.setStrokeStyle(1, 0x8E8E5E)
+		//
+		// let points2 = [
+		// 	0, 0,
+		// 	32, 16,
+		// 	// 16, 32 + 1,
+		// 	// 16, 32,
+		// 	// 64, -16 + 7.5,
+		// 	// 64, -16
+		// ]
+		//
+		// left = this.scene.add.polygon(x, y + 1, points2, 0x838357)
 		//
 		// left.setStrokeStyle(1, 0x7A7A51)
+
 		// let wall = this.scene.add.graphics() // testing
 		//
 		// // let top = this.scene.add.graphics()
