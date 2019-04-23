@@ -9,10 +9,10 @@ export default class Room {
 		this.tiles = this.scene.add.group()
 		this.stairs = this.scene.add.group()
 		this.walls = this.scene.add.group()
-
+		
 		this.socket.emit('newRoom')
 
-		this.socket.on('newRoom', (map) => {
+		this.socket.on('newRoom', (map, floorThickness) => {
 
 			map.forEach((squares, row) => {
 
@@ -24,7 +24,7 @@ export default class Room {
 					let y = ((row * 32) - (index * 32)) / 2
 					let z = square[1] * 32 || 0
 
-					this.drawTile(x, y)
+					this.drawTile(x, y, floorThickness)
 					//
 					// let depth = row - index
 					//
@@ -265,7 +265,7 @@ export default class Room {
 
 
 	//
-	drawTile(x, y) {
+	drawTile(x, y, thickness) {
 		//
 		// let width = 64
 		// let height = 64
@@ -298,30 +298,38 @@ export default class Room {
 		//
 		// console.log(vertices.top.y)
 
-		let points = [
+		let points1 = [
 			0, 0,
 			32, 16,
 			64, 0,
 			32, -16
 		]
 
-		let polygon = this.scene.add.polygon(x, y, points, 0x989865)
+		let polygon1 = this.scene.add.polygon(x + 16, y + 4, points1, 0x989865)
 
-		polygon.setStrokeStyle(1, 0x8E8E5E)
-		//
-		// let points2 = [
-		// 	0, 0,
-		// 	32, 16,
-		// 	// 16, 32 + 1,
-		// 	// 16, 32,
-		// 	// 64, -16 + 7.5,
-		// 	// 64, -16
-		// ]
-		//
-		// left = this.scene.add.polygon(x, y + 1, points2, 0x838357)
-		//
-		// left.setStrokeStyle(1, 0x7A7A51)
+		polygon1.setStrokeStyle(0.5, 0x8E8E5E)
+		
+		let points2 = [
+			0, 0,
+			0, thickness,
+			32, 16 + thickness,
+			32, 16
+		]
+		
+		let polygon2 = this.scene.add.polygon(x, y, points2, 0x838357)
+		
+		polygon2.setStrokeStyle(0.5, 0x7A7A51)
 
+		let points3 = [
+			32, 16,
+			32, 16 + thickness,
+			64, thickness,
+			64, 0
+		]
+
+		let polygon3 = this.scene.add.polygon(x, y, points3, 0x6F6F49)
+
+		polygon3.setStrokeStyle(0.5, 0x676744)
 		// let wall = this.scene.add.graphics() // testing
 		//
 		// // let top = this.scene.add.graphics()

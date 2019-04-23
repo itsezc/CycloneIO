@@ -38,9 +38,6 @@ export default class RoomScene extends Phaser.Scene {
 		this.lights.enable()
 		this.camera = this.cameras.main
 
-
-		this.camera.setRoundPixels(true)
-
 		this.socket = io(`${Config.server.host}:${Config.server.port}`)
 		this.room = new Room(this, this.socket)
 
