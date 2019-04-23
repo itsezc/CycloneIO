@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 
 
 import Alert from '../../components/alert'
-import Catalogue from '../../components/catalogue'
+import Catalog from '../../components/catalog/catalog'
 
 import './client.styl'
 
@@ -35,7 +35,7 @@ export default class Client extends Component {
 							author='EZ-C'
 						/>
 
-						<Catalogue />
+						<Catalog />
 
 						<div className='purse'>
 							<ul className='currencies'>
