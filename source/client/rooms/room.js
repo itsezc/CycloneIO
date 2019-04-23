@@ -9,10 +9,13 @@ export default class Room {
 		this.tiles = this.scene.add.group()
 		this.stairs = this.scene.add.group()
 		this.walls = this.scene.add.group()
-		
+
 		this.socket.emit('newRoom')
 
 		this.socket.on('newRoom', (map, floorThickness) => {
+
+			let tile
+			let hoverTile
 
 			map.forEach((squares, row) => {
 
@@ -24,7 +27,15 @@ export default class Room {
 					let y = ((row * 32) - (index * 32)) / 2
 					let z = square[1] * 32 || 0
 
-					this.drawTile(x, y, floorThickness)
+					tile = this.drawTile(x, y, floorThickness)
+
+					tile.topSurface.on('pointerover', () => {
+						hoverTile = this.scene.add.image(x, y, 'tile_hover').setOrigin(0.25, 0.8)
+					})
+			
+					tile.topSurface.on('pointerout', () => {
+						hoverTile.destroy()
+		  			})
 					//
 					// let depth = row - index
 					//
@@ -270,9 +281,9 @@ export default class Room {
 		// let width = 64
 		// let height = 64
 
-		// let top
-		// let left
-		// let bottom
+		let topSurface
+		// let leftThickness
+		// let bottomThickness
 
 		// let vertices = {
 		// 	left: {
@@ -298,38 +309,35 @@ export default class Room {
 		//
 		// console.log(vertices.top.y)
 
-		let points1 = [
+		let hitArea = new Phaser.Geom.Polygon([
 			0, 0,
 			32, 16,
 			64, 0,
 			32, -16
-		]
+		])
 
-		let polygon1 = this.scene.add.polygon(x + 16, y + 4, points1, 0x989865)
+		topSurface = this.scene.add.polygon(x, y, hitArea.points, 0x989865).setOrigin(0.25, 0.38).setStrokeStyle(0.5, 0x8E8E5E)
+			                                                        .setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-		polygon1.setStrokeStyle(0.5, 0x8E8E5E)
-		
-		let points2 = [
-			0, 0,
-			0, thickness,
-			32, 16 + thickness,
-			32, 16
-		]
-		
-		let polygon2 = this.scene.add.polygon(x, y, points2, 0x838357)
-		
-		polygon2.setStrokeStyle(0.5, 0x7A7A51)
 
-		let points3 = [
-			32, 16,
-			32, 16 + thickness,
-			64, thickness,
-			64, 0
-		]
+		// let points2 = [
+		// 	0, 0,
+		// 	0, 0 + thickness,
+		// 	32, 16 + thickness,
+		// 	32, 16
+		// ]
 
-		let polygon3 = this.scene.add.polygon(x, y, points3, 0x6F6F49)
+		// this.scene.add.polygon(x, y, points2, 0x838357).setStrokeStyle(0.5, 0x7A7A51)
 
-		polygon3.setStrokeStyle(0.5, 0x676744)
+		// let points3 = [
+		// 	32, 16,
+		// 	32, 16 + thickness,
+		// 	64, 0 + thickness,
+		// 	64, 0
+		// ]
+
+		// this.scene.add.polygon(x, y, points3, 0x6F6F49).setStrokeStyle(0.5, 0x676744)
+
 		// let wall = this.scene.add.graphics() // testing
 		//
 		// // let top = this.scene.add.graphics()
@@ -401,8 +409,11 @@ export default class Room {
 		// 	//
 		// 	// bottom.lineStyle(0.5, 0x676744)
 		// 	// bottom.strokePoints(bottomEdge.points, true)
-		// }
-
+		return {
+			topSurface,
+			// left,
+			// bottom
+		}
 	}
 }
 //
