@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
 import CatalogBanner from './banner.jsx'
 
-import 'react-tabs/style/react-tabs.css';
+import CatalogFrontPage from './pages/frontpage.jsx'
 
 export default class Alert extends Component {
 	constructor(props) {
@@ -66,9 +66,9 @@ export default class Alert extends Component {
 					Shop
 				</div>
 
-				<Tabs selectedIndex={this.state.category} onSelect={category => this.setState({ category })}>
+				<Tabs selectedTabClassName='active' selectedIndex={this.state.category} onSelect={category => this.setState({ category })}>
 					<TabList className='tabs'>
-						<Tab className='tab active'>Front Page</Tab>
+						<Tab className='tab'>Front Page</Tab>
 						<Tab className='tab'>Furni</Tab>
 						<Tab className='tab'>Clothing</Tab>
 						<Tab className='tab'>Pets</Tab>
@@ -76,39 +76,30 @@ export default class Alert extends Component {
 					</TabList>
 
 					<TabPanel>
-						<CatalogBanner />
-						<div className='page'>
-							<div className='sidebar'>
-								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_habbergersbundle.png' /></a>
-							</div>
-							<div className='content'>
-								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_olympic16.png' /></a>
-								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_puraiced16_b.png' /></a>
-								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_HC_b.png' /></a>
-
-								<div className='voucher'>
-									<div className='container'>
-
-										<p>Redeem a voucher code here:</p>
-										<input type='text' />
-										<button className='redeem'>Redeem</button>
-									</div>
-								</div>
-							</div>
-						</div>
+						<CatalogBanner title='Front Page' image='https://imgur.com/O1EqujY.gif' />
+						<CatalogFrontPage />
 					</TabPanel>
 					
 					<TabPanel>
-						Test 2
+						<CatalogBanner title='Furni' image='https://imgur.com/O1EqujY.gif' />
+						<div className='page'>
+							Furni
+						</div>
 					</TabPanel>
 					<TabPanel>
-						Test 3 
+						<div className='page'>
+							Clothing
+						</div>
 					</TabPanel>
 					<TabPanel>
-						Test 4
+						<div className='page'>
+							Pets
+						</div>
 					</TabPanel>
 					<TabPanel>
-						Test 5
+						<div className='page'>
+							Memberships
+						</div>
 					</TabPanel>
 				</Tabs>				
 			</div>
