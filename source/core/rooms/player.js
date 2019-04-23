@@ -23,8 +23,7 @@ export default class RoomPlayer extends RoomEntity {
 			Environment.instance.roomManager.add(room)
 
 			Environment.instance.server.socketIO.to(id).emit('newRoom', [
-				[1, 1],
-				[1, 1]
+				[1]
 			], room.properties.floor.thickness)
 		})
 
