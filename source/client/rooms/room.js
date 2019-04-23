@@ -36,6 +36,8 @@ export default class Room {
 					tile.topSurface.on('pointerout', () => {
 						tileHover.destroy()
 					})
+
+					this.drawWall(x, y, 120, 7.5, floorThickness)
 					//
 					// let depth = row - index
 					//
@@ -288,34 +290,33 @@ export default class Room {
 			32, -16
 		])
 
-		topSurface = this.scene.add.polygon(x, y - z, hitArea.points)
-		
+		topSurface = this.scene.add.polygon(x, y - z, hitArea.points, 0x989865)
+
 		topSurface.setOrigin(0.25, 0.38)
-		topSurface.setFillStyle(0x989865)
 		topSurface.setStrokeStyle(1, 0x8E8E5E)
 		topSurface.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-		// let leftThicknessPoints = [
-		// 	0, 0,
-		// 	0, 0 + thickness,
-		// 	32, 16 + thickness,
-		// 	32, 16
-		// ]
+		let leftThicknessPoints = [
+			0, 0,
+			0, 0 + thickness,
+			32, 16 + thickness,
+			32, 16
+		]
 
-		// leftThickness = this.scene.add.polygon(x, y - z, leftThicknessPoints, 0x838357)
+		leftThickness = this.scene.add.polygon(x, y - z, leftThicknessPoints, 0x838357)
 		
-		// leftThickness.setStrokeStyle(0.5, 0x7A7A51)
+		leftThickness.setStrokeStyle(0.5, 0x7A7A51)
 
-		// let bottomThicknessPoints = [
-		// 	32, 16,
-		// 	32, 16 + thickness,
-		// 	64, 0 + thickness,
-		// 	64, 0
-		// ]
+		let bottomThicknessPoints = [
+			32, 16,
+			32, 16 + thickness,
+			64, 0 + thickness,
+			64, 0
+		]
 
-		// bottomThickness = this.scene.add.polygon(x, y - z, bottomThicknessPoints, 0x6F6F49)
+		bottomThickness = this.scene.add.polygon(x, y - z, bottomThicknessPoints, 0x6F6F49)
 		
-		// bottomThickness.setStrokeStyle(0.5, 0x676744)
+		bottomThickness.setStrokeStyle(0.5, 0x676744)
 
 		// let wall = this.scene.add.graphics() // testing
 		//
@@ -390,9 +391,39 @@ export default class Room {
 		// 	// bottom.strokePoints(bottomEdge.points, true)
 		return {
 			topSurface,
-			// left,
-			// bottom
+			leftThickness,
+			bottomThickness
 		}
+	}
+
+	drawWall(x, y, height, thickness, squareThickness){
+
+		let leftSurface
+		let rightSurface
+
+		let points1 = [
+			0, 0,
+			0, 0 - height,
+			32, -16 - height,
+			32, -16
+		]
+		
+		leftSurface = this.scene.add.polygon(x, y, points1, 0x90929E)
+
+		leftSurface.setOrigin(0.5, 0.09)
+		leftSurface.setStrokeStyle(0.5, 0x90929E)
+
+		let points2 = [
+			32, -16,
+			32, -16 - height,
+			64, 0 - height,
+			64, 0
+		]
+
+		rightSurface = this.scene.add.polygon(x, y, points2, 0xB6B8C7)
+
+		rightSurface.setOrigin(0.5, 0.09)
+		rightSurface.setStrokeStyle(0.5, 0xB6B8C7)
 	}
 }
 //
