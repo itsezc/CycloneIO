@@ -15,7 +15,7 @@ export default class Room {
 		this.socket.on('newRoom', (map, floorThickness) => {
 
 			let tile
-			let hoverTile
+			let tileHover
 
 			map.forEach((squares, row) => {
 
@@ -27,15 +27,15 @@ export default class Room {
 					let y = ((row * 32) - (index * 32)) / 2
 					let z = square[1] * 32 || 0
 
-					tile = this.drawTile(x, y, floorThickness)
+					tile = this.drawTile(x, y, z, floorThickness)
 
 					tile.topSurface.on('pointerover', () => {
-						hoverTile = this.scene.add.image(x, y, 'tile_hover').setOrigin(0.25, 0.8)
+						tileHover = this.scene.add.image(x, y - z, 'tile_hover').setOrigin(0.25, 0.8)
 					})
-			
+
 					tile.topSurface.on('pointerout', () => {
-						hoverTile.destroy()
-		  			})
+						tileHover.destroy()
+					})
 					//
 					// let depth = row - index
 					//
@@ -275,39 +275,11 @@ export default class Room {
 	// })
 
 
-	//
-	drawTile(x, y, thickness) {
-		//
-		// let width = 64
-		// let height = 64
+	drawTile(x, y, z, thickness) {
 
 		let topSurface
-		// let leftThickness
-		// let bottomThickness
-
-		// let vertices = {
-		// 	left: {
-		// 		x: 0,
-		// 		y: 0
-		// 	},
-		//
-		// 	bottom: {
-		// 		x: width / 2,
-		// 		y: height / 4
-		// 	},
-		//
-		// 	right: {
-		// 		x: width,
-		// 		y: 0
-		// 	},
-		//
-		// 	top: {
-		// 		x: 32,
-		// 		y: height / 4
-		// 	},
-		// }
-		//
-		// console.log(vertices.top.y)
+		let leftThickness
+		let bottomThickness
 
 		let hitArea = new Phaser.Geom.Polygon([
 			0, 0,
@@ -316,27 +288,34 @@ export default class Room {
 			32, -16
 		])
 
-		topSurface = this.scene.add.polygon(x, y, hitArea.points, 0x989865).setOrigin(0.25, 0.38).setStrokeStyle(0.5, 0x8E8E5E)
-			                                                        .setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
+		topSurface = this.scene.add.polygon(x, y - z, hitArea.points)
+		
+		topSurface.setOrigin(0.25, 0.38)
+		topSurface.setFillStyle(0x989865)
+		topSurface.setStrokeStyle(1, 0x8E8E5E)
+		topSurface.setInteractive(hitArea, Phaser.Geom.Polygon.Contains)
 
-
-		// let points2 = [
+		// let leftThicknessPoints = [
 		// 	0, 0,
 		// 	0, 0 + thickness,
 		// 	32, 16 + thickness,
 		// 	32, 16
 		// ]
 
-		// this.scene.add.polygon(x, y, points2, 0x838357).setStrokeStyle(0.5, 0x7A7A51)
+		// leftThickness = this.scene.add.polygon(x, y - z, leftThicknessPoints, 0x838357)
+		
+		// leftThickness.setStrokeStyle(0.5, 0x7A7A51)
 
-		// let points3 = [
+		// let bottomThicknessPoints = [
 		// 	32, 16,
 		// 	32, 16 + thickness,
 		// 	64, 0 + thickness,
 		// 	64, 0
 		// ]
 
-		// this.scene.add.polygon(x, y, points3, 0x6F6F49).setStrokeStyle(0.5, 0x676744)
+		// bottomThickness = this.scene.add.polygon(x, y - z, bottomThicknessPoints, 0x6F6F49)
+		
+		// bottomThickness.setStrokeStyle(0.5, 0x676744)
 
 		// let wall = this.scene.add.graphics() // testing
 		//
