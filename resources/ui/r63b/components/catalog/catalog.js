@@ -1,8 +1,17 @@
 import React, { Component } from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+
+import CatalogBanner from './banner.jsx'
+
+import 'react-tabs/style/react-tabs.css';
 
 export default class Alert extends Component {
 	constructor(props) {
 		super(props)
+
+		this.state = {
+			category: 0
+		}
 	}
 
 	componentDidMount() {
@@ -56,38 +65,52 @@ export default class Alert extends Component {
 				<div className='title' id='catalog_header'>
 					Shop
 				</div>
-				<ul className='tabs'>
-					<li className='tab active'><a>Front Page</a></li>
-					<li className='tab'><a>Furni</a></li>
-					<li className='tab'><a>Clothing</a></li>
-					<li className='tab'><a>Pets</a></li>
-					<li className='tab'><a>Memberships</a></li>
-				</ul>
-				<div className='banner'>
-					<h1 className='name'>Front Page</h1>
-					<div className='image'>
-						<img src='https://imgur.com/O1EqujY.gif' width='200%' height='200%' />
-					</div>
-				</div>
-				<div className='page'>
-					<div className='sidebar'>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_habbergersbundle.png' /></a>
-					</div>
-					<div className='content'>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_olympic16.png' /></a>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_puraiced16_b.png' /></a>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_HC_b.png' /></a>
 
-						<div className='voucher'>
-							<div className='container'>
+				<Tabs selectedIndex={this.state.category} onSelect={category => this.setState({ category })}>
+					<TabList className='tabs'>
+						<Tab className='tab active'>Front Page</Tab>
+						<Tab className='tab'>Furni</Tab>
+						<Tab className='tab'>Clothing</Tab>
+						<Tab className='tab'>Pets</Tab>
+						<Tab className='tab'>Memberships</Tab>
+					</TabList>
 
-								<p>Redeem a voucher code here:</p>
-								<input type='text' />
-								<button className='redeem'>Redeem</button>
+					<TabPanel>
+						<CatalogBanner />
+						<div className='page'>
+							<div className='sidebar'>
+								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_habbergersbundle.png' /></a>
+							</div>
+							<div className='content'>
+								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_olympic16.png' /></a>
+								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_puraiced16_b.png' /></a>
+								<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_HC_b.png' /></a>
+
+								<div className='voucher'>
+									<div className='container'>
+
+										<p>Redeem a voucher code here:</p>
+										<input type='text' />
+										<button className='redeem'>Redeem</button>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
+					</TabPanel>
+					
+					<TabPanel>
+						Test 2
+					</TabPanel>
+					<TabPanel>
+						Test 3 
+					</TabPanel>
+					<TabPanel>
+						Test 4
+					</TabPanel>
+					<TabPanel>
+						Test 5
+					</TabPanel>
+				</Tabs>				
 			</div>
 		)
 	}
