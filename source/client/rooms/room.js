@@ -30,7 +30,7 @@ export default class Room {
 					tile = this.drawTile(x, y, z, floorThickness)
 
 					tile.topSurface.on('pointerover', () => {
-						tileHover = this.scene.add.image(x, y - z, 'tile_hover').setOrigin(0.25, 0.8)
+						tileHover = this.scene.add.image(x, y - z, 'tile_hover').setOrigin(0.25, 0.9)
 					})
 
 					tile.topSurface.on('pointerout', () => {
