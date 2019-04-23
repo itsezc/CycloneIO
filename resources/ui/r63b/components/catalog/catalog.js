@@ -1,8 +1,17 @@
 import React, { Component } from 'react'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+
+import CatalogBanner from './banner.jsx'
+
+import CatalogFrontPage from './pages/frontpage.jsx'
 
 export default class Alert extends Component {
 	constructor(props) {
 		super(props)
+
+		this.state = {
+			category: 0
+		}
 	}
 
 	componentDidMount() {
@@ -56,38 +65,43 @@ export default class Alert extends Component {
 				<div className='title' id='catalog_header'>
 					Shop
 				</div>
-				<ul className='tabs'>
-					<li className='tab active'><a>Front Page</a></li>
-					<li className='tab'><a>Furni</a></li>
-					<li className='tab'><a>Clothing</a></li>
-					<li className='tab'><a>Pets</a></li>
-					<li className='tab'><a>Memberships</a></li>
-				</ul>
-				<div className='banner'>
-					<h1 className='name'>Front Page</h1>
-					<div className='image'>
-						<img src='https://imgur.com/O1EqujY.gif' width='200%' height='200%' />
-					</div>
-				</div>
-				<div className='page'>
-					<div className='sidebar'>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_habbergersbundle.png' /></a>
-					</div>
-					<div className='content'>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_olympic16.png' /></a>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_puraiced16_b.png' /></a>
-						<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_HC_b.png' /></a>
 
-						<div className='voucher'>
-							<div className='container'>
+				<Tabs selectedTabClassName='active' selectedIndex={this.state.category} onSelect={category => this.setState({ category })}>
+					<TabList className='tabs'>
+						<Tab className='tab'>Front Page</Tab>
+						<Tab className='tab'>Furni</Tab>
+						<Tab className='tab'>Clothing</Tab>
+						<Tab className='tab'>Pets</Tab>
+						<Tab className='tab'>Memberships</Tab>
+					</TabList>
 
-								<p>Redeem a voucher code here:</p>
-								<input type='text' />
-								<button className='redeem'>Redeem</button>
-							</div>
+					<TabPanel>
+						<CatalogBanner title='Front Page' image='https://imgur.com/O1EqujY.gif' />
+						<CatalogFrontPage />
+					</TabPanel>
+					
+					<TabPanel>
+						<CatalogBanner title='Furni' image='https://imgur.com/O1EqujY.gif' />
+						<div className='page'>
+							Furni
 						</div>
-					</div>
-				</div>
+					</TabPanel>
+					<TabPanel>
+						<div className='page'>
+							Clothing
+						</div>
+					</TabPanel>
+					<TabPanel>
+						<div className='page'>
+							Pets
+						</div>
+					</TabPanel>
+					<TabPanel>
+						<div className='page'>
+							Memberships
+						</div>
+					</TabPanel>
+				</Tabs>				
 			</div>
 		)
 	}
