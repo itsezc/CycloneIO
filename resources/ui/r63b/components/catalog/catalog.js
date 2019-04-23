@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-import CatalogBanner from './banner.jsx'
+import CatalogBanner from './components/banner.jsx'
 
 import CatalogFrontPage from './pages/frontpage.jsx'
 
@@ -10,7 +10,17 @@ export default class Alert extends Component {
 		super(props)
 
 		this.state = {
-			category: 0
+			category: 0,
+
+			// @@MOCK
+			catalogue: [
+				{ id: 0, parent: -1, name: 'Front Page' },
+				{ id: 1, parent: -1, name: 'Furni' },
+				{ id: 2, parent: -1, name: 'Clothing' },
+				{ id: 3, parent: -1, name: 'Pets' },
+				{ id: 4, parent: -1, name: 'Memberships' },
+				{ id: 5, parent: 1, name: 'Spaces'}
+			]
 		}
 	}
 
