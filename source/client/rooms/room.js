@@ -396,10 +396,11 @@ export default class Room {
 		}
 	}
 
-	drawWall(x, y, height, thickness, squareThickness){
+	drawWall(x, y, height, thickness, floorThickness){
 
 		let leftSurface
 		let rightSurface
+		let leftThickness
 
 		let points1 = [
 			0, 0,
@@ -424,6 +425,26 @@ export default class Room {
 
 		rightSurface.setOrigin(0.5, 0.09)
 		rightSurface.setStrokeStyle(0.5, 0xB6B8C7)
+
+		let points3 = [
+			0, 0 + floorThickness,
+			0 - thickness, 0 - thickness / 2 + floorThickness,
+			0 - thickness, 0 - height - thickness / 2,
+			0, 0 - height
+		]
+
+		leftThickness = this.scene.add.polygon(x, y, points3, 0xBBBECD)
+		
+		leftThickness.setOrigin(2.1, 0.09)
+		rightSurface.setStrokeStyle(0.5, 0xBBBECD)
+
+		//let bottomEdgeShape = new Phaser.Geom.Polygon([
+			//                     vertices.bottom.x, vertices.bottom.y + squareThickness,
+			//                     vertices.bottom.x - thickness, vertices.bottom.y - thickness / 2 + squareThickness,
+			//                     vertices.left.x - thickness, vertices.left.y - thickness / 2,
+			//                     vertices.left.x, vertices.left.y,
+			//                     vertices.bottom.x, vertices.bottom.y + squareThickness
+			//                 ])
 	}
 }
 //
