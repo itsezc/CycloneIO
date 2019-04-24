@@ -43,8 +43,8 @@ module.exports = (env, argv) => {
                 {
                     test: /\.styl$/,
                     use: [
-			            'style-loader',
-                        'css-loader',
+						'style-loader',
+						'css-loader?-url!postcss-loader!stylus-loader',
                         'stylus-loader'
                     ]
                 },

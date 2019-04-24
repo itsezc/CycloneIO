@@ -31,7 +31,7 @@ export default class Server {
 			await this.HTTP.route(Routes)
 
 			// Web Sockets
-			this.socketIO = new SocketIO(this.HTTP.listener)
+			await this.socketIO = new SocketIO(this.HTTP.listener)
 			Logger.network('Started SocketIO [Web Sockets] listener')
 
 			// GraphQL

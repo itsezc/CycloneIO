@@ -17,7 +17,11 @@ export default class CatalogBanner extends Component {
 	render() {
 		return (
 			<div className='banner' style={this.imageStyle}>
-				<h1 className='name'>{this.props.title}</h1>
+				<img className='icon' src={this.props.icon} />
+				<div className='content'>
+					<h1>{this.props.title}</h1>
+					<p>{this.props.description}</p>
+				</div>
 				<div className='image'>
 					<span className='overlay'></span>
 				</div>

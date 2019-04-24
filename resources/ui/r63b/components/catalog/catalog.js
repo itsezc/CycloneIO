@@ -14,12 +14,12 @@ export default class Alert extends Component {
 
 			// @@MOCK
 			catalogue: [
-				{ id: 0, parent: -1, name: 'Front Page' },
-				{ id: 1, parent: -1, name: 'Furni' },
-				{ id: 2, parent: -1, name: 'Clothing' },
-				{ id: 3, parent: -1, name: 'Pets' },
-				{ id: 4, parent: -1, name: 'Memberships' },
-				{ id: 5, parent: 1, name: 'Spaces'}
+				{ id: 0, parent: -1, type: 'category', name: 'Front Page' },
+				{ id: 1, parent: -1, type: 'category', name: 'Furni', description: 'This is an example description' },
+				{ id: 2, parent: -1, type: 'category', name: 'Clothing' },
+				{ id: 3, parent: -1, type: 'category', name: 'Pets' },
+				{ id: 4, parent: -1, type: 'category', name: 'Memberships' },
+				{ id: 5, parent: 1, type: 'page', name: 'Spaces' }
 			]
 		}
 	}
@@ -86,12 +86,21 @@ export default class Alert extends Component {
 					</TabList>
 
 					<TabPanel>
-						<CatalogBanner title='Front Page' image='https://imgur.com/O1EqujY.gif' />
+						<CatalogBanner 
+							title='Front Page' 
+							icon='https://i.imgur.com/vZzgS6P.png' 
+							image='https://imgur.com/O1EqujY.gif' 
+						/>
 						<CatalogFrontPage />
 					</TabPanel>
 					
 					<TabPanel>
-						<CatalogBanner title='Furni' image='https://imgur.com/O1EqujY.gif' />
+						<CatalogBanner 
+							title='Furni' 
+							description='This is an example description' 
+							icon='https://i.imgur.com/vZzgS6P.png'
+							image='https://imgur.com/O1EqujY.gif' 
+						/>
 						<div className='page'>
 							Furni
 						</div>
@@ -102,6 +111,7 @@ export default class Alert extends Component {
 						</div>
 					</TabPanel>
 					<TabPanel>
+						<CatalogBanner title='Pets' icon='https://i.imgur.com/vZzgS6P.png' image='https://imgur.com/O1EqujY.gif' />
 						<div className='page'>
 							Pets
 						</div>

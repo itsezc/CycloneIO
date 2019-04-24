@@ -1,4 +1,4 @@
-import Header from './themes/material/layouts/header.js'
+import Header from './themes/material/layouts/header.js.js'
 
 import Home from './themes/material/pages/home'
 import Logout from './themes/material/pages/logout'
