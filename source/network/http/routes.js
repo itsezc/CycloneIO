@@ -19,7 +19,7 @@ const Routes = [{
 		method: 'GET',
 		path: '/housekeeping/{param*}',
 		handler: (request, h) => {
-			return h.file('./public/housekeeping/index.html')
+			return h.file('./web-build/dist/housekeeping.html')
 		}
 	}
 ]

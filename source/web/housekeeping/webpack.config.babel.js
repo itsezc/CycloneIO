@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
 
     plugins: [
       new HtmlWebpackPlugin({
-        filename: 'index.html',
+        filename: 'housekeeping.html',
         template: `./housekeeping/${Config.housekeeping.theme}/structure.page`,
         inject: false
       })

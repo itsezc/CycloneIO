@@ -9,12 +9,12 @@ export default class CatalogFrontPage extends Component {
 		return(
 			<div className='page'>
 				<div className='sidebar'>
-					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_habbergersbundle.png' /></a>
+					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_easter19_swingtree.png' /></a>
 				</div>
 				<div className='content'>
-					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_olympic16.png' /></a>
-					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_puraiced16_b.png' /></a>
-					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_HC_b.png' /></a>
+					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_easter19_bun2.png' /></a>
+					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_easter19_bun3.png' /></a>
+					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_easter19_bun4.png' /></a>
 
 					<div className='voucher'>
 						<div className='container'>
