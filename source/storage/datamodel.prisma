@@ -96,7 +96,7 @@ type Room @pgTable(name: "rooms") {
 
 type User @pgTable(name: "users") {
     id: ID!@id
-    name: String!@unique
+    username: String!@unique
     email: String
     password: String
     pin: Int

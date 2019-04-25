@@ -1,13 +1,17 @@
 import Chalk from 'chalk'
-import Logger from '../utils/logger'
 
-import SocketIO from 'socket.io'
+import Logger from '../utils/logger'
 
 import Hapi from 'hapi'
 import Inert from 'inert'
 import Routes from './http/routes'
 
+import { prisma } from '../storage/prisma'
+import { typeDefs } from '../storage/prisma/prisma-schema'
+import { resolvers } from '../storage/resolvers/resolver'
 import { ApolloServer, gql as GQL } from 'apollo-server-hapi'
+
+import SocketIO from 'socket.io'
 
 import RoomPlayer from '../core/rooms/player'
 
@@ -31,35 +35,39 @@ export default class Server {
 			await this.HTTP.route(Routes)
 
 			// Web Sockets
-			await this.socketIO = new SocketIO(this.HTTP.listener)
+			this.socketIO = new SocketIO(this.HTTP.listener)
+			await this.socketIO
 			Logger.network('Started SocketIO [Web Sockets] listener')
 
 			// GraphQL
 			let HTTPServer = this.HTTP
 
-			const typeDefs = GQL`
-			  type Query {
-				"A simple type for getting started!"
-				hello: String
-			  }
-			`;
-
-			const resolvers = {
-			  Query: {
-				hello: () => 'world'
-			  },
-			};
-
-
 			Logger.apollo('Started Apollo [GraphQL] listener')
-
-			if(this.config.mode == 'production') {
-				 this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: false, playground: false })
-				 Logger.apollo('Production environment detected, playground and introspection disabled')
-			 } else {
-				 this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: true, playground: true, })
-				 Logger.apollo('Development environment detected, playground and introspection enabled')
-			 }
+			this.apolloServer = new ApolloServer({ 
+				typeDefs,
+				resolvers,
+				introspection: true, 
+				playground: true,
+				context: {
+					db: prisma
+				}
+			})
+			Logger.apollo('Development environment detected, playground and introspection enabled')
+			// if(this.config.mode == 'production') {
+			// 	this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: false, playground: false })
+			// 	Logger.apollo('Production environment detected, playground and introspection disabled')
+			// } else {
+			// 	this.apolloServer = new ApolloServer({ 
+			// 		typeDefs,
+			// 		resolvers, 
+			// 		introspection: true, 
+			// 		playground: true,
+			// 		context: { 
+			// 			prisma 
+			// 		}
+			// 	})
+			// 	Logger.apollo('Development environment detected, playground and introspection enabled')
+			// }
 
 			await this.apolloServer.applyMiddleware({
 				app: HTTPServer
@@ -77,7 +85,6 @@ export default class Server {
 		}
 
 		Logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
-
 
 		this.socketIO.on('connection', (socket) => {
 			RoomPlayer.onConnect(socket)

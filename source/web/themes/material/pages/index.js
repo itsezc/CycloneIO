@@ -1,4 +1,4 @@
-import HeaderLanding from '../components/header.landing.jsx'
+import HeaderLanding from '../layouts/landing/header.jsx'
 import Login from '../components/login.index.jsx'
 
 class Home extends React.Component {
