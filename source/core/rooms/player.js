@@ -9,7 +9,7 @@ export default class RoomPlayer extends RoomEntity {
 		let player
 
 		socket.on('newRoom', () => {
-			let id = 0 // To make this dynamic
+			const id = 0 // To make this dynamic
 
 			socket.join(id)
 			socket.room = id

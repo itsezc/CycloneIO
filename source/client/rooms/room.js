@@ -6,6 +6,16 @@ export default class Room {
 	}
 
 	create() {
+		let polygon = new Phaser.Geom.Polygon([
+			0, 0,
+			32, 16,
+			64, 0,
+			32, -16,
+		])
+
+
+		var graphics = this.scene.add.graphics().fillStyle(0x00ff00).fillPoints(polygon.points, true)
+
 		this.tiles = this.scene.add.group()
 		this.stairs = this.scene.add.group()
 		this.walls = this.scene.add.group()
@@ -27,17 +37,39 @@ export default class Room {
 					let y = ((row * 32) - (index * 32)) / 2
 					let z = square[1] * 32 || 0
 
-					if (squares[index - 1] === undefined) {
-						tile = this.drawTile(x, y, z, floorThickness, true)
-					}
+					// if (squares[index - 1] === undefined) {
+					// 	this.drawTile(x, y, z, floorThickness, true)
+					// }
 
-					if (map[row + 1] === undefined){
-						tile = this.drawTile(x, y, z, floorThickness, false, true)
-					}
+					// if (map[row + 1] === undefined) {
+					// 	this.drawTile(x, y, z, floorThickness, false, true)
+					// }
 
-					else {
-						tile = this.drawTile(x, y, z, floorThickness)
-					}
+					// else {
+					// 	this.drawTile(x, y, z, floorThickness)
+					// }
+					//this.drawTile(x, y, z, floorThickness)
+
+					// graphics.lineStyle(1, 0x8E8E5E)
+					// graphics.lineBetween(0, 0, 32, -16)
+					let width = 64
+					let height = 64
+
+					let polygon = new Phaser.Geom.Polygon([
+						0, 0,
+						32, 16,
+						64, 0,
+						32, -16,
+					])
+
+
+					var graphics = this.scene.add.graphics().fillStyle(0x00ff00).fillPoints(polygon.points, true)
+
+					// graphics.generateTexture('hudbar', 800, 100);
+
+					// graphics.destroy();
+
+					// this.scene.add.image(400, 300, 'hudbar');
 
 					// tile.on('pointerover', () => {
 					// 	tileHover = this.scene.add.image(x, y - z, 'tile_hover').setOrigin(0.03, 0.54)
@@ -291,12 +323,13 @@ export default class Room {
 
 		// let width = 64
 		// let height = 64
-
-		this.scene.add.image(x - 34, y, 'tile')
 		var graphics = this.scene.add.graphics()
 
 		graphics.lineStyle(1, 0x8E8E5E)
 		graphics.lineBetween(0, 0, 32, -16)
+
+		graphics.generateTexture('test', 800, 400)
+		graphics.destroy()
 
 		// let polygon = new Phaser.Geom.Polygon([
 		// 	x, y,
@@ -314,7 +347,7 @@ export default class Room {
 		// graphics.lineTo(x + width / 2, y + height / 4)
 		// graphics.lineTo(x + width, y,)
 		// graphics.lineTo(x + width / 2, y - height / 4)
-	
+
 		// graphics.closePath()
 		// // graphics.fillPath()
 		// graphics.strokePath()
@@ -343,7 +376,7 @@ export default class Room {
 
 		// // topSurface.lineStyle(1, 0x8E8E5E)
 		// // topSurface.strokePoints(hitArea.points, true)
-		
+
 		// topSurface.fillStyle(0x989865)
 		// topSurface.fillPoints(hitArea.points)
 
@@ -476,7 +509,7 @@ export default class Room {
 		// 	//
 		// 	// bottom.lineStyle(0.5, 0x676744)
 		// 	// bottom.strokePoints(bottomEdge.points, true)
-	
+
 	}
 
 	drawWall(x, y, height, thickness, floorThickness) {
