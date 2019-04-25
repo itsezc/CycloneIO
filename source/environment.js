@@ -18,7 +18,7 @@ export default class Environment {
 		console.log(Chalk.bold.blue(' \\______  / ____|\\___  >____/\\____/|___|  /\\___  >'))
 		console.log(Chalk.bold.blue('        \\/\\/         \\/                 \\/     \\/ \n\n'))
 
-		console.log(`Version: ${Chalk.magenta.bold('1.0.0')} | License key : ${Chalk.magenta.bold(Config.license)}`)
+		console.log(`Version: ${Chalk.magenta.bold(Config.version)} | License key : ${Chalk.magenta.bold(Config.license)}`)
 		console.log(`Created by ${Chalk.red.bold('EZ-C 💖 Amor')} and ${Chalk.blue.bold('Sapphire')} of ${Chalk.yellow.bold('Habbay')}\n`)
 
 		this.init()
