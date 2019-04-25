@@ -1,27 +1,48 @@
+import Config from '../../config.json'
 import RoomScene from './rooms/scene.js'
 
 const config = {
-	title: 'Cyclone',
+    title: 'Cyclone',
+    url: '',
+    version: Config.version,
+    banner: false,
+    // banner: {
+    //     text: '#FFFFFF',
+    //     background: [
+    //         '#FFA54C',
+    //         '#FFA38C',
+    //         '#F6A089',
+    //         '#F29888'
+    //     ],
+    //     hidePhaser: true
+    // },
+    resolution: window.devicePixelRatio,
     type: Phaser.WEBGL,
-    physics: {
-        default: 'arcade'
-    },
     pixelArt: true,
     antialias: true,
     scale: {
-        mode: Phaser.Scale.RESIZE,
-		width: window.innerWidth * window.devicePixelRatio,
-		height: window.innerHeight * window.devicePixelRatio,
-		zoom: 1 / window.devicePixelRatio
+        //mode: Phaser.Scale.NONE,
+        width: window.innerWidth,
+        height: window.innerHeight,
+        //autoRound: true,
     },
-    audio: {
-        disableWebAudio: true
+    physics: {
+        default: 'arcade'
     },
+    // audio: {
+    //     disableWebAudio: true
+    // },
     scene: RoomScene
 }
 
-
 const game = new Phaser.Game(config)
 
-//FPS
+// FPS
 console.log('FPS', game.loop.actualFps)
+
+// Resize
+window.addEventListener('resize', () => {
+    
+    game.scale.resize(window.innerWidth, window.innerHeight);
+
+}, false);

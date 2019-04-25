@@ -60,6 +60,14 @@ export default class RoomScene extends Phaser.Scene {
 			}
 		})
 
+		this.scale.on('resize', (gameSize) => {
+
+			var width = gameSize.width;
+			var height = gameSize.height;
+	
+			this.cameras.resize(width, height);
+	
+		}, this);
 	}
 
 	create() {
