@@ -12,7 +12,8 @@
     "desktop": "electron ./resources/desktop/index.js",
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r63b/webpack.config.babel.js",
-    "dev:ui:r63b:cypress": "cypress open"
+	"dev:ui:r63b:cypress": "cypress open",
+	"flow:status": "flow status --quiet"
   },
   "repository": {
     "type": "git",
@@ -71,11 +72,16 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link-http": "^1.5.14",
     "apollo-server-hapi": "^2.4.8",
     "bcryptjs": "^2.4.3",
     "chalk": "^2.4.2",
     "cypress": "^3.2.0",
+    "flow-bin": "^0.97.0",
     "graphql": "^14.2.1",
+    "graphql-tag": "^2.10.1",
     "hapi": "^18.1.0",
     "hapi-webpack-plugin": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
@@ -85,6 +91,7 @@
     "npm": "^6.9.0",
     "prisma-client-lib": "^1.31.1",
     "progress": "^2.0.3",
+    "react-apollo": "^2.5.5",
     "readline-sync": "^1.4.9",
     "socket.io": "^2.2.0",
     "winston": "^3.2.1"
