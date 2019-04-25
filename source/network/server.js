@@ -55,12 +55,12 @@ export default class Server {
 					db: prisma
 				}
 			})
-			Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+			// Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-			await this.apolloServer.applyMiddleware({
-				app: HTTPServer
-			})
-			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+			// await this.apolloServer.applyMiddleware({
+			// 	app: HTTPServer
+			// })
+			// await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
 			Logger.database('Switched to PostgreSQL connector')
 			Logger.database('Connected to Prisma [GraphQL] successfully')

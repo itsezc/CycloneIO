@@ -1,12 +1,12 @@
 import RoomScene from './rooms/scene.js'
 
 const config = {
-    type: Phaser.WEBGL,
+    type: Phaser.CANVAS,
     scene: RoomScene,
     disableContextMenu: true,
     banner: false,
     render: {
-        pixelArt: true
+        pixelArt: false
     },
     physics: {
         default: 'arcade'
