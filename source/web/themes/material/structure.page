@@ -14,9 +14,8 @@ html(lang='en')
 		script(src='https://unpkg.com/react@16/umd/react.development.js')
 		script(src='https://unpkg.com/react-dom@16/umd/react-dom.development.js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.0.0/react-router-dom.js')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js')
 
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body
 		#app
-		script(src='https://localhost:8080/web.min.js')
+		script(src='http://localhost:8080/web.min.js')
