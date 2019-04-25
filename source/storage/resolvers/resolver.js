@@ -3,7 +3,10 @@ import Bcrypt from 'bcryptjs'
 module.exports = {
 	resolvers: {
 		Query: {
-			users: (parents, args, ctx, info) => ctx.db.users({}, info)
+			bans: (parent, args, ctx, info) => ctx.db.bans({}, info),
+			bots: (parent, args, ctx, info) => ctx.db.bots({}, info),
+			rooms: (parent, args, ctx, info) => ctx.db.rooms({}, info),
+			users: (parent, args, ctx, info) => ctx.db.users({}, info),
  		},
 		Mutation: {
 			createUser: async(parent, { email, username, password }, ctx, info) => {

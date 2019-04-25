@@ -11,6 +11,8 @@ import { typeDefs } from '../storage/prisma/prisma-schema'
 import { resolvers } from '../storage/resolvers/resolver'
 import { ApolloServer, gql as GQL } from 'apollo-server-hapi'
 
+import jwt from 'jsonwebtoken'
+
 import SocketIO from 'socket.io'
 
 import RoomPlayer from '../core/rooms/player'
@@ -39,35 +41,21 @@ export default class Server {
 			await this.socketIO
 			Logger.network('Started SocketIO [Web Sockets] listener')
 
-			// GraphQL
+			// Database : GraphQL
 			let HTTPServer = this.HTTP
+			let environment = (this.config.mode == 'development') ? true : false
 
 			Logger.apollo('Started Apollo [GraphQL] listener')
 			this.apolloServer = new ApolloServer({ 
 				typeDefs,
 				resolvers,
-				introspection: true, 
-				playground: true,
+				introspection: environment, 
+				playground: environment,
 				context: {
 					db: prisma
 				}
 			})
-			Logger.apollo('Development environment detected, playground and introspection enabled')
-			// if(this.config.mode == 'production') {
-			// 	this.apolloServer = new ApolloServer({ typeDefs, resolvers, introspection: false, playground: false })
-			// 	Logger.apollo('Production environment detected, playground and introspection disabled')
-			// } else {
-			// 	this.apolloServer = new ApolloServer({ 
-			// 		typeDefs,
-			// 		resolvers, 
-			// 		introspection: true, 
-			// 		playground: true,
-			// 		context: { 
-			// 			prisma 
-			// 		}
-			// 	})
-			// 	Logger.apollo('Development environment detected, playground and introspection enabled')
-			// }
+			Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
 			await this.apolloServer.applyMiddleware({
 				app: HTTPServer
