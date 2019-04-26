@@ -6,7 +6,7 @@ const config = {
     disableContextMenu: true,
     banner: false,
     render: {
-        pixelArt: false
+		pixelArt: true
     },
     physics: {
         default: 'arcade'

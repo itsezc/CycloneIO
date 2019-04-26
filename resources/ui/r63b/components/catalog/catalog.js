@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import CatalogBanner from './components/banner.jsx'
 
 import CatalogFrontPage from './pages/frontpage.jsx'
+import CatalogFurniPage from './pages/furni.jsx'
 
 export default class Alert extends Component {
 	constructor(props) {
@@ -101,9 +102,7 @@ export default class Alert extends Component {
 							icon='https://i.imgur.com/vZzgS6P.png'
 							image='https://imgur.com/O1EqujY.gif' 
 						/>
-						<div className='page'>
-							Furni
-						</div>
+						<CatalogFurniPage />
 					</TabPanel>
 					<TabPanel>
 						<div className='page'>
