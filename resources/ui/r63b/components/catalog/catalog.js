@@ -15,13 +15,21 @@ export default class Alert extends Component {
 
 			// @@MOCK
 			catalogue: [
-				{ id: 0, parent: -1, type: 'category', name: 'Front Page' },
+				{ id: 0, parent: -1, type: 'category', name: 'Front Page', icon: '1' },
 				{ id: 1, parent: -1, type: 'category', name: 'Furni', description: 'This is an example description' },
 				{ id: 2, parent: -1, type: 'category', name: 'Clothing' },
 				{ id: 3, parent: -1, type: 'category', name: 'Pets' },
 				{ id: 4, parent: -1, type: 'category', name: 'Memberships' },
 				{ id: 5, parent: 1, type: 'page', name: 'Spaces' }
-			]
+			],
+
+			categories: []
+		}
+
+		for (var i = 0; i < categories.length; i++) {
+			if(i[type] == 'category') {
+				
+			}
 		}
 	}
 

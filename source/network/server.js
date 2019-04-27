@@ -43,25 +43,25 @@ export default class Server {
 			Logger.network('Started SocketIO [Web Sockets] listener')
 
 			// Database : GraphQL
-			// let HTTPServer = this.HTTP
-			// let environment = (this.config.mode == 'development') ? true : false
+			let HTTPServer = this.HTTP
+			let environment = (this.config.mode == 'development') ? true : false
 
-			// Logger.apollo('Started Apollo [GraphQL] listener')
-			// this.apolloServer = new ApolloServer({ 
-			// 	typeDefs,
-			// 	resolvers,
-			// 	introspection: environment, 
-			// 	playground: environment,
-			// 	context: {
-			// 		db: prisma
-			// 	}
-			// })
-			// Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+			Logger.apollo('Started Apollo [GraphQL] listener')
+			this.apolloServer = new ApolloServer({ 
+				typeDefs,
+				resolvers,
+				introspection: environment, 
+				playground: environment,
+				context: {
+					db: prisma
+				}
+			})
+			Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-			// await this.apolloServer.applyMiddleware({
-			// 	app: HTTPServer
-			// })
-			// await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+			await this.apolloServer.applyMiddleware({
+				app: HTTPServer
+			})
+			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
 			Logger.database('Switched to PostgreSQL connector')
 			Logger.database('Connected to Prisma [GraphQL] successfully')
