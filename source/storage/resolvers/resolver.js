@@ -7,6 +7,7 @@ module.exports = {
 			bots: (parent, args, ctx, info) => ctx.db.bots({}, info),
 			rooms: (parent, args, ctx, info) => ctx.db.rooms({}, info),
 			users: (parent, args, ctx, info) => ctx.db.users({}, info),
+			user: (parent, args, ctx) => ctx.db.users({ id: args.id }, info),
  		},
 		Mutation: {
 			createUser: async(parent, { email, username, password }, ctx, info) => {
