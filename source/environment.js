@@ -7,10 +7,13 @@ import RoomManager from './core/rooms/manager'
 
 import Config from '../config.json'
 
+import Test from './test'
+
 export default class Environment {
 	constructor() {
-		console.clear()
 
+		console.clear()
+		
 		console.log(Chalk.bold.blue('_________              .__                        '))
 		console.log(Chalk.bold.blue('\\_   ___ \\___.__. ____ |  |   ____   ____   ____  '))
 		console.log(Chalk.bold.blue('/    \\  \\<   |  |/ ___\\|  |  /  _ \\ /    \\_/ __ \\ '))
@@ -18,6 +21,9 @@ export default class Environment {
 		console.log(Chalk.bold.blue(' \\______  / ____|\\___  >____/\\____/|___|  /\\___  >'))
 		console.log(Chalk.bold.blue('        \\/\\/         \\/                 \\/     \\/ \n\n'))
 
+		console.log(Test.test)
+
+	
 		console.log(`Version: ${Chalk.magenta.bold(Config.version)} | License key : ${Chalk.magenta.bold(Config.license)}`)
 		console.log(`Created by ${Chalk.red.bold('EZ-C 💖 Amor')} and ${Chalk.blue.bold('Sapphire')} of ${Chalk.yellow.bold('Habbay')}\n`)
 
