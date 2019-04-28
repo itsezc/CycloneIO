@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run server:build && npm run build:resources && cp source/network/constants.json dist/network/",
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",
-    "build:dev": "flow status --quievt && babel-watch --watch source source/environment.js --exclude 'source/web' --exclude 'source/client'",
+    "build:dev": "flow status --quiet && babel-watch --watch source source/environment.js --exclude 'source/web' --exclude 'source/client'",
     "build:resources": "webpack --mode=production",
     "dev:resources": "webpack-dev-server --host 0.0.0.0",
     "desktop": "electron ./resources/desktop/index.js",

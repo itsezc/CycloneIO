@@ -23,29 +23,28 @@ export default class Environment {
 
 		console.log(Test.test)
 
-	
 		console.log(`Version: ${Chalk.magenta.bold(Config.version)} | License key : ${Chalk.magenta.bold(Config.license)}`)
 		console.log(`Created by ${Chalk.red.bold('EZ-C 💖 Amor')} and ${Chalk.blue.bold('Sapphire')} of ${Chalk.yellow.bold('Habbay')}\n`)
 
-		this.init()
+		//this.init()
 	}
 
-	async init() {
-		try {
-			this.server = await new Server(Config)
+// 	async init() {
+// 		try {
+// 			this.server = await new Server(Config)
 
-			this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
+// 			this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 
-			// ReadLineSync.promptLoop((command) => {
-			//   console.log('-- You said "' + command + '"');
-			// }, {
-			// 	limit: '1-6'
-			// })
+// 			// ReadLineSync.promptLoop((command) => {
+// 			//   console.log('-- You said "' + command + '"');
+// 			// }, {
+// 			// 	limit: '1-6'
+// 			// })
 
-		} catch (error) {
-			Logger.error(error)
-		}
-	}
+// 		} catch (error) {
+// 			Logger.error(error)
+// 		}
+// 	}
 }
 
 Environment.instance = new Environment()
