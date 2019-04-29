@@ -10,7 +10,7 @@ import Routes from './http/routes'
 import { prisma } from '../storage/prisma'
 import { typeDefs } from '../storage/prisma/prisma-schema'
 import { resolvers } from '../storage/resolvers/resolver'
-import { ApolloServer, gql as GQL } from 'apollo-server-hapi'
+//import { ApolloServer, gql as GQL } from 'apollo-server-hapi'
 
 import jwt from 'jsonwebtoken'
 
@@ -20,7 +20,12 @@ import RoomPlayer from '../core/rooms/player'
 
 export default class Server {
 
-	constructor(config) {
+    config: Object
+    HTTP: Hapi
+	socketIO: SocketIO
+	//apolloServer: Object
+
+	constructor(config: Object) {
 
 		this.config = config
 
@@ -40,31 +45,32 @@ export default class Server {
 			// Web Sockets
 			this.socketIO = new SocketIO(this.HTTP.listener)
 			await this.socketIO
+
 			Logger.network('Started SocketIO [Web Sockets] listener')
 
 			// Database : GraphQL
-			let HTTPServer = this.HTTP
-			let environment = (this.config.mode == 'development') ? true : false
+			// let HTTPServer = this.HTTP
+			// let environment = (this.config.mode == 'development') ? true : false
 
-			Logger.apollo('Started Apollo [GraphQL] listener')
-			this.apolloServer = new ApolloServer({ 
-				typeDefs,
-				resolvers,
-				introspection: environment, 
-				playground: environment,
-				context: {
-					db: prisma
-				}
-			})
-			Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+			// Logger.apollo('Started Apollo [GraphQL] listener')
+			// this.apolloServer = new ApolloServer({ 
+			// 	typeDefs,
+			// 	resolvers,
+			// 	introspection: environment, 
+			// 	playground: environment,
+			// 	context: {
+			// 		db: prisma
+			// 	}
+			// })
+			// Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-			await this.apolloServer.applyMiddleware({
-				app: HTTPServer
-			})
-			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+			// await this.apolloServer.applyMiddleware({
+			// 	app: HTTPServer
+			// })
+			// await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-			Logger.database('Switched to PostgreSQL connector')
-			Logger.database('Connected to Prisma [GraphQL] successfully')
+			// Logger.database('Switched to PostgreSQL connector')
+			// Logger.database('Connected to Prisma [GraphQL] successfully')
 
 			await this.HTTP.start()
 

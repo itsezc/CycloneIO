@@ -1,5 +1,9 @@
+// @flow
 export default class Room {
-	constructor(id, properties) {
+	id: number
+	properties: Object
+
+	constructor(id: number, properties: Object) {
 		this.id = id
 		this.properties = properties
 	}
