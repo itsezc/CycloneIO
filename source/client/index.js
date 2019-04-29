@@ -12,18 +12,18 @@ const config = {
         default: 'arcade'
     },
     scale: {
-        // width: window.innerWidth,
-        // height: window.innerHeight,
-        // resolution: window.devicePixelRatio,
-        mode: Phaser.Sc
+        width: window.innerWidth,
+        height: window.innerHeight,
+        resolution: window.devicePixelRatio,
+        // mode: Phaser.Sc
         autoRound: true,
     },
 }
 
 const game = new Phaser.Game(config)
 
-// window.addEventListener('resize', () => {
+window.addEventListener('resize', () => {
     
-//     game.scale.resize(window.innerWidth, window.innerHeight);
+    game.scale.resize(window.innerWidth, window.innerHeight);
 
-// }, false);
+}, false);
