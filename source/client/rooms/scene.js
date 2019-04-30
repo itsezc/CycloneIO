@@ -6,6 +6,7 @@ import RoomPlayer from './player'
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
 export default class RoomScene extends Phaser.Scene {
+
 	constructor() {
 		super({
 			key: 'room'
@@ -32,10 +33,11 @@ export default class RoomScene extends Phaser.Scene {
 		this.load.audio('report', 'audio/report.mp3')
 		this.load.audio('achievement', 'audio/achievement.mp3')
 		this.load.audio('respect', 'audio/respect.mp3')
+		
 	}
 
 	init() {
-		this.lights.enable()
+		//this.lights.enable()
 		this.camera = this.cameras.main
 
 		this.socket = io(`${Config.server.host}:${Config.server.port}`)
@@ -52,11 +54,15 @@ export default class RoomScene extends Phaser.Scene {
 		this.camera.centerOn(this.camera.midPoint.x / window.innerWidth, this.camera.midPoint.y / window.innerHeight)
 
 		this.input.on('pointermove', pointer => {
+
 			if (pointer.primaryDown) {
+
 				this.camera.scrollX += pointer.downX - pointer.x;
 				pointer.downX = pointer.x;
+
 				this.camera.scrollY += pointer.downY - pointer.y;
 				pointer.downY = pointer.y;
+
 			}
 		})
 

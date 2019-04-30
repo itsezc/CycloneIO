@@ -5,14 +5,19 @@ export default class Room {
     }
 
     create() {
-        console.log(window.devicePixelRatio)
 
         let polygon = new Phaser.Geom.Polygon([0, 0, 32, 16, 64, 0, 32, -16])
 
         var graphics = this.scene.add
             .graphics()
-            .lineStyle(1, 0x00ff00)
-            .strokePoints(polygon.points, true)
+            .fillStyle(0x8e8e5e)
+            .fillPoints(polygon.points)
+
+        // switch (window.devicePixelRatio) {
+        //     case 5:
+        //         graphics.
+        //         break
+        // }
 
         // this.tiles = this.scene.add.group()
         // this.stairs = this.scene.add.group()
