@@ -21,9 +21,10 @@ module.exports = (env, argv) => {
 
         devServer: {
             compress: true,
-			historyApiFallback: true
-        },
-
+			historyApiFallback: true,
+			contentBase: './web-build',
+		},
+		
         module: {
             rules: [
 				{

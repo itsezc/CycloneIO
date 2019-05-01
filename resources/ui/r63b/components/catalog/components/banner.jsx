@@ -7,7 +7,7 @@ export default class CatalogBanner extends Component {
 		this.state = {}
 		
 		this.imageStyle = {
-			background: 'linear-gradient(rgba(14, 63, 82, 0.9), rgba(14, 63, 82, 0.9)), url(https://imgur.com/O1EqujY.gif)',
+			background: 'linear-gradient(rgba(14, 63, 82, 0.9), rgba(14, 63, 82, 0.9)), url(' + this.props.banner + ')',
 			backgroundSize: '115%',
 			backgroundRepeat: 'no-repeat',
 			backgroundPosition: 'center'
