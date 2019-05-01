@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Navgiation from '../components/navigation.jsx'
+
 export default class CatalogFurniPage extends Component {
 	constructor(props) {
 		super(props)
@@ -12,6 +14,7 @@ export default class CatalogFurniPage extends Component {
 					<div className='search'>
 						<input type='text' placeholder='Search here' />					
 					</div>
+					<Navgiation />
 				</div>
 				<div className='content'>
 					

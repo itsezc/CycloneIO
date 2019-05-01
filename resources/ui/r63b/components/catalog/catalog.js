@@ -3,8 +3,8 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
 import CatalogBanner from './components/banner.jsx'
 
-import CatalogFrontPage from './pages/frontpage.jsx'
-import CatalogFurniPage from './pages/furni.jsx'
+import CatalogFrontPage from './layouts/frontpage.jsx'
+import CatalogFurniPage from './layouts/furniture.jsx'
 
 export default class Alert extends Component {
 	constructor(props) {
@@ -27,7 +27,7 @@ export default class Alert extends Component {
 
 			// @@MOCK
 			catalogue: [
-				{ id: 0, parent: -1, name: 'Front Page', icon: '1', banner: 'frontpage', layout: 'frontpage' },
+				{ id: 0, parent: -1, name: 'Front Page', icon: '213', banner: 'frontpage', layout: 'frontpage' },
 				{ id: 1, parent: -1, name: 'Furni', description: 'This is an example description for furni', 'icon': '2', banner: 'exchange', layout: 'furniture' },
 				{ id: 2, parent: -1, name: 'Clothing', description: 'This is an example description for clothing', icon: '3', banner: 'clothing', layout: 'furniture' },
 				{ id: 3, parent: -1, name: 'Pets', description: 'This is an example description for pets', icon: '4', banner: 'pets', layout: 'furniture' },
@@ -125,7 +125,7 @@ export default class Alert extends Component {
 
 	render() {
 		return (
-			<div className='catalogue' id='catalog'>
+			<div className='catalog' id='catalog'>
 				<div className='title' id='catalog_header'>
 					Shop
 				</div>
