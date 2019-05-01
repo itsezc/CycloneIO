@@ -5,13 +5,7 @@ export default class Room {
     }
 
     create() {
-
-        let polygon = new Phaser.Geom.Polygon([0, 0, 32, 16, 64, 0, 32, -16])
-
-        var graphics = this.scene.add
-            .graphics()
-            .fillStyle(0x8e8e5e)
-            .fillPoints(polygon.points)
+        //let polygon = new Phaser.Geom.Polygon([0, 0, 32, 16, 64, 0, 32, -16])
 
         // switch (window.devicePixelRatio) {
         //     case 5:
@@ -23,111 +17,118 @@ export default class Room {
         // this.stairs = this.scene.add.group()
         // this.walls = this.scene.add.group()
 
-        // this.socket.emit('newRoom')
+        this.socket.emit('newRoom')
 
-        // this.socket.on('newRoom', (map, floorThickness) => {
+        this.socket.on('newRoom', (map, floorThickness) => {
+            let tile
+            let tileHover
 
-        // 	let tile
-        // 	let tileHover
+            const tileWidth = 64
+            const tileHeight = 64
 
-        // 	map.forEach((squares, row) => {
+            map.forEach((squares, row) => {
+                let topSquares = map[row - 1]
 
-        // 		let topSquares = map[row - 1]
+                squares.forEach((square, index) => {
+                    let x = row * 32 + index * 32
+                    let y = (row * 32 - index * 32) / 2
+                    let z = square[1] * 32 || 0
 
-        // 		squares.forEach((square, index) => {
+                    // if (squares[index - 1] === undefined) {
+                    // 	this.drawTile(x, y, z, floorThickness, true)
+                    // }
 
-        // 			let x = (row * 32) + (index * 32)
-        // 			let y = ((row * 32) - (index * 32)) / 2
-        // 			let z = square[1] * 32 || 0
+                    // if (map[row + 1] === undefined) {
+                    // 	this.drawTile(x, y, z, floorThickness, false, true)
+                    // }
 
-        // 			// if (squares[index - 1] === undefined) {
-        // 			// 	this.drawTile(x, y, z, floorThickness, true)
-        // 			// }
+                    // else {
+                    // 	this.drawTile(x, y, z, floorThickness)
+                    // }
+                    //this.drawTile(x, y, z, floorThickness)
 
-        // 			// if (map[row + 1] === undefined) {
-        // 			// 	this.drawTile(x, y, z, floorThickness, false, true)
-        // 			// }
+                    // graphics.lineStyle(1, 0x8E8E5E)
+                    // graphics.lineBetween(0, 0, 32, -16)
 
-        // 			// else {
-        // 			// 	this.drawTile(x, y, z, floorThickness)
-        // 			// }
-        // 			//this.drawTile(x, y, z, floorThickness)
+                    let polygon = new Phaser.Geom.Polygon([
+                        x,
+                        y,
+                        x + tileWidth / 2,
+                        y + tileHeight / 4,
+                        x + tileWidth,
+                        y,
+                        x + tileWidth / 2,
+                        y - tileHeight / 4
+                    ])
 
-        // 			// graphics.lineStyle(1, 0x8E8E5E)
-        // 			// graphics.lineBetween(0, 0, 32, -16)
-        // 			let width = 64
-        // 			let height = 64
+                    var graphics = this.scene.add
+                        .graphics()
+                        .fillStyle(0x989865)
+                        .fillPoints(polygon.points)
+                        .lineStyle(1, 0x8E8E5E)
+                        .strokePoints(polygon.points, true)
 
-        // 			let polygon = new Phaser.Geom.Polygon([
-        // 				0, 0,
-        // 				32, 16,
-        // 				64, 0,
-        // 				32, -16,
-        // 			])
+                    // graphics.generateTexture('hudbar', 800, 100);
 
-        // 			var graphics = this.scene.add.graphics().fillStyle(0x00ff00).fillPoints(polygon.points, true)
+                    // graphics.destroy();
 
-        // 			// graphics.generateTexture('hudbar', 800, 100);
+                    // this.scene.add.image(400, 300, 'hudbar');
 
-        // 			// graphics.destroy();
+                    // tile.on('pointerover', () => {
+                    // 	tileHover = this.scene.add.image(x, y - z, 'tile_hover').setOrigin(0.03, 0.54)
+                    // })
 
-        // 			// this.scene.add.image(400, 300, 'hudbar');
+                    // tile.on('pointerout', () => {
+                    // 	tileHover.destroy()
+                    // })
 
-        // 			// tile.on('pointerover', () => {
-        // 			// 	tileHover = this.scene.add.image(x, y - z, 'tile_hover').setOrigin(0.03, 0.54)
-        // 			// })
+                    //this.drawWall(x, y, 120, 7.5, floorThickness)
+                    //
+                    // let depth = row - index
+                    //
+                    // let topSquares = map[row - 1]
+                    // let bottomSquares = map[row + 1]
+                    // let leftSquare = squares[index - 1]
+                    // let rightSquare = map[row][index + 1]
+                    //
+                    // if (square === this.squareType.TILE) {
+                    // 	let height = square[1] || 0
+                    //
+                    // 	if (rightSquare !== undefined) {
+                    //
+                    // 		let rightSquareHeight = rightSquare[1] || 0
+                    //
+                    // 		if (rightSquareHeight > height && rightSquareHeight - height === 1) {
+                    // 			this.addRightStair(x, y, z, depth)
+                    //
+                    // 		} else {
+                    // 			this.addTile(x, y, z, depth)
+                    // 		}
+                    // 	}
+                    //
+                    // 	// if (he)
+                    //
+                    // 	else {
+                    // 		this.addTile(x, y, z, depth)
+                    // 	}
 
-        // 			// tile.on('pointerout', () => {
-        // 			// 	tileHover.destroy()
-        // 			// })
-
-        // 			//this.drawWall(x, y, 120, 7.5, floorThickness)
-        // 			//
-        // 			// let depth = row - index
-        // 			//
-        // 			// let topSquares = map[row - 1]
-        // 			// let bottomSquares = map[row + 1]
-        // 			// let leftSquare = squares[index - 1]
-        // 			// let rightSquare = map[row][index + 1]
-        // 			//
-        // 			// if (square === this.squareType.TILE) {
-        // 			// 	let height = square[1] || 0
-        // 			//
-        // 			// 	if (rightSquare !== undefined) {
-        // 			//
-        // 			// 		let rightSquareHeight = rightSquare[1] || 0
-        // 			//
-        // 			// 		if (rightSquareHeight > height && rightSquareHeight - height === 1) {
-        // 			// 			this.addRightStair(x, y, z, depth)
-        // 			//
-        // 			// 		} else {
-        // 			// 			this.addTile(x, y, z, depth)
-        // 			// 		}
-        // 			// 	}
-        // 			//
-        // 			// 	// if (he)
-        // 			//
-        // 			// 	else {
-        // 			// 		this.addTile(x, y, z, depth)
-        // 			// 	}
-
-        // 			// if (topSquares !== undefined) {
-        // 			//
-        // 			// 	let topSquare = topSquares[index]
-        // 			// 	let topSquareHeight = topSquare[1]
-        // 			//
-        // 			// 	if (Math.abs(topSquareHeight - height) === 1) {
-        // 			// 		this.addTopStair(x, y, z, depth)
-        // 			//
-        // 			// 	}
-        // 			// 	// else {
-        // 			// 	// 	this.addTile(x, y, z, depth)
-        // 			// 	// }
-        // 			//
-        // 			// }
-        // 		})
-        // 	})
-        // })
+                    // if (topSquares !== undefined) {
+                    //
+                    // 	let topSquare = topSquares[index]
+                    // 	let topSquareHeight = topSquare[1]
+                    //
+                    // 	if (Math.abs(topSquareHeight - height) === 1) {
+                    // 		this.addTopStair(x, y, z, depth)
+                    //
+                    // 	}
+                    // 	// else {
+                    // 	// 	this.addTile(x, y, z, depth)
+                    // 	// }
+                    //
+                    // }
+                })
+            })
+        })
 
         // else {
         // 	this.addTile(x, y, z, depth)

@@ -1,7 +1,7 @@
 import RoomScene from './rooms/scene.js'
 
 const config = {
-    type: Phaser.CANVAS,
+    type: Phaser.WEBGL,
     scene: RoomScene,
     disableContextMenu: false,
     banner: false,
