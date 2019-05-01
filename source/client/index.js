@@ -1,12 +1,12 @@
 import RoomScene from './rooms/scene.js'
 
 const config = {
-    type: Phaser.WEBGL,
+    type: Phaser.CANVAS,
     scene: RoomScene,
     disableContextMenu: false,
     banner: false,
     render: {
-        pixelArt: true
+       antialias: false
     },
     physics: {
         default: 'arcade'
@@ -14,8 +14,7 @@ const config = {
     scale: {
         mode: Phaser.Scale.ScaleModes.ENVELOP,
         width: window.innerWidth * window.devicePixelRatio,
-        height: window.innerHeight * window.devicePixelRatio,
-        zoom: Phaser.Scale.MAX_ZOOM
+        height: window.innerHeight * window.devicePixelRatio
     }
 }
 
