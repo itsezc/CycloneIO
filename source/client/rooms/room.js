@@ -63,10 +63,10 @@ export default class Room {
 
                     var graphics = this.scene.add
                         .graphics()
+                        .lineStyle(1, 0x8e8e5e)
+                        .strokePoints(polygon.points, true)
                         .fillStyle(0x989865)
                         .fillPoints(polygon.points)
-                        .lineStyle(1, 0x8E8E5E)
-                        .strokePoints(polygon.points, true)
 
                     // graphics.generateTexture('hudbar', 800, 100);
 
