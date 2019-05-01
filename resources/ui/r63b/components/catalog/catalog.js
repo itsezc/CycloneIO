@@ -3,34 +3,79 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
 import CatalogBanner from './components/banner.jsx'
 
-import CatalogFrontPage from './pages/frontpage.jsx'
-import CatalogFurniPage from './pages/furni.jsx'
+import CatalogFrontPage from './layouts/frontpage.jsx'
+import CatalogFurniPage from './layouts/furniture.jsx'
 
 export default class Alert extends Component {
 	constructor(props) {
 		super(props)
+
+		this.assets = {
+			url: 'http://localhost:8080/catalogue/',
+			icons: {
+				directory: 'icons',
+				format: 'png'
+			},
+			banners: {
+				directory: 'banners',
+				format: 'gif'
+			}
+		}
 
 		this.state = {
 			category: 0,
 
 			// @@MOCK
 			catalogue: [
-				{ id: 0, parent: -1, type: 'category', name: 'Front Page', icon: '1' },
-				{ id: 1, parent: -1, type: 'category', name: 'Furni', description: 'This is an example description' },
-				{ id: 2, parent: -1, type: 'category', name: 'Clothing' },
-				{ id: 3, parent: -1, type: 'category', name: 'Pets' },
-				{ id: 4, parent: -1, type: 'category', name: 'Memberships' },
-				{ id: 5, parent: 1, type: 'page', name: 'Spaces' }
-			],
-
-			categories: []
+				{ id: 0, parent: -1, name: 'Front Page', icon: '213', banner: 'frontpage', layout: 'frontpage' },
+				{ id: 1, parent: -1, name: 'Furni', description: 'This is an example description for furni', 'icon': '2', banner: 'exchange', layout: 'furniture' },
+				{ id: 2, parent: -1, name: 'Clothing', description: 'This is an example description for clothing', icon: '3', banner: 'clothing', layout: 'furniture' },
+				{ id: 3, parent: -1, name: 'Pets', description: 'This is an example description for pets', icon: '4', banner: 'pets', layout: 'furniture' },
+				{ id: 4, parent: -1, name: 'Memberships', description: 'This is an example description for memberships', icon: '5', banner: 'club', layout: 'furniture' },
+				{ id: 5, parent: 1, name: 'Spaces', description: 'This is an example description for spaces', icon: '6', layout: 'furniture' },
+				{ id: 6, parent: 1, name: 'Backgrounds', description: 'This is an example description for backgrounds', icon: '7', layout: 'furniture' }
+			]
 		}
 
-		for (var i = 0; i < categories.length; i++) {
-			if(i[type] == 'category') {
-				
+		this.categories = this.state.catalogue.map((page) => {
+			if(page.parent == -1) {
+				return (
+					<Tab className='tab' key={page.id}>
+						{page.name}
+					</Tab>
+				)
 			}
-		}
+		})
+
+		this.defaultPages = this.state.catalogue.map((page) => {
+			if(page.parent == -1) {
+
+				let layout = page.layout
+				let content 
+
+				switch (layout) {
+					case 'frontpage':
+							content = <CatalogFrontPage />
+						break;
+				
+					default:
+							content = <CatalogFurniPage />
+						break;
+				}
+
+				return (
+					<TabPanel key={page.id}>
+						<CatalogBanner 
+							title={page.name}
+							description={page.description}
+							icon={this.assets.url.concat(this.assets.icons.directory, '/', page.icon, '.', this.assets.icons.format)} 
+							banner={this.assets.url.concat(this.assets.banners.directory, '/', page.banner, '.', this.assets.banners.format)} 
+						/>
+						{content}
+					</TabPanel>
+				)
+			}
+		})
 	}
 
 	componentDidMount() {
@@ -80,54 +125,17 @@ export default class Alert extends Component {
 
 	render() {
 		return (
-			<div className='catalogue' id='catalog'>
+			<div className='catalog' id='catalog'>
 				<div className='title' id='catalog_header'>
 					Shop
 				</div>
 
 				<Tabs selectedTabClassName='active' selectedIndex={this.state.category} onSelect={category => this.setState({ category })}>
 					<TabList className='tabs'>
-						<Tab className='tab'>Front Page</Tab>
-						<Tab className='tab'>Furni</Tab>
-						<Tab className='tab'>Clothing</Tab>
-						<Tab className='tab'>Pets</Tab>
-						<Tab className='tab'>Memberships</Tab>
+						{this.categories}
 					</TabList>
-
-					<TabPanel>
-						<CatalogBanner 
-							title='Front Page' 
-							icon='https://i.imgur.com/vZzgS6P.png' 
-							image='https://imgur.com/O1EqujY.gif' 
-						/>
-						<CatalogFrontPage />
-					</TabPanel>
 					
-					<TabPanel>
-						<CatalogBanner 
-							title='Furni' 
-							description='This is an example description' 
-							icon='https://i.imgur.com/vZzgS6P.png'
-							image='https://imgur.com/O1EqujY.gif' 
-						/>
-						<CatalogFurniPage />
-					</TabPanel>
-					<TabPanel>
-						<div className='page'>
-							Clothing
-						</div>
-					</TabPanel>
-					<TabPanel>
-						<CatalogBanner title='Pets' icon='https://i.imgur.com/vZzgS6P.png' image='https://imgur.com/O1EqujY.gif' />
-						<div className='page'>
-							Pets
-						</div>
-					</TabPanel>
-					<TabPanel>
-						<div className='page'>
-							Memberships
-						</div>
-					</TabPanel>
+					{this.defaultPages}
 				</Tabs>				
 			</div>
 		)
