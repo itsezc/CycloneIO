@@ -8,7 +8,7 @@
 	background #ECEAE1
 	padding 0px
 	max-width 570px
-	min-height 595px
+	min-height 630px
 	width 100%
 	border-radius 8px
 	box-sizing border-box
@@ -97,9 +97,46 @@
 		.sidebar
 			grid-area sidebar
 
+			.search
+				width 100%
+
+				& input[type='text']
+					font-family Ubuntu
+					font-weight 300
+					padding 4px
+					max-height 20px
+					outline none
+					border 1px solid #848484
+					border-radius 4px
+					box-shadow 0px 1px 0px 0px rgba(255,255,255,1),
+								inset 0px 1px 1px 0px rgba(0, 0, 0, 0.15)
+					width calc(calc(100% - calc(4px * 2)) - 2px)
+
+		.content
+			grid-area content
+			color #222222
+
+			img
+				max-width: 100%
+				height: 125px
+				margin-bottom: 5px
+
+
+	.frontpage
+		padding 5px 10px 10px 10px
+		color black
+		display grid
+		grid-gap 7px
+		grid-template-columns: 180px auto
+		grid-template-areas: 'sidebar content'
+
+		.sidebar
+			grid-area sidebar
+
 			img
 				max-width: 180px
 				height: 460px
+					
 
 		.content
 			grid-area content

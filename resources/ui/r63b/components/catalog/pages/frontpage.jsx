@@ -7,7 +7,7 @@ export default class CatalogFrontPage extends Component {
 
 	render() {
 		return(
-			<div className='page'>
+			<div className='frontpage'>
 				<div className='sidebar'>
 					<a href='#'><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_easter19_swingtree.png' /></a>
 				</div>

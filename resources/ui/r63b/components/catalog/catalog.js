@@ -28,12 +28,12 @@ export default class Alert extends Component {
 			// @@MOCK
 			catalogue: [
 				{ id: 0, parent: -1, name: 'Front Page', icon: '1', banner: 'frontpage', layout: 'frontpage' },
-				{ id: 1, parent: -1, name: 'Furni', description: 'This is an example description for furni', 'icon': '2', banner: 'exchange', },
-				{ id: 2, parent: -1, name: 'Clothing', description: 'This is an example description for clothing', icon: '3', banner: 'clothing' },
-				{ id: 3, parent: -1, name: 'Pets', description: 'This is an example description for pets', icon: '4', banner: 'pets' },
-				{ id: 4, parent: -1, name: 'Memberships', description: 'This is an example description for memberships', icon: '5', banner: 'club' },
-				{ id: 5, parent: 1, name: 'Spaces', description: 'This is an example description for spaces', icon: '6' },
-				{ id: 6, parent: 1, name: 'Backgrounds', description: 'This is an example description for backgrounds', icon: '7' }
+				{ id: 1, parent: -1, name: 'Furni', description: 'This is an example description for furni', 'icon': '2', banner: 'exchange', layout: 'furniture' },
+				{ id: 2, parent: -1, name: 'Clothing', description: 'This is an example description for clothing', icon: '3', banner: 'clothing', layout: 'furniture' },
+				{ id: 3, parent: -1, name: 'Pets', description: 'This is an example description for pets', icon: '4', banner: 'pets', layout: 'furniture' },
+				{ id: 4, parent: -1, name: 'Memberships', description: 'This is an example description for memberships', icon: '5', banner: 'club', layout: 'furniture' },
+				{ id: 5, parent: 1, name: 'Spaces', description: 'This is an example description for spaces', icon: '6', layout: 'furniture' },
+				{ id: 6, parent: 1, name: 'Backgrounds', description: 'This is an example description for backgrounds', icon: '7', layout: 'furniture' }
 			]
 		}
 
@@ -49,6 +49,20 @@ export default class Alert extends Component {
 
 		this.defaultPages = this.state.catalogue.map((page) => {
 			if(page.parent == -1) {
+
+				let layout = page.layout
+				let content 
+
+				switch (layout) {
+					case 'frontpage':
+							content = <CatalogFrontPage />
+						break;
+				
+					default:
+							content = <CatalogFurniPage />
+						break;
+				}
+
 				return (
 					<TabPanel key={page.id}>
 						<CatalogBanner 
@@ -57,7 +71,7 @@ export default class Alert extends Component {
 							icon={this.assets.url.concat(this.assets.icons.directory, '/', page.icon, '.', this.assets.icons.format)} 
 							banner={this.assets.url.concat(this.assets.banners.directory, '/', page.banner, '.', this.assets.banners.format)} 
 						/>
-						<CatalogFrontPage />
+						{content}
 					</TabPanel>
 				)
 			}
