@@ -33,23 +33,12 @@ export default class RoomScene extends Phaser.Scene {
 		this.load.audio('report', 'audio/report.mp3')
 		this.load.audio('achievement', 'audio/achievement.mp3')
 		this.load.audio('respect', 'audio/respect.mp3')
-		
 	}
 
 	init() {
 		//this.lights.enable()
 		this.camera = this.cameras.main
-
-		this.socket = io(`${Config.server.host}:${Config.server.port}`)
-		this.room = new Room(this, this.socket)
-
-
-
-		// this.player = new RoomPlayer(this, this.socket, 0, {
-		//   x: 0,
-		//   y: 0,
-		//   direction: Constants.common.directions.DOWN
-		// })
+		this.room = new Room(this, 0)
 
 		this.camera.centerOn(this.camera.midPoint.x / window.innerWidth, this.camera.midPoint.y / window.innerHeight)
 
@@ -64,7 +53,16 @@ export default class RoomScene extends Phaser.Scene {
 				pointer.downY = pointer.y;
 
 			}
-		})
+		}, this)
+
+		this.scale.on('resize', gameSize => {
+
+			var width = gameSize.width;
+			var height = gameSize.height;
+
+			this.cameras.resize(width, height);
+
+		}, this);
 	}
 
 	create() {
@@ -77,7 +75,7 @@ export default class RoomScene extends Phaser.Scene {
 		// this.moodlightPreview.setDepth(4)
 
 		// Zoom
-		// this.camera.setZoom(5)
+		// this.camera.setZoom(10)
 
 		// Room Background Color
 		//this.camera.backgroundColor.setTo(0,255,255)

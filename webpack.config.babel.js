@@ -23,7 +23,7 @@ module.exports = (env, argv) => {
 
     entry: {
       web: './web/engine.js',
-      client: './client/index.js'
+      client: './client/game.js'
     },
 
     devServer: {
