@@ -22,7 +22,7 @@ export default class Server {
 
     config: Object
     HTTP: Hapi
-	socketIO: SocketIO
+	io: SocketIO
 	//apolloServer: Object
 
 	constructor(config: Object) {
@@ -43,8 +43,8 @@ export default class Server {
 			await this.HTTP.route(Routes)
 
 			// Web Sockets
-			this.socketIO = new SocketIO(this.HTTP.listener)
-			await this.socketIO
+			this.io = new SocketIO(this.HTTP.listener)
+			await this.io
 
 			Logger.network('Started SocketIO [Web Sockets] listener')
 
@@ -81,7 +81,7 @@ export default class Server {
 
 		Logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
-		this.socketIO.on('connection', (socket) => {
+		this.io.on('connection', (socket) => {
 			RoomPlayer.onConnect(socket)
 
 			socket.on('disconnect', () => {
@@ -91,7 +91,7 @@ export default class Server {
 	}
 
 	shutdown() {
-		this.socketIO.emit('shutdown')
+		this.io.emit('shutdown')
 
 		this.HTTP.stop({
 			timeout: 100000

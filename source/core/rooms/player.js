@@ -7,25 +7,23 @@ import Logger from '../../utils/logger'
 
 export default class RoomPlayer extends RoomEntity {
     static onConnect(socket: Object) {
-        let player
-
-        socket.on('newRoom', () => {
-            const id = 0 // To make this dynamic
-
+        socket.on('newRoom', id => {
             socket.join(id)
             socket.room = id
 
-            let room = new Room(id, {
+            let room = new Room(id, [[1], [1, 1]], {
                 floor: {
+                    thickness: 7.5
+                },
+                wall: {
+                    hidden: false,
                     thickness: 7.5
                 }
             })
 
             Environment.instance.roomManager.add(room)
 
-            Environment.instance.server.socketIO
-                .to(id)
-                .emit('newRoom', [[1, 1, 1]], room.properties.floor.thickness)
+            Environment.instance.server.io.to(id).emit('newRoom', room)
         })
 
         // socket.on('newPlayer', (room, position) => {
@@ -68,11 +66,9 @@ export default class RoomPlayer extends RoomEntity {
         // 	delete RoomPlayer.list[socket.room][socket.id]
         // }
 
-        Environment.instance.server.socketIO
-            .to(socket.room)
-            .emit('remove', socket.id)
+        Environment.instance.server.io.to(socket.room).emit('removePlayer', socket.id)
 
-        Logger.network(`User (${socket.id}) disconnected`)
+        Logger.network(`Player (${socket.id}) disconnected`)
     }
 
     // constructor(id: number, position) {
