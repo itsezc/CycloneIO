@@ -1,12 +1,20 @@
 // @flow
-export default class Room {
-	id: number
-	map: Array<number[]>
-	properties: Object
+import RoomModel from './model'
 
-	constructor(id: number, map: Array<number[]>, properties: Object) {
-		this.id = id
-		this.map = map
-		this.properties = properties
-	}
+export default class Room {
+    +id: number
+    +model: RoomModel
+    +floorThickness: number
+    +wallThickness: number
+    +wallHeight: number
+    +hideWalls: boolean;
+
+    constructor(id: number, model: RoomModel, floorThickness: number, wallThickness: number, wallHeight: number, hideWalls: boolean) {
+        this.id = id
+        this.model = model
+        this.floorThickness = floorThickness
+        this.wallThickness = wallThickness
+        this.wallHeight = wallHeight
+        this.hideWalls = hideWalls
+    }
 }

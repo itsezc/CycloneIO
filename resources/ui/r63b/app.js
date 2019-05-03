@@ -12,9 +12,9 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <Switch location={this.props.location}>
-                    <Route exact path="/" component={Loading} />
-                    <Route exact path="/client" component={Client} />
-                    <Route exact path="/hotel" component={Client} />
+                    <Route exact path='/' component={Loading} />
+                    <Route exact path='/client' component={Client} />
+                    <Route exact path='/hotel' component={Client} />
                 </Switch>
             </BrowserRouter>
         )

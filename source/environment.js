@@ -9,8 +9,9 @@ import RoomManager from './core/rooms/manager'
 import Config from '../config.json'
 
 export default class Environment {
+	logger: Logger
 	server: Server
-	roomManager: RoomManager
+	//roomManager: RoomManager
 
 	constructor() {
 		console.clear()
@@ -30,8 +31,9 @@ export default class Environment {
 
 	async init() {
 		try {
+			this.logger = await new Logger()
 			this.server = await new Server(Config)
-			this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
+			//this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 
 			// ReadLineSync.promptLoop((command) => {
 			//   console.log('-- You said "' + command + '"');
@@ -40,7 +42,7 @@ export default class Environment {
 			// })
 
 		} catch (error) {
-			Logger.error(error)
+			this.logger.error(error)
 		}
 	}
 
