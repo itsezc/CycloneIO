@@ -21,12 +21,12 @@ export default class Actions extends Component {
 			<div className='actions'>
 
 				<button className='action-item action-item-arrow'>
-					<i className="icon icon-habbo"></i>
+					<i className="main-icon icon-habbo"></i>
 					<span className="action-item-expand">WEB</span>
 				</button>
 
 				<button className='action-item' onClick={this.toggleFullscreen}>
-					<i className={"icon " + (this.state.fullScreen ? "icon-disable-fs" : "icon-fs")}></i>
+					<i className={"main-icon " + (this.state.fullScreen ? "icon-disable-fs" : "icon-fs")}></i>
 				</button>
 			</div>
 		)

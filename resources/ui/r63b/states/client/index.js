@@ -35,6 +35,8 @@ export default class Client extends Component {
 
 					<div className='hotel'>
 
+						<i class="hotel-logo"></i>
+
 						<Moderation />
 
 						<Catalog />
