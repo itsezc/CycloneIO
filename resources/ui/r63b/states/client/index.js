@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
+import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
 import Wallet from '../../components/wallet'
 
@@ -29,6 +30,8 @@ export default class Client extends Component {
 		} else {
 			return(
 				<div className='client'>
+
+					<Actions />
 
 					<div className='hotel'>
 
