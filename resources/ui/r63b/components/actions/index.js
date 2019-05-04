@@ -26,7 +26,7 @@ export default class Actions extends Component {
 				</button>
 
 				<button className='action-item' onClick={this.toggleFullscreen}>
-					<i className="icon icon-fs"></i>
+					<i className={"icon " + (this.state.fullScreen ? "icon-disable-fs" : "icon-fs")}></i>
 				</button>
 			</div>
 		)
