@@ -6,94 +6,95 @@ import RoomPlayer from './player'
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
 export default class RoomScene extends Phaser.Scene {
+    constructor() {
+        super({
+            key: 'room'
+        })
+    }
 
-	constructor() {
-		super({
-			key: 'room'
-		})
-	}
+    preload() {
+        this.load.path = 'web-build/'
 
-	preload() {
+        //this.add.plugin(PhaserWebWorkers.plugin)
+        this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-		this.load.path = 'web-build/'
+        this.load.svg('tile', 'room/tile.svg')
+        this.load.svg('tile_hover', 'room/tile_hover.svg')
+        this.load.svg('wall_left', 'room/wall_left.svg')
+        this.load.image('wall_right', 'room/wall_right.png')
+        this.load.svg('stair_top', 'room/stair_top.svg')
+        this.load.svg('stair_right', 'room/stair_right.svg')
 
-		//this.add.plugin(PhaserWebWorkers.plugin)
-		this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
+        this.load.audio('credits', 'audio/credits.mp3')
+        this.load.audio('chat', 'audio/chat.mp3')
+        this.load.audio('message', 'audio/message.mp3')
+        this.load.audio('report', 'audio/report.mp3')
+        this.load.audio('achievement', 'audio/achievement.mp3')
+        this.load.audio('respect', 'audio/respect.mp3')
+    }
 
-		this.load.svg('tile', 'room/tile.svg')
-		this.load.svg('tile_hover', 'room/tile_hover.svg')
-		this.load.svg('wall_left', 'room/wall_left.svg')
-		this.load.image('wall_right', 'room/wall_right.png')
-		this.load.svg('stair_top', 'room/stair_top.svg')
-		this.load.svg('stair_right', 'room/stair_right.svg')
+    init() {
+        //this.lights.enable()
+        this.camera = this.cameras.main
+        this.room = new Room(this, 0)
 
-		this.load.audio('credits', 'audio/credits.mp3')
-		this.load.audio('chat', 'audio/chat.mp3')
-		this.load.audio('message', 'audio/message.mp3')
-		this.load.audio('report', 'audio/report.mp3')
-		this.load.audio('achievement', 'audio/achievement.mp3')
-		this.load.audio('respect', 'audio/respect.mp3')
-	}
+        this.camera.centerOn(this.camera.midPoint.x / window.innerWidth, this.camera.midPoint.y / window.innerHeight)
 
-	init() {
-		//this.lights.enable()
-		this.camera = this.cameras.main
-		this.room = new Room(this, 0)
+        this.input.on('pointermove', pointer => {
 
-		this.camera.centerOn(this.camera.midPoint.x / window.innerWidth, this.camera.midPoint.y / window.innerHeight)
+            if (pointer.primaryDown) {
+                this.scrollCamera(this.camera, pointer)
+            }
+			
+        }, this)
 
-		this.input.on('pointermove', pointer => {
+        this.scale.on('resize', gameSize => {
 
-			if (pointer.primaryDown) {
+            this.resizeCamera(gameSize.width, gameSize.height)
 
-				this.camera.scrollX += pointer.downX - pointer.x;
-				pointer.downX = pointer.x;
+        }, this)
+    }
 
-				this.camera.scrollY += pointer.downY - pointer.y;
-				pointer.downY = pointer.y;
+    create() {
+        this.room.create()
 
-			}
-		}, this)
+        // this.moodlightPreview = this.add.graphics()
+        // this.moodlightPreview.fillStyle(0x1844bd, 1)
+        // this.moodlightPreview.fillRect(0, 0, 50, 60);
+        // this.moodlightPreview.setBlendMode(Phaser.BlendModes.SCREEN)
+        // this.moodlightPreview.setDepth(4)
 
-		this.scale.on('resize', gameSize => {
+        // Zoom
+        // this.camera.setZoom(10)
 
-			var width = gameSize.width;
-			var height = gameSize.height;
+        // Room Background Color
+        //this.camera.backgroundColor.setTo(0,255,255)
 
-			this.cameras.resize(width, height);
+        // Camera Shake
+        //this.camera.shake(2000)
 
-		}, this);
-	}
+        // Room up side down
+        //this.camera.setAngle(180)
 
-	create() {
-		this.room.create()
+        // this.soundSample = this.sound.add('credits')
+        // this.soundSample.play()
 
-		// this.moodlightPreview = this.add.graphics()
-		// this.moodlightPreview.fillStyle(0x1844bd, 1)
-		// this.moodlightPreview.fillRect(0, 0, 50, 60);
-		// this.moodlightPreview.setBlendMode(Phaser.BlendModes.SCREEN)
-		// this.moodlightPreview.setDepth(4)
+        // this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
+        // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
+    }
 
-		// Zoom
-		// this.camera.setZoom(10)
+    update() {
+        // this.camera3d.transformChildren(this.transform);
+    }
 
-		// Room Background Color
-		//this.camera.backgroundColor.setTo(0,255,255)
+    scrollCamera(camera, pointer) {
+        this.camera.scrollX += pointer.downX - pointer.x
+        pointer.downX = pointer.x
+        this.camera.scrollY += pointer.downY - pointer.y
+        pointer.downY = pointer.y
+    }
 
-		// Camera Shake
-		//this.camera.shake(2000)
-
-		// Room up side down
-		//this.camera.setAngle(180)
-
-		// this.soundSample = this.sound.add('credits')
-		// this.soundSample.play()
-
-		// this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
-		// this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
-	}
-
-	update() {
-		// this.camera3d.transformChildren(this.transform);
-	}
+    resizeCamera(width, height) {
+        this.cameras.resize(width, height)
+    }
 }

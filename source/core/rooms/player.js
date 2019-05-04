@@ -1,5 +1,6 @@
 // @flow
 import RoomEntity from './entity'
+import RoomModel from './model'
 import Room from './room'
 
 import Environment from '../../environment'
@@ -11,17 +12,8 @@ export default class RoomPlayer extends RoomEntity {
             socket.join(id)
             socket.room = id
 
-            let room = new Room(id, [[1], [1, 1]], {
-                floor: {
-                    thickness: 7.5
-                },
-                wall: {
-                    hidden: false,
-                    thickness: 7.5
-                }
-            })
-
-            Environment.instance.roomManager.add(room)
+            let model = new RoomModel([[1], [1, 1]])
+            let room = new Room(id, model, 7.5, 7.5, 120, false)
 
             Environment.instance.server.io.to(id).emit('newRoom', room)
         })

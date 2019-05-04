@@ -1,19 +1,19 @@
-// @flow
-import Room from './room'
+// // @flow
+// import RoomData from './room'
 
-export default class RoomManager {
+// export default class RoomManager {
 	
-  rooms: { [number]: Room }
+//   rooms: {[number]: RoomData}
 
-  constructor() {
-    this.rooms = {}
-  }
+//   constructor() {
+//     this.rooms = {}
+//   }
 
-  add(room: Room) {
-    this.rooms[room.id] = room
-  }
+//   add(room: RoomData) {
+//     this.rooms[room.id] = room
+//   }
 
-  roomByID(id: number) {
-    return this.rooms[id]
-  }
-}
+//   roomByID(id: number) {
+//     return this.rooms[id]
+//   }
+// }

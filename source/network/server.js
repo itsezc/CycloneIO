@@ -1,7 +1,7 @@
 // @flow
 import Chalk from 'chalk'
 
-import Logger from '../utils/logger'
+import Environment from '../environment'
 
 import Hapi from 'hapi'
 import Inert from 'inert'
@@ -19,87 +19,83 @@ import SocketIO from 'socket.io'
 import RoomPlayer from '../core/rooms/player'
 
 export default class Server {
-
     config: Object
     HTTP: Hapi
-	io: SocketIO
-	//apolloServer: Object
+    io: SocketIO
+    //apolloServer: Object
 
-	constructor(config: Object) {
+    constructor(config: Object) {
+        this.config = config
 
-		this.config = config
+        this.HTTP = new Hapi.Server({
+            port: 8081
+        })
 
-		this.HTTP = new Hapi.Server({
-			port: 8081
-		})
-		
-		this.start()
-	}
+        this.start()
+    }
 
-	async start() {
+    async start() {
+        try {
+            await this.HTTP.register(Inert)
+            await this.HTTP.route(Routes)
 
-		try {
-			await this.HTTP.register(Inert)
-			await this.HTTP.route(Routes)
+            // Web Sockets
+            this.io = new SocketIO(this.HTTP.listener)
+            await this.io
 
-			// Web Sockets
-			this.io = new SocketIO(this.HTTP.listener)
-			await this.io
+            Environment.instance.logger.network('Started SocketIO [Web Sockets] listener')
 
-			Logger.network('Started SocketIO [Web Sockets] listener')
+            // Database : GraphQL
+            // let HTTPServer = this.HTTP
+            // let environment = (this.config.mode == 'development') ? true : false
 
-			// Database : GraphQL
-			// let HTTPServer = this.HTTP
-			// let environment = (this.config.mode == 'development') ? true : false
+            // Logger.apollo('Started Apollo [GraphQL] listener')
+            // this.apolloServer = new ApolloServer({
+            // 	typeDefs,
+            // 	resolvers,
+            // 	introspection: environment,
+            // 	playground: environment,
+            // 	context: {
+            // 		db: prisma
+            // 	}
+            // })
+            // Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-			// Logger.apollo('Started Apollo [GraphQL] listener')
-			// this.apolloServer = new ApolloServer({ 
-			// 	typeDefs,
-			// 	resolvers,
-			// 	introspection: environment, 
-			// 	playground: environment,
-			// 	context: {
-			// 		db: prisma
-			// 	}
-			// })
-			// Logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+            // await this.apolloServer.applyMiddleware({
+            // 	app: HTTPServer
+            // })
+            // await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-			// await this.apolloServer.applyMiddleware({
-			// 	app: HTTPServer
-			// })
-			// await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+            // Logger.database('Switched to PostgreSQL connector')
+            // Logger.database('Connected to Prisma [GraphQL] successfully')
 
-			// Logger.database('Switched to PostgreSQL connector')
-			// Logger.database('Connected to Prisma [GraphQL] successfully')
+            await this.HTTP.start()
+        } catch (error) {
+            Environment.instance.logger.error(error)
+            process.exit(1)
+        }
 
-			await this.HTTP.start()
+        Environment.instance.logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
-		} catch (error) {
-			Logger.error(error)
-			process.exit(1)
-		}
+        this.io.on('connection', socket => {
+            RoomPlayer.onConnect(socket)
 
-		Logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
+            socket.on('disconnect', () => {
+                RoomPlayer.onDisconnect(socket)
+            })
+        })
+    }
 
-		this.io.on('connection', (socket) => {
-			RoomPlayer.onConnect(socket)
+    shutdown() {
+        this.io.emit('shutdown')
 
-			socket.on('disconnect', () => {
-				RoomPlayer.onDisconnect(socket)
-			})
-		})
-	}
+        this.HTTP.stop({
+            timeout: 100000
+        }).then(error => {
+            Environment.instance.logger.error(error)
+        })
 
-	shutdown() {
-		this.io.emit('shutdown')
-
-		this.HTTP.stop({
-			timeout: 100000
-		}).then((error) => {
-			Logger.error(error)
-		})
-
-		Logger.info('Server shutted down.')
-		process.exit(0)
-	}
+        Environment.instance.logger.info('Server shutted down.')
+        process.exit(0)
+    }
 }
