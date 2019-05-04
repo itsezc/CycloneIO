@@ -7,9 +7,9 @@ export default class Wallet extends Component {
 
 		//@@ MOCK
 		this.data = [
-			{ name: 'credits', value: 5000, icon: '', color: '' },
-			{ name: 'duckets', value: 5000, icon: '', color: '' },
-			{ name: 'diamonds', value: 50, icon: '', color: '' }
+			{ name: 'credits', value: 5000, style: { color: '' } },
+			{ name: 'duckets', value: 5000, style: { color: '' } },
+			{ name: 'diamonds', value: 50, style: { color: '' } }
 		]
 
 		this.state = {
@@ -25,7 +25,7 @@ export default class Wallet extends Component {
 
 			return (
 				<li className={liClass} key={index}>
-					{data.value} 
+					{data.value}
 					<i className={iconClass}></i>
 				</li>
 			)
