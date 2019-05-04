@@ -34,6 +34,8 @@ export default class Client extends Component {
 
 						<Moderation />
 
+						<Catalog />
+
 						<Alert
 							title='Message from Habbay Hotel'
 							message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'

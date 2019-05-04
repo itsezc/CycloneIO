@@ -7,6 +7,7 @@ export default class Dialog extends Component {
 
 		this.state = {
 			id: props.id,
+			show: props.show,
 			style: classNames(props.style),
 			title: props.title,
 			body: props.body,
@@ -18,6 +19,14 @@ export default class Dialog extends Component {
 		if(this.state.draggable) {
 			dragElement(document.getElementById(this.state.id))
 		}
+	}
+
+	show() {
+		this.setState({ show: true })
+	}
+
+	close() {
+		this.setState({ show: false })
 	}
 
 	render() {
