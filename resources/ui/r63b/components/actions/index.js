@@ -18,7 +18,7 @@ export default class Actions extends Component {
 	render() {
 		return (
 			<div className='actions'>
-				<button className='action'>WEB</button>
+				<button className='arrow action'>WEB</button>
 				<button className='action' onClick={this.toggleFullscreen}>FS</button>
 			</div>
 		)
