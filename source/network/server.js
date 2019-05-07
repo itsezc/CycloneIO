@@ -2,6 +2,7 @@
 import Chalk from 'chalk'
 
 import Environment from '../environment'
+import EventManager from '../core/events/manager'
 
 import Hapi from 'hapi'
 import Inert from 'inert'
@@ -16,12 +17,13 @@ import jwt from 'jsonwebtoken'
 
 import SocketIO from 'socket.io'
 
-import RoomPlayer from '../core/rooms/player'
+import RoomPlayer from '../core/hotel/rooms/player'
 
 export default class Server {
     config: Object
     HTTP: Hapi
     io: SocketIO
+    eventManager: EventManager
     //apolloServer: Object
 
     constructor(config: Object) {
@@ -43,7 +45,7 @@ export default class Server {
             this.io = new SocketIO(this.HTTP.listener)
             await this.io
 
-            Environment.instance.logger.network('Started SocketIO [Web Sockets] listener')
+            Environment.instance.logger.network('Started Socket.IO listener')
 
             // Database : GraphQL
             // let HTTPServer = this.HTTP
@@ -78,12 +80,12 @@ export default class Server {
         Environment.instance.logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
         this.io.on('connection', socket => {
-            RoomPlayer.onConnect(socket)
-
-            socket.on('disconnect', () => {
-                RoomPlayer.onDisconnect(socket)
-            })
+            this.eventManager = new EventManager(socket)
+            
+            Environment.instance.logger.server(`Player ${socket.id} connected`)
         })
+
+        await this.eventManager
     }
 
     shutdown() {

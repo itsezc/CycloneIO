@@ -4,7 +4,8 @@ import ReadLineSync from 'readline-sync'
 
 import Logger from './utils/logger'
 import Server from './network/server'
-import RoomManager from './core/rooms/manager'
+
+import RoomManager from './core/hotel/rooms/manager'
 
 import Config from '../config.json'
 
@@ -33,7 +34,7 @@ export default class Environment {
 
 	async init() {
 		try {
-			this.logger = await new Logger()
+			this.logger = await Logger
 			this.server = await new Server(Config)
 			//this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 

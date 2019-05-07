@@ -1,7 +1,7 @@
-import Config from '../../../config.json'
+import Config from '../../../../config.json'
 
-import Room from './room'
-import RoomPlayer from './player'
+import Room from './room.js'
+import RoomPlayer from './player.js'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
@@ -18,12 +18,19 @@ export default class RoomScene extends Phaser.Scene {
         //this.add.plugin(PhaserWebWorkers.plugin)
         this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-        this.load.svg('tile', 'room/tile.svg')
+        //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
+        this.load.image('tile', 'room/normal_tile.png')
+        this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
+        this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
+        this.load.image('tile_border', 'room/normal_tile_border.png')
+
+        this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
         this.load.svg('tile_hover', 'room/tile_hover.svg')
-        this.load.svg('wall_left', 'room/wall_left.svg')
         this.load.image('wall_right', 'room/wall_right.png')
-        this.load.svg('stair_top', 'room/stair_top.svg')
-        this.load.svg('stair_right', 'room/stair_right.svg')
+        this.load.image('wall_left', 'room/wall_left.png')
+        //this.load.image('wall_right', 'room/wall_right.png')
+        // this.load.svg('stair_top', 'room/stair_top.svg')
+        // this.load.svg('stair_right', 'room/stair_right.svg')
 
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
@@ -45,7 +52,7 @@ export default class RoomScene extends Phaser.Scene {
             if (pointer.primaryDown) {
                 this.scrollCamera(this.camera, pointer)
             }
-			
+
         }, this)
 
         this.scale.on('resize', gameSize => {

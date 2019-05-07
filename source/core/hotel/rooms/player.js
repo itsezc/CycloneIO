@@ -3,8 +3,8 @@ import RoomEntity from './entity'
 import RoomModel from './model'
 import Room from './room'
 
-import Environment from '../../environment'
-import Logger from '../../utils/logger'
+import Environment from '../../../environment'
+import Logger from '../../../utils/logger'
 
 export default class RoomPlayer extends RoomEntity {
     static onConnect(socket: Object) {
@@ -53,14 +53,14 @@ export default class RoomPlayer extends RoomEntity {
         Logger.network(`User (${socket.id}) connected`)
     }
 
-    static onDisconnect(socket: Object) {
+    static disconnect(room: number, id: number) {
         // if (RoomPlayer.list[socket.room]) {
         // 	delete RoomPlayer.list[socket.room][socket.id]
         // }
 
-        Environment.instance.server.io.to(socket.room).emit('removePlayer', socket.id)
+        Environment.instance.server.io.to(room).emit('removePlayer', id)
 
-        Logger.network(`Player (${socket.id}) disconnected`)
+        Logger.network(`Player ${id} disconnected`)
     }
 
     // constructor(id: number, position) {
