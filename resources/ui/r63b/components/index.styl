@@ -1,6 +1,3 @@
-@import alert
-@import catalog
-
 user-drag(value)
 	-webkit-user-drag value
 	-khtml-user-drag value
@@ -8,9 +5,35 @@ user-drag(value)
 	-o-user-drag value
 	user-drag value
 
+@import actions
+@import alert
+@import catalog
+@import moderation
+@import wallet
+
 a
 	user-drag none
 
 img
 	user-select none
 	user-drag none
+
+.main-icon
+	display: inline-block
+	background-image: url('icons.png')
+	image-rendering: pixelated
+
+	&.icon-habbo
+		background-position: -511px -413px
+		width: 16px
+		height: 16px
+
+	&.icon-fs
+		width: 15px
+		height: 14px
+		background-position: -511px -447px
+
+	&.icon-disable-fs
+		width: 15px
+		height: 14px
+		background-position: -511px -431px

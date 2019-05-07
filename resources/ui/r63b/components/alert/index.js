@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Dialog from '../../helpers/dialog.jsx'
 
 export default class Alert extends Component {
 

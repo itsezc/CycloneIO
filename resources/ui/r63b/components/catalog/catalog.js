@@ -32,8 +32,9 @@ export default class Alert extends Component {
                     id: 1,
                     parent: -1,
                     name: 'Furni',
-                    description: 'This is an example description for furni',
-                    icon: '2',
+                    description: `Habbo Exchange is where you can convert your Credits into a tradable currency. You can then use this
+                        currency to trade for Furni or just show off your riches in your room.`,
+                    icon: 'icon_146',
                     banner: 'exchange',
                     layout: 'furniture'
                 },
@@ -41,8 +42,8 @@ export default class Alert extends Component {
                     id: 2,
                     parent: -1,
                     name: 'Clothing',
-                    description: 'This is an example description for clothing',
-                    icon: '3',
+                    description: 'Need some inspiration? Look no further.',
+                    icon: 'icon_195',
                     banner: 'clothing',
                     layout: 'furniture'
                 },
@@ -50,8 +51,9 @@ export default class Alert extends Component {
                     id: 3,
                     parent: -1,
                     name: 'Pets',
-                    description: 'This is an example description for pets',
-                    icon: '4',
+                    description: `Pets are inhabitants of Habbo Hotel so each pet owner needs to know a bit about them. If you want to look after your pet properly, 
+                        make sure you read the following points carefully.`,
+                    icon: '8',
                     banner: 'pets',
                     layout: 'furniture'
                 },
@@ -59,7 +61,6 @@ export default class Alert extends Component {
                     id: 4,
                     parent: -1,
                     name: 'Memberships',
-                    description: 'This is an example description for memberships',
                     icon: '5',
                     banner: 'club',
                     layout: 'furniture'

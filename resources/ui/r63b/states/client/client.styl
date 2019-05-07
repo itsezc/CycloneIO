@@ -24,6 +24,15 @@
 		background-position left bottom, right bottom
 		background-size auto, auto, 1% 100%
 
+		.hotel-logo
+			display block
+			width 145px
+			height 197px
+			top 0
+			left 100px
+			position absolute
+			background url('hotel-logo.png')
+
 	& .toolbar
 		z-index: 1
 		display: block
@@ -35,7 +44,7 @@
 		height: 50px
 		border-top: 2px solid #41403D
 		border-bottom: 1px solid #41403D
-
+		
 		& .icons
 			padding: 8px;
 			position: relative;
@@ -43,7 +52,6 @@
 			overflow: hidden;
 			float: left;
 			border-right: 1px solid rgba(255, 255, 255, 0.1);
-
 
 			& span
 				float: left;
@@ -54,6 +62,7 @@
 					margin-right: 0px;
 
 				&:hover
+					filter: drop-shadow(2px 2px 0 #171716)
 					position: relative;
 					top: -2px;
 					left: -2px;
@@ -171,144 +180,6 @@
 						position: absolute;
 						left: 0;
 						top: -4px;
-
-	& .purse
-		z-index: 1
-		position: fixed
-		width: 210px
-		background-color: rgba(40,40,40,.65)
-		border: 2px solid rgba(255,255,255,.2)
-		border-top: 0px
-		border-bottom-left-radius: 6px
-		border-bottom-right-radius: 6px
-		right: 10px
-		top: 0px
-		padding: 2px 5px
-		box-shadow: 0in 2px 0pc 0px rgba(0,0,0,.7), 1px 0px 0pc 0pc rgba(0,0,0,.7), -1px 0pt 0pt 0in rgba(0,0,0,.7)
-
-		> *
-			float: left
-			width: 33.3%
-
-		& .currencies
-			overflow: hidden
-			padding: 0
-			margin: 0
-			margin-top: 10px
-
-			& .currency
-				text-align: right
-				display: block
-				font-weight: 600
-				font-size: 12px
-				text-shadow: 0.2px 0.2px 0.2px 2px #000000
-				overflow: hidden
-				line-height: 23px
-				margin-top: -4px
-
-				& i
-					float: right
-
-				& .icon.credits
-					background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/credit.png?raw=true);
-					width: 23px;
-					height: 22px;
-					display: inline-block;
-
-				& .icon.duckets
-					background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/ducket.png?raw=true);
-					width: 23px;
-					height: 22px;
-					display: inline-block;
-
-				& .icon.diamonds
-					background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/diamond.png?raw=true);
-					width: 15px;
-					height: 15px;
-					display: inline-block;
-					margin-top: 5px;
-					margin-right: 4px;
-					margin-left: 4px;
-
-			& .credits
-				color #D3AD21
-
-			& .duckets
-				color: #D686D6
-
-			& .diamonds
-				color: #37C6E6
-
-		& .club
-			margin: 3px
-			width: 25%
-			background-color: #3B423F
-			border-radius: 6px
-			text-align: center
-			font-size: 13px
-			font-weight: 600
-			height: 60px
-			padding-top: 10px
-			color: #00C0C3
-			cursor: pointer
-
-			.icon.hc
-				background: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/windowManagerIcons/hc.png?raw=true);
-				margin-top: 10px
-				width: 15px;
-				height: 15px;
-				display: inline-block
-
-			& p
-				line-height: 0
-				margin-top 5px
-
-			& .icon
-				display: block
-				margin: 0 auto
-				margin-bottom: 5px
-
-		& .buttons
-			width: 33%;
-			padding: 0
-			margin: 0
-			margin-top 5px
-			padding-left: 5px;
-			margin-left: 5px;
-			border-left: 1px solid #444444
-
-			& .window-manager-button
-				color: #fff;
-				font-size: 12px;
-				text-align: center;
-				cursor: pointer;
-				display: block;
-				font-weight: 400;
-				border-radius: 4px;
-				border: 1px solid #000;
-				margin-bottom: 2px;
-				box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
-
-				&:hover
-					box-shadow: inset 0 0 0 1px #000;
-
-			& .blue
-				background-color: #207AB4;
-				height: 18px
-				line-height: 18px
-
-			& .red
-				background-color: #DD5246;
-
-
-			& .purple
-				background-color: #716A85;
-
-
-			& .red.icon, .purple.icon
-				position: relative;
-				top: 2px;
-
 
 .more
 	height: 40px;

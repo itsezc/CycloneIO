@@ -1,23 +1,44 @@
 import React, { Component } from 'react'
+import { classNames } from '../../utils/class.functions'
 
 export default class Wallet extends Component {
 	constructor(props) {
 		super(props)
+
+		//@@ MOCK
+		this.data = [
+			{ name: 'credits', value: 5000, style: { color: '' } },
+			{ name: 'duckets', value: 5000, style: { color: '' } },
+			{ name: 'diamonds', value: 50, style: { color: '' } }
+		]
+
+		this.state = {
+			currencies: props.currencies || this.data
+		}
+
+		this.currencies = this.state.currencies.map((data, index) => {
+			let liClass = 'currency'
+			liClass = liClass.concat(' ', data.name)
+
+			let iconClass = 'icon'
+			iconClass = iconClass.concat(' ', data.name)
+
+			return (
+				<li className={liClass} key={index}>
+					{data.value}
+					<i className={iconClass}></i>
+				</li>
+			)
+		})
+
+
 	}
 
 	render() {
 		return (
 			<div className='purse'>
 				<ul className='currencies'>
-					<li className='currency credits'>
-						1000 <i className='icon credits'></i>
-					</li>
-					<li className='currency duckets'>
-						1000 <i className='icon duckets'></i>
-					</li>
-					<li className='currency diamonds'>
-						1000 <i className='icon diamonds'></i>
-					</li>
+					{this.currencies}
 				</ul>
 				<span className='club'>
 					<i className='icon hc'></i>
