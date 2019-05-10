@@ -12,7 +12,6 @@ const config = {
     type: Phaser.WEBGL,
     scene: RoomScene,
     disableContextMenu: false,
-    banner: false,
     render: {
         pixelArt: true
     },

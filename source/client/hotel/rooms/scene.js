@@ -13,7 +13,7 @@ export default class RoomScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.path = 'web-build/'
+        this.load.setPath('web-build/')
 
         //this.add.plugin(PhaserWebWorkers.plugin)
         this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
@@ -26,6 +26,7 @@ export default class RoomScene extends Phaser.Scene {
 
         this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
         this.load.svg('tile_hover', 'room/tile_hover.svg')
+        this.load.image('tile_hover2', 'room/tile_hover.png')
         this.load.image('wall_right', 'room/wall_right.png')
         this.load.image('wall_left', 'room/wall_left.png')
         //this.load.image('wall_right', 'room/wall_right.png')
@@ -65,6 +66,10 @@ export default class RoomScene extends Phaser.Scene {
     create() {
         this.room.create()
 
+
+        this.add.image(0, 100, 'tile_hover')
+        this.add.image(100, 100, 'tile_hover2')
+
         // this.moodlightPreview = this.add.graphics()
         // this.moodlightPreview.fillStyle(0x1844bd, 1)
         // this.moodlightPreview.fillRect(0, 0, 50, 60);
@@ -72,7 +77,7 @@ export default class RoomScene extends Phaser.Scene {
         // this.moodlightPreview.setDepth(4)
 
         // Zoom
-        // this.camera.setZoom(10)
+        this.camera.setZoom(2)
 
         // Room Background Color
         //this.camera.backgroundColor.setTo(0,255,255)
