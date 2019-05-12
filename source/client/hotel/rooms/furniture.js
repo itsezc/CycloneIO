@@ -40,10 +40,15 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
 
         this.setOrigin(0.5, 0.88)
         this.setDepth(2)
+        // this.alpha = 0.5
         this.setInteractive({ pixelPerfect: true })
 
         this.scene.onDoubleClick(this, () => {
             this.animate()
+        })
+
+        this.on('pointerover', () => {
+            this.rotate()
         })
 
     }
@@ -57,5 +62,16 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
             this.anims.remove(this.texture.key)
             this.setFrame(0)
         }
+    }
+
+    rotate() {
+        this.scene.tweens.add({
+            targets: this,
+            y: -6,
+            duration: 100,
+            yoyo: true,
+        })
+
+        this.flipX = !this.flipX
     }
 }

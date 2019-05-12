@@ -136,7 +136,11 @@ export default class Room extends Phaser.Scene {
         object.on('pointerdown', (pointer) => {
 
             if (pointer.downTime - this.tapTime < 500) {
-                callback(...args)
+
+                if (pointer.primaryDown){
+                    callback(...args)
+                }
+                
             }
 
             this.tapTime = pointer.downTime
