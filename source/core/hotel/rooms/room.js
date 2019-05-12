@@ -1,7 +1,7 @@
 // @flow
 import RoomModel from './model'
-import ItemImager from '../items/imager'
-import Item from '../items/item'
+import FurnitureImager from '../furniture/imager'
+import Furniture from '../furniture/furniture'
 import Environment from '../../../environment'
 
 export default class Room {
@@ -11,14 +11,16 @@ export default class Room {
     +wallThickness: number
     +wallHeight: number
     +hideWalls: boolean
+    +items: Object[]
 
-    constructor(id: number, model: RoomModel, floorThickness: number, wallThickness: number, wallHeight: number, hideWalls: boolean) {
+    constructor(id: number, model: RoomModel, floorThickness: number, wallThickness: number, wallHeight: number, hideWalls: boolean, items: []) {
         this.id = id
         this.model = model
         this.floorThickness = floorThickness
         this.wallThickness = wallThickness
         this.wallHeight = wallHeight
         this.hideWalls = hideWalls
+        //this.items = items
     }
 
     static load(socket: Object, id: number){
@@ -26,16 +28,22 @@ export default class Room {
         socket.room = id
 
         let model = new RoomModel([[1, 1, 1], [1, 1, 1], [1, 1, 1]])
-        let room = new Room(0, model, 2, 2, 2, false)
+        let room = new Room(0, model, 2, 2, 2, false, [])
+
+        /*[
+            { id: 1, name: 'Test', description: 'Test 2', spriteName: '', type: 'floor', width: 1, length: 1, height: 0, canStack: true, canStand: false,  false }
+            { id: 1, x: 1, y: 1, z: 0, rotation: 0, inventory: false, instance: 1 }
+        ]*/
 
         Environment.instance.server.io.to(id).emit('newRoom', room)
 
-        var imager = new ItemImager()
 
-        imager.getItem(3081).then((data => {
-            let item = new Item(0, parseInt(data.id), data.name, data.classname, 'floor', 1, 1, 0, true, false, false)
-            Environment.instance.server.io.to(id).emit('newItem', item.spriteName)
-            console.log(item)
+        var imager = new FurnitureImager()
+
+        imager.getFurniture(3081).then((data => {
+            let furniture = new Furniture(0, data.name, data.classname, 'description', 'floor', 1, 1, 0, true, true, false, false, false)
+            Environment.instance.server.io.to(id).emit('newFurniture', furniture.spriteName)
+            console.log(furniture)
         }))
     }
 }

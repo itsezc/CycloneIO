@@ -1,16 +1,21 @@
 import Config from '../../config.json'
-import RoomScene from './hotel/rooms/scene.js'
+import Room from './hotel/rooms/room.js'
 
 class Game extends Phaser.Game {
+    
     constructor(config) {
+
         super(config)
+        
         this.socket = io(`${Config.server.host}:${Config.server.port}`)
+
     }
 }
 
 const config = {
+    resolution: window.devicePixelRatio,
     type: Phaser.WEBGL,
-    scene: RoomScene,
+    scene: new Room(0), // To change this on the navigator
     disableContextMenu: false,
     render: {
         pixelArt: true

@@ -1,7 +1,7 @@
 import fs from 'fs'
 import Environment from '../../../environment'
 
-export default class ItemImager {
+export default class FurnitureImager {
 
     constructor() {
         
@@ -22,7 +22,7 @@ export default class ItemImager {
         })
     }
 
-    async getItem(id) {
+    async getFurniture(id) {
 
         return new Promise((resolve, reject) => {
             this.load('web-build/gamedata/furnidata.json').then((furnidata) => {

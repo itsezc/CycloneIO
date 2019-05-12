@@ -35,7 +35,9 @@ export default class Environment {
 	async init() {
 		try {
 			this.logger = await Logger
-			this.server = await new Server(Config)
+			this.server = await new Server({
+				mode: 'development'
+			})
 			//this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 
 			// ReadLineSync.promptLoop((command) => {

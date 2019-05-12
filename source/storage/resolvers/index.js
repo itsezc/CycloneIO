@@ -6,6 +6,7 @@ module.exports = {
             bans: (parent, args, ctx, info) => ctx.db.bans({}, info),
             bots: (parent, args, ctx, info) => ctx.db.bots({}, info),
             rooms: (parent, args, ctx, info) => ctx.db.rooms({}, info),
+            room: (parent, args, ctx, info) => ctx.db.rooms({ id: args.id }, info),
             users: (parent, args, ctx, info) => ctx.db.users({}, info),
             user: (parent, args, ctx) => ctx.db.users({ id: args.id }, info)
         },
@@ -19,6 +20,6 @@ module.exports = {
                 })
                 return user
             }
-        }
+        },
     }
 }

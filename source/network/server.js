@@ -1,4 +1,3 @@
-
 import Chalk from 'chalk'
 
 import Environment from '../environment'
@@ -10,8 +9,8 @@ import Routes from './http/routes'
 
 import { prisma } from '../storage/prisma'
 import { typeDefs } from '../storage/prisma/prisma-schema'
-import { resolvers } from '../storage/resolvers/resolver'
-import { ApolloServer, gql as GQL } from 'apollo-server-hapi'
+import { resolvers } from '../storage/resolvers'
+import { ApolloServer, makeExecutableSchema, gql as GQL } from 'apollo-server-hapi'
 
 import jwt from 'jsonwebtoken'
 
@@ -43,30 +42,37 @@ export default class Server {
 
             // GraphQL
             let HTTPServer = this.HTTP
-            let environment = (this.config.mode == 'development') ? true : false
+            let environment = (this.config.mode === 'development') ? true : false
 
-            // Environment.instance.logger.apollo('Started Apollo [GraphQL] listener')
+            Environment.instance.logger.apollo('Started Apollo [GraphQL] listener')
 
-            // this.apolloServer = new ApolloServer({
-            // 	typeDefs,
-            // 	resolvers,
-            // 	introspection: environment,
-            // 	playground: environment,
-            // 	context: {
-            // 		db: prisma
-            // 	}
-            // })
+            let schema = makeExecutableSchema({
+                typeDefs,
+                resolvers,
+                resolverValidationOptions: { 
+                    requireResolversForResolveType: false
+                },
+                introspection: environment,
+            	playground: environment
+            })
 
-            // Environment.instance.logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+            this.apolloServer = new ApolloServer({
+                schema,  	
+            	context: {
+            		db: prisma
+            	}
+            })
+            
+            Environment.instance.logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-            // await this.apolloServer.applyMiddleware({
-            // 	app: HTTPServer
-            // })
+            await this.apolloServer.applyMiddleware({
+            	app: HTTPServer
+            })
 
-            // await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+            await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-            // Environment.instance.logger.database('Switched to PostgreSQL connector')
-            // Environment.instance.logger.database('Connected to Prisma [GraphQL] successfully')
+            Environment.instance.logger.database('Switched to PostgreSQL connector')
+            Environment.instance.logger.database('Connected to Prisma [GraphQL] successfully')
 
             await this.HTTP.start()
 

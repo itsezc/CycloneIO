@@ -1,158 +1,136 @@
-export default class Room {
-    constructor(scene, id) {
-        this.scene = scene
+import RoomInput from './input'
+import RoomCamera from './camera'
+import RoomTile from './tile'
+import RoomFurniture from './furniture'
+
+//import '../../../web-build/phaser/plugins/webworkers.min.js'
+
+export default class Room extends Phaser.Scene {
+    constructor(id) {
+        super({
+            key: 'room'
+        })
+
         this.id = id
+
+    }
+
+    preload() {
+        this.load.setPath('web-build/')
+
+        //this.add.plugin(PhaserWebWorkers.plugin)
+        this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
+
+        //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
+        this.load.image('tile', 'room/normal_tile.png')
+        this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
+        this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
+        this.load.image('tile_border', 'room/normal_tile_border.png')
+
+        this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
+        this.load.svg('tile_hover', 'room/tile_hover.svg')
+        this.load.image('wall_right', 'room/wall_right.png')
+        this.load.image('wall_left', 'room/wall_left.png')
+        this.load.image('wall_right', 'room/wall_right.png')
+        this.load.svg('stair_top', 'room/stair_top.svg')
+        this.load.svg('stair_right', 'room/stair_right.svg')
+
+        this.load.audio('credits', 'audio/credits.mp3')
+        this.load.audio('chat', 'audio/chat.mp3')
+        this.load.audio('message', 'audio/message.mp3')
+        this.load.audio('report', 'audio/report.mp3')
+        this.load.audio('achievement', 'audio/achievement.mp3')
+        this.load.audio('respect', 'audio/respect.mp3')
+    }
+
+    init() {
+        this.input = new RoomInput(this)
+        this.camera = new RoomCamera(this.cameras, 0, 0, window.innerWidth, window.innerHeight)
+
+        //this.lights.enable()
     }
 
     create() {
-        this.scene.game.socket.emit('newRoom', this.id)
 
-        this.registerEvents()
+        this.input.on('pointermove', pointer => {
+
+            if (pointer.primaryDown) {
+                this.camera.scroll(pointer)
+            }
+
+            else {
+                this.camera.isScrolling = false
+            }
+
+        }, this)
+
+        this.game.socket.emit('newRoom', this.id)
+
+        this.registerRooms()
+        this.registerFurniture()
+        
+        // this.moodlightPreview = this.add.graphics()
+        // this.moodlightPreview.fillStyle(0x1844bd, 1)
+        // this.moodlightPreview.fillRect(0, 0, 50, 60);
+        // this.moodlightPreview.setBlendMode(Phaser.BlendModes.SCREEN)
+        // this.moodlightPreview.setDepth(4)
+
+        // Zoom
+        // this.camera.setZoom(4) // Zoom out (0.5). For render issues disable antialiasing
+
+        // Room Background Color
+        // this.camera.backgroundColor.setTo(0,255,255)
+
+        // Camera  Shake
+        // this.camera.shake(2000)
+
+        // Room up side down
+        // this.camera.setAngle(180)
+
+        // this.soundSample = this.sound.add('credits')
+        // this.soundSample.play()
+
+        // this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
+        // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
     }
 
-    registerEvents() {
-        this.scene.game.socket.on('newRoom', room => {
-            this.addRoom(room)
-        })
+    update() {
+        // this.camera3d.transformChildren(this.transform);
+    }
 
-        this.scene.game.socket.on('newItem', item => {
-            this.loadItem(0, 0, 0, this.depth + 2, item)
+    registerRooms() {
+        this.game.socket.on('newRoom', room => {
+            this.generate(room)
         })
     }
 
-    addRoom(room) {
+    registerFurniture() {
+        this.game.socket.on('newFurniture', furniture => {
+            this.addFurniture(0, 0, 0, furniture)
+        })
+
+        // Rooms[] => Items[RoomID]
+        // roomFurniture[]
+        // forEach (roomFurniture[]) => drawFurniture()
+    }
+
+    generate(room) {
         room.model.map.forEach((squares, row) => {
+
             squares.forEach((square, index) => {
+
                 let x = row * 32 + index * 32
                 let y = (row * 32 - index * 32) / 2
                 let z = square[1] * 32 || 0
-                let height = square[1] || 0
-                this.depth = row - index
+                let depth = row - index
 
-                if (!room.hideWall) {
-                    if (this.isLeftWall(room.model.map[row - 1], index)) {
-                        this.addLeftWall(x, y, room.wallThickness, this.depth)
-                    }
+                let tile = new RoomTile(this, x, y, z, 'tile', depth)
 
-                    if (this.isRightWall(squares[index + 1])) {
-                        this.addRightWall(x, y, room.wallThickness, this.depth)
-                    }
-                }
-
-                var tile = this.scene.add.image(x, y - z, 'tile')
-                
-                tile.setDepth(this.depth + height)
-                tile.setInteractive({ pixelPerfect: true })
-                // var tileOffset
-                // var wallOffset
-                // var hoverTileOffset
-
-                // switch (room.floorThickness) {
-                //     // case 0:
-
-                //     //     tile = this.scene.add.image(x, y - z, 'tile', 'thinnest')
-                //     //     hoverTileOffset = 0
-                //     //     wallOffset = 0
-                //     //     break
-
-                //     // case 1:
-                //     //     //tile = this.scene.add.image(x, y - z, 'tile', 'thin')
-                //     //     tile = this.scene.add.image(x, y - z, 'tile')
-                //     //     hoverTileOffset = 0.03
-                //     //     wallOffset = 0.01
-                //     //     break
-
-                //     case 2:
-                //         if (leftEdge && rightEdge) {
-                //             tile = this.scene.add.image(x - 1, y - z + 1, 'tile_border')
-                //         }
-
-                //         else if (leftEdge) {
-                //             tile = this.scene.add.image(x - 1, y - z, 'tile_left_edge')
-                //         }
-
-                //         else if (rightEdge) {
-                //             tile = this.scene.add.image(x - 1, y - z, 'tile_right_edge')
-                //         }
-
-                //         else {
-                //             tile = this.scene.add.image(x, y - z, 'tile')
-                //         }
-                //         break
-
-                //     // case 3:
-                //     //     tile = this.scene.add.image(x, y - z, 'tile', 'thick')
-                //     //     break
-                // }
-
-                // var tile = this.scene.add.image(x, y - z, 'tile')
-
-                /* 1:1: lack of accurate calculation leds me to use images, so I have to calculate the edges and cut the pixels
-
-                    leftEdge: leftPixels cropped image (for each size)
-                    rightEdge: rightPixels cropped image (for each size)
-                    border: rightPixels and leftPixels cropped image (for each size)
-                */
-
-                // tile.setDepth(depth)
-                // tile.setInteractive({ pixelPerfect: true })
-
-                // tile.on('pointerover', () => {
-                //     this.addHoverTile(x, y, z, this.depth + 1)
-                // })
-
-                // tile.on('pointerout', () => {
-                //     this.destroyHoverTile()
-                // })
             })
         })
     }
 
-    addHoverTile(x, y, z, depth) {
-        this.hoverTile = this.scene.add.image(x, y - z, 'tile_hover').setDepth(depth).setOrigin(0.5, 0.6)
-    }
-
-    destroyHoverTile() {
-        this.hoverTile.destroy()
-    }
-
-    isLeftWall(topSquares, index) {
-        if (topSquares === undefined) {
-            return true
-
-        } else {
-
-            if (topSquares[index] === undefined) {
-                return true
-            }
-        }
-
-        return false
-    }
-
-    addLeftWall(x, y, thickness, depth) {
-        this.scene.add.image(x, y, 'wall_left').setDepth(depth).setOrigin(1.02, 0.97)
-    }
-
-    isRightWall(rightSquare) {
-        return rightSquare === undefined
-    }
-
-    addRightWall(x, y, thickness, depth) {
-        this.scene.add.image(x, y, 'wall_right').setDepth(depth - 1).setOrigin(0.02, 0.97)
-    }
-
-    loadItem(x, y, z, depth, spriteName) {
-        this.scene.load.once('complete', () => {
-            this.addItem(x, y, z, depth, spriteName)
-        })
-
-        this.scene.load.setPath('web-build/furniture/')
-        this.scene.load.image(spriteName, `${spriteName}.png`)
-        this.scene.load.start()
-    }
-
-    addItem(x, y, z, depth, name) {
-        this.scene.add.image(x, y - z, name).setDepth(depth).setOrigin(0.5, 0.95)
+    addFurniture(x, y, z, furniture) {
+        return new RoomFurniture(this, x, y, z, furniture)
     }
 }

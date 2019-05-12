@@ -1,6 +1,7 @@
 [ignore]
 .*/node_modules/bcrypt/*
 .*/dist/*
+.*/source/client/*
 
 [include]
 

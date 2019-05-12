@@ -15,7 +15,7 @@ const Logger = createLogger({
                     levelOutput = '[🌪 ]'
                     break
                 case 'database':
-                    levelOutput = '[🗄️]'
+                    levelOutput = '[🗄️ ]'
                     break
                 case 'apollo':
                     levelOutput = '[⚛️]'

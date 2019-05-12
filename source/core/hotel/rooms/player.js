@@ -13,7 +13,7 @@ export default class RoomPlayer extends RoomEntity {
             socket.room = id
 
             let model = new RoomModel([[1], [1, 1]])
-            let room = new Room(id, model, 7.5, 7.5, 120, false)
+            let room = new Room(id, model, 7.5, 7.5, 120, false, [])
 
             Environment.instance.server.io.to(id).emit('newRoom', room)
         })
