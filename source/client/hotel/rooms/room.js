@@ -1,4 +1,3 @@
-import RoomInput from './input'
 import RoomCamera from './camera'
 import RoomTile from './tile'
 import RoomFurniture from './furniture'
@@ -44,14 +43,12 @@ export default class Room extends Phaser.Scene {
     }
 
     init() {
-        this.input = new RoomInput(this)
         this.camera = new RoomCamera(this.cameras, 0, 0, window.innerWidth, window.innerHeight)
 
         //this.lights.enable()
     }
 
     create() {
-
         this.input.on('pointermove', pointer => {
 
             if (pointer.primaryDown) {
@@ -132,5 +129,19 @@ export default class Room extends Phaser.Scene {
 
     addFurniture(x, y, z, furniture) {
         return new RoomFurniture(this, x, y, z, furniture)
+    }
+
+    onDoubleClick(object, callback, ...args) {
+
+        object.on('pointerdown', (pointer) => {
+
+            if (pointer.downTime - this.tapTime < 500) {
+                callback(...args)
+            }
+
+            this.tapTime = pointer.downTime
+            
+        })
+
     }
 }

@@ -42,29 +42,9 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
         this.setDepth(2)
         this.setInteractive({ pixelPerfect: true })
 
-        this.scene.input.onDoubleClick(this, () => {
+        this.scene.onDoubleClick(this, () => {
             this.animate()
         })
-
-        // this.on('pointerdown', () => {
-
-        //     this.on('pointerdown', () => {
-
-        //         if (this.isDoubleClicked) {
-        //             this.animate()
-        //         }
-
-        //     })
-
-        // })
-
-        // if (this.isDoubleClicked) {
-        //     console.log('hi')
-        // }
-        // this.on('pointerdown', () => {
-        //     if (this.doubleClick())
-        //     this.animate()
-        // })
 
     }
 
