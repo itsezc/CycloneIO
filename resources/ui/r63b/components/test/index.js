@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Query } from 'react-apollo'
 import { gql } from 'apollo-boost'
 
+//	https://www.apollographql.com/docs/react/features/pagination
+
+
 // export default class Test extends Component {
 // 	constructor(props) {
 // 		super(props)
@@ -30,17 +33,24 @@ import { gql } from 'apollo-boost'
 
 let query = 
 gql`
-{
-	rooms {
+# {
+# 	rooms {
+# 		id
+# 		name
+# 		map
+# 	}
+# }
+query Rooms($limit: Int) {
+	rooms(first: $limit) {
 		id
 		name
 		map
 	}
 }
-		`
+`
 
 const Test = () => (
-	<Query query={query}>
+	<Query query={query} variables={{ limit: 2 }}>
 		{({ loading, error, data }) => {
 			if (loading) return 'Loading..'
 			if (error) return 'Error..'

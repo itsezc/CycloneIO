@@ -3,11 +3,11 @@ import Bcrypt from 'bcryptjs'
 module.exports = {
     resolvers: {
         Query: {
-            bans: (parent, args, ctx, info) => ctx.db.bans({}, info),
-            bots: (parent, args, ctx, info) => ctx.db.bots({}, info),
-            rooms: (parent, args, ctx, info) => ctx.db.rooms({}, info),
+            bans: (parent, args, ctx, info) => ctx.db.bans(args, info),
+            bots: (parent, args, ctx, info) => ctx.db.bots(args, info),
+            rooms: (parent, args, ctx, info) => ctx.db.rooms(args, info),
             room: (parent, args, ctx, info) => ctx.db.rooms({ id: args.id }, info),
-            users: (parent, args, ctx, info) => ctx.db.users({}, info),
+            users: (parent, args, ctx, info) => ctx.db.users(args, info),
             user: (parent, args, ctx) => ctx.db.users({ id: args.id }, info)
         },
         Mutation: {
