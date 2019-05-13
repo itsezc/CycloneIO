@@ -3,7 +3,7 @@ import Config from '../../config.json'
 
 import Environment, { logger } from '../environment'
 import EventManager from '../core/events/manager'
-import RoomPlayer from '../core/hotel/rooms/player'
+import RoomPlayer from '../hotel/rooms/player'
 
 import Hapi from 'hapi'
 import Inert from 'inert'

@@ -3,8 +3,8 @@ import RoomEntity from './entity'
 import RoomModel from './model'
 import Room from './room'
 
-import Environment from '../../../environment'
-import Logger from '../../../utils/logger'
+import Environment from '../../environment'
+import Logger from '../../utils/logger'
 
 export default class RoomPlayer extends RoomEntity {
     static onConnect(socket: Object) {

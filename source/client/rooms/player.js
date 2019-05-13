@@ -1,4 +1,4 @@
-import Config from '../../../../config.json'
+import Config from '../../../config.json'
 
 export default class RoomPlayer {
     constructor(scene, socket, room, position) {

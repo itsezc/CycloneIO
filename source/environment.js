@@ -5,7 +5,7 @@ import ReadLineSync from 'readline-sync'
 import Logger from './utils/logger'
 import Server from './network/server'
 
-import RoomManager from './core/hotel/rooms/manager'
+import RoomManager from './hotel/rooms/manager'
 
 import Config from '../config.json'
 

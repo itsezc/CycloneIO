@@ -1,5 +1,5 @@
 import Config from '../../config.json'
-import Room from './hotel/rooms/room.js'
+import Room from './rooms/room.js'
 
 class Game extends Phaser.Game {
     

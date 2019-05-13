@@ -1,6 +1,6 @@
 // @flow
-import Room from '../hotel/rooms/room'
-import RoomPlayer from '../hotel/rooms/player'
+import Room from '../../hotel/rooms/room'
+import RoomPlayer from '../../hotel/rooms/player'
 
 export default class EventManager {
     socket: Object
