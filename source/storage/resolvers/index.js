@@ -19,7 +19,12 @@ module.exports = {
                     password: hashedPassword
                 })
                 return user
-            }
+            },
+
+			createRoom: async (parent, args, ctx, info) => ctx.db.createRoom(args, info),
+			upsertRoom: async (parent, args, ctx, info) => ctx.db.upsertRoom(args, info),
+			updateRoom: async (parent, args, ctx, info) => ctx.db.updateRoom(args, info),
+			deleteRoom: async (parent, args, ctx, info) => ctx.db.deleteRoom(args, info)
         },
     }
 }

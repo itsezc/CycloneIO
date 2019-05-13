@@ -20,7 +20,7 @@ export interface Exists {
   ban: (where?: BanWhereInput) => Promise<boolean>;
   bot: (where?: BotWhereInput) => Promise<boolean>;
   catalogItem: (where?: CatalogItemWhereInput) => Promise<boolean>;
-  catalogPages: (where?: CatalogPagesWhereInput) => Promise<boolean>;
+  catalogPage: (where?: CatalogPageWhereInput) => Promise<boolean>;
   item: (where?: ItemWhereInput) => Promise<boolean>;
   room: (where?: RoomWhereInput) => Promise<boolean>;
   user: (where?: UserWhereInput) => Promise<boolean>;
@@ -123,27 +123,27 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => CatalogItemConnectionPromise;
-  catalogPages: (
-    where: CatalogPagesWhereUniqueInput
-  ) => CatalogPagesNullablePromise;
-  catalogPageses: (args?: {
-    where?: CatalogPagesWhereInput;
-    orderBy?: CatalogPagesOrderByInput;
+  catalogPage: (
+    where: CatalogPageWhereUniqueInput
+  ) => CatalogPageNullablePromise;
+  catalogPages: (args?: {
+    where?: CatalogPageWhereInput;
+    orderBy?: CatalogPageOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
     first?: Int;
     last?: Int;
-  }) => FragmentableArray<CatalogPages>;
-  catalogPagesesConnection: (args?: {
-    where?: CatalogPagesWhereInput;
-    orderBy?: CatalogPagesOrderByInput;
+  }) => FragmentableArray<CatalogPage>;
+  catalogPagesConnection: (args?: {
+    where?: CatalogPageWhereInput;
+    orderBy?: CatalogPageOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
     first?: Int;
     last?: Int;
-  }) => CatalogPagesConnectionPromise;
+  }) => CatalogPageConnectionPromise;
   item: (where: ItemWhereUniqueInput) => ItemNullablePromise;
   items: (args?: {
     where?: ItemWhereInput;
@@ -273,25 +273,23 @@ export interface Prisma {
   deleteManyCatalogItems: (
     where?: CatalogItemWhereInput
   ) => BatchPayloadPromise;
-  createCatalogPages: (data: CatalogPagesCreateInput) => CatalogPagesPromise;
-  updateCatalogPages: (args: {
-    data: CatalogPagesUpdateInput;
-    where: CatalogPagesWhereUniqueInput;
-  }) => CatalogPagesPromise;
-  updateManyCatalogPageses: (args: {
-    data: CatalogPagesUpdateManyMutationInput;
-    where?: CatalogPagesWhereInput;
+  createCatalogPage: (data: CatalogPageCreateInput) => CatalogPagePromise;
+  updateCatalogPage: (args: {
+    data: CatalogPageUpdateInput;
+    where: CatalogPageWhereUniqueInput;
+  }) => CatalogPagePromise;
+  updateManyCatalogPages: (args: {
+    data: CatalogPageUpdateManyMutationInput;
+    where?: CatalogPageWhereInput;
   }) => BatchPayloadPromise;
-  upsertCatalogPages: (args: {
-    where: CatalogPagesWhereUniqueInput;
-    create: CatalogPagesCreateInput;
-    update: CatalogPagesUpdateInput;
-  }) => CatalogPagesPromise;
-  deleteCatalogPages: (
-    where: CatalogPagesWhereUniqueInput
-  ) => CatalogPagesPromise;
-  deleteManyCatalogPageses: (
-    where?: CatalogPagesWhereInput
+  upsertCatalogPage: (args: {
+    where: CatalogPageWhereUniqueInput;
+    create: CatalogPageCreateInput;
+    update: CatalogPageUpdateInput;
+  }) => CatalogPagePromise;
+  deleteCatalogPage: (where: CatalogPageWhereUniqueInput) => CatalogPagePromise;
+  deleteManyCatalogPages: (
+    where?: CatalogPageWhereInput
   ) => BatchPayloadPromise;
   createItem: (data: ItemCreateInput) => ItemPromise;
   updateItem: (args: {
@@ -362,9 +360,9 @@ export interface Subscription {
   catalogItem: (
     where?: CatalogItemSubscriptionWhereInput
   ) => CatalogItemSubscriptionPayloadSubscription;
-  catalogPages: (
-    where?: CatalogPagesSubscriptionWhereInput
-  ) => CatalogPagesSubscriptionPayloadSubscription;
+  catalogPage: (
+    where?: CatalogPageSubscriptionWhereInput
+  ) => CatalogPageSubscriptionPayloadSubscription;
   item: (
     where?: ItemSubscriptionWhereInput
   ) => ItemSubscriptionPayloadSubscription;
@@ -466,7 +464,7 @@ export type CatalogItemOrderByInput =
   | "active_ASC"
   | "active_DESC";
 
-export type CatalogPagesOrderByInput =
+export type CatalogPageOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "parent_ASC"
@@ -953,11 +951,11 @@ export interface CatalogItemWhereInput {
   NOT?: Maybe<CatalogItemWhereInput[] | CatalogItemWhereInput>;
 }
 
-export type CatalogPagesWhereUniqueInput = AtLeastOne<{
+export type CatalogPageWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
 
-export interface CatalogPagesWhereInput {
+export interface CatalogPageWhereInput {
   id?: Maybe<ID_Input>;
   id_not?: Maybe<ID_Input>;
   id_in?: Maybe<ID_Input[] | ID_Input>;
@@ -1088,9 +1086,9 @@ export interface CatalogPagesWhereInput {
   body_not_starts_with?: Maybe<String>;
   body_ends_with?: Maybe<String>;
   body_not_ends_with?: Maybe<String>;
-  AND?: Maybe<CatalogPagesWhereInput[] | CatalogPagesWhereInput>;
-  OR?: Maybe<CatalogPagesWhereInput[] | CatalogPagesWhereInput>;
-  NOT?: Maybe<CatalogPagesWhereInput[] | CatalogPagesWhereInput>;
+  AND?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
+  OR?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
+  NOT?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
 }
 
 export type ItemWhereUniqueInput = AtLeastOne<{
@@ -1620,7 +1618,7 @@ export interface CatalogItemUpdateManyMutationInput {
   active?: Maybe<Boolean>;
 }
 
-export interface CatalogPagesCreateInput {
+export interface CatalogPageCreateInput {
   id?: Maybe<ID_Input>;
   parent?: Maybe<Int>;
   type?: Maybe<String>;
@@ -1637,7 +1635,7 @@ export interface CatalogPagesCreateInput {
   body?: Maybe<String>;
 }
 
-export interface CatalogPagesUpdateInput {
+export interface CatalogPageUpdateInput {
   parent?: Maybe<Int>;
   type?: Maybe<String>;
   order?: Maybe<Int>;
@@ -1653,7 +1651,7 @@ export interface CatalogPagesUpdateInput {
   body?: Maybe<String>;
 }
 
-export interface CatalogPagesUpdateManyMutationInput {
+export interface CatalogPageUpdateManyMutationInput {
   parent?: Maybe<Int>;
   type?: Maybe<String>;
   order?: Maybe<Int>;
@@ -2096,20 +2094,20 @@ export interface CatalogItemSubscriptionWhereInput {
   >;
 }
 
-export interface CatalogPagesSubscriptionWhereInput {
+export interface CatalogPageSubscriptionWhereInput {
   mutation_in?: Maybe<MutationType[] | MutationType>;
   updatedFields_contains?: Maybe<String>;
   updatedFields_contains_every?: Maybe<String[] | String>;
   updatedFields_contains_some?: Maybe<String[] | String>;
-  node?: Maybe<CatalogPagesWhereInput>;
+  node?: Maybe<CatalogPageWhereInput>;
   AND?: Maybe<
-    CatalogPagesSubscriptionWhereInput[] | CatalogPagesSubscriptionWhereInput
+    CatalogPageSubscriptionWhereInput[] | CatalogPageSubscriptionWhereInput
   >;
   OR?: Maybe<
-    CatalogPagesSubscriptionWhereInput[] | CatalogPagesSubscriptionWhereInput
+    CatalogPageSubscriptionWhereInput[] | CatalogPageSubscriptionWhereInput
   >;
   NOT?: Maybe<
-    CatalogPagesSubscriptionWhereInput[] | CatalogPagesSubscriptionWhereInput
+    CatalogPageSubscriptionWhereInput[] | CatalogPageSubscriptionWhereInput
   >;
 }
 
@@ -2603,7 +2601,7 @@ export interface AggregateCatalogItemSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface CatalogPages {
+export interface CatalogPage {
   id: ID_Output;
   parent?: Int;
   type?: String;
@@ -2620,9 +2618,7 @@ export interface CatalogPages {
   body?: String;
 }
 
-export interface CatalogPagesPromise
-  extends Promise<CatalogPages>,
-    Fragmentable {
+export interface CatalogPagePromise extends Promise<CatalogPage>, Fragmentable {
   id: () => Promise<ID_Output>;
   parent: () => Promise<Int>;
   type: () => Promise<String>;
@@ -2639,8 +2635,8 @@ export interface CatalogPagesPromise
   body: () => Promise<String>;
 }
 
-export interface CatalogPagesSubscription
-  extends Promise<AsyncIterator<CatalogPages>>,
+export interface CatalogPageSubscription
+  extends Promise<AsyncIterator<CatalogPage>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
   parent: () => Promise<AsyncIterator<Int>>;
@@ -2658,8 +2654,8 @@ export interface CatalogPagesSubscription
   body: () => Promise<AsyncIterator<String>>;
 }
 
-export interface CatalogPagesNullablePromise
-  extends Promise<CatalogPages | null>,
+export interface CatalogPageNullablePromise
+  extends Promise<CatalogPage | null>,
     Fragmentable {
   id: () => Promise<ID_Output>;
   parent: () => Promise<Int>;
@@ -2677,58 +2673,58 @@ export interface CatalogPagesNullablePromise
   body: () => Promise<String>;
 }
 
-export interface CatalogPagesConnection {
+export interface CatalogPageConnection {
   pageInfo: PageInfo;
-  edges: CatalogPagesEdge[];
+  edges: CatalogPageEdge[];
 }
 
-export interface CatalogPagesConnectionPromise
-  extends Promise<CatalogPagesConnection>,
+export interface CatalogPageConnectionPromise
+  extends Promise<CatalogPageConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<CatalogPagesEdge>>() => T;
-  aggregate: <T = AggregateCatalogPagesPromise>() => T;
+  edges: <T = FragmentableArray<CatalogPageEdge>>() => T;
+  aggregate: <T = AggregateCatalogPagePromise>() => T;
 }
 
-export interface CatalogPagesConnectionSubscription
-  extends Promise<AsyncIterator<CatalogPagesConnection>>,
+export interface CatalogPageConnectionSubscription
+  extends Promise<AsyncIterator<CatalogPageConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<CatalogPagesEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateCatalogPagesSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<CatalogPageEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateCatalogPageSubscription>() => T;
 }
 
-export interface CatalogPagesEdge {
-  node: CatalogPages;
+export interface CatalogPageEdge {
+  node: CatalogPage;
   cursor: String;
 }
 
-export interface CatalogPagesEdgePromise
-  extends Promise<CatalogPagesEdge>,
+export interface CatalogPageEdgePromise
+  extends Promise<CatalogPageEdge>,
     Fragmentable {
-  node: <T = CatalogPagesPromise>() => T;
+  node: <T = CatalogPagePromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface CatalogPagesEdgeSubscription
-  extends Promise<AsyncIterator<CatalogPagesEdge>>,
+export interface CatalogPageEdgeSubscription
+  extends Promise<AsyncIterator<CatalogPageEdge>>,
     Fragmentable {
-  node: <T = CatalogPagesSubscription>() => T;
+  node: <T = CatalogPageSubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface AggregateCatalogPages {
+export interface AggregateCatalogPage {
   count: Int;
 }
 
-export interface AggregateCatalogPagesPromise
-  extends Promise<AggregateCatalogPages>,
+export interface AggregateCatalogPagePromise
+  extends Promise<AggregateCatalogPage>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateCatalogPagesSubscription
-  extends Promise<AsyncIterator<AggregateCatalogPages>>,
+export interface AggregateCatalogPageSubscription
+  extends Promise<AsyncIterator<AggregateCatalogPage>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
@@ -3423,32 +3419,32 @@ export interface CatalogItemPreviousValuesSubscription
   active: () => Promise<AsyncIterator<Boolean>>;
 }
 
-export interface CatalogPagesSubscriptionPayload {
+export interface CatalogPageSubscriptionPayload {
   mutation: MutationType;
-  node: CatalogPages;
+  node: CatalogPage;
   updatedFields: String[];
-  previousValues: CatalogPagesPreviousValues;
+  previousValues: CatalogPagePreviousValues;
 }
 
-export interface CatalogPagesSubscriptionPayloadPromise
-  extends Promise<CatalogPagesSubscriptionPayload>,
+export interface CatalogPageSubscriptionPayloadPromise
+  extends Promise<CatalogPageSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = CatalogPagesPromise>() => T;
+  node: <T = CatalogPagePromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = CatalogPagesPreviousValuesPromise>() => T;
+  previousValues: <T = CatalogPagePreviousValuesPromise>() => T;
 }
 
-export interface CatalogPagesSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<CatalogPagesSubscriptionPayload>>,
+export interface CatalogPageSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<CatalogPageSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = CatalogPagesSubscription>() => T;
+  node: <T = CatalogPageSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = CatalogPagesPreviousValuesSubscription>() => T;
+  previousValues: <T = CatalogPagePreviousValuesSubscription>() => T;
 }
 
-export interface CatalogPagesPreviousValues {
+export interface CatalogPagePreviousValues {
   id: ID_Output;
   parent?: Int;
   type?: String;
@@ -3465,8 +3461,8 @@ export interface CatalogPagesPreviousValues {
   body?: String;
 }
 
-export interface CatalogPagesPreviousValuesPromise
-  extends Promise<CatalogPagesPreviousValues>,
+export interface CatalogPagePreviousValuesPromise
+  extends Promise<CatalogPagePreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
   parent: () => Promise<Int>;
@@ -3484,8 +3480,8 @@ export interface CatalogPagesPreviousValuesPromise
   body: () => Promise<String>;
 }
 
-export interface CatalogPagesPreviousValuesSubscription
-  extends Promise<AsyncIterator<CatalogPagesPreviousValues>>,
+export interface CatalogPagePreviousValuesSubscription
+  extends Promise<AsyncIterator<CatalogPagePreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
   parent: () => Promise<AsyncIterator<Int>>;
@@ -3813,7 +3809,7 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "CatalogPages",
+    name: "CatalogPage",
     embedded: false
   },
   {

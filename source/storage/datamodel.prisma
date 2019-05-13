@@ -55,7 +55,7 @@ type Bot @pgTable(name: "bots") {
     chatDelay: Int @default(value: 4)
 }
 
-type CatalogPages @pgTable(name: "catalog_pages") {
+type CatalogPage @pgTable(name: "catalog_pages") {
 	id: ID! @id
 	parent: Int
 	type: String
@@ -93,7 +93,7 @@ type Room @pgTable(name: "rooms") {
 	category: Int
 	owner: Int
 	map: Json
-	floorThickness: Int 
+	floorThickness: Int
 	wallThickness: Int
 	wallHeight: Int
 	hideWalls: Boolean @default(value: false)
@@ -102,13 +102,13 @@ type Room @pgTable(name: "rooms") {
 	allowPets: Boolean @default(value: false)
 	allowPetsEating: Boolean @default(value: false)
 	rights: [Int] @scalarList(strategy: RELATION)
-	items: [Item!] @RELATION(name: "Items", onDelete: CASCADE)
+	items: [Item] @relation(name: "Items", onDelete: CASCADE)
 }
 
 type Item @pgTable(name: "items") {
     id: ID! @id
     owner: Int
-    room: Room! @RELATION(name: "RoomItems", onDelete: SET_NULL)
+    room: Room! @relation(name: "RoomItems", onDelete: SET_NULL)
     furniture: Int
 	type: String
     x: Int

@@ -19,7 +19,7 @@ type AggregateCatalogItem {
   count: Int!
 }
 
-type AggregateCatalogPages {
+type AggregateCatalogPage {
   count: Int!
 }
 
@@ -876,7 +876,7 @@ input CatalogItemWhereUniqueInput {
   id: ID
 }
 
-type CatalogPages {
+type CatalogPage {
   id: ID!
   parent: Int
   type: String
@@ -893,13 +893,13 @@ type CatalogPages {
   body: String
 }
 
-type CatalogPagesConnection {
+type CatalogPageConnection {
   pageInfo: PageInfo!
-  edges: [CatalogPagesEdge]!
-  aggregate: AggregateCatalogPages!
+  edges: [CatalogPageEdge]!
+  aggregate: AggregateCatalogPage!
 }
 
-input CatalogPagesCreateInput {
+input CatalogPageCreateInput {
   id: ID
   parent: Int
   type: String
@@ -916,12 +916,12 @@ input CatalogPagesCreateInput {
   body: String
 }
 
-type CatalogPagesEdge {
-  node: CatalogPages!
+type CatalogPageEdge {
+  node: CatalogPage!
   cursor: String!
 }
 
-enum CatalogPagesOrderByInput {
+enum CatalogPageOrderByInput {
   id_ASC
   id_DESC
   parent_ASC
@@ -952,7 +952,7 @@ enum CatalogPagesOrderByInput {
   body_DESC
 }
 
-type CatalogPagesPreviousValues {
+type CatalogPagePreviousValues {
   id: ID!
   parent: Int
   type: String
@@ -969,25 +969,25 @@ type CatalogPagesPreviousValues {
   body: String
 }
 
-type CatalogPagesSubscriptionPayload {
+type CatalogPageSubscriptionPayload {
   mutation: MutationType!
-  node: CatalogPages
+  node: CatalogPage
   updatedFields: [String!]
-  previousValues: CatalogPagesPreviousValues
+  previousValues: CatalogPagePreviousValues
 }
 
-input CatalogPagesSubscriptionWhereInput {
+input CatalogPageSubscriptionWhereInput {
   mutation_in: [MutationType!]
   updatedFields_contains: String
   updatedFields_contains_every: [String!]
   updatedFields_contains_some: [String!]
-  node: CatalogPagesWhereInput
-  AND: [CatalogPagesSubscriptionWhereInput!]
-  OR: [CatalogPagesSubscriptionWhereInput!]
-  NOT: [CatalogPagesSubscriptionWhereInput!]
+  node: CatalogPageWhereInput
+  AND: [CatalogPageSubscriptionWhereInput!]
+  OR: [CatalogPageSubscriptionWhereInput!]
+  NOT: [CatalogPageSubscriptionWhereInput!]
 }
 
-input CatalogPagesUpdateInput {
+input CatalogPageUpdateInput {
   parent: Int
   type: String
   order: Int
@@ -1003,7 +1003,7 @@ input CatalogPagesUpdateInput {
   body: String
 }
 
-input CatalogPagesUpdateManyMutationInput {
+input CatalogPageUpdateManyMutationInput {
   parent: Int
   type: String
   order: Int
@@ -1019,7 +1019,7 @@ input CatalogPagesUpdateManyMutationInput {
   body: String
 }
 
-input CatalogPagesWhereInput {
+input CatalogPageWhereInput {
   id: ID
   id_not: ID
   id_in: [ID!]
@@ -1150,12 +1150,12 @@ input CatalogPagesWhereInput {
   body_not_starts_with: String
   body_ends_with: String
   body_not_ends_with: String
-  AND: [CatalogPagesWhereInput!]
-  OR: [CatalogPagesWhereInput!]
-  NOT: [CatalogPagesWhereInput!]
+  AND: [CatalogPageWhereInput!]
+  OR: [CatalogPageWhereInput!]
+  NOT: [CatalogPageWhereInput!]
 }
 
-input CatalogPagesWhereUniqueInput {
+input CatalogPageWhereUniqueInput {
   id: ID
 }
 
@@ -1557,12 +1557,12 @@ type Mutation {
   upsertCatalogItem(where: CatalogItemWhereUniqueInput!, create: CatalogItemCreateInput!, update: CatalogItemUpdateInput!): CatalogItem!
   deleteCatalogItem(where: CatalogItemWhereUniqueInput!): CatalogItem
   deleteManyCatalogItems(where: CatalogItemWhereInput): BatchPayload!
-  createCatalogPages(data: CatalogPagesCreateInput!): CatalogPages!
-  updateCatalogPages(data: CatalogPagesUpdateInput!, where: CatalogPagesWhereUniqueInput!): CatalogPages
-  updateManyCatalogPageses(data: CatalogPagesUpdateManyMutationInput!, where: CatalogPagesWhereInput): BatchPayload!
-  upsertCatalogPages(where: CatalogPagesWhereUniqueInput!, create: CatalogPagesCreateInput!, update: CatalogPagesUpdateInput!): CatalogPages!
-  deleteCatalogPages(where: CatalogPagesWhereUniqueInput!): CatalogPages
-  deleteManyCatalogPageses(where: CatalogPagesWhereInput): BatchPayload!
+  createCatalogPage(data: CatalogPageCreateInput!): CatalogPage!
+  updateCatalogPage(data: CatalogPageUpdateInput!, where: CatalogPageWhereUniqueInput!): CatalogPage
+  updateManyCatalogPages(data: CatalogPageUpdateManyMutationInput!, where: CatalogPageWhereInput): BatchPayload!
+  upsertCatalogPage(where: CatalogPageWhereUniqueInput!, create: CatalogPageCreateInput!, update: CatalogPageUpdateInput!): CatalogPage!
+  deleteCatalogPage(where: CatalogPageWhereUniqueInput!): CatalogPage
+  deleteManyCatalogPages(where: CatalogPageWhereInput): BatchPayload!
   createItem(data: ItemCreateInput!): Item!
   updateItem(data: ItemUpdateInput!, where: ItemWhereUniqueInput!): Item
   updateManyItems(data: ItemUpdateManyMutationInput!, where: ItemWhereInput): BatchPayload!
@@ -1613,9 +1613,9 @@ type Query {
   catalogItem(where: CatalogItemWhereUniqueInput!): CatalogItem
   catalogItems(where: CatalogItemWhereInput, orderBy: CatalogItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogItem]!
   catalogItemsConnection(where: CatalogItemWhereInput, orderBy: CatalogItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogItemConnection!
-  catalogPages(where: CatalogPagesWhereUniqueInput!): CatalogPages
-  catalogPageses(where: CatalogPagesWhereInput, orderBy: CatalogPagesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogPages]!
-  catalogPagesesConnection(where: CatalogPagesWhereInput, orderBy: CatalogPagesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogPagesConnection!
+  catalogPage(where: CatalogPageWhereUniqueInput!): CatalogPage
+  catalogPages(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogPage]!
+  catalogPagesConnection(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogPageConnection!
   item(where: ItemWhereUniqueInput!): Item
   items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item]!
   itemsConnection(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ItemConnection!
@@ -1975,7 +1975,7 @@ type Subscription {
   ban(where: BanSubscriptionWhereInput): BanSubscriptionPayload
   bot(where: BotSubscriptionWhereInput): BotSubscriptionPayload
   catalogItem(where: CatalogItemSubscriptionWhereInput): CatalogItemSubscriptionPayload
-  catalogPages(where: CatalogPagesSubscriptionWhereInput): CatalogPagesSubscriptionPayload
+  catalogPage(where: CatalogPageSubscriptionWhereInput): CatalogPageSubscriptionPayload
   item(where: ItemSubscriptionWhereInput): ItemSubscriptionPayload
   room(where: RoomSubscriptionWhereInput): RoomSubscriptionPayload
   user(where: UserSubscriptionWhereInput): UserSubscriptionPayload

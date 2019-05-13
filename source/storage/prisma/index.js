@@ -29,7 +29,7 @@ var models = [
     embedded: false
   },
   {
-    name: "CatalogPages",
+    name: "CatalogPage",
     embedded: false
   },
   {
