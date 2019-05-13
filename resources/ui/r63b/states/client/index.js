@@ -9,12 +9,21 @@ import Alert from '../../components/alert'
 import Catalog from '../../components/catalog/catalog'
 import Moderation from '../../components/moderation'
 
+import Test from '../../components/test'
+
+import ApolloClient, { gql } from 'apollo-boost' 
+import { ApolloProvider, Query } from 'react-apollo'
+
 import './client.styl'
 
 export default class Client extends Component {
 
 	constructor(props) {
 		super(props)
+
+		this.database = new ApolloClient({
+			uri: 'http://localhost:8081/graphql'
+		})
 
 		this.state = {
 			loaded: true
@@ -30,6 +39,10 @@ export default class Client extends Component {
 		} else {
 			return(
 				<div className='client'>
+
+					<ApolloProvider client={this.database}>
+						<Test />
+					</ApolloProvider>
 
 					<Actions />
 

@@ -7,26 +7,37 @@ export const classNames = () => {
 
 export const fullScreen = (state) => {
 	let element = document.documentElement
+
 	if(state) {
+
 		if (document.exitFullscreen) {
-			document.exitFullscreen();
+			document.exitFullscreen()
+			
 		} else if (document.mozCancelFullScreen) { /* Firefox */
-			document.mozCancelFullScreen();
+			document.mozCancelFullScreen()
+
 		} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-			document.webkitExitFullscreen();
+			document.webkitExitFullscreen()
+
 		} else if (document.msExitFullscreen) { /* IE/Edge */
-			document.msExitFullscreen();
+			document.msExitFullscreen()
 		}
+
 	} else {
+		
 		if (element.requestFullscreen) {
-			element.requestFullscreen();
+			element.requestFullscreen()
+
 		} else if (element.mozRequestFullScreen) { /* Firefox */
-			element.mozRequestFullScreen();
+			element.mozRequestFullScreen()
+
 		} else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-			element.webkitRequestFullscreen();
+			element.webkitRequestFullscreen()
+
 		} else if (element.msRequestFullscreen) { /* IE/Edge */
-			element.msRequestFullscreen();
+			element.msRequestFullscreen()
 		}
+
 	}
 }
 

@@ -12,6 +12,10 @@
 		"url": [
 			"http://localhost:8081"
 		],
+		"user": {
+			"maxFriends": 300,
+			"maxClubFriends": 1000
+		},
 		"registration": {
 			"rank": 1,
 			"room": 1,

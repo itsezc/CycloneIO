@@ -20,6 +20,9 @@ module.exports = {
                 })
                 return user
             },
+			upsertUser: async (parent, args, ctx, info) => ctx.db.upsertUser(args, info),
+			updateUser: async (parent, args, ctx, info) => ctx.db.updateUser(args, info),
+			deleteUser: async (parent, args, ctx, info) => ctx.db.deleteUser(args, info),
 
 			createRoom: async (parent, args, ctx, info) => ctx.db.createRoom(args, info),
 			upsertRoom: async (parent, args, ctx, info) => ctx.db.upsertRoom(args, info),

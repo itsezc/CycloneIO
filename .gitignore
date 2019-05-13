@@ -1,7 +1,10 @@
 package-lock.json
 node_modules
 .env
+
 .vscode
+prod.list*
+packages-microsoft-prod.deb*
 
 config.json
 

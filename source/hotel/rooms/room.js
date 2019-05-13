@@ -6,7 +6,7 @@ import Environment from '../../environment'
 
 export default class Room {
     +id: number
-    +model: RoomModel
+    +model: RoomModel	
     +floorThickness: number
     +wallThickness: number
     +wallHeight: number
@@ -23,7 +23,7 @@ export default class Room {
         //this.items = items
     }
 
-    static load(socket: Object, id: number){
+    static load(socket: Object, id: number) {
         socket.join(id)
         socket.room = id
 
