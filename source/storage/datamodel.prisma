@@ -10,6 +10,13 @@ enum banStatus {
     REJECTED
 }
 
+enum roomType {
+	PUBLIC
+	LOCKED
+	PASSWORD
+	HIDDEN
+}
+
 type Ban @pgTable(name: "bans") {
     id: ID! @id
     reason: String
@@ -45,7 +52,7 @@ type Bot @pgTable(name: "bots") {
     chatBubble: Int
     chatAuto: Int
     chatRandom: Boolean
-    chatDelay: Int @default(value: "4")
+    chatDelay: Int @default(value: 4)
 }
 
 type CatalogPages @pgTable(name: "catalog_pages") {
@@ -57,11 +64,11 @@ type CatalogPages @pgTable(name: "catalog_pages") {
 	caption: String
 	description: String
 	icon: String
-	visible: Boolean @default(value: "true")
-	enabled: Boolean @default(value: "true")
-	rank: Int @default(value: "1")
-	club: Boolean @default(value: "false")
-	vip: Boolean @default(value: "false")
+	visible: Boolean @default(value: true)
+	enabled: Boolean @default(value: true)
+	rank: Int @default(value: 1)
+	club: Boolean @default(value: false)
+	vip: Boolean @default(value: false)
 	body: String
 }
 
@@ -73,13 +80,43 @@ type CatalogItem @pgTable(name: "catalog_items") {
     # price: Currencies
     amount: Int
     limited: Boolean
-    maximum: Int @default(value: "-1")
-    stack: Boolean @default(value: "true")
+    maximum: Int @default(value: -1)
+    stack: Boolean @default(value: true)
     active: Boolean
 }
 
-type RoomItem @pgTable(name: "room_items") {
-    id: ID! @ID
+type Room @pgTable(name: "rooms") {
+	id: ID! @id
+	name: String!
+	description: String
+	type: roomType
+	category: Int
+	owner: Int
+	map: Json
+	floorThickness: Int 
+	wallThickness: Int
+	wallHeight: Int
+	hideWalls: Boolean @default(value: false)
+	hideWired: Boolean @default(value: false)
+	maxUsers: Int @default(value: 10)
+	allowPets: Boolean @default(value: false)
+	allowPetsEating: Boolean @default(value: false)
+	rights: [Int] @scalarList(strategy: RELATION)
+	items: [Item!] @RELATION(name: "Items", onDelete: CASCADE)
+}
+
+type Item @pgTable(name: "items") {
+    id: ID! @id
+    owner: Int
+    room: Room! @RELATION(name: "RoomItems", onDelete: SET_NULL)
+    furniture: Int
+	type: String
+    x: Int
+    y: Int
+    z: Int
+    rotation: Int
+    wallPosition: [Float] @scalarList(strategy: RELATION)
+	inventory: Boolean
 }
 
 #3 Types
@@ -91,33 +128,6 @@ type RoomItem @pgTable(name: "room_items") {
 #     name: String!
 #     value: Int
 # }
-
-type Room @pgTable(name: "rooms") {
-    id: ID! @id
-    name: String!
-    description: String
-    tag: [String] @scalarList(strategy: RELATION)
-    likes: Int
-    password: String
-    type: Int
-    category: Int
-    owner: Int
-    max: Int
-    background: [Int] @scalarList(strategy: RELATION)
-    wallpaper: Int
-    floor: Int
-    landscape: Int
-    wallThickness: Int
-    tileThickness: Int
-    trading: Boolean
-    effects: Boolean
-    pets: Boolean
-    petsEat: Boolean
-    hideWired: Boolean
-    staffPicks: Boolean @default(value: "false")
-    createdAt: DateTime @createdAt
-    updatedAt: DateTime @updatedAt
-}
 
 type User @pgTable(name: "users") {
     id: ID! @id

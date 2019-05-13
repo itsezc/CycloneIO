@@ -13,6 +13,10 @@ var models = [
     embedded: false
   },
   {
+    name: "roomType",
+    embedded: false
+  },
+  {
     name: "Ban",
     embedded: false
   },
@@ -25,15 +29,19 @@ var models = [
     embedded: false
   },
   {
+    name: "CatalogPages",
+    embedded: false
+  },
+  {
     name: "CatalogItem",
     embedded: false
   },
   {
-    name: "Currencies",
+    name: "Room",
     embedded: false
   },
   {
-    name: "Room",
+    name: "Item",
     embedded: false
   },
   {

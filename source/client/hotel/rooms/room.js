@@ -1,6 +1,6 @@
 import RoomCamera from './camera'
 import RoomTile from './tile'
-import RoomFurniture from './furniture'
+import RoomFurniture from '../furniture/furniture'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
