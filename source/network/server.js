@@ -10,7 +10,9 @@ import Routes from './http/routes'
 import { prisma } from '../storage/prisma'
 import { typeDefs } from '../storage/prisma/prisma-schema'
 import { resolvers } from '../storage/resolvers'
-import { ApolloServer, makeExecutableSchema, gql as GQL } from 'apollo-server-hapi'
+
+import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
+import ApolloClient, { gql } from 'apollo-boost' 
 
 import jwt from 'jsonwebtoken'
 
@@ -76,9 +78,26 @@ export default class Server {
 
             await this.HTTP.start()
 
+			this.database = new ApolloClient({
+				uri: 'http://localhost:8081/graphql'
+			})
+
+			this.database.query({
+				query: gql`
+					{
+						rooms {
+							id
+							name
+							map
+						}
+					}
+				`
+			}).then(result => console.log(result.data.rooms))
+			.catch(error => console.error(error))
+
         } catch (error) {
             this.shutdown(error)
-        }
+        }	
 
         Environment.instance.logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
