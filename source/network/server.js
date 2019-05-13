@@ -1,11 +1,15 @@
 import Chalk from 'chalk'
+import Config from '../../config.json'
 
-import Environment from '../environment'
+import Environment, { logger } from '../environment'
 import EventManager from '../core/events/manager'
+import RoomPlayer from '../core/hotel/rooms/player'
 
 import Hapi from 'hapi'
 import Inert from 'inert'
 import Routes from './http/routes'
+
+import SocketIO from 'socket.io'
 
 import { prisma } from '../storage/prisma'
 import { typeDefs } from '../storage/prisma/prisma-schema'
@@ -16,17 +20,13 @@ import ApolloClient, { gql } from 'apollo-boost'
 
 import jwt from 'jsonwebtoken'
 
-import SocketIO from 'socket.io'
-
-import RoomPlayer from '../core/hotel/rooms/player'
-
 export default class Server {
 
     constructor(config) {
         this.config = config
 
         this.HTTP = new Hapi.Server({
-            port: 8081
+            port: Config.server.port
         })
 
         this.start()
@@ -37,16 +37,16 @@ export default class Server {
             await this.HTTP.register(Inert)
             await this.HTTP.route(Routes)
 
-            this.io = new SocketIO(this.HTTP.listener)
-            await this.io
+            this.WebSocket = new SocketIO(this.HTTP.listener)
+            await this.WebSocket
 
-            Environment.instance.logger.network('Started Socket.IO listener')
+            logger.network('Started Socket.IO listener')
 
             // GraphQL
             let HTTPServer = this.HTTP
             let environment = (this.config.mode === 'development') ? true : false
 
-            Environment.instance.logger.apollo('Started Apollo [GraphQL] listener')
+            logger.apollo('Started Apollo [GraphQL] listener')
 
             let schema = makeExecutableSchema({
                 typeDefs,
@@ -65,7 +65,7 @@ export default class Server {
             	}
             })
             
-            Environment.instance.logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+            logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
             await this.apolloServer.applyMiddleware({
             	app: HTTPServer
@@ -73,8 +73,8 @@ export default class Server {
 
             await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-            Environment.instance.logger.database('Switched to PostgreSQL connector')
-            Environment.instance.logger.database('Connected to Prisma [GraphQL] successfully')
+           	logger.database('Switched to PostgreSQL connector')
+            logger.database('Connected to Prisma [GraphQL] successfully')
 
             await this.HTTP.start()
 
@@ -87,8 +87,9 @@ export default class Server {
 					{
 						rooms {
 							id
-							name
-							map
+							name 
+							description
+							maxUsers
 						}
 					}
 				`
@@ -99,15 +100,15 @@ export default class Server {
             this.shutdown(error)
         }	
 
-        Environment.instance.logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
+        logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
-        this.io.on('connection', socket => {
+        this.WebSocket.on('connection', socket => {
             this.handleConnection(socket)
         })
     }
 
     async handleConnection(socket) {
-        Environment.instance.logger.server(`Player ${socket.id} connected`)
+        logger.server(`Player ${socket.id} connected`)
         await new EventManager(socket)
     }
 
@@ -119,7 +120,7 @@ export default class Server {
                 throw error
             }
 
-            this.io.emit('shutdown')
+            this.WebSocket.emit('shutdown')
 
             await this.HTTP.stop({
                 timeout: 100000
@@ -128,11 +129,11 @@ export default class Server {
                 throw error
             })
 
-            Environment.instance.logger.info('Server shutted down.')
+            logger.info('Server shutted down.')
             process.exit(0)
 
         } catch(error) {
-            Environment.instance.logger.error(error)
+           	logger.error(error)
             process.exit(1)
         }
     }

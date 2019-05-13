@@ -548,6 +548,8 @@ export type RoomOrderByInput =
   | "allowPetsEating_ASC"
   | "allowPetsEating_DESC";
 
+export type Gender = "M" | "F";
+
 export type UserOrderByInput =
   | "id_ASC"
   | "id_DESC"
@@ -561,6 +563,8 @@ export type UserOrderByInput =
   | "pin_DESC"
   | "motto_ASC"
   | "motto_DESC"
+  | "gender_ASC"
+  | "gender_DESC"
   | "figure_ASC"
   | "figure_DESC"
   | "rank_ASC"
@@ -575,8 +579,24 @@ export type UserOrderByInput =
   | "home_DESC"
   | "volume_ASC"
   | "volume_DESC"
-  | "muted_ASC"
-  | "muted_DESC"
+  | "appearOffline_ASC"
+  | "appearOffline_DESC"
+  | "allowTrade_ASC"
+  | "allowTrade_DESC"
+  | "allowGifts_ASC"
+  | "allowGifts_DESC"
+  | "allowMimic_ASC"
+  | "allowMimic_DESC"
+  | "allowFollow_ASC"
+  | "allowFollow_DESC"
+  | "allowWhisper_ASC"
+  | "allowWhisper_DESC"
+  | "allowFriendRequests_ASC"
+  | "allowFriendRequests_DESC"
+  | "allowBotSpeech_ASC"
+  | "allowBotSpeech_DESC"
+  | "allowPetSpeech_ASC"
+  | "allowPetSpeech_DESC"
   | "createdAt_ASC"
   | "createdAt_DESC"
   | "updatedAt_ASC"
@@ -1379,6 +1399,10 @@ export interface UserWhereInput {
   motto_not_starts_with?: Maybe<String>;
   motto_ends_with?: Maybe<String>;
   motto_not_ends_with?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  gender_not?: Maybe<Gender>;
+  gender_in?: Maybe<Gender[] | Gender>;
+  gender_not_in?: Maybe<Gender[] | Gender>;
   figure?: Maybe<String>;
   figure_not?: Maybe<String>;
   figure_in?: Maybe<String[] | String>;
@@ -1435,8 +1459,24 @@ export interface UserWhereInput {
   volume_lte?: Maybe<Int>;
   volume_gt?: Maybe<Int>;
   volume_gte?: Maybe<Int>;
-  muted?: Maybe<Boolean>;
-  muted_not?: Maybe<Boolean>;
+  appearOffline?: Maybe<Boolean>;
+  appearOffline_not?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowTrade_not?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowGifts_not?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowMimic_not?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowFollow_not?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowWhisper_not?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowFriendRequests_not?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowBotSpeech_not?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+  allowPetSpeech_not?: Maybe<Boolean>;
   createdAt?: Maybe<DateTimeInput>;
   createdAt_not?: Maybe<DateTimeInput>;
   createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
@@ -2002,6 +2042,7 @@ export interface UserCreateInput {
   password?: Maybe<String>;
   pin?: Maybe<Int>;
   motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
   figure?: Maybe<String>;
   rank?: Maybe<Int>;
   vip?: Maybe<Int>;
@@ -2009,7 +2050,15 @@ export interface UserCreateInput {
   verified?: Maybe<Int>;
   home?: Maybe<Int>;
   volume?: Maybe<Int>;
-  muted?: Maybe<Boolean>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
 }
 
 export interface UserUpdateInput {
@@ -2018,6 +2067,7 @@ export interface UserUpdateInput {
   password?: Maybe<String>;
   pin?: Maybe<Int>;
   motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
   figure?: Maybe<String>;
   rank?: Maybe<Int>;
   vip?: Maybe<Int>;
@@ -2025,7 +2075,15 @@ export interface UserUpdateInput {
   verified?: Maybe<Int>;
   home?: Maybe<Int>;
   volume?: Maybe<Int>;
-  muted?: Maybe<Boolean>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
 }
 
 export interface UserUpdateManyMutationInput {
@@ -2034,6 +2092,7 @@ export interface UserUpdateManyMutationInput {
   password?: Maybe<String>;
   pin?: Maybe<Int>;
   motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
   figure?: Maybe<String>;
   rank?: Maybe<Int>;
   vip?: Maybe<Int>;
@@ -2041,7 +2100,15 @@ export interface UserUpdateManyMutationInput {
   verified?: Maybe<Int>;
   home?: Maybe<Int>;
   volume?: Maybe<Int>;
-  muted?: Maybe<Boolean>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
 }
 
 export interface BadgeSubscriptionWhereInput {
@@ -3010,6 +3077,7 @@ export interface User {
   password?: String;
   pin?: Int;
   motto?: String;
+  gender?: Gender;
   figure?: String;
   rank?: Int;
   vip?: Int;
@@ -3017,7 +3085,15 @@ export interface User {
   verified?: Int;
   home?: Int;
   volume?: Int;
-  muted?: Boolean;
+  appearOffline?: Boolean;
+  allowTrade?: Boolean;
+  allowGifts?: Boolean;
+  allowMimic?: Boolean;
+  allowFollow?: Boolean;
+  allowWhisper?: Boolean;
+  allowFriendRequests?: Boolean;
+  allowBotSpeech?: Boolean;
+  allowPetSpeech?: Boolean;
   createdAt?: DateTimeOutput;
   updatedAt?: DateTimeOutput;
 }
@@ -3029,6 +3105,7 @@ export interface UserPromise extends Promise<User>, Fragmentable {
   password: () => Promise<String>;
   pin: () => Promise<Int>;
   motto: () => Promise<String>;
+  gender: () => Promise<Gender>;
   figure: () => Promise<String>;
   rank: () => Promise<Int>;
   vip: () => Promise<Int>;
@@ -3036,7 +3113,15 @@ export interface UserPromise extends Promise<User>, Fragmentable {
   verified: () => Promise<Int>;
   home: () => Promise<Int>;
   volume: () => Promise<Int>;
-  muted: () => Promise<Boolean>;
+  appearOffline: () => Promise<Boolean>;
+  allowTrade: () => Promise<Boolean>;
+  allowGifts: () => Promise<Boolean>;
+  allowMimic: () => Promise<Boolean>;
+  allowFollow: () => Promise<Boolean>;
+  allowWhisper: () => Promise<Boolean>;
+  allowFriendRequests: () => Promise<Boolean>;
+  allowBotSpeech: () => Promise<Boolean>;
+  allowPetSpeech: () => Promise<Boolean>;
   createdAt: () => Promise<DateTimeOutput>;
   updatedAt: () => Promise<DateTimeOutput>;
 }
@@ -3050,6 +3135,7 @@ export interface UserSubscription
   password: () => Promise<AsyncIterator<String>>;
   pin: () => Promise<AsyncIterator<Int>>;
   motto: () => Promise<AsyncIterator<String>>;
+  gender: () => Promise<AsyncIterator<Gender>>;
   figure: () => Promise<AsyncIterator<String>>;
   rank: () => Promise<AsyncIterator<Int>>;
   vip: () => Promise<AsyncIterator<Int>>;
@@ -3057,7 +3143,15 @@ export interface UserSubscription
   verified: () => Promise<AsyncIterator<Int>>;
   home: () => Promise<AsyncIterator<Int>>;
   volume: () => Promise<AsyncIterator<Int>>;
-  muted: () => Promise<AsyncIterator<Boolean>>;
+  appearOffline: () => Promise<AsyncIterator<Boolean>>;
+  allowTrade: () => Promise<AsyncIterator<Boolean>>;
+  allowGifts: () => Promise<AsyncIterator<Boolean>>;
+  allowMimic: () => Promise<AsyncIterator<Boolean>>;
+  allowFollow: () => Promise<AsyncIterator<Boolean>>;
+  allowWhisper: () => Promise<AsyncIterator<Boolean>>;
+  allowFriendRequests: () => Promise<AsyncIterator<Boolean>>;
+  allowBotSpeech: () => Promise<AsyncIterator<Boolean>>;
+  allowPetSpeech: () => Promise<AsyncIterator<Boolean>>;
   createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
   updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
@@ -3071,6 +3165,7 @@ export interface UserNullablePromise
   password: () => Promise<String>;
   pin: () => Promise<Int>;
   motto: () => Promise<String>;
+  gender: () => Promise<Gender>;
   figure: () => Promise<String>;
   rank: () => Promise<Int>;
   vip: () => Promise<Int>;
@@ -3078,7 +3173,15 @@ export interface UserNullablePromise
   verified: () => Promise<Int>;
   home: () => Promise<Int>;
   volume: () => Promise<Int>;
-  muted: () => Promise<Boolean>;
+  appearOffline: () => Promise<Boolean>;
+  allowTrade: () => Promise<Boolean>;
+  allowGifts: () => Promise<Boolean>;
+  allowMimic: () => Promise<Boolean>;
+  allowFollow: () => Promise<Boolean>;
+  allowWhisper: () => Promise<Boolean>;
+  allowFriendRequests: () => Promise<Boolean>;
+  allowBotSpeech: () => Promise<Boolean>;
+  allowPetSpeech: () => Promise<Boolean>;
   createdAt: () => Promise<DateTimeOutput>;
   updatedAt: () => Promise<DateTimeOutput>;
 }
@@ -3685,6 +3788,7 @@ export interface UserPreviousValues {
   password?: String;
   pin?: Int;
   motto?: String;
+  gender?: Gender;
   figure?: String;
   rank?: Int;
   vip?: Int;
@@ -3692,7 +3796,15 @@ export interface UserPreviousValues {
   verified?: Int;
   home?: Int;
   volume?: Int;
-  muted?: Boolean;
+  appearOffline?: Boolean;
+  allowTrade?: Boolean;
+  allowGifts?: Boolean;
+  allowMimic?: Boolean;
+  allowFollow?: Boolean;
+  allowWhisper?: Boolean;
+  allowFriendRequests?: Boolean;
+  allowBotSpeech?: Boolean;
+  allowPetSpeech?: Boolean;
   createdAt?: DateTimeOutput;
   updatedAt?: DateTimeOutput;
 }
@@ -3706,6 +3818,7 @@ export interface UserPreviousValuesPromise
   password: () => Promise<String>;
   pin: () => Promise<Int>;
   motto: () => Promise<String>;
+  gender: () => Promise<Gender>;
   figure: () => Promise<String>;
   rank: () => Promise<Int>;
   vip: () => Promise<Int>;
@@ -3713,7 +3826,15 @@ export interface UserPreviousValuesPromise
   verified: () => Promise<Int>;
   home: () => Promise<Int>;
   volume: () => Promise<Int>;
-  muted: () => Promise<Boolean>;
+  appearOffline: () => Promise<Boolean>;
+  allowTrade: () => Promise<Boolean>;
+  allowGifts: () => Promise<Boolean>;
+  allowMimic: () => Promise<Boolean>;
+  allowFollow: () => Promise<Boolean>;
+  allowWhisper: () => Promise<Boolean>;
+  allowFriendRequests: () => Promise<Boolean>;
+  allowBotSpeech: () => Promise<Boolean>;
+  allowPetSpeech: () => Promise<Boolean>;
   createdAt: () => Promise<DateTimeOutput>;
   updatedAt: () => Promise<DateTimeOutput>;
 }
@@ -3727,6 +3848,7 @@ export interface UserPreviousValuesSubscription
   password: () => Promise<AsyncIterator<String>>;
   pin: () => Promise<AsyncIterator<Int>>;
   motto: () => Promise<AsyncIterator<String>>;
+  gender: () => Promise<AsyncIterator<Gender>>;
   figure: () => Promise<AsyncIterator<String>>;
   rank: () => Promise<AsyncIterator<Int>>;
   vip: () => Promise<AsyncIterator<Int>>;
@@ -3734,7 +3856,15 @@ export interface UserPreviousValuesSubscription
   verified: () => Promise<AsyncIterator<Int>>;
   home: () => Promise<AsyncIterator<Int>>;
   volume: () => Promise<AsyncIterator<Int>>;
-  muted: () => Promise<AsyncIterator<Boolean>>;
+  appearOffline: () => Promise<AsyncIterator<Boolean>>;
+  allowTrade: () => Promise<AsyncIterator<Boolean>>;
+  allowGifts: () => Promise<AsyncIterator<Boolean>>;
+  allowMimic: () => Promise<AsyncIterator<Boolean>>;
+  allowFollow: () => Promise<AsyncIterator<Boolean>>;
+  allowWhisper: () => Promise<AsyncIterator<Boolean>>;
+  allowFriendRequests: () => Promise<AsyncIterator<Boolean>>;
+  allowBotSpeech: () => Promise<AsyncIterator<Boolean>>;
+  allowPetSpeech: () => Promise<AsyncIterator<Boolean>>;
   createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
   updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
@@ -3794,6 +3924,10 @@ export const models: Model[] = [
   },
   {
     name: "roomType",
+    embedded: false
+  },
+  {
+    name: "Gender",
     embedded: false
   },
   {

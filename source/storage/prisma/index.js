@@ -17,6 +17,10 @@ var models = [
     embedded: false
   },
   {
+    name: "Gender",
+    embedded: false
+  },
+  {
     name: "Ban",
     embedded: false
   },

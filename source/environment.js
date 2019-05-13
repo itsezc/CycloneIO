@@ -15,6 +15,7 @@ export default class Environment {
 	//roomManager: RoomManager
 
 	constructor() {
+
 		console.clear()
 		
 		console.log(Chalk.bold.blue('_________              .__                        '))
@@ -51,7 +52,9 @@ export default class Environment {
 		}
 	}
 
-	static instance: Environment
+	// static instance: Environment
 }
 
-Environment.instance = new Environment()
+new Environment()
+
+export const logger = Logger

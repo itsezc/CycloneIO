@@ -1161,6 +1161,11 @@ input CatalogPageWhereUniqueInput {
 
 scalar DateTime
 
+enum Gender {
+  M
+  F
+}
+
 type Item {
   id: ID!
   owner: Int
@@ -1988,6 +1993,7 @@ type User {
   password: String
   pin: Int
   motto: String
+  gender: Gender
   figure: String
   rank: Int
   vip: Int
@@ -1995,7 +2001,15 @@ type User {
   verified: Int
   home: Int
   volume: Int
-  muted: Boolean
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
   createdAt: DateTime
   updatedAt: DateTime
 }
@@ -2013,6 +2027,7 @@ input UserCreateInput {
   password: String
   pin: Int
   motto: String
+  gender: Gender
   figure: String
   rank: Int
   vip: Int
@@ -2020,7 +2035,15 @@ input UserCreateInput {
   verified: Int
   home: Int
   volume: Int
-  muted: Boolean
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
 }
 
 type UserEdge {
@@ -2041,6 +2064,8 @@ enum UserOrderByInput {
   pin_DESC
   motto_ASC
   motto_DESC
+  gender_ASC
+  gender_DESC
   figure_ASC
   figure_DESC
   rank_ASC
@@ -2055,8 +2080,24 @@ enum UserOrderByInput {
   home_DESC
   volume_ASC
   volume_DESC
-  muted_ASC
-  muted_DESC
+  appearOffline_ASC
+  appearOffline_DESC
+  allowTrade_ASC
+  allowTrade_DESC
+  allowGifts_ASC
+  allowGifts_DESC
+  allowMimic_ASC
+  allowMimic_DESC
+  allowFollow_ASC
+  allowFollow_DESC
+  allowWhisper_ASC
+  allowWhisper_DESC
+  allowFriendRequests_ASC
+  allowFriendRequests_DESC
+  allowBotSpeech_ASC
+  allowBotSpeech_DESC
+  allowPetSpeech_ASC
+  allowPetSpeech_DESC
   createdAt_ASC
   createdAt_DESC
   updatedAt_ASC
@@ -2070,6 +2111,7 @@ type UserPreviousValues {
   password: String
   pin: Int
   motto: String
+  gender: Gender
   figure: String
   rank: Int
   vip: Int
@@ -2077,7 +2119,15 @@ type UserPreviousValues {
   verified: Int
   home: Int
   volume: Int
-  muted: Boolean
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
   createdAt: DateTime
   updatedAt: DateTime
 }
@@ -2106,6 +2156,7 @@ input UserUpdateInput {
   password: String
   pin: Int
   motto: String
+  gender: Gender
   figure: String
   rank: Int
   vip: Int
@@ -2113,7 +2164,15 @@ input UserUpdateInput {
   verified: Int
   home: Int
   volume: Int
-  muted: Boolean
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
 }
 
 input UserUpdateManyMutationInput {
@@ -2122,6 +2181,7 @@ input UserUpdateManyMutationInput {
   password: String
   pin: Int
   motto: String
+  gender: Gender
   figure: String
   rank: Int
   vip: Int
@@ -2129,7 +2189,15 @@ input UserUpdateManyMutationInput {
   verified: Int
   home: Int
   volume: Int
-  muted: Boolean
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
 }
 
 input UserWhereInput {
@@ -2211,6 +2279,10 @@ input UserWhereInput {
   motto_not_starts_with: String
   motto_ends_with: String
   motto_not_ends_with: String
+  gender: Gender
+  gender_not: Gender
+  gender_in: [Gender!]
+  gender_not_in: [Gender!]
   figure: String
   figure_not: String
   figure_in: [String!]
@@ -2267,8 +2339,24 @@ input UserWhereInput {
   volume_lte: Int
   volume_gt: Int
   volume_gte: Int
-  muted: Boolean
-  muted_not: Boolean
+  appearOffline: Boolean
+  appearOffline_not: Boolean
+  allowTrade: Boolean
+  allowTrade_not: Boolean
+  allowGifts: Boolean
+  allowGifts_not: Boolean
+  allowMimic: Boolean
+  allowMimic_not: Boolean
+  allowFollow: Boolean
+  allowFollow_not: Boolean
+  allowWhisper: Boolean
+  allowWhisper_not: Boolean
+  allowFriendRequests: Boolean
+  allowFriendRequests_not: Boolean
+  allowBotSpeech: Boolean
+  allowBotSpeech_not: Boolean
+  allowPetSpeech: Boolean
+  allowPetSpeech_not: Boolean
   createdAt: DateTime
   createdAt_not: DateTime
   createdAt_in: [DateTime!]

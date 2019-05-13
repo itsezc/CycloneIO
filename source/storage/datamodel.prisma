@@ -17,6 +17,11 @@ enum roomType {
 	HIDDEN
 }
 
+enum Gender {
+	M
+	F
+}
+
 type Ban @pgTable(name: "bans") {
     id: ID! @id
     reason: String
@@ -136,6 +141,7 @@ type User @pgTable(name: "users") {
     password: String
     pin: Int
     motto: String
+	gender: Gender
     figure: String
     rank: Int
     vip: Int
@@ -143,7 +149,15 @@ type User @pgTable(name: "users") {
     verified: Int
     home: Int
     volume: Int
-    muted: Boolean
+	appearOffline: Boolean @default(value: false)
+    allowTrade: Boolean @default(value: true)
+	allowGifts: Boolean @default(value: true)
+	allowMimic: Boolean @default(value: true)
+	allowFollow: Boolean @default(value: true)
+	allowWhisper: Boolean @default(value: true)
+	allowFriendRequests: Boolean @default(value: true)
+	allowBotSpeech: Boolean @default(value: true)
+	allowPetSpeech: Boolean @default(value: true)
     createdAt: DateTime @createdAt
     updatedAt: DateTime @updatedAt
 }
