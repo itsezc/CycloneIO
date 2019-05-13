@@ -45,7 +45,24 @@ type Bot @pgTable(name: "bots") {
     chatBubble: Int
     chatAuto: Int
     chatRandom: Boolean
-    chatDelay: Int @default(value: 4)
+    chatDelay: Int @default(value: "4")
+}
+
+type CatalogPages @pgTable(name: "catalog_pages") {
+	id: ID! @id
+	parent: Int
+	type: String
+	order: Int
+	name: String!
+	caption: String
+	description: String
+	icon: String
+	visible: Boolean @default(value: "true")
+	enabled: Boolean @default(value: "true")
+	rank: Int @default(value: "1")
+	club: Boolean @default(value: "false")
+	vip: Boolean @default(value: "false")
+	body: String
 }
 
 type CatalogItem @pgTable(name: "catalog_items") {
@@ -53,19 +70,27 @@ type CatalogItem @pgTable(name: "catalog_items") {
     page: Int
     item: Int
     name: String
-    price: Currencies
+    # price: Currencies
     amount: Int
     limited: Boolean
-    maximum: Int @default(value: -1)
-    stack: Boolean @default(value: true)
+    maximum: Int @default(value: "-1")
+    stack: Boolean @default(value: "true")
     active: Boolean
 }
 
-type Currencies {
-    id: ID! @id
-    name: String!
-    value: Int
+type RoomItem @pgTable(name: "room_items") {
+    id: ID! @ID
 }
+
+#3 Types
+
+# Furniture (Class) -> Catalog Item (Instance where its displayed on the catalog) -> Item (Instance with a User as the owner)
+
+# type Currencies {
+#     id: ID! @id
+#     name: String!
+#     value: Int
+# }
 
 type Room @pgTable(name: "rooms") {
     id: ID! @id
@@ -89,7 +114,7 @@ type Room @pgTable(name: "rooms") {
     pets: Boolean
     petsEat: Boolean
     hideWired: Boolean
-    staffPicks: Boolean @default(value: false)
+    staffPicks: Boolean @default(value: "false")
     createdAt: DateTime @createdAt
     updatedAt: DateTime @updatedAt
 }
