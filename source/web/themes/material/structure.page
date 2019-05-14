@@ -11,9 +11,6 @@ html(lang='en')
 		script(src='//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
 		script(src='//cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser.min.js')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js')
-		script(src='https://unpkg.com/react@16/umd/react.development.js')
-		script(src='https://unpkg.com/react-dom@16/umd/react-dom.development.js')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/react-router-dom/5.0.0/react-router-dom.js')
 
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body

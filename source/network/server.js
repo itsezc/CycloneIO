@@ -118,13 +118,12 @@ export default class Server {
 
             if (error) {
                 throw error
-            }
+			}
 
             this.WebSocket.emit('shutdown')
 
             await this.HTTP.stop({
                 timeout: 100000
-                
             }).then(error => {
                 throw error
             })

@@ -22,6 +22,7 @@ export interface Exists {
   catalogItem: (where?: CatalogItemWhereInput) => Promise<boolean>;
   catalogPage: (where?: CatalogPageWhereInput) => Promise<boolean>;
   item: (where?: ItemWhereInput) => Promise<boolean>;
+  news: (where?: NewsWhereInput) => Promise<boolean>;
   room: (where?: RoomWhereInput) => Promise<boolean>;
   user: (where?: UserWhereInput) => Promise<boolean>;
 }
@@ -163,6 +164,25 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => ItemConnectionPromise;
+  news: (where: NewsWhereUniqueInput) => NewsNullablePromise;
+  newses: (args?: {
+    where?: NewsWhereInput;
+    orderBy?: NewsOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<News>;
+  newsesConnection: (args?: {
+    where?: NewsWhereInput;
+    orderBy?: NewsOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => NewsConnectionPromise;
   room: (where: RoomWhereUniqueInput) => RoomNullablePromise;
   rooms: (args?: {
     where?: RoomWhereInput;
@@ -307,6 +327,22 @@ export interface Prisma {
   }) => ItemPromise;
   deleteItem: (where: ItemWhereUniqueInput) => ItemPromise;
   deleteManyItems: (where?: ItemWhereInput) => BatchPayloadPromise;
+  createNews: (data: NewsCreateInput) => NewsPromise;
+  updateNews: (args: {
+    data: NewsUpdateInput;
+    where: NewsWhereUniqueInput;
+  }) => NewsPromise;
+  updateManyNewses: (args: {
+    data: NewsUpdateManyMutationInput;
+    where?: NewsWhereInput;
+  }) => BatchPayloadPromise;
+  upsertNews: (args: {
+    where: NewsWhereUniqueInput;
+    create: NewsCreateInput;
+    update: NewsUpdateInput;
+  }) => NewsPromise;
+  deleteNews: (where: NewsWhereUniqueInput) => NewsPromise;
+  deleteManyNewses: (where?: NewsWhereInput) => BatchPayloadPromise;
   createRoom: (data: RoomCreateInput) => RoomPromise;
   updateRoom: (args: {
     data: RoomUpdateInput;
@@ -366,6 +402,9 @@ export interface Subscription {
   item: (
     where?: ItemSubscriptionWhereInput
   ) => ItemSubscriptionPayloadSubscription;
+  news: (
+    where?: NewsSubscriptionWhereInput
+  ) => NewsSubscriptionPayloadSubscription;
   room: (
     where?: RoomSubscriptionWhereInput
   ) => RoomSubscriptionPayloadSubscription;
@@ -516,6 +555,24 @@ export type ItemOrderByInput =
   | "inventory_ASC"
   | "inventory_DESC";
 
+export type Gender = "M" | "F";
+
+export type NewsOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "title_ASC"
+  | "title_DESC"
+  | "summary_ASC"
+  | "summary_DESC"
+  | "body_ASC"
+  | "body_DESC"
+  | "image_ASC"
+  | "image_DESC"
+  | "createdAt_ASC"
+  | "createdAt_DESC"
+  | "updatedAt_ASC"
+  | "updatedAt_DESC";
+
 export type RoomOrderByInput =
   | "id_ASC"
   | "id_DESC"
@@ -547,8 +604,6 @@ export type RoomOrderByInput =
   | "allowPets_DESC"
   | "allowPetsEating_ASC"
   | "allowPetsEating_DESC";
-
-export type Gender = "M" | "F";
 
 export type UserOrderByInput =
   | "id_ASC"
@@ -1311,14 +1366,102 @@ export interface RoomWhereInput {
   NOT?: Maybe<RoomWhereInput[] | RoomWhereInput>;
 }
 
-export type RoomWhereUniqueInput = AtLeastOne<{
+export type NewsWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
 
-export type UserWhereUniqueInput = AtLeastOne<{
-  id: Maybe<ID_Input>;
-  username?: Maybe<String>;
-}>;
+export interface NewsWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  title?: Maybe<String>;
+  title_not?: Maybe<String>;
+  title_in?: Maybe<String[] | String>;
+  title_not_in?: Maybe<String[] | String>;
+  title_lt?: Maybe<String>;
+  title_lte?: Maybe<String>;
+  title_gt?: Maybe<String>;
+  title_gte?: Maybe<String>;
+  title_contains?: Maybe<String>;
+  title_not_contains?: Maybe<String>;
+  title_starts_with?: Maybe<String>;
+  title_not_starts_with?: Maybe<String>;
+  title_ends_with?: Maybe<String>;
+  title_not_ends_with?: Maybe<String>;
+  summary?: Maybe<String>;
+  summary_not?: Maybe<String>;
+  summary_in?: Maybe<String[] | String>;
+  summary_not_in?: Maybe<String[] | String>;
+  summary_lt?: Maybe<String>;
+  summary_lte?: Maybe<String>;
+  summary_gt?: Maybe<String>;
+  summary_gte?: Maybe<String>;
+  summary_contains?: Maybe<String>;
+  summary_not_contains?: Maybe<String>;
+  summary_starts_with?: Maybe<String>;
+  summary_not_starts_with?: Maybe<String>;
+  summary_ends_with?: Maybe<String>;
+  summary_not_ends_with?: Maybe<String>;
+  body?: Maybe<String>;
+  body_not?: Maybe<String>;
+  body_in?: Maybe<String[] | String>;
+  body_not_in?: Maybe<String[] | String>;
+  body_lt?: Maybe<String>;
+  body_lte?: Maybe<String>;
+  body_gt?: Maybe<String>;
+  body_gte?: Maybe<String>;
+  body_contains?: Maybe<String>;
+  body_not_contains?: Maybe<String>;
+  body_starts_with?: Maybe<String>;
+  body_not_starts_with?: Maybe<String>;
+  body_ends_with?: Maybe<String>;
+  body_not_ends_with?: Maybe<String>;
+  image?: Maybe<String>;
+  image_not?: Maybe<String>;
+  image_in?: Maybe<String[] | String>;
+  image_not_in?: Maybe<String[] | String>;
+  image_lt?: Maybe<String>;
+  image_lte?: Maybe<String>;
+  image_gt?: Maybe<String>;
+  image_gte?: Maybe<String>;
+  image_contains?: Maybe<String>;
+  image_not_contains?: Maybe<String>;
+  image_starts_with?: Maybe<String>;
+  image_not_starts_with?: Maybe<String>;
+  image_ends_with?: Maybe<String>;
+  image_not_ends_with?: Maybe<String>;
+  author?: Maybe<UserWhereInput>;
+  createdAt?: Maybe<DateTimeInput>;
+  createdAt_not?: Maybe<DateTimeInput>;
+  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_lt?: Maybe<DateTimeInput>;
+  createdAt_lte?: Maybe<DateTimeInput>;
+  createdAt_gt?: Maybe<DateTimeInput>;
+  createdAt_gte?: Maybe<DateTimeInput>;
+  updatedAt?: Maybe<DateTimeInput>;
+  updatedAt_not?: Maybe<DateTimeInput>;
+  updatedAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_lt?: Maybe<DateTimeInput>;
+  updatedAt_lte?: Maybe<DateTimeInput>;
+  updatedAt_gt?: Maybe<DateTimeInput>;
+  updatedAt_gte?: Maybe<DateTimeInput>;
+  AND?: Maybe<NewsWhereInput[] | NewsWhereInput>;
+  OR?: Maybe<NewsWhereInput[] | NewsWhereInput>;
+  NOT?: Maybe<NewsWhereInput[] | NewsWhereInput>;
+}
 
 export interface UserWhereInput {
   id?: Maybe<ID_Input>;
@@ -1497,6 +1640,15 @@ export interface UserWhereInput {
   OR?: Maybe<UserWhereInput[] | UserWhereInput>;
   NOT?: Maybe<UserWhereInput[] | UserWhereInput>;
 }
+
+export type RoomWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
+export type UserWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+  username?: Maybe<String>;
+}>;
 
 export interface BadgeCreateInput {
   id?: Maybe<ID_Input>;
@@ -1816,6 +1968,100 @@ export interface ItemUpdateManyMutationInput {
   inventory?: Maybe<Boolean>;
 }
 
+export interface NewsCreateInput {
+  id?: Maybe<ID_Input>;
+  title?: Maybe<String>;
+  summary?: Maybe<String>;
+  body?: Maybe<String>;
+  image?: Maybe<String>;
+  author?: Maybe<UserCreateOneInput>;
+}
+
+export interface UserCreateOneInput {
+  create?: Maybe<UserCreateInput>;
+  connect?: Maybe<UserWhereUniqueInput>;
+}
+
+export interface UserCreateInput {
+  id?: Maybe<ID_Input>;
+  username: String;
+  email?: Maybe<String>;
+  password?: Maybe<String>;
+  pin?: Maybe<Int>;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface NewsUpdateInput {
+  title?: Maybe<String>;
+  summary?: Maybe<String>;
+  body?: Maybe<String>;
+  image?: Maybe<String>;
+  author?: Maybe<UserUpdateOneInput>;
+}
+
+export interface UserUpdateOneInput {
+  create?: Maybe<UserCreateInput>;
+  update?: Maybe<UserUpdateDataInput>;
+  upsert?: Maybe<UserUpsertNestedInput>;
+  delete?: Maybe<Boolean>;
+  disconnect?: Maybe<Boolean>;
+  connect?: Maybe<UserWhereUniqueInput>;
+}
+
+export interface UserUpdateDataInput {
+  username?: Maybe<String>;
+  email?: Maybe<String>;
+  password?: Maybe<String>;
+  pin?: Maybe<Int>;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface UserUpsertNestedInput {
+  update: UserUpdateDataInput;
+  create: UserCreateInput;
+}
+
+export interface NewsUpdateManyMutationInput {
+  title?: Maybe<String>;
+  summary?: Maybe<String>;
+  body?: Maybe<String>;
+  image?: Maybe<String>;
+}
+
 export interface RoomCreateInput {
   id?: Maybe<ID_Input>;
   name: String;
@@ -2035,32 +2281,6 @@ export interface RoomUpdateManyMutationInput {
   rights?: Maybe<RoomUpdaterightsInput>;
 }
 
-export interface UserCreateInput {
-  id?: Maybe<ID_Input>;
-  username: String;
-  email?: Maybe<String>;
-  password?: Maybe<String>;
-  pin?: Maybe<Int>;
-  motto?: Maybe<String>;
-  gender?: Maybe<Gender>;
-  figure?: Maybe<String>;
-  rank?: Maybe<Int>;
-  vip?: Maybe<Int>;
-  online?: Maybe<Boolean>;
-  verified?: Maybe<Int>;
-  home?: Maybe<Int>;
-  volume?: Maybe<Int>;
-  appearOffline?: Maybe<Boolean>;
-  allowTrade?: Maybe<Boolean>;
-  allowGifts?: Maybe<Boolean>;
-  allowMimic?: Maybe<Boolean>;
-  allowFollow?: Maybe<Boolean>;
-  allowWhisper?: Maybe<Boolean>;
-  allowFriendRequests?: Maybe<Boolean>;
-  allowBotSpeech?: Maybe<Boolean>;
-  allowPetSpeech?: Maybe<Boolean>;
-}
-
 export interface UserUpdateInput {
   username?: Maybe<String>;
   email?: Maybe<String>;
@@ -2187,6 +2407,17 @@ export interface ItemSubscriptionWhereInput {
   AND?: Maybe<ItemSubscriptionWhereInput[] | ItemSubscriptionWhereInput>;
   OR?: Maybe<ItemSubscriptionWhereInput[] | ItemSubscriptionWhereInput>;
   NOT?: Maybe<ItemSubscriptionWhereInput[] | ItemSubscriptionWhereInput>;
+}
+
+export interface NewsSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<NewsWhereInput>;
+  AND?: Maybe<NewsSubscriptionWhereInput[] | NewsSubscriptionWhereInput>;
+  OR?: Maybe<NewsSubscriptionWhereInput[] | NewsSubscriptionWhereInput>;
+  NOT?: Maybe<NewsSubscriptionWhereInput[] | NewsSubscriptionWhereInput>;
 }
 
 export interface RoomSubscriptionWhereInput {
@@ -3016,58 +3247,51 @@ export interface AggregateItemSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface RoomConnection {
-  pageInfo: PageInfo;
-  edges: RoomEdge[];
+export interface News {
+  id: ID_Output;
+  title?: String;
+  summary?: String;
+  body?: String;
+  image?: String;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
 }
 
-export interface RoomConnectionPromise
-  extends Promise<RoomConnection>,
+export interface NewsPromise extends Promise<News>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  title: () => Promise<String>;
+  summary: () => Promise<String>;
+  body: () => Promise<String>;
+  image: () => Promise<String>;
+  author: <T = UserPromise>() => T;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface NewsSubscription
+  extends Promise<AsyncIterator<News>>,
     Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<RoomEdge>>() => T;
-  aggregate: <T = AggregateRoomPromise>() => T;
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  title: () => Promise<AsyncIterator<String>>;
+  summary: () => Promise<AsyncIterator<String>>;
+  body: () => Promise<AsyncIterator<String>>;
+  image: () => Promise<AsyncIterator<String>>;
+  author: <T = UserSubscription>() => T;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+  updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface RoomConnectionSubscription
-  extends Promise<AsyncIterator<RoomConnection>>,
+export interface NewsNullablePromise
+  extends Promise<News | null>,
     Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<RoomEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateRoomSubscription>() => T;
-}
-
-export interface RoomEdge {
-  node: Room;
-  cursor: String;
-}
-
-export interface RoomEdgePromise extends Promise<RoomEdge>, Fragmentable {
-  node: <T = RoomPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface RoomEdgeSubscription
-  extends Promise<AsyncIterator<RoomEdge>>,
-    Fragmentable {
-  node: <T = RoomSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateRoom {
-  count: Int;
-}
-
-export interface AggregateRoomPromise
-  extends Promise<AggregateRoom>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateRoomSubscription
-  extends Promise<AsyncIterator<AggregateRoom>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
+  id: () => Promise<ID_Output>;
+  title: () => Promise<String>;
+  summary: () => Promise<String>;
+  body: () => Promise<String>;
+  image: () => Promise<String>;
+  author: <T = UserPromise>() => T;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
 }
 
 export interface User {
@@ -3184,6 +3408,114 @@ export interface UserNullablePromise
   allowPetSpeech: () => Promise<Boolean>;
   createdAt: () => Promise<DateTimeOutput>;
   updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface NewsConnection {
+  pageInfo: PageInfo;
+  edges: NewsEdge[];
+}
+
+export interface NewsConnectionPromise
+  extends Promise<NewsConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<NewsEdge>>() => T;
+  aggregate: <T = AggregateNewsPromise>() => T;
+}
+
+export interface NewsConnectionSubscription
+  extends Promise<AsyncIterator<NewsConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<NewsEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateNewsSubscription>() => T;
+}
+
+export interface NewsEdge {
+  node: News;
+  cursor: String;
+}
+
+export interface NewsEdgePromise extends Promise<NewsEdge>, Fragmentable {
+  node: <T = NewsPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface NewsEdgeSubscription
+  extends Promise<AsyncIterator<NewsEdge>>,
+    Fragmentable {
+  node: <T = NewsSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateNews {
+  count: Int;
+}
+
+export interface AggregateNewsPromise
+  extends Promise<AggregateNews>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateNewsSubscription
+  extends Promise<AsyncIterator<AggregateNews>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface RoomConnection {
+  pageInfo: PageInfo;
+  edges: RoomEdge[];
+}
+
+export interface RoomConnectionPromise
+  extends Promise<RoomConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<RoomEdge>>() => T;
+  aggregate: <T = AggregateRoomPromise>() => T;
+}
+
+export interface RoomConnectionSubscription
+  extends Promise<AsyncIterator<RoomConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<RoomEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateRoomSubscription>() => T;
+}
+
+export interface RoomEdge {
+  node: Room;
+  cursor: String;
+}
+
+export interface RoomEdgePromise extends Promise<RoomEdge>, Fragmentable {
+  node: <T = RoomPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface RoomEdgeSubscription
+  extends Promise<AsyncIterator<RoomEdge>>,
+    Fragmentable {
+  node: <T = RoomSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateRoom {
+  count: Int;
+}
+
+export interface AggregateRoomPromise
+  extends Promise<AggregateRoom>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateRoomSubscription
+  extends Promise<AsyncIterator<AggregateRoom>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface UserConnection {
@@ -3670,6 +4002,65 @@ export interface ItemPreviousValuesSubscription
   inventory: () => Promise<AsyncIterator<Boolean>>;
 }
 
+export interface NewsSubscriptionPayload {
+  mutation: MutationType;
+  node: News;
+  updatedFields: String[];
+  previousValues: NewsPreviousValues;
+}
+
+export interface NewsSubscriptionPayloadPromise
+  extends Promise<NewsSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = NewsPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = NewsPreviousValuesPromise>() => T;
+}
+
+export interface NewsSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<NewsSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = NewsSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = NewsPreviousValuesSubscription>() => T;
+}
+
+export interface NewsPreviousValues {
+  id: ID_Output;
+  title?: String;
+  summary?: String;
+  body?: String;
+  image?: String;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
+}
+
+export interface NewsPreviousValuesPromise
+  extends Promise<NewsPreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  title: () => Promise<String>;
+  summary: () => Promise<String>;
+  body: () => Promise<String>;
+  image: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface NewsPreviousValuesSubscription
+  extends Promise<AsyncIterator<NewsPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  title: () => Promise<AsyncIterator<String>>;
+  summary: () => Promise<AsyncIterator<String>>;
+  body: () => Promise<AsyncIterator<String>>;
+  image: () => Promise<AsyncIterator<String>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+  updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
 export interface RoomSubscriptionPayload {
   mutation: MutationType;
   node: Room;
@@ -3956,6 +4347,10 @@ export const models: Model[] = [
   },
   {
     name: "Item",
+    embedded: false
+  },
+  {
+    name: "News",
     embedded: false
   },
   {

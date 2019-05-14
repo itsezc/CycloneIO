@@ -1,7 +1,10 @@
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
 import HeaderLanding from '../layouts/landing/header.jsx'
 import Login from '../components/login.index.jsx'
 
-class Home extends React.Component {
+class Home extends Component {
 	componentDidMount() {
 		$(document).ready(() => {
 			$('.parallax').parallax()
@@ -29,7 +32,7 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div>
-				<HeaderLanding page='home' />
+				<HeaderLanding />
 				<div className='parallax-container'>
 					<div className='parallax'>
 						<img src='https://i.imgur.com/GkLHzA4.png' />

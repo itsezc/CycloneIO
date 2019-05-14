@@ -1,6 +1,9 @@
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
 import '../client.css'
 
-class Client extends React.Component {
+class Client extends Component {
     componentDidMount() {
         const script = document.createElement('script')
 

@@ -27,6 +27,10 @@ type AggregateItem {
   count: Int!
 }
 
+type AggregateNews {
+  count: Int!
+}
+
 type AggregateRoom {
   count: Int!
 }
@@ -1574,6 +1578,12 @@ type Mutation {
   upsertItem(where: ItemWhereUniqueInput!, create: ItemCreateInput!, update: ItemUpdateInput!): Item!
   deleteItem(where: ItemWhereUniqueInput!): Item
   deleteManyItems(where: ItemWhereInput): BatchPayload!
+  createNews(data: NewsCreateInput!): News!
+  updateNews(data: NewsUpdateInput!, where: NewsWhereUniqueInput!): News
+  updateManyNewses(data: NewsUpdateManyMutationInput!, where: NewsWhereInput): BatchPayload!
+  upsertNews(where: NewsWhereUniqueInput!, create: NewsCreateInput!, update: NewsUpdateInput!): News!
+  deleteNews(where: NewsWhereUniqueInput!): News
+  deleteManyNewses(where: NewsWhereInput): BatchPayload!
   createRoom(data: RoomCreateInput!): Room!
   updateRoom(data: RoomUpdateInput!, where: RoomWhereUniqueInput!): Room
   updateManyRooms(data: RoomUpdateManyMutationInput!, where: RoomWhereInput): BatchPayload!
@@ -1592,6 +1602,194 @@ enum MutationType {
   CREATED
   UPDATED
   DELETED
+}
+
+type News {
+  id: ID!
+  title: String
+  summary: String
+  body: String
+  image: String
+  author: User
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type NewsConnection {
+  pageInfo: PageInfo!
+  edges: [NewsEdge]!
+  aggregate: AggregateNews!
+}
+
+input NewsCreateInput {
+  id: ID
+  title: String
+  summary: String
+  body: String
+  image: String
+  author: UserCreateOneInput
+}
+
+type NewsEdge {
+  node: News!
+  cursor: String!
+}
+
+enum NewsOrderByInput {
+  id_ASC
+  id_DESC
+  title_ASC
+  title_DESC
+  summary_ASC
+  summary_DESC
+  body_ASC
+  body_DESC
+  image_ASC
+  image_DESC
+  createdAt_ASC
+  createdAt_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}
+
+type NewsPreviousValues {
+  id: ID!
+  title: String
+  summary: String
+  body: String
+  image: String
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type NewsSubscriptionPayload {
+  mutation: MutationType!
+  node: News
+  updatedFields: [String!]
+  previousValues: NewsPreviousValues
+}
+
+input NewsSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: NewsWhereInput
+  AND: [NewsSubscriptionWhereInput!]
+  OR: [NewsSubscriptionWhereInput!]
+  NOT: [NewsSubscriptionWhereInput!]
+}
+
+input NewsUpdateInput {
+  title: String
+  summary: String
+  body: String
+  image: String
+  author: UserUpdateOneInput
+}
+
+input NewsUpdateManyMutationInput {
+  title: String
+  summary: String
+  body: String
+  image: String
+}
+
+input NewsWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  title: String
+  title_not: String
+  title_in: [String!]
+  title_not_in: [String!]
+  title_lt: String
+  title_lte: String
+  title_gt: String
+  title_gte: String
+  title_contains: String
+  title_not_contains: String
+  title_starts_with: String
+  title_not_starts_with: String
+  title_ends_with: String
+  title_not_ends_with: String
+  summary: String
+  summary_not: String
+  summary_in: [String!]
+  summary_not_in: [String!]
+  summary_lt: String
+  summary_lte: String
+  summary_gt: String
+  summary_gte: String
+  summary_contains: String
+  summary_not_contains: String
+  summary_starts_with: String
+  summary_not_starts_with: String
+  summary_ends_with: String
+  summary_not_ends_with: String
+  body: String
+  body_not: String
+  body_in: [String!]
+  body_not_in: [String!]
+  body_lt: String
+  body_lte: String
+  body_gt: String
+  body_gte: String
+  body_contains: String
+  body_not_contains: String
+  body_starts_with: String
+  body_not_starts_with: String
+  body_ends_with: String
+  body_not_ends_with: String
+  image: String
+  image_not: String
+  image_in: [String!]
+  image_not_in: [String!]
+  image_lt: String
+  image_lte: String
+  image_gt: String
+  image_gte: String
+  image_contains: String
+  image_not_contains: String
+  image_starts_with: String
+  image_not_starts_with: String
+  image_ends_with: String
+  image_not_ends_with: String
+  author: UserWhereInput
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_in: [DateTime!]
+  createdAt_not_in: [DateTime!]
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_in: [DateTime!]
+  updatedAt_not_in: [DateTime!]
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  AND: [NewsWhereInput!]
+  OR: [NewsWhereInput!]
+  NOT: [NewsWhereInput!]
+}
+
+input NewsWhereUniqueInput {
+  id: ID
 }
 
 interface Node {
@@ -1624,6 +1822,9 @@ type Query {
   item(where: ItemWhereUniqueInput!): Item
   items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item]!
   itemsConnection(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ItemConnection!
+  news(where: NewsWhereUniqueInput!): News
+  newses(where: NewsWhereInput, orderBy: NewsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [News]!
+  newsesConnection(where: NewsWhereInput, orderBy: NewsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NewsConnection!
   room(where: RoomWhereUniqueInput!): Room
   rooms(where: RoomWhereInput, orderBy: RoomOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Room]!
   roomsConnection(where: RoomWhereInput, orderBy: RoomOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): RoomConnection!
@@ -1982,6 +2183,7 @@ type Subscription {
   catalogItem(where: CatalogItemSubscriptionWhereInput): CatalogItemSubscriptionPayload
   catalogPage(where: CatalogPageSubscriptionWhereInput): CatalogPageSubscriptionPayload
   item(where: ItemSubscriptionWhereInput): ItemSubscriptionPayload
+  news(where: NewsSubscriptionWhereInput): NewsSubscriptionPayload
   room(where: RoomSubscriptionWhereInput): RoomSubscriptionPayload
   user(where: UserSubscriptionWhereInput): UserSubscriptionPayload
 }
@@ -2044,6 +2246,11 @@ input UserCreateInput {
   allowFriendRequests: Boolean
   allowBotSpeech: Boolean
   allowPetSpeech: Boolean
+}
+
+input UserCreateOneInput {
+  create: UserCreateInput
+  connect: UserWhereUniqueInput
 }
 
 type UserEdge {
@@ -2150,6 +2357,31 @@ input UserSubscriptionWhereInput {
   NOT: [UserSubscriptionWhereInput!]
 }
 
+input UserUpdateDataInput {
+  username: String
+  email: String
+  password: String
+  pin: Int
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
 input UserUpdateInput {
   username: String
   email: String
@@ -2198,6 +2430,20 @@ input UserUpdateManyMutationInput {
   allowFriendRequests: Boolean
   allowBotSpeech: Boolean
   allowPetSpeech: Boolean
+}
+
+input UserUpdateOneInput {
+  create: UserCreateInput
+  update: UserUpdateDataInput
+  upsert: UserUpsertNestedInput
+  delete: Boolean
+  disconnect: Boolean
+  connect: UserWhereUniqueInput
+}
+
+input UserUpsertNestedInput {
+  update: UserUpdateDataInput!
+  create: UserCreateInput!
 }
 
 input UserWhereInput {

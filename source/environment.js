@@ -1,4 +1,6 @@
 // @flow
+import Config from '../config.json'
+
 import Chalk from 'chalk'
 import ReadLineSync from 'readline-sync'
 
@@ -7,15 +9,15 @@ import Server from './network/server'
 
 import RoomManager from './hotel/rooms/manager'
 
-import Config from '../config.json'
-
 export default class Environment {
+	config: Config
 	logger: Logger
 	server: Server
 	//roomManager: RoomManager
 
-	constructor() {
+	constructor(config: Config) {
 
+		this.config = config
 		console.clear()
 		
 		console.log(Chalk.bold.blue('_________              .__                        '))
@@ -27,7 +29,7 @@ export default class Environment {
 
 		console.log(`Version: ${Chalk.magenta.bold(Config.version)} | License key : ${Chalk.magenta.bold(Config.license)}`)
 		console.log(`Created by ${Chalk.red.bold('EZ-C 💖  Amor')} and ${Chalk.blue.bold('Sapphire')} of ${Chalk.yellow.bold('Habbay')}`)
-		console.log(`Contributors: ${Chalk.bold('Kychloren')}, ${Chalk.bold('Blidnight')}, ${Chalk.bold('ElBouffador')} and ${Chalk.bold('LeChris')}`)
+		console.log(`Contributors: ${Chalk.bold('Kychloren')}, ${Chalk.bold('Blidnight')} and ${Chalk.bold('LeChris')}`)
 		console.log(`QA: ${Chalk.hex('#5042F4').bold('Platinum')} and ${Chalk.hex('#4B0082').bold('Layne')}\n`)
 
 		this.init()
@@ -36,9 +38,7 @@ export default class Environment {
 	async init() {
 		try {
 			this.logger = await Logger
-			this.server = await new Server({
-				mode: 'development'
-			})
+			this.server = await new Server(this.config)
 			//this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 
 			// ReadLineSync.promptLoop((command) => {
@@ -52,9 +52,9 @@ export default class Environment {
 		}
 	}
 
-	// static instance: Environment
+	static instance: Environment
 }
 
-new Environment()
+new Environment(Config)
 
 export const logger = Logger

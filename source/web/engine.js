@@ -1,23 +1,36 @@
-import Index from './themes/material/pages/index'
-import Logout from './themes/material/pages/logout'
-import Register from './themes/material/pages/register'
-import Client from './themes/material/pages/client'
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-class App extends React.Component {
+import Index from './themes/2018/pages/index'
+
+
+import ApolloClient, { gql } from 'apollo-boost' 
+import { ApolloProvider, Query } from 'react-apollo'
+
+// PassportJS Auths => State in ApolloClient => Output
+
+class App extends Component {
+	constructor(props) {
+		super(props)
+
+		this.state = {}
+		this.database = new ApolloClient({
+			uri: 'http://localhost:8081/graphql'
+		})
+
+	}
+
     render() {
         return (
-            <ReactRouterDOM.BrowserRouter>
-                <ReactRouterDOM.Route exact path="/" component={Index} />
-                <ReactRouterDOM.Route
-                    exact
-                    path="/register"
-                    component={Register}
-                />
-                <ReactRouterDOM.Route exact path="/logout" component={Logout} />
-                <ReactRouterDOM.Route exact path="/client" component={Client} />
-            </ReactRouterDOM.BrowserRouter>
+            <BrowserRouter>
+                <Route exact path="/" component={Index} />
+            </BrowserRouter>
         )
     }
 }
 
-ReactDOM.render(<App name="Chiru" />, document.getElementById('app'))
+ReactDOM.render(
+	<App name="Chiru" />, 
+	document.getElementById('app')
+)

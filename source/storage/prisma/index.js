@@ -49,6 +49,10 @@ var models = [
     embedded: false
   },
   {
+    name: "News",
+    embedded: false
+  },
+  {
     name: "User",
     embedded: false
   }

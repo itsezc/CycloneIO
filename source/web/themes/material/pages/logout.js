@@ -1,7 +1,9 @@
+import React, { Component } from 'react'
+
 import HeaderLanding from '../layouts/landing/header.jsx'
 import Login from '../components/login.index.jsx'
 
-class Logout extends React.Component {
+class Logout extends Component {
 	componentDidMount() {
 		$(document).ready(() => {
 			$('.parallax').parallax()

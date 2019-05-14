@@ -1,5 +1,7 @@
 import Bcrypt from 'bcryptjs'
 
+//https://www.apollographql.com/docs/apollo-server/features/authentication#models-auth
+
 module.exports = {
     resolvers: {
         Query: {

@@ -134,6 +134,17 @@ type Item @pgTable(name: "items") {
 #     value: Int
 # }
 
+type News @pgTable(name: "news") {
+	id: ID! @id
+	title: String
+	summary: String
+	body: String 
+	image: String
+	author: User
+	createdAt: DateTime @createdAt
+    updatedAt: DateTime @updatedAt
+}
+
 type User @pgTable(name: "users") {
     id: ID! @id
     username: String! @unique

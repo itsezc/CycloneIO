@@ -49,7 +49,7 @@ query Rooms($limit: Int) {
 }
 `
 
-const Test = () => (
+const Navigator = () => (
 	<Query query={query} variables={{ limit: 2 }}>
 		{({ loading, error, data }) => {
 			if (loading) return 'Loading..'
@@ -58,12 +58,12 @@ const Test = () => (
 			return (
 				<div>
 					{data.rooms.map(room => (
-						<p key={room.id}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {room.id} : {room.name} : {room.map}</p>
+						<p key={room.id}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {room.id} : {room.name} : {JSON.stringify(room.map)}</p>
 					))}
-				</div>
+					</div>
 			)
 		}}
 	</Query>
 )
 
-export default Test
+export default Navigator

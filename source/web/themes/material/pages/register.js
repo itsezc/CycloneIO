@@ -1,7 +1,10 @@
-class Register extends React.Component {
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+
+class Register extends Component {
 	render() {
 		return (
-			<div>
+			<div style={{ color: 'white' }}>
 				This is the Register
 			</div>
 		)

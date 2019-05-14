@@ -9,7 +9,7 @@ import Alert from '../../components/alert'
 import Catalog from '../../components/catalog/catalog'
 import Moderation from '../../components/moderation'
 
-import Test from '../../components/test'
+import Navigator from '../../components/navigator'
 
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'
@@ -39,10 +39,6 @@ export default class Client extends Component {
 		} else {
 			return(
 				<div className='client'>
-
-					<ApolloProvider client={this.database}>
-						<Test />
-					</ApolloProvider>
 
 					<Actions />
 
