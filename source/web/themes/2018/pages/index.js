@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import Header from '../layouts/header'
-import Footer from '../layouts/footer'
+import Header from '../layouts/header.jsx'
+import Footer from '../layouts/footer.jsx'
 
 import '../styles/base.css'
 
@@ -9,10 +9,10 @@ export default class Index extends Component {
 	render() {
 		return(
 			pug`
-				div.content
-					Header
+				.content
+					Header(name='Title')
 					Footer
-			`
+			`			
 		)
 	}
 }
