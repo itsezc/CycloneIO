@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import Index from './themes/2018/pages/index'
 
-
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'
 
@@ -18,19 +17,18 @@ class App extends Component {
 		this.database = new ApolloClient({
 			uri: 'http://localhost:8081/graphql'
 		})
-
 	}
 
     render() {
         return (
             <BrowserRouter>
-                <Route exact path="/" component={Index} />
+                <Route exact path='/' component={Index} />
             </BrowserRouter>
         )
     }
 }
 
 ReactDOM.render(
-	<App name="Chiru" />, 
+	<App name='Chiru' />, 
 	document.getElementById('app')
 )

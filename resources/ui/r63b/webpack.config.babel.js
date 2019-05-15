@@ -23,6 +23,7 @@ module.exports = (env, argv) => {
             compress: true,
 			historyApiFallback: true,
 			contentBase: './web-build',
+			port: 8082,
 		},
 		
         module: {

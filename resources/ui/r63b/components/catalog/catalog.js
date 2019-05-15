@@ -20,7 +20,7 @@ export default class Alert extends Component {
                 directory: 'banners',
                 format: 'gif'
             }
-        }
+		}
 
         this.state = {
             category: 0,
