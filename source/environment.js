@@ -55,6 +55,6 @@ export default class Environment {
 	static instance: Environment
 }
 
-new Environment(Config)
+Environment.instance = new Environment(Config)
 
 export const logger = Logger

@@ -1,6 +1,6 @@
 import RoomCamera from './camera'
 import RoomTile from './tile'
-import RoomFurniture from '../furniture/furniture'
+import RoomFurniture from './furniture'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
@@ -49,6 +49,9 @@ export default class Room extends Phaser.Scene {
     }
 
     create() {
+        this.tiles = this.add.group()
+        this.furniture = this.add.group()
+
         this.input.on('pointermove', pointer => {
 
             if (pointer.primaryDown) {
@@ -112,23 +115,39 @@ export default class Room extends Phaser.Scene {
     }
 
     generate(room) {
-        room.model.map.forEach((squares, row) => {
+        var map = room.model.map
 
-            squares.forEach((square, index) => {
+        for (var i = 0; i < map.length; i++) {
+            
+            for (var j = 0; j < map[i].length; j++) {
+                var x = j * 32 - i * 32
+                var y = (j * 32 + i * 32) / 2
 
-                let x = row * 32 + index * 32
-                let y = (row * 32 - index * 32) / 2
-                let z = square[1] * 32 || 0
-                let depth = row - index
+                this.addTile(x, y)
+            }
+        }
+        // room.model.map.forEach((squares, row) => {
 
-                let tile = new RoomTile(this, x, y, z, 'tile', depth)
+        //     squares.forEach((square, index) => {
 
-            })
-        })
+        //         var x = row * 32 + index * 32
+        //         var y = (row * 32 - index * 32) / 2
+        //         var z = square[1] * 32 || 0
+        //         var depth = row - index
+
+        //         this.addTile(x, y, z, depth)
+
+        //     })
+        // })
     }
 
-    addFurniture(x, y, z, furniture) {
-        return new RoomFurniture(this, x, y, z, furniture)
+    addTile(x, y, z) {
+        this.tiles.add(new RoomTile(this, x, y))
+    }
+
+    addFurniture(x, y, z, texture) {
+        //this.tiles.getChildren().forEach((tile) => console.log(tile.coordinates))
+        this.furniture.add(new RoomFurniture(this, x, y, z, texture))
     }
 
     onDoubleClick(object, callback, ...args) {

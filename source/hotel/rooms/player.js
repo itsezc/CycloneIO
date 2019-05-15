@@ -8,15 +8,15 @@ import Logger from '../../utils/logger'
 
 export default class RoomPlayer extends RoomEntity {
     static onConnect(socket: Object) {
-        socket.on('newRoom', id => {
-            socket.join(id)
-            socket.room = id
+        // socket.on('newRoom', id => {
+        //     socket.join(id)
+        //     socket.room = id
 
-            let model = new RoomModel([[1], [1, 1]])
-            let room = new Room(id, model, 7.5, 7.5, 120, false, [])
+        //     let model = new RoomModel([[1], [1, 1]])
+        //     let room = new Room(id, model, 7.5, 7.5, 120, false, [])
 
-            Environment.instance.server.io.to(id).emit('newRoom', room)
-        })
+        //     Environment.instance.server.WebSocket.to(id).emit('newRoom', room)
+        // })
 
         // socket.on('newPlayer', (room, position) => {
         // 	socket.join(room)
@@ -58,7 +58,7 @@ export default class RoomPlayer extends RoomEntity {
         // 	delete RoomPlayer.list[socket.room][socket.id]
         // }
 
-        Environment.instance.server.io.to(room).emit('removePlayer', id)
+        Environment.instance.server.WebSocket.to(room).emit('removePlayer', id)
 
         Logger.network(`Player ${id} disconnected`)
     }

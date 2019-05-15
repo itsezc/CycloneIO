@@ -37,7 +37,7 @@ export default class Server {
             await this.HTTP.register(Inert)
             await this.HTTP.route(Routes)
 
-            this.WebSocket = new SocketIO(this.HTTP.listener)
+            this.WebSocket = await new SocketIO(this.HTTP.listener)
             await this.WebSocket
 
             logger.network('Started Socket.IO listener')

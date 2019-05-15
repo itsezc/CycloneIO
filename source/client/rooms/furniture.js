@@ -1,6 +1,6 @@
 export default class RoomFurniture extends Phaser.GameObjects.Sprite {
 
-    constructor(scene, x, y, z, texture, depth) {
+    constructor(scene, x, y, z, texture) {
 
         super(scene, x, y - z)
 

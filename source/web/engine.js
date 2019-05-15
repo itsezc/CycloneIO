@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import Index from './themes/2018/pages/index'
+import Client from './themes/2018/pages/client'
 
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'
@@ -23,6 +24,7 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <Route exact path='/' component={Index} />
+				<Route exact path='/client' component={Client} />
             </BrowserRouter>
         )
     }

@@ -27,7 +27,7 @@ export default class Room {
         socket.join(id)
         socket.room = id
 
-        let model = new RoomModel([[1, 1, 1], [1, 1, 1], [1, 1, 1]])
+        let model = new RoomModel([[1, 1, 1], [1, 1]])
         let room = new Room(0, model, 2, 2, 2, false, [])
 
         /*[
@@ -35,14 +35,14 @@ export default class Room {
             { id: 1, x: 1, y: 1, z: 0, rotation: 0, inventory: false, instance: 1 }
         ]*/
 
-        Environment.instance.server.io.to(id).emit('newRoom', room)
+        Environment.instance.server.WebSocket.to(id).emit('newRoom', room)
 
 
         var imager = new FurnitureImager()
 
         imager.getFurniture(3081).then((data => {
             let furniture = new Furniture(0, data.name, data.classname, 'description', 'floor', 1, 1, 0, true, true, false, false, false)
-            Environment.instance.server.io.to(id).emit('newFurniture', furniture.spriteName)
+            Environment.instance.server.WebSocket.to(id).emit('newFurniture', furniture.spriteName)
             console.log(furniture)
         }))
     }
