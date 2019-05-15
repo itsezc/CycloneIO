@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 // import Header from '../layouts/header.jsx'
 // import Footer from '../layouts/footer.jsx'
 import Test from '../layouts/test.jsx'
-import '../styles/index.styles'
+import '../styles/index.styl'
 
 //import '../styles/base.css'
 

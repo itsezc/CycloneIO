@@ -4,10 +4,11 @@ export default class ChatBubble extends Component {
 	constructor(props) {
 		super(props)
 
-		this.type = props.type
+		this.type = props.type || 'say'
+		this.style = props.style
 		this.avatar = props.avatar
-		this.message = props.message
 		this.name = (props.name || 'User').concat(':', ' ')
+		this.message = props.message
 	}
 
 	render() {
@@ -18,11 +19,12 @@ export default class ChatBubble extends Component {
 				</span>
 				<div className='body'>
 					<div className='wrapper'>
-						<span className='name'>{this.name}</span>
-						<p className='message'>{this.message}</p>
+						<span className={`name ${this.type}`}>{this.name}</span>
+						<p className={`message ${this.type}`}>{this.message}</p>
 					</div>
 				</div>
-				<span class='close'></span>
+				<span className='close'></span>
+				<span className='arrow'>&nbsp;</span>
 			</div>
 		)
 	}

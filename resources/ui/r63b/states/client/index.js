@@ -61,15 +61,7 @@ export default class Client extends Component {
 						<Chat
 							name='EZ-C'
 							avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
-							type={2}
-							style={2}
-							message='This is an example message'
-						/>
-
-						<Chat
-							name='EZ-C'
-							avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
-							type={2}
+							type='say'
 							style={2}
 							message='This is an example message'
 						/>
