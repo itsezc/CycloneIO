@@ -14,17 +14,19 @@ export default class ChatBubble extends Component {
 	render() {
 		return(
 			<div className='chat'>
-				<span className='avatar'>
-					<img src={this.avatar} />
-				</span>
-				<div className='body'>
-					<div className='wrapper'>
-						<span className={`name ${this.type}`}>{this.name}</span>
-						<p className={`message ${this.type}`}>{this.message}</p>
+				<div className='bubble'>
+					<span className='avatar'>
+						<img src={this.avatar} />
+					</span>
+					<div className='body'>
+						<div className='wrapper'>
+							<span className={`name ${this.type}`}>{this.name}</span>
+							<p className={`message ${this.type}`}>{this.message}</p>
+						</div>
 					</div>
+					<span className='close'></span>
 				</div>
-				<span className='close'></span>
-				<span className='arrow'>&nbsp;</span>
+				<div className='arrow'></div>
 			</div>
 		)
 	}

@@ -10,12 +10,12 @@ export default class Test extends Component {
             pug`
                 .header
                     .login-form
-                         input.email(type='email', name='email')
-                         input.password(type='password', name='password')
-                         p.claim-password
-                //         button.login(type='submit', name='login')
-                //         a.facebook-connect(href='/')
-                //             img(src=${icons})
+                        input.email(type='email', name='email')
+                        input.password(type='password', name='password')
+                        p.claim-password
+                        button.login(type='submit', name='login')
+                        // a.facebook-connect(href='/')
+                        //     img(src=${icons})
 
                 //     .register-banner
                 //         p.title 

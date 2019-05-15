@@ -1,67 +1,77 @@
 .chat
 	z-index 10
-	height 24px
 	position absolute
-	color black
-	font-size 12px
 	//Demo 
 	left 50%
 	top 2em
 
-	.avatar
-		display inline-block
-		margin 0
+	.bubble
+		z-index 11
 		height 24px
-		width 31px
-		background url('https://bobba.io/web-gallery/assets/chat_left.png') no-repeat
-		float left
+		color black
+		font-size 12px
 
-		img 
-			margin 2px 0 0 3px
 
-	.body
-		float left
-		display inline-block
-		margin 0
-		height 24px
-		max-height 24px
-		background url(https://bobba.io/web-gallery/assets/chat_bite.png) center repeat-x
-		font-weight normal
+		.avatar
+			display inline-block
+			margin 0
+			height 24px
+			width 31px
+			background url('https://bobba.io/web-gallery/assets/chat_left.png') no-repeat
+			float left
 
-		.wrapper
-			padding 5px 0px
+			img 
+				margin 2px 0 0 3px
 
-			.name
-				font-weight bold
+		.body
+			float left
+			display inline-block
+			margin 0
+			height 24px
+			max-height 24px
+			background url(https://bobba.io/web-gallery/assets/chat_bite.png) center repeat-x
+			font-weight normal
 
-			.name.whisper
-				font-style italic
+			.wrapper
+				padding 5px 0px
 
-			.message
-				display inline
-			
-			.message.say
-				font-weight 300
+				.name
+					font-weight bold
 
-			.message.shout
-				font-weight bold
+				.name.whisper
+					font-style italic
+					color gray
 
-			.message.whisper
-				font-weight 300
-				font-style italic
+				.message
+					display inline
+				
+				.message.say
+					font-weight 300
 
-	.close
-		display inline-block
-		width 10px
-		height 24px
-		background url(https://bobba.io/web-gallery/assets/chat_right.png) no-repeat
+				.message.shout
+					font-weight bold
+
+				.message.whisper
+					font-weight 300
+					font-style italic
+					color gray
+
+		.close
+			display inline-block
+			width 10px
+			height 24px
+			background url(https://bobba.io/web-gallery/assets/chat_right.png) no-repeat
 
 	.arrow
+		z-index 12
 		display block
+		position absolute
 		margin 0
 		padding 0
-		margin-top -3px
+		width 9px
 		height 6px
+		margin-left 50%
+		margin-top -1px
 		background url('https://bobba.io/web-gallery/assets/chat_arrow.png')
 		background-repeat no-repeat
 		background-position center bottom
