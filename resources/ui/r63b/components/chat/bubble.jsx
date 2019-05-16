@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+// Need to rewrite so it works with new Styles / Arrow images
+
 export default class ChatBubble extends Component {
 	constructor(props) {
 		super(props)

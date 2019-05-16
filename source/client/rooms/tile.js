@@ -26,20 +26,12 @@ export default class RoomTile extends Phaser.GameObjects.Image {
         this.setInteractive({ pixelPerfect: true })
 
         this.on('pointerover', () => {
-            this.hover = new RoomTileHover(this.scene, this.x, this.y, this.z, this.depth + 1)
+            this.hover = new RoomTileHover(this.scene, this.x, this.y, this.z)
         })
 
         this.on('pointerout', () => {
             this.hover.destroy()
         })
 
-    }
-
-    get cartesian() {
-        return new Phaser.Geom.Point((this.y * 2 + this.x) / 2, (this.y * 2 - this.x) / 2)
-    }
-
-    get coordinates() {
-        return new Phaser.Geom.Point(Math.floor(this.cartesian.x / this.height), Math.floor(this.cartesian.y / this.height))
     }
 }

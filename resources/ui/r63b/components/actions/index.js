@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { fullScreen } from '../../utils/class.functions'
+import { fullScreen } from '../../utils/functions'
 
 export default class Actions extends Component {
 	

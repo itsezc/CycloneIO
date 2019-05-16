@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { classNames } from '../../utils/class.functions'
+import { classNames } from '../../utils/functions'
 
 export default class Wallet extends Component {
 	constructor(props) {

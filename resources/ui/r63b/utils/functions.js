@@ -1,4 +1,4 @@
-export const classNames = () => {
+export const classNames = (classes) => {
 	return Object.entries(classes)
 			.filter(([key, value]) => value)
 			.map(([key, value]) => key)
@@ -65,8 +65,8 @@ export const dragElement = (element) => {
 		pos2 = pos4 - e.clientY;
 		pos3 = e.clientX;
 		pos4 = e.clientY;
-		elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-		elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+		element.style.top = (element.offsetTop - pos2) + "px";
+		element.style.left = (element.offsetLeft - pos1) + "px";
 	}
 
 	function closeDragElement() {

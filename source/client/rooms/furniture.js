@@ -38,8 +38,7 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
             yoyo: true
         })
 
-        this.setOrigin(0.5, 0.88)
-        this.setDepth(2)
+        this.setDepth(3)
         // this.alpha = 0.5
         this.setInteractive({ pixelPerfect: true })
 

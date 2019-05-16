@@ -5,7 +5,7 @@ import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
 import Wallet from '../../components/wallet'
 
-import Alert from '../../components/alert'
+import Alert from '../../components/alert/alert.jsx'
 import Catalog from '../../components/catalog/catalog'
 import Moderation from '../../components/moderation'
 
@@ -50,13 +50,13 @@ export default class Client extends Component {
 
 						<Moderation />
 
-						{/* <Catalog /> 
+						<Catalog /> 
 
 						<Alert
 							title='Message from Habbay Hotel'
 							message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'
 							author='EZ-C'
-						/> */}
+						/>
 
 						<Chat
 							name='EZ-C'

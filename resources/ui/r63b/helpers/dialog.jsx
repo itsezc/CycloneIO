@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
-import { classNames, dragElement } from '../utils/class.functions'
+import { classNames, dragElement } from '../utils/functions'
 
 export default class Dialog extends Component {
 	constructor(props) {
 		super(props)
 
+		this.styles = props.styles || {}
+		this.styles.alert = true
+
 		this.state = {
 			id: props.id,
-			show: props.show,
-			style: classNames(props.style),
+			show: props.show || true,
+			draggable: props.draggable,
+			closeable: props.closeable,
+			style: classNames(this.styles),
 			title: props.title,
 			body: props.body,
-			draggable: props.draggable
 		}
 	}
 

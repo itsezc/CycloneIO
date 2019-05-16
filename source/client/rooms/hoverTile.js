@@ -1,14 +1,12 @@
 export default class RoomTileHover extends Phaser.GameObjects.Image {
 
-    constructor(scene, x, y, z, depth) {
+    constructor(scene, x, y) {
         
-        super(scene, x, y - z)
+        super(scene, x, y)
 
         this.scene = scene
         this.x = x
         this.y = y
-        this.z = z
-        this.depth = depth
 
         this.create()
 
@@ -20,9 +18,11 @@ export default class RoomTileHover extends Phaser.GameObjects.Image {
 
         this.scene.add.existing(this)
 
+
+
         this.setOrigin(0.5, 0.6)
 
-        this.setDepth(this.depth)
+        this.setDepth(2)
 
     }
 }
