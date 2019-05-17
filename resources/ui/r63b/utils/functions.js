@@ -42,7 +42,13 @@ export const fullScreen = (state) => {
 }
 
 export const dragElement = (element) => {
+
 	var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+	
+	if(element == null){ 
+		console.error("No element error"); return;
+	}
+
 	if (document.getElementById(element.id + "_header")) {
 		document.getElementById(element.id + "_header").onmousedown = dragMouseDown;
 	} else {

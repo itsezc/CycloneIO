@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-import Dialog from '../../helpers/dialog.jsx'
-import { dragElement } from '../../utils/functions.js'
+import Dialog from '../../../helpers/dialog';
 
 import CatalogBanner from './components/banner.jsx'
 
@@ -10,6 +9,7 @@ import CatalogFrontPage from './layouts/frontpage.jsx'
 import CatalogFurniPage from './layouts/furniture.jsx'
 
 export default class Alert extends Component {
+
     constructor(props) {
         super(props)
 
@@ -139,27 +139,22 @@ export default class Alert extends Component {
         })
     }
 
-    componentDidMount() {
-        dragElement(document.getElementById('catalog'))
-    }
-
     render() {
         return (
-            <div className='catalog' id='catalog'>
-                <div className='title' id='catalog_header'>
-                    Shop
-                </div>
+            <Dialog id='catalog' className="catalog" draggable={true} closeable={true} title="Catalog">
 
                 <Tabs
-                    selectedTabClassName='active'
+                    selectedTabClassName="active"
                     selectedIndex={this.state.category}
                     onSelect={category => this.setState({ category })}
                 >
-                    <TabList className='tabs'>{this.categories}</TabList>
+                    <TabList className="tabs">
+                        {this.categories}
+                    </TabList>
 
                     {this.defaultPages}
                 </Tabs>
-            </div>
-        )
+            </Dialog>
+        );
     }
 }

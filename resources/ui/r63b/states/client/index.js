@@ -5,11 +5,11 @@ import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
 import Wallet from '../../components/wallet'
 
-import Alert from '../../components/alert/alert.jsx'
-import Catalog from '../../components/catalog/catalog'
-import Moderation from '../../components/moderation'
+import Alert from '../../components/dialogs/alert'
+import Catalog from '../../components/dialogs/catalog'
+import Moderation from '../../components/dialogs/moderation'
 
-import Navigator from '../../components/navigator'
+import Navigator from '../../components/dialogs/navigator'
 
 import Chat from '../../components/chat/bubble.jsx'
 

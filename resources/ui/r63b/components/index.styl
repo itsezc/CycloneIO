@@ -6,11 +6,14 @@ user-drag(value)
 	user-drag value
 
 @import actions
-@import alert
-@import catalog
-@import moderation
 @import wallet
 @import chat
+
+@import 'dialogs/alert'
+@import 'dialogs/catalog'
+@import 'dialogs/moderation'
+
+@import '../helpers/dialog'
 
 a
 	user-drag none
