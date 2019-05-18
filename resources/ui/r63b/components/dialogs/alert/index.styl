@@ -1,0 +1,35 @@
+.dialog.alert
+	width 350px
+	min-height 180px
+	top: calc(50% - 120px)
+	left: calc(50% - 180px)
+	
+	& .content
+		font-family: inherit
+		margin 0 10px
+		font-weight 300
+
+		& .author
+			margin 20px 0 0 0
+
+	& .image
+		float left
+		display inline
+		margin-right 10px
+
+	& .footer
+		margin-top 15px
+		padding 6px
+		position relative
+		text-align center
+
+		&::before
+			content ''
+			position absolute
+			top 0
+			left 0
+			right 0
+			display block
+			height 0px
+			border-top solid 1px #CCCCCC
+			border-bottom solid 1px #FFFFFF

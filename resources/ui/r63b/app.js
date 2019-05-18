@@ -5,8 +5,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Loading from './states/loading'
 import Client from './states/client'
 
-//import Alert from './components/alert'
-
 class App extends Component {
     render() {
         return (

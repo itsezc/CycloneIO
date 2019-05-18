@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../../styles/illumina.styl'
+import '../../../styles/illumina.styl'
 
 export default class Moderation extends Component {
 	constructor(props) {
