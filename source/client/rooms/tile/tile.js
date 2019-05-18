@@ -12,12 +12,6 @@ export default class RoomTile extends RoomSprite {
     }
 
     create() {
-
-        this.scene.add.existing(this)
-
-        		
-		this.setTexture(this.texture.key)
-	
         
         this.setDepth(1)
         

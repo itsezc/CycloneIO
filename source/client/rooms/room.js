@@ -121,7 +121,6 @@ export default class Room extends Phaser.Scene {
             
             for (var y = 0; y < map[x].length; y++) {
                 this.addTile(x, y, 0)
-                console.log(x)
             }
         }
         // room.model.map.forEach((squares, row) => {

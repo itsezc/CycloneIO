@@ -17,11 +17,13 @@ export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
 			this.height = height
 		}
 
-		this
+		this.create()
 	}
 
 	create() {
 		this.setPosition(this.isometric.x, this.isometric.y)
+        
+        this.scene.add.existing(this)
 	}
 
 	get coordinates() {
