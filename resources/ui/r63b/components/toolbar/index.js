@@ -27,7 +27,7 @@ export default class Toolbar extends Component {
 
 	render() {
 		return (
-            <section className={"toolbar" + (!this.props.isHotel ? " is-client" : null)}>
+            <section className={"toolbar" + (this.props.isClient ? " is-client" : '')}>
 
                 <div className="toolbar-actions">
                     <i className={"toolbar-more" + (!this.state.isActionsOpen ? " is-close" : '')} onClick={this.toggleActions.bind(this)}></i>
@@ -52,7 +52,7 @@ export default class Toolbar extends Component {
                     </div>
                 </div>
 
-                <div className="toolbar-friends is-open">
+                <div className="toolbar-friends">
 
                     <div className="toolbar-icons-content">
                         <span className="icon icon-friendall">
