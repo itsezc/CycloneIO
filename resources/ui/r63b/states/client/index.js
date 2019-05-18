@@ -45,9 +45,7 @@ export default class Client extends Component {
 					<Actions />
 
 					<div className='hotel'>
-
-						<i className='hotel-logo'></i>
-
+					
 						<Moderation />
 
 						<Catalog /> 
@@ -68,9 +66,8 @@ export default class Client extends Component {
 
 						<Wallet />
 					</div>
-
 					
-					<Toolbar />
+					<Toolbar isClient={false} />
 				</div>
 			)
 		}

@@ -12,13 +12,14 @@
 	border-top 2px solid #53524f
 	border-bottom 1px solid #53524f
 	background-color #2e2e2c
-	box-shadow 0 -1px 0 0 rgba(0, 0, 0, .75)
+	box-shadow 0 -1px 0 0 rgba(0, 0, 0, .6)
 
 	.toolbar-more
 		width 14px
 		background-color #3a3832
 		border-radius 8px
 		position relative
+		cursor pointer
 
 		&::after
 			content ''
@@ -39,71 +40,110 @@
 				filter FlipH;
 				-ms-filter "FlipH";
 
+	.notification
+		position absolute
+		top 0
+		right -3px
+		height 17px
+		min-width 17px
+		background-color #ac1d19
+		border-radius 5px
+		font-style normal
+		font-weight 100
+		font-size 10px
+		text-align center
+		line-height 15px
+		border 1px solid #000
+		box-shadow inset 0 0 0 1px #ed2823, 0 1px 0 0 #000
+
 	span.icon
-		display inline-block
 		position relative
-		background-repeat no-repeat
-		filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, .30))
-		cursor pointer
 
-		&:hover
-			filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .50))
-			top -1px
-			left -1px
-
-		&.icon-buildersclub
+		&.icon-buildersclub::before
 			background-image url('hotelview/toolbar/icons/buildersclub.png')
-			width 37px
-			height 37px
-			margin-left 3px
-			margin-top 2px
-
-		&.icon-catalogue
+			width 32px
+			height 33px
+		
+		&.icon-catalogue::before
 			background-image url('hotelview/toolbar/icons/catalogue.png')
-			margin-left -2px
-			margin-top -2px
 			width 37px
 			height 36px
 
-		&.icon-rooms
+		&.icon-rooms::before
 			background-image url('hotelview/toolbar/icons/rooms.png')
 			width 44px
 			height 30px
 
-		&.icon-house
+		&.icon-house::before
 			background-image url('hotelview/toolbar/icons/house.png')
 			height 30px
 			width 32px
 
-		&.icon-inventory
+		&.icon-inventory::before
 			background-image url('hotelview/toolbar/icons/inventory.png')
-			height 44px
-			width 41px
+			height 41px
+			width 44px
 
-		&.icon-friendall
+		&.icon-friendall::before
 			background-image url('hotelview/toolbar/icons/friend_all.png')
 			height 33px
 			width 32px
 
-		&.icon-friendsearch
+		&.icon-friendsearch::before
 			background-image url('hotelview/toolbar/icons/friend_search.png')
 			height 33px
 			width 29px
 
-		&.icon-sendmessage
+		&.icon-sendmessage::before
 			background-image url('hotelview/toolbar/icons/sendmessage.png')
 			width 20px
 			height 21px
 
-		&.icon-profile
+		&.icon-profile::before
 			background-image url('hotelview/toolbar/icons/profile.png')
 			width 21px
 			height 21px
-		
-		&.icon-joinroom
+			
+		&.icon-joinroom::before
 			background-image url('hotelview/toolbar/icons/joinroom.png')
 			width 21px
 			height 21px
+
+		&.icon-habbo::before
+			background-image url('hotelview/toolbar/icons/habbo.png')
+			width 28px
+			height 28px
+
+		&.icon-camera::before
+			background-image url('hotelview/toolbar/icons/camera.png')
+			width 38px
+			height 45px
+
+		&.icon-message
+	
+			&.is-unsee::before
+				background-image url('hotelview/toolbar/icons/message_unsee.gif')
+
+			&::before
+				background-image url('hotelview/toolbar/icons/message.png')
+				width 36px
+				height 32px
+
+		&::before
+			content ''
+			display inline-block
+			position relative
+			background-repeat no-repeat
+			filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, .30))
+			cursor pointer
+
+		&:hover
+			top -1px
+			left -1px
+
+			&::before
+				filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .50))
+				
 
 	.toolbar-icons-content
 		margin 1px 0 2px 0
@@ -111,11 +151,12 @@
 		flex-direction row
 		align-items center
 		overflow hidden
+		padding 0 11px
 
-		span.icon:not(:last-child)
-			margin-right 15px
+		.icon:not(:first-child)
+			margin-left 15px
 
-	.toolbar-icons
+	.toolbar-actions
 		display flex
 		flex-direction row
 
@@ -124,26 +165,30 @@
 			border-bottom-left-radius 0
 
 		.toolbar-icons-content
-			padding-left 11px
 			border-right 1px solid #454442
 
 			.user
+				margin-left 0
 				position relative
-
-				.notification
-					position absolute
+				height: 100%
 
 				img 
 					position relative
-					top 10px
+					top -25px
 
 	.toolbar-friends
 		display flex
 		flex-direction row
+
+		@import './components/friendSlot'
 		
 		.toolbar-more
-			border-top-right-radius 0
-			border-bottom-right-radius 0
+			-moz-transform scaleX(-1);
+			-o-transform scaleX(-1);
+			-webkit-transform scaleX(-1);
+			transform scaleX(-1);
+			filter FlipH;
+			-ms-filter "FlipH";
 
 		.toolbar-icons-content
 			padding-right 42px
@@ -152,95 +197,12 @@
 			display flex
 			flex-direction row
 			align-items flex-end
-			margin-bottom 2px
-			margin-right 11px
+			align-self: center
+			height 35px
 
-			.toolbar-friends-slot
-				float left
-				width 127px
-				border-radius 6px
-				border 1px solid #000
-				position relative
-				color #fff
-				font-size 12px
-				font-weight 600
-				line-height 13px
-				padding 2px
-
-				.toolbar-friends-slot-header
-					height 29px
-					display flex
-					flex-direction row
-					align-items center
-					cursor pointer
-
-					img 
-						position relative
-						bottom 3px
-						float left
-						margin-right 2px
-
-				.toolbar-friends-slot-content
-					display none
-					margin-top 2px
-					padding 0 4px
-
-					p
-						font-weight 200
-						line-height 1.3em
-						background-color #fff
-						color #000
-						padding 6px
-						margin-bottom 6px
-
-				&.is-unknown
-					box-shadow inset 0 0 0 2px #73daf9, 0 1px 0 0 #000
-					background-color #549daf
-
-					&:not(.is-open):hover
-						box-shadow inset 0 0 0 2px #90e0f8, 0 1px 0 0 #000
-						background-color #69a1af
-
-					.toolbar-friends-slot-content
-						padding-bottom 26px
-
-						.btn
-							width: 100%
-
-				&:not(.is-unknown)
-					box-shadow inset 0 0 0 2px #9cbe59, 0 1px 0 0 #000
-					background-color #72893f
-
-					.toolbar-friends-slot-header 
-						img 
-							width 34px
-							bottom 4px
-							object-fit none
-
-					.toolbar-friends-slot-content
-						margin-top 6px
-						float right
-
-						.icon:not(:last-child)
-							margin-right 8px
-
-					&:not(.is-open):hover
-						box-shadow inset 0 0 0 2px #d2f693, 0 1px 0 0 #000
-						background-color #99b168
-
-				&:not(:last-child)
-					margin-right 3px
-
-				&.is-open
-					height auto
-
-					.toolbar-friends-slot-content
-						display block
-
-		&.is-open
-			.toolbar-icons-content
-				border-left 1px solid #454442
-				padding-left 16px
-				padding-right 55px
+		.toolbar-icons-content
+			border-left 1px solid #454442
+			padding-left 16px
+			padding-right 20px
 
 		
