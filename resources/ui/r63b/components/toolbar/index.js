@@ -1,52 +1,53 @@
 import React, { Component } from 'react'
 
+import FriendSlot from './components/FriendSlot';
+
 export default class Toolbar extends Component {
+
 	constructor(props) {
 		super(props)
 	}
 
 	render() {
 		return (
-				<div className='toolbar'>
-					<div className='more'>
-						<img src="https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/arrow.png?raw=true" />
-					</div>
-					<div className='icons'>
-						<span className='house'></span>
-						<span className='rooms'></span>
-						<span className='catalogue-icon'></span>
-						<span className='builders-club'></span>
-						<span className='inventory'></span>
-						<span className='user'>
-							<img src='https://www.habbo.com.tr/habbo-imaging/avatarimage?figure=fa-3276-1331.he-8394-1408.sh-725-1408.hd-600-1383.ch-691-1428.lg-710-110.ca-1815-1408.ha-3763-63.hr-834-54&size=n&direction=2&head_direction=2&crr=3&gesture=sml&frame=3' />
-						</span>
-					</div>
+            <section className="toolbar">
+                <div className="toolbar-icons">
+                    <i className="toolbar-more" />
 
-					<div className='friends'>
-						<div className='icons'>
-							<span className='all'></span>
-							<span className='search'></span>
-						</div>
+                    <div className="toolbar-icons-content">
+                        <span className="icon icon-house is-active" />
+                        <span className="icon icon-rooms" />
+                        <span className="icon icon-catalogue" />
+                        <span className="icon icon-buildersclub" />
+                        {false ? (
+                            <span className="icon-inventory" />
+                        ) : (
+                            ''
+                        )}
 
-						<div className='slots'>
-							<div className='slot'>
-								<img src="https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/friend_head.png?raw=true" />
-								Find new <br />friends
-							</div>
-							<div className='slot'>
-								<img src="https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/friend_head.png?raw=true" />
-								Find new <br />friends
-							</div>
-							<div className='slot'>
-								<img src="https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/friend_head.png?raw=true" />
-								Find new <br />friends
-							</div>
-						</div>
-						<div className='more more-friends'>
-							<img src="https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/arrow.png?raw=true" />
-						</div>
-					</div>
-				</div>
-		)
+                        <span className="user">
+                            <i className="notification">3</i>
+                            <img src="https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=Textarea&headonly=0&direction=2&head_direction=2&action=&gesture=&size=m" />
+                        </span>
+                    </div>
+                </div>
+
+                <div className="toolbar-friends is-open">
+                    <div className="toolbar-icons-content">
+                        <span className="icon icon-friendall" />
+                        <span className="icon icon-friendsearch" />
+                    </div>
+
+                    <div className="toolbar-friends-content">
+                        <FriendSlot username="Specimen:" />
+                        <FriendSlot type="unknown" />
+                        <FriendSlot type="unknown" />
+                        <FriendSlot type="unknown" />
+                    </div>
+
+                    <i className="toolbar-more is-open" />
+                </div>
+            </section>
+        );
 	}
 }

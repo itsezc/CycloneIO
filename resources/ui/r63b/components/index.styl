@@ -5,15 +5,23 @@ user-drag(value)
 	-o-user-drag value
 	user-drag value
 
+*,*:before,*:after
+	margin 0
+	padding 0
+	box-sizing border-box
+
 @import actions
 @import wallet
 @import chat
+
+@import toolbar
 
 @import 'dialogs/alert'
 @import 'dialogs/catalog'
 @import 'dialogs/moderation'
 
 @import '../helpers/dialog'
+@import '../styles/button'
 
 a
 	user-drag none

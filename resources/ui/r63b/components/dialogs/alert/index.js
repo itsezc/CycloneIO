@@ -23,7 +23,7 @@ export default class Alert extends Component {
 				</div>
 
 				<div className='footer'>
-					<button onClick={this.close} className='button'>Close</button>
+					<button onClick={this.close} className='btn'>Close</button>
 				</div>
 			</Dialog>
 		)

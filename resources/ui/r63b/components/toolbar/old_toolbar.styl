@@ -1,0 +1,178 @@
+.more
+	height: 40px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	position: absolute;
+	line-height: 35px;
+	left: 0;
+	cursor: pointer;
+	top: 4px;
+	padding: 2px;
+	padding-right: 4px;
+	background-color: #3A3832;
+	color: #9C9791;
+	font-weight: 600;
+
+.more.more-friends
+	left: auto;
+	right: 0;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+
+	& img
+		padding-right: 2px
+		-moz-transform: scaleX(-1);
+		-o-transform: scaleX(-1);
+		-webkit-transform: scaleX(-1);
+		transform: scaleX(-1);
+		filter: FlipH;
+		-ms-filter: "FlipH";
+
+.toolbar
+	z-index 1
+    position fixed
+	bottom 0
+	background: rgba(46, 46, 44, 0.6)
+	min-width: 900px
+	width 100%
+	height 50px
+	border-top 2px solid #41403D
+	border-bottom 1px solid #41403D
+		
+	& .icons
+		padding: 8px;
+		position: relative;
+		padding-left: 25px;
+		overflow: hidden;
+		float: left;
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+		& span
+			float: left;
+			margin-right: 10px;
+			cursor: pointer;
+
+			&:last-child
+				margin-right: 0px;
+
+			&:hover
+				filter: drop-shadow(2px 2px 0 #171716)
+				position: relative;
+				top: -2px;
+				left: -2px;
+
+			& .house
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/house.png?raw=true);
+				width: 32px;
+				display: inline-block;
+				height: 30px;
+
+			& .rooms
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/rooms.png?raw=true);
+				background-repeat: no-repeat;
+				width: 44px;
+				display: inline-block;
+				height: 30px;
+
+			& .catalogue-icon
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/catalogue.png?raw=true);
+				background-repeat: no-repeat;
+				width: 37px;
+				display: inline-block;
+				height: 36px;
+				margin-top: -4px;
+
+			& .builders-club
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/bc.png?raw=true);
+				background-repeat: no-repeat;
+				width: 37px;
+				display: inline-block;
+				height: 37px;
+
+			& .inventory
+				background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/inventory.png?raw=true)
+				background-repeat: no-repeat;
+				width: 44px;
+				display: inline-block;
+				height: 41px;
+				margin-top: -4px;
+
+			& .user
+				width: 60px;
+				height: 45px;
+				overflow: hidden;
+				margin-top: -5px;
+				margin-left: -5px;
+
+				& img
+					margin-top: -18px;
+
+
+		& .friends
+			padding: 8px;
+			padding-right: 20px;
+			position: relative;
+			padding-left: 25px;
+			overflow: hidden;
+			padding-left: 10px;
+			//border-left: 1px solid rgba(255, 255, 255, 0.1);
+			float: right;
+
+			& .icons
+				float: left;
+				margin-right: 30px;
+				padding: 0
+				padding-left: 20px
+				border-left: 1px solid rgba(255, 255, 255, 0.1);
+				border-right: 0
+
+				& span
+					float: left;
+					margin-right: 15px;
+					cursor: pointer;
+
+					&:hover
+						position: relative;
+						top: -2px;
+						left: -2px;
+
+				& .all
+					background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/friends.png?raw=true);
+					background-repeat: no-repeat;
+					width: 32px;
+					display: inline-block;
+					height: 33px;
+				& .search
+					background-image: url(https://github.com/TheNamesRay/Habbo-in-HTML5/blob/master/assets/images/hotelview/barIcons/search_friends.png?raw=true);
+					background-repeat: no-repeat;
+					width: 29px;
+					display: inline-block;
+					height: 33px;
+
+			& .slots
+				float: left;
+
+				& .slot
+					padding: 1px;
+					padding-left: 35px;
+					padding-right: 30px;
+					border-radius: 4px;
+					font-weight: 600;
+					margin-right: 5px
+					color: #fff;
+					font-size: 13px;
+					display: inline-block;
+					margin-left: 2px;
+					cursor: pointer;
+					box-shadow: inset 0 0 0 2px #73DAF9, 0 2px 0 0px #000
+					position: relative
+					line-height: 13px;
+					border 1px solid #000;
+					background-color: #5C8F9C;
+
+					& img
+						position: absolute;
+						left: 0;
+						top: -4px;

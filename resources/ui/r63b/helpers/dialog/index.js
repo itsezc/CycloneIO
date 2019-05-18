@@ -16,7 +16,6 @@ export default class Dialog extends Component<Props> {
 		super(props)
 
 		this.styles = props.styles || {}
-		this.styles.alert = true
 
 		this.state = {
 			show: props.show || true,
@@ -31,12 +30,10 @@ export default class Dialog extends Component<Props> {
 		}
 	}
 
-	show() {
-		this.setState({ show: true })
-	}
-
-	close() {
-		this.setState({ show: false })
+	toggleShow(){
+		this.setState({
+			show: !this.state.show
+		});
 	}
 
 	render() {
