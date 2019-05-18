@@ -1,15 +1,11 @@
+import RoomSprite from './sprite'
 import RoomTileHover from './hoverTile'
 
-export default class RoomTile extends Phaser.GameObjects.Image {
+export default class RoomTile extends RoomSprite {
 
-    constructor(scene, x, y,/*  z, */) {
+    constructor(scene, x, y, z, width, height, texture) {
 
-        super(scene, x, y)
-
-        this.scene = scene
-        this.x = x
-        this.y = y
-        //this.z = z
+        super(scene, x, y, z, width, height, texture)
 
         this.create()
 
@@ -17,21 +13,17 @@ export default class RoomTile extends Phaser.GameObjects.Image {
 
     create() {
 
-        this.setTexture('tile')
-
-        this.scene.add.existing(this)
-
         this.setDepth(1)
         
         this.setInteractive({ pixelPerfect: true })
 
-        this.on('pointerover', () => {
-            this.hover = new RoomTileHover(this.scene, this.x, this.y, this.z)
-        })
+        // this.on('pointerover', () => {
+        //     this.hover = new RoomTileHover(this.scene, this.x, this.y, this.z)
+        // })
 
-        this.on('pointerout', () => {
-            this.hover.destroy()
-        })
+        // this.on('pointerout', () => {
+        //     this.hover.destroy()
+        // })
 
     }
 }

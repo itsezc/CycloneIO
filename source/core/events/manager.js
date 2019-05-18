@@ -1,11 +1,12 @@
 // @flow
+import SocketIO from 'socket.io'
 import Room from '../../hotel/rooms/room'
 import RoomPlayer from '../../hotel/rooms/player'
 
 export default class EventManager {
-    socket: Object
+    socket: SocketIO
 
-    constructor(socket: Object) {
+    constructor(socket: SocketIO) {
         this.socket = socket
 
         this.registerRooms()
