@@ -1,6 +1,6 @@
 import RoomCamera from './camera'
-import RoomTile from './tile'
-import RoomFurniture from './furniture'
+import RoomTile from './tile/tile.js'
+//import RoomFurniture from './furniture'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
@@ -121,6 +121,7 @@ export default class Room extends Phaser.Scene {
             
             for (var y = 0; y < map[x].length; y++) {
                 this.addTile(x, y, 0)
+                console.log(x)
             }
         }
         // room.model.map.forEach((squares, row) => {
@@ -139,7 +140,7 @@ export default class Room extends Phaser.Scene {
     }
 
     addTile(x, y, z) {
-        this.tiles.add(new RoomTile(this, x, y, z, 32, 32, 'tile'))
+        this.tiles.add(new RoomTile(this, x, y, z, 'tile', 32, 32))
     }
 
     addFurniture(x, y, z, texture) {
@@ -156,7 +157,7 @@ export default class Room extends Phaser.Scene {
 
             if (pointer.downTime - this.tapTime < 500) {
 
-                if (pointer.primaryDown){
+                if (pointer.primaryDown) {
                     callback(...args)
                 }
                 

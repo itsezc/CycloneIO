@@ -1,13 +1,13 @@
 export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
 	
-	constructor(scene, x, y, z, width, height, texture) {
+	constructor(scene, x, y, z, texture, width, height) {
+
 		super(scene, x, y - z, texture)
 
 		this.scene = scene
 		this.x = x
 		this.y = y
 		this.z = z
-		this.texture = texture
 
 		if (width !== undefined) {
 			this.width = width
@@ -17,12 +17,11 @@ export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
 			this.height = height
 		}
 
-		this.create()
+		this
 	}
 
 	create() {
-		this.setTexture(this.texture)
-		this.scene.add.existing(this)
+		this.setPosition(this.isometric.x, this.isometric.y)
 	}
 
 	get coordinates() {
@@ -34,6 +33,6 @@ export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	get isometric() {
-		return new Phaser.Geom.Point(this.coordinates.x - this.coordinates.y, (this.coordinates.x + this.coordinates.y) / 2)
+		return new Phaser.Geom.Point(this.cartesian.x - this.cartesian.y, (this.cartesian.x + this.cartesian.y) / 2)
 	}
 }

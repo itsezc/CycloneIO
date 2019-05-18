@@ -5,11 +5,13 @@ import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
 import Wallet from '../../components/wallet'
 
+import Poll from '../../components/poll/poll.jsx'
+
 import Alert from '../../components/dialogs/alert'
 import Catalog from '../../components/dialogs/catalog'
-import Moderation from '../../components/dialogs/moderation'
-
 import Navigator from '../../components/dialogs/navigator'
+
+import Moderation from '../../components/dialogs/moderation'
 
 import Chat from '../../components/chat/bubble.jsx'
 
@@ -46,11 +48,11 @@ export default class Client extends Component {
 
 					<div className='hotel'>
 
-						<i className='hotel-logo'></i>
+						<Poll />
 
 						<Moderation />
 
-						<Catalog /> 
+						{/* <Catalog />  */}
 
 						<Alert
 							title='Message from Habbay Hotel'
@@ -58,13 +60,13 @@ export default class Client extends Component {
 							author='EZ-C'
 						/>
 
-						<Chat
+						{/* <Chat
 							name='EZ-C'
 							avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
 							type='shout'
 							style={2}
 							message='This is an example message'
-						/>
+						/> */}
 
 						<Wallet />
 					</div>
