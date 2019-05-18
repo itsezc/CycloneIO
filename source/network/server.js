@@ -1,3 +1,4 @@
+// @flow
 import Chalk from 'chalk'
 import Config from '../../config.json'
 
@@ -11,18 +12,21 @@ import Routes from './http/routes'
 
 import SocketIO from 'socket.io'
 
-import { prisma } from '../storage/prisma'
-import { typeDefs } from '../storage/prisma/prisma-schema'
-import { resolvers } from '../storage/resolvers'
+// import { prisma } from '../storage/prisma'
+// import { typeDefs } from '../storage/prisma/prisma-schema'
+// import { resolvers } from '../storage/resolvers'
 
-import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
-import ApolloClient, { gql } from 'apollo-boost' 
+// import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
+// import ApolloClient, { gql } from 'apollo-boost' 
 
 import jwt from 'jsonwebtoken'
 
 export default class Server {
+    config: Config
+    HTTP: Hapi
+    WebSocket: SocketIO
 
-    constructor(config) {
+    constructor(config: Config) {
         this.config = config
 
         this.HTTP = new Hapi.Server({
@@ -42,59 +46,59 @@ export default class Server {
 
             logger.network('Started Socket.IO listener')
 
-            // GraphQL
-            let HTTPServer = this.HTTP
-            let environment = (this.config.mode === 'development') ? true : false
+            // // GraphQL
+            // let HTTPServer = this.HTTP
+            // let environment = (this.config.mode === 'development') ? true : false
 
-            logger.apollo('Started Apollo [GraphQL] listener')
+            // logger.apollo('Started Apollo [GraphQL] listener')
 
-            let schema = makeExecutableSchema({
-                typeDefs,
-                resolvers,
-                resolverValidationOptions: { 
-                    requireResolversForResolveType: false
-                },
-                introspection: environment,
-            	playground: environment
-            })
+            // let schema = makeExecutableSchema({
+            //     typeDefs,
+            //     resolvers,
+            //     resolverValidationOptions: { 
+            //         requireResolversForResolveType: false
+            //     },
+            //     introspection: environment,
+            // 	playground: environment
+            // })
 
-            this.apolloServer = new ApolloServer({
-                schema,  	
-            	context: {
-            		db: prisma
-            	}
-            })
+            // this.apolloServer = new ApolloServer({
+            //     schema,  	
+            // 	context: {
+            // 		db: prisma
+            // 	}
+            // })
             
-            logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+            // logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-            await this.apolloServer.applyMiddleware({
-            	app: HTTPServer
-            })
+            // await this.apolloServer.applyMiddleware({
+            // 	app: HTTPServer
+            // })
 
-            await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+            // await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-           	logger.database('Switched to PostgreSQL connector')
-            logger.database('Connected to Prisma [GraphQL] successfully')
+           	// logger.database('Switched to PostgreSQL connector')
+            // logger.database('Connected to Prisma [GraphQL] successfully')
 
             await this.HTTP.start()
 
-			this.database = new ApolloClient({
-				uri: 'http://localhost:8081/graphql'
-			})
+			// this.database = new ApolloClient({
+			// 	uri: 'http://localhost:8081/graphql'
+			// })
 
-			this.database.query({
-				query: gql`
-					{
-						rooms {
-							id
-							name 
-							description
-							maxUsers
-						}
-					}
-				`
-			}).then(result => console.log(result.data.rooms))
-			.catch(error => console.error(error))
+			// this.database.query({
+			// 	query: gql`
+			// 		{
+			// 			rooms {
+			// 				id
+			// 				name 
+			// 				description
+			// 				maxUsers
+			// 			}
+			// 		}
+			// 	`
+			// }).then(result => console.log(result.data.rooms))
+			// .catch(error => console.error(error))
 
         } catch (error) {
             this.shutdown(error)
@@ -107,12 +111,12 @@ export default class Server {
         })
     }
 
-    async handleConnection(socket) {
+    async handleConnection(socket: SocketIO) {
         logger.server(`Player ${socket.id} connected`)
         await new EventManager(socket)
     }
 
-    async shutdown(error) {
+    async shutdown(error: string) {
 
         try {
 

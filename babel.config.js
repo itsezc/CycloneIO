@@ -1,5 +1,4 @@
 module.exports = function(api) {
-
   api.cache(true)
 
   const presets = [
@@ -10,10 +9,10 @@ module.exports = function(api) {
 
   const plugins = [
     '@babel/plugin-transform-runtime',
-    ['@babel/plugin-proposal-decorators', { 'legacy': true }],
+    ['@babel/plugin-proposal-decorators', { legacy: true }],
     '@babel/plugin-proposal-class-properties',
-	'@babel/plugin-transform-classes',
-	'transform-react-pug'
+    '@babel/plugin-transform-classes',
+    'transform-react-pug'
   ]
 
   const ignore = []

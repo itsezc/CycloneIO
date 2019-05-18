@@ -1,5 +1,4 @@
 //@flow
-
 type Gender = 'M' | 'F'
 
 export default class User {

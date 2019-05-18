@@ -106,7 +106,7 @@ export default class Room extends Phaser.Scene {
 
     registerFurniture() {
         this.game.socket.on('newFurniture', furniture => {
-            this.addFurniture(0, 1, 0, furniture)
+            //this.addFurniture(0, 0, 0, furniture)
         })
 
         // Rooms[] => Items[RoomID]
@@ -117,17 +117,10 @@ export default class Room extends Phaser.Scene {
     generate(room) {
         var map = room.model.map
 
-        for (var i = 0; i < map.length; i++) {
+        for (var x = 0; x < map.length; x++) {
             
-            for (var j = 0; j < map[i].length; j++) {
-
-                var x = j * 32
-                var y = i * 32
-                
-                var isometricCoordinates = this.cartesianToIsometric(new Phaser.Geom.Point(x, y))
-
-                this.addTile(isometricCoordinates.x, isometricCoordinates.y)
-
+            for (var y = 0; y < map[x].length; y++) {
+                this.addTile(x, y, 0)
             }
         }
         // room.model.map.forEach((squares, row) => {
@@ -146,33 +139,15 @@ export default class Room extends Phaser.Scene {
     }
 
     addTile(x, y, z) {
-        this.tiles.add(new RoomTile(this, x, y))
+        this.tiles.add(new RoomTile(this, x, y, z, 32, 32, 'tile'))
     }
 
     addFurniture(x, y, z, texture) {
 
         var isometricCoordinates = this.cartesianToIsometric(new Phaser.Geom.Point(x * 32, y * 32))
 
-        this.furniture.add(new RoomFurniture(this, isometricCoordinates.x, isometricCoordinates.y - 25, z, texture))
+        this.furniture.add(new RoomFurniture(this, isometricCoordinates.x - 1, isometricCoordinates.y - 24, z, texture))
 
-    }
-
-    cartesianToIsometric(cartesianCoordinates){
-        var isometricCoordinates = new Phaser.Geom.Point()
-    
-        isometricCoordinates.x = cartesianCoordinates.x - cartesianCoordinates.y
-        isometricCoordinates.y = (cartesianCoordinates.x + cartesianCoordinates.y) / 2
-
-        return isometricCoordinates
-    }
-
-    isometricToCartesian(isometricCoordinates){
-        var cartesianCoordinates = new Phaser.Geom.Point()
-
-        cartesianCoordinates.x = (isometricCoordinates.y * 2 + isometricCoordinates.x) / 2;
-        cartesianCoordinates.y= (isometricCoordinates.y * 2 - isometricCoordinates.x) / 2;
-
-        return cartesianCoordinates
     }
 
     onDoubleClick(object, callback, ...args) {

@@ -73,4 +73,12 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
 
         this.flipX = !this.flipX
     }
+    
+    get coordinates() {
+        
+    }
+
+    get tile() {
+        return this.scene.tiles.find((tile) => { tile.coordinates.x})
+    }
 }
