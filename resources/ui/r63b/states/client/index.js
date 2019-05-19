@@ -18,7 +18,7 @@ import Chat from '../../components/chat/bubble.jsx'
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'
 
-import './client.styl'
+import './index.styl'
 
 export default class Client extends Component {
 
