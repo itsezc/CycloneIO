@@ -53,6 +53,7 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
     }
 
     animate() {
+
         if (!this.anims.isPlaying) {
             this.anims.play(this.texture.key) 
         }
@@ -61,6 +62,7 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
             this.anims.remove(this.texture.key)
             this.setFrame(0)
         }
+
     }
 
     rotate() {
@@ -72,13 +74,5 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
         })
 
         this.flipX = !this.flipX
-    }
-    
-    get coordinates() {
-        
-    }
-
-    get tile() {
-        return this.scene.tiles.find((tile) => { tile.coordinates.x})
     }
 }
