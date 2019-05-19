@@ -48,7 +48,13 @@ export default class Client extends Component {
 
 					<div className='hotel'>
 
-						<Poll />
+						<Poll 
+							question='Habbo or Cyclone'
+						/>
+
+						<Moderation />
+
+						{/* <Catalog />  */}
 
 						<Alert
 							title='Message from Habbay Hotel'

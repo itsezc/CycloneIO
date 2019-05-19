@@ -1,12 +1,10 @@
-export default class RoomTileHover extends Phaser.GameObjects.Image {
+import RoomSprite from '../sprite'
 
-    constructor(scene, x, y) {
+export default class RoomTileHover extends RoomSprite {
+
+    constructor(scene, x, y, z, texture, width, height, depth) {
         
-        super(scene, x, y)
-
-        this.scene = scene
-        this.x = x
-        this.y = y
+        super(scene, x, y, z, texture, width, height, depth)
 
         this.create()
 
@@ -14,15 +12,12 @@ export default class RoomTileHover extends Phaser.GameObjects.Image {
 
     create() {
 
-        this.setTexture('tile_hover')
+        super.create()
 
-        this.scene.add.existing(this)
+        console.log(this.x, this.y)
 
 
-
-        this.setOrigin(0.5, 0.6)
-
-        this.setDepth(2)
+        //this.setPosition(this.isometric.x, this.isometric.y / 4)
 
     }
 }

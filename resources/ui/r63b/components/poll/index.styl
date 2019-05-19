@@ -29,6 +29,7 @@ $poll-width = 350px
 			p
 				font-size 16px
 				padding 6px
+				color white
 
 		.positive
 			background-color #007841
@@ -53,6 +54,13 @@ $poll-width = 350px
 
 			&:not(:last-child)
 				margin-right 70px 
+
+			&:hover
+				transition 0.25s
+				border 1px solid rgba(255, 255, 255, 0.5)
+
+			&:active
+				box-shadow inset 0px -20px 0 0 rgba(0, 0, 0, 0.5)
 
 			img
 				display: block;

@@ -121,6 +121,10 @@ export default class Room extends Phaser.Scene {
             
             for (var y = 0; y < map[x].length; y++) {
                 this.addTile(x, y, 0)
+                // 1 2 3 4 ->
+                // to cartesian -> to isometric 
+                // isometric -> coordinates
+
             }
         }
         // room.model.map.forEach((squares, row) => {
@@ -139,7 +143,7 @@ export default class Room extends Phaser.Scene {
     }
 
     addTile(x, y, z) {
-        this.tiles.add(new RoomTile(this, x, y, z, 'tile', 32, 32))
+        this.tiles.add(new RoomTile(this, x, y, z, 'tile', 32, 32, 1))
     }
 
     addFurniture(x, y, z, texture) {
