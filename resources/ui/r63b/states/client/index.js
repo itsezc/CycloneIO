@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 
 import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
-import Wallet from '../../components/wallet'
+import Notification from '../../components/notification'
 
 import Poll from '../../components/poll/poll.jsx'
 
@@ -69,8 +69,8 @@ export default class Client extends Component {
 							style={2}
 							message='This is an example message'
 						/> */}
-
-						<Wallet />
+						
+						<Notification />
 					</div>
 					
 					<Toolbar isClient={false} />

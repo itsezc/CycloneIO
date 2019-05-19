@@ -11,7 +11,7 @@ user-drag(value)
 	box-sizing border-box
 
 @import actions
-@import wallet
+@import './notification'
 @import chat
 
 @import toolbar
@@ -31,6 +31,10 @@ a
 img
 	user-select none
 	user-drag none
+
+.icon::before
+	content ''
+	display inline-block
 
 .main-icon
 	display: inline-block
