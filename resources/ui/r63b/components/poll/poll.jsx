@@ -6,7 +6,7 @@ export default class Poll extends Component {
 
 		this.question = this.props.question || 'How is your day going?'
 		this.state = {
-			ended: false,
+			ended: true,
 			votes: {
 				negative: 0,
 				positive: 0

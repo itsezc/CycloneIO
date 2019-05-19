@@ -1,5 +1,6 @@
 [ignore]
 .*/node_modules/bcrypt/*
+.*/resources/mobile/node_modules/*
 .*/dist/*
 .*/source/client/*
 

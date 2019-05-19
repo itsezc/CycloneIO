@@ -35,15 +35,15 @@ export default class FriendSlot extends PureComponent {
         } else {
             return (
                 <div className={'toolbar-friends-slot' + (this.state.isOpen ? ' is-open' : '')} onClick={this.toggleOpen.bind(this)}>
-                    <div className="toolbar-friends-slot-header">
-                        <img src="https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=Specimen:&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m" />
+                    <div className='toolbar-friends-slot-header'>
+                        <img src={`https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=${this.props.username}&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m`} />
                         {this.props.username}
                     </div>
 
-                    <div className="toolbar-friends-slot-content">
-                        <span className="icon icon-sendmessage" />
-                        <span className="icon icon-joinroom" />
-                        <span className="icon icon-profile" />
+                    <div className='toolbar-friends-slot-content'>
+                        <span className='icon icon-sendmessage' />
+                        <span className='icon icon-joinroom' />
+                        <span className='icon icon-profile' />
                     </div>
                 </div>
             );

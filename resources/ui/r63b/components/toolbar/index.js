@@ -64,8 +64,8 @@ export default class Toolbar extends Component {
 
                     {this.state.isFriendsOpen &&
                         <div className="toolbar-friends-content">
-                            <FriendSlot username="Specimen:" />
-                            <FriendSlot username="EZ-C" />
+                            <FriendSlot username='EZ-C' />
+                            <FriendSlot username='EZ-C2' />
                             <FriendSlot type="unknown" />
                             <FriendSlot type="unknown" />
                         </div>

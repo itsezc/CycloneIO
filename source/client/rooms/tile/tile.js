@@ -27,14 +27,27 @@ export default class RoomTile extends RoomSprite {
         this.setInteractive({ pixelPerfect: true })
 
         this.on('pointerover', () => {
-
-            this.hover = new RoomTileHover(this.scene, this.isometricToCoords(this.coordinates).x, this.isometricToCoords(this.coordinates).y, this.z, `${this.texture.key}_hover`, this.width, this.height, this.depth + 1)
-            // console.log(this.hover)
+            this.addHover()
         })
 
         this.on('pointerout', () => {
-            this.hover.destroy()
+            this.destroyHover()
         })
 
+    }
+
+    addHover() {
+
+        var coordinates = this.isometricToCoords(new Phaser.Geom.Point(this.x, this.y))
+        console.log(coordinates)
+        
+        //this.hover = new RoomTileHover(this.scene, coordinates.x, coordinates.y, this.z, `${this.texture.key}_hover`, this.width, this.height, this.depth + 1)
+    
+    }
+
+    destroyHover() {
+        if (this.hover !== undefined) {
+            this.hover.destroy()
+        }
     }
 }

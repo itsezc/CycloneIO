@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-import Dialog from '../../../helpers/dialog';
+import Dialog from '../../../helpers/dialog'
 
 import CatalogBanner from './components/banner.jsx'
 
