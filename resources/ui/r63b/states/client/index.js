@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 
 import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
-import Notification from '../../components/notification'
+import Notifications from '../../components/notifications'
 
 import Poll from '../../components/poll/poll.jsx'
 
@@ -70,7 +70,7 @@ export default class Client extends Component {
 							message='This is an example message'
 						/> */}
 						
-						<Notification />
+						<Notifications />
 					</div>
 					
 					<Toolbar isClient={false} />
