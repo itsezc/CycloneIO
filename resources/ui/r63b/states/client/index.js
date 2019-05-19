@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 
 import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
-import Wallet from '../../components/wallet'
+import Notifications from '../../components/notifications'
 
 import Poll from '../../components/poll/poll.jsx'
 
@@ -18,7 +18,7 @@ import Chat from '../../components/chat/bubble.jsx'
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'
 
-import './client.styl'
+import './index.styl'
 
 export default class Client extends Component {
 
@@ -69,8 +69,8 @@ export default class Client extends Component {
 							style={2}
 							message='This is an example message'
 						/> */}
-
-						<Wallet />
+						
+						<Notifications />
 					</div>
 					
 					<Toolbar isClient={false} />
