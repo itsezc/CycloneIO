@@ -39,7 +39,7 @@ export default class RoomTile extends RoomSprite {
     addHover() {
 
         var coordinates = this.isometricToCoords(new Phaser.Geom.Point(this.x, this.y))
-        console.log(coordinates)
+        //console.log(coordinates)
         
         //this.hover = new RoomTileHover(this.scene, coordinates.x, coordinates.y, this.z, `${this.texture.key}_hover`, this.width, this.height, this.depth + 1)
     

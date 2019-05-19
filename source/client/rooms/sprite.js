@@ -57,6 +57,8 @@ export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
 
 		var cartesian = this.toCartesian(isometric)
 
+		console.log(cartesian)
+
 		return this.toCoords(cartesian)
 
 	}
