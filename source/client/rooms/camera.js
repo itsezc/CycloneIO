@@ -1,4 +1,9 @@
-export default class RoomCamera extends Phaser.Cameras.Scene2D.Camera {
+import Phaser, { Cameras } from 'phaser'
+
+const { Scene2D } = Cameras
+const { Camera } = Scene2D
+
+export default class RoomCamera extends Camera {
 
 	constructor(cameras, x, y, width, height) {
 

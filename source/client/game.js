@@ -1,20 +1,14 @@
-import Config from '../../config.json'
+// @flow
+import Phaser, { Game, WEBGL, Scale } from 'phaser'
+
+const { ScaleModes } = Scale 
+const { RESIZE } = ScaleModes
+
 import Room from './rooms/room.js'
-
-class Game extends Phaser.Game {
-    
-    constructor(config) {
-
-        super(config)
-        
-        this.socket = io(`${Config.server.host}:${Config.server.port}`)
-
-    }
-}
 
 const config = {
     resolution: window.devicePixelRatio,
-    type: Phaser.WEBGL,
+    type: WEBGL,
     scene: new Room(0), // To change this on the navigator
     disableContextMenu: false,
     render: {
@@ -24,7 +18,7 @@ const config = {
         default: 'arcade'
     },
     scale: {
-        mode: Phaser.Scale.ScaleModes.RESIZE,
+        mode: RESIZE,
         width: window.innerWidth,
         height: window.innerHeight
     }

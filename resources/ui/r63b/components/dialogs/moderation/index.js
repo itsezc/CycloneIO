@@ -17,10 +17,12 @@ export default class Moderation extends Component {
 				<div className='header' id='moderation_header'>
 					<p>Mod Tools</p>
 
-					<svg className='close'>
-						<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,0.25,9.75,9.75'></path>
-						<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,9.75,9.75,0.25'></path>
-					</svg>
+					<div className='close'>
+						<svg>
+							<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,0.25,8,8'></path>
+							<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,8,8,0.25'></path>
+						</svg>
+					</div>
 				</div>
 
 				<div className='content'>

@@ -29,17 +29,20 @@ export default class Client extends Component {
 	}
 
 	componentDidMount() {
-		this.loadJS('//cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser.min.js', function() {
-			return(Phaser !== 'undefined')
-		}, () => {
-			this.loadJS('//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js', function() {
-				return(io !== 'undefined')
-			}, () => {
-				const script = document.createElement('script')
-				script.src = 'http://localhost:8080/client.min.js'
-				document.body.appendChild(script)
-			})
-		})
+		// this.loadJS('//cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser.min.js', function() {
+		// 	return(Phaser !== 'undefined')
+		// }, () => {
+		// 	this.loadJS('//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js', function() {
+		// 		return(io !== 'undefined')
+		// 	}, () => {
+		// 		const script = document.createElement('script')
+		// 		script.src = 'http://localhost:8080/client.min.js'
+		// 		document.body.appendChild(script)
+		// 	})
+		// })
+		const script = document.createElement('script')
+		script.src = 'http://localhost:8080/client.min.js'
+		document.body.appendChild(script)
 	}
 	
 	render() {

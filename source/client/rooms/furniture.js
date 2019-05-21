@@ -1,8 +1,10 @@
-export default class RoomFurniture extends Phaser.GameObjects.Sprite {
+import RoomSprite from './sprite'
+
+export default class RoomFurniture extends RoomSprite {
 
     constructor(scene, x, y, z, texture) {
 
-        super(scene, x, y - z)
+        super(scene, x, y - z, texture)
 
         this.scene = scene
         this.x = x
@@ -25,8 +27,6 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
     }
 
     create() { 
-
-        this.setTexture(this.texture)
 
         this.scene.add.existing(this)
 

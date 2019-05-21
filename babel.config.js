@@ -12,7 +12,8 @@ module.exports = function(api) {
     ['@babel/plugin-proposal-decorators', { legacy: true }],
     '@babel/plugin-proposal-class-properties',
     '@babel/plugin-transform-classes',
-    'transform-react-pug'
+    'transform-react-pug',
+	'transform-flow-comments'
   ]
 
   const ignore = []

@@ -5,8 +5,6 @@ import Path from 'path'
 
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-//console.log(__dirname)
-
 module.exports = (env, argv) => {
   return {
     target: 'web',
@@ -37,6 +35,7 @@ module.exports = (env, argv) => {
     },
 
     devtool: 'source-map',
+	
     module: {
       rules: [{
           test: /\.(js|jsx)$/,
