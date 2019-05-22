@@ -4,29 +4,37 @@ const { combine, colorize, timestamp, printf } = format
 
 const Logger = createLogger({
     format: combine(
-        timestamp(),
+        timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        colorize(),
         printf(info => {
             const { timestamp, level, message, ...args } = info
 
             var levelOutput
 
-            switch (level) {
-                case 'server':
-                    levelOutput = '[🌪 ]'
-                    break
-                case 'database':
-                    levelOutput = '[🗄️ ]'
-                    break
-                case 'apollo':
-                    levelOutput = '[⚛️ ]'
-                    break
-                case 'network':
-                    levelOutput = '[⚙️ ]'
-                    break
-            }
+            // switch (level) {
+            //     case 'server':
+            //         levelOutput = '[🌪 ]'
+            //         break
 
-            const ts = timestamp.slice(0, 19).replace('T', ' ')
-            return `${ts} ${levelOutput} - ${message}`
+            //     case 'database':
+            //         levelOutput = '[🗄️ ]'
+            //         break
+
+            //     case 'apollo':
+            //         levelOutput = '[⚛️ ]'
+            //         break
+
+            //     case 'network':
+            //         levelOutput = '[⚙️ ]'
+            //         break
+
+            //     case 'error':
+            //         levelOutput = '[❌ ]'
+            //         break
+            // }
+
+            //const ts = timestamp.slice(0, 19).replace('T', ' ')
+            return `${timestamp} ${level} - ${message}`
         })
     ),
     level: 'ui',

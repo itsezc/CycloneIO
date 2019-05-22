@@ -22,6 +22,7 @@ export default class RoomTile extends RoomSprite {
 
         super.create()
         
+        this.setPosition(this.isometric.x, this.isometric.y)
         this.setInteractive({ pixelPerfect: true })
 
         this.on('pointerover', () => {

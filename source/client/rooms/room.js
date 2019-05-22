@@ -5,7 +5,7 @@ import SocketIO from 'socket.io-client'
 import Config from '../../../config.json'
 
 import RoomCamera from './camera'
-import RoomTileMap from './tile/map'
+import RoomTileMap from './tiles/map'
 import RoomFurniture from './furniture'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'

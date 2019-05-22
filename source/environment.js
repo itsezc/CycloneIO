@@ -29,7 +29,7 @@ export default class Environment {
 
 		console.log(`Version: ${Chalk.magenta.bold(Config.version)} | License key : ${Chalk.magenta.bold(Config.license)}`)
 		console.log(`Created by ${Chalk.red.bold('EZ-C 💖  Amor')} and ${Chalk.blue.bold('Sapphire')} of ${Chalk.yellow.bold('Habbay')}`)
-		console.log(`Contributors: ${Chalk.bold('Kychloren')}, ${Chalk.bold('Blidnight')} and ${Chalk.bold('LeChris')}`)
+		console.log(`Contributors: ${Chalk.bold('Kychloren')} and ${Chalk.bold('LeChris')}`)
 		console.log(`QA: ${Chalk.hex('#5042F4').bold('Platinum')} and ${Chalk.hex('#4B0082').bold('Layne')}\n`)
 
 		this.init()
