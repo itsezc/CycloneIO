@@ -14,7 +14,7 @@ export default class RoomTileHover extends RoomSprite {
 
         super.create()
 
-        this.setPosition(this.isometric.x - 1, this.isometric.y - 4)
+        this.setPosition(this.x - 1, this.y - 4)
 
     }
 }

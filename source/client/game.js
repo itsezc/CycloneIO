@@ -1,4 +1,3 @@
-// @flow
 import Phaser, { Game, WEBGL, Scale } from 'phaser'
 
 const { ScaleModes } = Scale 
