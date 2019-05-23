@@ -36,26 +36,26 @@ export default class FurnitureDownloader {
 
 		try {
 
-			var URLPath = `${downloadURL}/${this.revision}/${this.className}.swf`
-			var localPath = Path.join(__dirname, downloadDirectory)
-			var localFilePath = Path.join(localPath, this.className.concat('.swf'))
+			// var URLPath = `${downloadURL}/${this.revision}/${this.className}.swf`
+			// var localPath = Path.join(__dirname, downloadDirectory)
+			// var localFilePath = Path.join(localPath, this.className.concat('.swf'))
 
-			await IO.exists(localFilePath, exists => {
+			// await IO.exists(localFilePath, exists => {
 
-				if (exists) {
-					Logger.info(`${Chalk.red(this.className.concat('.swf'))} already exist and it's being ignored`)
+			// 	if (exists) {
+			// 		Logger.info(`${Chalk.red(this.className.concat('.swf'))} already exist and it's being ignored`)
 					
-				} else {
+			// 	} else {
 
-					Download(URLPath, localPath).then(data => {
-						Logger.info(`Downloaded ${Chalk.red(this.className.concat('.swf'))} from ${Chalk.green(URLPath)}`)
+			// 		Download(URLPath, localPath).then(data => {
+			// 			Logger.info(`Downloaded ${Chalk.red(this.className.concat('.swf'))} from ${Chalk.green(URLPath)}`)
 
-					}).catch(error => {
-						Logger.error(error)
-					})
+			// 		}).catch(error => {
+			// 			Logger.error(error)
+			// 		})
 
-				}
-			})
+			// 	}
+			// })
 
 			// this.furnidata = await Parser.parse(Config.furnidataURL)
 
@@ -67,9 +67,5 @@ export default class FurnitureDownloader {
 			Logger.error(error)
 		}
 		
-	}
-
-	downloadXML() {
-
 	}
 }
