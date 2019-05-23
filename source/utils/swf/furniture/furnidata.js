@@ -10,11 +10,11 @@ import Logger from '../../logger'
 
 import Parser from 'fast-xml-parser'
 
-import FurnitureDownloader from './downloader'
+import Furniture from './furniture'
 
-export default class Furnidata {
+export default class FurniData {
 
-	furniData: JSON
+	furniture: Furniture
 
 	constructor() {
 		this.download()
@@ -66,18 +66,18 @@ export default class Furnidata {
 
 		try {
 
-			var furniData = await Parser.parse(data)
+			var furniData = await Parser.parse(data, { 
+				attributeNamePrefix : '', 
+				ignoreAttributes: false, 
+				parseAttributeValue: true 
+			})
 
 			if (furniData !== undefined) {
 
 				furniData.furnidata.roomitemtypes.furnitype.forEach(item => {
-					/*
-						<furnitype id="13" className="shelves_noja">
-							<revision>3535</revision>
-						</furnitype>
-					*/
+					
+					this.furniture = new Furniture(item.revision, item.classname)
 
-					//new FurnitureDownloader(item.revision, item.className)
 				})
 
 				// for (var item in furniData.roomwallitems) {
@@ -91,3 +91,5 @@ export default class Furnidata {
 		}
 	}
 }
+
+let furniData = new FurniData()
