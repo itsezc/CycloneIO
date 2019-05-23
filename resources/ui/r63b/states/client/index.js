@@ -54,11 +54,20 @@ export default class Client extends Component {
 
 					<div className='hotel'>
 
-						<ProgressBar value={50} max={100} />
+						<div className='bonus'>
+							<img className='thumbnail' src='/hotelview/bonus_sack.png' />
+							<div className='offer'>
+								<h2>Bonus Bag 1 every 120 credits!</h2>
+								<ProgressBar value={55} max={100} />
+							</div>
+							<div className='subscribe'>
+								<button className='illumina subscribe button'>Get Credits</button>
+							</div>
+						</div>
 
-						<Poll 
+						{/* <Poll 
 							question='Habbo or Cyclone'
-						/>
+						/> */}
 
 						<Moderation />
 

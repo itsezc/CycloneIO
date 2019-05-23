@@ -1,12 +1,15 @@
 $progressBorderRadius = 4px
 
 .progress
+	// left 40%
+	// margin 20px 0px
+
+	position absolute
 	border 1px solid black
 	border-radius $progressBorderRadius
 	background rgba(225, 225, 225, 1)
 	width 295px
 	max-width 295px
-	position relative
 
 	&:before
 		content attr(data-label)
@@ -20,21 +23,33 @@ $progressBorderRadius = 4px
 		width inherit
 
 progress[value]
-	appearance none
+	apperance none
 	padding 2px
 	height 20px
 	width 100%
+	border-radius 2px
 
 progress[value]::-webkit-progress-bar
 	background-color rgba(88,83,79, 1)
-	border-radius $progressBorderRadius
-
+	
 progress[value]::-webkit-progress-value
 	background-color rgba(80, 177, 191, 1)
+	border-right 1px solid rgba(0, 0, 0, 1)
+	border-left 1px solid rgba(0, 160, 168, 1)
 
 	&:after
-		content ''
-		width 1px
-		height 100%
-		position absolute
-		background-color rgba(0, 0, 0, 1)
+		// content ''
+		// width 1px
+		// height 15px
+		// position absolute
+		// top 0px 
+		// right 0px
+		// background-color rgba(0, 0, 0, 1)
+		content: '';
+		width: 6px;
+		height: 6px;
+		position: absolute;
+		border-radius: 100%;
+		right: 7px;
+		top: 7px;
+		background-color: black;
