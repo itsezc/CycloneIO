@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
+import ProgressBar from '../../helpers/progress/bar.jsx'
+
 import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
+import Explorer from '../../components/explorer/index.jsx'
+
 // import Notifications from '../../components/notifications'
 
 import Poll from '../../components/poll/poll.jsx'
@@ -50,6 +54,8 @@ export default class Client extends Component {
 
 					<div className='hotel'>
 
+						<ProgressBar value={50} max={100} />
+
 						<Poll 
 							question='Habbo or Cyclone'
 						/>
@@ -65,6 +71,8 @@ export default class Client extends Component {
 						/>
 
 						<Wallet />
+
+						{/* <Explorer type='furniture' name='Throne' /> */}
 
 						{/* <Chat
 							name='EZ-C'

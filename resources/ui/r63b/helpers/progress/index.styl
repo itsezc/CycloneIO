@@ -1,0 +1,40 @@
+$progressBorderRadius = 4px
+
+.progress
+	border 1px solid black
+	border-radius $progressBorderRadius
+	background rgba(225, 225, 225, 1)
+	width 295px
+	max-width 295px
+	position relative
+
+	&:before
+		content attr(data-label)
+		font-size 12px
+		font-weight bold
+		position absolute
+		text-align center
+		top 3px
+		left 0
+		right 0
+		width inherit
+
+progress[value]
+	appearance none
+	padding 2px
+	height 20px
+	width 100%
+
+progress[value]::-webkit-progress-bar
+	background-color rgba(88,83,79, 1)
+	border-radius $progressBorderRadius
+
+progress[value]::-webkit-progress-value
+	background-color rgba(80, 177, 191, 1)
+
+	&:after
+		content ''
+		width 1px
+		height 100%
+		position absolute
+		background-color rgba(0, 0, 0, 1)
