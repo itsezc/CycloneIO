@@ -27,7 +27,7 @@ export default class Room {
         socket.join(id)
         socket.room = id
 
-        let model = new RoomModel([[1, 1, 1], [1, 1]])
+        let model = new RoomModel([[1, 1, 1], [0, 1]])
         let room = new Room(0, model, 2, 2, 2, false, [])
 
         /*[
@@ -35,7 +35,7 @@ export default class Room {
             { id: 1, x: 1, y: 1, z: 0, rotation: 0, inventory: false, instance: 1 }
         ]*/
 
-        Environment.instance.server.WebSocket.to(id).emit('newRoom', room)
+        Environment.instance.server.WebSocket.to(id).emit('newRoom', room.model.map)
 
 
         var imager = new FurnitureImager()

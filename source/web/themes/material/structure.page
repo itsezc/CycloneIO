@@ -9,8 +9,6 @@ html(lang='en')
 		script(src='//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js')
 		script(src='//cdn.jsdelivr.net/npm/typewriter-effect@2.5.3/dist/core.js')
 		script(src='//cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
-		script(src='//cdn.jsdelivr.net/npm/phaser@3.17.0/dist/phaser.min.js')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js')
 
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	body

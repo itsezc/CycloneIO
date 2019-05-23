@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { classNames, dragElement } from '../../../utils/functions'
 import '../../../styles/illumina.styl'
 
 export default class Moderation extends Component {
@@ -9,76 +9,38 @@ export default class Moderation extends Component {
 
 	componentDidMount() {
 		dragElement(document.getElementById('moderation'))
-
-		function dragElement(elmnt) {
-		  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-		  if (document.getElementById(elmnt.id + "_header")) {
-		    // if present, the header is where you move the DIV from:
-		    document.getElementById(elmnt.id + "_header").onmousedown = dragMouseDown;
-		  } else {
-		    // otherwise, move the DIV from anywhere inside the DIV:
-		    elmnt.onmousedown = dragMouseDown;
-		  }
-
-		  function dragMouseDown(e) {
-		    e = e || window.event;
-		    e.preventDefault();
-		    // get the mouse cursor position at startup:
-		    pos3 = e.clientX;
-		    pos4 = e.clientY;
-		    document.onmouseup = closeDragElement;
-		    // call a function whenever the cursor moves:
-		    document.onmousemove = elementDrag;
-		  }
-
-		  function elementDrag(e) {
-		    e = e || window.event;
-		    e.preventDefault();
-		    // calculate the new cursor position:
-		    pos1 = pos3 - e.clientX;
-		    pos2 = pos4 - e.clientY;
-		    pos3 = e.clientX;
-		    pos4 = e.clientY;
-		    // set the element's new position:
-		    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-		    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-		  }
-
-		  function closeDragElement() {
-		    // stop moving when mouse button is released:
-		    document.onmouseup = null;
-		    document.onmousemove = null;
-		  }
-		}
 	}
 
 	render() {
 		return(
 			<div className='illumina dialog moderation' id='moderation'>
-				<div className='header'>
+				<div className='header' id='moderation_header'>
 					<p>Mod Tools</p>
 
-					<svg className='close'>
-						<path stroke='#666666' strokeWidth="3" fill="none" d="M0.25,0.25,9.75,9.75"></path>
-						<path stroke='#666666' strokeWidth="3" fill="none" d="M0.25,9.75,9.75,0.25"></path>
-					</svg>
+					<div className='close'>
+						<svg>
+							<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,0.25,8,8'></path>
+							<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,8,8,0.25'></path>
+						</svg>
+					</div>
 				</div>
+
 				<div className='content'>
 					<ul className='options'>
 						<li>
-							<img src='http://habboemotion.com/resources/images/icons/room_3.gif' />
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579665088965771300/modtool_test.png' />
 							<span>Room tool for this Room</span>
 						</li>
 						<li>
-							<img src='https://www.habborator.org/archive/icons/mini/tab_icon_03_community.gif' />	
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579664994380021780/modtool_test.png' />	
 							<span>Chatlog for this Room</span>
 						</li>
 						<li>
-							<img src='http://habboemotion.com/resources/images/icons/welcome.gif' />
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579665181488054302/modtool_test.png' />
 							<span>User info: EZ-C</span>
 						</li>
 						<li>
-							<img src='http://habboemotion.com/resources/images/icons/tab_icon_08_hep.gif' />
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579665505388855309/modtool_test.png' />
 							<span>Ticket Browser</span>
 						</li>
 					</ul>	

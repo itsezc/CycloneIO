@@ -1,6 +1,11 @@
-export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
-	
-	constructor(scene, x, y, z, texture, width, height, depth) {
+import Phaser, { Physics } from 'phaser'
+
+const { Arcade } = Physics
+const { Sprite } = Arcade
+
+export default class RoomSprite extends Sprite {
+
+	constructor(scene, x, y, z, texture, depth) {
 
 		super(scene, x, y - z, texture)
 
@@ -9,23 +14,15 @@ export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
 		this.y = y
 		this.z = z
 		this.texture = texture
-
-		if (width !== undefined) {
-			this.width = width
-		}
-
-		if (height !== undefined) {
-			this.height = height
-		}
-
-		// super(1, 2, 0)
-
+		this.width = 32
+		this.height = 32
 		this.depth = depth
-		this.coordinates = new Phaser.Geom.Point(this.x, this.y - this.z)
+		this.coordinates = { x, y, z }
+
 	}
 
 	create() {
-
+		
 		this.scene.add.existing(this)
 
 		this.cartesian = this.coordsToCartesian(this.coordinates)
@@ -38,26 +35,18 @@ export default class RoomSprite extends Phaser.Physics.Arcade.Sprite {
 	}
 
 	toIsometric(cartesian) {
-		return new Phaser.Geom.Point(cartesian.x - cartesian.y, (cartesian.x + cartesian.y) / 2)
+		return { x: cartesian.x - cartesian.y, y: (cartesian.x + cartesian.y) / 2, z: cartesian.z }
 	}
 
 	toCartesian(isometric) {
-		return new Phaser.Geom.Point((isometric.y * 2 + isometric.x) / 2, (isometric.y * 2 - isometric.x) / 2)
+		return { x: (isometric.y * 2 + isometric.x) / 2, y: (isometric.y * 2 - isometric.x) / 2, z: isometric.z }
 	}
 
 	coordsToCartesian(coordinates){
-		return new Phaser.Geom.Point(coordinates.x * this.width, coordinates.y * this.height)
+		return { x: coordinates.x * this.width, y: coordinates.y * this.height, z: coordinates.z }
 	}
 
 	toCoords(cartesian) {
-		return new Phaser.Geom.Point(Math.floor(cartesian.x / this.width), Math.floor(cartesian.y / this.height))
-	}
-
-	isometricToCoords(isometric) {
-
-		var cartesian = this.toCartesian(isometric)
-
-		return this.toCoords(cartesian)
-
+		return { x: Math.floor(cartesian.x / this.width), y: Math.floor(cartesian.y / this.height), z: cartesian.z }
 	}
 }

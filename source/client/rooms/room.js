@@ -1,24 +1,30 @@
+import Phaser, { Scene } from 'phaser'
+
+import SocketIO from 'socket.io-client'
+
+import Config from '../../../config.json'
+
 import RoomCamera from './camera'
-import RoomTile from './tile/tile.js'
-//import RoomFurniture from './furniture'
+import RoomTileMap from './tiles/map'
+import RoomFurniture from './furniture'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
-export default class Room extends Phaser.Scene {
+export default class Room extends Scene {
+
     constructor(id) {
         super({
             key: 'room'
         })
 
         this.id = id
-
     }
 
     preload() {
         this.load.setPath('web-build/')
 
         //this.add.plugin(PhaserWebWorkers.plugin)
-        this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
+        //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
         this.load.image('tile', 'room/normal_tile.png')
@@ -43,13 +49,13 @@ export default class Room extends Phaser.Scene {
     }
 
     init() {
+        this.socket = SocketIO(`${Config.server.host}:${Config.server.port}`)
         this.camera = new RoomCamera(this.cameras, 0, 0, window.innerWidth, window.innerHeight)
 
         //this.lights.enable()
-    }
+    }	
 
     create() {
-        this.tiles = this.add.group()
         this.furniture = this.add.group()
 
         this.input.on('pointermove', pointer => {
@@ -64,7 +70,7 @@ export default class Room extends Phaser.Scene {
 
         }, this)
 
-        this.game.socket.emit('newRoom', this.id)
+        this.socket.emit('newRoom', this.id)
 
         this.registerRooms()
         this.registerFurniture()
@@ -99,14 +105,14 @@ export default class Room extends Phaser.Scene {
     }
 
     registerRooms() {
-        this.game.socket.on('newRoom', room => {
-            this.generate(room)
+        this.socket.on('newRoom', map => {
+            this.addTileMap(map)
         })
     }
 
     registerFurniture() {
-        this.game.socket.on('newFurniture', furniture => {
-            //this.addFurniture(0, 0, 0, furniture)
+        this.socket.on('newFurniture', furniture => {
+            this.addFurniture(0, 0, 0, furniture)
         })
 
         // Rooms[] => Items[RoomID]
@@ -114,43 +120,13 @@ export default class Room extends Phaser.Scene {
         // forEach (roomFurniture[]) => drawFurniture()
     }
 
-    generate(room) {
-        var map = room.model.map
-
-        for (var x = 0; x < map.length; x++) {
-            
-            for (var y = 0; y < map[x].length; y++) {
-                this.addTile(x, y, 0)
-                // 1 2 3 4 ->
-                // to cartesian -> to isometric 
-                // isometric -> coordinates
-
-            }
-        }
-        // room.model.map.forEach((squares, row) => {
-
-        //     squares.forEach((square, index) => {
-
-        //         var x = row * 32 + index * 32
-        //         var y = (row * 32 - index * 32) / 2
-        //         var z = square[1] * 32 || 0
-        //         var depth = row - index
-
-        //         this.addTile(x, y, z, depth)
-
-        //     })
-        // })
-    }
-
-    addTile(x, y, z) {
-        this.tiles.add(new RoomTile(this, x, y, z, 'tile', 32, 32, 1))
+    addTileMap(map) {
+        this.tileMap = new RoomTileMap(this, map)
     }
 
     addFurniture(x, y, z, texture) {
 
-        var isometricCoordinates = this.cartesianToIsometric(new Phaser.Geom.Point(x * 32, y * 32))
-
-        this.furniture.add(new RoomFurniture(this, isometricCoordinates.x - 1, isometricCoordinates.y - 24, z, texture))
+        this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
 
     }
 
@@ -158,7 +134,7 @@ export default class Room extends Phaser.Scene {
 
         object.on('pointerdown', (pointer) => {
 
-            if (pointer.downTime - this.tapTime < 500) {
+            if (pointer.downTime - this.clickTime < 500) {
 
                 if (pointer.primaryDown) {
                     callback(...args)
@@ -166,7 +142,7 @@ export default class Room extends Phaser.Scene {
                 
             }
 
-            this.tapTime = pointer.downTime
+            this.clickTime = pointer.downTime
             
         })
 

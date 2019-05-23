@@ -1,8 +1,10 @@
-export default class RoomFurniture extends Phaser.GameObjects.Sprite {
+import RoomSprite from './sprite'
+
+export default class RoomFurniture extends RoomSprite {
 
     constructor(scene, x, y, z, texture) {
 
-        super(scene, x, y - z)
+        super(scene, x, y, z, texture, 3)
 
         this.scene = scene
         this.x = x
@@ -26,9 +28,7 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
 
     create() { 
 
-        this.setTexture(this.texture)
-
-        this.scene.add.existing(this)
+        super.create()
 
         this.scene.anims.create({
             key: this.texture.key,
@@ -38,8 +38,9 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
             yoyo: true
         })
 
-        this.setDepth(3)
-        // this.alpha = 0.5
+        //this.alpha = 0.5
+
+        this.setPosition(this.x, this.y - this.height / 2.8)
         this.setInteractive({ pixelPerfect: true })
 
         this.scene.onDoubleClick(this, () => {
@@ -66,12 +67,12 @@ export default class RoomFurniture extends Phaser.GameObjects.Sprite {
     }
 
     rotate() {
-        this.scene.tweens.add({
-            targets: this,
-            y: -6,
-            duration: 100,
-            yoyo: true,
-        })
+        // this.scene.tweens.add({
+        //     targets: this,
+        //     y: -6,
+        //     duration: 100,
+        //     yoyo: true,
+        // })
 
         this.flipX = !this.flipX
     }

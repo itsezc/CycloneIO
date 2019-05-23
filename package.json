@@ -13,7 +13,10 @@
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r63b/webpack.config.babel.js",
     "dev:ui:r63b:cypress": "cypress open",
-    "flow:status": "flow status --quiet"
+    "dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/mobile/webpack.config.babel.js",
+    "swf:utils:furniture": "flow status --quiet && babel-watch source/utils/swf/furniture/converter.js",
+    "flow:status": "flow status --quiet",
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
@@ -46,6 +49,7 @@
     "autoprefixer": "^9.5.1",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-transform-flow-comments": "^6.22.0",
     "babel-plugin-transform-react-pug": "^7.0.0",
     "babel-watch": "^7.0.0",
     "css-loader": "^2.1.1",
@@ -80,7 +84,8 @@
     "bcryptjs": "^2.4.3",
     "chalk": "^2.4.2",
     "cypress": "^3.2.0",
-    "fs": "0.0.1-security",
+    "download": "^7.1.0",
+    "fast-xml-parser": "^3.12.16",
     "graphql": "^14.3.0",
     "hapi": "^18.1.0",
     "hapi-webpack-plugin": "^3.0.0",
@@ -89,11 +94,14 @@
     "npm": "^6.9.0",
     "passport": "^0.4.0",
     "passport-facebook": "^3.0.0",
+    "phaser": "^3.17.0",
     "prisma-client-lib": "^1.31.1",
     "progress": "^2.0.3",
     "react-apollo": "^2.5.5",
+    "react-native": "^0.59.8",
     "readline-sync": "^1.4.9",
     "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
     "winston": "^3.2.1"
   }
 }
