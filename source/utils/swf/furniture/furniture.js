@@ -2,7 +2,7 @@
 import IO from 'fs'
 import Download from 'download'
 
-import Config, { downloadURL, downloadDirectory } from './config.json'
+import Config, { downloadURL } from './config.json'
 import Logger from '../../logger'
 import Chalk from 'chalk'
 
@@ -26,7 +26,7 @@ export default class Furniture {
 		try {
 
 			var URLPath = `${downloadURL}/${this.revision}/${this.className.concat('.swf')}`
-			var localPath = Path.join(__dirname, downloadDirectory)
+			var localPath = Path.join(__dirname, 'out')
 			var localFilePath = Path.join(localPath, this.className.concat('.swf'))
 
 			await IO.exists(localFilePath, exists => {

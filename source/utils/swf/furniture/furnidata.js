@@ -1,7 +1,7 @@
 // @flow
 import IO from 'fs'
 
-import Config, { downloadDirectory, furnidataURL, furnidataName } from './config.json'
+import Config, { furnidataURL, furnidataName } from './config.json'
 
 import Path from 'path'
 import Download from 'download'
@@ -25,13 +25,14 @@ export default class FurniData {
 		try {
 
 			var URLPath = furnidataURL.concat('/', furnidataName)
-			var localPath = Path.join(__dirname, downloadDirectory, furnidataName.concat('.xml'))
+			var localPath = Path.join(__dirname, 'out')
+			var localFilePath = Path.join(localPath, furnidataName.concat('.xml'))
 
-			await IO.exists(localPath, exists => {
+			await IO.exists(localFilePath, exists => {
 
 				if (!exists) {
 
-					Download(URLPath).then((data) => {
+					Download(URLPath, localPath, { encoding: 'utf8' }).then((data) => {
 
 						IO.writeFile(localPath, data, 'utf8', () => {
 							this.parse(data)
@@ -43,7 +44,7 @@ export default class FurniData {
 
 				} else {
 
-					IO.readFile(localPath, 'utf8', (error, data) => {
+					IO.readFile(localFilePath, 'utf8', (error, data) => {
 
 						if(error) {
 							throw error
