@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 
 import Wallet from './components/wallet';
+import Notification from './components/notification';
 
-export default class Notification extends React.Component {
+export default class Notifications extends React.Component {
 
     constructor(props){
         super(props);
@@ -12,6 +13,14 @@ export default class Notification extends React.Component {
         return (
             <div className="notifications">
 				<Wallet />
+
+                <Notification icon="offer">
+                    <b>50 percent off 14 days HC+20c+20d</b>
+                </Notification>
+
+                <Notification icon="hc">
+                    <u>Receive 5 Credits discount when you renew your HC Subscription here!</u>
+                </Notification>
 			</div>
         )
     }

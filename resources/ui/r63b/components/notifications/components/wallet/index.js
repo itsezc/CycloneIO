@@ -25,7 +25,7 @@ export default class Wallet extends Component {
 				</div>
 
 				<span className="club">
-					<i className="icon-hc"></i>
+					<i className="icon icon-hc"></i>
 					<p>Join</p>
 				</span>
 
