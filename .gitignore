@@ -2,11 +2,7 @@ package-lock.json
 node_modules
 .env
 
-source/utils/furniture/output
-
-.vscode
-prod.list*
-packages-microsoft-prod.deb*
+source/utils/swf/furniture/output
 
 config.json
 
@@ -18,4 +14,11 @@ dist
 generated
 web-build/dist
 
+# MacOS 
 .DS_Store
+*.icloud*
+
+# IDE / Code Editors
+.vscode
+prod.list*
+packages-microsoft-prod.deb*

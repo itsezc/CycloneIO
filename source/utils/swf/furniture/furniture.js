@@ -34,6 +34,7 @@ export default class Furniture {
 				if (!exists) {
 
 					Download(URLPath, localPath).then(data => {
+
 						Logger.info(`Downloaded ${Chalk.red(this.className.concat('.swf'))} from ${Chalk.green(URLPath)}`)
 
 					}).catch(error => {
