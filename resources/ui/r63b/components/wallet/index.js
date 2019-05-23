@@ -14,7 +14,7 @@ export default class Wallet extends Component {
 
 	render() {
 		return (
-			<div className="notification wallet">
+			<div className='wallet'>
 
 				<div className="currencies">
 					{this.data.map((data, index) => 

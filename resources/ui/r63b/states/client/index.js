@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 
 import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
-import Notifications from '../../components/notifications'
+// import Notifications from '../../components/notifications'
 
 import Poll from '../../components/poll/poll.jsx'
 
@@ -14,6 +14,8 @@ import Navigator from '../../components/dialogs/navigator'
 import Moderation from '../../components/dialogs/moderation'
 
 import Chat from '../../components/chat/bubble.jsx'
+
+import Wallet from '../../components/wallet'
 
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'
@@ -62,6 +64,8 @@ export default class Client extends Component {
 							author='EZ-C'
 						/>
 
+						<Wallet />
+
 						{/* <Chat
 							name='EZ-C'
 							avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
@@ -70,7 +74,7 @@ export default class Client extends Component {
 							message='This is an example message'
 						/> */}
 						
-						<Notifications />
+						{/* <Notifications /> */}
 					</div>
 					
 					<Toolbar isClient={false} />
