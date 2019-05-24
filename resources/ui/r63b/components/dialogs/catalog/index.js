@@ -141,7 +141,8 @@ export default class Alert extends Component {
 
     render() {
         return (
-            <Dialog id='catalog' className="catalog" draggable={true} closeable={true} title="Catalog">
+            <Dialog id='catalog' className="catalog" draggable={true} closeable={true} title="Catalog"
+                resize={true} axis="y" width="570" height="630" >
 
                 <Tabs
                     selectedTabClassName="active"
