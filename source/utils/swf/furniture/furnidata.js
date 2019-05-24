@@ -7,6 +7,7 @@ import Path from 'path'
 import Download from 'download'
 
 import Logger from '../../logger'
+import { sleep } from '../../sleep'
 
 import Parser from 'fast-xml-parser'
 
@@ -32,11 +33,8 @@ export default class FurniData {
 
 				if (!exists) {
 
-					Download(URLPath, localPath, { encoding: 'utf8' }).then((data) => {
-
-						IO.writeFile(localPath, data, 'utf8', () => {
-							this.parse(data)
-						})
+					Download(URLPath, localPath, { encoding: 'utf8' }).then(data => {
+						this.parse(data)
 
 					}).catch(error => {
 						throw error
@@ -78,6 +76,7 @@ export default class FurniData {
 				furniData.furnidata.roomitemtypes.furnitype.forEach(item => {
 					
 					this.furniture = new Furniture(item.revision, item.classname)
+					// sleep(20000)
 
 				})
 

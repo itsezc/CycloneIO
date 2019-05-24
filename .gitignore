@@ -18,4 +18,11 @@ dist
 generated
 web-build/dist
 
+# MacOS 
 .DS_Store
+*.icloud*
+
+# IDE / Code Editors
+.vscode
+prod.list*
+packages-microsoft-prod.deb*

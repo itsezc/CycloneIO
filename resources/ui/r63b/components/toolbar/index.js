@@ -45,7 +45,7 @@ export default class Toolbar extends Component {
 
                         <span className="user">
                             <i className="notification">3</i>
-                            <img src="https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=0&direction=2&head_direction=2&action=&gesture=&size=m" />
+                            <img src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=0&direction=2&head_direction=2&action=&gesture=&size=m' />
                         </span>
 
                         {this.props.isClient && <span className="icon icon-camera"></span> }
