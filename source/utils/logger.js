@@ -5,7 +5,6 @@ const { combine, colorize, timestamp, printf } = format
 const Logger = createLogger({
     format: combine(
         timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-        colorize(),
         printf(info => {
             const { timestamp, level, message, ...args } = info
 
