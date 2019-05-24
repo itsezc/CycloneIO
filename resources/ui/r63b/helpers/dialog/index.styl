@@ -1,6 +1,7 @@
 .dialog:not(.illumina)
 	z-index 2
-	display: block
+	display: flex
+	flex-direction: column
 	position: fixed
 	font-family: 'Ubuntu'
 	background #E9E9E1
@@ -29,3 +30,17 @@
 
 		&:active
 			cursor grabbing
+	
+	.dialog-body
+		position relative
+		flex 1
+
+		.dialog-resizehandle
+			display block
+			height 19px
+			width 19px
+			position absolute
+			background url('hotelview/dialog/resize_handle.png')
+			bottom 2px
+			right 2px
+			cursor pointer

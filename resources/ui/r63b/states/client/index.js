@@ -72,7 +72,7 @@ export default class Client extends Component {
 
 						<Moderation />
 
-						{/* <Catalog />  */}
+						<Catalog />
 
 						<Alert
 							title='Message from Habbay Hotel'
