@@ -8,10 +8,8 @@ export default class Poll extends Component {
 		this.state = {
 			closed: props.status,
 			voted: false,
-			votes: {
-				negative: 0,
-				positive: 0
-			}
+			negativeVotes: 0,
+			positiveVotes: 0
 		}
 
 		this.castPositiveVote = this.castPositiveVote.bind(this)
@@ -21,18 +19,14 @@ export default class Poll extends Component {
 	castNegativeVote() {
 		this.setState({
 			voted: true,
-			votes: {
-				negative: this.state.votes.negative + 1
-			}
+			negativeVotes: this.state.negativeVotes + 1
 		})
 	}
 
 	castPositiveVote() {
 		this.setState({
 			voted: true,
-			votes: {
-				positive: this.state.votes.positive + 1
-			}
+			positiveVotes: this.state.positiveVotes + 1
 		})
 	}
 
@@ -56,11 +50,11 @@ export default class Poll extends Component {
 				<div className='poll'>
 					<div className='results'>
 						<span className='negative result'>
-							<p>{this.state.votes.negative || '0'}</p>
+							<p>{this.state.negativeVotes || '0'}</p>
 						</span>
 						<h1 className='question'>{this.question}</h1>
 						<span className='positive result'>
-							<p>{this.state.votes.positive || '0'}</p>
+							<p>{this.state.positiveVotes || '0'}</p>
 						</span>
 					</div>
 				</div>
