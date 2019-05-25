@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Loading from './states/loading'
 import Client from './states/client'
+import Room from './states/room'
 
 class App extends Component {
     render() {
@@ -11,6 +12,7 @@ class App extends Component {
             <BrowserRouter>
                 <Switch location={this.props.location}>
                     <Route exact path='/' component={Loading} />
+					<Route exact path='/inroom' component={Room} />
                     <Route exact path='/client' component={Client} />
                     <Route exact path='/hotel' component={Client} />
                 </Switch>

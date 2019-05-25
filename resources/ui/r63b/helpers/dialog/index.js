@@ -58,16 +58,18 @@ export default class Dialog extends Component<Props> {
 
 	mouseStopEvent = () => {
 
-        if(this.state.isResizing){
+        if(this.state.isResizing) {
 
             this.setState({...this.state,
                 isResizing: false
-            });
-        } else if(this.state.isDragging){
+            })
+
+        } else if(this.state.isDragging) {
 
             this.setState({...this.state,
                 isDragging: false
-            });
+            })
+
         }
     }
 
@@ -83,7 +85,8 @@ export default class Dialog extends Component<Props> {
                     top: this.state.style.top + e.movementY,
                     left: this.state.style.left + e.movementX
                 }
-            });
+            })
+
         } else if(this.state.isResizing){
             
             var width, height;
@@ -92,10 +95,10 @@ export default class Dialog extends Component<Props> {
             var constraintY = this.props.axis == 'y' || this.props.axis == 'both';
 
             width = this.state.style.width + e.movementX;
-			if(width < this.minWidth) return;
+			if(width < this.minWidth) return
 
             height = this.state.style.height + e.movementY;
-			if(height < this.minHeight) return;
+			if(height < this.minHeight) return
 			
 
             this.setState({...this.state,
@@ -104,7 +107,7 @@ export default class Dialog extends Component<Props> {
                     width: constraintX ? width : this.state.style.width,
                     height: constraintY ? height : this.state.style.height
                 }
-            });
+            })
         }
     }
 
@@ -120,11 +123,12 @@ export default class Dialog extends Component<Props> {
 
 			<section className={`dialog ${this.props.className || ''}`} id={this.props.id} style={this.state.style}>
 				
-				<div className="dialog-header" id={(this.props.id) ? (this.props.id).concat('_header') : null} onMouseDown={this.handleDragging.bind(this)}>
+				<div className='dialog-header' id={(this.props.id) ? (this.props.id).concat('_header') : null} onMouseDown={this.handleDragging.bind(this)}>
 					<span>{this.props.title}</span>
+					<i className='close'>x</i>
 				</div>
 
-				<div className="dialog-body">
+				<div className='dialog-body'>
 					{this.props.children}
 
 					{this.props.resize &&
@@ -140,6 +144,5 @@ type Props = {
     title: string,
     style: ?string,
 	id: ?int,
-	
 	resize: ?string
 }
