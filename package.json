@@ -13,7 +13,8 @@
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r63b/webpack.config.babel.js",
     "dev:ui:r63b:cypress": "cypress open",
-    "dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/mobile/webpack.config.babel.js",
+	"dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/mobile/webpack.config.babel.js",
+	"dev:ui:r26": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r26/webpack.config.babel.js",
     "swf:utils:furniture": "flow status --quiet && babel-watch source/utils/swf/furniture/furnidata.js",
     "flow:status": "flow status --quiet",
     "flow": "flow"
