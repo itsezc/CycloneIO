@@ -54,7 +54,7 @@ export default class Client extends Component {
 
 					<div className='hotel'>
 
-						<div className='bonus'>
+						{/* <div className='bonus'>
 							<img className='thumbnail' src='/hotelview/bonus_sack.png' />
 							<div className='offer'>
 								<h2>Bonus Bag 1 every 120 credits!</h2>
@@ -63,15 +63,16 @@ export default class Client extends Component {
 							<div className='subscribe'>
 								<button className='illumina subscribe button'>Get Credits</button>
 							</div>
-						</div>
+						</div> */}
 
-						{/* <Poll 
+						<Poll 
 							question='Habbo or Cyclone'
-						/> */}
+							status={false}
+						/>
 
 						<Moderation />
 
-						{/* <Catalog />  */}
+						<Catalog />
 
 						<Alert
 							title='Message from Habbay Hotel'

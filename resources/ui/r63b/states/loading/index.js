@@ -39,7 +39,7 @@ export default class Loading extends Component {
 
    			 	<div className='text'>Please wait while {this.props.hotelName} is loading</div>
 
-   			 	<div className='progress'>
+   			 	<div className='loading-progress'>
    					<div className='bar' style={{width: this.state.percent + '%' }}></div>
    				</div>
 
