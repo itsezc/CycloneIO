@@ -6,6 +6,8 @@ import '../client/index.styl'
 import Wallet from '../../components/wallet'
 import Toolbar from '../../components/toolbar'
 
+import Poll from '../../components/poll/poll.jsx'
+
 export default class Room extends Component {
 	constructor(props) {
 		super(props)
@@ -18,7 +20,9 @@ export default class Room extends Component {
 
 				<div className='room' id='game'></div>
 
-				{/* <Wallet /> */}
+				<Poll question='Me or Me' status={false} />
+
+				<Wallet />
 				<Toolbar isClient={true} />
 			</div>
 		)

@@ -117,26 +117,36 @@ export default class Dialog extends Component<Props> {
 		});
 	}
 
+	close() {
+		this.setState({
+			isShow: false
+		})
+	}
+
 	render() {
+		if(this.state.isShow) {
+			return (
+
+				<section className={`dialog ${this.props.className || ''}`} id={this.props.id} style={this.state.style}>
+					
+					<div className='dialog-header' id={(this.props.id) ? (this.props.id).concat('_header') : null} onMouseDown={this.handleDragging.bind(this)}>
+						<span>{this.props.title}</span>
+						<i className='close' onClick={this.close.bind(this)}>x</i>
+					</div>
+
+					<div className='dialog-body'>
+						{this.props.children}
+
+						{this.props.resize &&
+							<i class="dialog-resizehandle" onMouseDown={this.handleResizing.bind(this)}></i>
+						}
+					</div>
+				</section>
+			)
+		} else {
+			return null
+		}
 		
-		return (
-
-			<section className={`dialog ${this.props.className || ''}`} id={this.props.id} style={this.state.style}>
-				
-				<div className='dialog-header' id={(this.props.id) ? (this.props.id).concat('_header') : null} onMouseDown={this.handleDragging.bind(this)}>
-					<span>{this.props.title}</span>
-					<i className='close'>x</i>
-				</div>
-
-				<div className='dialog-body'>
-					{this.props.children}
-
-					{this.props.resize &&
-						<i class="dialog-resizehandle" onMouseDown={this.handleResizing.bind(this)}></i>
-					}
-				</div>
-			</section>
-		)
 	}
 }
 
