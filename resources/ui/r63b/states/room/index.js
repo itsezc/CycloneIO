@@ -14,10 +14,9 @@ export default class Room extends Component {
 	render() {
 		return(
 			<div className='client'>
-				<Script url='https://cdnjs.cloudflare.com/ajax/libs/phaser/3.17.0/phaser.min.js' />
-				<Script url='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js' />
-				<Script url='/dist/client.min.js' />
+				<Script url='http://localhost:8080/client.min.js' />
 
+				<div className='room' id='game'></div>
 
 				{/* <Wallet /> */}
 				<Toolbar isClient={true} />

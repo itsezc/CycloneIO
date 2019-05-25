@@ -21,7 +21,7 @@ export default class Room extends Scene {
     }
 
     preload() {
-        this.load.setPath('web-build/')
+        this.load.setPath('/')
 
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
@@ -128,7 +128,7 @@ export default class Room extends Scene {
 
         var furnitureLayer = this.add.group()
         
-        this.load.setPath(`web-build/furniture/${texture}/`)
+        this.load.setPath(`furniture/${texture}/`)
         this.load.atlas({ key: texture, textureURL: texture.concat('.png'), atlasURL: texture.concat('.json') })
         this.load.start()
 
@@ -160,13 +160,13 @@ export default class Room extends Scene {
                 //2 part furniture => 64_a_(2/4)_0, 64_b_(2/4)_0 ---> Piece furniture together with { x, y, h, w }
                 //Simple Animatied Furniture => 64_a_2_0, 64_a_2_1
 
-                frames['<THIS ID>'].forEach(frame => {
-                    // a
-                    if('<CURRENT PART>' && '<PREVIOUS PART>'.localeComapre('<CURRENT PART>') == -1) {
-                        totalFrames.push(frame)
-                        //.. render TotalFrames
-                    }
-                })
+                // frames['<THIS ID>'].forEach(frame => {
+                //     // a
+                //     if('<CURRENT PART>' && '<PREVIOUS PART>'.localeComapre('<CURRENT PART>') == -1) {
+                //         totalFrames.push(frame)
+                //         //.. render TotalFrames
+                //     }
+                // })
             })        
 
             console.log(defaultFrame)
