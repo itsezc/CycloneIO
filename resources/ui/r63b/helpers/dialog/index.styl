@@ -31,6 +31,28 @@
 
 		&:active
 			cursor grabbing
+
+		.close
+			float right
+			margin-right 15px
+			cursor pointer
+			height 15px
+			width 15px
+			border-radius 1.5px
+			border 1px solid #AF4537
+			background-color #852D21
+			box-shadow 1px 0px 0px 0px rgba(0, 0, 0, 1),
+						-1px 0px 0px 0px rgba(0, 0, 0, 1),
+						0px -1px 0px 0px rgba(0, 0, 0, 1),
+						0px 2px 0px 0px rgba(0, 0, 0, 1),
+						inset 0px 7px 0px 0px #AF4537
+			line-height 12px
+			font-style normal
+			font-weight 300
+			font-family Arial
+
+			&:hover
+				border 1px solid rgba(255, 255, 255, 1)
 	
 	.dialog-body
 		position relative
@@ -42,6 +64,6 @@
 			width 19px
 			position absolute
 			background url('hotelview/dialog/resize_handle.png')
-			bottom 2px
-			right 2px
+			bottom 5px
+			right 3px
 			cursor pointer

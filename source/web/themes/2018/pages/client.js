@@ -41,7 +41,7 @@ export default class Client extends Component {
 		// 	})
 		// })
 		const script = document.createElement('script')
-		script.src = 'http://localhost:8080/client.min.js'
+		script.src = 'https://localhost:8080/client.min.js'
 		document.body.appendChild(script)
 	}
 	
