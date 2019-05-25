@@ -30,22 +30,22 @@ export default class RoomFurniture extends RoomSprite {
 
         super.create()
 
-        this.scene.anims.create({
-            key: this.texture.key,
-            frames: this.scene.anims.generateFrameNumbers(this.texture.key, { start: 1, end: this.texture.frameTotal }),
-            frameRate: 13,
-            repeat: -1,
-            yoyo: true
-        })
+        // this.scene.anims.create({
+        //     key: this.texture.key,
+        //     frames: this.scene.anims.generateFrameNumbers(this.texture.key, { start: 1, end: this.texture.frameTotal }),
+        //     frameRate: 13,
+        //     repeat: -1,
+        //     yoyo: true
+        // })
 
         //this.alpha = 0.5
 
         this.setPosition(this.x, this.y - this.height / 2.8)
         this.setInteractive({ pixelPerfect: true })
 
-        this.scene.onDoubleClick(this, () => {
-            this.animate()
-        })
+        // this.scene.onDoubleClick(this, () => {
+        //     this.animate()
+        // })
 
         this.on('pointerover', () => {
             this.rotate()

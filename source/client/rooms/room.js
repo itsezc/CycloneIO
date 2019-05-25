@@ -126,7 +126,78 @@ export default class Room extends Scene {
 
     addFurniture(x, y, z, texture) {
 
-        this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
+        var furnitureLayer = this.add.group()
+        
+        this.load.setPath(`web-build/furniture/${texture}/`)
+        this.load.atlas({ key: texture, textureURL: texture.concat('.png'), atlasURL: texture.concat('.json') })
+        this.load.start()
+
+        this.load.once('complete', () => {
+            
+            var furnitureTexture = this.textures.get(texture)
+
+            var frameNames = furnitureTexture.getFrameNames()
+            
+            var frame1 = frameNames[5]
+            var frame2 = frameNames[8]
+
+            var defaultFrame
+            var totalFrames = []
+            
+            frameNames.forEach(name => {
+                if(name.includes('64_a_2_0')) {
+                    // Default Facing Right
+                    defaultFrame = name
+
+                } else if(name.includes('64_a_4_0')) {
+                    // Default Facing Left
+                    defaultFrame = name
+                }
+
+
+                //Static Furni (Like Column) => 64_a_(2/4)_0
+                //4 way Rotational Chair => 64_a_2_0, 64_a_4_0
+                //2 part furniture => 64_a_(2/4)_0, 64_b_(2/4)_0 ---> Piece furniture together with { x, y, h, w }
+                //Simple Animatied Furniture => 64_a_2_0, 64_a_2_1
+
+                frames['<THIS ID>'].forEach(frame => {
+                    // a
+                    if('<CURRENT PART>' && '<PREVIOUS PART>'.localeComapre('<CURRENT PART>') == -1) {
+                        totalFrames.push(frame)
+                        //.. render TotalFrames
+                    }
+                })
+            })        
+
+            console.log(defaultFrame)
+
+            // x = group position
+            // 1st object x = 0 
+            // 2nd object 0 - 10
+            furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame, frame2], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
+            furnitureLayer.setDepth(3, 1) // 
+    
+            // for (var i = 0; i < frames.length; i++)
+            // {
+            //     furnitureLayer.createMultiple({ key: texture, frame: [frames[5], frames[8]] })
+            //     furnitureLayer.setDepth(0, 1)
+            //     // var x = Phaser.Math.Between(50, 200)
+            //     // var y = Phaser.Math.Between(50, 100)
+
+            //     // Get layers from FurniData
+            //     // let validFurni = [8, 5] 
+            //     // console.log(i)
+
+            //    
+
+            //     // if(validFurni.includes(i)) {
+            //     //     this.add.image(0, -35, texture, frames[i]).setDepth(i)
+            //     // }
+            // }
+            //furnitureLayer.createMultiple({ key: texture, frame: [0, 1, 3, 4] })
+            //this.add.sprite(x, y - 100, texture)
+        })
+        //this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
 
     }
 
