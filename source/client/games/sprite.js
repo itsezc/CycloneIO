@@ -5,46 +5,36 @@ import Phaser, { Physics } from 'phaser'
 const { Arcade } = Physics
 const { Sprite } = Arcade
 
-import Room from './room'
-import type { Vector } from '../utils/vector'
+import Room from '../rooms/room'
+import type { Vector } from '../../common/types/vector'
 
 /**
- * RoomSprite class
+ * GameSprite class
  * @extends {Sprite}
  */
-export default class RoomSprite extends Sprite {
+export default class GameSprite extends Sprite {
 
 	scene: Room
-	x: number
-	y: number
-	z: number
+	coordinates: Vector
 	width: number
 	height: number
 	textures: string
 	depth: number
-	coordinates: Vector
 
 	/**
 	 * @param {Room} scene - The room scene
-	 * @param {number} x - The x coordinate of the sprite
-	 * @param {number} y - The y coordinate of the sprite
-	 * @param {number} z - The z coordinate of the sprite
+	 * @param {Vector} coordinates - The coordinates of the sprite
 	 * @param {string} texture - The sprite texture
 	 * @param {number} depth - The sprite depth
 	 */
-	constructor(scene: Room, x: number, y: number, z: number, texture: string, depth: number) {
+	constructor(scene: Room, coordinates: Vector, texture: string, depth: number) {
 
-		super(scene, x, y - z, texture)
+		super(scene, coordinates.x, coordinates.y - coordinates.z, texture)
 
 		this.scene = scene
-		this.x = x
-		this.y = y
-		this.z = z
 		this.texture = texture
-		this.width = 32
-		this.height = 32
 		this.depth = depth
-		this.coordinates = { x, y, z }
+
 	}
 
 	/**
@@ -54,12 +44,9 @@ export default class RoomSprite extends Sprite {
 		
 		this.scene.add.existing(this)
 
-		this.cartesian = this.coordsToCartesian(this.coordinates)
-		this.isometric = this.toIsometric(this.cartesian)
-
-		this.setPosition(this.isometric.x, this.isometric.y)
 		this.setDepth(this.depth)
 		this.setTexture(this.texture)
+
 	}
 
 	/**

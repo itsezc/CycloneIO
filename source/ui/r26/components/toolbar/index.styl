@@ -1,6 +1,6 @@
 .toolbar
 	position absolute 
-	background $toolbarBackground
+	background rgba(82, 80, 81, 1)
 	width 100%
 	line-height 30px
 	
@@ -9,15 +9,29 @@
 		background rgba(0, 0, 0, 1)
 		height 70px
 		max-height 70px
+		color rgba(255, 255, 255, 1)
 
 		.container
-			padding 5px
+			padding 0
 
 		.habbo
-			img 
+			margin 0 
+			padding 0
+			 
+			.avatar 
 				padding 0
 				margin 0
 				width 64px
+				top -10px
+				display inline-block
+				float left
+
+			.username
+				float left
+
+			.rank
+			a
+				color rgba(255, 255, 255, 1)
 
 	&.top
 		top 0px

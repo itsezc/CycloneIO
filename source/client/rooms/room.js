@@ -142,7 +142,7 @@ export default class Room extends Scene {
      */
     registerFurniture(): void {
         this.socket.on('newFurniture', furniture => {
-            this.addFurniture(0, 0, 0, furniture)
+            //this.addFurniture(0, 0, 0, furniture)
         })
 
         // Rooms[] => Items[RoomID]
@@ -152,9 +152,9 @@ export default class Room extends Scene {
 
     /**
      * Adds a new tilemap
-     * @param {number[][] | number[][][]} map - The room map
+     * @param {JSON} map - The room map
      */
-    addTileMap(map: number[][] | number[][][]): void {
+    addTileMap(map: JSON): void {
         this.tileMap = new RoomTileMap(this, map)
     }
 
@@ -179,46 +179,28 @@ export default class Room extends Scene {
             var furnitureTexture = this.textures.get(texture)
 
             var frameNames = furnitureTexture.getFrameNames()
-
-            console.log(frameNames)
             
             var frame1 = frameNames[5]
             var frame2 = frameNames[8]
 
-            var defaultFrame
             var totalFrames = []
             
-            frameNames.forEach(name => {
-                if(name.includes('64_a_2_0')) {
-                    // Default Facing Right
-                    defaultFrame = name
+            var defaultFrame = frameNames.find(name => {
+                var parts = name.split('_')
 
-                } else if(name.includes('64_a_4_0')) {
-                    // Default Facing Left
-                    defaultFrame = name
-                }
+                var resolution = parts[3]
+                var cronological = parts[4]
+                var facing = parts[5]
 
-
-                //Static Furni (Like Column) => 64_a_(2/4)_0
-                //4 way Rotational Chair => 64_a_2_0, 64_a_4_0
-                //2 part furniture => 64_a_(2/4)_0, 64_b_(2/4)_0 ---> Piece furniture together with { x, y, h, w }
-                //Simple Animatied Furniture => 64_a_2_0, 64_a_2_1
-
-                // frames['<THIS ID>'].forEach(frame => {
-                //     // a
-                //     if('<CURRENT PART>' && '<PREVIOUS PART>'.localeComapre('<CURRENT PART>') == -1) {
-                //         totalFrames.push(frame)
-                //         //.. render TotalFrames
-                //     }
-                // })
-            })        
+                return resolution == 64 && cronological === 'a' && facing == 2
+            })   
 
             console.log(defaultFrame)
 
             // x = group position
             // 1st object x = 0 
             // 2nd object 0 - 10
-            furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame, frame2], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
+            furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
             furnitureLayer.setDepth(3, 1) // 
     
             // for (var i = 0; i < frames.length; i++)

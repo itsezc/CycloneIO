@@ -2,9 +2,9 @@
 import Room from './room'
 
 export default class RoomModel {
-    map: Object
+    map: JSON
     
-    constructor(map: Object){
+    constructor(map: JSON){
         this.map = map
     }
 }

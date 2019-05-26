@@ -4,8 +4,10 @@ import Phaser, { Textures } from 'phaser'
 
 const { Texture } = Textures
 
-import RoomSprite from '../sprite'
+import RoomSprite from '../../games/sprite'
 import Room from '../room'
+
+import type { Vector } from '../../../common/types/vector'
 
 import RoomTileHover from './hover'
 
@@ -16,28 +18,22 @@ import RoomTileHover from './hover'
 export default class RoomTile extends RoomSprite {
 
     scene: Room
-    x: number
-    y: number
-    z: number
+    coordinates: Vector
     texture: Texture
     depth: number
     
     /**
      * @param {Room} scene - The room scene
-     * @param {number} x - The x position of the tile
-	 * @param {number} y - The y position of the tile
-     * @param {number} z - The z position of the tile
+     * @param {number} coordinates - The coordinates of the tile
      * @param {string} texture - The tile texture
      * @param {number} depth - The tile depth
      */
-    constructor(scene: Room, x: number, y: number, z: number, texture: Texture, depth: number) {
+    constructor(scene: Room, coordinates: Vector, texture: Texture, depth: number) {
 
-        super(scene, x, y, z, texture, depth)
+        super(scene, coordinates, texture, depth)
 
         this.scene = scene
-        this.x = x
-        this.y = y
-        this.z = z
+        this.coordinates = coordinates
         this.texture = texture
         this.depth = depth
 
@@ -64,14 +60,14 @@ export default class RoomTile extends RoomSprite {
     }
 
     /**
-     * Adds hover tile
+     * Adds a hover tile
      */
     addHover(): void {
         this.hover = new RoomTileHover(this.scene, this.coordinates.x, this.coordinates.y, this.coordinates.z, `${this.texture.key}_hover`, this.depth + 1)
     }
 
     /**
-     * Destroys hover tile
+     * Destroys the hover tile
      */
     destroyHover(): void {
 
