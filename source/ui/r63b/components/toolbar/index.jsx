@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import FriendSlot from './components/friendSlot';
+import FriendSlot from './components/friendSlot/index.jsx';
 
 export default class Toolbar extends Component {
 

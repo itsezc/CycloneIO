@@ -103,7 +103,7 @@ export default class Room extends Scene {
         // this.moodlightPreview.setDepth(4)
 
         // Zoom
-        // this.camera.setZoom(4) // Zoom out (0.5). For render issues disable antialiasing
+        // this.camera.setZoom(0.5) // Zoom out (0.5). For render issues disable antialiasing
 
         // Room Background Color
         // this.camera.backgroundColor.setTo(0,255,255)

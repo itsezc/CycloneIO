@@ -3,12 +3,12 @@ import Script from 'react-load-script'
 
 import '../client/index.styl'
 
-import Wallet from '../../components/wallet'
-import Toolbar from '../../components/toolbar'
+import Wallet from '../../components/wallet/index.jsx'
+import Toolbar from '../../components/toolbar/index.jsx'
 
-import Actions from '../../components/actions'
+import Actions from '../../components/actions/index.jsx'
 
-import Moderation from '../../components/dialogs/moderation'
+import Moderation from '../../components/dialogs/moderation/index.jsx'
 
 import Poll from '../../components/poll/poll.jsx'
 

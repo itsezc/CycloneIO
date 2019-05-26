@@ -52,8 +52,8 @@ export default class Server {
             await this.HTTP.register(Inert)
             await this.HTTP.route(Routes)
 
-            this.WebSocket = await new SocketIO(this.HTTP.listener)
-            await this.WebSocket
+            this.webSocket = await new SocketIO(this.HTTP.listener)
+            await this.webSocket
 
             logger.network('Started Socket.IO listener')
 
@@ -117,7 +117,7 @@ export default class Server {
 
         logger.server(`Server running on port ${Chalk.bold(this.HTTP.info.port)}`)
 
-        this.WebSocket.on('connection', socket => {
+        this.webSocket.on('connection', socket => {
             this.handleConnection(socket)
         })
     }

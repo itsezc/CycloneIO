@@ -3,23 +3,23 @@ import { Redirect } from 'react-router-dom'
 
 import ProgressBar from '../../helpers/progress/bar.jsx'
 
-import Actions from '../../components/actions'
-import Toolbar from '../../components/toolbar'
+import Actions from '../../components/actions/index.jsx'
+import Toolbar from '../../components/toolbar/index.jsx'
 import Explorer from '../../components/explorer/index.jsx'
 
 // import Notifications from '../../components/notifications'
 
 import Poll from '../../components/poll/poll.jsx'
 
-import Alert from '../../components/dialogs/alert'
-import Catalog from '../../components/dialogs/catalog'
-import Navigator from '../../components/dialogs/navigator'
+import Alert from '../../components/dialogs/alert/index.jsx'
+import Catalog from '../../components/dialogs/catalog/index.jsx'
+import Navigator from '../../components/dialogs/navigator/index.jsx'
 
-import Moderation from '../../components/dialogs/moderation'
+import Moderation from '../../components/dialogs/moderation/index.jsx'
 
 import Chat from '../../components/chat/bubble.jsx'
 
-import Wallet from '../../components/wallet'
+import Wallet from '../../components/wallet/index.jsx'
 
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'

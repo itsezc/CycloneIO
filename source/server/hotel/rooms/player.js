@@ -68,7 +68,7 @@ export default class RoomPlayer extends RoomEntity {
         // 	delete RoomPlayer.list[socket.room][socket.id]
         // }
 
-        Environment.instance.server.WebSocket.to(room).emit('removePlayer', id)
+        Environment.instance.server.webSocket.to(room).emit('removePlayer', id)
 
         Logger.network(`Player ${id} disconnected`)
     }

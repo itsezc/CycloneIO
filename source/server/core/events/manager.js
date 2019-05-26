@@ -12,7 +12,7 @@ export default class EventManager {
     socket: SocketIO
 
     /**
-     * @param {socketIO} socket - The socket connection
+     * @param {SocketIO} socket - The socket connection
      */
     constructor(socket: SocketIO) {
         this.socket = socket

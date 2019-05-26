@@ -2,20 +2,20 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Actions from './components/actions'
-import Toolbar from './components/toolbar'
-import Wallet from './components/wallet'
+import Actions from './components/actions.jsx'
+import Toolbar from './components/toolbar.jsx'
+import Wallet from './components/wallet.jsx'
 
-import Alert from './components/dialogs/alert'
-import Catalog from './components/dialogs/catalog'
-import Moderation from './components/dialogs/moderation'
+import Alert from './components/dialogs/alert.jsx'
+import Catalog from './components/dialogs/catalog.jsx'
+import Moderation from './components/dialogs/moderation.jsx'
 
-import Navigator from './components/dialogs/navigator'
+import Navigator from './components/dialogs/navigator.jsx'
 
 import Chat from './components/chat/bubble.jsx'
 
-import Loading from './states/loading'
-import Hotel from './states/hotel'
+import Loading from './states/loading.jsx'
+import Hotel from './states/hotel.jsx'
 
 export default class App extends Component {
 

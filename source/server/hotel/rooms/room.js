@@ -62,13 +62,13 @@ export default class Room {
             { id: 1, x: 1, y: 1, z: 0, rotation: 0, inventory: false, instance: 1 }
         ]*/
 
-        Environment.instance.server.WebSocket.to(id).emit('newRoom', model.map)
+        Environment.instance.server.webSocket.to(id).emit('newRoom', model.map)
 
         var imager = new FurnitureImager()
 
         imager.getFurniture(3081).then((data => {
             let furniture = new Furniture(0, data.name, data.classname, 'description', 'floor', 1, 1, 0, true, true, false, false, false)
-            Environment.instance.server.WebSocket.to(id).emit('newFurniture', furniture.spriteName)
+            Environment.instance.server.webSocket.to(id).emit('newFurniture', furniture.spriteName)
             console.log(furniture)
         }))
     }

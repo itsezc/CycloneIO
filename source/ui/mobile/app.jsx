@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Loading from './states/loading'
-import Client from './states/client'
+import Loading from './states/loading.jsx'
+import Client from './states/client.jsx'
 
 class App extends Component {
     render() {

@@ -38,6 +38,7 @@ export default class Dialog extends Component<Props> {
         if ((this.state.isDragging && !state.isDragging)  || (this.state.isResizing && !state.isResizing)) {
             document.addEventListener('mousemove', this.handleMouse)
             document.addEventListener('mouseup', this.mouseStopEvent)
+            
         } else if (!this.state.isDragging && state.isDragging) {
             document.removeEventListener('mousemove', this.handleMouse)
             document.removeEventListener('mouseup', this.mouseStopEvent)
@@ -47,13 +48,13 @@ export default class Dialog extends Component<Props> {
 	handleDragging = () => {
         this.setState({
           isDragging: true
-        });
+        })
     }
 
 	handleResizing = () => {
         this.setState({
             isResizing: true
-        });
+        })
     }
 
 	mouseStopEvent = () => {
