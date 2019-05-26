@@ -28,7 +28,7 @@ export default class Server {
 
     config: JSON
     HTTP: Hapi
-    WebSocket: SocketIO
+    webSocket: SocketIO
     eventManager: EventManager
 
     /**
@@ -128,6 +128,7 @@ export default class Server {
      */
     async handleConnection(socket: SocketIO): Promise<void> {
         logger.server(`Player ${socket.id} connected`)
+
         this.eventManager = await new EventManager(socket)
         await this.eventManager
     }
@@ -144,7 +145,7 @@ export default class Server {
                 throw error
 			}
 
-            this.WebSocket.emit('shutdown')
+            this.webSocket.emit('shutdown')
 
             await this.HTTP.stop({
                 timeout: 100000

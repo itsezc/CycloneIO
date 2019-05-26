@@ -179,6 +179,8 @@ export default class Room extends Scene {
             var furnitureTexture = this.textures.get(texture)
 
             var frameNames = furnitureTexture.getFrameNames()
+
+            console.log(frameNames)
             
             var frame1 = frameNames[5]
             var frame2 = frameNames[8]

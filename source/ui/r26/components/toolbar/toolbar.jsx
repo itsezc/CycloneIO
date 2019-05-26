@@ -10,7 +10,12 @@ export default class Toolbar extends Component {
 	render() {
 		return (
 			<div className='toolbar bottom'>
-				<ChatBox />
+				<div className='container'>
+					<div className='habbo'>
+						<img src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=3&action=&gesture=&size=l' />
+					</div>
+				</div>
+				{/* <ChatBox /> */}
 			</div>
 		)
 	}

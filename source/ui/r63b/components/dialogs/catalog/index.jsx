@@ -14,7 +14,7 @@ export default class Alert extends Component {
         super(props)
 
         this.assets = {
-            url: 'http://localhost:8082/catalogue/',
+            url: 'http://localhost:8080/catalogue/',
             icons: {
                 directory: 'icons',
                 format: 'png'

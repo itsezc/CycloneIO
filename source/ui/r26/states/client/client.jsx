@@ -11,8 +11,8 @@ export default class Client extends Component {
 		return(
 			<div className='client'>
 				<Header />
-				This da client
-				<Toolbar />
+				<div className='hotel'></div>
+				<Toolbar style='hotel' />
 			</div>
 		)
 	}

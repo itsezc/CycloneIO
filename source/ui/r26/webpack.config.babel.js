@@ -22,8 +22,7 @@ module.exports = (env, argv) => {
         devServer: {
             compress: true,
 			historyApiFallback: true,
-			contentBase: './web-build',
-			port: 8082
+			contentBase: './web-gallery'
 		},
 		
         module: {
@@ -57,7 +56,7 @@ module.exports = (env, argv) => {
                     ]
                 },
 				{
-	                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+	                test: /\.(woff(2)?|ttf|eot)$/,
 	                use: [
 						'file-loader'
 					]
