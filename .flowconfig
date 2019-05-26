@@ -1,10 +1,10 @@
 [ignore]
 .*/node_modules/bcrypt/*
-.*/resources/mobile/node_modules/*
+.*/packages/mobile/node_modules/*
 .*/dist/*
 
 [include]
-.*/source/client/*
+.*/packages/client/*
 
 [libs]
 
