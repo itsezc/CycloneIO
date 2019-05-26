@@ -30,7 +30,7 @@ module.exports = (env, argv) => {
     },
 
     output: {
-      path: Path.join(__dirname, './web-build/dist'),
+      path: Path.join(__dirname, './web-gallery/dist'),
       filename: '[name].min.js'
     },
 

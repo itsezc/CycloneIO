@@ -6,18 +6,19 @@
   "scripts": {
     "build": "npm run server:build && npm run build:resources && cp source/network/constants.json dist/network/",
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",
-    "build:dev": "flow status --quiet && babel-watch --watch source source/environment.js --exclude 'source/web' --exclude 'source/client'",
     "build:resources": "webpack --mode=production",
-    "dev:resources": "webpack-dev-server --host 0.0.0.0",
     "desktop": "electron ./resources/desktop/index.js",
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
-    "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r63b/webpack.config.babel.js",
     "dev:ui:r63b:cypress": "cypress open",
-	"dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/mobile/webpack.config.babel.js",
-	"dev:ui:r26": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r26/webpack.config.babel.js",
+    "dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/mobile/webpack.config.babel.js",
+    "dev:ui:r26": "webpack-dev-server --host 0.0.0.0 --open --config ./resources/ui/r26/webpack.config.babel.js",
     "swf:utils:furniture": "flow status --quiet && babel-watch source/utils/swf/furniture/furnidata.js",
     "flow:status": "flow status --quiet",
-    "flow": "flow"
+	"flow": "flow",
+	
+	"dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r63b/webpack.config.babel.js",
+	"dev:server": "npm run flow:status && babel-watch --watch source/server source/server/environment.js",
+	"dev:resources": "webpack-dev-server --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
@@ -63,6 +64,7 @@
     "html-webpack-plugin": "^3.2.0",
     "inert": "^5.1.2",
     "jest": "^24.7.1",
+    "lerna": "^3.13.1",
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.2",
     "postcss-loader": "^3.0.0",

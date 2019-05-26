@@ -1,4 +1,8 @@
-import Phaser, { Scene } from 'phaser'
+// @flow
+
+import Phaser, { Scene, GameObjects } from 'phaser'
+
+const { GameObject } = GameObjects
 
 import SocketIO from 'socket.io-client'
 
@@ -10,18 +14,29 @@ import RoomFurniture from './furniture'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
+/**
+ * Room class
+ * @extends {Scene}
+ */
 export default class Room extends Scene {
 
-    constructor(id) {
-        super({
-            key: 'room'
-        })
+    id: number
+
+    /**
+     * @param {number} id - The room id
+     */
+    constructor(id: number): void {
+
+        super({ key: 'room' })
 
         this.id = id
+
     }
 
+    /**
+     * Runs once, loads up assets like images and audio
+     */
     preload() {
-        this.load.setPath('/')
 
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
@@ -33,7 +48,7 @@ export default class Room extends Scene {
         this.load.image('tile_border', 'room/normal_tile_border.png')
 
         this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
-        this.load.svg('tile_hover', 'room/tile_hover.svg')
+        this.load.image('tile_hover', 'room/tile_hover.png')
         this.load.image('wall_right', 'room/wall_right.png')
         this.load.image('wall_left', 'room/wall_left.png')
         this.load.image('wall_right', 'room/wall_right.png')
@@ -48,14 +63,20 @@ export default class Room extends Scene {
         this.load.audio('respect', 'audio/respect.mp3')
     }
 
-    init() {
+    /**
+     * Runs once, when the scene starts
+     */
+    init() : void {
         this.socket = SocketIO(`${Config.server.host}:${Config.server.port}`)
         this.camera = new RoomCamera(this.cameras, 0, 0, window.innerWidth, window.innerHeight)
 
-        //this.lights.enable()
+        this.lights.enable()
     }	
 
-    create() {
+    /**
+     * Runs once, after all assets in preload are loaded
+     */
+    create() : void {
         this.furniture = this.add.group()
 
         this.input.on('pointermove', pointer => {
@@ -100,17 +121,26 @@ export default class Room extends Scene {
         // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
     }
 
-    update() {
+    /**
+     * Runs once per frame for the duration of the scene
+     */
+    update(): void {
         // this.camera3d.transformChildren(this.transform);
     }
 
-    registerRooms() {
+    /**
+     * Registers rooms events
+     */
+    registerRooms(): void {
         this.socket.on('newRoom', map => {
             this.addTileMap(map)
         })
     }
 
-    registerFurniture() {
+    /**
+     * Registers furniture events
+     */
+    registerFurniture(): void {
         this.socket.on('newFurniture', furniture => {
             this.addFurniture(0, 0, 0, furniture)
         })
@@ -120,12 +150,24 @@ export default class Room extends Scene {
         // forEach (roomFurniture[]) => drawFurniture()
     }
 
-    addTileMap(map) {
+    /**
+     * Adds a new tilemap
+     * @param {number[][] | number[][][]} map - The room map
+     */
+    addTileMap(map: number[][] | number[][][]): void {
         this.tileMap = new RoomTileMap(this, map)
     }
 
-    addFurniture(x, y, z, texture) {
+    /**
+     * Adds a new furniture
+     * @param {number} x - The x coordinate of the furniture
+     * @param {number} y - The y coordinate of the furniture
+     * @param {number} z - The z coordinate of the furniture
+     * @param {string} texture - The furniture texture
+     */
+    addFurniture(x: number, y: number, z: number, texture: string): void {
 
+        // Testing
         var furnitureLayer = this.add.group()
         
         this.load.setPath(`furniture/${texture}/`)
@@ -198,24 +240,25 @@ export default class Room extends Scene {
             //this.add.sprite(x, y - 100, texture)
         })
         //this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
-
     }
 
-    onDoubleClick(object, callback, ...args) {
+    /**
+     * The double click event
+     * @param {GameObject} object - The object to bind to
+     * @param {function} callback - The callback function
+     * @param {any} args - The extra arguments
+     */
+    onDoubleClick(object: GameObject, callback: function, ...args: any): any {
 
         object.on('pointerdown', (pointer) => {
 
             if (pointer.downTime - this.clickTime < 500) {
-
                 if (pointer.primaryDown) {
                     callback(...args)
                 }
-                
             }
 
             this.clickTime = pointer.downTime
-            
         })
-
     }
 }

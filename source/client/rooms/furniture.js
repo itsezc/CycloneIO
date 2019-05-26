@@ -1,8 +1,28 @@
-import RoomSprite from './sprite'
+// @flow
 
+import RoomSprite from './sprite'
+import Room from './room'
+
+/**
+ * RoomFurniture Class
+ * @extends {RoomSprite}
+ */
 export default class RoomFurniture extends RoomSprite {
 
-    constructor(scene, x, y, z, texture) {
+    scene: Room
+    x: number
+    y: number
+    z: number
+    texture: string
+
+    /**
+     * @param {Room} scene - The room scene
+     * @param {number} x - The x coordinate of the furniture 
+     * @param {number} y - The y coordinate of the furniture
+     * @param {number} z - The z coordinate of the furniture
+     * @param {string} texture - The furniture texture
+     */
+    constructor(scene: Room, x: number, y: number, z: number, texture: string): void {
 
         super(scene, x, y, z, texture, 3)
 
@@ -13,10 +33,12 @@ export default class RoomFurniture extends RoomSprite {
         this.texture = texture
 
         this.preload()
-
     }
 
-    preload() {
+    /**
+     * Preloads the furniture
+     */
+    preload(): void {
         this.scene.load.setPath(`web-build/furniture/${this.texture}/`)
         this.scene.load.atlas(this.texture, `${this.texture}.png`, `${this.texture}.json`)
         this.scene.load.start()
@@ -26,7 +48,10 @@ export default class RoomFurniture extends RoomSprite {
         })
     }
 
-    create() { 
+    /**
+     * Creates the furniture
+     */
+    create(): void { 
 
         super.create()
 
@@ -50,23 +75,27 @@ export default class RoomFurniture extends RoomSprite {
         this.on('pointerover', () => {
             this.rotate()
         })
-
     }
 
-    animate() {
+    /**
+     * Animates the furniture
+     */
+    animate(): void {
 
         if (!this.anims.isPlaying) {
-            this.anims.play(this.texture.key) 
+            this.anims.play(this.texture) 
         }
 
         else {
-            this.anims.remove(this.texture.key)
+            this.anims.remove(this.texture)
             this.setFrame(0)
         }
-
     }
 
-    rotate() {
+    /** 
+     * Rotates the furniture 
+     */
+    rotate(): void {
         // this.scene.tweens.add({
         //     targets: this,
         //     y: -6,
