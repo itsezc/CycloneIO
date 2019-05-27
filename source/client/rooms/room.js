@@ -1,8 +1,9 @@
 // @flow
 
-import Phaser, { Scene, GameObjects } from 'phaser'
+import Phaser, { Scene, GameObjects, Textures } from 'phaser'
 
 const { GameObject } = GameObjects
+const { Texture } = Textures
 
 import SocketIO from 'socket.io-client'
 
@@ -11,6 +12,10 @@ import Config from '../../../config.json'
 import RoomCamera from './camera'
 import RoomTileMap from './tiles/map'
 import RoomFurniture from './furniture'
+
+import RoomItem from './item'
+
+import type { Vector } from '../../common/types/rooms/vector'
 
 //import '../../../web-build/phaser/plugins/webworkers.min.js'
 
@@ -68,33 +73,52 @@ export default class Room extends Scene {
      */
     init() : void {
         this.socket = SocketIO(`${Config.server.host}:${Config.server.port}`)
-        this.camera = new RoomCamera(this.cameras, 0, 0, window.innerWidth, window.innerHeight)
+        this.camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
-        this.lights.enable()
+        // this.lights.enable()
     }	
 
     /**
      * Runs once, after all assets in preload are loaded
      */
-    create() : void {
-        this.furniture = this.add.group()
+    create(): void {
+
+        this.camera.create()
 
         this.input.on('pointermove', pointer => {
 
             if (pointer.primaryDown) {
                 this.camera.scroll(pointer)
-            }
 
-            else {
+            } else {
                 this.camera.isScrolling = false
             }
 
         }, this)
 
+        this.scale.on('resize', gameSize => {
+
+            var width = gameSize.width
+            var height = gameSize.height
+
+            this.cameras.resize(width, height)
+
+        }, this)
+
         this.socket.emit('newRoom', this.id)
 
-        this.registerRooms()
-        this.registerFurniture()
+        this.socket.on('newRoom', map => {
+            this.addTileMap(map)
+        })
+
+        this.socket.on('newItem', item => {
+            this.addItem({ x: 0, y: 0, z: 0 }, item)
+        })
+
+        // this.socket.emit('newRoom', this.id)
+
+        // this.registerRooms()
+        // this.registerFurniture()
         
         // this.moodlightPreview = this.add.graphics()
         // this.moodlightPreview.fillStyle(0x1844bd, 1)
@@ -106,13 +130,13 @@ export default class Room extends Scene {
         // this.camera.setZoom(0.5) // Zoom out (0.5). For render issues disable antialiasing
 
         // Room Background Color
-        // this.camera.backgroundColor.setTo(0,255,255)
+        //this.camera.backgroundColor.setTo(0,255,255)
 
         // Camera  Shake
-        // this.camera.shake(2000)
+        //this.camera.shake(2000)
 
         // Room up side down
-        // this.camera.setAngle(180)
+        //this.camera.setAngle(180)
 
         // this.soundSample = this.sound.add('credits')
         // this.soundSample.play()
@@ -125,106 +149,91 @@ export default class Room extends Scene {
      * Runs once per frame for the duration of the scene
      */
     update(): void {
+
         // this.camera3d.transformChildren(this.transform);
     }
 
     /**
-     * Registers rooms events
-     */
-    registerRooms(): void {
-        this.socket.on('newRoom', map => {
-            this.addTileMap(map)
-        })
-    }
-
-    /**
-     * Registers furniture events
-     */
-    registerFurniture(): void {
-        this.socket.on('newFurniture', furniture => {
-            //this.addFurniture(0, 0, 0, furniture)
-        })
-
-        // Rooms[] => Items[RoomID]
-        // roomFurniture[]
-        // forEach (roomFurniture[]) => drawFurniture()
-    }
-
-    /**
      * Adds a new tilemap
-     * @param {JSON} map - The room map
+     * @param {Object} map - The room map
      */
-    addTileMap(map: JSON): void {
+    addTileMap(map: Object): void {
         this.tileMap = new RoomTileMap(this, map)
+        this.tileMap.create('tile')
     }
 
-    /**
-     * Adds a new furniture
-     * @param {number} x - The x coordinate of the furniture
-     * @param {number} y - The y coordinate of the furniture
-     * @param {number} z - The z coordinate of the furniture
-     * @param {string} texture - The furniture texture
-     */
-    addFurniture(x: number, y: number, z: number, texture: string): void {
+    addItem(coordinates: Vector, texture: Texture) {
+        this.item = new RoomItem(this, 1, texture, 1, 1, coordinates, 0, 0)
+        this.item.load()
+    }
 
-        // Testing
-        var furnitureLayer = this.add.group()
+    // /**
+    //  * Adds a new furniture
+    //  * @param {number} x - The x coordinate of the furniture
+    //  * @param {number} y - The y coordinate of the furniture
+    //  * @param {number} z - The z coordinate of the furniture
+    //  * @param {string} texture - The furniture texture
+    //  */
+    // addFurniture(x: number, y: number, z: number, texture: string): void {
+
+    //     // Testing
+    //     // var furnitureLayer = this.add.group()
         
-        this.load.setPath(`furniture/${texture}/`)
-        this.load.atlas({ key: texture, textureURL: texture.concat('.png'), atlasURL: texture.concat('.json') })
-        this.load.start()
+    //     // this.load.setPath(`furniture/${texture}/`)
+    //     // this.load.atlas({ key: texture, textureURL: texture.concat('.png'), atlasURL: texture.concat('.json') })
+    //     // this.load.start()
 
-        this.load.once('complete', () => {
+    //     // this.load.once('complete', () => {
             
-            var furnitureTexture = this.textures.get(texture)
+    //     //     var furnitureTexture = this.textures.get(texture)
 
-            var frameNames = furnitureTexture.getFrameNames()
+    //     //     var frameNames = furnitureTexture.getFrameNames()
             
-            var frame1 = frameNames[5]
-            var frame2 = frameNames[8]
+    //     //     var frame1 = frameNames[5]
+    //     //     var frame2 = frameNames[8]
 
-            var totalFrames = []
+    //     //     var totalFrames = []
             
-            var defaultFrame = frameNames.find(name => {
-                var parts = name.split('_')
+    //     //     var defaultFrame = frameNames.find(name => {
+    //     //         var parts = name.split('_')
 
-                var resolution = parts[3]
-                var cronological = parts[4]
-                var facing = parts[5]
+    //     //         var resolution = parts[3]
+    //     //         var cronological = parts[4]
+    //     //         var facing = parts[5]
 
-                return resolution == 64 && cronological === 'a' && facing == 2
-            })   
+    //     //         return resolution == 64 && cronological === 'a' && facing == 2
+    //     //     })   
 
-            console.log(defaultFrame)
+    //     //     console.log(defaultFrame)
 
-            // x = group position
-            // 1st object x = 0 
-            // 2nd object 0 - 10
-            furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
-            furnitureLayer.setDepth(3, 1) // 
+    //     //     // x = group position
+    //     //     // 1st object x = 0 
+    //     //     // 2nd object 0 - 10
+    //     //     furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
+    //     //     furnitureLayer.setDepth(3, 1) // 
     
-            // for (var i = 0; i < frames.length; i++)
-            // {
-            //     furnitureLayer.createMultiple({ key: texture, frame: [frames[5], frames[8]] })
-            //     furnitureLayer.setDepth(0, 1)
-            //     // var x = Phaser.Math.Between(50, 200)
-            //     // var y = Phaser.Math.Between(50, 100)
+    //     //     // for (var i = 0; i < frames.length; i++)
+    //     //     // {
+    //     //     //     furnitureLayer.createMultiple({ key: texture, frame: [frames[5], frames[8]] })
+    //     //     //     furnitureLayer.setDepth(0, 1)
+    //     //     //     // var x = Phaser.Math.Between(50, 200)
+    //     //     //     // var y = Phaser.Math.Between(50, 100)
 
-            //     // Get layers from FurniData
-            //     // let validFurni = [8, 5] 
-            //     // console.log(i)
+    //     //     //     // Get layers from FurniData
+    //     //     //     // let validFurni = [8, 5] 
+    //     //     //     // console.log(i)
 
-            //    
+    //     //     //    
 
-            //     // if(validFurni.includes(i)) {
-            //     //     this.add.image(0, -35, texture, frames[i]).setDepth(i)
-            //     // }
-            // }
-            //furnitureLayer.createMultiple({ key: texture, frame: [0, 1, 3, 4] })
-            //this.add.sprite(x, y - 100, texture)
-        })
-        //this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
-    }
+    //     //     //     // if(validFurni.includes(i)) {
+    //     //     //     //     this.add.image(0, -35, texture, frames[i]).setDepth(i)
+    //     //     //     // }
+    //     //     // }
+    //     //     //furnitureLayer		console.log(this.map).createMultiple({ key: texture, frame: [0, 1, 3, 4] })
+    //     //     //this.add.sprite(x, y - 100, texture)
+    //     // })
+    //     //this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
+    // }
 
     /**
      * The double click event

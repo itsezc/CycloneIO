@@ -4,40 +4,39 @@ import Phaser, { Textures } from 'phaser'
 
 const { Texture } = Textures
 
-import RoomSprite from '../../games/sprite'
+import GameSprite from '../../games/sprite'
+
 import Room from '../room'
 
-import type { Vector } from '../../../common/types/vector'
+import type { Vector } from '../../../common/types/rooms/vector'
 
 import RoomTileHover from './hover'
+
+import RoomModelDepth from '../../../common/enums/rooms/models/depth'
 
 /**
  * RoomTile class
  * @extends {RoomSprite}
  */
-export default class RoomTile extends RoomSprite {
+export default class RoomTile extends GameSprite {
 
     scene: Room
     coordinates: Vector
     texture: Texture
-    depth: number
     
     /**
      * @param {Room} scene - The room scene
-     * @param {number} coordinates - The coordinates of the tile
-     * @param {string} texture - The tile texture
-     * @param {number} depth - The tile depth
+     * @param {Vector} coordinates - The coordinates of the tile
+     * @param {Texture} texture - The tile texture
      */
-    constructor(scene: Room, coordinates: Vector, texture: Texture, depth: number) {
+    constructor(scene: Room, coordinates: Vector, texture: Texture) {
 
-        super(scene, coordinates, texture, depth)
+        super(scene, coordinates, texture, RoomModelDepth.TILE)
 
         this.scene = scene
         this.coordinates = coordinates
         this.texture = texture
-        this.depth = depth
 
-        this.create()
     }
 
     /**
@@ -57,22 +56,31 @@ export default class RoomTile extends RoomSprite {
         this.on('pointerout', () => {
             this.destroyHover()
         })
+
     }
 
     /**
      * Adds a hover tile
      */
     addHover(): void {
-        this.hover = new RoomTileHover(this.scene, this.coordinates.x, this.coordinates.y, this.coordinates.z, `${this.texture.key}_hover`, this.depth + 1)
+        this.hover = new RoomTileHover(this.scene, this.coordinates, this.texture.key.concat('_hover'))
+        this.hover.create()
     }
 
     /**
      * Destroys the hover tile
      */
     destroyHover(): void {
-
         if (this.hover !== undefined) {
             this.hover.destroy()
         }
+    }
+
+    static get width() {
+        return 32
+    }
+
+    static get height() {
+        return 32
     }
 }

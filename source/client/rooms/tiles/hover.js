@@ -1,25 +1,40 @@
-import RoomSprite from '../sprite'
+// @flow
 
+import Phaser, { Textures } from 'phaser'
+
+const { Texture } = Textures
+
+import GameSprite from '../../games/sprite'
 import Room from '../room'
+
+import type { Vector } from '../../../common/types/rooms/vector'
+
+import RoomModelDepth from '../../../common/enums/rooms/models/depth'
+
 
 /**
  * RoomTileHover class
- * @extends RoomSprite
+ * @extends GameSprite
  */
-export default class RoomTileHover extends RoomSprite {
+export default class RoomTileHover extends GameSprite {
+
+    +scene: Room
+    +coordinates: Vector
+    +texture: Texture
 
     /**
      * @param {Room} scene
-     * @param {number} x - The x position of the hover tile
-	 * @param {number} y - The y position of the hover tile
-     * @param {number} z - The z position of the hover tile
-     * @param {string} texture - The hover tile texture
-     * @param {number} depth - The hover tile depth
+     * @param {Vector} cordinates - The coordinates of the hover tile
+     * @param {Texture} texture - The hover tile texture
      */
-    constructor(scene: Room, x: number, y: number, z: number, texture: string, depth: number) {
+    constructor(scene: Room, coordinates: Vector, texture: Texture) {
 
-        super(scene, x, y, z, texture, depth)
-        this.create()
+        super(scene, coordinates, texture, RoomModelDepth.TILE_HOVER)
+        
+        this.scene = scene
+        this.coordinates = coordinates
+        this.texture = texture
+
     }
 
     /**
@@ -28,6 +43,7 @@ export default class RoomTileHover extends RoomSprite {
     create(): void {
 
         super.create()
-        this.setPosition(this.x - 1, this.y - 4)
+        this.setPosition(this.isometric.x - 1, this.isometric.y - 4)
+
     }
 }

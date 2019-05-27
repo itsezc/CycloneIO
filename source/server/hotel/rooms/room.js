@@ -54,7 +54,7 @@ export default class Room {
         socket.join(id)
         socket.room = id
 
-        let model = new RoomModel([[1, 1, 1], [0, 1]])
+        let model = new RoomModel([[1, 1]])
         let room = new Room(0, model, 2, 2, 2, false, [])
 
         /*[
@@ -68,7 +68,7 @@ export default class Room {
 
         imager.getFurniture(3081).then((data => {
             let furniture = new Furniture(0, data.name, data.classname, 'description', 'floor', 1, 1, 0, true, true, false, false, false)
-            Environment.instance.server.webSocket.to(id).emit('newFurniture', furniture.spriteName)
+            Environment.instance.server.webSocket.to(id).emit('newItem', furniture.spriteName)
             console.log(furniture)
         }))
     }

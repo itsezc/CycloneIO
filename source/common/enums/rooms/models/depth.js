@@ -1,5 +1,6 @@
 // @flow
-const depth = {
+
+const RoomModelDepth = {
 	WALL: 0,
 	DOOR: 1,
 	TILE: 2,
@@ -8,5 +9,7 @@ const depth = {
 	PET: 5,
 	FIGURE: 6
 }
-  
-export type RoomModelDepth = $Keys<typeof depth>
+	
+export type Depth = $Values<typeof RoomModelDepth>
+
+export default RoomModelDepth

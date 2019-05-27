@@ -6,19 +6,17 @@ export const classNames = (classes) => {
 }
 
 export const fullScreen = (state) => {
+
 	let element = document.documentElement
 
 	if(state) {
 
 		if (document.exitFullscreen) {
 			document.exitFullscreen()
-			
 		} else if (document.mozCancelFullScreen) { /* Firefox */
 			document.mozCancelFullScreen()
-
 		} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
 			document.webkitExitFullscreen()
-
 		} else if (document.msExitFullscreen) { /* IE/Edge */
 			document.msExitFullscreen()
 		}
@@ -37,7 +35,6 @@ export const fullScreen = (state) => {
 		} else if (element.msRequestFullscreen) { /* IE/Edge */
 			element.msRequestFullscreen()
 		}
-
 	}
 }
 

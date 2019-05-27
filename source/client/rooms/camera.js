@@ -6,6 +6,8 @@ const { Scene2D } = Cameras
 const { CameraManager, Camera } = Scene2D
 const { Pointer } = Input
 
+import type { Vector2D } from '../../common/types/rooms/vector'
+
 /**
  * RoomCamera class
  * @extends {Camera}
@@ -16,17 +18,19 @@ export default class RoomCamera extends Camera {
 
 	/**
 	 * @param {CameraManager} cameras - The camera manager, encapsulates all the cameras
-	 * @param {number} x - The x position of the camera
-	 * @param {number} y - The y position of the camera
+	 * @param {Vector2D} coordinates - The coordinates of the camera
 	 * @param {number} width - The width of the camera
 	 * @param {number} height - The height of the camera
 	 */
-	constructor(cameras: CameraManager, x: number, y: number, width: number, height: number): void {
+	constructor(cameras: CameraManager, coordinates: Vector2D, width: number, height: number): void {
 
-        super(x, y, width, height)
+        super(coordinates.x, coordinates.y, width, height)
 
 		this.cameras = cameras
-		this.create()
+		this.coordinates = coordinates
+		this.width = width
+		this.height = height
+
 	}
 
 	/**
@@ -38,6 +42,7 @@ export default class RoomCamera extends Camera {
 		this.cameras.addExisting(this, true)
 
 		this.centerOn(this.midPoint.x / this.width, this.midPoint.y / this.height)
+		
 	}
 	
 	/**
@@ -52,5 +57,6 @@ export default class RoomCamera extends Camera {
         pointer.downY = pointer.y
 
 		this.isScrolling = true
-    }
+
+	}
 }

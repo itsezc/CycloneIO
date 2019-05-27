@@ -12,8 +12,18 @@ export default class Actions extends Component {
 	}
 
 	toggleFullscreen = (event) => {
-		fullScreen(this.state.fullScreen)
-		this.state.fullScreen = this.state.fullScreen ? this.setState({ fullScreen: false }) : this.setState({ fullScreen: true })
+		
+		this.setState({
+			fullScreen: !this.state.fullScreen
+		}, () => {
+
+			/*
+			if(this.state.fullScreen){
+				document.requestFullscreen();
+			}*/
+
+			//fullScreen(this.state.fullScreen)
+		})
 	}
  
 	render() {

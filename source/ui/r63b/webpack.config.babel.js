@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
 
         entry: {
 			ui: './app.js',
-			client: '../../client/game.js'
+			client: '../../client/games/game.js'
 		},
 
         plugins: [
