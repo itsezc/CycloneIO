@@ -49,16 +49,20 @@
 				margin 3px 0px
 		
 		.online
+			position absolute
 			display inline-block
 			text-align center
 			width 260px
 			border-radius 2px
 			border 1px solid #333333
-			box-shadow 1px 1px 0px 0px rgba(0, 0, 0, 1),
-					   -1px -1px 0px 0px rgba(0, 0, 0, 1)
+			box-shadow 1px 0px 0px 0px rgba(0, 0, 0, 1),
+						0px 1px 0px 0px rgba(0, 0, 0, 1),
+					   -1px 0px 0px 0px rgba(0, 0, 0, 1),
+						0px -1px 0px 0px rgba(0, 0, 0, 1)
 			padding 0px
 			margin-left (calc(50% - 260px))
-			top -20px
+			top 5px
+			left 125px
 			font-family 'Arial'
 			color rgba(255, 255, 255, 1)
 			max-height 20px
