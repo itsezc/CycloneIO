@@ -1,4 +1,5 @@
 // @flow
+
 import Chalk from 'chalk'
 import Config from '../../../config.json'
 

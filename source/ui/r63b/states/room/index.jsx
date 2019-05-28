@@ -29,7 +29,7 @@ export default class Room extends Component {
 
 				<Moderation />
 
-				<Catalog />
+				{/* <Catalog /> */}
 
 				{/* <Poll question='Cyclone or Habbo' status={false} /> */}
 				<Chat

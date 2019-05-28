@@ -11,7 +11,6 @@ import Config from '../../../config.json'
 
 import RoomCamera from './camera'
 import RoomTileMap from './tiles/map'
-import RoomFurniture from './furniture'
 
 import RoomItem from './item'
 

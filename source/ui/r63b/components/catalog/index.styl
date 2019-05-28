@@ -1,0 +1,207 @@
+@import './styles/banner'
+
+.catalog
+	z-index 2
+	display: block
+	position: fixed
+	bottom 15em
+	left 20em
+	font-family 'Ubuntu'
+	background #ECEAE1
+	padding 0px
+	max-width 570px
+	min-height 630px
+	width 100%
+	border-radius 8px
+	box-sizing border-box
+	border 1px solid black
+	border-bottom 2px solid black
+	font-size 12px
+	box-shadow 4px 4px 5px 0px rgba(0,0,0,0.2),
+				inset -2px 0 0 0 #FFFFFF,
+				inset 0 -2px 0 0 #FFFFFF,
+				inset 2px 0 0 0 #FFFFFF
+	resize: vertical
+	overflow: hidden
+
+
+	.title
+		cursor grab
+		background #367898
+		box-shadow inset -2px 0 0 0 #408CAF,
+					inset 0 2px 0 0 #408CAF,
+					inset 2px 0 0 0 #408CAF
+		color white
+		font-weight bold
+		text-align center
+		border-bottom 1px solid black
+		padding 8px 0
+		border-top-right-radius 8px
+		border-top-left-radius 8px
+
+		&:active
+			cursor grabbing
+
+	.tabs
+		display: flex
+		justify-content: center;
+		width: 100%
+		padding: 0
+		margin-top: 5px
+		margin-bottom: 0
+		overflow: hidden
+		color: black
+		list-style: none
+
+		.tab
+			display: inline
+			float: left
+			border-top-left-radius: 6px
+			border-top-right-radius: 6px
+			border: 1px solid #4D4C49
+			border-bottom: 0
+			font-weight: 300
+			padding: 7px 0
+			width 108px
+			text-align: center
+			background: #C3C2B9
+			cursor: pointer
+			outline none
+
+			&:hover
+				background: #F6F5F0
+				box-shadow inset -2px 0 0 0 #FFFFFF,
+							inset 0 2px 0 0 #FFFFFF,
+							inset 2px 0 0 0 #FFFFFF
+
+		.active
+			background: #ECEAE1
+			border: 2px solid #000000
+			border-bottom: 0
+			box-shadow inset -2px 0 0 0 #FFFFFF,
+						inset 0 2px 0 0 #FFFFFF,
+						inset 2px 0 0 0 #FFFFFF
+
+			&:hover
+				background: inherit
+
+			a
+				display block
+				text-align: center
+
+	.page
+		padding 5px 10px 10px 10px
+		color black
+		display grid
+		grid-gap 7px
+		grid-template-columns: 185px auto
+		grid-template-areas: 'sidebar content'
+
+		.sidebar
+			grid-area sidebar
+
+			.search
+				width 100%
+
+				& input[type='text']
+					font-family Ubuntu
+					font-weight 300
+					padding 4px
+					max-height 20px
+					outline none
+					border 1px solid #848484
+					border-radius 4px
+					box-shadow 0px 1px 0px 0px rgba(255,255,255,1),
+								inset 0px 1px 1px 0px rgba(0, 0, 0, 0.15)
+					width calc(calc(100% - calc(4px * 2)) - 2px)
+					margin-bottom 5px
+
+		.content
+			grid-area content
+			color #222222
+
+			img
+				max-width: 100%
+				height: 125px
+				margin-bottom: 5px
+
+
+	.frontpage
+		padding 5px 10px 10px 10px
+		color black
+		display grid
+		grid-gap 7px
+		grid-template-columns: 180px auto
+		grid-template-areas: 'sidebar content'
+
+		.sidebar
+			grid-area sidebar
+
+			img
+				max-width: 180px
+				height: 460px
+					
+
+		.content
+			grid-area content
+			color #222222
+
+			img
+				max-width: 100%
+				height: 125px
+				margin-bottom: 5px
+
+		.voucher
+			padding 0px 10px
+
+			.container
+				border-radius: 6px
+				padding: 10px
+				background #6DB8E8
+				font-weight: 400
+
+				p
+					padding 0
+					margin 0
+					font-weight: 300
+					margin-bottom: 3px
+					margin-left: 3px
+
+				input[type='text']
+					margin 0
+					border-radius: 5px
+					width: 210px
+					height: 20px
+					border 1px solid #2B495D
+					
+					:focus
+						outline none
+
+				.redeem
+					display inline-block
+					float right
+					border solid 1px #000
+					border-bottom solid 2px #000
+					border-radius 4px
+					padding 5px 5px
+					font-weight bold
+					cursor pointer
+					background #F3F3F3
+					box-shadow inset -2px 0px 0 0 #D9D9D9,
+					inset 0px 1px 0 0 #D9D9D9,
+					inset 1px 0px 0 0 #D9D9D9,
+					inset 0px -10px 0 0 #D9D9D9
+
+					&:hover
+						background #E2E2E2
+						box-shadow inset -2px 0px 0 0 #CACACA,
+						inset 0px 1px 0 0 #CACACA,
+						inset 1px 0px 0 0 #CACACA,
+						inset 0px -10px 0 0 #CACACA
+
+					&:active
+						background #D5D3D5
+						box-shadow inset -2px 0px 0 0 #999899,
+						inset 0px 1px 0 0 #999899,
+						inset 1px 0px 0 0 #999899,
+						inset 0px -10px 0 0 #999899

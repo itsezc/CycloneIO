@@ -7,7 +7,7 @@ import Phaser, { Textures } from 'phaser'
 
 const { Texture } = Textures
 
-import Furniture from './furniture'
+//import Furniture from '../../furniture/furniture'
 
 import GameSprite from '../games/sprite'
 import Room from './room'
@@ -60,9 +60,40 @@ export default class RoomItem extends GameSprite {
 
 	create() {
 		super.create()
+
+		this.frames = this.texture.getFrameNames()
+		
+		this.frames.forEach(frame => {
+
+			let parts = frame.split('_')
+
+			this.compose(frame, parts)
+
+		})
+
+		this.setFrame(this.defaultFrame)
+
+		this.setPosition(this.isometric.x - 1, this.isometric.y - 36)
+
 	}
 
-	rotate(): void{
+	compose(frame: string, parts: any[]): void {
+		
+		var resolution = parts[3]
+		var chronological = parts[4]
+		var rotation = parts[5] || '0'
+		var state = parts[6] || '0'
+
+		if (state.includes('.png')) {
+			state = state.replace('.png', '')
+		}
+
+		if (resolution == 64 && chronological === 'a' && rotation == 2 && state == 0) {
+			this.defaultFrame = frame
+		}
+	}
+
+	rotate(): void {
 		//
 	}
 

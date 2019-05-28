@@ -57,6 +57,8 @@ export default class RoomTile extends GameSprite {
             this.destroyHover()
         })
 
+        console.log(this.depth)
+
     }
 
     /**
