@@ -108,7 +108,7 @@ export default class Room extends Scene {
         // Room Background Color
         // this.camera.backgroundColor.setTo(0,255,255)
 
-        // Camera  Shake
+        // Camera Shake
         // this.camera.shake(2000)
 
         // Room up side down
