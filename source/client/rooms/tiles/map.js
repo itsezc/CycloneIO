@@ -3,7 +3,6 @@
 import Phaser, { GameObjects, Textures } from 'phaser'
 
 const { Texture } = Textures
-
 const { Group } = GameObjects
 
 import Room from '../room'
@@ -44,7 +43,7 @@ export default class RoomTileMap extends Group {
 			for (var y = 0; y < this.map[x].length; y++) {
 			
 				if (this.map[x][y] > 0) {
-					this.addTile({ x, y, z: 0 }, texture)
+					//this.addTile({ x, y, z: 0 }, texture)
 				}
 
 			}

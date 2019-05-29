@@ -3,24 +3,26 @@
 // User -> Goes to client -> loadUserItems() from DB -> ClientItems = [] 
 // An Item exists in the inventory 
 // A RoomItem exists in the Room
-import Phaser, { Textures } from 'phaser'
+import Phaser, { Textures, GameObjects } from 'phaser'
 
-const { Texture } = Textures
+const { Texture, Frame } = Textures
+const { Group } = GameObjects
 
-//import Furniture from '../../furniture/furniture'
+import type { Vector } from '../../../common/types/rooms/vector'
 
-import GameSprite from '../games/sprite'
-import Room from './room'
+import Room from '../room'
 
-import type { Vector } from '../../common/types/rooms/vector'
+import ItemPart from './item'
 
-import RoomModelDepth from '../../common/enums/rooms/models/depth'
+import Path from 'path'
 
-export default class RoomItem extends GameSprite {
+import RoomItemPart from './part'
+
+export default class RoomItem extends Group {
 
 	+scene: Room
 	+id: number
-	+texture: Texture
+	texture: Texture
 	+owner: number
 	+room: number
 	+coordinates: Vector
@@ -35,7 +37,7 @@ export default class RoomItem extends GameSprite {
 
 	constructor(scene: Room, id: number, texture: Texture, owner: number, room: number, coordinates: Vector, rotation: number, state: number /* wallPosition: number */) {
 
-		super(scene, coordinates, texture, RoomModelDepth.ITEM)
+		super(scene, { classType: RoomItemPart })
 
 		this.scene = scene
 		this.id = id
@@ -51,46 +53,40 @@ export default class RoomItem extends GameSprite {
 	}
 
 	load() {
-		super.load('furniture')
+		
+		this.scene.load.setPath(Path.join('furniture', this.texture))
+		this.scene.load.atlas({ key: this.texture, textureURL: this.texture.concat('.png'), atlasURL: this.texture.concat('.json') })
+		this.scene.load.start()
 
 		this.scene.load.once('complete', () => {
 			this.create()
 		})
+
 	}
 
 	create() {
-		super.create()
+
+		this.texture = this.scene.textures.get(this.texture)
 
 		this.frames = this.texture.getFrameNames()
 		
 		this.frames.forEach(frame => {
 
-			let parts = frame.split('_')
+			let parts = this.removeDuplicates(frame.split('_'))
 
 			this.compose(frame, parts)
 
 		})
 
-		this.setFrame(this.defaultFrame)
-
-		this.setPosition(this.isometric.x - 1, this.isometric.y - 36)
-
 	}
 
-	compose(frame: string, parts: any[]): void {
-		
-		var resolution = parts[3]
-		var chronological = parts[4]
-		var rotation = parts[5] || '0'
-		var state = parts[6] || '0'
+	compose(frame: Frame, parts: any[]): void {
 
-		if (state.includes('.png')) {
-			state = state.replace('.png', '')
-		}
+		this.part = new RoomItemPart(this.scene, this.coordinates, frame, ...parts)
+		this.part.create()
 
-		if (resolution == 64 && chronological === 'a' && rotation == 2 && state == 0) {
-			this.defaultFrame = frame
-		}
+		this.add(this.part)
+
 	}
 
 	rotate(): void {
@@ -99,5 +95,9 @@ export default class RoomItem extends GameSprite {
 
 	move(): void {
 		//
+	}
+
+	removeDuplicates<T>(collection: T[]): T[] {
+ 		return [...new Set(collection)]
 	}
 }
