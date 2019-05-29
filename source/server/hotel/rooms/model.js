@@ -2,9 +2,10 @@
 import Room from './room'
 
 export default class RoomModel {
-    map: Object
+
+    map: any
     
-    constructor(map: Object){
+    constructor(map: any){
         this.map = map
     }
 }

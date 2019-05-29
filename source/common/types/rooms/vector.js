@@ -5,3 +5,8 @@ export type Vector = {
 	y: number,
 	z: number
 }
+
+export type Vector2D = {
+	x: number,
+	y: number
+}

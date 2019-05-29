@@ -18,7 +18,7 @@ export default class Wallet extends Component {
 
 				<div className="currencies">
 					{this.data.map((data, index) => 
-						<div className={"currency-item currency-" + data.name}>
+						<div key={index} className={"currency-item currency-" + data.name}>
 							{data.value}<i className={"icon icon-" + data.icon}></i>
 						</div>
 					)}

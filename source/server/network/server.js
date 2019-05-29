@@ -1,4 +1,5 @@
 // @flow
+
 import Chalk from 'chalk'
 import Config from '../../../config.json'
 
@@ -128,6 +129,7 @@ export default class Server {
      */
     async handleConnection(socket: SocketIO): Promise<void> {
         logger.server(`Player ${socket.id} connected`)
+
         this.eventManager = await new EventManager(socket)
         await this.eventManager
     }

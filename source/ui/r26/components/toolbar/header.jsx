@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import OnlineCount from './online/online.jsx'
 
 export default class Header extends Component {
 	constructor(props) {
@@ -8,11 +9,13 @@ export default class Header extends Component {
 	render() {
 		return (
 			<div className='toolbar top'>
-				<div class='logo'>
+				<div className='logo'>
 					<img src='http://habbox.com/text/Big/habbo' />
 				</div>
 				
-				<span class='close'>CLOSE HOTEL</span>
+				<OnlineCount />
+				
+				<span className='close'>CLOSE HOTEL</span>
 			</div>
 		)
 	}
