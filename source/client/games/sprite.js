@@ -2,7 +2,7 @@
 
 import Phaser, { Physics, Textures } from 'phaser'
 
-const { Texture } = Textures
+const { Texture, Frame } = Textures
 const { Arcade } = Physics
 const { Sprite } = Arcade
 
@@ -13,8 +13,6 @@ import type { Depth } from '../../common/enums/rooms/models/depth'
 
 import RoomTile from '../rooms/tiles/tile'
 
-import Path from 'path'
-
 /**
  * GameSprite class
  * @extends {Sprite}
@@ -23,8 +21,9 @@ export default class GameSprite extends Sprite {
 
 	+scene: Room
 	+coordinates: Vector
-	+texture: Texture
 	+depth: Depth
+	+texture: Texture
+	+frame: Frame
 
 	/**
 	 * @param {Room} scene - The room scene
@@ -32,22 +31,15 @@ export default class GameSprite extends Sprite {
 	 * @param {Texture} texture - The sprite texture
 	 * @param {Depth} depth - The sprite depth
 	 */
-	constructor(scene: Room, coordinates: Vector, texture: Texture, depth: Depth) {
+	constructor(scene: Room, coordinates: Vector, depth: Depth, texture: Texture, frame: Frame) {
 
-		super(scene, coordinates.x, coordinates.y - coordinates.z, texture)
+		super(scene, coordinates.x, coordinates.y - coordinates.z, texture, frame)
 
 		this.scene = scene
 		this.coordinates = coordinates
-		this.texture = texture
 		this.depth = depth
-
-	}
-
-	load(asset: string): void {
-
-		this.scene.load.setPath(Path.join(asset, this.texture))
-		this.scene.load.atlas({ key: this.texture, textureURL: this.texture.concat('.png'), atlasURL: this.texture.concat('.json') })
-		this.scene.load.start()
+		this.texture = texture
+		this.frame = frame
 
 	}
 
@@ -58,11 +50,19 @@ export default class GameSprite extends Sprite {
 		
 		this.scene.add.existing(this)
 
-		this.setDepth(this.depth)
-		this.setTexture(this.texture)
+		//console.log(this.frame)
+		//this.scene.add.sprite(0, 0, this.texture, this.frame)
+		
+		if (this.depth !== undefined) {
+			this.setDepth(this.depth)
+		}
 
-		this.cartesian = this.coordsToCartesian(this.coordinates)
-		this.isometric = this.toIsometric(this.cartesian)
+		if (this.texture !== undefined) {
+			this.setTexture(this.texture, this.frame)
+		}
+
+		this.cartesianCoords = this.coordsToCartesian(this.coordinates)
+		this.isometricCoords = this.toIsometric(this.cartesianCoords)
 
 	}
 

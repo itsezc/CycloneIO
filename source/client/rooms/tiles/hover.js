@@ -29,7 +29,7 @@ export default class RoomTileHover extends GameSprite {
      */
     constructor(scene: Room, coordinates: Vector, texture: Texture) {
 
-        super(scene, coordinates, texture, RoomModelDepth.TILE_HOVER)
+        super(scene, coordinates, RoomModelDepth.TILE_HOVER, texture)
         
         this.scene = scene
         this.coordinates = coordinates
@@ -43,7 +43,7 @@ export default class RoomTileHover extends GameSprite {
     create(): void {
 
         super.create()
-        this.setPosition(this.isometric.x - 1, this.isometric.y - 4)
+        this.setPosition(this.isometricCoords.x - 1, this.isometricCoords.y - 4)
 
     }
 }

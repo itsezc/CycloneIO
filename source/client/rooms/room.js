@@ -7,12 +7,14 @@ const { Texture } = Textures
 
 import SocketIO from 'socket.io-client'
 
-import Config from '../../../config.json'
+import Config, { server } from '../../../config.json'
+
+const { host, port } = server 
 
 import RoomCamera from './camera'
 import RoomTileMap from './tiles/map'
 
-import RoomItem from './item'
+import RoomItem from './items/item'
 
 import type { Vector } from '../../common/types/rooms/vector'
 
@@ -71,7 +73,7 @@ export default class Room extends Scene {
      * Runs once, when the scene starts
      */
     init() : void {
-        this.socket = SocketIO(`${Config.server.host}:${Config.server.port}`)
+        this.socket = SocketIO(`${host}:${port}`)
         this.camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
         // this.lights.enable()
@@ -84,40 +86,15 @@ export default class Room extends Scene {
 
         this.camera.create()
 
-        this.input.on('pointermove', pointer => {
+        this.registerInputEvents()
 
-            if (pointer.primaryDown) {
-                this.camera.scroll(pointer)
+        this.registerScaleEvents()
 
-            } else {
-                this.camera.isScrolling = false
-            }
+        this.emitRoom()
 
-        }, this)
+        this.registerRoomsEvents()
 
-        this.scale.on('resize', gameSize => {
-
-            var width = gameSize.width
-            var height = gameSize.height
-
-            this.cameras.resize(width, height)
-
-        }, this)
-
-        this.socket.emit('newRoom', this.id)
-
-        this.socket.on('newRoom', map => {
-            this.addTileMap(map)
-        })
-
-        this.socket.on('newItem', item => {
-            this.addItem({ x: 0, y: 0, z: 0 }, item)
-        })
-
-        // this.socket.emit('newRoom', this.id)
-
-        // this.registerRooms()
-        // this.registerFurniture()
+        this.registerItemsEvents()
         
         // this.moodlightPreview = this.add.graphics()
         // this.moodlightPreview.fillStyle(0x1844bd, 1)
@@ -131,8 +108,8 @@ export default class Room extends Scene {
         // Room Background Color
         //this.camera.backgroundColor.setTo(0,255,255)
 
-        // Camera  Shake
-        //this.camera.shake(2000)
+        // Camera Shake
+        // this.camera.shake(2000)
 
         // Room up side down
         //this.camera.setAngle(180)
@@ -148,8 +125,55 @@ export default class Room extends Scene {
      * Runs once per frame for the duration of the scene
      */
     update(): void {
-
         // this.camera3d.transformChildren(this.transform);
+    }
+
+    registerInputEvents(): void {
+        
+        this.input.on('pointermove', pointer => {
+
+            if (pointer.primaryDown) {
+                this.camera.scroll(pointer)
+
+            } else {
+                this.camera.isScrolling = false
+            }
+
+        }, this)
+
+    }
+
+    registerScaleEvents(): void {
+
+        this.scale.on('resize', gameSize => {
+
+            var width = gameSize.width
+            var height = gameSize.height
+
+            this.cameras.resize(width, height)
+
+        }, this)
+
+    }
+
+    emitRoom(): void {
+        this.socket.emit('newRoom', this.id)
+    }
+
+    registerRoomsEvents(): void {
+
+        this.socket.on('newRoom', map => {
+            this.addTileMap(map)
+        })
+
+    }
+
+    registerItemsEvents(): void {
+
+        this.socket.on('newItem', item => {
+            this.addItem({ x: 0, y: 0, z: 0 }, item)
+        })
+
     }
 
     /**
@@ -242,7 +266,7 @@ export default class Room extends Scene {
      */
     onDoubleClick(object: GameObject, callback: function, ...args: any): any {
 
-        object.on('pointerdown', (pointer) => {
+        object.on('pointerdown', pointer => {
 
             if (pointer.downTime - this.clickTime < 500) {
                 if (pointer.primaryDown) {
@@ -252,5 +276,6 @@ export default class Room extends Scene {
 
             this.clickTime = pointer.downTime
         })
+
     }
 }

@@ -31,7 +31,7 @@ export default class RoomTile extends GameSprite {
      */
     constructor(scene: Room, coordinates: Vector, texture: Texture) {
 
-        super(scene, coordinates, texture, RoomModelDepth.TILE)
+        super(scene, coordinates, RoomModelDepth.TILE, texture)
 
         this.scene = scene
         this.coordinates = coordinates
@@ -46,7 +46,7 @@ export default class RoomTile extends GameSprite {
 
         super.create()
         
-        this.setPosition(this.isometric.x, this.isometric.y)
+        this.setPosition(this.isometricCoords.x, this.isometricCoords.y)
         this.setInteractive({ pixelPerfect: true })
 
         this.on('pointerover', () => {
@@ -56,8 +56,6 @@ export default class RoomTile extends GameSprite {
         this.on('pointerout', () => {
             this.destroyHover()
         })
-
-        console.log(this.depth)
 
     }
 
