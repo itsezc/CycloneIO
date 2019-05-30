@@ -18,6 +18,9 @@ dist
 generated
 web-build/dist
 
+# Lerna
+learna-debug.log
+
 # MacOS 
 .DS_Store
 *.icloud*
