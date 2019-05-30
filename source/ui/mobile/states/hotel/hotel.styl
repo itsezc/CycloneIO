@@ -1,7 +1,11 @@
+@import '../../fonts.styl'
+@import '../../components'
+
 body
 	margin 0
 	position fixed
 	overflow hidden
+	font-family 'UbuntuCondensed'
 
 .client
 	z-index 0
@@ -25,13 +29,41 @@ body
 		background-repeat no-repeat, no-repeat, repeat-x
 		background-position left bottom, right bottom
 		background-size auto, auto, 1% 100%
+		color rgba(255, 255, 255, 1)
+
+		.icon
+			position absolute
+			display inline-block
+			top 0
+			left 0
+			margin 10px
+			width 64px
+			border-radius 10px
+			cursor pointer
+
+		h1
+			font-size 3.5em
+			font-weight 300
+			text-align center
+
+		.container
+			position absolute
+			margin-top 5%
+			width 100%
 
 		.navigation
 			position absolute
 			margin 0
 			padding 0
-			margin-left 20px
-			bottom 0px
+			padding-left 20px
+			left 0
+			bottom 0
+			width 100%
+			background-image linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5))
 
 			.avatar
-				filter drop-shadow(3px 1px 0 #fff) drop-shadow(-3px 2px 0 #fff) drop-shadow(0 -3px 0 #fff)
+				width 128px
+				padding 0
+				margin 0
+				filter drop-shadow(3px 1px 0 #fff) drop-shadow(-3px 1px 0 #fff)
+				display inline-block
