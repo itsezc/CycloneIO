@@ -1,8 +1,6 @@
 [ignore]
 .*/dist/*
-
-[untyped]
-.*/node_modules/*
+.*/node_modules/bcryptjs/*
 
 [include]
 
@@ -11,6 +9,5 @@
 [lints]
 
 [options]
-emoji=true
 
 [strict]
