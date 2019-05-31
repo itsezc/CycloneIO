@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>463 Restricted Client - DOSarrest Internet Security</title>
+<link href="/DOAError/assets/css/core.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/DOAError/assets/images/favicon.ico" /><link rel="apple-touch-icon" href="/DOAError/assets/images/icon-protection.png" />
+<script>
+function id_process(n){for(var t=n+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var g=r[e];" "==g.charAt(0);)g=g.substring(1,g.length);if(0==g.indexOf(t))return g.substring(t.length,g.length)}return null};
+</script>
+</head>
+
+<body onload="myFunction(), myFunction2(), myFunction3()">
+<div id="apDiv1">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#444444">
+    <tr>
+      <td colspan="3" bg background="/DOAError/assets/images/bottom_separator.png"><img src="/DOAError/assets/images/bottom_separator.png" width="5" height="9" /></td>
+    </tr>
+    <tr>
+      <td width="18"><img src="/DOAError/assets/images/bottom_trans_spacer.png" alt="" width="18" height="18" /></td>
+      <td><img src="/DOAError/assets/images/bottom_trans_spacer.png" alt="" width="18" height="18" /></td>
+      <td width="18"><img src="/DOAError/assets/images/bottom_trans_spacer.png" alt="" width="18" height="18" /></td>
+    </tr>
+    <tr>
+      <td width="18"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="55" /></td>
+      <td width="148" align="left" valign="top"><table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="left" valign="top" class="bottomtext">DOSarrest Internet Security is a cloud based fully managed DDoS protection service.  This request has been blocked by DOSarrest due to the above violation.  If you believe you are getting blocked in error please contact the administrator of 
+<span id="host"></span><script>
+function myFunction() {
+    var x = location.host;
+    document.getElementById("host").innerHTML = x;
+}
+</script>
+            </span> to resolve this issue.</td>
+          <td width="18"><img src="/DOAError/assets/images/bottom_trans_spacer.png" alt="" width="18" height="55" /></td>
+          <td align="right" valign="bottom"><img src="/DOAError/assets/images/da_logo.png" width="148" height="50"  alt="DOSarrest Internet Security | DDoS Protection" title="DOSarrest Internet Security | DDoS Protection" /></a></td>
+        </tr>
+      </table></td>
+      <td width="18"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="55" /></td>
+    </tr>
+    <tr>
+      <td width="18"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="18" /></td>
+      <td><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="18" /></td>
+      <td width="18"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="18" /></td>
+    </tr>
+  </table>
+</div>
+<div id="apDiv2">
+  <table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="middle"><table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr></tr>
+        <tr>
+          <td align="center"><table width="730" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="1"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="1" height="340" alt=""/></td>
+                <td width="728" align="center"><table width="728" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td width="121" align="center"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="10" height="120" alt=""/></td>
+                      <td width="500" align="center" class="errortitle">463</td>
+                      <td width="109" align="center"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="10" height="120" alt=""/></td>
+                    </tr>
+                  </tbody>
+                </table>
+                  <table width="720" border="0" cellpadding="0" cellspacing="0" background="/DOAError/assets/images/463.png">
+                    <tbody>
+                      <tr>
+                        <td colspan="5"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="62" height="172" alt=""/></td>
+                      </tr>
+                      <tr>
+                        <td width="114" align="center" valign="top" class="imagetext">You</td>
+                        <td width="197" align="center" valign="top"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="36" alt=""/></td>
+                        <td width="120" align="center" valign="top" class="imagetext">DOSarrest<br />
+                          <span style="font-size: small">Protection</span></td>
+                        <td width="187" align="center" valign="top">&nbsp;</td>
+                        <td width="102" align="center" valign="top" class="imagetext">Host<br />
+<span style="font-size: x-small" id="host2"></span><script>
+function myFunction2() {
+    var x = location.host;
+    document.getElementById("host2").innerHTML = x;
+}
+</script></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+                <td width="1"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="1" height="340" alt=""/></td>
+              </tr>
+            </tbody>
+          </table></td>
+        </tr>
+        <tr>
+          <td align="center"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="8" /></td>
+        </tr>
+        <tr>
+          <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="30%" align="left"><table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td nowrap="nowrap"><div id="idtext">ID: </div></td>
+                      <td nowrap="nowrap"><div id="id_finish"></div>
+                        <script>document.getElementById("id_finish").innerHTML=id_process("dis-request-id");</script></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+                <td align="center">|</td>
+                <td width="30%" align="center"><table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td nowrap="nowrap"><div id="idtext"> Your IP Address: </div></td>
+                      <td nowrap="nowrap"><div id="addr_finish"></div>
+                        <script>document.getElementById("addr_finish").innerHTML=id_process("dis-remote-addr");</script></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+                <td align="center">|</td>
+                <td width="30%" align="right"><table border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td nowrap="nowrap"><div id="idtext"> Timestamp: </div></td>
+                      <td nowrap="nowrap"><div id="ts_finish"></div>
+                        <script>document.getElementById("ts_finish").innerHTML=id_process("dis-timestamp");</script></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+            </tbody>
+          </table></td>
+        </tr>
+        <tr>
+          <td align="center"><img src="/DOAError/assets/images/bottom_trans_spacer.png" width="18" height="8" /></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><p class="bodytext"><strong>463 Restricted Client: </strong>This resource is not available for access by your client software.  This request has been blocked.  Please retry your request from a different client.</p>
+            <p class="bodytext">DOSarrest Internet Security is a cloud based fully managed DDoS protection service.  This request has been blocked by DOSarrest due to the above violation.  If you believe you are getting blocked in error please contact the administrator of 
+<span id="host3"></span><script>
+function myFunction3() {
+    var x = location.host;
+    document.getElementById("host3").innerHTML = x;
+}
+</script>
+            </span> to resolve this issue.</p></td>
+        </tr>
+        <tr></tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

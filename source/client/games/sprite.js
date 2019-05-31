@@ -49,17 +49,9 @@ export default class GameSprite extends Sprite {
 	create(): void {
 		
 		this.scene.add.existing(this)
-
-		//console.log(this.frame)
-		//this.scene.add.sprite(0, 0, this.texture, this.frame)
 		
-		if (this.depth !== undefined) {
-			this.setDepth(this.depth)
-		}
-
-		if (this.texture !== undefined) {
-			this.setTexture(this.texture, this.frame)
-		}
+		this.setDepth(this.depth)
+		this.setTexture(this.texture, this.frame)
 
 		this.cartesianCoords = this.coordsToCartesian(this.coordinates)
 		this.isometricCoords = this.toIsometric(this.cartesianCoords)
