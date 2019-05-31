@@ -1,17 +1,21 @@
 import fs from 'fs'
 import Environment from '../../environment'
 
+interface FurnitureData {
+    roomitemtypes: roomItemType
+};
+
+interface roomItemType {
+    furnitype: any
+};
+
 export default class FurnitureImager {
 
-    constructor() {
-        
-    }
-
-    async load(file) {
+    private async load(filename: string): Promise {
         
         return new Promise((resolve, reject) => {
 
-            fs.readFile(file, (error, data) => {
+            fs.readFile(filename, (error: Error, data: any) => {
                 
                 if (error) {
                     reject(error)
@@ -22,10 +26,10 @@ export default class FurnitureImager {
         })
     }
 
-    async getFurniture(id) {
+    public async getFurniture(id: number): Promise {
 
         return new Promise((resolve, reject) => {
-            this.load('web-gallery/gamedata/furnidata.json').then((furnidata) => {
+            this.load('web-gallery/gamedata/furnidata.json').then((furnidata: any) => {
 
                 let item = furnidata.roomitemtypes.furnitype.find(item => {
                     return id == item.id
@@ -39,6 +43,7 @@ export default class FurnitureImager {
             })
         })
     }
+    
     //     await ItemImager.load('web-build/gamedata/furnidata.json').then((furnidata) => {
 
     //         return new Promise((resolve, reject) => {

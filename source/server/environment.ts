@@ -1,29 +1,27 @@
-// @flow
-
 import Config from '../../config.json'
 
 import Chalk from 'chalk'
-import ReadLineSync from 'readline-sync'
+//import ReadLineSync from 'readline-sync'
 
 import Logger from './utils/logger'
 import Server from './network/server'
 
-import RoomManager from './hotel/rooms/manager'
+//import RoomManager from './hotel/rooms/manager'
 
 /**
  * Environment class
- */
+*/
 export default class Environment {
 
-	config: JSON
-	logger: Logger
-	server: Server
+	public config: JSON;
+	public logger: Logger
+	public server: Server
 	//roomManager: RoomManager
 
 	/**
 	 * @param {JSON} config - The configuration file 
 	 */
-	constructor(config: JSON): void {
+	constructor(config: JSON) {
 
 		this.config = config
 		console.clear()

@@ -1,7 +1,10 @@
-//@flow
-type Gender = 'M' | 'F'
+
+enum Gender {
+	M, F
+}
 
 export default class User {
+
 	id: number
 	username: string
 	email: string
@@ -21,4 +24,5 @@ export default class User {
 	allowWhisper: boolean 
 	allowBotSpeech: boolean
 	allowPetSpeech: boolean	
+
 }

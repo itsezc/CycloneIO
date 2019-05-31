@@ -6,8 +6,8 @@ const Logger = createLogger({
 
     format: combine(
         timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-        printf(info => {
-            const { timestamp, level, message, ...args } = info
+        printf((info: any): string => {
+            const { timestamp, level, message } = info
 
             var levelOutput
 
@@ -31,7 +31,7 @@ const Logger = createLogger({
                 case 'error':
                     levelOutput = '[❌ ]'
                     break
-            }
+			}
 
             const ts = timestamp.slice(0, 19).replace('T', ' ')
             return `${ts} ${levelOutput} - ${message}`
