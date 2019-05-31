@@ -10,20 +10,14 @@
     "desktop": "electron ./resources/desktop/index.js",
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b:cypress": "cypress open",
-    
-	"swf:utils:furniture": "flow status --quiet && babel-watch source/utils/swf/furniture/furnidata.js",
-	
+    "swf:utils:furniture": "flow status --quiet && babel-watch source/utils/swf/furniture/furnidata.js",
     "flow:status": "flow status --quiet",
-	"flow": "flow",
-	
-	"dev:web": "webpack-dev-server --host 0.0.0.0 --config ./source/web/webpack.config.babel.js",
-
+    "flow": "flow",
+    "dev:web": "webpack-dev-server --host 0.0.0.0 --config ./source/web/webpack.config.babel.js",
     "dev:ui:r26": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r26/webpack.config.babel.js",
-	"dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r63b/webpack.config.babel.js",
-
-	"dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/mobile/webpack.config.babel.js",
-	"dev:ui:mobile:ios": "cd source/mobile && react-native run-ios --simulator=\"iPhone10\"",
-
+    "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r63b/webpack.config.babel.js",
+    "dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/mobile/webpack.config.babel.js",
+    "dev:ui:mobile:ios": "cd source/mobile && react-native run-ios --simulator=\"iPhone10\"",
     "dev:server": "npm run flow:status && babel-watch --watch source/server source/server/environment.js",
     "dev:resources": "webpack-dev-server --host 0.0.0.0",
     "lerna:test": "lerna run test"
@@ -84,10 +78,7 @@
     "react-tabs": "^3.0.0",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "webpack": "^4.32.2",
-    "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1"
+    "stylus-loader": "^3.0.2"
   },
   "dependencies": {
     "apollo-boost": "^0.3.1",

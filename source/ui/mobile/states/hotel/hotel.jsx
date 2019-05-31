@@ -50,14 +50,12 @@ export default class Hotel extends Component
 				.client
 					.hotel
 						img.icon(src='https://upload.wikimedia.org/wikipedia/commons/8/80/SemihReiz.png')
-						// Wallet(currencies=${this.currencies})
+						Wallet(currencies=${this.currencies})
 						.container
 							h1 What's up EZ-C?
 						.navigation
 							img.avatar(src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=3&action=&gesture=&size=l')
 							.news T
-
-			
 			`
 		)
 	}
