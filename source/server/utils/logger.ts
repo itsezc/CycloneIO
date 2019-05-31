@@ -1,5 +1,4 @@
-import Chalk from 'chalk'
-import Winston, { transports, format, createLogger } from 'winston'
+import { transports, format, createLogger } from 'winston'
 const { combine, colorize, timestamp, printf } = format
 
 const Logger = createLogger({

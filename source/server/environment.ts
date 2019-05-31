@@ -13,15 +13,15 @@ import Server from './network/server'
 */
 export default class Environment {
 
-	public config: JSON;
-	public logger: Logger
+	public config: JSON
+	public logger: any
 	public server: Server
 	//roomManager: RoomManager
 
 	/**
 	 * @param {JSON} config - The configuration file 
 	 */
-	constructor(config: JSON) {
+	public constructor(config: JSON) {
 
 		this.config = config
 		console.clear()

@@ -1,8 +1,13 @@
 {
     "compilerOptions": {
+		"baseUrl": ".",
+		"paths": { "*": ["typeDefs/*"] },
         "outDir": "./build",
         "allowJs": true,
-        "target": "es2018"
+        "target": "es2018",
+        "module": "commonjs",
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     },
     "include": [
 		"./source/**/*"

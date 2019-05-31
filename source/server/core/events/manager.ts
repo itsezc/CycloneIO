@@ -1,5 +1,3 @@
-// @flow
-
 import SocketIO from 'socket.io'
 import Room from '../../hotel/rooms/room'
 import RoomPlayer from '../../hotel/rooms/player'
@@ -9,12 +7,12 @@ import RoomPlayer from '../../hotel/rooms/player'
  */
 export default class EventManager {
 
-    socket: SocketIO
+    private socket: SocketIO
 
     /**
      * @param {SocketIO} socket - The socket connection
      */
-    constructor(socket: SocketIO) {
+    public constructor(socket: SocketIO) {
         this.socket = socket
 
         this.registerRooms()
@@ -24,7 +22,7 @@ export default class EventManager {
     /**
      * Registers rooms events
      */
-    registerRooms(): void {
+    public registerRooms(): void {
         this.socket.on('newRoom', id => {
             Room.load(this.socket, id)
         })
@@ -33,7 +31,7 @@ export default class EventManager {
     /**
      * Registers player events
      */
-    registerPlayers(): void {
+    public registerPlayers(): void {
         this.socket.on('disconnect', () => {
             RoomPlayer.disconnect(this.socket.room, this.socket.id)
         })

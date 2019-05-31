@@ -21,7 +21,8 @@
     "dev:server": "npm run flow:status && babel-watch --watch source/server source/server/environment.js",
     "dev:resources": "webpack-dev-server --host 0.0.0.0",
     "lerna:test": "lerna run test",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "ref:": "tsc ./source/server/environment.ts --noEmit"
   },
   "repository": {
     "type": "git",
@@ -52,6 +53,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@babel/runtime": "^7.4.5",
+    "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
     "autoprefixer": "^9.5.1",

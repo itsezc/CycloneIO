@@ -1,34 +1,26 @@
 // @flow
-import IO from 'fs'
 
-import Config, { furnidataURL } from './config.json'
-
-import Path from 'path'
-
+import { furnidataURL } from './config.json'
 import Logger from '../logger'
-
 import Parser from 'fast-xml-parser'
-
 import Furniture from './furniture'
-
 import Download from 'download'
-
 import sleep from '../sleep'
 
 export default class Furnidata {
 
-	furniture: Furniture
-	data: JSON
+	private furniture: Furniture
+	private data: JSON
 
-	constructor(): void {
+	public constructor() {
 		this.download()
 	}
 
-	async download(): Promise<Download> {
+	public async download(): Promise<Download> {
 
 		try {
 
-			await Download(furnidataURL, { encoding: 'utf8' }).then(data => {
+			await Download(furnidataURL, { encoding: 'utf8' }).then((data) => {
 				this.parse(data)
 			})
 
@@ -37,10 +29,9 @@ export default class Furnidata {
 		catch(error) {
 			Logger.error(error)
 		}
-
 	}
 
-	async parse(data: string): Promise<void> {
+	public async parse(data: string): Promise<void> {
 
 		try {
 
@@ -53,17 +44,12 @@ export default class Furnidata {
 			if (furnidata) {
 				
 				furnidata.furnidata.roomitemtypes.furnitype.forEach(furniture => {
-
 					this.downloadFurniture(furniture.revision, furniture.classname)
-
 				})
 
 				furnidata.furnidata.wallitemtypes.furnitype.forEach(furniture => {
-
 					this.downloadFurniture(furniture.revision, furniture.classname)
-
 				})
-
 			}
 		}
 
@@ -72,7 +58,7 @@ export default class Furnidata {
 		}
 	}
 
-	async downloadFurniture(revision: number, className: string) {
+	public async downloadFurniture(revision: number, className: string): Promise<void> {
 
 		try {
 
@@ -82,14 +68,10 @@ export default class Furnidata {
 			await this.furniture.download()
 
 			await sleep(1000)
-
 		}
 
 		catch(error) {
 			Logger.error(error)
 		}
-
 	}
 }
-
-const furnidata = new Furnidata()
