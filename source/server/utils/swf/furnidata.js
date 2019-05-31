@@ -13,7 +13,11 @@ import Furniture from './furniture'
 
 import Download from 'download'
 
-import sleep from '../sleep'
+import Format from 'xml-formatter'
+
+import Delay from 'delay'
+
+//import sleep from '../sleep'
 
 export default class Furnidata {
 
@@ -27,9 +31,28 @@ export default class Furnidata {
 	async download(): Promise<Download> {
 
 		try {
+			
+			const destination = Path.join(__dirname, 'out', 'gamedata')
+			const file = Path.join(destination, 'furnidata.xml')
 
-			await Download(furnidataURL, { encoding: 'utf8' }).then(data => {
-				this.parse(data)
+			await Download(furnidataURL, destination, { encoding: 'utf8' }).then(data => {
+
+				var options = { 
+					collapseContent: true 
+				}
+
+				var formattedXML = Format(data, options)
+
+				IO.writeFile(file, formattedXML, 'utf8', (error) => {
+
+					if (error) {
+						throw error
+					}
+
+					this.parse(data)
+
+				})
+
 			})
 
 		}
@@ -37,30 +60,31 @@ export default class Furnidata {
 		catch(error) {
 			Logger.error(error)
 		}
-
 	}
 
 	async parse(data: string): Promise<void> {
 
 		try {
 
-			var furnidata = await Parser.parse(data, { 
+			var options = { 
 				attributeNamePrefix : '', 
 				ignoreAttributes: false, 
 				parseAttributeValue: true 
-			})
+			}
+
+			var furnidata = await Parser.parse(data, options)
 
 			if (furnidata) {
 				
 				furnidata.furnidata.roomitemtypes.furnitype.forEach(furniture => {
 
-					this.downloadFurniture(furniture.revision, furniture.classname)
+					this.downloadFurni(furniture.revision, furniture.classname)
 
 				})
 
 				furnidata.furnidata.wallitemtypes.furnitype.forEach(furniture => {
 
-					this.downloadFurniture(furniture.revision, furniture.classname)
+					this.downloadFurni(furniture.revision, furniture.classname)
 
 				})
 
@@ -72,7 +96,7 @@ export default class Furnidata {
 		}
 	}
 
-	async downloadFurniture(revision: number, className: string) {
+	async downloadFurni(revision: number, className: string) {
 
 		try {
 
@@ -81,7 +105,7 @@ export default class Furnidata {
 			await this.furniture
 			await this.furniture.download()
 
-			await sleep(1000)
+			await Delay(1000)
 
 		}
 

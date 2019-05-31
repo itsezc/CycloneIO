@@ -10,7 +10,7 @@
     "desktop": "electron ./resources/desktop/index.js",
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b:cypress": "cypress open",
-    "swf:utils:furniture": "flow status --quiet && babel-watch source/utils/swf/furniture/furnidata.js",
+    "swf:utils:furniture": "flow status --quiet && babel-watch source/server/utils/swf/furnidata.js",
     "flow:status": "flow status --quiet",
     "flow": "flow",
     "dev:web": "webpack-dev-server --host 0.0.0.0 --config ./source/web/webpack.config.babel.js",
@@ -89,6 +89,7 @@
     "bcryptjs": "^2.4.3",
     "chalk": "^2.4.2",
     "cypress": "^3.3.1",
+    "delay": "^4.2.0",
     "download": "^7.1.0",
     "fast-xml-parser": "^3.12.16",
     "graphql": "^14.3.1",
@@ -110,6 +111,7 @@
     "socket.io-client": "^2.2.0",
     "spritesheet-js": "^1.2.6",
     "swf-extract": "^1.1.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "xml-formatter": "^1.1.0"
   }
 }

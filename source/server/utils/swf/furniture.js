@@ -29,13 +29,47 @@ export default class Furniture {
 
 		try {
 
+			var file = Path.join(__dirname, 'out', this.className, this.className.concat('.swf'))
+			var url = downloadURL.concat(this.revision, '/', this.className, '.swf')
+			var destination = Path.join(__dirname, 'out', this.className)
+
+			Download(url, destination).then(data => {
+				console.log('downloaded')
+			})
+
+/* 			await IO.access(file, IO.F_OK, error => {
+
+				if (error) {
+
+					Download(url, destination).then(data => {
+						console.log('downloaded')
+					})
+
+				}
+
+/* 				if (stats.isDirectory()) {
+					console.log('directory')
+				} */
+/* 				if (!exists) {
+
+					Download(url, destination).then(data => {
+						console.log('downloaded')
+					})
+
+				} else {
+
+					console.log('exists?')
+				} 
+			}) */
+
+/* 
 			var URLPath = downloadURL.concat(this.revision, '/', this.className, '.swf')
 
 			await Download(URLPath).then(data => {
 
 				this.extract(data)
 
-			})
+			}) */
 
 		}
 
@@ -51,7 +85,9 @@ export default class Furniture {
 			const swf = await readFromBufferP(data)
 			const images = await Promise.all(extractImages(swf.tags))
 
-			this.convert()
+			console.log(images)
+/* 
+			this.convert(images.imgData) */
 
 		}
 
@@ -60,18 +96,20 @@ export default class Furniture {
 		}
 	}
 
-	async convert() {
+	async convert(data: Buffer) {
 
 		try {
 
-			Spritesheet('assets/*.png', { format: 'json' }, error => {
+			console.log(data)
+ 
+			Spritesheet(`out/${this.className}/*.png`, { format: 'json', name: this.className, path: `web-gallery/furniture/${this.className}` }, error => {
 
 				if (error) {
 					throw error
 				}
 			   
 				console.log('spritesheet successfully generated')
-			})
+			}) 
 
 		}
 
