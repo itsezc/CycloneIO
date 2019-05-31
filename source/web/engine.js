@@ -1,9 +1,11 @@
+import Config from '../../config.json'
+
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-import Index from './themes/2018/pages/index'
-import Client from './themes/2018/pages/client'
+import Index from './themes/material/pages/index.jsx'
+import Client from './themes/material/pages/client.jsx'
 
 import ApolloClient, { gql } from 'apollo-boost' 
 import { ApolloProvider, Query } from 'react-apollo'

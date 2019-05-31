@@ -1,0 +1,17 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '3.14.1',
+0 silly argv   '$0': '/usr/local/bin/lerna',
+0 silly argv   name: 'tests21'
+0 silly argv }
+1 notice cli v3.14.1
+2 verbose rootPath /Users/chiru/Library/Mobile Documents/com~apple~CloudDocs/Projects/Cyclone
+3 error Error: Cannot find module '/Users/chiru/Library/Mobile Documents/com~apple~CloudDocs/Projects/Cyclone/node_modules/is-ci/index.js'. Please verify that the package.json has a valid "main" entry
+3 error     at tryPackage (internal/modules/cjs/loader.js:227:19)
+3 error     at Function.Module._findPath (internal/modules/cjs/loader.js:364:18)
+3 error     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:597:27)
+3 error     at Function.Module._load (internal/modules/cjs/loader.js:526:27)
+3 error     at Module.require (internal/modules/cjs/loader.js:666:19)
+3 error     at require (internal/modules/cjs/helpers.js:16:16)
+3 error     at CreateCommand.configureEnvironment (/Users/chiru/Library/Mobile Documents/com~apple~CloudDocs/Projects/Cyclone/node_modules/@lerna/command/index.js:129:16)
+3 error     at /Users/chiru/Library/Mobile Documents/com~apple~CloudDocs/Projects/Cyclone/node_modules/@lerna/command/index.js:46:37

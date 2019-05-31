@@ -1,3 +1,4 @@
+import Config from '../../config.json'
 import Path from 'path'
 
 import Webpack from 'webpack'
@@ -8,23 +9,22 @@ module.exports = (env, argv) => {
     return {
         target: 'web',
 
-        context: Path.resolve(__dirname),
-
         entry: {
-			ui: './mobile.js'
+			web: './engine.js'
 		},
+
+		context: Path.join(__dirname),
 
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: 'client.pug'
+                template: `./themes/${Config.hotel.theme}/structure.page`,
             })
         ],
 
         devServer: {
             compress: true,
-			historyApiFallback: true,
-			contentBase: './web-gallery'
+			historyApiFallback: true
 		},
 		
         module: {
