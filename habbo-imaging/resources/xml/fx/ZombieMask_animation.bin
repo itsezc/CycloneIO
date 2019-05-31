@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<animation name="fx.88" desc="Zombie Mask">
+	<remove id="fa" />
+	<remove id="fc" />
+	<remove id="ey" />
+	<remove id="ea" />
+	<remove id="ha" />
+	<sprite id="fx88_1" member="std_fx88_1_1" directions="1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx88_1" action="Default" frame="0" />
+	</frame>
+</animation>

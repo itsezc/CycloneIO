@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_print_U_skull" version="0.1">
+    <assets>
+      <asset name="h_std_cp_2530_2_0" mimeType="image/png">
+        <param key="offset" value="-30,37"/>
+      </asset>
+      <asset name="h_std_cp_2530_4_0" mimeType="image/png">
+        <param key="offset" value="-24,37"/>
+      </asset>
+      <asset name="h_std_cp_2530_3_0" mimeType="image/png">
+        <param key="offset" value="-28,37"/>
+      </asset>
+      <asset name="h_lay_cp_2530_2_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="h_lay_cp_2530_4_0" mimeType="image/png">
+        <param key="offset" value="-42,19"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

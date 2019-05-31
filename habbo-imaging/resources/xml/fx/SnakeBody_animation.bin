@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<animation name="fx.134" desc="Snake Body">
+	<remove id="bd" />
+	<remove id="lg" />
+	<override name="snakewalk" override="mv">
+		<frame>
+			<bodypart id="torso" action="Move" frame="0">
+				<item id="sh" base="fx134_1"/>
+			</bodypart>
+		</frame>
+		<frame>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx134_1"/>
+			</bodypart>
+		</frame>
+		<frame>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx134_1"/>
+			</bodypart>
+		</frame>
+		<frame>
+			<bodypart id="torso" action="Move" frame="2">
+				<item id="sh" base="fx134_1"/>
+			</bodypart>
+		</frame>
+		<frame>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx134_1"/>
+			</bodypart>
+		</frame>
+		<frame>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx134_1"/>
+			</bodypart>
+		</frame>
+	</override>
+	<override name="snakestand" override="std">
+		<frame>
+			<bodypart id="torso" action="Default" frame="0">
+				<item id="sh" base="fx134_1"/>
+			</bodypart>
+		</frame>
+	</override>
+</animation>

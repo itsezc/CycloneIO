@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<manifest>
+  <library name="acc_face_U_emma2" version="0.1">
+    <assets>
+      <asset name="h_std_fa_21015_0_0" mimeType="image/png" >
+			<param key="offset" value="-39,57" />
+		</asset>
+		<asset name="h_std_fa_21015_1_0" mimeType="image/png" >
+			<param key="offset" value="-30,57" />
+		</asset>
+		<asset name="h_std_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="-26,56" />
+		</asset>
+		<asset name="h_std_fa_21015_3_0" mimeType="image/png" >
+			<param key="offset" value="-22,55" />
+		</asset>
+		<asset name="h_spk_fa_21015_0_0" mimeType="image/png" >
+			<param key="offset" value="-39,58" />
+		</asset>
+		<asset name="h_spk_fa_21015_1_0" mimeType="image/png" >
+			<param key="offset" value="-30,58" />
+		</asset>
+		<asset name="h_spk_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="-26,57" />
+		</asset>
+		<asset name="h_spk_fa_21015_3_0" mimeType="image/png" >
+			<param key="offset" value="-22,56" />
+		</asset>
+		<asset name="h_lay_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="12,29" />
+		</asset>
+		<asset name="h_lsp_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="12,29" />
+		</asset>
+      <asset name="sh_std_fa_21015_0_0" mimeType="image/png" >
+			<param key="offset" value="-19,29" />
+		</asset>
+		<asset name="sh_std_fa_21015_1_0" mimeType="image/png" >
+			<param key="offset" value="-15,29" />
+		</asset>
+		<asset name="sh_std_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="-13,28" />
+		</asset>
+		<asset name="sh_std_fa_21015_3_0" mimeType="image/png" >
+			<param key="offset" value="-11,28" />
+		</asset>
+		<asset name="sh_spk_fa_21015_0_0" mimeType="image/png" >
+			<param key="offset" value="-19,29" />
+		</asset>
+		<asset name="sh_spk_fa_21015_1_0" mimeType="image/png" >
+			<param key="offset" value="-15,29" />
+		</asset>
+		<asset name="sh_spk_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="-13,29" />
+		</asset>
+		<asset name="sh_spk_fa_21015_3_0" mimeType="image/png" >
+			<param key="offset" value="-11,28" />
+		</asset>
+		<asset name="sh_lay_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="6,15" />
+		</asset>
+		<asset name="sh_lsp_fa_21015_2_0" mimeType="image/png" >
+			<param key="offset" value="6,15" />
+		</asset>
+    </assets>
+  </library>
+</manifest>

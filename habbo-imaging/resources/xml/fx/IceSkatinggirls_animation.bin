@@ -1,0 +1,108 @@
+<?xml version='1.0'?>
+<animation name="fx.39" desc="Ice Skating girls">
+	<sprite id="avatar" >
+		<direction id="0" dy="-8"/>
+		<direction id="1" dy="-8"/>
+		<direction id="2" dy="-8"/>
+		<direction id="3" dy="-8"/>
+		<direction id="4" dy="-8"/>
+		<direction id="5" dy="-8"/>
+		<direction id="6" dy="-8"/>
+		<direction id="7" dy="-8"/>
+	</sprite>
+	<override name="iceskate" override="mv">
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="0"/>
+			<bodypart id="torso" action="Move" frame="0">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="std" frame="0"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="2"/>
+			<bodypart id="torso" action="Move" frame="2">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="2"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+		</frame>
+	</override>
+	<override name="iceskatestand" override="std">
+		<frame>
+			<bodypart id="leftarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="Default" frame="0">
+				<item id="sh" base="fx39_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+		</frame>
+	</override>
+</animation>

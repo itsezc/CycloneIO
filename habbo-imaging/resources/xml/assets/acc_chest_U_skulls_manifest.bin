@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_chest_U_skulls" version="0.1">
+    <assets>
+      <asset name="h_lay_ca_2780_2_0" mimeType="image/png">
+        <param key="offset" value="1,23"/>
+      </asset>
+      <asset name="h_lay_ca_2794_2_0" mimeType="image/png">
+        <param key="offset" value="4,22"/>
+      </asset>
+      <asset name="h_std_ca_2780_0_0" mimeType="image/png">
+        <param key="offset" value="-20,50"/>
+      </asset>
+      <asset name="h_std_ca_2780_1_0" mimeType="image/png">
+        <param key="offset" value="-26,48"/>
+      </asset>
+      <asset name="h_std_ca_2780_2_0" mimeType="image/png">
+        <param key="offset" value="-25,45"/>
+      </asset>
+      <asset name="h_std_ca_2780_3_0" mimeType="image/png">
+        <param key="offset" value="-22,48"/>
+      </asset>
+      <asset name="h_std_ca_2780_7_0" mimeType="image/png">
+        <param key="offset" value="-24,44"/>
+      </asset>
+      <asset name="h_std_ca_2794_0_0" mimeType="image/png">
+        <param key="offset" value="-22,47"/>
+      </asset>
+      <asset name="h_std_ca_2794_1_0" mimeType="image/png">
+        <param key="offset" value="-24,49"/>
+      </asset>
+      <asset name="h_std_ca_2794_2_0" mimeType="image/png">
+        <param key="offset" value="-24,48"/>
+      </asset>
+      <asset name="h_std_ca_2794_3_0" mimeType="image/png">
+        <param key="offset" value="-20,51"/>
+      </asset>
+      <asset name="h_std_ca_2794_7_0" mimeType="image/png">
+        <param key="offset" value="-23,46"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

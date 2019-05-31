@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<animation name="fx.144" desc="Feathermask2 FX">
+	<sprite id="fx144_1" member="std_fx144_1_1" directions="1">
+		<direction id="0" dz="2" />
+		<direction id="1" dz="2" />
+		<direction id="2" dz="2" />
+		<direction id="3" dz="2" />
+		<direction id="4" dz="2" />
+		<direction id="5" dz="2" />
+		<direction id="6" dz="2" />
+		<direction id="7" dz="2" />
+	</sprite>
+	<remove id="ha" />
+	<remove id="fa" />
+	<remove id="ea" />
+	<remove id="he" />
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx144_1" action="Default" frame="0" />
+	</frame>
+	
+</animation>

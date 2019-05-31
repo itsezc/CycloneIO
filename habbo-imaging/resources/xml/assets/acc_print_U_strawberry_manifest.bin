@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_print_U_strawberry" version="0.1">
+    <assets>
+      <asset name="h_std_cp_2531_3_0" mimeType="image/png">
+        <param key="offset" value="-27,41"/>
+      </asset>
+      <asset name="h_std_cp_2531_2_0" mimeType="image/png">
+        <param key="offset" value="-30,41"/>
+      </asset>
+      <asset name="h_std_cp_2531_4_0" mimeType="image/png">
+        <param key="offset" value="-23,41"/>
+      </asset>
+      <asset name="h_lay_cp_2531_2_0" mimeType="image/png">
+        <param key="offset" value="-8,20"/>
+      </asset>
+      <asset name="h_lay_cp_2531_4_0" mimeType="image/png">
+        <param key="offset" value="-42,20"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

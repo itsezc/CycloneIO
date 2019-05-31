@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<animation name="fx.36" desc="BB yellow FX">
+	<sprite id="avatar" />
+	<add id="fx36_1" align="bottom" />
+	<sprite id="fx36_2" ink="8" member="std_fx36_2_1" >
+		<direction id="0" dz="1"/>
+		<direction id="1" dz="1"/>
+		<direction id="2" dz="1"/>
+		<direction id="3" dz="1"/>
+		<direction id="4" dz="1"/>
+		<direction id="5" dz="1"/>
+		<direction id="6" dz="1"/>
+		<direction id="7" dz="1"/>
+	</sprite>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-22" />
+		<fx id="fx36_1" action="Default" frame="0" />
+		<fx id="fx36_2" action="Default" frame="2" dy="4" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-10" />
+		<fx id="fx36_1" action="Default" frame="0" />
+		<fx id="fx36_2" action="Default" frame="1" dy="16" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-22" />
+		<fx id="fx36_1" action="Default" frame="0" />
+		<fx id="fx36_2" action="Default" frame="2" dy="4" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-30" />
+		<fx id="fx36_1" action="Default" frame="0" />
+		<fx id="fx36_2" action="Default" frame="3" dy="-4" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-32" />
+		<fx id="fx36_1" action="Default" frame="0" />
+		<fx id="fx36_2" action="Default" frame="3" dy="-6" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-30" />
+		<fx id="fx36_1" action="Default" frame="0" />
+		<fx id="fx36_2" action="Default" frame="3" dy="-4" />
+	</frame>
+</animation>

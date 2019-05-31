@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<animation desc="Fairy Wings 1 FX" name="fx.131">
+	<sprite directions="1" id="fx131_1" ink="33" member="std_fx131_1_1">
+		<direction dz="1" id="0"/>
+		<direction dz="1" id="1"/>
+		<direction dz="-1" id="2"/>
+		<direction dz="-1" id="3"/>
+		<direction dz="-1" id="4"/>
+		<direction dz="1" id="5"/>
+		<direction dz="1" id="6"/>
+		<direction dz="1" id="7"/>
+	</sprite>
+	<frame>
+		<fx action="Default" frame="0" id="fx131_1"/>
+	</frame>
+</animation>

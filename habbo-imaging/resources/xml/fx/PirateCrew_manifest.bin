@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<manifest><library id="PirateCrew" version="0.1">
+  <assets>
+    <asset name="h_std_fx161_2_1_6_0" mimeType="image/png">
+      <param key="offset" value="-13,83"/>
+    </asset>
+    <asset name="h_std_fx161_2_1_5_0" mimeType="image/png">
+      <param key="offset" value="-19,88"/>
+    </asset>
+    <asset name="h_std_fx161_2_1_7_0" mimeType="image/png">
+      <param key="offset" value="-13,79"/>
+    </asset>
+    <asset name="h_std_fx161_2_1_3_0" mimeType="image/png">
+      <param key="offset" value="-14,80"/>
+    </asset>
+    <asset name="h_std_fx161_2_1_4_0" mimeType="image/png">
+      <param key="offset" value="-13,85"/>
+    </asset>
+    <asset name="h_std_fx161_2_1_2_0" mimeType="image/png">
+      <param key="offset" value="-11,85"/>
+    </asset>
+    <asset name="h_std_fx161_2_1_1_0" mimeType="image/png">
+      <param key="offset" value="-17,88"/>
+    </asset>
+    <asset name="h_std_fx161_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-11,83"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_6_0" mimeType="image/png">
+      <param key="offset" value="-42,33"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-13,65"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_7_0" mimeType="image/png">
+      <param key="offset" value="-43,34"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-21,61"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-7,63"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-31,58"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-43,64"/>
+    </asset>
+    <asset name="h_std_fx161_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-48,68"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_std_ha_fx161_2_0_0" link="h_std_fx161_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx161_2_1_0" link="h_std_fx161_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx161_2_2_0" link="h_std_fx161_2_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx161_2_3_0" link="h_std_fx161_2_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx161_2_4_0" link="h_std_fx161_2_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx161_2_5_0" link="h_std_fx161_2_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx161_2_6_0" link="h_std_fx161_2_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx161_2_7_0" link="h_std_fx161_2_1_7_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_0_0" link="h_std_fx161_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_1_0" link="h_std_fx161_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_2_0" link="h_std_fx161_2_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_3_0" link="h_std_fx161_2_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_4_0" link="h_std_fx161_2_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_5_0" link="h_std_fx161_2_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_6_0" link="h_std_fx161_2_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx161_2_7_0" link="h_std_fx161_2_1_7_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

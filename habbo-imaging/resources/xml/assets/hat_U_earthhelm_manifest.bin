@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="hat_U_earthhelm" version="0.1">
+    <assets>
+      <asset name="h_lay_ha_2789_2_0" mimeType="image/png">
+        <param key="offset" value="30,48"/>
+      </asset>
+      <asset name="h_lsp_ha_2789_2_0" mimeType="image/png">
+        <param key="offset" value="-34,-112"/>
+      </asset>
+      <asset name="h_std_ha_2789_7_0" mimeType="image/png">
+        <param key="offset" value="-14,83"/>
+      </asset>
+      <asset name="h_std_ha_2789_3_0" mimeType="image/png">
+        <param key="offset" value="-15,87"/>
+      </asset>
+      <asset name="h_std_ha_2789_2_0" mimeType="image/png">
+        <param key="offset" value="-12,88"/>
+      </asset>
+      <asset name="h_std_ha_2789_1_0" mimeType="image/png">
+        <param key="offset" value="-6,89"/>
+      </asset>
+      <asset name="h_std_ha_2789_0_0" mimeType="image/png">
+        <param key="offset" value="-10,87"/>
+      </asset>
+      <asset name="h_spk_ha_2789_7_0" mimeType="image/png">
+        <param key="offset" value="-14,83"/>
+      </asset>
+      <asset name="h_spk_ha_2789_3_0" mimeType="image/png">
+        <param key="offset" value="-15,87"/>
+      </asset>
+      <asset name="h_spk_ha_2789_2_0" mimeType="image/png">
+        <param key="offset" value="-12,88"/>
+      </asset>
+      <asset name="h_spk_ha_2789_1_0" mimeType="image/png">
+        <param key="offset" value="-6,89"/>
+      </asset>
+      <asset name="h_spk_ha_2789_0_0" mimeType="image/png">
+        <param key="offset" value="-10,87"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

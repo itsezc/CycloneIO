@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_eye_U_skimask" version="0.1">
+    <assets>
+      <asset name="h_std_ea_2240_0_0" mimeType="image/png">
+        <param key="offset" value="-23,65"/>
+      </asset>
+      <asset name="h_std_ea_2240_1_0" mimeType="image/png">
+        <param key="offset" value="-18,67"/>
+      </asset>
+      <asset name="h_std_ea_2240_2_0" mimeType="image/png">
+        <param key="offset" value="-20,67"/>
+      </asset>
+      <asset name="h_std_ea_2240_3_0" mimeType="image/png">
+        <param key="offset" value="-20,65"/>
+      </asset>
+      <asset name="h_std_ea_2240_7_0" mimeType="image/png">
+        <param key="offset" value="-22,60"/>
+      </asset>
+      <asset name="h_std_ea_2241_1_0" mimeType="image/png">
+        <param key="offset" value="-41,62"/>
+      </asset>
+      <asset name="h_std_ea_2241_2_0" mimeType="image/png">
+        <param key="offset" value="-31,63"/>
+      </asset>
+      <asset name="h_std_ea_2241_3_0" mimeType="image/png">
+        <param key="offset" value="-23,61"/>
+      </asset>
+      <asset name="h_lay_ea_2240_2_0" mimeType="image/png">
+        <param key="offset" value="16,39"/>
+      </asset>
+      <asset name="h_lay_ea_2241_2_0" mimeType="image/png">
+        <param key="offset" value="11,35"/>
+      </asset>
+      <asset name="sh_std_ea_2240_0_0" mimeType="image/png">
+        <param key="offset" value="-11,34"/>
+      </asset>
+      <asset name="sh_std_ea_2240_1_0" mimeType="image/png">
+        <param key="offset" value="-9,35"/>
+      </asset>
+      <asset name="sh_std_ea_2240_2_0" mimeType="image/png">
+        <param key="offset" value="-9,35"/>
+      </asset>
+      <asset name="sh_std_ea_2240_3_0" mimeType="image/png">
+        <param key="offset" value="-8,33"/>
+      </asset>
+      <asset name="sh_std_ea_2240_7_0" mimeType="image/png">
+        <param key="offset" value="-11,31"/>
+      </asset>
+      <asset name="sh_std_ea_2241_0_0" mimeType="image/png">
+        <param key="offset" value="-22,32"/>
+      </asset>
+      <asset name="sh_std_ea_2241_1_0" mimeType="image/png">
+        <param key="offset" value="-20,33"/>
+      </asset>
+      <asset name="sh_std_ea_2241_2_0" mimeType="image/png">
+        <param key="offset" value="-15,32"/>
+      </asset>
+      <asset name="sh_std_ea_2241_3_0" mimeType="image/png">
+        <param key="offset" value="-10,31"/>
+      </asset>
+      <asset name="sh_lay_ea_2240_2_0" mimeType="image/png">
+        <param key="offset" value="10,19"/>
+      </asset>
+      <asset name="sh_lay_ea_2241_2_0" mimeType="image/png">
+        <param key="offset" value="6,17"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

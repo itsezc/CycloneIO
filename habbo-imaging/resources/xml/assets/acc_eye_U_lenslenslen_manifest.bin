@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_eye_U_lenslenslen" version="0.1">
+    <assets>
+      <asset name="h_std_ea_9991_0_0" mimeType="image/png">
+        <param key="offset" value="-38,62"/>
+      </asset>
+      <asset name="h_std_ea_9991_1_0" mimeType="image/png">
+        <param key="offset" value="-29,59"/>
+      </asset>
+      <asset name="h_std_ea_9991_2_0" mimeType="image/png">
+        <param key="offset" value="-24,60"/>
+      </asset>
+      <asset name="h_std_ea_9991_3_0" mimeType="image/png">
+        <param key="offset" value="-22,58"/>
+      </asset>
+      <asset name="h_std_ea_9991_7_0" mimeType="image/png">
+        <param key="offset" value="-33,72"/>
+      </asset>
+      <asset name="h_lay_ea_9991_2_0" mimeType="image/png">
+        <param key="offset" value="11,34"/>
+      </asset>
+      <asset name="sh_std_ea_9991_0_0" mimeType="image/png">
+        <param key="offset" value="-19,31"/>
+      </asset>
+      <asset name="sh_std_ea_9991_1_0" mimeType="image/png">
+        <param key="offset" value="-13,31"/>
+      </asset>
+      <asset name="sh_std_ea_9991_2_0" mimeType="image/png">
+        <param key="offset" value="-12,30"/>
+      </asset>
+      <asset name="sh_std_ea_9991_3_0" mimeType="image/png">
+        <param key="offset" value="-11,29"/>
+      </asset>
+      <asset name="sh_std_ea_9991_7_0" mimeType="image/png">
+        <param key="offset" value="-17,37"/>
+      </asset>
+      <asset name="sh_lay_ea_9991_2_0" mimeType="image/png">
+        <param key="offset" value="6,17"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

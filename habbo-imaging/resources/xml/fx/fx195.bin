@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<animation name="fx.195" desc="Cross Trainer">
+
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="0" dy="0"/>
+		<bodypart id="rightarm" action="Move" frame="0" dy="0"/>
+		<bodypart id="torso" action="Move" frame="0" dy="0">
+            				<item id="sh" base="fx195_1"/>
+			</bodypart>
+		<bodypart id="head" action="Default" frame="0" dy="0"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+		<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+		<bodypart id="torso" action="Move" frame="1" dy="0">
+                        <item id="sh" base="fx195_1"/>
+			</bodypart>
+		<bodypart id="head" action="Default" frame="0" dy="0"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="2" dy="-1"/>
+		<bodypart id="rightarm" action="Move" frame="2" dy="-1"/>
+		<bodypart id="torso" action="Move" frame="2" dy="-1">
+                              <item id="sh" base="fx195_1"/>
+			</bodypart>
+		<bodypart id="head" action="Default" frame="0" dy="-1"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="3" dy="-1"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-1"/>
+		<bodypart id="torso" action="Move" frame="3" dy="-1">
+                           <item id="sh" base="fx195_1"/>
+			</bodypart>
+		<bodypart id="head" action="Default" frame="0" dy="-1"/>
+	</frame>
+
+</animation>

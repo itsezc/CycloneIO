@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_face_U_siga" version="0.1">
+    <assets>
+      <asset name="sh_lay_fa_7823_2_0" mimeType="image/png">
+        <param key="offset" value="-2,17"/>
+      </asset>
+      <asset name="sh_std_fa_7823_7_0" mimeType="image/png">
+        <param key="offset" value="-10,28"/>
+      </asset>
+      <asset name="sh_std_fa_7823_3_0" mimeType="image/png">
+        <param key="offset" value="-13,24"/>
+      </asset>
+      <asset name="sh_std_fa_7823_2_0" mimeType="image/png">
+        <param key="offset" value="-17,25"/>
+      </asset>
+      <asset name="sh_std_fa_7823_1_0" mimeType="image/png">
+        <param key="offset" value="-21,27"/>
+      </asset>
+      <asset name="sh_std_fa_7823_0_0" mimeType="image/png">
+        <param key="offset" value="-23,32"/>
+      </asset>
+      <asset name="h_lay_fa_7823_2_0" mimeType="image/png">
+        <param key="offset" value="-4,33"/>
+      </asset>
+      <asset name="h_std_fa_7823_7_0" mimeType="image/png">
+        <param key="offset" value="-21,53"/>
+      </asset>
+      <asset name="h_std_fa_7823_3_0" mimeType="image/png">
+        <param key="offset" value="-30,48"/>
+      </asset>
+      <asset name="h_std_fa_7823_2_0" mimeType="image/png">
+        <param key="offset" value="-39,49"/>
+      </asset>
+      <asset name="h_std_fa_7823_1_0" mimeType="image/png">
+        <param key="offset" value="-42,52"/>
+      </asset>
+      <asset name="h_std_fa_7823_0_0" mimeType="image/png">
+        <param key="offset" value="-45,60"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

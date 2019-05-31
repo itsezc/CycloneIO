@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<manifest><library id="mobile0800" version="0.1">
+  <assets>
+    <asset name="h_std_fx65_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-48,45"/>
+    </asset>
+    <asset name="h_std_fx65_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-44,41"/>
+    </asset>
+    <asset name="h_std_fx65_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-33,34"/>
+    </asset>
+    <asset name="h_std_fx65_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-26,38"/>
+    </asset>
+    <asset name="h_std_fx65_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-9,44"/>
+    </asset>
+    <asset name="h_std_fx65_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-8,42"/>
+    </asset>
+    <asset name="h_std_fx65_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-38,55"/>
+    </asset>
+    <asset name="h_std_fx65_2_1_0_1" mimeType="image/png">
+      <param key="offset" value="-38,55"/>
+    </asset>
+    <asset name="h_std_fx65_2_1_0_2" mimeType="image/png">
+      <param key="offset" value="-38,55"/>
+    </asset>
+    <asset name="h_std_fx65_2_1_0_3" mimeType="image/png">
+      <param key="offset" value="-38,55"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_crr_ri_fx65_1_0_0" link="h_std_fx65_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx65_1_1_0" link="h_std_fx65_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx65_1_2_0" link="h_std_fx65_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx65_1_3_0" link="h_std_fx65_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx65_1_4_0" link="h_std_fx65_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx65_1_5_0" link="h_std_fx65_1_1_5_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

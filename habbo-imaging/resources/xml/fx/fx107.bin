@@ -1,0 +1,105 @@
+<?xml version='1.0'?>
+<animation name="fx.107" desc="Plasto Pod Chair FX">
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="ey" />
+	<remove id="fa" />
+	<remove id="fc" />
+	<remove id="hd" />
+	<remove id="ca" />
+	<remove id="cc" />
+	<remove id="ch" />
+	<remove id="wa" />
+	<remove id="lh" />
+	<remove id="ls" />
+	<remove id="lc" />
+	<remove id="li" />
+	<remove id="rh" />	
+	<remove id="rc" />
+	<remove id="rs" /> 
+
+	<add id="fx107_1" align="top" />
+	<shadow id="std_fx107_sd_0" />
+
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso">
+			<item id="bd" base="fx107_1"/>
+		</bodypart>
+		<fx id="fx107_1" action="Default" frame="0" dz="-1"/>
+	</frame>
+
+	<override name="mv_plastochair" override="mv">
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="0" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-20" />
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="1" />
+		<bodypart id="bottom"/>
+		<fx id="fx107_1" action="Default" frame="0" dy="-20" />
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="2" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-21" />
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="3" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-21" />
+	</frame>
+	</override>
+
+	<override name="sign_plastochair" override="sign">
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm" action="Sign"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="2" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-20" />
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm" action="Sign"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="3" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-20" />
+	</frame>	
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm" action="Sign"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="0" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-20" />
+	</frame>	
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm" action="Sign"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso" action="Move" frame="1" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-20" />
+	</frame>
+	</override>
+
+   	<override name="sit_plastochair" override="sit">
+	<frame>
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="fx107_1" action="Default" frame="0" dy="-30" dz="-1" />
+	</frame>
+	</override>
+</animation>

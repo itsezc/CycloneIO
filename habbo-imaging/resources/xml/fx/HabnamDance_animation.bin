@@ -1,0 +1,407 @@
+<?xml version='1.0'?>
+<animation name="fx.140" desc="Habnam Dance">
+	<sprite id="fx140_1" ink="33" member="std_fx140_1_1" staticY="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+
+	<!-- Gagnam! -->
+
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 1:2 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 1:3 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 1:4 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="-1" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="2" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	
+	<!-- set 2 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 2:2 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 2:3 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 2:4 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="-1" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="-2" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="-2" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+		<!-- set 3 with Wave -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="1" dx="2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="1" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 3:2 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="-2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="1" dx="-2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="10" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 3:3 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-4" dd="0" />
+		<fx id="fx140_1" action="Default" frame="1"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="1" dx="2" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="-3" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="2" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="1" dx="0" dy="1" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="3"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+	<!-- 3:4 -->
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="-2" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="-1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="-2" dd="0" />
+		<fx id="fx140_1" action="Default" frame="0"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="-2" dy="-1" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="-1" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="-1" dd="0" />
+		<fx id="fx140_1" action="Default" frame="2"/>
+	</frame>
+	<frame delay="2">
+		<bodypart id="leftarm" action="Wave" frame="0" dx="-2" dy="0" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="-2" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="0" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="-2" dy="0" dd="0" />
+		<fx id="fx140_1" action="Default" frame="4"/>
+	</frame>
+</animation>

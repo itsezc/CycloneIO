@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_chest_U_schooltie" version="0.1">
+    <assets>
+      <asset name="h_std_ca_2139_1_0" mimeType="image/png">
+        <param key="offset" value="-36,43"/>
+      </asset>
+      <asset name="h_std_ca_2139_2_0" mimeType="image/png">
+        <param key="offset" value="-34,41"/>
+      </asset>
+      <asset name="h_std_ca_2139_3_0" mimeType="image/png">
+        <param key="offset" value="-30,41"/>
+      </asset>
+      <asset name="h_std_ca_2140_1_0" mimeType="image/png">
+        <param key="offset" value="-38,41"/>
+      </asset>
+      <asset name="h_std_ca_2140_2_0" mimeType="image/png">
+        <param key="offset" value="-36,40"/>
+      </asset>
+      <asset name="h_std_ca_2140_3_0" mimeType="image/png">
+        <param key="offset" value="-31,40"/>
+      </asset>
+      <asset name="h_lay_ca_2139_2_0" mimeType="image/png">
+        <param key="offset" value="-11,20"/>
+      </asset>
+      <asset name="h_lay_ca_2140_2_0" mimeType="image/png">
+        <param key="offset" value="-13,19"/>
+      </asset>
+      <asset name="sh_std_ca_2139_1_0" mimeType="image/png">
+        <param key="offset" value="-18,22"/>
+      </asset>
+      <asset name="sh_std_ca_2139_2_0" mimeType="image/png">
+        <param key="offset" value="-16,21"/>
+      </asset>
+      <asset name="sh_std_ca_2139_3_0" mimeType="image/png">
+        <param key="offset" value="-13,19"/>
+      </asset>
+      <asset name="sh_std_ca_2140_1_0" mimeType="image/png">
+        <param key="offset" value="-20,18"/>
+      </asset>
+      <asset name="sh_std_ca_2140_2_0" mimeType="image/png">
+        <param key="offset" value="-17,19"/>
+      </asset>
+      <asset name="sh_std_ca_2140_3_0" mimeType="image/png">
+        <param key="offset" value="-14,18"/>
+      </asset>
+      <asset name="sh_lay_ca_2139_2_0" mimeType="image/png">
+        <param key="offset" value="-6,9"/>
+      </asset>
+      <asset name="sh_lay_ca_2140_2_0" mimeType="image/png">
+        <param key="offset" value="-7,8"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

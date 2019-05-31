@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<animation name="fx.77" desc="Riding FX">
+	<remove id="sh" />
+	<add id="ri" align="rightitem" base="fx77_2_1" />	
+	<!--
+	<remove id="lg" />
+	<add id="bd" align="torso" base="fx77_2" />
+	-->
+	<!-- Stand Override -->
+	<override name="std_ride" override="std">
+		<frame>
+			<bodypart id="torso" action="Default" frame="0">
+				<item id="bd" base="fx77_1"/>
+				<item id="lg" base="fx77_1_1"/>
+			</bodypart>
+			<!--
+			<bodypart id="rightitem" action="CarryItem" frame="0" base="fx77_2_1" />		
+			-->
+			<bodypart id="rightarm" action="CarryItem" frame="0" /> 			<bodypart id="leftarm" action="Move" frame="1"/>
+			<!-- <bodypart id="rightarm" action="Move" frame="1"/> -->
+		</frame>
+	</override>
+
+	<!-- Move Override -->
+	<override name="mv_ride" override="mv">
+		<frame>
+			<bodypart id="torso" action="Default" frame="0" dy="-1">
+				<item id="bd" base="fx77_1"/>
+				<item id="lg" base="fx77_1_1"/>
+			</bodypart>
+			<!--
+			<bodypart id="rightitem" action="CarryItem" frame="0" base="fx77_2_1" />		
+			-->
+			<bodypart id="rightarm" action="CarryItem" frame="0" /> 			<bodypart id="leftarm" action="Move" frame="1"/>
+			<!-- <bodypart id="rightarm" action="Move" frame="1"/> -->
+		</frame>
+		<frame>
+			<bodypart id="torso" action="Default" frame="0" dy="0">
+				<item id="bd" base="fx77_1"/>
+				<item id="lg" base="fx77_1_1"/>
+			</bodypart>
+			<!--
+			<bodypart id="rightitem" action="CarryItem" frame="0" base="fx77_2_1" />		
+			-->
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="-1"/> 			<bodypart id="leftarm" action="Move" frame="1"/>
+			<!-- <bodypart id="rightarm" action="Move" frame="1"/> -->
+		</frame>
+	</override>
+
+	<!-- Jump Override -->
+	<override name="jump_ride" override="ridejump">
+		<frame>
+			<!-- <fx id="avatar" frame="0" dy="-20" /> -->
+			<bodypart id="torso" action="Default" frame="0" dy="-11">
+				<item id="bd" base="fx77_1"/>
+				<item id="lg" base="fx77_1_1"/>
+			</bodypart>
+			<!--
+			<bodypart id="rightitem" action="CarryItem" frame="0" base="fx77_2_1" />		
+			-->
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="-11"/> 			<bodypart id="leftarm" action="Move" frame="1" dy="-11"/>
+			<!-- <bodypart id="rightarm" action="Move" frame="1"/> -->
+			<bodypart id="head" dy="-11"/>
+		</frame>
+	</override>
+</animation>

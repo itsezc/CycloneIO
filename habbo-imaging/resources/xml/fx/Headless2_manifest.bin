@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<manifest><library id="Headless2" version="0.1">
+  <assets>
+    <asset mimeType="image/png" name="h_std_fx133_1_1_0_0">
+      <param key="offset" value="-23,52"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_0">
+      <param key="offset" value="-23,54"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_1">
+      <param key="offset" value="-23,54"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_2">
+      <param key="offset" value="-21,57"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_3">
+      <param key="offset" value="-19,59"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_4">
+      <param key="offset" value="-17,59"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_5">
+      <param key="offset" value="-15,58"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_6">
+      <param key="offset" value="-14,56"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_7">
+      <param key="offset" value="-13,49"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_2_1_0_8">
+      <param key="offset" value="-45,46"/>
+    </asset>
+    <asset mimeType="image/png" name="h_std_fx133_1_1_1_0">
+      <param key="offset" value="-24,53"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_0" name="h_std_fx133_2_1_1_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_1" name="h_std_fx133_2_1_1_1"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_2" name="h_std_fx133_2_1_1_2"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_3" name="h_std_fx133_2_1_1_3"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_4" name="h_std_fx133_2_1_1_4"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_5" name="h_std_fx133_2_1_1_5"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_6" name="h_std_fx133_2_1_1_6"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_7" name="h_std_fx133_2_1_1_7"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_8" name="h_std_fx133_2_1_1_8"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_1_1_0_0" name="h_std_fx133_1_1_2_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_0" name="h_std_fx133_2_1_2_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_1" name="h_std_fx133_2_1_2_1"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_2" name="h_std_fx133_2_1_2_2"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_3" name="h_std_fx133_2_1_2_3"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_4" name="h_std_fx133_2_1_2_4"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_5" name="h_std_fx133_2_1_2_5"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_6" name="h_std_fx133_2_1_2_6"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_7" name="h_std_fx133_2_1_2_7"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_8" name="h_std_fx133_2_1_2_8"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_1_1_0_0" name="h_std_fx133_1_1_3_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_0" name="h_std_fx133_2_1_3_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_1" name="h_std_fx133_2_1_3_1"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_2" name="h_std_fx133_2_1_3_2"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_3" name="h_std_fx133_2_1_3_3"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_4" name="h_std_fx133_2_1_3_4"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_5" name="h_std_fx133_2_1_3_5"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_6" name="h_std_fx133_2_1_3_6"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_7" name="h_std_fx133_2_1_3_7"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_8" name="h_std_fx133_2_1_3_8"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_1_1_0_0" name="h_std_fx133_1_1_4_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_0" name="h_std_fx133_2_1_4_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_1" name="h_std_fx133_2_1_4_1"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_2" name="h_std_fx133_2_1_4_2"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_3" name="h_std_fx133_2_1_4_3"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_4" name="h_std_fx133_2_1_4_4"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_5" name="h_std_fx133_2_1_4_5"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_6" name="h_std_fx133_2_1_4_6"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_7" name="h_std_fx133_2_1_4_7"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_8" name="h_std_fx133_2_1_4_8"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_1_1_1_0" name="h_std_fx133_1_1_5_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_0" name="h_std_fx133_2_1_5_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_1" name="h_std_fx133_2_1_5_1"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_2" name="h_std_fx133_2_1_5_2"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_3" name="h_std_fx133_2_1_5_3"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_4" name="h_std_fx133_2_1_5_4"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_5" name="h_std_fx133_2_1_5_5"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_6" name="h_std_fx133_2_1_5_6"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_7" name="h_std_fx133_2_1_5_7"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_1_8" name="h_std_fx133_2_1_5_8"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_1_1_0_0" name="h_std_fx133_1_1_6_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_0" name="h_std_fx133_2_1_6_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_1" name="h_std_fx133_2_1_6_1"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_2" name="h_std_fx133_2_1_6_2"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_3" name="h_std_fx133_2_1_6_3"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_4" name="h_std_fx133_2_1_6_4"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_5" name="h_std_fx133_2_1_6_5"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_6" name="h_std_fx133_2_1_6_6"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_7" name="h_std_fx133_2_1_6_7"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_8" name="h_std_fx133_2_1_6_8"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_1_1_0_0" name="h_std_fx133_1_1_7_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_0" name="h_std_fx133_2_1_7_0"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_1" name="h_std_fx133_2_1_7_1"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_2" name="h_std_fx133_2_1_7_2"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_3" name="h_std_fx133_2_1_7_3"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_4" name="h_std_fx133_2_1_7_4"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_5" name="h_std_fx133_2_1_7_5"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_6" name="h_std_fx133_2_1_7_6"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_7" name="h_std_fx133_2_1_7_7"/>
+    <alias fliph="0" flipv="0" link="h_std_fx133_2_1_0_8" name="h_std_fx133_2_1_7_8"/>
+  </aliases>
+</library></manifest>

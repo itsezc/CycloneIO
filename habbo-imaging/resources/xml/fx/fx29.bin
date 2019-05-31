@@ -1,0 +1,98 @@
+<?xml version='1.0'?>
+<animation name="fx.29" desc="Swimming FX">
+   <!-- body -->
+    <remove id="bd" />
+	<remove id="lh" />
+	<remove id="rh" />
+	<!-- shirt -->
+	<remove id="ch" />
+	<remove id="rs" />
+	<remove id="ls" />
+	<!-- Jacket -->
+	<remove id="cc" />
+	<remove id="lc" />
+	<remove id="rc" />
+	<!-- Shoes -->
+	<remove id="sh" />
+	<!-- Legs -->
+	<remove id="lg" />
+	<!-- Accessories -->
+	<remove id="ca" />
+	<remove id="wa" />
+	<remove id="cp" />
+	<!-- Item -->
+	<remove id="ri" />
+	<remove id="li" />
+
+	<sprite id="fx29_1" member="std_fx29_1_1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<sprite id="fx29_2" member="std_fx29_2_1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<sprite id="avatar" />
+ 
+
+	<frame>
+		<fx id="avatar" frame="0" dy="50" />
+		<bodypart id="head" dy="0"/>
+		<bodypart id="leftarm" dy="0"/>
+		<bodypart id="rightarm" dy="0"/>
+		<bodypart id="torso" dy="0"/>
+		<fx id="fx29_1" action="Default" frame="1" dx="10" dy="-10"/>
+		<fx id="fx29_2" action="Default" frame="1" dx="10" dy="-10"/>
+	</frame>
+	<frame>
+		<fx id="avatar" frame="0" dy="51" />
+		<bodypart id="head" dy="0"/>
+		<bodypart id="leftarm" dy="0"/>
+		<bodypart id="rightarm" dy="0"/>
+		<bodypart id="torso" dy="0"/>
+		<fx id="fx29_1" action="Default" frame="2" dx="10" dy="-10"/>
+		<fx id="fx29_2" action="Default" frame="2" dx="10" dy="-10"/>
+	</frame>
+	<frame>
+		<fx id="avatar" frame="0" dy="52" />
+		<bodypart id="head" dy="0"/>
+		<bodypart id="leftarm" dy="0"/>
+		<bodypart id="rightarm" dy="0"/>
+		<bodypart id="torso" dy="0"/>
+		<fx id="fx29_1" action="Default" frame="3" dx="10" dy="-10"/>
+		<fx id="fx29_2" action="Default" frame="3" dx="10" dy="-10"/>
+	</frame>
+	<frame>
+		<fx id="avatar" frame="0" dy="53" />
+		<bodypart id="head" dy="0"/>
+		<bodypart id="leftarm" dy="0"/>
+		<bodypart id="rightarm" dy="0"/>
+		<bodypart id="torso" dy="0"/>
+		<fx id="fx29_1" action="Default" frame="4" dx="10" dy="-10"/>
+		<fx id="fx29_2" action="Default" frame="1" dx="10" dy="-10"/>
+	</frame>
+	<frame>
+		<fx id="avatar" frame="0" dy="52" />
+		<bodypart id="head" dy="0"/>
+		<bodypart id="leftarm" dy="0"/>
+		<bodypart id="rightarm" dy="0"/>
+		<bodypart id="torso" dy="0"/>
+		<fx id="fx29_1" action="Default" frame="5" dx="10" dy="-10"/>
+		<fx id="fx29_2" action="Default" frame="2" dx="10" dy="-10"/>
+	</frame>
+
+
+</animation>
+

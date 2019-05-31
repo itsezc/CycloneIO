@@ -1,0 +1,13 @@
+<?xml version='1.0'?>
+<animation name="fx.27" desc="Viking FX">
+	<add id="ri" align="rightitem" base="fx27_1" />
+	<remove id="hrb" />
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="rightitem" action="CarryItem" frame="0" base="fx27_1" />
+		<bodypart id="head" >
+			<item id="ha" base="fx27_2"/>
+		</bodypart>
+	</frame>
+</animation>
+

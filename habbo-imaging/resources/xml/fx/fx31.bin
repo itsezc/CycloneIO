@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<animation name="fx.31" desc="Cheetos FX">
+	<remove id="he" />
+	<sprite id="fx31_2" ink="8" member="std_fx31_2_1" directions="1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<frame>
+		<bodypart id="head" >
+			<item id="ha" base="fx31_1"/>
+		</bodypart>
+	</frame>
+</animation>

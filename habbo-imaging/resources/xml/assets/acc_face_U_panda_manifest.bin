@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_face_U_panda" version="0.1">
+    <assets>
+      <asset name="h_spk_fa_6853_7_0" mimeType="image/png">
+        <param key="offset" value="-20,59"/>
+      </asset>
+      <asset name="h_spk_fa_6853_3_0" mimeType="image/png">
+        <param key="offset" value="-20,57"/>
+      </asset>
+      <asset name="h_spk_fa_6853_2_0" mimeType="image/png">
+        <param key="offset" value="-15,60"/>
+      </asset>
+      <asset name="h_spk_fa_6853_1_0" mimeType="image/png">
+        <param key="offset" value="-12,60"/>
+      </asset>
+      <asset name="h_spk_fa_6853_0_0" mimeType="image/png">
+        <param key="offset" value="-16,59"/>
+      </asset>
+      <asset name="h_std_fa_6853_7_0" mimeType="image/png">
+        <param key="offset" value="-20,58"/>
+      </asset>
+      <asset name="h_std_fa_6853_3_0" mimeType="image/png">
+        <param key="offset" value="-20,56"/>
+      </asset>
+      <asset name="h_std_fa_6853_2_0" mimeType="image/png">
+        <param key="offset" value="-15,59"/>
+      </asset>
+      <asset name="h_std_fa_6853_1_0" mimeType="image/png">
+        <param key="offset" value="-12,59"/>
+      </asset>
+      <asset name="h_std_fa_6853_0_0" mimeType="image/png">
+        <param key="offset" value="-16,58"/>
+      </asset>
+      <asset name="h_lsp_fa_6853_2_0" mimeType="image/png">
+        <param key="offset" value="-51,-126"/>
+      </asset>
+      <asset name="h_lay_fa_6853_2_0" mimeType="image/png">
+        <param key="offset" value="13,33"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

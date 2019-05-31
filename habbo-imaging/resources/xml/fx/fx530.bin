@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<animation name="fx.530" desc="Babydance">
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="0" dx="0" dy="19" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="19" dd="1" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="19" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="1" dx="0" dy="19" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="19" dd="1" />
+		<bodypart id="rightarm" action="Move" frame="3" dx="0" dy="19" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="rightarm" action="Move" frame="2" dx="0" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="rightarm" action="Move" frame="2" dx="0" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="CarryItem" frame="0" dx="0" dy="19" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="19" dd="-1" />
+		<bodypart id="rightarm" action="Move" frame="2" dx="0" dy="19" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="1" dx="0" dy="19" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="19" dd="-1" />
+		<bodypart id="rightarm" action="Move" frame="3" dx="0" dy="19" dd="0" />
+	</frame>
+</animation>

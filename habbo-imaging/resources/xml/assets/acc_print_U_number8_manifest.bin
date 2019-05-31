@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_print_U_number8" version="0.1">
+    <assets>
+      <asset name="h_std_cp_2203_7_0" mimeType="image/png">
+        <param key="offset" value="-29,35"/>
+      </asset>
+      <asset name="h_std_cp_2203_0_0" mimeType="image/png">
+        <param key="offset" value="-23,37"/>
+      </asset>
+      <asset name="h_std_cp_2203_6_0" mimeType="image/png">
+        <param key="offset" value="-32,37"/>
+      </asset>
+      <asset name="h_std_cp_2204_7_0" mimeType="image/png">
+        <param key="offset" value="-30,34"/>
+      </asset>
+      <asset name="h_std_cp_2204_0_0" mimeType="image/png">
+        <param key="offset" value="-24,36"/>
+      </asset>
+      <asset name="h_std_cp_2204_6_0" mimeType="image/png">
+        <param key="offset" value="-33,36"/>
+      </asset>
+      <asset name="sh_std_cp_2203_7_0" mimeType="image/png">
+        <param key="offset" value="-13,20"/>
+      </asset>
+      <asset name="sh_std_cp_2203_0_0" mimeType="image/png">
+        <param key="offset" value="-10,22"/>
+      </asset>
+      <asset name="sh_std_cp_2203_6_0" mimeType="image/png">
+        <param key="offset" value="-14,22"/>
+      </asset>
+      <asset name="sh_std_cp_2204_7_0" mimeType="image/png">
+        <param key="offset" value="-14,19"/>
+      </asset>
+      <asset name="sh_std_cp_2204_0_0" mimeType="image/png">
+        <param key="offset" value="-11,21"/>
+      </asset>
+      <asset name="sh_std_cp_2204_6_0" mimeType="image/png">
+        <param key="offset" value="-15,21"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

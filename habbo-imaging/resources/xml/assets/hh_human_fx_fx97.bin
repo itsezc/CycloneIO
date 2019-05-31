@@ -1,0 +1,757 @@
+<?xml version='1.0'?>
+<animation name="fx.97" desc="Snowboard plch">
+	<sprite id="avatar">
+		<direction id="0" dy="-20"/>
+		<direction id="1" dy="-20"/>
+		<direction id="2" dy="-20"/>
+		<direction id="3" dy="-20"/>
+		<direction id="4" dy="-20"/>
+		<direction id="5" dy="-20"/>
+		<direction id="6" dy="-20"/>
+		<direction id="7" dy="-20"/>
+	</sprite>
+	<remove id="sh" />
+	<direction offset="-2" />
+		<!--
+		<sprite id="fx97sb" member="std_fx97sb" directions="1" >
+			<direction id="0" dz="-1" />
+			<direction id="1" dz="-1" />
+			<direction id="2" dz="-1" />
+			<direction id="3" dz="-1" />
+			<direction id="4" dz="-1" />
+			<direction id="5" dz="-1" />
+			<direction id="6" dz="-1" />
+			<direction id="7" dz="-1" />
+		</sprite>
+		-->
+	<add id="fx97sb" align="bottom"/>
+
+	<!-- Stand override -->
+	<override name="std_snowboard" override="std">
+		<frame>
+			<bodypart id="leftarm" action="Default" frame="0"/>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="Default" frame="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" />
+		</frame>
+	</override>
+
+	<!-- Move override -->
+	<override name="mv_snowboard" override="mv">
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="0"/>
+			<bodypart id="torso" action="Move" frame="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="std" frame="0"/>
+			<fx id="fx97sb" action="Default" frame="0"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+			<fx id="fx97sb" action="Default" frame="1"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+			<fx id="fx97sb" action="Default" frame="1"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+			<fx id="fx97sb" action="Default" frame="1"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+			<fx id="fx97sb" action="Default" frame="1"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+			<fx id="fx97sb" action="Default" frame="1"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="2"/>
+			<bodypart id="torso" action="Move" frame="2">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="2"/>
+			<fx id="fx97sb" action="Default" frame="2"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+			<fx id="fx97sb" action="Default" frame="3"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+			<fx id="fx97sb" action="Default" frame="3"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+			<fx id="fx97sb" action="Default" frame="3"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+			<fx id="fx97sb" action="Default" frame="3"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+			<fx id="fx97sb" action="Default" frame="3"/>
+			<bodypart id="head" dd="1"/>
+		</frame>
+	</override>
+
+	<!-- Ollie override -->
+	<override name="ollie_snowboard" override="sbollie">		
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" >
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" >
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" >
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" >
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" >
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" >
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+
+		<!-- up -->
+		<frame>			
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>			
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="-25"/>
+			<bodypart id="rightarm" action="Default" frame="1" dy="-25"/>
+			<bodypart id="torso" action="SnowboardUp" frame="2" dy="-25">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97ollie"/>				
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="4" dy="-25"/>
+		</frame>
+
+
+		<!-- land -->
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+
+		<!-- finish -->
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+	</override>
+
+	<!-- 360 override -->
+	<override name="360_snowboard" override="sb360">
+		<!-- jump -->
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="0"/>
+		</frame>
+
+		<!-- spin  -->
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="-1"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="-1"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="-25" dd="-1"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="-1">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="-1"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="-2"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="-2"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="-25" dd="-2"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="-2">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="-2"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="-3"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="-3"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="-25" dd="-3"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="-3">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="-3"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="-4"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="-4"/>
+			<bodypart id="rightarm" action="CarryItem" frame="1" dy="-25" dd="-4"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="-4">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="-4"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="-5"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="-5"/>
+			<bodypart id="rightarm" action="CarryItem" frame="1" dy="-25" dd="-5"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="-5">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="-5"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="-6"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="-6"/>
+			<bodypart id="rightarm" action="CarryItem" frame="1" dy="-25" dd="-6"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="-6">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="-6"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="-7"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="-7"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="-25" dd="-7"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="-7">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="-7"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="-25" dd="0"/>
+			<bodypart id="leftarm" action="Default" frame="0" dy="-25" dd="0"/>
+			<bodypart id="rightarm" action="CarryItem" frame="0" dy="-25" dd="0"/>
+			<bodypart id="torso" action="Default" frame="0" dy="-25" dd="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="0" dy="-25" dd="0"/>
+		</frame>
+
+		<!-- land -->
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="0" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="0" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="1" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="SnowboardSquat" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97sq"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Default" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head" action="Default" frame="0" dy="0"/>
+			<bodypart id="leftarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="rightarm" action="Move" frame="1" dy="0"/>
+			<bodypart id="torso" action="Move" frame="0" dy="0">
+				<item id="bd" base="999"/>
+				<item id="lg" base="fx97"/>
+			</bodypart>			
+			<fx id="fx97sb" action="Default" frame="5" dy="0"/>
+		</frame>
+
+	</override>
+
+</animation>

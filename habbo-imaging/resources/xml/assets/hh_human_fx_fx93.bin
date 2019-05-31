@@ -1,0 +1,107 @@
+<?xml version='1.0'?>
+<animation name="fx.93" desc="Headless">
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="ea" />
+	<remove id="ey" />
+	<remove id="fa" />
+	<remove id="fc" />
+	<remove id="hd" />
+	<sprite id="fx93_1" member="std_fx93_1_1" directions="1">
+		<direction id="0" dx="0" dy="0" dz="1" />
+		<direction id="1" dx="0" dy="0" dz="1" />
+		<direction id="2" dx="3" dy="-3" dz="1" />
+		<direction id="3" dx="3" dy="-3" dz="1" />
+		<direction id="4" dx="3" dy="-3" dz="1" />
+		<direction id="5" dx="6" dy="0" dz="1" />
+		<direction id="6" dx="6" dy="0" dz="1" />
+		<direction id="7" dx="3" dy="0" dz="1" />
+	</sprite>
+	<sprite id="fx93_2" member="std_fx93_2_1" directions="1">
+		<direction id="0" dx="0" dy="0" dz="2" />
+		<direction id="1" dx="0" dy="-2" dz="2" />
+		<direction id="2" dx="3" dy="-3" dz="2" />
+		<direction id="3" dx="3" dy="-3" dz="2" />
+		<direction id="4" dx="3" dy="-3" dz="2" />
+		<direction id="5" dx="6" dy="-2" dz="2" />
+		<direction id="6" dx="6" dy="0" dz="2" />
+		<direction id="7" dx="3" dy="0" dz="2" />
+	</sprite>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="2" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="3" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="4" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="5" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="6" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="7" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx93_1" action="Default" frame="0" />
+		<fx id="fx93_2" action="Default" frame="8" />
+	</frame>
+</animation>

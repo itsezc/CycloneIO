@@ -1,0 +1,2748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<visualizationData type="pig"><graphics>
+    <visualization angle="45" layerCount="4" size="32">
+        <layers>
+            <layer id="0" tag="body"/>
+            <layer id="1" tag="head"/>
+            <layer id="2" tag="tail"/>
+            <layer id="3" tag="emoticon"/>
+        </layers>
+        <directions>
+            <direction id="0">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="1">
+                <layer id="0" z="0"/>
+                <layer id="1" z="0"/>
+                <layer id="2" z="0"/>
+                <layer id="3" z="1"/>
+            </direction>
+            <direction id="2">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="-10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="3">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="-10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="4">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="-10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="5">
+                <layer id="0" z="0"/>
+                <layer id="1" z="0"/>
+                <layer id="2" z="0"/>
+                <layer id="3" z="1"/>
+            </direction>
+            <direction id="6">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="7">
+                <layer id="0" z="0"/>
+                <layer id="1" z="-10"/>
+                <layer id="2" z="10"/>
+                <layer id="3" z="11"/>
+            </direction>
+        </directions>
+        <animations>
+            <animation id="0">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="4" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-4" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="1">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="100">
+                            <offsets>
+                                <offset direction="0" y="-3"/>
+                                <offset direction="1" x="-2" y="-4"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="2" y="-4"/>
+                                <offset direction="6" y="-3"/>
+                                <offset direction="7" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="100">
+                            <offsets>
+                                <offset direction="0" x="3" y="-11"/>
+                                <offset direction="1" x="-1" y="-12"/>
+                                <offset direction="2" y="-14"/>
+                                <offset direction="3" y="-11"/>
+                                <offset direction="4" y="-14"/>
+                                <offset direction="5" x="1" y="-12"/>
+                                <offset direction="6" x="-3" y="-11"/>
+                                <offset direction="7" y="-10"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="100">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-8"/>
+                                <offset direction="2" x="-7" y="-3"/>
+                                <offset direction="3" y="1"/>
+                                <offset direction="4" x="7" y="-3"/>
+                                <offset direction="5" x="8"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="2">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="200">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                        <frame id="201">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-4"/>
+                                <offset direction="1" x="-2" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-5"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="2" y="-3"/>
+                                <offset direction="6" x="1" y="-4"/>
+                                <offset direction="7" x="1" y="-3"/>
+                            </offsets>
+                        </frame>
+                        <frame id="202">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                        <frame id="203">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="200">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="4" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-4" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                        <frame id="201">
+                            <offsets>
+                                <offset direction="0" x="5" y="-11"/>
+                                <offset direction="1" x="4" y="-7"/>
+                                <offset direction="2" x="4" y="-6"/>
+                                <offset direction="3" y="-5"/>
+                                <offset direction="4" x="-4" y="-6"/>
+                                <offset direction="5" x="-4" y="-7"/>
+                                <offset direction="6" x="-5" y="-11"/>
+                                <offset direction="7" y="-8"/>
+                            </offsets>
+                        </frame>
+                        <frame id="202">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="4" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-4" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                        <frame id="203">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="4" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-4" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="200">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                        <frame id="201">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-3"/>
+                                <offset direction="1" x="-10" y="-6"/>
+                                <offset direction="2" x="-8" y="-9"/>
+                                <offset direction="3" y="-12"/>
+                                <offset direction="4" x="8" y="-9"/>
+                                <offset direction="5" x="10" y="-6"/>
+                                <offset direction="6" x="8" y="-3"/>
+                                <offset direction="7" x="1" y="-6"/>
+                            </offsets>
+                        </frame>
+                        <frame id="202">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                        <frame id="203">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="3">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="300">
+                            <offsets>
+                                <offset direction="0" x="2" y="-3"/>
+                                <offset direction="1" x="1" y="-4"/>
+                                <offset direction="2" x="4"/>
+                                <offset direction="3" x="1" y="-5"/>
+                                <offset direction="4" x="-4"/>
+                                <offset direction="5" x="-1" y="-4"/>
+                                <offset direction="6" x="-2" y="-3"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="300">
+                            <offsets>
+                                <offset direction="0" x="1" y="-3"/>
+                                <offset direction="1" x="-3" y="-9"/>
+                                <offset direction="2" x="-7" y="-3"/>
+                                <offset direction="3" x="1" y="-15"/>
+                                <offset direction="4" x="7" y="-3"/>
+                                <offset direction="5" x="3" y="-9"/>
+                                <offset direction="6" x="-1" y="-3"/>
+                                <offset direction="7" x="1" y="-15"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="300">
+                            <offsets>
+                                <offset direction="0" x="-8" y="2"/>
+                                <offset direction="1" x="-12"/>
+                                <offset direction="2" x="-6" y="-2"/>
+                                <offset direction="3" x="2" y="2"/>
+                                <offset direction="4" x="6" y="-2"/>
+                                <offset direction="5" x="12"/>
+                                <offset direction="6" x="8" y="2"/>
+                                <offset direction="7" x="2" y="2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="4">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="400">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="400">
+                            <offsets>
+                                <offset direction="0" x="6" y="-8"/>
+                                <offset direction="1" x="6" y="-3"/>
+                                <offset direction="2" x="4" y="-4"/>
+                                <offset direction="3" y="-3"/>
+                                <offset direction="4" x="-4" y="-4"/>
+                                <offset direction="5" x="-6" y="-3"/>
+                                <offset direction="6" x="-6" y="-8"/>
+                                <offset direction="7" y="-8"/>
+                            </offsets>
+                        </frame>
+                        <frame id="401">
+                            <offsets>
+                                <offset direction="0" x="6" y="-7"/>
+                                <offset direction="1" x="6" y="-2"/>
+                                <offset direction="2" x="4" y="-3"/>
+                                <offset direction="3" y="-2"/>
+                                <offset direction="4" x="-4" y="-3"/>
+                                <offset direction="5" x="-6" y="-2"/>
+                                <offset direction="6" x="-6" y="-7"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="400">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="5">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="500">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-3"/>
+                            </offsets>
+                        </frame>
+                        <frame id="501">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-6"/>
+                                <offset direction="1" x="-2" y="-4"/>
+                                <offset direction="2" x="-1" y="-9"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="1" y="-9"/>
+                                <offset direction="5" x="2" y="-4"/>
+                                <offset direction="6" x="1" y="-6"/>
+                                <offset direction="7" x="1" y="-4"/>
+                            </offsets>
+                        </frame>
+                        <frame id="502">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-5"/>
+                                <offset direction="1" x="-2" y="-5"/>
+                                <offset direction="2" x="-2" y="-7"/>
+                                <offset direction="3" y="-8"/>
+                                <offset direction="4" x="2" y="-7"/>
+                                <offset direction="5" x="2" y="-5"/>
+                                <offset direction="6" x="1" y="-5"/>
+                                <offset direction="7" x="1" y="-6"/>
+                            </offsets>
+                        </frame>
+                        <frame id="503">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-3"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="500">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="4" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-4" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                        <frame id="501">
+                            <offsets>
+                                <offset direction="0" x="5" y="-17"/>
+                                <offset direction="1" x="4" y="-13"/>
+                                <offset direction="2" x="4" y="-15"/>
+                                <offset direction="3" y="-12"/>
+                                <offset direction="4" x="-4" y="-15"/>
+                                <offset direction="5" x="-4" y="-13"/>
+                                <offset direction="6" x="-5" y="-17"/>
+                                <offset direction="7" y="-13"/>
+                            </offsets>
+                        </frame>
+                        <frame id="502">
+                            <offsets>
+                                <offset direction="0" x="5" y="-10"/>
+                                <offset direction="1" x="4" y="-9"/>
+                                <offset direction="2" x="4" y="-8"/>
+                                <offset direction="3" y="-7"/>
+                                <offset direction="4" x="-4" y="-8"/>
+                                <offset direction="5" x="-4" y="-9"/>
+                                <offset direction="6" x="-5" y="-10"/>
+                                <offset direction="7" y="-11"/>
+                            </offsets>
+                        </frame>
+                        <frame id="503">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="4" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-4" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="500">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                        <frame id="501">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-7"/>
+                                <offset direction="1" x="-10" y="-6"/>
+                                <offset direction="2" x="-7" y="-12"/>
+                                <offset direction="3" y="-10"/>
+                                <offset direction="4" x="7" y="-12"/>
+                                <offset direction="5" x="10" y="-6"/>
+                                <offset direction="6" x="8" y="-7"/>
+                                <offset direction="7" x="1" y="-6"/>
+                            </offsets>
+                        </frame>
+                        <frame id="502">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-7"/>
+                                <offset direction="1" x="-10" y="-11"/>
+                                <offset direction="2" x="-7" y="-16"/>
+                                <offset direction="3" y="-17"/>
+                                <offset direction="4" x="7" y="-16"/>
+                                <offset direction="5" x="10" y="-11"/>
+                                <offset direction="6" x="8" y="-7"/>
+                                <offset direction="7" x="1" y="-10"/>
+                            </offsets>
+                        </frame>
+                        <frame id="503">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="6">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="600">
+                            <offsets>
+                                <offset direction="0" y="-1"/>
+                                <offset direction="1" x="-1" y="-2"/>
+                                <offset direction="2" x="-1" y="-1"/>
+                                <offset direction="3" y="-3"/>
+                                <offset direction="4" x="1" y="-1"/>
+                                <offset direction="5" x="1" y="-2"/>
+                                <offset direction="6" y="-1"/>
+                                <offset direction="7" y="-1"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="600">
+                            <offsets>
+                                <offset direction="0" x="5" y="-6"/>
+                                <offset direction="1" x="4" y="-6"/>
+                                <offset direction="2" x="4" y="-3"/>
+                                <offset direction="3" y="-3"/>
+                                <offset direction="4" x="-4" y="-3"/>
+                                <offset direction="5" x="-4" y="-6"/>
+                                <offset direction="6" x="-5" y="-6"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="600">
+                            <offsets>
+                                <offset direction="0" x="-7" y="1"/>
+                                <offset direction="1" x="-10" y="-5"/>
+                                <offset direction="2" x="-8" y="-6"/>
+                                <offset direction="3" y="-11"/>
+                                <offset direction="4" x="8" y="-6"/>
+                                <offset direction="5" x="10" y="-5"/>
+                                <offset direction="6" x="7" y="1"/>
+                                <offset direction="7" x="1" y="1"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="7">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="700">
+                            <offsets>
+                                <offset direction="0" y="-4"/>
+                                <offset direction="1" y="-4"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" y="-4"/>
+                                <offset direction="6" y="-4"/>
+                                <offset direction="7" y="-4"/>
+                            </offsets>
+                        </frame>
+                        <frame id="701">
+                            <offsets>
+                                <offset direction="0" y="-4"/>
+                                <offset direction="1" y="-4"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" y="-4"/>
+                                <offset direction="6" y="-4"/>
+                                <offset direction="7" y="-4"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="700">
+                            <offsets>
+                                <offset direction="0" y="-14"/>
+                                <offset direction="1" y="-14"/>
+                                <offset direction="2" y="-14"/>
+                                <offset direction="3" y="-14"/>
+                                <offset direction="4" y="-14"/>
+                                <offset direction="5" y="-14"/>
+                                <offset direction="6" y="-14"/>
+                                <offset direction="7" y="-14"/>
+                            </offsets>
+                        </frame>
+                        <frame id="701">
+                            <offsets>
+                                <offset direction="0" y="-13"/>
+                                <offset direction="1" y="-13"/>
+                                <offset direction="2" y="-13"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" y="-13"/>
+                                <offset direction="5" y="-13"/>
+                                <offset direction="6" y="-13"/>
+                                <offset direction="7" y="-13"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="700">
+                            <offsets>
+                                <offset direction="0" x="-7" y="-3"/>
+                                <offset direction="1" x="-7" y="-3"/>
+                                <offset direction="2" x="-7" y="-3"/>
+                                <offset direction="3" x="-7" y="-3"/>
+                                <offset direction="4" x="7" y="-3"/>
+                                <offset direction="5" x="7" y="-3"/>
+                                <offset direction="6" x="7" y="-3"/>
+                                <offset direction="7" x="-7" y="-3"/>
+                            </offsets>
+                        </frame>
+                        <frame id="701">
+                            <offsets>
+                                <offset direction="0" x="-7" y="-4"/>
+                                <offset direction="1" x="-7" y="-4"/>
+                                <offset direction="2" x="-7" y="-4"/>
+                                <offset direction="3" x="-7" y="-4"/>
+                                <offset direction="4" x="7" y="-4"/>
+                                <offset direction="5" x="7" y="-4"/>
+                                <offset direction="6" x="7" y="-4"/>
+                                <offset direction="7" x="-7" y="-4"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="8">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="800">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-2" y="-3"/>
+                                <offset direction="2" x="-2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" x="2" y="-4"/>
+                                <offset direction="5" x="2" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="800">
+                            <offsets>
+                                <offset direction="0" x="5" y="-8"/>
+                                <offset direction="1" x="3" y="-5"/>
+                                <offset direction="2" x="4" y="-4"/>
+                                <offset direction="3" y="-3"/>
+                                <offset direction="4" x="-4" y="-4"/>
+                                <offset direction="5" x="-3" y="-5"/>
+                                <offset direction="6" x="-5" y="-8"/>
+                                <offset direction="7" y="-6"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="800">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-5"/>
+                                <offset direction="1" x="-10" y="-8"/>
+                                <offset direction="2" x="-7" y="-11"/>
+                                <offset direction="3" y="-14"/>
+                                <offset direction="4" x="7" y="-11"/>
+                                <offset direction="5" x="10" y="-8"/>
+                                <offset direction="6" x="8" y="-5"/>
+                                <offset direction="7" x="1" y="-8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="9">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="900">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-2" y="-4"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-1"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="2" y="-4"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-1"/>
+                            </offsets>
+                        </frame>
+                        <frame id="901">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-2" y="-4"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-1"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="2" y="-4"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-1"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="900">
+                            <offsets>
+                                <offset direction="0" x="2" y="-10"/>
+                                <offset direction="1" x="1" y="-11"/>
+                                <offset direction="2" x="3" y="-12"/>
+                                <offset direction="3" y="-10"/>
+                                <offset direction="4" x="-3" y="-12"/>
+                                <offset direction="5" x="-1" y="-11"/>
+                                <offset direction="6" x="-2" y="-10"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                        <frame id="901">
+                            <offsets>
+                                <offset direction="0" x="2" y="-11"/>
+                                <offset direction="1" x="1" y="-12"/>
+                                <offset direction="2" x="3" y="-11"/>
+                                <offset direction="3" y="-9"/>
+                                <offset direction="4" x="-3" y="-11"/>
+                                <offset direction="5" x="-1" y="-12"/>
+                                <offset direction="6" x="-2" y="-11"/>
+                                <offset direction="7" y="-8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="900">
+                            <offsets>
+                                <offset direction="0" x="-6" y="2"/>
+                                <offset direction="1" x="-8"/>
+                                <offset direction="2" x="-6" y="-3"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="6" y="-3"/>
+                                <offset direction="5" x="8"/>
+                                <offset direction="6" x="6" y="2"/>
+                                <offset direction="7" x="1" y="1"/>
+                            </offsets>
+                        </frame>
+                        <frame id="901">
+                            <offsets>
+                                <offset direction="0" x="-6" y="1"/>
+                                <offset direction="1" x="-8"/>
+                                <offset direction="2" x="-7" y="-4"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-4"/>
+                                <offset direction="5" x="8"/>
+                                <offset direction="6" x="6" y="1"/>
+                                <offset direction="7" x="1" y="2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="10">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="1000">
+                            <offsets>
+                                <offset direction="0" y="-3"/>
+                                <offset direction="1" x="-2" y="-4"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-1"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="2" y="-4"/>
+                                <offset direction="6" y="-3"/>
+                                <offset direction="7" y="-1"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="1000">
+                            <offsets>
+                                <offset direction="0" x="3" y="-11"/>
+                                <offset direction="1" x="1" y="-12"/>
+                                <offset direction="2" x="3" y="-12"/>
+                                <offset direction="3" y="-10"/>
+                                <offset direction="4" x="-3" y="-12"/>
+                                <offset direction="5" x="-1" y="-12"/>
+                                <offset direction="6" x="-3" y="-11"/>
+                                <offset direction="7" y="-8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1000">
+                            <offsets>
+                                <offset direction="0" x="-6" y="2"/>
+                                <offset direction="1" x="-8"/>
+                                <offset direction="2" x="-6" y="-2"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="6" y="-2"/>
+                                <offset direction="5" x="8"/>
+                                <offset direction="6" x="6" y="2"/>
+                                <offset direction="7" x="1" y="2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="11">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="1100">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="1100">
+                            <offsets>
+                                <offset direction="0" x="6" y="-8"/>
+                                <offset direction="1" x="6" y="-3"/>
+                                <offset direction="2" x="4" y="-2"/>
+                                <offset direction="3" y="-3"/>
+                                <offset direction="4" x="-4" y="-2"/>
+                                <offset direction="5" x="-6" y="-3"/>
+                                <offset direction="6" x="-6" y="-8"/>
+                                <offset direction="7" y="-8"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1101">
+                            <offsets>
+                                <offset direction="0" x="6" y="-7"/>
+                                <offset direction="1" x="6" y="-2"/>
+                                <offset direction="2" x="4" y="-2"/>
+                                <offset direction="3" y="-2"/>
+                                <offset direction="4" x="-4" y="-2"/>
+                                <offset direction="5" x="-6" y="-2"/>
+                                <offset direction="6" x="-6" y="-7"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1100">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="12">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="1200">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="1200">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="2" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-2" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-12"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1201">
+                            <offsets>
+                                <offset direction="0" x="5" y="-11"/>
+                                <offset direction="1" x="2" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-2" y="-8"/>
+                                <offset direction="6" x="-5" y="-11"/>
+                                <offset direction="7" y="-12"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1200">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="13">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="1300">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1301">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-4"/>
+                                <offset direction="1" x="-2" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="2" y="-3"/>
+                                <offset direction="6" x="1" y="-4"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1302">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-4" y="-3"/>
+                                <offset direction="2" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" y="-4"/>
+                                <offset direction="5" x="4" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1303">
+                            <offsets>
+                                <offset direction="0" x="-1" y="-3"/>
+                                <offset direction="1" x="-3" y="-3"/>
+                                <offset direction="2" x="-1" y="-4"/>
+                                <offset direction="3" y="-4"/>
+                                <offset direction="4" x="1" y="-4"/>
+                                <offset direction="5" x="3" y="-3"/>
+                                <offset direction="6" x="1" y="-3"/>
+                                <offset direction="7" x="1" y="-2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="1300">
+                            <offsets>
+                                <offset direction="0" x="5" y="-12"/>
+                                <offset direction="1" x="4" y="-8"/>
+                                <offset direction="2" x="4" y="-7"/>
+                                <offset direction="3" y="-6"/>
+                                <offset direction="4" x="-4" y="-7"/>
+                                <offset direction="5" x="-4" y="-8"/>
+                                <offset direction="6" x="-5" y="-12"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1300">
+                            <offsets>
+                                <offset direction="0" x="-8" y="-4"/>
+                                <offset direction="1" x="-10" y="-7"/>
+                                <offset direction="2" x="-7" y="-10"/>
+                                <offset direction="3" y="-13"/>
+                                <offset direction="4" x="7" y="-10"/>
+                                <offset direction="5" x="10" y="-7"/>
+                                <offset direction="6" x="8" y="-4"/>
+                                <offset direction="7" x="1" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="20">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2000"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="21">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2100"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="22">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2200"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="23">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2300"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="24">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2400"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="25">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2500"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="26">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2600"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="27">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2700"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="28">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2800"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="29">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2900"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="30">
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="3000"/>
+                        <frame id="3001"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+        </animations>
+        <postures>
+            <posture animationId="0" id="std"/>
+            <posture animationId="1" id="beg"/>
+            <posture animationId="2" id="bnd"/>
+            <posture animationId="3" id="ded"/>
+            <posture animationId="4" id="eat"/>
+            <posture animationId="5" id="jmp"/>
+            <posture animationId="6" id="lay"/>
+            <posture animationId="7" id="pla"/>
+            <posture animationId="8" id="rdy"/>
+            <posture animationId="9" id="scr"/>
+            <posture animationId="10" id="sit"/>
+            <posture animationId="11" id="snf"/>
+            <posture animationId="12" id="spk"/>
+            <posture animationId="13" id="mv"/>
+        </postures>
+        <gestures>
+            <gesture animationId="20" id="agr"/>
+            <gesture animationId="21" id="crz"/>
+            <gesture animationId="22" id="eyb"/>
+            <gesture animationId="23" id="joy"/>
+            <gesture animationId="24" id="mis"/>
+            <gesture animationId="25" id="puz"/>
+            <gesture animationId="26" id="sad"/>
+            <gesture animationId="27" id="sml"/>
+            <gesture animationId="28" id="srp"/>
+            <gesture animationId="29" id="tng"/>
+            <gesture animationId="30" id="wav"/>
+        </gestures>
+    </visualization>
+    <visualization angle="45" layerCount="4" size="64">
+        <layers>
+            <layer id="0" tag="body"/>
+            <layer id="1" tag="head"/>
+            <layer id="2" tag="tail"/>
+            <layer id="3" tag="emoticon"/>
+        </layers>
+        <directions>
+            <direction id="0">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="1">
+                <layer id="0" z="0"/>
+                <layer id="1" z="0"/>
+                <layer id="2" z="0"/>
+                <layer id="3" z="1"/>
+            </direction>
+            <direction id="2">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="-10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="3">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="-10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="4">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="-10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="5">
+                <layer id="0" z="0"/>
+                <layer id="1" z="0"/>
+                <layer id="2" z="0"/>
+                <layer id="3" z="1"/>
+            </direction>
+            <direction id="6">
+                <layer id="0" z="0"/>
+                <layer id="1" z="10"/>
+                <layer id="2" z="10"/>
+                <layer id="3" z="11"/>
+            </direction>
+            <direction id="7">
+                <layer id="0" z="0"/>
+                <layer id="1" z="-10"/>
+                <layer id="2" z="10"/>
+                <layer id="3" z="11"/>
+            </direction>
+        </directions>
+        <animations>
+            <animation id="0">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-6"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-6"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-23"/>
+                                <offset direction="1" x="9" y="-19"/>
+                                <offset direction="2" x="5" y="-18"/>
+                                <offset direction="3" x="1" y="-13"/>
+                                <offset direction="4" x="-5" y="-18"/>
+                                <offset direction="5" x="-9" y="-19"/>
+                                <offset direction="6" x="-6" y="-23"/>
+                                <offset direction="7" x="1" y="-26"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-23"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="17" y="-23"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-53"/>
+                                <offset direction="1" x="9" y="-49"/>
+                                <offset direction="2" x="5" y="-48"/>
+                                <offset direction="3" x="1" y="-43"/>
+                                <offset direction="4" x="-5" y="-48"/>
+                                <offset direction="5" x="-9" y="-49"/>
+                                <offset direction="6" x="-6" y="-53"/>
+                                <offset direction="7" x="1" y="-56"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="1">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="100">
+                            <offsets>
+                                <offset direction="0" x="-2" y="-7"/>
+                                <offset direction="1" x="-2" y="-8"/>
+                                <offset direction="2" x="-2" y="-8"/>
+                                <offset direction="3" x="1" y="-7"/>
+                                <offset direction="4" x="2" y="-8"/>
+                                <offset direction="5" x="2" y="-8"/>
+                                <offset direction="6" x="2" y="-7"/>
+                                <offset direction="7" x="1" y="-1"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="100">
+                            <offsets>
+                                <offset direction="0" x="-3" y="-25"/>
+                                <offset direction="1" x="-2" y="-25"/>
+                                <offset direction="2" x="-1" y="-28"/>
+                                <offset direction="3" x="1" y="-28"/>
+                                <offset direction="4" x="1" y="-28"/>
+                                <offset direction="5" x="2" y="-25"/>
+                                <offset direction="6" x="3" y="-25"/>
+                                <offset direction="7" x="1" y="-24"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="100">
+                            <offsets>
+                                <offset direction="0" x="-14" y="4"/>
+                                <offset direction="1" x="-15" y="1"/>
+                                <offset direction="2" x="-16" y="-3"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="16" y="-3"/>
+                                <offset direction="5" x="15" y="1"/>
+                                <offset direction="6" x="14" y="4"/>
+                                <offset direction="7" y="7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="-3" y="-55"/>
+                                <offset direction="1" x="-2" y="-55"/>
+                                <offset direction="2" x="-1" y="-58"/>
+                                <offset direction="3" x="1" y="-58"/>
+                                <offset direction="4" x="1" y="-58"/>
+                                <offset direction="5" x="2" y="-55"/>
+                                <offset direction="6" x="3" y="-55"/>
+                                <offset direction="7" x="1" y="-54"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="2">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="200">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-5"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-5"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                        <frame id="201">
+                            <offsets>
+                                <offset direction="0" x="-6" y="-6"/>
+                                <offset direction="1" x="-2" y="-8"/>
+                                <offset direction="2" x="-4" y="-10"/>
+                                <offset direction="3" y="-9"/>
+                                <offset direction="4" x="4" y="-10"/>
+                                <offset direction="5" x="2" y="-8"/>
+                                <offset direction="6" x="6" y="-6"/>
+                                <offset direction="7" x="1" y="-3"/>
+                            </offsets>
+                        </frame>
+                        <frame id="202">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-5"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-5"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                        <frame id="203">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-5"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-5"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="200">
+                            <offsets>
+                                <offset direction="0" x="5" y="-23"/>
+                                <offset direction="1" x="9" y="-19"/>
+                                <offset direction="2" x="5" y="-15"/>
+                                <offset direction="3" x="1" y="-12"/>
+                                <offset direction="4" x="-5" y="-15"/>
+                                <offset direction="5" x="-9" y="-19"/>
+                                <offset direction="6" x="-5" y="-23"/>
+                                <offset direction="7" x="1" y="-21"/>
+                            </offsets>
+                        </frame>
+                        <frame id="201">
+                            <offsets>
+                                <offset direction="0" x="5" y="-22"/>
+                                <offset direction="1" x="9" y="-18"/>
+                                <offset direction="2" x="5" y="-14"/>
+                                <offset direction="3" x="1" y="-11"/>
+                                <offset direction="4" x="-5" y="-14"/>
+                                <offset direction="5" x="-9" y="-18"/>
+                                <offset direction="6" x="-5" y="-22"/>
+                                <offset direction="7" x="1" y="-21"/>
+                            </offsets>
+                        </frame>
+                        <frame id="202">
+                            <offsets>
+                                <offset direction="0" x="5" y="-23"/>
+                                <offset direction="1" x="9" y="-19"/>
+                                <offset direction="2" x="5" y="-15"/>
+                                <offset direction="3" x="1" y="-12"/>
+                                <offset direction="4" x="-5" y="-15"/>
+                                <offset direction="5" x="-9" y="-19"/>
+                                <offset direction="6" x="-5" y="-23"/>
+                                <offset direction="7" x="1" y="-21"/>
+                            </offsets>
+                        </frame>
+                        <frame id="203">
+                            <offsets>
+                                <offset direction="0" x="5" y="-23"/>
+                                <offset direction="1" x="9" y="-19"/>
+                                <offset direction="2" x="5" y="-15"/>
+                                <offset direction="3" x="1" y="-12"/>
+                                <offset direction="4" x="-5" y="-15"/>
+                                <offset direction="5" x="-9" y="-19"/>
+                                <offset direction="6" x="-5" y="-23"/>
+                                <offset direction="7" x="1" y="-21"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="200">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-23"/>
+                                <offset direction="3" x="-1" y="-25"/>
+                                <offset direction="4" x="17" y="-23"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-10"/>
+                            </offsets>
+                        </frame>
+                        <frame id="201">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-8"/>
+                                <offset direction="1" x="-16" y="-16"/>
+                                <offset direction="2" x="-18" y="-22"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="18" y="-22"/>
+                                <offset direction="5" x="16" y="-16"/>
+                                <offset direction="6" x="17" y="-8"/>
+                                <offset direction="7" y="-9"/>
+                            </offsets>
+                        </frame>
+                        <frame id="202">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-18" y="-22"/>
+                                <offset direction="3" x="-1" y="-25"/>
+                                <offset direction="4" x="18" y="-22"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-10"/>
+                            </offsets>
+                        </frame>
+                        <frame id="203">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-23"/>
+                                <offset direction="3" x="-1" y="-25"/>
+                                <offset direction="4" x="17" y="-23"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-10"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="5" y="-53"/>
+                                <offset direction="1" x="9" y="-49"/>
+                                <offset direction="2" x="5" y="-45"/>
+                                <offset direction="3" x="1" y="-42"/>
+                                <offset direction="4" x="-5" y="-45"/>
+                                <offset direction="5" x="-9" y="-49"/>
+                                <offset direction="6" x="-5" y="-53"/>
+                                <offset direction="7" x="1" y="-51"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="3">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="300">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-3"/>
+                                <offset direction="1" x="-6" y="-6"/>
+                                <offset direction="2" x="6" y="-3"/>
+                                <offset direction="3" x="1" y="-3"/>
+                                <offset direction="4" x="-6" y="-3"/>
+                                <offset direction="5" x="6" y="-6"/>
+                                <offset direction="6" x="5" y="-3"/>
+                                <offset direction="7" x="1" y="-3"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="300">
+                            <offsets>
+                                <offset direction="0" x="10" y="-9"/>
+                                <offset direction="1" x="11" y="-7"/>
+                                <offset direction="2" x="-15" y="-9"/>
+                                <offset direction="3" x="1" y="-18"/>
+                                <offset direction="4" x="15" y="-9"/>
+                                <offset direction="5" x="-11" y="-7"/>
+                                <offset direction="6" x="-10" y="-9"/>
+                                <offset direction="7" x="1" y="-18"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="300">
+                            <offsets>
+                                <offset direction="0" x="-19" y="3"/>
+                                <offset direction="1" x="-23"/>
+                                <offset direction="2" x="21" y="3"/>
+                                <offset direction="3" x="1" y="8"/>
+                                <offset direction="4" x="-21" y="3"/>
+                                <offset direction="5" x="23"/>
+                                <offset direction="6" x="19" y="3"/>
+                                <offset direction="7" x="1" y="8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="10" y="-39"/>
+                                <offset direction="1" x="11" y="-37"/>
+                                <offset direction="2" x="-15" y="-39"/>
+                                <offset direction="3" x="1" y="-48"/>
+                                <offset direction="4" x="15" y="-39"/>
+                                <offset direction="5" x="-11" y="-37"/>
+                                <offset direction="6" x="-10" y="-39"/>
+                                <offset direction="7" x="1" y="-48"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="4">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="400">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-5"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-5"/>
+                                <offset direction="7" x="1" y="-4"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="400">
+                            <offsets>
+                                <offset direction="0" x="6" y="-13"/>
+                                <offset direction="1" x="14" y="-8"/>
+                                <offset direction="2" x="6" y="-9"/>
+                                <offset direction="3" x="1" y="-7"/>
+                                <offset direction="4" x="-6" y="-9"/>
+                                <offset direction="5" x="-14" y="-8"/>
+                                <offset direction="6" x="-6" y="-13"/>
+                                <offset direction="7" x="1" y="-20"/>
+                            </offsets>
+                        </frame>
+                        <frame id="401">
+                            <offsets>
+                                <offset direction="0" x="6" y="-12"/>
+                                <offset direction="1" x="15" y="-8"/>
+                                <offset direction="2" x="6" y="-9"/>
+                                <offset direction="3" x="1" y="-6"/>
+                                <offset direction="4" x="-6" y="-9"/>
+                                <offset direction="5" x="-15" y="-8"/>
+                                <offset direction="6" x="-6" y="-12"/>
+                                <offset direction="7" x="1" y="-19"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="400">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-23"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="17" y="-23"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-10"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-43"/>
+                                <offset direction="1" x="14" y="-38"/>
+                                <offset direction="2" x="6" y="-39"/>
+                                <offset direction="3" x="1" y="-37"/>
+                                <offset direction="4" x="-6" y="-39"/>
+                                <offset direction="5" x="-14" y="-38"/>
+                                <offset direction="6" x="-6" y="-43"/>
+                                <offset direction="7" x="1" y="-50"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="5">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="500">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-6"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-6"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                        <frame id="501">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-12"/>
+                                <offset direction="1" x="-1" y="-17"/>
+                                <offset direction="2" x="-2" y="-19"/>
+                                <offset direction="3" x="2" y="-11"/>
+                                <offset direction="4" x="2" y="-19"/>
+                                <offset direction="5" x="1" y="-17"/>
+                                <offset direction="6" x="5" y="-12"/>
+                                <offset direction="7" x="1" y="-12"/>
+                            </offsets>
+                        </frame>
+                        <frame id="502">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-10"/>
+                                <offset direction="1" x="-3" y="-17"/>
+                                <offset direction="2" x="-3" y="-13"/>
+                                <offset direction="3" x="1" y="-15"/>
+                                <offset direction="4" x="3" y="-13"/>
+                                <offset direction="5" x="3" y="-17"/>
+                                <offset direction="6" x="5" y="-10"/>
+                                <offset direction="7" x="1" y="-13"/>
+                            </offsets>
+                        </frame>
+                        <frame id="503">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-6"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-6"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="500">
+                            <offsets>
+                                <offset direction="0" x="6" y="-23"/>
+                                <offset direction="1" x="9" y="-19"/>
+                                <offset direction="2" x="5" y="-18"/>
+                                <offset direction="3" x="1" y="-13"/>
+                                <offset direction="4" x="-5" y="-18"/>
+                                <offset direction="5" x="-9" y="-19"/>
+                                <offset direction="6" x="-6" y="-23"/>
+                                <offset direction="7" x="1" y="-26"/>
+                            </offsets>
+                        </frame>
+                        <frame id="501">
+                            <offsets>
+                                <offset direction="0" x="6" y="-30"/>
+                                <offset direction="1" x="9" y="-33"/>
+                                <offset direction="2" x="8" y="-30"/>
+                                <offset direction="3" x="2" y="-28"/>
+                                <offset direction="4" x="-8" y="-30"/>
+                                <offset direction="5" x="-9" y="-33"/>
+                                <offset direction="6" x="-6" y="-30"/>
+                                <offset direction="7" x="1" y="-35"/>
+                            </offsets>
+                        </frame>
+                        <frame id="502">
+                            <offsets>
+                                <offset direction="0" x="6" y="-23"/>
+                                <offset direction="1" x="9" y="-27"/>
+                                <offset direction="2" x="7" y="-17"/>
+                                <offset direction="3" x="1" y="-13"/>
+                                <offset direction="4" x="-7" y="-17"/>
+                                <offset direction="5" x="-9" y="-27"/>
+                                <offset direction="6" x="-6" y="-23"/>
+                                <offset direction="7" x="1" y="-28"/>
+                            </offsets>
+                        </frame>
+                        <frame id="503">
+                            <offsets>
+                                <offset direction="0" x="6" y="-23"/>
+                                <offset direction="1" x="9" y="-19"/>
+                                <offset direction="2" x="5" y="-18"/>
+                                <offset direction="3" x="1" y="-13"/>
+                                <offset direction="4" x="-5" y="-18"/>
+                                <offset direction="5" x="-9" y="-19"/>
+                                <offset direction="6" x="-6" y="-23"/>
+                                <offset direction="7" x="1" y="-26"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="500">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-22"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="17" y="-22"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                        <frame id="501">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-14"/>
+                                <offset direction="1" x="-17" y="-23"/>
+                                <offset direction="2" x="-17" y="-24"/>
+                                <offset direction="3" x="-1" y="-28"/>
+                                <offset direction="4" x="17" y="-24"/>
+                                <offset direction="5" x="17" y="-23"/>
+                                <offset direction="6" x="17" y="-14"/>
+                                <offset direction="7" y="-12"/>
+                            </offsets>
+                        </frame>
+                        <frame id="502">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-18"/>
+                                <offset direction="1" x="-17" y="-31"/>
+                                <offset direction="2" x="-17" y="-29"/>
+                                <offset direction="3" x="-1" y="-34"/>
+                                <offset direction="4" x="17" y="-29"/>
+                                <offset direction="5" x="17" y="-31"/>
+                                <offset direction="6" x="17" y="-18"/>
+                                <offset direction="7" y="-18"/>
+                            </offsets>
+                        </frame>
+                        <frame id="503">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-22"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="17" y="-22"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-53"/>
+                                <offset direction="1" x="9" y="-49"/>
+                                <offset direction="2" x="5" y="-48"/>
+                                <offset direction="3" x="1" y="-43"/>
+                                <offset direction="4" x="-5" y="-48"/>
+                                <offset direction="5" x="-9" y="-49"/>
+                                <offset direction="6" x="-6" y="-53"/>
+                                <offset direction="7" x="1" y="-56"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="6">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="600">
+                            <offsets>
+                                <offset direction="0" x="-2" y="-2"/>
+                                <offset direction="1" y="-4"/>
+                                <offset direction="2" x="-1" y="-5"/>
+                                <offset direction="3" x="2" y="-6"/>
+                                <offset direction="4" x="1" y="-5"/>
+                                <offset direction="5" y="-4"/>
+                                <offset direction="6" x="2" y="-2"/>
+                                <offset direction="7" x="1" y="2"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="600">
+                            <offsets>
+                                <offset direction="0" x="5" y="-16"/>
+                                <offset direction="1" x="10" y="-12"/>
+                                <offset direction="2" x="3" y="-11"/>
+                                <offset direction="3" x="2" y="-6"/>
+                                <offset direction="4" x="-3" y="-11"/>
+                                <offset direction="5" x="-10" y="-12"/>
+                                <offset direction="6" x="-5" y="-16"/>
+                                <offset direction="7" x="1" y="-20"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="600">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-2"/>
+                                <offset direction="1" x="-20" y="-6"/>
+                                <offset direction="2" x="-20" y="-13"/>
+                                <offset direction="3" x="1" y="-21"/>
+                                <offset direction="4" x="20" y="-13"/>
+                                <offset direction="5" x="20" y="-6"/>
+                                <offset direction="6" x="17" y="-2"/>
+                                <offset direction="7" y="6"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="5" y="-46"/>
+                                <offset direction="1" x="10" y="-42"/>
+                                <offset direction="2" x="3" y="-41"/>
+                                <offset direction="3" x="2" y="-36"/>
+                                <offset direction="4" x="-3" y="-41"/>
+                                <offset direction="5" x="-10" y="-42"/>
+                                <offset direction="6" x="-5" y="-46"/>
+                                <offset direction="7" x="1" y="-50"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="7">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="700">
+                            <offsets>
+                                <offset direction="0" x="-2" y="-9"/>
+                                <offset direction="1" x="-2" y="-9"/>
+                                <offset direction="2" x="-2" y="-9"/>
+                                <offset direction="3" x="-2" y="-9"/>
+                                <offset direction="4" x="2" y="-9"/>
+                                <offset direction="5" x="2" y="-9"/>
+                                <offset direction="6" x="2" y="-9"/>
+                                <offset direction="7" x="-2" y="-9"/>
+                            </offsets>
+                        </frame>
+                        <frame id="701">
+                            <offsets>
+                                <offset direction="0" x="-2" y="-8"/>
+                                <offset direction="1" x="-2" y="-8"/>
+                                <offset direction="2" x="-2" y="-8"/>
+                                <offset direction="3" x="-2" y="-8"/>
+                                <offset direction="4" x="2" y="-8"/>
+                                <offset direction="5" x="2" y="-8"/>
+                                <offset direction="6" x="2" y="-8"/>
+                                <offset direction="7" x="-2" y="-8"/>
+                            </offsets>
+                        </frame>
+                        <frame id="702">
+                            <offsets>
+                                <offset direction="0" x="-2" y="-8"/>
+                                <offset direction="1" x="-2" y="-8"/>
+                                <offset direction="2" x="-2" y="-8"/>
+                                <offset direction="3" x="-2" y="-8"/>
+                                <offset direction="4" x="2" y="-8"/>
+                                <offset direction="5" x="2" y="-8"/>
+                                <offset direction="6" x="2" y="-8"/>
+                                <offset direction="7" x="-2" y="-8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="700">
+                            <offsets>
+                                <offset direction="0" y="-27"/>
+                                <offset direction="1" y="-27"/>
+                                <offset direction="2" y="-27"/>
+                                <offset direction="3" y="-27"/>
+                                <offset direction="4" y="-27"/>
+                                <offset direction="5" y="-27"/>
+                                <offset direction="6" y="-27"/>
+                                <offset direction="7" y="-27"/>
+                            </offsets>
+                        </frame>
+                        <frame id="701">
+                            <offsets>
+                                <offset direction="0" y="-28"/>
+                                <offset direction="1" y="-28"/>
+                                <offset direction="2" y="-28"/>
+                                <offset direction="3" y="-28"/>
+                                <offset direction="4" y="-28"/>
+                                <offset direction="5" y="-28"/>
+                                <offset direction="6" y="-28"/>
+                                <offset direction="7" y="-28"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="700">
+                            <offsets>
+                                <offset direction="0" x="-16" y="-3"/>
+                                <offset direction="1" x="-16" y="-3"/>
+                                <offset direction="2" x="-16" y="-3"/>
+                                <offset direction="3" x="-16" y="-3"/>
+                                <offset direction="4" x="16" y="-3"/>
+                                <offset direction="5" x="16" y="-3"/>
+                                <offset direction="6" x="16" y="-3"/>
+                                <offset direction="7" x="-16" y="-3"/>
+                            </offsets>
+                        </frame>
+                        <frame id="701">
+                            <offsets>
+                                <offset direction="0" x="-16" y="-4"/>
+                                <offset direction="1" x="-16" y="-4"/>
+                                <offset direction="2" x="-16" y="-4"/>
+                                <offset direction="3" x="-16" y="-4"/>
+                                <offset direction="4" x="16" y="-4"/>
+                                <offset direction="5" x="16" y="-4"/>
+                                <offset direction="6" x="16" y="-4"/>
+                                <offset direction="7" x="-16" y="-4"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" y="-57"/>
+                                <offset direction="1" y="-57"/>
+                                <offset direction="2" y="-57"/>
+                                <offset direction="3" y="-57"/>
+                                <offset direction="4" y="-57"/>
+                                <offset direction="5" y="-57"/>
+                                <offset direction="6" y="-57"/>
+                                <offset direction="7" y="-57"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="8">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="800">
+                            <offsets>
+                                <offset direction="0" x="-3" y="-6"/>
+                                <offset direction="1" x="1" y="-7"/>
+                                <offset direction="2" x="-5" y="-7"/>
+                                <offset direction="3" x="2" y="-8"/>
+                                <offset direction="4" x="5" y="-7"/>
+                                <offset direction="5" x="-1" y="-7"/>
+                                <offset direction="6" x="3" y="-6"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="800">
+                            <offsets>
+                                <offset direction="0" x="6" y="-16"/>
+                                <offset direction="1" x="9" y="-10"/>
+                                <offset direction="2" x="7" y="-7"/>
+                                <offset direction="3" x="2" y="-5"/>
+                                <offset direction="4" x="-7" y="-7"/>
+                                <offset direction="5" x="-9" y="-10"/>
+                                <offset direction="6" x="-6" y="-16"/>
+                                <offset direction="7" x="1" y="-27"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="800">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-14"/>
+                                <offset direction="1" x="-17" y="-17"/>
+                                <offset direction="2" x="-17" y="-21"/>
+                                <offset direction="3" x="1" y="-26"/>
+                                <offset direction="4" x="17" y="-21"/>
+                                <offset direction="5" x="17" y="-17"/>
+                                <offset direction="6" x="17" y="-14"/>
+                                <offset direction="7" y="-8"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-46"/>
+                                <offset direction="1" x="9" y="-40"/>
+                                <offset direction="2" x="7" y="-37"/>
+                                <offset direction="3" x="2" y="-35"/>
+                                <offset direction="4" x="-7" y="-37"/>
+                                <offset direction="5" x="-9" y="-40"/>
+                                <offset direction="6" x="-6" y="-46"/>
+                                <offset direction="7" x="1" y="-57"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="9">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="900">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-4"/>
+                                <offset direction="1" x="-2" y="-8"/>
+                                <offset direction="2" x="-2" y="-8"/>
+                                <offset direction="3" x="2" y="-15"/>
+                                <offset direction="4" x="2" y="-8"/>
+                                <offset direction="5" x="2" y="-8"/>
+                                <offset direction="6" x="5" y="-4"/>
+                                <offset direction="7" x="2" y="-1"/>
+                            </offsets>
+                        </frame>
+                        <frame id="901">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-4"/>
+                                <offset direction="1" x="-2" y="-8"/>
+                                <offset direction="2" x="-2" y="-8"/>
+                                <offset direction="3" x="2" y="-14"/>
+                                <offset direction="4" x="2" y="-8"/>
+                                <offset direction="5" x="2" y="-8"/>
+                                <offset direction="6" x="5" y="-4"/>
+                                <offset direction="7" x="1" y="-1"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="900">
+                            <offsets>
+                                <offset direction="0" y="-18"/>
+                                <offset direction="1" x="4" y="-21"/>
+                                <offset direction="2" x="4" y="-23"/>
+                                <offset direction="3" x="2" y="-25"/>
+                                <offset direction="4" x="-4" y="-23"/>
+                                <offset direction="5" x="-4" y="-21"/>
+                                <offset direction="6" y="-18"/>
+                                <offset direction="7" x="1" y="-21"/>
+                            </offsets>
+                        </frame>
+                        <frame id="901">
+                            <offsets>
+                                <offset direction="0" y="-19"/>
+                                <offset direction="1" x="4" y="-22"/>
+                                <offset direction="2" x="4" y="-22"/>
+                                <offset direction="3" x="2" y="-24"/>
+                                <offset direction="4" x="-4" y="-22"/>
+                                <offset direction="5" x="-4" y="-22"/>
+                                <offset direction="6" y="-19"/>
+                                <offset direction="7" x="1" y="-20"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="900">
+                            <offsets>
+                                <offset direction="0" x="-16" y="4"/>
+                                <offset direction="1" x="-15" y="1"/>
+                                <offset direction="2" x="-16" y="-4"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="16" y="-4"/>
+                                <offset direction="5" x="15" y="1"/>
+                                <offset direction="6" x="16" y="4"/>
+                                <offset direction="7" y="6"/>
+                            </offsets>
+                        </frame>
+                        <frame id="901">
+                            <offsets>
+                                <offset direction="0" x="-16" y="3"/>
+                                <offset direction="1" x="-15"/>
+                                <offset direction="2" x="-16" y="-3"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="16" y="-3"/>
+                                <offset direction="5" x="15"/>
+                                <offset direction="6" x="16" y="3"/>
+                                <offset direction="7" y="5"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" y="-48"/>
+                                <offset direction="1" x="4" y="-51"/>
+                                <offset direction="2" x="4" y="-53"/>
+                                <offset direction="3" x="2" y="-55"/>
+                                <offset direction="4" x="-4" y="-53"/>
+                                <offset direction="5" x="-4" y="-51"/>
+                                <offset direction="6" y="-48"/>
+                                <offset direction="7" x="1" y="-51"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="10">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="1000">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-4"/>
+                                <offset direction="1" x="-2" y="-8"/>
+                                <offset direction="2" x="-1" y="-7"/>
+                                <offset direction="3" x="2" y="-3"/>
+                                <offset direction="4" x="1" y="-7"/>
+                                <offset direction="5" x="2" y="-8"/>
+                                <offset direction="6" x="5" y="-4"/>
+                                <offset direction="7" x="1" y="-1"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="1000">
+                            <offsets>
+                                <offset direction="0" y="-19"/>
+                                <offset direction="1" x="3" y="-23"/>
+                                <offset direction="2" x="4" y="-22"/>
+                                <offset direction="3" x="2" y="-22"/>
+                                <offset direction="4" x="-4" y="-22"/>
+                                <offset direction="5" x="-3" y="-23"/>
+                                <offset direction="6" y="-19"/>
+                                <offset direction="7" x="1" y="-21"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1000">
+                            <offsets>
+                                <offset direction="0" x="-16" y="4"/>
+                                <offset direction="1" x="-15" y="1"/>
+                                <offset direction="2" x="-16" y="-3"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="16" y="-3"/>
+                                <offset direction="5" x="15" y="1"/>
+                                <offset direction="6" x="16" y="4"/>
+                                <offset direction="7" y="6"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" y="-49"/>
+                                <offset direction="1" x="3" y="-53"/>
+                                <offset direction="2" x="4" y="-52"/>
+                                <offset direction="3" x="2" y="-52"/>
+                                <offset direction="4" x="-4" y="-52"/>
+                                <offset direction="5" x="-3" y="-53"/>
+                                <offset direction="6" y="-49"/>
+                                <offset direction="7" x="1" y="-51"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="11">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="1100">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-5"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-5"/>
+                                <offset direction="7" x="1" y="-4"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="1100">
+                            <offsets>
+                                <offset direction="0" x="6" y="-13"/>
+                                <offset direction="1" x="14" y="-8"/>
+                                <offset direction="2" x="6" y="-8"/>
+                                <offset direction="3" x="1" y="-7"/>
+                                <offset direction="4" x="-6" y="-8"/>
+                                <offset direction="5" x="-14" y="-8"/>
+                                <offset direction="6" x="-6" y="-13"/>
+                                <offset direction="7" x="1" y="-20"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1101">
+                            <offsets>
+                                <offset direction="0" x="6" y="-12"/>
+                                <offset direction="1" x="14" y="-8"/>
+                                <offset direction="2" x="6" y="-8"/>
+                                <offset direction="3" x="1" y="-6"/>
+                                <offset direction="4" x="-6" y="-8"/>
+                                <offset direction="5" x="-14" y="-8"/>
+                                <offset direction="6" x="-6" y="-12"/>
+                                <offset direction="7" x="1" y="-19"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1100">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-23"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="17" y="-23"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" x="1" y="-10"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-43"/>
+                                <offset direction="1" x="14" y="-38"/>
+                                <offset direction="2" x="6" y="-38"/>
+                                <offset direction="3" x="1" y="-37"/>
+                                <offset direction="4" x="-6" y="-38"/>
+                                <offset direction="5" x="-14" y="-38"/>
+                                <offset direction="6" x="-6" y="-43"/>
+                                <offset direction="7" x="1" y="-50"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="12">
+                <animationLayer id="0">
+                    <frameSequence>
+                        <frame id="1200">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-5"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-5"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer frameRepeat="3" id="1" loopCount="0">
+                    <frameSequence>
+                        <frame id="1200">
+                            <offsets>
+                                <offset direction="0" x="6" y="-23"/>
+                                <offset direction="1" x="12" y="-19"/>
+                                <offset direction="2" x="5" y="-18"/>
+                                <offset direction="3" x="1" y="-13"/>
+                                <offset direction="4" x="-5" y="-18"/>
+                                <offset direction="5" x="-12" y="-19"/>
+                                <offset direction="6" x="-6" y="-23"/>
+                                <offset direction="7" x="1" y="-28"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1201">
+                            <offsets>
+                                <offset direction="0" x="7" y="-23"/>
+                                <offset direction="1" x="12" y="-19"/>
+                                <offset direction="2" x="5" y="-18"/>
+                                <offset direction="3" x="1" y="-14"/>
+                                <offset direction="4" x="-5" y="-18"/>
+                                <offset direction="5" x="-12" y="-19"/>
+                                <offset direction="6" x="-7" y="-23"/>
+                                <offset direction="7" x="1" y="-27"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1200">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-16"/>
+                                <offset direction="2" x="-17" y="-23"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="17" y="-23"/>
+                                <offset direction="5" x="17" y="-16"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-53"/>
+                                <offset direction="1" x="12" y="-49"/>
+                                <offset direction="2" x="5" y="-48"/>
+                                <offset direction="3" x="1" y="-43"/>
+                                <offset direction="4" x="-5" y="-48"/>
+                                <offset direction="5" x="-12" y="-49"/>
+                                <offset direction="6" x="-6" y="-53"/>
+                                <offset direction="7" x="1" y="-58"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="13">
+                <animationLayer frameRepeat="3" id="0" loopCount="0">
+                    <frameSequence>
+                        <frame id="1300">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-6"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="2" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-6"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1301">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-5"/>
+                                <offset direction="1" x="-3" y="-8"/>
+                                <offset direction="2" x="-3" y="-10"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="3" y="-10"/>
+                                <offset direction="5" x="3" y="-8"/>
+                                <offset direction="6" x="5" y="-5"/>
+                                <offset direction="7" x="1" y="-4"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1302">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-6"/>
+                                <offset direction="1" x="1" y="-8"/>
+                                <offset direction="2" x="-4" y="-9"/>
+                                <offset direction="3" x="2" y="-8"/>
+                                <offset direction="4" x="4" y="-9"/>
+                                <offset direction="5" x="-1" y="-8"/>
+                                <offset direction="6" x="5" y="-6"/>
+                                <offset direction="7" x="1" y="-5"/>
+                            </offsets>
+                        </frame>
+                        <frame id="1303">
+                            <offsets>
+                                <offset direction="0" x="-5" y="-4"/>
+                                <offset direction="1" x="-5" y="-8"/>
+                                <offset direction="2" x="-5" y="-9"/>
+                                <offset direction="3" x="1" y="-8"/>
+                                <offset direction="4" x="5" y="-9"/>
+                                <offset direction="5" x="5" y="-8"/>
+                                <offset direction="6" x="5" y="-4"/>
+                                <offset direction="7" x="1" y="-4"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="1300">
+                            <offsets>
+                                <offset direction="0" x="6" y="-23"/>
+                                <offset direction="1" x="9" y="-19"/>
+                                <offset direction="2" x="5" y="-16"/>
+                                <offset direction="3" x="1" y="-13"/>
+                                <offset direction="4" x="-5" y="-16"/>
+                                <offset direction="5" x="-9" y="-19"/>
+                                <offset direction="6" x="-6" y="-23"/>
+                                <offset direction="7" x="1" y="-28"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="2">
+                    <frameSequence>
+                        <frame id="1300">
+                            <offsets>
+                                <offset direction="0" x="-17" y="-9"/>
+                                <offset direction="1" x="-17" y="-17"/>
+                                <offset direction="2" x="-17" y="-23"/>
+                                <offset direction="3" x="-1" y="-23"/>
+                                <offset direction="4" x="17" y="-23"/>
+                                <offset direction="5" x="17" y="-17"/>
+                                <offset direction="6" x="17" y="-9"/>
+                                <offset direction="7" y="-7"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0">
+                            <offsets>
+                                <offset direction="0" x="6" y="-53"/>
+                                <offset direction="1" x="9" y="-49"/>
+                                <offset direction="2" x="5" y="-46"/>
+                                <offset direction="3" x="1" y="-43"/>
+                                <offset direction="4" x="-5" y="-46"/>
+                                <offset direction="5" x="-9" y="-49"/>
+                                <offset direction="6" x="-6" y="-53"/>
+                                <offset direction="7" x="1" y="-58"/>
+                            </offsets>
+                        </frame>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="20">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2000"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="21">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2100"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="22">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2200"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="23">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2300"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="24">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2400"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="25">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2500"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="26">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2600"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="27">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2700"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="28">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2800"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="29">
+                <animationLayer id="1">
+                    <frameSequence>
+                        <frame id="2900"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+            <animation id="30">
+                <animationLayer frameRepeat="3" id="2" loopCount="0">
+                    <frameSequence>
+                        <frame id="3000"/>
+                        <frame id="3001"/>
+                    </frameSequence>
+                </animationLayer>
+                <animationLayer id="3">
+                    <frameSequence>
+                        <frame id="0"/>
+                    </frameSequence>
+                </animationLayer>
+            </animation>
+        </animations>
+        <postures>
+            <posture animationId="0" id="std"/>
+            <posture animationId="1" id="beg"/>
+            <posture animationId="2" id="bnd"/>
+            <posture animationId="3" id="ded"/>
+            <posture animationId="4" id="eat"/>
+            <posture animationId="5" id="jmp"/>
+            <posture animationId="6" id="lay"/>
+            <posture animationId="7" id="pla"/>
+            <posture animationId="8" id="rdy"/>
+            <posture animationId="9" id="scr"/>
+            <posture animationId="10" id="sit"/>
+            <posture animationId="11" id="snf"/>
+            <posture animationId="12" id="spk"/>
+            <posture animationId="13" id="mv"/>
+        </postures>
+        <gestures>
+            <gesture animationId="20" id="agr"/>
+            <gesture animationId="21" id="crz"/>
+            <gesture animationId="22" id="eyb"/>
+            <gesture animationId="23" id="joy"/>
+            <gesture animationId="24" id="mis"/>
+            <gesture animationId="25" id="puz"/>
+            <gesture animationId="26" id="sad"/>
+            <gesture animationId="27" id="sml"/>
+            <gesture animationId="28" id="srp"/>
+            <gesture animationId="29" id="tng"/>
+            <gesture animationId="30" id="wav"/>
+        </gestures>
+    </visualization>
+</graphics></visualizationData>

@@ -1,0 +1,109 @@
+<?xml version='1.0'?><animation name="fx.193" desc="Trampoline Jump">	
+<!-- sink -->
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="0" dy="0"/>
+		<bodypart id="rightarm" action="Move" frame="0" dy="0"/>
+		<bodypart id="torso" action="Move" frame="2" dy="1"/>
+		<bodypart id="head" action="Default" frame="0" dy="1"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="3" dy="1"/>
+		<bodypart id="rightarm" action="Move" frame="1" dy="1"/>
+		<bodypart id="torso" action="Move" frame="2" dy="2"/>
+		<bodypart id="head" action="Default" frame="0" dy="1"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="3" dy="3"/>
+		<bodypart id="rightarm" action="Move" frame="1" dy="3"/>
+		<bodypart id="torso" action="Move" frame="2" dy="2"/>
+		<bodypart id="head" action="Default" frame="0" dy="2"/>
+	</frame>
+<!-- jump -->
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="2" dy="0"/>
+		<bodypart id="rightarm" action="Move" frame="2" dy="0"/>
+		<bodypart id="torso" action="Default" frame="0" dy="0"/>
+		<bodypart id="head" action="Default" frame="0" dy="0"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="1" dy="-4"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-4"/>
+		<bodypart id="torso" action="Move" frame="0" dy="-4"/>
+		<bodypart id="head" action="Talk" frame="0" dy="-4"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="1" dy="-8"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-8"/>
+		<bodypart id="torso" action="Move" frame="0" dy="-8"/>
+		<bodypart id="head" action="Talk" frame="0" dy="-8"/>
+	</frame>
+
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="1" dy="-12"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-12"/>
+		<bodypart id="torso" action="Move" frame="3" dy="-12"/>
+		<bodypart id="head" action="Talk" frame="0" dy="-12"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="0" dy="-14"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-14"/>
+		<bodypart id="torso" action="Move" frame="3" dy="-14"/>
+		<bodypart id="head" action="Talk" frame="0" dy="-14"/>
+	</frame>
+<!-- apex -->
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="0" dy="-15"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-15"/>
+		<bodypart id="torso" action="Move" frame="3" dy="-15"/>
+		<bodypart id="head" action="Talk" frame="0" dy="-14"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dy="-15"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-15"/>
+		<bodypart id="torso" action="Move" frame="3" dy="-15"/>
+		<bodypart id="head" action="Default" frame="0" dy="-14"/>
+	</frame>
+<!-- fall -->
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dy="-14"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-14"/>
+		<bodypart id="torso" action="Move" frame="3" dy="-14"/>
+		<bodypart id="head" action="Default" frame="0" dy="-14"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dy="-12"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-12"/>
+		<bodypart id="torso" action="Move" frame="3" dy="-12"/>
+		<bodypart id="head" action="Default" frame="0" dy="-11"/>
+	</frame>
+
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dy="-8"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-8"/>
+		<bodypart id="torso" action="Move" frame="2" dy="-7"/>
+		<bodypart id="head" action="Default" frame="0" dy="-7"/>
+	</frame>
+
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="1" dy="-4"/>
+		<bodypart id="rightarm" action="Move" frame="3" dy="-4"/>
+		<bodypart id="torso" action="Move" frame="2" dy="-3"/>
+		<bodypart id="head" action="Default" frame="0" dy="-3"/>
+	</frame>
+
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="3" dy="-2"/>
+		<bodypart id="rightarm" action="Move" frame="1" dy="-2"/>
+		<bodypart id="torso" action="Default" frame="0" dy="-1"/>
+		<bodypart id="head" action="Default" frame="0" dy="-1"/>
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Move" frame="2" dy="0"/>
+		<bodypart id="rightarm" action="Move" frame="2" dy="0"/>
+		<bodypart id="torso" action="Default" frame="0" dy="0"/>
+		<bodypart id="head"  action="Default" frame="0" dy="-1"/>
+	</frame>
+
+
+
+</animation>

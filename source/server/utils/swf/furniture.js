@@ -51,6 +51,8 @@ export default class Furniture {
 			const swf = await readFromBufferP(data)
 			const images = await Promise.all(extractImages(swf.tags))
 
+			this.convert()
+
 		}
 
 		catch(error) {
@@ -60,5 +62,21 @@ export default class Furniture {
 
 	async convert() {
 
+		try {
+
+			Spritesheet('assets/*.png', { format: 'json' }, error => {
+
+				if (error) {
+					throw error
+				}
+			   
+				console.log('spritesheet successfully generated')
+			})
+
+		}
+
+		catch(error) {
+			Logger.error(error)
+		}
 	}
 }

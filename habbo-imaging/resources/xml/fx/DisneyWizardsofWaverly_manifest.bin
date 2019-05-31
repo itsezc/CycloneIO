@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<manifest><library id="DisneyWizardsofWaverly" version="0.1">
+  <assets>
+    <asset name="h_std_fx66_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-51,70"/>
+    </asset>
+    <asset name="h_std_fx66_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-45,64"/>
+    </asset>
+    <asset name="h_std_fx66_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-33,55"/>
+    </asset>
+    <asset name="h_std_fx66_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-26,61"/>
+    </asset>
+    <asset name="h_std_fx66_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-7,69"/>
+    </asset>
+    <asset name="h_std_fx66_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-12,65"/>
+    </asset>
+    <asset name="h_std_fx66_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-35,91"/>
+    </asset>
+    <asset name="h_std_fx66_2_1_0_1" mimeType="image/png">
+      <param key="offset" value="-35,91"/>
+    </asset>
+    <asset name="h_std_fx66_3_1_0_0" mimeType="image/png">
+      <param key="offset" value="-35,91"/>
+    </asset>
+    <asset name="h_std_fx66_3_1_0_1" mimeType="image/png">
+      <param key="offset" value="-35,91"/>
+    </asset>
+    <asset name="h_std_fx66_3_1_0_2" mimeType="image/png">
+      <param key="offset" value="-35,91"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_crr_ri_fx66_1_0_0" link="h_std_fx66_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx66_1_1_0" link="h_std_fx66_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx66_1_2_0" link="h_std_fx66_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx66_1_3_0" link="h_std_fx66_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx66_1_4_0" link="h_std_fx66_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx66_1_5_0" link="h_std_fx66_1_1_5_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

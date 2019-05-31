@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<animation name="fx.114" desc="Strong Arms">
+
+	<remove id="lh" />
+	<remove id="rh" />
+	<remove id="lc" />
+	<remove id="rc" />
+	<remove id="ls" />
+	<remove id="rs" />
+	<remove id="rhs" />
+	<remove id="lhs" />
+
+
+	<sprite id="fx114_1" member="std_fx114_1_1" directions="1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<sprite id="fx114_2" member="std_fx114_2_1" directions="1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<override name="armwalk" override="mv">
+		<frame>
+			<bodypart id="leftarm" />
+			<bodypart id="rightarm" />
+			<fx id="fx114_1" action="Move" frame="0" dy="0"/>
+			<fx id="fx114_2" action="Move" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" />
+			<bodypart id="rightarm" />
+			<fx id="fx114_1" action="Move" frame="0" dy="2"/>
+			<fx id="fx114_2" action="Move" frame="0" dy="2"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" />
+			<bodypart id="rightarm" />
+			<fx id="fx114_1" action="Move" frame="0" dy="0"/>
+			<fx id="fx114_2" action="Move" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" />
+			<bodypart id="rightarm" />
+			<fx id="fx114_1" action="Move" frame="0" dy="2"/>
+			<fx id="fx114_2" action="Move" frame="0" dy="2"/>
+		</frame>
+	</override>
+	<override name="armstand" override="std">
+		<frame>
+			<bodypart id="leftarm" />
+			<bodypart id="rightarm" />
+			<fx id="fx114_1" action="Default" frame="0"/>
+			<fx id="fx114_2" action="Default" frame="0"/>
+		</frame>
+	</override>
+	<override name="armsit" override="sit">
+		<frame>
+			<bodypart id="leftarm" />
+			<bodypart id="rightarm" />
+			<fx id="fx114_1" action="Default" frame="0"/>
+			<fx id="fx114_2" action="Default" frame="0"/>
+		</frame>
+	</override>
+</animation>
+

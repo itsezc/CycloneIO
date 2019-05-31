@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_chest_U_snood" version="0.1">
+    <assets>
+      <asset name="h_lay_ca_2800_2_0" mimeType="image/png">
+        <param key="offset" value="5,25"/>
+      </asset>
+      <asset name="h_std_ca_2800_0_0" mimeType="image/png">
+        <param key="offset" value="-20,49"/>
+      </asset>
+      <asset name="h_std_ca_2800_1_0" mimeType="image/png">
+        <param key="offset" value="-22,50"/>
+      </asset>
+      <asset name="h_std_ca_2800_2_0" mimeType="image/png">
+        <param key="offset" value="-21,50"/>
+      </asset>
+      <asset name="h_std_ca_2800_3_0" mimeType="image/png">
+        <param key="offset" value="-20,51"/>
+      </asset>
+      <asset name="h_std_ca_2800_7_0" mimeType="image/png">
+        <param key="offset" value="-23,47"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

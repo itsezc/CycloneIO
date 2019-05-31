@@ -1,0 +1,90 @@
+<?xml version='1.0'?>
+<animation name="fx.108" desc="Ninja disappear" resetOnToggle="true">
+
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="ey" />
+	<remove id="ea" />
+	<remove id="fa" />
+	<remove id="fc" />
+	<remove id="hd" />
+	<remove id="ca" />
+	<remove id="cc" />
+	<remove id="ch" />
+	<remove id="wa" />
+	<remove id="lh" />
+	<remove id="ls" />
+	<remove id="lc" />
+	<remove id="li" />
+	<remove id="rh" />	
+	<remove id="rc" />
+	<remove id="rs" /> 
+	<remove id="sh" />
+	<remove id="lg" />
+	<remove id="bd" />
+	<remove id="sd" />
+	<remove id="bds" />
+	<remove id="ss" />
+	<remove id="lhs" />
+	<remove id="rhs" />
+	<remove id="cp" />
+
+	<sprite id="fx108_1" member="std_fx108_1_1">
+		<direction id="0" dz="1" dx="-25" dy="-110"/>
+		<direction id="1" dz="1" dx="-25" dy="-110"/>
+		<direction id="2" dz="1" dx="-25" dy="-110"/>
+		<direction id="3" dz="1" dx="-25" dy="-110"/>
+		<direction id="4" dz="1" dx="-25" dy="-110"/>
+		<direction id="5" dz="1" dx="-25" dy="-110"/>
+		<direction id="6" dz="1" dx="-25" dy="-110"/>
+		<direction id="7" dz="1" dx="-25" dy="-110"/>
+	</sprite>
+
+	<frame>
+		<bodypart id="head"/>
+		<bodypart id="leftarm"/>
+		<bodypart id="rightarm"/>
+		<bodypart id="torso"/>
+		<bodypart id="bottom"/>
+		<bodypart id="behind"/>
+		<bodypart id="leftitem"/>
+		<bodypart id="rightitem"/>
+		<fx id="fx108_1" action="Default" frame="1" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="2" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="3" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="4" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="5" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="6" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="7" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="8" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="9" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="10" dz="-1"/>
+	</frame>
+	<frame>
+		<fx id="fx108_1" action="Default" frame="11" dz="-1"/>
+	</frame>
+	<frame repeats="700">
+		<fx id="fx108_1" action="Default" frame="12" dz="-1"/>
+	</frame>
+
+</animation>

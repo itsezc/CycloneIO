@@ -71,5 +71,15 @@ export default class Room {
             Environment.instance.server.webSocket.to(id).emit('newItem', furniture.spriteName)
             console.log(furniture)
         }))
+
+
+		// Users Database
+		let Users = [
+			{ id: 0, name: 'EZ-C', figure: 'EZ-C' }
+        ]
+        
+        Environment.instance.server.webSocket.to(id).emit('', Users)
+
+
     }
 }

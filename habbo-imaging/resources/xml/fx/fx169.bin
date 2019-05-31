@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<animation name="fx.169" desc="Slimed FX">
+	<remove id="hrb" />
+	<remove id="ha" />
+
+	<sprite id="fx169_1" member="std_fx169_1_1" directions="1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="2" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="2" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="3" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx169_1" action="Default" frame="3" />
+	</frame>
+</animation>

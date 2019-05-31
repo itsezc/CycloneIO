@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<animation name="fx.531" desc="Babydance 2">
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="21" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="21" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="21" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="22" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="22" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="22" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="21" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="21" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="21" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dx="0" dy="18" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="19" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dx="0" dy="16" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="-4" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="16" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="16" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dx="0" dy="18" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="18" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="1" dx="0" dy="20" dd="0" />
+		<bodypart id="torso" action="Default" frame="0" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" dx="0" dy="20" dd="0" />
+	</frame>
+</animation>

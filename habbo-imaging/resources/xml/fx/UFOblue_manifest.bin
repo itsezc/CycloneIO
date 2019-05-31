@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<manifest><library id="UFOblue" version="0.1">
+  <assets>
+    <asset name="h_std_fx3_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="13,69"/>
+    </asset>
+    <asset name="h_std_fx3_3_1_0_0" mimeType="image/png">
+      <param key="offset" value="0,73"/>
+    </asset>
+    <asset name="h_std_fx3_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-33,51"/>
+    </asset>
+    <asset name="h_std_fx3_3_1_1_0" mimeType="image/png">
+      <param key="offset" value="-4,77"/>
+    </asset>
+    <asset name="h_std_fx3_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-23,54"/>
+    </asset>
+    <asset name="h_std_fx3_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-5,82"/>
+    </asset>
+    <asset name="h_std_fx3_3_1_2_0" mimeType="image/png">
+      <param key="offset" value="-4,45"/>
+    </asset>
+    <asset name="h_std_fx3_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-5,77"/>
+    </asset>
+    <asset name="h_std_fx3_3_1_3_0" mimeType="image/png">
+      <param key="offset" value="-5,42"/>
+    </asset>
+    <asset name="h_std_fx3_2_1_7_0" mimeType="image/png">
+      <param key="offset" value="-16,4"/>
+    </asset>
+    <asset name="h_std_fx3_3_1_7_0" mimeType="image/png">
+      <param key="offset" value="-5,75"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_std_fx3_2_1_1_0" link="h_std_fx3_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx3_2_1_2_0" link="h_std_fx3_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx3_2_1_3_0" link="h_std_fx3_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx3_2_1_4_0" link="h_std_fx3_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx3_2_1_5_0" link="h_std_fx3_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx3_2_1_6_0" link="h_std_fx3_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx3_2_1_7_0" link="h_std_fx3_2_1_0_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

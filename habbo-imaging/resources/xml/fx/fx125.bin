@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<animation name="fx.125" desc="Frost Pumpkin Mask fx">
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="hd" />
+	<remove id="fc" />
+	<remove id="ey" />
+	<remove id="fa" />
+	<remove id="ea" />
+	<sprite id="fx125_1" member="std_fx125_1_1" directions="1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="1" />
+	</frame>
+	<frame repeats="100">
+		<bodypart id="head" />
+		<fx id="fx125_1" action="Default" frame="0" />
+	</frame>
+	
+</animation>

@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<animation name="fx.151" desc="Goatmask2 FX">
+	<sprite id="fx151_1" member="std_fx151_1_1" directions="1">
+		<direction id="0" dz="2" />
+		<direction id="1" dz="2" />
+		<direction id="2" dz="2" />
+		<direction id="3" dz="2" />
+		<direction id="4" dz="2" />
+		<direction id="5" dz="2" />
+		<direction id="6" dz="2" />
+		<direction id="7" dz="2" />
+	</sprite>
+	<remove id="ha" />
+	<remove id="fa" />
+	<remove id="ea" />
+	<remove id="he" />
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx151_1" action="Default" frame="0" />
+	</frame>
+	
+</animation>

@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<animation name="fx.69" desc="Volkswagen">
+	<shadow id="std_fx69_sd_1" />	
+	<add id="fx69_1" align="bottom" />	
+	<add id="fx69_2" align="top" />	
+	<add id="fx69_3" align="rightitem" blend="60" ink="8" />	
+	<remove id="sh" />	
+	<frame>		
+		<bodypart id="torso" action="Default" frame="0" />		
+		<bodypart id="leftarm" action="Default" frame="0" />		
+		<bodypart id="rightarm" action="Default" frame="0" />		
+		<fx id="fx69_1" action="Default" />		
+		<fx id="fx69_2" action="Default" />		
+		<fx id="fx69_3" action="Default" />	
+	</frame>
+</animation>

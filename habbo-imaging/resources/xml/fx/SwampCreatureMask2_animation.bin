@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<animation name="fx.121" desc="Swamp Creature Mask 2">
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="hd" />
+	<remove id="fc" />
+	<remove id="ey" />
+	<remove id="fa" />
+	<remove id="ea" />
+	<sprite id="fx121_1" member="std_fx121_1_1" directions="1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx121_1" action="Default" frame="0" />
+	</frame>
+</animation>

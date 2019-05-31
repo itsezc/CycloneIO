@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="jacket_U_snowwar4_team2" version="0.1">
+    <assets>
+      <asset name="sh_std_ch_20001_0_0" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_std_ch_20001_1_0" mimeType="image/png">
+        <param key="offset" value="-4,29"/>
+      </asset>
+      <asset name="sh_std_ch_20001_2_0" mimeType="image/png">
+        <param key="offset" value="-2,32"/>
+      </asset>
+      <asset name="sh_std_ch_20001_3_0" mimeType="image/png">
+        <param key="offset" value="-5,29"/>
+      </asset>
+      <asset name="sh_std_ch_20001_7_0" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_0_0" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_0_1" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_0_2" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_0_3" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_1_0" mimeType="image/png">
+        <param key="offset" value="-2,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_1_1" mimeType="image/png">
+        <param key="offset" value="-4,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_1_2" mimeType="image/png">
+        <param key="offset" value="-2,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_1_3" mimeType="image/png">
+        <param key="offset" value="-4,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_2_0" mimeType="image/png">
+        <param key="offset" value="-2,32"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_2_1" mimeType="image/png">
+        <param key="offset" value="-2,32"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_2_2" mimeType="image/png">
+        <param key="offset" value="-2,32"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_2_3" mimeType="image/png">
+        <param key="offset" value="-2,32"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_3_0" mimeType="image/png">
+        <param key="offset" value="-5,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_3_1" mimeType="image/png">
+        <param key="offset" value="-5,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_3_2" mimeType="image/png">
+        <param key="offset" value="-5,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_3_3" mimeType="image/png">
+        <param key="offset" value="-5,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_7_0" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_7_1" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_7_2" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swrun_ch_20001_7_3" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swpick_ch_20001_0_0" mimeType="image/png">
+        <param key="offset" value="-6,26"/>
+      </asset>
+      <asset name="sh_swpick_ch_20001_2_0" mimeType="image/png">
+        <param key="offset" value="-2,29"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_2_0" mimeType="image/png">
+        <param key="offset" value="-7,35"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_2_1" mimeType="image/png">
+        <param key="offset" value="-2,9"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_2_2" mimeType="image/png">
+        <param key="offset" value="7,31"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_2_3" mimeType="image/png">
+        <param key="offset" value="26,26"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_0_0" mimeType="image/png">
+        <param key="offset" value="-3,33"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_0_1" mimeType="image/png">
+        <param key="offset" value="-4,24"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_0_2" mimeType="image/png">
+        <param key="offset" value="-1,29"/>
+      </asset>
+      <asset name="sh_swdie_ch_20001_0_3" mimeType="image/png">
+        <param key="offset" value="19,15"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_0_0" mimeType="image/png">
+        <param key="offset" value="-6,36"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_0_1" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_1_0" mimeType="image/png">
+        <param key="offset" value="-2,33"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_1_1" mimeType="image/png">
+        <param key="offset" value="-5,29"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_2_0" mimeType="image/png">
+        <param key="offset" value="0,35"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_2_1" mimeType="image/png">
+        <param key="offset" value="-2,32"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_3_0" mimeType="image/png">
+        <param key="offset" value="-2,34"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_3_1" mimeType="image/png">
+        <param key="offset" value="-5,29"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_7_0" mimeType="image/png">
+        <param key="offset" value="-7,35"/>
+      </asset>
+      <asset name="sh_swthrow_ch_20001_7_1" mimeType="image/png">
+        <param key="offset" value="-6,29"/>
+      </asset>
+    </assets>
+    <aliases>
+            <alias name="sh_swpick_ch_20001_7_0" link="sh_swpick_ch_20001_0_0" fliph="0" flipv="0" />
+            <alias name="sh_swpick_ch_20001_1_0" link="sh_swpick_ch_20001_2_0" fliph="0" flipv="0" />
+            <alias name="sh_swpick_ch_20001_5_0" link="sh_swpick_ch_20001_0_0" fliph="1" flipv="0" />
+            <alias name="sh_swpick_ch_20001_3_0" link="sh_swpick_ch_20001_2_0" fliph="1" flipv="0" />
+
+            <alias name="sh_swdie_ch_20001_7_0" link="sh_swdie_ch_20001_0_0" fliph="0" flipv="0" />
+            <alias name="sh_swdie_ch_20001_7_1" link="sh_swdie_ch_20001_0_1" fliph="0" flipv="0" />
+            <alias name="sh_swdie_ch_20001_7_2" link="sh_swdie_ch_20001_0_2" fliph="0" flipv="0" />
+            <alias name="sh_swdie_ch_20001_7_3" link="sh_swdie_ch_20001_0_3" fliph="0" flipv="0" />
+            
+            <alias name="sh_swdie_ch_20001_1_0" link="sh_swdie_ch_20001_2_0" fliph="0" flipv="0" />
+            <alias name="sh_swdie_ch_20001_1_1" link="sh_swdie_ch_20001_2_1" fliph="0" flipv="0" />
+            <alias name="sh_swdie_ch_20001_1_2" link="sh_swdie_ch_20001_2_2" fliph="0" flipv="0" />
+            <alias name="sh_swdie_ch_20001_1_3" link="sh_swdie_ch_20001_2_3" fliph="0" flipv="0" />
+
+            <alias name="sh_swdie_ch_20001_5_0" link="sh_swdie_ch_20001_0_0" fliph="1" flipv="0" />
+            <alias name="sh_swdie_ch_20001_5_1" link="sh_swdie_ch_20001_0_1" fliph="1" flipv="0" />
+            <alias name="sh_swdie_ch_20001_5_2" link="sh_swdie_ch_20001_0_2" fliph="1" flipv="0" />
+            <alias name="sh_swdie_ch_20001_5_3" link="sh_swdie_ch_20001_0_3" fliph="1" flipv="0" />
+
+            <alias name="sh_swdie_ch_20001_3_0" link="sh_swdie_ch_20001_2_0" fliph="1" flipv="0" />
+            <alias name="sh_swdie_ch_20001_3_1" link="sh_swdie_ch_20001_2_1" fliph="1" flipv="0" />
+            <alias name="sh_swdie_ch_20001_3_2" link="sh_swdie_ch_20001_2_2" fliph="1" flipv="0" />
+            <alias name="sh_swdie_ch_20001_3_3" link="sh_swdie_ch_20001_2_3" fliph="1" flipv="0" />
+    </aliases>
+  </library>
+</manifest>

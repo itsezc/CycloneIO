@@ -1,4 +1,11 @@
 // @flow
+
+/*
+	Server(Users[]) => [0]['figure']
+	Client['figure'] => Walk, Sit, Wave, Dance, Lay, Effects  
+*/
+
+
 import Phaser, { Game, WEBGL, Scale } from 'phaser'
 
 const { ScaleModes } = Scale 

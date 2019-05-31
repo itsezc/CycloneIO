@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_face_U_gold5" version="0.1">
+    <assets>
+      <asset name="h_spk_fa_2813_3_0" mimeType="image/png">
+        <param key="offset" value="-20,61"/>
+      </asset>
+      <asset name="h_spk_fa_2813_2_0" mimeType="image/png">
+        <param key="offset" value="-21,60"/>
+      </asset>
+      <asset name="h_spk_fa_2813_1_0" mimeType="image/png">
+        <param key="offset" value="-25,61"/>
+      </asset>
+      <asset name="h_spk_fa_2813_0_0" mimeType="image/png">
+        <param key="offset" value="-34,60"/>
+      </asset>
+      <asset name="h_std_fa_2813_3_0" mimeType="image/png">
+        <param key="offset" value="-20,61"/>
+      </asset>
+      <asset name="h_std_fa_2813_2_0" mimeType="image/png">
+        <param key="offset" value="-21,60"/>
+      </asset>
+      <asset name="h_std_fa_2813_1_0" mimeType="image/png">
+        <param key="offset" value="-25,61"/>
+      </asset>
+      <asset name="h_std_fa_2813_0_0" mimeType="image/png">
+        <param key="offset" value="-34,59"/>
+      </asset>
+      <asset name="h_lay_fa_2813_2_0" mimeType="image/png">
+        <param key="offset" value="13,34"/>
+      </asset>
+      <asset name="h_lsp_fa_2813_2_0" mimeType="image/png">
+        <param key="offset" value="-51,-126"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

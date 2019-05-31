@@ -1,0 +1,110 @@
+<?xml version='1.0'?>
+<animation name="fx.30" desc="Wade FX">
+	<sprite id="fx30_1" member="std_fx30_1_1" >
+		<direction id="0" dx="12" dy="-20" dz="-1" />
+		<direction id="1" dx="12" dy="-20" dz="-1" />
+		<direction id="2" dx="12" dy="-20" dz="-1" />
+		<direction id="3" dx="12" dy="-20" dz="-1" />
+		<direction id="4" dx="12" dy="-20" dz="-1" />
+		<direction id="5" dx="12" dy="-20" dz="-1" />
+		<direction id="6" dx="12" dy="-20" dz="-1" />
+		<direction id="7" dx="12" dy="-20" dz="-1" />
+	</sprite>
+	<sprite id="fx30_2" member="std_fx30_2_1" >
+		<direction id="0" dx="12" dy="-20" dz="3" />
+		<direction id="1" dx="12" dy="-20" dz="3" />
+		<direction id="2" dx="12" dy="-20" dz="3" />
+		<direction id="3" dx="12" dy="-20" dz="3" />
+		<direction id="4" dx="12" dy="-20" dz="3" />
+		<direction id="5" dx="12" dy="-20" dz="3" />
+		<direction id="6" dx="12" dy="-20" dz="3" />
+		<direction id="7" dx="12" dy="-20" dz="3" />
+	</sprite>
+	<sprite id="fx30_3" member="std_fx30_3_1" >
+		<direction id="0" dx="12" dy="-10" dz="3" />
+		<direction id="1" dx="12" dy="-10" dz="3" />
+		<direction id="2" dx="12" dy="-10" dz="3" />
+		<direction id="3" dx="12" dy="-10" dz="3" />
+		<direction id="4" dx="12" dy="-10" dz="3" />
+		<direction id="5" dx="12" dy="-10" dz="3" />
+		<direction id="6" dx="12" dy="-10" dz="3" />
+		<direction id="7" dx="12" dy="-10" dz="3" />
+	</sprite>
+    <!-- body -->
+	<frame>
+		<fx id="fx30_1" action="Default" frame="0" />
+		<fx id="fx30_2" action="Default" frame="0" />
+		<fx id="fx30_3" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="1" />
+		<fx id="fx30_2" action="Default" frame="1" />
+		<fx id="fx30_3" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="2" />
+		<fx id="fx30_2" action="Default" frame="2" />
+		<fx id="fx30_3" action="Default" frame="2" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="0" />
+		<fx id="fx30_2" action="Default" frame="0" />
+		<fx id="fx30_3" action="Default" frame="3" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="1" />
+		<fx id="fx30_2" action="Default" frame="1" />
+		<fx id="fx30_3" action="Default" frame="4" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="2" />
+		<fx id="fx30_2" action="Default" frame="2" />
+		<fx id="fx30_3" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="0" />
+		<fx id="fx30_2" action="Default" frame="0" />
+		<fx id="fx30_3" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="1" />
+		<fx id="fx30_2" action="Default" frame="1" />
+		<fx id="fx30_3" action="Default" frame="2" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="2" />
+		<fx id="fx30_2" action="Default" frame="2" />
+		<fx id="fx30_3" action="Default" frame="3" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="0" />
+		<fx id="fx30_2" action="Default" frame="0" />
+		<fx id="fx30_3" action="Default" frame="4" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="1" />
+		<fx id="fx30_2" action="Default" frame="1" />
+		<fx id="fx30_3" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="2" />
+		<fx id="fx30_2" action="Default" frame="2" />
+		<fx id="fx30_3" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="0" />
+		<fx id="fx30_2" action="Default" frame="0" />
+		<fx id="fx30_3" action="Default" frame="2" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="1" />
+		<fx id="fx30_2" action="Default" frame="1" />
+		<fx id="fx30_3" action="Default" frame="3" />
+	</frame>
+	<frame>
+		<fx id="fx30_1" action="Default" frame="2" />
+		<fx id="fx30_2" action="Default" frame="2" />
+		<fx id="fx30_3" action="Default" frame="4" />
+	</frame>
+</animation>
+

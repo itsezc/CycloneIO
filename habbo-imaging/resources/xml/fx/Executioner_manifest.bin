@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<manifest><library id="Executioner" version="0.1">
+  <assets>
+    <asset name="h_std_fx117_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-17,75"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-51,84"/>
+    </asset>
+    <asset name="h_std_fx117_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-17,77"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_1_0" mimeType="image/png">
+      <param key="offset" value="-44,82"/>
+    </asset>
+    <asset name="h_std_fx117_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-17,76"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_2_0" mimeType="image/png">
+      <param key="offset" value="-34,79"/>
+    </asset>
+    <asset name="h_std_fx117_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-19,76"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_3_0" mimeType="image/png">
+      <param key="offset" value="-20,81"/>
+    </asset>
+    <asset name="h_std_fx117_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-18,76"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_4_0" mimeType="image/png">
+      <param key="offset" value="1,84"/>
+    </asset>
+    <asset name="h_std_fx117_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-20,77"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_5_0" mimeType="image/png">
+      <param key="offset" value="-5,86"/>
+    </asset>
+    <asset name="h_std_fx117_1_1_6_0" mimeType="image/png">
+      <param key="offset" value="-21,75"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_6_0" mimeType="image/png">
+      <param key="offset" value="-22,93"/>
+    </asset>
+    <asset name="h_std_fx117_1_1_7_0" mimeType="image/png">
+      <param key="offset" value="-19,76"/>
+    </asset>
+    <asset name="h_std_fx117_2_1_7_0" mimeType="image/png">
+      <param key="offset" value="-43,88"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_crr_ri_fx117_1_0_0" link="h_std_fx117_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx117_1_1_0" link="h_std_fx117_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx117_1_2_0" link="h_std_fx117_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx117_1_3_0" link="h_std_fx117_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx117_1_4_0" link="h_std_fx117_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx117_1_5_0" link="h_std_fx117_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_0_0" link="h_std_fx117_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_1_0" link="h_std_fx117_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_2_0" link="h_std_fx117_2_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_3_0" link="h_std_fx117_2_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_4_0" link="h_std_fx117_2_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_5_0" link="h_std_fx117_2_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_6_0" link="h_std_fx117_2_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx117_2_7_0" link="h_std_fx117_2_1_7_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_0_0" link="h_std_fx117_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_1_0" link="h_std_fx117_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_2_0" link="h_std_fx117_2_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_3_0" link="h_std_fx117_2_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_4_0" link="h_std_fx117_2_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_5_0" link="h_std_fx117_2_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_6_0" link="h_std_fx117_2_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx117_2_7_0" link="h_std_fx117_2_1_7_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

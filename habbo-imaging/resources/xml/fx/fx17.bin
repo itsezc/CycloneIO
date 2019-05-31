@@ -1,0 +1,169 @@
+<?xml version='1.0'?>
+<animation name="fx.17" desc="UFO pink FX">
+	<sprite id="fx17_2" ink="33" member="std_fx17_2_1" directions="1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<sprite id="avatar" />
+	<add id="fx17_1" align="bottom" />
+	<add id="fx17_3" align="top" />
+	<default>
+		<!-- Define the defaults, so that the frames could just defined deviations from these, would make the configuration easier by hand.
+			 also this would be just an option not required. Since when omitted it's actually easier to create an tool for these... -->
+	</default>
+	<frames>
+		<!-- put the frames inside this node, now they are on the same level as the configuration part which is not very clear...
+			framecount="" speed="" etc=""
+			 -->
+	</frames>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="1" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="1" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-13" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="2" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="0" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="1" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-13" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="2" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx17_1" action="Default" frame="0" dy="15" />
+		<fx id="fx17_2" action="Default" frame="0" dy="1" />
+		<fx id="fx17_3" action="Default" frame="0" dy="15" />
+	</frame>
+</animation>

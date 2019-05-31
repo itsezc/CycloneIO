@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_chest_U_medal2" version="0.1">
+    <assets>
+      <asset name="h_std_ca_2744_2_0" mimeType="image/png">
+        <param key="offset" value="-28,39"/>
+      </asset>
+      <asset name="h_std_ca_2744_1_0" mimeType="image/png">
+        <param key="offset" value="-39,37"/>
+      </asset>
+      <asset name="h_std_ca_2744_3_0" mimeType="image/png">
+        <param key="offset" value="-23,38"/>
+      </asset>
+      <asset name="h_std_ca_2743_2_0" mimeType="image/png">
+        <param key="offset" value="-27,40"/>
+      </asset>
+      <asset name="h_std_ca_2743_1_0" mimeType="image/png">
+        <param key="offset" value="-38,38"/>
+      </asset>
+      <asset name="h_std_ca_2743_3_0" mimeType="image/png">
+        <param key="offset" value="-22,39"/>
+      </asset>
+      <asset name="h_lay_ca_2744_2_0" mimeType="image/png">
+        <param key="offset" value="-5,17"/>
+      </asset>
+      <asset name="h_lay_ca_2744_4_0" mimeType="image/png">
+        <param key="offset" value="-52,17"/>
+      </asset>
+      <asset name="h_lay_ca_2743_2_0" mimeType="image/png">
+        <param key="offset" value="-3,18"/>
+      </asset>
+      <asset name="h_lay_ca_2743_4_0" mimeType="image/png">
+        <param key="offset" value="-47,18"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

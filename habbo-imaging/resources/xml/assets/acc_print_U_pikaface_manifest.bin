@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_print_U_pikaface" version="0.1">
+    <assets>
+      <asset name="h_std_cp_6735_2_0" mimeType="image/png">
+        <param key="offset" value="-30,40"/>
+      </asset>
+      <asset name="h_std_cp_6735_3_0" mimeType="image/png">
+        <param key="offset" value="-26,40"/>
+      </asset>
+      <asset name="h_std_cp_6735_4_0" mimeType="image/png">
+        <param key="offset" value="-18,41"/>
+      </asset>
+      <asset name="sh_std_cp_6735_2_0" mimeType="image/png">
+        <param key="offset" value="-14,20"/>
+      </asset>
+      <asset name="sh_std_cp_6735_3_0" mimeType="image/png">
+        <param key="offset" value="-11,20"/>
+      </asset>
+      <asset name="sh_std_cp_6735_4_0" mimeType="image/png">
+        <param key="offset" value="-8,20"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

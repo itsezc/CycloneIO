@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<animation name="fx.191" desc="Hoverplank">
+	<sprite id="avatar" />
+	<sprite id="fx191_1" ink="8" member="std_fx191_1_1" directions="1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<sprite id="fx191_2" ink="8" member="std_fx191_2_1" directions="1" >
+		<direction id="0" dz="2" />
+		<direction id="1" dz="2" />
+		<direction id="2" dz="2" />
+		<direction id="3" dz="2" />
+		<direction id="4" dz="2" />
+		<direction id="5" dz="2" />
+		<direction id="6" dz="2" />
+		<direction id="7" dz="2" />
+	</sprite>
+	<frame>
+		<fx id="avatar" frame="0" dy="-8" />
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="fx191_1" action="Default" frame="0" />
+		<fx id="fx191_2" action="Default" frame="0"/>
+	</frame>
+
+</animation>

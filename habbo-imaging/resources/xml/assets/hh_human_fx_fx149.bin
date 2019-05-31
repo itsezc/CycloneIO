@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<animation name="fx.149" desc="Peacock3 Mask fx">
+	<remove id="he" />
+	<remove id="fa" />
+	<remove id="ea" />
+	<sprite id="fx149_1" member="std_fx149_1_1" directions="1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+		<sprite id="fx149_2" member="std_fx149_2_1" directions="1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx149_1" action="Default" frame="0" />
+		<fx id="fx149_2" action="Default" frame="0" />
+
+	</frame>
+</animation>

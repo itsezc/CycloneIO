@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<manifest>
+  <library name="hat_U_mijte" version="0.1">
+    <assets>
+      <asset name="h_std_ha_6686_7_0" mimeType="image/png">
+        <param key="offset" value="-15,90"/>
+      </asset>
+      <asset name="h_std_ha_6686_3_0" mimeType="image/png">
+        <param key="offset" value="-15,96"/>
+      </asset>
+      <asset name="h_std_ha_6686_2_0" mimeType="image/png">
+        <param key="offset" value="-15,97"/>
+      </asset>
+      <asset name="h_std_ha_6686_1_0" mimeType="image/png">
+        <param key="offset" value="-16,98"/>
+      </asset>
+      <asset name="h_std_ha_6686_0_0" mimeType="image/png">
+        <param key="offset" value="-15,95"/>
+      </asset>
+      <asset name="h_lay_ha_6686_2_0" mimeType="image/png">
+        <param key="offset" value="1,1"/>
+      </asset>
+      <asset name="sh_std_ha_6686_7_0" mimeType="image/png">
+        <param key="offset" value="-8,51"/>
+      </asset>
+      <asset name="sh_std_ha_6686_3_0" mimeType="image/png">
+        <param key="offset" value="-7,50"/>
+      </asset>
+      <asset name="sh_std_ha_6686_2_0" mimeType="image/png">
+        <param key="offset" value="-6,51"/>
+      </asset>
+      <asset name="sh_std_ha_6686_1_0" mimeType="image/png">
+        <param key="offset" value="-7,51"/>
+      </asset>
+      <asset name="sh_std_ha_6686_0_0" mimeType="image/png">
+        <param key="offset" value="-6,53"/>
+      </asset>
+      <asset name="sh_lay_ha_6686_2_0" mimeType="image/png">
+        <param key="offset" value="2,2"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>
