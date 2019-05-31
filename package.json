@@ -20,7 +20,8 @@
     "dev:ui:mobile:ios": "cd source/mobile && react-native run-ios --simulator=\"iPhone10\"",
     "dev:server": "npm run flow:status && babel-watch --watch source/server source/server/environment.js",
     "dev:resources": "webpack-dev-server --host 0.0.0.0",
-    "lerna:test": "lerna run test"
+    "lerna:test": "lerna run test",
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
@@ -49,7 +50,10 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
     "@babel/runtime": "^7.4.5",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
     "autoprefixer": "^9.5.1",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
@@ -79,11 +83,13 @@
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "ts-loader": "^6.0.2",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
+    "@types/hapi": "^18.0.2",
     "apollo-boost": "^0.3.1",
     "apollo-server-hapi": "^2.5.0",
     "bcryptjs": "^2.4.3",
