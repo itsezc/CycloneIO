@@ -1,38 +1,7 @@
 import * as Path from 'path'
 
-export class Action
-{
-	private readonly _key: string
-	private readonly _description: string
-
-	public constructor(key: string, description: string)
-	{
-		this._key = key
-		this._description = description
-	}
-
-	public get key(): string {
-		return this.key
-	}
-
-	public get description(): string {
-		return this.description
-	}
-
-	// #TODO 
-	illegalCombination(action: any) {
-		return 
-	}
-}
-
-interface Object {
-	key: string,
-	key2: string
-}
-
 export class Actions 
 {
-	
 	public DRINK: Action
 	public CARRY: Action
 	public STAND: Action
@@ -42,7 +11,7 @@ export class Actions
 	public WAVE: Action
 	
 	// #TODO: Swap to ES6 Map: https://howtodoinjava.com/typescript/maps/
-	static illegalMapping: Array<Action>
+	public static illegalMapping: Map<Action, Action[]> = new Map()
 	
 	public constructor()
 	{
@@ -54,52 +23,72 @@ export class Actions
 		this.WALK = new Action('walk', 'Taking a step')
 		this.WAVE = new Action('wav', 'Waving')
 		
-		Actions.illegalMapping = []
-		Actions.illegalMapping[this.STAND.key] = [this.SIT, this.LAY, this.WALK]
-		Actions.illegalMapping[this.SIT.key] = [this.STAND, this.LAY, this.WALK]
-		Actions.illegalMapping[this.LAY.key] = [this.STAND, this.SIT, this.WALK, this.WAVE]
-		Actions.illegalMapping[this.WALK.key] = [this.STAND, this.SIT, this.LAY]
-		Actions.illegalMapping[this.WAVE.key] = [this.LAY]
+		Actions.illegalMapping.set(this.STAND, [this.SIT, this.LAY, this.WALK])
+		Actions.illegalMapping.set(this.SIT, [this.STAND, this.LAY, this.WALK])
+		Actions.illegalMapping.set(this.LAY, [this.STAND, this.SIT, this.WALK, this.WAVE])
+		Actions.illegalMapping.set(this.WALK, [this.STAND, this.SIT, this.LAY])
+		Actions.illegalMapping.set(this.WAVE, [this.LAY])
 	} 
 
-	public static illegalCombinations(action1: Action, action2: Action): boolean 
+	public static illegalCombination(action1: Action, action2: Action): boolean 
 	{
-		if(this.illegalMapping.indexOf(action1)) 
+		if (this.illegalMapping.has(action1)) 
 		{
-			let illegals = this.illegalMapping[action1.key]
+			let illegals = this.illegalMapping.get(action1)
 
-			if(illegals.indexOf(action2)) 
+			if(illegals != undefined && illegals.indexOf(action2)) 
 				return true
-
-			return false
 		}
+
+		return false
+	}
+}
+
+export class Action
+{
+	private readonly _key: string
+	private readonly _description: string
+
+	public constructor(key: string, description: string)
+	{
+		this._key = key
+		this._description = description
+	}
+
+	public get key(): string 
+	{
+		return this._key
+	}
+
+	public get description(): string 
+	{
+		return this._description
+	}
+
+	public illegalCombination(actionTwo: Action) {
+		return Actions.illegalCombination(this, actionTwo)
 	}
 }
 
 
-export class Gestures {
+export enum Gestures {
 
-	private gestures: Array<String>
+	private gestures: Map<string, string> = new Map()
 
 	public constructor() {
-		this.gestures = []
-		this.gestures['STANDARD'] = 'std'
-		this.gestures['SMILE'] = 'sml'
-		this.gestures['SAD'] = 'sad'
-		this.gestures['ANGRY'] = 'agr'
-		this.gestures['SURPRISED'] = 'srp'
-		this.gestures['EYEBLINK'] = 'eyb'
-		this.gestures['SPEAK'] = 'spk'
+		this.gestures.set('STANDARD', 'std')
+		this.gestures.set('SMILE', 'sml')
+		this.gestures.set('SAD', 'sad')
+		this.gestures.set('ANGRY', 'agr')
+		this.gestures.set('SURPRISED', 'srp')
+		this.gestures.set('EYEBLINK', 'eyb')
+		this.gestures.set('SPEAK', 'spk')
 	}
 
-	public getGesture(key: string)
+	public getGesture(key: string): string | null
 	{
-		if(this.gestures.indexOf(key)) 
-		{
-			return this.gestures[key]
-		}
+		return this.gestures.get(key)
 	}
-
 }
 
 
@@ -166,38 +155,37 @@ enum BodyLocation
 
 class PartType
 {
-
 	private _key: string
 	private _order: number
 	private _bodyLocation: BodyLocation
-	private _coloringFrom: number
-	private rotationOffset: any = {}
+	private _coloringFrom: PartType | undefined
+	public rotationOffset: number[] = []
 
-	public constructor(key: string, bodyLocation: BodyLocation, order: number, coloringFrom?: number){
+	public constructor(key: string, bodyLocation: BodyLocation, order: number, coloringFrom?: PartType){
 		this._key = key
 		this._bodyLocation = bodyLocation
 		this._order = order
 		this._coloringFrom = coloringFrom
 	}
 
-	get key() 
+	public get key(): string
 	{
 		return this._key
 	}
 	
-	get order() 
+	public get order(): number
 	{
 		return this._order
 	}
 	
-	get bodyLocation() 
+	public get bodyLocation() 
 	{
 		return this._bodyLocation
 	}
 
-	get coloringFrom(): number | PartType
+	public get coloringFrom(): number | PartType
 	{
-		if(!this._coloringFrom) {
+		if(this._coloringFrom) {
 			return this._coloringFrom
 		}
 
@@ -207,81 +195,85 @@ class PartType
 
 export class SetPart 
 {
-	def __init__(self, id: int, type: PartType, colorable: bool, index: int, color_index: int):
-	self.__id: int = id
-	self.__type: PartType = type
-	self.__colorable: bool = colorable
-	self.__index: int = index
-	self.__color_index: int = color_index
-	self.__order: int = self.__type.order
 
-@property
-def id(self) -> int:
-	return self.__id
+	private _id: number
+	public _type: PartType
+	private _colorable: boolean
+	private _index: number
+	private _colorIndex: number
+	private _order: number
 
-@property
-def type(self) -> PartType:
-	return self.__type
+	public constructor(id: number, type: PartType, colorable: boolean, index: number, colorIndex: number){
+		this._id = id
+		this._type = type
+		this._colorable = colorable
+		this._index = index
+		this._colorIndex = colorIndex
+		this._order = type.order
+	}	
 
-@property
-def colorable(self) -> bool:
-	return self.__colorable
-
-@property
-def index(self) -> int:
-	return self.__index
-
-@property
-def color_index(self) -> int:
-	return self.__color_index
-
-@property
-def order(self) -> int:
-	return self.__order
-
-
-	public set order(order: number)
+	public get id(): number
 	{
-		this._order = order
+		return this._id
 	}
 
-	public get order()
+	get type(): PartType
+	{
+		return this._type
+	}
+
+	public get colorable(): boolean
+	{
+		return this._colorable
+	}
+
+	public get index(): number
+	{
+		return this._index
+	}
+
+	public get colorIndex(): number
+	{
+		return this._colorIndex
+	}
+
+	public get order(): number
 	{
 		return this._order
 	}
 
-	public get copy()
+	public set order(order: number)
 	{
-		return this._copy
+		this._order = order
 	}
 }
 
 export class PartTypes
 {
 
-	private parts: [PartType]
+	private parts: {[key: string]: PartType} = {}
 
 	public constructor()
 	{
-		this.parts['SHOES'] = new PartType('sh', BodyLocation.BODY, 5, null)
-		this.parts['LEGS'] = new PartType('lg', BodyLocation.BODY, 6, null)
-		this.parts['CHEST'] = new PartType('ch', BodyLocation.BODY, 7, null)
-		this.parts['WAIST'] = new PartType('wa', BodyLocation.BODY, 8, null)
-		this.parts['CHEST_ACCESSORY'] = new PartType('ca', BodyLocation.BODY, 9, null)
-		this.parts['FACE_ACCESSORY'] = new PartType('fa', BodyLocation.HEAD, 27, null)
-		this.parts['EYE_ACCESSORY'] = new PartType('ea', BodyLocation.HEAD, 28, null)
-		this.parts['HEAD_ACCESSORY'] = new PartType('ha', BodyLocation.HEAD, 20, null)
-		this.parts['HEAD_EXTRA'] = new PartType('he', BodyLocation.HEAD, 20, null)
-		this.parts['CHEST_COVER'] = new PartType('cc', BodyLocation.BODY, 21, null)
-		this.parts['CHEST_PIECE'] = new PartType('cp', BodyLocation.BODY, 6, null)
-		this.parts['HEAD'] = new PartType('hd', BodyLocation.HEAD, 22, null)
+		this.parts['SHOES'] = new PartType('sh', BodyLocation.BODY, 5)
+		this.parts['LEGS'] = new PartType('lg', BodyLocation.BODY, 6)
+		this.parts['CHEST'] = new PartType('ch', BodyLocation.BODY, 7)
+		this.parts['WAIST'] = new PartType('wa', BodyLocation.BODY, 8)
+		this.parts['CHEST_ACCESSORY'] = new PartType('ca', BodyLocation.BODY, 9)
+		this.parts['FACE_ACCESSORY'] = new PartType('fa', BodyLocation.HEAD, 27)
+		this.parts['EYE_ACCESSORY'] = new PartType('ea', BodyLocation.HEAD, 28)
+		this.parts['HEAD_ACCESSORY'] = new PartType('ha', BodyLocation.HEAD, 20)
+		this.parts['HEAD_EXTRA'] = new PartType('he', BodyLocation.HEAD, 20)
+		this.parts['CHEST_COVER'] = new PartType('cc', BodyLocation.BODY, 21)
+		this.parts['CHEST_PIECE'] = new PartType('cp', BodyLocation.BODY, 6)
+		this.parts['HEAD'] = new PartType('hd', BodyLocation.HEAD, 22)
 
 		let CHEST = this.parts['CHEST']
 		let HEAD = this.parts['HEAD']
 
 		this.parts['BODY'] = new PartType('bd', BodyLocation.BODY, 1, HEAD)
 		this.parts['FACIAL_CONTOURS'] = new PartType('fc', BodyLocation.HEAD, 23, HEAD)
-		this.parts['HAIR'] = new PartType('hr', BodyLocation.HEAD, 24, null)
+		this.parts['HAIR'] = new PartType('hr', BodyLocation.HEAD, 24)
 
 		let HAIR = this.parts['HAIR']
 
@@ -289,17 +281,16 @@ export class PartTypes
 		this.parts['LEFT_ARM_SMALL'] = new PartType('ls', BodyLocation.BODY, 6, CHEST)
 		this.parts['RIGHT_ARM_LARGE'] = new PartType('rh', BodyLocation.BODY, 10, HEAD)
 		this.parts['RIGHT_ARM_SMALL'] = new PartType('rs', BodyLocation.BODY, 11, CHEST)
-		this.parts['EYE'] = new PartType('ey', BodyLocation.HEAD, 24, null)
-		this.parts['LEFT_HAND_ITEM'] = new PartType('li', BodyLocation.BODY, 0, null)
+		this.parts['EYE'] = new PartType('ey', BodyLocation.HEAD, 24)
+		this.parts['LEFT_HAND_ITEM'] = new PartType('li', BodyLocation.BODY, 0)
 		this.parts['HAIR_BACK'] = new PartType('hrb', BodyLocation.HEAD, 26, HAIR)
-		this.parts['RIGHT_HAND_ITEM'] = new PartType('ri', BodyLocation.BODY, 26, null)
+		this.parts['RIGHT_HAND_ITEM'] = new PartType('ri', BodyLocation.BODY, 26)
 		this.parts['LEFT_ARM_CARRY'] = new PartType('lc', BodyLocation.BODY, 23, HEAD)
 		this.parts['RIGHT_ARM_CARRY'] = new PartType('rc', BodyLocation.BODY, 24, HEAD)
-		this.parts['EFFECT'] = new PartType('fx', BodyLocation.BODY, 100, null)
+		this.parts['EFFECT'] = new PartType('fx', BodyLocation.BODY, 100)
 
-		this.['LEFT_ARM_SMALL'].rotationOffset[3] = 1
+		this.parts['LEFT_ARM_SMALL'].rotationOffset[3] = 1
 	}
-
 
 	public getPartType(key: string) : PartType | null
 	{
@@ -310,7 +301,6 @@ export class PartTypes
 
 		return null
 	}
-	
 }
 
 export class SetType
@@ -345,7 +335,7 @@ export class Set {
 	private _colorable: boolean
 	private _selectable: boolean
 	private _preselectable: boolean
-	private _parts: any = new Map()
+	private _parts: Map<PartType, SetPart[]> = new Map()
 	private _hiddenLayers: any[] = []
 
 	public constructor(id: number, name: string, gender: string, club: number, colorable: boolean, selectable: boolean, preselectable: boolean)
@@ -362,9 +352,12 @@ export class Set {
 	public addPart(part: SetPart)
 	{
 		if(!this._parts.has(part.type))
-			this._parts[part.type] = part
+			this._parts.set(part.type, [])
+        
+		this._parts.get(part.type)[] = part
 	}
 }
+
 
 export const XML_FOLDER = 'resources/xml'
 export const AVATAR_FOLDER = 'resoruces/avatar/'

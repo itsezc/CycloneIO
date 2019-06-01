@@ -1,7 +1,6 @@
 import Config from '../../config.json'
 
 import Chalk from 'chalk'
-//import ReadLineSync from 'readline-sync'
 
 import Logger from './utils/logger'
 import Server from './network/server'
@@ -11,17 +10,21 @@ import Server from './network/server'
 /**
  * Environment class
 */
-export default class Environment {
+export default class Environment 
+{
 
-	public config: JSON
+	public config: any
 	public logger: any
 	public server: Server
+
+	public static instance: Environment
 	//roomManager: RoomManager
 
 	/**
 	 * @param {JSON} config - The configuration file 
 	 */
-	public constructor(config: JSON) {
+	public constructor(config: JSON)
+	{
 
 		this.config = config
 		console.clear()
@@ -45,26 +48,19 @@ export default class Environment {
      * The main function
      * Initialize the server
      */
-	async init(): Promise<void> {
-
-		try {
+	public async init(): Promise<void>
+	{
+		try 
+		{
 
 			this.logger = await Logger
 			this.server = await new Server(this.config)
 			//this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
 
-			// ReadLineSync.promptLoop((command) => {
-			//   console.log('-- You said "' + command + '"');
-			// }, {
-			// 	limit: '1-6'
-			// })
-
 		} catch (error) {
 			this.logger.error(error)
 		}
 	}
-
-	static instance: Environment
 }
 
 Environment.instance = new Environment(Config)
