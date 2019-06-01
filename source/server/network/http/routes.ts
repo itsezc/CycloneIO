@@ -1,7 +1,7 @@
 const Routes = [{
 		method: 'GET',
 		path: '/{param*}',
-		handler: (request, h) => {
+		handler: (request: any, h) => {
 			return h.file('./web-build/dist/index.html')
 		}
 	},
@@ -18,7 +18,7 @@ const Routes = [{
 	{
 		method: 'GET',
 		path: '/housekeeping/{param*}',
-		handler: (request, h) => {
+		handler: (request: any, h) => {
 			return h.file('./web-build/dist/housekeeping.html')
 		}
 	}

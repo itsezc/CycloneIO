@@ -2,7 +2,7 @@ import Config from '../../config.json'
 
 import Chalk from 'chalk'
 
-import Logger from './utils/logger'
+import Logger, {CycloneLogger} from './utils/logger'
 import Server from './network/server'
 
 //import RoomManager from './hotel/rooms/manager'
@@ -12,10 +12,10 @@ import Server from './network/server'
 */
 export default class Environment 
 {
-
-	public config: any
-	public logger: any
-	public server: Server
+	
+	public _config: any
+	public _logger: CycloneLogger
+	public _server!: Server
 
 	public static instance: Environment
 	//roomManager: RoomManager
@@ -23,10 +23,12 @@ export default class Environment
 	/**
 	 * @param {JSON} config - The configuration file 
 	 */
-	public constructor(config: JSON)
+	public constructor(config: any)
 	{
 
-		this.config = config
+		this._logger = Logger
+		this._config = config
+
 		console.clear()
 		
 		console.log(Chalk.bold.blue('_________              .__                        '))
@@ -52,17 +54,15 @@ export default class Environment
 	{
 		try 
 		{
-
-			this.logger = await Logger
-			this.server = await new Server(this.config)
+			this._server = await new Server(this._config)
 			//this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
-
-		} catch (error) {
-			this.logger.error(error)
+		} 
+		
+		catch (error) 
+		{
+			this._logger.error(error)
 		}
 	}
 }
 
 Environment.instance = new Environment(Config)
-
-export const logger = Logger

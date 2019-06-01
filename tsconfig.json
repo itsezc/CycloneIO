@@ -1,13 +1,23 @@
 {
     "compilerOptions": {
+
 		"baseUrl": ".",
-		"paths": { "*": ["typeDefs/*"] },
+		"target": "esnext",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"noEmit": true,
+		"strict": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "jsx": "preserve",
+        "lib": ["dom", "es2018"],
+		"paths": { 
+			"*": ["*", "./typeDefs/*"] 
+		},
         "outDir": "./build",
-        "allowJs": true,
-        "target": "es2018",
-        "module": "commonjs",
-        "resolveJsonModule": true,
-        "esModuleInterop": true
     },
     "include": [
 		"./source/**/*"

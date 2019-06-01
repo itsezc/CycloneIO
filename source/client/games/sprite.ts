@@ -8,8 +8,8 @@ const { Sprite } = Arcade
 
 import Room from '../rooms/room'
 
-import type { Vector } from '../../common/types/rooms/vector'
-import type { Depth } from '../../common/enums/rooms/models/depth'
+import { Vector } from '../../common/types/rooms/vector'
+import { Depth } from '../../common/enums/rooms/models/depth'
 
 import RoomTile from '../rooms/tiles/tile'
 
@@ -19,11 +19,9 @@ import RoomTile from '../rooms/tiles/tile'
  */
 export default class GameSprite extends Sprite {
 
-	+scene: Room
-	+coordinates: Vector
-	+depth: Depth
-	+texture: Texture
-	+frame: Frame
+	private coordinates: Vector
+	private cartesianCoords: Vector
+	private isometricCoords: Vector
 
 	/**
 	 * @param {Room} scene - The room scene
@@ -31,31 +29,27 @@ export default class GameSprite extends Sprite {
 	 * @param {Texture} texture - The sprite texture
 	 * @param {Depth} depth - The sprite depth
 	 */
-	constructor(scene: Room, coordinates: Vector, depth: Depth, texture: Texture, frame: Frame) {
+	constructor(scene: Room, coordinates: Vector, depth: number, texture: string, frame?: string | integer) {
 
 		super(scene, coordinates.x, coordinates.y - coordinates.z, texture, frame)
 
-		this.scene = scene
-		this.coordinates = coordinates
 		this.depth = depth
-		this.texture = texture
-		this.frame = frame
-
+		this.coordinates = coordinates
 	}
 
 	/**
 	 * Creates the sprite
 	 */
-	create(): void {
+	public create(): void {
 		
-		this.scene.add.existing(this)
-		
+		/* 
 		this.setDepth(this.depth)
-		this.setTexture(this.texture, this.frame)
+		this.setTexture(this.texture, this.frame) */
+
+		this.scene.add.existing(this)
 
 		this.cartesianCoords = this.coordsToCartesian(this.coordinates)
 		this.isometricCoords = this.toIsometric(this.cartesianCoords)
-
 	}
 
 	/**

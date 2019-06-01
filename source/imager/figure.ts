@@ -72,23 +72,13 @@ export class Action
 
 
 export enum Gestures {
-
-	private gestures: Map<string, string> = new Map()
-
-	public constructor() {
-		this.gestures.set('STANDARD', 'std')
-		this.gestures.set('SMILE', 'sml')
-		this.gestures.set('SAD', 'sad')
-		this.gestures.set('ANGRY', 'agr')
-		this.gestures.set('SURPRISED', 'srp')
-		this.gestures.set('EYEBLINK', 'eyb')
-		this.gestures.set('SPEAK', 'spk')
-	}
-
-	public getGesture(key: string): string | null
-	{
-		return this.gestures.get(key)
-	}
+	STANDARD = 'std',
+	SMILE = 'sml',
+	SAD = 'sad',
+	ANGRY = 'agr',
+	SURPRISED = 'srp',
+	EYEBLINK = 'eyb',
+	SPEAK = 'spk'
 }
 
 
@@ -354,7 +344,7 @@ export class Set {
 		if(!this._parts.has(part.type))
 			this._parts.set(part.type, [])
         
-		this._parts.get(part.type)[] = part
+		this._parts.get(part.type)!.push(part)
 	}
 }
 
@@ -364,4 +354,54 @@ export const AVATAR_FOLDER = 'resoruces/avatar/'
 export const ASSET_FOLDER = Path.join(XML_FOLDER, 'assets')
 export const FIGURE_DATA = 'figuredata.xml'
 export const FIGURE_MAP = 'figuremap.xml'
+
+export class AvatarDataLoader {
+
+    private _figureData: Map<any, any> = new Map()
+    private _figureMap: Map<number, string> = new Map()
+    private _assetOffsetMap: Map<any, any> = new Map()
+    private _colorMap: Map<any, any> = new Map()
+
+    public getPartName(id: number): string
+    {
+		if(this._figureMap.has(id))
+			return this._figureMap.get(id)!
+
+        return ''
+    }
+
+    public load()
+    {
+
+        const loadFigureMap = () => {}
+        const loadFigureData = () => {}
+        const loadAssetOffsetMap = () => {}
+
+        loadFigureMap()
+        loadFigureData()
+        loadAssetOffsetMap()
+
+        console.log('Finished Loading Avatar Data')
+    }
+
+    public get figureData(): Map<any, any>
+    {
+        return this._figureData
+    }
+
+    public get figureMap(): Map<number, string>
+    {
+        return this._figureMap
+    }
+
+    public get assetOffsetMap(): Map<any, any>
+    {
+        return this._assetOffsetMap
+    }
+
+    public get colorMap(): Map<any, any>
+    {
+        return this._colorMap
+    }
+}
 

@@ -5,7 +5,7 @@ import Path from 'path'
 
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-module.exports = (env, argv) => 
+module.exports = (env, argv) =>
 {
 	return 
 	{
@@ -20,6 +20,10 @@ module.exports = (env, argv) =>
 				inject: false
 			})
 		],
+
+		resolve: {
+			extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
+		},
 
 		entry: {
 			web: './web/engine.js',
