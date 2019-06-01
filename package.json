@@ -10,7 +10,7 @@
     "desktop": "electron ./resources/desktop/index.js",
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b:cypress": "cypress open",
-    "swf:utils:furniture": "flow status --quiet && babel-watch source/utils/swf/furniture/furnidata.js",
+    "swf:utils:furniture": "babel-watch source/server/utils/swf/furnidata.ts",
     "dev:web": "webpack-dev-server --host 0.0.0.0 --config ./source/web/webpack.config.babel.js",
     "dev:ui:r26": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r26/webpack.config.babel.js",
     "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r63b/webpack.config.babel.js",
@@ -22,6 +22,11 @@
     "test": "jest --watchAll",
     "ref:": "tsc ./source/server/environment.ts --noEmit"
   },
+  "browserlist": [
+    "last 1 version",
+    "Node 11",
+    "IE 11"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrchirub/Cyclone.git"
@@ -52,7 +57,11 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@babel/runtime": "^7.4.5",
+    "@types/download": "^6.2.4",
     "@types/node": "^12.0.4",
+    "@types/pug": "^2.0.4",
+    "@types/react": "^16.8.19",
+    "@types/socket.io-client": "^1.4.32",
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",

@@ -7,12 +7,13 @@ import RoomPlayer from '../../hotel/rooms/player'
  */
 export default class EventManager {
 
-    private socket: SocketIO
+    private socket: SocketIO.Socket
 
     /**
      * @param {SocketIO} socket - The socket connection
      */
-    public constructor(socket: SocketIO) {
+    public constructor(socket: SocketIO.Socket) 
+    {
         this.socket = socket
 
         this.registerRooms()
@@ -22,7 +23,8 @@ export default class EventManager {
     /**
      * Registers rooms events
      */
-    public registerRooms(): void {
+    public registerRooms(): void 
+    {
         this.socket.on('newRoom', id => {
             Room.load(this.socket, id)
         })
@@ -31,9 +33,10 @@ export default class EventManager {
     /**
      * Registers player events
      */
-    public registerPlayers(): void {
+    public registerPlayers(): void 
+    {
         this.socket.on('disconnect', () => {
-            RoomPlayer.disconnect(this.socket.room, this.socket.id)
+            RoomPlayer.disconnect(this.socket.id)
         })
     }
 }

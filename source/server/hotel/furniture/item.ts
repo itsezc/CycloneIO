@@ -3,15 +3,15 @@
  */
 export default class Item {
 
-	private id: number
-	private owner: number
-	private room: number
-	private x: number
-	private y: number
-	private z: number
-	private rotation: number
-	private inventory: boolean
-	private instance: number // Instance or Calculate based on Max Furni possible (20) - All current items (10) : ORDER Timestamp created ([INDEX])
+	private id!: number
+	private owner!: number
+	private room!: number
+	private x!: number
+	private y!: number
+	private z!: number
+	private rotation!: number
+	private inventory!: boolean
+	private instance!: number // Instance or Calculate based on Max Furni possible (20) - All current items (10) : ORDER Timestamp created ([INDEX])
 	
 	//ltd
 	/*

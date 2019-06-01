@@ -16,12 +16,12 @@ export default class RoomPlayer extends RoomEntity {
      * @param {number} room - The room ID
      * @param {number} id - The player ID
      */
-    static disconnect(room: number, id: number) {
+    static disconnect(id: string) {
 		// if (RoomPlayer.list[socket.room]) {
 		// 	delete RoomPlayer.list[socket.room][socket.id]
 		// }
 
-        Environment.instance.server.webSocket.to(room).emit('removePlayer', id)
+        Environment.instance.server.webSocket.to('room1').emit('removePlayer', id)
         Logger.network(`Player ${id} disconnected`)
 	}
 	

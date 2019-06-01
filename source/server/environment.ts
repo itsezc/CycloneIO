@@ -2,7 +2,7 @@ import Config from '../../config.json'
 
 import Chalk from 'chalk'
 
-import Logger, {CycloneLogger} from './utils/logger'
+import Logger, { CycloneLogger } from './utils/logger'
 import Server from './network/server'
 
 //import RoomManager from './hotel/rooms/manager'
@@ -12,7 +12,6 @@ import Server from './network/server'
 */
 export default class Environment 
 {
-	
 	public _config: any
 	public _logger: CycloneLogger
 	public _server!: Server
@@ -25,7 +24,6 @@ export default class Environment
 	 */
 	public constructor(config: any)
 	{
-
 		this._logger = Logger
 		this._config = config
 
@@ -62,6 +60,10 @@ export default class Environment
 		{
 			this._logger.error(error)
 		}
+	}
+
+	public get server(): Server {
+		return this._server
 	}
 }
 

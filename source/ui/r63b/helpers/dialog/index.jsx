@@ -2,7 +2,7 @@ import React , {Component} from 'react'
 
 import { classNames, dragElement } from '../../utils/functions';
 
-export default class Dialog extends Component<Props> {
+export default class Dialog extends Component {
 
 	static defaultProps = {
         defaultPos: [64, 64],
@@ -74,7 +74,7 @@ export default class Dialog extends Component<Props> {
         }
     }
 
-	handleMouse = (e: MouseEvent) => {
+	handleMouse = (e) => {
         
         if (!this.state.isDragging && !this.state.isResizing) return
 
@@ -149,11 +149,4 @@ export default class Dialog extends Component<Props> {
 		}
 		
 	}
-}
-
-type Props = {
-    title: string,
-    style: ?string,
-	id: ?int,
-	resize: ?string
 }

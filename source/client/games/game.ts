@@ -1,14 +1,9 @@
-/*
-	Server(Users[]) => [0]['figure']
-	Client['figure'] => Walk, Sit, Wave, Dance, Lay, Effects  
-*/
-
-import Phaser, { Game, WEBGL, Scale } from 'phaser'
+import { Game, WEBGL, Scale } from 'phaser'
 
 const { ScaleModes } = Scale 
 const { RESIZE } = ScaleModes
 
-import Room from '../rooms/room.js'
+import Room from '../rooms/room'
 
 const config = {
     resolution: window.devicePixelRatio,

@@ -27,7 +27,7 @@ export default class Server {
 
 	private config: any
 	private HTTP: Hapi.Server
-	private webSocket!: SocketIO.Server;
+	public webSocket!: SocketIO.Server;
 	private eventManager!: EventManager
 	private database!: ApolloClient<any>
 	private apolloServer!: ApolloServer
@@ -62,56 +62,56 @@ export default class Server {
 			Environment.instance._logger.network('Started Socket.IO listener')
 
 			// GraphQL
-			let HTTPServer = this.HTTP
-			let environment = (this.config.mode === 'development') ? true : false
+			// let HTTPServer = this.HTTP
+			// let environment = (this.config.mode === 'development') ? true : false
 
-			Environment.instance._logger.apollo('Started Apollo [GraphQL] listener')
+			// Environment.instance._logger.apollo('Started Apollo [GraphQL] listener')
 
-			let schema = makeExecutableSchema({
-			    typeDefs,
-			    resolvers,
-			    resolverValidationOptions: { 
-			        requireResolversForResolveType: false
-			    }
-			})
+			// let schema = makeExecutableSchema({
+			//     typeDefs,
+			//     resolvers,
+			//     resolverValidationOptions: { 
+			//         requireResolversForResolveType: false
+			//     }
+			// })
 
-			this.apolloServer = new ApolloServer({
-			    schema,  	
-				context: {
-					db: prisma
-				}
-			})
+			// this.apolloServer = new ApolloServer({
+			//     schema,  	
+			// 	context: {
+			// 		db: prisma
+			// 	}
+			// })
 			
-			Environment.instance._logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+			// Environment.instance._logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-			await this.apolloServer.applyMiddleware({
-				app: HTTPServer
-			})
+			// await this.apolloServer.applyMiddleware({
+			// 	app: HTTPServer
+			// })
 
-			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+			// await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-			Environment.instance._logger.database('Switched to PostgreSQL connector')
-			Environment.instance._logger.database('Connected to Prisma [GraphQL] successfully')
+			// Environment.instance._logger.database('Switched to PostgreSQL connector')
+			// Environment.instance._logger.database('Connected to Prisma [GraphQL] successfully')
 
 			await this.HTTP.start()
 
-			this.database = new ApolloClient({
-				uri: 'http://localhost:8081/graphql'
-			})
+			// this.database = new ApolloClient({
+			// 	uri: 'http://localhost:8081/graphql'
+			// })
 
-			this.database.query({
-				query: gql`
-					{
-						rooms {
-							id
-							name 
-							description
-							maxUsers
-						}
-					}
-				`
-			}).then((result: any) => console.log(result.data.rooms))
-			.catch((error: any) => console.error(error))
+			// this.database.query({
+			// 	query: gql`
+			// 		{
+			// 			rooms {
+			// 				id
+			// 				name 
+			// 				description
+			// 				maxUsers
+			// 			}
+			// 		}
+			// 	`
+			// }).then((result: any) => console.log(result.data.rooms))
+			// .catch((error: any) => console.error(error))
 
 		} catch (error) {
 			this.shutdown(error)

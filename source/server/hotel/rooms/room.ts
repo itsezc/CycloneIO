@@ -15,7 +15,7 @@ import SocketIO from 'socket.io'
  */
 export default class Room {
 
-	private id: number
+	public id: number
 	private model: RoomModel	
 	private floorThickness: number
 	private wallThickness: number
@@ -40,7 +40,7 @@ export default class Room {
 		this.wallThickness = wallThickness
 		this.wallHeight = wallHeight
 		this.hideWalls = hideWalls
-		//this.items = items
+		this.items = items
 	}
 
 	/**
@@ -48,10 +48,9 @@ export default class Room {
 	 * @param {SocketIO} socket - The socket connection
 	 * @param {number} id - The room id
 	*/
-	public static load(socket: SocketIO, id: number): void {
+	public static load(socket: SocketIO.Socket, id?: number): void {
 
-		socket.join(id)
-		socket.room = id
+		socket.join('room1')
 
 		let model: RoomModel = new RoomModel([[1, 1]])
 		//let room: Room = new Room(0, model, 2, 2, 2, false, [])
@@ -61,14 +60,14 @@ export default class Room {
 			{ id: 1, x: 1, y: 1, z: 0, rotation: 0, inventory: false, instance: 1 }
 		]*/
 
-		Environment.instance.server.webSocket.to(id).emit('newRoom', model.map)
+		Environment.instance.server.webSocket.to('room1').emit('newRoom', model.map)
 
 		var imager = new FurnitureImager()
 
-		imager.getFurniture(3081).then((data: any) => {
+		imager.getFurniture(230).then((data: any) => {
 			
 			let furniture = new Furniture(0, data.name, data.classname, 'description', 'floor', 1, 1, 0, true, true, false, false, false)
-			Environment.instance.server.webSocket.to(id).emit('newItem', furniture.spriteName)
+			Environment.instance.server.webSocket.to('room1').emit('newItem', furniture.spriteName)
 			console.log(furniture)
 		})
 
@@ -77,6 +76,6 @@ export default class Room {
 			{ id: 0, name: 'EZ-C', figure: 'EZ-C' }
 		]
 		
-		Environment.instance.server.webSocket.to(id).emit('', Users)
+		Environment.instance.server.webSocket.to('room1').emit('', Users)
 	}
 }

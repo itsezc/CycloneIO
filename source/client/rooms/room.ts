@@ -1,10 +1,9 @@
-// @flow
-
 import Phaser, { Scene, GameObjects, Textures } from 'phaser'
 
 const { GameObject } = GameObjects
 const { Texture } = Textures
 
+import { Vector } from '../../common/types/rooms/vector'
 import SocketIO from 'socket.io-client'
 
 import Config, { server } from '../../../config.json'
@@ -16,27 +15,28 @@ import RoomTileMap from './tiles/map'
 
 import RoomItem from './items/item'
 
-import type { Vector } from '../../common/types/rooms/vector'
-
-//import '../../../web-build/phaser/plugins/webworkers.min.js'
-
 /**
  * Room class
  * @extends {Scene}
  */
 export default class Room extends Scene {
 
-    id: number
+    private id: number
+    private socket!: SocketIOClient.Socket
+
+    private camera!: RoomCamera
+    private tileMap!: RoomTileMap
+    private item!: RoomItem
+
+    private clickTime!: number
 
     /**
      * @param {number} id - The room id
      */
-    constructor(id: number): void {
+    constructor(id: number) {
 
         super({ key: 'room' })
-
         this.id = id
-
     }
 
     /**
@@ -72,7 +72,8 @@ export default class Room extends Scene {
     /**
      * Runs once, when the scene starts
      */
-    init() : void {
+    public init() : void {
+
         this.socket = SocketIO(`${host}:${port}`)
         this.camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
@@ -82,7 +83,7 @@ export default class Room extends Scene {
     /**
      * Runs once, after all assets in preload are loaded
      */
-    create(): void {
+    public create(): void {
 
         this.camera.create()
 
@@ -123,14 +124,15 @@ export default class Room extends Scene {
 
     /**
      * Runs once per frame for the duration of the scene
+     * @override
      */
-    update(): void {
+    public update(): void {
         // this.camera3d.transformChildren(this.transform);
     }
 
-    registerInputEvents(): void {
+    public registerInputEvents(): void {
         
-        this.input.on('pointermove', pointer => {
+        this.input.on('pointermove', (pointer: any) => {
 
             if (pointer.primaryDown) {
                 this.camera.scroll(pointer)
@@ -138,14 +140,12 @@ export default class Room extends Scene {
             } else {
                 this.camera.isScrolling = false
             }
-
         }, this)
-
     }
 
-    registerScaleEvents(): void {
+    public registerScaleEvents(): void {
 
-        this.scale.on('resize', gameSize => {
+        this.scale.on('resize', (gameSize: any) => {
 
             var width = gameSize.width
             var height = gameSize.height
@@ -153,40 +153,37 @@ export default class Room extends Scene {
             this.cameras.resize(width, height)
 
         }, this)
-
     }
 
-    emitRoom(): void {
+    public emitRoom(): void {
         this.socket.emit('newRoom', this.id)
     }
 
-    registerRoomsEvents(): void {
+    public registerRoomsEvents(): void {
 
-        this.socket.on('newRoom', map => {
+        this.socket.on('newRoom', (map: any) => {
             this.addTileMap(map)
         })
-
     }
 
-    registerItemsEvents(): void {
+    public registerItemsEvents(): void {
 
-        this.socket.on('newItem', item => {
+        this.socket.on('newItem', (item: any) => {
             this.addItem({ x: 0, y: 0, z: 0 }, item)
         })
-
     }
 
     /**
      * Adds a new tilemap
      * @param {Object} map - The room map
      */
-    addTileMap(map: Object): void {
+    public addTileMap(map: [][]): void {
         this.tileMap = new RoomTileMap(this, map)
-        this.tileMap.create('tile')
+        this.tileMap.create() // this.tileMap.create('title')
     }
 
-    addItem(coordinates: Vector, texture: Texture) {
-        this.item = new RoomItem(this, 1, texture, 1, 1, coordinates, 0, 0)
+    public addItem(coordinates: Vector, textureName: string) {
+        this.item = new RoomItem(this, textureName, 1, 1, 1, coordinates, 0, 0)
         this.item.load()
     }
 
@@ -264,9 +261,9 @@ export default class Room extends Scene {
      * @param {function} callback - The callback function
      * @param {any} args - The extra arguments
      */
-    onDoubleClick(object: GameObject, callback: function, ...args: any): any {
+    public onDoubleClick(object: Phaser.GameObjects.GameObject, callback: (...n: any) => any, ...args: any): void {
 
-        object.on('pointerdown', pointer => {
+        object.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
 
             if (pointer.downTime - this.clickTime < 500) {
                 if (pointer.primaryDown) {
@@ -276,6 +273,5 @@ export default class Room extends Scene {
 
             this.clickTime = pointer.downTime
         })
-
     }
 }

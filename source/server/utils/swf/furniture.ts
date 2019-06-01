@@ -1,4 +1,3 @@
-// @flow
 import IO from 'fs'
 import Download from 'download'
 
@@ -13,46 +12,45 @@ import Spritesheet from 'spritesheet-js'
 
 export default class Furniture {
 
-	revision: number
-	className: string
+	private revision: number
+	private className: string
 
 	/**
 	 * @param {number} revision - 
 	 * @param {string} className - 
 	 */
-	constructor(revision: number, className: string) {
+	constructor(revision: number, className: string) 
+	{
 		this.revision = revision
 		this.className = className
 	}
 
-	async download(): Promise<Download> {
+	async download(): Promise<void> 
+	{
 
-		try {
+		try 
+		{
+			var URLPath = downloadURL.concat(this.revision.toString(), '/', this.className, '.swf')
 
-			var URLPath = downloadURL.concat(this.revision, '/', this.className, '.swf')
-
-			await Download(URLPath).then(data => {
-
-				this.extract(data)
-
+			await Download(URLPath, 'out').then(data => {
+				//this.extract(data)
 			})
-
 		}
 
-		catch(error) {
+		catch(error) 
+		{
 			Logger.error(error)
 		}
 	}
 
 	async extract(data: Buffer): Promise<void> {
 
-		try {
-
+		try 
+		{
 			const swf = await readFromBufferP(data)
 			const images = await Promise.all(extractImages(swf.tags))
 
 			this.convert()
-
 		}
 
 		catch(error) {
@@ -60,22 +58,23 @@ export default class Furniture {
 		}
 	}
 
-	async convert() {
+	async convert() 
+	{
+		try 
+		{
+			Spritesheet('assets/*.png', { format: 'json' }, (error: any) => {
 
-		try {
-
-			Spritesheet('assets/*.png', { format: 'json' }, error => {
-
-				if (error) {
+				if (error) 
+				{
 					throw error
 				}
 			   
 				console.log('spritesheet successfully generated')
 			})
-
 		}
 
-		catch(error) {
+		catch(error) 
+		{
 			Logger.error(error)
 		}
 	}

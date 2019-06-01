@@ -1,5 +1,3 @@
-// @flow
-
 import { furnidataURL } from './config.json'
 import Logger from '../logger'
 import Parser from 'fast-xml-parser'
@@ -9,24 +7,25 @@ import sleep from '../sleep'
 
 export default class Furnidata {
 
-	private furniture: Furniture
-	private data: JSON
+	private furniture!: Furniture
 
-	public constructor() {
+	public constructor() 
+	{
 		this.download()
 	}
 
-	public async download(): Promise<Download> {
+	public async download(): Promise<void> 
+	{
 
-		try {
-
-			await Download(furnidataURL, { encoding: 'utf8' }).then((data) => {
-				this.parse(data)
+		try 
+		{
+			await Download(furnidataURL).then((data: Buffer) => {
+				this.parse(data.toString())
 			})
-
 		}
 
-		catch(error) {
+		catch(error) 
+		{
 			Logger.error(error)
 		}
 	}
@@ -43,11 +42,11 @@ export default class Furnidata {
 
 			if (furnidata) {
 				
-				furnidata.furnidata.roomitemtypes.furnitype.forEach(furniture => {
+				furnidata.furnidata.roomitemtypes.furnitype.forEach((furniture: any) => {
 					this.downloadFurniture(furniture.revision, furniture.classname)
 				})
 
-				furnidata.furnidata.wallitemtypes.furnitype.forEach(furniture => {
+				furnidata.furnidata.wallitemtypes.furnitype.forEach((furniture: any) => {
 					this.downloadFurniture(furniture.revision, furniture.classname)
 				})
 			}

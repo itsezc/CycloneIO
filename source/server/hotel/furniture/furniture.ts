@@ -16,7 +16,7 @@ export default class Furniture {
 	private canSit: boolean
 	private buildersClub: boolean
 
-	private spriteName: string
+	public spriteName: string
 
 	// 15pillar.swf
 	// Green Pillar () 
@@ -69,5 +69,6 @@ export default class Furniture {
 		this.canStack = canStack
 		this.canWalk = canWalk
 		this.canSit = canSit
+		this.buildersClub = buildersClub
 	}
 }

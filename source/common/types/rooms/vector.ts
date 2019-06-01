@@ -1,12 +1,11 @@
-// @flow
 
-export type Vector = {
+export interface Vector {
 	x: number,
 	y: number,
 	z: number
 }
 
-export type Vector2D = {
+export interface Vector2D {
 	x: number,
 	y: number
 }

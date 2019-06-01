@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 
-type Props = {
-	value: float,
-	max: float
-}
 
-export default class ProgressBar extends Component<Props> {
+export default class ProgressBar extends Component {
 	constructor(props) {
 		super(props)
 

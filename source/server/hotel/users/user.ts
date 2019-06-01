@@ -1,11 +1,11 @@
-
+/* 
 enum Gender {
 	M, F
 }
 
 export default class User {
 
-	id: number
+	private id: number
 	username: string
 	email: string
 	motto: string
@@ -25,4 +25,4 @@ export default class User {
 	allowBotSpeech: boolean
 	allowPetSpeech: boolean	
 
-}
+} */
