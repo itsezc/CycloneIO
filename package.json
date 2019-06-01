@@ -22,11 +22,6 @@
     "test": "jest --watchAll",
     "ref:": "tsc ./source/server/environment.ts --noEmit"
   },
-  "browserlist": [
-    "last 1 version",
-    "Node 11",
-    "IE 11"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrchirub/Cyclone.git"
@@ -61,6 +56,8 @@
     "@types/node": "^12.0.4",
     "@types/pug": "^2.0.4",
     "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router-dom": "^4.3.3",
     "@types/socket.io-client": "^1.4.32",
     "@types/winston": "^2.4.4",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
