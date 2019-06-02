@@ -3,7 +3,7 @@ import RoomModel from './model'
 import Room from './room'
 
 import Environment from '../../environment'
-import Logger from '../../utils/logger'
+import Logger from '../../../utils/logger'
 
 /**
  * RoomPlayer class
