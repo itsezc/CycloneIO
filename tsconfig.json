@@ -11,7 +11,7 @@
         "isolatedModules": false,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "jsx": "preserve",
+        "jsx": "react",
         "lib": ["dom", "es2018"],
 		"paths": { 
 			"*": ["*", "./typeDefs/*"] 
