@@ -50,10 +50,25 @@ export default class Hotel extends Component {
 				<div className='hotel'>
 					<img className='icon' src='https://upload.wikimedia.org/wikipedia/commons/8/80/SemihReiz.png' />
 
-					<Wallet currencies={this.currencies} />
+					{/* <Wallet currencies={this.currencies} /> */}
 
 					<div className='container'>
-						<h1>What's up EZ-C?</h1>
+						<h1>What's up DaddyChiru?</h1>
+						<div className='actions'>
+							<div className='action'>
+								<img className='icon' src='' />
+								<span>Find a room</span>
+							</div>
+							<div className='action'>
+								<img className='icon' src='' />
+								<span>Check out the news</span>
+							</div>
+							<div className='action'>
+								<img className='icon' src='' />
+								<span>Go shopping</span>
+							</div>
+							<p>Cyclone (Build 0.0.1)</p>
+						</div>
 					</div>
 
 					<div className='navigation'>
