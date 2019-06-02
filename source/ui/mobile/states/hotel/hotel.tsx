@@ -6,8 +6,10 @@ import Button from '../../components/button/index.jsx'
 import Wallet from '../../components/wallet/index.jsx'
 
 export default class Hotel extends Component {
-
-	constructor(props) {
+	
+	private currencies: {}[]
+	
+	constructor(props: any) {
 		super(props)
 
 		this.state = {
@@ -52,17 +54,19 @@ export default class Hotel extends Component {
 
 	render() {
 		return (
-			pug`
-				.client
-					.hotel
-						img.icon(src='https://upload.wikimedia.org/wikipedia/commons/8/80/SemihReiz.png')
-						Wallet(currencies=${this.currencies})
-						.container
-							h1 What's up EZ-C?
-						.navigation
-							img.avatar(src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=3&action=&gesture=&size=l')
-							.news T
-			`
+			<div className='client'>
+				<div className='hotel'>
+					<img className='icon' src='https://upload.wikimedia.org/wikipedia/commons/8/80/SemihReiz.png' />
+					<Wallet currencies={this.currencies} />
+					<div className='container'>
+						<h1>What's up EZ-C?</h1>
+					</div>
+					<div className='navigation'>
+						<img className='avatar' src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=3&action=&gesture=&size=l' />
+					</div>
+
+				</div>
+			</div>
 		)
 	}
 }

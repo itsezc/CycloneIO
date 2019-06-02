@@ -11,13 +11,18 @@ module.exports = (env, argv) => {
         context: Path.resolve(__dirname),
 
         entry: {
-			ui: './mobile.js'
+			ui: './mobile.js',
+			client: '../../client/games/game.ts'
+		},
+
+		resolve: {
+			extensions: ['.js', '.jsx', '.ts', '.tsx']
 		},
 
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: 'client.pug'
+				template: 'client.pug'
             })
         ],
 
@@ -29,6 +34,13 @@ module.exports = (env, argv) => {
 		
         module: {
             rules: [
+				{
+					test: /\.(ts|tsx)$/,
+					exclude: /node_modules/,
+					use: [
+						'ts-loader'
+					]
+				},
 				{
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,

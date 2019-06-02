@@ -1,54 +1,62 @@
-import Chalk from 'chalk'
-import Winston, { transports, format, createLogger } from 'winston'
+import { transports, format, createLogger, Logger } from 'winston'
 const { combine, colorize, timestamp, printf } = format
 
-const Logger = createLogger({
+export interface CycloneLogger extends Logger {
+	server(alert: string): void,
+	database(alert: string): void,
+	network(alert: string): void,
+	apollo(alert: string): void
+}
 
-    format: combine(
-        timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-        printf((info: any): string => {
-            const { timestamp, level, message } = info
+const logger: any = createLogger({
 
-            var levelOutput
+	format: combine(
 
-            switch (level) {
-                case 'server':
-                    levelOutput = '[🌪 ]'
-                    break
+		timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
 
-                case 'database':
-                    levelOutput = '[🗄️ ]'
-                    break
+		printf((info: any): string => {
+			const { timestamp, level, message } = info
 
-                case 'apollo':
-                    levelOutput = '[⚛️ ]'
-                    break
+			var levelOutput
 
-                case 'network':
-                    levelOutput = '[⚙️]'
-                    break
+			switch (level) {
+				case 'server':
+					levelOutput = '[🌪 ]'
+					break
 
-                case 'error':
-                    levelOutput = '[❌ ]'
-                    break
+				case 'database':
+					levelOutput = '[🗄️ ]'
+					break
+
+				case 'apollo':
+					levelOutput = '[⚛️ ]'
+					break
+
+				case 'network':
+					levelOutput = '[⚙️]'
+					break
+
+				case 'error':
+					levelOutput = '[❌ ]'
+					break
 			}
 
-            const ts = timestamp.slice(0, 19).replace('T', ' ')
-            return `${ts} ${levelOutput} - ${message}`
-        })
-    ),
-    level: 'ui',
-    levels: {
-        error: 0,
-        info: 1,
-        server: 2,
-        network: 3,
-        database: 4,
-        apollo: 5,
-        client: 6,
-        ui: 7
-    },
-    transports: [new transports.Console()]
+			const ts = timestamp.slice(0, 19).replace('T', ' ')
+			return `${ts} ${levelOutput} - ${message}`
+		})
+	),
+	level: 'ui',
+	levels: {
+		error: 0,
+		info: 1,
+		server: 2,
+		network: 3,
+		database: 4,
+		apollo: 5,
+		client: 6,
+		ui: 7
+	},
+	transports: [new transports.Console()]
 })
 
-export default Logger
+export default logger

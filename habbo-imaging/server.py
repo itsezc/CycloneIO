@@ -1,3 +1,4 @@
+import starlette
 from starlette.applications import Starlette
 from starlette.responses import JSONResponse, HTMLResponse
 import uvicorn

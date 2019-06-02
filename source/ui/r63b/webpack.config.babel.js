@@ -12,7 +12,11 @@ module.exports = (env, argv) => {
 
         entry: {
 			ui: './app.js',
-			client: '../../client/games/game.js'
+			client: '../../client/games/game.ts'
+		},
+
+		resolve: {
+			extensions: ['.js', '.jsx', '.ts', '.tsx']
 		},
 
         plugins: [
@@ -31,6 +35,13 @@ module.exports = (env, argv) => {
 		
         module: {
             rules: [
+				{
+					test: /\.(ts|tsx)$/,
+					exclude: /node_modules/,
+					use: [
+						'ts-loader'
+					]
+				},
 				{
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,

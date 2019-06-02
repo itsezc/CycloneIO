@@ -1,5 +1,3 @@
-// @flow
-
 import Phaser, { Physics, Textures } from 'phaser'
 
 const { Texture, Frame } = Textures
@@ -8,8 +6,8 @@ const { Sprite } = Arcade
 
 import Room from '../rooms/room'
 
-import type { Vector } from '../../common/types/rooms/vector'
-import type { Depth } from '../../common/enums/rooms/models/depth'
+import { Vector } from '../../common/types/rooms/vector'
+import { RoomModelDepth } from '../../common/enums/rooms/models/depth'
 
 import RoomTile from '../rooms/tiles/tile'
 
@@ -19,11 +17,12 @@ import RoomTile from '../rooms/tiles/tile'
  */
 export default class GameSprite extends Sprite {
 
-	+scene: Room
-	+coordinates: Vector
-	+depth: Depth
-	+texture: Texture
-	+frame: Frame
+	protected scene: Room
+	protected coordinates: Vector
+	protected textureName: string
+
+	protected cartesianCoords!: Vector
+	protected isometricCoords!: Vector
 
 	/**
 	 * @param {Room} scene - The room scene
@@ -31,38 +30,35 @@ export default class GameSprite extends Sprite {
 	 * @param {Texture} texture - The sprite texture
 	 * @param {Depth} depth - The sprite depth
 	 */
-	constructor(scene: Room, coordinates: Vector, depth: Depth, texture: Texture, frame: Frame) {
-
-		super(scene, coordinates.x, coordinates.y - coordinates.z, texture, frame)
+	constructor(scene: Room, coordinates: Vector, depth: RoomModelDepth, textureName: string, frame?: string | integer) 
+	{
+		super(scene, coordinates.x, coordinates.y - coordinates.z, textureName, frame)
 
 		this.scene = scene
 		this.coordinates = coordinates
 		this.depth = depth
-		this.texture = texture
-		this.frame = frame
-
+		this.textureName = textureName
 	}
 
 	/**
 	 * Creates the sprite
 	 */
-	create(): void {
-		
-		this.scene.add.existing(this)
-		
+	protected create(): void 
+	{
+		this.setTexture(this.textureName)
 		this.setDepth(this.depth)
-		this.setTexture(this.texture, this.frame)
+
+		this.scene.add.existing(this)
 
 		this.cartesianCoords = this.coordsToCartesian(this.coordinates)
 		this.isometricCoords = this.toIsometric(this.cartesianCoords)
-
 	}
 
 	/**
 	 * @param {Vector} cartesian - The cartesian coordinates of the sprite
 	 * @return {Vector} Isometric coordinates of the sprite
 	 */
-	toIsometric(cartesian: Vector): Vector { 
+	protected toIsometric(cartesian: Vector): Vector { 
 		return { x: cartesian.x - cartesian.y, y: (cartesian.x + cartesian.y) / 2, z: cartesian.z }
 	}
 
@@ -70,7 +66,7 @@ export default class GameSprite extends Sprite {
 	 * @param {Vector} isometric - The isometric coordinates of the sprite
 	 * @return {Vector} Cartesian coordinates of the sprite
 	 */
-	toCartesian(isometric: Vector): Vector {
+	protected toCartesian(isometric: Vector): Vector {
 		return { x: (isometric.y * 2 + isometric.x) / 2, y: (isometric.y * 2 - isometric.x) / 2, z: isometric.z }
 	}
 
@@ -78,7 +74,7 @@ export default class GameSprite extends Sprite {
 	 * @param {Vector} coordinates - The coordinates of the sprite
 	 * @return {Vector} Cartesian coordinates of the sprite
 	 */
-	coordsToCartesian(coordinates: Vector): Vector {
+	protected coordsToCartesian(coordinates: Vector): Vector {
 		return { x: coordinates.x * RoomTile.width, y: coordinates.y * RoomTile.height, z: coordinates.z }
 	}
 
@@ -86,7 +82,7 @@ export default class GameSprite extends Sprite {
 	 * @param {Vector} cartesian - The cartesian coordinates of the sprites
 	 * @return {Vector} Coordinates of the sprite
 	 */
-	toCoords(cartesian: Vector): Vector {
+	protected toCoords(cartesian: Vector): Vector {
 		return { x: Math.floor(cartesian.x / RoomTile.width), y: Math.floor(cartesian.y / RoomTile.height), z: cartesian.z }
 	}
 }

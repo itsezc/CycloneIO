@@ -6,10 +6,10 @@ const { Texture } = Textures
 const { Group } = GameObjects
 
 import Room from '../room'
-import RoomModelDepth from '../../../common/enums/rooms/models/depth'
+import { RoomModelDepth } from '../../../common/enums/rooms/models/depth'
 import RoomTile from './tile'
 
-import type { Vector } from '../../../common/types/rooms/vector'
+import { Vector } from '../../../common/types/rooms/vector'
 
 /**
  * RoomTileMap class
@@ -17,26 +17,28 @@ import type { Vector } from '../../../common/types/rooms/vector'
  */
 export default class RoomTileMap extends Group {
 	
-	+scene: Room
-	+map: Object
+	scene: Room
+
+	private map: number[][]
+	private tile!: RoomTile
 
 	/**
 	 * @param {Room} scene - The room scene
 	 * @param {Object} map - The map array @example [ [1, 1], [1, 1] ]
 	 */
-	constructor(scene: Room, map: Object) {
+	constructor(scene: Room, map: number[][]) {
 
 		super(scene)
 
 		this.scene = scene
 		this.map = map
-
 	}
 
 	/**
 	 * Creates the map
+	 * @override
 	 */
-	create(texture: Texture): void {
+	public create(): void {
 
 		for (var x = 0; x < this.map.length; x++) {
 
@@ -45,19 +47,15 @@ export default class RoomTileMap extends Group {
 				if (this.map[x][y] > 0) {
 					//this.addTile({ x, y, z: 0 }, texture)
 				}
-
 			}
-			
 		}
-
 	}
 
-	addTile(coordinates: Vector, texture: Texture): void {
+	addTile(coordinates: Vector, texture: any): void {
 
-		this.tile = new RoomTile(this.scene, coordinates, texture)
+		this.tile = new RoomTile(this.scene, coordinates, RoomModelDepth.TILE, texture)
 		this.tile.create()
 
-		this.add(this.tile)
-
+		//this.add(this.tile)
 	}
 }

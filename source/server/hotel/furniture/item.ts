@@ -1,23 +1,19 @@
-import Furniture from './furniture'
-
 /**
  * Item class
- * @extends {Furniture}
  */
-export default class Item extends Furniture {
+export default class Item {
 
-	id: number
-	owner: number
-	room: number
-	x: number
-	y: number
-	z: number
-	rotation: number
-	inventory: boolean
-	instance: number // Instance or Calculate based on Max Furni possible (20) - All current items (10) : ORDER Timestamp created ([INDEX])
-//ltd
-
-
+	private id!: number
+	private owner!: number
+	private room!: number
+	private x!: number
+	private y!: number
+	private z!: number
+	private rotation!: number
+	private inventory!: boolean
+	private instance!: number // Instance or Calculate based on Max Furni possible (20) - All current items (10) : ORDER Timestamp created ([INDEX])
+	
+	//ltd
 	/*
 		20 Sofas (10 already bought)
 
@@ -44,8 +40,6 @@ export default class Item extends Furniture {
 
 
 	*/
-	
-
 }
 
 /*

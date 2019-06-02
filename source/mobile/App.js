@@ -19,7 +19,7 @@ export default class App extends React.Component {
 			<View style={styles.container}>
 				<StatusBar hidden={true} />
 				<WebView 
-					source={{ uri: 'http://192.168.0.14:8080' }} 
+					source={{ uri: 'http://192.168.0.14:8080/inroom' }} 
 					style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
 				/>
 			</View>
@@ -28,8 +28,8 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#68E5FF'
-  }
+    container: {
+        flex: 1,
+        backgroundColor: '#68E5FF'
+    }
 })
