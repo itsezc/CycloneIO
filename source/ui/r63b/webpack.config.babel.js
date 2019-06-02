@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
         context: Path.resolve(__dirname),
 
         entry: {
-			ui: './app.js',
+			ui: './app.tsx',
 			client: '../../client/games/game.ts'
 		},
 
