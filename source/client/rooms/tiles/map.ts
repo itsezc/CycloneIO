@@ -26,12 +26,14 @@ export default class RoomTileMap extends Group {
 	 * @param {Room} scene - The room scene
 	 * @param {Object} map - The map array @example [ [1, 1], [1, 1] ]
 	 */
-	constructor(scene: Room, map: number[][]) {
-
+	constructor(scene: Room, map: number[][]) 
+	{
 		super(scene)
 
 		this.scene = scene
 		this.map = map
+
+		this.create()
 	}
 
 	/**
@@ -45,7 +47,7 @@ export default class RoomTileMap extends Group {
 			for (var y = 0; y < this.map[x].length; y++) {
 			
 				if (this.map[x][y] > 0) {
-					//this.addTile({ x, y, z: 0 }, texture)
+					this.addTile({ x, y, z: 0 }, 'tile')
 				}
 			}
 		}
@@ -53,8 +55,7 @@ export default class RoomTileMap extends Group {
 
 	addTile(coordinates: Vector, texture: any): void {
 
-		this.tile = new RoomTile(this.scene, coordinates, RoomModelDepth.TILE, texture)
-		this.tile.create()
+		this.tile = new RoomTile(this.scene)
 
 		//this.add(this.tile)
 	}

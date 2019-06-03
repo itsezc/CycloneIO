@@ -1,4 +1,4 @@
-import Config, { furnidataURL } from './config.json'
+import Config from './config.json'
 
 import IO from 'fs'
 
@@ -41,7 +41,7 @@ export default class Furnidata
 			{
 				var data = IO.readFileSync(filePath, { encoding: 'utf8'}) 
 
-				this.download(filePath, destination, data, true)
+				this.download(filePath, destination, data, false)
 			}
 		}
 
@@ -55,7 +55,7 @@ export default class Furnidata
 	{
 		try
 		{
-			Download(furnidataURL).then((newData: Buffer) => 
+			Download(Config.furniDataURL).then((newData: Buffer) => 
 			{	
 				var options = { 
 					collapseContent: true 
@@ -101,16 +101,31 @@ export default class Furnidata
 
 			var furnidata = Parser.parse(data, options)
 
+			let queue: any[] = []
+
 			if (furnidata) 
 			{	
-				furnidata.furnidata.roomitemtypes.furnitype.forEach((furniture: any) => 
-				{
-					new Furniture(furniture.revision, furniture.classname)
+				furnidata.furnidata.roomitemtypes.furnitype.forEach((furniture: any, index: number) => 
+				{	
+					queue.push(furniture)
+				})
+ 
+				furnidata.furnidata.wallitemtypes.furnitype.forEach((furniture: any, index: number) => 
+				{ 
+					if (furniture !in queue) 
+					{
+						queue.push(furniture)
+					}
+					
 				})
 
-				furnidata.furnidata.wallitemtypes.furnitype.forEach((furniture: any) => 
+				queue.forEach((instance: any, index: number) => 
 				{
-					new Furniture(furniture.revision, furniture.classname)
+					setTimeout(() => 
+					{
+						new Furniture(instance.revision, instance.classname)
+					}, 
+					1000 * index) 
 				})
 			}
 		}

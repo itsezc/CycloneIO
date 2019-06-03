@@ -83,7 +83,8 @@ export default class Room extends Scene {
     /**
      * Runs once, after all assets in preload are loaded
      */
-    public create(): void {
+    public create(): void 
+    {
 
         this.camera.create()
 
@@ -130,23 +131,29 @@ export default class Room extends Scene {
         // this.camera3d.transformChildren(this.transform);
     }
 
-    public registerInputEvents(): void {
-        
-        this.input.on('pointermove', (pointer: any) => {
+    public registerInputEvents(): void 
+    {
+        this.input.on('pointermove', (pointer: any) => 
+        {
 
-            if (pointer.primaryDown) {
+            if (pointer.primaryDown) 
+            {
                 this.camera.scroll(pointer)
 
-            } else {
+            } 
+            
+            else 
+            {
                 this.camera.isScrolling = false
             }
+
         }, this)
     }
 
-    public registerScaleEvents(): void {
-
-        this.scale.on('resize', (gameSize: any) => {
-
+    public registerScaleEvents(): void 
+    {
+        this.scale.on('resize', (gameSize: any) => 
+        {
             var width = gameSize.width
             var height = gameSize.height
 
@@ -155,13 +162,15 @@ export default class Room extends Scene {
         }, this)
     }
 
-    public emitRoom(): void {
+    public emitRoom(): void 
+    {
         this.socket.emit('newRoom', this.id)
     }
 
-    public registerRoomsEvents(): void {
-
-        this.socket.on('newRoom', (map: any) => {
+    public registerRoomsEvents(): void 
+    {
+        this.socket.on('newRoom', (map: any) => 
+        {
             this.addTileMap(map)
         })
     }
@@ -179,7 +188,6 @@ export default class Room extends Scene {
      */
     public addTileMap(map: [][]): void {
         this.tileMap = new RoomTileMap(this, map)
-        this.tileMap.create() // this.tileMap.create('title')
     }
 
     public addItem(coordinates: Vector, textureName: string) {

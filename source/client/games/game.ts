@@ -12,7 +12,8 @@ const config = {
 	parent: 'game',
     disableContextMenu: false,
     render: {
-        pixelArt: true
+        pixelArt: true,
+        antialias: false
     },
     physics: {
         default: 'arcade'

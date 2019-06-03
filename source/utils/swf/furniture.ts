@@ -29,10 +29,6 @@ export default class Furniture {
 		this.download()
 	}
 
-	private sleep(ms: number) {
-		return new Promise(resolve => setTimeout(resolve, ms))
-	}
-
 
 	private download(): void
 	{
@@ -42,19 +38,19 @@ export default class Furniture {
 			var filePath = Path.join(destination, this.className.concat('.swf'))
 			var URLPath = downloadURL.concat(this.revision.toString(), '/', this.className, '.swf')
 
-			var exists = IO.existsSync(destination)
+			var exists = IO.existsSync(filePath)
 
 			if (!exists)
 			{
 				IO.mkdirSync(destination, { recursive: true })
 
-				console.log('adding folder')
-				setTimeout(() => {
-					console.log('added folder')
-				}, 2000)
-				
-				//wait 2 seconds 
-				//Download(URLPath)
+				Download(URLPath).then(data => 
+				{
+					IO.writeFileSync(filePath, data)
+
+				}).catch(error => {
+					throw error
+				})
 			}
 		}
 
