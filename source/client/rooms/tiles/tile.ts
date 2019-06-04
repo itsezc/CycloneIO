@@ -10,12 +10,12 @@ import { RoomModelDepth } from '../../../common/enums/rooms/models/depth'
  */
 export default class RoomTile extends Phaser.GameObjects.Graphics {
     
-/*     static readonly width: number = 32
-    static readonly height: number = 32 */
+    static readonly width: number = 32
+    static readonly height: number = 32
 
     private topSurfacePoints!: number[]
     private hover!: RoomTileHover
-
+    
     public constructor(scene: Room)
     {
         super(scene)
