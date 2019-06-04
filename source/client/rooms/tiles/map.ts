@@ -1,5 +1,3 @@
-// @flow
-
 import Phaser, { GameObjects, Textures } from 'phaser'
 
 const { Texture } = Textures
@@ -15,10 +13,10 @@ import { Vector } from '../../../common/types/rooms/vector'
  * RoomTileMap class
  * @extends {Group}
  */
-export default class RoomTileMap extends Group {
+export default class RoomMap extends Phaser.GameObjects.Group {
 	
-	scene: Room
-
+	public scene: Room
+	private id: number
 	private map: number[][]
 	private tile!: RoomTile
 
@@ -26,11 +24,12 @@ export default class RoomTileMap extends Group {
 	 * @param {Room} scene - The room scene
 	 * @param {Object} map - The map array @example [ [1, 1], [1, 1] ]
 	 */
-	constructor(scene: Room, map: number[][]) 
+	constructor(scene: Room, id: number, map: number[][]) 
 	{
 		super(scene)
 
 		this.scene = scene
+		this.id = id
 		this.map = map
 
 		this.create()
@@ -55,7 +54,7 @@ export default class RoomTileMap extends Group {
 
 	addTile(coordinates: Vector, texture: any): void {
 
-		this.tile = new RoomTile(this.scene)
+      //this.tile = new RoomTile(this.scene)
 
 		//this.add(this.tile)
 	}

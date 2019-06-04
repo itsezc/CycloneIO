@@ -1,20 +1,18 @@
 {
-	"height": 32,
 	"layers": [
 		{
-			"data": [1, 1, 1, 1, 1],
+			"data": [[1, 1], [1, 1]],
 			"name": "Room Tile Map",
 			"opacity": 1,
 			"type": "tilelayer",
 			"visibile": true,
-			"width": 32,
 			"x": 0,
 			"y": 0
 		}
 	],
 	"orientation": "isometric",
 	"renderoder": "right-down",
-	"tilewidth": 32,
-	"tileheight": 32,
+	"tilewidth": 64,
+	"tileheight": 8,
 	"version": 1
 }
