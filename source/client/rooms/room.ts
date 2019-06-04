@@ -25,16 +25,20 @@ export default class Room extends Scene {
     private socket!: SocketIOClient.Socket
 
     private camera!: RoomCamera
-    private tileMap!: RoomTileMap
+    // private tileMap!: RoomTileMap
     private item!: RoomItem
 
     private clickTime!: number
 
+    private JSONMapData!: any
+    private tileWidth! : number
+    private tileHeight!: number
+
     /**
      * @param {number} id - The room id
      */
-    constructor(id: number) {
-
+    constructor(id: number) 
+    {
         super({ key: 'room' })
         this.id = id
     }
@@ -44,11 +48,13 @@ export default class Room extends Scene {
      */
     preload() {
 
+        this.load.json('map', 'room/isometric-map.json')
+
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
-        this.load.image('tile', 'room/normal_tile.png')
+/*      this.load.image('tile', 'room/normal_tile.png')
         this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
         this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
         this.load.image('tile_border', 'room/normal_tile_border.png')
@@ -59,7 +65,7 @@ export default class Room extends Scene {
         this.load.image('wall_left', 'room/wall_left.png')
         this.load.image('wall_right', 'room/wall_right.png')
         this.load.svg('stair_top', 'room/stair_top.svg')
-        this.load.svg('stair_right', 'room/stair_right.svg')
+        this.load.svg('stair_right', 'room/stair_right.svg') */
 
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
@@ -85,10 +91,17 @@ export default class Room extends Scene {
      */
     public create(): void 
     {
-
         this.camera.create()
 
-        this.registerInputEvents()
+        this.JSONMapData = this.cache.json.get('map')
+
+        console.log(this.JSONMapData)
+        this.tileWidth = this.JSONMapData.tilewidth
+        this.tileHeight = this.JSONMapData.tileheight
+
+        console.log(this.tileWidth)
+
+        /* this.registerInputEvents()
 
         this.registerScaleEvents()
 
@@ -108,7 +121,7 @@ export default class Room extends Scene {
         this.camera.setZoom(1.5) // Zoom out (0.5). For render issues disable antialiasing
 
         // Room Background Color
-        this.camera.backgroundColor.setTo(0,255,255)
+        this.camera.backgroundColor.setTo(0,255,255) */
 
         // Camera Shake
         // this.camera.shake(2000)
@@ -177,9 +190,9 @@ export default class Room extends Scene {
 
     public registerItemsEvents(): void {
 
-        this.socket.on('newItem', (item: any) => {
+/*         this.socket.on('newItem', (item: any) => {
             this.addItem({ x: 0, y: 0, z: 0 }, item)
-        })
+        }) */
     }
 
     /**

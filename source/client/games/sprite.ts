@@ -75,7 +75,7 @@ export default class GameSprite extends Sprite {
 	 * @return {Vector} Cartesian coordinates of the sprite
 	 */
 	protected coordsToCartesian(coordinates: Vector): Vector {
-		return { x: coordinates.x * RoomTile.width, y: coordinates.y * RoomTile.height, z: coordinates.z }
+		return { x: coordinates.x * 32, y: coordinates.y * 32, z: coordinates.z }
 	}
 
 	/**
@@ -83,6 +83,6 @@ export default class GameSprite extends Sprite {
 	 * @return {Vector} Coordinates of the sprite
 	 */
 	protected toCoords(cartesian: Vector): Vector {
-		return { x: Math.floor(cartesian.x / RoomTile.width), y: Math.floor(cartesian.y / RoomTile.height), z: cartesian.z }
+		return { x: Math.floor(cartesian.x / 32), y: Math.floor(cartesian.y / 32), z: cartesian.z }
 	}
 }
