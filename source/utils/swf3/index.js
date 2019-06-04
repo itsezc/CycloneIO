@@ -1,15 +1,11 @@
-//import Config from './config.json'
+import Config from './config.json'
 import path from 'path'
 import Parser from 'fast-xml-parser'
 import fs from 'fs'
 import chalk from 'chalk'
 import spritesheet from 'spritesheet-js'
+import Download from 'download'
 import { readFromBufferP, extractImages } from 'swf-extract';
-
-const Config = {
-	"downloadURL": "https://images.habbo.com/dcr/hof_furni/",
-	"furniDataURL": "https://www.habbo.com/gamedata/furnidata_xml/furnidata.xml"
-};
 
 const buildFurniUrl = (revision, classname) => `${Config.downloadURL}${revision}/${classname}.swf`;
 
@@ -25,7 +21,6 @@ const downloadFurni = async (furni) => {
 			const rawData = fs.readFileSync(path.join(__dirname, 'furni', furni.classname, `${furni.classname}.swf`));
  
 			const swf = await readFromBufferP(rawData)
-			// the result of calling `extractImages` resolves to an Array of Promises
 			const ts = await Promise.all(extractImages(swf.tags))
 			let metaJSON = [];
 			ts.map(elem => {
@@ -63,20 +58,16 @@ const downloadSWFs = async (furnis) => {
 
 		try {
 			await downloadFurni(furni);
-			writeFurni(furni);
 		} catch (err) {
 			console.log(chalk`{red [ERROR]} ${furni.name} (${furni.classname}) ${buildFurniUrl(furni.revision, furni.classname)}`);
 		}
-		console.log(chalk`{green [Done]} ${furni.name} (${furni.classname})`);
 
-		//nigg();
+		writeFurni(furni);
+		console.log(chalk`{green [Done]} ${furni.name} (${furni.classname})`);
 	}
 }
 
-import Download from 'download'
-
-//Download(Config.furniDataURL, path.join(__dirname, 'raw')).then(() => {
-	
+Download(Config.furniDataURL, path.join(__dirname, 'raw')).then(() => {
 	const xml = fs.readFileSync(path.join(__dirname, 'raw', 'furnidata.xml'));
 
 	const {roomitemtypes, wallitemtypes} = Parser.parse(xml.toString(), {
@@ -86,11 +77,7 @@ import Download from 'download'
 	}).furnidata;
 	
 	downloadSWFs(roomitemtypes.furnitype.filter(furni => !furni.classname.includes('*')));
-
-	// wallitemtypes.furnitype.map(furni => {
-	// 	console.log(buildFurniUrl(furni.revision, furni.classname));
-	// });
-	
-//});
+	downloadSWFs(wallitemtypes.furnitype);
+});
 
 
