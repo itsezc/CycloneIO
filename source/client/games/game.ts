@@ -11,10 +11,6 @@ const config = {
     scene: new Room(0), // To change this on the navigator
 	parent: 'game',
     disableContextMenu: false,
-    render: {
-        pixelArt: true,
-        antialias: false
-    },
     physics: {
         default: 'arcade'
     },
