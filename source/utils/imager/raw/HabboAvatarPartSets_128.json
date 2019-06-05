@@ -1,0 +1,433 @@
+{
+  "partSets": {
+    "partSet": {
+      "part": [
+        {
+          "set-type": "ri",
+          "flipped-set-type": "ri"
+        },
+        {
+          "set-type": "rh",
+          "flipped-set-type": "lh"
+        },
+        {
+          "set-type": "rhs",
+          "flipped-set-type": "lhs"
+        },
+        {
+          "set-type": "rs",
+          "swim": 0,
+          "flipped-set-type": "ls"
+        },
+        {
+          "set-type": "rc",
+          "swim": 0,
+          "flipped-set-type": "lc"
+        },
+        {
+          "set-type": "bd"
+        },
+        {
+          "set-type": "bds"
+        },
+        {
+          "set-type": "ss"
+        },
+        {
+          "set-type": "sh",
+          "swim": 0
+        },
+        {
+          "set-type": "lg",
+          "swim": 0
+        },
+        {
+          "set-type": "ch"
+        },
+        {
+          "set-type": "cp"
+        },
+        {
+          "set-type": "cc"
+        },
+        {
+          "set-type": "hd"
+        },
+        {
+          "set-type": "fc"
+        },
+        {
+          "set-type": "ey"
+        },
+        {
+          "set-type": "hr"
+        },
+        {
+          "set-type": "hrb",
+          "remove-set-type": "hr"
+        },
+        {
+          "set-type": "li",
+          "flipped-set-type": "li"
+        },
+        {
+          "set-type": "lh",
+          "flipped-set-type": "rh"
+        },
+        {
+          "set-type": "lhs",
+          "flipped-set-type": "rhs"
+        },
+        {
+          "set-type": "ls",
+          "swim": 0,
+          "flipped-set-type": "rs"
+        },
+        {
+          "set-type": "lc",
+          "swim": 0,
+          "flipped-set-type": "rc"
+        },
+        {
+          "set-type": "wa",
+          "swim": 0
+        },
+        {
+          "set-type": "ea"
+        },
+        {
+          "set-type": "ca",
+          "swim": 0
+        },
+        {
+          "set-type": "fa"
+        },
+        {
+          "set-type": "ha"
+        },
+        {
+          "set-type": "he"
+        }
+      ]
+    },
+    "activePartSet": [
+      {
+        "id": "figure",
+        "activePart": [
+          {
+            "set-type": "rh"
+          },
+          {
+            "set-type": "rhs"
+          },
+          {
+            "set-type": "rs"
+          },
+          {
+            "set-type": "rc"
+          },
+          {
+            "set-type": "bd"
+          },
+          {
+            "set-type": "bds"
+          },
+          {
+            "set-type": "ss"
+          },
+          {
+            "set-type": "sh"
+          },
+          {
+            "set-type": "lg"
+          },
+          {
+            "set-type": "ch"
+          },
+          {
+            "set-type": "cp"
+          },
+          {
+            "set-type": "cc"
+          },
+          {
+            "set-type": "wa"
+          },
+          {
+            "set-type": "hd"
+          },
+          {
+            "set-type": "fc"
+          },
+          {
+            "set-type": "ey"
+          },
+          {
+            "set-type": "hr"
+          },
+          {
+            "set-type": "hrb"
+          },
+          {
+            "set-type": "lh"
+          },
+          {
+            "set-type": "lhs"
+          },
+          {
+            "set-type": "ls"
+          },
+          {
+            "set-type": "lc"
+          },
+          {
+            "set-type": "ea"
+          },
+          {
+            "set-type": "ca"
+          },
+          {
+            "set-type": "fa"
+          },
+          {
+            "set-type": "ha"
+          },
+          {
+            "set-type": "he"
+          }
+        ]
+      },
+      {
+        "id": "head",
+        "activePart": [
+          {
+            "set-type": "hd"
+          },
+          {
+            "set-type": "fc"
+          },
+          {
+            "set-type": "ey"
+          },
+          {
+            "set-type": "hr"
+          },
+          {
+            "set-type": "hrb"
+          },
+          {
+            "set-type": "ea"
+          },
+          {
+            "set-type": "fa"
+          },
+          {
+            "set-type": "ha"
+          },
+          {
+            "set-type": "he"
+          }
+        ]
+      },
+      {
+        "id": "speak",
+        "activePart": [
+          {
+            "set-type": "hd"
+          },
+          {
+            "set-type": "hr"
+          },
+          {
+            "set-type": "hrb"
+          },
+          {
+            "set-type": "fc"
+          },
+          {
+            "set-type": "fa"
+          },
+          {
+            "set-type": "ha"
+          }
+        ]
+      },
+      {
+        "id": "gesture",
+        "activePart": [
+          {
+            "set-type": "ey"
+          },
+          {
+            "set-type": "fc"
+          }
+        ]
+      },
+      {
+        "id": "eye",
+        "activePart": {
+          "set-type": "ey"
+        }
+      },
+      {
+        "id": "handRight",
+        "activePart": [
+          {
+            "set-type": "rh"
+          },
+          {
+            "set-type": "rhs"
+          },
+          {
+            "set-type": "rs"
+          },
+          {
+            "set-type": "rc"
+          },
+          {
+            "set-type": "ri"
+          }
+        ]
+      },
+      {
+        "id": "handRightAndHead",
+        "activePart": [
+          {
+            "set-type": "rh"
+          },
+          {
+            "set-type": "rhs"
+          },
+          {
+            "set-type": "rs"
+          },
+          {
+            "set-type": "rc"
+          },
+          {
+            "set-type": "ri"
+          },
+          {
+            "set-type": "ey"
+          },
+          {
+            "set-type": "fc"
+          },
+          {
+            "set-type": "hd"
+          }
+        ]
+      },
+      {
+        "id": "handLeft",
+        "activePart": [
+          {
+            "set-type": "lh"
+          },
+          {
+            "set-type": "lhs"
+          },
+          {
+            "set-type": "ls"
+          },
+          {
+            "set-type": "lc"
+          },
+          {
+            "set-type": "li"
+          }
+        ]
+      },
+      {
+        "id": "walk",
+        "activePart": [
+          {
+            "set-type": "bd"
+          },
+          {
+            "set-type": "bds"
+          },
+          {
+            "set-type": "ss"
+          },
+          {
+            "set-type": "lg"
+          },
+          {
+            "set-type": "lh"
+          },
+          {
+            "set-type": "lhs"
+          },
+          {
+            "set-type": "rh"
+          },
+          {
+            "set-type": "rhs"
+          },
+          {
+            "set-type": "ls"
+          },
+          {
+            "set-type": "lc"
+          },
+          {
+            "set-type": "rs"
+          },
+          {
+            "set-type": "rc"
+          },
+          {
+            "set-type": "sh"
+          }
+        ]
+      },
+      {
+        "id": "sit",
+        "activePart": [
+          {
+            "set-type": "bd"
+          },
+          {
+            "set-type": "bds"
+          },
+          {
+            "set-type": "ss"
+          },
+          {
+            "set-type": "lg"
+          },
+          {
+            "set-type": "sh"
+          },
+          {
+            "set-type": "cc"
+          }
+        ]
+      },
+      {
+        "id": "itemRight",
+        "activePart": {
+          "set-type": "ri"
+        }
+      },
+      {
+        "id": "swim",
+        "activePart": [
+          {
+            "set-type": "bds"
+          },
+          {
+            "set-type": "ss"
+          },
+          {
+            "set-type": "lhs"
+          },
+          {
+            "set-type": "rhs"
+          }
+        ]
+      }
+    ]
+  }
+}

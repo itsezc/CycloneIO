@@ -15,10 +15,10 @@ const Config = {
 
 let symbols = [];
 
-// Download(`${Config.flashClientUrl}Habbo.swf`, path.join(__dirname, 'raw')).then(async () => {
+Download(`${Config.flashClientUrl}Habbo.swf`, path.join(__dirname, 'raw')).then(async () => {
 	const rawData = fs.readFileSync(path.join(__dirname, 'raw', `Habbo.swf`));
  
-			(async () => {
+			// (async () => {
 				const swf = await readFromBufferP(rawData)
 
 				let idx = 0;
@@ -106,7 +106,7 @@ let symbols = [];
 				//fs.writeFileSync(path.join(__dirname, 'furni', furni.classname, 'meta.json'), JSON.stringify(metaJSON, null, 2));
 
 
-			})();
-// });
+			// })();
+});
 
 

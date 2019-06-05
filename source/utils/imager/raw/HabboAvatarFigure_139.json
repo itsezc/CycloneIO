@@ -1,0 +1,5429 @@
+{
+  "figuredata": {
+    "colors": {
+      "palette": [
+        {
+          "id": 1,
+          "color": [
+            {
+              "#text": "F5DA88",
+              "id": 14,
+              "index": 0,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FFDBC1",
+              "id": 10,
+              "index": 1,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FFCB98",
+              "id": 1,
+              "index": 2,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "F4AC54",
+              "id": 8,
+              "index": 3,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FF987F",
+              "id": 12,
+              "index": 4,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "e0a9a9",
+              "id": 1369,
+              "index": 5,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "ca8154",
+              "id": 1370,
+              "index": 6,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "B87560",
+              "id": 19,
+              "index": 7,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "9C543F",
+              "id": 20,
+              "index": 8,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": 904925,
+              "id": 1371,
+              "index": 9,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "4C311E",
+              "id": 30,
+              "index": 10,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "543d35",
+              "id": 1372,
+              "index": 11,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "653a1d",
+              "id": 1373,
+              "index": 12,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "6E392C",
+              "id": 21,
+              "index": 13,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 714947,
+              "id": 1374,
+              "index": 14,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 856860,
+              "id": 1375,
+              "index": 15,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 895048,
+              "id": 1376,
+              "index": 16,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "a15253",
+              "id": 1377,
+              "index": 17,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "aa7870",
+              "id": 1378,
+              "index": 18,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "be8263",
+              "id": 1379,
+              "index": 19,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "b6856d",
+              "id": 1380,
+              "index": 20,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ba8a82",
+              "id": 1381,
+              "index": 21,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "c88f82",
+              "id": 1382,
+              "index": 22,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "d9a792",
+              "id": 1383,
+              "index": 23,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "c68383",
+              "id": 1384,
+              "index": 24,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "BC576A",
+              "id": 1368,
+              "index": 25,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FF5757",
+              "id": 1367,
+              "index": 26,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FF7575",
+              "id": 1366,
+              "index": 27,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "B65E38",
+              "id": 1358,
+              "index": 28,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "a76644",
+              "id": 1385,
+              "index": 29,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "7c5133",
+              "id": 1386,
+              "index": 30,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "9a7257",
+              "id": 1387,
+              "index": 31,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "945C2F",
+              "id": 5,
+              "index": 32,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "d98c63",
+              "id": 1389,
+              "index": 33,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "AE7748",
+              "id": 4,
+              "index": 34,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "c57040",
+              "id": 1388,
+              "index": 35,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "B88655",
+              "id": 1359,
+              "index": 36,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "C99263",
+              "id": 3,
+              "index": 37,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "A89473",
+              "id": 18,
+              "index": 38,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "C89F56",
+              "id": 17,
+              "index": 39,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "DC9B4C",
+              "id": 9,
+              "index": 40,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FF8C40",
+              "id": 1357,
+              "index": 41,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "de9d75",
+              "id": 1390,
+              "index": 42,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "eca782",
+              "id": 1391,
+              "index": 43,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FFB696",
+              "id": 11,
+              "index": 44,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "E3AE7D",
+              "id": 2,
+              "index": 45,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FFC680",
+              "id": 7,
+              "index": 46,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "DFC375",
+              "id": 15,
+              "index": 47,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "F0DCA3",
+              "id": 13,
+              "index": 48,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "EAEFD0",
+              "id": 22,
+              "index": 49,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "E2E4B0",
+              "id": 23,
+              "index": 50,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "D5D08C",
+              "id": 24,
+              "index": 51,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "BDE05F",
+              "id": 1361,
+              "index": 52,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "5DC446",
+              "id": 1362,
+              "index": 53,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "A2CC89",
+              "id": 1360,
+              "index": 54,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "C2C4A7",
+              "id": 26,
+              "index": 55,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "F1E5DA",
+              "id": 28,
+              "index": 56,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "f6d3d4",
+              "id": 1392,
+              "index": 57,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "e5b6b0",
+              "id": 1393,
+              "index": 58,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "C4A7B3",
+              "id": 25,
+              "index": 59,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "AC94B3",
+              "id": 1363,
+              "index": 60,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "D288CE",
+              "id": 1364,
+              "index": 61,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "6799CC",
+              "id": 1365,
+              "index": 62,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "B3BDC3",
+              "id": 29,
+              "index": 63,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "C5C0C2",
+              "id": 27,
+              "index": 64,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 644628,
+              "id": 1001,
+              "index": 65,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 926338,
+              "id": 1002,
+              "index": 66,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A97C44",
+              "id": 1003,
+              "index": 67,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B3957F",
+              "id": 1004,
+              "index": 68,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BD9562",
+              "id": 1005,
+              "index": 69,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C2A896",
+              "id": 1006,
+              "index": 70,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CA9072",
+              "id": 1007,
+              "index": 71,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CBBC90",
+              "id": 1008,
+              "index": 72,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D1A78C",
+              "id": 1009,
+              "index": 73,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D1BCAD",
+              "id": 1010,
+              "index": 74,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D7BCA9",
+              "id": 1011,
+              "index": 75,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D7CBA3",
+              "id": 1012,
+              "index": 76,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D8A595",
+              "id": 1013,
+              "index": 77,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D8B07E",
+              "id": 1014,
+              "index": 78,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E0BD91",
+              "id": 1015,
+              "index": 79,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E0D0C5",
+              "id": 1016,
+              "index": 80,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E2DBB9",
+              "id": 1017,
+              "index": 81,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E3D38D",
+              "id": 1018,
+              "index": 82,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E7C9A3",
+              "id": 1019,
+              "index": 83,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EDD7BB",
+              "id": 1020,
+              "index": 84,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EEE7E0",
+              "id": 1021,
+              "index": 85,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EFC3B6",
+              "id": 1022,
+              "index": 86,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F1D6B4",
+              "id": 1023,
+              "index": 87,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F8E5DA",
+              "id": 1024,
+              "index": 88,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FDDACF",
+              "id": 1025,
+              "index": 89,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFCC99",
+              "id": 1026,
+              "index": 90,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "6E482C",
+              "id": 6,
+              "index": 91,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EFD17D",
+              "id": 16,
+              "index": 92,
+              "club": 0,
+              "selectable": 0
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "color": [
+            {
+              "#text": "D8D3D9",
+              "id": 40,
+              "index": 0,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FFEEB9",
+              "id": 34,
+              "index": 1,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "F6D059",
+              "id": 35,
+              "index": 2,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "F2B11D",
+              "id": 36,
+              "index": 3,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FFD6A9",
+              "id": 31,
+              "index": 4,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "DFA66F",
+              "id": 32,
+              "index": 5,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "9A5D2E",
+              "id": 37,
+              "index": 6,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "AC5300",
+              "id": 38,
+              "index": 7,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "F29159",
+              "id": 43,
+              "index": 8,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FF8746",
+              "id": 46,
+              "index": 9,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FC610C",
+              "id": 47,
+              "index": 10,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "DE3900",
+              "id": 48,
+              "index": 11,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "9E3D3B",
+              "id": 44,
+              "index": 12,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": 783400,
+              "id": 39,
+              "index": 13,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "5C4332",
+              "id": 45,
+              "index": 14,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "4A4656",
+              "id": 42,
+              "index": 15,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "2D2D2D",
+              "id": 61,
+              "index": 16,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "3f2113",
+              "id": 1394,
+              "index": 17,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "D2FF00",
+              "id": 1318,
+              "index": 18,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 774422,
+              "id": 1395,
+              "index": 19,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "D1803A",
+              "id": 33,
+              "index": 20,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "cc8b33",
+              "id": 1396,
+              "index": 21,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "e5ba6a",
+              "id": 1397,
+              "index": 22,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "f6d990",
+              "id": 1398,
+              "index": 23,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FFFFFF",
+              "id": 49,
+              "index": 24,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "fffdd6",
+              "id": 1342,
+              "index": 25,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "fff392",
+              "id": 1343,
+              "index": 26,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffff00",
+              "id": 1399,
+              "index": 27,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffe508",
+              "id": 1344,
+              "index": 28,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ff7716",
+              "id": 1400,
+              "index": 29,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "aa2c1b",
+              "id": 1401,
+              "index": 30,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "E71B0A",
+              "id": 59,
+              "index": 31,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ff3e3e",
+              "id": 1345,
+              "index": 32,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ff638f",
+              "id": 1348,
+              "index": 33,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FFBDBC",
+              "id": 54,
+              "index": 34,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffddf1",
+              "id": 1346,
+              "index": 35,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffaedc",
+              "id": 1347,
+              "index": 36,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "DE34A4",
+              "id": 55,
+              "index": 37,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "9e326a",
+              "id": 1349,
+              "index": 38,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "9F5699",
+              "id": 56,
+              "index": 39,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "8a4fb5",
+              "id": 1350,
+              "index": 40,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "722ba6",
+              "id": 1351,
+              "index": 41,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "4c1d6f",
+              "id": 1352,
+              "index": 42,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "322c7a",
+              "id": 1402,
+              "index": 43,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "71584a",
+              "id": 1403,
+              "index": 44,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "aa8864",
+              "id": 1404,
+              "index": 45,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "bbb1aa",
+              "id": 1405,
+              "index": 46,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "c1c6ef",
+              "id": 1353,
+              "index": 47,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "D5F9FB",
+              "id": 57,
+              "index": 48,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "95FFFA",
+              "id": 60,
+              "index": 49,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "6699CC",
+              "id": 58,
+              "index": 50,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 4481,
+              "id": 1354,
+              "index": 51,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "2c50aa",
+              "id": 1355,
+              "index": 52,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "2a4167",
+              "id": 1356,
+              "index": 53,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "3A7B93",
+              "id": 53,
+              "index": 54,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 339966,
+              "id": 52,
+              "index": 55,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "70c100",
+              "id": 1406,
+              "index": 56,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "A3FF8F",
+              "id": 51,
+              "index": 57,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "E5FF09",
+              "id": 50,
+              "index": 58,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "918D98",
+              "id": 41,
+              "index": 59,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 333333,
+              "id": 1407,
+              "index": 60,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "00FA00",
+              "id": 1027,
+              "index": 61,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "0A0A0A",
+              "id": 1028,
+              "index": 62,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 105262,
+              "id": 1029,
+              "index": 63,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 106262,
+              "id": 1030,
+              "index": 64,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 1,
+              "id": 1031,
+              "index": 65,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "20B4A4",
+              "id": 1032,
+              "index": 66,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "234CAF",
+              "id": 1033,
+              "index": 67,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 248954,
+              "id": 1034,
+              "index": 68,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 282828,
+              "id": 1035,
+              "index": 69,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 292929,
+              "id": 1036,
+              "index": 70,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "298BB4",
+              "id": 1037,
+              "index": 71,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "2DA5E9",
+              "id": 1038,
+              "index": 72,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "319CF6",
+              "id": 1039,
+              "index": 73,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "31F6DE",
+              "id": 1040,
+              "index": 74,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "322F3E",
+              "id": 1041,
+              "index": 75,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 323235,
+              "id": 1042,
+              "index": 76,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "325B6A",
+              "id": 1043,
+              "index": 77,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "3296FA",
+              "id": 1044,
+              "index": 78,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 333333,
+              "id": 1045,
+              "index": 79,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 394194,
+              "id": 1046,
+              "index": 80,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "463C14",
+              "id": 1047,
+              "index": 81,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "4A6A18",
+              "id": 1048,
+              "index": 82,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "4B5A5A",
+              "id": 1049,
+              "index": 83,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "4D3223",
+              "id": 1050,
+              "index": 84,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "4F87C0",
+              "id": 1051,
+              "index": 85,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "579E1F",
+              "id": 1052,
+              "index": 86,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "5A480A",
+              "id": 1053,
+              "index": 87,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "5A837B",
+              "id": 1054,
+              "index": 88,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "624A41",
+              "id": 1055,
+              "index": 89,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "625A20",
+              "id": 1056,
+              "index": 90,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 626262,
+              "id": 1057,
+              "index": 91,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "646D6C",
+              "id": 1058,
+              "index": 92,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 662608,
+              "id": 1059,
+              "index": 93,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 666666,
+              "id": 1060,
+              "index": 94,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "674E3B",
+              "id": 1061,
+              "index": 95,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "6A3910",
+              "id": 1062,
+              "index": 96,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 736346,
+              "id": 1063,
+              "index": 97,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 781414,
+              "id": 1064,
+              "index": 98,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 784215,
+              "id": 1065,
+              "index": 99,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "786D5A",
+              "id": 1066,
+              "index": 100,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "7B1894",
+              "id": 1067,
+              "index": 101,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "7D5B17",
+              "id": 1068,
+              "index": 102,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "80557C",
+              "id": 1069,
+              "index": 103,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 833141,
+              "id": 1070,
+              "index": 104,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "8A4924",
+              "id": 1071,
+              "index": 105,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "8B1820",
+              "id": 1072,
+              "index": 106,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "8C694B",
+              "id": 1073,
+              "index": 107,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "8C967E",
+              "id": 1074,
+              "index": 108,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 904839,
+              "id": 1075,
+              "index": 109,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 926338,
+              "id": 1076,
+              "index": 110,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 946220,
+              "id": 1077,
+              "index": 111,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "947BAC",
+              "id": 1078,
+              "index": 112,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "948B6A",
+              "id": 1079,
+              "index": 113,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "94BD29",
+              "id": 1080,
+              "index": 114,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "94DFFF",
+              "id": 1081,
+              "index": 115,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "94FFD5",
+              "id": 1082,
+              "index": 116,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "976D3E",
+              "id": 1083,
+              "index": 117,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "9CF068",
+              "id": 1084,
+              "index": 118,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "9E3F0B",
+              "id": 1085,
+              "index": 119,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A08C64",
+              "id": 1086,
+              "index": 120,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A4A4A4",
+              "id": 1087,
+              "index": 121,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A4DEFF",
+              "id": 1088,
+              "index": 122,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A55A18",
+              "id": 1089,
+              "index": 123,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A7272C",
+              "id": 1090,
+              "index": 124,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A97C44",
+              "id": 1091,
+              "index": 125,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B29B86",
+              "id": 1092,
+              "index": 126,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B2A590",
+              "id": 1093,
+              "index": 127,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B3957F",
+              "id": 1094,
+              "index": 128,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B429CD",
+              "id": 1095,
+              "index": 129,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B4EE29",
+              "id": 1096,
+              "index": 130,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B58B5C",
+              "id": 1097,
+              "index": 131,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B9A16E",
+              "id": 1098,
+              "index": 132,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BD9562",
+              "id": 1099,
+              "index": 133,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BD9CFF",
+              "id": 1100,
+              "index": 134,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BDBD9D",
+              "id": 1101,
+              "index": 135,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C21A86",
+              "id": 1102,
+              "index": 136,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C29C57",
+              "id": 1103,
+              "index": 137,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C2A896",
+              "id": 1104,
+              "index": 138,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C2E3E8",
+              "id": 1105,
+              "index": 139,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C376C4",
+              "id": 1106,
+              "index": 140,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C4FFFF",
+              "id": 1107,
+              "index": 141,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C54A29",
+              "id": 1108,
+              "index": 142,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C59462",
+              "id": 1109,
+              "index": 143,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C8D2E6",
+              "id": 1110,
+              "index": 144,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C96B2F",
+              "id": 1111,
+              "index": 145,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CA5A1E",
+              "id": 1112,
+              "index": 146,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CA5A33",
+              "id": 1113,
+              "index": 147,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CA9072",
+              "id": 1114,
+              "index": 148,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CBBC90",
+              "id": 1115,
+              "index": 149,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CD99C7",
+              "id": 1116,
+              "index": 150,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CF6254",
+              "id": 1117,
+              "index": 151,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D1A78C",
+              "id": 1118,
+              "index": 152,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D1BCAD",
+              "id": 1119,
+              "index": 153,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D2C8CC",
+              "id": 1120,
+              "index": 154,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D45B0A",
+              "id": 1121,
+              "index": 155,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D4FE80",
+              "id": 1122,
+              "index": 156,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D54173",
+              "id": 1123,
+              "index": 157,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D5FF9C",
+              "id": 1124,
+              "index": 158,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D7BCA9",
+              "id": 1125,
+              "index": 159,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D7CBA3",
+              "id": 1126,
+              "index": 160,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D8A595",
+              "id": 1127,
+              "index": 161,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D8B07E",
+              "id": 1128,
+              "index": 162,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DA945E",
+              "id": 1129,
+              "index": 163,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DB7C62",
+              "id": 1130,
+              "index": 164,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DCDCC8",
+              "id": 1131,
+              "index": 165,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DDA934",
+              "id": 1132,
+              "index": 166,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DE73DE",
+              "id": 1133,
+              "index": 167,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DEDEDE",
+              "id": 1134,
+              "index": 168,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DFDAB4",
+              "id": 1135,
+              "index": 169,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DFDABE",
+              "id": 1136,
+              "index": 170,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E0BA78",
+              "id": 1137,
+              "index": 171,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E0BD91",
+              "id": 1138,
+              "index": 172,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E0D0C5",
+              "id": 1139,
+              "index": 173,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E1CC78",
+              "id": 1140,
+              "index": 174,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E2DBB9",
+              "id": 1141,
+              "index": 175,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E63139",
+              "id": 1142,
+              "index": 176,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E6A4F6",
+              "id": 1143,
+              "index": 177,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E7C9A3",
+              "id": 1144,
+              "index": 178,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E7E92D",
+              "id": 1145,
+              "index": 179,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EA5959",
+              "id": 1146,
+              "index": 180,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "ECFFED",
+              "id": 1147,
+              "index": 181,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EDD7BB",
+              "id": 1148,
+              "index": 182,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EEE7E0",
+              "id": 1149,
+              "index": 183,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EEEEEE",
+              "id": 1150,
+              "index": 184,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EFC3B6",
+              "id": 1151,
+              "index": 185,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F1D6B4",
+              "id": 1152,
+              "index": 186,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F6AC31",
+              "id": 1153,
+              "index": 187,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F73B32",
+              "id": 1154,
+              "index": 188,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F8E5DA",
+              "id": 1155,
+              "index": 189,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FDA61E",
+              "id": 1156,
+              "index": 190,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FDDACF",
+              "id": 1157,
+              "index": 191,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FE6D6D",
+              "id": 1158,
+              "index": 192,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FE834D",
+              "id": 1159,
+              "index": 193,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF0000",
+              "id": 1160,
+              "index": 194,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF006A",
+              "id": 1161,
+              "index": 195,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF4814",
+              "id": 1162,
+              "index": 196,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF4C2F",
+              "id": 1163,
+              "index": 197,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF5F9B",
+              "id": 1164,
+              "index": 198,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF7329",
+              "id": 1165,
+              "index": 199,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF7383",
+              "id": 1166,
+              "index": 200,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF7BDE",
+              "id": 1167,
+              "index": 201,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF9C62",
+              "id": 1168,
+              "index": 202,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFA772",
+              "id": 1169,
+              "index": 203,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFADAE",
+              "id": 1170,
+              "index": 204,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFBC42",
+              "id": 1171,
+              "index": 205,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFBDBD",
+              "id": 1172,
+              "index": 206,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFBE73",
+              "id": 1173,
+              "index": 207,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFC53A",
+              "id": 1174,
+              "index": 208,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFCD94",
+              "id": 1175,
+              "index": 209,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFCD9B",
+              "id": 1176,
+              "index": 210,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFDC7A",
+              "id": 1177,
+              "index": 211,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFE639",
+              "id": 1178,
+              "index": 212,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFE673",
+              "id": 1179,
+              "index": 213,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFEAAC",
+              "id": 1180,
+              "index": 214,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFEAAD",
+              "id": 1181,
+              "index": 215,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFEEC5",
+              "id": 1182,
+              "index": 216,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFFFFF",
+              "id": 1183,
+              "index": 217,
+              "club": 0,
+              "selectable": 0
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "color": [
+            {
+              "#text": "dddddd",
+              "id": 1408,
+              "index": 0,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "96743D",
+              "id": 90,
+              "index": 1,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "6B573B",
+              "id": 91,
+              "index": 2,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "E7B027",
+              "id": 66,
+              "index": 3,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "fff7b7",
+              "id": 1320,
+              "index": 4,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "F8C790",
+              "id": 68,
+              "index": 5,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "9F2B31",
+              "id": 73,
+              "index": 6,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "ED5C50",
+              "id": 72,
+              "index": 7,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "FFBFC2",
+              "id": 71,
+              "index": 8,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "E7D1EE",
+              "id": 74,
+              "index": 9,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "AC94B3",
+              "id": 75,
+              "index": 10,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "7E5B90",
+              "id": 76,
+              "index": 11,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "4F7AA2",
+              "id": 82,
+              "index": 12,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "75B7C7",
+              "id": 81,
+              "index": 13,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "C5EDE6",
+              "id": 80,
+              "index": 14,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "BBF3BD",
+              "id": 83,
+              "index": 15,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "6BAE61",
+              "id": 84,
+              "index": 16,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "456F40",
+              "id": 85,
+              "index": 17,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "7A7D22",
+              "id": 88,
+              "index": 18,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": 595959,
+              "id": 64,
+              "index": 19,
+              "club": 0,
+              "selectable": 1
+            },
+            {
+              "#text": "1E1E1E",
+              "id": 110,
+              "index": 20,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "84573c",
+              "id": 1325,
+              "index": 21,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "A86B19",
+              "id": 67,
+              "index": 22,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "c69f71",
+              "id": 1409,
+              "index": 23,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "F3E1AF",
+              "id": 89,
+              "index": 24,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FFFFFF",
+              "id": 92,
+              "index": 25,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FFF41D",
+              "id": 93,
+              "index": 26,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffe508",
+              "id": 1321,
+              "index": 27,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffcc00",
+              "id": 1410,
+              "index": 28,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffa508",
+              "id": 1322,
+              "index": 29,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FF9211",
+              "id": 94,
+              "index": 30,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ff5b08",
+              "id": 1323,
+              "index": 31,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "C74400",
+              "id": 70,
+              "index": 32,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "da6a43",
+              "id": 1411,
+              "index": 33,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "b18276",
+              "id": 1324,
+              "index": 34,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ae4747",
+              "id": 1329,
+              "index": 35,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 813033,
+              "id": 1330,
+              "index": 36,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "5b2420",
+              "id": 1331,
+              "index": 37,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "9B001D",
+              "id": 100,
+              "index": 38,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "d2183c",
+              "id": 1412,
+              "index": 39,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "e53624",
+              "id": 1413,
+              "index": 40,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FF1300",
+              "id": 96,
+              "index": 41,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ff638f",
+              "id": 1328,
+              "index": 42,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "fe86b1",
+              "id": 1414,
+              "index": 43,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FF6D8F",
+              "id": 97,
+              "index": 44,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ffc7e4",
+              "id": 1326,
+              "index": 45,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "E993FF",
+              "id": 98,
+              "index": 46,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ff88f4",
+              "id": 1327,
+              "index": 47,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "FF27A6",
+              "id": 95,
+              "index": 48,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "C600AD",
+              "id": 99,
+              "index": 49,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "a1295e",
+              "id": 1415,
+              "index": 50,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "a723c9",
+              "id": 1416,
+              "index": 51,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "6a0481",
+              "id": 1417,
+              "index": 52,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 693959,
+              "id": 1418,
+              "index": 53,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "62368c",
+              "id": 1419,
+              "index": 54,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "544A81",
+              "id": 79,
+              "index": 55,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "957caf",
+              "id": 1420,
+              "index": 56,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "6D80BB",
+              "id": 78,
+              "index": 57,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "574bfb",
+              "id": 1340,
+              "index": 58,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "6b71ed",
+              "id": 1421,
+              "index": 59,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "8791f0",
+              "id": 1339,
+              "index": 60,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "c1c6ef",
+              "id": 1337,
+              "index": 61,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "94FFEC",
+              "id": 105,
+              "index": 62,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "00B9A8",
+              "id": 104,
+              "index": 63,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "009db9",
+              "id": 1422,
+              "index": 64,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "1BD2FF",
+              "id": 106,
+              "index": 65,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "2f8ce9",
+              "id": 1423,
+              "index": 66,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "1F55FF",
+              "id": 107,
+              "index": 67,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "1946c7",
+              "id": 1424,
+              "index": 68,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "0219A5",
+              "id": 108,
+              "index": 69,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "394a7e",
+              "id": 1341,
+              "index": 70,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "2d547b",
+              "id": 1425,
+              "index": 71,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 406184,
+              "id": 1426,
+              "index": 72,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "6fa5cc",
+              "id": 1338,
+              "index": 73,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "ACC9E6",
+              "id": 77,
+              "index": 74,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "c8c8c8",
+              "id": 1427,
+              "index": 75,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "A4A4A4",
+              "id": 63,
+              "index": 76,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 868686,
+              "id": 1428,
+              "index": 77,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "89906e",
+              "id": 1334,
+              "index": 78,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "738b6e",
+              "id": 1335,
+              "index": 79,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": 626738,
+              "id": 1429,
+              "index": 80,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "3A5341",
+              "id": 109,
+              "index": 81,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "1d301a",
+              "id": 1336,
+              "index": 82,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "0a6437",
+              "id": 1430,
+              "index": 83,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "47891f",
+              "id": 1431,
+              "index": 84,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "10a32f",
+              "id": 1432,
+              "index": 85,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "69bb2d",
+              "id": 1433,
+              "index": 86,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "BABB3D",
+              "id": 87,
+              "index": 87,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "EDFF9A",
+              "id": 86,
+              "index": 88,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "D2FF00",
+              "id": 1315,
+              "index": 89,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "AFF203",
+              "id": 103,
+              "index": 90,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "1CDC00",
+              "id": 102,
+              "index": 91,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "76FF2D",
+              "id": 101,
+              "index": 92,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "9eff8d",
+              "id": 1332,
+              "index": 93,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "a2cc89",
+              "id": 1333,
+              "index": 94,
+              "club": 2,
+              "selectable": 1
+            },
+            {
+              "#text": "003F1D",
+              "id": 1184,
+              "index": 95,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 96,
+              "id": 1185,
+              "index": 96,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 105262,
+              "id": 1186,
+              "index": 97,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 106262,
+              "id": 1187,
+              "index": 98,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "121D6D",
+              "id": 1188,
+              "index": 99,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "1F1F1F",
+              "id": 1189,
+              "index": 100,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "20B4A4",
+              "id": 1190,
+              "index": 101,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "20B913",
+              "id": 1191,
+              "index": 102,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "2828C8",
+              "id": 1192,
+              "index": 103,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 292929,
+              "id": 1193,
+              "index": 104,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "298BB4",
+              "id": 1194,
+              "index": 105,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "2F2D26",
+              "id": 1195,
+              "index": 106,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "319CF6",
+              "id": 1196,
+              "index": 107,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "31F6DE",
+              "id": 1197,
+              "index": 108,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 333333,
+              "id": 1198,
+              "index": 109,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 336633,
+              "id": 1199,
+              "index": 110,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "365E8A",
+              "id": 1200,
+              "index": 111,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "378BE8",
+              "id": 1201,
+              "index": 112,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "37E8C5",
+              "id": 1202,
+              "index": 113,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 394194,
+              "id": 1203,
+              "index": 114,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "3B7AC0",
+              "id": 1204,
+              "index": 115,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "3D3D3D",
+              "id": 1205,
+              "index": 116,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "406A65",
+              "id": 1206,
+              "index": 117,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "43001A",
+              "id": 1207,
+              "index": 118,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 456283,
+              "id": 1208,
+              "index": 119,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "4A6A18",
+              "id": 1209,
+              "index": 120,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "4C882B",
+              "id": 1210,
+              "index": 121,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "5A837B",
+              "id": 1211,
+              "index": 122,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "5CC445",
+              "id": 1212,
+              "index": 123,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "5F5F5F",
+              "id": 1213,
+              "index": 124,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "624A41",
+              "id": 1214,
+              "index": 125,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "625A20",
+              "id": 1215,
+              "index": 126,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 626262,
+              "id": 1216,
+              "index": 127,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "656A40",
+              "id": 1217,
+              "index": 128,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 666666,
+              "id": 1218,
+              "index": 129,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 687450,
+              "id": 1219,
+              "index": 130,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "6A3910",
+              "id": 1220,
+              "index": 131,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "6A405C",
+              "id": 1221,
+              "index": 132,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "6A4A40",
+              "id": 1222,
+              "index": 133,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "779FBB",
+              "id": 1223,
+              "index": 134,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 795,
+              "id": 1224,
+              "index": 135,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "7B1894",
+              "id": 1225,
+              "index": 136,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "7B5818",
+              "id": 1226,
+              "index": 137,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "7C8F7D",
+              "id": 1227,
+              "index": 138,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "7D0004",
+              "id": 1228,
+              "index": 139,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EEEEEE",
+              "id": 62,
+              "index": 140,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "7D0034",
+              "id": 1229,
+              "index": 141,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F6E179",
+              "id": 65,
+              "index": 142,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 833141,
+              "id": 1230,
+              "index": 143,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EB7E43",
+              "id": 69,
+              "index": 144,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "87D7CD",
+              "id": 1231,
+              "index": 145,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "88E0DE",
+              "id": 1232,
+              "index": 146,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "8B1820",
+              "id": 1233,
+              "index": 147,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": 946220,
+              "id": 1234,
+              "index": 148,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "947BAC",
+              "id": 1235,
+              "index": 149,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "948B6A",
+              "id": 1236,
+              "index": 150,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "94BD29",
+              "id": 1237,
+              "index": 151,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "94FFD5",
+              "id": 1238,
+              "index": 152,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "95784E",
+              "id": 1239,
+              "index": 153,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "983E4F",
+              "id": 1240,
+              "index": 154,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "98863E",
+              "id": 1241,
+              "index": 155,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "9FD787",
+              "id": 1242,
+              "index": 156,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A4A4A4",
+              "id": 1243,
+              "index": 157,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A4DEFF",
+              "id": 1244,
+              "index": 158,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "A88139",
+              "id": 1245,
+              "index": 159,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "ADD0FF",
+              "id": 1246,
+              "index": 160,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "AFDCDF",
+              "id": 1247,
+              "index": 161,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B3FCFF",
+              "id": 1248,
+              "index": 162,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B429CD",
+              "id": 1249,
+              "index": 163,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B4EE29",
+              "id": 1250,
+              "index": 164,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B6396D",
+              "id": 1251,
+              "index": 165,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B79BFF",
+              "id": 1252,
+              "index": 166,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "B8E737",
+              "id": 1253,
+              "index": 167,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BA9D73",
+              "id": 1254,
+              "index": 168,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BAAD68",
+              "id": 1255,
+              "index": 169,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BAC7FF",
+              "id": 1256,
+              "index": 170,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BB2430",
+              "id": 1257,
+              "index": 171,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BD9CFF",
+              "id": 1258,
+              "index": 172,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "BDFFC8",
+              "id": 1259,
+              "index": 173,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C0B4C7",
+              "id": 1260,
+              "index": 174,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C1C1C1",
+              "id": 1261,
+              "index": 175,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C1D2DB",
+              "id": 1262,
+              "index": 176,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C54A29",
+              "id": 1263,
+              "index": 177,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C59462",
+              "id": 1264,
+              "index": 178,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C6B3D6",
+              "id": 1265,
+              "index": 179,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "C745D9",
+              "id": 1266,
+              "index": 180,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CA2221",
+              "id": 1267,
+              "index": 181,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CDCDFF",
+              "id": 1268,
+              "index": 182,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "CDFFB3",
+              "id": 1269,
+              "index": 183,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D1DFAF",
+              "id": 1270,
+              "index": 184,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D1FFD4",
+              "id": 1271,
+              "index": 185,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D54173",
+              "id": 1272,
+              "index": 186,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D5FF9C",
+              "id": 1273,
+              "index": 187,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D68C8C",
+              "id": 1274,
+              "index": 188,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D7C187",
+              "id": 1275,
+              "index": 189,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D9457E",
+              "id": 1276,
+              "index": 190,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "D97145",
+              "id": 1277,
+              "index": 191,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DE73DE",
+              "id": 1278,
+              "index": 192,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DEDEDE",
+              "id": 1279,
+              "index": 193,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DFAFD1",
+              "id": 1280,
+              "index": 194,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "DFCBAF",
+              "id": 1281,
+              "index": 195,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E63139",
+              "id": 1282,
+              "index": 196,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E6A4F6",
+              "id": 1283,
+              "index": 197,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E8B137",
+              "id": 1284,
+              "index": 198,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "E8FFFF",
+              "id": 1285,
+              "index": 199,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "EEEEEE",
+              "id": 1286,
+              "index": 200,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F64C3E",
+              "id": 1287,
+              "index": 201,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F6AC31",
+              "id": 1288,
+              "index": 202,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "F9A0A0",
+              "id": 1289,
+              "index": 203,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF006A",
+              "id": 1290,
+              "index": 204,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF1092",
+              "id": 1291,
+              "index": 205,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF45D6",
+              "id": 1292,
+              "index": 206,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF7329",
+              "id": 1293,
+              "index": 207,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF7383",
+              "id": 1294,
+              "index": 208,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF7BDE",
+              "id": 1295,
+              "index": 209,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF8516",
+              "id": 1296,
+              "index": 210,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FF9C62",
+              "id": 1297,
+              "index": 211,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFB3D7",
+              "id": 1298,
+              "index": 212,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFB6DE",
+              "id": 1299,
+              "index": 213,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFBDBD",
+              "id": 1300,
+              "index": 214,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFC800",
+              "id": 1301,
+              "index": 215,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFC92B",
+              "id": 1302,
+              "index": 216,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFCD94",
+              "id": 1303,
+              "index": 217,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFCE64",
+              "id": 1304,
+              "index": 218,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFD2B3",
+              "id": 1305,
+              "index": 219,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFE639",
+              "id": 1306,
+              "index": 220,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFE673",
+              "id": 1307,
+              "index": 221,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFEDB3",
+              "id": 1308,
+              "index": 222,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFEE6D",
+              "id": 1309,
+              "index": 223,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFEEC5",
+              "id": 1310,
+              "index": 224,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFFF00",
+              "id": 1311,
+              "index": 225,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFFF66",
+              "id": 1312,
+              "index": 226,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFFFFA",
+              "id": 1313,
+              "index": 227,
+              "club": 0,
+              "selectable": 0
+            },
+            {
+              "#text": "FFFFFF",
+              "id": 1314,
+              "index": 228,
+              "club": 0,
+              "selectable": 0
+            }
+          ]
+        }
+      ]
+    },
+    "sets": {
+      "settype": [
+        {
+          "type": "hd",
+          "paletteid": 1,
+          "mand_m_0": 1,
+          "mand_f_0": 1,
+          "mand_m_1": 1,
+          "mand_f_1": 1,
+          "set": [
+            {
+              "id": 185,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 209,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 8,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 207,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 6,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 200,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 4,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 190,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 3,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 625,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 5,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 605,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 628,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 9,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 627,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 7,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 610,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 1,
+                  "type": "bd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 4,
+                  "type": "ey",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "fc",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "hd",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "lh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "hr",
+          "paletteid": 2,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0,
+          "set": [
+            {
+              "id": 893,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 36,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 36,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 891,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 33,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 33,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 145,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 16,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 16,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 889,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 32,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 32,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 110,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 4,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 4,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 892,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 35,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 35,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 515,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 6,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 6,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 837,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 200,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 200,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 891,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 33,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 33,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 893,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 36,
+                  "type": "hr",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 36,
+                  "type": "hrb",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ch",
+          "paletteid": 3,
+          "mand_m_0": 1,
+          "mand_f_0": 1,
+          "mand_m_1": 0,
+          "mand_f_1": 1,
+          "set": [
+            {
+              "id": 3030,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 2050,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2050,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2050,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 230,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 5,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 255,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 10,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 809,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 202,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1202,
+                  "type": "ch",
+                  "colorable": 0,
+                  "index": 1,
+                  "colorindex": 0
+                }
+              ]
+            },
+            {
+              "id": 3110,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 2165,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2165,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2165,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2166,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 1,
+                  "colorindex": 2
+                },
+                {
+                  "id": 2166,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 1,
+                  "colorindex": 2
+                },
+                {
+                  "id": 2166,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 1,
+                  "colorindex": 2
+                }
+              ]
+            },
+            {
+              "id": 685,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 18,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 3,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 3,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 670,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 16,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 665,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 15,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 3,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 3,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 635,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 2,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            },
+            {
+              "id": 823,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 201,
+                  "type": "ch",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "ls",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1,
+                  "type": "rs",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "lg",
+          "paletteid": 3,
+          "mand_m_0": 1,
+          "mand_f_0": 1,
+          "mand_m_1": 1,
+          "mand_f_1": 1,
+          "set": [
+            {
+              "id": 275,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 2,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 3290,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 2494,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 270,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 1,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 280,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 4,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 715,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 5,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 710,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 4,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 716,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 7,
+                  "type": "lg",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 1007,
+                  "type": "lg",
+                  "colorable": 1,
+                  "index": 1,
+                  "colorindex": 2
+                }
+              ]
+            },
+            {
+              "id": 700,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 2,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 695,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 1,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 3023,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 2037,
+                "type": "lg",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "sh",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0,
+          "set": [
+            {
+              "id": 300,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 3,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 906,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 6,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 3068,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 2111,
+                  "type": "sh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2112,
+                  "type": "sh",
+                  "colorable": 1,
+                  "index": 1,
+                  "colorindex": 2
+                }
+              ]
+            },
+            {
+              "id": 290,
+              "gender": "M",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 1,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 735,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 3,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 906,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 6,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 907,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 7,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 725,
+              "gender": "F",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 1,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            },
+            {
+              "id": 3068,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": [
+                {
+                  "id": 2111,
+                  "type": "sh",
+                  "colorable": 1,
+                  "index": 0,
+                  "colorindex": 1
+                },
+                {
+                  "id": 2112,
+                  "type": "sh",
+                  "colorable": 1,
+                  "index": 1,
+                  "colorindex": 2
+                }
+              ]
+            },
+            {
+              "id": 905,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 5,
+                "type": "sh",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "ha",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0,
+          "set": [
+            {
+              "id": 1003,
+              "gender": "U",
+              "club": 0,
+              "colorable": 1,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 3,
+                "type": "ha",
+                "colorable": 1,
+                "index": 0,
+                "colorindex": 1
+              },
+              "hiddenlayers": {
+                "layer": {
+                  "parttype": "hrb"
+                }
+              }
+            },
+            {
+              "id": 1015,
+              "gender": "U",
+              "club": 0,
+              "colorable": 0,
+              "selectable": 1,
+              "preselectable": 1,
+              "part": {
+                "id": 15,
+                "type": "ha",
+                "colorable": 0,
+                "index": 0,
+                "colorindex": 0
+              },
+              "hiddenlayers": {
+                "layer": [
+                  {
+                    "parttype": "hrb"
+                  },
+                  {
+                    "parttype": "hr"
+                  },
+                  {
+                    "parttype": "fa"
+                  },
+                  {
+                    "parttype": "ea"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "he",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0
+        },
+        {
+          "type": "ea",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0,
+          "set": {
+            "id": 1406,
+            "gender": "U",
+            "club": 0,
+            "colorable": 0,
+            "selectable": 1,
+            "preselectable": 1,
+            "part": {
+              "id": 6,
+              "type": "ea",
+              "colorable": 0,
+              "index": 0,
+              "colorindex": 0
+            }
+          }
+        },
+        {
+          "type": "fa",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0,
+          "set": {
+            "id": 1212,
+            "gender": "U",
+            "club": 0,
+            "colorable": 0,
+            "selectable": 1,
+            "preselectable": 1,
+            "part": {
+              "id": 12,
+              "type": "fa",
+              "colorable": 0,
+              "index": 0,
+              "colorindex": 0
+            }
+          }
+        },
+        {
+          "type": "ca",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0
+        },
+        {
+          "type": "wa",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0
+        },
+        {
+          "type": "cc",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0
+        },
+        {
+          "type": "cp",
+          "paletteid": 3,
+          "mand_m_0": 0,
+          "mand_f_0": 0,
+          "mand_m_1": 0,
+          "mand_f_1": 0
+        }
+      ]
+    }
+  }
+}
