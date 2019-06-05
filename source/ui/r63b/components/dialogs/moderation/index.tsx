@@ -26,19 +26,19 @@ export default class Moderation extends Component {
 				<div className='content'>
 					<ul className='options'>
 						<li>
-							<img src='https://media.discordapp.net/attachments/571637525295398913/579665088965771300/modtool_test.png' />
+							<img src='./moderation/room.png' />
 							<span>Room tool for this Room</span>
 						</li>
 						<li>
-							<img src='https://media.discordapp.net/attachments/571637525295398913/579664994380021780/modtool_test.png' />	
+							<img src='./moderation/chatlog.png' />	
 							<span>Chatlog for this Room</span>
 						</li>
 						<li>
-							<img src='https://media.discordapp.net/attachments/571637525295398913/579665181488054302/modtool_test.png' />
+							<img src='./moderation/user.png' />
 							<span>User info: EZ-C</span>
 						</li>
 						<li>
-							<img src='https://media.discordapp.net/attachments/571637525295398913/579665505388855309/modtool_test.png' />
+							<img src='./moderation/ticket.png' />
 							<span>Ticket Browser</span>
 						</li>
 					</ul>	
