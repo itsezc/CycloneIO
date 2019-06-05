@@ -24,7 +24,8 @@ user-drag(value)
 	-o-user-drag value
 	user-drag value
 
-
+whiteborder()
+	filter drop-shadow(1px 1px 0 #fff) drop-shadow(-1px 1px 0 #fff) drop-shadow(1px -1px 0 #fff) drop-shadow(-1px -1px 0 #fff)
 
 .client
 	z-index 0
@@ -101,5 +102,72 @@ user-drag(value)
 				width 128px
 				padding 0
 				margin 0
-				filter drop-shadow(2px 1px 0 #fff) drop-shadow(-2px 1px 0 #fff)
+				whiteborder()
 				display inline-block
+				cursor pointer
+
+			.news
+				cursor pointer
+				display inline-block
+				position absolute
+				margin-left 50px
+				bottom 75px
+				width 64px
+				height 64px
+				transform scale(1.8,1.8)
+				transform-origin 0 0
+				background-image url(https://habbay.me/themes/HabboSlopt/assets/images/pagetemplate.png)
+				background-position -220px 0px
+				background-repeat no-repeat
+				whiteborder()
+
+			.store
+				cursor pointer
+				display inline-block
+				position absolute
+				right 500px
+				margin-left 15px
+				bottom 75px
+				width 64px
+				height 64px
+				transform scale(1.8,1.8)
+				transform-origin 0 0
+				background-image url(https://habbay.me/themes/HabboSlopt/assets/images/pagetemplate.png)
+				background-position -80px 0px
+				background-repeat no-repeat
+				whiteborder()
+
+			.friends
+				cursor pointer
+				display inline-block
+				position absolute
+				right 100px
+				margin-left 15px
+				bottom 75px
+				width 64px
+				height 64px
+				transform scale(1.8,1.8)
+				transform-origin 0 0
+				background-image url(https://habbay.me/themes/HabboSlopt/assets/images/pagetemplate.png)
+				background-position -0px 0px
+				background-repeat no-repeat
+				whiteborder()
+
+			.center
+				display inline-block
+
+		.chatbar
+			font-family 'UbuntuCondensed'
+			font-size 1.5em
+			outline 0
+			position absolute
+			left calc(50% - calc(375px / 2))
+			bottom 40px
+			border 0
+			border-radius 3px
+			box-shadow 0px -6px 0px 0px #6A6F73
+			background #CDCFCE
+			color #6D7F81
+			padding 25px
+			width 350px
+			
