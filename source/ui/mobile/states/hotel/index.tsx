@@ -56,7 +56,7 @@ export default class Hotel extends Component {
 						<h1>What's up DaddyChiru?</h1>
 						<div className='actions'>
 							<div className='action'>
-								<img className='icon' src='' />
+								<i className='key'></i>
 								<span>Find a room</span>
 							</div>
 							<div className='action'>
@@ -73,6 +73,15 @@ export default class Hotel extends Component {
 
 					<div className='navigation'>
 						<img className='avatar' src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=3&action=&gesture=&size=l' />
+					
+						<div className='news'></div>
+
+						<div className='center'>
+							<input type='text' placeholder='Say hi!' className='chatbar' />
+						</div>
+
+						<div className='store'></div>
+						<div className='friends'></div>
 					</div>
 				</div>
 			</div>
