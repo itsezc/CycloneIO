@@ -8,10 +8,10 @@ import SocketIO from 'socket.io-client'
 
 import Config, { server } from '../../../config.json'
 
-const { host, port } = server 
+const { host, port } = server
 
 import RoomCamera from './camera'
-import RoomTileMap from './tiles/map'
+import RoomMap from './tiles/map'
 
 import RoomItem from './items/item'
 
@@ -19,7 +19,8 @@ import RoomItem from './items/item'
  * Room class
  * @extends {Scene}
  */
-export default class Room extends Scene {
+export default class Room extends Scene
+{
 
     private id: number
     private socket!: SocketIOClient.Socket
@@ -31,8 +32,13 @@ export default class Room extends Scene {
     private clickTime!: number
 
     private JSONMapData!: any
-    private tileWidth! : number
+    private tileWidth!: number
     private tileHeight!: number
+    private halfTileWidth!: number
+    private halfTileHeight!: number
+    private mapArrayData!: any
+    private centerX!: number
+    private centerY!: number
 
     /**
      * @param {number} id - The room id
@@ -46,7 +52,8 @@ export default class Room extends Scene {
     /**
      * Runs once, loads up assets like images and audio
      */
-    preload() {
+    preload()
+    {
 
         this.load.json('map', 'room/isometric-map.json')
 
@@ -54,18 +61,18 @@ export default class Room extends Scene {
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
-/*      this.load.image('tile', 'room/normal_tile.png')
-        this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
-        this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
-        this.load.image('tile_border', 'room/normal_tile_border.png')
-
-        this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
-        this.load.image('tile_hover', 'room/tile_hover.png')
-        this.load.image('wall_right', 'room/wall_right.png')
-        this.load.image('wall_left', 'room/wall_left.png')
-        this.load.image('wall_right', 'room/wall_right.png')
-        this.load.svg('stair_top', 'room/stair_top.svg')
-        this.load.svg('stair_right', 'room/stair_right.svg') */
+        /*      this.load.image('tile', 'room/normal_tile.png')
+                this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
+                this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
+                this.load.image('tile_border', 'room/normal_tile_border.png')
+        
+                this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
+                this.load.image('tile_hover', 'room/tile_hover.png')
+                this.load.image('wall_right', 'room/wall_right.png')
+                this.load.image('wall_left', 'room/wall_left.png')
+                this.load.image('wall_right', 'room/wall_right.png')
+                this.load.svg('stair_top', 'room/stair_top.svg')
+                this.load.svg('stair_right', 'room/stair_right.svg') */
 
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
@@ -78,13 +85,13 @@ export default class Room extends Scene {
     /**
      * Runs once, when the scene starts
      */
-    public init() : void {
-
+    public init(): void 
+    {
         this.socket = SocketIO(`${host}:${port}`)
         this.camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
         // this.lights.enable()
-    }	
+    }
 
     /**
      * Runs once, after all assets in preload are loaded
@@ -93,13 +100,69 @@ export default class Room extends Scene {
     {
         this.camera.create()
 
+        this.registerInputEvents()
+
         this.JSONMapData = this.cache.json.get('map')
 
-        console.log(this.JSONMapData)
         this.tileWidth = this.JSONMapData.tilewidth
         this.tileHeight = this.JSONMapData.tileheight
 
-        console.log(this.tileWidth)
+        this.halfTileWidth = this.tileWidth / 2
+        this.halfTileHeight = this.tileHeight / 2
+
+        this.mapArrayData = this.JSONMapData.layers[0].data
+
+
+        // loop for the array length and then for each sub array element length loop inside of it
+
+        for (let y = 0; y < this.mapArrayData.length; y++)
+        {
+            for (let x = 0; x < this.mapArrayData[y].length; x++)
+            {
+                var tileId = this.mapArrayData[y] - 1
+
+                // tileWidth: 64
+                // tileHeight : 8
+                var isometricTileXCoordinate = (x - y) * this.tileWidth / 2
+                var isometricTileYCoordinate = ((x + y) / 2) * this.tileWidth / 2
+
+                var topTileSurface = new Phaser.Geom.Polygon(
+                    [
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 0,isometricTileYCoordinate + 0),
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate -16),
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 64,isometricTileYCoordinate + 0),
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16)
+                    ])
+
+                var tile = this.add.graphics()
+
+                tile.fillStyle(0x989865)
+                tile.fillPoints(topTileSurface.points)
+
+                tile.lineStyle(0.5, 0x8E8E5E)
+                tile.strokePoints(topTileSurface.points, true)
+
+                var leftTileThickness = new Phaser.Geom.Polygon(
+                    [
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 0),
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 7.5)
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16 + 7.5),
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16)
+                    ]
+                )
+
+                tile.fillStyle(0x838357)
+                tile.fillPoints(leftTileThickness.points)
+
+                tile.lineStyle(0.5, 0x7A7A51)
+                tile.strokePoints(leftTileThickness.points, true)
+
+                tile.depth = 0
+                tile.setData('id', tileId)
+            }
+        }
+
+        this.camera.setZoom(1) // Zoom out (0.5). max: 10
 
         /* this.registerInputEvents()
 
@@ -140,7 +203,8 @@ export default class Room extends Scene {
      * Runs once per frame for the duration of the scene
      * @override
      */
-    public update(): void {
+    public update(): void
+    {
         // this.camera3d.transformChildren(this.transform);
     }
 
@@ -153,8 +217,8 @@ export default class Room extends Scene {
             {
                 this.camera.scroll(pointer)
 
-            } 
-            
+            }
+
             else 
             {
                 this.camera.isScrolling = false
@@ -184,26 +248,28 @@ export default class Room extends Scene {
     {
         this.socket.on('newRoom', (map: any) => 
         {
-            this.addTileMap(map)
+            //this.addTileMap(map)
         })
     }
 
-    public registerItemsEvents(): void {
+    public registerItemsEvents(): void
+    {
 
-/*         this.socket.on('newItem', (item: any) => {
-            this.addItem({ x: 0, y: 0, z: 0 }, item)
-        }) */
+        /*         this.socket.on('newItem', (item: any) => {
+                    this.addItem({ x: 0, y: 0, z: 0 }, item)
+                }) */
     }
 
     /**
      * Adds a new tilemap
      * @param {Object} map - The room map
      */
-    public addTileMap(map: [][]): void {
-        this.tileMap = new RoomTileMap(this, map)
-    }
+    /*     public addTileMap(map: [][]): void {
+            this.tileMap = new RoomTileMap(this, map)
+        } */
 
-    public addItem(coordinates: Vector, textureName: string) {
+    public addItem(coordinates: Vector, textureName: string)
+    {
         this.item = new RoomItem(this, textureName, 1, 1, 1, coordinates, 0, 0)
         this.item.load()
     }
@@ -219,22 +285,22 @@ export default class Room extends Scene {
 
     //     // Testing
     //     // var furnitureLayer = this.add.group()
-        
+
     //     // this.load.setPath(`furniture/${texture}/`)
     //     // this.load.atlas({ key: texture, textureURL: texture.concat('.png'), atlasURL: texture.concat('.json') })
     //     // this.load.start()
 
     //     // this.load.once('complete', () => {
-            
+
     //     //     var furnitureTexture = this.textures.get(texture)
 
     //     //     var frameNames = furnitureTexture.getFrameNames()
-            
+
     //     //     var frame1 = frameNames[5]
     //     //     var frame2 = frameNames[8]
 
     //     //     var totalFrames = []
-            
+
     //     //     var defaultFrame = frameNames.find(name => {
     //     //         var parts = name.split('_')
 
@@ -252,7 +318,7 @@ export default class Room extends Scene {
     //     //     // 2nd object 0 - 10
     //     //     furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
     //     //     furnitureLayer.setDepth(3, 1) // 
-    
+
     //     //     // for (var i = 0; i < frames.length; i++)
     //     //     // {
     //     //     //     furnitureLayer.createMultiple({ key: texture, frame: [frames[5], frames[8]] })
@@ -282,12 +348,16 @@ export default class Room extends Scene {
      * @param {function} callback - The callback function
      * @param {any} args - The extra arguments
      */
-    public onDoubleClick(object: Phaser.GameObjects.GameObject, callback: (...n: any) => any, ...args: any): void {
+    public onDoubleClick(object: Phaser.GameObjects.GameObject, callback: (...n: any) => any, ...args: any): void
+    {
 
-        object.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
+        object.on('pointerdown', (pointer: Phaser.Input.Pointer) =>
+        {
 
-            if (pointer.downTime - this.clickTime < 500) {
-                if (pointer.primaryDown) {
+            if (pointer.downTime - this.clickTime < 500)
+            {
+                if (pointer.primaryDown)
+                {
                     callback(...args)
                 }
             }
