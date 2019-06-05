@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "arabian_tetbl_sheet.png",
+		"size": {"w":161,"h":104},
+		"scale": "1"
+	},
+	"frames": {
+		"arabian_tetbl_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":109,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":109,"h":71},
+			"sourceSize": {"w":109,"h":71}
+		},
+		"arabian_tetbl_9.png":
+		{
+			"frame": {"x":0,"y":71,"w":63,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":33},
+			"sourceSize": {"w":63,"h":33}
+		},
+		"arabian_tetbl_3.png":
+		{
+			"frame": {"x":109,"y":0,"w":52,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":26},
+			"sourceSize": {"w":52,"h":26}
+		},
+		"arabian_tetbl_4.png":
+		{
+			"frame": {"x":109,"y":26,"w":46,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":10},
+			"sourceSize": {"w":46,"h":10}
+		},
+		"arabian_tetbl_12.png":
+		{
+			"frame": {"x":109,"y":36,"w":32,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":19},
+			"sourceSize": {"w":32,"h":19}
+		},
+		"arabian_tetbl_6.png":
+		{
+			"frame": {"x":109,"y":55,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		},
+		"arabian_tetbl_7.png":
+		{
+			"frame": {"x":109,"y":83,"w":27,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":12},
+			"sourceSize": {"w":27,"h":12}
+		},
+		"arabian_tetbl_1.png":
+		{
+			"frame": {"x":136,"y":83,"w":25,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":4},
+			"sourceSize": {"w":25,"h":4}
+		}
+	}
+}

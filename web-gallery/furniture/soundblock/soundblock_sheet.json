@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "soundblock_sheet.png",
+		"size": {"w":168,"h":134},
+		"scale": "1"
+	},
+	"frames": {
+		"soundblock_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":68},
+			"sourceSize": {"w":51,"h":68}
+		},
+		"soundblock_7.png":
+		{
+			"frame": {"x":51,"y":0,"w":51,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":68},
+			"sourceSize": {"w":51,"h":68}
+		},
+		"soundblock_9.png":
+		{
+			"frame": {"x":102,"y":0,"w":66,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":48},
+			"sourceSize": {"w":66,"h":48}
+		},
+		"soundblock_14.png":
+		{
+			"frame": {"x":0,"y":68,"w":62,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":32},
+			"sourceSize": {"w":62,"h":32}
+		},
+		"soundblock_10.png":
+		{
+			"frame": {"x":0,"y":100,"w":26,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":34},
+			"sourceSize": {"w":26,"h":34}
+		},
+		"soundblock_12.png":
+		{
+			"frame": {"x":26,"y":100,"w":26,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":34},
+			"sourceSize": {"w":26,"h":34}
+		},
+		"soundblock_8.png":
+		{
+			"frame": {"x":62,"y":68,"w":33,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":24},
+			"sourceSize": {"w":33,"h":24}
+		},
+		"soundblock_11.png":
+		{
+			"frame": {"x":52,"y":100,"w":25,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":32},
+			"sourceSize": {"w":25,"h":32}
+		},
+		"soundblock_4.png":
+		{
+			"frame": {"x":102,"y":48,"w":31,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":16},
+			"sourceSize": {"w":31,"h":16}
+		},
+		"soundblock_16.png":
+		{
+			"frame": {"x":133,"y":48,"w":18,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":11},
+			"sourceSize": {"w":18,"h":11}
+		},
+		"soundblock_6.png":
+		{
+			"frame": {"x":151,"y":48,"w":9,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":6},
+			"sourceSize": {"w":9,"h":6}
+		},
+		"soundblock_2.png":
+		{
+			"frame": {"x":160,"y":48,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

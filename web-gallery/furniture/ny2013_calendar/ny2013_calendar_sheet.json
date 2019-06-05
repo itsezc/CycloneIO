@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ny2013_calendar_sheet.png",
+		"size": {"w":200,"h":156},
+		"scale": "1"
+	},
+	"frames": {
+		"ny2013_calendar_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":113},
+			"sourceSize": {"w":130,"h":113}
+		},
+		"ny2013_calendar_1.png":
+		{
+			"frame": {"x":130,"y":0,"w":70,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":83},
+			"sourceSize": {"w":70,"h":83}
+		},
+		"ny2013_calendar_3.png":
+		{
+			"frame": {"x":130,"y":83,"w":60,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":30},
+			"sourceSize": {"w":60,"h":30}
+		},
+		"ny2013_calendar_5.png":
+		{
+			"frame": {"x":0,"y":113,"w":36,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":43},
+			"sourceSize": {"w":36,"h":43}
+		},
+		"ny2013_calendar_10.png":
+		{
+			"frame": {"x":36,"y":113,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"ny2013_calendar_9.png":
+		{
+			"frame": {"x":62,"y":113,"w":30,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":14},
+			"sourceSize": {"w":30,"h":14}
+		}
+	}
+}

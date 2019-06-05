@@ -1,0 +1,129 @@
+{
+	"meta": {
+		"image": "milkbowl_sheet.png",
+		"size": {"w":68,"h":65},
+		"scale": "1"
+	},
+	"frames": {
+		"milkbowl_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":45},
+			"sourceSize": {"w":51,"h":45}
+		},
+		"milkbowl_13.png":
+		{
+			"frame": {"x":51,"y":0,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		},
+		"milkbowl_15.png":
+		{
+			"frame": {"x":51,"y":12,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		},
+		"milkbowl_16.png":
+		{
+			"frame": {"x":51,"y":24,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		},
+		"milkbowl_17.png":
+		{
+			"frame": {"x":0,"y":45,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		},
+		"milkbowl_18.png":
+		{
+			"frame": {"x":17,"y":45,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		},
+		"milkbowl_8.png":
+		{
+			"frame": {"x":34,"y":45,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		},
+		"milkbowl_5.png":
+		{
+			"frame": {"x":51,"y":36,"w":17,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":5},
+			"sourceSize": {"w":17,"h":5}
+		},
+		"milkbowl_10.png":
+		{
+			"frame": {"x":51,"y":45,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"milkbowl_3.png":
+		{
+			"frame": {"x":0,"y":57,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"milkbowl_4.png":
+		{
+			"frame": {"x":10,"y":57,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"milkbowl_6.png":
+		{
+			"frame": {"x":20,"y":57,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"milkbowl_7.png":
+		{
+			"frame": {"x":30,"y":57,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"milkbowl_9.png":
+		{
+			"frame": {"x":40,"y":57,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"milkbowl_2.png":
+		{
+			"frame": {"x":51,"y":41,"w":10,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":3},
+			"sourceSize": {"w":10,"h":3}
+		}
+	}
+}

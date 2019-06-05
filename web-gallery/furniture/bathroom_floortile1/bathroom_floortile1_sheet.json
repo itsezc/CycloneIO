@@ -1,0 +1,145 @@
+{
+	"meta": {
+		"image": "bathroom_floortile1_sheet.png",
+		"size": {"w":196,"h":160},
+		"scale": "1"
+	},
+	"frames": {
+		"bathroom_floortile1_20.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":34},
+			"sourceSize": {"w":130,"h":34}
+		},
+		"bathroom_floortile1_21.png":
+		{
+			"frame": {"x":0,"y":34,"w":130,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":34},
+			"sourceSize": {"w":130,"h":34}
+		},
+		"bathroom_floortile1_14.png":
+		{
+			"frame": {"x":0,"y":68,"w":130,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":17},
+			"sourceSize": {"w":130,"h":17}
+		},
+		"bathroom_floortile1_3.png":
+		{
+			"frame": {"x":0,"y":85,"w":70,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":18},
+			"sourceSize": {"w":70,"h":18}
+		},
+		"bathroom_floortile1_17.png":
+		{
+			"frame": {"x":130,"y":0,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bathroom_floortile1_18.png":
+		{
+			"frame": {"x":130,"y":34,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bathroom_floortile1_1.png":
+		{
+			"frame": {"x":130,"y":68,"w":66,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":17},
+			"sourceSize": {"w":66,"h":17}
+		},
+		"bathroom_floortile1_4.png":
+		{
+			"frame": {"x":130,"y":85,"w":66,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":17},
+			"sourceSize": {"w":66,"h":17}
+		},
+		"bathroom_floortile1_16.png":
+		{
+			"frame": {"x":0,"y":103,"w":66,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":9},
+			"sourceSize": {"w":66,"h":9}
+		},
+		"bathroom_floortile1_5.png":
+		{
+			"frame": {"x":0,"y":112,"w":64,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":33},
+			"sourceSize": {"w":64,"h":33}
+		},
+		"bathroom_floortile1_6.png":
+		{
+			"frame": {"x":64,"y":112,"w":64,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":33},
+			"sourceSize": {"w":64,"h":33}
+		},
+		"bathroom_floortile1_11.png":
+		{
+			"frame": {"x":70,"y":85,"w":36,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":10},
+			"sourceSize": {"w":36,"h":10}
+		},
+		"bathroom_floortile1_12.png":
+		{
+			"frame": {"x":128,"y":112,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"bathroom_floortile1_9.png":
+		{
+			"frame": {"x":162,"y":112,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"bathroom_floortile1_13.png":
+		{
+			"frame": {"x":128,"y":129,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		},
+		"bathroom_floortile1_7.png":
+		{
+			"frame": {"x":158,"y":129,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		},
+		"bathroom_floortile1_15.png":
+		{
+			"frame": {"x":0,"y":145,"w":28,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":15},
+			"sourceSize": {"w":28,"h":15}
+		}
+	}
+}

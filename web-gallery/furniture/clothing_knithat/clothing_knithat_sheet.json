@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_knithat_sheet.png",
+		"size": {"w":61,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_knithat_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":48},
+			"sourceSize": {"w":34,"h":48}
+		},
+		"clothing_knithat_3.png":
+		{
+			"frame": {"x":34,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		},
+		"clothing_knithat_1.png":
+		{
+			"frame": {"x":34,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

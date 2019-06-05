@@ -1,0 +1,545 @@
+{
+	"meta": {
+		"image": "val12_vines_sheet.png",
+		"size": {"w":471,"h":404},
+		"scale": "1"
+	},
+	"frames": {
+		"val12_vines_59.png":
+		{
+			"frame": {"x":0,"y":0,"w":57,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":131},
+			"sourceSize": {"w":57,"h":131}
+		},
+		"val12_vines_58.png":
+		{
+			"frame": {"x":57,"y":0,"w":57,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":122},
+			"sourceSize": {"w":57,"h":122}
+		},
+		"val12_vines_8.png":
+		{
+			"frame": {"x":114,"y":0,"w":108,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":108,"h":113},
+			"sourceSize": {"w":108,"h":113}
+		},
+		"val12_vines_7.png":
+		{
+			"frame": {"x":222,"y":0,"w":108,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":108,"h":112},
+			"sourceSize": {"w":108,"h":112}
+		},
+		"val12_vines_6.png":
+		{
+			"frame": {"x":0,"y":131,"w":107,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":112},
+			"sourceSize": {"w":107,"h":112}
+		},
+		"val12_vines_61.png":
+		{
+			"frame": {"x":107,"y":131,"w":56,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":107},
+			"sourceSize": {"w":56,"h":107}
+		},
+		"val12_vines_4.png":
+		{
+			"frame": {"x":163,"y":131,"w":103,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":103,"h":88},
+			"sourceSize": {"w":103,"h":88}
+		},
+		"val12_vines_5.png":
+		{
+			"frame": {"x":0,"y":243,"w":89,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":65},
+			"sourceSize": {"w":89,"h":65}
+		},
+		"val12_vines_62.png":
+		{
+			"frame": {"x":266,"y":131,"w":52,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":86},
+			"sourceSize": {"w":52,"h":86}
+		},
+		"val12_vines_2.png":
+		{
+			"frame": {"x":89,"y":243,"w":74,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":42},
+			"sourceSize": {"w":74,"h":42}
+		},
+		"val12_vines_54.png":
+		{
+			"frame": {"x":330,"y":0,"w":73,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":72},
+			"sourceSize": {"w":73,"h":72}
+		},
+		"val12_vines_71.png":
+		{
+			"frame": {"x":330,"y":72,"w":30,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":67},
+			"sourceSize": {"w":30,"h":67}
+		},
+		"val12_vines_55.png":
+		{
+			"frame": {"x":330,"y":139,"w":66,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":66},
+			"sourceSize": {"w":66,"h":66}
+		},
+		"val12_vines_41.png":
+		{
+			"frame": {"x":330,"y":205,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"val12_vines_53.png":
+		{
+			"frame": {"x":330,"y":237,"w":62,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":63},
+			"sourceSize": {"w":62,"h":63}
+		},
+		"val12_vines_70.png":
+		{
+			"frame": {"x":360,"y":72,"w":30,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":62},
+			"sourceSize": {"w":30,"h":62}
+		},
+		"val12_vines_28.png":
+		{
+			"frame": {"x":163,"y":243,"w":62,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":30},
+			"sourceSize": {"w":62,"h":30}
+		},
+		"val12_vines_63.png":
+		{
+			"frame": {"x":0,"y":308,"w":46,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":61},
+			"sourceSize": {"w":46,"h":61}
+		},
+		"val12_vines_3.png":
+		{
+			"frame": {"x":225,"y":243,"w":59,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":22},
+			"sourceSize": {"w":59,"h":22}
+		},
+		"val12_vines_37.png":
+		{
+			"frame": {"x":46,"y":308,"w":55,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":58},
+			"sourceSize": {"w":55,"h":58}
+		},
+		"val12_vines_38.png":
+		{
+			"frame": {"x":101,"y":308,"w":55,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":58},
+			"sourceSize": {"w":55,"h":58}
+		},
+		"val12_vines_36.png":
+		{
+			"frame": {"x":156,"y":308,"w":55,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":57},
+			"sourceSize": {"w":55,"h":57}
+		},
+		"val12_vines_32.png":
+		{
+			"frame": {"x":89,"y":285,"w":57,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":20},
+			"sourceSize": {"w":57,"h":20}
+		},
+		"val12_vines_69.png":
+		{
+			"frame": {"x":211,"y":308,"w":30,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":53},
+			"sourceSize": {"w":30,"h":53}
+		},
+		"val12_vines_29.png":
+		{
+			"frame": {"x":146,"y":285,"w":53,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":20},
+			"sourceSize": {"w":53,"h":20}
+		},
+		"val12_vines_35.png":
+		{
+			"frame": {"x":241,"y":308,"w":52,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":45},
+			"sourceSize": {"w":52,"h":45}
+		},
+		"val12_vines_40.png":
+		{
+			"frame": {"x":293,"y":308,"w":45,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":34},
+			"sourceSize": {"w":45,"h":34}
+		},
+		"val12_vines_64.png":
+		{
+			"frame": {"x":403,"y":0,"w":32,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":45},
+			"sourceSize": {"w":32,"h":45}
+		},
+		"val12_vines_67.png":
+		{
+			"frame": {"x":403,"y":45,"w":26,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":44},
+			"sourceSize": {"w":26,"h":44}
+		},
+		"val12_vines_31.png":
+		{
+			"frame": {"x":284,"y":243,"w":39,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":20},
+			"sourceSize": {"w":39,"h":20}
+		},
+		"val12_vines_11.png":
+		{
+			"frame": {"x":0,"y":369,"w":37,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":35},
+			"sourceSize": {"w":37,"h":35}
+		},
+		"val12_vines_42.png":
+		{
+			"frame": {"x":338,"y":308,"w":37,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":22},
+			"sourceSize": {"w":37,"h":22}
+		},
+		"val12_vines_34.png":
+		{
+			"frame": {"x":435,"y":0,"w":36,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":36},
+			"sourceSize": {"w":36,"h":36}
+		},
+		"val12_vines_56.png":
+		{
+			"frame": {"x":435,"y":36,"w":35,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":15},
+			"sourceSize": {"w":35,"h":15}
+		},
+		"val12_vines_48.png":
+		{
+			"frame": {"x":435,"y":51,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"val12_vines_33.png":
+		{
+			"frame": {"x":435,"y":77,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"val12_vines_9.png":
+		{
+			"frame": {"x":435,"y":110,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"val12_vines_10.png":
+		{
+			"frame": {"x":435,"y":143,"w":31,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":32},
+			"sourceSize": {"w":31,"h":32}
+		},
+		"val12_vines_30.png":
+		{
+			"frame": {"x":435,"y":175,"w":31,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":32},
+			"sourceSize": {"w":31,"h":32}
+		},
+		"val12_vines_68.png":
+		{
+			"frame": {"x":435,"y":207,"w":24,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+			"sourceSize": {"w":24,"h":32}
+		},
+		"val12_vines_22.png":
+		{
+			"frame": {"x":435,"y":239,"w":31,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":16},
+			"sourceSize": {"w":31,"h":16}
+		},
+		"val12_vines_43.png":
+		{
+			"frame": {"x":435,"y":255,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		},
+		"val12_vines_21.png":
+		{
+			"frame": {"x":435,"y":285,"w":29,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":11},
+			"sourceSize": {"w":29,"h":11}
+		},
+		"val12_vines_39.png":
+		{
+			"frame": {"x":435,"y":296,"w":29,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":10},
+			"sourceSize": {"w":29,"h":10}
+		},
+		"val12_vines_47.png":
+		{
+			"frame": {"x":435,"y":306,"w":28,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":23},
+			"sourceSize": {"w":28,"h":23}
+		},
+		"val12_vines_20.png":
+		{
+			"frame": {"x":435,"y":329,"w":27,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":20},
+			"sourceSize": {"w":27,"h":20}
+		},
+		"val12_vines_60.png":
+		{
+			"frame": {"x":435,"y":349,"w":24,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":23},
+			"sourceSize": {"w":24,"h":23}
+		},
+		"val12_vines_23.png":
+		{
+			"frame": {"x":435,"y":372,"w":24,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":11},
+			"sourceSize": {"w":24,"h":11}
+		},
+		"val12_vines_65.png":
+		{
+			"frame": {"x":403,"y":89,"w":17,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":23},
+			"sourceSize": {"w":17,"h":23}
+		},
+		"val12_vines_50.png":
+		{
+			"frame": {"x":403,"y":112,"w":18,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":22},
+			"sourceSize": {"w":18,"h":22}
+		},
+		"val12_vines_24.png":
+		{
+			"frame": {"x":435,"y":383,"w":20,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":11},
+			"sourceSize": {"w":20,"h":11}
+		},
+		"val12_vines_49.png":
+		{
+			"frame": {"x":459,"y":207,"w":12,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":19},
+			"sourceSize": {"w":12,"h":19}
+		},
+		"val12_vines_19.png":
+		{
+			"frame": {"x":403,"y":134,"w":17,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":15},
+			"sourceSize": {"w":17,"h":15}
+		},
+		"val12_vines_13.png":
+		{
+			"frame": {"x":403,"y":149,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"val12_vines_12.png":
+		{
+			"frame": {"x":420,"y":89,"w":15,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":13},
+			"sourceSize": {"w":15,"h":13}
+		},
+		"val12_vines_25.png":
+		{
+			"frame": {"x":455,"y":383,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		},
+		"val12_vines_66.png":
+		{
+			"frame": {"x":421,"y":112,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"val12_vines_15.png":
+		{
+			"frame": {"x":459,"y":226,"w":11,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":13},
+			"sourceSize": {"w":11,"h":13}
+		},
+		"val12_vines_45.png":
+		{
+			"frame": {"x":459,"y":349,"w":11,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":12},
+			"sourceSize": {"w":11,"h":12}
+		},
+		"val12_vines_14.png":
+		{
+			"frame": {"x":462,"y":255,"w":7,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":11},
+			"sourceSize": {"w":7,"h":11}
+		},
+		"val12_vines_18.png":
+		{
+			"frame": {"x":459,"y":361,"w":10,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":9},
+			"sourceSize": {"w":10,"h":9}
+		},
+		"val12_vines_27.png":
+		{
+			"frame": {"x":462,"y":266,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"val12_vines_17.png":
+		{
+			"frame": {"x":462,"y":275,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"val12_vines_46.png":
+		{
+			"frame": {"x":466,"y":143,"w":5,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":7},
+			"sourceSize": {"w":5,"h":7}
+		},
+		"val12_vines_26.png":
+		{
+			"frame": {"x":464,"y":285,"w":6,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":6},
+			"sourceSize": {"w":6,"h":6}
+		},
+		"val12_vines_16.png":
+		{
+			"frame": {"x":468,"y":77,"w":3,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":5},
+			"sourceSize": {"w":3,"h":5}
+		},
+		"val12_vines_1.png":
+		{
+			"frame": {"x":470,"y":36,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

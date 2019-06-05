@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "habbo15_comp_blocks_sheet.png",
+		"size": {"w":94,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"habbo15_comp_blocks_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":54},
+			"sourceSize": {"w":36,"h":54}
+		},
+		"habbo15_comp_blocks_2.png":
+		{
+			"frame": {"x":36,"y":0,"w":38,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":42},
+			"sourceSize": {"w":38,"h":42}
+		},
+		"habbo15_comp_blocks_3.png":
+		{
+			"frame": {"x":74,"y":0,"w":20,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":29},
+			"sourceSize": {"w":20,"h":29}
+		}
+	}
+}

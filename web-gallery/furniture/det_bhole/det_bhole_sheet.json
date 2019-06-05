@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "det_bhole_sheet.png",
+		"size": {"w":88,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"det_bhole_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":63,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":43},
+			"sourceSize": {"w":63,"h":43}
+		},
+		"det_bhole_7.png":
+		{
+			"frame": {"x":63,"y":0,"w":25,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":28},
+			"sourceSize": {"w":25,"h":28}
+		},
+		"det_bhole_6.png":
+		{
+			"frame": {"x":0,"y":43,"w":19,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":21},
+			"sourceSize": {"w":19,"h":21}
+		},
+		"det_bhole_4.png":
+		{
+			"frame": {"x":19,"y":43,"w":19,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":20},
+			"sourceSize": {"w":19,"h":20}
+		},
+		"det_bhole_14.png":
+		{
+			"frame": {"x":63,"y":28,"w":11,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":15},
+			"sourceSize": {"w":11,"h":15}
+		},
+		"det_bhole_3.png":
+		{
+			"frame": {"x":74,"y":28,"w":10,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":13},
+			"sourceSize": {"w":10,"h":13}
+		},
+		"det_bhole_9.png":
+		{
+			"frame": {"x":38,"y":43,"w":10,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":13},
+			"sourceSize": {"w":10,"h":13}
+		},
+		"det_bhole_12.png":
+		{
+			"frame": {"x":48,"y":43,"w":12,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+			"sourceSize": {"w":12,"h":12}
+		},
+		"det_bhole_13.png":
+		{
+			"frame": {"x":84,"y":28,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"det_bhole_2.png":
+		{
+			"frame": {"x":87,"y":28,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "lm_totem_sheet.png",
+		"size": {"w":253,"h":190},
+		"scale": "1"
+	},
+	"frames": {
+		"lm_totem_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":161,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":161,"h":123},
+			"sourceSize": {"w":161,"h":123}
+		},
+		"lm_totem_2.png":
+		{
+			"frame": {"x":161,"y":0,"w":47,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":123},
+			"sourceSize": {"w":47,"h":123}
+		},
+		"lm_totem_4.png":
+		{
+			"frame": {"x":208,"y":0,"w":45,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":88},
+			"sourceSize": {"w":45,"h":88}
+		},
+		"lm_totem_7.png":
+		{
+			"frame": {"x":0,"y":123,"w":26,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":67},
+			"sourceSize": {"w":26,"h":67}
+		},
+		"lm_totem_6.png":
+		{
+			"frame": {"x":26,"y":123,"w":43,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":54},
+			"sourceSize": {"w":43,"h":54}
+		},
+		"lm_totem_5.png":
+		{
+			"frame": {"x":69,"y":123,"w":25,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":48},
+			"sourceSize": {"w":25,"h":48}
+		},
+		"lm_totem_1.png":
+		{
+			"frame": {"x":208,"y":88,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		},
+		"lm_totem_8.png":
+		{
+			"frame": {"x":230,"y":88,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		}
+	}
+}

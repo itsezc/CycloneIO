@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "greek_corner_sheet.png",
+		"size": {"w":370,"h":323},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_corner_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":213,"h":196},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":213,"h":196},
+			"sourceSize": {"w":213,"h":196}
+		},
+		"greek_corner_11.png":
+		{
+			"frame": {"x":213,"y":0,"w":49,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":131},
+			"sourceSize": {"w":49,"h":131}
+		},
+		"greek_corner_2.png":
+		{
+			"frame": {"x":262,"y":0,"w":49,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":131},
+			"sourceSize": {"w":49,"h":131}
+		},
+		"greek_corner_1.png":
+		{
+			"frame": {"x":311,"y":0,"w":59,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":127},
+			"sourceSize": {"w":59,"h":127}
+		},
+		"greek_corner_14.png":
+		{
+			"frame": {"x":0,"y":196,"w":56,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":127},
+			"sourceSize": {"w":56,"h":127}
+		},
+		"greek_corner_5.png":
+		{
+			"frame": {"x":311,"y":127,"w":22,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":65},
+			"sourceSize": {"w":22,"h":65}
+		},
+		"greek_corner_6.png":
+		{
+			"frame": {"x":333,"y":127,"w":22,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":65},
+			"sourceSize": {"w":22,"h":65}
+		},
+		"greek_corner_9.png":
+		{
+			"frame": {"x":262,"y":131,"w":28,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":64},
+			"sourceSize": {"w":28,"h":64}
+		},
+		"greek_corner_4.png":
+		{
+			"frame": {"x":213,"y":131,"w":28,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":63},
+			"sourceSize": {"w":28,"h":63}
+		},
+		"greek_corner_7.png":
+		{
+			"frame": {"x":355,"y":127,"w":11,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":30},
+			"sourceSize": {"w":11,"h":30}
+		}
+	}
+}

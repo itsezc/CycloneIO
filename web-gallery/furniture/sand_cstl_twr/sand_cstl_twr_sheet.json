@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "sand_cstl_twr_sheet.png",
+		"size": {"w":218,"h":156},
+		"scale": "1"
+	},
+	"frames": {
+		"sand_cstl_twr_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":109,"h":156},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":109,"h":156},
+			"sourceSize": {"w":109,"h":156}
+		},
+		"sand_cstl_twr_4.png":
+		{
+			"frame": {"x":109,"y":0,"w":72,"h":156},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":156},
+			"sourceSize": {"w":72,"h":156}
+		},
+		"sand_cstl_twr_5.png":
+		{
+			"frame": {"x":181,"y":0,"w":37,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":79},
+			"sourceSize": {"w":37,"h":79}
+		},
+		"sand_cstl_twr_3.png":
+		{
+			"frame": {"x":181,"y":79,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

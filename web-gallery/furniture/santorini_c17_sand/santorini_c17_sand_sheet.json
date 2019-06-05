@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "santorini_c17_sand_sheet.png",
+		"size": {"w":129,"h":120},
+		"scale": "1"
+	},
+	"frames": {
+		"santorini_c17_sand_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":129,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":129,"h":36},
+			"sourceSize": {"w":129,"h":36}
+		},
+		"santorini_c17_sand_2.png":
+		{
+			"frame": {"x":0,"y":36,"w":128,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":68},
+			"sourceSize": {"w":128,"h":68}
+		},
+		"santorini_c17_sand_3.png":
+		{
+			"frame": {"x":0,"y":104,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

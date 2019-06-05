@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "CF_750_goldenpig_sheet.png",
+		"size": {"w":134,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"CF_750_goldenpig_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":87,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":86},
+			"sourceSize": {"w":87,"h":86}
+		},
+		"CF_750_goldenpig_6.png":
+		{
+			"frame": {"x":87,"y":0,"w":47,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":48},
+			"sourceSize": {"w":47,"h":48}
+		},
+		"CF_750_goldenpig_9.png":
+		{
+			"frame": {"x":87,"y":48,"w":42,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":20},
+			"sourceSize": {"w":42,"h":20}
+		},
+		"CF_750_goldenpig_5.png":
+		{
+			"frame": {"x":0,"y":86,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

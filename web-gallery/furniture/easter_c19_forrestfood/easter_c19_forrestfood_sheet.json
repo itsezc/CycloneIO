@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "easter_c19_forrestfood_sheet.png",
+		"size": {"w":108,"h":106},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c19_forrestfood_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":41},
+			"sourceSize": {"w":55,"h":41}
+		},
+		"easter_c19_forrestfood_1.png":
+		{
+			"frame": {"x":0,"y":41,"w":54,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":48},
+			"sourceSize": {"w":54,"h":48}
+		},
+		"easter_c19_forrestfood_8.png":
+		{
+			"frame": {"x":55,"y":0,"w":53,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":30},
+			"sourceSize": {"w":53,"h":30}
+		},
+		"easter_c19_forrestfood_6.png":
+		{
+			"frame": {"x":55,"y":30,"w":52,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":29},
+			"sourceSize": {"w":52,"h":29}
+		},
+		"easter_c19_forrestfood_4.png":
+		{
+			"frame": {"x":55,"y":59,"w":29,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":24},
+			"sourceSize": {"w":29,"h":24}
+		},
+		"easter_c19_forrestfood_5.png":
+		{
+			"frame": {"x":0,"y":89,"w":29,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":17},
+			"sourceSize": {"w":29,"h":17}
+		}
+	}
+}

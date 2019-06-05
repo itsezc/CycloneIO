@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "CF_350_skull_sheet.png",
+		"size": {"w":111,"h":80},
+		"scale": "1"
+	},
+	"frames": {
+		"CF_350_skull_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":74,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":80},
+			"sourceSize": {"w":74,"h":80}
+		},
+		"CF_350_skull_7.png":
+		{
+			"frame": {"x":74,"y":0,"w":37,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":41},
+			"sourceSize": {"w":37,"h":41}
+		},
+		"CF_350_skull_2.png":
+		{
+			"frame": {"x":74,"y":41,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

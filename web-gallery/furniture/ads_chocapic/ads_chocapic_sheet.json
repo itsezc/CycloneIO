@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "ads_chocapic_sheet.png",
+		"size": {"w":244,"h":209},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_chocapic_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":192,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":126},
+			"sourceSize": {"w":192,"h":126}
+		},
+		"ads_chocapic_2.png":
+		{
+			"frame": {"x":192,"y":0,"w":52,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":83},
+			"sourceSize": {"w":52,"h":83}
+		},
+		"ads_chocapic_8.png":
+		{
+			"frame": {"x":0,"y":126,"w":52,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":83},
+			"sourceSize": {"w":52,"h":83}
+		},
+		"ads_chocapic_3.png":
+		{
+			"frame": {"x":52,"y":126,"w":44,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":76},
+			"sourceSize": {"w":44,"h":76}
+		},
+		"ads_chocapic_7.png":
+		{
+			"frame": {"x":96,"y":126,"w":44,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":76},
+			"sourceSize": {"w":44,"h":76}
+		},
+		"ads_chocapic_4.png":
+		{
+			"frame": {"x":192,"y":83,"w":27,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":43},
+			"sourceSize": {"w":27,"h":43}
+		},
+		"ads_chocapic_6.png":
+		{
+			"frame": {"x":140,"y":126,"w":27,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":43},
+			"sourceSize": {"w":27,"h":43}
+		},
+		"ads_chocapic_1.png":
+		{
+			"frame": {"x":219,"y":83,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"ads_chocapic_5.png":
+		{
+			"frame": {"x":167,"y":126,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"ads_chocapic_13.png":
+		{
+			"frame": {"x":190,"y":126,"w":15,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":14},
+			"sourceSize": {"w":15,"h":14}
+		}
+	}
+}

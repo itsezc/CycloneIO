@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "party_crate1_3_sheet.png",
+		"size": {"w":308,"h":230},
+		"scale": "1"
+	},
+	"frames": {
+		"party_crate1_3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":187,"h":164},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":187,"h":164},
+			"sourceSize": {"w":187,"h":164}
+		},
+		"party_crate1_3_7.png":
+		{
+			"frame": {"x":187,"y":0,"w":121,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":121,"h":110},
+			"sourceSize": {"w":121,"h":110}
+		},
+		"party_crate1_3_3.png":
+		{
+			"frame": {"x":0,"y":164,"w":66,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":66},
+			"sourceSize": {"w":66,"h":66}
+		},
+		"party_crate1_3_4.png":
+		{
+			"frame": {"x":187,"y":110,"w":61,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":54},
+			"sourceSize": {"w":61,"h":54}
+		},
+		"party_crate1_3_6.png":
+		{
+			"frame": {"x":248,"y":110,"w":56,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":54},
+			"sourceSize": {"w":56,"h":54}
+		},
+		"party_crate1_3_1.png":
+		{
+			"frame": {"x":66,"y":164,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"party_crate1_3_9.png":
+		{
+			"frame": {"x":98,"y":164,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		},
+		"party_crate1_3_13.png":
+		{
+			"frame": {"x":126,"y":164,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"party_crate1_3_5.png":
+		{
+			"frame": {"x":304,"y":110,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "tiki_c15_tele_sheet.png",
+		"size": {"w":396,"h":365},
+		"scale": "1"
+	},
+	"frames": {
+		"tiki_c15_tele_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":166,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":166,"h":248},
+			"sourceSize": {"w":166,"h":248}
+		},
+		"tiki_c15_tele_9.png":
+		{
+			"frame": {"x":166,"y":0,"w":76,"h":207},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":207},
+			"sourceSize": {"w":76,"h":207}
+		},
+		"tiki_c15_tele_6.png":
+		{
+			"frame": {"x":242,"y":0,"w":76,"h":201},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":201},
+			"sourceSize": {"w":76,"h":201}
+		},
+		"tiki_c15_tele_7.png":
+		{
+			"frame": {"x":318,"y":0,"w":78,"h":171},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":171},
+			"sourceSize": {"w":78,"h":171}
+		},
+		"tiki_c15_tele_4.png":
+		{
+			"frame": {"x":0,"y":248,"w":54,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":117},
+			"sourceSize": {"w":54,"h":117}
+		},
+		"tiki_c15_tele_13.png":
+		{
+			"frame": {"x":54,"y":248,"w":29,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":103},
+			"sourceSize": {"w":29,"h":103}
+		},
+		"tiki_c15_tele_15.png":
+		{
+			"frame": {"x":83,"y":248,"w":30,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":102},
+			"sourceSize": {"w":30,"h":102}
+		},
+		"tiki_c15_tele_16.png":
+		{
+			"frame": {"x":113,"y":248,"w":32,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":101},
+			"sourceSize": {"w":32,"h":101}
+		},
+		"tiki_c15_tele_5.png":
+		{
+			"frame": {"x":318,"y":171,"w":50,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":22},
+			"sourceSize": {"w":50,"h":22}
+		},
+		"tiki_c15_tele_10.png":
+		{
+			"frame": {"x":318,"y":193,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"tiki_c15_tele_2.png":
+		{
+			"frame": {"x":368,"y":171,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

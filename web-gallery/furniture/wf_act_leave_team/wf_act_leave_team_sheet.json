@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "wf_act_leave_team_sheet.png",
+		"size": {"w":192,"h":159},
+		"scale": "1"
+	},
+	"frames": {
+		"wf_act_leave_team_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_leave_team_11.png":
+		{
+			"frame": {"x":64,"y":0,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_leave_team_2.png":
+		{
+			"frame": {"x":0,"y":51,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_leave_team_8.png":
+		{
+			"frame": {"x":64,"y":51,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_leave_team_9.png":
+		{
+			"frame": {"x":128,"y":0,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_leave_team_3.png":
+		{
+			"frame": {"x":128,"y":51,"w":33,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":27},
+			"sourceSize": {"w":33,"h":27}
+		},
+		"wf_act_leave_team_4.png":
+		{
+			"frame": {"x":0,"y":102,"w":33,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":27},
+			"sourceSize": {"w":33,"h":27}
+		},
+		"wf_act_leave_team_5.png":
+		{
+			"frame": {"x":33,"y":102,"w":33,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":27},
+			"sourceSize": {"w":33,"h":27}
+		},
+		"wf_act_leave_team_6.png":
+		{
+			"frame": {"x":66,"y":102,"w":33,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":27},
+			"sourceSize": {"w":33,"h":27}
+		},
+		"wf_act_leave_team_14.png":
+		{
+			"frame": {"x":99,"y":102,"w":32,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":27},
+			"sourceSize": {"w":32,"h":27}
+		},
+		"wf_act_leave_team_13.png":
+		{
+			"frame": {"x":0,"y":129,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "sw_stone_sheet.png",
+		"size": {"w":154,"h":144},
+		"scale": "1"
+	},
+	"frames": {
+		"sw_stone_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":116,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":116,"h":72},
+			"sourceSize": {"w":116,"h":72}
+		},
+		"sw_stone_4.png":
+		{
+			"frame": {"x":116,"y":0,"w":38,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":72},
+			"sourceSize": {"w":38,"h":72}
+		},
+		"sw_stone_8.png":
+		{
+			"frame": {"x":0,"y":72,"w":38,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":72},
+			"sourceSize": {"w":38,"h":72}
+		},
+		"sw_stone_10.png":
+		{
+			"frame": {"x":38,"y":72,"w":20,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":37},
+			"sourceSize": {"w":20,"h":37}
+		},
+		"sw_stone_9.png":
+		{
+			"frame": {"x":58,"y":72,"w":20,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":37},
+			"sourceSize": {"w":20,"h":37}
+		},
+		"sw_stone_3.png":
+		{
+			"frame": {"x":78,"y":72,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

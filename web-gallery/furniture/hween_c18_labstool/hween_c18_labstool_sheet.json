@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hween_c18_labstool_sheet.png",
+		"size": {"w":72,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c18_labstool_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":48},
+			"sourceSize": {"w":36,"h":48}
+		},
+		"hween_c18_labstool_4.png":
+		{
+			"frame": {"x":36,"y":0,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"hween_c18_labstool_7.png":
+		{
+			"frame": {"x":36,"y":18,"w":18,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":25},
+			"sourceSize": {"w":18,"h":25}
+		}
+	}
+}

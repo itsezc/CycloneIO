@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "xmas_c16_mailshelf_sheet.png",
+		"size": {"w":223,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c16_mailshelf_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":102},
+			"sourceSize": {"w":66,"h":102}
+		},
+		"xmas_c16_mailshelf_11.png":
+		{
+			"frame": {"x":66,"y":0,"w":62,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":101},
+			"sourceSize": {"w":62,"h":101}
+		},
+		"xmas_c16_mailshelf_2.png":
+		{
+			"frame": {"x":128,"y":0,"w":95,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":47},
+			"sourceSize": {"w":95,"h":47}
+		},
+		"xmas_c16_mailshelf_7.png":
+		{
+			"frame": {"x":128,"y":47,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"xmas_c16_mailshelf_5.png":
+		{
+			"frame": {"x":154,"y":47,"w":9,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":15},
+			"sourceSize": {"w":9,"h":15}
+		},
+		"xmas_c16_mailshelf_1.png":
+		{
+			"frame": {"x":163,"y":47,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

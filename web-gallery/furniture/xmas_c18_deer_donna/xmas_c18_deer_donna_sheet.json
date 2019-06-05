@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c18_deer_donna_sheet.png",
+		"size": {"w":82,"h":70},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_deer_donna_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":70},
+			"sourceSize": {"w":44,"h":70}
+		},
+		"xmas_c18_deer_donna_4.png":
+		{
+			"frame": {"x":44,"y":0,"w":38,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":21},
+			"sourceSize": {"w":38,"h":21}
+		},
+		"xmas_c18_deer_donna_3.png":
+		{
+			"frame": {"x":44,"y":21,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

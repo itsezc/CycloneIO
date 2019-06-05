@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "test_shipside_sheet.png",
+		"size": {"w":161,"h":159},
+		"scale": "1"
+	},
+	"frames": {
+		"test_shipside_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":106},
+			"sourceSize": {"w":49,"h":106}
+		},
+		"test_shipside_11.png":
+		{
+			"frame": {"x":49,"y":0,"w":41,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":101},
+			"sourceSize": {"w":41,"h":101}
+		},
+		"test_shipside_4.png":
+		{
+			"frame": {"x":90,"y":0,"w":7,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":78},
+			"sourceSize": {"w":7,"h":78}
+		},
+		"test_shipside_15.png":
+		{
+			"frame": {"x":97,"y":0,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"test_shipside_14.png":
+		{
+			"frame": {"x":97,"y":32,"w":60,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":32},
+			"sourceSize": {"w":60,"h":32}
+		},
+		"test_shipside_12.png":
+		{
+			"frame": {"x":0,"y":106,"w":25,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":53},
+			"sourceSize": {"w":25,"h":53}
+		},
+		"test_shipside_10.png":
+		{
+			"frame": {"x":25,"y":106,"w":20,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":51},
+			"sourceSize": {"w":20,"h":51}
+		},
+		"test_shipside_6.png":
+		{
+			"frame": {"x":97,"y":64,"w":31,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":16},
+			"sourceSize": {"w":31,"h":16}
+		},
+		"test_shipside_2.png":
+		{
+			"frame": {"x":128,"y":64,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		},
+		"test_shipside_5.png":
+		{
+			"frame": {"x":97,"y":80,"w":25,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":14},
+			"sourceSize": {"w":25,"h":14}
+		},
+		"test_shipside_16.png":
+		{
+			"frame": {"x":157,"y":32,"w":3,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":4},
+			"sourceSize": {"w":3,"h":4}
+		}
+	}
+}

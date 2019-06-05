@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "xmas_r17_carriage_sheet.png",
+		"size": {"w":358,"h":241},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_r17_carriage_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":73,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":149},
+			"sourceSize": {"w":73,"h":149}
+		},
+		"xmas_r17_carriage_14.png":
+		{
+			"frame": {"x":73,"y":0,"w":144,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":144,"h":72},
+			"sourceSize": {"w":144,"h":72}
+		},
+		"xmas_r17_carriage_6.png":
+		{
+			"frame": {"x":217,"y":0,"w":141,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":141,"h":141},
+			"sourceSize": {"w":141,"h":141}
+		},
+		"xmas_r17_carriage_10.png":
+		{
+			"frame": {"x":0,"y":149,"w":75,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":92},
+			"sourceSize": {"w":75,"h":92}
+		},
+		"xmas_r17_carriage_5.png":
+		{
+			"frame": {"x":75,"y":149,"w":33,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":91},
+			"sourceSize": {"w":33,"h":91}
+		},
+		"xmas_r17_carriage_9.png":
+		{
+			"frame": {"x":108,"y":149,"w":31,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":90},
+			"sourceSize": {"w":31,"h":90}
+		},
+		"xmas_r17_carriage_1.png":
+		{
+			"frame": {"x":73,"y":72,"w":42,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":16},
+			"sourceSize": {"w":42,"h":16}
+		},
+		"xmas_r17_carriage_3.png":
+		{
+			"frame": {"x":73,"y":88,"w":32,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+			"sourceSize": {"w":32,"h":32}
+		},
+		"xmas_r17_carriage_4.png":
+		{
+			"frame": {"x":105,"y":88,"w":23,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":22},
+			"sourceSize": {"w":23,"h":22}
+		},
+		"xmas_r17_carriage_2.png":
+		{
+			"frame": {"x":217,"y":141,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

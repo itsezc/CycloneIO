@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "pastel_c19_shootingstar_sheet.png",
+		"size": {"w":108,"h":95},
+		"scale": "1"
+	},
+	"frames": {
+		"pastel_c19_shootingstar_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":57,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":52},
+			"sourceSize": {"w":57,"h":52}
+		},
+		"pastel_c19_shootingstar_6.png":
+		{
+			"frame": {"x":57,"y":0,"w":51,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":46},
+			"sourceSize": {"w":51,"h":46}
+		},
+		"pastel_c19_shootingstar_9.png":
+		{
+			"frame": {"x":0,"y":52,"w":36,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":20},
+			"sourceSize": {"w":36,"h":20}
+		},
+		"pastel_c19_shootingstar_7.png":
+		{
+			"frame": {"x":0,"y":72,"w":25,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":23},
+			"sourceSize": {"w":25,"h":23}
+		},
+		"pastel_c19_shootingstar_2.png":
+		{
+			"frame": {"x":57,"y":46,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

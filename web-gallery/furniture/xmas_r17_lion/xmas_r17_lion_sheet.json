@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "xmas_r17_lion_sheet.png",
+		"size": {"w":224,"h":180},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_r17_lion_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":106},
+			"sourceSize": {"w":66,"h":106}
+		},
+		"xmas_r17_lion_3.png":
+		{
+			"frame": {"x":66,"y":0,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"xmas_r17_lion_7.png":
+		{
+			"frame": {"x":164,"y":0,"w":60,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":74},
+			"sourceSize": {"w":60,"h":74}
+		},
+		"xmas_r17_lion_5.png":
+		{
+			"frame": {"x":0,"y":106,"w":47,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":74},
+			"sourceSize": {"w":47,"h":74}
+		},
+		"xmas_r17_lion_1.png":
+		{
+			"frame": {"x":66,"y":49,"w":47,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":49},
+			"sourceSize": {"w":47,"h":49}
+		},
+		"xmas_r17_lion_4.png":
+		{
+			"frame": {"x":164,"y":74,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		}
+	}
+}

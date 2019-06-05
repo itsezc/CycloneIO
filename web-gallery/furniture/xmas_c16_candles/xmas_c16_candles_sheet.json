@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "xmas_c16_candles_sheet.png",
+		"size": {"w":55,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c16_candles_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":14},
+			"sourceSize": {"w":34,"h":14}
+		},
+		"xmas_c16_candles_1.png":
+		{
+			"frame": {"x":0,"y":14,"w":32,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+			"sourceSize": {"w":32,"h":32}
+		},
+		"xmas_c16_candles_6.png":
+		{
+			"frame": {"x":34,"y":0,"w":7,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":31},
+			"sourceSize": {"w":7,"h":31}
+		},
+		"xmas_c16_candles_11.png":
+		{
+			"frame": {"x":41,"y":0,"w":7,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":30},
+			"sourceSize": {"w":7,"h":30}
+		},
+		"xmas_c16_candles_5.png":
+		{
+			"frame": {"x":48,"y":0,"w":7,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":22},
+			"sourceSize": {"w":7,"h":22}
+		},
+		"xmas_c16_candles_2.png":
+		{
+			"frame": {"x":48,"y":22,"w":7,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":15},
+			"sourceSize": {"w":7,"h":15}
+		},
+		"xmas_c16_candles_10.png":
+		{
+			"frame": {"x":41,"y":30,"w":6,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":10},
+			"sourceSize": {"w":6,"h":10}
+		},
+		"xmas_c16_candles_12.png":
+		{
+			"frame": {"x":48,"y":37,"w":7,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":9},
+			"sourceSize": {"w":7,"h":9}
+		},
+		"xmas_c16_candles_13.png":
+		{
+			"frame": {"x":34,"y":31,"w":7,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":8},
+			"sourceSize": {"w":7,"h":8}
+		},
+		"xmas_c16_candles_9.png":
+		{
+			"frame": {"x":0,"y":46,"w":7,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":8},
+			"sourceSize": {"w":7,"h":8}
+		},
+		"xmas_c16_candles_7.png":
+		{
+			"frame": {"x":7,"y":46,"w":8,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":4},
+			"sourceSize": {"w":8,"h":4}
+		},
+		"xmas_c16_candles_3.png":
+		{
+			"frame": {"x":47,"y":30,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

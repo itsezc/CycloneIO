@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "val_c19_bottle_sheet.png",
+		"size": {"w":81,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"val_c19_bottle_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":28,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":55},
+			"sourceSize": {"w":28,"h":55}
+		},
+		"val_c19_bottle_2.png":
+		{
+			"frame": {"x":28,"y":0,"w":18,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":39},
+			"sourceSize": {"w":18,"h":39}
+		},
+		"val_c19_bottle_5.png":
+		{
+			"frame": {"x":46,"y":0,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"val_c19_bottle_7.png":
+		{
+			"frame": {"x":61,"y":0,"w":20,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":10},
+			"sourceSize": {"w":20,"h":10}
+		}
+	}
+}

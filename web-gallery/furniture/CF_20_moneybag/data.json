@@ -1,0 +1,30 @@
+{
+  "id": 2065,
+  "classname": "CF_20_moneybag",
+  "revision": 45508,
+  "defaultdir": 0,
+  "xdim": 1,
+  "ydim": 1,
+  "partcolors": {
+    "color": [
+      0,
+      0,
+      0
+    ]
+  },
+  "name": "Sack of Coins",
+  "description": "Worth 20 Credits.",
+  "adurl": "",
+  "offerid": 1199,
+  "buyout": 1,
+  "rentofferid": -1,
+  "rentbuyout": 0,
+  "bc": 0,
+  "excludeddynamic": 1,
+  "customparams": "",
+  "specialtype": 1,
+  "canstandon": 0,
+  "cansiton": 0,
+  "canlayon": 0,
+  "furniline": "credit_furni"
+}

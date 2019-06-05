@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_camotank_sheet.png",
+		"size": {"w":101,"h":75},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_camotank_12.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":25},
+			"sourceSize": {"w":38,"h":25}
+		},
+		"clothing_camotank_2.png":
+		{
+			"frame": {"x":38,"y":0,"w":38,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":25},
+			"sourceSize": {"w":38,"h":25}
+		},
+		"clothing_camotank_4.png":
+		{
+			"frame": {"x":0,"y":25,"w":38,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":25},
+			"sourceSize": {"w":38,"h":25}
+		},
+		"clothing_camotank_5.png":
+		{
+			"frame": {"x":38,"y":25,"w":38,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":25},
+			"sourceSize": {"w":38,"h":25}
+		},
+		"clothing_camotank_7.png":
+		{
+			"frame": {"x":0,"y":50,"w":38,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":25},
+			"sourceSize": {"w":38,"h":25}
+		},
+		"clothing_camotank_1.png":
+		{
+			"frame": {"x":76,"y":0,"w":25,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
+			"sourceSize": {"w":25,"h":29}
+		},
+		"clothing_camotank_10.png":
+		{
+			"frame": {"x":76,"y":29,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

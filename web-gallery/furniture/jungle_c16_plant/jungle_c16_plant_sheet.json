@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "jungle_c16_plant_sheet.png",
+		"size": {"w":147,"h":145},
+		"scale": "1"
+	},
+	"frames": {
+		"jungle_c16_plant_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":101,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":145},
+			"sourceSize": {"w":101,"h":145}
+		},
+		"jungle_c16_plant_4.png":
+		{
+			"frame": {"x":101,"y":0,"w":46,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":24},
+			"sourceSize": {"w":46,"h":24}
+		},
+		"jungle_c16_plant_6.png":
+		{
+			"frame": {"x":101,"y":24,"w":25,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":30},
+			"sourceSize": {"w":25,"h":30}
+		}
+	}
+}

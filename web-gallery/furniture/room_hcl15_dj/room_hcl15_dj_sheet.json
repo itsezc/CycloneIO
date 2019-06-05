@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "room_hcl15_dj_sheet.png",
+		"size": {"w":245,"h":152},
+		"scale": "1"
+	},
+	"frames": {
+		"room_hcl15_dj_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":68,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":101},
+			"sourceSize": {"w":68,"h":101}
+		},
+		"room_hcl15_dj_12.png":
+		{
+			"frame": {"x":68,"y":0,"w":58,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":97},
+			"sourceSize": {"w":58,"h":97}
+		},
+		"room_hcl15_dj_7.png":
+		{
+			"frame": {"x":126,"y":0,"w":58,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":97},
+			"sourceSize": {"w":58,"h":97}
+		},
+		"room_hcl15_dj_14.png":
+		{
+			"frame": {"x":184,"y":0,"w":61,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":95},
+			"sourceSize": {"w":61,"h":95}
+		},
+		"room_hcl15_dj_10.png":
+		{
+			"frame": {"x":0,"y":101,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"room_hcl15_dj_9.png":
+		{
+			"frame": {"x":33,"y":101,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"room_hcl15_dj_11.png":
+		{
+			"frame": {"x":0,"y":122,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"room_hcl15_dj_4.png":
+		{
+			"frame": {"x":184,"y":95,"w":12,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":6},
+			"sourceSize": {"w":12,"h":6}
+		},
+		"room_hcl15_dj_5.png":
+		{
+			"frame": {"x":196,"y":95,"w":12,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":6},
+			"sourceSize": {"w":12,"h":6}
+		},
+		"room_hcl15_dj_3.png":
+		{
+			"frame": {"x":208,"y":95,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

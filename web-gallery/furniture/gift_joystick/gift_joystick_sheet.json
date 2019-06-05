@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "gift_joystick_sheet.png",
+		"size": {"w":108,"h":92},
+		"scale": "1"
+	},
+	"frames": {
+		"gift_joystick_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":72,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":62},
+			"sourceSize": {"w":72,"h":62}
+		},
+		"gift_joystick_5.png":
+		{
+			"frame": {"x":72,"y":0,"w":36,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":32},
+			"sourceSize": {"w":36,"h":32}
+		},
+		"gift_joystick_4.png":
+		{
+			"frame": {"x":72,"y":32,"w":36,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":27},
+			"sourceSize": {"w":36,"h":27}
+		},
+		"gift_joystick_10.png":
+		{
+			"frame": {"x":0,"y":62,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"gift_joystick_9.png":
+		{
+			"frame": {"x":30,"y":62,"w":20,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":17},
+			"sourceSize": {"w":20,"h":17}
+		},
+		"gift_joystick_8.png":
+		{
+			"frame": {"x":50,"y":62,"w":20,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":14},
+			"sourceSize": {"w":20,"h":14}
+		}
+	}
+}

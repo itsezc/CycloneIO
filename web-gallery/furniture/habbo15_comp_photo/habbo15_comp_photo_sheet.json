@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "habbo15_comp_photo_sheet.png",
+		"size": {"w":80,"h":52},
+		"scale": "1"
+	},
+	"frames": {
+		"habbo15_comp_photo_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"habbo15_comp_photo_4.png":
+		{
+			"frame": {"x":36,"y":0,"w":24,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":42},
+			"sourceSize": {"w":24,"h":42}
+		},
+		"habbo15_comp_photo_7.png":
+		{
+			"frame": {"x":60,"y":0,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		}
+	}
+}

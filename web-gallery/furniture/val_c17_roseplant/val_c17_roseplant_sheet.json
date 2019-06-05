@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "val_c17_roseplant_sheet.png",
+		"size": {"w":80,"h":78},
+		"scale": "1"
+	},
+	"frames": {
+		"val_c17_roseplant_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":78},
+			"sourceSize": {"w":32,"h":78}
+		},
+		"val_c17_roseplant_6.png":
+		{
+			"frame": {"x":32,"y":0,"w":33,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":54},
+			"sourceSize": {"w":33,"h":54}
+		},
+		"val_c17_roseplant_1.png":
+		{
+			"frame": {"x":65,"y":0,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"val_c17_roseplant_10.png":
+		{
+			"frame": {"x":32,"y":54,"w":22,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":10},
+			"sourceSize": {"w":22,"h":10}
+		},
+		"val_c17_roseplant_7.png":
+		{
+			"frame": {"x":65,"y":30,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

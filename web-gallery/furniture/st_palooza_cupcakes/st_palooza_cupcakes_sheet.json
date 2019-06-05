@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "st_palooza_cupcakes_sheet.png",
+		"size": {"w":94,"h":59},
+		"scale": "1"
+	},
+	"frames": {
+		"st_palooza_cupcakes_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":38},
+			"sourceSize": {"w":47,"h":38}
+		},
+		"st_palooza_cupcakes_9.png":
+		{
+			"frame": {"x":47,"y":0,"w":47,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":24},
+			"sourceSize": {"w":47,"h":24}
+		},
+		"st_palooza_cupcakes_5.png":
+		{
+			"frame": {"x":0,"y":38,"w":25,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":21},
+			"sourceSize": {"w":25,"h":21}
+		},
+		"st_palooza_cupcakes_2.png":
+		{
+			"frame": {"x":25,"y":38,"w":23,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+			"sourceSize": {"w":23,"h":21}
+		},
+		"st_palooza_cupcakes_3.png":
+		{
+			"frame": {"x":47,"y":24,"w":23,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":13},
+			"sourceSize": {"w":23,"h":13}
+		}
+	}
+}

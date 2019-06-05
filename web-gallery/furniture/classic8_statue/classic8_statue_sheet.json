@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "classic8_statue_sheet.png",
+		"size": {"w":125,"h":91},
+		"scale": "1"
+	},
+	"frames": {
+		"classic8_statue_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":50},
+			"sourceSize": {"w":42,"h":50}
+		},
+		"classic8_statue_4.png":
+		{
+			"frame": {"x":42,"y":0,"w":41,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":50},
+			"sourceSize": {"w":41,"h":50}
+		},
+		"classic8_statue_10.png":
+		{
+			"frame": {"x":83,"y":0,"w":42,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":40},
+			"sourceSize": {"w":42,"h":40}
+		},
+		"classic8_statue_5.png":
+		{
+			"frame": {"x":0,"y":50,"w":41,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":41},
+			"sourceSize": {"w":41,"h":41}
+		},
+		"classic8_statue_7.png":
+		{
+			"frame": {"x":41,"y":50,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"classic8_statue_6.png":
+		{
+			"frame": {"x":41,"y":67,"w":26,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":24},
+			"sourceSize": {"w":26,"h":24}
+		}
+	}
+}

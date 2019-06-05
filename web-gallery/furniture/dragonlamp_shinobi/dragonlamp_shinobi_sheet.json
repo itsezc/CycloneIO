@@ -1,0 +1,201 @@
+{
+	"meta": {
+		"image": "dragonlamp_shinobi_sheet.png",
+		"size": {"w":251,"h":238},
+		"scale": "1"
+	},
+	"frames": {
+		"dragonlamp_shinobi_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":60,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":85},
+			"sourceSize": {"w":60,"h":85}
+		},
+		"dragonlamp_shinobi_5.png":
+		{
+			"frame": {"x":60,"y":0,"w":60,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":76},
+			"sourceSize": {"w":60,"h":76}
+		},
+		"dragonlamp_shinobi_11.png":
+		{
+			"frame": {"x":120,"y":0,"w":46,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":64},
+			"sourceSize": {"w":46,"h":64}
+		},
+		"dragonlamp_shinobi_16.png":
+		{
+			"frame": {"x":0,"y":85,"w":46,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":64},
+			"sourceSize": {"w":46,"h":64}
+		},
+		"dragonlamp_shinobi_12.png":
+		{
+			"frame": {"x":46,"y":85,"w":48,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":63},
+			"sourceSize": {"w":48,"h":63}
+		},
+		"dragonlamp_shinobi_8.png":
+		{
+			"frame": {"x":94,"y":85,"w":48,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":63},
+			"sourceSize": {"w":48,"h":63}
+		},
+		"dragonlamp_shinobi_1.png":
+		{
+			"frame": {"x":166,"y":0,"w":62,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":20},
+			"sourceSize": {"w":62,"h":20}
+		},
+		"dragonlamp_shinobi_13.png":
+		{
+			"frame": {"x":166,"y":20,"w":47,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":61},
+			"sourceSize": {"w":47,"h":61}
+		},
+		"dragonlamp_shinobi_9.png":
+		{
+			"frame": {"x":166,"y":81,"w":47,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":61},
+			"sourceSize": {"w":47,"h":61}
+		},
+		"dragonlamp_shinobi_10.png":
+		{
+			"frame": {"x":0,"y":149,"w":46,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":59},
+			"sourceSize": {"w":46,"h":59}
+		},
+		"dragonlamp_shinobi_15.png":
+		{
+			"frame": {"x":46,"y":149,"w":46,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":59},
+			"sourceSize": {"w":46,"h":59}
+		},
+		"dragonlamp_shinobi_25.png":
+		{
+			"frame": {"x":92,"y":149,"w":30,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":41},
+			"sourceSize": {"w":30,"h":41}
+		},
+		"dragonlamp_shinobi_29.png":
+		{
+			"frame": {"x":122,"y":149,"w":30,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":38},
+			"sourceSize": {"w":30,"h":38}
+		},
+		"dragonlamp_shinobi_20.png":
+		{
+			"frame": {"x":142,"y":85,"w":23,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":32},
+			"sourceSize": {"w":23,"h":32}
+		},
+		"dragonlamp_shinobi_7.png":
+		{
+			"frame": {"x":152,"y":149,"w":23,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":32},
+			"sourceSize": {"w":23,"h":32}
+		},
+		"dragonlamp_shinobi_14.png":
+		{
+			"frame": {"x":142,"y":117,"w":24,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":31},
+			"sourceSize": {"w":24,"h":31}
+		},
+		"dragonlamp_shinobi_19.png":
+		{
+			"frame": {"x":175,"y":149,"w":24,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":31},
+			"sourceSize": {"w":24,"h":31}
+		},
+		"dragonlamp_shinobi_18.png":
+		{
+			"frame": {"x":199,"y":149,"w":23,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":31},
+			"sourceSize": {"w":23,"h":31}
+		},
+		"dragonlamp_shinobi_4.png":
+		{
+			"frame": {"x":228,"y":0,"w":23,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":31},
+			"sourceSize": {"w":23,"h":31}
+		},
+		"dragonlamp_shinobi_24.png":
+		{
+			"frame": {"x":120,"y":64,"w":31,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":10},
+			"sourceSize": {"w":31,"h":10}
+		},
+		"dragonlamp_shinobi_27.png":
+		{
+			"frame": {"x":0,"y":208,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		},
+		"dragonlamp_shinobi_17.png":
+		{
+			"frame": {"x":228,"y":31,"w":23,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":29},
+			"sourceSize": {"w":23,"h":29}
+		},
+		"dragonlamp_shinobi_2.png":
+		{
+			"frame": {"x":228,"y":60,"w":23,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":29},
+			"sourceSize": {"w":23,"h":29}
+		},
+		"dragonlamp_shinobi_6.png":
+		{
+			"frame": {"x":228,"y":89,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

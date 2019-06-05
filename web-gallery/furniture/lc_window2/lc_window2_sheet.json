@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "lc_window2_sheet.png",
+		"size": {"w":563,"h":483},
+		"scale": "1"
+	},
+	"frames": {
+		"lc_window2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":396,"h":328},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":396,"h":328},
+			"sourceSize": {"w":396,"h":328}
+		},
+		"lc_window2_7.png":
+		{
+			"frame": {"x":396,"y":0,"w":167,"h":176},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":167,"h":176},
+			"sourceSize": {"w":167,"h":176}
+		},
+		"lc_window2_11.png":
+		{
+			"frame": {"x":0,"y":328,"w":161,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":161,"h":155},
+			"sourceSize": {"w":161,"h":155}
+		},
+		"lc_window2_12.png":
+		{
+			"frame": {"x":396,"y":176,"w":138,"h":152},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":138,"h":152},
+			"sourceSize": {"w":138,"h":152}
+		},
+		"lc_window2_2.png":
+		{
+			"frame": {"x":161,"y":328,"w":83,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":88},
+			"sourceSize": {"w":83,"h":88}
+		},
+		"lc_window2_4.png":
+		{
+			"frame": {"x":244,"y":328,"w":81,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":78},
+			"sourceSize": {"w":81,"h":78}
+		},
+		"lc_window2_9.png":
+		{
+			"frame": {"x":325,"y":328,"w":68,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":74},
+			"sourceSize": {"w":68,"h":74}
+		},
+		"lc_window2_6.png":
+		{
+			"frame": {"x":534,"y":176,"w":28,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":15},
+			"sourceSize": {"w":28,"h":15}
+		},
+		"lc_window2_10.png":
+		{
+			"frame": {"x":534,"y":191,"w":23,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":16},
+			"sourceSize": {"w":23,"h":16}
+		},
+		"lc_window2_5.png":
+		{
+			"frame": {"x":534,"y":207,"w":12,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":20},
+			"sourceSize": {"w":12,"h":20}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "easter_c18_patternfloor_sheet.png",
+		"size": {"w":132,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c18_patternfloor_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":132,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":34},
+			"sourceSize": {"w":132,"h":34}
+		},
+		"easter_c18_patternfloor_1.png":
+		{
+			"frame": {"x":0,"y":34,"w":130,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":66},
+			"sourceSize": {"w":130,"h":66}
+		},
+		"easter_c18_patternfloor_4.png":
+		{
+			"frame": {"x":0,"y":100,"w":29,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":17},
+			"sourceSize": {"w":29,"h":17}
+		}
+	}
+}

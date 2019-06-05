@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "diamond_c18_giftbox2_sheet.png",
+		"size": {"w":119,"h":69},
+		"scale": "1"
+	},
+	"frames": {
+		"diamond_c18_giftbox2_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":69},
+			"sourceSize": {"w":62,"h":69}
+		},
+		"diamond_c18_giftbox2_8.png":
+		{
+			"frame": {"x":62,"y":0,"w":57,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":29},
+			"sourceSize": {"w":57,"h":29}
+		},
+		"diamond_c18_giftbox2_4.png":
+		{
+			"frame": {"x":62,"y":29,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

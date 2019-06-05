@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "pastel_c19_lamp_sheet.png",
+		"size": {"w":131,"h":92},
+		"scale": "1"
+	},
+	"frames": {
+		"pastel_c19_lamp_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":69,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":68},
+			"sourceSize": {"w":69,"h":68}
+		},
+		"pastel_c19_lamp_10.png":
+		{
+			"frame": {"x":69,"y":0,"w":41,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":51},
+			"sourceSize": {"w":41,"h":51}
+		},
+		"pastel_c19_lamp_4.png":
+		{
+			"frame": {"x":0,"y":68,"w":40,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":24},
+			"sourceSize": {"w":40,"h":24}
+		},
+		"pastel_c19_lamp_9.png":
+		{
+			"frame": {"x":69,"y":51,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"pastel_c19_lamp_2.png":
+		{
+			"frame": {"x":110,"y":0,"w":21,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":26},
+			"sourceSize": {"w":21,"h":26}
+		},
+		"pastel_c19_lamp_5.png":
+		{
+			"frame": {"x":110,"y":26,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

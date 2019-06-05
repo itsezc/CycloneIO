@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "fest_c19_falafelstall_sheet.png",
+		"size": {"w":423,"h":265},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_falafelstall_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":73,"h":209},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":209},
+			"sourceSize": {"w":73,"h":209}
+		},
+		"fest_c19_falafelstall_6.png":
+		{
+			"frame": {"x":73,"y":0,"w":79,"h":200},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":200},
+			"sourceSize": {"w":79,"h":200}
+		},
+		"fest_c19_falafelstall_12.png":
+		{
+			"frame": {"x":152,"y":0,"w":136,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":136,"h":144},
+			"sourceSize": {"w":136,"h":144}
+		},
+		"fest_c19_falafelstall_3.png":
+		{
+			"frame": {"x":288,"y":0,"w":135,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":135,"h":124},
+			"sourceSize": {"w":135,"h":124}
+		},
+		"fest_c19_falafelstall_13.png":
+		{
+			"frame": {"x":288,"y":124,"w":126,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":64},
+			"sourceSize": {"w":126,"h":64}
+		},
+		"fest_c19_falafelstall_10.png":
+		{
+			"frame": {"x":152,"y":144,"w":124,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":124,"h":64},
+			"sourceSize": {"w":124,"h":64}
+		},
+		"fest_c19_falafelstall_9.png":
+		{
+			"frame": {"x":0,"y":209,"w":49,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":56},
+			"sourceSize": {"w":49,"h":56}
+		},
+		"fest_c19_falafelstall_5.png":
+		{
+			"frame": {"x":49,"y":209,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"fest_c19_falafelstall_2.png":
+		{
+			"frame": {"x":98,"y":209,"w":25,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":30},
+			"sourceSize": {"w":25,"h":30}
+		}
+	}
+}

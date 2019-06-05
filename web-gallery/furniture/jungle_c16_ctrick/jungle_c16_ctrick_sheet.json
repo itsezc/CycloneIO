@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "jungle_c16_ctrick_sheet.png",
+		"size": {"w":77,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"jungle_c16_ctrick_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":54},
+			"sourceSize": {"w":55,"h":54}
+		},
+		"jungle_c16_ctrick_3.png":
+		{
+			"frame": {"x":55,"y":0,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		}
+	}
+}

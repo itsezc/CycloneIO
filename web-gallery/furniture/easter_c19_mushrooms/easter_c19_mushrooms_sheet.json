@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "easter_c19_mushrooms_sheet.png",
+		"size": {"w":99,"h":81},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c19_mushrooms_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":34},
+			"sourceSize": {"w":53,"h":34}
+		},
+		"easter_c19_mushrooms_8.png":
+		{
+			"frame": {"x":53,"y":0,"w":46,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":31},
+			"sourceSize": {"w":46,"h":31}
+		},
+		"easter_c19_mushrooms_7.png":
+		{
+			"frame": {"x":0,"y":34,"w":41,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":23},
+			"sourceSize": {"w":41,"h":23}
+		},
+		"easter_c19_mushrooms_12.png":
+		{
+			"frame": {"x":41,"y":34,"w":38,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":23},
+			"sourceSize": {"w":38,"h":23}
+		},
+		"easter_c19_mushrooms_3.png":
+		{
+			"frame": {"x":0,"y":57,"w":35,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":24},
+			"sourceSize": {"w":35,"h":24}
+		},
+		"easter_c19_mushrooms_14.png":
+		{
+			"frame": {"x":35,"y":57,"w":29,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":24},
+			"sourceSize": {"w":29,"h":24}
+		},
+		"easter_c19_mushrooms_1.png":
+		{
+			"frame": {"x":64,"y":57,"w":20,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":24},
+			"sourceSize": {"w":20,"h":24}
+		},
+		"easter_c19_mushrooms_5.png":
+		{
+			"frame": {"x":79,"y":34,"w":16,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":21},
+			"sourceSize": {"w":16,"h":21}
+		},
+		"easter_c19_mushrooms_4.png":
+		{
+			"frame": {"x":84,"y":57,"w":14,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":17},
+			"sourceSize": {"w":14,"h":17}
+		}
+	}
+}

@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "xmas_light_sheet.png",
+		"size": {"w":158,"h":149},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_light_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":117,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":117,"h":98},
+			"sourceSize": {"w":117,"h":98}
+		},
+		"xmas_light_12.png":
+		{
+			"frame": {"x":117,"y":0,"w":41,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":39},
+			"sourceSize": {"w":41,"h":39}
+		},
+		"xmas_light_14.png":
+		{
+			"frame": {"x":117,"y":39,"w":41,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":39},
+			"sourceSize": {"w":41,"h":39}
+		},
+		"xmas_light_1.png":
+		{
+			"frame": {"x":0,"y":98,"w":35,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":34},
+			"sourceSize": {"w":35,"h":34}
+		},
+		"xmas_light_3.png":
+		{
+			"frame": {"x":35,"y":98,"w":35,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":34},
+			"sourceSize": {"w":35,"h":34}
+		},
+		"xmas_light_4.png":
+		{
+			"frame": {"x":70,"y":98,"w":35,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":34},
+			"sourceSize": {"w":35,"h":34}
+		},
+		"xmas_light_10.png":
+		{
+			"frame": {"x":105,"y":98,"w":25,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":25},
+			"sourceSize": {"w":25,"h":25}
+		},
+		"xmas_light_15.png":
+		{
+			"frame": {"x":130,"y":98,"w":25,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":25},
+			"sourceSize": {"w":25,"h":25}
+		},
+		"xmas_light_2.png":
+		{
+			"frame": {"x":117,"y":78,"w":19,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":17},
+			"sourceSize": {"w":19,"h":17}
+		},
+		"xmas_light_6.png":
+		{
+			"frame": {"x":136,"y":78,"w":19,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":17},
+			"sourceSize": {"w":19,"h":17}
+		},
+		"xmas_light_7.png":
+		{
+			"frame": {"x":0,"y":132,"w":19,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":17},
+			"sourceSize": {"w":19,"h":17}
+		},
+		"xmas_light_16.png":
+		{
+			"frame": {"x":155,"y":78,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

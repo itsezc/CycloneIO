@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "room_cof15_sofa1_sheet.png",
+		"size": {"w":134,"h":129},
+		"scale": "1"
+	},
+	"frames": {
+		"room_cof15_sofa1_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":64},
+			"sourceSize": {"w":70,"h":64}
+		},
+		"room_cof15_sofa1_1.png":
+		{
+			"frame": {"x":0,"y":64,"w":66,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":65},
+			"sourceSize": {"w":66,"h":65}
+		},
+		"room_cof15_sofa1_3.png":
+		{
+			"frame": {"x":70,"y":0,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"room_cof15_sofa1_9.png":
+		{
+			"frame": {"x":70,"y":32,"w":40,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":49},
+			"sourceSize": {"w":40,"h":49}
+		},
+		"room_cof15_sofa1_5.png":
+		{
+			"frame": {"x":70,"y":81,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"room_cof15_sofa1_6.png":
+		{
+			"frame": {"x":110,"y":32,"w":23,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":25},
+			"sourceSize": {"w":23,"h":25}
+		}
+	}
+}

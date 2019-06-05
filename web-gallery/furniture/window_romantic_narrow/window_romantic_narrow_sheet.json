@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "window_romantic_narrow_sheet.png",
+		"size": {"w":290,"h":233},
+		"scale": "1"
+	},
+	"frames": {
+		"window_romantic_narrow_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":180,"h":174},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":180,"h":174},
+			"sourceSize": {"w":180,"h":174}
+		},
+		"window_romantic_narrow_14.png":
+		{
+			"frame": {"x":180,"y":0,"w":64,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":120},
+			"sourceSize": {"w":64,"h":120}
+		},
+		"window_romantic_narrow_5.png":
+		{
+			"frame": {"x":244,"y":0,"w":46,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":91},
+			"sourceSize": {"w":46,"h":91}
+		},
+		"window_romantic_narrow_11.png":
+		{
+			"frame": {"x":244,"y":91,"w":37,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":82},
+			"sourceSize": {"w":37,"h":82}
+		},
+		"window_romantic_narrow_8.png":
+		{
+			"frame": {"x":0,"y":174,"w":33,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":59},
+			"sourceSize": {"w":33,"h":59}
+		},
+		"window_romantic_narrow_6.png":
+		{
+			"frame": {"x":180,"y":120,"w":46,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":54},
+			"sourceSize": {"w":46,"h":54}
+		},
+		"window_romantic_narrow_9.png":
+		{
+			"frame": {"x":33,"y":174,"w":22,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":43},
+			"sourceSize": {"w":22,"h":43}
+		},
+		"window_romantic_narrow_12.png":
+		{
+			"frame": {"x":55,"y":174,"w":20,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":41},
+			"sourceSize": {"w":20,"h":41}
+		},
+		"window_romantic_narrow_10.png":
+		{
+			"frame": {"x":75,"y":174,"w":22,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":26},
+			"sourceSize": {"w":22,"h":26}
+		},
+		"window_romantic_narrow_7.png":
+		{
+			"frame": {"x":226,"y":120,"w":15,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":21},
+			"sourceSize": {"w":15,"h":21}
+		}
+	}
+}

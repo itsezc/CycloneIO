@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "drago_c15_flag_sheet.png",
+		"size": {"w":874,"h":774},
+		"scale": "1"
+	},
+	"frames": {
+		"drago_c15_flag_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":548,"h":509},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":548,"h":509},
+			"sourceSize": {"w":548,"h":509}
+		},
+		"drago_c15_flag_1.png":
+		{
+			"frame": {"x":548,"y":0,"w":149,"h":282},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":149,"h":282},
+			"sourceSize": {"w":149,"h":282}
+		},
+		"drago_c15_flag_12.png":
+		{
+			"frame": {"x":697,"y":0,"w":177,"h":265},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":177,"h":265},
+			"sourceSize": {"w":177,"h":265}
+		},
+		"drago_c15_flag_13.png":
+		{
+			"frame": {"x":0,"y":509,"w":145,"h":265},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":265},
+			"sourceSize": {"w":145,"h":265}
+		},
+		"drago_c15_flag_7.png":
+		{
+			"frame": {"x":697,"y":265,"w":77,"h":231},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":231},
+			"sourceSize": {"w":77,"h":231}
+		},
+		"drago_c15_flag_8.png":
+		{
+			"frame": {"x":774,"y":265,"w":77,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":227},
+			"sourceSize": {"w":77,"h":227}
+		},
+		"drago_c15_flag_11.png":
+		{
+			"frame": {"x":548,"y":282,"w":97,"h":225},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":225},
+			"sourceSize": {"w":97,"h":225}
+		},
+		"drago_c15_flag_3.png":
+		{
+			"frame": {"x":145,"y":509,"w":96,"h":197},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":197},
+			"sourceSize": {"w":96,"h":197}
+		},
+		"drago_c15_flag_4.png":
+		{
+			"frame": {"x":241,"y":509,"w":100,"h":172},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":172},
+			"sourceSize": {"w":100,"h":172}
+		},
+		"drago_c15_flag_9.png":
+		{
+			"frame": {"x":851,"y":265,"w":14,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":30},
+			"sourceSize": {"w":14,"h":30}
+		},
+		"drago_c15_flag_2.png":
+		{
+			"frame": {"x":865,"y":265,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

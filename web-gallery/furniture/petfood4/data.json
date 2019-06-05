@@ -1,0 +1,29 @@
+{
+  "id": 2131,
+  "classname": "petfood4",
+  "revision": 48002,
+  "defaultdir": 2,
+  "xdim": 1,
+  "ydim": 1,
+  "partcolors": {
+    "color": [
+      0,
+      0
+    ]
+  },
+  "name": "T-Bones",
+  "description": "Meat and bone! (550 nutrition)",
+  "adurl": "",
+  "offerid": 1269,
+  "buyout": 1,
+  "rentofferid": -1,
+  "rentbuyout": 0,
+  "bc": 0,
+  "excludeddynamic": 0,
+  "customparams": "550,10,0",
+  "specialtype": 1,
+  "canstandon": 1,
+  "cansiton": 0,
+  "canlayon": 0,
+  "furniline": "pet_food"
+}

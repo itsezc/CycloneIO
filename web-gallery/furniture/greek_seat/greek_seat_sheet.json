@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "greek_seat_sheet.png",
+		"size": {"w":122,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_seat_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":53},
+			"sourceSize": {"w":61,"h":53}
+		},
+		"greek_seat_1.png":
+		{
+			"frame": {"x":61,"y":0,"w":61,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":35},
+			"sourceSize": {"w":61,"h":35}
+		},
+		"greek_seat_4.png":
+		{
+			"frame": {"x":61,"y":35,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		},
+		"greek_seat_5.png":
+		{
+			"frame": {"x":91,"y":35,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		}
+	}
+}

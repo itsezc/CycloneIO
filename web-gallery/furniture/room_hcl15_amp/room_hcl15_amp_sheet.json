@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "room_hcl15_amp_sheet.png",
+		"size": {"w":87,"h":99},
+		"scale": "1"
+	},
+	"frames": {
+		"room_hcl15_amp_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":67,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":99},
+			"sourceSize": {"w":67,"h":99}
+		},
+		"room_hcl15_amp_5.png":
+		{
+			"frame": {"x":67,"y":0,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"room_hcl15_amp_4.png":
+		{
+			"frame": {"x":67,"y":30,"w":9,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":16},
+			"sourceSize": {"w":9,"h":16}
+		},
+		"room_hcl15_amp_6.png":
+		{
+			"frame": {"x":76,"y":30,"w":9,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":16},
+			"sourceSize": {"w":9,"h":16}
+		}
+	}
+}

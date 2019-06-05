@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "pastel_c19_cupboard_sheet.png",
+		"size": {"w":124,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"pastel_c19_cupboard_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":116},
+			"sourceSize": {"w":62,"h":116}
+		},
+		"pastel_c19_cupboard_7.png":
+		{
+			"frame": {"x":62,"y":0,"w":62,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":31},
+			"sourceSize": {"w":62,"h":31}
+		},
+		"pastel_c19_cupboard_2.png":
+		{
+			"frame": {"x":62,"y":31,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

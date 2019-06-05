@@ -1,0 +1,185 @@
+{
+	"meta": {
+		"image": "sound_machine_sheet.png",
+		"size": {"w":256,"h":242},
+		"scale": "1"
+	},
+	"frames": {
+		"sound_machine_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":169,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":169,"h":142},
+			"sourceSize": {"w":169,"h":142}
+		},
+		"sound_machine_8.png":
+		{
+			"frame": {"x":169,"y":0,"w":47,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":89},
+			"sourceSize": {"w":47,"h":89}
+		},
+		"sound_machine_9.png":
+		{
+			"frame": {"x":216,"y":0,"w":40,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":80},
+			"sourceSize": {"w":40,"h":80}
+		},
+		"sound_machine_22.png":
+		{
+			"frame": {"x":0,"y":142,"w":55,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":55},
+			"sourceSize": {"w":55,"h":55}
+		},
+		"sound_machine_1.png":
+		{
+			"frame": {"x":216,"y":80,"w":15,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":53},
+			"sourceSize": {"w":15,"h":53}
+		},
+		"sound_machine_15.png":
+		{
+			"frame": {"x":231,"y":80,"w":15,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":53},
+			"sourceSize": {"w":15,"h":53}
+		},
+		"sound_machine_16.png":
+		{
+			"frame": {"x":169,"y":89,"w":15,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":53},
+			"sourceSize": {"w":15,"h":53}
+		},
+		"sound_machine_3.png":
+		{
+			"frame": {"x":184,"y":89,"w":15,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":53},
+			"sourceSize": {"w":15,"h":53}
+		},
+		"sound_machine_4.png":
+		{
+			"frame": {"x":199,"y":89,"w":15,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":53},
+			"sourceSize": {"w":15,"h":53}
+		},
+		"sound_machine_25.png":
+		{
+			"frame": {"x":55,"y":142,"w":50,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":15},
+			"sourceSize": {"w":50,"h":15}
+		},
+		"sound_machine_11.png":
+		{
+			"frame": {"x":0,"y":197,"w":23,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":45},
+			"sourceSize": {"w":23,"h":45}
+		},
+		"sound_machine_26.png":
+		{
+			"frame": {"x":23,"y":197,"w":20,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":41},
+			"sourceSize": {"w":20,"h":41}
+		},
+		"sound_machine_24.png":
+		{
+			"frame": {"x":55,"y":157,"w":18,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":29},
+			"sourceSize": {"w":18,"h":29}
+		},
+		"sound_machine_20.png":
+		{
+			"frame": {"x":73,"y":157,"w":27,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":27},
+			"sourceSize": {"w":27,"h":27}
+		},
+		"sound_machine_18.png":
+		{
+			"frame": {"x":100,"y":157,"w":14,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":26},
+			"sourceSize": {"w":14,"h":26}
+		},
+		"sound_machine_23.png":
+		{
+			"frame": {"x":216,"y":133,"w":25,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":7},
+			"sourceSize": {"w":25,"h":7}
+		},
+		"sound_machine_10.png":
+		{
+			"frame": {"x":246,"y":80,"w":8,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":24},
+			"sourceSize": {"w":8,"h":24}
+		},
+		"sound_machine_12.png":
+		{
+			"frame": {"x":246,"y":104,"w":8,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":24},
+			"sourceSize": {"w":8,"h":24}
+		},
+		"sound_machine_13.png":
+		{
+			"frame": {"x":114,"y":157,"w":8,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":24},
+			"sourceSize": {"w":8,"h":24}
+		},
+		"sound_machine_14.png":
+		{
+			"frame": {"x":122,"y":157,"w":8,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":24},
+			"sourceSize": {"w":8,"h":24}
+		},
+		"sound_machine_7.png":
+		{
+			"frame": {"x":130,"y":157,"w":8,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":24},
+			"sourceSize": {"w":8,"h":24}
+		},
+		"sound_machine_17.png":
+		{
+			"frame": {"x":254,"y":80,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

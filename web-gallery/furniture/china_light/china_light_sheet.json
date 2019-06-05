@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "china_light_sheet.png",
+		"size": {"w":178,"h":140},
+		"scale": "1"
+	},
+	"frames": {
+		"china_light_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":118,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":96},
+			"sourceSize": {"w":118,"h":96}
+		},
+		"china_light_5.png":
+		{
+			"frame": {"x":118,"y":0,"w":60,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":52},
+			"sourceSize": {"w":60,"h":52}
+		},
+		"china_light_4.png":
+		{
+			"frame": {"x":118,"y":52,"w":45,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":37},
+			"sourceSize": {"w":45,"h":37}
+		},
+		"china_light_11.png":
+		{
+			"frame": {"x":0,"y":96,"w":29,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":44},
+			"sourceSize": {"w":29,"h":44}
+		},
+		"china_light_10.png":
+		{
+			"frame": {"x":29,"y":96,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"china_light_1.png":
+		{
+			"frame": {"x":52,"y":96,"w":23,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":37},
+			"sourceSize": {"w":23,"h":37}
+		},
+		"china_light_8.png":
+		{
+			"frame": {"x":163,"y":52,"w":13,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":28},
+			"sourceSize": {"w":13,"h":28}
+		},
+		"china_light_9.png":
+		{
+			"frame": {"x":75,"y":96,"w":16,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
+			"sourceSize": {"w":16,"h":24}
+		},
+		"china_light_15.png":
+		{
+			"frame": {"x":91,"y":96,"w":13,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":19},
+			"sourceSize": {"w":13,"h":19}
+		},
+		"china_light_16.png":
+		{
+			"frame": {"x":104,"y":96,"w":13,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":19},
+			"sourceSize": {"w":13,"h":19}
+		},
+		"china_light_2.png":
+		{
+			"frame": {"x":176,"y":52,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"china_light_7.png":
+		{
+			"frame": {"x":177,"y":52,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

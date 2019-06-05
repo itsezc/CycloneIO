@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "xmas15_sleigh_sheet.png",
+		"size": {"w":233,"h":165},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas15_sleigh_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"xmas15_sleigh_11.png":
+		{
+			"frame": {"x":0,"y":49,"w":85,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":53},
+			"sourceSize": {"w":85,"h":53}
+		},
+		"xmas15_sleigh_12.png":
+		{
+			"frame": {"x":98,"y":0,"w":81,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":35},
+			"sourceSize": {"w":81,"h":35}
+		},
+		"xmas15_sleigh_10.png":
+		{
+			"frame": {"x":98,"y":35,"w":76,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":66},
+			"sourceSize": {"w":76,"h":66}
+		},
+		"xmas15_sleigh_6.png":
+		{
+			"frame": {"x":0,"y":102,"w":73,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":63},
+			"sourceSize": {"w":73,"h":63}
+		},
+		"xmas15_sleigh_3.png":
+		{
+			"frame": {"x":179,"y":0,"w":54,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":71},
+			"sourceSize": {"w":54,"h":71}
+		},
+		"xmas15_sleigh_2.png":
+		{
+			"frame": {"x":179,"y":71,"w":39,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":65},
+			"sourceSize": {"w":39,"h":65}
+		},
+		"xmas15_sleigh_4.png":
+		{
+			"frame": {"x":179,"y":136,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		}
+	}
+}

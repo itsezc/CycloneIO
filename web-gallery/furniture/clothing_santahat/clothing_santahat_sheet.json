@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_santahat_sheet.png",
+		"size": {"w":62,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_santahat_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":35,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":45},
+			"sourceSize": {"w":35,"h":45}
+		},
+		"clothing_santahat_5.png":
+		{
+			"frame": {"x":35,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		},
+		"clothing_santahat_6.png":
+		{
+			"frame": {"x":35,"y":30,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "hc2_carpet_sheet.png",
+		"size": {"w":470,"h":181},
+		"scale": "1"
+	},
+	"frames": {
+		"hc2_carpet_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":235,"h":181},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":235,"h":181},
+			"sourceSize": {"w":235,"h":181}
+		},
+		"hc2_carpet_6.png":
+		{
+			"frame": {"x":235,"y":0,"w":235,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":235,"h":120},
+			"sourceSize": {"w":235,"h":120}
+		},
+		"hc2_carpet_8.png":
+		{
+			"frame": {"x":235,"y":120,"w":119,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":119,"h":61},
+			"sourceSize": {"w":119,"h":61}
+		},
+		"hc2_carpet_2.png":
+		{
+			"frame": {"x":354,"y":120,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		}
+	}
+}

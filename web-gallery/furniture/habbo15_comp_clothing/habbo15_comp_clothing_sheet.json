@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "habbo15_comp_clothing_sheet.png",
+		"size": {"w":168,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"habbo15_comp_clothing_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":43,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+			"sourceSize": {"w":43,"h":71}
+		},
+		"habbo15_comp_clothing_4.png":
+		{
+			"frame": {"x":43,"y":0,"w":43,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":71},
+			"sourceSize": {"w":43,"h":71}
+		},
+		"habbo15_comp_clothing_10.png":
+		{
+			"frame": {"x":86,"y":0,"w":41,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":58},
+			"sourceSize": {"w":41,"h":58}
+		},
+		"habbo15_comp_clothing_6.png":
+		{
+			"frame": {"x":127,"y":0,"w":41,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":58},
+			"sourceSize": {"w":41,"h":58}
+		},
+		"habbo15_comp_clothing_1.png":
+		{
+			"frame": {"x":0,"y":71,"w":21,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":23},
+			"sourceSize": {"w":21,"h":23}
+		}
+	}
+}

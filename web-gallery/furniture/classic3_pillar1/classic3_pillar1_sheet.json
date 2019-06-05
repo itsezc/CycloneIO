@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "classic3_pillar1_sheet.png",
+		"size": {"w":93,"h":126},
+		"scale": "1"
+	},
+	"frames": {
+		"classic3_pillar1_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":56,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":126},
+			"sourceSize": {"w":56,"h":126}
+		},
+		"classic3_pillar1_7.png":
+		{
+			"frame": {"x":56,"y":0,"w":37,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":42},
+			"sourceSize": {"w":37,"h":42}
+		},
+		"classic3_pillar1_4.png":
+		{
+			"frame": {"x":56,"y":42,"w":36,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":42},
+			"sourceSize": {"w":36,"h":42}
+		},
+		"classic3_pillar1_8.png":
+		{
+			"frame": {"x":56,"y":84,"w":19,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":22},
+			"sourceSize": {"w":19,"h":22}
+		}
+	}
+}

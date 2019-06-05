@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "boutique_table2_sheet.png",
+		"size": {"w":316,"h":181},
+		"scale": "1"
+	},
+	"frames": {
+		"boutique_table2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":190,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":190,"h":132},
+			"sourceSize": {"w":190,"h":132}
+		},
+		"boutique_table2_7.png":
+		{
+			"frame": {"x":190,"y":0,"w":126,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":64},
+			"sourceSize": {"w":126,"h":64}
+		},
+		"boutique_table2_9.png":
+		{
+			"frame": {"x":190,"y":64,"w":64,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":68},
+			"sourceSize": {"w":64,"h":68}
+		},
+		"boutique_table2_10.png":
+		{
+			"frame": {"x":0,"y":132,"w":64,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":49},
+			"sourceSize": {"w":64,"h":49}
+		},
+		"boutique_table2_13.png":
+		{
+			"frame": {"x":64,"y":132,"w":63,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":33},
+			"sourceSize": {"w":63,"h":33}
+		},
+		"boutique_table2_3.png":
+		{
+			"frame": {"x":254,"y":64,"w":61,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":32},
+			"sourceSize": {"w":61,"h":32}
+		},
+		"boutique_table2_5.png":
+		{
+			"frame": {"x":254,"y":96,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"boutique_table2_12.png":
+		{
+			"frame": {"x":127,"y":132,"w":32,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":25},
+			"sourceSize": {"w":32,"h":25}
+		},
+		"boutique_table2_8.png":
+		{
+			"frame": {"x":159,"y":132,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"boutique_table2_14.png":
+		{
+			"frame": {"x":286,"y":96,"w":28,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":22},
+			"sourceSize": {"w":28,"h":22}
+		}
+	}
+}

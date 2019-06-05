@@ -1,0 +1,385 @@
+{
+	"meta": {
+		"image": "santorini_ltd17_lighthouse_sheet.png",
+		"size": {"w":584,"h":555},
+		"scale": "1"
+	},
+	"frames": {
+		"santorini_ltd17_lighthouse_49.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":280},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":280},
+			"sourceSize": {"w":130,"h":280}
+		},
+		"santorini_ltd17_lighthouse_22.png":
+		{
+			"frame": {"x":130,"y":0,"w":130,"h":202},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":202},
+			"sourceSize": {"w":130,"h":202}
+		},
+		"santorini_ltd17_lighthouse_43.png":
+		{
+			"frame": {"x":260,"y":0,"w":66,"h":161},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":161},
+			"sourceSize": {"w":66,"h":161}
+		},
+		"santorini_ltd17_lighthouse_45.png":
+		{
+			"frame": {"x":326,"y":0,"w":130,"h":157},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":157},
+			"sourceSize": {"w":130,"h":157}
+		},
+		"santorini_ltd17_lighthouse_47.png":
+		{
+			"frame": {"x":0,"y":280,"w":62,"h":156},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":156},
+			"sourceSize": {"w":62,"h":156}
+		},
+		"santorini_ltd17_lighthouse_44.png":
+		{
+			"frame": {"x":62,"y":280,"w":112,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":134},
+			"sourceSize": {"w":112,"h":134}
+		},
+		"santorini_ltd17_lighthouse_48.png":
+		{
+			"frame": {"x":326,"y":157,"w":130,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":66},
+			"sourceSize": {"w":130,"h":66}
+		},
+		"santorini_ltd17_lighthouse_13.png":
+		{
+			"frame": {"x":174,"y":280,"w":76,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":119},
+			"sourceSize": {"w":76,"h":119}
+		},
+		"santorini_ltd17_lighthouse_2.png":
+		{
+			"frame": {"x":250,"y":280,"w":76,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":119},
+			"sourceSize": {"w":76,"h":119}
+		},
+		"santorini_ltd17_lighthouse_4.png":
+		{
+			"frame": {"x":326,"y":280,"w":76,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":119},
+			"sourceSize": {"w":76,"h":119}
+		},
+		"santorini_ltd17_lighthouse_6.png":
+		{
+			"frame": {"x":456,"y":0,"w":76,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":119},
+			"sourceSize": {"w":76,"h":119}
+		},
+		"santorini_ltd17_lighthouse_8.png":
+		{
+			"frame": {"x":456,"y":119,"w":76,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":119},
+			"sourceSize": {"w":76,"h":119}
+		},
+		"santorini_ltd17_lighthouse_9.png":
+		{
+			"frame": {"x":456,"y":238,"w":76,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":119},
+			"sourceSize": {"w":76,"h":119}
+		},
+		"santorini_ltd17_lighthouse_1.png":
+		{
+			"frame": {"x":260,"y":161,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_11.png":
+		{
+			"frame": {"x":402,"y":280,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_12.png":
+		{
+			"frame": {"x":532,"y":0,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_14.png":
+		{
+			"frame": {"x":532,"y":119,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_15.png":
+		{
+			"frame": {"x":532,"y":238,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_17.png":
+		{
+			"frame": {"x":0,"y":436,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_18.png":
+		{
+			"frame": {"x":52,"y":436,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_3.png":
+		{
+			"frame": {"x":104,"y":436,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_36.png":
+		{
+			"frame": {"x":156,"y":436,"w":52,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":119},
+			"sourceSize": {"w":52,"h":119}
+		},
+		"santorini_ltd17_lighthouse_10.png":
+		{
+			"frame": {"x":208,"y":436,"w":19,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":119},
+			"sourceSize": {"w":19,"h":119}
+		},
+		"santorini_ltd17_lighthouse_7.png":
+		{
+			"frame": {"x":227,"y":436,"w":19,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":119},
+			"sourceSize": {"w":19,"h":119}
+		},
+		"santorini_ltd17_lighthouse_40.png":
+		{
+			"frame": {"x":246,"y":436,"w":66,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":109},
+			"sourceSize": {"w":66,"h":109}
+		},
+		"santorini_ltd17_lighthouse_50.png":
+		{
+			"frame": {"x":326,"y":223,"w":104,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":104,"h":52},
+			"sourceSize": {"w":104,"h":52}
+		},
+		"santorini_ltd17_lighthouse_35.png":
+		{
+			"frame": {"x":532,"y":357,"w":30,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":67},
+			"sourceSize": {"w":30,"h":67}
+		},
+		"santorini_ltd17_lighthouse_38.png":
+		{
+			"frame": {"x":456,"y":357,"w":30,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":67},
+			"sourceSize": {"w":30,"h":67}
+		},
+		"santorini_ltd17_lighthouse_39.png":
+		{
+			"frame": {"x":486,"y":357,"w":30,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":67},
+			"sourceSize": {"w":30,"h":67}
+		},
+		"santorini_ltd17_lighthouse_23.png":
+		{
+			"frame": {"x":130,"y":202,"w":29,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":67},
+			"sourceSize": {"w":29,"h":67}
+		},
+		"santorini_ltd17_lighthouse_24.png":
+		{
+			"frame": {"x":159,"y":202,"w":29,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":67},
+			"sourceSize": {"w":29,"h":67}
+		},
+		"santorini_ltd17_lighthouse_33.png":
+		{
+			"frame": {"x":188,"y":202,"w":29,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":67},
+			"sourceSize": {"w":29,"h":67}
+		},
+		"santorini_ltd17_lighthouse_19.png":
+		{
+			"frame": {"x":562,"y":357,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_21.png":
+		{
+			"frame": {"x":569,"y":357,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_26.png":
+		{
+			"frame": {"x":576,"y":357,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_28.png":
+		{
+			"frame": {"x":516,"y":357,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_31.png":
+		{
+			"frame": {"x":523,"y":357,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_32.png":
+		{
+			"frame": {"x":312,"y":161,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_34.png":
+		{
+			"frame": {"x":319,"y":161,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_37.png":
+		{
+			"frame": {"x":217,"y":202,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_42.png":
+		{
+			"frame": {"x":224,"y":202,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_46.png":
+		{
+			"frame": {"x":231,"y":202,"w":7,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":63},
+			"sourceSize": {"w":7,"h":63}
+		},
+		"santorini_ltd17_lighthouse_27.png":
+		{
+			"frame": {"x":238,"y":202,"w":13,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":62},
+			"sourceSize": {"w":13,"h":62}
+		},
+		"santorini_ltd17_lighthouse_30.png":
+		{
+			"frame": {"x":312,"y":436,"w":13,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":62},
+			"sourceSize": {"w":13,"h":62}
+		},
+		"santorini_ltd17_lighthouse_16.png":
+		{
+			"frame": {"x":325,"y":436,"w":45,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":43},
+			"sourceSize": {"w":45,"h":43}
+		},
+		"santorini_ltd17_lighthouse_41.png":
+		{
+			"frame": {"x":430,"y":223,"w":17,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":30},
+			"sourceSize": {"w":17,"h":30}
+		},
+		"santorini_ltd17_lighthouse_25.png":
+		{
+			"frame": {"x":562,"y":420,"w":10,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":3},
+			"sourceSize": {"w":10,"h":3}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "classic5_stage_sheet.png",
+		"size": {"w":258,"h":222},
+		"scale": "1"
+	},
+	"frames": {
+		"classic5_stage_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":63},
+			"sourceSize": {"w":130,"h":63}
+		},
+		"classic5_stage_2.png":
+		{
+			"frame": {"x":0,"y":63,"w":130,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":33},
+			"sourceSize": {"w":130,"h":33}
+		},
+		"classic5_stage_13.png":
+		{
+			"frame": {"x":130,"y":0,"w":128,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":62},
+			"sourceSize": {"w":128,"h":62}
+		},
+		"classic5_stage_15.png":
+		{
+			"frame": {"x":0,"y":96,"w":128,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":62},
+			"sourceSize": {"w":128,"h":62}
+		},
+		"classic5_stage_10.png":
+		{
+			"frame": {"x":0,"y":158,"w":66,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":64},
+			"sourceSize": {"w":66,"h":64}
+		},
+		"classic5_stage_8.png":
+		{
+			"frame": {"x":66,"y":158,"w":66,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":64},
+			"sourceSize": {"w":66,"h":64}
+		},
+		"classic5_stage_11.png":
+		{
+			"frame": {"x":130,"y":62,"w":62,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":31},
+			"sourceSize": {"w":62,"h":31}
+		},
+		"classic5_stage_12.png":
+		{
+			"frame": {"x":192,"y":62,"w":62,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":31},
+			"sourceSize": {"w":62,"h":31}
+		},
+		"classic5_stage_4.png":
+		{
+			"frame": {"x":128,"y":96,"w":28,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":21},
+			"sourceSize": {"w":28,"h":21}
+		},
+		"classic5_stage_3.png":
+		{
+			"frame": {"x":254,"y":62,"w":2,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":1},
+			"sourceSize": {"w":2,"h":1}
+		}
+	}
+}

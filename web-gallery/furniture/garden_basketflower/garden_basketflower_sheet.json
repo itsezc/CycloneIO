@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "garden_basketflower_sheet.png",
+		"size": {"w":87,"h":88},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_basketflower_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":88},
+			"sourceSize": {"w":47,"h":88}
+		},
+		"garden_basketflower_2.png":
+		{
+			"frame": {"x":47,"y":0,"w":40,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":23},
+			"sourceSize": {"w":40,"h":23}
+		},
+		"garden_basketflower_5.png":
+		{
+			"frame": {"x":47,"y":23,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		}
+	}
+}

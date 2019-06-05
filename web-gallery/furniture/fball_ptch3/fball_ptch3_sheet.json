@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "fball_ptch3_sheet.png",
+		"size": {"w":572,"h":362},
+		"scale": "1"
+	},
+	"frames": {
+		"fball_ptch3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":386,"h":261},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":386,"h":261},
+			"sourceSize": {"w":386,"h":261}
+		},
+		"fball_ptch3_8.png":
+		{
+			"frame": {"x":0,"y":261,"w":194,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":194,"h":101},
+			"sourceSize": {"w":194,"h":101}
+		},
+		"fball_ptch3_4.png":
+		{
+			"frame": {"x":194,"y":261,"w":192,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":97},
+			"sourceSize": {"w":192,"h":97}
+		},
+		"fball_ptch3_14.png":
+		{
+			"frame": {"x":386,"y":0,"w":186,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":186,"h":93},
+			"sourceSize": {"w":186,"h":93}
+		},
+		"fball_ptch3_7.png":
+		{
+			"frame": {"x":386,"y":93,"w":186,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":186,"h":93},
+			"sourceSize": {"w":186,"h":93}
+		},
+		"fball_ptch3_2.png":
+		{
+			"frame": {"x":386,"y":186,"w":98,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":51},
+			"sourceSize": {"w":98,"h":51}
+		},
+		"fball_ptch3_1.png":
+		{
+			"frame": {"x":386,"y":237,"w":95,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":48},
+			"sourceSize": {"w":95,"h":48}
+		},
+		"fball_ptch3_11.png":
+		{
+			"frame": {"x":386,"y":285,"w":93,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":47},
+			"sourceSize": {"w":93,"h":47}
+		},
+		"fball_ptch3_9.png":
+		{
+			"frame": {"x":479,"y":285,"w":93,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":47},
+			"sourceSize": {"w":93,"h":47}
+		},
+		"fball_ptch3_13.png":
+		{
+			"frame": {"x":484,"y":186,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

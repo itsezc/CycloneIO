@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "vikings_animal_g_sheet.png",
+		"size": {"w":122,"h":124},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_animal_g_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":124},
+			"sourceSize": {"w":55,"h":124}
+		},
+		"vikings_animal_g_5.png":
+		{
+			"frame": {"x":55,"y":0,"w":29,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":63},
+			"sourceSize": {"w":29,"h":63}
+		},
+		"vikings_animal_g_6.png":
+		{
+			"frame": {"x":84,"y":0,"w":38,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":15},
+			"sourceSize": {"w":38,"h":15}
+		},
+		"vikings_animal_g_8.png":
+		{
+			"frame": {"x":84,"y":15,"w":14,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":28},
+			"sourceSize": {"w":14,"h":28}
+		},
+		"vikings_animal_g_1.png":
+		{
+			"frame": {"x":98,"y":15,"w":20,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":8},
+			"sourceSize": {"w":20,"h":8}
+		}
+	}
+}

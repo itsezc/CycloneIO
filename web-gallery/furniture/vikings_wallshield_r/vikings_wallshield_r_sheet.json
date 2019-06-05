@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "vikings_wallshield_r_sheet.png",
+		"size": {"w":295,"h":250},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_wallshield_r_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":211,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":211,"h":147},
+			"sourceSize": {"w":211,"h":147}
+		},
+		"vikings_wallshield_r_5.png":
+		{
+			"frame": {"x":211,"y":0,"w":84,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":103},
+			"sourceSize": {"w":84,"h":103}
+		},
+		"vikings_wallshield_r_6.png":
+		{
+			"frame": {"x":0,"y":147,"w":84,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":103},
+			"sourceSize": {"w":84,"h":103}
+		},
+		"vikings_wallshield_r_11.png":
+		{
+			"frame": {"x":211,"y":103,"w":55,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":44},
+			"sourceSize": {"w":55,"h":44}
+		},
+		"vikings_wallshield_r_3.png":
+		{
+			"frame": {"x":84,"y":147,"w":43,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":52},
+			"sourceSize": {"w":43,"h":52}
+		},
+		"vikings_wallshield_r_9.png":
+		{
+			"frame": {"x":127,"y":147,"w":43,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":52},
+			"sourceSize": {"w":43,"h":52}
+		},
+		"vikings_wallshield_r_10.png":
+		{
+			"frame": {"x":266,"y":103,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"vikings_wallshield_r_13.png":
+		{
+			"frame": {"x":170,"y":147,"w":27,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":23},
+			"sourceSize": {"w":27,"h":23}
+		},
+		"vikings_wallshield_r_1.png":
+		{
+			"frame": {"x":293,"y":103,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

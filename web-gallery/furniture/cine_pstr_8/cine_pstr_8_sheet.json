@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "cine_pstr_8_sheet.png",
+		"size": {"w":389,"h":361},
+		"scale": "1"
+	},
+	"frames": {
+		"cine_pstr_8_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":259,"h":217},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":259,"h":217},
+			"sourceSize": {"w":259,"h":217}
+		},
+		"cine_pstr_8_1.png":
+		{
+			"frame": {"x":259,"y":0,"w":65,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":144},
+			"sourceSize": {"w":65,"h":144}
+		},
+		"cine_pstr_8_13.png":
+		{
+			"frame": {"x":324,"y":0,"w":65,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":144},
+			"sourceSize": {"w":65,"h":144}
+		},
+		"cine_pstr_8_3.png":
+		{
+			"frame": {"x":0,"y":217,"w":65,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":144},
+			"sourceSize": {"w":65,"h":144}
+		},
+		"cine_pstr_8_11.png":
+		{
+			"frame": {"x":65,"y":217,"w":64,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":144},
+			"sourceSize": {"w":64,"h":144}
+		},
+		"cine_pstr_8_8.png":
+		{
+			"frame": {"x":324,"y":144,"w":33,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":73},
+			"sourceSize": {"w":33,"h":73}
+		},
+		"cine_pstr_8_9.png":
+		{
+			"frame": {"x":259,"y":144,"w":33,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":73},
+			"sourceSize": {"w":33,"h":73}
+		},
+		"cine_pstr_8_2.png":
+		{
+			"frame": {"x":129,"y":217,"w":33,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":72},
+			"sourceSize": {"w":33,"h":72}
+		},
+		"cine_pstr_8_12.png":
+		{
+			"frame": {"x":357,"y":144,"w":32,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":72},
+			"sourceSize": {"w":32,"h":72}
+		},
+		"cine_pstr_8_7.png":
+		{
+			"frame": {"x":292,"y":144,"w":14,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":28},
+			"sourceSize": {"w":14,"h":28}
+		}
+	}
+}

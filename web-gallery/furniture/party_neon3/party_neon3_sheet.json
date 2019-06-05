@@ -1,0 +1,233 @@
+{
+	"meta": {
+		"image": "party_neon3_sheet.png",
+		"size": {"w":369,"h":324},
+		"scale": "1"
+	},
+	"frames": {
+		"party_neon3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":252,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":252,"h":227},
+			"sourceSize": {"w":252,"h":227}
+		},
+		"party_neon3_12.png":
+		{
+			"frame": {"x":252,"y":0,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"party_neon3_25.png":
+		{
+			"frame": {"x":252,"y":75,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"party_neon3_10.png":
+		{
+			"frame": {"x":0,"y":227,"w":50,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":67},
+			"sourceSize": {"w":50,"h":67}
+		},
+		"party_neon3_16.png":
+		{
+			"frame": {"x":50,"y":227,"w":50,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":67},
+			"sourceSize": {"w":50,"h":67}
+		},
+		"party_neon3_21.png":
+		{
+			"frame": {"x":252,"y":150,"w":47,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":62},
+			"sourceSize": {"w":47,"h":62}
+		},
+		"party_neon3_23.png":
+		{
+			"frame": {"x":100,"y":227,"w":47,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":62},
+			"sourceSize": {"w":47,"h":62}
+		},
+		"party_neon3_27.png":
+		{
+			"frame": {"x":147,"y":227,"w":47,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":62},
+			"sourceSize": {"w":47,"h":62}
+		},
+		"party_neon3_7.png":
+		{
+			"frame": {"x":194,"y":227,"w":47,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":62},
+			"sourceSize": {"w":47,"h":62}
+		},
+		"party_neon3_2.png":
+		{
+			"frame": {"x":241,"y":227,"w":33,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":62},
+			"sourceSize": {"w":33,"h":62}
+		},
+		"party_neon3_22.png":
+		{
+			"frame": {"x":299,"y":0,"w":33,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":62},
+			"sourceSize": {"w":33,"h":62}
+		},
+		"party_neon3_18.png":
+		{
+			"frame": {"x":332,"y":0,"w":37,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":54},
+			"sourceSize": {"w":37,"h":54}
+		},
+		"party_neon3_31.png":
+		{
+			"frame": {"x":332,"y":54,"w":37,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":54},
+			"sourceSize": {"w":37,"h":54}
+		},
+		"party_neon3_28.png":
+		{
+			"frame": {"x":332,"y":108,"w":29,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":45},
+			"sourceSize": {"w":29,"h":45}
+		},
+		"party_neon3_4.png":
+		{
+			"frame": {"x":332,"y":153,"w":29,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":45},
+			"sourceSize": {"w":29,"h":45}
+		},
+		"party_neon3_13.png":
+		{
+			"frame": {"x":332,"y":198,"w":30,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":40},
+			"sourceSize": {"w":30,"h":40}
+		},
+		"party_neon3_19.png":
+		{
+			"frame": {"x":332,"y":238,"w":30,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":40},
+			"sourceSize": {"w":30,"h":40}
+		},
+		"party_neon3_15.png":
+		{
+			"frame": {"x":299,"y":62,"w":28,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":35},
+			"sourceSize": {"w":28,"h":35}
+		},
+		"party_neon3_29.png":
+		{
+			"frame": {"x":299,"y":97,"w":28,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":35},
+			"sourceSize": {"w":28,"h":35}
+		},
+		"party_neon3_30.png":
+		{
+			"frame": {"x":299,"y":132,"w":28,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":35},
+			"sourceSize": {"w":28,"h":35}
+		},
+		"party_neon3_6.png":
+		{
+			"frame": {"x":299,"y":167,"w":28,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":35},
+			"sourceSize": {"w":28,"h":35}
+		},
+		"party_neon3_14.png":
+		{
+			"frame": {"x":299,"y":202,"w":19,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":35},
+			"sourceSize": {"w":19,"h":35}
+		},
+		"party_neon3_24.png":
+		{
+			"frame": {"x":299,"y":237,"w":19,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":35},
+			"sourceSize": {"w":19,"h":35}
+		},
+		"party_neon3_9.png":
+		{
+			"frame": {"x":274,"y":227,"w":21,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":31},
+			"sourceSize": {"w":21,"h":31}
+		},
+		"party_neon3_5.png":
+		{
+			"frame": {"x":274,"y":258,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"party_neon3_8.png":
+		{
+			"frame": {"x":0,"y":294,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"party_neon3_1.png":
+		{
+			"frame": {"x":361,"y":108,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"party_neon3_3.png":
+		{
+			"frame": {"x":362,"y":108,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

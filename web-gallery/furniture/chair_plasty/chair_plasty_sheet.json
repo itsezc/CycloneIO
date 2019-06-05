@@ -1,0 +1,169 @@
+{
+	"meta": {
+		"image": "chair_plasty_sheet.png",
+		"size": {"w":246,"h":227},
+		"scale": "1"
+	},
+	"frames": {
+		"chair_plasty_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":180,"h":137},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":180,"h":137},
+			"sourceSize": {"w":180,"h":137}
+		},
+		"chair_plasty_4.png":
+		{
+			"frame": {"x":0,"y":137,"w":66,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":42},
+			"sourceSize": {"w":66,"h":42}
+		},
+		"chair_plasty_17.png":
+		{
+			"frame": {"x":66,"y":137,"w":66,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":36},
+			"sourceSize": {"w":66,"h":36}
+		},
+		"chair_plasty_23.png":
+		{
+			"frame": {"x":180,"y":0,"w":66,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":22},
+			"sourceSize": {"w":66,"h":22}
+		},
+		"chair_plasty_8.png":
+		{
+			"frame": {"x":180,"y":22,"w":64,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":49},
+			"sourceSize": {"w":64,"h":49}
+		},
+		"chair_plasty_5.png":
+		{
+			"frame": {"x":180,"y":71,"w":64,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":35},
+			"sourceSize": {"w":64,"h":35}
+		},
+		"chair_plasty_7.png":
+		{
+			"frame": {"x":180,"y":106,"w":48,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":23},
+			"sourceSize": {"w":48,"h":23}
+		},
+		"chair_plasty_24.png":
+		{
+			"frame": {"x":180,"y":129,"w":48,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":20},
+			"sourceSize": {"w":48,"h":20}
+		},
+		"chair_plasty_21.png":
+		{
+			"frame": {"x":132,"y":137,"w":42,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":35},
+			"sourceSize": {"w":42,"h":35}
+		},
+		"chair_plasty_20.png":
+		{
+			"frame": {"x":180,"y":149,"w":33,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":18},
+			"sourceSize": {"w":33,"h":18}
+		},
+		"chair_plasty_12.png":
+		{
+			"frame": {"x":0,"y":179,"w":32,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":24},
+			"sourceSize": {"w":32,"h":24}
+		},
+		"chair_plasty_14.png":
+		{
+			"frame": {"x":213,"y":149,"w":32,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":17},
+			"sourceSize": {"w":32,"h":17}
+		},
+		"chair_plasty_22.png":
+		{
+			"frame": {"x":32,"y":179,"w":27,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":19},
+			"sourceSize": {"w":27,"h":19}
+		},
+		"chair_plasty_1.png":
+		{
+			"frame": {"x":0,"y":203,"w":25,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":24},
+			"sourceSize": {"w":25,"h":24}
+		},
+		"chair_plasty_19.png":
+		{
+			"frame": {"x":180,"y":167,"w":24,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":11},
+			"sourceSize": {"w":24,"h":11}
+		},
+		"chair_plasty_6.png":
+		{
+			"frame": {"x":204,"y":167,"w":22,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":6},
+			"sourceSize": {"w":22,"h":6}
+		},
+		"chair_plasty_2.png":
+		{
+			"frame": {"x":59,"y":179,"w":21,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":18},
+			"sourceSize": {"w":21,"h":18}
+		},
+		"chair_plasty_18.png":
+		{
+			"frame": {"x":228,"y":106,"w":17,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":5},
+			"sourceSize": {"w":17,"h":5}
+		},
+		"chair_plasty_15.png":
+		{
+			"frame": {"x":228,"y":111,"w":12,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":3},
+			"sourceSize": {"w":12,"h":3}
+		},
+		"chair_plasty_13.png":
+		{
+			"frame": {"x":228,"y":114,"w":10,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":11},
+			"sourceSize": {"w":10,"h":11}
+		}
+	}
+}

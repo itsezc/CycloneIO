@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "greek_c19_vase1_sheet.png",
+		"size": {"w":66,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_c19_vase1_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":51},
+			"sourceSize": {"w":40,"h":51}
+		},
+		"greek_c19_vase1_4.png":
+		{
+			"frame": {"x":40,"y":0,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"greek_c19_vase1_2.png":
+		{
+			"frame": {"x":40,"y":30,"w":18,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":9},
+			"sourceSize": {"w":18,"h":9}
+		}
+	}
+}

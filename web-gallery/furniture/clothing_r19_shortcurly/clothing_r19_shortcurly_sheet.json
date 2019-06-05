@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r19_shortcurly_sheet.png",
+		"size": {"w":55,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r19_shortcurly_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":28,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":48},
+			"sourceSize": {"w":28,"h":48}
+		},
+		"clothing_r19_shortcurly_2.png":
+		{
+			"frame": {"x":28,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

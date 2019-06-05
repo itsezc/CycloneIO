@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_leafcrown_sheet.png",
+		"size": {"w":60,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_leafcrown_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":45},
+			"sourceSize": {"w":32,"h":45}
+		},
+		"clothing_leafcrown_3.png":
+		{
+			"frame": {"x":32,"y":0,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		}
+	}
+}

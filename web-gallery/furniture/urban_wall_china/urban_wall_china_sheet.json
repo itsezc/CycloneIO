@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "urban_wall_china_sheet.png",
+		"size": {"w":521,"h":459},
+		"scale": "1"
+	},
+	"frames": {
+		"urban_wall_china_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":339,"h":276},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":339,"h":276},
+			"sourceSize": {"w":339,"h":276}
+		},
+		"urban_wall_china_7.png":
+		{
+			"frame": {"x":339,"y":0,"w":99,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":183},
+			"sourceSize": {"w":99,"h":183}
+		},
+		"urban_wall_china_5.png":
+		{
+			"frame": {"x":438,"y":0,"w":83,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":183},
+			"sourceSize": {"w":83,"h":183}
+		},
+		"urban_wall_china_8.png":
+		{
+			"frame": {"x":0,"y":276,"w":83,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":183},
+			"sourceSize": {"w":83,"h":183}
+		},
+		"urban_wall_china_2.png":
+		{
+			"frame": {"x":83,"y":276,"w":74,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":128},
+			"sourceSize": {"w":74,"h":128}
+		},
+		"urban_wall_china_12.png":
+		{
+			"frame": {"x":438,"y":183,"w":50,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":93},
+			"sourceSize": {"w":50,"h":93}
+		},
+		"urban_wall_china_13.png":
+		{
+			"frame": {"x":339,"y":183,"w":41,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":93},
+			"sourceSize": {"w":41,"h":93}
+		},
+		"urban_wall_china_15.png":
+		{
+			"frame": {"x":380,"y":183,"w":41,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":93},
+			"sourceSize": {"w":41,"h":93}
+		},
+		"urban_wall_china_14.png":
+		{
+			"frame": {"x":157,"y":276,"w":38,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+			"sourceSize": {"w":38,"h":65}
+		},
+		"urban_wall_china_4.png":
+		{
+			"frame": {"x":488,"y":183,"w":17,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":32},
+			"sourceSize": {"w":17,"h":32}
+		},
+		"urban_wall_china_1.png":
+		{
+			"frame": {"x":505,"y":183,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

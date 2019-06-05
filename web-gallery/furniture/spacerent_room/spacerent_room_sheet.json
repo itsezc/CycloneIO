@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "spacerent_room_sheet.png",
+		"size": {"w":126,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"spacerent_room_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":70},
+			"sourceSize": {"w":50,"h":70}
+		},
+		"spacerent_room_6.png":
+		{
+			"frame": {"x":50,"y":0,"w":50,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":70},
+			"sourceSize": {"w":50,"h":70}
+		},
+		"spacerent_room_2.png":
+		{
+			"frame": {"x":100,"y":0,"w":26,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":35},
+			"sourceSize": {"w":26,"h":35}
+		},
+		"spacerent_room_5.png":
+		{
+			"frame": {"x":100,"y":35,"w":26,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":35},
+			"sourceSize": {"w":26,"h":35}
+		},
+		"spacerent_room_9.png":
+		{
+			"frame": {"x":0,"y":70,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"spacerent_room_7.png":
+		{
+			"frame": {"x":30,"y":70,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

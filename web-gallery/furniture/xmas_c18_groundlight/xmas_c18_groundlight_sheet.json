@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "xmas_c18_groundlight_sheet.png",
+		"size": {"w":134,"h":159},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_groundlight_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":79,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":159},
+			"sourceSize": {"w":79,"h":159}
+		},
+		"xmas_c18_groundlight_1.png":
+		{
+			"frame": {"x":79,"y":0,"w":27,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":32},
+			"sourceSize": {"w":27,"h":32}
+		},
+		"xmas_c18_groundlight_10.png":
+		{
+			"frame": {"x":106,"y":0,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"xmas_c18_groundlight_9.png":
+		{
+			"frame": {"x":106,"y":17,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"xmas_c18_groundlight_7.png":
+		{
+			"frame": {"x":106,"y":34,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

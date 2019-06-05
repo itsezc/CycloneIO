@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hc16_7_sheet.png",
+		"size": {"w":264,"h":88},
+		"scale": "1"
+	},
+	"frames": {
+		"hc16_7_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":132,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":70},
+			"sourceSize": {"w":132,"h":70}
+		},
+		"hc16_7_8.png":
+		{
+			"frame": {"x":132,"y":0,"w":132,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":70},
+			"sourceSize": {"w":132,"h":70}
+		},
+		"hc16_7_3.png":
+		{
+			"frame": {"x":0,"y":70,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		}
+	}
+}

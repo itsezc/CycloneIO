@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "paris_c15_flowerstl_sheet.png",
+		"size": {"w":156,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_flowerstl_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":83,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":102},
+			"sourceSize": {"w":83,"h":102}
+		},
+		"paris_c15_flowerstl_1.png":
+		{
+			"frame": {"x":83,"y":0,"w":73,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":37},
+			"sourceSize": {"w":73,"h":37}
+		},
+		"paris_c15_flowerstl_6.png":
+		{
+			"frame": {"x":83,"y":37,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"paris_c15_flowerstl_9.png":
+		{
+			"frame": {"x":109,"y":37,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		}
+	}
+}

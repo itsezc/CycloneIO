@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "xm09_trophy_sheet.png",
+		"size": {"w":241,"h":223},
+		"scale": "1"
+	},
+	"frames": {
+		"xm09_trophy_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":163,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":163,"h":134},
+			"sourceSize": {"w":163,"h":134}
+		},
+		"xm09_trophy_12.png":
+		{
+			"frame": {"x":163,"y":0,"w":39,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":80},
+			"sourceSize": {"w":39,"h":80}
+		},
+		"xm09_trophy_14.png":
+		{
+			"frame": {"x":202,"y":0,"w":39,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":80},
+			"sourceSize": {"w":39,"h":80}
+		},
+		"xm09_trophy_3.png":
+		{
+			"frame": {"x":0,"y":134,"w":44,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":59},
+			"sourceSize": {"w":44,"h":59}
+		},
+		"xm09_trophy_10.png":
+		{
+			"frame": {"x":44,"y":134,"w":41,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":54},
+			"sourceSize": {"w":41,"h":54}
+		},
+		"xm09_trophy_6.png":
+		{
+			"frame": {"x":85,"y":134,"w":41,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":54},
+			"sourceSize": {"w":41,"h":54}
+		},
+		"xm09_trophy_15.png":
+		{
+			"frame": {"x":202,"y":80,"w":20,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":41},
+			"sourceSize": {"w":20,"h":41}
+		},
+		"xm09_trophy_16.png":
+		{
+			"frame": {"x":163,"y":80,"w":20,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":41},
+			"sourceSize": {"w":20,"h":41}
+		},
+		"xm09_trophy_1.png":
+		{
+			"frame": {"x":126,"y":134,"w":30,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":25},
+			"sourceSize": {"w":30,"h":25}
+		},
+		"xm09_trophy_2.png":
+		{
+			"frame": {"x":0,"y":193,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"xm09_trophy_5.png":
+		{
+			"frame": {"x":126,"y":159,"w":22,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":28},
+			"sourceSize": {"w":22,"h":28}
+		},
+		"xm09_trophy_9.png":
+		{
+			"frame": {"x":148,"y":159,"w":22,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":28},
+			"sourceSize": {"w":22,"h":28}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c17_hangingbasket_sheet.png",
+		"size": {"w":130,"h":145},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_hangingbasket_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":145},
+			"sourceSize": {"w":55,"h":145}
+		},
+		"xmas_c17_hangingbasket_1.png":
+		{
+			"frame": {"x":55,"y":0,"w":55,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":142},
+			"sourceSize": {"w":55,"h":142}
+		},
+		"xmas_c17_hangingbasket_8.png":
+		{
+			"frame": {"x":110,"y":0,"w":20,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":32},
+			"sourceSize": {"w":20,"h":32}
+		}
+	}
+}

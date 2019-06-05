@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas_c15_advent10_sheet.png",
+		"size": {"w":126,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c15_advent10_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":83,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":76},
+			"sourceSize": {"w":83,"h":76}
+		},
+		"xmas_c15_advent10_6.png":
+		{
+			"frame": {"x":83,"y":0,"w":43,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":46},
+			"sourceSize": {"w":43,"h":46}
+		},
+		"xmas_c15_advent10_1.png":
+		{
+			"frame": {"x":0,"y":76,"w":40,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":41},
+			"sourceSize": {"w":40,"h":41}
+		},
+		"xmas_c15_advent10_2.png":
+		{
+			"frame": {"x":83,"y":46,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

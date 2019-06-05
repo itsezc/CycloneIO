@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "portabandeira_sheet.png",
+		"size": {"w":489,"h":400},
+		"scale": "1"
+	},
+	"frames": {
+		"portabandeira_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":305,"h":292},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":305,"h":292},
+			"sourceSize": {"w":305,"h":292}
+		},
+		"portabandeira_9.png":
+		{
+			"frame": {"x":305,"y":0,"w":184,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":184,"h":93},
+			"sourceSize": {"w":184,"h":93}
+		},
+		"portabandeira_12.png":
+		{
+			"frame": {"x":305,"y":93,"w":168,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":168,"h":47},
+			"sourceSize": {"w":168,"h":47}
+		},
+		"portabandeira_10.png":
+		{
+			"frame": {"x":305,"y":140,"w":154,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":154,"h":147},
+			"sourceSize": {"w":154,"h":147}
+		},
+		"portabandeira_7.png":
+		{
+			"frame": {"x":0,"y":292,"w":116,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":116,"h":57},
+			"sourceSize": {"w":116,"h":57}
+		},
+		"portabandeira_3.png":
+		{
+			"frame": {"x":116,"y":292,"w":92,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":46},
+			"sourceSize": {"w":92,"h":46}
+		},
+		"portabandeira_5.png":
+		{
+			"frame": {"x":208,"y":292,"w":85,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":24},
+			"sourceSize": {"w":85,"h":24}
+		},
+		"portabandeira_14.png":
+		{
+			"frame": {"x":293,"y":292,"w":56,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":23},
+			"sourceSize": {"w":56,"h":23}
+		},
+		"portabandeira_2.png":
+		{
+			"frame": {"x":0,"y":349,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"portabandeira_4.png":
+		{
+			"frame": {"x":37,"y":349,"w":32,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":31},
+			"sourceSize": {"w":32,"h":31}
+		},
+		"portabandeira_13.png":
+		{
+			"frame": {"x":473,"y":93,"w":14,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":18},
+			"sourceSize": {"w":14,"h":18}
+		}
+	}
+}

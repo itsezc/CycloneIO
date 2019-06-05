@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "present_gen_sheet.png",
+		"size": {"w":161,"h":98},
+		"scale": "1"
+	},
+	"frames": {
+		"present_gen_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":97,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":65},
+			"sourceSize": {"w":97,"h":65}
+		},
+		"present_gen_5.png":
+		{
+			"frame": {"x":97,"y":0,"w":64,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":65},
+			"sourceSize": {"w":64,"h":65}
+		},
+		"present_gen_1.png":
+		{
+			"frame": {"x":0,"y":65,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"present_gen_7.png":
+		{
+			"frame": {"x":33,"y":65,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		}
+	}
+}

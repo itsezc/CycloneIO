@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "coralking_c18_trash_sheet.png",
+		"size": {"w":83,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_c18_trash_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":26},
+			"sourceSize": {"w":47,"h":26}
+		},
+		"coralking_c18_trash_6.png":
+		{
+			"frame": {"x":0,"y":26,"w":38,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":16},
+			"sourceSize": {"w":38,"h":16}
+		},
+		"coralking_c18_trash_9.png":
+		{
+			"frame": {"x":47,"y":0,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"coralking_c18_trash_4.png":
+		{
+			"frame": {"x":47,"y":18,"w":29,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":18},
+			"sourceSize": {"w":29,"h":18}
+		}
+	}
+}

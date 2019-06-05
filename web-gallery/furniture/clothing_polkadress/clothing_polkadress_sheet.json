@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_polkadress_sheet.png",
+		"size": {"w":61,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_polkadress_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":31,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":68},
+			"sourceSize": {"w":31,"h":68}
+		},
+		"clothing_polkadress_1.png":
+		{
+			"frame": {"x":31,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_polkadress_4.png":
+		{
+			"frame": {"x":31,"y":30,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		}
+	}
+}

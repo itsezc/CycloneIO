@@ -1,0 +1,249 @@
+{
+	"meta": {
+		"image": "hween10_tarot_sheet.png",
+		"size": {"w":229,"h":212},
+		"scale": "1"
+	},
+	"frames": {
+		"hween10_tarot_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":168,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":168,"h":140},
+			"sourceSize": {"w":168,"h":140}
+		},
+		"hween10_tarot_10.png":
+		{
+			"frame": {"x":168,"y":0,"w":61,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":49},
+			"sourceSize": {"w":61,"h":49}
+		},
+		"hween10_tarot_3.png":
+		{
+			"frame": {"x":168,"y":49,"w":46,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":12},
+			"sourceSize": {"w":46,"h":12}
+		},
+		"hween10_tarot_31.png":
+		{
+			"frame": {"x":168,"y":61,"w":43,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":42},
+			"sourceSize": {"w":43,"h":42}
+		},
+		"hween10_tarot_26.png":
+		{
+			"frame": {"x":168,"y":103,"w":43,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":36},
+			"sourceSize": {"w":43,"h":36}
+		},
+		"hween10_tarot_5.png":
+		{
+			"frame": {"x":0,"y":140,"w":43,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":29},
+			"sourceSize": {"w":43,"h":29}
+		},
+		"hween10_tarot_6.png":
+		{
+			"frame": {"x":43,"y":140,"w":43,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":25},
+			"sourceSize": {"w":43,"h":25}
+		},
+		"hween10_tarot_24.png":
+		{
+			"frame": {"x":86,"y":140,"w":43,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":22},
+			"sourceSize": {"w":43,"h":22}
+		},
+		"hween10_tarot_32.png":
+		{
+			"frame": {"x":129,"y":140,"w":43,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":22},
+			"sourceSize": {"w":43,"h":22}
+		},
+		"hween10_tarot_27.png":
+		{
+			"frame": {"x":172,"y":140,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"hween10_tarot_28.png":
+		{
+			"frame": {"x":0,"y":169,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"hween10_tarot_29.png":
+		{
+			"frame": {"x":32,"y":169,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"hween10_tarot_30.png":
+		{
+			"frame": {"x":64,"y":169,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"hween10_tarot_33.png":
+		{
+			"frame": {"x":96,"y":169,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"hween10_tarot_34.png":
+		{
+			"frame": {"x":128,"y":169,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"hween10_tarot_8.png":
+		{
+			"frame": {"x":0,"y":187,"w":31,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":25},
+			"sourceSize": {"w":31,"h":25}
+		},
+		"hween10_tarot_23.png":
+		{
+			"frame": {"x":31,"y":187,"w":30,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":25},
+			"sourceSize": {"w":30,"h":25}
+		},
+		"hween10_tarot_9.png":
+		{
+			"frame": {"x":61,"y":187,"w":21,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":19},
+			"sourceSize": {"w":21,"h":19}
+		},
+		"hween10_tarot_18.png":
+		{
+			"frame": {"x":204,"y":140,"w":21,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":18},
+			"sourceSize": {"w":21,"h":18}
+		},
+		"hween10_tarot_14.png":
+		{
+			"frame": {"x":160,"y":169,"w":21,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":14},
+			"sourceSize": {"w":21,"h":14}
+		},
+		"hween10_tarot_22.png":
+		{
+			"frame": {"x":181,"y":169,"w":21,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":13},
+			"sourceSize": {"w":21,"h":13}
+		},
+		"hween10_tarot_15.png":
+		{
+			"frame": {"x":202,"y":169,"w":21,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":11},
+			"sourceSize": {"w":21,"h":11}
+		},
+		"hween10_tarot_7.png":
+		{
+			"frame": {"x":82,"y":187,"w":21,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":11},
+			"sourceSize": {"w":21,"h":11}
+		},
+		"hween10_tarot_21.png":
+		{
+			"frame": {"x":103,"y":187,"w":20,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":5},
+			"sourceSize": {"w":20,"h":5}
+		},
+		"hween10_tarot_12.png":
+		{
+			"frame": {"x":211,"y":61,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"hween10_tarot_13.png":
+		{
+			"frame": {"x":211,"y":71,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"hween10_tarot_16.png":
+		{
+			"frame": {"x":211,"y":81,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"hween10_tarot_17.png":
+		{
+			"frame": {"x":211,"y":91,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"hween10_tarot_19.png":
+		{
+			"frame": {"x":211,"y":103,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"hween10_tarot_20.png":
+		{
+			"frame": {"x":211,"y":113,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		}
+	}
+}

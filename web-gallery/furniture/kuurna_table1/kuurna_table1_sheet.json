@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "kuurna_table1_sheet.png",
+		"size": {"w":194,"h":161},
+		"scale": "1"
+	},
+	"frames": {
+		"kuurna_table1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":90},
+			"sourceSize": {"w":130,"h":90}
+		},
+		"kuurna_table1_1.png":
+		{
+			"frame": {"x":130,"y":0,"w":64,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":73},
+			"sourceSize": {"w":64,"h":73}
+		},
+		"kuurna_table1_10.png":
+		{
+			"frame": {"x":0,"y":90,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"kuurna_table1_5.png":
+		{
+			"frame": {"x":0,"y":123,"w":33,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":38},
+			"sourceSize": {"w":33,"h":38}
+		},
+		"kuurna_table1_6.png":
+		{
+			"frame": {"x":130,"y":73,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"kuurna_table1_4.png":
+		{
+			"frame": {"x":66,"y":90,"w":27,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":32},
+			"sourceSize": {"w":27,"h":32}
+		}
+	}
+}

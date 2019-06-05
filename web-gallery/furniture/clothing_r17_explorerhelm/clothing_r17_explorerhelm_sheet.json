@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_r17_explorerhelm_sheet.png",
+		"size": {"w":61,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r17_explorerhelm_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":33,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":48},
+			"sourceSize": {"w":33,"h":48}
+		},
+		"clothing_r17_explorerhelm_5.png":
+		{
+			"frame": {"x":33,"y":0,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"clothing_r17_explorerhelm_2.png":
+		{
+			"frame": {"x":33,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

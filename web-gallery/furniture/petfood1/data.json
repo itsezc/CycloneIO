@@ -1,0 +1,29 @@
+{
+  "id": 1532,
+  "classname": "petfood1",
+  "revision": 48002,
+  "defaultdir": 2,
+  "xdim": 1,
+  "ydim": 1,
+  "partcolors": {
+    "color": [
+      0,
+      0
+    ]
+  },
+  "name": "Doggy Bones",
+  "description": "Natural nutrition for the barking one (550 nutrition)",
+  "adurl": "",
+  "offerid": 450,
+  "buyout": 1,
+  "rentofferid": -1,
+  "rentbuyout": 0,
+  "bc": 0,
+  "excludeddynamic": 0,
+  "customparams": "375,10,0",
+  "specialtype": 1,
+  "canstandon": 1,
+  "cansiton": 0,
+  "canlayon": 0,
+  "furniline": "pet_food"
+}

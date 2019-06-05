@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r19_punkhat_sheet.png",
+		"size": {"w":66,"h":52},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r19_punkhat_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"clothing_r19_punkhat_1.png":
+		{
+			"frame": {"x":36,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

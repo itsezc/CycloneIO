@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "grunge_sign_sheet.png",
+		"size": {"w":250,"h":170},
+		"scale": "1"
+	},
+	"frames": {
+		"grunge_sign_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":166,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":166,"h":113},
+			"sourceSize": {"w":166,"h":113}
+		},
+		"grunge_sign_15.png":
+		{
+			"frame": {"x":166,"y":0,"w":42,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":113},
+			"sourceSize": {"w":42,"h":113}
+		},
+		"grunge_sign_2.png":
+		{
+			"frame": {"x":208,"y":0,"w":42,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":113},
+			"sourceSize": {"w":42,"h":113}
+		},
+		"grunge_sign_4.png":
+		{
+			"frame": {"x":0,"y":113,"w":22,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":57},
+			"sourceSize": {"w":22,"h":57}
+		},
+		"grunge_sign_6.png":
+		{
+			"frame": {"x":22,"y":113,"w":22,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":57},
+			"sourceSize": {"w":22,"h":57}
+		},
+		"grunge_sign_14.png":
+		{
+			"frame": {"x":44,"y":113,"w":38,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":19},
+			"sourceSize": {"w":38,"h":19}
+		},
+		"grunge_sign_13.png":
+		{
+			"frame": {"x":44,"y":132,"w":13,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":32},
+			"sourceSize": {"w":13,"h":32}
+		},
+		"grunge_sign_9.png":
+		{
+			"frame": {"x":57,"y":132,"w":13,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":32},
+			"sourceSize": {"w":13,"h":32}
+		},
+		"grunge_sign_12.png":
+		{
+			"frame": {"x":70,"y":132,"w":22,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":28},
+			"sourceSize": {"w":22,"h":28}
+		},
+		"grunge_sign_16.png":
+		{
+			"frame": {"x":82,"y":113,"w":19,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":9},
+			"sourceSize": {"w":19,"h":9}
+		},
+		"grunge_sign_3.png":
+		{
+			"frame": {"x":92,"y":132,"w":9,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":14},
+			"sourceSize": {"w":9,"h":14}
+		},
+		"grunge_sign_5.png":
+		{
+			"frame": {"x":101,"y":132,"w":9,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":14},
+			"sourceSize": {"w":9,"h":14}
+		}
+	}
+}

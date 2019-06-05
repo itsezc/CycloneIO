@@ -1,0 +1,201 @@
+{
+	"meta": {
+		"image": "xmas12_nutcracker_sheet.png",
+		"size": {"w":225,"h":189},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas12_nutcracker_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":118,"h":172},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":172},
+			"sourceSize": {"w":118,"h":172}
+		},
+		"xmas12_nutcracker_19.png":
+		{
+			"frame": {"x":118,"y":0,"w":49,"h":172},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":172},
+			"sourceSize": {"w":49,"h":172}
+		},
+		"xmas12_nutcracker_28.png":
+		{
+			"frame": {"x":167,"y":0,"w":26,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":86},
+			"sourceSize": {"w":26,"h":86}
+		},
+		"xmas12_nutcracker_8.png":
+		{
+			"frame": {"x":0,"y":172,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"xmas12_nutcracker_25.png":
+		{
+			"frame": {"x":193,"y":0,"w":32,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":29},
+			"sourceSize": {"w":32,"h":29}
+		},
+		"xmas12_nutcracker_27.png":
+		{
+			"frame": {"x":193,"y":29,"w":31,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":30},
+			"sourceSize": {"w":31,"h":30}
+		},
+		"xmas12_nutcracker_10.png":
+		{
+			"frame": {"x":193,"y":59,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"xmas12_nutcracker_23.png":
+		{
+			"frame": {"x":193,"y":89,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"xmas12_nutcracker_24.png":
+		{
+			"frame": {"x":193,"y":118,"w":19,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":27},
+			"sourceSize": {"w":19,"h":27}
+		},
+		"xmas12_nutcracker_4.png":
+		{
+			"frame": {"x":193,"y":145,"w":19,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":27},
+			"sourceSize": {"w":19,"h":27}
+		},
+		"xmas12_nutcracker_21.png":
+		{
+			"frame": {"x":167,"y":86,"w":18,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":25},
+			"sourceSize": {"w":18,"h":25}
+		},
+		"xmas12_nutcracker_22.png":
+		{
+			"frame": {"x":167,"y":111,"w":18,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":24},
+			"sourceSize": {"w":18,"h":24}
+		},
+		"xmas12_nutcracker_13.png":
+		{
+			"frame": {"x":193,"y":172,"w":19,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":15},
+			"sourceSize": {"w":19,"h":15}
+		},
+		"xmas12_nutcracker_12.png":
+		{
+			"frame": {"x":167,"y":135,"w":19,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":10},
+			"sourceSize": {"w":19,"h":10}
+		},
+		"xmas12_nutcracker_9.png":
+		{
+			"frame": {"x":167,"y":145,"w":18,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":14},
+			"sourceSize": {"w":18,"h":14}
+		},
+		"xmas12_nutcracker_11.png":
+		{
+			"frame": {"x":208,"y":59,"w":13,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":15},
+			"sourceSize": {"w":13,"h":15}
+		},
+		"xmas12_nutcracker_15.png":
+		{
+			"frame": {"x":208,"y":74,"w":10,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":15},
+			"sourceSize": {"w":10,"h":15}
+		},
+		"xmas12_nutcracker_16.png":
+		{
+			"frame": {"x":214,"y":89,"w":10,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":14},
+			"sourceSize": {"w":10,"h":14}
+		},
+		"xmas12_nutcracker_14.png":
+		{
+			"frame": {"x":214,"y":103,"w":9,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":14},
+			"sourceSize": {"w":9,"h":14}
+		},
+		"xmas12_nutcracker_17.png":
+		{
+			"frame": {"x":212,"y":118,"w":9,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":13},
+			"sourceSize": {"w":9,"h":13}
+		},
+		"xmas12_nutcracker_3.png":
+		{
+			"frame": {"x":212,"y":131,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"xmas12_nutcracker_5.png":
+		{
+			"frame": {"x":218,"y":74,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"xmas12_nutcracker_7.png":
+		{
+			"frame": {"x":221,"y":59,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"xmas12_nutcracker_6.png":
+		{
+			"frame": {"x":224,"y":29,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

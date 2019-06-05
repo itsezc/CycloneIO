@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "track12_tea_mother_sheet.png",
+		"size": {"w":150,"h":131},
+		"scale": "1"
+	},
+	"frames": {
+		"track12_tea_mother_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":88},
+			"sourceSize": {"w":49,"h":88}
+		},
+		"track12_tea_mother_6.png":
+		{
+			"frame": {"x":49,"y":0,"w":49,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":88},
+			"sourceSize": {"w":49,"h":88}
+		},
+		"track12_tea_mother_14.png":
+		{
+			"frame": {"x":98,"y":0,"w":52,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":35},
+			"sourceSize": {"w":52,"h":35}
+		},
+		"track12_tea_mother_10.png":
+		{
+			"frame": {"x":98,"y":35,"w":52,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":26},
+			"sourceSize": {"w":52,"h":26}
+		},
+		"track12_tea_mother_11.png":
+		{
+			"frame": {"x":0,"y":88,"w":24,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":43},
+			"sourceSize": {"w":24,"h":43}
+		},
+		"track12_tea_mother_9.png":
+		{
+			"frame": {"x":24,"y":88,"w":24,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":43},
+			"sourceSize": {"w":24,"h":43}
+		},
+		"track12_tea_mother_1.png":
+		{
+			"frame": {"x":48,"y":88,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"track12_tea_mother_8.png":
+		{
+			"frame": {"x":98,"y":61,"w":27,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":18},
+			"sourceSize": {"w":27,"h":18}
+		},
+		"track12_tea_mother_3.png":
+		{
+			"frame": {"x":70,"y":88,"w":27,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":14},
+			"sourceSize": {"w":27,"h":14}
+		}
+	}
+}

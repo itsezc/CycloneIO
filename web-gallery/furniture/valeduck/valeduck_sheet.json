@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "valeduck_sheet.png",
+		"size": {"w":86,"h":84},
+		"scale": "1"
+	},
+	"frames": {
+		"valeduck_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"valeduck_3.png":
+		{
+			"frame": {"x":64,"y":0,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"valeduck_8.png":
+		{
+			"frame": {"x":0,"y":51,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"valeduck_6.png":
+		{
+			"frame": {"x":22,"y":51,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"valeduck_11.png":
+		{
+			"frame": {"x":64,"y":33,"w":12,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":18},
+			"sourceSize": {"w":12,"h":18}
+		},
+		"valeduck_12.png":
+		{
+			"frame": {"x":42,"y":51,"w":12,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":18},
+			"sourceSize": {"w":12,"h":18}
+		},
+		"valeduck_10.png":
+		{
+			"frame": {"x":54,"y":51,"w":18,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":7},
+			"sourceSize": {"w":18,"h":7}
+		},
+		"valeduck_2.png":
+		{
+			"frame": {"x":76,"y":33,"w":9,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":3},
+			"sourceSize": {"w":9,"h":3}
+		}
+	}
+}

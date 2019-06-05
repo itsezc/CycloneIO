@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "cubie_decal_0_sheet.png",
+		"size": {"w":249,"h":157},
+		"scale": "1"
+	},
+	"frames": {
+		"cubie_decal_0_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":139,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":139,"h":114},
+			"sourceSize": {"w":139,"h":114}
+		},
+		"cubie_decal_0_2.png":
+		{
+			"frame": {"x":139,"y":0,"w":56,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":84},
+			"sourceSize": {"w":56,"h":84}
+		},
+		"cubie_decal_0_9.png":
+		{
+			"frame": {"x":195,"y":0,"w":54,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":82},
+			"sourceSize": {"w":54,"h":82}
+		},
+		"cubie_decal_0_3.png":
+		{
+			"frame": {"x":0,"y":114,"w":29,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":43},
+			"sourceSize": {"w":29,"h":43}
+		},
+		"cubie_decal_0_6.png":
+		{
+			"frame": {"x":29,"y":114,"w":27,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":41},
+			"sourceSize": {"w":27,"h":41}
+		},
+		"cubie_decal_0_1.png":
+		{
+			"frame": {"x":195,"y":82,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

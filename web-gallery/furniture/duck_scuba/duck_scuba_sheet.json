@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "duck_scuba_sheet.png",
+		"size": {"w":51,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"duck_scuba_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":23},
+			"sourceSize": {"w":26,"h":23}
+		},
+		"duck_scuba_7.png":
+		{
+			"frame": {"x":26,"y":0,"w":25,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":23},
+			"sourceSize": {"w":25,"h":23}
+		},
+		"duck_scuba_10.png":
+		{
+			"frame": {"x":0,"y":23,"w":19,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":7},
+			"sourceSize": {"w":19,"h":7}
+		},
+		"duck_scuba_8.png":
+		{
+			"frame": {"x":19,"y":23,"w":18,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":6},
+			"sourceSize": {"w":18,"h":6}
+		},
+		"duck_scuba_12.png":
+		{
+			"frame": {"x":0,"y":30,"w":14,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":12},
+			"sourceSize": {"w":14,"h":12}
+		},
+		"duck_scuba_2.png":
+		{
+			"frame": {"x":14,"y":30,"w":14,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":12},
+			"sourceSize": {"w":14,"h":12}
+		},
+		"duck_scuba_9.png":
+		{
+			"frame": {"x":37,"y":23,"w":10,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":4},
+			"sourceSize": {"w":10,"h":4}
+		},
+		"duck_scuba_11.png":
+		{
+			"frame": {"x":37,"y":27,"w":8,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":2},
+			"sourceSize": {"w":8,"h":2}
+		}
+	}
+}

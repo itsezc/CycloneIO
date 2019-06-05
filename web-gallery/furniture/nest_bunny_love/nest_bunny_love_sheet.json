@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "nest_bunny_love_sheet.png",
+		"size": {"w":169,"h":106},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_bunny_love_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":114,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":70},
+			"sourceSize": {"w":114,"h":70}
+		},
+		"nest_bunny_love_12.png":
+		{
+			"frame": {"x":0,"y":70,"w":57,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":36},
+			"sourceSize": {"w":57,"h":36}
+		},
+		"nest_bunny_love_6.png":
+		{
+			"frame": {"x":57,"y":70,"w":57,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":36},
+			"sourceSize": {"w":57,"h":36}
+		},
+		"nest_bunny_love_3.png":
+		{
+			"frame": {"x":114,"y":0,"w":55,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":15},
+			"sourceSize": {"w":55,"h":15}
+		},
+		"nest_bunny_love_5.png":
+		{
+			"frame": {"x":114,"y":15,"w":55,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":15},
+			"sourceSize": {"w":55,"h":15}
+		},
+		"nest_bunny_love_13.png":
+		{
+			"frame": {"x":114,"y":30,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		},
+		"nest_bunny_love_2.png":
+		{
+			"frame": {"x":114,"y":49,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		},
+		"nest_bunny_love_4.png":
+		{
+			"frame": {"x":114,"y":68,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		},
+		"nest_bunny_love_10.png":
+		{
+			"frame": {"x":114,"y":87,"w":27,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":8},
+			"sourceSize": {"w":27,"h":8}
+		},
+		"nest_bunny_love_14.png":
+		{
+			"frame": {"x":141,"y":87,"w":27,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":8},
+			"sourceSize": {"w":27,"h":8}
+		}
+	}
+}

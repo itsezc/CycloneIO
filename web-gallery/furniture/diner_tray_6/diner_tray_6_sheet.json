@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "diner_tray_6_sheet.png",
+		"size": {"w":152,"h":80},
+		"scale": "1"
+	},
+	"frames": {
+		"diner_tray_6_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":102,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":102,"h":52},
+			"sourceSize": {"w":102,"h":52}
+		},
+		"diner_tray_6_4.png":
+		{
+			"frame": {"x":102,"y":0,"w":50,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":52},
+			"sourceSize": {"w":50,"h":52}
+		},
+		"diner_tray_6_3.png":
+		{
+			"frame": {"x":0,"y":52,"w":26,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":28},
+			"sourceSize": {"w":26,"h":28}
+		},
+		"diner_tray_6_7.png":
+		{
+			"frame": {"x":26,"y":52,"w":26,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":28},
+			"sourceSize": {"w":26,"h":28}
+		},
+		"diner_tray_6_5.png":
+		{
+			"frame": {"x":52,"y":52,"w":20,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":23},
+			"sourceSize": {"w":20,"h":23}
+		},
+		"diner_tray_6_2.png":
+		{
+			"frame": {"x":72,"y":52,"w":1,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":3},
+			"sourceSize": {"w":1,"h":3}
+		}
+	}
+}

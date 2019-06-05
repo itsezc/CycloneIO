@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "dino_c15_table_sheet.png",
+		"size": {"w":160,"h":91},
+		"scale": "1"
+	},
+	"frames": {
+		"dino_c15_table_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":91,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":47},
+			"sourceSize": {"w":91,"h":47}
+		},
+		"dino_c15_table_6.png":
+		{
+			"frame": {"x":91,"y":0,"w":69,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":46},
+			"sourceSize": {"w":69,"h":46}
+		},
+		"dino_c15_table_9.png":
+		{
+			"frame": {"x":0,"y":47,"w":57,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":44},
+			"sourceSize": {"w":57,"h":44}
+		},
+		"dino_c15_table_1.png":
+		{
+			"frame": {"x":57,"y":47,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		}
+	}
+}

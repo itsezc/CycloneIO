@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "carpet_legocourt_sheet.png",
+		"size": {"w":284,"h":226},
+		"scale": "1"
+	},
+	"frames": {
+		"carpet_legocourt_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":284,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":284,"h":113},
+			"sourceSize": {"w":284,"h":113}
+		},
+		"carpet_legocourt_6.png":
+		{
+			"frame": {"x":0,"y":113,"w":142,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":142,"h":75},
+			"sourceSize": {"w":142,"h":75}
+		},
+		"carpet_legocourt_8.png":
+		{
+			"frame": {"x":142,"y":113,"w":142,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":142,"h":75},
+			"sourceSize": {"w":142,"h":75}
+		},
+		"carpet_legocourt_4.png":
+		{
+			"frame": {"x":0,"y":188,"w":72,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":38},
+			"sourceSize": {"w":72,"h":38}
+		},
+		"carpet_legocourt_9.png":
+		{
+			"frame": {"x":72,"y":188,"w":72,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":38},
+			"sourceSize": {"w":72,"h":38}
+		},
+		"carpet_legocourt_10.png":
+		{
+			"frame": {"x":144,"y":188,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		}
+	}
+}

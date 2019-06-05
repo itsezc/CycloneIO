@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "cameraproto_sheet.png",
+		"size": {"w":98,"h":84},
+		"scale": "1"
+	},
+	"frames": {
+		"cameraproto_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":84},
+			"sourceSize": {"w":38,"h":84}
+		},
+		"cameraproto_1.png":
+		{
+			"frame": {"x":38,"y":0,"w":5,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":53},
+			"sourceSize": {"w":5,"h":53}
+		},
+		"cameraproto_6.png":
+		{
+			"frame": {"x":43,"y":0,"w":21,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":43},
+			"sourceSize": {"w":21,"h":43}
+		},
+		"cameraproto_5.png":
+		{
+			"frame": {"x":64,"y":0,"w":34,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":14},
+			"sourceSize": {"w":34,"h":14}
+		},
+		"cameraproto_11.png":
+		{
+			"frame": {"x":64,"y":14,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"cameraproto_12.png":
+		{
+			"frame": {"x":86,"y":14,"w":3,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":26},
+			"sourceSize": {"w":3,"h":26}
+		},
+		"cameraproto_9.png":
+		{
+			"frame": {"x":64,"y":44,"w":15,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":7},
+			"sourceSize": {"w":15,"h":7}
+		}
+	}
+}

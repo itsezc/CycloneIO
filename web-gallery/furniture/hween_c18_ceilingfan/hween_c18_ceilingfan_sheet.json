@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hween_c18_ceilingfan_sheet.png",
+		"size": {"w":136,"h":113},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c18_ceilingfan_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":68,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":40},
+			"sourceSize": {"w":68,"h":40}
+		},
+		"hween_c18_ceilingfan_2.png":
+		{
+			"frame": {"x":68,"y":0,"w":68,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":40},
+			"sourceSize": {"w":68,"h":40}
+		},
+		"hween_c18_ceilingfan_4.png":
+		{
+			"frame": {"x":0,"y":40,"w":68,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":40},
+			"sourceSize": {"w":68,"h":40}
+		},
+		"hween_c18_ceilingfan_5.png":
+		{
+			"frame": {"x":68,"y":40,"w":68,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":40},
+			"sourceSize": {"w":68,"h":40}
+		},
+		"hween_c18_ceilingfan_7.png":
+		{
+			"frame": {"x":0,"y":80,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"hween_c18_ceilingfan_6.png":
+		{
+			"frame": {"x":66,"y":80,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		}
+	}
+}

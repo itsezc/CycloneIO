@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "party_mic_sheet.png",
+		"size": {"w":235,"h":148},
+		"scale": "1"
+	},
+	"frames": {
+		"party_mic_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":131,"h":118},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":131,"h":118},
+			"sourceSize": {"w":131,"h":118}
+		},
+		"party_mic_6.png":
+		{
+			"frame": {"x":131,"y":0,"w":48,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":82},
+			"sourceSize": {"w":48,"h":82}
+		},
+		"party_mic_5.png":
+		{
+			"frame": {"x":179,"y":0,"w":56,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":69},
+			"sourceSize": {"w":56,"h":69}
+		},
+		"party_mic_8.png":
+		{
+			"frame": {"x":179,"y":69,"w":27,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":44},
+			"sourceSize": {"w":27,"h":44}
+		},
+		"party_mic_7.png":
+		{
+			"frame": {"x":131,"y":82,"w":40,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":12},
+			"sourceSize": {"w":40,"h":12}
+		},
+		"party_mic_3.png":
+		{
+			"frame": {"x":206,"y":69,"w":28,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":36},
+			"sourceSize": {"w":28,"h":36}
+		},
+		"party_mic_11.png":
+		{
+			"frame": {"x":0,"y":118,"w":25,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":30},
+			"sourceSize": {"w":25,"h":30}
+		},
+		"party_mic_10.png":
+		{
+			"frame": {"x":206,"y":105,"w":25,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":7},
+			"sourceSize": {"w":25,"h":7}
+		}
+	}
+}

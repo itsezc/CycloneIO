@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hween_c15_stagecorner_sheet.png",
+		"size": {"w":85,"h":46},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c15_stagecorner_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":46},
+			"sourceSize": {"w":34,"h":46}
+		},
+		"hween_c15_stagecorner_3.png":
+		{
+			"frame": {"x":34,"y":0,"w":34,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":46},
+			"sourceSize": {"w":34,"h":46}
+		},
+		"hween_c15_stagecorner_7.png":
+		{
+			"frame": {"x":68,"y":0,"w":17,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":23},
+			"sourceSize": {"w":17,"h":23}
+		}
+	}
+}

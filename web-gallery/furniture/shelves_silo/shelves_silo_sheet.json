@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "shelves_silo_sheet.png",
+		"size": {"w":340,"h":333},
+		"scale": "1"
+	},
+	"frames": {
+		"shelves_silo_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":210,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":210,"h":168},
+			"sourceSize": {"w":210,"h":168}
+		},
+		"shelves_silo_12.png":
+		{
+			"frame": {"x":210,"y":0,"w":65,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":122},
+			"sourceSize": {"w":65,"h":122}
+		},
+		"shelves_silo_13.png":
+		{
+			"frame": {"x":275,"y":0,"w":65,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":122},
+			"sourceSize": {"w":65,"h":122}
+		},
+		"shelves_silo_6.png":
+		{
+			"frame": {"x":0,"y":168,"w":39,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":104},
+			"sourceSize": {"w":39,"h":104}
+		},
+		"shelves_silo_4.png":
+		{
+			"frame": {"x":39,"y":168,"w":84,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":46},
+			"sourceSize": {"w":84,"h":46}
+		},
+		"shelves_silo_1.png":
+		{
+			"frame": {"x":0,"y":272,"w":24,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":61},
+			"sourceSize": {"w":24,"h":61}
+		},
+		"shelves_silo_2.png":
+		{
+			"frame": {"x":24,"y":272,"w":24,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":61},
+			"sourceSize": {"w":24,"h":61}
+		},
+		"shelves_silo_14.png":
+		{
+			"frame": {"x":39,"y":214,"w":17,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":55},
+			"sourceSize": {"w":17,"h":55}
+		},
+		"shelves_silo_9.png":
+		{
+			"frame": {"x":275,"y":122,"w":44,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":24},
+			"sourceSize": {"w":44,"h":24}
+		},
+		"shelves_silo_3.png":
+		{
+			"frame": {"x":210,"y":122,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		}
+	}
+}

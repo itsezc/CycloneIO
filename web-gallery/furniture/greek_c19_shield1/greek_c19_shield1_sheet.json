@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "greek_c19_shield1_sheet.png",
+		"size": {"w":72,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_c19_shield1_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":53},
+			"sourceSize": {"w":44,"h":53}
+		},
+		"greek_c19_shield1_1.png":
+		{
+			"frame": {"x":44,"y":0,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		},
+		"greek_c19_shield1_3.png":
+		{
+			"frame": {"x":44,"y":28,"w":28,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":15},
+			"sourceSize": {"w":28,"h":15}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "paris15_poodle_sheet.png",
+		"size": {"w":142,"h":113},
+		"scale": "1"
+	},
+	"frames": {
+		"paris15_poodle_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":57},
+			"sourceSize": {"w":48,"h":57}
+		},
+		"paris15_poodle_1.png":
+		{
+			"frame": {"x":48,"y":0,"w":47,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":57},
+			"sourceSize": {"w":47,"h":57}
+		},
+		"paris15_poodle_3.png":
+		{
+			"frame": {"x":95,"y":0,"w":47,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":57},
+			"sourceSize": {"w":47,"h":57}
+		},
+		"paris15_poodle_8.png":
+		{
+			"frame": {"x":0,"y":57,"w":48,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":56},
+			"sourceSize": {"w":48,"h":56}
+		},
+		"paris15_poodle_7.png":
+		{
+			"frame": {"x":48,"y":57,"w":38,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":19},
+			"sourceSize": {"w":38,"h":19}
+		},
+		"paris15_poodle_5.png":
+		{
+			"frame": {"x":48,"y":76,"w":25,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":30},
+			"sourceSize": {"w":25,"h":30}
+		}
+	}
+}

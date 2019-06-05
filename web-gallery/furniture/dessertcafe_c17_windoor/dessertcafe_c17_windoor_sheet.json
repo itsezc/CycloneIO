@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "dessertcafe_c17_windoor_sheet.png",
+		"size": {"w":234,"h":125},
+		"scale": "1"
+	},
+	"frames": {
+		"dessertcafe_c17_windoor_12.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":125},
+			"sourceSize": {"w":32,"h":125}
+		},
+		"dessertcafe_c17_windoor_6.png":
+		{
+			"frame": {"x":32,"y":0,"w":31,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":115},
+			"sourceSize": {"w":31,"h":115}
+		},
+		"dessertcafe_c17_windoor_10.png":
+		{
+			"frame": {"x":63,"y":0,"w":28,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":82},
+			"sourceSize": {"w":28,"h":82}
+		},
+		"dessertcafe_c17_windoor_7.png":
+		{
+			"frame": {"x":91,"y":0,"w":31,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":73},
+			"sourceSize": {"w":31,"h":73}
+		},
+		"dessertcafe_c17_windoor_8.png":
+		{
+			"frame": {"x":122,"y":0,"w":66,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":70},
+			"sourceSize": {"w":66,"h":70}
+		},
+		"dessertcafe_c17_windoor_3.png":
+		{
+			"frame": {"x":188,"y":0,"w":46,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":64},
+			"sourceSize": {"w":46,"h":64}
+		},
+		"dessertcafe_c17_windoor_5.png":
+		{
+			"frame": {"x":122,"y":70,"w":57,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":29},
+			"sourceSize": {"w":57,"h":29}
+		},
+		"dessertcafe_c17_windoor_13.png":
+		{
+			"frame": {"x":188,"y":64,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"dessertcafe_c17_windoor_4.png":
+		{
+			"frame": {"x":209,"y":64,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -11,9 +11,6 @@ const config = {
     scene: new Room(0), // To change this on the navigator
 	parent: 'game',
     disableContextMenu: false,
-    physics: {
-        default: 'arcade'
-    },
     scale: {
         mode: RESIZE,
         width: window.innerWidth,

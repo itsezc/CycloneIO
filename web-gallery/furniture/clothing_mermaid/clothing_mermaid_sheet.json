@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_mermaid_sheet.png",
+		"size": {"w":70,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_mermaid_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":41,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":51},
+			"sourceSize": {"w":41,"h":51}
+		},
+		"clothing_mermaid_7.png":
+		{
+			"frame": {"x":41,"y":0,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"clothing_mermaid_2.png":
+		{
+			"frame": {"x":41,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

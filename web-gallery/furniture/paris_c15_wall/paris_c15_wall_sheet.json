@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "paris_c15_wall_sheet.png",
+		"size": {"w":426,"h":413},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_wall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":225,"h":371},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":225,"h":371},
+			"sourceSize": {"w":225,"h":371}
+		},
+		"paris_c15_wall_4.png":
+		{
+			"frame": {"x":225,"y":0,"w":67,"h":371},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":371},
+			"sourceSize": {"w":67,"h":371}
+		},
+		"paris_c15_wall_5.png":
+		{
+			"frame": {"x":292,"y":0,"w":67,"h":371},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":371},
+			"sourceSize": {"w":67,"h":371}
+		},
+		"paris_c15_wall_6.png":
+		{
+			"frame": {"x":359,"y":0,"w":67,"h":371},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":371},
+			"sourceSize": {"w":67,"h":371}
+		},
+		"paris_c15_wall_1.png":
+		{
+			"frame": {"x":0,"y":371,"w":9,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":42},
+			"sourceSize": {"w":9,"h":42}
+		},
+		"paris_c15_wall_8.png":
+		{
+			"frame": {"x":9,"y":371,"w":15,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":32},
+			"sourceSize": {"w":15,"h":32}
+		}
+	}
+}

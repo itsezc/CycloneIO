@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "vikings_pillar_sheet.png",
+		"size": {"w":235,"h":184},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_pillar_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":80,"h":184},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":184},
+			"sourceSize": {"w":80,"h":184}
+		},
+		"vikings_pillar_4.png":
+		{
+			"frame": {"x":80,"y":0,"w":94,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":80},
+			"sourceSize": {"w":94,"h":80}
+		},
+		"vikings_pillar_2.png":
+		{
+			"frame": {"x":80,"y":80,"w":40,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":93},
+			"sourceSize": {"w":40,"h":93}
+		},
+		"vikings_pillar_9.png":
+		{
+			"frame": {"x":174,"y":0,"w":61,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":32},
+			"sourceSize": {"w":61,"h":32}
+		},
+		"vikings_pillar_3.png":
+		{
+			"frame": {"x":174,"y":32,"w":48,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":42},
+			"sourceSize": {"w":48,"h":42}
+		},
+		"vikings_pillar_5.png":
+		{
+			"frame": {"x":174,"y":74,"w":31,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":16},
+			"sourceSize": {"w":31,"h":16}
+		},
+		"vikings_pillar_7.png":
+		{
+			"frame": {"x":174,"y":90,"w":18,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":29},
+			"sourceSize": {"w":18,"h":29}
+		},
+		"vikings_pillar_1.png":
+		{
+			"frame": {"x":222,"y":32,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

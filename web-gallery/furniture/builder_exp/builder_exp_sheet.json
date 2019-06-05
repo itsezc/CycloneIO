@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "builder_exp_sheet.png",
+		"size": {"w":100,"h":69},
+		"scale": "1"
+	},
+	"frames": {
+		"builder_exp_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":69},
+			"sourceSize": {"w":66,"h":69}
+		},
+		"builder_exp_8.png":
+		{
+			"frame": {"x":66,"y":0,"w":34,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":36},
+			"sourceSize": {"w":34,"h":36}
+		},
+		"builder_exp_7.png":
+		{
+			"frame": {"x":66,"y":36,"w":30,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":32},
+			"sourceSize": {"w":30,"h":32}
+		}
+	}
+}

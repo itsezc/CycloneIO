@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hween_c16_endtable2_sheet.png",
+		"size": {"w":91,"h":65},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c16_endtable2_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":65},
+			"sourceSize": {"w":46,"h":65}
+		},
+		"hween_c16_endtable2_6.png":
+		{
+			"frame": {"x":46,"y":0,"w":45,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":23},
+			"sourceSize": {"w":45,"h":23}
+		},
+		"hween_c16_endtable2_5.png":
+		{
+			"frame": {"x":46,"y":23,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		}
+	}
+}

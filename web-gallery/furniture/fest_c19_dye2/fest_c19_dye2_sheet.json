@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "fest_c19_dye2_sheet.png",
+		"size": {"w":39,"h":32},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_dye2_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":13,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":32},
+			"sourceSize": {"w":13,"h":32}
+		},
+		"fest_c19_dye2_7.png":
+		{
+			"frame": {"x":13,"y":0,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		},
+		"fest_c19_dye2_8.png":
+		{
+			"frame": {"x":26,"y":0,"w":13,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":6},
+			"sourceSize": {"w":13,"h":6}
+		}
+	}
+}

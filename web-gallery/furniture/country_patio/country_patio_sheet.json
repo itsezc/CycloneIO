@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "country_patio_sheet.png",
+		"size": {"w":160,"h":82},
+		"scale": "1"
+	},
+	"frames": {
+		"country_patio_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":96,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":61},
+			"sourceSize": {"w":96,"h":61}
+		},
+		"country_patio_5.png":
+		{
+			"frame": {"x":96,"y":0,"w":64,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":40},
+			"sourceSize": {"w":64,"h":40}
+		},
+		"country_patio_7.png":
+		{
+			"frame": {"x":96,"y":40,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"country_patio_6.png":
+		{
+			"frame": {"x":0,"y":61,"w":32,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":21},
+			"sourceSize": {"w":32,"h":21}
+		}
+	}
+}

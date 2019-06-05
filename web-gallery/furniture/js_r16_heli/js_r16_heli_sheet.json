@@ -1,0 +1,193 @@
+{
+	"meta": {
+		"image": "js_r16_heli_sheet.png",
+		"size": {"w":908,"h":613},
+		"scale": "1"
+	},
+	"frames": {
+		"js_r16_heli_16.png":
+		{
+			"frame": {"x":0,"y":0,"w":308,"h":245},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":308,"h":245},
+			"sourceSize": {"w":308,"h":245}
+		},
+		"js_r16_heli_10.png":
+		{
+			"frame": {"x":308,"y":0,"w":306,"h":153},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":306,"h":153},
+			"sourceSize": {"w":306,"h":153}
+		},
+		"js_r16_heli_12.png":
+		{
+			"frame": {"x":0,"y":245,"w":306,"h":153},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":306,"h":153},
+			"sourceSize": {"w":306,"h":153}
+		},
+		"js_r16_heli_13.png":
+		{
+			"frame": {"x":306,"y":245,"w":306,"h":153},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":306,"h":153},
+			"sourceSize": {"w":306,"h":153}
+		},
+		"js_r16_heli_9.png":
+		{
+			"frame": {"x":0,"y":398,"w":301,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":301,"h":151},
+			"sourceSize": {"w":301,"h":151}
+		},
+		"js_r16_heli_2.png":
+		{
+			"frame": {"x":301,"y":398,"w":294,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":294,"h":147},
+			"sourceSize": {"w":294,"h":147}
+		},
+		"js_r16_heli_3.png":
+		{
+			"frame": {"x":614,"y":0,"w":294,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":294,"h":147},
+			"sourceSize": {"w":294,"h":147}
+		},
+		"js_r16_heli_4.png":
+		{
+			"frame": {"x":614,"y":147,"w":250,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":250,"h":134},
+			"sourceSize": {"w":250,"h":134}
+		},
+		"js_r16_heli_23.png":
+		{
+			"frame": {"x":614,"y":281,"w":133,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":159},
+			"sourceSize": {"w":133,"h":159}
+		},
+		"js_r16_heli_24.png":
+		{
+			"frame": {"x":747,"y":281,"w":52,"h":148},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":148},
+			"sourceSize": {"w":52,"h":148}
+		},
+		"js_r16_heli_6.png":
+		{
+			"frame": {"x":799,"y":281,"w":45,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":139},
+			"sourceSize": {"w":45,"h":139}
+		},
+		"js_r16_heli_26.png":
+		{
+			"frame": {"x":614,"y":440,"w":133,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":59},
+			"sourceSize": {"w":133,"h":59}
+		},
+		"js_r16_heli_22.png":
+		{
+			"frame": {"x":747,"y":440,"w":113,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":113,"h":57},
+			"sourceSize": {"w":113,"h":57}
+		},
+		"js_r16_heli_5.png":
+		{
+			"frame": {"x":308,"y":153,"w":111,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":111,"h":78},
+			"sourceSize": {"w":111,"h":78}
+		},
+		"js_r16_heli_17.png":
+		{
+			"frame": {"x":844,"y":281,"w":51,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":78},
+			"sourceSize": {"w":51,"h":78}
+		},
+		"js_r16_heli_28.png":
+		{
+			"frame": {"x":419,"y":153,"w":47,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":78},
+			"sourceSize": {"w":47,"h":78}
+		},
+		"js_r16_heli_11.png":
+		{
+			"frame": {"x":466,"y":153,"w":55,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":64},
+			"sourceSize": {"w":55,"h":64}
+		},
+		"js_r16_heli_14.png":
+		{
+			"frame": {"x":521,"y":153,"w":55,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":64},
+			"sourceSize": {"w":55,"h":64}
+		},
+		"js_r16_heli_15.png":
+		{
+			"frame": {"x":0,"y":549,"w":55,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":64},
+			"sourceSize": {"w":55,"h":64}
+		},
+		"js_r16_heli_8.png":
+		{
+			"frame": {"x":55,"y":549,"w":55,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":64},
+			"sourceSize": {"w":55,"h":64}
+		},
+		"js_r16_heli_20.png":
+		{
+			"frame": {"x":844,"y":359,"w":52,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":50},
+			"sourceSize": {"w":52,"h":50}
+		},
+		"js_r16_heli_7.png":
+		{
+			"frame": {"x":860,"y":440,"w":45,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":39},
+			"sourceSize": {"w":45,"h":39}
+		},
+		"js_r16_heli_21.png":
+		{
+			"frame": {"x":864,"y":147,"w":31,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":26},
+			"sourceSize": {"w":31,"h":26}
+		}
+	}
+}

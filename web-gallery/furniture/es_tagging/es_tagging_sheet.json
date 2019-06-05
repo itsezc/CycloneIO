@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "es_tagging_sheet.png",
+		"size": {"w":430,"h":327},
+		"scale": "1"
+	},
+	"frames": {
+		"es_tagging_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":275,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":275,"h":183},
+			"sourceSize": {"w":275,"h":183}
+		},
+		"es_tagging_5.png":
+		{
+			"frame": {"x":275,"y":0,"w":155,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":155,"h":160},
+			"sourceSize": {"w":155,"h":160}
+		},
+		"es_tagging_6.png":
+		{
+			"frame": {"x":0,"y":183,"w":120,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":45},
+			"sourceSize": {"w":120,"h":45}
+		},
+		"es_tagging_10.png":
+		{
+			"frame": {"x":0,"y":228,"w":18,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":99},
+			"sourceSize": {"w":18,"h":99}
+		},
+		"es_tagging_15.png":
+		{
+			"frame": {"x":18,"y":228,"w":78,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":80},
+			"sourceSize": {"w":78,"h":80}
+		},
+		"es_tagging_7.png":
+		{
+			"frame": {"x":275,"y":160,"w":59,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":23},
+			"sourceSize": {"w":59,"h":23}
+		},
+		"es_tagging_1.png":
+		{
+			"frame": {"x":96,"y":228,"w":9,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":51},
+			"sourceSize": {"w":9,"h":51}
+		},
+		"es_tagging_4.png":
+		{
+			"frame": {"x":120,"y":183,"w":18,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":26},
+			"sourceSize": {"w":18,"h":26}
+		},
+		"es_tagging_13.png":
+		{
+			"frame": {"x":334,"y":160,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"es_tagging_11.png":
+		{
+			"frame": {"x":358,"y":160,"w":11,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":8},
+			"sourceSize": {"w":11,"h":8}
+		},
+		"es_tagging_3.png":
+		{
+			"frame": {"x":369,"y":160,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

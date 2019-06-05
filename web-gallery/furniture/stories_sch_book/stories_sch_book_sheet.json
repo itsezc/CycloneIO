@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "stories_sch_book_sheet.png",
+		"size": {"w":76,"h":58},
+		"scale": "1"
+	},
+	"frames": {
+		"stories_sch_book_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":25},
+			"sourceSize": {"w":44,"h":25}
+		},
+		"stories_sch_book_12.png":
+		{
+			"frame": {"x":44,"y":0,"w":32,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":24},
+			"sourceSize": {"w":32,"h":24}
+		},
+		"stories_sch_book_7.png":
+		{
+			"frame": {"x":0,"y":25,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		},
+		"stories_sch_book_4.png":
+		{
+			"frame": {"x":0,"y":40,"w":24,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":18},
+			"sourceSize": {"w":24,"h":18}
+		},
+		"stories_sch_book_3.png":
+		{
+			"frame": {"x":30,"y":25,"w":23,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":13},
+			"sourceSize": {"w":23,"h":13}
+		},
+		"stories_sch_book_8.png":
+		{
+			"frame": {"x":53,"y":25,"w":17,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":13},
+			"sourceSize": {"w":17,"h":13}
+		},
+		"stories_sch_book_5.png":
+		{
+			"frame": {"x":24,"y":40,"w":16,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":8},
+			"sourceSize": {"w":16,"h":8}
+		}
+	}
+}

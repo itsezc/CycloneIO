@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hosptl_skele_sheet.png",
+		"size": {"w":114,"h":105},
+		"scale": "1"
+	},
+	"frames": {
+		"hosptl_skele_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":71,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":96},
+			"sourceSize": {"w":71,"h":96}
+		},
+		"hosptl_skele_7.png":
+		{
+			"frame": {"x":71,"y":0,"w":28,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":96},
+			"sourceSize": {"w":28,"h":96}
+		},
+		"hosptl_skele_6.png":
+		{
+			"frame": {"x":99,"y":0,"w":15,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":49},
+			"sourceSize": {"w":15,"h":49}
+		},
+		"hosptl_skele_5.png":
+		{
+			"frame": {"x":99,"y":49,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"hosptl_skele_4.png":
+		{
+			"frame": {"x":0,"y":96,"w":28,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":9},
+			"sourceSize": {"w":28,"h":9}
+		},
+		"hosptl_skele_9.png":
+		{
+			"frame": {"x":99,"y":79,"w":15,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":6},
+			"sourceSize": {"w":15,"h":6}
+		}
+	}
+}

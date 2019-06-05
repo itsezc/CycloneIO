@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "js_exe_bardesk_sheet.png",
+		"size": {"w":196,"h":160},
+		"scale": "1"
+	},
+	"frames": {
+		"js_exe_bardesk_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":140,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":140,"h":101},
+			"sourceSize": {"w":140,"h":101}
+		},
+		"js_exe_bardesk_11.png":
+		{
+			"frame": {"x":140,"y":0,"w":56,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":59},
+			"sourceSize": {"w":56,"h":59}
+		},
+		"js_exe_bardesk_6.png":
+		{
+			"frame": {"x":0,"y":101,"w":56,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":59},
+			"sourceSize": {"w":56,"h":59}
+		},
+		"js_exe_bardesk_1.png":
+		{
+			"frame": {"x":140,"y":59,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"js_exe_bardesk_12.png":
+		{
+			"frame": {"x":163,"y":59,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"js_exe_bardesk_2.png":
+		{
+			"frame": {"x":56,"y":101,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"js_exe_bardesk_7.png":
+		{
+			"frame": {"x":85,"y":101,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"js_exe_bardesk_3.png":
+		{
+			"frame": {"x":114,"y":101,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		},
+		"js_exe_bardesk_10.png":
+		{
+			"frame": {"x":142,"y":101,"w":12,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":22},
+			"sourceSize": {"w":12,"h":22}
+		},
+		"js_exe_bardesk_14.png":
+		{
+			"frame": {"x":154,"y":101,"w":12,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":22},
+			"sourceSize": {"w":12,"h":22}
+		}
+	}
+}

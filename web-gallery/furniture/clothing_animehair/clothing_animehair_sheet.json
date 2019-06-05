@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_animehair_sheet.png",
+		"size": {"w":62,"h":50},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_animehair_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":50},
+			"sourceSize": {"w":32,"h":50}
+		},
+		"clothing_animehair_1.png":
+		{
+			"frame": {"x":32,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

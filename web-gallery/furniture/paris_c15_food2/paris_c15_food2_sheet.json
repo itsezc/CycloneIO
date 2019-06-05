@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "paris_c15_food2_sheet.png",
+		"size": {"w":92,"h":62},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_food2_14.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":21},
+			"sourceSize": {"w":40,"h":21}
+		},
+		"paris_c15_food2_5.png":
+		{
+			"frame": {"x":0,"y":21,"w":28,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":23},
+			"sourceSize": {"w":28,"h":23}
+		},
+		"paris_c15_food2_4.png":
+		{
+			"frame": {"x":40,"y":0,"w":28,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":19},
+			"sourceSize": {"w":28,"h":19}
+		},
+		"paris_c15_food2_8.png":
+		{
+			"frame": {"x":40,"y":19,"w":28,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":19},
+			"sourceSize": {"w":28,"h":19}
+		},
+		"paris_c15_food2_7.png":
+		{
+			"frame": {"x":0,"y":44,"w":24,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":18},
+			"sourceSize": {"w":24,"h":18}
+		},
+		"paris_c15_food2_10.png":
+		{
+			"frame": {"x":24,"y":44,"w":24,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":15},
+			"sourceSize": {"w":24,"h":15}
+		},
+		"paris_c15_food2_12.png":
+		{
+			"frame": {"x":68,"y":0,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		},
+		"paris_c15_food2_9.png":
+		{
+			"frame": {"x":68,"y":13,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		},
+		"paris_c15_food2_11.png":
+		{
+			"frame": {"x":68,"y":26,"w":18,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":13},
+			"sourceSize": {"w":18,"h":13}
+		},
+		"paris_c15_food2_13.png":
+		{
+			"frame": {"x":86,"y":26,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

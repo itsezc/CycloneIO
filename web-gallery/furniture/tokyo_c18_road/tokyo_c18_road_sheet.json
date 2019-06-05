@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "tokyo_c18_road_sheet.png",
+		"size": {"w":264,"h":168},
+		"scale": "1"
+	},
+	"frames": {
+		"tokyo_c18_road_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":132,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":67},
+			"sourceSize": {"w":132,"h":67}
+		},
+		"tokyo_c18_road_3.png":
+		{
+			"frame": {"x":132,"y":0,"w":132,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":67},
+			"sourceSize": {"w":132,"h":67}
+		},
+		"tokyo_c18_road_5.png":
+		{
+			"frame": {"x":0,"y":67,"w":132,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":67},
+			"sourceSize": {"w":132,"h":67}
+		},
+		"tokyo_c18_road_8.png":
+		{
+			"frame": {"x":132,"y":67,"w":132,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":67},
+			"sourceSize": {"w":132,"h":67}
+		},
+		"tokyo_c18_road_11.png":
+		{
+			"frame": {"x":0,"y":134,"w":132,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":34},
+			"sourceSize": {"w":132,"h":34}
+		},
+		"tokyo_c18_road_6.png":
+		{
+			"frame": {"x":132,"y":134,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		}
+	}
+}

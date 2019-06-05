@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "habbo15_win_32_sheet.png",
+		"size": {"w":185,"h":177},
+		"scale": "1"
+	},
+	"frames": {
+		"habbo15_win_32_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":90},
+			"sourceSize": {"w":37,"h":90}
+		},
+		"habbo15_win_32_5.png":
+		{
+			"frame": {"x":37,"y":0,"w":37,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":90},
+			"sourceSize": {"w":37,"h":90}
+		},
+		"habbo15_win_32_14.png":
+		{
+			"frame": {"x":74,"y":0,"w":33,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":90},
+			"sourceSize": {"w":33,"h":90}
+		},
+		"habbo15_win_32_15.png":
+		{
+			"frame": {"x":107,"y":0,"w":39,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":87},
+			"sourceSize": {"w":39,"h":87}
+		},
+		"habbo15_win_32_6.png":
+		{
+			"frame": {"x":146,"y":0,"w":39,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":87},
+			"sourceSize": {"w":39,"h":87}
+		},
+		"habbo15_win_32_2.png":
+		{
+			"frame": {"x":0,"y":90,"w":34,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":87},
+			"sourceSize": {"w":34,"h":87}
+		},
+		"habbo15_win_32_3.png":
+		{
+			"frame": {"x":34,"y":90,"w":37,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":82},
+			"sourceSize": {"w":37,"h":82}
+		},
+		"habbo15_win_32_9.png":
+		{
+			"frame": {"x":71,"y":90,"w":37,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":82},
+			"sourceSize": {"w":37,"h":82}
+		},
+		"habbo15_win_32_12.png":
+		{
+			"frame": {"x":108,"y":90,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"habbo15_win_32_1.png":
+		{
+			"frame": {"x":108,"y":107,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

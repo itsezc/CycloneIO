@@ -1,0 +1,537 @@
+{
+	"meta": {
+		"image": "hween13_sheepdemon_sheet.png",
+		"size": {"w":411,"h":400},
+		"scale": "1"
+	},
+	"frames": {
+		"hween13_sheepdemon_64.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":197},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":197},
+			"sourceSize": {"w":49,"h":197}
+		},
+		"hween13_sheepdemon_10.png":
+		{
+			"frame": {"x":49,"y":0,"w":45,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":135},
+			"sourceSize": {"w":45,"h":135}
+		},
+		"hween13_sheepdemon_11.png":
+		{
+			"frame": {"x":94,"y":0,"w":45,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":135},
+			"sourceSize": {"w":45,"h":135}
+		},
+		"hween13_sheepdemon_13.png":
+		{
+			"frame": {"x":139,"y":0,"w":45,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":135},
+			"sourceSize": {"w":45,"h":135}
+		},
+		"hween13_sheepdemon_17.png":
+		{
+			"frame": {"x":184,"y":0,"w":45,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":135},
+			"sourceSize": {"w":45,"h":135}
+		},
+		"hween13_sheepdemon_12.png":
+		{
+			"frame": {"x":229,"y":0,"w":45,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":133},
+			"sourceSize": {"w":45,"h":133}
+		},
+		"hween13_sheepdemon_15.png":
+		{
+			"frame": {"x":274,"y":0,"w":45,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":133},
+			"sourceSize": {"w":45,"h":133}
+		},
+		"hween13_sheepdemon_14.png":
+		{
+			"frame": {"x":319,"y":0,"w":45,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":132},
+			"sourceSize": {"w":45,"h":132}
+		},
+		"hween13_sheepdemon_4.png":
+		{
+			"frame": {"x":0,"y":197,"w":48,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":101},
+			"sourceSize": {"w":48,"h":101}
+		},
+		"hween13_sheepdemon_3.png":
+		{
+			"frame": {"x":48,"y":197,"w":48,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":100},
+			"sourceSize": {"w":48,"h":100}
+		},
+		"hween13_sheepdemon_5.png":
+		{
+			"frame": {"x":96,"y":197,"w":48,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":99},
+			"sourceSize": {"w":48,"h":99}
+		},
+		"hween13_sheepdemon_1.png":
+		{
+			"frame": {"x":144,"y":197,"w":25,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":99},
+			"sourceSize": {"w":25,"h":99}
+		},
+		"hween13_sheepdemon_8.png":
+		{
+			"frame": {"x":169,"y":197,"w":48,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":98},
+			"sourceSize": {"w":48,"h":98}
+		},
+		"hween13_sheepdemon_6.png":
+		{
+			"frame": {"x":217,"y":197,"w":48,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":96},
+			"sourceSize": {"w":48,"h":96}
+		},
+		"hween13_sheepdemon_7.png":
+		{
+			"frame": {"x":265,"y":197,"w":48,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":96},
+			"sourceSize": {"w":48,"h":96}
+		},
+		"hween13_sheepdemon_21.png":
+		{
+			"frame": {"x":313,"y":197,"w":23,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":72},
+			"sourceSize": {"w":23,"h":72}
+		},
+		"hween13_sheepdemon_36.png":
+		{
+			"frame": {"x":336,"y":197,"w":23,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":70},
+			"sourceSize": {"w":23,"h":70}
+		},
+		"hween13_sheepdemon_37.png":
+		{
+			"frame": {"x":364,"y":0,"w":23,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":70},
+			"sourceSize": {"w":23,"h":70}
+		},
+		"hween13_sheepdemon_38.png":
+		{
+			"frame": {"x":364,"y":70,"w":23,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":70},
+			"sourceSize": {"w":23,"h":70}
+		},
+		"hween13_sheepdemon_19.png":
+		{
+			"frame": {"x":364,"y":140,"w":23,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":68},
+			"sourceSize": {"w":23,"h":68}
+		},
+		"hween13_sheepdemon_20.png":
+		{
+			"frame": {"x":364,"y":208,"w":23,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":68},
+			"sourceSize": {"w":23,"h":68}
+		},
+		"hween13_sheepdemon_34.png":
+		{
+			"frame": {"x":0,"y":298,"w":23,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":68},
+			"sourceSize": {"w":23,"h":68}
+		},
+		"hween13_sheepdemon_39.png":
+		{
+			"frame": {"x":23,"y":298,"w":23,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":68},
+			"sourceSize": {"w":23,"h":68}
+		},
+		"hween13_sheepdemon_43.png":
+		{
+			"frame": {"x":46,"y":298,"w":23,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":68},
+			"sourceSize": {"w":23,"h":68}
+		},
+		"hween13_sheepdemon_44.png":
+		{
+			"frame": {"x":69,"y":298,"w":23,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":68},
+			"sourceSize": {"w":23,"h":68}
+		},
+		"hween13_sheepdemon_22.png":
+		{
+			"frame": {"x":92,"y":298,"w":23,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":67},
+			"sourceSize": {"w":23,"h":67}
+		},
+		"hween13_sheepdemon_40.png":
+		{
+			"frame": {"x":115,"y":298,"w":23,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":66},
+			"sourceSize": {"w":23,"h":66}
+		},
+		"hween13_sheepdemon_41.png":
+		{
+			"frame": {"x":138,"y":298,"w":23,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":66},
+			"sourceSize": {"w":23,"h":66}
+		},
+		"hween13_sheepdemon_42.png":
+		{
+			"frame": {"x":161,"y":298,"w":23,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":66},
+			"sourceSize": {"w":23,"h":66}
+		},
+		"hween13_sheepdemon_35.png":
+		{
+			"frame": {"x":184,"y":298,"w":53,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":29},
+			"sourceSize": {"w":53,"h":29}
+		},
+		"hween13_sheepdemon_66.png":
+		{
+			"frame": {"x":319,"y":132,"w":24,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":52},
+			"sourceSize": {"w":24,"h":52}
+		},
+		"hween13_sheepdemon_70.png":
+		{
+			"frame": {"x":274,"y":133,"w":24,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":52},
+			"sourceSize": {"w":24,"h":52}
+		},
+		"hween13_sheepdemon_71.png":
+		{
+			"frame": {"x":229,"y":133,"w":24,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":51},
+			"sourceSize": {"w":24,"h":51}
+		},
+		"hween13_sheepdemon_65.png":
+		{
+			"frame": {"x":184,"y":135,"w":24,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":50},
+			"sourceSize": {"w":24,"h":50}
+		},
+		"hween13_sheepdemon_67.png":
+		{
+			"frame": {"x":139,"y":135,"w":24,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":50},
+			"sourceSize": {"w":24,"h":50}
+		},
+		"hween13_sheepdemon_47.png":
+		{
+			"frame": {"x":94,"y":135,"w":24,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":49},
+			"sourceSize": {"w":24,"h":49}
+		},
+		"hween13_sheepdemon_48.png":
+		{
+			"frame": {"x":49,"y":135,"w":24,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":49},
+			"sourceSize": {"w":24,"h":49}
+		},
+		"hween13_sheepdemon_69.png":
+		{
+			"frame": {"x":387,"y":0,"w":24,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":48},
+			"sourceSize": {"w":24,"h":48}
+		},
+		"hween13_sheepdemon_45.png":
+		{
+			"frame": {"x":387,"y":48,"w":24,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":47},
+			"sourceSize": {"w":24,"h":47}
+		},
+		"hween13_sheepdemon_30.png":
+		{
+			"frame": {"x":184,"y":327,"w":38,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":34},
+			"sourceSize": {"w":38,"h":34}
+		},
+		"hween13_sheepdemon_33.png":
+		{
+			"frame": {"x":222,"y":327,"w":38,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":34},
+			"sourceSize": {"w":38,"h":34}
+		},
+		"hween13_sheepdemon_25.png":
+		{
+			"frame": {"x":260,"y":327,"w":38,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":33},
+			"sourceSize": {"w":38,"h":33}
+		},
+		"hween13_sheepdemon_31.png":
+		{
+			"frame": {"x":298,"y":327,"w":38,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":33},
+			"sourceSize": {"w":38,"h":33}
+		},
+		"hween13_sheepdemon_24.png":
+		{
+			"frame": {"x":0,"y":366,"w":37,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":34},
+			"sourceSize": {"w":37,"h":34}
+		},
+		"hween13_sheepdemon_32.png":
+		{
+			"frame": {"x":37,"y":366,"w":37,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":34},
+			"sourceSize": {"w":37,"h":34}
+		},
+		"hween13_sheepdemon_23.png":
+		{
+			"frame": {"x":336,"y":327,"w":37,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":33},
+			"sourceSize": {"w":37,"h":33}
+		},
+		"hween13_sheepdemon_26.png":
+		{
+			"frame": {"x":74,"y":366,"w":37,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":33},
+			"sourceSize": {"w":37,"h":33}
+		},
+		"hween13_sheepdemon_27.png":
+		{
+			"frame": {"x":111,"y":366,"w":37,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":33},
+			"sourceSize": {"w":37,"h":33}
+		},
+		"hween13_sheepdemon_28.png":
+		{
+			"frame": {"x":148,"y":366,"w":37,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":33},
+			"sourceSize": {"w":37,"h":33}
+		},
+		"hween13_sheepdemon_68.png":
+		{
+			"frame": {"x":313,"y":269,"w":34,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":18},
+			"sourceSize": {"w":34,"h":18}
+		},
+		"hween13_sheepdemon_9.png":
+		{
+			"frame": {"x":237,"y":298,"w":27,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":15},
+			"sourceSize": {"w":27,"h":15}
+		},
+		"hween13_sheepdemon_54.png":
+		{
+			"frame": {"x":387,"y":95,"w":22,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":19},
+			"sourceSize": {"w":22,"h":19}
+		},
+		"hween13_sheepdemon_49.png":
+		{
+			"frame": {"x":387,"y":114,"w":22,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":18},
+			"sourceSize": {"w":22,"h":18}
+		},
+		"hween13_sheepdemon_55.png":
+		{
+			"frame": {"x":387,"y":132,"w":22,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":17},
+			"sourceSize": {"w":22,"h":17}
+		},
+		"hween13_sheepdemon_53.png":
+		{
+			"frame": {"x":387,"y":149,"w":21,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":19},
+			"sourceSize": {"w":21,"h":19}
+		},
+		"hween13_sheepdemon_51.png":
+		{
+			"frame": {"x":387,"y":168,"w":21,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":18},
+			"sourceSize": {"w":21,"h":18}
+		},
+		"hween13_sheepdemon_58.png":
+		{
+			"frame": {"x":387,"y":186,"w":21,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":17},
+			"sourceSize": {"w":21,"h":17}
+		},
+		"hween13_sheepdemon_59.png":
+		{
+			"frame": {"x":387,"y":203,"w":21,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":17},
+			"sourceSize": {"w":21,"h":17}
+		},
+		"hween13_sheepdemon_60.png":
+		{
+			"frame": {"x":387,"y":220,"w":21,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":17},
+			"sourceSize": {"w":21,"h":17}
+		},
+		"hween13_sheepdemon_52.png":
+		{
+			"frame": {"x":387,"y":237,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		},
+		"hween13_sheepdemon_56.png":
+		{
+			"frame": {"x":387,"y":255,"w":19,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":17},
+			"sourceSize": {"w":19,"h":17}
+		},
+		"hween13_sheepdemon_57.png":
+		{
+			"frame": {"x":387,"y":272,"w":19,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":17},
+			"sourceSize": {"w":19,"h":17}
+		},
+		"hween13_sheepdemon_29.png":
+		{
+			"frame": {"x":387,"y":289,"w":17,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":15},
+			"sourceSize": {"w":17,"h":15}
+		},
+		"hween13_sheepdemon_62.png":
+		{
+			"frame": {"x":387,"y":304,"w":17,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":9},
+			"sourceSize": {"w":17,"h":9}
+		},
+		"hween13_sheepdemon_63.png":
+		{
+			"frame": {"x":387,"y":313,"w":16,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":15},
+			"sourceSize": {"w":16,"h":15}
+		},
+		"hween13_sheepdemon_2.png":
+		{
+			"frame": {"x":409,"y":95,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

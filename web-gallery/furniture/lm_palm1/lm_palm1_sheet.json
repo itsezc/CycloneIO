@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "lm_palm1_sheet.png",
+		"size": {"w":274,"h":155},
+		"scale": "1"
+	},
+	"frames": {
+		"lm_palm1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":137,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":137,"h":155},
+			"sourceSize": {"w":137,"h":155}
+		},
+		"lm_palm1_6.png":
+		{
+			"frame": {"x":137,"y":0,"w":91,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":155},
+			"sourceSize": {"w":91,"h":155}
+		},
+		"lm_palm1_3.png":
+		{
+			"frame": {"x":228,"y":0,"w":46,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":77},
+			"sourceSize": {"w":46,"h":77}
+		},
+		"lm_palm1_1.png":
+		{
+			"frame": {"x":228,"y":77,"w":46,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":18},
+			"sourceSize": {"w":46,"h":18}
+		},
+		"lm_palm1_9.png":
+		{
+			"frame": {"x":228,"y":95,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		},
+		"lm_palm1_8.png":
+		{
+			"frame": {"x":251,"y":95,"w":23,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":10},
+			"sourceSize": {"w":23,"h":10}
+		}
+	}
+}

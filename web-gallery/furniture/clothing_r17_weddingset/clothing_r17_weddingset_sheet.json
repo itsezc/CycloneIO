@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_r17_weddingset_sheet.png",
+		"size": {"w":75,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r17_weddingset_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":102},
+			"sourceSize": {"w":39,"h":102}
+		},
+		"clothing_r17_weddingset_2.png":
+		{
+			"frame": {"x":39,"y":0,"w":36,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":22},
+			"sourceSize": {"w":36,"h":22}
+		},
+		"clothing_r17_weddingset_9.png":
+		{
+			"frame": {"x":39,"y":22,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_r17_weddingset_7.png":
+		{
+			"frame": {"x":69,"y":22,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "eco_fruits3_sheet.png",
+		"size": {"w":154,"h":140},
+		"scale": "1"
+	},
+	"frames": {
+		"eco_fruits3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":108,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":108,"h":79},
+			"sourceSize": {"w":108,"h":79}
+		},
+		"eco_fruits3_10.png":
+		{
+			"frame": {"x":108,"y":0,"w":46,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":79},
+			"sourceSize": {"w":46,"h":79}
+		},
+		"eco_fruits3_4.png":
+		{
+			"frame": {"x":0,"y":79,"w":42,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":22},
+			"sourceSize": {"w":42,"h":22}
+		},
+		"eco_fruits3_2.png":
+		{
+			"frame": {"x":0,"y":101,"w":24,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":39},
+			"sourceSize": {"w":24,"h":39}
+		},
+		"eco_fruits3_6.png":
+		{
+			"frame": {"x":24,"y":101,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"eco_fruits3_5.png":
+		{
+			"frame": {"x":42,"y":79,"w":20,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":10},
+			"sourceSize": {"w":20,"h":10}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hc_arab_swords_sheet.png",
+		"size": {"w":186,"h":147},
+		"scale": "1"
+	},
+	"frames": {
+		"hc_arab_swords_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":124,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":124,"h":97},
+			"sourceSize": {"w":124,"h":97}
+		},
+		"hc_arab_swords_5.png":
+		{
+			"frame": {"x":124,"y":0,"w":62,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":50},
+			"sourceSize": {"w":62,"h":50}
+		},
+		"hc_arab_swords_6.png":
+		{
+			"frame": {"x":0,"y":97,"w":62,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":50},
+			"sourceSize": {"w":62,"h":50}
+		},
+		"hc_arab_swords_9.png":
+		{
+			"frame": {"x":124,"y":50,"w":60,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":47},
+			"sourceSize": {"w":60,"h":47}
+		},
+		"hc_arab_swords_7.png":
+		{
+			"frame": {"x":62,"y":97,"w":30,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":26},
+			"sourceSize": {"w":30,"h":26}
+		}
+	}
+}

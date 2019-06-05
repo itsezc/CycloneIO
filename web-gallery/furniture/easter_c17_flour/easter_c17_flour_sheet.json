@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "easter_c17_flour_sheet.png",
+		"size": {"w":50,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c17_flour_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":28,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":42},
+			"sourceSize": {"w":28,"h":42}
+		},
+		"easter_c17_flour_3.png":
+		{
+			"frame": {"x":28,"y":0,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

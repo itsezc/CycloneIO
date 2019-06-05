@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "ads_durex_vend_sheet.png",
+		"size": {"w":366,"h":354},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_durex_vend_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":240,"h":214},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":240,"h":214},
+			"sourceSize": {"w":240,"h":214}
+		},
+		"ads_durex_vend_3.png":
+		{
+			"frame": {"x":240,"y":0,"w":64,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":142},
+			"sourceSize": {"w":64,"h":142}
+		},
+		"ads_durex_vend_5.png":
+		{
+			"frame": {"x":304,"y":0,"w":62,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":141},
+			"sourceSize": {"w":62,"h":141}
+		},
+		"ads_durex_vend_9.png":
+		{
+			"frame": {"x":0,"y":214,"w":58,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":140},
+			"sourceSize": {"w":58,"h":140}
+		},
+		"ads_durex_vend_7.png":
+		{
+			"frame": {"x":58,"y":214,"w":56,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":139},
+			"sourceSize": {"w":56,"h":139}
+		},
+		"ads_durex_vend_8.png":
+		{
+			"frame": {"x":304,"y":141,"w":32,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":72},
+			"sourceSize": {"w":32,"h":72}
+		},
+		"ads_durex_vend_1.png":
+		{
+			"frame": {"x":336,"y":141,"w":30,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+			"sourceSize": {"w":30,"h":71}
+		},
+		"ads_durex_vend_13.png":
+		{
+			"frame": {"x":240,"y":142,"w":30,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+			"sourceSize": {"w":30,"h":71}
+		},
+		"ads_durex_vend_12.png":
+		{
+			"frame": {"x":270,"y":142,"w":29,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":70},
+			"sourceSize": {"w":29,"h":70}
+		},
+		"ads_durex_vend_11.png":
+		{
+			"frame": {"x":114,"y":214,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

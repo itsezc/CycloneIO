@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "bling11_pillar_sheet.png",
+		"size": {"w":266,"h":194},
+		"scale": "1"
+	},
+	"frames": {
+		"bling11_pillar_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":154,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":154,"h":130},
+			"sourceSize": {"w":154,"h":130}
+		},
+		"bling11_pillar_3.png":
+		{
+			"frame": {"x":154,"y":0,"w":56,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":130},
+			"sourceSize": {"w":56,"h":130}
+		},
+		"bling11_pillar_6.png":
+		{
+			"frame": {"x":210,"y":0,"w":56,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":130},
+			"sourceSize": {"w":56,"h":130}
+		},
+		"bling11_pillar_4.png":
+		{
+			"frame": {"x":0,"y":130,"w":28,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":64},
+			"sourceSize": {"w":28,"h":64}
+		},
+		"bling11_pillar_7.png":
+		{
+			"frame": {"x":28,"y":130,"w":28,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":64},
+			"sourceSize": {"w":28,"h":64}
+		},
+		"bling11_pillar_2.png":
+		{
+			"frame": {"x":56,"y":130,"w":14,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":30},
+			"sourceSize": {"w":14,"h":30}
+		}
+	}
+}

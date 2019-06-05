@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "mystics_bwall_sheet.png",
+		"size": {"w":624,"h":574},
+		"scale": "1"
+	},
+	"frames": {
+		"mystics_bwall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":391,"h":361},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":391,"h":361},
+			"sourceSize": {"w":391,"h":361}
+		},
+		"mystics_bwall_10.png":
+		{
+			"frame": {"x":391,"y":0,"w":77,"h":252},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":252},
+			"sourceSize": {"w":77,"h":252}
+		},
+		"mystics_bwall_4.png":
+		{
+			"frame": {"x":468,"y":0,"w":77,"h":252},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":252},
+			"sourceSize": {"w":77,"h":252}
+		},
+		"mystics_bwall_12.png":
+		{
+			"frame": {"x":545,"y":0,"w":79,"h":213},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":213},
+			"sourceSize": {"w":79,"h":213}
+		},
+		"mystics_bwall_7.png":
+		{
+			"frame": {"x":0,"y":361,"w":79,"h":213},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":213},
+			"sourceSize": {"w":79,"h":213}
+		},
+		"mystics_bwall_2.png":
+		{
+			"frame": {"x":545,"y":213,"w":39,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":127},
+			"sourceSize": {"w":39,"h":127}
+		},
+		"mystics_bwall_8.png":
+		{
+			"frame": {"x":584,"y":213,"w":40,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":126},
+			"sourceSize": {"w":40,"h":126}
+		},
+		"mystics_bwall_6.png":
+		{
+			"frame": {"x":468,"y":252,"w":42,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":109},
+			"sourceSize": {"w":42,"h":109}
+		},
+		"mystics_bwall_9.png":
+		{
+			"frame": {"x":391,"y":252,"w":41,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":107},
+			"sourceSize": {"w":41,"h":107}
+		},
+		"mystics_bwall_5.png":
+		{
+			"frame": {"x":510,"y":252,"w":14,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":32},
+			"sourceSize": {"w":14,"h":32}
+		}
+	}
+}

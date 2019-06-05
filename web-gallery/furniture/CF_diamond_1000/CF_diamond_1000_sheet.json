@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "CF_diamond_1000_sheet.png",
+		"size": {"w":100,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"CF_diamond_1000_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":55},
+			"sourceSize": {"w":46,"h":55}
+		},
+		"CF_diamond_1000_8.png":
+		{
+			"frame": {"x":46,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"CF_diamond_1000_6.png":
+		{
+			"frame": {"x":76,"y":0,"w":24,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":29},
+			"sourceSize": {"w":24,"h":29}
+		}
+	}
+}

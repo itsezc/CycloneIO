@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "room_pcnc15_dvd2_sheet.png",
+		"size": {"w":77,"h":46},
+		"scale": "1"
+	},
+	"frames": {
+		"room_pcnc15_dvd2_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":46},
+			"sourceSize": {"w":50,"h":46}
+		},
+		"room_pcnc15_dvd2_3.png":
+		{
+			"frame": {"x":50,"y":0,"w":27,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":22},
+			"sourceSize": {"w":27,"h":22}
+		}
+	}
+}

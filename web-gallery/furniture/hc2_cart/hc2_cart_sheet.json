@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hc2_cart_sheet.png",
+		"size": {"w":201,"h":151},
+		"scale": "1"
+	},
+	"frames": {
+		"hc2_cart_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":111},
+			"sourceSize": {"w":130,"h":111}
+		},
+		"hc2_cart_7.png":
+		{
+			"frame": {"x":130,"y":0,"w":71,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":79},
+			"sourceSize": {"w":71,"h":79}
+		},
+		"hc2_cart_4.png":
+		{
+			"frame": {"x":130,"y":79,"w":59,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":20},
+			"sourceSize": {"w":59,"h":20}
+		},
+		"hc2_cart_1.png":
+		{
+			"frame": {"x":0,"y":111,"w":37,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":40},
+			"sourceSize": {"w":37,"h":40}
+		},
+		"hc2_cart_3.png":
+		{
+			"frame": {"x":37,"y":111,"w":30,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":32},
+			"sourceSize": {"w":30,"h":32}
+		},
+		"hc2_cart_6.png":
+		{
+			"frame": {"x":130,"y":99,"w":30,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":10},
+			"sourceSize": {"w":30,"h":10}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "uni_einstein_sheet.png",
+		"size": {"w":70,"h":96},
+		"scale": "1"
+	},
+	"frames": {
+		"uni_einstein_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":96},
+			"sourceSize": {"w":46,"h":96}
+		},
+		"uni_einstein_1.png":
+		{
+			"frame": {"x":46,"y":0,"w":24,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":49},
+			"sourceSize": {"w":24,"h":49}
+		},
+		"uni_einstein_4.png":
+		{
+			"frame": {"x":46,"y":49,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

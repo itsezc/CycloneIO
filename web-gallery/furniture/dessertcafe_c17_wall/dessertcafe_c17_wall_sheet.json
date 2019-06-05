@@ -1,0 +1,153 @@
+{
+	"meta": {
+		"image": "dessertcafe_c17_wall_sheet.png",
+		"size": {"w":324,"h":318},
+		"scale": "1"
+	},
+	"frames": {
+		"dessertcafe_c17_wall_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":65,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":160},
+			"sourceSize": {"w":65,"h":160}
+		},
+		"dessertcafe_c17_wall_17.png":
+		{
+			"frame": {"x":65,"y":0,"w":65,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":160},
+			"sourceSize": {"w":65,"h":160}
+		},
+		"dessertcafe_c17_wall_18.png":
+		{
+			"frame": {"x":130,"y":0,"w":65,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":160},
+			"sourceSize": {"w":65,"h":160}
+		},
+		"dessertcafe_c17_wall_9.png":
+		{
+			"frame": {"x":195,"y":0,"w":65,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":160},
+			"sourceSize": {"w":65,"h":160}
+		},
+		"dessertcafe_c17_wall_5.png":
+		{
+			"frame": {"x":260,"y":0,"w":64,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":158},
+			"sourceSize": {"w":64,"h":158}
+		},
+		"dessertcafe_c17_wall_6.png":
+		{
+			"frame": {"x":0,"y":160,"w":64,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":158},
+			"sourceSize": {"w":64,"h":158}
+		},
+		"dessertcafe_c17_wall_11.png":
+		{
+			"frame": {"x":64,"y":160,"w":61,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":158},
+			"sourceSize": {"w":61,"h":158}
+		},
+		"dessertcafe_c17_wall_13.png":
+		{
+			"frame": {"x":125,"y":160,"w":61,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":158},
+			"sourceSize": {"w":61,"h":158}
+		},
+		"dessertcafe_c17_wall_2.png":
+		{
+			"frame": {"x":186,"y":160,"w":1,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":127},
+			"sourceSize": {"w":1,"h":127}
+		},
+		"dessertcafe_c17_wall_3.png":
+		{
+			"frame": {"x":187,"y":160,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"dessertcafe_c17_wall_1.png":
+		{
+			"frame": {"x":187,"y":209,"w":66,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":17},
+			"sourceSize": {"w":66,"h":17}
+		},
+		"dessertcafe_c17_wall_14.png":
+		{
+			"frame": {"x":187,"y":226,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"dessertcafe_c17_wall_23.png":
+		{
+			"frame": {"x":251,"y":226,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"dessertcafe_c17_wall_16.png":
+		{
+			"frame": {"x":285,"y":160,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"dessertcafe_c17_wall_20.png":
+		{
+			"frame": {"x":285,"y":177,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"dessertcafe_c17_wall_19.png":
+		{
+			"frame": {"x":253,"y":209,"w":32,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":16},
+			"sourceSize": {"w":32,"h":16}
+		},
+		"dessertcafe_c17_wall_22.png":
+		{
+			"frame": {"x":285,"y":209,"w":32,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":16},
+			"sourceSize": {"w":32,"h":16}
+		},
+		"dessertcafe_c17_wall_21.png":
+		{
+			"frame": {"x":186,"y":287,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		}
+	}
+}

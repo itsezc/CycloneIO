@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "african_tree1_sheet.png",
+		"size": {"w":399,"h":298},
+		"scale": "1"
+	},
+	"frames": {
+		"african_tree1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":237,"h":187},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":237,"h":187},
+			"sourceSize": {"w":237,"h":187}
+		},
+		"african_tree1_1.png":
+		{
+			"frame": {"x":237,"y":0,"w":162,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":162,"h":158},
+			"sourceSize": {"w":162,"h":158}
+		},
+		"african_tree1_5.png":
+		{
+			"frame": {"x":0,"y":187,"w":75,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":39},
+			"sourceSize": {"w":75,"h":39}
+		},
+		"african_tree1_7.png":
+		{
+			"frame": {"x":0,"y":226,"w":69,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":72},
+			"sourceSize": {"w":69,"h":72}
+		},
+		"african_tree1_8.png":
+		{
+			"frame": {"x":237,"y":158,"w":38,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":20},
+			"sourceSize": {"w":38,"h":20}
+		},
+		"african_tree1_6.png":
+		{
+			"frame": {"x":75,"y":187,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

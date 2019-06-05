@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "bolly_table_sheet.png",
+		"size": {"w":307,"h":247},
+		"scale": "1"
+	},
+	"frames": {
+		"bolly_table_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":185,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":185,"h":166},
+			"sourceSize": {"w":185,"h":166}
+		},
+		"bolly_table_13.png":
+		{
+			"frame": {"x":185,"y":0,"w":122,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":62},
+			"sourceSize": {"w":122,"h":62}
+		},
+		"bolly_table_5.png":
+		{
+			"frame": {"x":185,"y":62,"w":65,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":55},
+			"sourceSize": {"w":65,"h":55}
+		},
+		"bolly_table_14.png":
+		{
+			"frame": {"x":185,"y":117,"w":63,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":48},
+			"sourceSize": {"w":63,"h":48}
+		},
+		"bolly_table_2.png":
+		{
+			"frame": {"x":0,"y":166,"w":63,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":32},
+			"sourceSize": {"w":63,"h":32}
+		},
+		"bolly_table_3.png":
+		{
+			"frame": {"x":0,"y":198,"w":62,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":49},
+			"sourceSize": {"w":62,"h":49}
+		},
+		"bolly_table_4.png":
+		{
+			"frame": {"x":63,"y":166,"w":62,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":32},
+			"sourceSize": {"w":62,"h":32}
+		},
+		"bolly_table_15.png":
+		{
+			"frame": {"x":250,"y":62,"w":34,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":28},
+			"sourceSize": {"w":34,"h":28}
+		},
+		"bolly_table_10.png":
+		{
+			"frame": {"x":250,"y":90,"w":32,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":24},
+			"sourceSize": {"w":32,"h":24}
+		},
+		"bolly_table_6.png":
+		{
+			"frame": {"x":248,"y":117,"w":32,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":22},
+			"sourceSize": {"w":32,"h":22}
+		},
+		"bolly_table_16.png":
+		{
+			"frame": {"x":248,"y":139,"w":32,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":17},
+			"sourceSize": {"w":32,"h":17}
+		},
+		"bolly_table_8.png":
+		{
+			"frame": {"x":125,"y":166,"w":31,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":24},
+			"sourceSize": {"w":31,"h":24}
+		}
+	}
+}

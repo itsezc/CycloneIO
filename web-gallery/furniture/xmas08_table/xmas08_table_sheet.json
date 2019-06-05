@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "xmas08_table_sheet.png",
+		"size": {"w":298,"h":231},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas08_table_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":178,"h":177},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":178,"h":177},
+			"sourceSize": {"w":178,"h":177}
+		},
+		"xmas08_table_7.png":
+		{
+			"frame": {"x":178,"y":0,"w":120,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":61},
+			"sourceSize": {"w":120,"h":61}
+		},
+		"xmas08_table_2.png":
+		{
+			"frame": {"x":178,"y":61,"w":114,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":40},
+			"sourceSize": {"w":114,"h":40}
+		},
+		"xmas08_table_12.png":
+		{
+			"frame": {"x":178,"y":101,"w":58,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":48},
+			"sourceSize": {"w":58,"h":48}
+		},
+		"xmas08_table_5.png":
+		{
+			"frame": {"x":236,"y":101,"w":58,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":30},
+			"sourceSize": {"w":58,"h":30}
+		},
+		"xmas08_table_3.png":
+		{
+			"frame": {"x":0,"y":177,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"xmas08_table_13.png":
+		{
+			"frame": {"x":178,"y":149,"w":57,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":20},
+			"sourceSize": {"w":57,"h":20}
+		},
+		"xmas08_table_10.png":
+		{
+			"frame": {"x":236,"y":131,"w":31,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":14},
+			"sourceSize": {"w":31,"h":14}
+		},
+		"xmas08_table_8.png":
+		{
+			"frame": {"x":58,"y":177,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		},
+		"xmas08_table_4.png":
+		{
+			"frame": {"x":0,"y":206,"w":27,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":25},
+			"sourceSize": {"w":27,"h":25}
+		}
+	}
+}

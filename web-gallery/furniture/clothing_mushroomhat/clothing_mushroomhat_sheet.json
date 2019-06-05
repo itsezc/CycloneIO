@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_mushroomhat_sheet.png",
+		"size": {"w":76,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_mushroomhat_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":51},
+			"sourceSize": {"w":46,"h":51}
+		},
+		"clothing_mushroomhat_3.png":
+		{
+			"frame": {"x":46,"y":0,"w":30,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":32},
+			"sourceSize": {"w":30,"h":32}
+		},
+		"clothing_mushroomhat_2.png":
+		{
+			"frame": {"x":46,"y":32,"w":26,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":14},
+			"sourceSize": {"w":26,"h":14}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "garden_seed_sheet.png",
+		"size": {"w":118,"h":119},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_seed_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":59,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":119},
+			"sourceSize": {"w":59,"h":119}
+		},
+		"garden_seed_6.png":
+		{
+			"frame": {"x":59,"y":0,"w":39,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":119},
+			"sourceSize": {"w":39,"h":119}
+		},
+		"garden_seed_3.png":
+		{
+			"frame": {"x":98,"y":0,"w":20,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":59},
+			"sourceSize": {"w":20,"h":59}
+		},
+		"garden_seed_7.png":
+		{
+			"frame": {"x":98,"y":59,"w":15,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":23},
+			"sourceSize": {"w":15,"h":23}
+		}
+	}
+}

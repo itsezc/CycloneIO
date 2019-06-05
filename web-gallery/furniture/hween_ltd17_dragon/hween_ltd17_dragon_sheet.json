@@ -1,0 +1,473 @@
+{
+	"meta": {
+		"image": "hween_ltd17_dragon_sheet.png",
+		"size": {"w":386,"h":348},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_ltd17_dragon_28.png":
+		{
+			"frame": {"x":0,"y":0,"w":91,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":46},
+			"sourceSize": {"w":91,"h":46}
+		},
+		"hween_ltd17_dragon_59.png":
+		{
+			"frame": {"x":0,"y":46,"w":84,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":82},
+			"sourceSize": {"w":84,"h":82}
+		},
+		"hween_ltd17_dragon_58.png":
+		{
+			"frame": {"x":91,"y":0,"w":84,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":74},
+			"sourceSize": {"w":84,"h":74}
+		},
+		"hween_ltd17_dragon_53.png":
+		{
+			"frame": {"x":91,"y":74,"w":77,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":53},
+			"sourceSize": {"w":77,"h":53}
+		},
+		"hween_ltd17_dragon_62.png":
+		{
+			"frame": {"x":175,"y":0,"w":73,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":65},
+			"sourceSize": {"w":73,"h":65}
+		},
+		"hween_ltd17_dragon_60.png":
+		{
+			"frame": {"x":175,"y":65,"w":65,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":57},
+			"sourceSize": {"w":65,"h":57}
+		},
+		"hween_ltd17_dragon_34.png":
+		{
+			"frame": {"x":0,"y":128,"w":41,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":64},
+			"sourceSize": {"w":41,"h":64}
+		},
+		"hween_ltd17_dragon_35.png":
+		{
+			"frame": {"x":41,"y":128,"w":41,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":64},
+			"sourceSize": {"w":41,"h":64}
+		},
+		"hween_ltd17_dragon_36.png":
+		{
+			"frame": {"x":82,"y":128,"w":41,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":64},
+			"sourceSize": {"w":41,"h":64}
+		},
+		"hween_ltd17_dragon_54.png":
+		{
+			"frame": {"x":123,"y":128,"w":41,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":64},
+			"sourceSize": {"w":41,"h":64}
+		},
+		"hween_ltd17_dragon_57.png":
+		{
+			"frame": {"x":164,"y":128,"w":40,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":64},
+			"sourceSize": {"w":40,"h":64}
+		},
+		"hween_ltd17_dragon_50.png":
+		{
+			"frame": {"x":204,"y":128,"w":39,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":62},
+			"sourceSize": {"w":39,"h":62}
+		},
+		"hween_ltd17_dragon_1.png":
+		{
+			"frame": {"x":248,"y":0,"w":60,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":58},
+			"sourceSize": {"w":60,"h":58}
+		},
+		"hween_ltd17_dragon_12.png":
+		{
+			"frame": {"x":248,"y":58,"w":60,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":58},
+			"sourceSize": {"w":60,"h":58}
+		},
+		"hween_ltd17_dragon_13.png":
+		{
+			"frame": {"x":248,"y":116,"w":60,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":58},
+			"sourceSize": {"w":60,"h":58}
+		},
+		"hween_ltd17_dragon_2.png":
+		{
+			"frame": {"x":0,"y":192,"w":60,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":58},
+			"sourceSize": {"w":60,"h":58}
+		},
+		"hween_ltd17_dragon_52.png":
+		{
+			"frame": {"x":60,"y":192,"w":60,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":52},
+			"sourceSize": {"w":60,"h":52}
+		},
+		"hween_ltd17_dragon_4.png":
+		{
+			"frame": {"x":120,"y":192,"w":60,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":50},
+			"sourceSize": {"w":60,"h":50}
+		},
+		"hween_ltd17_dragon_29.png":
+		{
+			"frame": {"x":0,"y":250,"w":42,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":57},
+			"sourceSize": {"w":42,"h":57}
+		},
+		"hween_ltd17_dragon_11.png":
+		{
+			"frame": {"x":42,"y":250,"w":36,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":57},
+			"sourceSize": {"w":36,"h":57}
+		},
+		"hween_ltd17_dragon_17.png":
+		{
+			"frame": {"x":78,"y":250,"w":42,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":56},
+			"sourceSize": {"w":42,"h":56}
+		},
+		"hween_ltd17_dragon_49.png":
+		{
+			"frame": {"x":180,"y":192,"w":54,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":48},
+			"sourceSize": {"w":54,"h":48}
+		},
+		"hween_ltd17_dragon_16.png":
+		{
+			"frame": {"x":120,"y":250,"w":42,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":54},
+			"sourceSize": {"w":42,"h":54}
+		},
+		"hween_ltd17_dragon_15.png":
+		{
+			"frame": {"x":162,"y":250,"w":42,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":51},
+			"sourceSize": {"w":42,"h":51}
+		},
+		"hween_ltd17_dragon_18.png":
+		{
+			"frame": {"x":204,"y":250,"w":42,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":51},
+			"sourceSize": {"w":42,"h":51}
+		},
+		"hween_ltd17_dragon_30.png":
+		{
+			"frame": {"x":246,"y":250,"w":42,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":51},
+			"sourceSize": {"w":42,"h":51}
+		},
+		"hween_ltd17_dragon_3.png":
+		{
+			"frame": {"x":234,"y":192,"w":50,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":42},
+			"sourceSize": {"w":50,"h":42}
+		},
+		"hween_ltd17_dragon_23.png":
+		{
+			"frame": {"x":288,"y":250,"w":18,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":49},
+			"sourceSize": {"w":18,"h":49}
+		},
+		"hween_ltd17_dragon_56.png":
+		{
+			"frame": {"x":308,"y":0,"w":47,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":44},
+			"sourceSize": {"w":47,"h":44}
+		},
+		"hween_ltd17_dragon_24.png":
+		{
+			"frame": {"x":308,"y":44,"w":21,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":47},
+			"sourceSize": {"w":21,"h":47}
+		},
+		"hween_ltd17_dragon_27.png":
+		{
+			"frame": {"x":329,"y":44,"w":15,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":47},
+			"sourceSize": {"w":15,"h":47}
+		},
+		"hween_ltd17_dragon_25.png":
+		{
+			"frame": {"x":308,"y":91,"w":13,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":47},
+			"sourceSize": {"w":13,"h":47}
+		},
+		"hween_ltd17_dragon_26.png":
+		{
+			"frame": {"x":321,"y":91,"w":33,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":43},
+			"sourceSize": {"w":33,"h":43}
+		},
+		"hween_ltd17_dragon_6.png":
+		{
+			"frame": {"x":308,"y":138,"w":43,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":33},
+			"sourceSize": {"w":43,"h":33}
+		},
+		"hween_ltd17_dragon_21.png":
+		{
+			"frame": {"x":308,"y":171,"w":24,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":43},
+			"sourceSize": {"w":24,"h":43}
+		},
+		"hween_ltd17_dragon_55.png":
+		{
+			"frame": {"x":308,"y":214,"w":41,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":39},
+			"sourceSize": {"w":41,"h":39}
+		},
+		"hween_ltd17_dragon_22.png":
+		{
+			"frame": {"x":308,"y":253,"w":31,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":41},
+			"sourceSize": {"w":31,"h":41}
+		},
+		"hween_ltd17_dragon_31.png":
+		{
+			"frame": {"x":0,"y":307,"w":29,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":41},
+			"sourceSize": {"w":29,"h":41}
+		},
+		"hween_ltd17_dragon_48.png":
+		{
+			"frame": {"x":29,"y":307,"w":31,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":40},
+			"sourceSize": {"w":31,"h":40}
+		},
+		"hween_ltd17_dragon_5.png":
+		{
+			"frame": {"x":60,"y":307,"w":39,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":28},
+			"sourceSize": {"w":39,"h":28}
+		},
+		"hween_ltd17_dragon_45.png":
+		{
+			"frame": {"x":355,"y":0,"w":31,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":33},
+			"sourceSize": {"w":31,"h":33}
+		},
+		"hween_ltd17_dragon_46.png":
+		{
+			"frame": {"x":355,"y":33,"w":31,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":33},
+			"sourceSize": {"w":31,"h":33}
+		},
+		"hween_ltd17_dragon_47.png":
+		{
+			"frame": {"x":355,"y":66,"w":31,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":33},
+			"sourceSize": {"w":31,"h":33}
+		},
+		"hween_ltd17_dragon_8.png":
+		{
+			"frame": {"x":99,"y":307,"w":32,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":24},
+			"sourceSize": {"w":32,"h":24}
+		},
+		"hween_ltd17_dragon_44.png":
+		{
+			"frame": {"x":355,"y":99,"w":31,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":31},
+			"sourceSize": {"w":31,"h":31}
+		},
+		"hween_ltd17_dragon_43.png":
+		{
+			"frame": {"x":355,"y":130,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"hween_ltd17_dragon_19.png":
+		{
+			"frame": {"x":355,"y":160,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		},
+		"hween_ltd17_dragon_42.png":
+		{
+			"frame": {"x":355,"y":190,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		},
+		"hween_ltd17_dragon_41.png":
+		{
+			"frame": {"x":355,"y":219,"w":23,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":28},
+			"sourceSize": {"w":23,"h":28}
+		},
+		"hween_ltd17_dragon_7.png":
+		{
+			"frame": {"x":355,"y":247,"w":25,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":20},
+			"sourceSize": {"w":25,"h":20}
+		},
+		"hween_ltd17_dragon_32.png":
+		{
+			"frame": {"x":355,"y":267,"w":22,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+			"sourceSize": {"w":22,"h":24}
+		},
+		"hween_ltd17_dragon_51.png":
+		{
+			"frame": {"x":355,"y":291,"w":20,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":21},
+			"sourceSize": {"w":20,"h":21}
+		},
+		"hween_ltd17_dragon_9.png":
+		{
+			"frame": {"x":355,"y":312,"w":19,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":17},
+			"sourceSize": {"w":19,"h":17}
+		},
+		"hween_ltd17_dragon_39.png":
+		{
+			"frame": {"x":377,"y":267,"w":9,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":4},
+			"sourceSize": {"w":9,"h":4}
+		},
+		"hween_ltd17_dragon_40.png":
+		{
+			"frame": {"x":379,"y":160,"w":7,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":4},
+			"sourceSize": {"w":7,"h":4}
+		},
+		"hween_ltd17_dragon_10.png":
+		{
+			"frame": {"x":385,"y":130,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"hween_ltd17_dragon_33.png":
+		{
+			"frame": {"x":385,"y":131,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"hween_ltd17_dragon_38.png":
+		{
+			"frame": {"x":385,"y":132,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

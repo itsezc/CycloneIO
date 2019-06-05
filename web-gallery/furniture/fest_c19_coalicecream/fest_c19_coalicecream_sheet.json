@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "fest_c19_coalicecream_sheet.png",
+		"size": {"w":119,"h":101},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_coalicecream_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":101},
+			"sourceSize": {"w":64,"h":101}
+		},
+		"fest_c19_coalicecream_3.png":
+		{
+			"frame": {"x":64,"y":0,"w":55,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":29},
+			"sourceSize": {"w":55,"h":29}
+		},
+		"fest_c19_coalicecream_6.png":
+		{
+			"frame": {"x":64,"y":29,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		}
+	}
+}

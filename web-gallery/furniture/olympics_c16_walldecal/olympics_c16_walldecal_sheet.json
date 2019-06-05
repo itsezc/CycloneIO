@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "olympics_c16_walldecal_sheet.png",
+		"size": {"w":301,"h":300},
+		"scale": "1"
+	},
+	"frames": {
+		"olympics_c16_walldecal_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":258,"h":164},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":258,"h":164},
+			"sourceSize": {"w":258,"h":164}
+		},
+		"olympics_c16_walldecal_11.png":
+		{
+			"frame": {"x":258,"y":0,"w":43,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":136},
+			"sourceSize": {"w":43,"h":136}
+		},
+		"olympics_c16_walldecal_2.png":
+		{
+			"frame": {"x":0,"y":164,"w":43,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":136},
+			"sourceSize": {"w":43,"h":136}
+		},
+		"olympics_c16_walldecal_1.png":
+		{
+			"frame": {"x":43,"y":164,"w":43,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":135},
+			"sourceSize": {"w":43,"h":135}
+		},
+		"olympics_c16_walldecal_10.png":
+		{
+			"frame": {"x":86,"y":164,"w":43,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":135},
+			"sourceSize": {"w":43,"h":135}
+		},
+		"olympics_c16_walldecal_6.png":
+		{
+			"frame": {"x":129,"y":164,"w":43,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":135},
+			"sourceSize": {"w":43,"h":135}
+		},
+		"olympics_c16_walldecal_9.png":
+		{
+			"frame": {"x":172,"y":164,"w":43,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":135},
+			"sourceSize": {"w":43,"h":135}
+		},
+		"olympics_c16_walldecal_5.png":
+		{
+			"frame": {"x":258,"y":136,"w":17,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":28},
+			"sourceSize": {"w":17,"h":28}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "classic7_starlight_sheet.png",
+		"size": {"w":142,"h":164},
+		"scale": "1"
+	},
+	"frames": {
+		"classic7_starlight_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":57,"h":164},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":164},
+			"sourceSize": {"w":57,"h":164}
+		},
+		"classic7_starlight_5.png":
+		{
+			"frame": {"x":57,"y":0,"w":85,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":103},
+			"sourceSize": {"w":85,"h":103}
+		},
+		"classic7_starlight_9.png":
+		{
+			"frame": {"x":57,"y":103,"w":42,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":21},
+			"sourceSize": {"w":42,"h":21}
+		},
+		"classic7_starlight_6.png":
+		{
+			"frame": {"x":57,"y":124,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"classic7_starlight_8.png":
+		{
+			"frame": {"x":99,"y":103,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

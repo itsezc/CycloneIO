@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "exe_c15_telephone_sheet.png",
+		"size": {"w":132,"h":89},
+		"scale": "1"
+	},
+	"frames": {
+		"exe_c15_telephone_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":33},
+			"sourceSize": {"w":44,"h":33}
+		},
+		"exe_c15_telephone_2.png":
+		{
+			"frame": {"x":44,"y":0,"w":44,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":33},
+			"sourceSize": {"w":44,"h":33}
+		},
+		"exe_c15_telephone_3.png":
+		{
+			"frame": {"x":0,"y":33,"w":44,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":33},
+			"sourceSize": {"w":44,"h":33}
+		},
+		"exe_c15_telephone_5.png":
+		{
+			"frame": {"x":44,"y":33,"w":44,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":33},
+			"sourceSize": {"w":44,"h":33}
+		},
+		"exe_c15_telephone_6.png":
+		{
+			"frame": {"x":88,"y":0,"w":44,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":33},
+			"sourceSize": {"w":44,"h":33}
+		},
+		"exe_c15_telephone_4.png":
+		{
+			"frame": {"x":88,"y":33,"w":44,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":23},
+			"sourceSize": {"w":44,"h":23}
+		},
+		"exe_c15_telephone_11.png":
+		{
+			"frame": {"x":0,"y":66,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		}
+	}
+}

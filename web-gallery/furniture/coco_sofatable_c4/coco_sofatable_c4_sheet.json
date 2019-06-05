@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "coco_sofatable_c4_sheet.png",
+		"size": {"w":126,"h":98},
+		"scale": "1"
+	},
+	"frames": {
+		"coco_sofatable_c4_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":76,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":65},
+			"sourceSize": {"w":76,"h":65}
+		},
+		"coco_sofatable_c4_2.png":
+		{
+			"frame": {"x":76,"y":0,"w":50,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":65},
+			"sourceSize": {"w":50,"h":65}
+		},
+		"coco_sofatable_c4_6.png":
+		{
+			"frame": {"x":0,"y":65,"w":26,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":33},
+			"sourceSize": {"w":26,"h":33}
+		},
+		"coco_sofatable_c4_8.png":
+		{
+			"frame": {"x":26,"y":65,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		}
+	}
+}

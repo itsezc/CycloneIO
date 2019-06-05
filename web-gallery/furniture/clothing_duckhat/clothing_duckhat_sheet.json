@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_duckhat_sheet.png",
+		"size": {"w":57,"h":46},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_duckhat_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":46},
+			"sourceSize": {"w":29,"h":46}
+		},
+		"clothing_duckhat_1.png":
+		{
+			"frame": {"x":29,"y":0,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"clothing_duckhat_4.png":
+		{
+			"frame": {"x":29,"y":30,"w":26,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":14},
+			"sourceSize": {"w":26,"h":14}
+		}
+	}
+}

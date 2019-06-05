@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "stories_shakespeare_fairy_sheet.png",
+		"size": {"w":71,"h":98},
+		"scale": "1"
+	},
+	"frames": {
+		"stories_shakespeare_fairy_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":98},
+			"sourceSize": {"w":49,"h":98}
+		},
+		"stories_shakespeare_fairy_3.png":
+		{
+			"frame": {"x":49,"y":0,"w":22,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":47},
+			"sourceSize": {"w":22,"h":47}
+		},
+		"stories_shakespeare_fairy_5.png":
+		{
+			"frame": {"x":49,"y":47,"w":16,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":32},
+			"sourceSize": {"w":16,"h":32}
+		}
+	}
+}

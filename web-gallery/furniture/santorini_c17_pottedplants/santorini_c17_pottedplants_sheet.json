@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "santorini_c17_pottedplants_sheet.png",
+		"size": {"w":133,"h":155},
+		"scale": "1"
+	},
+	"frames": {
+		"santorini_c17_pottedplants_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":155},
+			"sourceSize": {"w":64,"h":155}
+		},
+		"santorini_c17_pottedplants_9.png":
+		{
+			"frame": {"x":64,"y":0,"w":69,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":95},
+			"sourceSize": {"w":69,"h":95}
+		},
+		"santorini_c17_pottedplants_4.png":
+		{
+			"frame": {"x":64,"y":95,"w":32,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":16},
+			"sourceSize": {"w":32,"h":16}
+		},
+		"santorini_c17_pottedplants_1.png":
+		{
+			"frame": {"x":64,"y":111,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "dessertcafe_c17_froyo_sheet.png",
+		"size": {"w":111,"h":70},
+		"scale": "1"
+	},
+	"frames": {
+		"dessertcafe_c17_froyo_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":37},
+			"sourceSize": {"w":37,"h":37}
+		},
+		"dessertcafe_c17_froyo_11.png":
+		{
+			"frame": {"x":37,"y":0,"w":37,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":37},
+			"sourceSize": {"w":37,"h":37}
+		},
+		"dessertcafe_c17_froyo_6.png":
+		{
+			"frame": {"x":0,"y":37,"w":37,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":33},
+			"sourceSize": {"w":37,"h":33}
+		},
+		"dessertcafe_c17_froyo_8.png":
+		{
+			"frame": {"x":37,"y":37,"w":37,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":33},
+			"sourceSize": {"w":37,"h":33}
+		},
+		"dessertcafe_c17_froyo_7.png":
+		{
+			"frame": {"x":74,"y":0,"w":37,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":20},
+			"sourceSize": {"w":37,"h":20}
+		},
+		"dessertcafe_c17_froyo_4.png":
+		{
+			"frame": {"x":74,"y":20,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

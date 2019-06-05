@@ -1,0 +1,345 @@
+{
+	"meta": {
+		"image": "virus_r16_angtank_sheet.png",
+		"size": {"w":328,"h":285},
+		"scale": "1"
+	},
+	"frames": {
+		"virus_r16_angtank_45.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":96},
+			"sourceSize": {"w":66,"h":96}
+		},
+		"virus_r16_angtank_42.png":
+		{
+			"frame": {"x":66,"y":0,"w":64,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":80},
+			"sourceSize": {"w":64,"h":80}
+		},
+		"virus_r16_angtank_35.png":
+		{
+			"frame": {"x":130,"y":0,"w":33,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":78},
+			"sourceSize": {"w":33,"h":78}
+		},
+		"virus_r16_angtank_5.png":
+		{
+			"frame": {"x":0,"y":96,"w":66,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":41},
+			"sourceSize": {"w":66,"h":41}
+		},
+		"virus_r16_angtank_6.png":
+		{
+			"frame": {"x":66,"y":96,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"virus_r16_angtank_33.png":
+		{
+			"frame": {"x":163,"y":0,"w":64,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":43},
+			"sourceSize": {"w":64,"h":43}
+		},
+		"virus_r16_angtank_1.png":
+		{
+			"frame": {"x":163,"y":43,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"virus_r16_angtank_34.png":
+		{
+			"frame": {"x":163,"y":75,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"virus_r16_angtank_46.png":
+		{
+			"frame": {"x":0,"y":137,"w":61,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":34},
+			"sourceSize": {"w":61,"h":34}
+		},
+		"virus_r16_angtank_47.png":
+		{
+			"frame": {"x":61,"y":137,"w":61,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":34},
+			"sourceSize": {"w":61,"h":34}
+		},
+		"virus_r16_angtank_31.png":
+		{
+			"frame": {"x":163,"y":107,"w":58,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":27},
+			"sourceSize": {"w":58,"h":27}
+		},
+		"virus_r16_angtank_32.png":
+		{
+			"frame": {"x":122,"y":137,"w":58,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":27},
+			"sourceSize": {"w":58,"h":27}
+		},
+		"virus_r16_angtank_25.png":
+		{
+			"frame": {"x":0,"y":171,"w":56,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":28},
+			"sourceSize": {"w":56,"h":28}
+		},
+		"virus_r16_angtank_28.png":
+		{
+			"frame": {"x":56,"y":171,"w":56,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":28},
+			"sourceSize": {"w":56,"h":28}
+		},
+		"virus_r16_angtank_3.png":
+		{
+			"frame": {"x":112,"y":171,"w":56,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":28},
+			"sourceSize": {"w":56,"h":28}
+		},
+		"virus_r16_angtank_4.png":
+		{
+			"frame": {"x":168,"y":171,"w":56,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":28},
+			"sourceSize": {"w":56,"h":28}
+		},
+		"virus_r16_angtank_16.png":
+		{
+			"frame": {"x":227,"y":0,"w":32,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":53},
+			"sourceSize": {"w":32,"h":53}
+		},
+		"virus_r16_angtank_27.png":
+		{
+			"frame": {"x":0,"y":199,"w":53,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":28},
+			"sourceSize": {"w":53,"h":28}
+		},
+		"virus_r16_angtank_40.png":
+		{
+			"frame": {"x":53,"y":199,"w":53,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":28},
+			"sourceSize": {"w":53,"h":28}
+		},
+		"virus_r16_angtank_26.png":
+		{
+			"frame": {"x":106,"y":199,"w":53,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":27},
+			"sourceSize": {"w":53,"h":27}
+		},
+		"virus_r16_angtank_39.png":
+		{
+			"frame": {"x":159,"y":199,"w":53,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":27},
+			"sourceSize": {"w":53,"h":27}
+		},
+		"virus_r16_angtank_8.png":
+		{
+			"frame": {"x":227,"y":53,"w":32,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":50},
+			"sourceSize": {"w":32,"h":50}
+		},
+		"virus_r16_angtank_30.png":
+		{
+			"frame": {"x":0,"y":227,"w":50,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":30},
+			"sourceSize": {"w":50,"h":30}
+		},
+		"virus_r16_angtank_37.png":
+		{
+			"frame": {"x":50,"y":227,"w":50,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":30},
+			"sourceSize": {"w":50,"h":30}
+		},
+		"virus_r16_angtank_29.png":
+		{
+			"frame": {"x":100,"y":227,"w":49,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":28},
+			"sourceSize": {"w":49,"h":28}
+		},
+		"virus_r16_angtank_38.png":
+		{
+			"frame": {"x":149,"y":227,"w":49,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":28},
+			"sourceSize": {"w":49,"h":28}
+		},
+		"virus_r16_angtank_15.png":
+		{
+			"frame": {"x":227,"y":103,"w":32,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":48},
+			"sourceSize": {"w":32,"h":48}
+		},
+		"virus_r16_angtank_23.png":
+		{
+			"frame": {"x":227,"y":151,"w":28,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":46},
+			"sourceSize": {"w":28,"h":46}
+		},
+		"virus_r16_angtank_24.png":
+		{
+			"frame": {"x":259,"y":0,"w":28,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":46},
+			"sourceSize": {"w":28,"h":46}
+		},
+		"virus_r16_angtank_10.png":
+		{
+			"frame": {"x":198,"y":227,"w":45,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":28},
+			"sourceSize": {"w":45,"h":28}
+		},
+		"virus_r16_angtank_20.png":
+		{
+			"frame": {"x":0,"y":257,"w":45,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":28},
+			"sourceSize": {"w":45,"h":28}
+		},
+		"virus_r16_angtank_11.png":
+		{
+			"frame": {"x":287,"y":0,"w":41,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":35},
+			"sourceSize": {"w":41,"h":35}
+		},
+		"virus_r16_angtank_21.png":
+		{
+			"frame": {"x":287,"y":35,"w":41,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":35},
+			"sourceSize": {"w":41,"h":35}
+		},
+		"virus_r16_angtank_17.png":
+		{
+			"frame": {"x":287,"y":70,"w":32,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":35},
+			"sourceSize": {"w":32,"h":35}
+		},
+		"virus_r16_angtank_18.png":
+		{
+			"frame": {"x":287,"y":105,"w":35,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":16},
+			"sourceSize": {"w":35,"h":16}
+		},
+		"virus_r16_angtank_7.png":
+		{
+			"frame": {"x":287,"y":121,"w":32,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+			"sourceSize": {"w":32,"h":32}
+		},
+		"virus_r16_angtank_19.png":
+		{
+			"frame": {"x":287,"y":153,"w":26,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":29},
+			"sourceSize": {"w":26,"h":29}
+		},
+		"virus_r16_angtank_22.png":
+		{
+			"frame": {"x":287,"y":182,"w":29,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":20},
+			"sourceSize": {"w":29,"h":20}
+		},
+		"virus_r16_angtank_13.png":
+		{
+			"frame": {"x":287,"y":202,"w":21,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":25},
+			"sourceSize": {"w":21,"h":25}
+		},
+		"virus_r16_angtank_12.png":
+		{
+			"frame": {"x":313,"y":153,"w":15,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":10},
+			"sourceSize": {"w":15,"h":10}
+		},
+		"virus_r16_angtank_14.png":
+		{
+			"frame": {"x":319,"y":70,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"virus_r16_angtank_2.png":
+		{
+			"frame": {"x":324,"y":70,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

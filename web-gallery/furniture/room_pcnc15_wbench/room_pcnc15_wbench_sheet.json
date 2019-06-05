@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "room_pcnc15_wbench_sheet.png",
+		"size": {"w":132,"h":76},
+		"scale": "1"
+	},
+	"frames": {
+		"room_pcnc15_wbench_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":80,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":41},
+			"sourceSize": {"w":80,"h":41}
+		},
+		"room_pcnc15_wbench_2.png":
+		{
+			"frame": {"x":0,"y":41,"w":52,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":35},
+			"sourceSize": {"w":52,"h":35}
+		},
+		"room_pcnc15_wbench_7.png":
+		{
+			"frame": {"x":80,"y":0,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"room_pcnc15_wbench_6.png":
+		{
+			"frame": {"x":80,"y":31,"w":22,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":15},
+			"sourceSize": {"w":22,"h":15}
+		}
+	}
+}

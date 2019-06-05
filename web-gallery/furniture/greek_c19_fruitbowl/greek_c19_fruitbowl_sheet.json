@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "greek_c19_fruitbowl_sheet.png",
+		"size": {"w":103,"h":81},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_c19_fruitbowl_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":53},
+			"sourceSize": {"w":58,"h":53}
+		},
+		"greek_c19_fruitbowl_2.png":
+		{
+			"frame": {"x":58,"y":0,"w":45,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":53},
+			"sourceSize": {"w":45,"h":53}
+		},
+		"greek_c19_fruitbowl_6.png":
+		{
+			"frame": {"x":0,"y":53,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		},
+		"greek_c19_fruitbowl_4.png":
+		{
+			"frame": {"x":30,"y":53,"w":23,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":13},
+			"sourceSize": {"w":23,"h":13}
+		}
+	}
+}

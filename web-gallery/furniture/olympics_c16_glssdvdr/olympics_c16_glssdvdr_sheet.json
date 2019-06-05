@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "olympics_c16_glssdvdr_sheet.png",
+		"size": {"w":170,"h":144},
+		"scale": "1"
+	},
+	"frames": {
+		"olympics_c16_glssdvdr_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":144},
+			"sourceSize": {"w":38,"h":144}
+		},
+		"olympics_c16_glssdvdr_11.png":
+		{
+			"frame": {"x":38,"y":0,"w":36,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":143},
+			"sourceSize": {"w":36,"h":143}
+		},
+		"olympics_c16_glssdvdr_9.png":
+		{
+			"frame": {"x":74,"y":0,"w":38,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":69},
+			"sourceSize": {"w":38,"h":69}
+		},
+		"olympics_c16_glssdvdr_2.png":
+		{
+			"frame": {"x":74,"y":69,"w":36,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":68},
+			"sourceSize": {"w":36,"h":68}
+		},
+		"olympics_c16_glssdvdr_6.png":
+		{
+			"frame": {"x":112,"y":0,"w":58,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":30},
+			"sourceSize": {"w":58,"h":30}
+		},
+		"olympics_c16_glssdvdr_5.png":
+		{
+			"frame": {"x":112,"y":30,"w":22,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":20},
+			"sourceSize": {"w":22,"h":20}
+		}
+	}
+}

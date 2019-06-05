@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "jungle_c16_sacks_sheet.png",
+		"size": {"w":137,"h":111},
+		"scale": "1"
+	},
+	"frames": {
+		"jungle_c16_sacks_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":57},
+			"sourceSize": {"w":49,"h":57}
+		},
+		"jungle_c16_sacks_3.png":
+		{
+			"frame": {"x":49,"y":0,"w":49,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":36},
+			"sourceSize": {"w":49,"h":36}
+		},
+		"jungle_c16_sacks_8.png":
+		{
+			"frame": {"x":0,"y":57,"w":49,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":25},
+			"sourceSize": {"w":49,"h":25}
+		},
+		"jungle_c16_sacks_10.png":
+		{
+			"frame": {"x":49,"y":57,"w":49,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":24},
+			"sourceSize": {"w":49,"h":24}
+		},
+		"jungle_c16_sacks_6.png":
+		{
+			"frame": {"x":98,"y":0,"w":39,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":46},
+			"sourceSize": {"w":39,"h":46}
+		},
+		"jungle_c16_sacks_12.png":
+		{
+			"frame": {"x":98,"y":46,"w":39,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":22},
+			"sourceSize": {"w":39,"h":22}
+		},
+		"jungle_c16_sacks_5.png":
+		{
+			"frame": {"x":0,"y":82,"w":25,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
+			"sourceSize": {"w":25,"h":29}
+		}
+	}
+}

@@ -1,0 +1,161 @@
+{
+	"meta": {
+		"image": "school_chalkboard_sheet.png",
+		"size": {"w":572,"h":518},
+		"scale": "1"
+	},
+	"frames": {
+		"school_chalkboard_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":398,"h":332},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":398,"h":332},
+			"sourceSize": {"w":398,"h":332}
+		},
+		"school_chalkboard_4.png":
+		{
+			"frame": {"x":398,"y":0,"w":128,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":146},
+			"sourceSize": {"w":128,"h":146}
+		},
+		"school_chalkboard_7.png":
+		{
+			"frame": {"x":398,"y":146,"w":128,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":146},
+			"sourceSize": {"w":128,"h":146}
+		},
+		"school_chalkboard_13.png":
+		{
+			"frame": {"x":0,"y":332,"w":111,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":111,"h":110},
+			"sourceSize": {"w":111,"h":110}
+		},
+		"school_chalkboard_18.png":
+		{
+			"frame": {"x":111,"y":332,"w":110,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":110,"h":85},
+			"sourceSize": {"w":110,"h":85}
+		},
+		"school_chalkboard_14.png":
+		{
+			"frame": {"x":221,"y":332,"w":94,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":68},
+			"sourceSize": {"w":94,"h":68}
+		},
+		"school_chalkboard_19.png":
+		{
+			"frame": {"x":315,"y":332,"w":93,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":63},
+			"sourceSize": {"w":93,"h":63}
+		},
+		"school_chalkboard_12.png":
+		{
+			"frame": {"x":408,"y":332,"w":93,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":52},
+			"sourceSize": {"w":93,"h":52}
+		},
+		"school_chalkboard_22.png":
+		{
+			"frame": {"x":0,"y":442,"w":91,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":76},
+			"sourceSize": {"w":91,"h":76}
+		},
+		"school_chalkboard_17.png":
+		{
+			"frame": {"x":91,"y":442,"w":65,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":74},
+			"sourceSize": {"w":65,"h":74}
+		},
+		"school_chalkboard_8.png":
+		{
+			"frame": {"x":156,"y":442,"w":65,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":74},
+			"sourceSize": {"w":65,"h":74}
+		},
+		"school_chalkboard_5.png":
+		{
+			"frame": {"x":221,"y":442,"w":55,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":55},
+			"sourceSize": {"w":55,"h":55}
+		},
+		"school_chalkboard_16.png":
+		{
+			"frame": {"x":276,"y":442,"w":55,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":42},
+			"sourceSize": {"w":55,"h":42}
+		},
+		"school_chalkboard_11.png":
+		{
+			"frame": {"x":398,"y":292,"w":49,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":34},
+			"sourceSize": {"w":49,"h":34}
+		},
+		"school_chalkboard_1.png":
+		{
+			"frame": {"x":331,"y":442,"w":48,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":36},
+			"sourceSize": {"w":48,"h":36}
+		},
+		"school_chalkboard_15.png":
+		{
+			"frame": {"x":526,"y":0,"w":46,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":38},
+			"sourceSize": {"w":46,"h":38}
+		},
+		"school_chalkboard_3.png":
+		{
+			"frame": {"x":526,"y":38,"w":46,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":22},
+			"sourceSize": {"w":46,"h":22}
+		},
+		"school_chalkboard_6.png":
+		{
+			"frame": {"x":526,"y":60,"w":26,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":29},
+			"sourceSize": {"w":26,"h":29}
+		},
+		"school_chalkboard_2.png":
+		{
+			"frame": {"x":552,"y":60,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

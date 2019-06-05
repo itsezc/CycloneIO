@@ -1,0 +1,185 @@
+{
+	"meta": {
+		"image": "fball_ball5_sheet.png",
+		"size": {"w":156,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"fball_ball5_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":104,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":104,"h":91},
+			"sourceSize": {"w":104,"h":91}
+		},
+		"fball_ball5_10.png":
+		{
+			"frame": {"x":104,"y":0,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_11.png":
+		{
+			"frame": {"x":104,"y":26,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_12.png":
+		{
+			"frame": {"x":104,"y":52,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_13.png":
+		{
+			"frame": {"x":0,"y":91,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_14.png":
+		{
+			"frame": {"x":26,"y":91,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_15.png":
+		{
+			"frame": {"x":52,"y":91,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_23.png":
+		{
+			"frame": {"x":78,"y":91,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_6.png":
+		{
+			"frame": {"x":104,"y":91,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_8.png":
+		{
+			"frame": {"x":130,"y":0,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_9.png":
+		{
+			"frame": {"x":130,"y":26,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"fball_ball5_19.png":
+		{
+			"frame": {"x":130,"y":52,"w":23,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":11},
+			"sourceSize": {"w":23,"h":11}
+		},
+		"fball_ball5_18.png":
+		{
+			"frame": {"x":130,"y":63,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_2.png":
+		{
+			"frame": {"x":143,"y":63,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_20.png":
+		{
+			"frame": {"x":130,"y":76,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_21.png":
+		{
+			"frame": {"x":143,"y":76,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_24.png":
+		{
+			"frame": {"x":130,"y":89,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_25.png":
+		{
+			"frame": {"x":143,"y":89,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_26.png":
+		{
+			"frame": {"x":130,"y":102,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_3.png":
+		{
+			"frame": {"x":143,"y":102,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_5.png":
+		{
+			"frame": {"x":104,"y":78,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"fball_ball5_16.png":
+		{
+			"frame": {"x":117,"y":78,"w":13,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":6},
+			"sourceSize": {"w":13,"h":6}
+		}
+	}
+}

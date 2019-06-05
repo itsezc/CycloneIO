@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hween_c16_ladder_sheet.png",
+		"size": {"w":217,"h":162},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c16_ladder_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":83,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":106},
+			"sourceSize": {"w":83,"h":106}
+		},
+		"hween_c16_ladder_5.png":
+		{
+			"frame": {"x":83,"y":0,"w":81,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":95},
+			"sourceSize": {"w":81,"h":95}
+		},
+		"hween_c16_ladder_2.png":
+		{
+			"frame": {"x":164,"y":0,"w":53,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":88},
+			"sourceSize": {"w":53,"h":88}
+		},
+		"hween_c16_ladder_6.png":
+		{
+			"frame": {"x":0,"y":106,"w":80,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":56},
+			"sourceSize": {"w":80,"h":56}
+		},
+		"hween_c16_ladder_7.png":
+		{
+			"frame": {"x":80,"y":106,"w":76,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":38},
+			"sourceSize": {"w":76,"h":38}
+		},
+		"hween_c16_ladder_10.png":
+		{
+			"frame": {"x":156,"y":106,"w":24,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":29},
+			"sourceSize": {"w":24,"h":29}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "magazines_sheet.png",
+		"size": {"w":84,"h":62},
+		"scale": "1"
+	},
+	"frames": {
+		"magazines_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":22},
+			"sourceSize": {"w":42,"h":22}
+		},
+		"magazines_6.png":
+		{
+			"frame": {"x":42,"y":0,"w":42,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":22},
+			"sourceSize": {"w":42,"h":22}
+		},
+		"magazines_1.png":
+		{
+			"frame": {"x":0,"y":22,"w":37,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":24},
+			"sourceSize": {"w":37,"h":24}
+		},
+		"magazines_3.png":
+		{
+			"frame": {"x":37,"y":22,"w":37,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":24},
+			"sourceSize": {"w":37,"h":24}
+		},
+		"magazines_7.png":
+		{
+			"frame": {"x":0,"y":46,"w":22,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":16},
+			"sourceSize": {"w":22,"h":16}
+		}
+	}
+}

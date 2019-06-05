@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ads_nokia_x6_sheet.png",
+		"size": {"w":117,"h":113},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_nokia_x6_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":77,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":64},
+			"sourceSize": {"w":77,"h":64}
+		},
+		"ads_nokia_x6_6.png":
+		{
+			"frame": {"x":77,"y":0,"w":40,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":64},
+			"sourceSize": {"w":40,"h":64}
+		},
+		"ads_nokia_x6_5.png":
+		{
+			"frame": {"x":0,"y":64,"w":10,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":49},
+			"sourceSize": {"w":10,"h":49}
+		},
+		"ads_nokia_x6_2.png":
+		{
+			"frame": {"x":10,"y":64,"w":21,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":33},
+			"sourceSize": {"w":21,"h":33}
+		},
+		"ads_nokia_x6_10.png":
+		{
+			"frame": {"x":31,"y":64,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"ads_nokia_x6_7.png":
+		{
+			"frame": {"x":52,"y":64,"w":6,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":26},
+			"sourceSize": {"w":6,"h":26}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "purablk_c16_bar_sheet.png",
+		"size": {"w":126,"h":120},
+		"scale": "1"
+	},
+	"frames": {
+		"purablk_c16_bar_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":74,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":67},
+			"sourceSize": {"w":74,"h":67}
+		},
+		"purablk_c16_bar_6.png":
+		{
+			"frame": {"x":74,"y":0,"w":52,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":67},
+			"sourceSize": {"w":52,"h":67}
+		},
+		"purablk_c16_bar_1.png":
+		{
+			"frame": {"x":0,"y":67,"w":51,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":26},
+			"sourceSize": {"w":51,"h":26}
+		},
+		"purablk_c16_bar_2.png":
+		{
+			"frame": {"x":0,"y":93,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		}
+	}
+}

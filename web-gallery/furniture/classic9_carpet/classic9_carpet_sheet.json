@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "classic9_carpet_sheet.png",
+		"size": {"w":108,"h":73},
+		"scale": "1"
+	},
+	"frames": {
+		"classic9_carpet_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":108,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":108,"h":57},
+			"sourceSize": {"w":108,"h":57}
+		},
+		"classic9_carpet_3.png":
+		{
+			"frame": {"x":0,"y":57,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

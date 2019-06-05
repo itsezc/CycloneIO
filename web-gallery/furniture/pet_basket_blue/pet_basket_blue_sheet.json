@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "pet_basket_blue_sheet.png",
+		"size": {"w":167,"h":129},
+		"scale": "1"
+	},
+	"frames": {
+		"pet_basket_blue_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":109,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":109,"h":91},
+			"sourceSize": {"w":109,"h":91}
+		},
+		"pet_basket_blue_2.png":
+		{
+			"frame": {"x":109,"y":0,"w":58,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":60},
+			"sourceSize": {"w":58,"h":60}
+		},
+		"pet_basket_blue_4.png":
+		{
+			"frame": {"x":0,"y":91,"w":51,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":38},
+			"sourceSize": {"w":51,"h":38}
+		},
+		"pet_basket_blue_9.png":
+		{
+			"frame": {"x":109,"y":60,"w":49,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":14},
+			"sourceSize": {"w":49,"h":14}
+		},
+		"pet_basket_blue_5.png":
+		{
+			"frame": {"x":51,"y":91,"w":29,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":31},
+			"sourceSize": {"w":29,"h":31}
+		},
+		"pet_basket_blue_1.png":
+		{
+			"frame": {"x":80,"y":91,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"pet_basket_blue_6.png":
+		{
+			"frame": {"x":109,"y":91,"w":25,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":18},
+			"sourceSize": {"w":25,"h":18}
+		},
+		"pet_basket_blue_7.png":
+		{
+			"frame": {"x":109,"y":74,"w":24,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":7},
+			"sourceSize": {"w":24,"h":7}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "snowb_mountain_wall_sheet.png",
+		"size": {"w":638,"h":616},
+		"scale": "1"
+	},
+	"frames": {
+		"snowb_mountain_wall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":384,"h":407},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":384,"h":407},
+			"sourceSize": {"w":384,"h":407}
+		},
+		"snowb_mountain_wall_1.png":
+		{
+			"frame": {"x":384,"y":0,"w":127,"h":407},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":127,"h":407},
+			"sourceSize": {"w":127,"h":407}
+		},
+		"snowb_mountain_wall_2.png":
+		{
+			"frame": {"x":511,"y":0,"w":127,"h":407},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":127,"h":407},
+			"sourceSize": {"w":127,"h":407}
+		},
+		"snowb_mountain_wall_6.png":
+		{
+			"frame": {"x":0,"y":407,"w":65,"h":209},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":209},
+			"sourceSize": {"w":65,"h":209}
+		},
+		"snowb_mountain_wall_7.png":
+		{
+			"frame": {"x":65,"y":407,"w":65,"h":209},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":209},
+			"sourceSize": {"w":65,"h":209}
+		},
+		"snowb_mountain_wall_5.png":
+		{
+			"frame": {"x":130,"y":407,"w":17,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":32},
+			"sourceSize": {"w":17,"h":32}
+		}
+	}
+}

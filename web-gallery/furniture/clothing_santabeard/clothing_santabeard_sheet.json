@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_santabeard_sheet.png",
+		"size": {"w":63,"h":46},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_santabeard_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":33,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":46},
+			"sourceSize": {"w":33,"h":46}
+		},
+		"clothing_santabeard_2.png":
+		{
+			"frame": {"x":33,"y":0,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		},
+		"clothing_santabeard_5.png":
+		{
+			"frame": {"x":33,"y":28,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "pixel_poster2_sheet.png",
+		"size": {"w":116,"h":73},
+		"scale": "1"
+	},
+	"frames": {
+		"pixel_poster2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":73},
+			"sourceSize": {"w":58,"h":73}
+		},
+		"pixel_poster2_4.png":
+		{
+			"frame": {"x":58,"y":0,"w":38,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":73},
+			"sourceSize": {"w":38,"h":73}
+		},
+		"pixel_poster2_2.png":
+		{
+			"frame": {"x":96,"y":0,"w":20,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":37},
+			"sourceSize": {"w":20,"h":37}
+		},
+		"pixel_poster2_6.png":
+		{
+			"frame": {"x":96,"y":37,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		}
+	}
+}

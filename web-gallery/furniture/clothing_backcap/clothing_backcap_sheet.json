@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_backcap_sheet.png",
+		"size": {"w":61,"h":50},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_backcap_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":50},
+			"sourceSize": {"w":34,"h":50}
+		},
+		"clothing_backcap_6.png":
+		{
+			"frame": {"x":34,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

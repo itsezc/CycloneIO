@@ -1,0 +1,265 @@
+{
+	"meta": {
+		"image": "penguin_infected_sheet.png",
+		"size": {"w":358,"h":315},
+		"scale": "1"
+	},
+	"frames": {
+		"penguin_infected_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":232,"h":220},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":232,"h":220},
+			"sourceSize": {"w":232,"h":220}
+		},
+		"penguin_infected_21.png":
+		{
+			"frame": {"x":232,"y":0,"w":42,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":63},
+			"sourceSize": {"w":42,"h":63}
+		},
+		"penguin_infected_10.png":
+		{
+			"frame": {"x":232,"y":63,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_12.png":
+		{
+			"frame": {"x":232,"y":125,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_13.png":
+		{
+			"frame": {"x":274,"y":0,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_15.png":
+		{
+			"frame": {"x":274,"y":62,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_16.png":
+		{
+			"frame": {"x":274,"y":124,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_17.png":
+		{
+			"frame": {"x":0,"y":220,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_20.png":
+		{
+			"frame": {"x":42,"y":220,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_22.png":
+		{
+			"frame": {"x":84,"y":220,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_23.png":
+		{
+			"frame": {"x":126,"y":220,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_5.png":
+		{
+			"frame": {"x":168,"y":220,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_6.png":
+		{
+			"frame": {"x":210,"y":220,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_8.png":
+		{
+			"frame": {"x":252,"y":220,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_9.png":
+		{
+			"frame": {"x":316,"y":0,"w":42,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":62},
+			"sourceSize": {"w":42,"h":62}
+		},
+		"penguin_infected_26.png":
+		{
+			"frame": {"x":316,"y":62,"w":36,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":11},
+			"sourceSize": {"w":36,"h":11}
+		},
+		"penguin_infected_1.png":
+		{
+			"frame": {"x":316,"y":73,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_2.png":
+		{
+			"frame": {"x":316,"y":106,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_25.png":
+		{
+			"frame": {"x":316,"y":139,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_27.png":
+		{
+			"frame": {"x":316,"y":172,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_28.png":
+		{
+			"frame": {"x":316,"y":205,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_29.png":
+		{
+			"frame": {"x":316,"y":238,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_3.png":
+		{
+			"frame": {"x":274,"y":186,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_30.png":
+		{
+			"frame": {"x":232,"y":187,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_31.png":
+		{
+			"frame": {"x":294,"y":220,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_33.png":
+		{
+			"frame": {"x":0,"y":282,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_34.png":
+		{
+			"frame": {"x":22,"y":282,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_35.png":
+		{
+			"frame": {"x":44,"y":282,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_36.png":
+		{
+			"frame": {"x":66,"y":282,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_4.png":
+		{
+			"frame": {"x":88,"y":282,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"penguin_infected_18.png":
+		{
+			"frame": {"x":338,"y":73,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"penguin_infected_11.png":
+		{
+			"frame": {"x":338,"y":106,"w":20,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":6},
+			"sourceSize": {"w":20,"h":6}
+		}
+	}
+}

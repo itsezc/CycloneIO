@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "xmas14_boomboxman_sheet.png",
+		"size": {"w":408,"h":273},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas14_boomboxman_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":105,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":105,"h":90},
+			"sourceSize": {"w":105,"h":90}
+		},
+		"xmas14_boomboxman_7.png":
+		{
+			"frame": {"x":105,"y":0,"w":104,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":104,"h":90},
+			"sourceSize": {"w":104,"h":90}
+		},
+		"xmas14_boomboxman_2.png":
+		{
+			"frame": {"x":0,"y":90,"w":103,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":103,"h":88},
+			"sourceSize": {"w":103,"h":88}
+		},
+		"xmas14_boomboxman_6.png":
+		{
+			"frame": {"x":209,"y":0,"w":101,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":90},
+			"sourceSize": {"w":101,"h":90}
+		},
+		"xmas14_boomboxman_3.png":
+		{
+			"frame": {"x":0,"y":178,"w":100,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":95},
+			"sourceSize": {"w":100,"h":95}
+		},
+		"xmas14_boomboxman_12.png":
+		{
+			"frame": {"x":100,"y":178,"w":100,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":89},
+			"sourceSize": {"w":100,"h":89}
+		},
+		"xmas14_boomboxman_5.png":
+		{
+			"frame": {"x":310,"y":0,"w":98,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":90},
+			"sourceSize": {"w":98,"h":90}
+		},
+		"xmas14_boomboxman_4.png":
+		{
+			"frame": {"x":310,"y":90,"w":97,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":87},
+			"sourceSize": {"w":97,"h":87}
+		},
+		"xmas14_boomboxman_1.png":
+		{
+			"frame": {"x":310,"y":177,"w":64,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":43},
+			"sourceSize": {"w":64,"h":43}
+		},
+		"xmas14_boomboxman_13.png":
+		{
+			"frame": {"x":374,"y":177,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

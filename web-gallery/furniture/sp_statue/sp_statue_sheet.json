@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "sp_statue_sheet.png",
+		"size": {"w":356,"h":356},
+		"scale": "1"
+	},
+	"frames": {
+		"sp_statue_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":283,"h":216},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":283,"h":216},
+			"sourceSize": {"w":283,"h":216}
+		},
+		"sp_statue_1.png":
+		{
+			"frame": {"x":283,"y":0,"w":73,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":143},
+			"sourceSize": {"w":73,"h":143}
+		},
+		"sp_statue_15.png":
+		{
+			"frame": {"x":0,"y":216,"w":70,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":140},
+			"sourceSize": {"w":70,"h":140}
+		},
+		"sp_statue_6.png":
+		{
+			"frame": {"x":70,"y":216,"w":70,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":140},
+			"sourceSize": {"w":70,"h":140}
+		},
+		"sp_statue_8.png":
+		{
+			"frame": {"x":140,"y":216,"w":70,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":140},
+			"sourceSize": {"w":70,"h":140}
+		},
+		"sp_statue_9.png":
+		{
+			"frame": {"x":283,"y":143,"w":37,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":73},
+			"sourceSize": {"w":37,"h":73}
+		},
+		"sp_statue_11.png":
+		{
+			"frame": {"x":320,"y":143,"w":34,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":70},
+			"sourceSize": {"w":34,"h":70}
+		},
+		"sp_statue_13.png":
+		{
+			"frame": {"x":210,"y":216,"w":34,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":70},
+			"sourceSize": {"w":34,"h":70}
+		},
+		"sp_statue_14.png":
+		{
+			"frame": {"x":244,"y":216,"w":34,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":70},
+			"sourceSize": {"w":34,"h":70}
+		},
+		"sp_statue_10.png":
+		{
+			"frame": {"x":278,"y":216,"w":50,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":12},
+			"sourceSize": {"w":50,"h":12}
+		},
+		"sp_statue_2.png":
+		{
+			"frame": {"x":278,"y":228,"w":19,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":27},
+			"sourceSize": {"w":19,"h":27}
+		},
+		"sp_statue_12.png":
+		{
+			"frame": {"x":328,"y":216,"w":23,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":6},
+			"sourceSize": {"w":23,"h":6}
+		},
+		"sp_statue_4.png":
+		{
+			"frame": {"x":354,"y":143,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

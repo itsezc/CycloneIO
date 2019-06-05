@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "easter11_tag_sheet.png",
+		"size": {"w":430,"h":327},
+		"scale": "1"
+	},
+	"frames": {
+		"easter11_tag_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":275,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":275,"h":183},
+			"sourceSize": {"w":275,"h":183}
+		},
+		"easter11_tag_13.png":
+		{
+			"frame": {"x":275,"y":0,"w":155,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":155,"h":160},
+			"sourceSize": {"w":155,"h":160}
+		},
+		"easter11_tag_14.png":
+		{
+			"frame": {"x":0,"y":183,"w":120,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":45},
+			"sourceSize": {"w":120,"h":45}
+		},
+		"easter11_tag_8.png":
+		{
+			"frame": {"x":0,"y":228,"w":18,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":99},
+			"sourceSize": {"w":18,"h":99}
+		},
+		"easter11_tag_1.png":
+		{
+			"frame": {"x":18,"y":228,"w":78,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":80},
+			"sourceSize": {"w":78,"h":80}
+		},
+		"easter11_tag_11.png":
+		{
+			"frame": {"x":275,"y":160,"w":59,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":23},
+			"sourceSize": {"w":59,"h":23}
+		},
+		"easter11_tag_4.png":
+		{
+			"frame": {"x":96,"y":228,"w":9,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":51},
+			"sourceSize": {"w":9,"h":51}
+		},
+		"easter11_tag_2.png":
+		{
+			"frame": {"x":120,"y":183,"w":18,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":26},
+			"sourceSize": {"w":18,"h":26}
+		},
+		"easter11_tag_5.png":
+		{
+			"frame": {"x":334,"y":160,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"easter11_tag_15.png":
+		{
+			"frame": {"x":358,"y":160,"w":11,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":8},
+			"sourceSize": {"w":11,"h":8}
+		},
+		"easter11_tag_10.png":
+		{
+			"frame": {"x":369,"y":160,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

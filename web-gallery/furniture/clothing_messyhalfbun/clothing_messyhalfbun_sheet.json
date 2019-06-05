@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_messyhalfbun_sheet.png",
+		"size": {"w":59,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_messyhalfbun_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":45},
+			"sourceSize": {"w":32,"h":45}
+		},
+		"clothing_messyhalfbun_7.png":
+		{
+			"frame": {"x":32,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

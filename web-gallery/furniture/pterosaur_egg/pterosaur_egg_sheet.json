@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "pterosaur_egg_sheet.png",
+		"size": {"w":103,"h":73},
+		"scale": "1"
+	},
+	"frames": {
+		"pterosaur_egg_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"pterosaur_egg_9.png":
+		{
+			"frame": {"x":36,"y":0,"w":44,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":25},
+			"sourceSize": {"w":44,"h":25}
+		},
+		"pterosaur_egg_6.png":
+		{
+			"frame": {"x":36,"y":25,"w":43,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":25},
+			"sourceSize": {"w":43,"h":25}
+		},
+		"pterosaur_egg_5.png":
+		{
+			"frame": {"x":0,"y":52,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"pterosaur_egg_8.png":
+		{
+			"frame": {"x":80,"y":0,"w":23,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":32},
+			"sourceSize": {"w":23,"h":32}
+		}
+	}
+}

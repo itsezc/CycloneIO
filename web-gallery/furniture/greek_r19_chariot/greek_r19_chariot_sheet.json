@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "greek_r19_chariot_sheet.png",
+		"size": {"w":202,"h":196},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_r19_chariot_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":71,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":95},
+			"sourceSize": {"w":71,"h":95}
+		},
+		"greek_r19_chariot_12.png":
+		{
+			"frame": {"x":71,"y":0,"w":57,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":89},
+			"sourceSize": {"w":57,"h":89}
+		},
+		"greek_r19_chariot_3.png":
+		{
+			"frame": {"x":128,"y":0,"w":74,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":55},
+			"sourceSize": {"w":74,"h":55}
+		},
+		"greek_r19_chariot_8.png":
+		{
+			"frame": {"x":128,"y":55,"w":72,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":36},
+			"sourceSize": {"w":72,"h":36}
+		},
+		"greek_r19_chariot_6.png":
+		{
+			"frame": {"x":0,"y":95,"w":70,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":35},
+			"sourceSize": {"w":70,"h":35}
+		},
+		"greek_r19_chariot_1.png":
+		{
+			"frame": {"x":0,"y":130,"w":59,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":66},
+			"sourceSize": {"w":59,"h":66}
+		},
+		"greek_r19_chariot_11.png":
+		{
+			"frame": {"x":70,"y":95,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		}
+	}
+}

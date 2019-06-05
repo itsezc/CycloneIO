@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "room_info15_sofa2_sheet.png",
+		"size": {"w":193,"h":177},
+		"scale": "1"
+	},
+	"frames": {
+		"room_info15_sofa2_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":67,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":80},
+			"sourceSize": {"w":67,"h":80}
+		},
+		"room_info15_sofa2_3.png":
+		{
+			"frame": {"x":67,"y":0,"w":65,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":78},
+			"sourceSize": {"w":65,"h":78}
+		},
+		"room_info15_sofa2_14.png":
+		{
+			"frame": {"x":132,"y":0,"w":61,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":78},
+			"sourceSize": {"w":61,"h":78}
+		},
+		"room_info15_sofa2_5.png":
+		{
+			"frame": {"x":0,"y":80,"w":38,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":71},
+			"sourceSize": {"w":38,"h":71}
+		},
+		"room_info15_sofa2_16.png":
+		{
+			"frame": {"x":38,"y":80,"w":32,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":71},
+			"sourceSize": {"w":32,"h":71}
+		},
+		"room_info15_sofa2_10.png":
+		{
+			"frame": {"x":70,"y":80,"w":32,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":68},
+			"sourceSize": {"w":32,"h":68}
+		},
+		"room_info15_sofa2_6.png":
+		{
+			"frame": {"x":102,"y":80,"w":46,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":48},
+			"sourceSize": {"w":46,"h":48}
+		},
+		"room_info15_sofa2_9.png":
+		{
+			"frame": {"x":148,"y":80,"w":34,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":18},
+			"sourceSize": {"w":34,"h":18}
+		},
+		"room_info15_sofa2_12.png":
+		{
+			"frame": {"x":148,"y":98,"w":32,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":17},
+			"sourceSize": {"w":32,"h":17}
+		},
+		"room_info15_sofa2_1.png":
+		{
+			"frame": {"x":0,"y":151,"w":27,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":26},
+			"sourceSize": {"w":27,"h":26}
+		},
+		"room_info15_sofa2_8.png":
+		{
+			"frame": {"x":132,"y":78,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

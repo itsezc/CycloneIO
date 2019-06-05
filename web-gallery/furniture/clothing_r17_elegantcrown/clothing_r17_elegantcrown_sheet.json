@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r17_elegantcrown_sheet.png",
+		"size": {"w":53,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r17_elegantcrown_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":55},
+			"sourceSize": {"w":26,"h":55}
+		},
+		"clothing_r17_elegantcrown_2.png":
+		{
+			"frame": {"x":26,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

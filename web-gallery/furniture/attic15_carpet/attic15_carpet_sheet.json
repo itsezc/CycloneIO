@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "attic15_carpet_sheet.png",
+		"size": {"w":165,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"attic15_carpet_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":165,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":165,"h":84},
+			"sourceSize": {"w":165,"h":84}
+		},
+		"attic15_carpet_4.png":
+		{
+			"frame": {"x":0,"y":84,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

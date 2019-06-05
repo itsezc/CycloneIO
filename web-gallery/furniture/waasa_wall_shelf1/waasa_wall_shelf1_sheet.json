@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "waasa_wall_shelf1_sheet.png",
+		"size": {"w":212,"h":177},
+		"scale": "1"
+	},
+	"frames": {
+		"waasa_wall_shelf1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":155,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":155,"h":111},
+			"sourceSize": {"w":155,"h":111}
+		},
+		"waasa_wall_shelf1_11.png":
+		{
+			"frame": {"x":155,"y":0,"w":57,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":45},
+			"sourceSize": {"w":57,"h":45}
+		},
+		"waasa_wall_shelf1_15.png":
+		{
+			"frame": {"x":155,"y":45,"w":57,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":45},
+			"sourceSize": {"w":57,"h":45}
+		},
+		"waasa_wall_shelf1_3.png":
+		{
+			"frame": {"x":0,"y":111,"w":57,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":42},
+			"sourceSize": {"w":57,"h":42}
+		},
+		"waasa_wall_shelf1_6.png":
+		{
+			"frame": {"x":57,"y":111,"w":57,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":40},
+			"sourceSize": {"w":57,"h":40}
+		},
+		"waasa_wall_shelf1_1.png":
+		{
+			"frame": {"x":114,"y":111,"w":41,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":34},
+			"sourceSize": {"w":41,"h":34}
+		},
+		"waasa_wall_shelf1_2.png":
+		{
+			"frame": {"x":155,"y":111,"w":41,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":34},
+			"sourceSize": {"w":41,"h":34}
+		},
+		"waasa_wall_shelf1_16.png":
+		{
+			"frame": {"x":0,"y":153,"w":30,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":24},
+			"sourceSize": {"w":30,"h":24}
+		},
+		"waasa_wall_shelf1_17.png":
+		{
+			"frame": {"x":30,"y":153,"w":30,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":24},
+			"sourceSize": {"w":30,"h":24}
+		},
+		"waasa_wall_shelf1_14.png":
+		{
+			"frame": {"x":60,"y":153,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		},
+		"waasa_wall_shelf1_10.png":
+		{
+			"frame": {"x":155,"y":90,"w":30,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":21},
+			"sourceSize": {"w":30,"h":21}
+		},
+		"waasa_wall_shelf1_4.png":
+		{
+			"frame": {"x":185,"y":90,"w":21,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":14},
+			"sourceSize": {"w":21,"h":14}
+		},
+		"waasa_wall_shelf1_7.png":
+		{
+			"frame": {"x":90,"y":153,"w":21,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":14},
+			"sourceSize": {"w":21,"h":14}
+		}
+	}
+}

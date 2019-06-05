@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "room_noob_bargate_sheet.png",
+		"size": {"w":135,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"room_noob_bargate_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":65},
+			"sourceSize": {"w":55,"h":65}
+		},
+		"room_noob_bargate_12.png":
+		{
+			"frame": {"x":55,"y":0,"w":56,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":33},
+			"sourceSize": {"w":56,"h":33}
+		},
+		"room_noob_bargate_6.png":
+		{
+			"frame": {"x":111,"y":0,"w":24,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":49},
+			"sourceSize": {"w":24,"h":49}
+		},
+		"room_noob_bargate_8.png":
+		{
+			"frame": {"x":55,"y":33,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"room_noob_bargate_7.png":
+		{
+			"frame": {"x":0,"y":65,"w":26,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":25},
+			"sourceSize": {"w":26,"h":25}
+		},
+		"room_noob_bargate_9.png":
+		{
+			"frame": {"x":0,"y":90,"w":14,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":26},
+			"sourceSize": {"w":14,"h":26}
+		},
+		"room_noob_bargate_5.png":
+		{
+			"frame": {"x":111,"y":49,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		},
+		"room_noob_bargate_11.png":
+		{
+			"frame": {"x":83,"y":33,"w":10,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":5},
+			"sourceSize": {"w":10,"h":5}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hc2_armchair_sheet.png",
+		"size": {"w":187,"h":153},
+		"scale": "1"
+	},
+	"frames": {
+		"hc2_armchair_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":122,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":82},
+			"sourceSize": {"w":122,"h":82}
+		},
+		"hc2_armchair_4.png":
+		{
+			"frame": {"x":122,"y":0,"w":65,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":82},
+			"sourceSize": {"w":65,"h":82}
+		},
+		"hc2_armchair_10.png":
+		{
+			"frame": {"x":0,"y":82,"w":32,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":41},
+			"sourceSize": {"w":32,"h":41}
+		},
+		"hc2_armchair_6.png":
+		{
+			"frame": {"x":32,"y":82,"w":31,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":21},
+			"sourceSize": {"w":31,"h":21}
+		},
+		"hc2_armchair_2.png":
+		{
+			"frame": {"x":0,"y":123,"w":25,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":30},
+			"sourceSize": {"w":25,"h":30}
+		},
+		"hc2_armchair_8.png":
+		{
+			"frame": {"x":63,"y":82,"w":27,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":20},
+			"sourceSize": {"w":27,"h":20}
+		}
+	}
+}

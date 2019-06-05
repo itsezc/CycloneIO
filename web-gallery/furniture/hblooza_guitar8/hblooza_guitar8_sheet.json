@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hblooza_guitar8_sheet.png",
+		"size": {"w":175,"h":214},
+		"scale": "1"
+	},
+	"frames": {
+		"hblooza_guitar8_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":72,"h":214},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":214},
+			"sourceSize": {"w":72,"h":214}
+		},
+		"hblooza_guitar8_4.png":
+		{
+			"frame": {"x":72,"y":0,"w":37,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":109},
+			"sourceSize": {"w":37,"h":109}
+		},
+		"hblooza_guitar8_7.png":
+		{
+			"frame": {"x":109,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"hblooza_guitar8_1.png":
+		{
+			"frame": {"x":109,"y":33,"w":34,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":18},
+			"sourceSize": {"w":34,"h":18}
+		},
+		"hblooza_guitar8_8.png":
+		{
+			"frame": {"x":109,"y":51,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ads_durex_carpet_sheet.png",
+		"size": {"w":334,"h":254},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_durex_carpet_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":334,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":334,"h":127},
+			"sourceSize": {"w":334,"h":127}
+		},
+		"ads_durex_carpet_1.png":
+		{
+			"frame": {"x":0,"y":127,"w":167,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":167,"h":84},
+			"sourceSize": {"w":167,"h":84}
+		},
+		"ads_durex_carpet_8.png":
+		{
+			"frame": {"x":167,"y":127,"w":167,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":167,"h":84},
+			"sourceSize": {"w":167,"h":84}
+		},
+		"ads_durex_carpet_2.png":
+		{
+			"frame": {"x":0,"y":211,"w":84,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":43},
+			"sourceSize": {"w":84,"h":43}
+		},
+		"ads_durex_carpet_9.png":
+		{
+			"frame": {"x":84,"y":211,"w":84,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":43},
+			"sourceSize": {"w":84,"h":43}
+		},
+		"ads_durex_carpet_3.png":
+		{
+			"frame": {"x":168,"y":211,"w":30,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":24},
+			"sourceSize": {"w":30,"h":24}
+		}
+	}
+}

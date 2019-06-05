@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r18_vamp_sheet.png",
+		"size": {"w":56,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r18_vamp_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":45},
+			"sourceSize": {"w":26,"h":45}
+		},
+		"clothing_r18_vamp_7.png":
+		{
+			"frame": {"x":26,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

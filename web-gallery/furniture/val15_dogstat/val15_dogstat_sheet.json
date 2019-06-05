@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "val15_dogstat_sheet.png",
+		"size": {"w":207,"h":126},
+		"scale": "1"
+	},
+	"frames": {
+		"val15_dogstat_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":126},
+			"sourceSize": {"w":66,"h":126}
+		},
+		"val15_dogstat_8.png":
+		{
+			"frame": {"x":66,"y":0,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"val15_dogstat_5.png":
+		{
+			"frame": {"x":164,"y":0,"w":43,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":86},
+			"sourceSize": {"w":43,"h":86}
+		},
+		"val15_dogstat_6.png":
+		{
+			"frame": {"x":164,"y":86,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		}
+	}
+}

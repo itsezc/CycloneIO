@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hween11_dish2_sheet.png",
+		"size": {"w":113,"h":81},
+		"scale": "1"
+	},
+	"frames": {
+		"hween11_dish2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":89,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":49},
+			"sourceSize": {"w":89,"h":49}
+		},
+		"hween11_dish2_3.png":
+		{
+			"frame": {"x":0,"y":49,"w":47,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":32},
+			"sourceSize": {"w":47,"h":32}
+		},
+		"hween11_dish2_1.png":
+		{
+			"frame": {"x":47,"y":49,"w":42,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":30},
+			"sourceSize": {"w":42,"h":30}
+		},
+		"hween11_dish2_6.png":
+		{
+			"frame": {"x":89,"y":0,"w":24,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":17},
+			"sourceSize": {"w":24,"h":17}
+		},
+		"hween11_dish2_9.png":
+		{
+			"frame": {"x":89,"y":17,"w":24,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":17},
+			"sourceSize": {"w":24,"h":17}
+		},
+		"hween11_dish2_10.png":
+		{
+			"frame": {"x":89,"y":34,"w":22,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":16},
+			"sourceSize": {"w":22,"h":16}
+		}
+	}
+}

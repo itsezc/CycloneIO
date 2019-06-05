@@ -1,0 +1,121 @@
+{
+	"meta": {
+		"image": "plant_maze_snow_sheet.png",
+		"size": {"w":346,"h":328},
+		"scale": "1"
+	},
+	"frames": {
+		"plant_maze_snow_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":242,"h":238},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":242,"h":238},
+			"sourceSize": {"w":242,"h":238}
+		},
+		"plant_maze_snow_1.png":
+		{
+			"frame": {"x":242,"y":0,"w":104,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":104,"h":51},
+			"sourceSize": {"w":104,"h":51}
+		},
+		"plant_maze_snow_16.png":
+		{
+			"frame": {"x":242,"y":51,"w":104,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":104,"h":51},
+			"sourceSize": {"w":104,"h":51}
+		},
+		"plant_maze_snow_14.png":
+		{
+			"frame": {"x":242,"y":102,"w":68,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":91},
+			"sourceSize": {"w":68,"h":91}
+		},
+		"plant_maze_snow_4.png":
+		{
+			"frame": {"x":0,"y":238,"w":70,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":90},
+			"sourceSize": {"w":70,"h":90}
+		},
+		"plant_maze_snow_12.png":
+		{
+			"frame": {"x":70,"y":238,"w":70,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":88},
+			"sourceSize": {"w":70,"h":88}
+		},
+		"plant_maze_snow_10.png":
+		{
+			"frame": {"x":140,"y":238,"w":68,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":87},
+			"sourceSize": {"w":68,"h":87}
+		},
+		"plant_maze_snow_11.png":
+		{
+			"frame": {"x":242,"y":193,"w":52,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":27},
+			"sourceSize": {"w":52,"h":27}
+		},
+		"plant_maze_snow_8.png":
+		{
+			"frame": {"x":294,"y":193,"w":52,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":27},
+			"sourceSize": {"w":52,"h":27}
+		},
+		"plant_maze_snow_9.png":
+		{
+			"frame": {"x":310,"y":102,"w":34,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":49},
+			"sourceSize": {"w":34,"h":49}
+		},
+		"plant_maze_snow_2.png":
+		{
+			"frame": {"x":208,"y":238,"w":36,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":48},
+			"sourceSize": {"w":36,"h":48}
+		},
+		"plant_maze_snow_17.png":
+		{
+			"frame": {"x":244,"y":238,"w":34,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":48},
+			"sourceSize": {"w":34,"h":48}
+		},
+		"plant_maze_snow_18.png":
+		{
+			"frame": {"x":278,"y":238,"w":34,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":48},
+			"sourceSize": {"w":34,"h":48}
+		},
+		"plant_maze_snow_7.png":
+		{
+			"frame": {"x":310,"y":151,"w":32,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+			"sourceSize": {"w":32,"h":32}
+		}
+	}
+}

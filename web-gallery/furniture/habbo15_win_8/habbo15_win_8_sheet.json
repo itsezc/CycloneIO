@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "habbo15_win_8_sheet.png",
+		"size": {"w":194,"h":167},
+		"scale": "1"
+	},
+	"frames": {
+		"habbo15_win_8_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":33,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":86},
+			"sourceSize": {"w":33,"h":86}
+		},
+		"habbo15_win_8_12.png":
+		{
+			"frame": {"x":33,"y":0,"w":33,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":84},
+			"sourceSize": {"w":33,"h":84}
+		},
+		"habbo15_win_8_13.png":
+		{
+			"frame": {"x":66,"y":0,"w":32,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":83},
+			"sourceSize": {"w":32,"h":83}
+		},
+		"habbo15_win_8_3.png":
+		{
+			"frame": {"x":98,"y":0,"w":32,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":83},
+			"sourceSize": {"w":32,"h":83}
+		},
+		"habbo15_win_8_6.png":
+		{
+			"frame": {"x":130,"y":0,"w":32,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":81},
+			"sourceSize": {"w":32,"h":81}
+		},
+		"habbo15_win_8_7.png":
+		{
+			"frame": {"x":162,"y":0,"w":32,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":81},
+			"sourceSize": {"w":32,"h":81}
+		},
+		"habbo15_win_8_2.png":
+		{
+			"frame": {"x":0,"y":86,"w":31,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":81},
+			"sourceSize": {"w":31,"h":81}
+		},
+		"habbo15_win_8_9.png":
+		{
+			"frame": {"x":31,"y":86,"w":31,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":81},
+			"sourceSize": {"w":31,"h":81}
+		},
+		"habbo15_win_8_4.png":
+		{
+			"frame": {"x":62,"y":86,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"habbo15_win_8_5.png":
+		{
+			"frame": {"x":62,"y":103,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

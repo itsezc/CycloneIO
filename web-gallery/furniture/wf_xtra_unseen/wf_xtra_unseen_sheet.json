@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "wf_xtra_unseen_sheet.png",
+		"size": {"w":192,"h":143},
+		"scale": "1"
+	},
+	"frames": {
+		"wf_xtra_unseen_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":92},
+			"sourceSize": {"w":128,"h":92}
+		},
+		"wf_xtra_unseen_5.png":
+		{
+			"frame": {"x":128,"y":0,"w":64,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":41},
+			"sourceSize": {"w":64,"h":41}
+		},
+		"wf_xtra_unseen_6.png":
+		{
+			"frame": {"x":128,"y":41,"w":64,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":41},
+			"sourceSize": {"w":64,"h":41}
+		},
+		"wf_xtra_unseen_1.png":
+		{
+			"frame": {"x":0,"y":92,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"wf_xtra_unseen_4.png":
+		{
+			"frame": {"x":33,"y":92,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"wf_xtra_unseen_10.png":
+		{
+			"frame": {"x":0,"y":113,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"wf_xtra_unseen_13.png":
+		{
+			"frame": {"x":66,"y":92,"w":25,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":16},
+			"sourceSize": {"w":25,"h":16}
+		},
+		"wf_xtra_unseen_9.png":
+		{
+			"frame": {"x":91,"y":92,"w":25,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":16},
+			"sourceSize": {"w":25,"h":16}
+		},
+		"wf_xtra_unseen_11.png":
+		{
+			"frame": {"x":128,"y":82,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		},
+		"wf_xtra_unseen_12.png":
+		{
+			"frame": {"x":142,"y":82,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		}
+	}
+}

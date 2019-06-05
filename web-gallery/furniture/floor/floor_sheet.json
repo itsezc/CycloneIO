@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "floor_sheet.png",
+		"size": {"w":60,"h":23},
+		"scale": "1"
+	},
+	"frames": {
+		"floor_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		},
+		"floor_sheet.png":
+		{
+			"frame": {"x":30,"y":0,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		}
+	}
+}

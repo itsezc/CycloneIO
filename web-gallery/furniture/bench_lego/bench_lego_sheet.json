@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "bench_lego_sheet.png",
+		"size": {"w":323,"h":170},
+		"scale": "1"
+	},
+	"frames": {
+		"bench_lego_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":183,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":183,"h":136},
+			"sourceSize": {"w":183,"h":136}
+		},
+		"bench_lego_5.png":
+		{
+			"frame": {"x":183,"y":0,"w":140,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":140,"h":73},
+			"sourceSize": {"w":140,"h":73}
+		},
+		"bench_lego_15.png":
+		{
+			"frame": {"x":183,"y":73,"w":70,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":36},
+			"sourceSize": {"w":70,"h":36}
+		},
+		"bench_lego_14.png":
+		{
+			"frame": {"x":253,"y":73,"w":54,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":29},
+			"sourceSize": {"w":54,"h":29}
+		},
+		"bench_lego_3.png":
+		{
+			"frame": {"x":183,"y":109,"w":53,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":27},
+			"sourceSize": {"w":53,"h":27}
+		},
+		"bench_lego_8.png":
+		{
+			"frame": {"x":0,"y":136,"w":43,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":34},
+			"sourceSize": {"w":43,"h":34}
+		},
+		"bench_lego_4.png":
+		{
+			"frame": {"x":236,"y":109,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		},
+		"bench_lego_7.png":
+		{
+			"frame": {"x":266,"y":109,"w":27,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":15},
+			"sourceSize": {"w":27,"h":15}
+		},
+		"bench_lego_11.png":
+		{
+			"frame": {"x":293,"y":109,"w":27,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":14},
+			"sourceSize": {"w":27,"h":14}
+		},
+		"bench_lego_13.png":
+		{
+			"frame": {"x":43,"y":136,"w":27,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":14},
+			"sourceSize": {"w":27,"h":14}
+		},
+		"bench_lego_6.png":
+		{
+			"frame": {"x":43,"y":150,"w":22,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":17},
+			"sourceSize": {"w":22,"h":17}
+		}
+	}
+}

@@ -1,0 +1,817 @@
+{
+	"meta": {
+		"image": "xmas08_geysir_sheet.png",
+		"size": {"w":1114,"h":1030},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas08_geysir_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":761,"h":733},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":761,"h":733},
+			"sourceSize": {"w":761,"h":733}
+		},
+		"xmas08_geysir_1.png":
+		{
+			"frame": {"x":761,"y":0,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_11.png":
+		{
+			"frame": {"x":761,"y":149,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_12.png":
+		{
+			"frame": {"x":761,"y":298,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_15.png":
+		{
+			"frame": {"x":761,"y":447,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_17.png":
+		{
+			"frame": {"x":855,"y":0,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_3.png":
+		{
+			"frame": {"x":855,"y":149,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_4.png":
+		{
+			"frame": {"x":855,"y":298,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_43.png":
+		{
+			"frame": {"x":855,"y":447,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_44.png":
+		{
+			"frame": {"x":0,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_45.png":
+		{
+			"frame": {"x":94,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_47.png":
+		{
+			"frame": {"x":188,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_6.png":
+		{
+			"frame": {"x":282,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_7.png":
+		{
+			"frame": {"x":376,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_88.png":
+		{
+			"frame": {"x":470,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_9.png":
+		{
+			"frame": {"x":564,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_93.png":
+		{
+			"frame": {"x":658,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_96.png":
+		{
+			"frame": {"x":752,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_98.png":
+		{
+			"frame": {"x":846,"y":733,"w":94,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":149},
+			"sourceSize": {"w":94,"h":149}
+		},
+		"xmas08_geysir_63.png":
+		{
+			"frame": {"x":855,"y":596,"w":79,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":134},
+			"sourceSize": {"w":79,"h":134}
+		},
+		"xmas08_geysir_60.png":
+		{
+			"frame": {"x":761,"y":596,"w":79,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":130},
+			"sourceSize": {"w":79,"h":130}
+		},
+		"xmas08_geysir_75.png":
+		{
+			"frame": {"x":0,"y":882,"w":128,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":40},
+			"sourceSize": {"w":128,"h":40}
+		},
+		"xmas08_geysir_66.png":
+		{
+			"frame": {"x":949,"y":0,"w":79,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":114},
+			"sourceSize": {"w":79,"h":114}
+		},
+		"xmas08_geysir_58.png":
+		{
+			"frame": {"x":949,"y":114,"w":79,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":109},
+			"sourceSize": {"w":79,"h":109}
+		},
+		"xmas08_geysir_68.png":
+		{
+			"frame": {"x":949,"y":223,"w":79,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":102},
+			"sourceSize": {"w":79,"h":102}
+		},
+		"xmas08_geysir_56.png":
+		{
+			"frame": {"x":949,"y":325,"w":79,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":90},
+			"sourceSize": {"w":79,"h":90}
+		},
+		"xmas08_geysir_80.png":
+		{
+			"frame": {"x":949,"y":415,"w":79,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":81},
+			"sourceSize": {"w":79,"h":81}
+		},
+		"xmas08_geysir_81.png":
+		{
+			"frame": {"x":949,"y":496,"w":79,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":72},
+			"sourceSize": {"w":79,"h":72}
+		},
+		"xmas08_geysir_78.png":
+		{
+			"frame": {"x":949,"y":568,"w":79,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":62},
+			"sourceSize": {"w":79,"h":62}
+		},
+		"xmas08_geysir_90.png":
+		{
+			"frame": {"x":949,"y":630,"w":79,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":52},
+			"sourceSize": {"w":79,"h":52}
+		},
+		"xmas08_geysir_89.png":
+		{
+			"frame": {"x":949,"y":682,"w":79,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":44},
+			"sourceSize": {"w":79,"h":44}
+		},
+		"xmas08_geysir_103.png":
+		{
+			"frame": {"x":949,"y":726,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_104.png":
+		{
+			"frame": {"x":949,"y":759,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_55.png":
+		{
+			"frame": {"x":949,"y":792,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_57.png":
+		{
+			"frame": {"x":949,"y":825,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_59.png":
+		{
+			"frame": {"x":949,"y":858,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_61.png":
+		{
+			"frame": {"x":128,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_64.png":
+		{
+			"frame": {"x":207,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_67.png":
+		{
+			"frame": {"x":286,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_69.png":
+		{
+			"frame": {"x":365,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_70.png":
+		{
+			"frame": {"x":444,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_71.png":
+		{
+			"frame": {"x":523,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_72.png":
+		{
+			"frame": {"x":602,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_73.png":
+		{
+			"frame": {"x":681,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_74.png":
+		{
+			"frame": {"x":760,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_84.png":
+		{
+			"frame": {"x":839,"y":882,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_86.png":
+		{
+			"frame": {"x":0,"y":922,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_92.png":
+		{
+			"frame": {"x":79,"y":922,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_95.png":
+		{
+			"frame": {"x":158,"y":922,"w":79,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":33},
+			"sourceSize": {"w":79,"h":33}
+		},
+		"xmas08_geysir_23.png":
+		{
+			"frame": {"x":1028,"y":0,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_24.png":
+		{
+			"frame": {"x":1028,"y":75,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_25.png":
+		{
+			"frame": {"x":1028,"y":150,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_26.png":
+		{
+			"frame": {"x":1028,"y":225,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_34.png":
+		{
+			"frame": {"x":1028,"y":300,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_36.png":
+		{
+			"frame": {"x":1028,"y":375,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_37.png":
+		{
+			"frame": {"x":1028,"y":450,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_39.png":
+		{
+			"frame": {"x":1028,"y":525,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_40.png":
+		{
+			"frame": {"x":1028,"y":600,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_41.png":
+		{
+			"frame": {"x":1028,"y":675,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_49.png":
+		{
+			"frame": {"x":1028,"y":750,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_50.png":
+		{
+			"frame": {"x":1028,"y":825,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_51.png":
+		{
+			"frame": {"x":0,"y":955,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_52.png":
+		{
+			"frame": {"x":47,"y":955,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_53.png":
+		{
+			"frame": {"x":94,"y":955,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_54.png":
+		{
+			"frame": {"x":141,"y":955,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_62.png":
+		{
+			"frame": {"x":188,"y":955,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_65.png":
+		{
+			"frame": {"x":235,"y":955,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"xmas08_geysir_33.png":
+		{
+			"frame": {"x":282,"y":955,"w":39,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":67},
+			"sourceSize": {"w":39,"h":67}
+		},
+		"xmas08_geysir_79.png":
+		{
+			"frame": {"x":321,"y":955,"w":66,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":43},
+			"sourceSize": {"w":66,"h":43}
+		},
+		"xmas08_geysir_32.png":
+		{
+			"frame": {"x":1075,"y":0,"w":39,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":65},
+			"sourceSize": {"w":39,"h":65}
+		},
+		"xmas08_geysir_102.png":
+		{
+			"frame": {"x":949,"y":891,"w":65,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":21},
+			"sourceSize": {"w":65,"h":21}
+		},
+		"xmas08_geysir_76.png":
+		{
+			"frame": {"x":237,"y":922,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"xmas08_geysir_31.png":
+		{
+			"frame": {"x":1075,"y":65,"w":39,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":55},
+			"sourceSize": {"w":39,"h":55}
+		},
+		"xmas08_geysir_29.png":
+		{
+			"frame": {"x":1075,"y":120,"w":39,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":45},
+			"sourceSize": {"w":39,"h":45}
+		},
+		"xmas08_geysir_30.png":
+		{
+			"frame": {"x":1075,"y":165,"w":39,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":41},
+			"sourceSize": {"w":39,"h":41}
+		},
+		"xmas08_geysir_27.png":
+		{
+			"frame": {"x":1075,"y":206,"w":39,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":36},
+			"sourceSize": {"w":39,"h":36}
+		},
+		"xmas08_geysir_35.png":
+		{
+			"frame": {"x":1075,"y":242,"w":39,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":34},
+			"sourceSize": {"w":39,"h":34}
+		},
+		"xmas08_geysir_28.png":
+		{
+			"frame": {"x":1075,"y":276,"w":39,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":31},
+			"sourceSize": {"w":39,"h":31}
+		},
+		"xmas08_geysir_19.png":
+		{
+			"frame": {"x":1075,"y":307,"w":39,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":26},
+			"sourceSize": {"w":39,"h":26}
+		},
+		"xmas08_geysir_21.png":
+		{
+			"frame": {"x":1075,"y":333,"w":39,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":22},
+			"sourceSize": {"w":39,"h":22}
+		},
+		"xmas08_geysir_38.png":
+		{
+			"frame": {"x":1075,"y":355,"w":39,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":22},
+			"sourceSize": {"w":39,"h":22}
+		},
+		"xmas08_geysir_10.png":
+		{
+			"frame": {"x":1075,"y":377,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_100.png":
+		{
+			"frame": {"x":1075,"y":393,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_13.png":
+		{
+			"frame": {"x":1075,"y":409,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_14.png":
+		{
+			"frame": {"x":1075,"y":425,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_16.png":
+		{
+			"frame": {"x":1075,"y":441,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_18.png":
+		{
+			"frame": {"x":1075,"y":457,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_20.png":
+		{
+			"frame": {"x":1075,"y":473,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_5.png":
+		{
+			"frame": {"x":1075,"y":489,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_8.png":
+		{
+			"frame": {"x":1075,"y":505,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_82.png":
+		{
+			"frame": {"x":1075,"y":521,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_83.png":
+		{
+			"frame": {"x":1075,"y":537,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_85.png":
+		{
+			"frame": {"x":1075,"y":553,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_87.png":
+		{
+			"frame": {"x":1075,"y":569,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_91.png":
+		{
+			"frame": {"x":1075,"y":585,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_94.png":
+		{
+			"frame": {"x":1075,"y":601,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_97.png":
+		{
+			"frame": {"x":1075,"y":617,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_99.png":
+		{
+			"frame": {"x":1075,"y":633,"w":39,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":16},
+			"sourceSize": {"w":39,"h":16}
+		},
+		"xmas08_geysir_105.png":
+		{
+			"frame": {"x":1075,"y":649,"w":33,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":22},
+			"sourceSize": {"w":33,"h":22}
+		},
+		"xmas08_geysir_77.png":
+		{
+			"frame": {"x":1075,"y":671,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		},
+		"xmas08_geysir_46.png":
+		{
+			"frame": {"x":1075,"y":690,"w":29,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":15},
+			"sourceSize": {"w":29,"h":15}
+		}
+	}
+}

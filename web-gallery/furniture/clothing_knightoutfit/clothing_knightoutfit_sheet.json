@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_knightoutfit_sheet.png",
+		"size": {"w":73,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_knightoutfit_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":100},
+			"sourceSize": {"w":36,"h":100}
+		},
+		"clothing_knightoutfit_5.png":
+		{
+			"frame": {"x":36,"y":0,"w":10,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":34},
+			"sourceSize": {"w":10,"h":34}
+		},
+		"clothing_knightoutfit_7.png":
+		{
+			"frame": {"x":46,"y":0,"w":27,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":26},
+			"sourceSize": {"w":27,"h":26}
+		}
+	}
+}

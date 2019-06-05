@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "horse_hairdye_15_sheet.png",
+		"size": {"w":56,"h":39},
+		"scale": "1"
+	},
+	"frames": {
+		"horse_hairdye_15_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":24,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":39},
+			"sourceSize": {"w":24,"h":39}
+		},
+		"horse_hairdye_15_8.png":
+		{
+			"frame": {"x":24,"y":0,"w":20,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":23},
+			"sourceSize": {"w":20,"h":23}
+		},
+		"horse_hairdye_15_5.png":
+		{
+			"frame": {"x":44,"y":0,"w":12,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":21},
+			"sourceSize": {"w":12,"h":21}
+		},
+		"horse_hairdye_15_2.png":
+		{
+			"frame": {"x":44,"y":21,"w":8,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":11},
+			"sourceSize": {"w":8,"h":11}
+		}
+	}
+}

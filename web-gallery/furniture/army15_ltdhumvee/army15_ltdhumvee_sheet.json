@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "army15_ltdhumvee_sheet.png",
+		"size": {"w":326,"h":296},
+		"scale": "1"
+	},
+	"frames": {
+		"army15_ltdhumvee_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":170,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":170,"h":85},
+			"sourceSize": {"w":170,"h":85}
+		},
+		"army15_ltdhumvee_5.png":
+		{
+			"frame": {"x":0,"y":85,"w":138,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":138,"h":96},
+			"sourceSize": {"w":138,"h":96}
+		},
+		"army15_ltdhumvee_11.png":
+		{
+			"frame": {"x":170,"y":0,"w":112,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":69},
+			"sourceSize": {"w":112,"h":69}
+		},
+		"army15_ltdhumvee_13.png":
+		{
+			"frame": {"x":170,"y":69,"w":75,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":107},
+			"sourceSize": {"w":75,"h":107}
+		},
+		"army15_ltdhumvee_10.png":
+		{
+			"frame": {"x":0,"y":181,"w":107,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":75},
+			"sourceSize": {"w":107,"h":75}
+		},
+		"army15_ltdhumvee_12.png":
+		{
+			"frame": {"x":107,"y":181,"w":72,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":57},
+			"sourceSize": {"w":72,"h":57}
+		},
+		"army15_ltdhumvee_2.png":
+		{
+			"frame": {"x":179,"y":181,"w":72,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":57},
+			"sourceSize": {"w":72,"h":57}
+		},
+		"army15_ltdhumvee_8.png":
+		{
+			"frame": {"x":282,"y":0,"w":44,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":62},
+			"sourceSize": {"w":44,"h":62}
+		},
+		"army15_ltdhumvee_7.png":
+		{
+			"frame": {"x":282,"y":62,"w":34,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":61},
+			"sourceSize": {"w":34,"h":61}
+		},
+		"army15_ltdhumvee_16.png":
+		{
+			"frame": {"x":0,"y":256,"w":48,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":40},
+			"sourceSize": {"w":48,"h":40}
+		},
+		"army15_ltdhumvee_4.png":
+		{
+			"frame": {"x":282,"y":123,"w":30,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":24},
+			"sourceSize": {"w":30,"h":24}
+		},
+		"army15_ltdhumvee_1.png":
+		{
+			"frame": {"x":316,"y":62,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

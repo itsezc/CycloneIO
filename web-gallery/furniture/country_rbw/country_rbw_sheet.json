@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "country_rbw_sheet.png",
+		"size": {"w":490,"h":348},
+		"scale": "1"
+	},
+	"frames": {
+		"country_rbw_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":333,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":333,"h":185},
+			"sourceSize": {"w":333,"h":185}
+		},
+		"country_rbw_10.png":
+		{
+			"frame": {"x":333,"y":0,"w":157,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":157,"h":185},
+			"sourceSize": {"w":157,"h":185}
+		},
+		"country_rbw_5.png":
+		{
+			"frame": {"x":0,"y":185,"w":100,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":67},
+			"sourceSize": {"w":100,"h":67}
+		},
+		"country_rbw_11.png":
+		{
+			"frame": {"x":0,"y":252,"w":57,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":96},
+			"sourceSize": {"w":57,"h":96}
+		},
+		"country_rbw_8.png":
+		{
+			"frame": {"x":57,"y":252,"w":76,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":95},
+			"sourceSize": {"w":76,"h":95}
+		},
+		"country_rbw_9.png":
+		{
+			"frame": {"x":100,"y":185,"w":30,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":50},
+			"sourceSize": {"w":30,"h":50}
+		},
+		"country_rbw_1.png":
+		{
+			"frame": {"x":130,"y":185,"w":49,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":31},
+			"sourceSize": {"w":49,"h":31}
+		},
+		"country_rbw_6.png":
+		{
+			"frame": {"x":179,"y":185,"w":22,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+			"sourceSize": {"w":22,"h":22}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "horse_hairstyle_3_sheet.png",
+		"size": {"w":126,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"horse_hairstyle_3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":63,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":94},
+			"sourceSize": {"w":63,"h":94}
+		},
+		"horse_hairstyle_3_4.png":
+		{
+			"frame": {"x":63,"y":0,"w":42,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":94},
+			"sourceSize": {"w":42,"h":94}
+		},
+		"horse_hairstyle_3_7.png":
+		{
+			"frame": {"x":105,"y":0,"w":21,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":49},
+			"sourceSize": {"w":21,"h":49}
+		},
+		"horse_hairstyle_3_6.png":
+		{
+			"frame": {"x":105,"y":49,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

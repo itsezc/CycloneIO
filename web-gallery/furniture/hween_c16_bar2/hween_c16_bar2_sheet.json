@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hween_c16_bar2_sheet.png",
+		"size": {"w":232,"h":206},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c16_bar2_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"hween_c16_bar2_4.png":
+		{
+			"frame": {"x":0,"y":49,"w":67,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":80},
+			"sourceSize": {"w":67,"h":80}
+		},
+		"hween_c16_bar2_5.png":
+		{
+			"frame": {"x":98,"y":0,"w":67,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":80},
+			"sourceSize": {"w":67,"h":80}
+		},
+		"hween_c16_bar2_7.png":
+		{
+			"frame": {"x":165,"y":0,"w":67,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":78},
+			"sourceSize": {"w":67,"h":78}
+		},
+		"hween_c16_bar2_6.png":
+		{
+			"frame": {"x":0,"y":129,"w":67,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":77},
+			"sourceSize": {"w":67,"h":77}
+		},
+		"hween_c16_bar2_2.png":
+		{
+			"frame": {"x":165,"y":78,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

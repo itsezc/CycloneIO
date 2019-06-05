@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "carnival15_hotair_brazil_sheet.png",
+		"size": {"w":304,"h":364},
+		"scale": "1"
+	},
+	"frames": {
+		"carnival15_hotair_brazil_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":204,"h":364},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":204,"h":364},
+			"sourceSize": {"w":204,"h":364}
+		},
+		"carnival15_hotair_brazil_10.png":
+		{
+			"frame": {"x":204,"y":0,"w":100,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":150},
+			"sourceSize": {"w":100,"h":150}
+		},
+		"carnival15_hotair_brazil_5.png":
+		{
+			"frame": {"x":204,"y":150,"w":52,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":27},
+			"sourceSize": {"w":52,"h":27}
+		},
+		"carnival15_hotair_brazil_7.png":
+		{
+			"frame": {"x":204,"y":177,"w":22,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":31},
+			"sourceSize": {"w":22,"h":31}
+		},
+		"carnival15_hotair_brazil_4.png":
+		{
+			"frame": {"x":256,"y":150,"w":10,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":4},
+			"sourceSize": {"w":10,"h":4}
+		},
+		"carnival15_hotair_brazil_6.png":
+		{
+			"frame": {"x":266,"y":150,"w":10,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":4},
+			"sourceSize": {"w":10,"h":4}
+		},
+		"carnival15_hotair_brazil_8.png":
+		{
+			"frame": {"x":276,"y":150,"w":10,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":4},
+			"sourceSize": {"w":10,"h":4}
+		},
+		"carnival15_hotair_brazil_3.png":
+		{
+			"frame": {"x":286,"y":150,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

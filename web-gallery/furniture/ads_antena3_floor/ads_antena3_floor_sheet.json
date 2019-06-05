@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "ads_antena3_floor_sheet.png",
+		"size": {"w":254,"h":98},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_antena3_floor_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":127,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":127,"h":65},
+			"sourceSize": {"w":127,"h":65}
+		},
+		"ads_antena3_floor_1.png":
+		{
+			"frame": {"x":127,"y":0,"w":127,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":127,"h":64},
+			"sourceSize": {"w":127,"h":64}
+		},
+		"ads_antena3_floor_5.png":
+		{
+			"frame": {"x":0,"y":65,"w":65,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":33},
+			"sourceSize": {"w":65,"h":33}
+		},
+		"ads_antena3_floor_6.png":
+		{
+			"frame": {"x":65,"y":65,"w":65,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":33},
+			"sourceSize": {"w":65,"h":33}
+		},
+		"ads_antena3_floor_2.png":
+		{
+			"frame": {"x":130,"y":65,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

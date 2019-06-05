@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "ads_twi_bwall1_sheet.png",
+		"size": {"w":478,"h":464},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_twi_bwall1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":340,"h":232},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":340,"h":232},
+			"sourceSize": {"w":340,"h":232}
+		},
+		"ads_twi_bwall1_2.png":
+		{
+			"frame": {"x":340,"y":0,"w":69,"h":232},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":232},
+			"sourceSize": {"w":69,"h":232}
+		},
+		"ads_twi_bwall1_4.png":
+		{
+			"frame": {"x":409,"y":0,"w":69,"h":232},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":232},
+			"sourceSize": {"w":69,"h":232}
+		},
+		"ads_twi_bwall1_6.png":
+		{
+			"frame": {"x":0,"y":232,"w":69,"h":232},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":232},
+			"sourceSize": {"w":69,"h":232}
+		},
+		"ads_twi_bwall1_8.png":
+		{
+			"frame": {"x":69,"y":232,"w":63,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":124},
+			"sourceSize": {"w":63,"h":124}
+		},
+		"ads_twi_bwall1_13.png":
+		{
+			"frame": {"x":132,"y":232,"w":35,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":115},
+			"sourceSize": {"w":35,"h":115}
+		},
+		"ads_twi_bwall1_3.png":
+		{
+			"frame": {"x":167,"y":232,"w":35,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":115},
+			"sourceSize": {"w":35,"h":115}
+		},
+		"ads_twi_bwall1_5.png":
+		{
+			"frame": {"x":202,"y":232,"w":35,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":115},
+			"sourceSize": {"w":35,"h":115}
+		},
+		"ads_twi_bwall1_1.png":
+		{
+			"frame": {"x":237,"y":232,"w":29,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":59},
+			"sourceSize": {"w":29,"h":59}
+		},
+		"ads_twi_bwall1_10.png":
+		{
+			"frame": {"x":266,"y":232,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		}
+	}
+}

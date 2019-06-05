@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "ads_nokiax3_phn_sheet.png",
+		"size": {"w":152,"h":136},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_nokiax3_phn_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":76,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":136},
+			"sourceSize": {"w":76,"h":136}
+		},
+		"ads_nokiax3_phn_4.png":
+		{
+			"frame": {"x":76,"y":0,"w":50,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":136},
+			"sourceSize": {"w":50,"h":136}
+		},
+		"ads_nokiax3_phn_7.png":
+		{
+			"frame": {"x":126,"y":0,"w":26,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":69},
+			"sourceSize": {"w":26,"h":69}
+		},
+		"ads_nokiax3_phn_6.png":
+		{
+			"frame": {"x":126,"y":69,"w":11,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":30},
+			"sourceSize": {"w":11,"h":30}
+		}
+	}
+}

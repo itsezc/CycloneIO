@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "elegant_c17_vanity_sheet.png",
+		"size": {"w":279,"h":225},
+		"scale": "1"
+	},
+	"frames": {
+		"elegant_c17_vanity_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":129},
+			"sourceSize": {"w":61,"h":129}
+		},
+		"elegant_c17_vanity_3.png":
+		{
+			"frame": {"x":61,"y":0,"w":61,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":129},
+			"sourceSize": {"w":61,"h":129}
+		},
+		"elegant_c17_vanity_5.png":
+		{
+			"frame": {"x":122,"y":0,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"elegant_c17_vanity_10.png":
+		{
+			"frame": {"x":220,"y":0,"w":59,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":96},
+			"sourceSize": {"w":59,"h":96}
+		},
+		"elegant_c17_vanity_9.png":
+		{
+			"frame": {"x":0,"y":129,"w":59,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":96},
+			"sourceSize": {"w":59,"h":96}
+		},
+		"elegant_c17_vanity_8.png":
+		{
+			"frame": {"x":220,"y":96,"w":25,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":28},
+			"sourceSize": {"w":25,"h":28}
+		}
+	}
+}

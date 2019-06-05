@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_bearhat_sheet.png",
+		"size": {"w":66,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_bearhat_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":51},
+			"sourceSize": {"w":36,"h":51}
+		},
+		"clothing_bearhat_3.png":
+		{
+			"frame": {"x":36,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_bearhat_5.png":
+		{
+			"frame": {"x":36,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

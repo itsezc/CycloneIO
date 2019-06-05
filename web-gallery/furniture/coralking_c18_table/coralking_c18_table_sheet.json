@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "coralking_c18_table_sheet.png",
+		"size": {"w":141,"h":103},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_c18_table_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":82,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":41},
+			"sourceSize": {"w":82,"h":41}
+		},
+		"coralking_c18_table_8.png":
+		{
+			"frame": {"x":0,"y":41,"w":68,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":62},
+			"sourceSize": {"w":68,"h":62}
+		},
+		"coralking_c18_table_2.png":
+		{
+			"frame": {"x":82,"y":0,"w":59,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":49},
+			"sourceSize": {"w":59,"h":49}
+		},
+		"coralking_c18_table_4.png":
+		{
+			"frame": {"x":82,"y":49,"w":25,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":23},
+			"sourceSize": {"w":25,"h":23}
+		}
+	}
+}

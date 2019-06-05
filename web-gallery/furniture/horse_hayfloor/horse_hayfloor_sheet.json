@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "horse_hayfloor_sheet.png",
+		"size": {"w":345,"h":231},
+		"scale": "1"
+	},
+	"frames": {
+		"horse_hayfloor_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":264,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":264,"h":158},
+			"sourceSize": {"w":264,"h":158}
+		},
+		"horse_hayfloor_9.png":
+		{
+			"frame": {"x":0,"y":158,"w":133,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":73},
+			"sourceSize": {"w":133,"h":73}
+		},
+		"horse_hayfloor_7.png":
+		{
+			"frame": {"x":133,"y":158,"w":131,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":131,"h":71},
+			"sourceSize": {"w":131,"h":71}
+		},
+		"horse_hayfloor_14.png":
+		{
+			"frame": {"x":264,"y":0,"w":81,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":50},
+			"sourceSize": {"w":81,"h":50}
+		},
+		"horse_hayfloor_8.png":
+		{
+			"frame": {"x":264,"y":50,"w":79,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":48},
+			"sourceSize": {"w":79,"h":48}
+		},
+		"horse_hayfloor_1.png":
+		{
+			"frame": {"x":264,"y":98,"w":70,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+			"sourceSize": {"w":70,"h":37}
+		},
+		"horse_hayfloor_13.png":
+		{
+			"frame": {"x":264,"y":135,"w":68,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":35},
+			"sourceSize": {"w":68,"h":35}
+		},
+		"horse_hayfloor_2.png":
+		{
+			"frame": {"x":264,"y":170,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"horse_hayfloor_11.png":
+		{
+			"frame": {"x":302,"y":170,"w":36,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":22},
+			"sourceSize": {"w":36,"h":22}
+		},
+		"horse_hayfloor_4.png":
+		{
+			"frame": {"x":264,"y":194,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		}
+	}
+}

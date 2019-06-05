@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "jungle_c16_rafflesia_sheet.png",
+		"size": {"w":108,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"jungle_c16_rafflesia_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":54,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":35},
+			"sourceSize": {"w":54,"h":35}
+		},
+		"jungle_c16_rafflesia_4.png":
+		{
+			"frame": {"x":54,"y":0,"w":54,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":35},
+			"sourceSize": {"w":54,"h":35}
+		},
+		"jungle_c16_rafflesia_5.png":
+		{
+			"frame": {"x":0,"y":35,"w":27,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":18},
+			"sourceSize": {"w":27,"h":18}
+		}
+	}
+}

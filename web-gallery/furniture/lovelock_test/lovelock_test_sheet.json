@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "lovelock_test_sheet.png",
+		"size": {"w":223,"h":209},
+		"scale": "1"
+	},
+	"frames": {
+		"lovelock_test_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":93,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":139},
+			"sourceSize": {"w":93,"h":139}
+		},
+		"lovelock_test_11.png":
+		{
+			"frame": {"x":93,"y":0,"w":65,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":109},
+			"sourceSize": {"w":65,"h":109}
+		},
+		"lovelock_test_15.png":
+		{
+			"frame": {"x":158,"y":0,"w":65,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":109},
+			"sourceSize": {"w":65,"h":109}
+		},
+		"lovelock_test_13.png":
+		{
+			"frame": {"x":0,"y":139,"w":52,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":70},
+			"sourceSize": {"w":52,"h":70}
+		},
+		"lovelock_test_6.png":
+		{
+			"frame": {"x":52,"y":139,"w":33,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":55},
+			"sourceSize": {"w":33,"h":55}
+		},
+		"lovelock_test_7.png":
+		{
+			"frame": {"x":85,"y":139,"w":33,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":55},
+			"sourceSize": {"w":33,"h":55}
+		},
+		"lovelock_test_8.png":
+		{
+			"frame": {"x":158,"y":109,"w":44,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":21},
+			"sourceSize": {"w":44,"h":21}
+		},
+		"lovelock_test_10.png":
+		{
+			"frame": {"x":118,"y":139,"w":19,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":32},
+			"sourceSize": {"w":19,"h":32}
+		},
+		"lovelock_test_9.png":
+		{
+			"frame": {"x":93,"y":109,"w":23,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":11},
+			"sourceSize": {"w":23,"h":11}
+		},
+		"lovelock_test_5.png":
+		{
+			"frame": {"x":202,"y":109,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

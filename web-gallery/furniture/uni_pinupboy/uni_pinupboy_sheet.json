@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "uni_pinupboy_sheet.png",
+		"size": {"w":226,"h":214},
+		"scale": "1"
+	},
+	"frames": {
+		"uni_pinupboy_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":170,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":170,"h":107},
+			"sourceSize": {"w":170,"h":107}
+		},
+		"uni_pinupboy_4.png":
+		{
+			"frame": {"x":170,"y":0,"w":56,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":107},
+			"sourceSize": {"w":56,"h":107}
+		},
+		"uni_pinupboy_6.png":
+		{
+			"frame": {"x":0,"y":107,"w":56,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":107},
+			"sourceSize": {"w":56,"h":107}
+		},
+		"uni_pinupboy_3.png":
+		{
+			"frame": {"x":56,"y":107,"w":29,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":54},
+			"sourceSize": {"w":29,"h":54}
+		},
+		"uni_pinupboy_8.png":
+		{
+			"frame": {"x":85,"y":107,"w":29,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":54},
+			"sourceSize": {"w":29,"h":54}
+		},
+		"uni_pinupboy_2.png":
+		{
+			"frame": {"x":114,"y":107,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

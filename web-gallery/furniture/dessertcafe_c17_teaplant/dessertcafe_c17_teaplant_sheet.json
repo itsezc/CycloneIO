@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "dessertcafe_c17_teaplant_sheet.png",
+		"size": {"w":74,"h":89},
+		"scale": "1"
+	},
+	"frames": {
+		"dessertcafe_c17_teaplant_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":89},
+			"sourceSize": {"w":39,"h":89}
+		},
+		"dessertcafe_c17_teaplant_6.png":
+		{
+			"frame": {"x":39,"y":0,"w":16,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":30},
+			"sourceSize": {"w":16,"h":30}
+		},
+		"dessertcafe_c17_teaplant_8.png":
+		{
+			"frame": {"x":55,"y":0,"w":19,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":13},
+			"sourceSize": {"w":19,"h":13}
+		}
+	}
+}

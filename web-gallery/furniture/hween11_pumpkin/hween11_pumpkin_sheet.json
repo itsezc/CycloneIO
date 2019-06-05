@@ -1,0 +1,353 @@
+{
+	"meta": {
+		"image": "hween11_pumpkin_sheet.png",
+		"size": {"w":420,"h":389},
+		"scale": "1"
+	},
+	"frames": {
+		"hween11_pumpkin_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":280,"h":259},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":280,"h":259},
+			"sourceSize": {"w":280,"h":259}
+		},
+		"hween11_pumpkin_23.png":
+		{
+			"frame": {"x":280,"y":0,"w":68,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":41},
+			"sourceSize": {"w":68,"h":41}
+		},
+		"hween11_pumpkin_22.png":
+		{
+			"frame": {"x":280,"y":41,"w":68,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":24},
+			"sourceSize": {"w":68,"h":24}
+		},
+		"hween11_pumpkin_24.png":
+		{
+			"frame": {"x":280,"y":65,"w":66,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":43},
+			"sourceSize": {"w":66,"h":43}
+		},
+		"hween11_pumpkin_14.png":
+		{
+			"frame": {"x":280,"y":108,"w":65,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":43},
+			"sourceSize": {"w":65,"h":43}
+		},
+		"hween11_pumpkin_16.png":
+		{
+			"frame": {"x":280,"y":151,"w":62,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":45},
+			"sourceSize": {"w":62,"h":45}
+		},
+		"hween11_pumpkin_1.png":
+		{
+			"frame": {"x":280,"y":196,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"hween11_pumpkin_4.png":
+		{
+			"frame": {"x":0,"y":259,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"hween11_pumpkin_5.png":
+		{
+			"frame": {"x":47,"y":259,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"hween11_pumpkin_6.png":
+		{
+			"frame": {"x":94,"y":259,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"hween11_pumpkin_7.png":
+		{
+			"frame": {"x":141,"y":259,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"hween11_pumpkin_18.png":
+		{
+			"frame": {"x":188,"y":259,"w":51,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":43},
+			"sourceSize": {"w":51,"h":43}
+		},
+		"hween11_pumpkin_17.png":
+		{
+			"frame": {"x":239,"y":259,"w":51,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":34},
+			"sourceSize": {"w":51,"h":34}
+		},
+		"hween11_pumpkin_33.png":
+		{
+			"frame": {"x":290,"y":259,"w":51,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":34},
+			"sourceSize": {"w":51,"h":34}
+		},
+		"hween11_pumpkin_34.png":
+		{
+			"frame": {"x":0,"y":310,"w":51,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":34},
+			"sourceSize": {"w":51,"h":34}
+		},
+		"hween11_pumpkin_32.png":
+		{
+			"frame": {"x":51,"y":310,"w":51,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":28},
+			"sourceSize": {"w":51,"h":28}
+		},
+		"hween11_pumpkin_10.png":
+		{
+			"frame": {"x":348,"y":0,"w":47,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":40},
+			"sourceSize": {"w":47,"h":40}
+		},
+		"hween11_pumpkin_11.png":
+		{
+			"frame": {"x":348,"y":40,"w":47,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":40},
+			"sourceSize": {"w":47,"h":40}
+		},
+		"hween11_pumpkin_12.png":
+		{
+			"frame": {"x":348,"y":80,"w":47,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":40},
+			"sourceSize": {"w":47,"h":40}
+		},
+		"hween11_pumpkin_15.png":
+		{
+			"frame": {"x":348,"y":120,"w":47,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":40},
+			"sourceSize": {"w":47,"h":40}
+		},
+		"hween11_pumpkin_2.png":
+		{
+			"frame": {"x":348,"y":160,"w":47,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":40},
+			"sourceSize": {"w":47,"h":40}
+		},
+		"hween11_pumpkin_20.png":
+		{
+			"frame": {"x":348,"y":200,"w":47,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":40},
+			"sourceSize": {"w":47,"h":40}
+		},
+		"hween11_pumpkin_9.png":
+		{
+			"frame": {"x":348,"y":240,"w":47,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":40},
+			"sourceSize": {"w":47,"h":40}
+		},
+		"hween11_pumpkin_47.png":
+		{
+			"frame": {"x":348,"y":280,"w":42,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":24},
+			"sourceSize": {"w":42,"h":24}
+		},
+		"hween11_pumpkin_19.png":
+		{
+			"frame": {"x":348,"y":304,"w":38,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":32},
+			"sourceSize": {"w":38,"h":32}
+		},
+		"hween11_pumpkin_29.png":
+		{
+			"frame": {"x":102,"y":310,"w":35,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":19},
+			"sourceSize": {"w":35,"h":19}
+		},
+		"hween11_pumpkin_30.png":
+		{
+			"frame": {"x":0,"y":344,"w":34,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":22},
+			"sourceSize": {"w":34,"h":22}
+		},
+		"hween11_pumpkin_31.png":
+		{
+			"frame": {"x":0,"y":366,"w":33,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":23},
+			"sourceSize": {"w":33,"h":23}
+		},
+		"hween11_pumpkin_28.png":
+		{
+			"frame": {"x":280,"y":247,"w":33,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":12},
+			"sourceSize": {"w":33,"h":12}
+		},
+		"hween11_pumpkin_35.png":
+		{
+			"frame": {"x":33,"y":366,"w":32,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":23},
+			"sourceSize": {"w":32,"h":23}
+		},
+		"hween11_pumpkin_41.png":
+		{
+			"frame": {"x":34,"y":344,"w":28,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":20},
+			"sourceSize": {"w":28,"h":20}
+		},
+		"hween11_pumpkin_38.png":
+		{
+			"frame": {"x":137,"y":310,"w":28,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":18},
+			"sourceSize": {"w":28,"h":18}
+		},
+		"hween11_pumpkin_39.png":
+		{
+			"frame": {"x":165,"y":310,"w":28,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":15},
+			"sourceSize": {"w":28,"h":15}
+		},
+		"hween11_pumpkin_36.png":
+		{
+			"frame": {"x":65,"y":366,"w":27,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":22},
+			"sourceSize": {"w":27,"h":22}
+		},
+		"hween11_pumpkin_27.png":
+		{
+			"frame": {"x":395,"y":0,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"hween11_pumpkin_42.png":
+		{
+			"frame": {"x":395,"y":26,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"hween11_pumpkin_43.png":
+		{
+			"frame": {"x":395,"y":52,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"hween11_pumpkin_45.png":
+		{
+			"frame": {"x":395,"y":78,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"hween11_pumpkin_46.png":
+		{
+			"frame": {"x":395,"y":104,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"hween11_pumpkin_40.png":
+		{
+			"frame": {"x":395,"y":130,"w":25,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":20},
+			"sourceSize": {"w":25,"h":20}
+		},
+		"hween11_pumpkin_21.png":
+		{
+			"frame": {"x":395,"y":150,"w":21,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":11},
+			"sourceSize": {"w":21,"h":11}
+		},
+		"hween11_pumpkin_37.png":
+		{
+			"frame": {"x":395,"y":161,"w":20,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":17},
+			"sourceSize": {"w":20,"h":17}
+		},
+		"hween11_pumpkin_13.png":
+		{
+			"frame": {"x":416,"y":150,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

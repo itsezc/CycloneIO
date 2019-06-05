@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "wallpaper_sheet.png",
+		"size": {"w":60,"h":30},
+		"scale": "1"
+	},
+	"frames": {
+		"wallpaper_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"wallpaper_sheet.png":
+		{
+			"frame": {"x":30,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "lt_c15_bush_sheet.png",
+		"size": {"w":281,"h":189},
+		"scale": "1"
+	},
+	"frames": {
+		"lt_c15_bush_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":150,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":150,"h":39},
+			"sourceSize": {"w":150,"h":39}
+		},
+		"lt_c15_bush_8.png":
+		{
+			"frame": {"x":0,"y":39,"w":150,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":150,"h":39},
+			"sourceSize": {"w":150,"h":39}
+		},
+		"lt_c15_bush_13.png":
+		{
+			"frame": {"x":0,"y":78,"w":131,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":131,"h":61},
+			"sourceSize": {"w":131,"h":61}
+		},
+		"lt_c15_bush_14.png":
+		{
+			"frame": {"x":150,"y":0,"w":131,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":131,"h":61},
+			"sourceSize": {"w":131,"h":61}
+		},
+		"lt_c15_bush_9.png":
+		{
+			"frame": {"x":150,"y":61,"w":128,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":68},
+			"sourceSize": {"w":128,"h":68}
+		},
+		"lt_c15_bush_10.png":
+		{
+			"frame": {"x":0,"y":139,"w":62,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":50},
+			"sourceSize": {"w":62,"h":50}
+		},
+		"lt_c15_bush_12.png":
+		{
+			"frame": {"x":62,"y":139,"w":62,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":50},
+			"sourceSize": {"w":62,"h":50}
+		},
+		"lt_c15_bush_1.png":
+		{
+			"frame": {"x":124,"y":139,"w":59,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":37},
+			"sourceSize": {"w":59,"h":37}
+		},
+		"lt_c15_bush_2.png":
+		{
+			"frame": {"x":183,"y":139,"w":59,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":37},
+			"sourceSize": {"w":59,"h":37}
+		},
+		"lt_c15_bush_11.png":
+		{
+			"frame": {"x":242,"y":139,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		}
+	}
+}

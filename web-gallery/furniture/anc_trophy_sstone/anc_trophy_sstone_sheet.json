@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "anc_trophy_sstone_sheet.png",
+		"size": {"w":247,"h":245},
+		"scale": "1"
+	},
+	"frames": {
+		"anc_trophy_sstone_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":177,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":177,"h":127},
+			"sourceSize": {"w":177,"h":127}
+		},
+		"anc_trophy_sstone_5.png":
+		{
+			"frame": {"x":177,"y":0,"w":70,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":127},
+			"sourceSize": {"w":70,"h":127}
+		},
+		"anc_trophy_sstone_1.png":
+		{
+			"frame": {"x":0,"y":127,"w":74,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":55},
+			"sourceSize": {"w":74,"h":55}
+		},
+		"anc_trophy_sstone_7.png":
+		{
+			"frame": {"x":74,"y":127,"w":70,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":37},
+			"sourceSize": {"w":70,"h":37}
+		},
+		"anc_trophy_sstone_6.png":
+		{
+			"frame": {"x":0,"y":182,"w":33,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":63},
+			"sourceSize": {"w":33,"h":63}
+		},
+		"anc_trophy_sstone_2.png":
+		{
+			"frame": {"x":144,"y":127,"w":38,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":28},
+			"sourceSize": {"w":38,"h":28}
+		},
+		"anc_trophy_sstone_12.png":
+		{
+			"frame": {"x":182,"y":127,"w":35,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":18},
+			"sourceSize": {"w":35,"h":18}
+		},
+		"anc_trophy_sstone_11.png":
+		{
+			"frame": {"x":33,"y":182,"w":15,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":32},
+			"sourceSize": {"w":15,"h":32}
+		}
+	}
+}

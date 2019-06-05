@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "ny2015_floor2_sheet.png",
+		"size": {"w":94,"h":76},
+		"scale": "1"
+	},
+	"frames": {
+		"ny2015_floor2_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":25},
+			"sourceSize": {"w":49,"h":25}
+		},
+		"ny2015_floor2_2.png":
+		{
+			"frame": {"x":0,"y":25,"w":47,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":26},
+			"sourceSize": {"w":47,"h":26}
+		},
+		"ny2015_floor2_5.png":
+		{
+			"frame": {"x":49,"y":0,"w":45,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":23},
+			"sourceSize": {"w":45,"h":23}
+		},
+		"ny2015_floor2_1.png":
+		{
+			"frame": {"x":49,"y":23,"w":44,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":21},
+			"sourceSize": {"w":44,"h":21}
+		},
+		"ny2015_floor2_7.png":
+		{
+			"frame": {"x":0,"y":51,"w":24,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":25},
+			"sourceSize": {"w":24,"h":25}
+		}
+	}
+}

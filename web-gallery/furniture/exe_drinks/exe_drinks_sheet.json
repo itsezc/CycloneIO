@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "exe_drinks_sheet.png",
+		"size": {"w":133,"h":90},
+		"scale": "1"
+	},
+	"frames": {
+		"exe_drinks_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":79,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":68},
+			"sourceSize": {"w":79,"h":68}
+		},
+		"exe_drinks_5.png":
+		{
+			"frame": {"x":79,"y":0,"w":54,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":30},
+			"sourceSize": {"w":54,"h":30}
+		},
+		"exe_drinks_6.png":
+		{
+			"frame": {"x":79,"y":30,"w":38,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+			"sourceSize": {"w":38,"h":38}
+		},
+		"exe_drinks_1.png":
+		{
+			"frame": {"x":0,"y":68,"w":25,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+			"sourceSize": {"w":25,"h":22}
+		},
+		"exe_drinks_2.png":
+		{
+			"frame": {"x":25,"y":68,"w":25,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+			"sourceSize": {"w":25,"h":22}
+		}
+	}
+}

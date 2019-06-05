@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "xmas11_balloon2_sheet.png",
+		"size": {"w":301,"h":280},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas11_balloon2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":210,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":210,"h":144},
+			"sourceSize": {"w":210,"h":144}
+		},
+		"xmas11_balloon2_7.png":
+		{
+			"frame": {"x":210,"y":0,"w":44,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":144},
+			"sourceSize": {"w":44,"h":144}
+		},
+		"xmas11_balloon2_4.png":
+		{
+			"frame": {"x":254,"y":0,"w":47,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":139},
+			"sourceSize": {"w":47,"h":139}
+		},
+		"xmas11_balloon2_2.png":
+		{
+			"frame": {"x":0,"y":144,"w":48,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":136},
+			"sourceSize": {"w":48,"h":136}
+		},
+		"xmas11_balloon2_8.png":
+		{
+			"frame": {"x":48,"y":144,"w":22,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":73},
+			"sourceSize": {"w":22,"h":73}
+		},
+		"xmas11_balloon2_5.png":
+		{
+			"frame": {"x":70,"y":144,"w":24,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":70},
+			"sourceSize": {"w":24,"h":70}
+		},
+		"xmas11_balloon2_6.png":
+		{
+			"frame": {"x":94,"y":144,"w":25,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":69},
+			"sourceSize": {"w":25,"h":69}
+		},
+		"xmas11_balloon2_1.png":
+		{
+			"frame": {"x":119,"y":144,"w":25,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":30},
+			"sourceSize": {"w":25,"h":30}
+		}
+	}
+}

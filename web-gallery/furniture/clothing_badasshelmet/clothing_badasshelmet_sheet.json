@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_badasshelmet_sheet.png",
+		"size": {"w":75,"h":57},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_badasshelmet_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":57},
+			"sourceSize": {"w":44,"h":57}
+		},
+		"clothing_badasshelmet_2.png":
+		{
+			"frame": {"x":44,"y":0,"w":31,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":31},
+			"sourceSize": {"w":31,"h":31}
+		}
+	}
+}

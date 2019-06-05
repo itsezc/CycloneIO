@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "modern_c17_floorlamp_sheet.png",
+		"size": {"w":248,"h":175},
+		"scale": "1"
+	},
+	"frames": {
+		"modern_c17_floorlamp_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":87,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":133},
+			"sourceSize": {"w":87,"h":133}
+		},
+		"modern_c17_floorlamp_2.png":
+		{
+			"frame": {"x":87,"y":0,"w":54,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":128},
+			"sourceSize": {"w":54,"h":128}
+		},
+		"modern_c17_floorlamp_12.png":
+		{
+			"frame": {"x":141,"y":0,"w":20,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":124},
+			"sourceSize": {"w":20,"h":124}
+		},
+		"modern_c17_floorlamp_8.png":
+		{
+			"frame": {"x":161,"y":0,"w":87,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":122},
+			"sourceSize": {"w":87,"h":122}
+		},
+		"modern_c17_floorlamp_10.png":
+		{
+			"frame": {"x":0,"y":133,"w":60,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":42},
+			"sourceSize": {"w":60,"h":42}
+		},
+		"modern_c17_floorlamp_1.png":
+		{
+			"frame": {"x":60,"y":133,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		},
+		"modern_c17_floorlamp_6.png":
+		{
+			"frame": {"x":78,"y":133,"w":20,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":14},
+			"sourceSize": {"w":20,"h":14}
+		},
+		"modern_c17_floorlamp_3.png":
+		{
+			"frame": {"x":161,"y":122,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

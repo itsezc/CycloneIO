@@ -1,0 +1,193 @@
+{
+	"meta": {
+		"image": "merger_chest_sheet.png",
+		"size": {"w":245,"h":245},
+		"scale": "1"
+	},
+	"frames": {
+		"merger_chest_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":182,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":182,"h":151},
+			"sourceSize": {"w":182,"h":151}
+		},
+		"merger_chest_16.png":
+		{
+			"frame": {"x":182,"y":0,"w":63,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":94},
+			"sourceSize": {"w":63,"h":94}
+		},
+		"merger_chest_8.png":
+		{
+			"frame": {"x":0,"y":151,"w":63,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":94},
+			"sourceSize": {"w":63,"h":94}
+		},
+		"merger_chest_10.png":
+		{
+			"frame": {"x":63,"y":151,"w":56,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":58},
+			"sourceSize": {"w":56,"h":58}
+		},
+		"merger_chest_15.png":
+		{
+			"frame": {"x":182,"y":94,"w":54,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":57},
+			"sourceSize": {"w":54,"h":57}
+		},
+		"merger_chest_20.png":
+		{
+			"frame": {"x":119,"y":151,"w":33,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":47},
+			"sourceSize": {"w":33,"h":47}
+		},
+		"merger_chest_24.png":
+		{
+			"frame": {"x":152,"y":151,"w":33,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":47},
+			"sourceSize": {"w":33,"h":47}
+		},
+		"merger_chest_3.png":
+		{
+			"frame": {"x":185,"y":151,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		},
+		"merger_chest_26.png":
+		{
+			"frame": {"x":63,"y":209,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		},
+		"merger_chest_22.png":
+		{
+			"frame": {"x":92,"y":209,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"merger_chest_4.png":
+		{
+			"frame": {"x":236,"y":94,"w":8,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":5},
+			"sourceSize": {"w":8,"h":5}
+		},
+		"merger_chest_5.png":
+		{
+			"frame": {"x":236,"y":99,"w":8,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":5},
+			"sourceSize": {"w":8,"h":5}
+		},
+		"merger_chest_12.png":
+		{
+			"frame": {"x":236,"y":104,"w":7,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":5},
+			"sourceSize": {"w":7,"h":5}
+		},
+		"merger_chest_11.png":
+		{
+			"frame": {"x":236,"y":109,"w":6,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":6},
+			"sourceSize": {"w":6,"h":6}
+		},
+		"merger_chest_2.png":
+		{
+			"frame": {"x":236,"y":115,"w":6,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":6},
+			"sourceSize": {"w":6,"h":6}
+		},
+		"merger_chest_13.png":
+		{
+			"frame": {"x":236,"y":121,"w":5,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":6},
+			"sourceSize": {"w":5,"h":6}
+		},
+		"merger_chest_1.png":
+		{
+			"frame": {"x":236,"y":127,"w":6,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":5},
+			"sourceSize": {"w":6,"h":5}
+		},
+		"merger_chest_19.png":
+		{
+			"frame": {"x":242,"y":109,"w":3,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":2},
+			"sourceSize": {"w":3,"h":2}
+		},
+		"merger_chest_21.png":
+		{
+			"frame": {"x":242,"y":111,"w":3,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":2},
+			"sourceSize": {"w":3,"h":2}
+		},
+		"merger_chest_25.png":
+		{
+			"frame": {"x":242,"y":113,"w":3,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":2},
+			"sourceSize": {"w":3,"h":2}
+		},
+		"merger_chest_23.png":
+		{
+			"frame": {"x":243,"y":104,"w":2,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+			"sourceSize": {"w":2,"h":2}
+		},
+		"merger_chest_27.png":
+		{
+			"frame": {"x":243,"y":106,"w":2,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+			"sourceSize": {"w":2,"h":2}
+		},
+		"merger_chest_7.png":
+		{
+			"frame": {"x":244,"y":94,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

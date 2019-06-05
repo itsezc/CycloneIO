@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "hotel_c18_stairs_sheet.png",
+		"size": {"w":204,"h":157},
+		"scale": "1"
+	},
+	"frames": {
+		"hotel_c18_stairs_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":69,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":59},
+			"sourceSize": {"w":69,"h":59}
+		},
+		"hotel_c18_stairs_8.png":
+		{
+			"frame": {"x":69,"y":0,"w":69,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":59},
+			"sourceSize": {"w":69,"h":59}
+		},
+		"hotel_c18_stairs_6.png":
+		{
+			"frame": {"x":0,"y":59,"w":68,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":41},
+			"sourceSize": {"w":68,"h":41}
+		},
+		"hotel_c18_stairs_14.png":
+		{
+			"frame": {"x":138,"y":0,"w":66,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":57},
+			"sourceSize": {"w":66,"h":57}
+		},
+		"hotel_c18_stairs_4.png":
+		{
+			"frame": {"x":138,"y":57,"w":66,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":42},
+			"sourceSize": {"w":66,"h":42}
+		},
+		"hotel_c18_stairs_7.png":
+		{
+			"frame": {"x":0,"y":100,"w":65,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":57},
+			"sourceSize": {"w":65,"h":57}
+		},
+		"hotel_c18_stairs_12.png":
+		{
+			"frame": {"x":65,"y":100,"w":36,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":43},
+			"sourceSize": {"w":36,"h":43}
+		},
+		"hotel_c18_stairs_5.png":
+		{
+			"frame": {"x":101,"y":100,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"hotel_c18_stairs_13.png":
+		{
+			"frame": {"x":68,"y":59,"w":30,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":26},
+			"sourceSize": {"w":30,"h":26}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "school_chairgold_sheet.png",
+		"size": {"w":118,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"school_chairgold_16.png":
+		{
+			"frame": {"x":0,"y":0,"w":45,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":64},
+			"sourceSize": {"w":45,"h":64}
+		},
+		"school_chairgold_1.png":
+		{
+			"frame": {"x":45,"y":0,"w":47,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":56},
+			"sourceSize": {"w":47,"h":56}
+		},
+		"school_chairgold_11.png":
+		{
+			"frame": {"x":0,"y":64,"w":44,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":22},
+			"sourceSize": {"w":44,"h":22}
+		},
+		"school_chairgold_9.png":
+		{
+			"frame": {"x":44,"y":64,"w":44,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":22},
+			"sourceSize": {"w":44,"h":22}
+		},
+		"school_chairgold_13.png":
+		{
+			"frame": {"x":92,"y":0,"w":26,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":41},
+			"sourceSize": {"w":26,"h":41}
+		},
+		"school_chairgold_3.png":
+		{
+			"frame": {"x":92,"y":41,"w":21,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":32},
+			"sourceSize": {"w":21,"h":32}
+		},
+		"school_chairgold_12.png":
+		{
+			"frame": {"x":0,"y":86,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"school_chairgold_14.png":
+		{
+			"frame": {"x":21,"y":86,"w":23,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":28},
+			"sourceSize": {"w":23,"h":28}
+		},
+		"school_chairgold_7.png":
+		{
+			"frame": {"x":44,"y":86,"w":13,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":21},
+			"sourceSize": {"w":13,"h":21}
+		},
+		"school_chairgold_8.png":
+		{
+			"frame": {"x":92,"y":73,"w":21,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":12},
+			"sourceSize": {"w":21,"h":12}
+		},
+		"school_chairgold_4.png":
+		{
+			"frame": {"x":113,"y":41,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

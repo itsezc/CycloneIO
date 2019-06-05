@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "room_pcnc15_wood_sheet.png",
+		"size": {"w":121,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"room_pcnc15_wood_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":76},
+			"sourceSize": {"w":62,"h":76}
+		},
+		"room_pcnc15_wood_4.png":
+		{
+			"frame": {"x":62,"y":0,"w":59,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":58},
+			"sourceSize": {"w":59,"h":58}
+		},
+		"room_pcnc15_wood_1.png":
+		{
+			"frame": {"x":62,"y":58,"w":42,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":18},
+			"sourceSize": {"w":42,"h":18}
+		},
+		"room_pcnc15_wood_6.png":
+		{
+			"frame": {"x":0,"y":76,"w":28,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":26},
+			"sourceSize": {"w":28,"h":26}
+		}
+	}
+}

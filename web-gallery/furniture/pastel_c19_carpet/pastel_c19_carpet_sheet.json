@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "pastel_c19_carpet_sheet.png",
+		"size": {"w":174,"h":110},
+		"scale": "1"
+	},
+	"frames": {
+		"pastel_c19_carpet_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":174,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":174,"h":93},
+			"sourceSize": {"w":174,"h":93}
+		},
+		"pastel_c19_carpet_7.png":
+		{
+			"frame": {"x":0,"y":93,"w":30,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":17},
+			"sourceSize": {"w":30,"h":17}
+		}
+	}
+}

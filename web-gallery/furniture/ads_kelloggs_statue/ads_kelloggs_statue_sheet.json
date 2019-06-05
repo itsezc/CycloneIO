@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ads_kelloggs_statue_sheet.png",
+		"size": {"w":225,"h":199},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_kelloggs_statue_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":158,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":158,"h":133},
+			"sourceSize": {"w":158,"h":133}
+		},
+		"ads_kelloggs_statue_10.png":
+		{
+			"frame": {"x":158,"y":0,"w":67,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":133},
+			"sourceSize": {"w":67,"h":133}
+		},
+		"ads_kelloggs_statue_3.png":
+		{
+			"frame": {"x":0,"y":133,"w":33,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":66},
+			"sourceSize": {"w":33,"h":66}
+		},
+		"ads_kelloggs_statue_9.png":
+		{
+			"frame": {"x":33,"y":133,"w":58,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":15},
+			"sourceSize": {"w":58,"h":15}
+		},
+		"ads_kelloggs_statue_1.png":
+		{
+			"frame": {"x":33,"y":148,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"ads_kelloggs_statue_5.png":
+		{
+			"frame": {"x":91,"y":133,"w":26,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":7},
+			"sourceSize": {"w":26,"h":7}
+		}
+	}
+}

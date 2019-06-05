@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_floraloutfit_sheet.png",
+		"size": {"w":70,"h":106},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_floraloutfit_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":106},
+			"sourceSize": {"w":40,"h":106}
+		},
+		"clothing_floraloutfit_6.png":
+		{
+			"frame": {"x":40,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

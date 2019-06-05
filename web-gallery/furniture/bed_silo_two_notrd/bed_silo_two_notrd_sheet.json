@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "bed_silo_two_notrd_sheet.png",
+		"size": {"w":464,"h":310},
+		"scale": "1"
+	},
+	"frames": {
+		"bed_silo_two_notrd_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":336,"h":222},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":336,"h":222},
+			"sourceSize": {"w":336,"h":222}
+		},
+		"bed_silo_two_notrd_3.png":
+		{
+			"frame": {"x":0,"y":222,"w":168,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":168,"h":88},
+			"sourceSize": {"w":168,"h":88}
+		},
+		"bed_silo_two_notrd_8.png":
+		{
+			"frame": {"x":168,"y":222,"w":168,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":168,"h":88},
+			"sourceSize": {"w":168,"h":88}
+		},
+		"bed_silo_two_notrd_11.png":
+		{
+			"frame": {"x":336,"y":0,"w":128,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":90},
+			"sourceSize": {"w":128,"h":90}
+		},
+		"bed_silo_two_notrd_4.png":
+		{
+			"frame": {"x":336,"y":90,"w":128,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":71},
+			"sourceSize": {"w":128,"h":71}
+		},
+		"bed_silo_two_notrd_5.png":
+		{
+			"frame": {"x":336,"y":161,"w":79,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":44},
+			"sourceSize": {"w":79,"h":44}
+		},
+		"bed_silo_two_notrd_13.png":
+		{
+			"frame": {"x":336,"y":205,"w":58,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":44},
+			"sourceSize": {"w":58,"h":44}
+		},
+		"bed_silo_two_notrd_1.png":
+		{
+			"frame": {"x":394,"y":205,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"bed_silo_two_notrd_10.png":
+		{
+			"frame": {"x":415,"y":161,"w":30,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":21},
+			"sourceSize": {"w":30,"h":21}
+		}
+	}
+}

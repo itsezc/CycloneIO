@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "ads_m6_floor_sheet.png",
+		"size": {"w":411,"h":316},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_m6_floor_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":274,"h":210},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":274,"h":210},
+			"sourceSize": {"w":274,"h":210}
+		},
+		"ads_m6_floor_7.png":
+		{
+			"frame": {"x":274,"y":0,"w":137,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":137,"h":69},
+			"sourceSize": {"w":137,"h":69}
+		},
+		"ads_m6_floor_9.png":
+		{
+			"frame": {"x":274,"y":69,"w":137,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":137,"h":69},
+			"sourceSize": {"w":137,"h":69}
+		},
+		"ads_m6_floor_5.png":
+		{
+			"frame": {"x":274,"y":138,"w":136,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":136,"h":70},
+			"sourceSize": {"w":136,"h":70}
+		},
+		"ads_m6_floor_6.png":
+		{
+			"frame": {"x":0,"y":210,"w":136,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":136,"h":70},
+			"sourceSize": {"w":136,"h":70}
+		},
+		"ads_m6_floor_1.png":
+		{
+			"frame": {"x":136,"y":210,"w":69,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":35},
+			"sourceSize": {"w":69,"h":35}
+		},
+		"ads_m6_floor_2.png":
+		{
+			"frame": {"x":205,"y":210,"w":69,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":35},
+			"sourceSize": {"w":69,"h":35}
+		},
+		"ads_m6_floor_11.png":
+		{
+			"frame": {"x":0,"y":280,"w":68,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":36},
+			"sourceSize": {"w":68,"h":36}
+		},
+		"ads_m6_floor_12.png":
+		{
+			"frame": {"x":68,"y":280,"w":68,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":36},
+			"sourceSize": {"w":68,"h":36}
+		},
+		"ads_m6_floor_13.png":
+		{
+			"frame": {"x":274,"y":210,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

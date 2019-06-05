@@ -1,0 +1,2697 @@
+{
+	"meta": {
+		"image": "wildwest_bgland_sheet.png",
+		"size": {"w":4795,"h":4580},
+		"scale": "1"
+	},
+	"frames": {
+		"wildwest_bgland_27.png":
+		{
+			"frame": {"x":0,"y":0,"w":392,"h":582},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":392,"h":582},
+			"sourceSize": {"w":392,"h":582}
+		},
+		"wildwest_bgland_329.png":
+		{
+			"frame": {"x":392,"y":0,"w":352,"h":566},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":566},
+			"sourceSize": {"w":352,"h":566}
+		},
+		"wildwest_bgland_341.png":
+		{
+			"frame": {"x":744,"y":0,"w":375,"h":547},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":547},
+			"sourceSize": {"w":375,"h":547}
+		},
+		"wildwest_bgland_297.png":
+		{
+			"frame": {"x":0,"y":582,"w":375,"h":286},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":286},
+			"sourceSize": {"w":375,"h":286}
+		},
+		"wildwest_bgland_25.png":
+		{
+			"frame": {"x":375,"y":582,"w":375,"h":283},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":283},
+			"sourceSize": {"w":375,"h":283}
+		},
+		"wildwest_bgland_26.png":
+		{
+			"frame": {"x":1119,"y":0,"w":375,"h":283},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":283},
+			"sourceSize": {"w":375,"h":283}
+		},
+		"wildwest_bgland_36.png":
+		{
+			"frame": {"x":1119,"y":283,"w":375,"h":283},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":283},
+			"sourceSize": {"w":375,"h":283}
+		},
+		"wildwest_bgland_229.png":
+		{
+			"frame": {"x":1119,"y":566,"w":375,"h":279},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":279},
+			"sourceSize": {"w":375,"h":279}
+		},
+		"wildwest_bgland_209.png":
+		{
+			"frame": {"x":0,"y":868,"w":375,"h":278},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":278},
+			"sourceSize": {"w":375,"h":278}
+		},
+		"wildwest_bgland_29.png":
+		{
+			"frame": {"x":375,"y":868,"w":375,"h":278},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":278},
+			"sourceSize": {"w":375,"h":278}
+		},
+		"wildwest_bgland_210.png":
+		{
+			"frame": {"x":750,"y":868,"w":375,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":277},
+			"sourceSize": {"w":375,"h":277}
+		},
+		"wildwest_bgland_211.png":
+		{
+			"frame": {"x":0,"y":1146,"w":375,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":275},
+			"sourceSize": {"w":375,"h":275}
+		},
+		"wildwest_bgland_208.png":
+		{
+			"frame": {"x":375,"y":1146,"w":375,"h":273},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":273},
+			"sourceSize": {"w":375,"h":273}
+		},
+		"wildwest_bgland_227.png":
+		{
+			"frame": {"x":750,"y":1146,"w":375,"h":273},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":273},
+			"sourceSize": {"w":375,"h":273}
+		},
+		"wildwest_bgland_298.png":
+		{
+			"frame": {"x":1494,"y":0,"w":375,"h":273},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":273},
+			"sourceSize": {"w":375,"h":273}
+		},
+		"wildwest_bgland_28.png":
+		{
+			"frame": {"x":1494,"y":273,"w":375,"h":272},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":272},
+			"sourceSize": {"w":375,"h":272}
+		},
+		"wildwest_bgland_213.png":
+		{
+			"frame": {"x":1494,"y":545,"w":375,"h":267},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":267},
+			"sourceSize": {"w":375,"h":267}
+		},
+		"wildwest_bgland_232.png":
+		{
+			"frame": {"x":1494,"y":812,"w":375,"h":267},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":267},
+			"sourceSize": {"w":375,"h":267}
+		},
+		"wildwest_bgland_233.png":
+		{
+			"frame": {"x":1494,"y":1079,"w":375,"h":266},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":266},
+			"sourceSize": {"w":375,"h":266}
+		},
+		"wildwest_bgland_38.png":
+		{
+			"frame": {"x":0,"y":1421,"w":375,"h":265},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":265},
+			"sourceSize": {"w":375,"h":265}
+		},
+		"wildwest_bgland_217.png":
+		{
+			"frame": {"x":375,"y":1421,"w":375,"h":262},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":262},
+			"sourceSize": {"w":375,"h":262}
+		},
+		"wildwest_bgland_212.png":
+		{
+			"frame": {"x":750,"y":1421,"w":375,"h":261},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":261},
+			"sourceSize": {"w":375,"h":261}
+		},
+		"wildwest_bgland_215.png":
+		{
+			"frame": {"x":1125,"y":1421,"w":375,"h":261},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":261},
+			"sourceSize": {"w":375,"h":261}
+		},
+		"wildwest_bgland_231.png":
+		{
+			"frame": {"x":1869,"y":0,"w":375,"h":261},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":261},
+			"sourceSize": {"w":375,"h":261}
+		},
+		"wildwest_bgland_228.png":
+		{
+			"frame": {"x":1869,"y":261,"w":375,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":260},
+			"sourceSize": {"w":375,"h":260}
+		},
+		"wildwest_bgland_241.png":
+		{
+			"frame": {"x":1869,"y":521,"w":375,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":260},
+			"sourceSize": {"w":375,"h":260}
+		},
+		"wildwest_bgland_101.png":
+		{
+			"frame": {"x":1869,"y":781,"w":375,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":258},
+			"sourceSize": {"w":375,"h":258}
+		},
+		"wildwest_bgland_216.png":
+		{
+			"frame": {"x":1869,"y":1039,"w":375,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":258},
+			"sourceSize": {"w":375,"h":258}
+		},
+		"wildwest_bgland_35.png":
+		{
+			"frame": {"x":1869,"y":1297,"w":375,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":258},
+			"sourceSize": {"w":375,"h":258}
+		},
+		"wildwest_bgland_99.png":
+		{
+			"frame": {"x":0,"y":1686,"w":375,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":258},
+			"sourceSize": {"w":375,"h":258}
+		},
+		"wildwest_bgland_235.png":
+		{
+			"frame": {"x":375,"y":1686,"w":375,"h":257},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":257},
+			"sourceSize": {"w":375,"h":257}
+		},
+		"wildwest_bgland_236.png":
+		{
+			"frame": {"x":750,"y":1686,"w":375,"h":255},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":255},
+			"sourceSize": {"w":375,"h":255}
+		},
+		"wildwest_bgland_305.png":
+		{
+			"frame": {"x":1125,"y":1686,"w":375,"h":255},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":255},
+			"sourceSize": {"w":375,"h":255}
+		},
+		"wildwest_bgland_218.png":
+		{
+			"frame": {"x":1500,"y":1686,"w":375,"h":252},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":252},
+			"sourceSize": {"w":375,"h":252}
+		},
+		"wildwest_bgland_237.png":
+		{
+			"frame": {"x":0,"y":1944,"w":375,"h":251},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":251},
+			"sourceSize": {"w":375,"h":251}
+		},
+		"wildwest_bgland_240.png":
+		{
+			"frame": {"x":375,"y":1944,"w":375,"h":250},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":250},
+			"sourceSize": {"w":375,"h":250}
+		},
+		"wildwest_bgland_234.png":
+		{
+			"frame": {"x":750,"y":1944,"w":375,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":249},
+			"sourceSize": {"w":375,"h":249}
+		},
+		"wildwest_bgland_306.png":
+		{
+			"frame": {"x":1125,"y":1944,"w":375,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":249},
+			"sourceSize": {"w":375,"h":249}
+		},
+		"wildwest_bgland_243.png":
+		{
+			"frame": {"x":1500,"y":1944,"w":375,"h":245},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":245},
+			"sourceSize": {"w":375,"h":245}
+		},
+		"wildwest_bgland_303.png":
+		{
+			"frame": {"x":2244,"y":0,"w":375,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":243},
+			"sourceSize": {"w":375,"h":243}
+		},
+		"wildwest_bgland_307.png":
+		{
+			"frame": {"x":2244,"y":243,"w":375,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":243},
+			"sourceSize": {"w":375,"h":243}
+		},
+		"wildwest_bgland_302.png":
+		{
+			"frame": {"x":2244,"y":486,"w":375,"h":242},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":242},
+			"sourceSize": {"w":375,"h":242}
+		},
+		"wildwest_bgland_135.png":
+		{
+			"frame": {"x":2244,"y":728,"w":375,"h":239},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":239},
+			"sourceSize": {"w":375,"h":239}
+		},
+		"wildwest_bgland_144.png":
+		{
+			"frame": {"x":2244,"y":967,"w":375,"h":239},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":239},
+			"sourceSize": {"w":375,"h":239}
+		},
+		"wildwest_bgland_244.png":
+		{
+			"frame": {"x":2244,"y":1206,"w":375,"h":239},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":239},
+			"sourceSize": {"w":375,"h":239}
+		},
+		"wildwest_bgland_86.png":
+		{
+			"frame": {"x":2244,"y":1445,"w":375,"h":238},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":238},
+			"sourceSize": {"w":375,"h":238}
+		},
+		"wildwest_bgland_91.png":
+		{
+			"frame": {"x":2244,"y":1683,"w":375,"h":238},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":238},
+			"sourceSize": {"w":375,"h":238}
+		},
+		"wildwest_bgland_141.png":
+		{
+			"frame": {"x":2244,"y":1921,"w":375,"h":237},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":237},
+			"sourceSize": {"w":375,"h":237}
+		},
+		"wildwest_bgland_301.png":
+		{
+			"frame": {"x":0,"y":2195,"w":375,"h":237},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":237},
+			"sourceSize": {"w":375,"h":237}
+		},
+		"wildwest_bgland_88.png":
+		{
+			"frame": {"x":375,"y":2195,"w":375,"h":237},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":237},
+			"sourceSize": {"w":375,"h":237}
+		},
+		"wildwest_bgland_242.png":
+		{
+			"frame": {"x":750,"y":2195,"w":375,"h":233},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":233},
+			"sourceSize": {"w":375,"h":233}
+		},
+		"wildwest_bgland_89.png":
+		{
+			"frame": {"x":1125,"y":2195,"w":375,"h":231},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":231},
+			"sourceSize": {"w":375,"h":231}
+		},
+		"wildwest_bgland_138.png":
+		{
+			"frame": {"x":1500,"y":2195,"w":375,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":375,"h":227},
+			"sourceSize": {"w":375,"h":227}
+		},
+		"wildwest_bgland_239.png":
+		{
+			"frame": {"x":2619,"y":0,"w":374,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":374,"h":260},
+			"sourceSize": {"w":374,"h":260}
+		},
+		"wildwest_bgland_32.png":
+		{
+			"frame": {"x":2619,"y":260,"w":373,"h":257},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":373,"h":257},
+			"sourceSize": {"w":373,"h":257}
+		},
+		"wildwest_bgland_299.png":
+		{
+			"frame": {"x":2619,"y":517,"w":367,"h":245},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":367,"h":245},
+			"sourceSize": {"w":367,"h":245}
+		},
+		"wildwest_bgland_230.png":
+		{
+			"frame": {"x":2619,"y":762,"w":362,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":362,"h":248},
+			"sourceSize": {"w":362,"h":248}
+		},
+		"wildwest_bgland_74.png":
+		{
+			"frame": {"x":2619,"y":1010,"w":360,"h":285},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":285},
+			"sourceSize": {"w":360,"h":285}
+		},
+		"wildwest_bgland_223.png":
+		{
+			"frame": {"x":2619,"y":1295,"w":360,"h":282},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":282},
+			"sourceSize": {"w":360,"h":282}
+		},
+		"wildwest_bgland_224.png":
+		{
+			"frame": {"x":2619,"y":1577,"w":360,"h":282},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":282},
+			"sourceSize": {"w":360,"h":282}
+		},
+		"wildwest_bgland_225.png":
+		{
+			"frame": {"x":2619,"y":1859,"w":360,"h":282},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":282},
+			"sourceSize": {"w":360,"h":282}
+		},
+		"wildwest_bgland_82.png":
+		{
+			"frame": {"x":2619,"y":2141,"w":360,"h":279},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":279},
+			"sourceSize": {"w":360,"h":279}
+		},
+		"wildwest_bgland_220.png":
+		{
+			"frame": {"x":750,"y":582,"w":360,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":277},
+			"sourceSize": {"w":360,"h":277}
+		},
+		"wildwest_bgland_39.png":
+		{
+			"frame": {"x":1125,"y":868,"w":360,"h":276},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":276},
+			"sourceSize": {"w":360,"h":276}
+		},
+		"wildwest_bgland_42.png":
+		{
+			"frame": {"x":0,"y":2432,"w":360,"h":276},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":276},
+			"sourceSize": {"w":360,"h":276}
+		},
+		"wildwest_bgland_45.png":
+		{
+			"frame": {"x":360,"y":2432,"w":360,"h":274},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":274},
+			"sourceSize": {"w":360,"h":274}
+		},
+		"wildwest_bgland_22.png":
+		{
+			"frame": {"x":1125,"y":1146,"w":360,"h":272},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":272},
+			"sourceSize": {"w":360,"h":272}
+		},
+		"wildwest_bgland_85.png":
+		{
+			"frame": {"x":720,"y":2432,"w":360,"h":272},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":272},
+			"sourceSize": {"w":360,"h":272}
+		},
+		"wildwest_bgland_219.png":
+		{
+			"frame": {"x":1080,"y":2432,"w":360,"h":271},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":271},
+			"sourceSize": {"w":360,"h":271}
+		},
+		"wildwest_bgland_72.png":
+		{
+			"frame": {"x":1440,"y":2432,"w":360,"h":271},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":271},
+			"sourceSize": {"w":360,"h":271}
+		},
+		"wildwest_bgland_19.png":
+		{
+			"frame": {"x":1800,"y":2432,"w":360,"h":266},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":266},
+			"sourceSize": {"w":360,"h":266}
+		},
+		"wildwest_bgland_81.png":
+		{
+			"frame": {"x":2160,"y":2432,"w":360,"h":266},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":266},
+			"sourceSize": {"w":360,"h":266}
+		},
+		"wildwest_bgland_238.png":
+		{
+			"frame": {"x":2520,"y":2432,"w":360,"h":265},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":265},
+			"sourceSize": {"w":360,"h":265}
+		},
+		"wildwest_bgland_16.png":
+		{
+			"frame": {"x":1500,"y":1421,"w":360,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":260},
+			"sourceSize": {"w":360,"h":260}
+		},
+		"wildwest_bgland_61.png":
+		{
+			"frame": {"x":0,"y":2708,"w":360,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":260},
+			"sourceSize": {"w":360,"h":260}
+		},
+		"wildwest_bgland_164.png":
+		{
+			"frame": {"x":360,"y":2708,"w":360,"h":259},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":259},
+			"sourceSize": {"w":360,"h":259}
+		},
+		"wildwest_bgland_13.png":
+		{
+			"frame": {"x":720,"y":2708,"w":360,"h":254},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":254},
+			"sourceSize": {"w":360,"h":254}
+		},
+		"wildwest_bgland_58.png":
+		{
+			"frame": {"x":1080,"y":2708,"w":360,"h":254},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":254},
+			"sourceSize": {"w":360,"h":254}
+		},
+		"wildwest_bgland_162.png":
+		{
+			"frame": {"x":1440,"y":2708,"w":360,"h":253},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":253},
+			"sourceSize": {"w":360,"h":253}
+		},
+		"wildwest_bgland_1.png":
+		{
+			"frame": {"x":1875,"y":1686,"w":360,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":248},
+			"sourceSize": {"w":360,"h":248}
+		},
+		"wildwest_bgland_66.png":
+		{
+			"frame": {"x":1800,"y":2708,"w":360,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":248},
+			"sourceSize": {"w":360,"h":248}
+		},
+		"wildwest_bgland_167.png":
+		{
+			"frame": {"x":2160,"y":2708,"w":360,"h":247},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":247},
+			"sourceSize": {"w":360,"h":247}
+		},
+		"wildwest_bgland_146.png":
+		{
+			"frame": {"x":1875,"y":1944,"w":360,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":243},
+			"sourceSize": {"w":360,"h":243}
+		},
+		"wildwest_bgland_153.png":
+		{
+			"frame": {"x":2520,"y":2708,"w":360,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":243},
+			"sourceSize": {"w":360,"h":243}
+		},
+		"wildwest_bgland_154.png":
+		{
+			"frame": {"x":2993,"y":0,"w":360,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":243},
+			"sourceSize": {"w":360,"h":243}
+		},
+		"wildwest_bgland_221.png":
+		{
+			"frame": {"x":2993,"y":243,"w":360,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":243},
+			"sourceSize": {"w":360,"h":243}
+		},
+		"wildwest_bgland_222.png":
+		{
+			"frame": {"x":2993,"y":486,"w":360,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":243},
+			"sourceSize": {"w":360,"h":243}
+		},
+		"wildwest_bgland_226.png":
+		{
+			"frame": {"x":2993,"y":729,"w":360,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":243},
+			"sourceSize": {"w":360,"h":243}
+		},
+		"wildwest_bgland_48.png":
+		{
+			"frame": {"x":2993,"y":972,"w":360,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":243},
+			"sourceSize": {"w":360,"h":243}
+		},
+		"wildwest_bgland_3.png":
+		{
+			"frame": {"x":2993,"y":1215,"w":360,"h":242},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":242},
+			"sourceSize": {"w":360,"h":242}
+		},
+		"wildwest_bgland_63.png":
+		{
+			"frame": {"x":2993,"y":1457,"w":360,"h":242},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":242},
+			"sourceSize": {"w":360,"h":242}
+		},
+		"wildwest_bgland_161.png":
+		{
+			"frame": {"x":2993,"y":1699,"w":360,"h":241},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":241},
+			"sourceSize": {"w":360,"h":241}
+		},
+		"wildwest_bgland_166.png":
+		{
+			"frame": {"x":2993,"y":1940,"w":360,"h":241},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":241},
+			"sourceSize": {"w":360,"h":241}
+		},
+		"wildwest_bgland_31.png":
+		{
+			"frame": {"x":2993,"y":2181,"w":360,"h":239},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":239},
+			"sourceSize": {"w":360,"h":239}
+		},
+		"wildwest_bgland_34.png":
+		{
+			"frame": {"x":2993,"y":2420,"w":360,"h":238},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":238},
+			"sourceSize": {"w":360,"h":238}
+		},
+		"wildwest_bgland_77.png":
+		{
+			"frame": {"x":2993,"y":2658,"w":360,"h":238},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":238},
+			"sourceSize": {"w":360,"h":238}
+		},
+		"wildwest_bgland_2.png":
+		{
+			"frame": {"x":0,"y":2968,"w":360,"h":236},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":236},
+			"sourceSize": {"w":360,"h":236}
+		},
+		"wildwest_bgland_70.png":
+		{
+			"frame": {"x":360,"y":2968,"w":360,"h":236},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":236},
+			"sourceSize": {"w":360,"h":236}
+		},
+		"wildwest_bgland_158.png":
+		{
+			"frame": {"x":720,"y":2968,"w":360,"h":235},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":235},
+			"sourceSize": {"w":360,"h":235}
+		},
+		"wildwest_bgland_76.png":
+		{
+			"frame": {"x":1080,"y":2968,"w":360,"h":234},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":234},
+			"sourceSize": {"w":360,"h":234}
+		},
+		"wildwest_bgland_151.png":
+		{
+			"frame": {"x":1440,"y":2968,"w":360,"h":230},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":230},
+			"sourceSize": {"w":360,"h":230}
+		},
+		"wildwest_bgland_5.png":
+		{
+			"frame": {"x":1800,"y":2968,"w":360,"h":230},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":230},
+			"sourceSize": {"w":360,"h":230}
+		},
+		"wildwest_bgland_128.png":
+		{
+			"frame": {"x":2160,"y":2968,"w":360,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":228},
+			"sourceSize": {"w":360,"h":228}
+		},
+		"wildwest_bgland_130.png":
+		{
+			"frame": {"x":2520,"y":2968,"w":360,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":228},
+			"sourceSize": {"w":360,"h":228}
+		},
+		"wildwest_bgland_132.png":
+		{
+			"frame": {"x":2880,"y":2968,"w":360,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":228},
+			"sourceSize": {"w":360,"h":228}
+		},
+		"wildwest_bgland_137.png":
+		{
+			"frame": {"x":1875,"y":2195,"w":360,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":227},
+			"sourceSize": {"w":360,"h":227}
+		},
+		"wildwest_bgland_140.png":
+		{
+			"frame": {"x":2235,"y":2195,"w":360,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":227},
+			"sourceSize": {"w":360,"h":227}
+		},
+		"wildwest_bgland_143.png":
+		{
+			"frame": {"x":3353,"y":0,"w":360,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":227},
+			"sourceSize": {"w":360,"h":227}
+		},
+		"wildwest_bgland_134.png":
+		{
+			"frame": {"x":3353,"y":227,"w":360,"h":224},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":224},
+			"sourceSize": {"w":360,"h":224}
+		},
+		"wildwest_bgland_4.png":
+		{
+			"frame": {"x":3353,"y":451,"w":360,"h":224},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":224},
+			"sourceSize": {"w":360,"h":224}
+		},
+		"wildwest_bgland_98.png":
+		{
+			"frame": {"x":3353,"y":675,"w":360,"h":224},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":224},
+			"sourceSize": {"w":360,"h":224}
+		},
+		"wildwest_bgland_95.png":
+		{
+			"frame": {"x":3353,"y":899,"w":360,"h":219},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":360,"h":219},
+			"sourceSize": {"w":360,"h":219}
+		},
+		"wildwest_bgland_304.png":
+		{
+			"frame": {"x":3353,"y":1118,"w":355,"h":241},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":355,"h":241},
+			"sourceSize": {"w":355,"h":241}
+		},
+		"wildwest_bgland_278.png":
+		{
+			"frame": {"x":3353,"y":1359,"w":352,"h":304},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":304},
+			"sourceSize": {"w":352,"h":304}
+		},
+		"wildwest_bgland_117.png":
+		{
+			"frame": {"x":3353,"y":1663,"w":352,"h":302},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":302},
+			"sourceSize": {"w":352,"h":302}
+		},
+		"wildwest_bgland_118.png":
+		{
+			"frame": {"x":3353,"y":1965,"w":352,"h":302},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":302},
+			"sourceSize": {"w":352,"h":302}
+		},
+		"wildwest_bgland_119.png":
+		{
+			"frame": {"x":3353,"y":2267,"w":352,"h":301},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":301},
+			"sourceSize": {"w":352,"h":301}
+		},
+		"wildwest_bgland_116.png":
+		{
+			"frame": {"x":3353,"y":2568,"w":352,"h":299},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":299},
+			"sourceSize": {"w":352,"h":299}
+		},
+		"wildwest_bgland_276.png":
+		{
+			"frame": {"x":3353,"y":2867,"w":352,"h":298},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":298},
+			"sourceSize": {"w":352,"h":298}
+		},
+		"wildwest_bgland_265.png":
+		{
+			"frame": {"x":0,"y":3204,"w":352,"h":296},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":296},
+			"sourceSize": {"w":352,"h":296}
+		},
+		"wildwest_bgland_264.png":
+		{
+			"frame": {"x":352,"y":3204,"w":352,"h":295},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":295},
+			"sourceSize": {"w":352,"h":295}
+		},
+		"wildwest_bgland_267.png":
+		{
+			"frame": {"x":704,"y":3204,"w":352,"h":294},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":294},
+			"sourceSize": {"w":352,"h":294}
+		},
+		"wildwest_bgland_115.png":
+		{
+			"frame": {"x":1056,"y":3204,"w":352,"h":293},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":293},
+			"sourceSize": {"w":352,"h":293}
+		},
+		"wildwest_bgland_274.png":
+		{
+			"frame": {"x":1408,"y":3204,"w":352,"h":292},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":292},
+			"sourceSize": {"w":352,"h":292}
+		},
+		"wildwest_bgland_280.png":
+		{
+			"frame": {"x":1760,"y":3204,"w":352,"h":292},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":292},
+			"sourceSize": {"w":352,"h":292}
+		},
+		"wildwest_bgland_262.png":
+		{
+			"frame": {"x":2112,"y":3204,"w":352,"h":291},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":291},
+			"sourceSize": {"w":352,"h":291}
+		},
+		"wildwest_bgland_114.png":
+		{
+			"frame": {"x":2464,"y":3204,"w":352,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":287},
+			"sourceSize": {"w":352,"h":287}
+		},
+		"wildwest_bgland_263.png":
+		{
+			"frame": {"x":2816,"y":3204,"w":352,"h":285},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":285},
+			"sourceSize": {"w":352,"h":285}
+		},
+		"wildwest_bgland_300.png":
+		{
+			"frame": {"x":3168,"y":3204,"w":352,"h":285},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":285},
+			"sourceSize": {"w":352,"h":285}
+		},
+		"wildwest_bgland_113.png":
+		{
+			"frame": {"x":3713,"y":0,"w":352,"h":281},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":281},
+			"sourceSize": {"w":352,"h":281}
+		},
+		"wildwest_bgland_288.png":
+		{
+			"frame": {"x":3713,"y":281,"w":352,"h":280},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":280},
+			"sourceSize": {"w":352,"h":280}
+		},
+		"wildwest_bgland_112.png":
+		{
+			"frame": {"x":3713,"y":561,"w":352,"h":279},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":279},
+			"sourceSize": {"w":352,"h":279}
+		},
+		"wildwest_bgland_260.png":
+		{
+			"frame": {"x":3713,"y":840,"w":352,"h":279},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":279},
+			"sourceSize": {"w":352,"h":279}
+		},
+		"wildwest_bgland_266.png":
+		{
+			"frame": {"x":3713,"y":1119,"w":352,"h":279},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":279},
+			"sourceSize": {"w":352,"h":279}
+		},
+		"wildwest_bgland_282.png":
+		{
+			"frame": {"x":3713,"y":1398,"w":352,"h":279},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":279},
+			"sourceSize": {"w":352,"h":279}
+		},
+		"wildwest_bgland_111.png":
+		{
+			"frame": {"x":3713,"y":1677,"w":352,"h":278},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":278},
+			"sourceSize": {"w":352,"h":278}
+		},
+		"wildwest_bgland_120.png":
+		{
+			"frame": {"x":3713,"y":1955,"w":352,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":277},
+			"sourceSize": {"w":352,"h":277}
+		},
+		"wildwest_bgland_188.png":
+		{
+			"frame": {"x":3713,"y":2232,"w":352,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":277},
+			"sourceSize": {"w":352,"h":277}
+		},
+		"wildwest_bgland_191.png":
+		{
+			"frame": {"x":3713,"y":2509,"w":352,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":277},
+			"sourceSize": {"w":352,"h":277}
+		},
+		"wildwest_bgland_192.png":
+		{
+			"frame": {"x":3713,"y":2786,"w":352,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":277},
+			"sourceSize": {"w":352,"h":277}
+		},
+		"wildwest_bgland_193.png":
+		{
+			"frame": {"x":3713,"y":3063,"w":352,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":277},
+			"sourceSize": {"w":352,"h":277}
+		},
+		"wildwest_bgland_268.png":
+		{
+			"frame": {"x":0,"y":3500,"w":352,"h":276},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":276},
+			"sourceSize": {"w":352,"h":276}
+		},
+		"wildwest_bgland_109.png":
+		{
+			"frame": {"x":352,"y":3500,"w":352,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":275},
+			"sourceSize": {"w":352,"h":275}
+		},
+		"wildwest_bgland_314.png":
+		{
+			"frame": {"x":704,"y":3500,"w":352,"h":274},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":274},
+			"sourceSize": {"w":352,"h":274}
+		},
+		"wildwest_bgland_261.png":
+		{
+			"frame": {"x":1056,"y":3500,"w":352,"h":273},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":273},
+			"sourceSize": {"w":352,"h":273}
+		},
+		"wildwest_bgland_283.png":
+		{
+			"frame": {"x":1408,"y":3500,"w":352,"h":273},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":273},
+			"sourceSize": {"w":352,"h":273}
+		},
+		"wildwest_bgland_104.png":
+		{
+			"frame": {"x":1760,"y":3500,"w":352,"h":272},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":272},
+			"sourceSize": {"w":352,"h":272}
+		},
+		"wildwest_bgland_313.png":
+		{
+			"frame": {"x":2112,"y":3500,"w":352,"h":271},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":271},
+			"sourceSize": {"w":352,"h":271}
+		},
+		"wildwest_bgland_286.png":
+		{
+			"frame": {"x":2464,"y":3500,"w":352,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":270},
+			"sourceSize": {"w":352,"h":270}
+		},
+		"wildwest_bgland_107.png":
+		{
+			"frame": {"x":2816,"y":3500,"w":352,"h":269},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":269},
+			"sourceSize": {"w":352,"h":269}
+		},
+		"wildwest_bgland_285.png":
+		{
+			"frame": {"x":3168,"y":3500,"w":352,"h":269},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":269},
+			"sourceSize": {"w":352,"h":269}
+		},
+		"wildwest_bgland_312.png":
+		{
+			"frame": {"x":3520,"y":3500,"w":352,"h":268},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":268},
+			"sourceSize": {"w":352,"h":268}
+		},
+		"wildwest_bgland_259.png":
+		{
+			"frame": {"x":0,"y":3776,"w":352,"h":267},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":267},
+			"sourceSize": {"w":352,"h":267}
+		},
+		"wildwest_bgland_284.png":
+		{
+			"frame": {"x":352,"y":3776,"w":352,"h":267},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":267},
+			"sourceSize": {"w":352,"h":267}
+		},
+		"wildwest_bgland_103.png":
+		{
+			"frame": {"x":704,"y":3776,"w":352,"h":266},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":266},
+			"sourceSize": {"w":352,"h":266}
+		},
+		"wildwest_bgland_309.png":
+		{
+			"frame": {"x":1056,"y":3776,"w":352,"h":261},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":261},
+			"sourceSize": {"w":352,"h":261}
+		},
+		"wildwest_bgland_106.png":
+		{
+			"frame": {"x":1408,"y":3776,"w":352,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":260},
+			"sourceSize": {"w":352,"h":260}
+		},
+		"wildwest_bgland_311.png":
+		{
+			"frame": {"x":1760,"y":3776,"w":352,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":260},
+			"sourceSize": {"w":352,"h":260}
+		},
+		"wildwest_bgland_175.png":
+		{
+			"frame": {"x":2112,"y":3776,"w":352,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":258},
+			"sourceSize": {"w":352,"h":258}
+		},
+		"wildwest_bgland_177.png":
+		{
+			"frame": {"x":2464,"y":3776,"w":352,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":258},
+			"sourceSize": {"w":352,"h":258}
+		},
+		"wildwest_bgland_93.png":
+		{
+			"frame": {"x":2816,"y":3776,"w":352,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":258},
+			"sourceSize": {"w":352,"h":258}
+		},
+		"wildwest_bgland_180.png":
+		{
+			"frame": {"x":3168,"y":3776,"w":352,"h":257},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":257},
+			"sourceSize": {"w":352,"h":257}
+		},
+		"wildwest_bgland_183.png":
+		{
+			"frame": {"x":3520,"y":3776,"w":352,"h":257},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":257},
+			"sourceSize": {"w":352,"h":257}
+		},
+		"wildwest_bgland_185.png":
+		{
+			"frame": {"x":4065,"y":0,"w":352,"h":257},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":257},
+			"sourceSize": {"w":352,"h":257}
+		},
+		"wildwest_bgland_310.png":
+		{
+			"frame": {"x":4065,"y":257,"w":352,"h":255},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":255},
+			"sourceSize": {"w":352,"h":255}
+		},
+		"wildwest_bgland_105.png":
+		{
+			"frame": {"x":4065,"y":512,"w":352,"h":254},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":254},
+			"sourceSize": {"w":352,"h":254}
+		},
+		"wildwest_bgland_174.png":
+		{
+			"frame": {"x":4065,"y":766,"w":352,"h":252},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":252},
+			"sourceSize": {"w":352,"h":252}
+		},
+		"wildwest_bgland_96.png":
+		{
+			"frame": {"x":4065,"y":1018,"w":352,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":352,"h":248},
+			"sourceSize": {"w":352,"h":248}
+		},
+		"wildwest_bgland_181.png":
+		{
+			"frame": {"x":4065,"y":1266,"w":220,"h":290},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":290},
+			"sourceSize": {"w":220,"h":290}
+		},
+		"wildwest_bgland_257.png":
+		{
+			"frame": {"x":4065,"y":1556,"w":179,"h":282},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":179,"h":282},
+			"sourceSize": {"w":179,"h":282}
+		},
+		"wildwest_bgland_207.png":
+		{
+			"frame": {"x":4244,"y":1556,"w":160,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":275},
+			"sourceSize": {"w":160,"h":275}
+		},
+		"wildwest_bgland_145.png":
+		{
+			"frame": {"x":4065,"y":1838,"w":220,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":160},
+			"sourceSize": {"w":220,"h":160}
+		},
+		"wildwest_bgland_127.png":
+		{
+			"frame": {"x":4065,"y":1998,"w":220,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":158},
+			"sourceSize": {"w":220,"h":158}
+		},
+		"wildwest_bgland_295.png":
+		{
+			"frame": {"x":4065,"y":2156,"w":220,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":158},
+			"sourceSize": {"w":220,"h":158}
+		},
+		"wildwest_bgland_296.png":
+		{
+			"frame": {"x":4065,"y":2314,"w":220,"h":158},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":158},
+			"sourceSize": {"w":220,"h":158}
+		},
+		"wildwest_bgland_129.png":
+		{
+			"frame": {"x":4065,"y":2472,"w":220,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":155},
+			"sourceSize": {"w":220,"h":155}
+		},
+		"wildwest_bgland_184.png":
+		{
+			"frame": {"x":4065,"y":2627,"w":220,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":155},
+			"sourceSize": {"w":220,"h":155}
+		},
+		"wildwest_bgland_187.png":
+		{
+			"frame": {"x":4065,"y":2782,"w":220,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":155},
+			"sourceSize": {"w":220,"h":155}
+		},
+		"wildwest_bgland_155.png":
+		{
+			"frame": {"x":4065,"y":2937,"w":220,"h":154},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":154},
+			"sourceSize": {"w":220,"h":154}
+		},
+		"wildwest_bgland_245.png":
+		{
+			"frame": {"x":4065,"y":3091,"w":220,"h":154},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":154},
+			"sourceSize": {"w":220,"h":154}
+		},
+		"wildwest_bgland_131.png":
+		{
+			"frame": {"x":4065,"y":3245,"w":220,"h":152},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":152},
+			"sourceSize": {"w":220,"h":152}
+		},
+		"wildwest_bgland_190.png":
+		{
+			"frame": {"x":4065,"y":3397,"w":220,"h":152},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":152},
+			"sourceSize": {"w":220,"h":152}
+		},
+		"wildwest_bgland_248.png":
+		{
+			"frame": {"x":4065,"y":3549,"w":220,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":151},
+			"sourceSize": {"w":220,"h":151}
+		},
+		"wildwest_bgland_199.png":
+		{
+			"frame": {"x":4065,"y":3700,"w":220,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":149},
+			"sourceSize": {"w":220,"h":149}
+		},
+		"wildwest_bgland_294.png":
+		{
+			"frame": {"x":4065,"y":3849,"w":220,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":149},
+			"sourceSize": {"w":220,"h":149}
+		},
+		"wildwest_bgland_247.png":
+		{
+			"frame": {"x":3713,"y":3340,"w":220,"h":148},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":148},
+			"sourceSize": {"w":220,"h":148}
+		},
+		"wildwest_bgland_157.png":
+		{
+			"frame": {"x":0,"y":4043,"w":220,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":147},
+			"sourceSize": {"w":220,"h":147}
+		},
+		"wildwest_bgland_156.png":
+		{
+			"frame": {"x":220,"y":4043,"w":220,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":146},
+			"sourceSize": {"w":220,"h":146}
+		},
+		"wildwest_bgland_201.png":
+		{
+			"frame": {"x":440,"y":4043,"w":220,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":146},
+			"sourceSize": {"w":220,"h":146}
+		},
+		"wildwest_bgland_256.png":
+		{
+			"frame": {"x":660,"y":4043,"w":220,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":146},
+			"sourceSize": {"w":220,"h":146}
+		},
+		"wildwest_bgland_258.png":
+		{
+			"frame": {"x":880,"y":4043,"w":220,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":146},
+			"sourceSize": {"w":220,"h":146}
+		},
+		"wildwest_bgland_142.png":
+		{
+			"frame": {"x":1100,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_152.png":
+		{
+			"frame": {"x":1320,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_160.png":
+		{
+			"frame": {"x":1540,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_249.png":
+		{
+			"frame": {"x":1760,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_250.png":
+		{
+			"frame": {"x":1980,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_255.png":
+		{
+			"frame": {"x":2200,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_292.png":
+		{
+			"frame": {"x":2420,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_293.png":
+		{
+			"frame": {"x":2640,"y":4043,"w":220,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":145},
+			"sourceSize": {"w":220,"h":145}
+		},
+		"wildwest_bgland_253.png":
+		{
+			"frame": {"x":2860,"y":4043,"w":220,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":144},
+			"sourceSize": {"w":220,"h":144}
+		},
+		"wildwest_bgland_159.png":
+		{
+			"frame": {"x":3080,"y":4043,"w":220,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":143},
+			"sourceSize": {"w":220,"h":143}
+		},
+		"wildwest_bgland_203.png":
+		{
+			"frame": {"x":3300,"y":4043,"w":220,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":143},
+			"sourceSize": {"w":220,"h":143}
+		},
+		"wildwest_bgland_136.png":
+		{
+			"frame": {"x":3520,"y":4043,"w":220,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":142},
+			"sourceSize": {"w":220,"h":142}
+		},
+		"wildwest_bgland_139.png":
+		{
+			"frame": {"x":3740,"y":4043,"w":220,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":142},
+			"sourceSize": {"w":220,"h":142}
+		},
+		"wildwest_bgland_254.png":
+		{
+			"frame": {"x":3960,"y":4043,"w":220,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":142},
+			"sourceSize": {"w":220,"h":142}
+		},
+		"wildwest_bgland_163.png":
+		{
+			"frame": {"x":4180,"y":4043,"w":220,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":141},
+			"sourceSize": {"w":220,"h":141}
+		},
+		"wildwest_bgland_165.png":
+		{
+			"frame": {"x":0,"y":4190,"w":220,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":141},
+			"sourceSize": {"w":220,"h":141}
+		},
+		"wildwest_bgland_270.png":
+		{
+			"frame": {"x":220,"y":4190,"w":220,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":141},
+			"sourceSize": {"w":220,"h":141}
+		},
+		"wildwest_bgland_168.png":
+		{
+			"frame": {"x":440,"y":4190,"w":220,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":140},
+			"sourceSize": {"w":220,"h":140}
+		},
+		"wildwest_bgland_205.png":
+		{
+			"frame": {"x":660,"y":4190,"w":220,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":140},
+			"sourceSize": {"w":220,"h":140}
+		},
+		"wildwest_bgland_269.png":
+		{
+			"frame": {"x":880,"y":4190,"w":220,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":138},
+			"sourceSize": {"w":220,"h":138}
+		},
+		"wildwest_bgland_194.png":
+		{
+			"frame": {"x":1100,"y":4190,"w":220,"h":137},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":137},
+			"sourceSize": {"w":220,"h":137}
+		},
+		"wildwest_bgland_197.png":
+		{
+			"frame": {"x":1320,"y":4190,"w":220,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":136},
+			"sourceSize": {"w":220,"h":136}
+		},
+		"wildwest_bgland_246.png":
+		{
+			"frame": {"x":1540,"y":4190,"w":220,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":135},
+			"sourceSize": {"w":220,"h":135}
+		},
+		"wildwest_bgland_252.png":
+		{
+			"frame": {"x":1760,"y":4190,"w":220,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":135},
+			"sourceSize": {"w":220,"h":135}
+		},
+		"wildwest_bgland_271.png":
+		{
+			"frame": {"x":1980,"y":4190,"w":220,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":135},
+			"sourceSize": {"w":220,"h":135}
+		},
+		"wildwest_bgland_279.png":
+		{
+			"frame": {"x":2200,"y":4190,"w":220,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":135},
+			"sourceSize": {"w":220,"h":135}
+		},
+		"wildwest_bgland_281.png":
+		{
+			"frame": {"x":2420,"y":4190,"w":220,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":135},
+			"sourceSize": {"w":220,"h":135}
+		},
+		"wildwest_bgland_196.png":
+		{
+			"frame": {"x":2640,"y":4190,"w":220,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":134},
+			"sourceSize": {"w":220,"h":134}
+		},
+		"wildwest_bgland_251.png":
+		{
+			"frame": {"x":2860,"y":4190,"w":220,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":134},
+			"sourceSize": {"w":220,"h":134}
+		},
+		"wildwest_bgland_275.png":
+		{
+			"frame": {"x":3080,"y":4190,"w":220,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":134},
+			"sourceSize": {"w":220,"h":134}
+		},
+		"wildwest_bgland_277.png":
+		{
+			"frame": {"x":3300,"y":4190,"w":220,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":134},
+			"sourceSize": {"w":220,"h":134}
+		},
+		"wildwest_bgland_272.png":
+		{
+			"frame": {"x":3520,"y":4190,"w":220,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":220,"h":132},
+			"sourceSize": {"w":220,"h":132}
+		},
+		"wildwest_bgland_273.png":
+		{
+			"frame": {"x":4417,"y":0,"w":218,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":218,"h":134},
+			"sourceSize": {"w":218,"h":134}
+		},
+		"wildwest_bgland_133.png":
+		{
+			"frame": {"x":4417,"y":134,"w":215,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":215,"h":147},
+			"sourceSize": {"w":215,"h":147}
+		},
+		"wildwest_bgland_290.png":
+		{
+			"frame": {"x":4417,"y":281,"w":164,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":135},
+			"sourceSize": {"w":164,"h":135}
+		},
+		"wildwest_bgland_289.png":
+		{
+			"frame": {"x":4417,"y":416,"w":164,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":133},
+			"sourceSize": {"w":164,"h":133}
+		},
+		"wildwest_bgland_198.png":
+		{
+			"frame": {"x":4417,"y":549,"w":164,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":132},
+			"sourceSize": {"w":164,"h":132}
+		},
+		"wildwest_bgland_200.png":
+		{
+			"frame": {"x":4417,"y":681,"w":164,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":132},
+			"sourceSize": {"w":164,"h":132}
+		},
+		"wildwest_bgland_204.png":
+		{
+			"frame": {"x":4417,"y":813,"w":164,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":132},
+			"sourceSize": {"w":164,"h":132}
+		},
+		"wildwest_bgland_186.png":
+		{
+			"frame": {"x":4417,"y":945,"w":164,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":130},
+			"sourceSize": {"w":164,"h":130}
+		},
+		"wildwest_bgland_24.png":
+		{
+			"frame": {"x":4417,"y":1075,"w":164,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":130},
+			"sourceSize": {"w":164,"h":130}
+		},
+		"wildwest_bgland_287.png":
+		{
+			"frame": {"x":4417,"y":1205,"w":164,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":130},
+			"sourceSize": {"w":164,"h":130}
+		},
+		"wildwest_bgland_41.png":
+		{
+			"frame": {"x":4417,"y":1335,"w":164,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":130},
+			"sourceSize": {"w":164,"h":130}
+		},
+		"wildwest_bgland_44.png":
+		{
+			"frame": {"x":4417,"y":1465,"w":164,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":129},
+			"sourceSize": {"w":164,"h":129}
+		},
+		"wildwest_bgland_189.png":
+		{
+			"frame": {"x":4417,"y":1594,"w":164,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":127},
+			"sourceSize": {"w":164,"h":127}
+		},
+		"wildwest_bgland_21.png":
+		{
+			"frame": {"x":4417,"y":1721,"w":164,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":127},
+			"sourceSize": {"w":164,"h":127}
+		},
+		"wildwest_bgland_84.png":
+		{
+			"frame": {"x":4417,"y":1848,"w":164,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":127},
+			"sourceSize": {"w":164,"h":127}
+		},
+		"wildwest_bgland_18.png":
+		{
+			"frame": {"x":4417,"y":1975,"w":164,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":124},
+			"sourceSize": {"w":164,"h":124}
+		},
+		"wildwest_bgland_182.png":
+		{
+			"frame": {"x":4417,"y":2099,"w":164,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":124},
+			"sourceSize": {"w":164,"h":124}
+		},
+		"wildwest_bgland_62.png":
+		{
+			"frame": {"x":4417,"y":2223,"w":164,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":124},
+			"sourceSize": {"w":164,"h":124}
+		},
+		"wildwest_bgland_15.png":
+		{
+			"frame": {"x":4417,"y":2347,"w":164,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":121},
+			"sourceSize": {"w":164,"h":121}
+		},
+		"wildwest_bgland_60.png":
+		{
+			"frame": {"x":4417,"y":2468,"w":164,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":121},
+			"sourceSize": {"w":164,"h":121}
+		},
+		"wildwest_bgland_97.png":
+		{
+			"frame": {"x":4417,"y":2589,"w":164,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":121},
+			"sourceSize": {"w":164,"h":121}
+		},
+		"wildwest_bgland_30.png":
+		{
+			"frame": {"x":4417,"y":2710,"w":164,"h":118},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":118},
+			"sourceSize": {"w":164,"h":118}
+		},
+		"wildwest_bgland_68.png":
+		{
+			"frame": {"x":4417,"y":2828,"w":164,"h":118},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":118},
+			"sourceSize": {"w":164,"h":118}
+		},
+		"wildwest_bgland_94.png":
+		{
+			"frame": {"x":4417,"y":2946,"w":164,"h":118},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":118},
+			"sourceSize": {"w":164,"h":118}
+		},
+		"wildwest_bgland_102.png":
+		{
+			"frame": {"x":4417,"y":3064,"w":164,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":115},
+			"sourceSize": {"w":164,"h":115}
+		},
+		"wildwest_bgland_320.png":
+		{
+			"frame": {"x":4417,"y":3179,"w":164,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":115},
+			"sourceSize": {"w":164,"h":115}
+		},
+		"wildwest_bgland_65.png":
+		{
+			"frame": {"x":4417,"y":3294,"w":164,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":115},
+			"sourceSize": {"w":164,"h":115}
+		},
+		"wildwest_bgland_176.png":
+		{
+			"frame": {"x":4417,"y":3409,"w":164,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":113},
+			"sourceSize": {"w":164,"h":113}
+		},
+		"wildwest_bgland_195.png":
+		{
+			"frame": {"x":4417,"y":3522,"w":164,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":113},
+			"sourceSize": {"w":164,"h":113}
+		},
+		"wildwest_bgland_202.png":
+		{
+			"frame": {"x":4417,"y":3635,"w":164,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":113},
+			"sourceSize": {"w":164,"h":113}
+		},
+		"wildwest_bgland_47.png":
+		{
+			"frame": {"x":4417,"y":3748,"w":164,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":113},
+			"sourceSize": {"w":164,"h":113}
+		},
+		"wildwest_bgland_87.png":
+		{
+			"frame": {"x":4417,"y":3861,"w":164,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":113},
+			"sourceSize": {"w":164,"h":113}
+		},
+		"wildwest_bgland_90.png":
+		{
+			"frame": {"x":4417,"y":3974,"w":164,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":113},
+			"sourceSize": {"w":164,"h":113}
+		},
+		"wildwest_bgland_92.png":
+		{
+			"frame": {"x":4417,"y":4087,"w":164,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":113},
+			"sourceSize": {"w":164,"h":113}
+		},
+		"wildwest_bgland_100.png":
+		{
+			"frame": {"x":4417,"y":4200,"w":164,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":112},
+			"sourceSize": {"w":164,"h":112}
+		},
+		"wildwest_bgland_319.png":
+		{
+			"frame": {"x":1869,"y":1555,"w":164,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":112},
+			"sourceSize": {"w":164,"h":112}
+		},
+		"wildwest_bgland_50.png":
+		{
+			"frame": {"x":2033,"y":1555,"w":164,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":112},
+			"sourceSize": {"w":164,"h":112}
+		},
+		"wildwest_bgland_71.png":
+		{
+			"frame": {"x":3520,"y":3204,"w":164,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":112},
+			"sourceSize": {"w":164,"h":112}
+		},
+		"wildwest_bgland_291.png":
+		{
+			"frame": {"x":3520,"y":3316,"w":164,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":111},
+			"sourceSize": {"w":164,"h":111}
+		},
+		"wildwest_bgland_33.png":
+		{
+			"frame": {"x":3872,"y":3500,"w":164,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":111},
+			"sourceSize": {"w":164,"h":111}
+		},
+		"wildwest_bgland_110.png":
+		{
+			"frame": {"x":3872,"y":3611,"w":164,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":110},
+			"sourceSize": {"w":164,"h":110}
+		},
+		"wildwest_bgland_322.png":
+		{
+			"frame": {"x":3872,"y":3776,"w":164,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":109},
+			"sourceSize": {"w":164,"h":109}
+		},
+		"wildwest_bgland_323.png":
+		{
+			"frame": {"x":3872,"y":3885,"w":164,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":109},
+			"sourceSize": {"w":164,"h":109}
+		},
+		"wildwest_bgland_69.png":
+		{
+			"frame": {"x":3740,"y":4190,"w":164,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":109},
+			"sourceSize": {"w":164,"h":109}
+		},
+		"wildwest_bgland_108.png":
+		{
+			"frame": {"x":3904,"y":4190,"w":164,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":107},
+			"sourceSize": {"w":164,"h":107}
+		},
+		"wildwest_bgland_321.png":
+		{
+			"frame": {"x":4068,"y":4190,"w":164,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":106},
+			"sourceSize": {"w":164,"h":106}
+		},
+		"wildwest_bgland_172.png":
+		{
+			"frame": {"x":4232,"y":4190,"w":164,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":105},
+			"sourceSize": {"w":164,"h":105}
+		},
+		"wildwest_bgland_173.png":
+		{
+			"frame": {"x":0,"y":4331,"w":164,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":105},
+			"sourceSize": {"w":164,"h":105}
+		},
+		"wildwest_bgland_178.png":
+		{
+			"frame": {"x":164,"y":4331,"w":164,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":105},
+			"sourceSize": {"w":164,"h":105}
+		},
+		"wildwest_bgland_179.png":
+		{
+			"frame": {"x":328,"y":4331,"w":164,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":105},
+			"sourceSize": {"w":164,"h":105}
+		},
+		"wildwest_bgland_315.png":
+		{
+			"frame": {"x":492,"y":4331,"w":164,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":105},
+			"sourceSize": {"w":164,"h":105}
+		},
+		"wildwest_bgland_324.png":
+		{
+			"frame": {"x":656,"y":4331,"w":164,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":105},
+			"sourceSize": {"w":164,"h":105}
+		},
+		"wildwest_bgland_170.png":
+		{
+			"frame": {"x":820,"y":4331,"w":164,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":104},
+			"sourceSize": {"w":164,"h":104}
+		},
+		"wildwest_bgland_317.png":
+		{
+			"frame": {"x":984,"y":4331,"w":164,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":104},
+			"sourceSize": {"w":164,"h":104}
+		},
+		"wildwest_bgland_169.png":
+		{
+			"frame": {"x":1148,"y":4331,"w":164,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":103},
+			"sourceSize": {"w":164,"h":103}
+		},
+		"wildwest_bgland_316.png":
+		{
+			"frame": {"x":1312,"y":4331,"w":164,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":164,"h":101},
+			"sourceSize": {"w":164,"h":101}
+		},
+		"wildwest_bgland_57.png":
+		{
+			"frame": {"x":0,"y":4436,"w":160,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":144},
+			"sourceSize": {"w":160,"h":144}
+		},
+		"wildwest_bgland_126.png":
+		{
+			"frame": {"x":160,"y":4436,"w":160,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":143},
+			"sourceSize": {"w":160,"h":143}
+		},
+		"wildwest_bgland_125.png":
+		{
+			"frame": {"x":320,"y":4436,"w":160,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":142},
+			"sourceSize": {"w":160,"h":142}
+		},
+		"wildwest_bgland_40.png":
+		{
+			"frame": {"x":480,"y":4436,"w":160,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":142},
+			"sourceSize": {"w":160,"h":142}
+		},
+		"wildwest_bgland_338.png":
+		{
+			"frame": {"x":640,"y":4436,"w":160,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":141},
+			"sourceSize": {"w":160,"h":141}
+		},
+		"wildwest_bgland_54.png":
+		{
+			"frame": {"x":800,"y":4436,"w":160,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":141},
+			"sourceSize": {"w":160,"h":141}
+		},
+		"wildwest_bgland_337.png":
+		{
+			"frame": {"x":960,"y":4436,"w":160,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":140},
+			"sourceSize": {"w":160,"h":140}
+		},
+		"wildwest_bgland_43.png":
+		{
+			"frame": {"x":1120,"y":4436,"w":160,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":139},
+			"sourceSize": {"w":160,"h":139}
+		},
+		"wildwest_bgland_339.png":
+		{
+			"frame": {"x":1280,"y":4436,"w":160,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":138},
+			"sourceSize": {"w":160,"h":138}
+		},
+		"wildwest_bgland_55.png":
+		{
+			"frame": {"x":1440,"y":4436,"w":160,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":138},
+			"sourceSize": {"w":160,"h":138}
+		},
+		"wildwest_bgland_56.png":
+		{
+			"frame": {"x":1600,"y":4436,"w":160,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":138},
+			"sourceSize": {"w":160,"h":138}
+		},
+		"wildwest_bgland_8.png":
+		{
+			"frame": {"x":1760,"y":4436,"w":160,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":138},
+			"sourceSize": {"w":160,"h":138}
+		},
+		"wildwest_bgland_46.png":
+		{
+			"frame": {"x":1920,"y":4436,"w":160,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":136},
+			"sourceSize": {"w":160,"h":136}
+		},
+		"wildwest_bgland_327.png":
+		{
+			"frame": {"x":2080,"y":4436,"w":160,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":135},
+			"sourceSize": {"w":160,"h":135}
+		},
+		"wildwest_bgland_340.png":
+		{
+			"frame": {"x":2240,"y":4436,"w":160,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":135},
+			"sourceSize": {"w":160,"h":135}
+		},
+		"wildwest_bgland_11.png":
+		{
+			"frame": {"x":2400,"y":4436,"w":160,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":133},
+			"sourceSize": {"w":160,"h":133}
+		},
+		"wildwest_bgland_49.png":
+		{
+			"frame": {"x":2560,"y":4436,"w":160,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":133},
+			"sourceSize": {"w":160,"h":133}
+		},
+		"wildwest_bgland_328.png":
+		{
+			"frame": {"x":2720,"y":4436,"w":160,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":132},
+			"sourceSize": {"w":160,"h":132}
+		},
+		"wildwest_bgland_331.png":
+		{
+			"frame": {"x":2880,"y":4436,"w":160,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":132},
+			"sourceSize": {"w":160,"h":132}
+		},
+		"wildwest_bgland_20.png":
+		{
+			"frame": {"x":3040,"y":4436,"w":160,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":131},
+			"sourceSize": {"w":160,"h":131}
+		},
+		"wildwest_bgland_23.png":
+		{
+			"frame": {"x":3200,"y":4436,"w":160,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":131},
+			"sourceSize": {"w":160,"h":131}
+		},
+		"wildwest_bgland_7.png":
+		{
+			"frame": {"x":3360,"y":4436,"w":160,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":131},
+			"sourceSize": {"w":160,"h":131}
+		},
+		"wildwest_bgland_121.png":
+		{
+			"frame": {"x":3520,"y":4436,"w":160,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":130},
+			"sourceSize": {"w":160,"h":130}
+		},
+		"wildwest_bgland_122.png":
+		{
+			"frame": {"x":3680,"y":4436,"w":160,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":130},
+			"sourceSize": {"w":160,"h":130}
+		},
+		"wildwest_bgland_123.png":
+		{
+			"frame": {"x":3840,"y":4436,"w":160,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":130},
+			"sourceSize": {"w":160,"h":130}
+		},
+		"wildwest_bgland_124.png":
+		{
+			"frame": {"x":4000,"y":4436,"w":160,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":130},
+			"sourceSize": {"w":160,"h":130}
+		},
+		"wildwest_bgland_14.png":
+		{
+			"frame": {"x":4160,"y":4436,"w":160,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":130},
+			"sourceSize": {"w":160,"h":130}
+		},
+		"wildwest_bgland_326.png":
+		{
+			"frame": {"x":4320,"y":4436,"w":160,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":129},
+			"sourceSize": {"w":160,"h":129}
+		},
+		"wildwest_bgland_332.png":
+		{
+			"frame": {"x":4635,"y":0,"w":160,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":129},
+			"sourceSize": {"w":160,"h":129}
+		},
+		"wildwest_bgland_78.png":
+		{
+			"frame": {"x":4635,"y":129,"w":160,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":129},
+			"sourceSize": {"w":160,"h":129}
+		},
+		"wildwest_bgland_6.png":
+		{
+			"frame": {"x":4635,"y":258,"w":160,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":128},
+			"sourceSize": {"w":160,"h":128}
+		},
+		"wildwest_bgland_17.png":
+		{
+			"frame": {"x":4635,"y":386,"w":160,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":127},
+			"sourceSize": {"w":160,"h":127}
+		},
+		"wildwest_bgland_10.png":
+		{
+			"frame": {"x":4635,"y":513,"w":160,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":126},
+			"sourceSize": {"w":160,"h":126}
+		},
+		"wildwest_bgland_12.png":
+		{
+			"frame": {"x":4635,"y":639,"w":160,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":126},
+			"sourceSize": {"w":160,"h":126}
+		},
+		"wildwest_bgland_333.png":
+		{
+			"frame": {"x":4635,"y":765,"w":160,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":126},
+			"sourceSize": {"w":160,"h":126}
+		},
+		"wildwest_bgland_51.png":
+		{
+			"frame": {"x":4635,"y":891,"w":160,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":126},
+			"sourceSize": {"w":160,"h":126}
+		},
+		"wildwest_bgland_73.png":
+		{
+			"frame": {"x":4635,"y":1017,"w":160,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":126},
+			"sourceSize": {"w":160,"h":126}
+		},
+		"wildwest_bgland_9.png":
+		{
+			"frame": {"x":4635,"y":1143,"w":160,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":126},
+			"sourceSize": {"w":160,"h":126}
+		},
+		"wildwest_bgland_52.png":
+		{
+			"frame": {"x":4635,"y":1269,"w":160,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":125},
+			"sourceSize": {"w":160,"h":125}
+		},
+		"wildwest_bgland_334.png":
+		{
+			"frame": {"x":4635,"y":1394,"w":160,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":123},
+			"sourceSize": {"w":160,"h":123}
+		},
+		"wildwest_bgland_53.png":
+		{
+			"frame": {"x":4635,"y":1517,"w":160,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":123},
+			"sourceSize": {"w":160,"h":123}
+		},
+		"wildwest_bgland_75.png":
+		{
+			"frame": {"x":4635,"y":1640,"w":160,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":123},
+			"sourceSize": {"w":160,"h":123}
+		},
+		"wildwest_bgland_336.png":
+		{
+			"frame": {"x":4635,"y":1763,"w":160,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":121},
+			"sourceSize": {"w":160,"h":121}
+		},
+		"wildwest_bgland_148.png":
+		{
+			"frame": {"x":4635,"y":1884,"w":160,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":120},
+			"sourceSize": {"w":160,"h":120}
+		},
+		"wildwest_bgland_149.png":
+		{
+			"frame": {"x":4635,"y":2004,"w":160,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":120},
+			"sourceSize": {"w":160,"h":120}
+		},
+		"wildwest_bgland_335.png":
+		{
+			"frame": {"x":4635,"y":2124,"w":160,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":120},
+			"sourceSize": {"w":160,"h":120}
+		},
+		"wildwest_bgland_64.png":
+		{
+			"frame": {"x":4635,"y":2244,"w":160,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":120},
+			"sourceSize": {"w":160,"h":120}
+		},
+		"wildwest_bgland_67.png":
+		{
+			"frame": {"x":4635,"y":2364,"w":160,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":120},
+			"sourceSize": {"w":160,"h":120}
+		},
+		"wildwest_bgland_80.png":
+		{
+			"frame": {"x":4635,"y":2484,"w":160,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":120},
+			"sourceSize": {"w":160,"h":120}
+		},
+		"wildwest_bgland_83.png":
+		{
+			"frame": {"x":4635,"y":2604,"w":160,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":120},
+			"sourceSize": {"w":160,"h":120}
+		},
+		"wildwest_bgland_147.png":
+		{
+			"frame": {"x":4635,"y":2724,"w":160,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":119},
+			"sourceSize": {"w":160,"h":119}
+		},
+		"wildwest_bgland_150.png":
+		{
+			"frame": {"x":4635,"y":2843,"w":160,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":119},
+			"sourceSize": {"w":160,"h":119}
+		},
+		"wildwest_bgland_59.png":
+		{
+			"frame": {"x":4635,"y":2962,"w":160,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":119},
+			"sourceSize": {"w":160,"h":119}
+		},
+		"wildwest_bgland_79.png":
+		{
+			"frame": {"x":4635,"y":3081,"w":160,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":117},
+			"sourceSize": {"w":160,"h":117}
+		},
+		"wildwest_bgland_318.png":
+		{
+			"frame": {"x":4635,"y":3198,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"wildwest_bgland_206.png":
+		{
+			"frame": {"x":4701,"y":3198,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"wildwest_bgland_308.png":
+		{
+			"frame": {"x":4635,"y":3231,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

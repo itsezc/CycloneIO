@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas_c17_table_sheet.png",
+		"size": {"w":94,"h":75},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_table_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":50},
+			"sourceSize": {"w":47,"h":50}
+		},
+		"xmas_c17_table_6.png":
+		{
+			"frame": {"x":47,"y":0,"w":47,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":25},
+			"sourceSize": {"w":47,"h":25}
+		},
+		"xmas_c17_table_2.png":
+		{
+			"frame": {"x":47,"y":25,"w":47,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":19},
+			"sourceSize": {"w":47,"h":19}
+		},
+		"xmas_c17_table_5.png":
+		{
+			"frame": {"x":0,"y":50,"w":25,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":25},
+			"sourceSize": {"w":25,"h":25}
+		}
+	}
+}

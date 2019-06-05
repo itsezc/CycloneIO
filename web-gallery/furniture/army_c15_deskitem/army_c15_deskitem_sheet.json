@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "army_c15_deskitem_sheet.png",
+		"size": {"w":75,"h":59},
+		"scale": "1"
+	},
+	"frames": {
+		"army_c15_deskitem_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":25},
+			"sourceSize": {"w":50,"h":25}
+		},
+		"army_c15_deskitem_6.png":
+		{
+			"frame": {"x":0,"y":25,"w":29,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":34},
+			"sourceSize": {"w":29,"h":34}
+		},
+		"army_c15_deskitem_7.png":
+		{
+			"frame": {"x":50,"y":0,"w":25,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":34},
+			"sourceSize": {"w":25,"h":34}
+		},
+		"army_c15_deskitem_5.png":
+		{
+			"frame": {"x":50,"y":34,"w":25,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+			"sourceSize": {"w":25,"h":22}
+		}
+	}
+}

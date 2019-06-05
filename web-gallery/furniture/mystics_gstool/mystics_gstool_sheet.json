@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "mystics_gstool_sheet.png",
+		"size": {"w":86,"h":47},
+		"scale": "1"
+	},
+	"frames": {
+		"mystics_gstool_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":43,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":36},
+			"sourceSize": {"w":43,"h":36}
+		},
+		"mystics_gstool_2.png":
+		{
+			"frame": {"x":43,"y":0,"w":43,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":17},
+			"sourceSize": {"w":43,"h":17}
+		},
+		"mystics_gstool_1.png":
+		{
+			"frame": {"x":43,"y":17,"w":23,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":19},
+			"sourceSize": {"w":23,"h":19}
+		},
+		"mystics_gstool_4.png":
+		{
+			"frame": {"x":0,"y":36,"w":23,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":11},
+			"sourceSize": {"w":23,"h":11}
+		}
+	}
+}

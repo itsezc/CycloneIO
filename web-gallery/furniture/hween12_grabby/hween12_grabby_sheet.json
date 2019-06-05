@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "hween12_grabby_sheet.png",
+		"size": {"w":255,"h":230},
+		"scale": "1"
+	},
+	"frames": {
+		"hween12_grabby_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":180,"h":153},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":180,"h":153},
+			"sourceSize": {"w":180,"h":153}
+		},
+		"hween12_grabby_10.png":
+		{
+			"frame": {"x":180,"y":0,"w":75,"h":153},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":153},
+			"sourceSize": {"w":75,"h":153}
+		},
+		"hween12_grabby_3.png":
+		{
+			"frame": {"x":0,"y":153,"w":39,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":77},
+			"sourceSize": {"w":39,"h":77}
+		},
+		"hween12_grabby_7.png":
+		{
+			"frame": {"x":39,"y":153,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"hween12_grabby_1.png":
+		{
+			"frame": {"x":39,"y":186,"w":19,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":36},
+			"sourceSize": {"w":19,"h":36}
+		},
+		"hween12_grabby_2.png":
+		{
+			"frame": {"x":58,"y":186,"w":19,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":36},
+			"sourceSize": {"w":19,"h":36}
+		},
+		"hween12_grabby_9.png":
+		{
+			"frame": {"x":105,"y":153,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"hween12_grabby_4.png":
+		{
+			"frame": {"x":77,"y":186,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		},
+		"hween12_grabby_12.png":
+		{
+			"frame": {"x":100,"y":186,"w":10,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":18},
+			"sourceSize": {"w":10,"h":18}
+		},
+		"hween12_grabby_13.png":
+		{
+			"frame": {"x":110,"y":186,"w":10,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":18},
+			"sourceSize": {"w":10,"h":18}
+		}
+	}
+}

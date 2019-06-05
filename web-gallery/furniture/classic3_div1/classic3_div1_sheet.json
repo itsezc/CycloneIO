@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "classic3_div1_sheet.png",
+		"size": {"w":98,"h":76},
+		"scale": "1"
+	},
+	"frames": {
+		"classic3_div1_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":54},
+			"sourceSize": {"w":50,"h":54}
+		},
+		"classic3_div1_5.png":
+		{
+			"frame": {"x":50,"y":0,"w":48,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":53},
+			"sourceSize": {"w":48,"h":53}
+		},
+		"classic3_div1_6.png":
+		{
+			"frame": {"x":0,"y":54,"w":26,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":22},
+			"sourceSize": {"w":26,"h":22}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "theatre_spotlight_sheet.png",
+		"size": {"w":731,"h":456},
+		"scale": "1"
+	},
+	"frames": {
+		"theatre_spotlight_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":487,"h":456},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":487,"h":456},
+			"sourceSize": {"w":487,"h":456}
+		},
+		"theatre_spotlight_6.png":
+		{
+			"frame": {"x":487,"y":0,"w":244,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":244,"h":228},
+			"sourceSize": {"w":244,"h":228}
+		},
+		"theatre_spotlight_7.png":
+		{
+			"frame": {"x":487,"y":228,"w":26,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":17},
+			"sourceSize": {"w":26,"h":17}
+		},
+		"theatre_spotlight_2.png":
+		{
+			"frame": {"x":513,"y":228,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

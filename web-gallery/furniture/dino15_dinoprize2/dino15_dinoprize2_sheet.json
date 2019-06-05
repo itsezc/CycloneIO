@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "dino15_dinoprize2_sheet.png",
+		"size": {"w":69,"h":81},
+		"scale": "1"
+	},
+	"frames": {
+		"dino15_dinoprize2_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":81},
+			"sourceSize": {"w":50,"h":81}
+		},
+		"dino15_dinoprize2_1.png":
+		{
+			"frame": {"x":50,"y":0,"w":19,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":29},
+			"sourceSize": {"w":19,"h":29}
+		}
+	}
+}

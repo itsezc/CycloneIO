@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "coralking_c18_starfish1_sheet.png",
+		"size": {"w":80,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_c18_starfish1_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":30},
+			"sourceSize": {"w":40,"h":30}
+		},
+		"coralking_c18_starfish1_3.png":
+		{
+			"frame": {"x":40,"y":0,"w":40,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":28},
+			"sourceSize": {"w":40,"h":28}
+		},
+		"coralking_c18_starfish1_2.png":
+		{
+			"frame": {"x":0,"y":30,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		}
+	}
+}

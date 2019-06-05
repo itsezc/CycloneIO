@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "sandrug_sheet.png",
+		"size": {"w":321,"h":170},
+		"scale": "1"
+	},
+	"frames": {
+		"sandrug_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":193,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":193,"h":101},
+			"sourceSize": {"w":193,"h":101}
+		},
+		"sandrug_6.png":
+		{
+			"frame": {"x":0,"y":101,"w":128,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":69},
+			"sourceSize": {"w":128,"h":69}
+		},
+		"sandrug_9.png":
+		{
+			"frame": {"x":193,"y":0,"w":128,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":32},
+			"sourceSize": {"w":128,"h":32}
+		},
+		"sandrug_12.png":
+		{
+			"frame": {"x":193,"y":32,"w":65,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":35},
+			"sourceSize": {"w":65,"h":35}
+		},
+		"sandrug_2.png":
+		{
+			"frame": {"x":258,"y":32,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		},
+		"sandrug_1.png":
+		{
+			"frame": {"x":193,"y":67,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"sandrug_10.png":
+		{
+			"frame": {"x":288,"y":32,"w":16,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":12},
+			"sourceSize": {"w":16,"h":12}
+		},
+		"sandrug_14.png":
+		{
+			"frame": {"x":258,"y":48,"w":15,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":13},
+			"sourceSize": {"w":15,"h":13}
+		},
+		"sandrug_15.png":
+		{
+			"frame": {"x":304,"y":32,"w":15,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":12},
+			"sourceSize": {"w":15,"h":12}
+		},
+		"sandrug_5.png":
+		{
+			"frame": {"x":273,"y":48,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"sandrug_3.png":
+		{
+			"frame": {"x":284,"y":48,"w":8,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":6},
+			"sourceSize": {"w":8,"h":6}
+		},
+		"sandrug_4.png":
+		{
+			"frame": {"x":292,"y":48,"w":8,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":6},
+			"sourceSize": {"w":8,"h":6}
+		},
+		"sandrug_8.png":
+		{
+			"frame": {"x":300,"y":48,"w":7,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":6},
+			"sourceSize": {"w":7,"h":6}
+		}
+	}
+}

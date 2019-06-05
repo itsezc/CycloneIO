@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "carpet_valentine_sheet.png",
+		"size": {"w":574,"h":218},
+		"scale": "1"
+	},
+	"frames": {
+		"carpet_valentine_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":287,"h":218},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":287,"h":218},
+			"sourceSize": {"w":287,"h":218}
+		},
+		"carpet_valentine_8.png":
+		{
+			"frame": {"x":287,"y":0,"w":287,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":287,"h":145},
+			"sourceSize": {"w":287,"h":145}
+		},
+		"carpet_valentine_6.png":
+		{
+			"frame": {"x":287,"y":145,"w":144,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":144,"h":73},
+			"sourceSize": {"w":144,"h":73}
+		},
+		"carpet_valentine_7.png":
+		{
+			"frame": {"x":431,"y":145,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

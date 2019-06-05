@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_halter_sheet.png",
+		"size": {"w":37,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_halter_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":22},
+			"sourceSize": {"w":37,"h":22}
+		},
+		"clothing_halter_4.png":
+		{
+			"frame": {"x":0,"y":22,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		}
+	}
+}

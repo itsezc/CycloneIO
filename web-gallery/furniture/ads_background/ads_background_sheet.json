@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "ads_background_sheet.png",
+		"size": {"w":800,"h":480},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_background_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":480,"h":320},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":480,"h":320},
+			"sourceSize": {"w":480,"h":320}
+		},
+		"ads_background_4.png":
+		{
+			"frame": {"x":480,"y":0,"w":320,"h":320},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":320,"h":320},
+			"sourceSize": {"w":320,"h":320}
+		},
+		"ads_background_8.png":
+		{
+			"frame": {"x":0,"y":320,"w":160,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":160},
+			"sourceSize": {"w":160,"h":160}
+		},
+		"ads_background_5.png":
+		{
+			"frame": {"x":160,"y":320,"w":28,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":15},
+			"sourceSize": {"w":28,"h":15}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "room_thr15_block_sheet.png",
+		"size": {"w":88,"h":70},
+		"scale": "1"
+	},
+	"frames": {
+		"room_thr15_block_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":70},
+			"sourceSize": {"w":64,"h":70}
+		},
+		"room_thr15_block_4.png":
+		{
+			"frame": {"x":64,"y":0,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		}
+	}
+}

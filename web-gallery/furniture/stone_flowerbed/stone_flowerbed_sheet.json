@@ -1,0 +1,289 @@
+{
+	"meta": {
+		"image": "stone_flowerbed_sheet.png",
+		"size": {"w":318,"h":308},
+		"scale": "1"
+	},
+	"frames": {
+		"stone_flowerbed_38.png":
+		{
+			"frame": {"x":0,"y":0,"w":96,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":48},
+			"sourceSize": {"w":96,"h":48}
+		},
+		"stone_flowerbed_12.png":
+		{
+			"frame": {"x":0,"y":48,"w":66,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":63},
+			"sourceSize": {"w":66,"h":63}
+		},
+		"stone_flowerbed_20.png":
+		{
+			"frame": {"x":96,"y":0,"w":66,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":63},
+			"sourceSize": {"w":66,"h":63}
+		},
+		"stone_flowerbed_17.png":
+		{
+			"frame": {"x":0,"y":111,"w":65,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":49},
+			"sourceSize": {"w":65,"h":49}
+		},
+		"stone_flowerbed_21.png":
+		{
+			"frame": {"x":65,"y":111,"w":65,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":49},
+			"sourceSize": {"w":65,"h":49}
+		},
+		"stone_flowerbed_36.png":
+		{
+			"frame": {"x":96,"y":63,"w":65,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":41},
+			"sourceSize": {"w":65,"h":41}
+		},
+		"stone_flowerbed_8.png":
+		{
+			"frame": {"x":162,"y":0,"w":65,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":41},
+			"sourceSize": {"w":65,"h":41}
+		},
+		"stone_flowerbed_33.png":
+		{
+			"frame": {"x":162,"y":41,"w":62,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":64},
+			"sourceSize": {"w":62,"h":64}
+		},
+		"stone_flowerbed_7.png":
+		{
+			"frame": {"x":0,"y":160,"w":62,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":64},
+			"sourceSize": {"w":62,"h":64}
+		},
+		"stone_flowerbed_35.png":
+		{
+			"frame": {"x":162,"y":105,"w":63,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":44},
+			"sourceSize": {"w":63,"h":44}
+		},
+		"stone_flowerbed_6.png":
+		{
+			"frame": {"x":62,"y":160,"w":63,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":44},
+			"sourceSize": {"w":63,"h":44}
+		},
+		"stone_flowerbed_34.png":
+		{
+			"frame": {"x":125,"y":160,"w":60,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":38},
+			"sourceSize": {"w":60,"h":38}
+		},
+		"stone_flowerbed_5.png":
+		{
+			"frame": {"x":227,"y":0,"w":60,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":38},
+			"sourceSize": {"w":60,"h":38}
+		},
+		"stone_flowerbed_30.png":
+		{
+			"frame": {"x":227,"y":38,"w":48,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":24},
+			"sourceSize": {"w":48,"h":24}
+		},
+		"stone_flowerbed_11.png":
+		{
+			"frame": {"x":227,"y":62,"w":45,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":42},
+			"sourceSize": {"w":45,"h":42}
+		},
+		"stone_flowerbed_18.png":
+		{
+			"frame": {"x":227,"y":104,"w":45,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":42},
+			"sourceSize": {"w":45,"h":42}
+		},
+		"stone_flowerbed_19.png":
+		{
+			"frame": {"x":227,"y":146,"w":38,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":34},
+			"sourceSize": {"w":38,"h":34}
+		},
+		"stone_flowerbed_9.png":
+		{
+			"frame": {"x":227,"y":180,"w":38,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":34},
+			"sourceSize": {"w":38,"h":34}
+		},
+		"stone_flowerbed_28.png":
+		{
+			"frame": {"x":185,"y":160,"w":34,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":33},
+			"sourceSize": {"w":34,"h":33}
+		},
+		"stone_flowerbed_4.png":
+		{
+			"frame": {"x":0,"y":224,"w":34,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":33},
+			"sourceSize": {"w":34,"h":33}
+		},
+		"stone_flowerbed_2.png":
+		{
+			"frame": {"x":34,"y":224,"w":34,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":21},
+			"sourceSize": {"w":34,"h":21}
+		},
+		"stone_flowerbed_24.png":
+		{
+			"frame": {"x":0,"y":257,"w":33,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":26},
+			"sourceSize": {"w":33,"h":26}
+		},
+		"stone_flowerbed_29.png":
+		{
+			"frame": {"x":33,"y":257,"w":33,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":25},
+			"sourceSize": {"w":33,"h":25}
+		},
+		"stone_flowerbed_3.png":
+		{
+			"frame": {"x":66,"y":257,"w":33,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":22},
+			"sourceSize": {"w":33,"h":22}
+		},
+		"stone_flowerbed_15.png":
+		{
+			"frame": {"x":68,"y":224,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"stone_flowerbed_1.png":
+		{
+			"frame": {"x":62,"y":204,"w":33,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":19},
+			"sourceSize": {"w":33,"h":19}
+		},
+		"stone_flowerbed_23.png":
+		{
+			"frame": {"x":130,"y":111,"w":31,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":32},
+			"sourceSize": {"w":31,"h":32}
+		},
+		"stone_flowerbed_25.png":
+		{
+			"frame": {"x":287,"y":0,"w":31,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":32},
+			"sourceSize": {"w":31,"h":32}
+		},
+		"stone_flowerbed_40.png":
+		{
+			"frame": {"x":0,"y":283,"w":32,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":25},
+			"sourceSize": {"w":32,"h":25}
+		},
+		"stone_flowerbed_22.png":
+		{
+			"frame": {"x":99,"y":257,"w":32,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":22},
+			"sourceSize": {"w":32,"h":22}
+		},
+		"stone_flowerbed_14.png":
+		{
+			"frame": {"x":287,"y":32,"w":31,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":20},
+			"sourceSize": {"w":31,"h":20}
+		},
+		"stone_flowerbed_31.png":
+		{
+			"frame": {"x":287,"y":52,"w":23,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":20},
+			"sourceSize": {"w":23,"h":20}
+		},
+		"stone_flowerbed_39.png":
+		{
+			"frame": {"x":287,"y":72,"w":23,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":20},
+			"sourceSize": {"w":23,"h":20}
+		},
+		"stone_flowerbed_32.png":
+		{
+			"frame": {"x":287,"y":92,"w":21,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":17},
+			"sourceSize": {"w":21,"h":17}
+		},
+		"stone_flowerbed_37.png":
+		{
+			"frame": {"x":287,"y":109,"w":21,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":17},
+			"sourceSize": {"w":21,"h":17}
+		}
+	}
+}

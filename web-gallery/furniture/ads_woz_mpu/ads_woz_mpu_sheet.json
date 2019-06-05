@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "ads_woz_mpu_sheet.png",
+		"size": {"w":474,"h":365},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_woz_mpu_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":312,"h":365},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":312,"h":365},
+			"sourceSize": {"w":312,"h":365}
+		},
+		"ads_woz_mpu_5.png":
+		{
+			"frame": {"x":312,"y":0,"w":162,"h":194},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":162,"h":194},
+			"sourceSize": {"w":162,"h":194}
+		},
+		"ads_woz_mpu_7.png":
+		{
+			"frame": {"x":312,"y":194,"w":28,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":24},
+			"sourceSize": {"w":28,"h":24}
+		}
+	}
+}

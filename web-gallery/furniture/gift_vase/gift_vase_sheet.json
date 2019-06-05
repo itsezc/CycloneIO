@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "gift_vase_sheet.png",
+		"size": {"w":94,"h":90},
+		"scale": "1"
+	},
+	"frames": {
+		"gift_vase_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":64},
+			"sourceSize": {"w":70,"h":64}
+		},
+		"gift_vase_5.png":
+		{
+			"frame": {"x":70,"y":0,"w":24,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":42},
+			"sourceSize": {"w":24,"h":42}
+		},
+		"gift_vase_2.png":
+		{
+			"frame": {"x":0,"y":64,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		},
+		"gift_vase_6.png":
+		{
+			"frame": {"x":23,"y":64,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		},
+		"gift_vase_1.png":
+		{
+			"frame": {"x":70,"y":42,"w":14,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":22},
+			"sourceSize": {"w":14,"h":22}
+		},
+		"gift_vase_3.png":
+		{
+			"frame": {"x":46,"y":64,"w":19,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":10},
+			"sourceSize": {"w":19,"h":10}
+		},
+		"gift_vase_4.png":
+		{
+			"frame": {"x":46,"y":74,"w":14,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":14},
+			"sourceSize": {"w":14,"h":14}
+		},
+		"gift_vase_11.png":
+		{
+			"frame": {"x":84,"y":42,"w":10,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":5},
+			"sourceSize": {"w":10,"h":5}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "room_wl15_infolink_sheet.png",
+		"size": {"w":54,"h":38},
+		"scale": "1"
+	},
+	"frames": {
+		"room_wl15_infolink_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":28,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":23},
+			"sourceSize": {"w":28,"h":23}
+		},
+		"room_wl15_infolink_1.png":
+		{
+			"frame": {"x":28,"y":0,"w":26,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":15},
+			"sourceSize": {"w":26,"h":15}
+		},
+		"room_wl15_infolink_2.png":
+		{
+			"frame": {"x":0,"y":23,"w":26,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":15},
+			"sourceSize": {"w":26,"h":15}
+		}
+	}
+}

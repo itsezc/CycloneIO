@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "bolly_tile1_sheet.png",
+		"size": {"w":260,"h":101},
+		"scale": "1"
+	},
+	"frames": {
+		"bolly_tile1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":101},
+			"sourceSize": {"w":130,"h":101}
+		},
+		"bolly_tile1_3.png":
+		{
+			"frame": {"x":130,"y":0,"w":130,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":67},
+			"sourceSize": {"w":130,"h":67}
+		},
+		"bolly_tile1_2.png":
+		{
+			"frame": {"x":130,"y":67,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bolly_tile1_7.png":
+		{
+			"frame": {"x":196,"y":67,"w":31,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":15},
+			"sourceSize": {"w":31,"h":15}
+		}
+	}
+}

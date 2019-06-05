@@ -1,0 +1,121 @@
+{
+	"meta": {
+		"image": "exe_chair2_sheet.png",
+		"size": {"w":289,"h":282},
+		"scale": "1"
+	},
+	"frames": {
+		"exe_chair2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":215,"h":180},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":215,"h":180},
+			"sourceSize": {"w":215,"h":180}
+		},
+		"exe_chair2_17.png":
+		{
+			"frame": {"x":215,"y":0,"w":74,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":81},
+			"sourceSize": {"w":74,"h":81}
+		},
+		"exe_chair2_8.png":
+		{
+			"frame": {"x":215,"y":81,"w":74,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":72},
+			"sourceSize": {"w":74,"h":72}
+		},
+		"exe_chair2_4.png":
+		{
+			"frame": {"x":0,"y":180,"w":67,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":72},
+			"sourceSize": {"w":67,"h":72}
+		},
+		"exe_chair2_9.png":
+		{
+			"frame": {"x":67,"y":180,"w":50,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":28},
+			"sourceSize": {"w":50,"h":28}
+		},
+		"exe_chair2_11.png":
+		{
+			"frame": {"x":215,"y":153,"w":48,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":27},
+			"sourceSize": {"w":48,"h":27}
+		},
+		"exe_chair2_5.png":
+		{
+			"frame": {"x":67,"y":208,"w":37,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":41},
+			"sourceSize": {"w":37,"h":41}
+		},
+		"exe_chair2_15.png":
+		{
+			"frame": {"x":104,"y":208,"w":37,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":36},
+			"sourceSize": {"w":37,"h":36}
+		},
+		"exe_chair2_1.png":
+		{
+			"frame": {"x":141,"y":208,"w":35,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":36},
+			"sourceSize": {"w":35,"h":36}
+		},
+		"exe_chair2_13.png":
+		{
+			"frame": {"x":176,"y":208,"w":36,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":29},
+			"sourceSize": {"w":36,"h":29}
+		},
+		"exe_chair2_18.png":
+		{
+			"frame": {"x":0,"y":252,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"exe_chair2_14.png":
+		{
+			"frame": {"x":263,"y":153,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		},
+		"exe_chair2_6.png":
+		{
+			"frame": {"x":263,"y":167,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		},
+		"exe_chair2_10.png":
+		{
+			"frame": {"x":117,"y":180,"w":18,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":15},
+			"sourceSize": {"w":18,"h":15}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_tiedtop_sheet.png",
+		"size": {"w":76,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_tiedtop_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_tiedtop_8.png":
+		{
+			"frame": {"x":38,"y":0,"w":38,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":20},
+			"sourceSize": {"w":38,"h":20}
+		},
+		"clothing_tiedtop_1.png":
+		{
+			"frame": {"x":0,"y":24,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "room_info15_statue1_sheet.png",
+		"size": {"w":50,"h":59},
+		"scale": "1"
+	},
+	"frames": {
+		"room_info15_statue1_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":59},
+			"sourceSize": {"w":38,"h":59}
+		},
+		"room_info15_statue1_6.png":
+		{
+			"frame": {"x":38,"y":0,"w":12,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":17},
+			"sourceSize": {"w":12,"h":17}
+		}
+	}
+}

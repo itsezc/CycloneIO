@@ -1,0 +1,321 @@
+{
+	"meta": {
+		"image": "paris15_pigeon_sheet.png",
+		"size": {"w":168,"h":155},
+		"scale": "1"
+	},
+	"frames": {
+		"paris15_pigeon_27.png":
+		{
+			"frame": {"x":0,"y":0,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		},
+		"paris15_pigeon_13.png":
+		{
+			"frame": {"x":0,"y":22,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"paris15_pigeon_14.png":
+		{
+			"frame": {"x":30,"y":0,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"paris15_pigeon_29.png":
+		{
+			"frame": {"x":51,"y":0,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"paris15_pigeon_31.png":
+		{
+			"frame": {"x":72,"y":0,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"paris15_pigeon_19.png":
+		{
+			"frame": {"x":0,"y":51,"w":23,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":27},
+			"sourceSize": {"w":23,"h":27}
+		},
+		"paris15_pigeon_23.png":
+		{
+			"frame": {"x":23,"y":51,"w":23,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":27},
+			"sourceSize": {"w":23,"h":27}
+		},
+		"paris15_pigeon_40.png":
+		{
+			"frame": {"x":46,"y":51,"w":23,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":27},
+			"sourceSize": {"w":23,"h":27}
+		},
+		"paris15_pigeon_7.png":
+		{
+			"frame": {"x":69,"y":51,"w":23,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":27},
+			"sourceSize": {"w":23,"h":27}
+		},
+		"paris15_pigeon_20.png":
+		{
+			"frame": {"x":93,"y":0,"w":22,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":27},
+			"sourceSize": {"w":22,"h":27}
+		},
+		"paris15_pigeon_25.png":
+		{
+			"frame": {"x":93,"y":27,"w":22,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":27},
+			"sourceSize": {"w":22,"h":27}
+		},
+		"paris15_pigeon_3.png":
+		{
+			"frame": {"x":0,"y":78,"w":22,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":27},
+			"sourceSize": {"w":22,"h":27}
+		},
+		"paris15_pigeon_39.png":
+		{
+			"frame": {"x":22,"y":78,"w":22,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":27},
+			"sourceSize": {"w":22,"h":27}
+		},
+		"paris15_pigeon_16.png":
+		{
+			"frame": {"x":44,"y":78,"w":21,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":27},
+			"sourceSize": {"w":21,"h":27}
+		},
+		"paris15_pigeon_30.png":
+		{
+			"frame": {"x":65,"y":78,"w":21,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":27},
+			"sourceSize": {"w":21,"h":27}
+		},
+		"paris15_pigeon_32.png":
+		{
+			"frame": {"x":86,"y":78,"w":21,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":27},
+			"sourceSize": {"w":21,"h":27}
+		},
+		"paris15_pigeon_9.png":
+		{
+			"frame": {"x":115,"y":0,"w":21,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":27},
+			"sourceSize": {"w":21,"h":27}
+		},
+		"paris15_pigeon_10.png":
+		{
+			"frame": {"x":115,"y":27,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_11.png":
+		{
+			"frame": {"x":115,"y":54,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_12.png":
+		{
+			"frame": {"x":0,"y":105,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_15.png":
+		{
+			"frame": {"x":20,"y":105,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_22.png":
+		{
+			"frame": {"x":40,"y":105,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_34.png":
+		{
+			"frame": {"x":60,"y":105,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_35.png":
+		{
+			"frame": {"x":80,"y":105,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_36.png":
+		{
+			"frame": {"x":100,"y":105,"w":20,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":27},
+			"sourceSize": {"w":20,"h":27}
+		},
+		"paris15_pigeon_2.png":
+		{
+			"frame": {"x":136,"y":0,"w":18,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":27},
+			"sourceSize": {"w":18,"h":27}
+		},
+		"paris15_pigeon_33.png":
+		{
+			"frame": {"x":136,"y":27,"w":18,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":27},
+			"sourceSize": {"w":18,"h":27}
+		},
+		"paris15_pigeon_38.png":
+		{
+			"frame": {"x":136,"y":54,"w":18,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":27},
+			"sourceSize": {"w":18,"h":27}
+		},
+		"paris15_pigeon_5.png":
+		{
+			"frame": {"x":136,"y":81,"w":18,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":27},
+			"sourceSize": {"w":18,"h":27}
+		},
+		"paris15_pigeon_1.png":
+		{
+			"frame": {"x":120,"y":105,"w":14,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":26},
+			"sourceSize": {"w":14,"h":26}
+		},
+		"paris15_pigeon_37.png":
+		{
+			"frame": {"x":154,"y":0,"w":14,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":26},
+			"sourceSize": {"w":14,"h":26}
+		},
+		"paris15_pigeon_17.png":
+		{
+			"frame": {"x":93,"y":54,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"paris15_pigeon_21.png":
+		{
+			"frame": {"x":0,"y":132,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"paris15_pigeon_43.png":
+		{
+			"frame": {"x":22,"y":132,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"paris15_pigeon_8.png":
+		{
+			"frame": {"x":44,"y":132,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"paris15_pigeon_18.png":
+		{
+			"frame": {"x":115,"y":81,"w":21,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":23},
+			"sourceSize": {"w":21,"h":23}
+		},
+		"paris15_pigeon_24.png":
+		{
+			"frame": {"x":66,"y":132,"w":21,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":23},
+			"sourceSize": {"w":21,"h":23}
+		},
+		"paris15_pigeon_42.png":
+		{
+			"frame": {"x":87,"y":132,"w":21,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":23},
+			"sourceSize": {"w":21,"h":23}
+		},
+		"paris15_pigeon_6.png":
+		{
+			"frame": {"x":108,"y":132,"w":21,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":23},
+			"sourceSize": {"w":21,"h":23}
+		}
+	}
+}

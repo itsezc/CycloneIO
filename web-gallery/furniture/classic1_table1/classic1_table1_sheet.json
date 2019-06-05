@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "classic1_table1_sheet.png",
+		"size": {"w":116,"h":56},
+		"scale": "1"
+	},
+	"frames": {
+		"classic1_table1_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":56},
+			"sourceSize": {"w":58,"h":56}
+		},
+		"classic1_table1_6.png":
+		{
+			"frame": {"x":58,"y":0,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"classic1_table1_7.png":
+		{
+			"frame": {"x":58,"y":29,"w":26,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":27},
+			"sourceSize": {"w":26,"h":27}
+		}
+	}
+}

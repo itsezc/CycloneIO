@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r19_longwavy2_sheet.png",
+		"size": {"w":68,"h":50},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r19_longwavy2_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":50},
+			"sourceSize": {"w":38,"h":50}
+		},
+		"clothing_r19_longwavy2_2.png":
+		{
+			"frame": {"x":38,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

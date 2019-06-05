@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "ktchn_c15_bread_sheet.png",
+		"size": {"w":121,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"ktchn_c15_bread_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":47},
+			"sourceSize": {"w":47,"h":47}
+		},
+		"ktchn_c15_bread_7.png":
+		{
+			"frame": {"x":47,"y":0,"w":47,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":47},
+			"sourceSize": {"w":47,"h":47}
+		},
+		"ktchn_c15_bread_8.png":
+		{
+			"frame": {"x":0,"y":47,"w":47,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":47},
+			"sourceSize": {"w":47,"h":47}
+		},
+		"ktchn_c15_bread_9.png":
+		{
+			"frame": {"x":47,"y":47,"w":47,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":47},
+			"sourceSize": {"w":47,"h":47}
+		},
+		"ktchn_c15_bread_6.png":
+		{
+			"frame": {"x":94,"y":0,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		}
+	}
+}

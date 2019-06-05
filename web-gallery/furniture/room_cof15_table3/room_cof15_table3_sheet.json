@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "room_cof15_table3_sheet.png",
+		"size": {"w":118,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"room_cof15_table3_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":51},
+			"sourceSize": {"w":62,"h":51}
+		},
+		"room_cof15_table3_6.png":
+		{
+			"frame": {"x":62,"y":0,"w":56,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":29},
+			"sourceSize": {"w":56,"h":29}
+		},
+		"room_cof15_table3_4.png":
+		{
+			"frame": {"x":62,"y":29,"w":26,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":21},
+			"sourceSize": {"w":26,"h":21}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "ads_cmusic_sheet.png",
+		"size": {"w":480,"h":405},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_cmusic_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":358,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":358,"h":270},
+			"sourceSize": {"w":358,"h":270}
+		},
+		"ads_cmusic_14.png":
+		{
+			"frame": {"x":358,"y":0,"w":122,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":135},
+			"sourceSize": {"w":122,"h":135}
+		},
+		"ads_cmusic_7.png":
+		{
+			"frame": {"x":358,"y":135,"w":122,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":135},
+			"sourceSize": {"w":122,"h":135}
+		},
+		"ads_cmusic_12.png":
+		{
+			"frame": {"x":0,"y":270,"w":114,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":135},
+			"sourceSize": {"w":114,"h":135}
+		},
+		"ads_cmusic_6.png":
+		{
+			"frame": {"x":114,"y":270,"w":114,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":135},
+			"sourceSize": {"w":114,"h":135}
+		},
+		"ads_cmusic_11.png":
+		{
+			"frame": {"x":228,"y":270,"w":60,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":68},
+			"sourceSize": {"w":60,"h":68}
+		},
+		"ads_cmusic_2.png":
+		{
+			"frame": {"x":288,"y":270,"w":60,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":68},
+			"sourceSize": {"w":60,"h":68}
+		},
+		"ads_cmusic_3.png":
+		{
+			"frame": {"x":348,"y":270,"w":57,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":67},
+			"sourceSize": {"w":57,"h":67}
+		},
+		"ads_cmusic_5.png":
+		{
+			"frame": {"x":405,"y":270,"w":57,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":67},
+			"sourceSize": {"w":57,"h":67}
+		},
+		"ads_cmusic_13.png":
+		{
+			"frame": {"x":228,"y":338,"w":28,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":31},
+			"sourceSize": {"w":28,"h":31}
+		}
+	}
+}

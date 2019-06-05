@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_ombrehr_sheet.png",
+		"size": {"w":69,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_ombrehr_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":45},
+			"sourceSize": {"w":39,"h":45}
+		},
+		"clothing_ombrehr_1.png":
+		{
+			"frame": {"x":39,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_ombrehr_5.png":
+		{
+			"frame": {"x":39,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "ads_mtvtrophy_gold_sheet.png",
+		"size": {"w":706,"h":236},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_mtvtrophy_gold_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":353,"h":236},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":353,"h":236},
+			"sourceSize": {"w":353,"h":236}
+		},
+		"ads_mtvtrophy_gold_8.png":
+		{
+			"frame": {"x":353,"y":0,"w":353,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":353,"h":160},
+			"sourceSize": {"w":353,"h":160}
+		},
+		"ads_mtvtrophy_gold_7.png":
+		{
+			"frame": {"x":353,"y":160,"w":45,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":76},
+			"sourceSize": {"w":45,"h":76}
+		},
+		"ads_mtvtrophy_gold_12.png":
+		{
+			"frame": {"x":398,"y":160,"w":40,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":73},
+			"sourceSize": {"w":40,"h":73}
+		},
+		"ads_mtvtrophy_gold_6.png":
+		{
+			"frame": {"x":438,"y":160,"w":21,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":40},
+			"sourceSize": {"w":21,"h":40}
+		},
+		"ads_mtvtrophy_gold_10.png":
+		{
+			"frame": {"x":459,"y":160,"w":21,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":37},
+			"sourceSize": {"w":21,"h":37}
+		},
+		"ads_mtvtrophy_gold_5.png":
+		{
+			"frame": {"x":480,"y":160,"w":31,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":10},
+			"sourceSize": {"w":31,"h":10}
+		},
+		"ads_mtvtrophy_gold_4.png":
+		{
+			"frame": {"x":480,"y":170,"w":21,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":19},
+			"sourceSize": {"w":21,"h":19}
+		},
+		"ads_mtvtrophy_gold_13.png":
+		{
+			"frame": {"x":511,"y":160,"w":14,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":4},
+			"sourceSize": {"w":14,"h":4}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "external_image_wallitem_sheet.png",
+		"size": {"w":150,"h":101},
+		"scale": "1"
+	},
+	"frames": {
+		"external_image_wallitem_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":75,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":101},
+			"sourceSize": {"w":75,"h":101}
+		},
+		"external_image_wallitem_2.png":
+		{
+			"frame": {"x":75,"y":0,"w":50,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":101},
+			"sourceSize": {"w":50,"h":101}
+		},
+		"external_image_wallitem_1.png":
+		{
+			"frame": {"x":125,"y":0,"w":25,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":51},
+			"sourceSize": {"w":25,"h":51}
+		},
+		"external_image_wallitem_3.png":
+		{
+			"frame": {"x":125,"y":51,"w":25,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":16},
+			"sourceSize": {"w":25,"h":16}
+		}
+	}
+}

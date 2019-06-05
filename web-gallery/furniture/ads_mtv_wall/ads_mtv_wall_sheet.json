@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "ads_mtv_wall_sheet.png",
+		"size": {"w":620,"h":509},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_mtv_wall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":413,"h":365},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":413,"h":365},
+			"sourceSize": {"w":413,"h":365}
+		},
+		"ads_mtv_wall_12.png":
+		{
+			"frame": {"x":413,"y":0,"w":138,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":138,"h":149},
+			"sourceSize": {"w":138,"h":149}
+		},
+		"ads_mtv_wall_13.png":
+		{
+			"frame": {"x":413,"y":149,"w":138,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":138,"h":149},
+			"sourceSize": {"w":138,"h":149}
+		},
+		"ads_mtv_wall_2.png":
+		{
+			"frame": {"x":0,"y":365,"w":137,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":137,"h":144},
+			"sourceSize": {"w":137,"h":144}
+		},
+		"ads_mtv_wall_3.png":
+		{
+			"frame": {"x":137,"y":365,"w":137,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":137,"h":144},
+			"sourceSize": {"w":137,"h":144}
+		},
+		"ads_mtv_wall_14.png":
+		{
+			"frame": {"x":274,"y":365,"w":70,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":75},
+			"sourceSize": {"w":70,"h":75}
+		},
+		"ads_mtv_wall_6.png":
+		{
+			"frame": {"x":344,"y":365,"w":70,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":75},
+			"sourceSize": {"w":70,"h":75}
+		},
+		"ads_mtv_wall_10.png":
+		{
+			"frame": {"x":414,"y":365,"w":69,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":72},
+			"sourceSize": {"w":69,"h":72}
+		},
+		"ads_mtv_wall_9.png":
+		{
+			"frame": {"x":551,"y":0,"w":69,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":72},
+			"sourceSize": {"w":69,"h":72}
+		},
+		"ads_mtv_wall_7.png":
+		{
+			"frame": {"x":551,"y":72,"w":28,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":32},
+			"sourceSize": {"w":28,"h":32}
+		}
+	}
+}

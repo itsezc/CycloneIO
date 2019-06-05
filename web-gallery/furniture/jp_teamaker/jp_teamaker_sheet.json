@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "jp_teamaker_sheet.png",
+		"size": {"w":320,"h":306},
+		"scale": "1"
+	},
+	"frames": {
+		"jp_teamaker_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":249,"h":204},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":249,"h":204},
+			"sourceSize": {"w":249,"h":204}
+		},
+		"jp_teamaker_14.png":
+		{
+			"frame": {"x":249,"y":0,"w":71,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":102},
+			"sourceSize": {"w":71,"h":102}
+		},
+		"jp_teamaker_16.png":
+		{
+			"frame": {"x":249,"y":102,"w":71,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":102},
+			"sourceSize": {"w":71,"h":102}
+		},
+		"jp_teamaker_2.png":
+		{
+			"frame": {"x":0,"y":204,"w":71,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":102},
+			"sourceSize": {"w":71,"h":102}
+		},
+		"jp_teamaker_3.png":
+		{
+			"frame": {"x":71,"y":204,"w":71,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":102},
+			"sourceSize": {"w":71,"h":102}
+		},
+		"jp_teamaker_10.png":
+		{
+			"frame": {"x":142,"y":204,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"jp_teamaker_5.png":
+		{
+			"frame": {"x":142,"y":237,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"jp_teamaker_6.png":
+		{
+			"frame": {"x":178,"y":237,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"jp_teamaker_8.png":
+		{
+			"frame": {"x":214,"y":237,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"jp_teamaker_9.png":
+		{
+			"frame": {"x":250,"y":237,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"jp_teamaker_4.png":
+		{
+			"frame": {"x":208,"y":204,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"jp_teamaker_1.png":
+		{
+			"frame": {"x":286,"y":237,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "bazaar_c17_ruggreenpurpletrim_sheet.png",
+		"size": {"w":160,"h":110},
+		"scale": "1"
+	},
+	"frames": {
+		"bazaar_c17_ruggreenpurpletrim_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":160,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":83},
+			"sourceSize": {"w":160,"h":83}
+		},
+		"bazaar_c17_ruggreenpurpletrim_3.png":
+		{
+			"frame": {"x":0,"y":83,"w":19,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":27},
+			"sourceSize": {"w":19,"h":27}
+		}
+	}
+}

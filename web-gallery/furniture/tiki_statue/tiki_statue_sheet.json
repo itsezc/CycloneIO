@@ -1,0 +1,225 @@
+{
+	"meta": {
+		"image": "tiki_statue_sheet.png",
+		"size": {"w":559,"h":530},
+		"scale": "1"
+	},
+	"frames": {
+		"tiki_statue_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":389,"h":344},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":389,"h":344},
+			"sourceSize": {"w":389,"h":344}
+		},
+		"tiki_statue_14.png":
+		{
+			"frame": {"x":389,"y":0,"w":85,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":135},
+			"sourceSize": {"w":85,"h":135}
+		},
+		"tiki_statue_16.png":
+		{
+			"frame": {"x":389,"y":135,"w":85,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":135},
+			"sourceSize": {"w":85,"h":135}
+		},
+		"tiki_statue_18.png":
+		{
+			"frame": {"x":474,"y":0,"w":85,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":135},
+			"sourceSize": {"w":85,"h":135}
+		},
+		"tiki_statue_20.png":
+		{
+			"frame": {"x":474,"y":135,"w":85,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":135},
+			"sourceSize": {"w":85,"h":135}
+		},
+		"tiki_statue_22.png":
+		{
+			"frame": {"x":0,"y":344,"w":85,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":135},
+			"sourceSize": {"w":85,"h":135}
+		},
+		"tiki_statue_29.png":
+		{
+			"frame": {"x":85,"y":344,"w":52,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":104},
+			"sourceSize": {"w":52,"h":104}
+		},
+		"tiki_statue_25.png":
+		{
+			"frame": {"x":137,"y":344,"w":46,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":104},
+			"sourceSize": {"w":46,"h":104}
+		},
+		"tiki_statue_30.png":
+		{
+			"frame": {"x":183,"y":344,"w":50,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":101},
+			"sourceSize": {"w":50,"h":101}
+		},
+		"tiki_statue_3.png":
+		{
+			"frame": {"x":233,"y":344,"w":50,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":100},
+			"sourceSize": {"w":50,"h":100}
+		},
+		"tiki_statue_26.png":
+		{
+			"frame": {"x":283,"y":344,"w":47,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":99},
+			"sourceSize": {"w":47,"h":99}
+		},
+		"tiki_statue_31.png":
+		{
+			"frame": {"x":330,"y":344,"w":49,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":98},
+			"sourceSize": {"w":49,"h":98}
+		},
+		"tiki_statue_13.png":
+		{
+			"frame": {"x":474,"y":270,"w":50,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":74},
+			"sourceSize": {"w":50,"h":74}
+		},
+		"tiki_statue_15.png":
+		{
+			"frame": {"x":389,"y":270,"w":50,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":74},
+			"sourceSize": {"w":50,"h":74}
+		},
+		"tiki_statue_17.png":
+		{
+			"frame": {"x":379,"y":344,"w":50,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":74},
+			"sourceSize": {"w":50,"h":74}
+		},
+		"tiki_statue_19.png":
+		{
+			"frame": {"x":429,"y":344,"w":50,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":74},
+			"sourceSize": {"w":50,"h":74}
+		},
+		"tiki_statue_21.png":
+		{
+			"frame": {"x":479,"y":344,"w":50,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":74},
+			"sourceSize": {"w":50,"h":74}
+		},
+		"tiki_statue_5.png":
+		{
+			"frame": {"x":524,"y":270,"w":25,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":54},
+			"sourceSize": {"w":25,"h":54}
+		},
+		"tiki_statue_10.png":
+		{
+			"frame": {"x":439,"y":270,"w":27,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":53},
+			"sourceSize": {"w":27,"h":53}
+		},
+		"tiki_statue_11.png":
+		{
+			"frame": {"x":529,"y":344,"w":26,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":52},
+			"sourceSize": {"w":26,"h":52}
+		},
+		"tiki_statue_1.png":
+		{
+			"frame": {"x":0,"y":479,"w":27,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":51},
+			"sourceSize": {"w":27,"h":51}
+		},
+		"tiki_statue_6.png":
+		{
+			"frame": {"x":27,"y":479,"w":25,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":51},
+			"sourceSize": {"w":25,"h":51}
+		},
+		"tiki_statue_8.png":
+		{
+			"frame": {"x":52,"y":479,"w":26,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":49},
+			"sourceSize": {"w":26,"h":49}
+		},
+		"tiki_statue_24.png":
+		{
+			"frame": {"x":379,"y":418,"w":44,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":22},
+			"sourceSize": {"w":44,"h":22}
+		},
+		"tiki_statue_23.png":
+		{
+			"frame": {"x":78,"y":479,"w":18,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":32},
+			"sourceSize": {"w":18,"h":32}
+		},
+		"tiki_statue_12.png":
+		{
+			"frame": {"x":524,"y":324,"w":23,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":10},
+			"sourceSize": {"w":23,"h":10}
+		},
+		"tiki_statue_9.png":
+		{
+			"frame": {"x":549,"y":270,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

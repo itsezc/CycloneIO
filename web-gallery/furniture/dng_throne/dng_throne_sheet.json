@@ -1,0 +1,161 @@
+{
+	"meta": {
+		"image": "dng_throne_sheet.png",
+		"size": {"w":419,"h":341},
+		"scale": "1"
+	},
+	"frames": {
+		"dng_throne_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":287,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":287,"h":227},
+			"sourceSize": {"w":287,"h":227}
+		},
+		"dng_throne_10.png":
+		{
+			"frame": {"x":287,"y":0,"w":132,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":227},
+			"sourceSize": {"w":132,"h":227}
+		},
+		"dng_throne_18.png":
+		{
+			"frame": {"x":0,"y":227,"w":65,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":114},
+			"sourceSize": {"w":65,"h":114}
+		},
+		"dng_throne_17.png":
+		{
+			"frame": {"x":65,"y":227,"w":90,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":90,"h":42},
+			"sourceSize": {"w":90,"h":42}
+		},
+		"dng_throne_14.png":
+		{
+			"frame": {"x":65,"y":269,"w":42,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":61},
+			"sourceSize": {"w":42,"h":61}
+		},
+		"dng_throne_1.png":
+		{
+			"frame": {"x":155,"y":227,"w":44,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":22},
+			"sourceSize": {"w":44,"h":22}
+		},
+		"dng_throne_3.png":
+		{
+			"frame": {"x":107,"y":269,"w":23,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+			"sourceSize": {"w":23,"h":33}
+		},
+		"dng_throne_4.png":
+		{
+			"frame": {"x":130,"y":269,"w":24,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+			"sourceSize": {"w":24,"h":32}
+		},
+		"dng_throne_6.png":
+		{
+			"frame": {"x":154,"y":269,"w":31,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":24},
+			"sourceSize": {"w":31,"h":24}
+		},
+		"dng_throne_9.png":
+		{
+			"frame": {"x":185,"y":269,"w":31,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":24},
+			"sourceSize": {"w":31,"h":24}
+		},
+		"dng_throne_8.png":
+		{
+			"frame": {"x":199,"y":227,"w":29,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":22},
+			"sourceSize": {"w":29,"h":22}
+		},
+		"dng_throne_13.png":
+		{
+			"frame": {"x":228,"y":227,"w":27,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":20},
+			"sourceSize": {"w":27,"h":20}
+		},
+		"dng_throne_15.png":
+		{
+			"frame": {"x":255,"y":227,"w":18,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":14},
+			"sourceSize": {"w":18,"h":14}
+		},
+		"dng_throne_16.png":
+		{
+			"frame": {"x":273,"y":227,"w":18,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":14},
+			"sourceSize": {"w":18,"h":14}
+		},
+		"dng_throne_23.png":
+		{
+			"frame": {"x":291,"y":227,"w":18,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":13},
+			"sourceSize": {"w":18,"h":13}
+		},
+		"dng_throne_20.png":
+		{
+			"frame": {"x":309,"y":227,"w":17,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":13},
+			"sourceSize": {"w":17,"h":13}
+		},
+		"dng_throne_21.png":
+		{
+			"frame": {"x":326,"y":227,"w":17,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":13},
+			"sourceSize": {"w":17,"h":13}
+		},
+		"dng_throne_11.png":
+		{
+			"frame": {"x":343,"y":227,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"dng_throne_12.png":
+		{
+			"frame": {"x":350,"y":227,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

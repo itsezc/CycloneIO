@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "gaming_c18_rigpro_sheet.png",
+		"size": {"w":193,"h":131},
+		"scale": "1"
+	},
+	"frames": {
+		"gaming_c18_rigpro_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":126,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":65},
+			"sourceSize": {"w":126,"h":65}
+		},
+		"gaming_c18_rigpro_4.png":
+		{
+			"frame": {"x":126,"y":0,"w":67,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":63},
+			"sourceSize": {"w":67,"h":63}
+		},
+		"gaming_c18_rigpro_5.png":
+		{
+			"frame": {"x":0,"y":65,"w":61,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":66},
+			"sourceSize": {"w":61,"h":66}
+		},
+		"gaming_c18_rigpro_7.png":
+		{
+			"frame": {"x":61,"y":65,"w":58,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":52},
+			"sourceSize": {"w":58,"h":52}
+		},
+		"gaming_c18_rigpro_9.png":
+		{
+			"frame": {"x":119,"y":65,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		}
+	}
+}

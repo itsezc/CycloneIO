@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "garden_smallpot_sheet.png",
+		"size": {"w":79,"h":56},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_smallpot_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":31},
+			"sourceSize": {"w":37,"h":31}
+		},
+		"garden_smallpot_11.png":
+		{
+			"frame": {"x":37,"y":0,"w":22,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":26},
+			"sourceSize": {"w":22,"h":26}
+		},
+		"garden_smallpot_6.png":
+		{
+			"frame": {"x":0,"y":31,"w":25,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":25},
+			"sourceSize": {"w":25,"h":25}
+		},
+		"garden_smallpot_10.png":
+		{
+			"frame": {"x":25,"y":31,"w":22,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":24},
+			"sourceSize": {"w":22,"h":24}
+		},
+		"garden_smallpot_12.png":
+		{
+			"frame": {"x":59,"y":0,"w":20,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":11},
+			"sourceSize": {"w":20,"h":11}
+		},
+		"garden_smallpot_4.png":
+		{
+			"frame": {"x":59,"y":11,"w":15,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":17},
+			"sourceSize": {"w":15,"h":17}
+		},
+		"garden_smallpot_3.png":
+		{
+			"frame": {"x":59,"y":28,"w":13,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+			"sourceSize": {"w":13,"h":11}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "hc16_8_sheet.png",
+		"size": {"w":204,"h":171},
+		"scale": "1"
+	},
+	"frames": {
+		"hc16_8_16.png":
+		{
+			"frame": {"x":0,"y":0,"w":14,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":128},
+			"sourceSize": {"w":14,"h":128}
+		},
+		"hc16_8_10.png":
+		{
+			"frame": {"x":14,"y":0,"w":95,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":51},
+			"sourceSize": {"w":95,"h":51}
+		},
+		"hc16_8_2.png":
+		{
+			"frame": {"x":14,"y":51,"w":95,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":51},
+			"sourceSize": {"w":95,"h":51}
+		},
+		"hc16_8_3.png":
+		{
+			"frame": {"x":109,"y":0,"w":95,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":50},
+			"sourceSize": {"w":95,"h":50}
+		},
+		"hc16_8_5.png":
+		{
+			"frame": {"x":109,"y":50,"w":95,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":50},
+			"sourceSize": {"w":95,"h":50}
+		},
+		"hc16_8_12.png":
+		{
+			"frame": {"x":0,"y":128,"w":14,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":43},
+			"sourceSize": {"w":14,"h":43}
+		},
+		"hc16_8_13.png":
+		{
+			"frame": {"x":14,"y":128,"w":14,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":43},
+			"sourceSize": {"w":14,"h":43}
+		},
+		"hc16_8_14.png":
+		{
+			"frame": {"x":28,"y":128,"w":14,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":43},
+			"sourceSize": {"w":14,"h":43}
+		},
+		"hc16_8_11.png":
+		{
+			"frame": {"x":42,"y":128,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"hc16_8_15.png":
+		{
+			"frame": {"x":109,"y":100,"w":24,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":19},
+			"sourceSize": {"w":24,"h":19}
+		},
+		"hc16_8_9.png":
+		{
+			"frame": {"x":133,"y":100,"w":22,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":11},
+			"sourceSize": {"w":22,"h":11}
+		}
+	}
+}

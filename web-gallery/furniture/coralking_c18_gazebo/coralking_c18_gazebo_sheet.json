@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "coralking_c18_gazebo_sheet.png",
+		"size": {"w":359,"h":219},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_c18_gazebo_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":219},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":219},
+			"sourceSize": {"w":66,"h":219}
+		},
+		"coralking_c18_gazebo_9.png":
+		{
+			"frame": {"x":66,"y":0,"w":143,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":143,"h":183},
+			"sourceSize": {"w":143,"h":183}
+		},
+		"coralking_c18_gazebo_5.png":
+		{
+			"frame": {"x":209,"y":0,"w":150,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":150,"h":49},
+			"sourceSize": {"w":150,"h":49}
+		},
+		"coralking_c18_gazebo_2.png":
+		{
+			"frame": {"x":209,"y":49,"w":138,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":138,"h":70},
+			"sourceSize": {"w":138,"h":70}
+		},
+		"coralking_c18_gazebo_8.png":
+		{
+			"frame": {"x":209,"y":119,"w":66,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":50},
+			"sourceSize": {"w":66,"h":50}
+		},
+		"coralking_c18_gazebo_4.png":
+		{
+			"frame": {"x":275,"y":119,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		},
+		"coralking_c18_gazebo_7.png":
+		{
+			"frame": {"x":347,"y":49,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

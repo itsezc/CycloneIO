@@ -1,0 +1,177 @@
+{
+	"meta": {
+		"image": "classic7_drinkdispenser_sheet.png",
+		"size": {"w":118,"h":110},
+		"scale": "1"
+	},
+	"frames": {
+		"classic7_drinkdispenser_26.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":67},
+			"sourceSize": {"w":40,"h":67}
+		},
+		"classic7_drinkdispenser_1.png":
+		{
+			"frame": {"x":40,"y":0,"w":40,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":65},
+			"sourceSize": {"w":40,"h":65}
+		},
+		"classic7_drinkdispenser_7.png":
+		{
+			"frame": {"x":80,"y":0,"w":38,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":19},
+			"sourceSize": {"w":38,"h":19}
+		},
+		"classic7_drinkdispenser_2.png":
+		{
+			"frame": {"x":80,"y":19,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"classic7_drinkdispenser_12.png":
+		{
+			"frame": {"x":0,"y":67,"w":19,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+			"sourceSize": {"w":19,"h":23}
+		},
+		"classic7_drinkdispenser_19.png":
+		{
+			"frame": {"x":19,"y":67,"w":19,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+			"sourceSize": {"w":19,"h":23}
+		},
+		"classic7_drinkdispenser_20.png":
+		{
+			"frame": {"x":38,"y":67,"w":19,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+			"sourceSize": {"w":19,"h":23}
+		},
+		"classic7_drinkdispenser_23.png":
+		{
+			"frame": {"x":57,"y":67,"w":19,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+			"sourceSize": {"w":19,"h":23}
+		},
+		"classic7_drinkdispenser_4.png":
+		{
+			"frame": {"x":76,"y":67,"w":19,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+			"sourceSize": {"w":19,"h":23}
+		},
+		"classic7_drinkdispenser_5.png":
+		{
+			"frame": {"x":95,"y":67,"w":19,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+			"sourceSize": {"w":19,"h":23}
+		},
+		"classic7_drinkdispenser_17.png":
+		{
+			"frame": {"x":0,"y":90,"w":19,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":20},
+			"sourceSize": {"w":19,"h":20}
+		},
+		"classic7_drinkdispenser_8.png":
+		{
+			"frame": {"x":19,"y":90,"w":19,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":20},
+			"sourceSize": {"w":19,"h":20}
+		},
+		"classic7_drinkdispenser_13.png":
+		{
+			"frame": {"x":100,"y":19,"w":18,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":20},
+			"sourceSize": {"w":18,"h":20}
+		},
+		"classic7_drinkdispenser_22.png":
+		{
+			"frame": {"x":38,"y":90,"w":18,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":20},
+			"sourceSize": {"w":18,"h":20}
+		},
+		"classic7_drinkdispenser_18.png":
+		{
+			"frame": {"x":80,"y":49,"w":19,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":16},
+			"sourceSize": {"w":19,"h":16}
+		},
+		"classic7_drinkdispenser_6.png":
+		{
+			"frame": {"x":99,"y":49,"w":19,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":16},
+			"sourceSize": {"w":19,"h":16}
+		},
+		"classic7_drinkdispenser_25.png":
+		{
+			"frame": {"x":56,"y":90,"w":18,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":13},
+			"sourceSize": {"w":18,"h":13}
+		},
+		"classic7_drinkdispenser_9.png":
+		{
+			"frame": {"x":74,"y":90,"w":18,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":13},
+			"sourceSize": {"w":18,"h":13}
+		},
+		"classic7_drinkdispenser_11.png":
+		{
+			"frame": {"x":100,"y":39,"w":18,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":10},
+			"sourceSize": {"w":18,"h":10}
+		},
+		"classic7_drinkdispenser_24.png":
+		{
+			"frame": {"x":92,"y":90,"w":18,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":10},
+			"sourceSize": {"w":18,"h":10}
+		},
+		"classic7_drinkdispenser_14.png":
+		{
+			"frame": {"x":80,"y":65,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

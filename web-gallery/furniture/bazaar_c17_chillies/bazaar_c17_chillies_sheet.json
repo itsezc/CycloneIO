@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "bazaar_c17_chillies_sheet.png",
+		"size": {"w":54,"h":112},
+		"scale": "1"
+	},
+	"frames": {
+		"bazaar_c17_chillies_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":23,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":112},
+			"sourceSize": {"w":23,"h":112}
+		},
+		"bazaar_c17_chillies_7.png":
+		{
+			"frame": {"x":23,"y":0,"w":11,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":30},
+			"sourceSize": {"w":11,"h":30}
+		},
+		"bazaar_c17_chillies_2.png":
+		{
+			"frame": {"x":34,"y":0,"w":20,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":10},
+			"sourceSize": {"w":20,"h":10}
+		}
+	}
+}

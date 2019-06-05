@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_pjbottoms1_sheet.png",
+		"size": {"w":64,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_pjbottoms1_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":23},
+			"sourceSize": {"w":32,"h":23}
+		},
+		"clothing_pjbottoms1_7.png":
+		{
+			"frame": {"x":32,"y":0,"w":32,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":20},
+			"sourceSize": {"w":32,"h":20}
+		},
+		"clothing_pjbottoms1_1.png":
+		{
+			"frame": {"x":0,"y":23,"w":25,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":28},
+			"sourceSize": {"w":25,"h":28}
+		}
+	}
+}

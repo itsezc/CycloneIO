@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "room_noob_table1_sheet.png",
+		"size": {"w":118,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"room_noob_table1_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":60,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":87},
+			"sourceSize": {"w":60,"h":87}
+		},
+		"room_noob_table1_3.png":
+		{
+			"frame": {"x":60,"y":0,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"room_noob_table1_8.png":
+		{
+			"frame": {"x":60,"y":29,"w":30,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":45},
+			"sourceSize": {"w":30,"h":45}
+		},
+		"room_noob_table1_1.png":
+		{
+			"frame": {"x":0,"y":87,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"room_noob_table1_4.png":
+		{
+			"frame": {"x":90,"y":29,"w":28,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":13},
+			"sourceSize": {"w":28,"h":13}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r19_fox_sheet.png",
+		"size": {"w":81,"h":109},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r19_fox_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":54,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":109},
+			"sourceSize": {"w":54,"h":109}
+		},
+		"clothing_r19_fox_6.png":
+		{
+			"frame": {"x":54,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

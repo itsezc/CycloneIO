@@ -1,0 +1,185 @@
+{
+	"meta": {
+		"image": "penguin_punk_sheet.png",
+		"size": {"w":268,"h":229},
+		"scale": "1"
+	},
+	"frames": {
+		"penguin_punk_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":177,"h":164},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":177,"h":164},
+			"sourceSize": {"w":177,"h":164}
+		},
+		"penguin_punk_24.png":
+		{
+			"frame": {"x":177,"y":0,"w":41,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":65},
+			"sourceSize": {"w":41,"h":65}
+		},
+		"penguin_punk_21.png":
+		{
+			"frame": {"x":177,"y":65,"w":39,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":65},
+			"sourceSize": {"w":39,"h":65}
+		},
+		"penguin_punk_2.png":
+		{
+			"frame": {"x":218,"y":0,"w":33,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":65},
+			"sourceSize": {"w":33,"h":65}
+		},
+		"penguin_punk_15.png":
+		{
+			"frame": {"x":218,"y":65,"w":32,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":65},
+			"sourceSize": {"w":32,"h":65}
+		},
+		"penguin_punk_16.png":
+		{
+			"frame": {"x":0,"y":164,"w":32,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":65},
+			"sourceSize": {"w":32,"h":65}
+		},
+		"penguin_punk_18.png":
+		{
+			"frame": {"x":32,"y":164,"w":32,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":65},
+			"sourceSize": {"w":32,"h":65}
+		},
+		"penguin_punk_17.png":
+		{
+			"frame": {"x":64,"y":164,"w":32,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":63},
+			"sourceSize": {"w":32,"h":63}
+		},
+		"penguin_punk_19.png":
+		{
+			"frame": {"x":96,"y":164,"w":32,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":63},
+			"sourceSize": {"w":32,"h":63}
+		},
+		"penguin_punk_20.png":
+		{
+			"frame": {"x":128,"y":164,"w":32,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":61},
+			"sourceSize": {"w":32,"h":61}
+		},
+		"penguin_punk_10.png":
+		{
+			"frame": {"x":218,"y":130,"w":22,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":34},
+			"sourceSize": {"w":22,"h":34}
+		},
+		"penguin_punk_11.png":
+		{
+			"frame": {"x":177,"y":130,"w":22,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":34},
+			"sourceSize": {"w":22,"h":34}
+		},
+		"penguin_punk_1.png":
+		{
+			"frame": {"x":199,"y":130,"w":17,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+			"sourceSize": {"w":17,"h":34}
+		},
+		"penguin_punk_14.png":
+		{
+			"frame": {"x":160,"y":164,"w":17,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+			"sourceSize": {"w":17,"h":34}
+		},
+		"penguin_punk_5.png":
+		{
+			"frame": {"x":177,"y":164,"w":17,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+			"sourceSize": {"w":17,"h":34}
+		},
+		"penguin_punk_8.png":
+		{
+			"frame": {"x":194,"y":164,"w":17,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+			"sourceSize": {"w":17,"h":34}
+		},
+		"penguin_punk_6.png":
+		{
+			"frame": {"x":211,"y":164,"w":17,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":33},
+			"sourceSize": {"w":17,"h":33}
+		},
+		"penguin_punk_9.png":
+		{
+			"frame": {"x":228,"y":164,"w":17,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":33},
+			"sourceSize": {"w":17,"h":33}
+		},
+		"penguin_punk_12.png":
+		{
+			"frame": {"x":251,"y":0,"w":17,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":32},
+			"sourceSize": {"w":17,"h":32}
+		},
+		"penguin_punk_25.png":
+		{
+			"frame": {"x":251,"y":32,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"penguin_punk_3.png":
+		{
+			"frame": {"x":160,"y":198,"w":29,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":16},
+			"sourceSize": {"w":29,"h":16}
+		},
+		"penguin_punk_22.png":
+		{
+			"frame": {"x":251,"y":62,"w":16,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":8},
+			"sourceSize": {"w":16,"h":8}
+		}
+	}
+}

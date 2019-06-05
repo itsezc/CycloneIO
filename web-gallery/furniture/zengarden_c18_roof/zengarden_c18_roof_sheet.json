@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "zengarden_c18_roof_sheet.png",
+		"size": {"w":240,"h":156},
+		"scale": "1"
+	},
+	"frames": {
+		"zengarden_c18_roof_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":97,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":41},
+			"sourceSize": {"w":97,"h":41}
+		},
+		"zengarden_c18_roof_6.png":
+		{
+			"frame": {"x":0,"y":41,"w":88,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":44},
+			"sourceSize": {"w":88,"h":44}
+		},
+		"zengarden_c18_roof_8.png":
+		{
+			"frame": {"x":97,"y":0,"w":88,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":44},
+			"sourceSize": {"w":88,"h":44}
+		},
+		"zengarden_c18_roof_7.png":
+		{
+			"frame": {"x":97,"y":44,"w":63,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":25},
+			"sourceSize": {"w":63,"h":25}
+		},
+		"zengarden_c18_roof_10.png":
+		{
+			"frame": {"x":0,"y":85,"w":63,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":24},
+			"sourceSize": {"w":63,"h":24}
+		},
+		"zengarden_c18_roof_14.png":
+		{
+			"frame": {"x":0,"y":109,"w":60,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":47},
+			"sourceSize": {"w":60,"h":47}
+		},
+		"zengarden_c18_roof_3.png":
+		{
+			"frame": {"x":60,"y":109,"w":59,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":46},
+			"sourceSize": {"w":59,"h":46}
+		},
+		"zengarden_c18_roof_16.png":
+		{
+			"frame": {"x":119,"y":109,"w":58,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":46},
+			"sourceSize": {"w":58,"h":46}
+		},
+		"zengarden_c18_roof_2.png":
+		{
+			"frame": {"x":63,"y":85,"w":56,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":24},
+			"sourceSize": {"w":56,"h":24}
+		},
+		"zengarden_c18_roof_11.png":
+		{
+			"frame": {"x":185,"y":0,"w":55,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":44},
+			"sourceSize": {"w":55,"h":44}
+		},
+		"zengarden_c18_roof_5.png":
+		{
+			"frame": {"x":185,"y":44,"w":24,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+			"sourceSize": {"w":24,"h":21}
+		}
+	}
+}

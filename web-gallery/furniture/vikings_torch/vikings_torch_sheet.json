@@ -1,0 +1,249 @@
+{
+	"meta": {
+		"image": "vikings_torch_sheet.png",
+		"size": {"w":205,"h":176},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_torch_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":68},
+			"sourceSize": {"w":34,"h":68}
+		},
+		"vikings_torch_31.png":
+		{
+			"frame": {"x":34,"y":0,"w":46,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":57},
+			"sourceSize": {"w":46,"h":57}
+		},
+		"vikings_torch_30.png":
+		{
+			"frame": {"x":80,"y":0,"w":45,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":51},
+			"sourceSize": {"w":45,"h":51}
+		},
+		"vikings_torch_32.png":
+		{
+			"frame": {"x":0,"y":68,"w":43,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":49},
+			"sourceSize": {"w":43,"h":49}
+		},
+		"vikings_torch_18.png":
+		{
+			"frame": {"x":43,"y":68,"w":26,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":46},
+			"sourceSize": {"w":26,"h":46}
+		},
+		"vikings_torch_27.png":
+		{
+			"frame": {"x":69,"y":68,"w":44,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":45},
+			"sourceSize": {"w":44,"h":45}
+		},
+		"vikings_torch_29.png":
+		{
+			"frame": {"x":125,"y":0,"w":45,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":39},
+			"sourceSize": {"w":45,"h":39}
+		},
+		"vikings_torch_28.png":
+		{
+			"frame": {"x":125,"y":39,"w":44,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":44},
+			"sourceSize": {"w":44,"h":44}
+		},
+		"vikings_torch_17.png":
+		{
+			"frame": {"x":0,"y":117,"w":25,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":40},
+			"sourceSize": {"w":25,"h":40}
+		},
+		"vikings_torch_19.png":
+		{
+			"frame": {"x":25,"y":117,"w":24,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":38},
+			"sourceSize": {"w":24,"h":38}
+		},
+		"vikings_torch_33.png":
+		{
+			"frame": {"x":49,"y":117,"w":18,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":35},
+			"sourceSize": {"w":18,"h":35}
+		},
+		"vikings_torch_14.png":
+		{
+			"frame": {"x":125,"y":83,"w":24,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":34},
+			"sourceSize": {"w":24,"h":34}
+		},
+		"vikings_torch_15.png":
+		{
+			"frame": {"x":67,"y":117,"w":30,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":33},
+			"sourceSize": {"w":30,"h":33}
+		},
+		"vikings_torch_16.png":
+		{
+			"frame": {"x":97,"y":117,"w":31,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":28},
+			"sourceSize": {"w":31,"h":28}
+		},
+		"vikings_torch_11.png":
+		{
+			"frame": {"x":149,"y":83,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		},
+		"vikings_torch_24.png":
+		{
+			"frame": {"x":170,"y":0,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		},
+		"vikings_torch_13.png":
+		{
+			"frame": {"x":80,"y":51,"w":29,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":13},
+			"sourceSize": {"w":29,"h":13}
+		},
+		"vikings_torch_23.png":
+		{
+			"frame": {"x":170,"y":29,"w":22,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":26},
+			"sourceSize": {"w":22,"h":26}
+		},
+		"vikings_torch_25.png":
+		{
+			"frame": {"x":170,"y":55,"w":21,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":25},
+			"sourceSize": {"w":21,"h":25}
+		},
+		"vikings_torch_7.png":
+		{
+			"frame": {"x":170,"y":80,"w":13,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":24},
+			"sourceSize": {"w":13,"h":24}
+		},
+		"vikings_torch_20.png":
+		{
+			"frame": {"x":170,"y":104,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"vikings_torch_21.png":
+		{
+			"frame": {"x":170,"y":127,"w":22,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":22},
+			"sourceSize": {"w":22,"h":22}
+		},
+		"vikings_torch_22.png":
+		{
+			"frame": {"x":128,"y":117,"w":22,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":20},
+			"sourceSize": {"w":22,"h":20}
+		},
+		"vikings_torch_4.png":
+		{
+			"frame": {"x":150,"y":117,"w":14,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":20},
+			"sourceSize": {"w":14,"h":20}
+		},
+		"vikings_torch_6.png":
+		{
+			"frame": {"x":0,"y":157,"w":13,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":19},
+			"sourceSize": {"w":13,"h":19}
+		},
+		"vikings_torch_9.png":
+		{
+			"frame": {"x":13,"y":157,"w":16,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":17},
+			"sourceSize": {"w":16,"h":17}
+		},
+		"vikings_torch_5.png":
+		{
+			"frame": {"x":29,"y":157,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"vikings_torch_12.png":
+		{
+			"frame": {"x":192,"y":0,"w":13,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":17},
+			"sourceSize": {"w":13,"h":17}
+		},
+		"vikings_torch_1.png":
+		{
+			"frame": {"x":170,"y":149,"w":14,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":7},
+			"sourceSize": {"w":14,"h":7}
+		},
+		"vikings_torch_8.png":
+		{
+			"frame": {"x":192,"y":17,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

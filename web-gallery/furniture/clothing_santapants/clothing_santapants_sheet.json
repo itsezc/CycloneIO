@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_santapants_sheet.png",
+		"size": {"w":33,"h":50},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_santapants_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":33,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":22},
+			"sourceSize": {"w":33,"h":22}
+		},
+		"clothing_santapants_1.png":
+		{
+			"frame": {"x":0,"y":22,"w":26,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":28},
+			"sourceSize": {"w":26,"h":28}
+		},
+		"clothing_santapants_4.png":
+		{
+			"frame": {"x":26,"y":22,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

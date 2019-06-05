@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "valentinescreen_sheet.png",
+		"size": {"w":266,"h":211},
+		"scale": "1"
+	},
+	"frames": {
+		"valentinescreen_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":183,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":183,"h":175},
+			"sourceSize": {"w":183,"h":175}
+		},
+		"valentinescreen_15.png":
+		{
+			"frame": {"x":183,"y":0,"w":53,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":126},
+			"sourceSize": {"w":53,"h":126}
+		},
+		"valentinescreen_10.png":
+		{
+			"frame": {"x":0,"y":175,"w":100,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":36},
+			"sourceSize": {"w":100,"h":36}
+		},
+		"valentinescreen_1.png":
+		{
+			"frame": {"x":236,"y":0,"w":30,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":99},
+			"sourceSize": {"w":30,"h":99}
+		},
+		"valentinescreen_12.png":
+		{
+			"frame": {"x":236,"y":99,"w":27,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":63},
+			"sourceSize": {"w":27,"h":63}
+		},
+		"valentinescreen_13.png":
+		{
+			"frame": {"x":183,"y":126,"w":49,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":18},
+			"sourceSize": {"w":49,"h":18}
+		},
+		"valentinescreen_9.png":
+		{
+			"frame": {"x":236,"y":162,"w":15,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":49},
+			"sourceSize": {"w":15,"h":49}
+		},
+		"valentinescreen_3.png":
+		{
+			"frame": {"x":183,"y":144,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"valentinescreen_2.png":
+		{
+			"frame": {"x":251,"y":162,"w":8,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":18},
+			"sourceSize": {"w":8,"h":18}
+		},
+		"valentinescreen_6.png":
+		{
+			"frame": {"x":259,"y":162,"w":4,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":10},
+			"sourceSize": {"w":4,"h":10}
+		},
+		"valentinescreen_4.png":
+		{
+			"frame": {"x":251,"y":180,"w":4,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":9},
+			"sourceSize": {"w":4,"h":9}
+		}
+	}
+}

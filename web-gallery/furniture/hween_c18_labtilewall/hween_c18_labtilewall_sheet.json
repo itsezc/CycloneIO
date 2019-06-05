@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hween_c18_labtilewall_sheet.png",
+		"size": {"w":263,"h":207},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c18_labtilewall_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":175},
+			"sourceSize": {"w":66,"h":175}
+		},
+		"hween_c18_labtilewall_8.png":
+		{
+			"frame": {"x":66,"y":0,"w":66,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":175},
+			"sourceSize": {"w":66,"h":175}
+		},
+		"hween_c18_labtilewall_9.png":
+		{
+			"frame": {"x":132,"y":0,"w":66,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":175},
+			"sourceSize": {"w":66,"h":175}
+		},
+		"hween_c18_labtilewall_3.png":
+		{
+			"frame": {"x":198,"y":0,"w":65,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":175},
+			"sourceSize": {"w":65,"h":175}
+		},
+		"hween_c18_labtilewall_5.png":
+		{
+			"frame": {"x":0,"y":175,"w":22,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":32},
+			"sourceSize": {"w":22,"h":32}
+		}
+	}
+}

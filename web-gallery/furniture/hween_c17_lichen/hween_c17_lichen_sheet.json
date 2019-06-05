@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hween_c17_lichen_sheet.png",
+		"size": {"w":129,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c17_lichen_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":27},
+			"sourceSize": {"w":50,"h":27}
+		},
+		"hween_c17_lichen_10.png":
+		{
+			"frame": {"x":50,"y":0,"w":49,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":27},
+			"sourceSize": {"w":49,"h":27}
+		},
+		"hween_c17_lichen_8.png":
+		{
+			"frame": {"x":0,"y":27,"w":40,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":22},
+			"sourceSize": {"w":40,"h":22}
+		},
+		"hween_c17_lichen_9.png":
+		{
+			"frame": {"x":0,"y":49,"w":33,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":23},
+			"sourceSize": {"w":33,"h":23}
+		},
+		"hween_c17_lichen_1.png":
+		{
+			"frame": {"x":99,"y":0,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

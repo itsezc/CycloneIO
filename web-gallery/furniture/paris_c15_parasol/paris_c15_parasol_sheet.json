@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "paris_c15_parasol_sheet.png",
+		"size": {"w":185,"h":183},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_parasol_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":80,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":107},
+			"sourceSize": {"w":80,"h":107}
+		},
+		"paris_c15_parasol_2.png":
+		{
+			"frame": {"x":80,"y":0,"w":25,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":107},
+			"sourceSize": {"w":25,"h":107}
+		},
+		"paris_c15_parasol_5.png":
+		{
+			"frame": {"x":105,"y":0,"w":80,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":76},
+			"sourceSize": {"w":80,"h":76}
+		},
+		"paris_c15_parasol_7.png":
+		{
+			"frame": {"x":0,"y":107,"w":25,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":76},
+			"sourceSize": {"w":25,"h":76}
+		},
+		"paris_c15_parasol_9.png":
+		{
+			"frame": {"x":105,"y":76,"w":50,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":30},
+			"sourceSize": {"w":50,"h":30}
+		},
+		"paris_c15_parasol_6.png":
+		{
+			"frame": {"x":155,"y":76,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		},
+		"paris_c15_parasol_11.png":
+		{
+			"frame": {"x":25,"y":107,"w":20,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":13},
+			"sourceSize": {"w":20,"h":13}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "table_plasto_bigsquare_sheet.png",
+		"size": {"w":193,"h":180},
+		"scale": "1"
+	},
+	"frames": {
+		"table_plasto_bigsquare_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":193,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":193,"h":90},
+			"sourceSize": {"w":193,"h":90}
+		},
+		"table_plasto_bigsquare_1.png":
+		{
+			"frame": {"x":0,"y":90,"w":99,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":53},
+			"sourceSize": {"w":99,"h":53}
+		},
+		"table_plasto_bigsquare_2.png":
+		{
+			"frame": {"x":99,"y":90,"w":94,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":47},
+			"sourceSize": {"w":94,"h":47}
+		},
+		"table_plasto_bigsquare_3.png":
+		{
+			"frame": {"x":0,"y":143,"w":49,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":27},
+			"sourceSize": {"w":49,"h":27}
+		},
+		"table_plasto_bigsquare_13.png":
+		{
+			"frame": {"x":49,"y":143,"w":47,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":23},
+			"sourceSize": {"w":47,"h":23}
+		},
+		"table_plasto_bigsquare_10.png":
+		{
+			"frame": {"x":96,"y":143,"w":46,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":21},
+			"sourceSize": {"w":46,"h":21}
+		},
+		"table_plasto_bigsquare_12.png":
+		{
+			"frame": {"x":142,"y":143,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		},
+		"table_plasto_bigsquare_9.png":
+		{
+			"frame": {"x":166,"y":143,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		},
+		"table_plasto_bigsquare_7.png":
+		{
+			"frame": {"x":0,"y":170,"w":22,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":10},
+			"sourceSize": {"w":22,"h":10}
+		}
+	}
+}

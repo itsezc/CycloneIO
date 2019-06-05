@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "coralking_c18_clamshell1_sheet.png",
+		"size": {"w":38,"h":15},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_c18_clamshell1_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":19,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":15},
+			"sourceSize": {"w":19,"h":15}
+		},
+		"coralking_c18_clamshell1_4.png":
+		{
+			"frame": {"x":19,"y":0,"w":19,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":15},
+			"sourceSize": {"w":19,"h":15}
+		}
+	}
+}

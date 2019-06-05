@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "steampunk_map_sheet.png",
+		"size": {"w":280,"h":189},
+		"scale": "1"
+	},
+	"frames": {
+		"steampunk_map_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":168,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":168,"h":126},
+			"sourceSize": {"w":168,"h":126}
+		},
+		"steampunk_map_8.png":
+		{
+			"frame": {"x":168,"y":0,"w":112,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":126},
+			"sourceSize": {"w":112,"h":126}
+		},
+		"steampunk_map_1.png":
+		{
+			"frame": {"x":0,"y":126,"w":56,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":63},
+			"sourceSize": {"w":56,"h":63}
+		},
+		"steampunk_map_4.png":
+		{
+			"frame": {"x":56,"y":126,"w":24,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":28},
+			"sourceSize": {"w":24,"h":28}
+		}
+	}
+}

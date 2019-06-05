@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "easter_c17_chairs_sheet.png",
+		"size": {"w":142,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c17_chairs_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":72},
+			"sourceSize": {"w":55,"h":72}
+		},
+		"easter_c17_chairs_11.png":
+		{
+			"frame": {"x":55,"y":0,"w":50,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":42},
+			"sourceSize": {"w":50,"h":42}
+		},
+		"easter_c17_chairs_4.png":
+		{
+			"frame": {"x":55,"y":42,"w":42,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":22},
+			"sourceSize": {"w":42,"h":22}
+		},
+		"easter_c17_chairs_6.png":
+		{
+			"frame": {"x":105,"y":0,"w":37,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":41},
+			"sourceSize": {"w":37,"h":41}
+		},
+		"easter_c17_chairs_9.png":
+		{
+			"frame": {"x":105,"y":41,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		},
+		"easter_c17_chairs_5.png":
+		{
+			"frame": {"x":129,"y":41,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

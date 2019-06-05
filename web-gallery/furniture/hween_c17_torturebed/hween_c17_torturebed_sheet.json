@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hween_c17_torturebed_sheet.png",
+		"size": {"w":191,"h":120},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c17_torturebed_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":122,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":61},
+			"sourceSize": {"w":122,"h":61}
+		},
+		"hween_c17_torturebed_10.png":
+		{
+			"frame": {"x":0,"y":61,"w":71,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":59},
+			"sourceSize": {"w":71,"h":59}
+		},
+		"hween_c17_torturebed_4.png":
+		{
+			"frame": {"x":122,"y":0,"w":69,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":57},
+			"sourceSize": {"w":69,"h":57}
+		},
+		"hween_c17_torturebed_1.png":
+		{
+			"frame": {"x":122,"y":57,"w":62,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":41},
+			"sourceSize": {"w":62,"h":41}
+		},
+		"hween_c17_torturebed_6.png":
+		{
+			"frame": {"x":122,"y":98,"w":28,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":20},
+			"sourceSize": {"w":28,"h":20}
+		}
+	}
+}

@@ -1,0 +1,177 @@
+{
+	"meta": {
+		"image": "chair_silo_sheet.png",
+		"size": {"w":217,"h":184},
+		"scale": "1"
+	},
+	"frames": {
+		"chair_silo_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":147,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":147,"h":121},
+			"sourceSize": {"w":147,"h":121}
+		},
+		"chair_silo_19.png":
+		{
+			"frame": {"x":0,"y":121,"w":51,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":26},
+			"sourceSize": {"w":51,"h":26}
+		},
+		"chair_silo_14.png":
+		{
+			"frame": {"x":147,"y":0,"w":49,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":43},
+			"sourceSize": {"w":49,"h":43}
+		},
+		"chair_silo_18.png":
+		{
+			"frame": {"x":147,"y":43,"w":49,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":43},
+			"sourceSize": {"w":49,"h":43}
+		},
+		"chair_silo_8.png":
+		{
+			"frame": {"x":147,"y":86,"w":42,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":22},
+			"sourceSize": {"w":42,"h":22}
+		},
+		"chair_silo_13.png":
+		{
+			"frame": {"x":147,"y":108,"w":26,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":37},
+			"sourceSize": {"w":26,"h":37}
+		},
+		"chair_silo_24.png":
+		{
+			"frame": {"x":0,"y":147,"w":26,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":37},
+			"sourceSize": {"w":26,"h":37}
+		},
+		"chair_silo_10.png":
+		{
+			"frame": {"x":173,"y":108,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		},
+		"chair_silo_15.png":
+		{
+			"frame": {"x":26,"y":147,"w":25,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":28},
+			"sourceSize": {"w":25,"h":28}
+		},
+		"chair_silo_22.png":
+		{
+			"frame": {"x":51,"y":147,"w":24,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":28},
+			"sourceSize": {"w":24,"h":28}
+		},
+		"chair_silo_7.png":
+		{
+			"frame": {"x":51,"y":121,"w":26,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":19},
+			"sourceSize": {"w":26,"h":19}
+		},
+		"chair_silo_9.png":
+		{
+			"frame": {"x":77,"y":121,"w":26,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":15},
+			"sourceSize": {"w":26,"h":15}
+		},
+		"chair_silo_17.png":
+		{
+			"frame": {"x":103,"y":121,"w":26,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":14},
+			"sourceSize": {"w":26,"h":14}
+		},
+		"chair_silo_23.png":
+		{
+			"frame": {"x":75,"y":147,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		},
+		"chair_silo_25.png":
+		{
+			"frame": {"x":196,"y":0,"w":21,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":21},
+			"sourceSize": {"w":21,"h":21}
+		},
+		"chair_silo_11.png":
+		{
+			"frame": {"x":196,"y":21,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		},
+		"chair_silo_21.png":
+		{
+			"frame": {"x":196,"y":39,"w":14,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":20},
+			"sourceSize": {"w":14,"h":20}
+		},
+		"chair_silo_5.png":
+		{
+			"frame": {"x":196,"y":59,"w":15,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":19},
+			"sourceSize": {"w":15,"h":19}
+		},
+		"chair_silo_20.png":
+		{
+			"frame": {"x":196,"y":78,"w":13,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":15},
+			"sourceSize": {"w":13,"h":15}
+		},
+		"chair_silo_4.png":
+		{
+			"frame": {"x":196,"y":93,"w":11,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":10},
+			"sourceSize": {"w":11,"h":10}
+		},
+		"chair_silo_1.png":
+		{
+			"frame": {"x":196,"y":103,"w":11,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":8},
+			"sourceSize": {"w":11,"h":8}
+		}
+	}
+}

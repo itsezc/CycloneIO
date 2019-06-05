@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "nest_terrarium_sheet.png",
+		"size": {"w":318,"h":236},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_terrarium_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":225,"h":161},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":225,"h":161},
+			"sourceSize": {"w":225,"h":161}
+		},
+		"nest_terrarium_7.png":
+		{
+			"frame": {"x":225,"y":0,"w":93,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":92},
+			"sourceSize": {"w":93,"h":92}
+		},
+		"nest_terrarium_15.png":
+		{
+			"frame": {"x":0,"y":161,"w":66,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":75},
+			"sourceSize": {"w":66,"h":75}
+		},
+		"nest_terrarium_1.png":
+		{
+			"frame": {"x":66,"y":161,"w":66,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":72},
+			"sourceSize": {"w":66,"h":72}
+		},
+		"nest_terrarium_6.png":
+		{
+			"frame": {"x":225,"y":92,"w":48,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":23},
+			"sourceSize": {"w":48,"h":23}
+		},
+		"nest_terrarium_2.png":
+		{
+			"frame": {"x":225,"y":115,"w":47,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":46},
+			"sourceSize": {"w":47,"h":46}
+		},
+		"nest_terrarium_13.png":
+		{
+			"frame": {"x":272,"y":115,"w":34,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":38},
+			"sourceSize": {"w":34,"h":38}
+		},
+		"nest_terrarium_10.png":
+		{
+			"frame": {"x":132,"y":161,"w":34,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":36},
+			"sourceSize": {"w":34,"h":36}
+		},
+		"nest_terrarium_16.png":
+		{
+			"frame": {"x":166,"y":161,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"nest_terrarium_5.png":
+		{
+			"frame": {"x":273,"y":92,"w":21,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":10},
+			"sourceSize": {"w":21,"h":10}
+		},
+		"nest_terrarium_3.png":
+		{
+			"frame": {"x":294,"y":92,"w":6,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":1},
+			"sourceSize": {"w":6,"h":1}
+		},
+		"nest_terrarium_9.png":
+		{
+			"frame": {"x":300,"y":92,"w":2,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":1},
+			"sourceSize": {"w":2,"h":1}
+		}
+	}
+}

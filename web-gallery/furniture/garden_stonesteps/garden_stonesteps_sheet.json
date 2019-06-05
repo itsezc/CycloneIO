@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "garden_stonesteps_sheet.png",
+		"size": {"w":82,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_stonesteps_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":24},
+			"sourceSize": {"w":52,"h":24}
+		},
+		"garden_stonesteps_3.png":
+		{
+			"frame": {"x":0,"y":24,"w":47,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":30},
+			"sourceSize": {"w":47,"h":30}
+		},
+		"garden_stonesteps_2.png":
+		{
+			"frame": {"x":52,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

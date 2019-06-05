@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "chair_china_sheet.png",
+		"size": {"w":174,"h":149},
+		"scale": "1"
+	},
+	"frames": {
+		"chair_china_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":126,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":105},
+			"sourceSize": {"w":126,"h":105}
+		},
+		"chair_china_4.png":
+		{
+			"frame": {"x":126,"y":0,"w":27,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":54},
+			"sourceSize": {"w":27,"h":54}
+		},
+		"chair_china_10.png":
+		{
+			"frame": {"x":0,"y":105,"w":51,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":44},
+			"sourceSize": {"w":51,"h":44}
+		},
+		"chair_china_11.png":
+		{
+			"frame": {"x":126,"y":54,"w":27,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":50},
+			"sourceSize": {"w":27,"h":50}
+		},
+		"chair_china_14.png":
+		{
+			"frame": {"x":51,"y":105,"w":50,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":26},
+			"sourceSize": {"w":50,"h":26}
+		},
+		"chair_china_9.png":
+		{
+			"frame": {"x":153,"y":0,"w":21,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":31},
+			"sourceSize": {"w":21,"h":31}
+		},
+		"chair_china_2.png":
+		{
+			"frame": {"x":153,"y":31,"w":13,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":28},
+			"sourceSize": {"w":13,"h":28}
+		},
+		"chair_china_1.png":
+		{
+			"frame": {"x":101,"y":105,"w":25,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+			"sourceSize": {"w":25,"h":22}
+		},
+		"chair_china_6.png":
+		{
+			"frame": {"x":153,"y":59,"w":13,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":25},
+			"sourceSize": {"w":13,"h":25}
+		},
+		"chair_china_13.png":
+		{
+			"frame": {"x":126,"y":105,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		}
+	}
+}

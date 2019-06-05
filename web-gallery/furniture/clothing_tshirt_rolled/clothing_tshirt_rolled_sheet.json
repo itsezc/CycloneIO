@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_tshirt_rolled_sheet.png",
+		"size": {"w":106,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_tshirt_rolled_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_tshirt_rolled_2.png":
+		{
+			"frame": {"x":38,"y":0,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_tshirt_rolled_3.png":
+		{
+			"frame": {"x":0,"y":24,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_tshirt_rolled_6.png":
+		{
+			"frame": {"x":38,"y":24,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_tshirt_rolled_8.png":
+		{
+			"frame": {"x":0,"y":48,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_tshirt_rolled_4.png":
+		{
+			"frame": {"x":76,"y":0,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		},
+		"clothing_tshirt_rolled_5.png":
+		{
+			"frame": {"x":76,"y":29,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

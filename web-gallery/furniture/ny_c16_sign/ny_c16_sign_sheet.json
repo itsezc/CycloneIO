@@ -1,0 +1,329 @@
+{
+	"meta": {
+		"image": "ny_c16_sign_sheet.png",
+		"size": {"w":674,"h":573},
+		"scale": "1"
+	},
+	"frames": {
+		"ny_c16_sign_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":201},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":201},
+			"sourceSize": {"w":36,"h":201}
+		},
+		"ny_c16_sign_18.png":
+		{
+			"frame": {"x":36,"y":0,"w":36,"h":201},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":201},
+			"sourceSize": {"w":36,"h":201}
+		},
+		"ny_c16_sign_11.png":
+		{
+			"frame": {"x":72,"y":0,"w":35,"h":200},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":200},
+			"sourceSize": {"w":35,"h":200}
+		},
+		"ny_c16_sign_12.png":
+		{
+			"frame": {"x":107,"y":0,"w":35,"h":200},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":200},
+			"sourceSize": {"w":35,"h":200}
+		},
+		"ny_c16_sign_15.png":
+		{
+			"frame": {"x":142,"y":0,"w":35,"h":200},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":200},
+			"sourceSize": {"w":35,"h":200}
+		},
+		"ny_c16_sign_17.png":
+		{
+			"frame": {"x":177,"y":0,"w":35,"h":200},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":200},
+			"sourceSize": {"w":35,"h":200}
+		},
+		"ny_c16_sign_10.png":
+		{
+			"frame": {"x":212,"y":0,"w":36,"h":199},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":199},
+			"sourceSize": {"w":36,"h":199}
+		},
+		"ny_c16_sign_19.png":
+		{
+			"frame": {"x":248,"y":0,"w":36,"h":199},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":199},
+			"sourceSize": {"w":36,"h":199}
+		},
+		"ny_c16_sign_30.png":
+		{
+			"frame": {"x":284,"y":0,"w":44,"h":189},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":189},
+			"sourceSize": {"w":44,"h":189}
+		},
+		"ny_c16_sign_22.png":
+		{
+			"frame": {"x":328,"y":0,"w":44,"h":188},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":188},
+			"sourceSize": {"w":44,"h":188}
+		},
+		"ny_c16_sign_29.png":
+		{
+			"frame": {"x":372,"y":0,"w":44,"h":188},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":188},
+			"sourceSize": {"w":44,"h":188}
+		},
+		"ny_c16_sign_31.png":
+		{
+			"frame": {"x":0,"y":201,"w":44,"h":188},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":188},
+			"sourceSize": {"w":44,"h":188}
+		},
+		"ny_c16_sign_32.png":
+		{
+			"frame": {"x":44,"y":201,"w":44,"h":188},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":188},
+			"sourceSize": {"w":44,"h":188}
+		},
+		"ny_c16_sign_9.png":
+		{
+			"frame": {"x":88,"y":201,"w":44,"h":188},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":188},
+			"sourceSize": {"w":44,"h":188}
+		},
+		"ny_c16_sign_21.png":
+		{
+			"frame": {"x":132,"y":201,"w":44,"h":187},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":187},
+			"sourceSize": {"w":44,"h":187}
+		},
+		"ny_c16_sign_23.png":
+		{
+			"frame": {"x":176,"y":201,"w":44,"h":187},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":187},
+			"sourceSize": {"w":44,"h":187}
+		},
+		"ny_c16_sign_28.png":
+		{
+			"frame": {"x":220,"y":201,"w":44,"h":187},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":187},
+			"sourceSize": {"w":44,"h":187}
+		},
+		"ny_c16_sign_4.png":
+		{
+			"frame": {"x":264,"y":201,"w":44,"h":187},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":187},
+			"sourceSize": {"w":44,"h":187}
+		},
+		"ny_c16_sign_6.png":
+		{
+			"frame": {"x":308,"y":201,"w":44,"h":187},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":187},
+			"sourceSize": {"w":44,"h":187}
+		},
+		"ny_c16_sign_3.png":
+		{
+			"frame": {"x":352,"y":201,"w":44,"h":186},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":186},
+			"sourceSize": {"w":44,"h":186}
+		},
+		"ny_c16_sign_33.png":
+		{
+			"frame": {"x":416,"y":0,"w":44,"h":186},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":186},
+			"sourceSize": {"w":44,"h":186}
+		},
+		"ny_c16_sign_34.png":
+		{
+			"frame": {"x":416,"y":186,"w":44,"h":186},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":186},
+			"sourceSize": {"w":44,"h":186}
+		},
+		"ny_c16_sign_5.png":
+		{
+			"frame": {"x":460,"y":0,"w":44,"h":186},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":186},
+			"sourceSize": {"w":44,"h":186}
+		},
+		"ny_c16_sign_1.png":
+		{
+			"frame": {"x":460,"y":186,"w":44,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":185},
+			"sourceSize": {"w":44,"h":185}
+		},
+		"ny_c16_sign_24.png":
+		{
+			"frame": {"x":504,"y":0,"w":44,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":185},
+			"sourceSize": {"w":44,"h":185}
+		},
+		"ny_c16_sign_26.png":
+		{
+			"frame": {"x":504,"y":185,"w":44,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":185},
+			"sourceSize": {"w":44,"h":185}
+		},
+		"ny_c16_sign_27.png":
+		{
+			"frame": {"x":548,"y":0,"w":44,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":185},
+			"sourceSize": {"w":44,"h":185}
+		},
+		"ny_c16_sign_8.png":
+		{
+			"frame": {"x":548,"y":185,"w":44,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":185},
+			"sourceSize": {"w":44,"h":185}
+		},
+		"ny_c16_sign_25.png":
+		{
+			"frame": {"x":0,"y":389,"w":44,"h":184},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":184},
+			"sourceSize": {"w":44,"h":184}
+		},
+		"ny_c16_sign_43.png":
+		{
+			"frame": {"x":44,"y":389,"w":82,"h":171},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":171},
+			"sourceSize": {"w":82,"h":171}
+		},
+		"ny_c16_sign_44.png":
+		{
+			"frame": {"x":126,"y":389,"w":82,"h":171},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":171},
+			"sourceSize": {"w":82,"h":171}
+		},
+		"ny_c16_sign_39.png":
+		{
+			"frame": {"x":208,"y":389,"w":81,"h":171},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":171},
+			"sourceSize": {"w":81,"h":171}
+		},
+		"ny_c16_sign_40.png":
+		{
+			"frame": {"x":289,"y":389,"w":81,"h":171},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":171},
+			"sourceSize": {"w":81,"h":171}
+		},
+		"ny_c16_sign_42.png":
+		{
+			"frame": {"x":370,"y":389,"w":83,"h":169},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":169},
+			"sourceSize": {"w":83,"h":169}
+		},
+		"ny_c16_sign_45.png":
+		{
+			"frame": {"x":453,"y":389,"w":83,"h":169},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":169},
+			"sourceSize": {"w":83,"h":169}
+		},
+		"ny_c16_sign_38.png":
+		{
+			"frame": {"x":592,"y":0,"w":82,"h":169},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":169},
+			"sourceSize": {"w":82,"h":169}
+		},
+		"ny_c16_sign_41.png":
+		{
+			"frame": {"x":592,"y":169,"w":82,"h":169},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":169},
+			"sourceSize": {"w":82,"h":169}
+		},
+		"ny_c16_sign_2.png":
+		{
+			"frame": {"x":592,"y":338,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		},
+		"ny_c16_sign_20.png":
+		{
+			"frame": {"x":620,"y":338,"w":29,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":16},
+			"sourceSize": {"w":29,"h":16}
+		},
+		"ny_c16_sign_35.png":
+		{
+			"frame": {"x":592,"y":367,"w":29,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":16},
+			"sourceSize": {"w":29,"h":16}
+		}
+	}
+}

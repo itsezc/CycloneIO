@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas15_stand_sheet.png",
+		"size": {"w":290,"h":256},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas15_stand_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":145,"h":209},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":209},
+			"sourceSize": {"w":145,"h":209}
+		},
+		"xmas15_stand_9.png":
+		{
+			"frame": {"x":145,"y":0,"w":145,"h":209},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":209},
+			"sourceSize": {"w":145,"h":209}
+		},
+		"xmas15_stand_8.png":
+		{
+			"frame": {"x":0,"y":209,"w":94,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":47},
+			"sourceSize": {"w":94,"h":47}
+		},
+		"xmas15_stand_7.png":
+		{
+			"frame": {"x":94,"y":209,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

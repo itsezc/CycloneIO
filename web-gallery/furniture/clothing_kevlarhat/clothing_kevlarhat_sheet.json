@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_kevlarhat_sheet.png",
+		"size": {"w":96,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_kevlarhat_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":47},
+			"sourceSize": {"w":32,"h":47}
+		},
+		"clothing_kevlarhat_5.png":
+		{
+			"frame": {"x":32,"y":0,"w":32,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":47},
+			"sourceSize": {"w":32,"h":47}
+		},
+		"clothing_kevlarhat_6.png":
+		{
+			"frame": {"x":64,"y":0,"w":32,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":47},
+			"sourceSize": {"w":32,"h":47}
+		},
+		"clothing_kevlarhat_7.png":
+		{
+			"frame": {"x":0,"y":47,"w":32,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":47},
+			"sourceSize": {"w":32,"h":47}
+		},
+		"clothing_kevlarhat_8.png":
+		{
+			"frame": {"x":32,"y":47,"w":32,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":47},
+			"sourceSize": {"w":32,"h":47}
+		},
+		"clothing_kevlarhat_12.png":
+		{
+			"frame": {"x":64,"y":47,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"clothing_kevlarhat_11.png":
+		{
+			"frame": {"x":92,"y":47,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "uni_messwardrobe_sheet.png",
+		"size": {"w":189,"h":132},
+		"scale": "1"
+	},
+	"frames": {
+		"uni_messwardrobe_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":132},
+			"sourceSize": {"w":52,"h":132}
+		},
+		"uni_messwardrobe_13.png":
+		{
+			"frame": {"x":52,"y":0,"w":57,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":127},
+			"sourceSize": {"w":57,"h":127}
+		},
+		"uni_messwardrobe_1.png":
+		{
+			"frame": {"x":109,"y":0,"w":24,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":82},
+			"sourceSize": {"w":24,"h":82}
+		},
+		"uni_messwardrobe_4.png":
+		{
+			"frame": {"x":133,"y":0,"w":27,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":66},
+			"sourceSize": {"w":27,"h":66}
+		},
+		"uni_messwardrobe_12.png":
+		{
+			"frame": {"x":160,"y":0,"w":29,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":64},
+			"sourceSize": {"w":29,"h":64}
+		},
+		"uni_messwardrobe_9.png":
+		{
+			"frame": {"x":160,"y":64,"w":12,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":42},
+			"sourceSize": {"w":12,"h":42}
+		},
+		"uni_messwardrobe_8.png":
+		{
+			"frame": {"x":133,"y":66,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"uni_messwardrobe_5.png":
+		{
+			"frame": {"x":172,"y":64,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

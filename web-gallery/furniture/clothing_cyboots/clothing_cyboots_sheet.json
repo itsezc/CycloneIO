@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_cyboots_sheet.png",
+		"size": {"w":144,"h":78},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_cyboots_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":39},
+			"sourceSize": {"w":48,"h":39}
+		},
+		"clothing_cyboots_3.png":
+		{
+			"frame": {"x":48,"y":0,"w":48,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":39},
+			"sourceSize": {"w":48,"h":39}
+		},
+		"clothing_cyboots_4.png":
+		{
+			"frame": {"x":0,"y":39,"w":48,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":39},
+			"sourceSize": {"w":48,"h":39}
+		},
+		"clothing_cyboots_5.png":
+		{
+			"frame": {"x":48,"y":39,"w":48,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":39},
+			"sourceSize": {"w":48,"h":39}
+		},
+		"clothing_cyboots_7.png":
+		{
+			"frame": {"x":96,"y":0,"w":48,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":39},
+			"sourceSize": {"w":48,"h":39}
+		},
+		"clothing_cyboots_1.png":
+		{
+			"frame": {"x":96,"y":39,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_cyboots_6.png":
+		{
+			"frame": {"x":126,"y":39,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

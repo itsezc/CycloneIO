@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "hween09_chair_sheet.png",
+		"size": {"w":241,"h":187},
+		"scale": "1"
+	},
+	"frames": {
+		"hween09_chair_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":167,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":167,"h":98},
+			"sourceSize": {"w":167,"h":98}
+		},
+		"hween09_chair_2.png":
+		{
+			"frame": {"x":167,"y":0,"w":56,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":98},
+			"sourceSize": {"w":56,"h":98}
+		},
+		"hween09_chair_3.png":
+		{
+			"frame": {"x":0,"y":98,"w":33,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":89},
+			"sourceSize": {"w":33,"h":89}
+		},
+		"hween09_chair_8.png":
+		{
+			"frame": {"x":33,"y":98,"w":28,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":50},
+			"sourceSize": {"w":28,"h":50}
+		},
+		"hween09_chair_11.png":
+		{
+			"frame": {"x":61,"y":98,"w":50,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":27},
+			"sourceSize": {"w":50,"h":27}
+		},
+		"hween09_chair_12.png":
+		{
+			"frame": {"x":223,"y":0,"w":18,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":46},
+			"sourceSize": {"w":18,"h":46}
+		},
+		"hween09_chair_13.png":
+		{
+			"frame": {"x":33,"y":148,"w":27,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":39},
+			"sourceSize": {"w":27,"h":39}
+		},
+		"hween09_chair_15.png":
+		{
+			"frame": {"x":223,"y":46,"w":18,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":32},
+			"sourceSize": {"w":18,"h":32}
+		},
+		"hween09_chair_5.png":
+		{
+			"frame": {"x":223,"y":78,"w":14,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":24},
+			"sourceSize": {"w":14,"h":24}
+		},
+		"hween09_chair_9.png":
+		{
+			"frame": {"x":111,"y":98,"w":23,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":12},
+			"sourceSize": {"w":23,"h":12}
+		},
+		"hween09_chair_4.png":
+		{
+			"frame": {"x":237,"y":78,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

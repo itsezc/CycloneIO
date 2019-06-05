@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "hosptl_curtain_sheet.png",
+		"size": {"w":307,"h":276},
+		"scale": "1"
+	},
+	"frames": {
+		"hosptl_curtain_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":204,"h":193},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":204,"h":193},
+			"sourceSize": {"w":204,"h":193}
+		},
+		"hosptl_curtain_13.png":
+		{
+			"frame": {"x":204,"y":0,"w":56,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":104},
+			"sourceSize": {"w":56,"h":104}
+		},
+		"hosptl_curtain_9.png":
+		{
+			"frame": {"x":0,"y":193,"w":101,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":52},
+			"sourceSize": {"w":101,"h":52}
+		},
+		"hosptl_curtain_14.png":
+		{
+			"frame": {"x":260,"y":0,"w":47,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":90},
+			"sourceSize": {"w":47,"h":90}
+		},
+		"hosptl_curtain_8.png":
+		{
+			"frame": {"x":204,"y":104,"w":52,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":89},
+			"sourceSize": {"w":52,"h":89}
+		},
+		"hosptl_curtain_3.png":
+		{
+			"frame": {"x":260,"y":90,"w":28,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":51},
+			"sourceSize": {"w":28,"h":51}
+		},
+		"hosptl_curtain_4.png":
+		{
+			"frame": {"x":101,"y":193,"w":51,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":26},
+			"sourceSize": {"w":51,"h":26}
+		},
+		"hosptl_curtain_11.png":
+		{
+			"frame": {"x":260,"y":141,"w":26,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":45},
+			"sourceSize": {"w":26,"h":45}
+		},
+		"hosptl_curtain_7.png":
+		{
+			"frame": {"x":260,"y":186,"w":23,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":45},
+			"sourceSize": {"w":23,"h":45}
+		},
+		"hosptl_curtain_1.png":
+		{
+			"frame": {"x":0,"y":245,"w":28,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":31},
+			"sourceSize": {"w":28,"h":31}
+		}
+	}
+}

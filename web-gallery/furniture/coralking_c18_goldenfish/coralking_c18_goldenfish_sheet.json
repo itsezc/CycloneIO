@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "coralking_c18_goldenfish_sheet.png",
+		"size": {"w":59,"h":58},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_c18_goldenfish_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":45},
+			"sourceSize": {"w":37,"h":45}
+		},
+		"coralking_c18_goldenfish_7.png":
+		{
+			"frame": {"x":37,"y":0,"w":22,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":27},
+			"sourceSize": {"w":22,"h":27}
+		},
+		"coralking_c18_goldenfish_1.png":
+		{
+			"frame": {"x":0,"y":45,"w":23,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":13},
+			"sourceSize": {"w":23,"h":13}
+		}
+	}
+}

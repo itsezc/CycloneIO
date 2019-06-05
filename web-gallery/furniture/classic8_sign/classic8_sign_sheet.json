@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "classic8_sign_sheet.png",
+		"size": {"w":129,"h":91},
+		"scale": "1"
+	},
+	"frames": {
+		"classic8_sign_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":73},
+			"sourceSize": {"w":34,"h":73}
+		},
+		"classic8_sign_1.png":
+		{
+			"frame": {"x":34,"y":0,"w":18,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":50},
+			"sourceSize": {"w":18,"h":50}
+		},
+		"classic8_sign_10.png":
+		{
+			"frame": {"x":52,"y":0,"w":18,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":50},
+			"sourceSize": {"w":18,"h":50}
+		},
+		"classic8_sign_12.png":
+		{
+			"frame": {"x":70,"y":0,"w":18,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":50},
+			"sourceSize": {"w":18,"h":50}
+		},
+		"classic8_sign_9.png":
+		{
+			"frame": {"x":88,"y":0,"w":18,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":50},
+			"sourceSize": {"w":18,"h":50}
+		},
+		"classic8_sign_3.png":
+		{
+			"frame": {"x":0,"y":73,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"classic8_sign_7.png":
+		{
+			"frame": {"x":106,"y":0,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		}
+	}
+}

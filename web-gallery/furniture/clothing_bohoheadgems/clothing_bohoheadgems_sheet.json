@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_bohoheadgems_sheet.png",
+		"size": {"w":55,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_bohoheadgems_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":28,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":42},
+			"sourceSize": {"w":28,"h":42}
+		},
+		"clothing_bohoheadgems_2.png":
+		{
+			"frame": {"x":28,"y":0,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		}
+	}
+}

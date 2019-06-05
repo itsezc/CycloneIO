@@ -1,0 +1,257 @@
+{
+	"meta": {
+		"image": "sf_stick_sheet.png",
+		"size": {"w":288,"h":271},
+		"scale": "1"
+	},
+	"frames": {
+		"sf_stick_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":180,"h":174},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":180,"h":174},
+			"sourceSize": {"w":180,"h":174}
+		},
+		"sf_stick_29.png":
+		{
+			"frame": {"x":180,"y":0,"w":27,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":97},
+			"sourceSize": {"w":27,"h":97}
+		},
+		"sf_stick_30.png":
+		{
+			"frame": {"x":207,"y":0,"w":27,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":97},
+			"sourceSize": {"w":27,"h":97}
+		},
+		"sf_stick_31.png":
+		{
+			"frame": {"x":234,"y":0,"w":27,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":97},
+			"sourceSize": {"w":27,"h":97}
+		},
+		"sf_stick_33.png":
+		{
+			"frame": {"x":261,"y":0,"w":27,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":97},
+			"sourceSize": {"w":27,"h":97}
+		},
+		"sf_stick_34.png":
+		{
+			"frame": {"x":0,"y":174,"w":27,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":97},
+			"sourceSize": {"w":27,"h":97}
+		},
+		"sf_stick_35.png":
+		{
+			"frame": {"x":27,"y":174,"w":27,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":97},
+			"sourceSize": {"w":27,"h":97}
+		},
+		"sf_stick_3.png":
+		{
+			"frame": {"x":261,"y":97,"w":9,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":77},
+			"sourceSize": {"w":9,"h":77}
+		},
+		"sf_stick_4.png":
+		{
+			"frame": {"x":270,"y":97,"w":9,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":77},
+			"sourceSize": {"w":9,"h":77}
+		},
+		"sf_stick_5.png":
+		{
+			"frame": {"x":279,"y":97,"w":9,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":77},
+			"sourceSize": {"w":9,"h":77}
+		},
+		"sf_stick_6.png":
+		{
+			"frame": {"x":234,"y":97,"w":9,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":77},
+			"sourceSize": {"w":9,"h":77}
+		},
+		"sf_stick_7.png":
+		{
+			"frame": {"x":243,"y":97,"w":9,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":77},
+			"sourceSize": {"w":9,"h":77}
+		},
+		"sf_stick_8.png":
+		{
+			"frame": {"x":252,"y":97,"w":9,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":77},
+			"sourceSize": {"w":9,"h":77}
+		},
+		"sf_stick_9.png":
+		{
+			"frame": {"x":207,"y":97,"w":9,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":77},
+			"sourceSize": {"w":9,"h":77}
+		},
+		"sf_stick_14.png":
+		{
+			"frame": {"x":216,"y":97,"w":13,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":48},
+			"sourceSize": {"w":13,"h":48}
+		},
+		"sf_stick_16.png":
+		{
+			"frame": {"x":180,"y":97,"w":13,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":48},
+			"sourceSize": {"w":13,"h":48}
+		},
+		"sf_stick_17.png":
+		{
+			"frame": {"x":193,"y":97,"w":13,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":48},
+			"sourceSize": {"w":13,"h":48}
+		},
+		"sf_stick_18.png":
+		{
+			"frame": {"x":54,"y":174,"w":13,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":48},
+			"sourceSize": {"w":13,"h":48}
+		},
+		"sf_stick_19.png":
+		{
+			"frame": {"x":67,"y":174,"w":13,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":48},
+			"sourceSize": {"w":13,"h":48}
+		},
+		"sf_stick_21.png":
+		{
+			"frame": {"x":80,"y":174,"w":13,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":48},
+			"sourceSize": {"w":13,"h":48}
+		},
+		"sf_stick_10.png":
+		{
+			"frame": {"x":229,"y":97,"w":5,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":38},
+			"sourceSize": {"w":5,"h":38}
+		},
+		"sf_stick_12.png":
+		{
+			"frame": {"x":93,"y":174,"w":5,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":38},
+			"sourceSize": {"w":5,"h":38}
+		},
+		"sf_stick_13.png":
+		{
+			"frame": {"x":98,"y":174,"w":5,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":38},
+			"sourceSize": {"w":5,"h":38}
+		},
+		"sf_stick_24.png":
+		{
+			"frame": {"x":103,"y":174,"w":5,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":38},
+			"sourceSize": {"w":5,"h":38}
+		},
+		"sf_stick_26.png":
+		{
+			"frame": {"x":108,"y":174,"w":5,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":38},
+			"sourceSize": {"w":5,"h":38}
+		},
+		"sf_stick_27.png":
+		{
+			"frame": {"x":113,"y":174,"w":5,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":38},
+			"sourceSize": {"w":5,"h":38}
+		},
+		"sf_stick_28.png":
+		{
+			"frame": {"x":118,"y":174,"w":5,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":38},
+			"sourceSize": {"w":5,"h":38}
+		},
+		"sf_stick_1.png":
+		{
+			"frame": {"x":123,"y":174,"w":17,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":30},
+			"sourceSize": {"w":17,"h":30}
+		},
+		"sf_stick_32.png":
+		{
+			"frame": {"x":140,"y":174,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		},
+		"sf_stick_20.png":
+		{
+			"frame": {"x":216,"y":145,"w":17,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":16},
+			"sourceSize": {"w":17,"h":16}
+		},
+		"sf_stick_23.png":
+		{
+			"frame": {"x":229,"y":135,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

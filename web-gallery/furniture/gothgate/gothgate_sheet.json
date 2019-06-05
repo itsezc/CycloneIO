@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "gothgate_sheet.png",
+		"size": {"w":312,"h":284},
+		"scale": "1"
+	},
+	"frames": {
+		"gothgate_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":205,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":205,"h":168},
+			"sourceSize": {"w":205,"h":168}
+		},
+		"gothgate_1.png":
+		{
+			"frame": {"x":205,"y":0,"w":46,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":168},
+			"sourceSize": {"w":46,"h":168}
+		},
+		"gothgate_7.png":
+		{
+			"frame": {"x":251,"y":0,"w":38,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":136},
+			"sourceSize": {"w":38,"h":136}
+		},
+		"gothgate_8.png":
+		{
+			"frame": {"x":0,"y":168,"w":37,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":116},
+			"sourceSize": {"w":37,"h":116}
+		},
+		"gothgate_10.png":
+		{
+			"frame": {"x":37,"y":168,"w":84,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":42},
+			"sourceSize": {"w":84,"h":42}
+		},
+		"gothgate_14.png":
+		{
+			"frame": {"x":289,"y":0,"w":23,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":84},
+			"sourceSize": {"w":23,"h":84}
+		},
+		"gothgate_5.png":
+		{
+			"frame": {"x":289,"y":84,"w":19,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":68},
+			"sourceSize": {"w":19,"h":68}
+		},
+		"gothgate_12.png":
+		{
+			"frame": {"x":289,"y":152,"w":19,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":59},
+			"sourceSize": {"w":19,"h":59}
+		},
+		"gothgate_4.png":
+		{
+			"frame": {"x":121,"y":168,"w":41,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":20},
+			"sourceSize": {"w":41,"h":20}
+		},
+		"gothgate_6.png":
+		{
+			"frame": {"x":37,"y":210,"w":27,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":37},
+			"sourceSize": {"w":27,"h":37}
+		},
+		"gothgate_16.png":
+		{
+			"frame": {"x":289,"y":211,"w":15,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":28},
+			"sourceSize": {"w":15,"h":28}
+		},
+		"gothgate_13.png":
+		{
+			"frame": {"x":289,"y":239,"w":16,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+			"sourceSize": {"w":16,"h":18}
+		}
+	}
+}

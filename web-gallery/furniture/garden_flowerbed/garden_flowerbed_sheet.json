@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "garden_flowerbed_sheet.png",
+		"size": {"w":177,"h":149},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_flowerbed_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":50},
+			"sourceSize": {"w":70,"h":50}
+		},
+		"garden_flowerbed_7.png":
+		{
+			"frame": {"x":70,"y":0,"w":66,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":48},
+			"sourceSize": {"w":66,"h":48}
+		},
+		"garden_flowerbed_1.png":
+		{
+			"frame": {"x":0,"y":50,"w":64,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":38},
+			"sourceSize": {"w":64,"h":38}
+		},
+		"garden_flowerbed_4.png":
+		{
+			"frame": {"x":64,"y":50,"w":64,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":38},
+			"sourceSize": {"w":64,"h":38}
+		},
+		"garden_flowerbed_5.png":
+		{
+			"frame": {"x":0,"y":88,"w":54,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":30},
+			"sourceSize": {"w":54,"h":30}
+		},
+		"garden_flowerbed_9.png":
+		{
+			"frame": {"x":54,"y":88,"w":54,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":30},
+			"sourceSize": {"w":54,"h":30}
+		},
+		"garden_flowerbed_12.png":
+		{
+			"frame": {"x":136,"y":0,"w":41,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":31},
+			"sourceSize": {"w":41,"h":31}
+		},
+		"garden_flowerbed_13.png":
+		{
+			"frame": {"x":136,"y":31,"w":41,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":31},
+			"sourceSize": {"w":41,"h":31}
+		},
+		"garden_flowerbed_16.png":
+		{
+			"frame": {"x":136,"y":62,"w":40,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":31},
+			"sourceSize": {"w":40,"h":31}
+		},
+		"garden_flowerbed_17.png":
+		{
+			"frame": {"x":0,"y":118,"w":40,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":31},
+			"sourceSize": {"w":40,"h":31}
+		},
+		"garden_flowerbed_14.png":
+		{
+			"frame": {"x":136,"y":93,"w":27,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":25},
+			"sourceSize": {"w":27,"h":25}
+		},
+		"garden_flowerbed_3.png":
+		{
+			"frame": {"x":176,"y":62,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

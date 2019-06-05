@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "classic8_chair_sheet.png",
+		"size": {"w":101,"h":61},
+		"scale": "1"
+	},
+	"frames": {
+		"classic8_chair_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":45,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":45},
+			"sourceSize": {"w":45,"h":45}
+		},
+		"classic8_chair_9.png":
+		{
+			"frame": {"x":45,"y":0,"w":28,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":32},
+			"sourceSize": {"w":28,"h":32}
+		},
+		"classic8_chair_6.png":
+		{
+			"frame": {"x":73,"y":0,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"classic8_chair_5.png":
+		{
+			"frame": {"x":0,"y":45,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		},
+		"classic8_chair_8.png":
+		{
+			"frame": {"x":73,"y":30,"w":26,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":15},
+			"sourceSize": {"w":26,"h":15}
+		}
+	}
+}

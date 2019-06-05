@@ -1,0 +1,169 @@
+{
+	"meta": {
+		"image": "stories_sch_bookshelf_sheet.png",
+		"size": {"w":287,"h":235},
+		"scale": "1"
+	},
+	"frames": {
+		"stories_sch_bookshelf_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":59,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":168},
+			"sourceSize": {"w":59,"h":168}
+		},
+		"stories_sch_bookshelf_15.png":
+		{
+			"frame": {"x":59,"y":0,"w":59,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":159},
+			"sourceSize": {"w":59,"h":159}
+		},
+		"stories_sch_bookshelf_14.png":
+		{
+			"frame": {"x":118,"y":0,"w":28,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":144},
+			"sourceSize": {"w":28,"h":144}
+		},
+		"stories_sch_bookshelf_21.png":
+		{
+			"frame": {"x":146,"y":0,"w":28,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":144},
+			"sourceSize": {"w":28,"h":144}
+		},
+		"stories_sch_bookshelf_18.png":
+		{
+			"frame": {"x":174,"y":0,"w":29,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":85},
+			"sourceSize": {"w":29,"h":85}
+		},
+		"stories_sch_bookshelf_12.png":
+		{
+			"frame": {"x":203,"y":0,"w":84,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":43},
+			"sourceSize": {"w":84,"h":43}
+		},
+		"stories_sch_bookshelf_2.png":
+		{
+			"frame": {"x":203,"y":43,"w":24,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":81},
+			"sourceSize": {"w":24,"h":81}
+		},
+		"stories_sch_bookshelf_23.png":
+		{
+			"frame": {"x":227,"y":43,"w":29,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":80},
+			"sourceSize": {"w":29,"h":80}
+		},
+		"stories_sch_bookshelf_16.png":
+		{
+			"frame": {"x":256,"y":43,"w":15,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":73},
+			"sourceSize": {"w":15,"h":73}
+		},
+		"stories_sch_bookshelf_5.png":
+		{
+			"frame": {"x":271,"y":43,"w":15,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":73},
+			"sourceSize": {"w":15,"h":73}
+		},
+		"stories_sch_bookshelf_24.png":
+		{
+			"frame": {"x":0,"y":168,"w":31,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":67},
+			"sourceSize": {"w":31,"h":67}
+		},
+		"stories_sch_bookshelf_25.png":
+		{
+			"frame": {"x":31,"y":168,"w":31,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":67},
+			"sourceSize": {"w":31,"h":67}
+		},
+		"stories_sch_bookshelf_3.png":
+		{
+			"frame": {"x":174,"y":85,"w":20,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":66},
+			"sourceSize": {"w":20,"h":66}
+		},
+		"stories_sch_bookshelf_19.png":
+		{
+			"frame": {"x":203,"y":124,"w":13,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":42},
+			"sourceSize": {"w":13,"h":42}
+		},
+		"stories_sch_bookshelf_4.png":
+		{
+			"frame": {"x":216,"y":124,"w":41,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":21},
+			"sourceSize": {"w":41,"h":21}
+		},
+		"stories_sch_bookshelf_9.png":
+		{
+			"frame": {"x":62,"y":168,"w":12,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":33},
+			"sourceSize": {"w":12,"h":33}
+		},
+		"stories_sch_bookshelf_20.png":
+		{
+			"frame": {"x":74,"y":168,"w":10,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":33},
+			"sourceSize": {"w":10,"h":33}
+		},
+		"stories_sch_bookshelf_7.png":
+		{
+			"frame": {"x":84,"y":168,"w":10,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":33},
+			"sourceSize": {"w":10,"h":33}
+		},
+		"stories_sch_bookshelf_8.png":
+		{
+			"frame": {"x":94,"y":168,"w":18,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":31},
+			"sourceSize": {"w":18,"h":31}
+		},
+		"stories_sch_bookshelf_1.png":
+		{
+			"frame": {"x":286,"y":43,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

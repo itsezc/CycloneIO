@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hween_c16_roundtable2_sheet.png",
+		"size": {"w":104,"h":61},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c16_roundtable2_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":61},
+			"sourceSize": {"w":53,"h":61}
+		},
+		"hween_c16_roundtable2_1.png":
+		{
+			"frame": {"x":53,"y":0,"w":51,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":28},
+			"sourceSize": {"w":51,"h":28}
+		},
+		"hween_c16_roundtable2_3.png":
+		{
+			"frame": {"x":53,"y":28,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		}
+	}
+}

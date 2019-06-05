@@ -1,0 +1,161 @@
+{
+	"meta": {
+		"image": "bump_lights_sheet.png",
+		"size": {"w":175,"h":166},
+		"scale": "1"
+	},
+	"frames": {
+		"bump_lights_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":107,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":110},
+			"sourceSize": {"w":107,"h":110}
+		},
+		"bump_lights_11.png":
+		{
+			"frame": {"x":107,"y":0,"w":26,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":110},
+			"sourceSize": {"w":26,"h":110}
+		},
+		"bump_lights_18.png":
+		{
+			"frame": {"x":133,"y":0,"w":26,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":110},
+			"sourceSize": {"w":26,"h":110}
+		},
+		"bump_lights_6.png":
+		{
+			"frame": {"x":159,"y":0,"w":16,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":56},
+			"sourceSize": {"w":16,"h":56}
+		},
+		"bump_lights_13.png":
+		{
+			"frame": {"x":0,"y":110,"w":15,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":56},
+			"sourceSize": {"w":15,"h":56}
+		},
+		"bump_lights_15.png":
+		{
+			"frame": {"x":159,"y":56,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"bump_lights_16.png":
+		{
+			"frame": {"x":15,"y":110,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"bump_lights_2.png":
+		{
+			"frame": {"x":39,"y":110,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"bump_lights_4.png":
+		{
+			"frame": {"x":63,"y":110,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"bump_lights_12.png":
+		{
+			"frame": {"x":87,"y":110,"w":17,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":24},
+			"sourceSize": {"w":17,"h":24}
+		},
+		"bump_lights_7.png":
+		{
+			"frame": {"x":159,"y":86,"w":13,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":24},
+			"sourceSize": {"w":13,"h":24}
+		},
+		"bump_lights_21.png":
+		{
+			"frame": {"x":104,"y":110,"w":9,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":24},
+			"sourceSize": {"w":9,"h":24}
+		},
+		"bump_lights_22.png":
+		{
+			"frame": {"x":113,"y":110,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"bump_lights_20.png":
+		{
+			"frame": {"x":126,"y":110,"w":13,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":12},
+			"sourceSize": {"w":13,"h":12}
+		},
+		"bump_lights_9.png":
+		{
+			"frame": {"x":15,"y":134,"w":7,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":13},
+			"sourceSize": {"w":7,"h":13}
+		},
+		"bump_lights_8.png":
+		{
+			"frame": {"x":139,"y":110,"w":12,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+			"sourceSize": {"w":12,"h":12}
+		},
+		"bump_lights_1.png":
+		{
+			"frame": {"x":151,"y":110,"w":6,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":12},
+			"sourceSize": {"w":6,"h":12}
+		},
+		"bump_lights_17.png":
+		{
+			"frame": {"x":157,"y":110,"w":5,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":12},
+			"sourceSize": {"w":5,"h":12}
+		},
+		"bump_lights_19.png":
+		{
+			"frame": {"x":174,"y":56,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

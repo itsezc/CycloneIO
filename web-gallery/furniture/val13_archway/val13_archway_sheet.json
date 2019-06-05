@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "val13_archway_sheet.png",
+		"size": {"w":166,"h":160},
+		"scale": "1"
+	},
+	"frames": {
+		"val13_archway_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":130},
+			"sourceSize": {"w":50,"h":130}
+		},
+		"val13_archway_5.png":
+		{
+			"frame": {"x":50,"y":0,"w":43,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":124},
+			"sourceSize": {"w":43,"h":124}
+		},
+		"val13_archway_1.png":
+		{
+			"frame": {"x":93,"y":0,"w":73,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":36},
+			"sourceSize": {"w":73,"h":36}
+		},
+		"val13_archway_9.png":
+		{
+			"frame": {"x":93,"y":36,"w":29,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":65},
+			"sourceSize": {"w":29,"h":65}
+		},
+		"val13_archway_11.png":
+		{
+			"frame": {"x":122,"y":36,"w":22,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":63},
+			"sourceSize": {"w":22,"h":63}
+		},
+		"val13_archway_10.png":
+		{
+			"frame": {"x":93,"y":101,"w":37,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":18},
+			"sourceSize": {"w":37,"h":18}
+		},
+		"val13_archway_4.png":
+		{
+			"frame": {"x":0,"y":130,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

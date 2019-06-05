@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "olympics_c16_nanarack_sheet.png",
+		"size": {"w":133,"h":97},
+		"scale": "1"
+	},
+	"frames": {
+		"olympics_c16_nanarack_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":72},
+			"sourceSize": {"w":53,"h":72}
+		},
+		"olympics_c16_nanarack_7.png":
+		{
+			"frame": {"x":53,"y":0,"w":53,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":72},
+			"sourceSize": {"w":53,"h":72}
+		},
+		"olympics_c16_nanarack_4.png":
+		{
+			"frame": {"x":0,"y":72,"w":49,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":25},
+			"sourceSize": {"w":49,"h":25}
+		},
+		"olympics_c16_nanarack_9.png":
+		{
+			"frame": {"x":106,"y":0,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		}
+	}
+}

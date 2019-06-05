@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "prison_crnr_sheet.png",
+		"size": {"w":294,"h":197},
+		"scale": "1"
+	},
+	"frames": {
+		"prison_crnr_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":170,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":170,"h":132},
+			"sourceSize": {"w":170,"h":132}
+		},
+		"prison_crnr_14.png":
+		{
+			"frame": {"x":170,"y":0,"w":16,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":132},
+			"sourceSize": {"w":16,"h":132}
+		},
+		"prison_crnr_4.png":
+		{
+			"frame": {"x":186,"y":0,"w":16,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":132},
+			"sourceSize": {"w":16,"h":132}
+		},
+		"prison_crnr_9.png":
+		{
+			"frame": {"x":202,"y":0,"w":48,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":119},
+			"sourceSize": {"w":48,"h":119}
+		},
+		"prison_crnr_6.png":
+		{
+			"frame": {"x":250,"y":0,"w":44,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":119},
+			"sourceSize": {"w":44,"h":119}
+		},
+		"prison_crnr_13.png":
+		{
+			"frame": {"x":0,"y":132,"w":9,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":65},
+			"sourceSize": {"w":9,"h":65}
+		},
+		"prison_crnr_2.png":
+		{
+			"frame": {"x":9,"y":132,"w":9,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":65},
+			"sourceSize": {"w":9,"h":65}
+		},
+		"prison_crnr_1.png":
+		{
+			"frame": {"x":18,"y":132,"w":24,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":60},
+			"sourceSize": {"w":24,"h":60}
+		},
+		"prison_crnr_10.png":
+		{
+			"frame": {"x":42,"y":132,"w":24,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":60},
+			"sourceSize": {"w":24,"h":60}
+		},
+		"prison_crnr_11.png":
+		{
+			"frame": {"x":66,"y":132,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		}
+	}
+}

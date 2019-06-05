@@ -1,0 +1,321 @@
+{
+	"meta": {
+		"image": "xmas_c16_egg_sheet.png",
+		"size": {"w":447,"h":415},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c16_egg_42.png":
+		{
+			"frame": {"x":0,"y":0,"w":106,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":106,"h":142},
+			"sourceSize": {"w":106,"h":142}
+		},
+		"xmas_c16_egg_41.png":
+		{
+			"frame": {"x":106,"y":0,"w":110,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":110,"h":140},
+			"sourceSize": {"w":110,"h":140}
+		},
+		"xmas_c16_egg_44.png":
+		{
+			"frame": {"x":216,"y":0,"w":119,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":119,"h":138},
+			"sourceSize": {"w":119,"h":138}
+		},
+		"xmas_c16_egg_43.png":
+		{
+			"frame": {"x":0,"y":142,"w":117,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":117,"h":131},
+			"sourceSize": {"w":117,"h":131}
+		},
+		"xmas_c16_egg_39.png":
+		{
+			"frame": {"x":117,"y":142,"w":115,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":124},
+			"sourceSize": {"w":115,"h":124}
+		},
+		"xmas_c16_egg_25.png":
+		{
+			"frame": {"x":335,"y":0,"w":112,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":117},
+			"sourceSize": {"w":112,"h":117}
+		},
+		"xmas_c16_egg_24.png":
+		{
+			"frame": {"x":335,"y":117,"w":107,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":109},
+			"sourceSize": {"w":107,"h":109}
+		},
+		"xmas_c16_egg_29.png":
+		{
+			"frame": {"x":232,"y":142,"w":89,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":104},
+			"sourceSize": {"w":89,"h":104}
+		},
+		"xmas_c16_egg_19.png":
+		{
+			"frame": {"x":0,"y":273,"w":75,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":86},
+			"sourceSize": {"w":75,"h":86}
+		},
+		"xmas_c16_egg_27.png":
+		{
+			"frame": {"x":75,"y":273,"w":63,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":74},
+			"sourceSize": {"w":63,"h":74}
+		},
+		"xmas_c16_egg_28.png":
+		{
+			"frame": {"x":138,"y":273,"w":63,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":74},
+			"sourceSize": {"w":63,"h":74}
+		},
+		"xmas_c16_egg_26.png":
+		{
+			"frame": {"x":201,"y":273,"w":61,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":72},
+			"sourceSize": {"w":61,"h":72}
+		},
+		"xmas_c16_egg_32.png":
+		{
+			"frame": {"x":262,"y":273,"w":59,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":69},
+			"sourceSize": {"w":59,"h":69}
+		},
+		"xmas_c16_egg_21.png":
+		{
+			"frame": {"x":321,"y":273,"w":45,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":56},
+			"sourceSize": {"w":45,"h":56}
+		},
+		"xmas_c16_egg_33.png":
+		{
+			"frame": {"x":366,"y":273,"w":45,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":56},
+			"sourceSize": {"w":45,"h":56}
+		},
+		"xmas_c16_egg_35.png":
+		{
+			"frame": {"x":0,"y":359,"w":45,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":56},
+			"sourceSize": {"w":45,"h":56}
+		},
+		"xmas_c16_egg_37.png":
+		{
+			"frame": {"x":45,"y":359,"w":45,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":56},
+			"sourceSize": {"w":45,"h":56}
+		},
+		"xmas_c16_egg_38.png":
+		{
+			"frame": {"x":90,"y":359,"w":45,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":56},
+			"sourceSize": {"w":45,"h":56}
+		},
+		"xmas_c16_egg_40.png":
+		{
+			"frame": {"x":135,"y":359,"w":45,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":56},
+			"sourceSize": {"w":45,"h":56}
+		},
+		"xmas_c16_egg_13.png":
+		{
+			"frame": {"x":335,"y":226,"w":45,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":23},
+			"sourceSize": {"w":45,"h":23}
+		},
+		"xmas_c16_egg_31.png":
+		{
+			"frame": {"x":411,"y":273,"w":36,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":39},
+			"sourceSize": {"w":36,"h":39}
+		},
+		"xmas_c16_egg_10.png":
+		{
+			"frame": {"x":380,"y":226,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_11.png":
+		{
+			"frame": {"x":380,"y":236,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_12.png":
+		{
+			"frame": {"x":335,"y":249,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_14.png":
+		{
+			"frame": {"x":370,"y":249,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_16.png":
+		{
+			"frame": {"x":405,"y":249,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_17.png":
+		{
+			"frame": {"x":335,"y":259,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_18.png":
+		{
+			"frame": {"x":370,"y":259,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_3.png":
+		{
+			"frame": {"x":405,"y":259,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_4.png":
+		{
+			"frame": {"x":232,"y":246,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_5.png":
+		{
+			"frame": {"x":267,"y":246,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_6.png":
+		{
+			"frame": {"x":232,"y":256,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_7.png":
+		{
+			"frame": {"x":267,"y":256,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_8.png":
+		{
+			"frame": {"x":411,"y":312,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_9.png":
+		{
+			"frame": {"x":321,"y":329,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"xmas_c16_egg_1.png":
+		{
+			"frame": {"x":180,"y":359,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		},
+		"xmas_c16_egg_30.png":
+		{
+			"frame": {"x":204,"y":359,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"xmas_c16_egg_20.png":
+		{
+			"frame": {"x":442,"y":117,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"xmas_c16_egg_22.png":
+		{
+			"frame": {"x":443,"y":117,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

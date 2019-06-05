@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "dng_pillar_sheet.png",
+		"size": {"w":152,"h":152},
+		"scale": "1"
+	},
+	"frames": {
+		"dng_pillar_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":76,"h":152},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":152},
+			"sourceSize": {"w":76,"h":152}
+		},
+		"dng_pillar_4.png":
+		{
+			"frame": {"x":76,"y":0,"w":50,"h":152},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":152},
+			"sourceSize": {"w":50,"h":152}
+		},
+		"dng_pillar_7.png":
+		{
+			"frame": {"x":126,"y":0,"w":26,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":77},
+			"sourceSize": {"w":26,"h":77}
+		},
+		"dng_pillar_2.png":
+		{
+			"frame": {"x":126,"y":77,"w":24,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":29},
+			"sourceSize": {"w":24,"h":29}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "prizetrophy_storieshero_sheet.png",
+		"size": {"w":80,"h":69},
+		"scale": "1"
+	},
+	"frames": {
+		"prizetrophy_storieshero_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":69},
+			"sourceSize": {"w":42,"h":69}
+		},
+		"prizetrophy_storieshero_6.png":
+		{
+			"frame": {"x":42,"y":0,"w":38,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":20},
+			"sourceSize": {"w":38,"h":20}
+		},
+		"prizetrophy_storieshero_1.png":
+		{
+			"frame": {"x":42,"y":20,"w":21,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":34},
+			"sourceSize": {"w":21,"h":34}
+		},
+		"prizetrophy_storieshero_9.png":
+		{
+			"frame": {"x":63,"y":20,"w":17,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":26},
+			"sourceSize": {"w":17,"h":26}
+		},
+		"prizetrophy_storieshero_2.png":
+		{
+			"frame": {"x":42,"y":54,"w":18,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":10},
+			"sourceSize": {"w":18,"h":10}
+		}
+	}
+}

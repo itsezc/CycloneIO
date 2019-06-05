@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "classic8_plant_sheet.png",
+		"size": {"w":132,"h":96},
+		"scale": "1"
+	},
+	"frames": {
+		"classic8_plant_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":82,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":69},
+			"sourceSize": {"w":82,"h":69}
+		},
+		"classic8_plant_4.png":
+		{
+			"frame": {"x":82,"y":0,"w":50,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":63},
+			"sourceSize": {"w":50,"h":63}
+		},
+		"classic8_plant_7.png":
+		{
+			"frame": {"x":0,"y":69,"w":50,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":27},
+			"sourceSize": {"w":50,"h":27}
+		},
+		"classic8_plant_5.png":
+		{
+			"frame": {"x":50,"y":69,"w":18,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":24},
+			"sourceSize": {"w":18,"h":24}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "easter_c17_roof_sheet.png",
+		"size": {"w":194,"h":123},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c17_roof_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":69},
+			"sourceSize": {"w":64,"h":69}
+		},
+		"easter_c17_roof_9.png":
+		{
+			"frame": {"x":64,"y":0,"w":64,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":69},
+			"sourceSize": {"w":64,"h":69}
+		},
+		"easter_c17_roof_3.png":
+		{
+			"frame": {"x":0,"y":69,"w":66,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":54},
+			"sourceSize": {"w":66,"h":54}
+		},
+		"easter_c17_roof_1.png":
+		{
+			"frame": {"x":128,"y":0,"w":66,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":17},
+			"sourceSize": {"w":66,"h":17}
+		},
+		"easter_c17_roof_8.png":
+		{
+			"frame": {"x":128,"y":17,"w":26,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":29},
+			"sourceSize": {"w":26,"h":29}
+		}
+	}
+}

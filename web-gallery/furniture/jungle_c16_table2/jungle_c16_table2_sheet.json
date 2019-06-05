@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "jungle_c16_table2_sheet.png",
+		"size": {"w":136,"h":108},
+		"scale": "1"
+	},
+	"frames": {
+		"jungle_c16_table2_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":71,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":40},
+			"sourceSize": {"w":71,"h":40}
+		},
+		"jungle_c16_table2_3.png":
+		{
+			"frame": {"x":0,"y":40,"w":64,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":68},
+			"sourceSize": {"w":64,"h":68}
+		},
+		"jungle_c16_table2_9.png":
+		{
+			"frame": {"x":71,"y":0,"w":65,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":63},
+			"sourceSize": {"w":65,"h":63}
+		},
+		"jungle_c16_table2_6.png":
+		{
+			"frame": {"x":71,"y":63,"w":30,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":26},
+			"sourceSize": {"w":30,"h":26}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "china_snake_sheet.png",
+		"size": {"w":106,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"china_snake_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":102},
+			"sourceSize": {"w":52,"h":102}
+		},
+		"china_snake_10.png":
+		{
+			"frame": {"x":52,"y":0,"w":54,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":29},
+			"sourceSize": {"w":54,"h":29}
+		},
+		"china_snake_7.png":
+		{
+			"frame": {"x":52,"y":29,"w":28,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":53},
+			"sourceSize": {"w":28,"h":53}
+		},
+		"china_snake_5.png":
+		{
+			"frame": {"x":80,"y":29,"w":23,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":32},
+			"sourceSize": {"w":23,"h":32}
+		},
+		"china_snake_4.png":
+		{
+			"frame": {"x":52,"y":82,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "window_diner_sheet.png",
+		"size": {"w":320,"h":258},
+		"scale": "1"
+	},
+	"frames": {
+		"window_diner_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":192,"h":162},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":162},
+			"sourceSize": {"w":192,"h":162}
+		},
+		"window_diner_5.png":
+		{
+			"frame": {"x":192,"y":0,"w":64,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":96},
+			"sourceSize": {"w":64,"h":96}
+		},
+		"window_diner_7.png":
+		{
+			"frame": {"x":256,"y":0,"w":64,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":96},
+			"sourceSize": {"w":64,"h":96}
+		},
+		"window_diner_9.png":
+		{
+			"frame": {"x":0,"y":162,"w":64,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":96},
+			"sourceSize": {"w":64,"h":96}
+		},
+		"window_diner_11.png":
+		{
+			"frame": {"x":256,"y":96,"w":44,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":66},
+			"sourceSize": {"w":44,"h":66}
+		},
+		"window_diner_12.png":
+		{
+			"frame": {"x":192,"y":96,"w":33,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":49},
+			"sourceSize": {"w":33,"h":49}
+		},
+		"window_diner_13.png":
+		{
+			"frame": {"x":64,"y":162,"w":33,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":49},
+			"sourceSize": {"w":33,"h":49}
+		},
+		"window_diner_8.png":
+		{
+			"frame": {"x":97,"y":162,"w":33,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":49},
+			"sourceSize": {"w":33,"h":49}
+		},
+		"window_diner_14.png":
+		{
+			"frame": {"x":225,"y":96,"w":21,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":31},
+			"sourceSize": {"w":21,"h":31}
+		},
+		"window_diner_6.png":
+		{
+			"frame": {"x":130,"y":162,"w":25,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":25},
+			"sourceSize": {"w":25,"h":25}
+		}
+	}
+}

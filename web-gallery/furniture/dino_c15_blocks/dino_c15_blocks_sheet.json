@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "dino_c15_blocks_sheet.png",
+		"size": {"w":260,"h":173},
+		"scale": "1"
+	},
+	"frames": {
+		"dino_c15_blocks_14.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":96},
+			"sourceSize": {"w":66,"h":96}
+		},
+		"dino_c15_blocks_5.png":
+		{
+			"frame": {"x":66,"y":0,"w":64,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":94},
+			"sourceSize": {"w":64,"h":94}
+		},
+		"dino_c15_blocks_13.png":
+		{
+			"frame": {"x":130,"y":0,"w":66,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":79},
+			"sourceSize": {"w":66,"h":79}
+		},
+		"dino_c15_blocks_2.png":
+		{
+			"frame": {"x":0,"y":96,"w":64,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":77},
+			"sourceSize": {"w":64,"h":77}
+		},
+		"dino_c15_blocks_16.png":
+		{
+			"frame": {"x":64,"y":96,"w":66,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":64},
+			"sourceSize": {"w":66,"h":64}
+		},
+		"dino_c15_blocks_15.png":
+		{
+			"frame": {"x":130,"y":96,"w":66,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":49},
+			"sourceSize": {"w":66,"h":49}
+		},
+		"dino_c15_blocks_3.png":
+		{
+			"frame": {"x":196,"y":0,"w":64,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":62},
+			"sourceSize": {"w":64,"h":62}
+		},
+		"dino_c15_blocks_1.png":
+		{
+			"frame": {"x":196,"y":62,"w":64,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":47},
+			"sourceSize": {"w":64,"h":47}
+		},
+		"dino_c15_blocks_9.png":
+		{
+			"frame": {"x":196,"y":109,"w":63,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":37},
+			"sourceSize": {"w":63,"h":37}
+		},
+		"dino_c15_blocks_10.png":
+		{
+			"frame": {"x":196,"y":146,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		},
+		"dino_c15_blocks_8.png":
+		{
+			"frame": {"x":259,"y":109,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "xmas_c18_piano_sheet.png",
+		"size": {"w":247,"h":191},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_piano_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":74,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":100},
+			"sourceSize": {"w":74,"h":100}
+		},
+		"xmas_c18_piano_5.png":
+		{
+			"frame": {"x":74,"y":0,"w":74,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":100},
+			"sourceSize": {"w":74,"h":100}
+		},
+		"xmas_c18_piano_2.png":
+		{
+			"frame": {"x":148,"y":0,"w":99,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":50},
+			"sourceSize": {"w":99,"h":50}
+		},
+		"xmas_c18_piano_6.png":
+		{
+			"frame": {"x":0,"y":100,"w":37,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":91},
+			"sourceSize": {"w":37,"h":91}
+		},
+		"xmas_c18_piano_9.png":
+		{
+			"frame": {"x":37,"y":100,"w":37,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":91},
+			"sourceSize": {"w":37,"h":91}
+		},
+		"xmas_c18_piano_10.png":
+		{
+			"frame": {"x":74,"y":100,"w":54,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":90},
+			"sourceSize": {"w":54,"h":90}
+		},
+		"xmas_c18_piano_13.png":
+		{
+			"frame": {"x":128,"y":100,"w":54,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":90},
+			"sourceSize": {"w":54,"h":90}
+		},
+		"xmas_c18_piano_11.png":
+		{
+			"frame": {"x":148,"y":50,"w":29,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":32},
+			"sourceSize": {"w":29,"h":32}
+		}
+	}
+}

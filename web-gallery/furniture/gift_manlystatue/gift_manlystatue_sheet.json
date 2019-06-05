@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "gift_manlystatue_sheet.png",
+		"size": {"w":162,"h":124},
+		"scale": "1"
+	},
+	"frames": {
+		"gift_manlystatue_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":107,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":92},
+			"sourceSize": {"w":107,"h":92}
+		},
+		"gift_manlystatue_5.png":
+		{
+			"frame": {"x":107,"y":0,"w":55,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":62},
+			"sourceSize": {"w":55,"h":62}
+		},
+		"gift_manlystatue_1.png":
+		{
+			"frame": {"x":107,"y":62,"w":52,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":12},
+			"sourceSize": {"w":52,"h":12}
+		},
+		"gift_manlystatue_7.png":
+		{
+			"frame": {"x":0,"y":92,"w":28,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":32},
+			"sourceSize": {"w":28,"h":32}
+		},
+		"gift_manlystatue_2.png":
+		{
+			"frame": {"x":28,"y":92,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"gift_manlystatue_4.png":
+		{
+			"frame": {"x":107,"y":74,"w":25,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":6},
+			"sourceSize": {"w":25,"h":6}
+		}
+	}
+}

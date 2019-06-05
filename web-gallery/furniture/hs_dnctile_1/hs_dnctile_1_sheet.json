@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "hs_dnctile_1_sheet.png",
+		"size": {"w":154,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"hs_dnctile_1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":92,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":67},
+			"sourceSize": {"w":92,"h":67}
+		},
+		"hs_dnctile_1_11.png":
+		{
+			"frame": {"x":92,"y":0,"w":62,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":31},
+			"sourceSize": {"w":62,"h":31}
+		},
+		"hs_dnctile_1_6.png":
+		{
+			"frame": {"x":92,"y":31,"w":40,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":36},
+			"sourceSize": {"w":40,"h":36}
+		},
+		"hs_dnctile_1_8.png":
+		{
+			"frame": {"x":0,"y":67,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		},
+		"hs_dnctile_1_9.png":
+		{
+			"frame": {"x":30,"y":67,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		},
+		"hs_dnctile_1_12.png":
+		{
+			"frame": {"x":132,"y":31,"w":13,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":21},
+			"sourceSize": {"w":13,"h":21}
+		},
+		"hs_dnctile_1_14.png":
+		{
+			"frame": {"x":0,"y":95,"w":13,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":21},
+			"sourceSize": {"w":13,"h":21}
+		},
+		"hs_dnctile_1_10.png":
+		{
+			"frame": {"x":13,"y":95,"w":20,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":19},
+			"sourceSize": {"w":20,"h":19}
+		},
+		"hs_dnctile_1_3.png":
+		{
+			"frame": {"x":145,"y":31,"w":9,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":12},
+			"sourceSize": {"w":9,"h":12}
+		},
+		"hs_dnctile_1_4.png":
+		{
+			"frame": {"x":132,"y":52,"w":9,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":12},
+			"sourceSize": {"w":9,"h":12}
+		}
+	}
+}

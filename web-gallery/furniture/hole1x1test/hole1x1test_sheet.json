@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hole1x1test_sheet.png",
+		"size": {"w":96,"h":61},
+		"scale": "1"
+	},
+	"frames": {
+		"hole1x1test_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"hole1x1test_4.png":
+		{
+			"frame": {"x":0,"y":32,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"hole1x1test_9.png":
+		{
+			"frame": {"x":64,"y":0,"w":32,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":17},
+			"sourceSize": {"w":32,"h":17}
+		},
+		"hole1x1test_1.png":
+		{
+			"frame": {"x":64,"y":17,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		},
+		"hole1x1test_2.png":
+		{
+			"frame": {"x":64,"y":32,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		}
+	}
+}

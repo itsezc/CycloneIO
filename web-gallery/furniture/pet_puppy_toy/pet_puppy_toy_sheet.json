@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "pet_puppy_toy_sheet.png",
+		"size": {"w":65,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"pet_puppy_toy_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"pet_puppy_toy_3.png":
+		{
+			"frame": {"x":21,"y":0,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"pet_puppy_toy_6.png":
+		{
+			"frame": {"x":42,"y":0,"w":23,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":25},
+			"sourceSize": {"w":23,"h":25}
+		},
+		"pet_puppy_toy_1.png":
+		{
+			"frame": {"x":0,"y":29,"w":21,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":19},
+			"sourceSize": {"w":21,"h":19}
+		},
+		"pet_puppy_toy_2.png":
+		{
+			"frame": {"x":21,"y":29,"w":21,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":17},
+			"sourceSize": {"w":21,"h":17}
+		},
+		"pet_puppy_toy_10.png":
+		{
+			"frame": {"x":42,"y":29,"w":18,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":9},
+			"sourceSize": {"w":18,"h":9}
+		}
+	}
+}

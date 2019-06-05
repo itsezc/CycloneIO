@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "val15_water_sheet.png",
+		"size": {"w":412,"h":287},
+		"scale": "1"
+	},
+	"frames": {
+		"val15_water_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":186,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":186,"h":100},
+			"sourceSize": {"w":186,"h":100}
+		},
+		"val15_water_11.png":
+		{
+			"frame": {"x":0,"y":100,"w":126,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":64},
+			"sourceSize": {"w":126,"h":64}
+		},
+		"val15_water_13.png":
+		{
+			"frame": {"x":186,"y":0,"w":126,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":64},
+			"sourceSize": {"w":126,"h":64}
+		},
+		"val15_water_14.png":
+		{
+			"frame": {"x":186,"y":64,"w":126,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":64},
+			"sourceSize": {"w":126,"h":64}
+		},
+		"val15_water_5.png":
+		{
+			"frame": {"x":0,"y":164,"w":126,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":64},
+			"sourceSize": {"w":126,"h":64}
+		},
+		"val15_water_15.png":
+		{
+			"frame": {"x":126,"y":164,"w":111,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":111,"h":59},
+			"sourceSize": {"w":111,"h":59}
+		},
+		"val15_water_16.png":
+		{
+			"frame": {"x":0,"y":228,"w":111,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":111,"h":59},
+			"sourceSize": {"w":111,"h":59}
+		},
+		"val15_water_12.png":
+		{
+			"frame": {"x":111,"y":228,"w":110,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":110,"h":59},
+			"sourceSize": {"w":110,"h":59}
+		},
+		"val15_water_7.png":
+		{
+			"frame": {"x":312,"y":0,"w":100,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":51},
+			"sourceSize": {"w":100,"h":51}
+		},
+		"val15_water_4.png":
+		{
+			"frame": {"x":312,"y":51,"w":97,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":56},
+			"sourceSize": {"w":97,"h":56}
+		},
+		"val15_water_6.png":
+		{
+			"frame": {"x":312,"y":107,"w":91,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":52},
+			"sourceSize": {"w":91,"h":52}
+		},
+		"val15_water_17.png":
+		{
+			"frame": {"x":312,"y":159,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

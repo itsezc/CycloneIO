@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "pirate_mast1_sheet.png",
+		"size": {"w":177,"h":154},
+		"scale": "1"
+	},
+	"frames": {
+		"pirate_mast1_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":63,"h":154},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":154},
+			"sourceSize": {"w":63,"h":154}
+		},
+		"pirate_mast1_4.png":
+		{
+			"frame": {"x":63,"y":0,"w":52,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":150},
+			"sourceSize": {"w":52,"h":150}
+		},
+		"pirate_mast1_10.png":
+		{
+			"frame": {"x":115,"y":0,"w":32,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":78},
+			"sourceSize": {"w":32,"h":78}
+		},
+		"pirate_mast1_8.png":
+		{
+			"frame": {"x":115,"y":78,"w":26,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":76},
+			"sourceSize": {"w":26,"h":76}
+		},
+		"pirate_mast1_2.png":
+		{
+			"frame": {"x":147,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

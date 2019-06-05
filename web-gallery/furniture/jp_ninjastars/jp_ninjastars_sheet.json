@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "jp_ninjastars_sheet.png",
+		"size": {"w":240,"h":199},
+		"scale": "1"
+	},
+	"frames": {
+		"jp_ninjastars_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":160,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":110},
+			"sourceSize": {"w":160,"h":110}
+		},
+		"jp_ninjastars_6.png":
+		{
+			"frame": {"x":160,"y":0,"w":80,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":89},
+			"sourceSize": {"w":80,"h":89}
+		},
+		"jp_ninjastars_1.png":
+		{
+			"frame": {"x":0,"y":110,"w":80,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":43},
+			"sourceSize": {"w":80,"h":43}
+		},
+		"jp_ninjastars_3.png":
+		{
+			"frame": {"x":0,"y":153,"w":41,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":46},
+			"sourceSize": {"w":41,"h":46}
+		},
+		"jp_ninjastars_4.png":
+		{
+			"frame": {"x":160,"y":89,"w":40,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":21},
+			"sourceSize": {"w":40,"h":21}
+		},
+		"jp_ninjastars_2.png":
+		{
+			"frame": {"x":80,"y":110,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		}
+	}
+}

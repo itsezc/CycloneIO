@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "pet_toy_trampoline_sheet.png",
+		"size": {"w":161,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"pet_toy_trampoline_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":115,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":78},
+			"sourceSize": {"w":115,"h":78}
+		},
+		"pet_toy_trampoline_2.png":
+		{
+			"frame": {"x":115,"y":0,"w":46,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":39},
+			"sourceSize": {"w":46,"h":39}
+		},
+		"pet_toy_trampoline_3.png":
+		{
+			"frame": {"x":115,"y":39,"w":46,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":39},
+			"sourceSize": {"w":46,"h":39}
+		},
+		"pet_toy_trampoline_4.png":
+		{
+			"frame": {"x":0,"y":78,"w":46,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":39},
+			"sourceSize": {"w":46,"h":39}
+		},
+		"pet_toy_trampoline_1.png":
+		{
+			"frame": {"x":46,"y":78,"w":23,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+			"sourceSize": {"w":23,"h":21}
+		},
+		"pet_toy_trampoline_10.png":
+		{
+			"frame": {"x":69,"y":78,"w":23,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+			"sourceSize": {"w":23,"h":21}
+		},
+		"pet_toy_trampoline_12.png":
+		{
+			"frame": {"x":92,"y":78,"w":23,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+			"sourceSize": {"w":23,"h":21}
+		},
+		"pet_toy_trampoline_5.png":
+		{
+			"frame": {"x":115,"y":78,"w":23,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+			"sourceSize": {"w":23,"h":21}
+		}
+	}
+}

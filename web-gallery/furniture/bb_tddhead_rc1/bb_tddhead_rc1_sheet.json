@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "bb_tddhead_rc1_sheet.png",
+		"size": {"w":161,"h":83},
+		"scale": "1"
+	},
+	"frames": {
+		"bb_tddhead_rc1_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":107,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":83},
+			"sourceSize": {"w":107,"h":83}
+		},
+		"bb_tddhead_rc1_5.png":
+		{
+			"frame": {"x":107,"y":0,"w":54,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":43},
+			"sourceSize": {"w":54,"h":43}
+		},
+		"bb_tddhead_rc1_2.png":
+		{
+			"frame": {"x":107,"y":43,"w":31,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":24},
+			"sourceSize": {"w":31,"h":24}
+		}
+	}
+}

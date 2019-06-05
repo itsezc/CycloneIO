@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "uni_catrug_sheet.png",
+		"size": {"w":218,"h":165},
+		"scale": "1"
+	},
+	"frames": {
+		"uni_catrug_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":87,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":47},
+			"sourceSize": {"w":87,"h":47}
+		},
+		"uni_catrug_12.png":
+		{
+			"frame": {"x":87,"y":0,"w":87,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":47},
+			"sourceSize": {"w":87,"h":47}
+		},
+		"uni_catrug_6.png":
+		{
+			"frame": {"x":0,"y":47,"w":87,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":47},
+			"sourceSize": {"w":87,"h":47}
+		},
+		"uni_catrug_9.png":
+		{
+			"frame": {"x":87,"y":47,"w":87,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":47},
+			"sourceSize": {"w":87,"h":47}
+		},
+		"uni_catrug_8.png":
+		{
+			"frame": {"x":0,"y":94,"w":87,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":46},
+			"sourceSize": {"w":87,"h":46}
+		},
+		"uni_catrug_1.png":
+		{
+			"frame": {"x":87,"y":94,"w":44,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":25},
+			"sourceSize": {"w":44,"h":25}
+		},
+		"uni_catrug_10.png":
+		{
+			"frame": {"x":0,"y":140,"w":44,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":25},
+			"sourceSize": {"w":44,"h":25}
+		},
+		"uni_catrug_13.png":
+		{
+			"frame": {"x":44,"y":140,"w":44,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":25},
+			"sourceSize": {"w":44,"h":25}
+		},
+		"uni_catrug_7.png":
+		{
+			"frame": {"x":88,"y":140,"w":44,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":25},
+			"sourceSize": {"w":44,"h":25}
+		},
+		"uni_catrug_2.png":
+		{
+			"frame": {"x":174,"y":0,"w":44,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":24},
+			"sourceSize": {"w":44,"h":24}
+		},
+		"uni_catrug_5.png":
+		{
+			"frame": {"x":174,"y":24,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		}
+	}
+}

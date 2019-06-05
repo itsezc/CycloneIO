@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "anc15_pharaohduck_sheet.png",
+		"size": {"w":117,"h":112},
+		"scale": "1"
+	},
+	"frames": {
+		"anc15_pharaohduck_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":59,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":83},
+			"sourceSize": {"w":59,"h":83}
+		},
+		"anc15_pharaohduck_4.png":
+		{
+			"frame": {"x":59,"y":0,"w":58,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":83},
+			"sourceSize": {"w":58,"h":83}
+		},
+		"anc15_pharaohduck_5.png":
+		{
+			"frame": {"x":0,"y":83,"w":20,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":29},
+			"sourceSize": {"w":20,"h":29}
+		}
+	}
+}

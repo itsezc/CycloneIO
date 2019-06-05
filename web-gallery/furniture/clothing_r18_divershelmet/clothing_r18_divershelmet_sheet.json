@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_r18_divershelmet_sheet.png",
+		"size": {"w":69,"h":52},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r18_divershelmet_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":52},
+			"sourceSize": {"w":39,"h":52}
+		},
+		"clothing_r18_divershelmet_1.png":
+		{
+			"frame": {"x":39,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_r18_divershelmet_8.png":
+		{
+			"frame": {"x":39,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

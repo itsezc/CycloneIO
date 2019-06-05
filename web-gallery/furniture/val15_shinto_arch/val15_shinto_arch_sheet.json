@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "val15_shinto_arch_sheet.png",
+		"size": {"w":263,"h":169},
+		"scale": "1"
+	},
+	"frames": {
+		"val15_shinto_arch_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":63,"h":169},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":169},
+			"sourceSize": {"w":63,"h":169}
+		},
+		"val15_shinto_arch_6.png":
+		{
+			"frame": {"x":63,"y":0,"w":82,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":168},
+			"sourceSize": {"w":82,"h":168}
+		},
+		"val15_shinto_arch_8.png":
+		{
+			"frame": {"x":145,"y":0,"w":118,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":59},
+			"sourceSize": {"w":118,"h":59}
+		},
+		"val15_shinto_arch_11.png":
+		{
+			"frame": {"x":145,"y":59,"w":15,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":34},
+			"sourceSize": {"w":15,"h":34}
+		},
+		"val15_shinto_arch_2.png":
+		{
+			"frame": {"x":160,"y":59,"w":15,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":34},
+			"sourceSize": {"w":15,"h":34}
+		},
+		"val15_shinto_arch_3.png":
+		{
+			"frame": {"x":175,"y":59,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"val15_shinto_arch_7.png":
+		{
+			"frame": {"x":205,"y":59,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

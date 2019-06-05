@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "solarium_norja_sheet.png",
+		"size": {"w":302,"h":242},
+		"scale": "1"
+	},
+	"frames": {
+		"solarium_norja_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":206,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":206,"h":144},
+			"sourceSize": {"w":206,"h":144}
+		},
+		"solarium_norja_11.png":
+		{
+			"frame": {"x":206,"y":0,"w":76,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":120},
+			"sourceSize": {"w":76,"h":120}
+		},
+		"solarium_norja_8.png":
+		{
+			"frame": {"x":0,"y":144,"w":41,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":98},
+			"sourceSize": {"w":41,"h":98}
+		},
+		"solarium_norja_12.png":
+		{
+			"frame": {"x":41,"y":144,"w":38,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":60},
+			"sourceSize": {"w":38,"h":60}
+		},
+		"solarium_norja_3.png":
+		{
+			"frame": {"x":206,"y":120,"w":52,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":24},
+			"sourceSize": {"w":52,"h":24}
+		},
+		"solarium_norja_5.png":
+		{
+			"frame": {"x":79,"y":144,"w":51,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":28},
+			"sourceSize": {"w":51,"h":28}
+		},
+		"solarium_norja_2.png":
+		{
+			"frame": {"x":282,"y":0,"w":20,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":49},
+			"sourceSize": {"w":20,"h":49}
+		},
+		"solarium_norja_13.png":
+		{
+			"frame": {"x":130,"y":144,"w":26,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":12},
+			"sourceSize": {"w":26,"h":12}
+		},
+		"solarium_norja_9.png":
+		{
+			"frame": {"x":130,"y":156,"w":25,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":14},
+			"sourceSize": {"w":25,"h":14}
+		},
+		"solarium_norja_10.png":
+		{
+			"frame": {"x":282,"y":49,"w":13,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":22},
+			"sourceSize": {"w":13,"h":22}
+		},
+		"solarium_norja_14.png":
+		{
+			"frame": {"x":282,"y":71,"w":15,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":8},
+			"sourceSize": {"w":15,"h":8}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "winter15_tree4_sheet.png",
+		"size": {"w":130,"h":128},
+		"scale": "1"
+	},
+	"frames": {
+		"winter15_tree4_12.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":128},
+			"sourceSize": {"w":49,"h":128}
+		},
+		"winter15_tree4_15.png":
+		{
+			"frame": {"x":49,"y":0,"w":48,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":121},
+			"sourceSize": {"w":48,"h":121}
+		},
+		"winter15_tree4_2.png":
+		{
+			"frame": {"x":97,"y":0,"w":33,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":15},
+			"sourceSize": {"w":33,"h":15}
+		},
+		"winter15_tree4_13.png":
+		{
+			"frame": {"x":97,"y":15,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		},
+		"winter15_tree4_11.png":
+		{
+			"frame": {"x":110,"y":15,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"winter15_tree4_10.png":
+		{
+			"frame": {"x":121,"y":15,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"winter15_tree4_8.png":
+		{
+			"frame": {"x":110,"y":26,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"winter15_tree4_9.png":
+		{
+			"frame": {"x":117,"y":26,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"winter15_tree4_7.png":
+		{
+			"frame": {"x":124,"y":26,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"winter15_tree4_6.png":
+		{
+			"frame": {"x":110,"y":33,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"winter15_tree4_5.png":
+		{
+			"frame": {"x":121,"y":24,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

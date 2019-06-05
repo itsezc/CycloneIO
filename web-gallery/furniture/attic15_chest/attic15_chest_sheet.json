@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "attic15_chest_sheet.png",
+		"size": {"w":113,"h":108},
+		"scale": "1"
+	},
+	"frames": {
+		"attic15_chest_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":83},
+			"sourceSize": {"w":62,"h":83}
+		},
+		"attic15_chest_7.png":
+		{
+			"frame": {"x":62,"y":0,"w":51,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":80},
+			"sourceSize": {"w":51,"h":80}
+		},
+		"attic15_chest_1.png":
+		{
+			"frame": {"x":0,"y":83,"w":23,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":25},
+			"sourceSize": {"w":23,"h":25}
+		}
+	}
+}

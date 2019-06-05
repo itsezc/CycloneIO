@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_punkoutfit1_sheet.png",
+		"size": {"w":66,"h":104},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_punkoutfit1_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":104},
+			"sourceSize": {"w":36,"h":104}
+		},
+		"clothing_punkoutfit1_3.png":
+		{
+			"frame": {"x":36,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

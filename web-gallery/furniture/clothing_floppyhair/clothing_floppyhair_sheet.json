@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_floppyhair_sheet.png",
+		"size": {"w":58,"h":44},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_floppyhair_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":30,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":44},
+			"sourceSize": {"w":30,"h":44}
+		},
+		"clothing_floppyhair_1.png":
+		{
+			"frame": {"x":30,"y":0,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		}
+	}
+}

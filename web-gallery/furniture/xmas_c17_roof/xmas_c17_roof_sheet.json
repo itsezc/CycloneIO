@@ -1,0 +1,265 @@
+{
+	"meta": {
+		"image": "xmas_c17_roof_sheet.png",
+		"size": {"w":470,"h":387},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_roof_32.png":
+		{
+			"frame": {"x":0,"y":0,"w":59,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":168},
+			"sourceSize": {"w":59,"h":168}
+		},
+		"xmas_c17_roof_33.png":
+		{
+			"frame": {"x":59,"y":0,"w":59,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":168},
+			"sourceSize": {"w":59,"h":168}
+		},
+		"xmas_c17_roof_6.png":
+		{
+			"frame": {"x":118,"y":0,"w":59,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":168},
+			"sourceSize": {"w":59,"h":168}
+		},
+		"xmas_c17_roof_8.png":
+		{
+			"frame": {"x":177,"y":0,"w":59,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":168},
+			"sourceSize": {"w":59,"h":168}
+		},
+		"xmas_c17_roof_2.png":
+		{
+			"frame": {"x":236,"y":0,"w":58,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":168},
+			"sourceSize": {"w":58,"h":168}
+		},
+		"xmas_c17_roof_24.png":
+		{
+			"frame": {"x":294,"y":0,"w":58,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":168},
+			"sourceSize": {"w":58,"h":168}
+		},
+		"xmas_c17_roof_34.png":
+		{
+			"frame": {"x":0,"y":168,"w":58,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":168},
+			"sourceSize": {"w":58,"h":168}
+		},
+		"xmas_c17_roof_4.png":
+		{
+			"frame": {"x":58,"y":168,"w":58,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":168},
+			"sourceSize": {"w":58,"h":168}
+		},
+		"xmas_c17_roof_20.png":
+		{
+			"frame": {"x":116,"y":168,"w":39,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":133},
+			"sourceSize": {"w":39,"h":133}
+		},
+		"xmas_c17_roof_21.png":
+		{
+			"frame": {"x":155,"y":168,"w":39,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":133},
+			"sourceSize": {"w":39,"h":133}
+		},
+		"xmas_c17_roof_5.png":
+		{
+			"frame": {"x":194,"y":168,"w":39,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":133},
+			"sourceSize": {"w":39,"h":133}
+		},
+		"xmas_c17_roof_7.png":
+		{
+			"frame": {"x":233,"y":168,"w":39,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":133},
+			"sourceSize": {"w":39,"h":133}
+		},
+		"xmas_c17_roof_1.png":
+		{
+			"frame": {"x":272,"y":168,"w":38,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":133},
+			"sourceSize": {"w":38,"h":133}
+		},
+		"xmas_c17_roof_23.png":
+		{
+			"frame": {"x":310,"y":168,"w":38,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":133},
+			"sourceSize": {"w":38,"h":133}
+		},
+		"xmas_c17_roof_25.png":
+		{
+			"frame": {"x":352,"y":0,"w":38,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":133},
+			"sourceSize": {"w":38,"h":133}
+		},
+		"xmas_c17_roof_3.png":
+		{
+			"frame": {"x":352,"y":133,"w":38,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":133},
+			"sourceSize": {"w":38,"h":133}
+		},
+		"xmas_c17_roof_11.png":
+		{
+			"frame": {"x":390,"y":0,"w":80,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":69},
+			"sourceSize": {"w":80,"h":69}
+		},
+		"xmas_c17_roof_31.png":
+		{
+			"frame": {"x":390,"y":69,"w":80,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":69},
+			"sourceSize": {"w":80,"h":69}
+		},
+		"xmas_c17_roof_14.png":
+		{
+			"frame": {"x":390,"y":138,"w":80,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":37},
+			"sourceSize": {"w":80,"h":37}
+		},
+		"xmas_c17_roof_19.png":
+		{
+			"frame": {"x":390,"y":175,"w":80,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":37},
+			"sourceSize": {"w":80,"h":37}
+		},
+		"xmas_c17_roof_12.png":
+		{
+			"frame": {"x":390,"y":212,"w":65,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":45},
+			"sourceSize": {"w":65,"h":45}
+		},
+		"xmas_c17_roof_36.png":
+		{
+			"frame": {"x":390,"y":257,"w":65,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":45},
+			"sourceSize": {"w":65,"h":45}
+		},
+		"xmas_c17_roof_10.png":
+		{
+			"frame": {"x":0,"y":336,"w":57,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":51},
+			"sourceSize": {"w":57,"h":51}
+		},
+		"xmas_c17_roof_30.png":
+		{
+			"frame": {"x":57,"y":336,"w":57,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":51},
+			"sourceSize": {"w":57,"h":51}
+		},
+		"xmas_c17_roof_17.png":
+		{
+			"frame": {"x":114,"y":336,"w":42,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":45},
+			"sourceSize": {"w":42,"h":45}
+		},
+		"xmas_c17_roof_29.png":
+		{
+			"frame": {"x":156,"y":336,"w":42,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":45},
+			"sourceSize": {"w":42,"h":45}
+		},
+		"xmas_c17_roof_16.png":
+		{
+			"frame": {"x":390,"y":302,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		},
+		"xmas_c17_roof_26.png":
+		{
+			"frame": {"x":420,"y":302,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		},
+		"xmas_c17_roof_28.png":
+		{
+			"frame": {"x":352,"y":266,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"xmas_c17_roof_13.png":
+		{
+			"frame": {"x":352,"y":296,"w":25,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":19},
+			"sourceSize": {"w":25,"h":19}
+		},
+		"xmas_c17_roof_37.png":
+		{
+			"frame": {"x":352,"y":315,"w":25,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":19},
+			"sourceSize": {"w":25,"h":19}
+		},
+		"xmas_c17_roof_15.png":
+		{
+			"frame": {"x":455,"y":212,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

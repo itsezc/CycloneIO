@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "jungle_c16_berry2_sheet.png",
+		"size": {"w":66,"h":31},
+		"scale": "1"
+	},
+	"frames": {
+		"jungle_c16_berry2_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":23},
+			"sourceSize": {"w":38,"h":23}
+		},
+		"jungle_c16_berry2_1.png":
+		{
+			"frame": {"x":0,"y":23,"w":37,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":8},
+			"sourceSize": {"w":37,"h":8}
+		},
+		"jungle_c16_berry2_3.png":
+		{
+			"frame": {"x":38,"y":0,"w":28,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":23},
+			"sourceSize": {"w":28,"h":23}
+		}
+	}
+}

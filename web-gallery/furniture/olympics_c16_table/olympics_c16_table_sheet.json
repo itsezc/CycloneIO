@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "olympics_c16_table_sheet.png",
+		"size": {"w":193,"h":114},
+		"scale": "1"
+	},
+	"frames": {
+		"olympics_c16_table_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":65},
+			"sourceSize": {"w":66,"h":65}
+		},
+		"olympics_c16_table_8.png":
+		{
+			"frame": {"x":66,"y":0,"w":66,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":65},
+			"sourceSize": {"w":66,"h":65}
+		},
+		"olympics_c16_table_2.png":
+		{
+			"frame": {"x":0,"y":65,"w":64,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":49},
+			"sourceSize": {"w":64,"h":49}
+		},
+		"olympics_c16_table_6.png":
+		{
+			"frame": {"x":64,"y":65,"w":64,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":49},
+			"sourceSize": {"w":64,"h":49}
+		},
+		"olympics_c16_table_4.png":
+		{
+			"frame": {"x":132,"y":0,"w":61,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":45},
+			"sourceSize": {"w":61,"h":45}
+		},
+		"olympics_c16_table_9.png":
+		{
+			"frame": {"x":132,"y":45,"w":61,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":45},
+			"sourceSize": {"w":61,"h":45}
+		},
+		"olympics_c16_table_1.png":
+		{
+			"frame": {"x":132,"y":90,"w":26,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":21},
+			"sourceSize": {"w":26,"h":21}
+		}
+	}
+}

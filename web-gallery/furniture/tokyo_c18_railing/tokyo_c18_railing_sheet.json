@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "tokyo_c18_railing_sheet.png",
+		"size": {"w":142,"h":132},
+		"scale": "1"
+	},
+	"frames": {
+		"tokyo_c18_railing_12.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":74},
+			"sourceSize": {"w":36,"h":74}
+		},
+		"tokyo_c18_railing_8.png":
+		{
+			"frame": {"x":36,"y":0,"w":36,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":74},
+			"sourceSize": {"w":36,"h":74}
+		},
+		"tokyo_c18_railing_1.png":
+		{
+			"frame": {"x":72,"y":0,"w":70,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":35},
+			"sourceSize": {"w":70,"h":35}
+		},
+		"tokyo_c18_railing_15.png":
+		{
+			"frame": {"x":72,"y":35,"w":70,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":35},
+			"sourceSize": {"w":70,"h":35}
+		},
+		"tokyo_c18_railing_14.png":
+		{
+			"frame": {"x":0,"y":74,"w":34,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":58},
+			"sourceSize": {"w":34,"h":58}
+		},
+		"tokyo_c18_railing_5.png":
+		{
+			"frame": {"x":34,"y":74,"w":34,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":58},
+			"sourceSize": {"w":34,"h":58}
+		},
+		"tokyo_c18_railing_6.png":
+		{
+			"frame": {"x":68,"y":74,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		},
+		"tokyo_c18_railing_3.png":
+		{
+			"frame": {"x":72,"y":70,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"tokyo_c18_railing_7.png":
+		{
+			"frame": {"x":75,"y":70,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"tokyo_c18_railing_2.png":
+		{
+			"frame": {"x":78,"y":70,"w":1,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":3},
+			"sourceSize": {"w":1,"h":3}
+		}
+	}
+}

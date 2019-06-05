@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "picnic_food2_sheet.png",
+		"size": {"w":116,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"picnic_food2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":45},
+			"sourceSize": {"w":58,"h":45}
+		},
+		"picnic_food2_2.png":
+		{
+			"frame": {"x":58,"y":0,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"picnic_food2_3.png":
+		{
+			"frame": {"x":58,"y":29,"w":27,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":16},
+			"sourceSize": {"w":27,"h":16}
+		}
+	}
+}

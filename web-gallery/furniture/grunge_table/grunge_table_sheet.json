@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "grunge_table_sheet.png",
+		"size": {"w":162,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"grunge_table_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":98,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":65},
+			"sourceSize": {"w":98,"h":65}
+		},
+		"grunge_table_5.png":
+		{
+			"frame": {"x":98,"y":0,"w":64,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":65},
+			"sourceSize": {"w":64,"h":65}
+		},
+		"grunge_table_7.png":
+		{
+			"frame": {"x":0,"y":65,"w":34,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":35},
+			"sourceSize": {"w":34,"h":35}
+		},
+		"grunge_table_8.png":
+		{
+			"frame": {"x":34,"y":65,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

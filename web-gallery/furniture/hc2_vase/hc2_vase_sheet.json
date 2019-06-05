@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "hc2_vase_sheet.png",
+		"size": {"w":162,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"hc2_vase_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":81,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":117},
+			"sourceSize": {"w":81,"h":117}
+		},
+		"hc2_vase_3.png":
+		{
+			"frame": {"x":81,"y":0,"w":31,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":117},
+			"sourceSize": {"w":31,"h":117}
+		},
+		"hc2_vase_5.png":
+		{
+			"frame": {"x":112,"y":0,"w":17,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":59},
+			"sourceSize": {"w":17,"h":59}
+		},
+		"hc2_vase_9.png":
+		{
+			"frame": {"x":129,"y":0,"w":33,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":13},
+			"sourceSize": {"w":33,"h":13}
+		},
+		"hc2_vase_7.png":
+		{
+			"frame": {"x":129,"y":13,"w":8,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":30},
+			"sourceSize": {"w":8,"h":30}
+		},
+		"hc2_vase_1.png":
+		{
+			"frame": {"x":137,"y":13,"w":17,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":7},
+			"sourceSize": {"w":17,"h":7}
+		}
+	}
+}

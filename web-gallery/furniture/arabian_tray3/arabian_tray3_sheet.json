@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "arabian_tray3_sheet.png",
+		"size": {"w":158,"h":155},
+		"scale": "1"
+	},
+	"frames": {
+		"arabian_tray3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":95,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":102},
+			"sourceSize": {"w":95,"h":102}
+		},
+		"arabian_tray3_2.png":
+		{
+			"frame": {"x":95,"y":0,"w":63,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":102},
+			"sourceSize": {"w":63,"h":102}
+		},
+		"arabian_tray3_7.png":
+		{
+			"frame": {"x":0,"y":102,"w":32,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":53},
+			"sourceSize": {"w":32,"h":53}
+		},
+		"arabian_tray3_3.png":
+		{
+			"frame": {"x":32,"y":102,"w":25,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":28},
+			"sourceSize": {"w":25,"h":28}
+		}
+	}
+}

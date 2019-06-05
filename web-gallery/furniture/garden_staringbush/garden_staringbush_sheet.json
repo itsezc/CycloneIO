@@ -1,0 +1,193 @@
+{
+	"meta": {
+		"image": "garden_staringbush_sheet.png",
+		"size": {"w":305,"h":238},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_staringbush_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":185,"h":177},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":185,"h":177},
+			"sourceSize": {"w":185,"h":177}
+		},
+		"garden_staringbush_4.png":
+		{
+			"frame": {"x":185,"y":0,"w":120,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":58},
+			"sourceSize": {"w":120,"h":58}
+		},
+		"garden_staringbush_14.png":
+		{
+			"frame": {"x":185,"y":58,"w":68,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":58},
+			"sourceSize": {"w":68,"h":58}
+		},
+		"garden_staringbush_22.png":
+		{
+			"frame": {"x":185,"y":116,"w":65,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":59},
+			"sourceSize": {"w":65,"h":59}
+		},
+		"garden_staringbush_20.png":
+		{
+			"frame": {"x":0,"y":177,"w":61,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":61},
+			"sourceSize": {"w":61,"h":61}
+		},
+		"garden_staringbush_10.png":
+		{
+			"frame": {"x":61,"y":177,"w":60,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":29},
+			"sourceSize": {"w":60,"h":29}
+		},
+		"garden_staringbush_1.png":
+		{
+			"frame": {"x":253,"y":58,"w":35,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":29},
+			"sourceSize": {"w":35,"h":29}
+		},
+		"garden_staringbush_5.png":
+		{
+			"frame": {"x":250,"y":116,"w":34,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":31},
+			"sourceSize": {"w":34,"h":31}
+		},
+		"garden_staringbush_17.png":
+		{
+			"frame": {"x":61,"y":206,"w":31,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":31},
+			"sourceSize": {"w":31,"h":31}
+		},
+		"garden_staringbush_18.png":
+		{
+			"frame": {"x":92,"y":206,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"garden_staringbush_7.png":
+		{
+			"frame": {"x":288,"y":58,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"garden_staringbush_12.png":
+		{
+			"frame": {"x":296,"y":58,"w":8,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":7},
+			"sourceSize": {"w":8,"h":7}
+		},
+		"garden_staringbush_6.png":
+		{
+			"frame": {"x":288,"y":66,"w":8,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":5},
+			"sourceSize": {"w":8,"h":5}
+		},
+		"garden_staringbush_11.png":
+		{
+			"frame": {"x":296,"y":66,"w":8,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":4},
+			"sourceSize": {"w":8,"h":4}
+		},
+		"garden_staringbush_13.png":
+		{
+			"frame": {"x":288,"y":71,"w":8,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":4},
+			"sourceSize": {"w":8,"h":4}
+		},
+		"garden_staringbush_8.png":
+		{
+			"frame": {"x":288,"y":75,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"garden_staringbush_19.png":
+		{
+			"frame": {"x":295,"y":75,"w":4,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":5},
+			"sourceSize": {"w":4,"h":5}
+		},
+		"garden_staringbush_23.png":
+		{
+			"frame": {"x":296,"y":71,"w":5,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":4},
+			"sourceSize": {"w":5,"h":4}
+		},
+		"garden_staringbush_3.png":
+		{
+			"frame": {"x":299,"y":75,"w":5,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":4},
+			"sourceSize": {"w":5,"h":4}
+		},
+		"garden_staringbush_2.png":
+		{
+			"frame": {"x":288,"y":82,"w":5,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":3},
+			"sourceSize": {"w":5,"h":3}
+		},
+		"garden_staringbush_25.png":
+		{
+			"frame": {"x":295,"y":80,"w":5,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":2},
+			"sourceSize": {"w":5,"h":2}
+		},
+		"garden_staringbush_21.png":
+		{
+			"frame": {"x":301,"y":71,"w":4,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+			"sourceSize": {"w":4,"h":4}
+		},
+		"garden_staringbush_16.png":
+		{
+			"frame": {"x":300,"y":80,"w":4,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":2},
+			"sourceSize": {"w":4,"h":2}
+		}
+	}
+}

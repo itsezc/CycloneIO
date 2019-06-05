@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_kimono2_sheet.png",
+		"size": {"w":175,"h":122},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_kimono2_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":104},
+			"sourceSize": {"w":37,"h":104}
+		},
+		"clothing_kimono2_3.png":
+		{
+			"frame": {"x":37,"y":0,"w":37,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":104},
+			"sourceSize": {"w":37,"h":104}
+		},
+		"clothing_kimono2_4.png":
+		{
+			"frame": {"x":74,"y":0,"w":37,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":104},
+			"sourceSize": {"w":37,"h":104}
+		},
+		"clothing_kimono2_5.png":
+		{
+			"frame": {"x":111,"y":0,"w":37,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":104},
+			"sourceSize": {"w":37,"h":104}
+		},
+		"clothing_kimono2_11.png":
+		{
+			"frame": {"x":0,"y":104,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"clothing_kimono2_9.png":
+		{
+			"frame": {"x":148,"y":0,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"clothing_kimono2_7.png":
+		{
+			"frame": {"x":148,"y":28,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

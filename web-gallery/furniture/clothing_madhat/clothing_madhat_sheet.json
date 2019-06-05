@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_madhat_sheet.png",
+		"size": {"w":66,"h":62},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_madhat_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":62},
+			"sourceSize": {"w":38,"h":62}
+		},
+		"clothing_madhat_4.png":
+		{
+			"frame": {"x":38,"y":0,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		}
+	}
+}

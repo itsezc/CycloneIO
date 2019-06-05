@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "nest_plow_reg_sheet.png",
+		"size": {"w":102,"h":92},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_plow_reg_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":102,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":102,"h":46},
+			"sourceSize": {"w":102,"h":46}
+		},
+		"nest_plow_reg_1.png":
+		{
+			"frame": {"x":0,"y":46,"w":51,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":30},
+			"sourceSize": {"w":51,"h":30}
+		},
+		"nest_plow_reg_4.png":
+		{
+			"frame": {"x":51,"y":46,"w":51,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":30},
+			"sourceSize": {"w":51,"h":30}
+		},
+		"nest_plow_reg_5.png":
+		{
+			"frame": {"x":0,"y":76,"w":27,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":16},
+			"sourceSize": {"w":27,"h":16}
+		},
+		"nest_plow_reg_8.png":
+		{
+			"frame": {"x":27,"y":76,"w":27,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":16},
+			"sourceSize": {"w":27,"h":16}
+		}
+	}
+}

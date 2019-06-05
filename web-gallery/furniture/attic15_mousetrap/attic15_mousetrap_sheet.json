@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "attic15_mousetrap_sheet.png",
+		"size": {"w":92,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"attic15_mousetrap_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":28},
+			"sourceSize": {"w":46,"h":28}
+		},
+		"attic15_mousetrap_5.png":
+		{
+			"frame": {"x":46,"y":0,"w":46,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":28},
+			"sourceSize": {"w":46,"h":28}
+		},
+		"attic15_mousetrap_6.png":
+		{
+			"frame": {"x":0,"y":28,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		}
+	}
+}

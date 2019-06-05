@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "gothic_c15_tower_sheet.png",
+		"size": {"w":122,"h":167},
+		"scale": "1"
+	},
+	"frames": {
+		"gothic_c15_tower_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":72,"h":167},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":167},
+			"sourceSize": {"w":72,"h":167}
+		},
+		"gothic_c15_tower_6.png":
+		{
+			"frame": {"x":72,"y":0,"w":50,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":36},
+			"sourceSize": {"w":50,"h":36}
+		},
+		"gothic_c15_tower_8.png":
+		{
+			"frame": {"x":72,"y":36,"w":17,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":36},
+			"sourceSize": {"w":17,"h":36}
+		},
+		"gothic_c15_tower_4.png":
+		{
+			"frame": {"x":89,"y":36,"w":15,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":36},
+			"sourceSize": {"w":15,"h":36}
+		},
+		"gothic_c15_tower_7.png":
+		{
+			"frame": {"x":104,"y":36,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"gothic_c15_tower_3.png":
+		{
+			"frame": {"x":119,"y":36,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

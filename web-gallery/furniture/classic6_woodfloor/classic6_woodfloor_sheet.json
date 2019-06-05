@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "classic6_woodfloor_sheet.png",
+		"size": {"w":128,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"classic6_woodfloor_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":68},
+			"sourceSize": {"w":128,"h":68}
+		},
+		"classic6_woodfloor_6.png":
+		{
+			"frame": {"x":0,"y":68,"w":63,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":34},
+			"sourceSize": {"w":63,"h":34}
+		},
+		"classic6_woodfloor_3.png":
+		{
+			"frame": {"x":63,"y":68,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		}
+	}
+}

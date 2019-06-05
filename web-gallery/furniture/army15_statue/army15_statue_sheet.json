@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "army15_statue_sheet.png",
+		"size": {"w":116,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"army15_statue_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":72},
+			"sourceSize": {"w":39,"h":72}
+		},
+		"army15_statue_5.png":
+		{
+			"frame": {"x":39,"y":0,"w":41,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":69},
+			"sourceSize": {"w":41,"h":69}
+		},
+		"army15_statue_7.png":
+		{
+			"frame": {"x":80,"y":0,"w":36,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":19},
+			"sourceSize": {"w":36,"h":19}
+		},
+		"army15_statue_9.png":
+		{
+			"frame": {"x":80,"y":19,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

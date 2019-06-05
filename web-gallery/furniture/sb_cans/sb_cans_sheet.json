@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "sb_cans_sheet.png",
+		"size": {"w":70,"h":70},
+		"scale": "1"
+	},
+	"frames": {
+		"sb_cans_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":35},
+			"sourceSize": {"w":70,"h":35}
+		},
+		"sb_cans_4.png":
+		{
+			"frame": {"x":0,"y":35,"w":46,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":35},
+			"sourceSize": {"w":46,"h":35}
+		},
+		"sb_cans_1.png":
+		{
+			"frame": {"x":46,"y":35,"w":24,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":17},
+			"sourceSize": {"w":24,"h":17}
+		}
+	}
+}

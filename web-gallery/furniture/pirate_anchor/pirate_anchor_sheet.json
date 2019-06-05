@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "pirate_anchor_sheet.png",
+		"size": {"w":102,"h":75},
+		"scale": "1"
+	},
+	"frames": {
+		"pirate_anchor_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":45},
+			"sourceSize": {"w":52,"h":45}
+		},
+		"pirate_anchor_1.png":
+		{
+			"frame": {"x":52,"y":0,"w":50,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":20},
+			"sourceSize": {"w":50,"h":20}
+		},
+		"pirate_anchor_4.png":
+		{
+			"frame": {"x":0,"y":45,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		},
+		"pirate_anchor_3.png":
+		{
+			"frame": {"x":52,"y":20,"w":26,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":24},
+			"sourceSize": {"w":26,"h":24}
+		},
+		"pirate_anchor_10.png":
+		{
+			"frame": {"x":27,"y":45,"w":25,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":10},
+			"sourceSize": {"w":25,"h":10}
+		}
+	}
+}

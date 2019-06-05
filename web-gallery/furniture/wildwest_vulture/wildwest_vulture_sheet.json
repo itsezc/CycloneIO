@@ -1,0 +1,529 @@
+{
+	"meta": {
+		"image": "wildwest_vulture_sheet.png",
+		"size": {"w":413,"h":371},
+		"scale": "1"
+	},
+	"frames": {
+		"wildwest_vulture_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":76},
+			"sourceSize": {"w":51,"h":76}
+		},
+		"wildwest_vulture_17.png":
+		{
+			"frame": {"x":51,"y":0,"w":51,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":76},
+			"sourceSize": {"w":51,"h":76}
+		},
+		"wildwest_vulture_2.png":
+		{
+			"frame": {"x":102,"y":0,"w":51,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":76},
+			"sourceSize": {"w":51,"h":76}
+		},
+		"wildwest_vulture_6.png":
+		{
+			"frame": {"x":0,"y":76,"w":51,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":76},
+			"sourceSize": {"w":51,"h":76}
+		},
+		"wildwest_vulture_1.png":
+		{
+			"frame": {"x":51,"y":76,"w":51,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":75},
+			"sourceSize": {"w":51,"h":75}
+		},
+		"wildwest_vulture_10.png":
+		{
+			"frame": {"x":102,"y":76,"w":51,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":75},
+			"sourceSize": {"w":51,"h":75}
+		},
+		"wildwest_vulture_3.png":
+		{
+			"frame": {"x":153,"y":0,"w":51,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":75},
+			"sourceSize": {"w":51,"h":75}
+		},
+		"wildwest_vulture_9.png":
+		{
+			"frame": {"x":153,"y":75,"w":51,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":75},
+			"sourceSize": {"w":51,"h":75}
+		},
+		"wildwest_vulture_4.png":
+		{
+			"frame": {"x":204,"y":0,"w":51,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+			"sourceSize": {"w":51,"h":74}
+		},
+		"wildwest_vulture_8.png":
+		{
+			"frame": {"x":204,"y":74,"w":51,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":74},
+			"sourceSize": {"w":51,"h":74}
+		},
+		"wildwest_vulture_49.png":
+		{
+			"frame": {"x":0,"y":152,"w":65,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":73},
+			"sourceSize": {"w":65,"h":73}
+		},
+		"wildwest_vulture_59.png":
+		{
+			"frame": {"x":65,"y":152,"w":65,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":73},
+			"sourceSize": {"w":65,"h":73}
+		},
+		"wildwest_vulture_47.png":
+		{
+			"frame": {"x":130,"y":152,"w":65,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":72},
+			"sourceSize": {"w":65,"h":72}
+		},
+		"wildwest_vulture_60.png":
+		{
+			"frame": {"x":255,"y":0,"w":65,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":72},
+			"sourceSize": {"w":65,"h":72}
+		},
+		"wildwest_vulture_20.png":
+		{
+			"frame": {"x":255,"y":72,"w":62,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":72},
+			"sourceSize": {"w":62,"h":72}
+		},
+		"wildwest_vulture_21.png":
+		{
+			"frame": {"x":255,"y":144,"w":62,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":72},
+			"sourceSize": {"w":62,"h":72}
+		},
+		"wildwest_vulture_58.png":
+		{
+			"frame": {"x":0,"y":225,"w":62,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":72},
+			"sourceSize": {"w":62,"h":72}
+		},
+		"wildwest_vulture_61.png":
+		{
+			"frame": {"x":62,"y":225,"w":62,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":72},
+			"sourceSize": {"w":62,"h":72}
+		},
+		"wildwest_vulture_62.png":
+		{
+			"frame": {"x":124,"y":225,"w":62,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":72},
+			"sourceSize": {"w":62,"h":72}
+		},
+		"wildwest_vulture_7.png":
+		{
+			"frame": {"x":195,"y":152,"w":54,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":72},
+			"sourceSize": {"w":54,"h":72}
+		},
+		"wildwest_vulture_46.png":
+		{
+			"frame": {"x":186,"y":225,"w":64,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":71},
+			"sourceSize": {"w":64,"h":71}
+		},
+		"wildwest_vulture_15.png":
+		{
+			"frame": {"x":250,"y":225,"w":62,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":71},
+			"sourceSize": {"w":62,"h":71}
+		},
+		"wildwest_vulture_18.png":
+		{
+			"frame": {"x":320,"y":0,"w":62,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":71},
+			"sourceSize": {"w":62,"h":71}
+		},
+		"wildwest_vulture_13.png":
+		{
+			"frame": {"x":320,"y":71,"w":62,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":69},
+			"sourceSize": {"w":62,"h":69}
+		},
+		"wildwest_vulture_16.png":
+		{
+			"frame": {"x":320,"y":140,"w":62,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":69},
+			"sourceSize": {"w":62,"h":69}
+		},
+		"wildwest_vulture_44.png":
+		{
+			"frame": {"x":320,"y":209,"w":62,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":69},
+			"sourceSize": {"w":62,"h":69}
+		},
+		"wildwest_vulture_19.png":
+		{
+			"frame": {"x":320,"y":278,"w":46,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":18},
+			"sourceSize": {"w":46,"h":18}
+		},
+		"wildwest_vulture_25.png":
+		{
+			"frame": {"x":0,"y":297,"w":26,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":38},
+			"sourceSize": {"w":26,"h":38}
+		},
+		"wildwest_vulture_42.png":
+		{
+			"frame": {"x":26,"y":297,"w":26,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":38},
+			"sourceSize": {"w":26,"h":38}
+		},
+		"wildwest_vulture_48.png":
+		{
+			"frame": {"x":52,"y":297,"w":26,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":38},
+			"sourceSize": {"w":26,"h":38}
+		},
+		"wildwest_vulture_50.png":
+		{
+			"frame": {"x":78,"y":297,"w":26,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":38},
+			"sourceSize": {"w":26,"h":38}
+		},
+		"wildwest_vulture_40.png":
+		{
+			"frame": {"x":104,"y":297,"w":33,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":37},
+			"sourceSize": {"w":33,"h":37}
+		},
+		"wildwest_vulture_24.png":
+		{
+			"frame": {"x":137,"y":297,"w":26,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":37},
+			"sourceSize": {"w":26,"h":37}
+		},
+		"wildwest_vulture_33.png":
+		{
+			"frame": {"x":163,"y":297,"w":26,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":37},
+			"sourceSize": {"w":26,"h":37}
+		},
+		"wildwest_vulture_36.png":
+		{
+			"frame": {"x":189,"y":297,"w":26,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":37},
+			"sourceSize": {"w":26,"h":37}
+		},
+		"wildwest_vulture_38.png":
+		{
+			"frame": {"x":215,"y":297,"w":26,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":37},
+			"sourceSize": {"w":26,"h":37}
+		},
+		"wildwest_vulture_29.png":
+		{
+			"frame": {"x":241,"y":297,"w":33,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":36},
+			"sourceSize": {"w":33,"h":36}
+		},
+		"wildwest_vulture_34.png":
+		{
+			"frame": {"x":274,"y":297,"w":33,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":36},
+			"sourceSize": {"w":33,"h":36}
+		},
+		"wildwest_vulture_37.png":
+		{
+			"frame": {"x":307,"y":297,"w":33,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":36},
+			"sourceSize": {"w":33,"h":36}
+		},
+		"wildwest_vulture_27.png":
+		{
+			"frame": {"x":340,"y":297,"w":31,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":36},
+			"sourceSize": {"w":31,"h":36}
+		},
+		"wildwest_vulture_28.png":
+		{
+			"frame": {"x":0,"y":335,"w":31,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":36},
+			"sourceSize": {"w":31,"h":36}
+		},
+		"wildwest_vulture_30.png":
+		{
+			"frame": {"x":31,"y":335,"w":31,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":36},
+			"sourceSize": {"w":31,"h":36}
+		},
+		"wildwest_vulture_32.png":
+		{
+			"frame": {"x":62,"y":335,"w":31,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":36},
+			"sourceSize": {"w":31,"h":36}
+		},
+		"wildwest_vulture_67.png":
+		{
+			"frame": {"x":93,"y":335,"w":31,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":36},
+			"sourceSize": {"w":31,"h":36}
+		},
+		"wildwest_vulture_23.png":
+		{
+			"frame": {"x":124,"y":335,"w":26,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":36},
+			"sourceSize": {"w":26,"h":36}
+		},
+		"wildwest_vulture_39.png":
+		{
+			"frame": {"x":150,"y":335,"w":26,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":36},
+			"sourceSize": {"w":26,"h":36}
+		},
+		"wildwest_vulture_35.png":
+		{
+			"frame": {"x":176,"y":335,"w":33,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":35},
+			"sourceSize": {"w":33,"h":35}
+		},
+		"wildwest_vulture_70.png":
+		{
+			"frame": {"x":209,"y":335,"w":31,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":35},
+			"sourceSize": {"w":31,"h":35}
+		},
+		"wildwest_vulture_22.png":
+		{
+			"frame": {"x":240,"y":335,"w":27,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":35},
+			"sourceSize": {"w":27,"h":35}
+		},
+		"wildwest_vulture_53.png":
+		{
+			"frame": {"x":267,"y":335,"w":27,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":35},
+			"sourceSize": {"w":27,"h":35}
+		},
+		"wildwest_vulture_43.png":
+		{
+			"frame": {"x":294,"y":335,"w":31,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":34},
+			"sourceSize": {"w":31,"h":34}
+		},
+		"wildwest_vulture_52.png":
+		{
+			"frame": {"x":325,"y":335,"w":31,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":34},
+			"sourceSize": {"w":31,"h":34}
+		},
+		"wildwest_vulture_65.png":
+		{
+			"frame": {"x":382,"y":0,"w":31,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":34},
+			"sourceSize": {"w":31,"h":34}
+		},
+		"wildwest_vulture_56.png":
+		{
+			"frame": {"x":382,"y":34,"w":31,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":33},
+			"sourceSize": {"w":31,"h":33}
+		},
+		"wildwest_vulture_14.png":
+		{
+			"frame": {"x":382,"y":67,"w":26,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":29},
+			"sourceSize": {"w":26,"h":29}
+		},
+		"wildwest_vulture_31.png":
+		{
+			"frame": {"x":382,"y":96,"w":22,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":9},
+			"sourceSize": {"w":22,"h":9}
+		},
+		"wildwest_vulture_45.png":
+		{
+			"frame": {"x":382,"y":105,"w":19,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":19},
+			"sourceSize": {"w":19,"h":19}
+		},
+		"wildwest_vulture_51.png":
+		{
+			"frame": {"x":382,"y":124,"w":19,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":19},
+			"sourceSize": {"w":19,"h":19}
+		},
+		"wildwest_vulture_55.png":
+		{
+			"frame": {"x":382,"y":143,"w":19,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":19},
+			"sourceSize": {"w":19,"h":19}
+		},
+		"wildwest_vulture_57.png":
+		{
+			"frame": {"x":382,"y":162,"w":19,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":19},
+			"sourceSize": {"w":19,"h":19}
+		},
+		"wildwest_vulture_64.png":
+		{
+			"frame": {"x":401,"y":105,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"wildwest_vulture_66.png":
+		{
+			"frame": {"x":401,"y":124,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"wildwest_vulture_68.png":
+		{
+			"frame": {"x":401,"y":143,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"wildwest_vulture_69.png":
+		{
+			"frame": {"x":401,"y":162,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"wildwest_vulture_54.png":
+		{
+			"frame": {"x":408,"y":67,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

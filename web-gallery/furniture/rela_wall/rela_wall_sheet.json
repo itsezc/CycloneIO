@@ -1,0 +1,161 @@
+{
+	"meta": {
+		"image": "rela_wall_sheet.png",
+		"size": {"w":496,"h":488},
+		"scale": "1"
+	},
+	"frames": {
+		"rela_wall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":372,"h":349},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":372,"h":349},
+			"sourceSize": {"w":372,"h":349}
+		},
+		"rela_wall_17.png":
+		{
+			"frame": {"x":372,"y":0,"w":62,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":141},
+			"sourceSize": {"w":62,"h":141}
+		},
+		"rela_wall_18.png":
+		{
+			"frame": {"x":372,"y":141,"w":62,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":141},
+			"sourceSize": {"w":62,"h":141}
+		},
+		"rela_wall_19.png":
+		{
+			"frame": {"x":434,"y":0,"w":62,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":141},
+			"sourceSize": {"w":62,"h":141}
+		},
+		"rela_wall_4.png":
+		{
+			"frame": {"x":434,"y":141,"w":62,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":139},
+			"sourceSize": {"w":62,"h":139}
+		},
+		"rela_wall_5.png":
+		{
+			"frame": {"x":0,"y":349,"w":62,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":139},
+			"sourceSize": {"w":62,"h":139}
+		},
+		"rela_wall_8.png":
+		{
+			"frame": {"x":62,"y":349,"w":62,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":139},
+			"sourceSize": {"w":62,"h":139}
+		},
+		"rela_wall_22.png":
+		{
+			"frame": {"x":124,"y":349,"w":62,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":138},
+			"sourceSize": {"w":62,"h":138}
+		},
+		"rela_wall_14.png":
+		{
+			"frame": {"x":186,"y":349,"w":96,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":95},
+			"sourceSize": {"w":96,"h":95}
+		},
+		"rela_wall_10.png":
+		{
+			"frame": {"x":282,"y":349,"w":32,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":72},
+			"sourceSize": {"w":32,"h":72}
+		},
+		"rela_wall_11.png":
+		{
+			"frame": {"x":314,"y":349,"w":32,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":72},
+			"sourceSize": {"w":32,"h":72}
+		},
+		"rela_wall_9.png":
+		{
+			"frame": {"x":346,"y":349,"w":32,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":72},
+			"sourceSize": {"w":32,"h":72}
+		},
+		"rela_wall_16.png":
+		{
+			"frame": {"x":378,"y":349,"w":30,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":70},
+			"sourceSize": {"w":30,"h":70}
+		},
+		"rela_wall_21.png":
+		{
+			"frame": {"x":408,"y":349,"w":30,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":70},
+			"sourceSize": {"w":30,"h":70}
+		},
+		"rela_wall_23.png":
+		{
+			"frame": {"x":438,"y":349,"w":30,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":70},
+			"sourceSize": {"w":30,"h":70}
+		},
+		"rela_wall_7.png":
+		{
+			"frame": {"x":434,"y":280,"w":32,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":69},
+			"sourceSize": {"w":32,"h":69}
+		},
+		"rela_wall_1.png":
+		{
+			"frame": {"x":372,"y":282,"w":48,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":47},
+			"sourceSize": {"w":48,"h":47}
+		},
+		"rela_wall_20.png":
+		{
+			"frame": {"x":466,"y":280,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		},
+		"rela_wall_3.png":
+		{
+			"frame": {"x":478,"y":280,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

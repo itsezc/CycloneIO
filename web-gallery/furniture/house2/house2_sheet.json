@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "house2_sheet.png",
+		"size": {"w":102,"h":74},
+		"scale": "1"
+	},
+	"frames": {
+		"house2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":56},
+			"sourceSize": {"w":61,"h":56}
+		},
+		"house2_5.png":
+		{
+			"frame": {"x":61,"y":0,"w":41,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":21},
+			"sourceSize": {"w":41,"h":21}
+		},
+		"house2_3.png":
+		{
+			"frame": {"x":61,"y":21,"w":37,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":35},
+			"sourceSize": {"w":37,"h":35}
+		},
+		"house2_7.png":
+		{
+			"frame": {"x":0,"y":56,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		},
+		"house2_9.png":
+		{
+			"frame": {"x":20,"y":56,"w":19,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":18},
+			"sourceSize": {"w":19,"h":18}
+		},
+		"house2_1.png":
+		{
+			"frame": {"x":39,"y":56,"w":19,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":10},
+			"sourceSize": {"w":19,"h":10}
+		}
+	}
+}

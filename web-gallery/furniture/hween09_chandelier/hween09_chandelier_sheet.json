@@ -1,0 +1,489 @@
+{
+	"meta": {
+		"image": "hween09_chandelier_sheet.png",
+		"size": {"w":752,"h":628},
+		"scale": "1"
+	},
+	"frames": {
+		"hween09_chandelier_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":489,"h":442},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":489,"h":442},
+			"sourceSize": {"w":489,"h":442}
+		},
+		"hween09_chandelier_35.png":
+		{
+			"frame": {"x":489,"y":0,"w":99,"h":177},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":177},
+			"sourceSize": {"w":99,"h":177}
+		},
+		"hween09_chandelier_36.png":
+		{
+			"frame": {"x":0,"y":442,"w":106,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":106,"h":75},
+			"sourceSize": {"w":106,"h":75}
+		},
+		"hween09_chandelier_26.png":
+		{
+			"frame": {"x":489,"y":177,"w":52,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":105},
+			"sourceSize": {"w":52,"h":105}
+		},
+		"hween09_chandelier_7.png":
+		{
+			"frame": {"x":106,"y":442,"w":100,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":55},
+			"sourceSize": {"w":100,"h":55}
+		},
+		"hween09_chandelier_37.png":
+		{
+			"frame": {"x":489,"y":282,"w":99,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":68},
+			"sourceSize": {"w":99,"h":68}
+		},
+		"hween09_chandelier_10.png":
+		{
+			"frame": {"x":489,"y":350,"w":98,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":37},
+			"sourceSize": {"w":98,"h":37}
+		},
+		"hween09_chandelier_1.png":
+		{
+			"frame": {"x":489,"y":387,"w":96,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":55},
+			"sourceSize": {"w":96,"h":55}
+		},
+		"hween09_chandelier_6.png":
+		{
+			"frame": {"x":206,"y":442,"w":94,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":37},
+			"sourceSize": {"w":94,"h":37}
+		},
+		"hween09_chandelier_3.png":
+		{
+			"frame": {"x":0,"y":517,"w":93,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":55},
+			"sourceSize": {"w":93,"h":55}
+		},
+		"hween09_chandelier_28.png":
+		{
+			"frame": {"x":93,"y":517,"w":91,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":55},
+			"sourceSize": {"w":91,"h":55}
+		},
+		"hween09_chandelier_25.png":
+		{
+			"frame": {"x":588,"y":0,"w":90,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":90,"h":56},
+			"sourceSize": {"w":90,"h":56}
+		},
+		"hween09_chandelier_30.png":
+		{
+			"frame": {"x":588,"y":56,"w":90,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":90,"h":56},
+			"sourceSize": {"w":90,"h":56}
+		},
+		"hween09_chandelier_22.png":
+		{
+			"frame": {"x":588,"y":112,"w":89,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":56},
+			"sourceSize": {"w":89,"h":56}
+		},
+		"hween09_chandelier_39.png":
+		{
+			"frame": {"x":588,"y":168,"w":89,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":55},
+			"sourceSize": {"w":89,"h":55}
+		},
+		"hween09_chandelier_40.png":
+		{
+			"frame": {"x":588,"y":223,"w":89,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":55},
+			"sourceSize": {"w":89,"h":55}
+		},
+		"hween09_chandelier_42.png":
+		{
+			"frame": {"x":588,"y":278,"w":89,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":55},
+			"sourceSize": {"w":89,"h":55}
+		},
+		"hween09_chandelier_43.png":
+		{
+			"frame": {"x":588,"y":333,"w":89,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":55},
+			"sourceSize": {"w":89,"h":55}
+		},
+		"hween09_chandelier_44.png":
+		{
+			"frame": {"x":588,"y":388,"w":89,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":55},
+			"sourceSize": {"w":89,"h":55}
+		},
+		"hween09_chandelier_45.png":
+		{
+			"frame": {"x":588,"y":443,"w":89,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":55},
+			"sourceSize": {"w":89,"h":55}
+		},
+		"hween09_chandelier_23.png":
+		{
+			"frame": {"x":588,"y":498,"w":88,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":56},
+			"sourceSize": {"w":88,"h":56}
+		},
+		"hween09_chandelier_51.png":
+		{
+			"frame": {"x":0,"y":572,"w":88,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":56},
+			"sourceSize": {"w":88,"h":56}
+		},
+		"hween09_chandelier_49.png":
+		{
+			"frame": {"x":184,"y":517,"w":88,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":55},
+			"sourceSize": {"w":88,"h":55}
+		},
+		"hween09_chandelier_50.png":
+		{
+			"frame": {"x":272,"y":517,"w":88,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":55},
+			"sourceSize": {"w":88,"h":55}
+		},
+		"hween09_chandelier_52.png":
+		{
+			"frame": {"x":360,"y":517,"w":88,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":55},
+			"sourceSize": {"w":88,"h":55}
+		},
+		"hween09_chandelier_54.png":
+		{
+			"frame": {"x":678,"y":0,"w":74,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":58},
+			"sourceSize": {"w":74,"h":58}
+		},
+		"hween09_chandelier_53.png":
+		{
+			"frame": {"x":678,"y":58,"w":74,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":55},
+			"sourceSize": {"w":74,"h":55}
+		},
+		"hween09_chandelier_8.png":
+		{
+			"frame": {"x":678,"y":113,"w":60,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":27},
+			"sourceSize": {"w":60,"h":27}
+		},
+		"hween09_chandelier_5.png":
+		{
+			"frame": {"x":678,"y":140,"w":58,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":27},
+			"sourceSize": {"w":58,"h":27}
+		},
+		"hween09_chandelier_55.png":
+		{
+			"frame": {"x":678,"y":167,"w":47,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":55},
+			"sourceSize": {"w":47,"h":55}
+		},
+		"hween09_chandelier_24.png":
+		{
+			"frame": {"x":678,"y":222,"w":55,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":27},
+			"sourceSize": {"w":55,"h":27}
+		},
+		"hween09_chandelier_56.png":
+		{
+			"frame": {"x":678,"y":249,"w":47,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":54},
+			"sourceSize": {"w":47,"h":54}
+		},
+		"hween09_chandelier_48.png":
+		{
+			"frame": {"x":678,"y":303,"w":53,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":38},
+			"sourceSize": {"w":53,"h":38}
+		},
+		"hween09_chandelier_11.png":
+		{
+			"frame": {"x":678,"y":341,"w":52,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":33},
+			"sourceSize": {"w":52,"h":33}
+		},
+		"hween09_chandelier_27.png":
+		{
+			"frame": {"x":678,"y":374,"w":52,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":27},
+			"sourceSize": {"w":52,"h":27}
+		},
+		"hween09_chandelier_29.png":
+		{
+			"frame": {"x":678,"y":401,"w":50,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":27},
+			"sourceSize": {"w":50,"h":27}
+		},
+		"hween09_chandelier_31.png":
+		{
+			"frame": {"x":678,"y":428,"w":49,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":28},
+			"sourceSize": {"w":49,"h":28}
+		},
+		"hween09_chandelier_58.png":
+		{
+			"frame": {"x":678,"y":456,"w":48,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":35},
+			"sourceSize": {"w":48,"h":35}
+		},
+		"hween09_chandelier_61.png":
+		{
+			"frame": {"x":678,"y":491,"w":48,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":29},
+			"sourceSize": {"w":48,"h":29}
+		},
+		"hween09_chandelier_16.png":
+		{
+			"frame": {"x":678,"y":520,"w":48,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":28},
+			"sourceSize": {"w":48,"h":28}
+		},
+		"hween09_chandelier_18.png":
+		{
+			"frame": {"x":678,"y":548,"w":48,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":28},
+			"sourceSize": {"w":48,"h":28}
+		},
+		"hween09_chandelier_59.png":
+		{
+			"frame": {"x":678,"y":576,"w":47,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":34},
+			"sourceSize": {"w":47,"h":34}
+		},
+		"hween09_chandelier_47.png":
+		{
+			"frame": {"x":541,"y":177,"w":47,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":33},
+			"sourceSize": {"w":47,"h":33}
+		},
+		"hween09_chandelier_60.png":
+		{
+			"frame": {"x":541,"y":210,"w":47,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":32},
+			"sourceSize": {"w":47,"h":32}
+		},
+		"hween09_chandelier_15.png":
+		{
+			"frame": {"x":541,"y":242,"w":47,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":28},
+			"sourceSize": {"w":47,"h":28}
+		},
+		"hween09_chandelier_17.png":
+		{
+			"frame": {"x":300,"y":442,"w":47,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":28},
+			"sourceSize": {"w":47,"h":28}
+		},
+		"hween09_chandelier_19.png":
+		{
+			"frame": {"x":347,"y":442,"w":47,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":28},
+			"sourceSize": {"w":47,"h":28}
+		},
+		"hween09_chandelier_14.png":
+		{
+			"frame": {"x":394,"y":442,"w":47,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":27},
+			"sourceSize": {"w":47,"h":27}
+		},
+		"hween09_chandelier_21.png":
+		{
+			"frame": {"x":441,"y":442,"w":47,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":27},
+			"sourceSize": {"w":47,"h":27}
+		},
+		"hween09_chandelier_20.png":
+		{
+			"frame": {"x":488,"y":442,"w":46,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":27},
+			"sourceSize": {"w":46,"h":27}
+		},
+		"hween09_chandelier_4.png":
+		{
+			"frame": {"x":534,"y":442,"w":46,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":24},
+			"sourceSize": {"w":46,"h":24}
+		},
+		"hween09_chandelier_2.png":
+		{
+			"frame": {"x":448,"y":517,"w":44,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":24},
+			"sourceSize": {"w":44,"h":24}
+		},
+		"hween09_chandelier_63.png":
+		{
+			"frame": {"x":448,"y":541,"w":41,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":27},
+			"sourceSize": {"w":41,"h":27}
+		},
+		"hween09_chandelier_64.png":
+		{
+			"frame": {"x":492,"y":517,"w":41,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":24},
+			"sourceSize": {"w":41,"h":24}
+		},
+		"hween09_chandelier_62.png":
+		{
+			"frame": {"x":533,"y":517,"w":39,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":22},
+			"sourceSize": {"w":39,"h":22}
+		},
+		"hween09_chandelier_41.png":
+		{
+			"frame": {"x":725,"y":167,"w":17,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
+			"sourceSize": {"w":17,"h":17}
+		},
+		"hween09_chandelier_38.png":
+		{
+			"frame": {"x":738,"y":113,"w":3,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":1},
+			"sourceSize": {"w":3,"h":1}
+		},
+		"hween09_chandelier_12.png":
+		{
+			"frame": {"x":741,"y":113,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"hween09_chandelier_34.png":
+		{
+			"frame": {"x":742,"y":113,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"hween09_chandelier_9.png":
+		{
+			"frame": {"x":743,"y":113,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

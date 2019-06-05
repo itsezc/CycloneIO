@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "hween_c16_teleport_sheet.png",
+		"size": {"w":516,"h":496},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c16_teleport_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":86,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":248},
+			"sourceSize": {"w":86,"h":248}
+		},
+		"hween_c16_teleport_5.png":
+		{
+			"frame": {"x":86,"y":0,"w":86,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":248},
+			"sourceSize": {"w":86,"h":248}
+		},
+		"hween_c16_teleport_6.png":
+		{
+			"frame": {"x":172,"y":0,"w":86,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":248},
+			"sourceSize": {"w":86,"h":248}
+		},
+		"hween_c16_teleport_7.png":
+		{
+			"frame": {"x":258,"y":0,"w":86,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":248},
+			"sourceSize": {"w":86,"h":248}
+		},
+		"hween_c16_teleport_8.png":
+		{
+			"frame": {"x":344,"y":0,"w":86,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":248},
+			"sourceSize": {"w":86,"h":248}
+		},
+		"hween_c16_teleport_9.png":
+		{
+			"frame": {"x":430,"y":0,"w":86,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":248},
+			"sourceSize": {"w":86,"h":248}
+		},
+		"hween_c16_teleport_15.png":
+		{
+			"frame": {"x":0,"y":248,"w":72,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":248},
+			"sourceSize": {"w":72,"h":248}
+		},
+		"hween_c16_teleport_10.png":
+		{
+			"frame": {"x":72,"y":248,"w":14,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":120},
+			"sourceSize": {"w":14,"h":120}
+		},
+		"hween_c16_teleport_2.png":
+		{
+			"frame": {"x":86,"y":248,"w":26,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":102},
+			"sourceSize": {"w":26,"h":102}
+		},
+		"hween_c16_teleport_14.png":
+		{
+			"frame": {"x":112,"y":248,"w":21,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":32},
+			"sourceSize": {"w":21,"h":32}
+		},
+		"hween_c16_teleport_3.png":
+		{
+			"frame": {"x":133,"y":248,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

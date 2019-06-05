@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "summer_c17_promenadelamp_sheet.png",
+		"size": {"w":258,"h":198},
+		"scale": "1"
+	},
+	"frames": {
+		"summer_c17_promenadelamp_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":198},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":198},
+			"sourceSize": {"w":62,"h":198}
+		},
+		"summer_c17_promenadelamp_9.png":
+		{
+			"frame": {"x":62,"y":0,"w":144,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":144,"h":145},
+			"sourceSize": {"w":144,"h":145}
+		},
+		"summer_c17_promenadelamp_1.png":
+		{
+			"frame": {"x":62,"y":145,"w":60,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":31},
+			"sourceSize": {"w":60,"h":31}
+		},
+		"summer_c17_promenadelamp_6.png":
+		{
+			"frame": {"x":206,"y":0,"w":52,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":53},
+			"sourceSize": {"w":52,"h":53}
+		},
+		"summer_c17_promenadelamp_3.png":
+		{
+			"frame": {"x":206,"y":53,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		},
+		"summer_c17_promenadelamp_10.png":
+		{
+			"frame": {"x":218,"y":53,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

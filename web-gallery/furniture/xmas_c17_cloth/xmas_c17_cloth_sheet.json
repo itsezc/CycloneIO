@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c17_cloth_sheet.png",
+		"size": {"w":90,"h":50},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_cloth_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":45,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":28},
+			"sourceSize": {"w":45,"h":28}
+		},
+		"xmas_c17_cloth_4.png":
+		{
+			"frame": {"x":45,"y":0,"w":45,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":24},
+			"sourceSize": {"w":45,"h":24}
+		},
+		"xmas_c17_cloth_1.png":
+		{
+			"frame": {"x":0,"y":28,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		}
+	}
+}

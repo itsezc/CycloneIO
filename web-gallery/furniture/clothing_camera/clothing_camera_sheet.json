@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_camera_sheet.png",
+		"size": {"w":104,"h":61},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_camera_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"clothing_camera_9.png":
+		{
+			"frame": {"x":52,"y":0,"w":52,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":26},
+			"sourceSize": {"w":52,"h":26}
+		},
+		"clothing_camera_4.png":
+		{
+			"frame": {"x":0,"y":31,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"clothing_camera_6.png":
+		{
+			"frame": {"x":52,"y":26,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

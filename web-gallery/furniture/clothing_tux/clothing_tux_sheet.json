@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_tux_sheet.png",
+		"size": {"w":41,"h":56},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_tux_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":41,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":26},
+			"sourceSize": {"w":41,"h":26}
+		},
+		"clothing_tux_6.png":
+		{
+			"frame": {"x":0,"y":26,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

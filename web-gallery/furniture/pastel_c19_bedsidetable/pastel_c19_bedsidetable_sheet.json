@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "pastel_c19_bedsidetable_sheet.png",
+		"size": {"w":132,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"pastel_c19_bedsidetable_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":72},
+			"sourceSize": {"w":66,"h":72}
+		},
+		"pastel_c19_bedsidetable_7.png":
+		{
+			"frame": {"x":66,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"pastel_c19_bedsidetable_6.png":
+		{
+			"frame": {"x":66,"y":33,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		}
+	}
+}

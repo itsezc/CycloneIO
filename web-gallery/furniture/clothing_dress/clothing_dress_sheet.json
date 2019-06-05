@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_dress_sheet.png",
+		"size": {"w":72,"h":71},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_dress_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":71},
+			"sourceSize": {"w":42,"h":71}
+		},
+		"clothing_dress_2.png":
+		{
+			"frame": {"x":42,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

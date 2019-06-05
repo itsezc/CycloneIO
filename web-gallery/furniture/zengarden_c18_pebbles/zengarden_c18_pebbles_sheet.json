@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "zengarden_c18_pebbles_sheet.png",
+		"size": {"w":132,"h":88},
+		"scale": "1"
+	},
+	"frames": {
+		"zengarden_c18_pebbles_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":132,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":69},
+			"sourceSize": {"w":132,"h":69}
+		},
+		"zengarden_c18_pebbles_1.png":
+		{
+			"frame": {"x":0,"y":69,"w":28,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":19},
+			"sourceSize": {"w":28,"h":19}
+		}
+	}
+}

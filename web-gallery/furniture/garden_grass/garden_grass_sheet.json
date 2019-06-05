@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "garden_grass_sheet.png",
+		"size": {"w":256,"h":136},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_grass_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":68},
+			"sourceSize": {"w":128,"h":68}
+		},
+		"garden_grass_7.png":
+		{
+			"frame": {"x":128,"y":0,"w":128,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":68},
+			"sourceSize": {"w":128,"h":68}
+		},
+		"garden_grass_8.png":
+		{
+			"frame": {"x":0,"y":68,"w":128,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":68},
+			"sourceSize": {"w":128,"h":68}
+		},
+		"garden_grass_9.png":
+		{
+			"frame": {"x":128,"y":68,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		}
+	}
+}

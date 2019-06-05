@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "romantique_tray2_sheet.png",
+		"size": {"w":125,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"romantique_tray2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":75,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":64},
+			"sourceSize": {"w":75,"h":64}
+		},
+		"romantique_tray2_7.png":
+		{
+			"frame": {"x":75,"y":0,"w":50,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":42},
+			"sourceSize": {"w":50,"h":42}
+		},
+		"romantique_tray2_2.png":
+		{
+			"frame": {"x":75,"y":42,"w":25,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+			"sourceSize": {"w":25,"h":22}
+		},
+		"romantique_tray2_6.png":
+		{
+			"frame": {"x":100,"y":42,"w":25,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+			"sourceSize": {"w":25,"h":22}
+		}
+	}
+}

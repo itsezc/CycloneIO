@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r18_diaparty_sheet.png",
+		"size": {"w":53,"h":70},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r18_diaparty_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":70},
+			"sourceSize": {"w":26,"h":70}
+		},
+		"clothing_r18_diaparty_5.png":
+		{
+			"frame": {"x":26,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "val12_carpet_sheet.png",
+		"size": {"w":128,"h":99},
+		"scale": "1"
+	},
+	"frames": {
+		"val12_carpet_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":66},
+			"sourceSize": {"w":128,"h":66}
+		},
+		"val12_carpet_2.png":
+		{
+			"frame": {"x":0,"y":66,"w":62,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":33},
+			"sourceSize": {"w":62,"h":33}
+		},
+		"val12_carpet_8.png":
+		{
+			"frame": {"x":62,"y":66,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

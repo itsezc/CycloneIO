@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "clothing_pestmask_sheet.png",
+		"size": {"w":114,"h":96},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_pestmask_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":48},
+			"sourceSize": {"w":38,"h":48}
+		},
+		"clothing_pestmask_12.png":
+		{
+			"frame": {"x":38,"y":0,"w":38,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":48},
+			"sourceSize": {"w":38,"h":48}
+		},
+		"clothing_pestmask_13.png":
+		{
+			"frame": {"x":76,"y":0,"w":38,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":48},
+			"sourceSize": {"w":38,"h":48}
+		},
+		"clothing_pestmask_2.png":
+		{
+			"frame": {"x":0,"y":48,"w":38,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":48},
+			"sourceSize": {"w":38,"h":48}
+		},
+		"clothing_pestmask_7.png":
+		{
+			"frame": {"x":38,"y":48,"w":38,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":48},
+			"sourceSize": {"w":38,"h":48}
+		},
+		"clothing_pestmask_6.png":
+		{
+			"frame": {"x":76,"y":48,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		},
+		"clothing_pestmask_4.png":
+		{
+			"frame": {"x":76,"y":77,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		},
+		"clothing_pestmask_10.png":
+		{
+			"frame": {"x":106,"y":48,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

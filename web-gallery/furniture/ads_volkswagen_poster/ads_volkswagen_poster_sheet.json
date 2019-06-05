@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "ads_volkswagen_poster_sheet.png",
+		"size": {"w":271,"h":187},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_volkswagen_poster_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":163,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":163,"h":124},
+			"sourceSize": {"w":163,"h":124}
+		},
+		"ads_volkswagen_poster_1.png":
+		{
+			"frame": {"x":163,"y":0,"w":108,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":108,"h":124},
+			"sourceSize": {"w":108,"h":124}
+		},
+		"ads_volkswagen_poster_6.png":
+		{
+			"frame": {"x":0,"y":124,"w":55,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":63},
+			"sourceSize": {"w":55,"h":63}
+		},
+		"ads_volkswagen_poster_3.png":
+		{
+			"frame": {"x":55,"y":124,"w":24,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":26},
+			"sourceSize": {"w":24,"h":26}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c18_harp_sheet.png",
+		"size": {"w":84,"h":71},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_harp_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":41,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":71},
+			"sourceSize": {"w":41,"h":71}
+		},
+		"xmas_c18_harp_2.png":
+		{
+			"frame": {"x":41,"y":0,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"xmas_c18_harp_5.png":
+		{
+			"frame": {"x":60,"y":0,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		}
+	}
+}
