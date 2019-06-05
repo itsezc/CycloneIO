@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "ny2015_balloons_sheet.png",
+		"size": {"w":107,"h":101},
+		"scale": "1"
+	},
+	"frames": {
+		"ny2015_balloons_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":71,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":101},
+			"sourceSize": {"w":71,"h":101}
+		},
+		"ny2015_balloons_7.png":
+		{
+			"frame": {"x":71,"y":0,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"ny2015_balloons_4.png":
+		{
+			"frame": {"x":71,"y":18,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

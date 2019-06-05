@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r18_catbag_sheet.png",
+		"size": {"w":57,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r18_catbag_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":68},
+			"sourceSize": {"w":29,"h":68}
+		},
+		"clothing_r18_catbag_7.png":
+		{
+			"frame": {"x":29,"y":0,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		}
+	}
+}

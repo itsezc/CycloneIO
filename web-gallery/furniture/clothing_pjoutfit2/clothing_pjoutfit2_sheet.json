@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_pjoutfit2_sheet.png",
+		"size": {"w":75,"h":105},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_pjoutfit2_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":105},
+			"sourceSize": {"w":39,"h":105}
+		},
+		"clothing_pjoutfit2_1.png":
+		{
+			"frame": {"x":39,"y":0,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"clothing_pjoutfit2_5.png":
+		{
+			"frame": {"x":39,"y":18,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_pjoutfit2_6.png":
+		{
+			"frame": {"x":69,"y":18,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

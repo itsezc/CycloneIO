@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "easter_c17_tree_sheet.png",
+		"size": {"w":267,"h":206},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c17_tree_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":145,"h":176},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":176},
+			"sourceSize": {"w":145,"h":176}
+		},
+		"easter_c17_tree_10.png":
+		{
+			"frame": {"x":145,"y":0,"w":122,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":85},
+			"sourceSize": {"w":122,"h":85}
+		},
+		"easter_c17_tree_8.png":
+		{
+			"frame": {"x":145,"y":85,"w":114,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":78},
+			"sourceSize": {"w":114,"h":78}
+		},
+		"easter_c17_tree_9.png":
+		{
+			"frame": {"x":0,"y":176,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"easter_c17_tree_5.png":
+		{
+			"frame": {"x":259,"y":85,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

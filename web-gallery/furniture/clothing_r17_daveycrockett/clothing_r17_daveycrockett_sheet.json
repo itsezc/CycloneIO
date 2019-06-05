@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_r17_daveycrockett_sheet.png",
+		"size": {"w":67,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r17_daveycrockett_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":53},
+			"sourceSize": {"w":37,"h":53}
+		},
+		"clothing_r17_daveycrockett_6.png":
+		{
+			"frame": {"x":37,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_r17_daveycrockett_7.png":
+		{
+			"frame": {"x":37,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

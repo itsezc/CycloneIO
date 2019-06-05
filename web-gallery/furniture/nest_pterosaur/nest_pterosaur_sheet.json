@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "nest_pterosaur_sheet.png",
+		"size": {"w":155,"h":107},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_pterosaur_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":67,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":107},
+			"sourceSize": {"w":67,"h":107}
+		},
+		"nest_pterosaur_2.png":
+		{
+			"frame": {"x":67,"y":0,"w":65,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":67},
+			"sourceSize": {"w":65,"h":67}
+		},
+		"nest_pterosaur_6.png":
+		{
+			"frame": {"x":67,"y":67,"w":61,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":30},
+			"sourceSize": {"w":61,"h":30}
+		},
+		"nest_pterosaur_4.png":
+		{
+			"frame": {"x":132,"y":0,"w":23,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":32},
+			"sourceSize": {"w":23,"h":32}
+		}
+	}
+}

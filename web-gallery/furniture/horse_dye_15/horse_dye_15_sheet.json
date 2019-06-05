@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "horse_dye_15_sheet.png",
+		"size": {"w":116,"h":59},
+		"scale": "1"
+	},
+	"frames": {
+		"horse_dye_15_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":59},
+			"sourceSize": {"w":64,"h":59}
+		},
+		"horse_dye_15_1.png":
+		{
+			"frame": {"x":64,"y":0,"w":25,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":43},
+			"sourceSize": {"w":25,"h":43}
+		},
+		"horse_dye_15_3.png":
+		{
+			"frame": {"x":89,"y":0,"w":27,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":31},
+			"sourceSize": {"w":27,"h":31}
+		},
+		"horse_dye_15_6.png":
+		{
+			"frame": {"x":89,"y":31,"w":12,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":22},
+			"sourceSize": {"w":12,"h":22}
+		},
+		"horse_dye_15_5.png":
+		{
+			"frame": {"x":101,"y":31,"w":14,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":16},
+			"sourceSize": {"w":14,"h":16}
+		}
+	}
+}

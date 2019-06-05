@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "africa_c15_bongos_sheet.png",
+		"size": {"w":102,"h":52},
+		"scale": "1"
+	},
+	"frames": {
+		"africa_c15_bongos_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":52},
+			"sourceSize": {"w":34,"h":52}
+		},
+		"africa_c15_bongos_3.png":
+		{
+			"frame": {"x":34,"y":0,"w":34,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":52},
+			"sourceSize": {"w":34,"h":52}
+		},
+		"africa_c15_bongos_1.png":
+		{
+			"frame": {"x":68,"y":0,"w":34,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":21},
+			"sourceSize": {"w":34,"h":21}
+		},
+		"africa_c15_bongos_4.png":
+		{
+			"frame": {"x":68,"y":21,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

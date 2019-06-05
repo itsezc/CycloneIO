@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "school_stuff_05_sheet.png",
+		"size": {"w":114,"h":89},
+		"scale": "1"
+	},
+	"frames": {
+		"school_stuff_05_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":76,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":66},
+			"sourceSize": {"w":76,"h":66}
+		},
+		"school_stuff_05_1.png":
+		{
+			"frame": {"x":76,"y":0,"w":38,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":28},
+			"sourceSize": {"w":38,"h":28}
+		},
+		"school_stuff_05_3.png":
+		{
+			"frame": {"x":76,"y":28,"w":38,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":28},
+			"sourceSize": {"w":38,"h":28}
+		},
+		"school_stuff_05_5.png":
+		{
+			"frame": {"x":0,"y":66,"w":38,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":23},
+			"sourceSize": {"w":38,"h":23}
+		},
+		"school_stuff_05_8.png":
+		{
+			"frame": {"x":38,"y":66,"w":22,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":15},
+			"sourceSize": {"w":22,"h":15}
+		},
+		"school_stuff_05_9.png":
+		{
+			"frame": {"x":60,"y":66,"w":22,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":15},
+			"sourceSize": {"w":22,"h":15}
+		},
+		"school_stuff_05_7.png":
+		{
+			"frame": {"x":82,"y":66,"w":22,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":13},
+			"sourceSize": {"w":22,"h":13}
+		}
+	}
+}

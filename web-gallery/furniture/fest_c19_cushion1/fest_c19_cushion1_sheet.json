@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "fest_c19_cushion1_sheet.png",
+		"size": {"w":179,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_cushion1_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":116,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":116,"h":44},
+			"sourceSize": {"w":116,"h":44}
+		},
+		"fest_c19_cushion1_7.png":
+		{
+			"frame": {"x":0,"y":44,"w":104,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":104,"h":50},
+			"sourceSize": {"w":104,"h":50}
+		},
+		"fest_c19_cushion1_6.png":
+		{
+			"frame": {"x":116,"y":0,"w":63,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":29},
+			"sourceSize": {"w":63,"h":29}
+		},
+		"fest_c19_cushion1_9.png":
+		{
+			"frame": {"x":116,"y":29,"w":56,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":39},
+			"sourceSize": {"w":56,"h":39}
+		},
+		"fest_c19_cushion1_3.png":
+		{
+			"frame": {"x":116,"y":68,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		}
+	}
+}

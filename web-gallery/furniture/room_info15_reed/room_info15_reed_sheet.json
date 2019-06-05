@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "room_info15_reed_sheet.png",
+		"size": {"w":74,"h":71},
+		"scale": "1"
+	},
+	"frames": {
+		"room_info15_reed_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":21,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":39},
+			"sourceSize": {"w":21,"h":39}
+		},
+		"room_info15_reed_13.png":
+		{
+			"frame": {"x":21,"y":0,"w":18,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":39},
+			"sourceSize": {"w":18,"h":39}
+		},
+		"room_info15_reed_8.png":
+		{
+			"frame": {"x":39,"y":0,"w":11,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":36},
+			"sourceSize": {"w":11,"h":36}
+		},
+		"room_info15_reed_12.png":
+		{
+			"frame": {"x":50,"y":0,"w":13,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":35},
+			"sourceSize": {"w":13,"h":35}
+		},
+		"room_info15_reed_15.png":
+		{
+			"frame": {"x":63,"y":0,"w":11,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":35},
+			"sourceSize": {"w":11,"h":35}
+		},
+		"room_info15_reed_7.png":
+		{
+			"frame": {"x":0,"y":39,"w":9,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":32},
+			"sourceSize": {"w":9,"h":32}
+		},
+		"room_info15_reed_14.png":
+		{
+			"frame": {"x":9,"y":39,"w":5,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":31},
+			"sourceSize": {"w":5,"h":31}
+		},
+		"room_info15_reed_6.png":
+		{
+			"frame": {"x":14,"y":39,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		},
+		"room_info15_reed_9.png":
+		{
+			"frame": {"x":27,"y":39,"w":10,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":25},
+			"sourceSize": {"w":10,"h":25}
+		},
+		"room_info15_reed_10.png":
+		{
+			"frame": {"x":37,"y":39,"w":9,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":20},
+			"sourceSize": {"w":9,"h":20}
+		}
+	}
+}

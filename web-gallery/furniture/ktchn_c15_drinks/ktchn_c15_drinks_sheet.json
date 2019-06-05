@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "ktchn_c15_drinks_sheet.png",
+		"size": {"w":94,"h":82},
+		"scale": "1"
+	},
+	"frames": {
+		"ktchn_c15_drinks_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":45},
+			"sourceSize": {"w":32,"h":45}
+		},
+		"ktchn_c15_drinks_9.png":
+		{
+			"frame": {"x":32,"y":0,"w":30,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":42},
+			"sourceSize": {"w":30,"h":42}
+		},
+		"ktchn_c15_drinks_6.png":
+		{
+			"frame": {"x":62,"y":0,"w":32,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":40},
+			"sourceSize": {"w":32,"h":40}
+		},
+		"ktchn_c15_drinks_8.png":
+		{
+			"frame": {"x":0,"y":45,"w":30,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":37},
+			"sourceSize": {"w":30,"h":37}
+		},
+		"ktchn_c15_drinks_4.png":
+		{
+			"frame": {"x":30,"y":45,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		}
+	}
+}

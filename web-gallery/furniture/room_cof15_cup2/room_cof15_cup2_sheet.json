@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "room_cof15_cup2_sheet.png",
+		"size": {"w":25,"h":26},
+		"scale": "1"
+	},
+	"frames": {
+		"room_cof15_cup2_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":12,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":26},
+			"sourceSize": {"w":12,"h":26}
+		},
+		"room_cof15_cup2_1.png":
+		{
+			"frame": {"x":12,"y":0,"w":12,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":20},
+			"sourceSize": {"w":12,"h":20}
+		},
+		"room_cof15_cup2_4.png":
+		{
+			"frame": {"x":12,"y":20,"w":12,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":6},
+			"sourceSize": {"w":12,"h":6}
+		},
+		"room_cof15_cup2_8.png":
+		{
+			"frame": {"x":24,"y":0,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

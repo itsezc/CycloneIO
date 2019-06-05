@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "paris_c15_vegstall1_sheet.png",
+		"size": {"w":198,"h":160},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_vegstall1_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":80},
+			"sourceSize": {"w":66,"h":80}
+		},
+		"paris_c15_vegstall1_5.png":
+		{
+			"frame": {"x":66,"y":0,"w":66,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":80},
+			"sourceSize": {"w":66,"h":80}
+		},
+		"paris_c15_vegstall1_7.png":
+		{
+			"frame": {"x":132,"y":0,"w":66,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":80},
+			"sourceSize": {"w":66,"h":80}
+		},
+		"paris_c15_vegstall1_8.png":
+		{
+			"frame": {"x":0,"y":80,"w":66,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":80},
+			"sourceSize": {"w":66,"h":80}
+		},
+		"paris_c15_vegstall1_6.png":
+		{
+			"frame": {"x":66,"y":80,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"paris_c15_vegstall1_2.png":
+		{
+			"frame": {"x":132,"y":80,"w":26,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":29},
+			"sourceSize": {"w":26,"h":29}
+		}
+	}
+}

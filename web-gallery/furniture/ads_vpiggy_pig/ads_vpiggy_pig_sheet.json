@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "ads_vpiggy_pig_sheet.png",
+		"size": {"w":67,"h":47},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_vpiggy_pig_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":40},
+			"sourceSize": {"w":39,"h":40}
+		},
+		"ads_vpiggy_pig_4.png":
+		{
+			"frame": {"x":39,"y":0,"w":28,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":14},
+			"sourceSize": {"w":28,"h":14}
+		},
+		"ads_vpiggy_pig_7.png":
+		{
+			"frame": {"x":39,"y":14,"w":21,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":21},
+			"sourceSize": {"w":21,"h":21}
+		},
+		"ads_vpiggy_pig_8.png":
+		{
+			"frame": {"x":0,"y":40,"w":14,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":7},
+			"sourceSize": {"w":14,"h":7}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "boutique_plant1_sheet.png",
+		"size": {"w":223,"h":146},
+		"scale": "1"
+	},
+	"frames": {
+		"boutique_plant1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":124,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":124,"h":116},
+			"sourceSize": {"w":124,"h":116}
+		},
+		"boutique_plant1_9.png":
+		{
+			"frame": {"x":124,"y":0,"w":64,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":116},
+			"sourceSize": {"w":64,"h":116}
+		},
+		"boutique_plant1_2.png":
+		{
+			"frame": {"x":0,"y":116,"w":60,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":30},
+			"sourceSize": {"w":60,"h":30}
+		},
+		"boutique_plant1_4.png":
+		{
+			"frame": {"x":188,"y":0,"w":35,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":58},
+			"sourceSize": {"w":35,"h":58}
+		},
+		"boutique_plant1_6.png":
+		{
+			"frame": {"x":188,"y":58,"w":32,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":17},
+			"sourceSize": {"w":32,"h":17}
+		},
+		"boutique_plant1_1.png":
+		{
+			"frame": {"x":188,"y":75,"w":18,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":31},
+			"sourceSize": {"w":18,"h":31}
+		}
+	}
+}

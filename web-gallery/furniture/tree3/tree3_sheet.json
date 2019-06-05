@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "tree3_sheet.png",
+		"size": {"w":222,"h":154},
+		"scale": "1"
+	},
+	"frames": {
+		"tree3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":133,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":136},
+			"sourceSize": {"w":133,"h":136}
+		},
+		"tree3_5.png":
+		{
+			"frame": {"x":133,"y":0,"w":59,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":136},
+			"sourceSize": {"w":59,"h":136}
+		},
+		"tree3_10.png":
+		{
+			"frame": {"x":192,"y":0,"w":30,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":68},
+			"sourceSize": {"w":30,"h":68}
+		},
+		"tree3_2.png":
+		{
+			"frame": {"x":0,"y":136,"w":44,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":18},
+			"sourceSize": {"w":44,"h":18}
+		},
+		"tree3_6.png":
+		{
+			"frame": {"x":192,"y":68,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"tree3_3.png":
+		{
+			"frame": {"x":192,"y":98,"w":22,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":9},
+			"sourceSize": {"w":22,"h":9}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "bump_tottero_sheet.png",
+		"size": {"w":90,"h":61},
+		"scale": "1"
+	},
+	"frames": {
+		"bump_tottero_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":40},
+			"sourceSize": {"w":55,"h":40}
+		},
+		"bump_tottero_1.png":
+		{
+			"frame": {"x":55,"y":0,"w":35,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":40},
+			"sourceSize": {"w":35,"h":40}
+		},
+		"bump_tottero_2.png":
+		{
+			"frame": {"x":0,"y":40,"w":20,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":21},
+			"sourceSize": {"w":20,"h":21}
+		}
+	}
+}

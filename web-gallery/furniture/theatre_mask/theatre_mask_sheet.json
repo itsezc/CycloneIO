@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "theatre_mask_sheet.png",
+		"size": {"w":485,"h":391},
+		"scale": "1"
+	},
+	"frames": {
+		"theatre_mask_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":298,"h":260},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":298,"h":260},
+			"sourceSize": {"w":298,"h":260}
+		},
+		"theatre_mask_6.png":
+		{
+			"frame": {"x":298,"y":0,"w":113,"h":163},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":113,"h":163},
+			"sourceSize": {"w":113,"h":163}
+		},
+		"theatre_mask_12.png":
+		{
+			"frame": {"x":411,"y":0,"w":74,"h":152},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":152},
+			"sourceSize": {"w":74,"h":152}
+		},
+		"theatre_mask_14.png":
+		{
+			"frame": {"x":0,"y":260,"w":111,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":111,"h":131},
+			"sourceSize": {"w":111,"h":131}
+		},
+		"theatre_mask_1.png":
+		{
+			"frame": {"x":411,"y":152,"w":46,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":97},
+			"sourceSize": {"w":46,"h":97}
+		},
+		"theatre_mask_11.png":
+		{
+			"frame": {"x":298,"y":163,"w":57,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":82},
+			"sourceSize": {"w":57,"h":82}
+		},
+		"theatre_mask_7.png":
+		{
+			"frame": {"x":355,"y":163,"w":54,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":63},
+			"sourceSize": {"w":54,"h":63}
+		},
+		"theatre_mask_5.png":
+		{
+			"frame": {"x":111,"y":260,"w":34,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":53},
+			"sourceSize": {"w":34,"h":53}
+		},
+		"theatre_mask_4.png":
+		{
+			"frame": {"x":457,"y":152,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"theatre_mask_10.png":
+		{
+			"frame": {"x":457,"y":182,"w":17,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":27},
+			"sourceSize": {"w":17,"h":27}
+		}
+	}
+}

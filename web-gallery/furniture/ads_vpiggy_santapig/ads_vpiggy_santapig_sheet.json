@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "ads_vpiggy_santapig_sheet.png",
+		"size": {"w":95,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_vpiggy_santapig_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":54},
+			"sourceSize": {"w":44,"h":54}
+		},
+		"ads_vpiggy_santapig_1.png":
+		{
+			"frame": {"x":44,"y":0,"w":23,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":29},
+			"sourceSize": {"w":23,"h":29}
+		},
+		"ads_vpiggy_santapig_5.png":
+		{
+			"frame": {"x":67,"y":0,"w":28,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":14},
+			"sourceSize": {"w":28,"h":14}
+		}
+	}
+}

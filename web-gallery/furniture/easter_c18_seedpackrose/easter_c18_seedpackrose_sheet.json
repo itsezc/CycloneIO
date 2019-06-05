@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "easter_c18_seedpackrose_sheet.png",
+		"size": {"w":64,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c18_seedpackrose_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":24,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":45},
+			"sourceSize": {"w":24,"h":45}
+		},
+		"easter_c18_seedpackrose_1.png":
+		{
+			"frame": {"x":24,"y":0,"w":16,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":30},
+			"sourceSize": {"w":16,"h":30}
+		},
+		"easter_c18_seedpackrose_6.png":
+		{
+			"frame": {"x":40,"y":0,"w":24,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":11},
+			"sourceSize": {"w":24,"h":11}
+		}
+	}
+}

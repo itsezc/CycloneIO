@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "bazaar_c17_flycarpet_sheet.png",
+		"size": {"w":245,"h":182},
+		"scale": "1"
+	},
+	"frames": {
+		"bazaar_c17_flycarpet_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":90,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":90,"h":96},
+			"sourceSize": {"w":90,"h":96}
+		},
+		"bazaar_c17_flycarpet_5.png":
+		{
+			"frame": {"x":90,"y":0,"w":89,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":72},
+			"sourceSize": {"w":89,"h":72}
+		},
+		"bazaar_c17_flycarpet_6.png":
+		{
+			"frame": {"x":0,"y":96,"w":77,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":52},
+			"sourceSize": {"w":77,"h":52}
+		},
+		"bazaar_c17_flycarpet_10.png":
+		{
+			"frame": {"x":77,"y":96,"w":70,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":38},
+			"sourceSize": {"w":70,"h":38}
+		},
+		"bazaar_c17_flycarpet_11.png":
+		{
+			"frame": {"x":179,"y":0,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bazaar_c17_flycarpet_12.png":
+		{
+			"frame": {"x":179,"y":34,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bazaar_c17_flycarpet_14.png":
+		{
+			"frame": {"x":179,"y":68,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bazaar_c17_flycarpet_15.png":
+		{
+			"frame": {"x":179,"y":102,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bazaar_c17_flycarpet_16.png":
+		{
+			"frame": {"x":0,"y":148,"w":66,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":34},
+			"sourceSize": {"w":66,"h":34}
+		},
+		"bazaar_c17_flycarpet_1.png":
+		{
+			"frame": {"x":90,"y":72,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"bazaar_c17_flycarpet_7.png":
+		{
+			"frame": {"x":179,"y":136,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

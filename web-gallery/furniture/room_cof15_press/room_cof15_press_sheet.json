@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "room_cof15_press_sheet.png",
+		"size": {"w":42,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"room_cof15_press_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":21,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":34},
+			"sourceSize": {"w":21,"h":34}
+		},
+		"room_cof15_press_8.png":
+		{
+			"frame": {"x":21,"y":0,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"room_cof15_press_2.png":
+		{
+			"frame": {"x":0,"y":34,"w":15,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":8},
+			"sourceSize": {"w":15,"h":8}
+		}
+	}
+}

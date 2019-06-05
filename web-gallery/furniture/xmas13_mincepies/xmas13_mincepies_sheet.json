@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "xmas13_mincepies_sheet.png",
+		"size": {"w":119,"h":115},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas13_mincepies_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":59},
+			"sourceSize": {"w":66,"h":59}
+		},
+		"xmas13_mincepies_6.png":
+		{
+			"frame": {"x":66,"y":0,"w":53,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":46},
+			"sourceSize": {"w":53,"h":46}
+		},
+		"xmas13_mincepies_3.png":
+		{
+			"frame": {"x":0,"y":59,"w":53,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+			"sourceSize": {"w":53,"h":25}
+		},
+		"xmas13_mincepies_2.png":
+		{
+			"frame": {"x":0,"y":84,"w":34,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":31},
+			"sourceSize": {"w":34,"h":31}
+		},
+		"xmas13_mincepies_4.png":
+		{
+			"frame": {"x":53,"y":59,"w":26,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":22},
+			"sourceSize": {"w":26,"h":22}
+		}
+	}
+}

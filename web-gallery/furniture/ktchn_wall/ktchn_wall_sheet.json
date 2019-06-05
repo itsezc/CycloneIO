@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "ktchn_wall_sheet.png",
+		"size": {"w":416,"h":384},
+		"scale": "1"
+	},
+	"frames": {
+		"ktchn_wall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":274,"h":243},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":274,"h":243},
+			"sourceSize": {"w":274,"h":243}
+		},
+		"ktchn_wall_1.png":
+		{
+			"frame": {"x":274,"y":0,"w":71,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":160},
+			"sourceSize": {"w":71,"h":160}
+		},
+		"ktchn_wall_10.png":
+		{
+			"frame": {"x":345,"y":0,"w":71,"h":160},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":160},
+			"sourceSize": {"w":71,"h":160}
+		},
+		"ktchn_wall_14.png":
+		{
+			"frame": {"x":0,"y":243,"w":66,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":141},
+			"sourceSize": {"w":66,"h":141}
+		},
+		"ktchn_wall_9.png":
+		{
+			"frame": {"x":66,"y":243,"w":66,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":141},
+			"sourceSize": {"w":66,"h":141}
+		},
+		"ktchn_wall_4.png":
+		{
+			"frame": {"x":345,"y":160,"w":37,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":83},
+			"sourceSize": {"w":37,"h":83}
+		},
+		"ktchn_wall_6.png":
+		{
+			"frame": {"x":274,"y":160,"w":37,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":83},
+			"sourceSize": {"w":37,"h":83}
+		},
+		"ktchn_wall_12.png":
+		{
+			"frame": {"x":382,"y":160,"w":34,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":71},
+			"sourceSize": {"w":34,"h":71}
+		},
+		"ktchn_wall_3.png":
+		{
+			"frame": {"x":311,"y":160,"w":34,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":71},
+			"sourceSize": {"w":34,"h":71}
+		},
+		"ktchn_wall_11.png":
+		{
+			"frame": {"x":132,"y":243,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		}
+	}
+}

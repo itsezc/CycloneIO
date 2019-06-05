@@ -1,0 +1,145 @@
+{
+	"meta": {
+		"image": "country_lantern_sheet.png",
+		"size": {"w":273,"h":209},
+		"scale": "1"
+	},
+	"frames": {
+		"country_lantern_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":179,"h":157},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":179,"h":157},
+			"sourceSize": {"w":179,"h":157}
+		},
+		"country_lantern_2.png":
+		{
+			"frame": {"x":179,"y":0,"w":68,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":52},
+			"sourceSize": {"w":68,"h":52}
+		},
+		"country_lantern_3.png":
+		{
+			"frame": {"x":179,"y":52,"w":68,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":52},
+			"sourceSize": {"w":68,"h":52}
+		},
+		"country_lantern_4.png":
+		{
+			"frame": {"x":179,"y":104,"w":68,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":52},
+			"sourceSize": {"w":68,"h":52}
+		},
+		"country_lantern_8.png":
+		{
+			"frame": {"x":0,"y":157,"w":68,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":52},
+			"sourceSize": {"w":68,"h":52}
+		},
+		"country_lantern_12.png":
+		{
+			"frame": {"x":247,"y":0,"w":26,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":53},
+			"sourceSize": {"w":26,"h":53}
+		},
+		"country_lantern_7.png":
+		{
+			"frame": {"x":247,"y":53,"w":26,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":53},
+			"sourceSize": {"w":26,"h":53}
+		},
+		"country_lantern_1.png":
+		{
+			"frame": {"x":247,"y":106,"w":10,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":45},
+			"sourceSize": {"w":10,"h":45}
+		},
+		"country_lantern_14.png":
+		{
+			"frame": {"x":68,"y":157,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"country_lantern_15.png":
+		{
+			"frame": {"x":102,"y":157,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"country_lantern_16.png":
+		{
+			"frame": {"x":136,"y":157,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"country_lantern_19.png":
+		{
+			"frame": {"x":170,"y":157,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"country_lantern_18.png":
+		{
+			"frame": {"x":247,"y":151,"w":17,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
+			"sourceSize": {"w":17,"h":29}
+		},
+		"country_lantern_17.png":
+		{
+			"frame": {"x":257,"y":106,"w":14,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":28},
+			"sourceSize": {"w":14,"h":28}
+		},
+		"country_lantern_20.png":
+		{
+			"frame": {"x":247,"y":180,"w":14,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":28},
+			"sourceSize": {"w":14,"h":28}
+		},
+		"country_lantern_10.png":
+		{
+			"frame": {"x":264,"y":151,"w":6,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":20},
+			"sourceSize": {"w":6,"h":20}
+		},
+		"country_lantern_9.png":
+		{
+			"frame": {"x":271,"y":106,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

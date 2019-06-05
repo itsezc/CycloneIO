@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "wildwest_milkcan_sheet.png",
+		"size": {"w":134,"h":120},
+		"scale": "1"
+	},
+	"frames": {
+		"wildwest_milkcan_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":31,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":79},
+			"sourceSize": {"w":31,"h":79}
+		},
+		"wildwest_milkcan_7.png":
+		{
+			"frame": {"x":31,"y":0,"w":40,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":61},
+			"sourceSize": {"w":40,"h":61}
+		},
+		"wildwest_milkcan_13.png":
+		{
+			"frame": {"x":71,"y":0,"w":36,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":52},
+			"sourceSize": {"w":36,"h":52}
+		},
+		"wildwest_milkcan_6.png":
+		{
+			"frame": {"x":107,"y":0,"w":27,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":46},
+			"sourceSize": {"w":27,"h":46}
+		},
+		"wildwest_milkcan_2.png":
+		{
+			"frame": {"x":0,"y":79,"w":21,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":41},
+			"sourceSize": {"w":21,"h":41}
+		},
+		"wildwest_milkcan_11.png":
+		{
+			"frame": {"x":21,"y":79,"w":24,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":39},
+			"sourceSize": {"w":24,"h":39}
+		},
+		"wildwest_milkcan_3.png":
+		{
+			"frame": {"x":107,"y":46,"w":24,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":32},
+			"sourceSize": {"w":24,"h":32}
+		},
+		"wildwest_milkcan_5.png":
+		{
+			"frame": {"x":45,"y":79,"w":19,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":29},
+			"sourceSize": {"w":19,"h":29}
+		},
+		"wildwest_milkcan_12.png":
+		{
+			"frame": {"x":71,"y":52,"w":16,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
+			"sourceSize": {"w":16,"h":24}
+		},
+		"wildwest_milkcan_8.png":
+		{
+			"frame": {"x":87,"y":52,"w":15,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":22},
+			"sourceSize": {"w":15,"h":22}
+		}
+	}
+}

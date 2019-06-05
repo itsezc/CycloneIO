@@ -1,0 +1,337 @@
+{
+	"meta": {
+		"image": "redhologram_sheet.png",
+		"size": {"w":269,"h":247},
+		"scale": "1"
+	},
+	"frames": {
+		"redhologram_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":168,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":168,"h":168},
+			"sourceSize": {"w":168,"h":168}
+		},
+		"redhologram_43.png":
+		{
+			"frame": {"x":168,"y":0,"w":34,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":67},
+			"sourceSize": {"w":34,"h":67}
+		},
+		"redhologram_38.png":
+		{
+			"frame": {"x":168,"y":67,"w":25,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+			"sourceSize": {"w":25,"h":42}
+		},
+		"redhologram_14.png":
+		{
+			"frame": {"x":168,"y":109,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"redhologram_37.png":
+		{
+			"frame": {"x":202,"y":0,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"redhologram_40.png":
+		{
+			"frame": {"x":202,"y":42,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"redhologram_42.png":
+		{
+			"frame": {"x":202,"y":84,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"redhologram_34.png":
+		{
+			"frame": {"x":0,"y":168,"w":25,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":41},
+			"sourceSize": {"w":25,"h":41}
+		},
+		"redhologram_36.png":
+		{
+			"frame": {"x":202,"y":126,"w":16,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":41},
+			"sourceSize": {"w":16,"h":41}
+		},
+		"redhologram_41.png":
+		{
+			"frame": {"x":25,"y":168,"w":16,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":41},
+			"sourceSize": {"w":16,"h":41}
+		},
+		"redhologram_17.png":
+		{
+			"frame": {"x":41,"y":168,"w":40,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":32},
+			"sourceSize": {"w":40,"h":32}
+		},
+		"redhologram_19.png":
+		{
+			"frame": {"x":81,"y":168,"w":40,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":32},
+			"sourceSize": {"w":40,"h":32}
+		},
+		"redhologram_18.png":
+		{
+			"frame": {"x":225,"y":0,"w":21,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":40},
+			"sourceSize": {"w":21,"h":40}
+		},
+		"redhologram_22.png":
+		{
+			"frame": {"x":225,"y":40,"w":21,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":40},
+			"sourceSize": {"w":21,"h":40}
+		},
+		"redhologram_16.png":
+		{
+			"frame": {"x":246,"y":0,"w":23,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":39},
+			"sourceSize": {"w":23,"h":39}
+		},
+		"redhologram_12.png":
+		{
+			"frame": {"x":246,"y":39,"w":21,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":39},
+			"sourceSize": {"w":21,"h":39}
+		},
+		"redhologram_33.png":
+		{
+			"frame": {"x":246,"y":78,"w":21,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":39},
+			"sourceSize": {"w":21,"h":39}
+		},
+		"redhologram_21.png":
+		{
+			"frame": {"x":246,"y":117,"w":14,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":39},
+			"sourceSize": {"w":14,"h":39}
+		},
+		"redhologram_35.png":
+		{
+			"frame": {"x":246,"y":156,"w":14,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":39},
+			"sourceSize": {"w":14,"h":39}
+		},
+		"redhologram_11.png":
+		{
+			"frame": {"x":0,"y":209,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"redhologram_13.png":
+		{
+			"frame": {"x":225,"y":80,"w":17,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":33},
+			"sourceSize": {"w":17,"h":33}
+		},
+		"redhologram_20.png":
+		{
+			"frame": {"x":225,"y":113,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"redhologram_2.png":
+		{
+			"frame": {"x":225,"y":143,"w":12,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":21},
+			"sourceSize": {"w":12,"h":21}
+		},
+		"redhologram_3.png":
+		{
+			"frame": {"x":225,"y":164,"w":12,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":21},
+			"sourceSize": {"w":12,"h":21}
+		},
+		"redhologram_8.png":
+		{
+			"frame": {"x":225,"y":185,"w":12,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":21},
+			"sourceSize": {"w":12,"h":21}
+		},
+		"redhologram_1.png":
+		{
+			"frame": {"x":191,"y":109,"w":11,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":21},
+			"sourceSize": {"w":11,"h":21}
+		},
+		"redhologram_6.png":
+		{
+			"frame": {"x":191,"y":130,"w":11,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":21},
+			"sourceSize": {"w":11,"h":21}
+		},
+		"redhologram_5.png":
+		{
+			"frame": {"x":260,"y":117,"w":9,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":21},
+			"sourceSize": {"w":9,"h":21}
+		},
+		"redhologram_29.png":
+		{
+			"frame": {"x":168,"y":151,"w":20,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":16},
+			"sourceSize": {"w":20,"h":16}
+		},
+		"redhologram_32.png":
+		{
+			"frame": {"x":121,"y":168,"w":20,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":16},
+			"sourceSize": {"w":20,"h":16}
+		},
+		"redhologram_7.png":
+		{
+			"frame": {"x":23,"y":209,"w":12,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":20},
+			"sourceSize": {"w":12,"h":20}
+		},
+		"redhologram_31.png":
+		{
+			"frame": {"x":35,"y":209,"w":11,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":20},
+			"sourceSize": {"w":11,"h":20}
+		},
+		"redhologram_27.png":
+		{
+			"frame": {"x":46,"y":209,"w":10,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":20},
+			"sourceSize": {"w":10,"h":20}
+		},
+		"redhologram_25.png":
+		{
+			"frame": {"x":260,"y":156,"w":9,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":20},
+			"sourceSize": {"w":9,"h":20}
+		},
+		"redhologram_10.png":
+		{
+			"frame": {"x":237,"y":143,"w":8,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":20},
+			"sourceSize": {"w":8,"h":20}
+		},
+		"redhologram_26.png":
+		{
+			"frame": {"x":56,"y":209,"w":11,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":19},
+			"sourceSize": {"w":11,"h":19}
+		},
+		"redhologram_44.png":
+		{
+			"frame": {"x":67,"y":209,"w":10,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":19},
+			"sourceSize": {"w":10,"h":19}
+		},
+		"redhologram_30.png":
+		{
+			"frame": {"x":260,"y":176,"w":9,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":19},
+			"sourceSize": {"w":9,"h":19}
+		},
+		"redhologram_24.png":
+		{
+			"frame": {"x":237,"y":164,"w":7,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":19},
+			"sourceSize": {"w":7,"h":19}
+		},
+		"redhologram_28.png":
+		{
+			"frame": {"x":237,"y":185,"w":7,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":19},
+			"sourceSize": {"w":7,"h":19}
+		},
+		"redhologram_15.png":
+		{
+			"frame": {"x":267,"y":39,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

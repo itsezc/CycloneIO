@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "petfood20_sheet.png",
+		"size": {"w":93,"h":84},
+		"scale": "1"
+	},
+	"frames": {
+		"petfood20_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":35,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":27},
+			"sourceSize": {"w":35,"h":27}
+		},
+		"petfood20_4.png":
+		{
+			"frame": {"x":0,"y":27,"w":32,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":28},
+			"sourceSize": {"w":32,"h":28}
+		},
+		"petfood20_5.png":
+		{
+			"frame": {"x":35,"y":0,"w":32,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":27},
+			"sourceSize": {"w":32,"h":27}
+		},
+		"petfood20_16.png":
+		{
+			"frame": {"x":35,"y":27,"w":27,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":23},
+			"sourceSize": {"w":27,"h":23}
+		},
+		"petfood20_2.png":
+		{
+			"frame": {"x":67,"y":0,"w":26,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":22},
+			"sourceSize": {"w":26,"h":22}
+		},
+		"petfood20_11.png":
+		{
+			"frame": {"x":67,"y":22,"w":22,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":21},
+			"sourceSize": {"w":22,"h":21}
+		},
+		"petfood20_9.png":
+		{
+			"frame": {"x":0,"y":55,"w":18,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":14},
+			"sourceSize": {"w":18,"h":14}
+		},
+		"petfood20_12.png":
+		{
+			"frame": {"x":0,"y":69,"w":17,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":15},
+			"sourceSize": {"w":17,"h":15}
+		},
+		"petfood20_13.png":
+		{
+			"frame": {"x":18,"y":55,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"petfood20_1.png":
+		{
+			"frame": {"x":67,"y":43,"w":14,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":12},
+			"sourceSize": {"w":14,"h":12}
+		},
+		"petfood20_3.png":
+		{
+			"frame": {"x":81,"y":43,"w":12,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":11},
+			"sourceSize": {"w":12,"h":11}
+		}
+	}
+}

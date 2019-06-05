@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "room_hall15_sofa_sheet.png",
+		"size": {"w":143,"h":87},
+		"scale": "1"
+	},
+	"frames": {
+		"room_hall15_sofa_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":88,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":44},
+			"sourceSize": {"w":88,"h":44}
+		},
+		"room_hall15_sofa_6.png":
+		{
+			"frame": {"x":0,"y":44,"w":56,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":43},
+			"sourceSize": {"w":56,"h":43}
+		},
+		"room_hall15_sofa_7.png":
+		{
+			"frame": {"x":88,"y":0,"w":55,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":37},
+			"sourceSize": {"w":55,"h":37}
+		},
+		"room_hall15_sofa_2.png":
+		{
+			"frame": {"x":88,"y":37,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		}
+	}
+}

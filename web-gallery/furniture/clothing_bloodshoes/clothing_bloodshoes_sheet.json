@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_bloodshoes_sheet.png",
+		"size": {"w":78,"h":38},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_bloodshoes_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":38},
+			"sourceSize": {"w":48,"h":38}
+		},
+		"clothing_bloodshoes_1.png":
+		{
+			"frame": {"x":48,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "pixel_carpet_blue_sheet.png",
+		"size": {"w":156,"h":120},
+		"scale": "1"
+	},
+	"frames": {
+		"pixel_carpet_blue_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":156,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":156,"h":80},
+			"sourceSize": {"w":156,"h":80}
+		},
+		"pixel_carpet_blue_6.png":
+		{
+			"frame": {"x":0,"y":80,"w":79,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":40},
+			"sourceSize": {"w":79,"h":40}
+		},
+		"pixel_carpet_blue_3.png":
+		{
+			"frame": {"x":79,"y":80,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "coco_stick_sheet.png",
+		"size": {"w":96,"h":130},
+		"scale": "1"
+	},
+	"frames": {
+		"coco_stick_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":130},
+			"sourceSize": {"w":48,"h":130}
+		},
+		"coco_stick_2.png":
+		{
+			"frame": {"x":48,"y":0,"w":32,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":130},
+			"sourceSize": {"w":32,"h":130}
+		},
+		"coco_stick_6.png":
+		{
+			"frame": {"x":80,"y":0,"w":16,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":66},
+			"sourceSize": {"w":16,"h":66}
+		},
+		"coco_stick_1.png":
+		{
+			"frame": {"x":80,"y":66,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		}
+	}
+}

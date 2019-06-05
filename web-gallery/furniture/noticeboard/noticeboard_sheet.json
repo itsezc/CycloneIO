@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "noticeboard_sheet.png",
+		"size": {"w":285,"h":281},
+		"scale": "1"
+	},
+	"frames": {
+		"noticeboard_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":197,"h":195},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":197,"h":195},
+			"sourceSize": {"w":197,"h":195}
+		},
+		"noticeboard_6.png":
+		{
+			"frame": {"x":197,"y":0,"w":57,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":112},
+			"sourceSize": {"w":57,"h":112}
+		},
+		"noticeboard_10.png":
+		{
+			"frame": {"x":0,"y":195,"w":109,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":109,"h":56},
+			"sourceSize": {"w":109,"h":56}
+		},
+		"noticeboard_9.png":
+		{
+			"frame": {"x":254,"y":0,"w":31,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":94},
+			"sourceSize": {"w":31,"h":94}
+		},
+		"noticeboard_2.png":
+		{
+			"frame": {"x":197,"y":112,"w":32,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":83},
+			"sourceSize": {"w":32,"h":83}
+		},
+		"noticeboard_4.png":
+		{
+			"frame": {"x":254,"y":94,"w":28,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":56},
+			"sourceSize": {"w":28,"h":56}
+		},
+		"noticeboard_11.png":
+		{
+			"frame": {"x":109,"y":195,"w":53,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":29},
+			"sourceSize": {"w":53,"h":29}
+		},
+		"noticeboard_5.png":
+		{
+			"frame": {"x":254,"y":150,"w":16,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":48},
+			"sourceSize": {"w":16,"h":48}
+		},
+		"noticeboard_13.png":
+		{
+			"frame": {"x":254,"y":198,"w":16,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":42},
+			"sourceSize": {"w":16,"h":42}
+		},
+		"noticeboard_8.png":
+		{
+			"frame": {"x":0,"y":251,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

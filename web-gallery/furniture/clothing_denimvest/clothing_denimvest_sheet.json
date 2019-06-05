@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_denimvest_sheet.png",
+		"size": {"w":76,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_denimvest_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":25},
+			"sourceSize": {"w":38,"h":25}
+		},
+		"clothing_denimvest_9.png":
+		{
+			"frame": {"x":38,"y":0,"w":38,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":20},
+			"sourceSize": {"w":38,"h":20}
+		},
+		"clothing_denimvest_1.png":
+		{
+			"frame": {"x":0,"y":25,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_denimvest_8.png":
+		{
+			"frame": {"x":38,"y":20,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

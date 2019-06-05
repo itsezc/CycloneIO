@@ -1,0 +1,241 @@
+{
+	"meta": {
+		"image": "bazaar_ltd17_ele_sheet.png",
+		"size": {"w":579,"h":502},
+		"scale": "1"
+	},
+	"frames": {
+		"bazaar_ltd17_ele_33.png":
+		{
+			"frame": {"x":0,"y":0,"w":63,"h":163},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":163},
+			"sourceSize": {"w":63,"h":163}
+		},
+		"bazaar_ltd17_ele_28.png":
+		{
+			"frame": {"x":63,"y":0,"w":105,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":105,"h":136},
+			"sourceSize": {"w":105,"h":136}
+		},
+		"bazaar_ltd17_ele_22.png":
+		{
+			"frame": {"x":168,"y":0,"w":124,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":124,"h":104},
+			"sourceSize": {"w":124,"h":104}
+		},
+		"bazaar_ltd17_ele_30.png":
+		{
+			"frame": {"x":0,"y":163,"w":119,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":119,"h":106},
+			"sourceSize": {"w":119,"h":106}
+		},
+		"bazaar_ltd17_ele_9.png":
+		{
+			"frame": {"x":119,"y":163,"w":119,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":119,"h":102},
+			"sourceSize": {"w":119,"h":102}
+		},
+		"bazaar_ltd17_ele_32.png":
+		{
+			"frame": {"x":292,"y":0,"w":116,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":116,"h":62},
+			"sourceSize": {"w":116,"h":62}
+		},
+		"bazaar_ltd17_ele_12.png":
+		{
+			"frame": {"x":292,"y":62,"w":115,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":103},
+			"sourceSize": {"w":115,"h":103}
+		},
+		"bazaar_ltd17_ele_13.png":
+		{
+			"frame": {"x":292,"y":165,"w":115,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":103},
+			"sourceSize": {"w":115,"h":103}
+		},
+		"bazaar_ltd17_ele_16.png":
+		{
+			"frame": {"x":0,"y":269,"w":115,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":103},
+			"sourceSize": {"w":115,"h":103}
+		},
+		"bazaar_ltd17_ele_5.png":
+		{
+			"frame": {"x":115,"y":269,"w":115,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":103},
+			"sourceSize": {"w":115,"h":103}
+		},
+		"bazaar_ltd17_ele_7.png":
+		{
+			"frame": {"x":230,"y":269,"w":115,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":103},
+			"sourceSize": {"w":115,"h":103}
+		},
+		"bazaar_ltd17_ele_18.png":
+		{
+			"frame": {"x":408,"y":0,"w":45,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":105},
+			"sourceSize": {"w":45,"h":105}
+		},
+		"bazaar_ltd17_ele_19.png":
+		{
+			"frame": {"x":345,"y":269,"w":49,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":103},
+			"sourceSize": {"w":49,"h":103}
+		},
+		"bazaar_ltd17_ele_3.png":
+		{
+			"frame": {"x":408,"y":105,"w":45,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":102},
+			"sourceSize": {"w":45,"h":102}
+		},
+		"bazaar_ltd17_ele_17.png":
+		{
+			"frame": {"x":408,"y":207,"w":45,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":101},
+			"sourceSize": {"w":45,"h":101}
+		},
+		"bazaar_ltd17_ele_29.png":
+		{
+			"frame": {"x":0,"y":372,"w":96,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":60},
+			"sourceSize": {"w":96,"h":60}
+		},
+		"bazaar_ltd17_ele_21.png":
+		{
+			"frame": {"x":238,"y":163,"w":50,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":95},
+			"sourceSize": {"w":50,"h":95}
+		},
+		"bazaar_ltd17_ele_23.png":
+		{
+			"frame": {"x":453,"y":0,"w":50,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":95},
+			"sourceSize": {"w":50,"h":95}
+		},
+		"bazaar_ltd17_ele_24.png":
+		{
+			"frame": {"x":453,"y":95,"w":50,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":95},
+			"sourceSize": {"w":50,"h":95}
+		},
+		"bazaar_ltd17_ele_25.png":
+		{
+			"frame": {"x":453,"y":190,"w":50,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":95},
+			"sourceSize": {"w":50,"h":95}
+		},
+		"bazaar_ltd17_ele_6.png":
+		{
+			"frame": {"x":453,"y":285,"w":50,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":95},
+			"sourceSize": {"w":50,"h":95}
+		},
+		"bazaar_ltd17_ele_11.png":
+		{
+			"frame": {"x":0,"y":432,"w":78,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":70},
+			"sourceSize": {"w":78,"h":70}
+		},
+		"bazaar_ltd17_ele_8.png":
+		{
+			"frame": {"x":503,"y":0,"w":76,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":71},
+			"sourceSize": {"w":76,"h":71}
+		},
+		"bazaar_ltd17_ele_4.png":
+		{
+			"frame": {"x":503,"y":71,"w":75,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":32},
+			"sourceSize": {"w":75,"h":32}
+		},
+		"bazaar_ltd17_ele_10.png":
+		{
+			"frame": {"x":503,"y":103,"w":74,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":70},
+			"sourceSize": {"w":74,"h":70}
+		},
+		"bazaar_ltd17_ele_27.png":
+		{
+			"frame": {"x":503,"y":173,"w":56,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":48},
+			"sourceSize": {"w":56,"h":48}
+		},
+		"bazaar_ltd17_ele_15.png":
+		{
+			"frame": {"x":503,"y":221,"w":39,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":43},
+			"sourceSize": {"w":39,"h":43}
+		},
+		"bazaar_ltd17_ele_1.png":
+		{
+			"frame": {"x":542,"y":221,"w":26,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":28},
+			"sourceSize": {"w":26,"h":28}
+		},
+		"bazaar_ltd17_ele_14.png":
+		{
+			"frame": {"x":578,"y":71,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

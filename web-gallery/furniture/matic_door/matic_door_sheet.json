@@ -1,0 +1,305 @@
+{
+	"meta": {
+		"image": "matic_door_sheet.png",
+		"size": {"w":459,"h":443},
+		"scale": "1"
+	},
+	"frames": {
+		"matic_door_31.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":151},
+			"sourceSize": {"w":50,"h":151}
+		},
+		"matic_door_12.png":
+		{
+			"frame": {"x":50,"y":0,"w":39,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":150},
+			"sourceSize": {"w":39,"h":150}
+		},
+		"matic_door_13.png":
+		{
+			"frame": {"x":89,"y":0,"w":39,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":150},
+			"sourceSize": {"w":39,"h":150}
+		},
+		"matic_door_16.png":
+		{
+			"frame": {"x":128,"y":0,"w":37,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":150},
+			"sourceSize": {"w":37,"h":150}
+		},
+		"matic_door_10.png":
+		{
+			"frame": {"x":165,"y":0,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_17.png":
+		{
+			"frame": {"x":201,"y":0,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_19.png":
+		{
+			"frame": {"x":237,"y":0,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_2.png":
+		{
+			"frame": {"x":273,"y":0,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_4.png":
+		{
+			"frame": {"x":0,"y":151,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_6.png":
+		{
+			"frame": {"x":36,"y":151,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_7.png":
+		{
+			"frame": {"x":72,"y":151,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_8.png":
+		{
+			"frame": {"x":108,"y":151,"w":36,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":150},
+			"sourceSize": {"w":36,"h":150}
+		},
+		"matic_door_32.png":
+		{
+			"frame": {"x":144,"y":151,"w":50,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":149},
+			"sourceSize": {"w":50,"h":149}
+		},
+		"matic_door_33.png":
+		{
+			"frame": {"x":194,"y":151,"w":50,"h":148},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":148},
+			"sourceSize": {"w":50,"h":148}
+		},
+		"matic_door_35.png":
+		{
+			"frame": {"x":244,"y":151,"w":50,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":147},
+			"sourceSize": {"w":50,"h":147}
+		},
+		"matic_door_36.png":
+		{
+			"frame": {"x":309,"y":0,"w":50,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":146},
+			"sourceSize": {"w":50,"h":146}
+		},
+		"matic_door_37.png":
+		{
+			"frame": {"x":309,"y":146,"w":50,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":145},
+			"sourceSize": {"w":50,"h":145}
+		},
+		"matic_door_38.png":
+		{
+			"frame": {"x":359,"y":0,"w":50,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":144},
+			"sourceSize": {"w":50,"h":144}
+		},
+		"matic_door_39.png":
+		{
+			"frame": {"x":359,"y":144,"w":50,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":143},
+			"sourceSize": {"w":50,"h":143}
+		},
+		"matic_door_24.png":
+		{
+			"frame": {"x":409,"y":0,"w":50,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":142},
+			"sourceSize": {"w":50,"h":142}
+		},
+		"matic_door_40.png":
+		{
+			"frame": {"x":409,"y":142,"w":50,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":142},
+			"sourceSize": {"w":50,"h":142}
+		},
+		"matic_door_41.png":
+		{
+			"frame": {"x":0,"y":301,"w":50,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":142},
+			"sourceSize": {"w":50,"h":142}
+		},
+		"matic_door_11.png":
+		{
+			"frame": {"x":50,"y":301,"w":25,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":76},
+			"sourceSize": {"w":25,"h":76}
+		},
+		"matic_door_26.png":
+		{
+			"frame": {"x":75,"y":301,"w":20,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":76},
+			"sourceSize": {"w":20,"h":76}
+		},
+		"matic_door_25.png":
+		{
+			"frame": {"x":95,"y":301,"w":19,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":76},
+			"sourceSize": {"w":19,"h":76}
+		},
+		"matic_door_21.png":
+		{
+			"frame": {"x":114,"y":301,"w":18,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":76},
+			"sourceSize": {"w":18,"h":76}
+		},
+		"matic_door_22.png":
+		{
+			"frame": {"x":132,"y":301,"w":18,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":76},
+			"sourceSize": {"w":18,"h":76}
+		},
+		"matic_door_27.png":
+		{
+			"frame": {"x":150,"y":301,"w":18,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":76},
+			"sourceSize": {"w":18,"h":76}
+		},
+		"matic_door_28.png":
+		{
+			"frame": {"x":168,"y":301,"w":18,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":76},
+			"sourceSize": {"w":18,"h":76}
+		},
+		"matic_door_18.png":
+		{
+			"frame": {"x":186,"y":301,"w":25,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":75},
+			"sourceSize": {"w":25,"h":75}
+		},
+		"matic_door_20.png":
+		{
+			"frame": {"x":211,"y":301,"w":25,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":74},
+			"sourceSize": {"w":25,"h":74}
+		},
+		"matic_door_14.png":
+		{
+			"frame": {"x":236,"y":301,"w":25,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":73},
+			"sourceSize": {"w":25,"h":73}
+		},
+		"matic_door_15.png":
+		{
+			"frame": {"x":261,"y":301,"w":25,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":72},
+			"sourceSize": {"w":25,"h":72}
+		},
+		"matic_door_5.png":
+		{
+			"frame": {"x":286,"y":301,"w":25,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":72},
+			"sourceSize": {"w":25,"h":72}
+		},
+		"matic_door_42.png":
+		{
+			"frame": {"x":311,"y":301,"w":62,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":29},
+			"sourceSize": {"w":62,"h":29}
+		},
+		"matic_door_34.png":
+		{
+			"frame": {"x":373,"y":301,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"matic_door_29.png":
+		{
+			"frame": {"x":311,"y":330,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		}
+	}
+}

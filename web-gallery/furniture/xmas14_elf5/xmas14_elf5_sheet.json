@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas14_elf5_sheet.png",
+		"size": {"w":108,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas14_elf5_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":64},
+			"sourceSize": {"w":39,"h":64}
+		},
+		"xmas14_elf5_1.png":
+		{
+			"frame": {"x":39,"y":0,"w":39,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":63},
+			"sourceSize": {"w":39,"h":63}
+		},
+		"xmas14_elf5_5.png":
+		{
+			"frame": {"x":78,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"xmas14_elf5_6.png":
+		{
+			"frame": {"x":78,"y":30,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		}
+	}
+}

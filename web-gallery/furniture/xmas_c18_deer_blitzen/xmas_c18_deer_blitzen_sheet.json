@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c18_deer_blitzen_sheet.png",
+		"size": {"w":82,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_deer_blitzen_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":64},
+			"sourceSize": {"w":44,"h":64}
+		},
+		"xmas_c18_deer_blitzen_8.png":
+		{
+			"frame": {"x":44,"y":0,"w":38,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":21},
+			"sourceSize": {"w":38,"h":21}
+		},
+		"xmas_c18_deer_blitzen_6.png":
+		{
+			"frame": {"x":44,"y":21,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

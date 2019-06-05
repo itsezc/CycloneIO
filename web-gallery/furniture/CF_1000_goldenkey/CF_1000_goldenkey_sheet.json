@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "CF_1000_goldenkey_sheet.png",
+		"size": {"w":91,"h":61},
+		"scale": "1"
+	},
+	"frames": {
+		"CF_1000_goldenkey_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":31},
+			"sourceSize": {"w":46,"h":31}
+		},
+		"CF_1000_goldenkey_4.png":
+		{
+			"frame": {"x":46,"y":0,"w":45,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":16},
+			"sourceSize": {"w":45,"h":16}
+		},
+		"CF_1000_goldenkey_1.png":
+		{
+			"frame": {"x":0,"y":31,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

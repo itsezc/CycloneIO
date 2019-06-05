@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "xmas12_snack_sheet.png",
+		"size": {"w":149,"h":113},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas12_snack_12.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":45},
+			"sourceSize": {"w":51,"h":45}
+		},
+		"xmas12_snack_13.png":
+		{
+			"frame": {"x":51,"y":0,"w":51,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":45},
+			"sourceSize": {"w":51,"h":45}
+		},
+		"xmas12_snack_15.png":
+		{
+			"frame": {"x":0,"y":45,"w":51,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":45},
+			"sourceSize": {"w":51,"h":45}
+		},
+		"xmas12_snack_16.png":
+		{
+			"frame": {"x":51,"y":45,"w":51,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":45},
+			"sourceSize": {"w":51,"h":45}
+		},
+		"xmas12_snack_14.png":
+		{
+			"frame": {"x":102,"y":0,"w":47,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":45},
+			"sourceSize": {"w":47,"h":45}
+		},
+		"xmas12_snack_2.png":
+		{
+			"frame": {"x":102,"y":45,"w":26,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":23},
+			"sourceSize": {"w":26,"h":23}
+		},
+		"xmas12_snack_3.png":
+		{
+			"frame": {"x":0,"y":90,"w":26,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":23},
+			"sourceSize": {"w":26,"h":23}
+		},
+		"xmas12_snack_5.png":
+		{
+			"frame": {"x":26,"y":90,"w":26,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":23},
+			"sourceSize": {"w":26,"h":23}
+		},
+		"xmas12_snack_6.png":
+		{
+			"frame": {"x":52,"y":90,"w":26,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":23},
+			"sourceSize": {"w":26,"h":23}
+		},
+		"xmas12_snack_9.png":
+		{
+			"frame": {"x":78,"y":90,"w":26,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":23},
+			"sourceSize": {"w":26,"h":23}
+		},
+		"xmas12_snack_4.png":
+		{
+			"frame": {"x":104,"y":90,"w":25,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":23},
+			"sourceSize": {"w":25,"h":23}
+		}
+	}
+}

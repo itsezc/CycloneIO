@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "laundry_c18_products_sheet.png",
+		"size": {"w":139,"h":95},
+		"scale": "1"
+	},
+	"frames": {
+		"laundry_c18_products_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":30},
+			"sourceSize": {"w":51,"h":30}
+		},
+		"laundry_c18_products_12.png":
+		{
+			"frame": {"x":51,"y":0,"w":51,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":30},
+			"sourceSize": {"w":51,"h":30}
+		},
+		"laundry_c18_products_11.png":
+		{
+			"frame": {"x":0,"y":30,"w":40,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":37},
+			"sourceSize": {"w":40,"h":37}
+		},
+		"laundry_c18_products_9.png":
+		{
+			"frame": {"x":40,"y":30,"w":40,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":37},
+			"sourceSize": {"w":40,"h":37}
+		},
+		"laundry_c18_products_13.png":
+		{
+			"frame": {"x":80,"y":30,"w":16,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":37},
+			"sourceSize": {"w":16,"h":37}
+		},
+		"laundry_c18_products_3.png":
+		{
+			"frame": {"x":102,"y":0,"w":16,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":37},
+			"sourceSize": {"w":16,"h":37}
+		},
+		"laundry_c18_products_6.png":
+		{
+			"frame": {"x":0,"y":67,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		},
+		"laundry_c18_products_14.png":
+		{
+			"frame": {"x":118,"y":0,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"laundry_c18_products_4.png":
+		{
+			"frame": {"x":118,"y":30,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"laundry_c18_products_16.png":
+		{
+			"frame": {"x":30,"y":67,"w":24,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+			"sourceSize": {"w":24,"h":21}
+		},
+		"laundry_c18_products_7.png":
+		{
+			"frame": {"x":54,"y":67,"w":24,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":21},
+			"sourceSize": {"w":24,"h":21}
+		}
+	}
+}

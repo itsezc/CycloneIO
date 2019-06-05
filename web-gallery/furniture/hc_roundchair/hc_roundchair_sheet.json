@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "hc_roundchair_sheet.png",
+		"size": {"w":151,"h":138},
+		"scale": "1"
+	},
+	"frames": {
+		"hc_roundchair_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":77,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":59},
+			"sourceSize": {"w":77,"h":59}
+		},
+		"hc_roundchair_15.png":
+		{
+			"frame": {"x":77,"y":0,"w":74,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":44},
+			"sourceSize": {"w":74,"h":44}
+		},
+		"hc_roundchair_6.png":
+		{
+			"frame": {"x":0,"y":59,"w":51,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":30},
+			"sourceSize": {"w":51,"h":30}
+		},
+		"hc_roundchair_13.png":
+		{
+			"frame": {"x":0,"y":89,"w":40,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":49},
+			"sourceSize": {"w":40,"h":49}
+		},
+		"hc_roundchair_16.png":
+		{
+			"frame": {"x":51,"y":59,"w":39,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":30},
+			"sourceSize": {"w":39,"h":30}
+		},
+		"hc_roundchair_1.png":
+		{
+			"frame": {"x":90,"y":59,"w":35,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":22},
+			"sourceSize": {"w":35,"h":22}
+		},
+		"hc_roundchair_11.png":
+		{
+			"frame": {"x":40,"y":89,"w":35,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":18},
+			"sourceSize": {"w":35,"h":18}
+		},
+		"hc_roundchair_3.png":
+		{
+			"frame": {"x":40,"y":107,"w":30,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":26},
+			"sourceSize": {"w":30,"h":26}
+		},
+		"hc_roundchair_5.png":
+		{
+			"frame": {"x":70,"y":107,"w":20,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":26},
+			"sourceSize": {"w":20,"h":26}
+		},
+		"hc_roundchair_10.png":
+		{
+			"frame": {"x":77,"y":44,"w":24,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":15},
+			"sourceSize": {"w":24,"h":15}
+		},
+		"hc_roundchair_9.png":
+		{
+			"frame": {"x":101,"y":44,"w":18,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":9},
+			"sourceSize": {"w":18,"h":9}
+		}
+	}
+}

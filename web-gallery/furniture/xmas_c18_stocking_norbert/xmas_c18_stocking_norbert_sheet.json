@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "xmas_c18_stocking_norbert_sheet.png",
+		"size": {"w":150,"h":142},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_stocking_norbert_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":71},
+			"sourceSize": {"w":50,"h":71}
+		},
+		"xmas_c18_stocking_norbert_2.png":
+		{
+			"frame": {"x":50,"y":0,"w":50,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":71},
+			"sourceSize": {"w":50,"h":71}
+		},
+		"xmas_c18_stocking_norbert_5.png":
+		{
+			"frame": {"x":100,"y":0,"w":50,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":71},
+			"sourceSize": {"w":50,"h":71}
+		},
+		"xmas_c18_stocking_norbert_6.png":
+		{
+			"frame": {"x":0,"y":71,"w":50,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":71},
+			"sourceSize": {"w":50,"h":71}
+		},
+		"xmas_c18_stocking_norbert_8.png":
+		{
+			"frame": {"x":50,"y":71,"w":38,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":19},
+			"sourceSize": {"w":38,"h":19}
+		},
+		"xmas_c18_stocking_norbert_10.png":
+		{
+			"frame": {"x":50,"y":90,"w":22,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":32},
+			"sourceSize": {"w":22,"h":32}
+		}
+	}
+}

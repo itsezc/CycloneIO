@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_exotictop_sheet.png",
+		"size": {"w":57,"h":26},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_exotictop_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":30,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":26},
+			"sourceSize": {"w":30,"h":26}
+		},
+		"clothing_exotictop_3.png":
+		{
+			"frame": {"x":30,"y":0,"w":27,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":20},
+			"sourceSize": {"w":27,"h":20}
+		}
+	}
+}

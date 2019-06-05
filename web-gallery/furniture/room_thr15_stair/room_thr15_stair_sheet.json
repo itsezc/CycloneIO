@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "room_thr15_stair_sheet.png",
+		"size": {"w":134,"h":66},
+		"scale": "1"
+	},
+	"frames": {
+		"room_thr15_stair_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":67,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":66},
+			"sourceSize": {"w":67,"h":66}
+		},
+		"room_thr15_stair_5.png":
+		{
+			"frame": {"x":67,"y":0,"w":67,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":37},
+			"sourceSize": {"w":67,"h":37}
+		},
+		"room_thr15_stair_6.png":
+		{
+			"frame": {"x":67,"y":37,"w":28,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":26},
+			"sourceSize": {"w":28,"h":26}
+		}
+	}
+}

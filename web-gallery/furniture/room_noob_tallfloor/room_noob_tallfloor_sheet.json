@@ -1,0 +1,161 @@
+{
+	"meta": {
+		"image": "room_noob_tallfloor_sheet.png",
+		"size": {"w":314,"h":224},
+		"scale": "1"
+	},
+	"frames": {
+		"room_noob_tallfloor_15.png":
+		{
+			"frame": {"x":0,"y":0,"w":180,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":180,"h":95},
+			"sourceSize": {"w":180,"h":95}
+		},
+		"room_noob_tallfloor_21.png":
+		{
+			"frame": {"x":0,"y":95,"w":88,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":44},
+			"sourceSize": {"w":88,"h":44}
+		},
+		"room_noob_tallfloor_16.png":
+		{
+			"frame": {"x":180,"y":0,"w":70,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":87},
+			"sourceSize": {"w":70,"h":87}
+		},
+		"room_noob_tallfloor_1.png":
+		{
+			"frame": {"x":0,"y":139,"w":60,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":85},
+			"sourceSize": {"w":60,"h":85}
+		},
+		"room_noob_tallfloor_10.png":
+		{
+			"frame": {"x":60,"y":139,"w":64,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":84},
+			"sourceSize": {"w":64,"h":84}
+		},
+		"room_noob_tallfloor_22.png":
+		{
+			"frame": {"x":124,"y":139,"w":64,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":84},
+			"sourceSize": {"w":64,"h":84}
+		},
+		"room_noob_tallfloor_8.png":
+		{
+			"frame": {"x":250,"y":0,"w":64,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":84},
+			"sourceSize": {"w":64,"h":84}
+		},
+		"room_noob_tallfloor_3.png":
+		{
+			"frame": {"x":250,"y":84,"w":42,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":44},
+			"sourceSize": {"w":42,"h":44}
+		},
+		"room_noob_tallfloor_24.png":
+		{
+			"frame": {"x":250,"y":128,"w":28,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":41},
+			"sourceSize": {"w":28,"h":41}
+		},
+		"room_noob_tallfloor_17.png":
+		{
+			"frame": {"x":278,"y":128,"w":34,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":40},
+			"sourceSize": {"w":34,"h":40}
+		},
+		"room_noob_tallfloor_18.png":
+		{
+			"frame": {"x":250,"y":169,"w":34,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":40},
+			"sourceSize": {"w":34,"h":40}
+		},
+		"room_noob_tallfloor_2.png":
+		{
+			"frame": {"x":180,"y":87,"w":34,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":40},
+			"sourceSize": {"w":34,"h":40}
+		},
+		"room_noob_tallfloor_23.png":
+		{
+			"frame": {"x":88,"y":95,"w":38,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":19},
+			"sourceSize": {"w":38,"h":19}
+		},
+		"room_noob_tallfloor_5.png":
+		{
+			"frame": {"x":214,"y":87,"w":32,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":16},
+			"sourceSize": {"w":32,"h":16}
+		},
+		"room_noob_tallfloor_4.png":
+		{
+			"frame": {"x":284,"y":169,"w":28,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":23},
+			"sourceSize": {"w":28,"h":23}
+		},
+		"room_noob_tallfloor_9.png":
+		{
+			"frame": {"x":284,"y":192,"w":28,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":14},
+			"sourceSize": {"w":28,"h":14}
+		},
+		"room_noob_tallfloor_11.png":
+		{
+			"frame": {"x":250,"y":209,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		},
+		"room_noob_tallfloor_7.png":
+		{
+			"frame": {"x":292,"y":84,"w":16,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":8},
+			"sourceSize": {"w":16,"h":8}
+		},
+		"room_noob_tallfloor_6.png":
+		{
+			"frame": {"x":292,"y":92,"w":10,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":5},
+			"sourceSize": {"w":10,"h":5}
+		}
+	}
+}

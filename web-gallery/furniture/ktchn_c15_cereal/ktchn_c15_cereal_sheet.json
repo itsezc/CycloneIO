@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ktchn_c15_cereal_sheet.png",
+		"size": {"w":156,"h":112},
+		"scale": "1"
+	},
+	"frames": {
+		"ktchn_c15_cereal_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"ktchn_c15_cereal_11.png":
+		{
+			"frame": {"x":52,"y":0,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"ktchn_c15_cereal_5.png":
+		{
+			"frame": {"x":104,"y":0,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"ktchn_c15_cereal_6.png":
+		{
+			"frame": {"x":0,"y":56,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"ktchn_c15_cereal_7.png":
+		{
+			"frame": {"x":52,"y":56,"w":50,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":26},
+			"sourceSize": {"w":50,"h":26}
+		},
+		"ktchn_c15_cereal_1.png":
+		{
+			"frame": {"x":52,"y":82,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		}
+	}
+}

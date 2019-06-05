@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hween_c18_labshelf_sheet.png",
+		"size": {"w":140,"h":135},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c18_labshelf_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":74,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":135},
+			"sourceSize": {"w":74,"h":135}
+		},
+		"hween_c18_labshelf_5.png":
+		{
+			"frame": {"x":74,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"hween_c18_labshelf_3.png":
+		{
+			"frame": {"x":74,"y":33,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		}
+	}
+}

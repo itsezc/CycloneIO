@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_medal2_sheet.png",
+		"size": {"w":104,"h":93},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_medal2_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"clothing_medal2_11.png":
+		{
+			"frame": {"x":52,"y":0,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"clothing_medal2_12.png":
+		{
+			"frame": {"x":0,"y":31,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"clothing_medal2_6.png":
+		{
+			"frame": {"x":52,"y":31,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"clothing_medal2_8.png":
+		{
+			"frame": {"x":0,"y":62,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"clothing_medal2_1.png":
+		{
+			"frame": {"x":52,"y":62,"w":25,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":23},
+			"sourceSize": {"w":25,"h":23}
+		},
+		"clothing_medal2_7.png":
+		{
+			"frame": {"x":77,"y":62,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

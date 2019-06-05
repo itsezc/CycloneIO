@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "classic2_drinkmach_sheet.png",
+		"size": {"w":272,"h":138},
+		"scale": "1"
+	},
+	"frames": {
+		"classic2_drinkmach_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":69,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":107},
+			"sourceSize": {"w":69,"h":107}
+		},
+		"classic2_drinkmach_9.png":
+		{
+			"frame": {"x":69,"y":0,"w":69,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":107},
+			"sourceSize": {"w":69,"h":107}
+		},
+		"classic2_drinkmach_3.png":
+		{
+			"frame": {"x":138,"y":0,"w":67,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":107},
+			"sourceSize": {"w":67,"h":107}
+		},
+		"classic2_drinkmach_7.png":
+		{
+			"frame": {"x":205,"y":0,"w":67,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":107},
+			"sourceSize": {"w":67,"h":107}
+		},
+		"classic2_drinkmach_5.png":
+		{
+			"frame": {"x":0,"y":107,"w":61,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":31},
+			"sourceSize": {"w":61,"h":31}
+		},
+		"classic2_drinkmach_13.png":
+		{
+			"frame": {"x":61,"y":107,"w":19,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":28},
+			"sourceSize": {"w":19,"h":28}
+		},
+		"classic2_drinkmach_14.png":
+		{
+			"frame": {"x":80,"y":107,"w":8,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":13},
+			"sourceSize": {"w":8,"h":13}
+		},
+		"classic2_drinkmach_4.png":
+		{
+			"frame": {"x":88,"y":107,"w":8,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":13},
+			"sourceSize": {"w":8,"h":13}
+		},
+		"classic2_drinkmach_12.png":
+		{
+			"frame": {"x":96,"y":107,"w":2,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+			"sourceSize": {"w":2,"h":2}
+		},
+		"classic2_drinkmach_6.png":
+		{
+			"frame": {"x":98,"y":107,"w":2,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+			"sourceSize": {"w":2,"h":2}
+		},
+		"classic2_drinkmach_1.png":
+		{
+			"frame": {"x":100,"y":107,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

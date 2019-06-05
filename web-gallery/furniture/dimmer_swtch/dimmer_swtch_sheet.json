@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "dimmer_swtch_sheet.png",
+		"size": {"w":71,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"dimmer_swtch_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":39},
+			"sourceSize": {"w":47,"h":39}
+		},
+		"dimmer_swtch_10.png":
+		{
+			"frame": {"x":47,"y":0,"w":12,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":25},
+			"sourceSize": {"w":12,"h":25}
+		},
+		"dimmer_swtch_7.png":
+		{
+			"frame": {"x":59,"y":0,"w":12,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":25},
+			"sourceSize": {"w":12,"h":25}
+		},
+		"dimmer_swtch_9.png":
+		{
+			"frame": {"x":0,"y":39,"w":12,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":25},
+			"sourceSize": {"w":12,"h":25}
+		},
+		"dimmer_swtch_1.png":
+		{
+			"frame": {"x":12,"y":39,"w":11,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":25},
+			"sourceSize": {"w":11,"h":25}
+		},
+		"dimmer_swtch_6.png":
+		{
+			"frame": {"x":59,"y":25,"w":7,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":14},
+			"sourceSize": {"w":7,"h":14}
+		},
+		"dimmer_swtch_8.png":
+		{
+			"frame": {"x":47,"y":25,"w":7,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":14},
+			"sourceSize": {"w":7,"h":14}
+		},
+		"dimmer_swtch_4.png":
+		{
+			"frame": {"x":23,"y":39,"w":6,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":14},
+			"sourceSize": {"w":6,"h":14}
+		}
+	}
+}

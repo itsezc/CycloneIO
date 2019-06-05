@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "hblooza_chicken_sheet.png",
+		"size": {"w":210,"h":179},
+		"scale": "1"
+	},
+	"frames": {
+		"hblooza_chicken_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":67,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":150},
+			"sourceSize": {"w":67,"h":150}
+		},
+		"hblooza_chicken_4.png":
+		{
+			"frame": {"x":67,"y":0,"w":35,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":75},
+			"sourceSize": {"w":35,"h":75}
+		},
+		"hblooza_chicken_16.png":
+		{
+			"frame": {"x":102,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"hblooza_chicken_9.png":
+		{
+			"frame": {"x":102,"y":33,"w":48,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":57},
+			"sourceSize": {"w":48,"h":57}
+		},
+		"hblooza_chicken_10.png":
+		{
+			"frame": {"x":102,"y":90,"w":44,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":57},
+			"sourceSize": {"w":44,"h":57}
+		},
+		"hblooza_chicken_12.png":
+		{
+			"frame": {"x":168,"y":0,"w":42,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":57},
+			"sourceSize": {"w":42,"h":57}
+		},
+		"hblooza_chicken_18.png":
+		{
+			"frame": {"x":168,"y":57,"w":41,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":57},
+			"sourceSize": {"w":41,"h":57}
+		},
+		"hblooza_chicken_5.png":
+		{
+			"frame": {"x":168,"y":114,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"hblooza_chicken_7.png":
+		{
+			"frame": {"x":67,"y":75,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		},
+		"hblooza_chicken_11.png":
+		{
+			"frame": {"x":67,"y":105,"w":25,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
+			"sourceSize": {"w":25,"h":29}
+		},
+		"hblooza_chicken_15.png":
+		{
+			"frame": {"x":0,"y":150,"w":23,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":29},
+			"sourceSize": {"w":23,"h":29}
+		},
+		"hblooza_chicken_13.png":
+		{
+			"frame": {"x":146,"y":90,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		},
+		"hblooza_chicken_17.png":
+		{
+			"frame": {"x":23,"y":150,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		}
+	}
+}

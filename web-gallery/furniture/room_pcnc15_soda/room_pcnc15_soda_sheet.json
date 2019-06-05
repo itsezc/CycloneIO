@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "room_pcnc15_soda_sheet.png",
+		"size": {"w":58,"h":34},
+		"scale": "1"
+	},
+	"frames": {
+		"room_pcnc15_soda_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":22},
+			"sourceSize": {"w":29,"h":22}
+		},
+		"room_pcnc15_soda_5.png":
+		{
+			"frame": {"x":29,"y":0,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		},
+		"room_pcnc15_soda_7.png":
+		{
+			"frame": {"x":0,"y":22,"w":29,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":12},
+			"sourceSize": {"w":29,"h":12}
+		}
+	}
+}

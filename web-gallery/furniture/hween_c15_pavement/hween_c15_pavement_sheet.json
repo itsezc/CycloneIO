@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "hween_c15_pavement_sheet.png",
+		"size": {"w":260,"h":244},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c15_pavement_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":69},
+			"sourceSize": {"w":130,"h":69}
+		},
+		"hween_c15_pavement_12.png":
+		{
+			"frame": {"x":130,"y":0,"w":130,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":69},
+			"sourceSize": {"w":130,"h":69}
+		},
+		"hween_c15_pavement_2.png":
+		{
+			"frame": {"x":0,"y":69,"w":130,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":69},
+			"sourceSize": {"w":130,"h":69}
+		},
+		"hween_c15_pavement_4.png":
+		{
+			"frame": {"x":130,"y":69,"w":130,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":69},
+			"sourceSize": {"w":130,"h":69}
+		},
+		"hween_c15_pavement_6.png":
+		{
+			"frame": {"x":0,"y":138,"w":130,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":69},
+			"sourceSize": {"w":130,"h":69}
+		},
+		"hween_c15_pavement_8.png":
+		{
+			"frame": {"x":130,"y":138,"w":130,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":69},
+			"sourceSize": {"w":130,"h":69}
+		},
+		"hween_c15_pavement_1.png":
+		{
+			"frame": {"x":0,"y":207,"w":130,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":37},
+			"sourceSize": {"w":130,"h":37}
+		},
+		"hween_c15_pavement_5.png":
+		{
+			"frame": {"x":130,"y":207,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		},
+		"hween_c15_pavement_3.png":
+		{
+			"frame": {"x":160,"y":207,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

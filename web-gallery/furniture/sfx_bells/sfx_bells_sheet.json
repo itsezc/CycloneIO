@@ -1,0 +1,169 @@
+{
+	"meta": {
+		"image": "sfx_bells_sheet.png",
+		"size": {"w":434,"h":374},
+		"scale": "1"
+	},
+	"frames": {
+		"sfx_bells_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":300,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":300,"h":249},
+			"sourceSize": {"w":300,"h":249}
+		},
+		"sfx_bells_14.png":
+		{
+			"frame": {"x":300,"y":0,"w":68,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":83},
+			"sourceSize": {"w":68,"h":83}
+		},
+		"sfx_bells_13.png":
+		{
+			"frame": {"x":300,"y":83,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_15.png":
+		{
+			"frame": {"x":300,"y":166,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_16.png":
+		{
+			"frame": {"x":0,"y":249,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_17.png":
+		{
+			"frame": {"x":66,"y":249,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_18.png":
+		{
+			"frame": {"x":132,"y":249,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_19.png":
+		{
+			"frame": {"x":198,"y":249,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_21.png":
+		{
+			"frame": {"x":264,"y":249,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_22.png":
+		{
+			"frame": {"x":368,"y":0,"w":66,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":83},
+			"sourceSize": {"w":66,"h":83}
+		},
+		"sfx_bells_7.png":
+		{
+			"frame": {"x":368,"y":83,"w":35,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":42},
+			"sourceSize": {"w":35,"h":42}
+		},
+		"sfx_bells_1.png":
+		{
+			"frame": {"x":368,"y":125,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_10.png":
+		{
+			"frame": {"x":368,"y":167,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_11.png":
+		{
+			"frame": {"x":368,"y":209,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_2.png":
+		{
+			"frame": {"x":368,"y":251,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_3.png":
+		{
+			"frame": {"x":330,"y":249,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_5.png":
+		{
+			"frame": {"x":0,"y":332,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_8.png":
+		{
+			"frame": {"x":34,"y":332,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_9.png":
+		{
+			"frame": {"x":68,"y":332,"w":34,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":42},
+			"sourceSize": {"w":34,"h":42}
+		},
+		"sfx_bells_20.png":
+		{
+			"frame": {"x":403,"y":83,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

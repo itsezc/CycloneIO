@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "school_toilet_stall_sheet.png",
+		"size": {"w":302,"h":258},
+		"scale": "1"
+	},
+	"frames": {
+		"school_toilet_stall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":200,"h":169},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":200,"h":169},
+			"sourceSize": {"w":200,"h":169}
+		},
+		"school_toilet_stall_4.png":
+		{
+			"frame": {"x":200,"y":0,"w":67,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":140},
+			"sourceSize": {"w":67,"h":140}
+		},
+		"school_toilet_stall_16.png":
+		{
+			"frame": {"x":267,"y":0,"w":35,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":125},
+			"sourceSize": {"w":35,"h":125}
+		},
+		"school_toilet_stall_9.png":
+		{
+			"frame": {"x":0,"y":169,"w":32,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":89},
+			"sourceSize": {"w":32,"h":89}
+		},
+		"school_toilet_stall_10.png":
+		{
+			"frame": {"x":32,"y":169,"w":31,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":89},
+			"sourceSize": {"w":31,"h":89}
+		},
+		"school_toilet_stall_2.png":
+		{
+			"frame": {"x":63,"y":169,"w":35,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":71},
+			"sourceSize": {"w":35,"h":71}
+		},
+		"school_toilet_stall_15.png":
+		{
+			"frame": {"x":98,"y":169,"w":19,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":63},
+			"sourceSize": {"w":19,"h":63}
+		},
+		"school_toilet_stall_8.png":
+		{
+			"frame": {"x":200,"y":140,"w":60,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":29},
+			"sourceSize": {"w":60,"h":29}
+		},
+		"school_toilet_stall_7.png":
+		{
+			"frame": {"x":117,"y":169,"w":16,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":45},
+			"sourceSize": {"w":16,"h":45}
+		},
+		"school_toilet_stall_6.png":
+		{
+			"frame": {"x":267,"y":125,"w":18,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":44},
+			"sourceSize": {"w":18,"h":44}
+		},
+		"school_toilet_stall_11.png":
+		{
+			"frame": {"x":133,"y":169,"w":25,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":32},
+			"sourceSize": {"w":25,"h":32}
+		},
+		"school_toilet_stall_3.png":
+		{
+			"frame": {"x":158,"y":169,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		}
+	}
+}

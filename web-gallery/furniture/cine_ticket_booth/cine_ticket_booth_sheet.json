@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "cine_ticket_booth_sheet.png",
+		"size": {"w":398,"h":389},
+		"scale": "1"
+	},
+	"frames": {
+		"cine_ticket_booth_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":266,"h":234},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":266,"h":234},
+			"sourceSize": {"w":266,"h":234}
+		},
+		"cine_ticket_booth_10.png":
+		{
+			"frame": {"x":266,"y":0,"w":66,"h":156},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":156},
+			"sourceSize": {"w":66,"h":156}
+		},
+		"cine_ticket_booth_4.png":
+		{
+			"frame": {"x":332,"y":0,"w":66,"h":156},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":156},
+			"sourceSize": {"w":66,"h":156}
+		},
+		"cine_ticket_booth_1.png":
+		{
+			"frame": {"x":0,"y":234,"w":67,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":155},
+			"sourceSize": {"w":67,"h":155}
+		},
+		"cine_ticket_booth_14.png":
+		{
+			"frame": {"x":67,"y":234,"w":67,"h":155},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":155},
+			"sourceSize": {"w":67,"h":155}
+		},
+		"cine_ticket_booth_2.png":
+		{
+			"frame": {"x":332,"y":156,"w":34,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":78},
+			"sourceSize": {"w":34,"h":78}
+		},
+		"cine_ticket_booth_5.png":
+		{
+			"frame": {"x":266,"y":156,"w":34,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":78},
+			"sourceSize": {"w":34,"h":78}
+		},
+		"cine_ticket_booth_7.png":
+		{
+			"frame": {"x":134,"y":234,"w":34,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":78},
+			"sourceSize": {"w":34,"h":78}
+		},
+		"cine_ticket_booth_9.png":
+		{
+			"frame": {"x":168,"y":234,"w":34,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":78},
+			"sourceSize": {"w":34,"h":78}
+		},
+		"cine_ticket_booth_6.png":
+		{
+			"frame": {"x":366,"y":156,"w":15,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":32},
+			"sourceSize": {"w":15,"h":32}
+		}
+	}
+}

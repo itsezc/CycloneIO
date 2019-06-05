@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "xmas13_eggnogbowl_sheet.png",
+		"size": {"w":175,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas13_eggnogbowl_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":88,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":88,"h":87},
+			"sourceSize": {"w":88,"h":87}
+		},
+		"xmas13_eggnogbowl_7.png":
+		{
+			"frame": {"x":88,"y":0,"w":87,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":50},
+			"sourceSize": {"w":87,"h":50}
+		},
+		"xmas13_eggnogbowl_3.png":
+		{
+			"frame": {"x":88,"y":50,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"xmas13_eggnogbowl_10.png":
+		{
+			"frame": {"x":120,"y":50,"w":33,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":18},
+			"sourceSize": {"w":33,"h":18}
+		},
+		"xmas13_eggnogbowl_6.png":
+		{
+			"frame": {"x":0,"y":87,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

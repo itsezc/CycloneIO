@@ -1,0 +1,26 @@
+{
+  "id": 1533,
+  "classname": "petfood2",
+  "revision": 48002,
+  "defaultdir": 2,
+  "xdim": 1,
+  "ydim": 1,
+  "partcolors": {
+    "color": 0
+  },
+  "name": "Sardines",
+  "description": "Fresh catch of yesterday (400 nutrition)",
+  "adurl": "",
+  "offerid": 451,
+  "buyout": 1,
+  "rentofferid": -1,
+  "rentbuyout": 0,
+  "bc": 0,
+  "excludeddynamic": 0,
+  "customparams": "400,10,0",
+  "specialtype": 1,
+  "canstandon": 1,
+  "cansiton": 0,
+  "canlayon": 0,
+  "furniline": "pet_food"
+}

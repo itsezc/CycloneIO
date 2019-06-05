@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r19_medusa_sheet.png",
+		"size": {"w":79,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r19_medusa_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":53},
+			"sourceSize": {"w":49,"h":53}
+		},
+		"clothing_r19_medusa_3.png":
+		{
+			"frame": {"x":49,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

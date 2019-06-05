@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "val14_rosebook_sheet.png",
+		"size": {"w":189,"h":129},
+		"scale": "1"
+	},
+	"frames": {
+		"val14_rosebook_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":63,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":54},
+			"sourceSize": {"w":63,"h":54}
+		},
+		"val14_rosebook_6.png":
+		{
+			"frame": {"x":63,"y":0,"w":63,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":54},
+			"sourceSize": {"w":63,"h":54}
+		},
+		"val14_rosebook_4.png":
+		{
+			"frame": {"x":0,"y":54,"w":63,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":50},
+			"sourceSize": {"w":63,"h":50}
+		},
+		"val14_rosebook_7.png":
+		{
+			"frame": {"x":63,"y":54,"w":63,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":47},
+			"sourceSize": {"w":63,"h":47}
+		},
+		"val14_rosebook_13.png":
+		{
+			"frame": {"x":126,"y":0,"w":63,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":29},
+			"sourceSize": {"w":63,"h":29}
+		},
+		"val14_rosebook_9.png":
+		{
+			"frame": {"x":126,"y":29,"w":32,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":28},
+			"sourceSize": {"w":32,"h":28}
+		},
+		"val14_rosebook_10.png":
+		{
+			"frame": {"x":126,"y":57,"w":32,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":26},
+			"sourceSize": {"w":32,"h":26}
+		},
+		"val14_rosebook_8.png":
+		{
+			"frame": {"x":0,"y":104,"w":32,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":25},
+			"sourceSize": {"w":32,"h":25}
+		},
+		"val14_rosebook_15.png":
+		{
+			"frame": {"x":126,"y":83,"w":32,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":15},
+			"sourceSize": {"w":32,"h":15}
+		},
+		"val14_rosebook_5.png":
+		{
+			"frame": {"x":158,"y":29,"w":30,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":26},
+			"sourceSize": {"w":30,"h":26}
+		}
+	}
+}

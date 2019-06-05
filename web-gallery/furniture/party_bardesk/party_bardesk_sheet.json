@@ -1,0 +1,321 @@
+{
+	"meta": {
+		"image": "party_bardesk_sheet.png",
+		"size": {"w":394,"h":363},
+		"scale": "1"
+	},
+	"frames": {
+		"party_bardesk_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":274,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":274,"h":248},
+			"sourceSize": {"w":274,"h":248}
+		},
+		"party_bardesk_19.png":
+		{
+			"frame": {"x":274,"y":0,"w":68,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":52},
+			"sourceSize": {"w":68,"h":52}
+		},
+		"party_bardesk_25.png":
+		{
+			"frame": {"x":274,"y":52,"w":68,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":52},
+			"sourceSize": {"w":68,"h":52}
+		},
+		"party_bardesk_10.png":
+		{
+			"frame": {"x":274,"y":104,"w":64,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":67},
+			"sourceSize": {"w":64,"h":67}
+		},
+		"party_bardesk_38.png":
+		{
+			"frame": {"x":274,"y":171,"w":64,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":67},
+			"sourceSize": {"w":64,"h":67}
+		},
+		"party_bardesk_22.png":
+		{
+			"frame": {"x":0,"y":248,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"party_bardesk_23.png":
+		{
+			"frame": {"x":52,"y":248,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"party_bardesk_28.png":
+		{
+			"frame": {"x":104,"y":248,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"party_bardesk_29.png":
+		{
+			"frame": {"x":156,"y":248,"w":52,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":56},
+			"sourceSize": {"w":52,"h":56}
+		},
+		"party_bardesk_12.png":
+		{
+			"frame": {"x":208,"y":248,"w":52,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":55},
+			"sourceSize": {"w":52,"h":55}
+		},
+		"party_bardesk_31.png":
+		{
+			"frame": {"x":260,"y":248,"w":52,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":55},
+			"sourceSize": {"w":52,"h":55}
+		},
+		"party_bardesk_32.png":
+		{
+			"frame": {"x":342,"y":0,"w":52,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":55},
+			"sourceSize": {"w":52,"h":55}
+		},
+		"party_bardesk_9.png":
+		{
+			"frame": {"x":342,"y":55,"w":52,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":55},
+			"sourceSize": {"w":52,"h":55}
+		},
+		"party_bardesk_34.png":
+		{
+			"frame": {"x":342,"y":110,"w":40,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":23},
+			"sourceSize": {"w":40,"h":23}
+		},
+		"party_bardesk_35.png":
+		{
+			"frame": {"x":342,"y":133,"w":40,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":23},
+			"sourceSize": {"w":40,"h":23}
+		},
+		"party_bardesk_5.png":
+		{
+			"frame": {"x":342,"y":156,"w":40,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":23},
+			"sourceSize": {"w":40,"h":23}
+		},
+		"party_bardesk_6.png":
+		{
+			"frame": {"x":342,"y":179,"w":40,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":23},
+			"sourceSize": {"w":40,"h":23}
+		},
+		"party_bardesk_11.png":
+		{
+			"frame": {"x":342,"y":202,"w":40,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":21},
+			"sourceSize": {"w":40,"h":21}
+		},
+		"party_bardesk_21.png":
+		{
+			"frame": {"x":342,"y":223,"w":40,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":21},
+			"sourceSize": {"w":40,"h":21}
+		},
+		"party_bardesk_24.png":
+		{
+			"frame": {"x":342,"y":244,"w":40,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":21},
+			"sourceSize": {"w":40,"h":21}
+		},
+		"party_bardesk_33.png":
+		{
+			"frame": {"x":342,"y":265,"w":40,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":21},
+			"sourceSize": {"w":40,"h":21}
+		},
+		"party_bardesk_14.png":
+		{
+			"frame": {"x":0,"y":304,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"party_bardesk_26.png":
+		{
+			"frame": {"x":34,"y":304,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"party_bardesk_4.png":
+		{
+			"frame": {"x":0,"y":330,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"party_bardesk_40.png":
+		{
+			"frame": {"x":32,"y":330,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"party_bardesk_16.png":
+		{
+			"frame": {"x":312,"y":248,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		},
+		"party_bardesk_18.png":
+		{
+			"frame": {"x":64,"y":330,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		},
+		"party_bardesk_30.png":
+		{
+			"frame": {"x":91,"y":330,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		},
+		"party_bardesk_39.png":
+		{
+			"frame": {"x":118,"y":330,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		},
+		"party_bardesk_7.png":
+		{
+			"frame": {"x":145,"y":330,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		},
+		"party_bardesk_1.png":
+		{
+			"frame": {"x":172,"y":330,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"party_bardesk_15.png":
+		{
+			"frame": {"x":199,"y":330,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"party_bardesk_2.png":
+		{
+			"frame": {"x":226,"y":330,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"party_bardesk_20.png":
+		{
+			"frame": {"x":253,"y":330,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"party_bardesk_13.png":
+		{
+			"frame": {"x":342,"y":286,"w":20,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":12},
+			"sourceSize": {"w":20,"h":12}
+		},
+		"party_bardesk_27.png":
+		{
+			"frame": {"x":362,"y":286,"w":20,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":12},
+			"sourceSize": {"w":20,"h":12}
+		},
+		"party_bardesk_17.png":
+		{
+			"frame": {"x":274,"y":238,"w":19,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":10},
+			"sourceSize": {"w":19,"h":10}
+		},
+		"party_bardesk_37.png":
+		{
+			"frame": {"x":293,"y":238,"w":19,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":10},
+			"sourceSize": {"w":19,"h":10}
+		},
+		"party_bardesk_8.png":
+		{
+			"frame": {"x":382,"y":110,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

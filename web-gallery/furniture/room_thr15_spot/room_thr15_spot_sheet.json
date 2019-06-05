@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "room_thr15_spot_sheet.png",
+		"size": {"w":347,"h":173},
+		"scale": "1"
+	},
+	"frames": {
+		"room_thr15_spot_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":193,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":193,"h":151},
+			"sourceSize": {"w":193,"h":151}
+		},
+		"room_thr15_spot_7.png":
+		{
+			"frame": {"x":193,"y":0,"w":154,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":154,"h":130},
+			"sourceSize": {"w":154,"h":130}
+		},
+		"room_thr15_spot_5.png":
+		{
+			"frame": {"x":0,"y":151,"w":29,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":22},
+			"sourceSize": {"w":29,"h":22}
+		}
+	}
+}

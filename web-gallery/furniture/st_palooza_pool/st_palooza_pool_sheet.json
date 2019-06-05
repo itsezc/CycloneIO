@@ -1,0 +1,177 @@
+{
+	"meta": {
+		"image": "st_palooza_pool_sheet.png",
+		"size": {"w":255,"h":186},
+		"scale": "1"
+	},
+	"frames": {
+		"st_palooza_pool_18.png":
+		{
+			"frame": {"x":0,"y":0,"w":122,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":59},
+			"sourceSize": {"w":122,"h":59}
+		},
+		"st_palooza_pool_10.png":
+		{
+			"frame": {"x":0,"y":59,"w":114,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":44},
+			"sourceSize": {"w":114,"h":44}
+		},
+		"st_palooza_pool_20.png":
+		{
+			"frame": {"x":122,"y":0,"w":102,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":102,"h":24},
+			"sourceSize": {"w":102,"h":24}
+		},
+		"st_palooza_pool_22.png":
+		{
+			"frame": {"x":122,"y":24,"w":98,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":23},
+			"sourceSize": {"w":98,"h":23}
+		},
+		"st_palooza_pool_15.png":
+		{
+			"frame": {"x":122,"y":47,"w":64,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":44},
+			"sourceSize": {"w":64,"h":44}
+		},
+		"st_palooza_pool_13.png":
+		{
+			"frame": {"x":0,"y":103,"w":61,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":29},
+			"sourceSize": {"w":61,"h":29}
+		},
+		"st_palooza_pool_21.png":
+		{
+			"frame": {"x":0,"y":132,"w":58,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":54},
+			"sourceSize": {"w":58,"h":54}
+		},
+		"st_palooza_pool_25.png":
+		{
+			"frame": {"x":61,"y":103,"w":55,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":23},
+			"sourceSize": {"w":55,"h":23}
+		},
+		"st_palooza_pool_11.png":
+		{
+			"frame": {"x":122,"y":91,"w":51,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":12},
+			"sourceSize": {"w":51,"h":12}
+		},
+		"st_palooza_pool_16.png":
+		{
+			"frame": {"x":116,"y":103,"w":47,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":13},
+			"sourceSize": {"w":47,"h":13}
+		},
+		"st_palooza_pool_5.png":
+		{
+			"frame": {"x":58,"y":132,"w":33,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":46},
+			"sourceSize": {"w":33,"h":46}
+		},
+		"st_palooza_pool_12.png":
+		{
+			"frame": {"x":91,"y":132,"w":46,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":21},
+			"sourceSize": {"w":46,"h":21}
+		},
+		"st_palooza_pool_6.png":
+		{
+			"frame": {"x":173,"y":91,"w":46,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":11},
+			"sourceSize": {"w":46,"h":11}
+		},
+		"st_palooza_pool_3.png":
+		{
+			"frame": {"x":224,"y":0,"w":31,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":45},
+			"sourceSize": {"w":31,"h":45}
+		},
+		"st_palooza_pool_9.png":
+		{
+			"frame": {"x":186,"y":47,"w":32,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":24},
+			"sourceSize": {"w":32,"h":24}
+		},
+		"st_palooza_pool_8.png":
+		{
+			"frame": {"x":91,"y":153,"w":32,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":23},
+			"sourceSize": {"w":32,"h":23}
+		},
+		"st_palooza_pool_1.png":
+		{
+			"frame": {"x":224,"y":45,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		},
+		"st_palooza_pool_7.png":
+		{
+			"frame": {"x":224,"y":71,"w":26,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":11},
+			"sourceSize": {"w":26,"h":11}
+		},
+		"st_palooza_pool_26.png":
+		{
+			"frame": {"x":224,"y":82,"w":16,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":24},
+			"sourceSize": {"w":16,"h":24}
+		},
+		"st_palooza_pool_2.png":
+		{
+			"frame": {"x":240,"y":82,"w":15,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":23},
+			"sourceSize": {"w":15,"h":23}
+		},
+		"st_palooza_pool_14.png":
+		{
+			"frame": {"x":224,"y":106,"w":20,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":6},
+			"sourceSize": {"w":20,"h":6}
+		}
+	}
+}

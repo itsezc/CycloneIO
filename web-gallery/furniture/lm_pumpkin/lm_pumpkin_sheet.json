@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "lm_pumpkin_sheet.png",
+		"size": {"w":213,"h":179},
+		"scale": "1"
+	},
+	"frames": {
+		"lm_pumpkin_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":141,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":141,"h":128},
+			"sourceSize": {"w":141,"h":128}
+		},
+		"lm_pumpkin_1.png":
+		{
+			"frame": {"x":141,"y":0,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"lm_pumpkin_5.png":
+		{
+			"frame": {"x":141,"y":51,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"lm_pumpkin_7.png":
+		{
+			"frame": {"x":0,"y":128,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"lm_pumpkin_8.png":
+		{
+			"frame": {"x":47,"y":128,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"lm_pumpkin_9.png":
+		{
+			"frame": {"x":94,"y":128,"w":47,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":51},
+			"sourceSize": {"w":47,"h":51}
+		},
+		"lm_pumpkin_6.png":
+		{
+			"frame": {"x":141,"y":102,"w":42,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":24},
+			"sourceSize": {"w":42,"h":24}
+		},
+		"lm_pumpkin_12.png":
+		{
+			"frame": {"x":141,"y":128,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"lm_pumpkin_13.png":
+		{
+			"frame": {"x":188,"y":0,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"lm_pumpkin_14.png":
+		{
+			"frame": {"x":188,"y":26,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"lm_pumpkin_16.png":
+		{
+			"frame": {"x":188,"y":52,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"lm_pumpkin_17.png":
+		{
+			"frame": {"x":188,"y":78,"w":25,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":26},
+			"sourceSize": {"w":25,"h":26}
+		},
+		"lm_pumpkin_10.png":
+		{
+			"frame": {"x":188,"y":104,"w":21,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":11},
+			"sourceSize": {"w":21,"h":11}
+		}
+	}
+}

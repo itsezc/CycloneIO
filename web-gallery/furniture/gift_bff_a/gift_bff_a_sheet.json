@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "gift_bff_a_sheet.png",
+		"size": {"w":40,"h":26},
+		"scale": "1"
+	},
+	"frames": {
+		"gift_bff_a_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":22,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":26},
+			"sourceSize": {"w":22,"h":26}
+		},
+		"gift_bff_a_5.png":
+		{
+			"frame": {"x":22,"y":0,"w":18,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":7},
+			"sourceSize": {"w":18,"h":7}
+		}
+	}
+}

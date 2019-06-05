@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "bolly_tree_sheet.png",
+		"size": {"w":410,"h":216},
+		"scale": "1"
+	},
+	"frames": {
+		"bolly_tree_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":228,"h":216},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":228,"h":216},
+			"sourceSize": {"w":228,"h":216}
+		},
+		"bolly_tree_11.png":
+		{
+			"frame": {"x":228,"y":0,"w":91,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":141},
+			"sourceSize": {"w":91,"h":141}
+		},
+		"bolly_tree_12.png":
+		{
+			"frame": {"x":319,"y":0,"w":91,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":141},
+			"sourceSize": {"w":91,"h":141}
+		},
+		"bolly_tree_1.png":
+		{
+			"frame": {"x":319,"y":141,"w":46,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":75},
+			"sourceSize": {"w":46,"h":75}
+		},
+		"bolly_tree_2.png":
+		{
+			"frame": {"x":228,"y":141,"w":46,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":75},
+			"sourceSize": {"w":46,"h":75}
+		},
+		"bolly_tree_10.png":
+		{
+			"frame": {"x":365,"y":141,"w":42,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":20},
+			"sourceSize": {"w":42,"h":20}
+		},
+		"bolly_tree_9.png":
+		{
+			"frame": {"x":365,"y":161,"w":21,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":32},
+			"sourceSize": {"w":21,"h":32}
+		},
+		"bolly_tree_5.png":
+		{
+			"frame": {"x":365,"y":193,"w":27,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":10},
+			"sourceSize": {"w":27,"h":10}
+		}
+	}
+}

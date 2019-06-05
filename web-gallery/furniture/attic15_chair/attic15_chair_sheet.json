@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "attic15_chair_sheet.png",
+		"size": {"w":107,"h":81},
+		"scale": "1"
+	},
+	"frames": {
+		"attic15_chair_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":81},
+			"sourceSize": {"w":64,"h":81}
+		},
+		"attic15_chair_6.png":
+		{
+			"frame": {"x":64,"y":0,"w":43,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":14},
+			"sourceSize": {"w":43,"h":14}
+		},
+		"attic15_chair_8.png":
+		{
+			"frame": {"x":64,"y":14,"w":23,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":27},
+			"sourceSize": {"w":23,"h":27}
+		}
+	}
+}

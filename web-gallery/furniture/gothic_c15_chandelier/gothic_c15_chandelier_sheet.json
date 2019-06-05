@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "gothic_c15_chandelier_sheet.png",
+		"size": {"w":262,"h":226},
+		"scale": "1"
+	},
+	"frames": {
+		"gothic_c15_chandelier_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":90,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":90,"h":128},
+			"sourceSize": {"w":90,"h":128}
+		},
+		"gothic_c15_chandelier_1.png":
+		{
+			"frame": {"x":90,"y":0,"w":86,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":55},
+			"sourceSize": {"w":86,"h":55}
+		},
+		"gothic_c15_chandelier_2.png":
+		{
+			"frame": {"x":90,"y":55,"w":86,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":55},
+			"sourceSize": {"w":86,"h":55}
+		},
+		"gothic_c15_chandelier_7.png":
+		{
+			"frame": {"x":176,"y":0,"w":86,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":55},
+			"sourceSize": {"w":86,"h":55}
+		},
+		"gothic_c15_chandelier_14.png":
+		{
+			"frame": {"x":176,"y":55,"w":81,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":48},
+			"sourceSize": {"w":81,"h":48}
+		},
+		"gothic_c15_chandelier_15.png":
+		{
+			"frame": {"x":0,"y":128,"w":76,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":50},
+			"sourceSize": {"w":76,"h":50}
+		},
+		"gothic_c15_chandelier_9.png":
+		{
+			"frame": {"x":76,"y":128,"w":76,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":49},
+			"sourceSize": {"w":76,"h":49}
+		},
+		"gothic_c15_chandelier_16.png":
+		{
+			"frame": {"x":152,"y":128,"w":76,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":48},
+			"sourceSize": {"w":76,"h":48}
+		},
+		"gothic_c15_chandelier_10.png":
+		{
+			"frame": {"x":0,"y":178,"w":75,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":48},
+			"sourceSize": {"w":75,"h":48}
+		},
+		"gothic_c15_chandelier_3.png":
+		{
+			"frame": {"x":228,"y":128,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		},
+		"gothic_c15_chandelier_5.png":
+		{
+			"frame": {"x":257,"y":55,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

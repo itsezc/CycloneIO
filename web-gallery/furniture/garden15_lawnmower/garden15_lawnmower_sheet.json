@@ -1,0 +1,233 @@
+{
+	"meta": {
+		"image": "garden15_lawnmower_sheet.png",
+		"size": {"w":280,"h":260},
+		"scale": "1"
+	},
+	"frames": {
+		"garden15_lawnmower_25.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":66},
+			"sourceSize": {"w":70,"h":66}
+		},
+		"garden15_lawnmower_26.png":
+		{
+			"frame": {"x":70,"y":0,"w":70,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":66},
+			"sourceSize": {"w":70,"h":66}
+		},
+		"garden15_lawnmower_31.png":
+		{
+			"frame": {"x":0,"y":66,"w":70,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":66},
+			"sourceSize": {"w":70,"h":66}
+		},
+		"garden15_lawnmower_5.png":
+		{
+			"frame": {"x":70,"y":66,"w":70,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":66},
+			"sourceSize": {"w":70,"h":66}
+		},
+		"garden15_lawnmower_6.png":
+		{
+			"frame": {"x":140,"y":0,"w":70,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":66},
+			"sourceSize": {"w":70,"h":66}
+		},
+		"garden15_lawnmower_7.png":
+		{
+			"frame": {"x":140,"y":66,"w":70,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":66},
+			"sourceSize": {"w":70,"h":66}
+		},
+		"garden15_lawnmower_17.png":
+		{
+			"frame": {"x":0,"y":132,"w":70,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":65},
+			"sourceSize": {"w":70,"h":65}
+		},
+		"garden15_lawnmower_2.png":
+		{
+			"frame": {"x":70,"y":132,"w":70,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":65},
+			"sourceSize": {"w":70,"h":65}
+		},
+		"garden15_lawnmower_21.png":
+		{
+			"frame": {"x":140,"y":132,"w":70,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":65},
+			"sourceSize": {"w":70,"h":65}
+		},
+		"garden15_lawnmower_27.png":
+		{
+			"frame": {"x":210,"y":0,"w":70,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":65},
+			"sourceSize": {"w":70,"h":65}
+		},
+		"garden15_lawnmower_29.png":
+		{
+			"frame": {"x":210,"y":65,"w":70,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":65},
+			"sourceSize": {"w":70,"h":65}
+		},
+		"garden15_lawnmower_30.png":
+		{
+			"frame": {"x":210,"y":130,"w":70,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":65},
+			"sourceSize": {"w":70,"h":65}
+		},
+		"garden15_lawnmower_1.png":
+		{
+			"frame": {"x":0,"y":197,"w":58,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":30},
+			"sourceSize": {"w":58,"h":30}
+		},
+		"garden15_lawnmower_13.png":
+		{
+			"frame": {"x":58,"y":197,"w":58,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":30},
+			"sourceSize": {"w":58,"h":30}
+		},
+		"garden15_lawnmower_11.png":
+		{
+			"frame": {"x":0,"y":227,"w":23,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+			"sourceSize": {"w":23,"h":33}
+		},
+		"garden15_lawnmower_4.png":
+		{
+			"frame": {"x":23,"y":227,"w":23,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+			"sourceSize": {"w":23,"h":33}
+		},
+		"garden15_lawnmower_16.png":
+		{
+			"frame": {"x":116,"y":197,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		},
+		"garden15_lawnmower_12.png":
+		{
+			"frame": {"x":46,"y":227,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"garden15_lawnmower_3.png":
+		{
+			"frame": {"x":67,"y":227,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"garden15_lawnmower_14.png":
+		{
+			"frame": {"x":146,"y":197,"w":17,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":28},
+			"sourceSize": {"w":17,"h":28}
+		},
+		"garden15_lawnmower_23.png":
+		{
+			"frame": {"x":163,"y":197,"w":17,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":28},
+			"sourceSize": {"w":17,"h":28}
+		},
+		"garden15_lawnmower_20.png":
+		{
+			"frame": {"x":180,"y":197,"w":10,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":20},
+			"sourceSize": {"w":10,"h":20}
+		},
+		"garden15_lawnmower_8.png":
+		{
+			"frame": {"x":190,"y":197,"w":10,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":20},
+			"sourceSize": {"w":10,"h":20}
+		},
+		"garden15_lawnmower_15.png":
+		{
+			"frame": {"x":200,"y":197,"w":13,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":17},
+			"sourceSize": {"w":13,"h":17}
+		},
+		"garden15_lawnmower_22.png":
+		{
+			"frame": {"x":213,"y":197,"w":13,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":17},
+			"sourceSize": {"w":13,"h":17}
+		},
+		"garden15_lawnmower_19.png":
+		{
+			"frame": {"x":226,"y":197,"w":7,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":11},
+			"sourceSize": {"w":7,"h":11}
+		},
+		"garden15_lawnmower_9.png":
+		{
+			"frame": {"x":233,"y":197,"w":7,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":11},
+			"sourceSize": {"w":7,"h":11}
+		},
+		"garden15_lawnmower_10.png":
+		{
+			"frame": {"x":210,"y":195,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

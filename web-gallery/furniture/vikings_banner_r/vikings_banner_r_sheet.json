@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "vikings_banner_r_sheet.png",
+		"size": {"w":256,"h":144},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_banner_r_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":144},
+			"sourceSize": {"w":128,"h":144}
+		},
+		"vikings_banner_r_6.png":
+		{
+			"frame": {"x":128,"y":0,"w":85,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":144},
+			"sourceSize": {"w":85,"h":144}
+		},
+		"vikings_banner_r_4.png":
+		{
+			"frame": {"x":213,"y":0,"w":43,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":73},
+			"sourceSize": {"w":43,"h":73}
+		},
+		"vikings_banner_r_5.png":
+		{
+			"frame": {"x":213,"y":73,"w":17,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":22},
+			"sourceSize": {"w":17,"h":22}
+		}
+	}
+}

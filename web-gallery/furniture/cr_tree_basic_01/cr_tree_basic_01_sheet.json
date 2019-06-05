@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "cr_tree_basic_01_sheet.png",
+		"size": {"w":218,"h":97},
+		"scale": "1"
+	},
+	"frames": {
+		"cr_tree_basic_01_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":145,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":97},
+			"sourceSize": {"w":145,"h":97}
+		},
+		"cr_tree_basic_01_3.png":
+		{
+			"frame": {"x":145,"y":0,"w":73,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":49},
+			"sourceSize": {"w":73,"h":49}
+		},
+		"cr_tree_basic_01_5.png":
+		{
+			"frame": {"x":145,"y":49,"w":32,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":21},
+			"sourceSize": {"w":32,"h":21}
+		}
+	}
+}

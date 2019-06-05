@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_silly_sheet.png",
+		"size": {"w":56,"h":67},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_silly_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":67},
+			"sourceSize": {"w":26,"h":67}
+		},
+		"clothing_silly_3.png":
+		{
+			"frame": {"x":26,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

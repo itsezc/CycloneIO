@@ -1,0 +1,169 @@
+{
+	"meta": {
+		"image": "penguin_boxer_sheet.png",
+		"size": {"w":246,"h":208},
+		"scale": "1"
+	},
+	"frames": {
+		"penguin_boxer_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":157,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":157,"h":149},
+			"sourceSize": {"w":157,"h":149}
+		},
+		"penguin_boxer_7.png":
+		{
+			"frame": {"x":157,"y":0,"w":37,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":59},
+			"sourceSize": {"w":37,"h":59}
+		},
+		"penguin_boxer_20.png":
+		{
+			"frame": {"x":157,"y":59,"w":34,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":59},
+			"sourceSize": {"w":34,"h":59}
+		},
+		"penguin_boxer_13.png":
+		{
+			"frame": {"x":194,"y":0,"w":33,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":59},
+			"sourceSize": {"w":33,"h":59}
+		},
+		"penguin_boxer_15.png":
+		{
+			"frame": {"x":194,"y":59,"w":33,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":59},
+			"sourceSize": {"w":33,"h":59}
+		},
+		"penguin_boxer_22.png":
+		{
+			"frame": {"x":0,"y":149,"w":33,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":59},
+			"sourceSize": {"w":33,"h":59}
+		},
+		"penguin_boxer_4.png":
+		{
+			"frame": {"x":33,"y":149,"w":33,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":59},
+			"sourceSize": {"w":33,"h":59}
+		},
+		"penguin_boxer_9.png":
+		{
+			"frame": {"x":66,"y":149,"w":33,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":59},
+			"sourceSize": {"w":33,"h":59}
+		},
+		"penguin_boxer_8.png":
+		{
+			"frame": {"x":99,"y":149,"w":33,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":57},
+			"sourceSize": {"w":33,"h":57}
+		},
+		"penguin_boxer_12.png":
+		{
+			"frame": {"x":194,"y":118,"w":20,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":31},
+			"sourceSize": {"w":20,"h":31}
+		},
+		"penguin_boxer_10.png":
+		{
+			"frame": {"x":157,"y":118,"w":19,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":31},
+			"sourceSize": {"w":19,"h":31}
+		},
+		"penguin_boxer_11.png":
+		{
+			"frame": {"x":132,"y":149,"w":19,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":31},
+			"sourceSize": {"w":19,"h":31}
+		},
+		"penguin_boxer_14.png":
+		{
+			"frame": {"x":151,"y":149,"w":19,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":31},
+			"sourceSize": {"w":19,"h":31}
+		},
+		"penguin_boxer_18.png":
+		{
+			"frame": {"x":170,"y":149,"w":19,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":31},
+			"sourceSize": {"w":19,"h":31}
+		},
+		"penguin_boxer_19.png":
+		{
+			"frame": {"x":189,"y":149,"w":19,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":31},
+			"sourceSize": {"w":19,"h":31}
+		},
+		"penguin_boxer_6.png":
+		{
+			"frame": {"x":208,"y":149,"w":19,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":31},
+			"sourceSize": {"w":19,"h":31}
+		},
+		"penguin_boxer_16.png":
+		{
+			"frame": {"x":227,"y":0,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"penguin_boxer_3.png":
+		{
+			"frame": {"x":227,"y":30,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"penguin_boxer_17.png":
+		{
+			"frame": {"x":132,"y":180,"w":29,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":16},
+			"sourceSize": {"w":29,"h":16}
+		},
+		"penguin_boxer_23.png":
+		{
+			"frame": {"x":227,"y":60,"w":16,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":8},
+			"sourceSize": {"w":16,"h":8}
+		}
+	}
+}

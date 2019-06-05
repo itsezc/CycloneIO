@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "elegantp_c17_carpet_sheet.png",
+		"size": {"w":162,"h":148},
+		"scale": "1"
+	},
+	"frames": {
+		"elegantp_c17_carpet_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":162,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":162,"h":49},
+			"sourceSize": {"w":162,"h":49}
+		},
+		"elegantp_c17_carpet_6.png":
+		{
+			"frame": {"x":0,"y":49,"w":160,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":82},
+			"sourceSize": {"w":160,"h":82}
+		},
+		"elegantp_c17_carpet_7.png":
+		{
+			"frame": {"x":0,"y":131,"w":30,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":17},
+			"sourceSize": {"w":30,"h":17}
+		}
+	}
+}

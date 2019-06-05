@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_tiedjumper_sheet.png",
+		"size": {"w":55,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_tiedjumper_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":68},
+			"sourceSize": {"w":26,"h":68}
+		},
+		"clothing_tiedjumper_5.png":
+		{
+			"frame": {"x":26,"y":0,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"clothing_tiedjumper_2.png":
+		{
+			"frame": {"x":26,"y":30,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		}
+	}
+}

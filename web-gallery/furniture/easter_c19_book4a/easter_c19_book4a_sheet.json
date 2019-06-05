@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "easter_c19_book4a_sheet.png",
+		"size": {"w":125,"h":60},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c19_book4a_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":63,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":41},
+			"sourceSize": {"w":63,"h":41}
+		},
+		"easter_c19_book4a_5.png":
+		{
+			"frame": {"x":63,"y":0,"w":62,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":32},
+			"sourceSize": {"w":62,"h":32}
+		},
+		"easter_c19_book4a_4.png":
+		{
+			"frame": {"x":0,"y":41,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+{
+	"meta": {
+		"image": "grail_water_sheet.png",
+		"size": {"w":78,"h":73},
+		"scale": "1"
+	},
+	"frames": {
+		"grail_water_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":46},
+			"sourceSize": {"w":61,"h":46}
+		},
+		"grail_water_14.png":
+		{
+			"frame": {"x":61,"y":0,"w":17,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
+			"sourceSize": {"w":17,"h":17}
+		},
+		"grail_water_15.png":
+		{
+			"frame": {"x":61,"y":17,"w":17,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
+			"sourceSize": {"w":17,"h":17}
+		},
+		"grail_water_17.png":
+		{
+			"frame": {"x":0,"y":46,"w":17,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
+			"sourceSize": {"w":17,"h":17}
+		},
+		"grail_water_18.png":
+		{
+			"frame": {"x":17,"y":46,"w":17,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
+			"sourceSize": {"w":17,"h":17}
+		},
+		"grail_water_19.png":
+		{
+			"frame": {"x":34,"y":46,"w":17,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
+			"sourceSize": {"w":17,"h":17}
+		},
+		"grail_water_9.png":
+		{
+			"frame": {"x":51,"y":46,"w":17,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":17},
+			"sourceSize": {"w":17,"h":17}
+		},
+		"grail_water_16.png":
+		{
+			"frame": {"x":61,"y":34,"w":17,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":12},
+			"sourceSize": {"w":17,"h":12}
+		},
+		"grail_water_10.png":
+		{
+			"frame": {"x":68,"y":46,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"grail_water_12.png":
+		{
+			"frame": {"x":0,"y":63,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"grail_water_13.png":
+		{
+			"frame": {"x":10,"y":63,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"grail_water_4.png":
+		{
+			"frame": {"x":20,"y":63,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"grail_water_6.png":
+		{
+			"frame": {"x":30,"y":63,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"grail_water_8.png":
+		{
+			"frame": {"x":40,"y":63,"w":10,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":10},
+			"sourceSize": {"w":10,"h":10}
+		},
+		"grail_water_5.png":
+		{
+			"frame": {"x":68,"y":56,"w":10,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":7},
+			"sourceSize": {"w":10,"h":7}
+		}
+	}
+}

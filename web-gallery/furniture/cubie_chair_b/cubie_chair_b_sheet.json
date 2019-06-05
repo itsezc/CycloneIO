@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "cubie_chair_b_sheet.png",
+		"size": {"w":158,"h":141},
+		"scale": "1"
+	},
+	"frames": {
+		"cubie_chair_b_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":100,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":98},
+			"sourceSize": {"w":100,"h":98}
+		},
+		"cubie_chair_b_3.png":
+		{
+			"frame": {"x":100,"y":0,"w":29,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":53},
+			"sourceSize": {"w":29,"h":53}
+		},
+		"cubie_chair_b_9.png":
+		{
+			"frame": {"x":129,"y":0,"w":29,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":52},
+			"sourceSize": {"w":29,"h":52}
+		},
+		"cubie_chair_b_12.png":
+		{
+			"frame": {"x":0,"y":98,"w":42,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":43},
+			"sourceSize": {"w":42,"h":43}
+		},
+		"cubie_chair_b_4.png":
+		{
+			"frame": {"x":42,"y":98,"w":32,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":15},
+			"sourceSize": {"w":32,"h":15}
+		},
+		"cubie_chair_b_2.png":
+		{
+			"frame": {"x":129,"y":52,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"cubie_chair_b_14.png":
+		{
+			"frame": {"x":100,"y":53,"w":16,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
+			"sourceSize": {"w":16,"h":28}
+		},
+		"cubie_chair_b_5.png":
+		{
+			"frame": {"x":42,"y":113,"w":15,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":26},
+			"sourceSize": {"w":15,"h":26}
+		},
+		"cubie_chair_b_10.png":
+		{
+			"frame": {"x":57,"y":113,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"cubie_chair_b_1.png":
+		{
+			"frame": {"x":129,"y":82,"w":16,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":8},
+			"sourceSize": {"w":16,"h":8}
+		}
+	}
+}

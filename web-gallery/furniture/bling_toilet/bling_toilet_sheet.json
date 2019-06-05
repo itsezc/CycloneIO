@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "bling_toilet_sheet.png",
+		"size": {"w":207,"h":173},
+		"scale": "1"
+	},
+	"frames": {
+		"bling_toilet_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":145,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":108},
+			"sourceSize": {"w":145,"h":108}
+		},
+		"bling_toilet_8.png":
+		{
+			"frame": {"x":145,"y":0,"w":62,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":78},
+			"sourceSize": {"w":62,"h":78}
+		},
+		"bling_toilet_2.png":
+		{
+			"frame": {"x":0,"y":108,"w":52,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":65},
+			"sourceSize": {"w":52,"h":65}
+		},
+		"bling_toilet_10.png":
+		{
+			"frame": {"x":52,"y":108,"w":31,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":39},
+			"sourceSize": {"w":31,"h":39}
+		},
+		"bling_toilet_6.png":
+		{
+			"frame": {"x":83,"y":108,"w":26,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":33},
+			"sourceSize": {"w":26,"h":33}
+		},
+		"bling_toilet_7.png":
+		{
+			"frame": {"x":145,"y":78,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		}
+	}
+}

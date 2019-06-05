@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "tokyo_c18_trellis_sheet.png",
+		"size": {"w":114,"h":74},
+		"scale": "1"
+	},
+	"frames": {
+		"tokyo_c18_trellis_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":74},
+			"sourceSize": {"w":42,"h":74}
+		},
+		"tokyo_c18_trellis_6.png":
+		{
+			"frame": {"x":42,"y":0,"w":36,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":74},
+			"sourceSize": {"w":36,"h":74}
+		},
+		"tokyo_c18_trellis_9.png":
+		{
+			"frame": {"x":78,"y":0,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"tokyo_c18_trellis_3.png":
+		{
+			"frame": {"x":78,"y":18,"w":16,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":30},
+			"sourceSize": {"w":16,"h":30}
+		}
+	}
+}

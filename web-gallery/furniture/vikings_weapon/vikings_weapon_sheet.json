@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "vikings_weapon_sheet.png",
+		"size": {"w":173,"h":139},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_weapon_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":139},
+			"sourceSize": {"w":46,"h":139}
+		},
+		"vikings_weapon_12.png":
+		{
+			"frame": {"x":46,"y":0,"w":49,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":128},
+			"sourceSize": {"w":49,"h":128}
+		},
+		"vikings_weapon_3.png":
+		{
+			"frame": {"x":95,"y":0,"w":78,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":39},
+			"sourceSize": {"w":78,"h":39}
+		},
+		"vikings_weapon_6.png":
+		{
+			"frame": {"x":95,"y":39,"w":24,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":71},
+			"sourceSize": {"w":24,"h":71}
+		},
+		"vikings_weapon_10.png":
+		{
+			"frame": {"x":119,"y":39,"w":25,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":65},
+			"sourceSize": {"w":25,"h":65}
+		},
+		"vikings_weapon_11.png":
+		{
+			"frame": {"x":95,"y":110,"w":40,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":21},
+			"sourceSize": {"w":40,"h":21}
+		},
+		"vikings_weapon_2.png":
+		{
+			"frame": {"x":144,"y":39,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

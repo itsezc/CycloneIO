@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_pjtop1_sheet.png",
+		"size": {"w":73,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_pjtop1_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":23},
+			"sourceSize": {"w":37,"h":23}
+		},
+		"clothing_pjtop1_3.png":
+		{
+			"frame": {"x":37,"y":0,"w":36,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":20},
+			"sourceSize": {"w":36,"h":20}
+		},
+		"clothing_pjtop1_8.png":
+		{
+			"frame": {"x":0,"y":23,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

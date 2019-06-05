@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "runway_block_1_sheet.png",
+		"size": {"w":326,"h":241},
+		"scale": "1"
+	},
+	"frames": {
+		"runway_block_1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":196,"h":189},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":196,"h":189},
+			"sourceSize": {"w":196,"h":189}
+		},
+		"runway_block_1_9.png":
+		{
+			"frame": {"x":196,"y":0,"w":130,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":56},
+			"sourceSize": {"w":130,"h":56}
+		},
+		"runway_block_1_5.png":
+		{
+			"frame": {"x":196,"y":56,"w":130,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":33},
+			"sourceSize": {"w":130,"h":33}
+		},
+		"runway_block_1_4.png":
+		{
+			"frame": {"x":196,"y":89,"w":66,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":56},
+			"sourceSize": {"w":66,"h":56}
+		},
+		"runway_block_1_1.png":
+		{
+			"frame": {"x":196,"y":145,"w":66,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":29},
+			"sourceSize": {"w":66,"h":29}
+		},
+		"runway_block_1_8.png":
+		{
+			"frame": {"x":262,"y":89,"w":64,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":16},
+			"sourceSize": {"w":64,"h":16}
+		},
+		"runway_block_1_14.png":
+		{
+			"frame": {"x":262,"y":105,"w":62,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":32},
+			"sourceSize": {"w":62,"h":32}
+		},
+		"runway_block_1_3.png":
+		{
+			"frame": {"x":262,"y":145,"w":38,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":20},
+			"sourceSize": {"w":38,"h":20}
+		},
+		"runway_block_1_7.png":
+		{
+			"frame": {"x":0,"y":189,"w":32,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":25},
+			"sourceSize": {"w":32,"h":25}
+		},
+		"runway_block_1_2.png":
+		{
+			"frame": {"x":0,"y":214,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		}
+	}
+}

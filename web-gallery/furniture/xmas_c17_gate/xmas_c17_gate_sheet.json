@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "xmas_c17_gate_sheet.png",
+		"size": {"w":173,"h":119},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_gate_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":119},
+			"sourceSize": {"w":34,"h":119}
+		},
+		"xmas_c17_gate_9.png":
+		{
+			"frame": {"x":34,"y":0,"w":32,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":109},
+			"sourceSize": {"w":32,"h":109}
+		},
+		"xmas_c17_gate_10.png":
+		{
+			"frame": {"x":66,"y":0,"w":38,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":108},
+			"sourceSize": {"w":38,"h":108}
+		},
+		"xmas_c17_gate_4.png":
+		{
+			"frame": {"x":104,"y":0,"w":38,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":107},
+			"sourceSize": {"w":38,"h":107}
+		},
+		"xmas_c17_gate_3.png":
+		{
+			"frame": {"x":142,"y":0,"w":31,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":32},
+			"sourceSize": {"w":31,"h":32}
+		}
+	}
+}

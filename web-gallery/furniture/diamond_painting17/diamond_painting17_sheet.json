@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "diamond_painting17_sheet.png",
+		"size": {"w":298,"h":215},
+		"scale": "1"
+	},
+	"frames": {
+		"diamond_painting17_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":160,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":185},
+			"sourceSize": {"w":160,"h":185}
+		},
+		"diamond_painting17_4.png":
+		{
+			"frame": {"x":160,"y":0,"w":138,"h":185},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":138,"h":185},
+			"sourceSize": {"w":138,"h":185}
+		},
+		"diamond_painting17_6.png":
+		{
+			"frame": {"x":0,"y":185,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

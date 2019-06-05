@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "qt_sum11_shell2_sheet.png",
+		"size": {"w":96,"h":47},
+		"scale": "1"
+	},
+	"frames": {
+		"qt_sum11_shell2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":31},
+			"sourceSize": {"w":58,"h":31}
+		},
+		"qt_sum11_shell2_4.png":
+		{
+			"frame": {"x":58,"y":0,"w":38,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":31},
+			"sourceSize": {"w":38,"h":31}
+		},
+		"qt_sum11_shell2_2.png":
+		{
+			"frame": {"x":0,"y":31,"w":20,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":16},
+			"sourceSize": {"w":20,"h":16}
+		}
+	}
+}

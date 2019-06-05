@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "hotel_c18_fountain_sheet.png",
+		"size": {"w":144,"h":108},
+		"scale": "1"
+	},
+	"frames": {
+		"hotel_c18_fountain_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":30,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":71},
+			"sourceSize": {"w":30,"h":71}
+		},
+		"hotel_c18_fountain_1.png":
+		{
+			"frame": {"x":30,"y":0,"w":28,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":71},
+			"sourceSize": {"w":28,"h":71}
+		},
+		"hotel_c18_fountain_2.png":
+		{
+			"frame": {"x":58,"y":0,"w":30,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":70},
+			"sourceSize": {"w":30,"h":70}
+		},
+		"hotel_c18_fountain_5.png":
+		{
+			"frame": {"x":88,"y":0,"w":27,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":63},
+			"sourceSize": {"w":27,"h":63}
+		},
+		"hotel_c18_fountain_4.png":
+		{
+			"frame": {"x":115,"y":0,"w":29,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":61},
+			"sourceSize": {"w":29,"h":61}
+		},
+		"hotel_c18_fountain_8.png":
+		{
+			"frame": {"x":0,"y":71,"w":60,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":37},
+			"sourceSize": {"w":60,"h":37}
+		},
+		"hotel_c18_fountain_7.png":
+		{
+			"frame": {"x":60,"y":71,"w":26,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":32},
+			"sourceSize": {"w":26,"h":32}
+		}
+	}
+}

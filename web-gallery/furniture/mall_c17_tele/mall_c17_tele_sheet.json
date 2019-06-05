@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "mall_c17_tele_sheet.png",
+		"size": {"w":203,"h":193},
+		"scale": "1"
+	},
+	"frames": {
+		"mall_c17_tele_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":105},
+			"sourceSize": {"w":36,"h":105}
+		},
+		"mall_c17_tele_1.png":
+		{
+			"frame": {"x":36,"y":0,"w":36,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":104},
+			"sourceSize": {"w":36,"h":104}
+		},
+		"mall_c17_tele_11.png":
+		{
+			"frame": {"x":72,"y":0,"w":36,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":104},
+			"sourceSize": {"w":36,"h":104}
+		},
+		"mall_c17_tele_5.png":
+		{
+			"frame": {"x":108,"y":0,"w":36,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":104},
+			"sourceSize": {"w":36,"h":104}
+		},
+		"mall_c17_tele_6.png":
+		{
+			"frame": {"x":144,"y":0,"w":33,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":104},
+			"sourceSize": {"w":33,"h":104}
+		},
+		"mall_c17_tele_12.png":
+		{
+			"frame": {"x":177,"y":0,"w":26,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":88},
+			"sourceSize": {"w":26,"h":88}
+		},
+		"mall_c17_tele_3.png":
+		{
+			"frame": {"x":0,"y":105,"w":26,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":88},
+			"sourceSize": {"w":26,"h":88}
+		},
+		"mall_c17_tele_10.png":
+		{
+			"frame": {"x":26,"y":105,"w":12,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":31},
+			"sourceSize": {"w":12,"h":31}
+		},
+		"mall_c17_tele_15.png":
+		{
+			"frame": {"x":38,"y":105,"w":5,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":22},
+			"sourceSize": {"w":5,"h":22}
+		},
+		"mall_c17_tele_2.png":
+		{
+			"frame": {"x":177,"y":88,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

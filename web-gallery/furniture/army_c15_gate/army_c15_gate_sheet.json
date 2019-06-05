@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "army_c15_gate_sheet.png",
+		"size": {"w":104,"h":71},
+		"scale": "1"
+	},
+	"frames": {
+		"army_c15_gate_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":23,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":45},
+			"sourceSize": {"w":23,"h":45}
+		},
+		"army_c15_gate_6.png":
+		{
+			"frame": {"x":23,"y":0,"w":23,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":45},
+			"sourceSize": {"w":23,"h":45}
+		},
+		"army_c15_gate_3.png":
+		{
+			"frame": {"x":46,"y":0,"w":11,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":43},
+			"sourceSize": {"w":11,"h":43}
+		},
+		"army_c15_gate_8.png":
+		{
+			"frame": {"x":57,"y":0,"w":11,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":43},
+			"sourceSize": {"w":11,"h":43}
+		},
+		"army_c15_gate_5.png":
+		{
+			"frame": {"x":68,"y":0,"w":36,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":26},
+			"sourceSize": {"w":36,"h":26}
+		},
+		"army_c15_gate_7.png":
+		{
+			"frame": {"x":0,"y":45,"w":36,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":26},
+			"sourceSize": {"w":36,"h":26}
+		},
+		"army_c15_gate_4.png":
+		{
+			"frame": {"x":36,"y":45,"w":24,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":23},
+			"sourceSize": {"w":24,"h":23}
+		}
+	}
+}

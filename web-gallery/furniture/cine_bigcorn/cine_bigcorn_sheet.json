@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "cine_bigcorn_sheet.png",
+		"size": {"w":145,"h":133},
+		"scale": "1"
+	},
+	"frames": {
+		"cine_bigcorn_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":88},
+			"sourceSize": {"w":58,"h":88}
+		},
+		"cine_bigcorn_7.png":
+		{
+			"frame": {"x":58,"y":0,"w":58,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":88},
+			"sourceSize": {"w":58,"h":88}
+		},
+		"cine_bigcorn_2.png":
+		{
+			"frame": {"x":116,"y":0,"w":29,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":45},
+			"sourceSize": {"w":29,"h":45}
+		},
+		"cine_bigcorn_9.png":
+		{
+			"frame": {"x":0,"y":88,"w":29,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":45},
+			"sourceSize": {"w":29,"h":45}
+		},
+		"cine_bigcorn_1.png":
+		{
+			"frame": {"x":29,"y":88,"w":38,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":19},
+			"sourceSize": {"w":38,"h":19}
+		},
+		"cine_bigcorn_10.png":
+		{
+			"frame": {"x":116,"y":45,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"cine_bigcorn_8.png":
+		{
+			"frame": {"x":116,"y":75,"w":19,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":9},
+			"sourceSize": {"w":19,"h":9}
+		}
+	}
+}

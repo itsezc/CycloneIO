@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "fest_c19_didgeridoo_sheet.png",
+		"size": {"w":93,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_didgeridoo_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":94},
+			"sourceSize": {"w":47,"h":94}
+		},
+		"fest_c19_didgeridoo_2.png":
+		{
+			"frame": {"x":47,"y":0,"w":46,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":22},
+			"sourceSize": {"w":46,"h":22}
+		},
+		"fest_c19_didgeridoo_3.png":
+		{
+			"frame": {"x":47,"y":22,"w":18,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":32},
+			"sourceSize": {"w":18,"h":32}
+		}
+	}
+}

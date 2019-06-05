@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "dino_c15_rocklarge_sheet.png",
+		"size": {"w":151,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"dino_c15_rocklarge_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":116},
+			"sourceSize": {"w":52,"h":116}
+		},
+		"dino_c15_rocklarge_5.png":
+		{
+			"frame": {"x":52,"y":0,"w":53,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":74},
+			"sourceSize": {"w":53,"h":74}
+		},
+		"dino_c15_rocklarge_8.png":
+		{
+			"frame": {"x":105,"y":0,"w":46,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":46},
+			"sourceSize": {"w":46,"h":46}
+		},
+		"dino_c15_rocklarge_10.png":
+		{
+			"frame": {"x":105,"y":46,"w":43,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":46},
+			"sourceSize": {"w":43,"h":46}
+		},
+		"dino_c15_rocklarge_2.png":
+		{
+			"frame": {"x":52,"y":74,"w":14,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":30},
+			"sourceSize": {"w":14,"h":30}
+		}
+	}
+}

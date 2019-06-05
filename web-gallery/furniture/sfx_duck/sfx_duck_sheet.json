@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "sfx_duck_sheet.png",
+		"size": {"w":219,"h":203},
+		"scale": "1"
+	},
+	"frames": {
+		"sfx_duck_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":168,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":168,"h":135},
+			"sourceSize": {"w":168,"h":135}
+		},
+		"sfx_duck_13.png":
+		{
+			"frame": {"x":168,"y":0,"w":51,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":68},
+			"sourceSize": {"w":51,"h":68}
+		},
+		"sfx_duck_14.png":
+		{
+			"frame": {"x":0,"y":135,"w":51,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":68},
+			"sourceSize": {"w":51,"h":68}
+		},
+		"sfx_duck_17.png":
+		{
+			"frame": {"x":51,"y":135,"w":66,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":48},
+			"sourceSize": {"w":66,"h":48}
+		},
+		"sfx_duck_16.png":
+		{
+			"frame": {"x":117,"y":135,"w":62,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":32},
+			"sourceSize": {"w":62,"h":32}
+		},
+		"sfx_duck_10.png":
+		{
+			"frame": {"x":168,"y":68,"w":24,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":35},
+			"sourceSize": {"w":24,"h":35}
+		},
+		"sfx_duck_11.png":
+		{
+			"frame": {"x":192,"y":68,"w":24,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":35},
+			"sourceSize": {"w":24,"h":35}
+		},
+		"sfx_duck_7.png":
+		{
+			"frame": {"x":168,"y":103,"w":34,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":26},
+			"sourceSize": {"w":34,"h":26}
+		},
+		"sfx_duck_12.png":
+		{
+			"frame": {"x":179,"y":135,"w":25,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":32},
+			"sourceSize": {"w":25,"h":32}
+		},
+		"sfx_duck_6.png":
+		{
+			"frame": {"x":117,"y":167,"w":32,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":15},
+			"sourceSize": {"w":32,"h":15}
+		},
+		"sfx_duck_3.png":
+		{
+			"frame": {"x":149,"y":167,"w":18,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":11},
+			"sourceSize": {"w":18,"h":11}
+		},
+		"sfx_duck_9.png":
+		{
+			"frame": {"x":202,"y":103,"w":10,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":5},
+			"sourceSize": {"w":10,"h":5}
+		},
+		"sfx_duck_2.png":
+		{
+			"frame": {"x":216,"y":68,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

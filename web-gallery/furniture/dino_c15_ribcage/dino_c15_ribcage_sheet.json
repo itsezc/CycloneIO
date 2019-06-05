@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "dino_c15_ribcage_sheet.png",
+		"size": {"w":285,"h":171},
+		"scale": "1"
+	},
+	"frames": {
+		"dino_c15_ribcage_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":77,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":132},
+			"sourceSize": {"w":77,"h":132}
+		},
+		"dino_c15_ribcage_11.png":
+		{
+			"frame": {"x":77,"y":0,"w":58,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":97},
+			"sourceSize": {"w":58,"h":97}
+		},
+		"dino_c15_ribcage_7.png":
+		{
+			"frame": {"x":135,"y":0,"w":46,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":97},
+			"sourceSize": {"w":46,"h":97}
+		},
+		"dino_c15_ribcage_3.png":
+		{
+			"frame": {"x":0,"y":132,"w":78,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":39},
+			"sourceSize": {"w":78,"h":39}
+		},
+		"dino_c15_ribcage_5.png":
+		{
+			"frame": {"x":181,"y":0,"w":34,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":73},
+			"sourceSize": {"w":34,"h":73}
+		},
+		"dino_c15_ribcage_9.png":
+		{
+			"frame": {"x":215,"y":0,"w":70,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":65},
+			"sourceSize": {"w":70,"h":65}
+		},
+		"dino_c15_ribcage_6.png":
+		{
+			"frame": {"x":215,"y":65,"w":58,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":43},
+			"sourceSize": {"w":58,"h":43}
+		},
+		"dino_c15_ribcage_14.png":
+		{
+			"frame": {"x":215,"y":108,"w":33,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":46},
+			"sourceSize": {"w":33,"h":46}
+		},
+		"dino_c15_ribcage_15.png":
+		{
+			"frame": {"x":248,"y":108,"w":25,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":23},
+			"sourceSize": {"w":25,"h":23}
+		},
+		"dino_c15_ribcage_13.png":
+		{
+			"frame": {"x":273,"y":65,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

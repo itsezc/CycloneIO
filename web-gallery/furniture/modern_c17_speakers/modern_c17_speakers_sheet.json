@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "modern_c17_speakers_sheet.png",
+		"size": {"w":43,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"modern_c17_speakers_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":43,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":25},
+			"sourceSize": {"w":43,"h":25}
+		},
+		"modern_c17_speakers_1.png":
+		{
+			"frame": {"x":0,"y":25,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"modern_c17_speakers_3.png":
+		{
+			"frame": {"x":30,"y":25,"w":13,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":22},
+			"sourceSize": {"w":13,"h":22}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_harajukubow_sheet.png",
+		"size": {"w":60,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_harajukubow_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":30,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":48},
+			"sourceSize": {"w":30,"h":48}
+		},
+		"clothing_harajukubow_1.png":
+		{
+			"frame": {"x":30,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

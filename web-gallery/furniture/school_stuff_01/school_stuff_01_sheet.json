@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "school_stuff_01_sheet.png",
+		"size": {"w":92,"h":35},
+		"scale": "1"
+	},
+	"frames": {
+		"school_stuff_01_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":35},
+			"sourceSize": {"w":46,"h":35}
+		},
+		"school_stuff_01_3.png":
+		{
+			"frame": {"x":46,"y":0,"w":46,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":23},
+			"sourceSize": {"w":46,"h":23}
+		},
+		"school_stuff_01_2.png":
+		{
+			"frame": {"x":46,"y":23,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		}
+	}
+}

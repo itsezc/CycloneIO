@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_tutu_sheet.png",
+		"size": {"w":58,"h":29},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_tutu_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		},
+		"clothing_tutu_2.png":
+		{
+			"frame": {"x":29,"y":0,"w":29,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":20},
+			"sourceSize": {"w":29,"h":20}
+		}
+	}
+}

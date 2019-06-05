@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "paris_c15_breadstall_sheet.png",
+		"size": {"w":214,"h":136},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_breadstall_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":78,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":136},
+			"sourceSize": {"w":78,"h":136}
+		},
+		"paris_c15_breadstall_3.png":
+		{
+			"frame": {"x":78,"y":0,"w":78,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":136},
+			"sourceSize": {"w":78,"h":136}
+		},
+		"paris_c15_breadstall_6.png":
+		{
+			"frame": {"x":156,"y":0,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"paris_c15_breadstall_9.png":
+		{
+			"frame": {"x":156,"y":29,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		}
+	}
+}

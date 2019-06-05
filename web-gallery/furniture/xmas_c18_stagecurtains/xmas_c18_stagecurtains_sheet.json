@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "xmas_c18_stagecurtains_sheet.png",
+		"size": {"w":210,"h":192},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_stagecurtains_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":192},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":192},
+			"sourceSize": {"w":44,"h":192}
+		},
+		"xmas_c18_stagecurtains_4.png":
+		{
+			"frame": {"x":44,"y":0,"w":44,"h":190},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":190},
+			"sourceSize": {"w":44,"h":190}
+		},
+		"xmas_c18_stagecurtains_6.png":
+		{
+			"frame": {"x":88,"y":0,"w":42,"h":190},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":190},
+			"sourceSize": {"w":42,"h":190}
+		},
+		"xmas_c18_stagecurtains_1.png":
+		{
+			"frame": {"x":130,"y":0,"w":41,"h":184},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":184},
+			"sourceSize": {"w":41,"h":184}
+		},
+		"xmas_c18_stagecurtains_9.png":
+		{
+			"frame": {"x":171,"y":0,"w":39,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":19},
+			"sourceSize": {"w":39,"h":19}
+		},
+		"xmas_c18_stagecurtains_8.png":
+		{
+			"frame": {"x":171,"y":19,"w":9,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":30},
+			"sourceSize": {"w":9,"h":30}
+		}
+	}
+}

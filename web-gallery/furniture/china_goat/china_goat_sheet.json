@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "china_goat_sheet.png",
+		"size": {"w":112,"h":112},
+		"scale": "1"
+	},
+	"frames": {
+		"china_goat_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":112},
+			"sourceSize": {"w":58,"h":112}
+		},
+		"china_goat_3.png":
+		{
+			"frame": {"x":58,"y":0,"w":54,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":28},
+			"sourceSize": {"w":54,"h":28}
+		},
+		"china_goat_7.png":
+		{
+			"frame": {"x":58,"y":28,"w":27,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":32},
+			"sourceSize": {"w":27,"h":32}
+		}
+	}
+}

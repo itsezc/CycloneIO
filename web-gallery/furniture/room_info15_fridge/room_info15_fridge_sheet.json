@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "room_info15_fridge_sheet.png",
+		"size": {"w":100,"h":83},
+		"scale": "1"
+	},
+	"frames": {
+		"room_info15_fridge_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+			"sourceSize": {"w":50,"h":51}
+		},
+		"room_info15_fridge_4.png":
+		{
+			"frame": {"x":50,"y":0,"w":50,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":51},
+			"sourceSize": {"w":50,"h":51}
+		},
+		"room_info15_fridge_6.png":
+		{
+			"frame": {"x":0,"y":51,"w":29,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":32},
+			"sourceSize": {"w":29,"h":32}
+		},
+		"room_info15_fridge_7.png":
+		{
+			"frame": {"x":29,"y":51,"w":26,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":29},
+			"sourceSize": {"w":26,"h":29}
+		},
+		"room_info15_fridge_12.png":
+		{
+			"frame": {"x":55,"y":51,"w":23,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":20},
+			"sourceSize": {"w":23,"h":20}
+		},
+		"room_info15_fridge_9.png":
+		{
+			"frame": {"x":78,"y":51,"w":19,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":14},
+			"sourceSize": {"w":19,"h":14}
+		},
+		"room_info15_fridge_1.png":
+		{
+			"frame": {"x":97,"y":51,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

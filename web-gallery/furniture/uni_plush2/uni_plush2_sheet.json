@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "uni_plush2_sheet.png",
+		"size": {"w":81,"h":51},
+		"scale": "1"
+	},
+	"frames": {
+		"uni_plush2_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":41,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":51},
+			"sourceSize": {"w":41,"h":51}
+		},
+		"uni_plush2_9.png":
+		{
+			"frame": {"x":41,"y":0,"w":40,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":15},
+			"sourceSize": {"w":40,"h":15}
+		},
+		"uni_plush2_1.png":
+		{
+			"frame": {"x":41,"y":15,"w":22,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":27},
+			"sourceSize": {"w":22,"h":27}
+		},
+		"uni_plush2_8.png":
+		{
+			"frame": {"x":41,"y":42,"w":20,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":8},
+			"sourceSize": {"w":20,"h":8}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hween_c18_labcurtains_sheet.png",
+		"size": {"w":74,"h":150},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c18_labcurtains_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":150},
+			"sourceSize": {"w":38,"h":150}
+		},
+		"hween_c18_labcurtains_1.png":
+		{
+			"frame": {"x":38,"y":0,"w":36,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":19},
+			"sourceSize": {"w":36,"h":19}
+		},
+		"hween_c18_labcurtains_5.png":
+		{
+			"frame": {"x":38,"y":19,"w":8,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":26},
+			"sourceSize": {"w":8,"h":26}
+		}
+	}
+}

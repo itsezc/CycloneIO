@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "js_jetski2_sheet.png",
+		"size": {"w":241,"h":168},
+		"scale": "1"
+	},
+	"frames": {
+		"js_jetski2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":158,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":158,"h":120},
+			"sourceSize": {"w":158,"h":120}
+		},
+		"js_jetski2_9.png":
+		{
+			"frame": {"x":158,"y":0,"w":83,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":48},
+			"sourceSize": {"w":83,"h":48}
+		},
+		"js_jetski2_13.png":
+		{
+			"frame": {"x":158,"y":48,"w":75,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":23},
+			"sourceSize": {"w":75,"h":23}
+		},
+		"js_jetski2_14.png":
+		{
+			"frame": {"x":158,"y":71,"w":75,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":23},
+			"sourceSize": {"w":75,"h":23}
+		},
+		"js_jetski2_12.png":
+		{
+			"frame": {"x":0,"y":120,"w":60,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":48},
+			"sourceSize": {"w":60,"h":48}
+		},
+		"js_jetski2_11.png":
+		{
+			"frame": {"x":158,"y":94,"w":42,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":25},
+			"sourceSize": {"w":42,"h":25}
+		},
+		"js_jetski2_2.png":
+		{
+			"frame": {"x":200,"y":94,"w":38,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":13},
+			"sourceSize": {"w":38,"h":13}
+		},
+		"js_jetski2_3.png":
+		{
+			"frame": {"x":200,"y":107,"w":38,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":12},
+			"sourceSize": {"w":38,"h":12}
+		},
+		"js_jetski2_7.png":
+		{
+			"frame": {"x":60,"y":120,"w":31,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":24},
+			"sourceSize": {"w":31,"h":24}
+		},
+		"js_jetski2_10.png":
+		{
+			"frame": {"x":91,"y":120,"w":29,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":23},
+			"sourceSize": {"w":29,"h":23}
+		}
+	}
+}

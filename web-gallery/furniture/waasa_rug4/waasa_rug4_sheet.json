@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "waasa_rug4_sheet.png",
+		"size": {"w":384,"h":146},
+		"scale": "1"
+	},
+	"frames": {
+		"waasa_rug4_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":192,"h":146},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":146},
+			"sourceSize": {"w":192,"h":146}
+		},
+		"waasa_rug4_4.png":
+		{
+			"frame": {"x":192,"y":0,"w":192,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":97},
+			"sourceSize": {"w":192,"h":97}
+		},
+		"waasa_rug4_7.png":
+		{
+			"frame": {"x":192,"y":97,"w":96,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":49},
+			"sourceSize": {"w":96,"h":49}
+		},
+		"waasa_rug4_2.png":
+		{
+			"frame": {"x":288,"y":97,"w":32,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":16},
+			"sourceSize": {"w":32,"h":16}
+		}
+	}
+}

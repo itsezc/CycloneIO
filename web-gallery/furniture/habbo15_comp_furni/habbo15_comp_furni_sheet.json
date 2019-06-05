@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "habbo15_comp_furni_sheet.png",
+		"size": {"w":80,"h":78},
+		"scale": "1"
+	},
+	"frames": {
+		"habbo15_comp_furni_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":24,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":60},
+			"sourceSize": {"w":24,"h":60}
+		},
+		"habbo15_comp_furni_3.png":
+		{
+			"frame": {"x":24,"y":0,"w":36,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":48},
+			"sourceSize": {"w":36,"h":48}
+		},
+		"habbo15_comp_furni_2.png":
+		{
+			"frame": {"x":60,"y":0,"w":20,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":26},
+			"sourceSize": {"w":20,"h":26}
+		},
+		"habbo15_comp_furni_11.png":
+		{
+			"frame": {"x":60,"y":26,"w":9,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":21},
+			"sourceSize": {"w":9,"h":21}
+		},
+		"habbo15_comp_furni_9.png":
+		{
+			"frame": {"x":69,"y":26,"w":11,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":19},
+			"sourceSize": {"w":11,"h":19}
+		},
+		"habbo15_comp_furni_6.png":
+		{
+			"frame": {"x":0,"y":60,"w":11,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":18},
+			"sourceSize": {"w":11,"h":18}
+		},
+		"habbo15_comp_furni_7.png":
+		{
+			"frame": {"x":11,"y":60,"w":10,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":17},
+			"sourceSize": {"w":10,"h":17}
+		}
+	}
+}

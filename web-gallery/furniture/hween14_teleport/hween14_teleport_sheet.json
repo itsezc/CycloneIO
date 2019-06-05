@@ -1,0 +1,657 @@
+{
+	"meta": {
+		"image": "hween14_teleport_sheet.png",
+		"size": {"w":484,"h":439},
+		"scale": "1"
+	},
+	"frames": {
+		"hween14_teleport_54.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":179},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":179},
+			"sourceSize": {"w":62,"h":179}
+		},
+		"hween14_teleport_5.png":
+		{
+			"frame": {"x":62,"y":0,"w":36,"h":161},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":161},
+			"sourceSize": {"w":36,"h":161}
+		},
+		"hween14_teleport_56.png":
+		{
+			"frame": {"x":98,"y":0,"w":52,"h":154},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":154},
+			"sourceSize": {"w":52,"h":154}
+		},
+		"hween14_teleport_36.png":
+		{
+			"frame": {"x":150,"y":0,"w":81,"h":148},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":148},
+			"sourceSize": {"w":81,"h":148}
+		},
+		"hween14_teleport_57.png":
+		{
+			"frame": {"x":231,"y":0,"w":79,"h":148},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":148},
+			"sourceSize": {"w":79,"h":148}
+		},
+		"hween14_teleport_59.png":
+		{
+			"frame": {"x":310,"y":0,"w":74,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":145},
+			"sourceSize": {"w":74,"h":145}
+		},
+		"hween14_teleport_37.png":
+		{
+			"frame": {"x":0,"y":179,"w":78,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":138},
+			"sourceSize": {"w":78,"h":138}
+		},
+		"hween14_teleport_4.png":
+		{
+			"frame": {"x":78,"y":179,"w":26,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":135},
+			"sourceSize": {"w":26,"h":135}
+		},
+		"hween14_teleport_13.png":
+		{
+			"frame": {"x":104,"y":179,"w":53,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":127},
+			"sourceSize": {"w":53,"h":127}
+		},
+		"hween14_teleport_29.png":
+		{
+			"frame": {"x":157,"y":179,"w":55,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":126},
+			"sourceSize": {"w":55,"h":126}
+		},
+		"hween14_teleport_10.png":
+		{
+			"frame": {"x":212,"y":179,"w":48,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":125},
+			"sourceSize": {"w":48,"h":125}
+		},
+		"hween14_teleport_26.png":
+		{
+			"frame": {"x":260,"y":179,"w":54,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":116},
+			"sourceSize": {"w":54,"h":116}
+		},
+		"hween14_teleport_40.png":
+		{
+			"frame": {"x":314,"y":179,"w":67,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":106},
+			"sourceSize": {"w":67,"h":106}
+		},
+		"hween14_teleport_77.png":
+		{
+			"frame": {"x":384,"y":0,"w":31,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":90},
+			"sourceSize": {"w":31,"h":90}
+		},
+		"hween14_teleport_33.png":
+		{
+			"frame": {"x":0,"y":317,"w":42,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":83},
+			"sourceSize": {"w":42,"h":83}
+		},
+		"hween14_teleport_72.png":
+		{
+			"frame": {"x":384,"y":90,"w":26,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":77},
+			"sourceSize": {"w":26,"h":77}
+		},
+		"hween14_teleport_30.png":
+		{
+			"frame": {"x":384,"y":167,"w":18,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":77},
+			"sourceSize": {"w":18,"h":77}
+		},
+		"hween14_teleport_42.png":
+		{
+			"frame": {"x":42,"y":317,"w":68,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":76},
+			"sourceSize": {"w":68,"h":76}
+		},
+		"hween14_teleport_74.png":
+		{
+			"frame": {"x":110,"y":317,"w":41,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":74},
+			"sourceSize": {"w":41,"h":74}
+		},
+		"hween14_teleport_75.png":
+		{
+			"frame": {"x":151,"y":317,"w":39,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":74},
+			"sourceSize": {"w":39,"h":74}
+		},
+		"hween14_teleport_76.png":
+		{
+			"frame": {"x":190,"y":317,"w":37,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":73},
+			"sourceSize": {"w":37,"h":73}
+		},
+		"hween14_teleport_64.png":
+		{
+			"frame": {"x":227,"y":317,"w":39,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":69},
+			"sourceSize": {"w":39,"h":69}
+		},
+		"hween14_teleport_34.png":
+		{
+			"frame": {"x":402,"y":167,"w":13,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":68},
+			"sourceSize": {"w":13,"h":68}
+		},
+		"hween14_teleport_28.png":
+		{
+			"frame": {"x":384,"y":244,"w":28,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":62},
+			"sourceSize": {"w":28,"h":62}
+		},
+		"hween14_teleport_25.png":
+		{
+			"frame": {"x":266,"y":317,"w":26,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":62},
+			"sourceSize": {"w":26,"h":62}
+		},
+		"hween14_teleport_32.png":
+		{
+			"frame": {"x":292,"y":317,"w":24,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":62},
+			"sourceSize": {"w":24,"h":62}
+		},
+		"hween14_teleport_38.png":
+		{
+			"frame": {"x":316,"y":317,"w":58,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":37},
+			"sourceSize": {"w":58,"h":37}
+		},
+		"hween14_teleport_41.png":
+		{
+			"frame": {"x":310,"y":145,"w":58,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":31},
+			"sourceSize": {"w":58,"h":31}
+		},
+		"hween14_teleport_12.png":
+		{
+			"frame": {"x":415,"y":0,"w":27,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":58},
+			"sourceSize": {"w":27,"h":58}
+		},
+		"hween14_teleport_43.png":
+		{
+			"frame": {"x":0,"y":400,"w":56,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":39},
+			"sourceSize": {"w":56,"h":39}
+		},
+		"hween14_teleport_31.png":
+		{
+			"frame": {"x":442,"y":0,"w":42,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":54},
+			"sourceSize": {"w":42,"h":54}
+		},
+		"hween14_teleport_51.png":
+		{
+			"frame": {"x":442,"y":54,"w":37,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":54},
+			"sourceSize": {"w":37,"h":54}
+		},
+		"hween14_teleport_65.png":
+		{
+			"frame": {"x":442,"y":108,"w":34,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":53},
+			"sourceSize": {"w":34,"h":53}
+		},
+		"hween14_teleport_44.png":
+		{
+			"frame": {"x":231,"y":148,"w":49,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":27},
+			"sourceSize": {"w":49,"h":27}
+		},
+		"hween14_teleport_62.png":
+		{
+			"frame": {"x":442,"y":161,"w":13,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":44},
+			"sourceSize": {"w":13,"h":44}
+		},
+		"hween14_teleport_8.png":
+		{
+			"frame": {"x":455,"y":161,"w":21,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":41},
+			"sourceSize": {"w":21,"h":41}
+		},
+		"hween14_teleport_60.png":
+		{
+			"frame": {"x":442,"y":205,"w":34,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":38},
+			"sourceSize": {"w":34,"h":38}
+		},
+		"hween14_teleport_35.png":
+		{
+			"frame": {"x":442,"y":243,"w":35,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":16},
+			"sourceSize": {"w":35,"h":16}
+		},
+		"hween14_teleport_52.png":
+		{
+			"frame": {"x":442,"y":259,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"hween14_teleport_39.png":
+		{
+			"frame": {"x":442,"y":276,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		},
+		"hween14_teleport_78.png":
+		{
+			"frame": {"x":442,"y":295,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		},
+		"hween14_teleport_20.png":
+		{
+			"frame": {"x":442,"y":314,"w":29,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":16},
+			"sourceSize": {"w":29,"h":16}
+		},
+		"hween14_teleport_80.png":
+		{
+			"frame": {"x":442,"y":330,"w":29,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":16},
+			"sourceSize": {"w":29,"h":16}
+		},
+		"hween14_teleport_63.png":
+		{
+			"frame": {"x":442,"y":346,"w":28,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":19},
+			"sourceSize": {"w":28,"h":19}
+		},
+		"hween14_teleport_6.png":
+		{
+			"frame": {"x":442,"y":365,"w":21,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":27},
+			"sourceSize": {"w":21,"h":27}
+		},
+		"hween14_teleport_73.png":
+		{
+			"frame": {"x":463,"y":365,"w":18,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":27},
+			"sourceSize": {"w":18,"h":27}
+		},
+		"hween14_teleport_11.png":
+		{
+			"frame": {"x":442,"y":392,"w":13,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":27},
+			"sourceSize": {"w":13,"h":27}
+		},
+		"hween14_teleport_67.png":
+		{
+			"frame": {"x":455,"y":392,"w":26,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":17},
+			"sourceSize": {"w":26,"h":17}
+		},
+		"hween14_teleport_16.png":
+		{
+			"frame": {"x":415,"y":58,"w":12,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":26},
+			"sourceSize": {"w":12,"h":26}
+		},
+		"hween14_teleport_49.png":
+		{
+			"frame": {"x":442,"y":419,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		},
+		"hween14_teleport_15.png":
+		{
+			"frame": {"x":427,"y":58,"w":12,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":23},
+			"sourceSize": {"w":12,"h":23}
+		},
+		"hween14_teleport_46.png":
+		{
+			"frame": {"x":476,"y":108,"w":7,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":23},
+			"sourceSize": {"w":7,"h":23}
+		},
+		"hween14_teleport_68.png":
+		{
+			"frame": {"x":455,"y":409,"w":21,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":8},
+			"sourceSize": {"w":21,"h":8}
+		},
+		"hween14_teleport_69.png":
+		{
+			"frame": {"x":476,"y":131,"w":7,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":21},
+			"sourceSize": {"w":7,"h":21}
+		},
+		"hween14_teleport_7.png":
+		{
+			"frame": {"x":415,"y":84,"w":11,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":20},
+			"sourceSize": {"w":11,"h":20}
+		},
+		"hween14_teleport_71.png":
+		{
+			"frame": {"x":476,"y":161,"w":6,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":20},
+			"sourceSize": {"w":6,"h":20}
+		},
+		"hween14_teleport_81.png":
+		{
+			"frame": {"x":442,"y":431,"w":19,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":7},
+			"sourceSize": {"w":19,"h":7}
+		},
+		"hween14_teleport_83.png":
+		{
+			"frame": {"x":466,"y":419,"w":17,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":9},
+			"sourceSize": {"w":17,"h":9}
+		},
+		"hween14_teleport_70.png":
+		{
+			"frame": {"x":476,"y":181,"w":6,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":17},
+			"sourceSize": {"w":6,"h":17}
+		},
+		"hween14_teleport_2.png":
+		{
+			"frame": {"x":472,"y":276,"w":10,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":16},
+			"sourceSize": {"w":10,"h":16}
+		},
+		"hween14_teleport_3.png":
+		{
+			"frame": {"x":426,"y":84,"w":16,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":8},
+			"sourceSize": {"w":16,"h":8}
+		},
+		"hween14_teleport_50.png":
+		{
+			"frame": {"x":426,"y":92,"w":15,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":9},
+			"sourceSize": {"w":15,"h":9}
+		},
+		"hween14_teleport_27.png":
+		{
+			"frame": {"x":476,"y":205,"w":6,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":15},
+			"sourceSize": {"w":6,"h":15}
+		},
+		"hween14_teleport_53.png":
+		{
+			"frame": {"x":476,"y":220,"w":6,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":15},
+			"sourceSize": {"w":6,"h":15}
+		},
+		"hween14_teleport_58.png":
+		{
+			"frame": {"x":477,"y":243,"w":6,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":14},
+			"sourceSize": {"w":6,"h":14}
+		},
+		"hween14_teleport_66.png":
+		{
+			"frame": {"x":479,"y":54,"w":5,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":14},
+			"sourceSize": {"w":5,"h":14}
+		},
+		"hween14_teleport_23.png":
+		{
+			"frame": {"x":476,"y":259,"w":6,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":13},
+			"sourceSize": {"w":6,"h":13}
+		},
+		"hween14_teleport_55.png":
+		{
+			"frame": {"x":471,"y":295,"w":6,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":13},
+			"sourceSize": {"w":6,"h":13}
+		},
+		"hween14_teleport_45.png":
+		{
+			"frame": {"x":479,"y":68,"w":5,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":13},
+			"sourceSize": {"w":5,"h":13}
+		},
+		"hween14_teleport_22.png":
+		{
+			"frame": {"x":477,"y":295,"w":6,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":12},
+			"sourceSize": {"w":6,"h":12}
+		},
+		"hween14_teleport_84.png":
+		{
+			"frame": {"x":471,"y":308,"w":11,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":6},
+			"sourceSize": {"w":11,"h":6}
+		},
+		"hween14_teleport_18.png":
+		{
+			"frame": {"x":479,"y":81,"w":5,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":10},
+			"sourceSize": {"w":5,"h":10}
+		},
+		"hween14_teleport_48.png":
+		{
+			"frame": {"x":479,"y":91,"w":4,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":10},
+			"sourceSize": {"w":4,"h":10}
+		},
+		"hween14_teleport_82.png":
+		{
+			"frame": {"x":471,"y":314,"w":10,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":4},
+			"sourceSize": {"w":10,"h":4}
+		},
+		"hween14_teleport_24.png":
+		{
+			"frame": {"x":471,"y":318,"w":9,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":6},
+			"sourceSize": {"w":9,"h":6}
+		},
+		"hween14_teleport_14.png":
+		{
+			"frame": {"x":476,"y":152,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"hween14_teleport_9.png":
+		{
+			"frame": {"x":476,"y":198,"w":8,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":3},
+			"sourceSize": {"w":8,"h":3}
+		},
+		"hween14_teleport_21.png":
+		{
+			"frame": {"x":479,"y":101,"w":4,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":7},
+			"sourceSize": {"w":4,"h":7}
+		},
+		"hween14_teleport_19.png":
+		{
+			"frame": {"x":476,"y":235,"w":4,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+			"sourceSize": {"w":4,"h":4}
+		},
+		"hween14_teleport_47.png":
+		{
+			"frame": {"x":482,"y":161,"w":2,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+			"sourceSize": {"w":2,"h":2}
+		},
+		"hween14_teleport_1.png":
+		{
+			"frame": {"x":483,"y":91,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "fest_c19_craft_sheet.png",
+		"size": {"w":94,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_craft_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"fest_c19_craft_3.png":
+		{
+			"frame": {"x":0,"y":32,"w":63,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":62},
+			"sourceSize": {"w":63,"h":62}
+		},
+		"fest_c19_craft_6.png":
+		{
+			"frame": {"x":64,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "paris15_cake_sheet.png",
+		"size": {"w":260,"h":150},
+		"scale": "1"
+	},
+	"frames": {
+		"paris15_cake_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":65,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":120},
+			"sourceSize": {"w":65,"h":120}
+		},
+		"paris15_cake_9.png":
+		{
+			"frame": {"x":65,"y":0,"w":65,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":120},
+			"sourceSize": {"w":65,"h":120}
+		},
+		"paris15_cake_4.png":
+		{
+			"frame": {"x":130,"y":0,"w":65,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":117},
+			"sourceSize": {"w":65,"h":117}
+		},
+		"paris15_cake_6.png":
+		{
+			"frame": {"x":195,"y":0,"w":65,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":117},
+			"sourceSize": {"w":65,"h":117}
+		},
+		"paris15_cake_8.png":
+		{
+			"frame": {"x":0,"y":120,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "nest_ice_sheet.png",
+		"size": {"w":134,"h":124},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_ice_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":134,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":134,"h":62},
+			"sourceSize": {"w":134,"h":62}
+		},
+		"nest_ice_4.png":
+		{
+			"frame": {"x":0,"y":62,"w":67,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":41},
+			"sourceSize": {"w":67,"h":41}
+		},
+		"nest_ice_5.png":
+		{
+			"frame": {"x":67,"y":62,"w":67,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":41},
+			"sourceSize": {"w":67,"h":41}
+		},
+		"nest_ice_1.png":
+		{
+			"frame": {"x":0,"y":103,"w":34,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":21},
+			"sourceSize": {"w":34,"h":21}
+		},
+		"nest_ice_3.png":
+		{
+			"frame": {"x":34,"y":103,"w":34,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":21},
+			"sourceSize": {"w":34,"h":21}
+		},
+		"nest_ice_6.png":
+		{
+			"frame": {"x":68,"y":103,"w":29,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":20},
+			"sourceSize": {"w":29,"h":20}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hc17_9_sheet.png",
+		"size": {"w":114,"h":108},
+		"scale": "1"
+	},
+	"frames": {
+		"hc17_9_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":78},
+			"sourceSize": {"w":62,"h":78}
+		},
+		"hc17_9_1.png":
+		{
+			"frame": {"x":62,"y":0,"w":52,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":65},
+			"sourceSize": {"w":52,"h":65}
+		},
+		"hc17_9_3.png":
+		{
+			"frame": {"x":0,"y":78,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		}
+	}
+}

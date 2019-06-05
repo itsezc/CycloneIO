@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "chess_b_rook_sheet.png",
+		"size": {"w":94,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"chess_b_rook_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":100},
+			"sourceSize": {"w":48,"h":100}
+		},
+		"chess_b_rook_6.png":
+		{
+			"frame": {"x":48,"y":0,"w":46,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":25},
+			"sourceSize": {"w":46,"h":25}
+		},
+		"chess_b_rook_5.png":
+		{
+			"frame": {"x":48,"y":25,"w":17,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":30},
+			"sourceSize": {"w":17,"h":30}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "gift_thing_sheet.png",
+		"size": {"w":134,"h":98},
+		"scale": "1"
+	},
+	"frames": {
+		"gift_thing_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":96,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":65},
+			"sourceSize": {"w":96,"h":65}
+		},
+		"gift_thing_2.png":
+		{
+			"frame": {"x":96,"y":0,"w":38,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":34},
+			"sourceSize": {"w":38,"h":34}
+		},
+		"gift_thing_4.png":
+		{
+			"frame": {"x":0,"y":65,"w":38,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":33},
+			"sourceSize": {"w":38,"h":33}
+		},
+		"gift_thing_6.png":
+		{
+			"frame": {"x":96,"y":34,"w":38,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":31},
+			"sourceSize": {"w":38,"h":31}
+		},
+		"gift_thing_14.png":
+		{
+			"frame": {"x":38,"y":65,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"gift_thing_5.png":
+		{
+			"frame": {"x":64,"y":65,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		},
+		"gift_thing_7.png":
+		{
+			"frame": {"x":84,"y":65,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		},
+		"gift_thing_3.png":
+		{
+			"frame": {"x":104,"y":65,"w":20,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":17},
+			"sourceSize": {"w":20,"h":17}
+		},
+		"gift_thing_1.png":
+		{
+			"frame": {"x":64,"y":83,"w":20,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":10},
+			"sourceSize": {"w":20,"h":10}
+		},
+		"gift_thing_8.png":
+		{
+			"frame": {"x":124,"y":65,"w":8,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":5},
+			"sourceSize": {"w":8,"h":5}
+		}
+	}
+}

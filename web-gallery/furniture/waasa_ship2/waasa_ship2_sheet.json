@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "waasa_ship2_sheet.png",
+		"size": {"w":355,"h":315},
+		"scale": "1"
+	},
+	"frames": {
+		"waasa_ship2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":213,"h":207},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":213,"h":207},
+			"sourceSize": {"w":213,"h":207}
+		},
+		"waasa_ship2_11.png":
+		{
+			"frame": {"x":213,"y":0,"w":71,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":110},
+			"sourceSize": {"w":71,"h":110}
+		},
+		"waasa_ship2_12.png":
+		{
+			"frame": {"x":284,"y":0,"w":71,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":109},
+			"sourceSize": {"w":71,"h":109}
+		},
+		"waasa_ship2_14.png":
+		{
+			"frame": {"x":0,"y":207,"w":71,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":108},
+			"sourceSize": {"w":71,"h":108}
+		},
+		"waasa_ship2_8.png":
+		{
+			"frame": {"x":284,"y":109,"w":28,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":97},
+			"sourceSize": {"w":28,"h":97}
+		},
+		"waasa_ship2_5.png":
+		{
+			"frame": {"x":312,"y":109,"w":28,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":92},
+			"sourceSize": {"w":28,"h":92}
+		},
+		"waasa_ship2_7.png":
+		{
+			"frame": {"x":213,"y":110,"w":28,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":92},
+			"sourceSize": {"w":28,"h":92}
+		},
+		"waasa_ship2_4.png":
+		{
+			"frame": {"x":241,"y":110,"w":40,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":58},
+			"sourceSize": {"w":40,"h":58}
+		},
+		"waasa_ship2_3.png":
+		{
+			"frame": {"x":71,"y":207,"w":40,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":55},
+			"sourceSize": {"w":40,"h":55}
+		},
+		"waasa_ship2_10.png":
+		{
+			"frame": {"x":340,"y":109,"w":14,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":49},
+			"sourceSize": {"w":14,"h":49}
+		},
+		"waasa_ship2_16.png":
+		{
+			"frame": {"x":111,"y":207,"w":14,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":45},
+			"sourceSize": {"w":14,"h":45}
+		},
+		"waasa_ship2_13.png":
+		{
+			"frame": {"x":241,"y":168,"w":28,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":31},
+			"sourceSize": {"w":28,"h":31}
+		}
+	}
+}

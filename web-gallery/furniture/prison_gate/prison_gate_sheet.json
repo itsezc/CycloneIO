@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "prison_gate_sheet.png",
+		"size": {"w":251,"h":238},
+		"scale": "1"
+	},
+	"frames": {
+		"prison_gate_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":191,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":191,"h":134},
+			"sourceSize": {"w":191,"h":134}
+		},
+		"prison_gate_13.png":
+		{
+			"frame": {"x":191,"y":0,"w":42,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":134},
+			"sourceSize": {"w":42,"h":134}
+		},
+		"prison_gate_11.png":
+		{
+			"frame": {"x":233,"y":0,"w":18,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":115},
+			"sourceSize": {"w":18,"h":115}
+		},
+		"prison_gate_1.png":
+		{
+			"frame": {"x":0,"y":134,"w":28,"h":104},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":104},
+			"sourceSize": {"w":28,"h":104}
+		},
+		"prison_gate_5.png":
+		{
+			"frame": {"x":28,"y":134,"w":27,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":103},
+			"sourceSize": {"w":27,"h":103}
+		},
+		"prison_gate_2.png":
+		{
+			"frame": {"x":55,"y":134,"w":21,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":67},
+			"sourceSize": {"w":21,"h":67}
+		},
+		"prison_gate_6.png":
+		{
+			"frame": {"x":76,"y":134,"w":10,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":57},
+			"sourceSize": {"w":10,"h":57}
+		},
+		"prison_gate_14.png":
+		{
+			"frame": {"x":86,"y":134,"w":15,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":52},
+			"sourceSize": {"w":15,"h":52}
+		},
+		"prison_gate_15.png":
+		{
+			"frame": {"x":101,"y":134,"w":14,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":51},
+			"sourceSize": {"w":14,"h":51}
+		},
+		"prison_gate_3.png":
+		{
+			"frame": {"x":115,"y":134,"w":40,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":20},
+			"sourceSize": {"w":40,"h":20}
+		},
+		"prison_gate_4.png":
+		{
+			"frame": {"x":115,"y":154,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		},
+		"prison_gate_9.png":
+		{
+			"frame": {"x":155,"y":134,"w":21,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":11},
+			"sourceSize": {"w":21,"h":11}
+		}
+	}
+}

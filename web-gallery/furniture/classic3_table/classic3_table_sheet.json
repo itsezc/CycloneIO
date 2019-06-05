@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "classic3_table_sheet.png",
+		"size": {"w":119,"h":79},
+		"scale": "1"
+	},
+	"frames": {
+		"classic3_table_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":72,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":36},
+			"sourceSize": {"w":72,"h":36}
+		},
+		"classic3_table_5.png":
+		{
+			"frame": {"x":0,"y":36,"w":49,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":43},
+			"sourceSize": {"w":49,"h":43}
+		},
+		"classic3_table_7.png":
+		{
+			"frame": {"x":72,"y":0,"w":47,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":31},
+			"sourceSize": {"w":47,"h":31}
+		},
+		"classic3_table_2.png":
+		{
+			"frame": {"x":72,"y":31,"w":30,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":25},
+			"sourceSize": {"w":30,"h":25}
+		}
+	}
+}

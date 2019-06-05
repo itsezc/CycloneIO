@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "house_sheet.png",
+		"size": {"w":121,"h":112},
+		"scale": "1"
+	},
+	"frames": {
+		"house_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":81,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":68},
+			"sourceSize": {"w":81,"h":68}
+		},
+		"house_3.png":
+		{
+			"frame": {"x":81,"y":0,"w":40,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":45},
+			"sourceSize": {"w":40,"h":45}
+		},
+		"house_7.png":
+		{
+			"frame": {"x":0,"y":68,"w":41,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":21},
+			"sourceSize": {"w":41,"h":21}
+		},
+		"house_9.png":
+		{
+			"frame": {"x":81,"y":45,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"house_4.png":
+		{
+			"frame": {"x":0,"y":89,"w":20,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":23},
+			"sourceSize": {"w":20,"h":23}
+		},
+		"house_8.png":
+		{
+			"frame": {"x":41,"y":68,"w":19,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":10},
+			"sourceSize": {"w":19,"h":10}
+		}
+	}
+}

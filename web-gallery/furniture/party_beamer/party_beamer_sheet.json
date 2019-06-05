@@ -1,0 +1,481 @@
+{
+	"meta": {
+		"image": "party_beamer_sheet.png",
+		"size": {"w":329,"h":301},
+		"scale": "1"
+	},
+	"frames": {
+		"party_beamer_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":229,"h":202},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":229,"h":202},
+			"sourceSize": {"w":229,"h":202}
+		},
+		"party_beamer_57.png":
+		{
+			"frame": {"x":229,"y":0,"w":100,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":140},
+			"sourceSize": {"w":100,"h":140}
+		},
+		"party_beamer_10.png":
+		{
+			"frame": {"x":0,"y":202,"w":56,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":99},
+			"sourceSize": {"w":56,"h":99}
+		},
+		"party_beamer_43.png":
+		{
+			"frame": {"x":56,"y":202,"w":51,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":70},
+			"sourceSize": {"w":51,"h":70}
+		},
+		"party_beamer_62.png":
+		{
+			"frame": {"x":229,"y":140,"w":56,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":26},
+			"sourceSize": {"w":56,"h":26}
+		},
+		"party_beamer_27.png":
+		{
+			"frame": {"x":107,"y":202,"w":29,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":49},
+			"sourceSize": {"w":29,"h":49}
+		},
+		"party_beamer_47.png":
+		{
+			"frame": {"x":136,"y":202,"w":5,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":42},
+			"sourceSize": {"w":5,"h":42}
+		},
+		"party_beamer_30.png":
+		{
+			"frame": {"x":229,"y":166,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		},
+		"party_beamer_53.png":
+		{
+			"frame": {"x":285,"y":140,"w":29,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":14},
+			"sourceSize": {"w":29,"h":14}
+		},
+		"party_beamer_59.png":
+		{
+			"frame": {"x":242,"y":166,"w":20,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":28},
+			"sourceSize": {"w":20,"h":28}
+		},
+		"party_beamer_46.png":
+		{
+			"frame": {"x":262,"y":166,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"party_beamer_51.png":
+		{
+			"frame": {"x":290,"y":166,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"party_beamer_54.png":
+		{
+			"frame": {"x":141,"y":202,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"party_beamer_60.png":
+		{
+			"frame": {"x":169,"y":202,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"party_beamer_17.png":
+		{
+			"frame": {"x":197,"y":202,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		},
+		"party_beamer_20.png":
+		{
+			"frame": {"x":225,"y":202,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		},
+		"party_beamer_24.png":
+		{
+			"frame": {"x":253,"y":202,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		},
+		"party_beamer_26.png":
+		{
+			"frame": {"x":281,"y":202,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		},
+		"party_beamer_1.png":
+		{
+			"frame": {"x":141,"y":219,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		},
+		"party_beamer_41.png":
+		{
+			"frame": {"x":165,"y":219,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		},
+		"party_beamer_44.png":
+		{
+			"frame": {"x":189,"y":219,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		},
+		"party_beamer_49.png":
+		{
+			"frame": {"x":213,"y":219,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		},
+		"party_beamer_2.png":
+		{
+			"frame": {"x":107,"y":251,"w":23,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":18},
+			"sourceSize": {"w":23,"h":18}
+		},
+		"party_beamer_22.png":
+		{
+			"frame": {"x":130,"y":251,"w":23,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":18},
+			"sourceSize": {"w":23,"h":18}
+		},
+		"party_beamer_56.png":
+		{
+			"frame": {"x":153,"y":251,"w":23,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":18},
+			"sourceSize": {"w":23,"h":18}
+		},
+		"party_beamer_61.png":
+		{
+			"frame": {"x":176,"y":251,"w":23,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":18},
+			"sourceSize": {"w":23,"h":18}
+		},
+		"party_beamer_18.png":
+		{
+			"frame": {"x":199,"y":251,"w":23,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":17},
+			"sourceSize": {"w":23,"h":17}
+		},
+		"party_beamer_25.png":
+		{
+			"frame": {"x":222,"y":251,"w":23,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":17},
+			"sourceSize": {"w":23,"h":17}
+		},
+		"party_beamer_45.png":
+		{
+			"frame": {"x":56,"y":272,"w":22,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":18},
+			"sourceSize": {"w":22,"h":18}
+		},
+		"party_beamer_55.png":
+		{
+			"frame": {"x":78,"y":272,"w":22,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":18},
+			"sourceSize": {"w":22,"h":18}
+		},
+		"party_beamer_40.png":
+		{
+			"frame": {"x":245,"y":251,"w":22,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":15},
+			"sourceSize": {"w":22,"h":15}
+		},
+		"party_beamer_50.png":
+		{
+			"frame": {"x":267,"y":251,"w":22,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":15},
+			"sourceSize": {"w":22,"h":15}
+		},
+		"party_beamer_42.png":
+		{
+			"frame": {"x":100,"y":272,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		},
+		"party_beamer_48.png":
+		{
+			"frame": {"x":120,"y":272,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		},
+		"party_beamer_13.png":
+		{
+			"frame": {"x":314,"y":140,"w":15,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":9},
+			"sourceSize": {"w":15,"h":9}
+		},
+		"party_beamer_4.png":
+		{
+			"frame": {"x":285,"y":154,"w":15,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":9},
+			"sourceSize": {"w":15,"h":9}
+		},
+		"party_beamer_7.png":
+		{
+			"frame": {"x":300,"y":154,"w":15,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":9},
+			"sourceSize": {"w":15,"h":9}
+		},
+		"party_beamer_9.png":
+		{
+			"frame": {"x":262,"y":183,"w":15,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":9},
+			"sourceSize": {"w":15,"h":9}
+		},
+		"party_beamer_16.png":
+		{
+			"frame": {"x":315,"y":154,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		},
+		"party_beamer_23.png":
+		{
+			"frame": {"x":277,"y":183,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		},
+		"party_beamer_31.png":
+		{
+			"frame": {"x":291,"y":183,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		},
+		"party_beamer_34.png":
+		{
+			"frame": {"x":305,"y":183,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		},
+		"party_beamer_11.png":
+		{
+			"frame": {"x":309,"y":202,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"party_beamer_28.png":
+		{
+			"frame": {"x":237,"y":219,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"party_beamer_36.png":
+		{
+			"frame": {"x":250,"y":219,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"party_beamer_38.png":
+		{
+			"frame": {"x":263,"y":219,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"party_beamer_15.png":
+		{
+			"frame": {"x":141,"y":233,"w":12,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":11},
+			"sourceSize": {"w":12,"h":11}
+		},
+		"party_beamer_8.png":
+		{
+			"frame": {"x":153,"y":233,"w":12,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":11},
+			"sourceSize": {"w":12,"h":11}
+		},
+		"party_beamer_3.png":
+		{
+			"frame": {"x":165,"y":233,"w":12,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":10},
+			"sourceSize": {"w":12,"h":10}
+		},
+		"party_beamer_6.png":
+		{
+			"frame": {"x":177,"y":233,"w":12,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":10},
+			"sourceSize": {"w":12,"h":10}
+		},
+		"party_beamer_29.png":
+		{
+			"frame": {"x":276,"y":219,"w":12,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":9},
+			"sourceSize": {"w":12,"h":9}
+		},
+		"party_beamer_37.png":
+		{
+			"frame": {"x":288,"y":219,"w":12,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":9},
+			"sourceSize": {"w":12,"h":9}
+		},
+		"party_beamer_12.png":
+		{
+			"frame": {"x":318,"y":166,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"party_beamer_14.png":
+		{
+			"frame": {"x":289,"y":251,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"party_beamer_21.png":
+		{
+			"frame": {"x":300,"y":251,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"party_beamer_32.png":
+		{
+			"frame": {"x":311,"y":251,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"party_beamer_35.png":
+		{
+			"frame": {"x":140,"y":272,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"party_beamer_39.png":
+		{
+			"frame": {"x":151,"y":272,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"party_beamer_5.png":
+		{
+			"frame": {"x":314,"y":149,"w":2,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":2},
+			"sourceSize": {"w":2,"h":2}
+		}
+	}
+}

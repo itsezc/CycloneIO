@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "plant_bonsai_sheet.png",
+		"size": {"w":181,"h":130},
+		"scale": "1"
+	},
+	"frames": {
+		"plant_bonsai_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":114,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":96},
+			"sourceSize": {"w":114,"h":96}
+		},
+		"plant_bonsai_4.png":
+		{
+			"frame": {"x":114,"y":0,"w":67,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":66},
+			"sourceSize": {"w":67,"h":66}
+		},
+		"plant_bonsai_8.png":
+		{
+			"frame": {"x":114,"y":66,"w":47,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":25},
+			"sourceSize": {"w":47,"h":25}
+		},
+		"plant_bonsai_7.png":
+		{
+			"frame": {"x":0,"y":96,"w":33,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":34},
+			"sourceSize": {"w":33,"h":34}
+		},
+		"plant_bonsai_5.png":
+		{
+			"frame": {"x":33,"y":96,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"plant_bonsai_2.png":
+		{
+			"frame": {"x":63,"y":96,"w":23,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":12},
+			"sourceSize": {"w":23,"h":12}
+		}
+	}
+}

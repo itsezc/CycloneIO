@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "cpunk_c15_building1_sheet.png",
+		"size": {"w":469,"h":455},
+		"scale": "1"
+	},
+	"frames": {
+		"cpunk_c15_building1_14.png":
+		{
+			"frame": {"x":0,"y":0,"w":118,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":228},
+			"sourceSize": {"w":118,"h":228}
+		},
+		"cpunk_c15_building1_11.png":
+		{
+			"frame": {"x":118,"y":0,"w":71,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":228},
+			"sourceSize": {"w":71,"h":228}
+		},
+		"cpunk_c15_building1_16.png":
+		{
+			"frame": {"x":189,"y":0,"w":71,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":228},
+			"sourceSize": {"w":71,"h":228}
+		},
+		"cpunk_c15_building1_17.png":
+		{
+			"frame": {"x":260,"y":0,"w":71,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":228},
+			"sourceSize": {"w":71,"h":228}
+		},
+		"cpunk_c15_building1_4.png":
+		{
+			"frame": {"x":331,"y":0,"w":69,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":227},
+			"sourceSize": {"w":69,"h":227}
+		},
+		"cpunk_c15_building1_5.png":
+		{
+			"frame": {"x":400,"y":0,"w":69,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":227},
+			"sourceSize": {"w":69,"h":227}
+		},
+		"cpunk_c15_building1_6.png":
+		{
+			"frame": {"x":0,"y":228,"w":69,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":227},
+			"sourceSize": {"w":69,"h":227}
+		},
+		"cpunk_c15_building1_7.png":
+		{
+			"frame": {"x":69,"y":228,"w":69,"h":227},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":227},
+			"sourceSize": {"w":69,"h":227}
+		},
+		"cpunk_c15_building1_9.png":
+		{
+			"frame": {"x":138,"y":228,"w":113,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":113,"h":90},
+			"sourceSize": {"w":113,"h":90}
+		},
+		"cpunk_c15_building1_2.png":
+		{
+			"frame": {"x":251,"y":228,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"cpunk_c15_building1_13.png":
+		{
+			"frame": {"x":349,"y":228,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"cpunk_c15_building1_10.png":
+		{
+			"frame": {"x":400,"y":227,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

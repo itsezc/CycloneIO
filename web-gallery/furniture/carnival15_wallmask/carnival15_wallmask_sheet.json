@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "carnival15_wallmask_sheet.png",
+		"size": {"w":120,"h":88},
+		"scale": "1"
+	},
+	"frames": {
+		"carnival15_wallmask_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":86,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":48},
+			"sourceSize": {"w":86,"h":48}
+		},
+		"carnival15_wallmask_1.png":
+		{
+			"frame": {"x":86,"y":0,"w":34,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":48},
+			"sourceSize": {"w":34,"h":48}
+		},
+		"carnival15_wallmask_3.png":
+		{
+			"frame": {"x":0,"y":48,"w":30,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":40},
+			"sourceSize": {"w":30,"h":40}
+		},
+		"carnival15_wallmask_5.png":
+		{
+			"frame": {"x":30,"y":48,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		}
+	}
+}

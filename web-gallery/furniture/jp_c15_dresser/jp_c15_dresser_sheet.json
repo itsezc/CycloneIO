@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "jp_c15_dresser_sheet.png",
+		"size": {"w":176,"h":174},
+		"scale": "1"
+	},
+	"frames": {
+		"jp_c15_dresser_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":108},
+			"sourceSize": {"w":58,"h":108}
+		},
+		"jp_c15_dresser_12.png":
+		{
+			"frame": {"x":58,"y":0,"w":58,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":108},
+			"sourceSize": {"w":58,"h":108}
+		},
+		"jp_c15_dresser_15.png":
+		{
+			"frame": {"x":116,"y":0,"w":60,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":91},
+			"sourceSize": {"w":60,"h":91}
+		},
+		"jp_c15_dresser_2.png":
+		{
+			"frame": {"x":0,"y":108,"w":36,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":66},
+			"sourceSize": {"w":36,"h":66}
+		},
+		"jp_c15_dresser_10.png":
+		{
+			"frame": {"x":36,"y":108,"w":37,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":65},
+			"sourceSize": {"w":37,"h":65}
+		},
+		"jp_c15_dresser_6.png":
+		{
+			"frame": {"x":73,"y":108,"w":29,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":62},
+			"sourceSize": {"w":29,"h":62}
+		},
+		"jp_c15_dresser_13.png":
+		{
+			"frame": {"x":102,"y":108,"w":39,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":30},
+			"sourceSize": {"w":39,"h":30}
+		},
+		"jp_c15_dresser_3.png":
+		{
+			"frame": {"x":141,"y":108,"w":19,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":26},
+			"sourceSize": {"w":19,"h":26}
+		},
+		"jp_c15_dresser_1.png":
+		{
+			"frame": {"x":102,"y":138,"w":20,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":21},
+			"sourceSize": {"w":20,"h":21}
+		},
+		"jp_c15_dresser_4.png":
+		{
+			"frame": {"x":116,"y":91,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

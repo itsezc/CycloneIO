@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "newbie_nest_sheet.png",
+		"size": {"w":178,"h":111},
+		"scale": "1"
+	},
+	"frames": {
+		"newbie_nest_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":112,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":84},
+			"sourceSize": {"w":112,"h":84}
+		},
+		"newbie_nest_14.png":
+		{
+			"frame": {"x":0,"y":84,"w":66,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":27},
+			"sourceSize": {"w":66,"h":27}
+		},
+		"newbie_nest_9.png":
+		{
+			"frame": {"x":112,"y":0,"w":66,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":17},
+			"sourceSize": {"w":66,"h":17}
+		},
+		"newbie_nest_4.png":
+		{
+			"frame": {"x":112,"y":17,"w":54,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":20},
+			"sourceSize": {"w":54,"h":20}
+		},
+		"newbie_nest_7.png":
+		{
+			"frame": {"x":112,"y":37,"w":46,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":17},
+			"sourceSize": {"w":46,"h":17}
+		},
+		"newbie_nest_1.png":
+		{
+			"frame": {"x":112,"y":54,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"newbie_nest_5.png":
+		{
+			"frame": {"x":146,"y":54,"w":32,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":12},
+			"sourceSize": {"w":32,"h":12}
+		},
+		"newbie_nest_3.png":
+		{
+			"frame": {"x":112,"y":71,"w":30,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":20},
+			"sourceSize": {"w":30,"h":20}
+		},
+		"newbie_nest_12.png":
+		{
+			"frame": {"x":142,"y":71,"w":26,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":10},
+			"sourceSize": {"w":26,"h":10}
+		},
+		"newbie_nest_10.png":
+		{
+			"frame": {"x":142,"y":81,"w":25,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":10},
+			"sourceSize": {"w":25,"h":10}
+		}
+	}
+}

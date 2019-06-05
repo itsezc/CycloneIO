@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "chess_b_pawn_sheet.png",
+		"size": {"w":94,"h":86},
+		"scale": "1"
+	},
+	"frames": {
+		"chess_b_pawn_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":86},
+			"sourceSize": {"w":48,"h":86}
+		},
+		"chess_b_pawn_5.png":
+		{
+			"frame": {"x":48,"y":0,"w":46,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":25},
+			"sourceSize": {"w":46,"h":25}
+		},
+		"chess_b_pawn_1.png":
+		{
+			"frame": {"x":48,"y":25,"w":17,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":30},
+			"sourceSize": {"w":17,"h":30}
+		}
+	}
+}

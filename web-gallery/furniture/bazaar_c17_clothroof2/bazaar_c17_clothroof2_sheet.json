@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "bazaar_c17_clothroof2_sheet.png",
+		"size": {"w":252,"h":124},
+		"scale": "1"
+	},
+	"frames": {
+		"bazaar_c17_clothroof2_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":126,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":97},
+			"sourceSize": {"w":126,"h":97}
+		},
+		"bazaar_c17_clothroof2_4.png":
+		{
+			"frame": {"x":126,"y":0,"w":126,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":97},
+			"sourceSize": {"w":126,"h":97}
+		},
+		"bazaar_c17_clothroof2_7.png":
+		{
+			"frame": {"x":0,"y":97,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		}
+	}
+}

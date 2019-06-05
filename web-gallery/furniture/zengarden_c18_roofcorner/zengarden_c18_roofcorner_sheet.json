@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "zengarden_c18_roofcorner_sheet.png",
+		"size": {"w":121,"h":92},
+		"scale": "1"
+	},
+	"frames": {
+		"zengarden_c18_roofcorner_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":41},
+			"sourceSize": {"w":52,"h":41}
+		},
+		"zengarden_c18_roofcorner_6.png":
+		{
+			"frame": {"x":0,"y":41,"w":52,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":10},
+			"sourceSize": {"w":52,"h":10}
+		},
+		"zengarden_c18_roofcorner_3.png":
+		{
+			"frame": {"x":52,"y":0,"w":46,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":12},
+			"sourceSize": {"w":46,"h":12}
+		},
+		"zengarden_c18_roofcorner_4.png":
+		{
+			"frame": {"x":0,"y":51,"w":30,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":41},
+			"sourceSize": {"w":30,"h":41}
+		},
+		"zengarden_c18_roofcorner_9.png":
+		{
+			"frame": {"x":30,"y":51,"w":30,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":41},
+			"sourceSize": {"w":30,"h":41}
+		},
+		"zengarden_c18_roofcorner_1.png":
+		{
+			"frame": {"x":52,"y":12,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"zengarden_c18_roofcorner_13.png":
+		{
+			"frame": {"x":60,"y":51,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"zengarden_c18_roofcorner_12.png":
+		{
+			"frame": {"x":98,"y":0,"w":23,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":24},
+			"sourceSize": {"w":23,"h":24}
+		}
+	}
+}

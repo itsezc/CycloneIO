@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "summer_c17_astrotelescope_sheet.png",
+		"size": {"w":146,"h":114},
+		"scale": "1"
+	},
+	"frames": {
+		"summer_c17_astrotelescope_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":97},
+			"sourceSize": {"w":58,"h":97}
+		},
+		"summer_c17_astrotelescope_7.png":
+		{
+			"frame": {"x":58,"y":0,"w":63,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":89},
+			"sourceSize": {"w":63,"h":89}
+		},
+		"summer_c17_astrotelescope_4.png":
+		{
+			"frame": {"x":0,"y":97,"w":35,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":17},
+			"sourceSize": {"w":35,"h":17}
+		},
+		"summer_c17_astrotelescope_9.png":
+		{
+			"frame": {"x":121,"y":0,"w":25,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
+			"sourceSize": {"w":25,"h":29}
+		}
+	}
+}

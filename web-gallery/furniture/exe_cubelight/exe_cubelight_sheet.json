@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "exe_cubelight_sheet.png",
+		"size": {"w":297,"h":238},
+		"scale": "1"
+	},
+	"frames": {
+		"exe_cubelight_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":192,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":159},
+			"sourceSize": {"w":192,"h":159}
+		},
+		"exe_cubelight_5.png":
+		{
+			"frame": {"x":192,"y":0,"w":105,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":105,"h":80},
+			"sourceSize": {"w":105,"h":80}
+		},
+		"exe_cubelight_7.png":
+		{
+			"frame": {"x":192,"y":80,"w":87,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":79},
+			"sourceSize": {"w":87,"h":79}
+		},
+		"exe_cubelight_9.png":
+		{
+			"frame": {"x":0,"y":159,"w":60,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":79},
+			"sourceSize": {"w":60,"h":79}
+		},
+		"exe_cubelight_14.png":
+		{
+			"frame": {"x":60,"y":159,"w":54,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":39},
+			"sourceSize": {"w":54,"h":39}
+		},
+		"exe_cubelight_12.png":
+		{
+			"frame": {"x":60,"y":198,"w":52,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":40},
+			"sourceSize": {"w":52,"h":40}
+		},
+		"exe_cubelight_15.png":
+		{
+			"frame": {"x":114,"y":159,"w":43,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":39},
+			"sourceSize": {"w":43,"h":39}
+		},
+		"exe_cubelight_11.png":
+		{
+			"frame": {"x":157,"y":159,"w":30,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":39},
+			"sourceSize": {"w":30,"h":39}
+		},
+		"exe_cubelight_10.png":
+		{
+			"frame": {"x":187,"y":159,"w":24,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":29},
+			"sourceSize": {"w":24,"h":29}
+		},
+		"exe_cubelight_2.png":
+		{
+			"frame": {"x":211,"y":159,"w":26,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":19},
+			"sourceSize": {"w":26,"h":19}
+		},
+		"exe_cubelight_4.png":
+		{
+			"frame": {"x":279,"y":80,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

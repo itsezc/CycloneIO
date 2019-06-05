@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_santatop_sheet.png",
+		"size": {"w":40,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_santatop_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":25},
+			"sourceSize": {"w":40,"h":25}
+		},
+		"clothing_santatop_3.png":
+		{
+			"frame": {"x":0,"y":25,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_santatop_6.png":
+		{
+			"frame": {"x":30,"y":25,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

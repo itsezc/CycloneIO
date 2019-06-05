@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "throne_sheet.png",
+		"size": {"w":285,"h":189},
+		"scale": "1"
+	},
+	"frames": {
+		"throne_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":159,"h":157},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":159,"h":157},
+			"sourceSize": {"w":159,"h":157}
+		},
+		"throne_1.png":
+		{
+			"frame": {"x":159,"y":0,"w":63,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":85},
+			"sourceSize": {"w":63,"h":85}
+		},
+		"throne_13.png":
+		{
+			"frame": {"x":222,"y":0,"w":63,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":78},
+			"sourceSize": {"w":63,"h":78}
+		},
+		"throne_2.png":
+		{
+			"frame": {"x":0,"y":157,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"throne_15.png":
+		{
+			"frame": {"x":222,"y":78,"w":33,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":42},
+			"sourceSize": {"w":33,"h":42}
+		},
+		"throne_5.png":
+		{
+			"frame": {"x":255,"y":78,"w":30,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":42},
+			"sourceSize": {"w":30,"h":42}
+		},
+		"throne_10.png":
+		{
+			"frame": {"x":159,"y":85,"w":23,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":40},
+			"sourceSize": {"w":23,"h":40}
+		},
+		"throne_16.png":
+		{
+			"frame": {"x":182,"y":85,"w":32,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":39},
+			"sourceSize": {"w":32,"h":39}
+		},
+		"throne_7.png":
+		{
+			"frame": {"x":222,"y":120,"w":32,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":15},
+			"sourceSize": {"w":32,"h":15}
+		},
+		"throne_8.png":
+		{
+			"frame": {"x":159,"y":125,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"throne_3.png":
+		{
+			"frame": {"x":222,"y":135,"w":15,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":21},
+			"sourceSize": {"w":15,"h":21}
+		},
+		"throne_11.png":
+		{
+			"frame": {"x":237,"y":135,"w":11,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":21},
+			"sourceSize": {"w":11,"h":21}
+		}
+	}
+}

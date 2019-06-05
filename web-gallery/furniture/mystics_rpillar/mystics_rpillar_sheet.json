@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "mystics_rpillar_sheet.png",
+		"size": {"w":144,"h":133},
+		"scale": "1"
+	},
+	"frames": {
+		"mystics_rpillar_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":133},
+			"sourceSize": {"w":40,"h":133}
+		},
+		"mystics_rpillar_3.png":
+		{
+			"frame": {"x":40,"y":0,"w":41,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":88},
+			"sourceSize": {"w":41,"h":88}
+		},
+		"mystics_rpillar_9.png":
+		{
+			"frame": {"x":81,"y":0,"w":21,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":67},
+			"sourceSize": {"w":21,"h":67}
+		},
+		"mystics_rpillar_6.png":
+		{
+			"frame": {"x":40,"y":88,"w":23,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":45},
+			"sourceSize": {"w":23,"h":45}
+		},
+		"mystics_rpillar_8.png":
+		{
+			"frame": {"x":102,"y":0,"w":42,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":21},
+			"sourceSize": {"w":42,"h":21}
+		},
+		"mystics_rpillar_10.png":
+		{
+			"frame": {"x":102,"y":21,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		},
+		"mystics_rpillar_2.png":
+		{
+			"frame": {"x":114,"y":21,"w":21,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":10},
+			"sourceSize": {"w":21,"h":10}
+		}
+	}
+}

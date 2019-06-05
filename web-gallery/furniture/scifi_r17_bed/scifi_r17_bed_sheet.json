@@ -1,0 +1,433 @@
+{
+	"meta": {
+		"image": "scifi_r17_bed_sheet.png",
+		"size": {"w":529,"h":414},
+		"scale": "1"
+	},
+	"frames": {
+		"scifi_r17_bed_33.png":
+		{
+			"frame": {"x":0,"y":0,"w":149,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":149,"h":52},
+			"sourceSize": {"w":149,"h":52}
+		},
+		"scifi_r17_bed_31.png":
+		{
+			"frame": {"x":0,"y":52,"w":147,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":147,"h":52},
+			"sourceSize": {"w":147,"h":52}
+		},
+		"scifi_r17_bed_27.png":
+		{
+			"frame": {"x":149,"y":0,"w":146,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":146,"h":70},
+			"sourceSize": {"w":146,"h":70}
+		},
+		"scifi_r17_bed_29.png":
+		{
+			"frame": {"x":0,"y":104,"w":146,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":146,"h":60},
+			"sourceSize": {"w":146,"h":60}
+		},
+		"scifi_r17_bed_26.png":
+		{
+			"frame": {"x":0,"y":164,"w":141,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":141,"h":70},
+			"sourceSize": {"w":141,"h":70}
+		},
+		"scifi_r17_bed_24.png":
+		{
+			"frame": {"x":295,"y":0,"w":140,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":140,"h":73},
+			"sourceSize": {"w":140,"h":73}
+		},
+		"scifi_r17_bed_2.png":
+		{
+			"frame": {"x":295,"y":73,"w":114,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":58},
+			"sourceSize": {"w":114,"h":58}
+		},
+		"scifi_r17_bed_44.png":
+		{
+			"frame": {"x":295,"y":131,"w":112,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":69},
+			"sourceSize": {"w":112,"h":69}
+		},
+		"scifi_r17_bed_46.png":
+		{
+			"frame": {"x":141,"y":164,"w":112,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":69},
+			"sourceSize": {"w":112,"h":69}
+		},
+		"scifi_r17_bed_47.png":
+		{
+			"frame": {"x":0,"y":234,"w":112,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":112,"h":69},
+			"sourceSize": {"w":112,"h":69}
+		},
+		"scifi_r17_bed_56.png":
+		{
+			"frame": {"x":0,"y":303,"w":111,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":111,"h":111},
+			"sourceSize": {"w":111,"h":111}
+		},
+		"scifi_r17_bed_48.png":
+		{
+			"frame": {"x":146,"y":104,"w":101,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":57},
+			"sourceSize": {"w":101,"h":57}
+		},
+		"scifi_r17_bed_49.png":
+		{
+			"frame": {"x":112,"y":234,"w":101,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":57},
+			"sourceSize": {"w":101,"h":57}
+		},
+		"scifi_r17_bed_50.png":
+		{
+			"frame": {"x":213,"y":234,"w":101,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":57},
+			"sourceSize": {"w":101,"h":57}
+		},
+		"scifi_r17_bed_52.png":
+		{
+			"frame": {"x":314,"y":234,"w":101,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":57},
+			"sourceSize": {"w":101,"h":57}
+		},
+		"scifi_r17_bed_53.png":
+		{
+			"frame": {"x":111,"y":303,"w":101,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":57},
+			"sourceSize": {"w":101,"h":57}
+		},
+		"scifi_r17_bed_54.png":
+		{
+			"frame": {"x":212,"y":303,"w":101,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":57},
+			"sourceSize": {"w":101,"h":57}
+		},
+		"scifi_r17_bed_55.png":
+		{
+			"frame": {"x":313,"y":303,"w":99,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":57},
+			"sourceSize": {"w":99,"h":57}
+		},
+		"scifi_r17_bed_38.png":
+		{
+			"frame": {"x":435,"y":0,"w":94,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":55},
+			"sourceSize": {"w":94,"h":55}
+		},
+		"scifi_r17_bed_40.png":
+		{
+			"frame": {"x":435,"y":55,"w":94,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":55},
+			"sourceSize": {"w":94,"h":55}
+		},
+		"scifi_r17_bed_41.png":
+		{
+			"frame": {"x":435,"y":110,"w":94,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":55},
+			"sourceSize": {"w":94,"h":55}
+		},
+		"scifi_r17_bed_57.png":
+		{
+			"frame": {"x":435,"y":165,"w":70,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":81},
+			"sourceSize": {"w":70,"h":81}
+		},
+		"scifi_r17_bed_42.png":
+		{
+			"frame": {"x":435,"y":246,"w":66,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":51},
+			"sourceSize": {"w":66,"h":51}
+		},
+		"scifi_r17_bed_51.png":
+		{
+			"frame": {"x":435,"y":297,"w":53,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":44},
+			"sourceSize": {"w":53,"h":44}
+		},
+		"scifi_r17_bed_39.png":
+		{
+			"frame": {"x":435,"y":341,"w":50,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":42},
+			"sourceSize": {"w":50,"h":42}
+		},
+		"scifi_r17_bed_43.png":
+		{
+			"frame": {"x":295,"y":200,"w":47,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":32},
+			"sourceSize": {"w":47,"h":32}
+		},
+		"scifi_r17_bed_58.png":
+		{
+			"frame": {"x":488,"y":297,"w":37,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":39},
+			"sourceSize": {"w":37,"h":39}
+		},
+		"scifi_r17_bed_37.png":
+		{
+			"frame": {"x":485,"y":341,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"scifi_r17_bed_35.png":
+		{
+			"frame": {"x":501,"y":246,"w":26,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":9},
+			"sourceSize": {"w":26,"h":9}
+		},
+		"scifi_r17_bed_22.png":
+		{
+			"frame": {"x":505,"y":165,"w":17,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":23},
+			"sourceSize": {"w":17,"h":23}
+		},
+		"scifi_r17_bed_23.png":
+		{
+			"frame": {"x":505,"y":188,"w":14,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+			"sourceSize": {"w":14,"h":19}
+		},
+		"scifi_r17_bed_34.png":
+		{
+			"frame": {"x":505,"y":207,"w":18,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":16},
+			"sourceSize": {"w":18,"h":16}
+		},
+		"scifi_r17_bed_32.png":
+		{
+			"frame": {"x":505,"y":223,"w":14,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":10},
+			"sourceSize": {"w":14,"h":10}
+		},
+		"scifi_r17_bed_12.png":
+		{
+			"frame": {"x":522,"y":165,"w":7,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":14},
+			"sourceSize": {"w":7,"h":14}
+		},
+		"scifi_r17_bed_19.png":
+		{
+			"frame": {"x":505,"y":233,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"scifi_r17_bed_21.png":
+		{
+			"frame": {"x":501,"y":255,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"scifi_r17_bed_4.png":
+		{
+			"frame": {"x":514,"y":255,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"scifi_r17_bed_13.png":
+		{
+			"frame": {"x":501,"y":264,"w":13,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":8},
+			"sourceSize": {"w":13,"h":8}
+		},
+		"scifi_r17_bed_7.png":
+		{
+			"frame": {"x":514,"y":264,"w":13,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":8},
+			"sourceSize": {"w":13,"h":8}
+		},
+		"scifi_r17_bed_14.png":
+		{
+			"frame": {"x":519,"y":188,"w":7,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":13},
+			"sourceSize": {"w":7,"h":13}
+		},
+		"scifi_r17_bed_3.png":
+		{
+			"frame": {"x":523,"y":207,"w":5,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":13},
+			"sourceSize": {"w":5,"h":13}
+		},
+		"scifi_r17_bed_9.png":
+		{
+			"frame": {"x":501,"y":272,"w":12,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":9},
+			"sourceSize": {"w":12,"h":9}
+		},
+		"scifi_r17_bed_17.png":
+		{
+			"frame": {"x":513,"y":272,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"scifi_r17_bed_15.png":
+		{
+			"frame": {"x":501,"y":281,"w":12,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":6},
+			"sourceSize": {"w":12,"h":6}
+		},
+		"scifi_r17_bed_18.png":
+		{
+			"frame": {"x":514,"y":341,"w":5,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":11},
+			"sourceSize": {"w":5,"h":11}
+		},
+		"scifi_r17_bed_8.png":
+		{
+			"frame": {"x":519,"y":223,"w":9,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":10},
+			"sourceSize": {"w":9,"h":10}
+		},
+		"scifi_r17_bed_25.png":
+		{
+			"frame": {"x":501,"y":287,"w":6,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":10},
+			"sourceSize": {"w":6,"h":10}
+		},
+		"scifi_r17_bed_28.png":
+		{
+			"frame": {"x":507,"y":287,"w":6,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":10},
+			"sourceSize": {"w":6,"h":10}
+		},
+		"scifi_r17_bed_10.png":
+		{
+			"frame": {"x":518,"y":233,"w":8,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":9},
+			"sourceSize": {"w":8,"h":9}
+		},
+		"scifi_r17_bed_30.png":
+		{
+			"frame": {"x":522,"y":179,"w":7,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":8},
+			"sourceSize": {"w":7,"h":8}
+		},
+		"scifi_r17_bed_5.png":
+		{
+			"frame": {"x":513,"y":287,"w":5,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":7},
+			"sourceSize": {"w":5,"h":7}
+		},
+		"scifi_r17_bed_16.png":
+		{
+			"frame": {"x":526,"y":188,"w":3,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":5},
+			"sourceSize": {"w":3,"h":5}
+		},
+		"scifi_r17_bed_6.png":
+		{
+			"frame": {"x":519,"y":201,"w":4,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+			"sourceSize": {"w":4,"h":4}
+		}
+	}
+}

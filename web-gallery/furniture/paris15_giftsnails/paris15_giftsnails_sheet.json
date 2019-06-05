@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "paris15_giftsnails_sheet.png",
+		"size": {"w":73,"h":52},
+		"scale": "1"
+	},
+	"frames": {
+		"paris15_giftsnails_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":35},
+			"sourceSize": {"w":48,"h":35}
+		},
+		"paris15_giftsnails_6.png":
+		{
+			"frame": {"x":48,"y":0,"w":25,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":17},
+			"sourceSize": {"w":25,"h":17}
+		},
+		"paris15_giftsnails_7.png":
+		{
+			"frame": {"x":48,"y":17,"w":25,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":17},
+			"sourceSize": {"w":25,"h":17}
+		},
+		"paris15_giftsnails_8.png":
+		{
+			"frame": {"x":0,"y":35,"w":24,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":17},
+			"sourceSize": {"w":24,"h":17}
+		},
+		"paris15_giftsnails_5.png":
+		{
+			"frame": {"x":24,"y":35,"w":23,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":17},
+			"sourceSize": {"w":23,"h":17}
+		},
+		"paris15_giftsnails_1.png":
+		{
+			"frame": {"x":47,"y":35,"w":17,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":13},
+			"sourceSize": {"w":17,"h":13}
+		}
+	}
+}

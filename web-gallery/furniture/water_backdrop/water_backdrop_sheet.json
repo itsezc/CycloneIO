@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "water_backdrop_sheet.png",
+		"size": {"w":3000,"h":2015},
+		"scale": "1"
+	},
+	"frames": {
+		"water_backdrop_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":3000,"h":2000},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3000,"h":2000},
+			"sourceSize": {"w":3000,"h":2000}
+		},
+		"water_backdrop_1.png":
+		{
+			"frame": {"x":0,"y":2000,"w":28,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":15},
+			"sourceSize": {"w":28,"h":15}
+		}
+	}
+}

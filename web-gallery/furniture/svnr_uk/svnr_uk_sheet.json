@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "svnr_uk_sheet.png",
+		"size": {"w":164,"h":149},
+		"scale": "1"
+	},
+	"frames": {
+		"svnr_uk_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":82,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":149},
+			"sourceSize": {"w":82,"h":149}
+		},
+		"svnr_uk_6.png":
+		{
+			"frame": {"x":82,"y":0,"w":55,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":149},
+			"sourceSize": {"w":55,"h":149}
+		},
+		"svnr_uk_3.png":
+		{
+			"frame": {"x":137,"y":0,"w":27,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":75},
+			"sourceSize": {"w":27,"h":75}
+		},
+		"svnr_uk_4.png":
+		{
+			"frame": {"x":137,"y":75,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

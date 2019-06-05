@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "jetset_vault_crnr_sheet.png",
+		"size": {"w":140,"h":150},
+		"scale": "1"
+	},
+	"frames": {
+		"jetset_vault_crnr_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":150},
+			"sourceSize": {"w":70,"h":150}
+		},
+		"jetset_vault_crnr_7.png":
+		{
+			"frame": {"x":70,"y":0,"w":46,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":150},
+			"sourceSize": {"w":46,"h":150}
+		},
+		"jetset_vault_crnr_6.png":
+		{
+			"frame": {"x":116,"y":0,"w":24,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":76},
+			"sourceSize": {"w":24,"h":76}
+		},
+		"jetset_vault_crnr_8.png":
+		{
+			"frame": {"x":116,"y":76,"w":11,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":28},
+			"sourceSize": {"w":11,"h":28}
+		}
+	}
+}

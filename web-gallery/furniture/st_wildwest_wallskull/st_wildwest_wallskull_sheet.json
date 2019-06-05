@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "st_wildwest_wallskull_sheet.png",
+		"size": {"w":241,"h":189},
+		"scale": "1"
+	},
+	"frames": {
+		"st_wildwest_wallskull_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":192,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":114},
+			"sourceSize": {"w":192,"h":114}
+		},
+		"st_wildwest_wallskull_4.png":
+		{
+			"frame": {"x":0,"y":114,"w":97,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":75},
+			"sourceSize": {"w":97,"h":75}
+		},
+		"st_wildwest_wallskull_2.png":
+		{
+			"frame": {"x":97,"y":114,"w":95,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":74},
+			"sourceSize": {"w":95,"h":74}
+		},
+		"st_wildwest_wallskull_6.png":
+		{
+			"frame": {"x":192,"y":0,"w":49,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":39},
+			"sourceSize": {"w":49,"h":39}
+		},
+		"st_wildwest_wallskull_8.png":
+		{
+			"frame": {"x":192,"y":39,"w":46,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":36},
+			"sourceSize": {"w":46,"h":36}
+		},
+		"st_wildwest_wallskull_5.png":
+		{
+			"frame": {"x":192,"y":75,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		}
+	}
+}

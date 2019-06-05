@@ -1,0 +1,201 @@
+{
+	"meta": {
+		"image": "wf_maze_sheet.png",
+		"size": {"w":324,"h":278},
+		"scale": "1"
+	},
+	"frames": {
+		"wf_maze_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":214,"h":176},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":214,"h":176},
+			"sourceSize": {"w":214,"h":176}
+		},
+		"wf_maze_18.png":
+		{
+			"frame": {"x":214,"y":0,"w":62,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":44},
+			"sourceSize": {"w":62,"h":44}
+		},
+		"wf_maze_8.png":
+		{
+			"frame": {"x":214,"y":44,"w":62,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":44},
+			"sourceSize": {"w":62,"h":44}
+		},
+		"wf_maze_9.png":
+		{
+			"frame": {"x":214,"y":88,"w":62,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":44},
+			"sourceSize": {"w":62,"h":44}
+		},
+		"wf_maze_17.png":
+		{
+			"frame": {"x":214,"y":132,"w":62,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":42},
+			"sourceSize": {"w":62,"h":42}
+		},
+		"wf_maze_12.png":
+		{
+			"frame": {"x":0,"y":176,"w":59,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":44},
+			"sourceSize": {"w":59,"h":44}
+		},
+		"wf_maze_16.png":
+		{
+			"frame": {"x":59,"y":176,"w":59,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":44},
+			"sourceSize": {"w":59,"h":44}
+		},
+		"wf_maze_26.png":
+		{
+			"frame": {"x":118,"y":176,"w":59,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":44},
+			"sourceSize": {"w":59,"h":44}
+		},
+		"wf_maze_5.png":
+		{
+			"frame": {"x":177,"y":176,"w":59,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":44},
+			"sourceSize": {"w":59,"h":44}
+		},
+		"wf_maze_6.png":
+		{
+			"frame": {"x":0,"y":220,"w":56,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":36},
+			"sourceSize": {"w":56,"h":36}
+		},
+		"wf_maze_10.png":
+		{
+			"frame": {"x":276,"y":0,"w":48,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":44},
+			"sourceSize": {"w":48,"h":44}
+		},
+		"wf_maze_23.png":
+		{
+			"frame": {"x":276,"y":44,"w":48,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":44},
+			"sourceSize": {"w":48,"h":44}
+		},
+		"wf_maze_20.png":
+		{
+			"frame": {"x":276,"y":88,"w":32,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":22},
+			"sourceSize": {"w":32,"h":22}
+		},
+		"wf_maze_21.png":
+		{
+			"frame": {"x":276,"y":110,"w":32,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":22},
+			"sourceSize": {"w":32,"h":22}
+		},
+		"wf_maze_25.png":
+		{
+			"frame": {"x":276,"y":132,"w":32,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":22},
+			"sourceSize": {"w":32,"h":22}
+		},
+		"wf_maze_27.png":
+		{
+			"frame": {"x":276,"y":154,"w":32,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":21},
+			"sourceSize": {"w":32,"h":21}
+		},
+		"wf_maze_15.png":
+		{
+			"frame": {"x":276,"y":175,"w":31,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":22},
+			"sourceSize": {"w":31,"h":22}
+		},
+		"wf_maze_24.png":
+		{
+			"frame": {"x":276,"y":197,"w":31,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":22},
+			"sourceSize": {"w":31,"h":22}
+		},
+		"wf_maze_28.png":
+		{
+			"frame": {"x":276,"y":219,"w":31,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":22},
+			"sourceSize": {"w":31,"h":22}
+		},
+		"wf_maze_3.png":
+		{
+			"frame": {"x":236,"y":176,"w":31,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":22},
+			"sourceSize": {"w":31,"h":22}
+		},
+		"wf_maze_1.png":
+		{
+			"frame": {"x":236,"y":198,"w":30,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":21},
+			"sourceSize": {"w":30,"h":21}
+		},
+		"wf_maze_14.png":
+		{
+			"frame": {"x":56,"y":220,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		},
+		"wf_maze_19.png":
+		{
+			"frame": {"x":0,"y":256,"w":24,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":22},
+			"sourceSize": {"w":24,"h":22}
+		},
+		"wf_maze_4.png":
+		{
+			"frame": {"x":24,"y":256,"w":24,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":22},
+			"sourceSize": {"w":24,"h":22}
+		}
+	}
+}

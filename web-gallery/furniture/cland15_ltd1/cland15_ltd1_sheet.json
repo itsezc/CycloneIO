@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "cland15_ltd1_sheet.png",
+		"size": {"w":69,"h":82},
+		"scale": "1"
+	},
+	"frames": {
+		"cland15_ltd1_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":82},
+			"sourceSize": {"w":51,"h":82}
+		},
+		"cland15_ltd1_6.png":
+		{
+			"frame": {"x":51,"y":0,"w":18,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":28},
+			"sourceSize": {"w":18,"h":28}
+		}
+	}
+}

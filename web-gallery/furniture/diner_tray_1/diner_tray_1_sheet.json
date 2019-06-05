@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "diner_tray_1_sheet.png",
+		"size": {"w":94,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"diner_tray_1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":42},
+			"sourceSize": {"w":47,"h":42}
+		},
+		"diner_tray_1_7.png":
+		{
+			"frame": {"x":47,"y":0,"w":47,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":27},
+			"sourceSize": {"w":47,"h":27}
+		},
+		"diner_tray_1_4.png":
+		{
+			"frame": {"x":47,"y":27,"w":25,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":15},
+			"sourceSize": {"w":25,"h":15}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "classic1_shelf_sheet.png",
+		"size": {"w":390,"h":333},
+		"scale": "1"
+	},
+	"frames": {
+		"classic1_shelf_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":167},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":167},
+			"sourceSize": {"w":66,"h":167}
+		},
+		"classic1_shelf_7.png":
+		{
+			"frame": {"x":66,"y":0,"w":66,"h":167},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":167},
+			"sourceSize": {"w":66,"h":167}
+		},
+		"classic1_shelf_16.png":
+		{
+			"frame": {"x":132,"y":0,"w":65,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":166},
+			"sourceSize": {"w":65,"h":166}
+		},
+		"classic1_shelf_3.png":
+		{
+			"frame": {"x":197,"y":0,"w":65,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":166},
+			"sourceSize": {"w":65,"h":166}
+		},
+		"classic1_shelf_15.png":
+		{
+			"frame": {"x":262,"y":0,"w":64,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":166},
+			"sourceSize": {"w":64,"h":166}
+		},
+		"classic1_shelf_2.png":
+		{
+			"frame": {"x":326,"y":0,"w":64,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":166},
+			"sourceSize": {"w":64,"h":166}
+		},
+		"classic1_shelf_6.png":
+		{
+			"frame": {"x":0,"y":167,"w":64,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":166},
+			"sourceSize": {"w":64,"h":166}
+		},
+		"classic1_shelf_10.png":
+		{
+			"frame": {"x":64,"y":167,"w":66,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":151},
+			"sourceSize": {"w":66,"h":151}
+		},
+		"classic1_shelf_4.png":
+		{
+			"frame": {"x":130,"y":167,"w":66,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":151},
+			"sourceSize": {"w":66,"h":151}
+		},
+		"classic1_shelf_9.png":
+		{
+			"frame": {"x":196,"y":167,"w":66,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":151},
+			"sourceSize": {"w":66,"h":151}
+		},
+		"classic1_shelf_13.png":
+		{
+			"frame": {"x":262,"y":167,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hween14_flowerpot_sheet.png",
+		"size": {"w":107,"h":80},
+		"scale": "1"
+	},
+	"frames": {
+		"hween14_flowerpot_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":43,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":80},
+			"sourceSize": {"w":43,"h":80}
+		},
+		"hween14_flowerpot_1.png":
+		{
+			"frame": {"x":43,"y":0,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"hween14_flowerpot_6.png":
+		{
+			"frame": {"x":66,"y":0,"w":41,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":21},
+			"sourceSize": {"w":41,"h":21}
+		},
+		"hween14_flowerpot_5.png":
+		{
+			"frame": {"x":66,"y":21,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"hween14_flowerpot_3.png":
+		{
+			"frame": {"x":85,"y":21,"w":19,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":11},
+			"sourceSize": {"w":19,"h":11}
+		}
+	}
+}

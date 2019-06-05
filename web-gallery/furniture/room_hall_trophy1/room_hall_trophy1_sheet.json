@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "room_hall_trophy1_sheet.png",
+		"size": {"w":78,"h":75},
+		"scale": "1"
+	},
+	"frames": {
+		"room_hall_trophy1_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":75},
+			"sourceSize": {"w":62,"h":75}
+		},
+		"room_hall_trophy1_2.png":
+		{
+			"frame": {"x":62,"y":0,"w":16,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":19},
+			"sourceSize": {"w":16,"h":19}
+		}
+	}
+}

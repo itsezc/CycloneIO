@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_satchel_sheet.png",
+		"size": {"w":59,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_satchel_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":68},
+			"sourceSize": {"w":29,"h":68}
+		},
+		"clothing_satchel_6.png":
+		{
+			"frame": {"x":29,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

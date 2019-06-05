@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_harajukuhair_sheet.png",
+		"size": {"w":74,"h":50},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_harajukuhair_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":50},
+			"sourceSize": {"w":44,"h":50}
+		},
+		"clothing_harajukuhair_2.png":
+		{
+			"frame": {"x":44,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

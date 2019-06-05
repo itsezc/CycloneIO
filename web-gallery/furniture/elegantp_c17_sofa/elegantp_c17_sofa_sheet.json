@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "elegantp_c17_sofa_sheet.png",
+		"size": {"w":243,"h":190},
+		"scale": "1"
+	},
+	"frames": {
+		"elegantp_c17_sofa_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":75,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":103},
+			"sourceSize": {"w":75,"h":103}
+		},
+		"elegantp_c17_sofa_3.png":
+		{
+			"frame": {"x":75,"y":0,"w":70,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":102},
+			"sourceSize": {"w":70,"h":102}
+		},
+		"elegantp_c17_sofa_6.png":
+		{
+			"frame": {"x":145,"y":0,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"elegantp_c17_sofa_5.png":
+		{
+			"frame": {"x":0,"y":103,"w":70,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":87},
+			"sourceSize": {"w":70,"h":87}
+		},
+		"elegantp_c17_sofa_4.png":
+		{
+			"frame": {"x":70,"y":103,"w":41,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":72},
+			"sourceSize": {"w":41,"h":72}
+		},
+		"elegantp_c17_sofa_1.png":
+		{
+			"frame": {"x":111,"y":103,"w":46,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":59},
+			"sourceSize": {"w":46,"h":59}
+		},
+		"elegantp_c17_sofa_2.png":
+		{
+			"frame": {"x":145,"y":49,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"elegantp_c17_sofa_7.png":
+		{
+			"frame": {"x":175,"y":49,"w":12,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":11},
+			"sourceSize": {"w":12,"h":11}
+		}
+	}
+}

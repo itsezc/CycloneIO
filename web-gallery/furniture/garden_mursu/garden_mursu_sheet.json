@@ -1,0 +1,217 @@
+{
+	"meta": {
+		"image": "garden_mursu_sheet.png",
+		"size": {"w":420,"h":406},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_mursu_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":294,"h":278},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":294,"h":278},
+			"sourceSize": {"w":294,"h":278}
+		},
+		"garden_mursu_21.png":
+		{
+			"frame": {"x":294,"y":0,"w":48,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":99},
+			"sourceSize": {"w":48,"h":99}
+		},
+		"garden_mursu_27.png":
+		{
+			"frame": {"x":294,"y":99,"w":48,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":99},
+			"sourceSize": {"w":48,"h":99}
+		},
+		"garden_mursu_19.png":
+		{
+			"frame": {"x":342,"y":0,"w":50,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":95},
+			"sourceSize": {"w":50,"h":95}
+		},
+		"garden_mursu_8.png":
+		{
+			"frame": {"x":342,"y":95,"w":50,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":95},
+			"sourceSize": {"w":50,"h":95}
+		},
+		"garden_mursu_23.png":
+		{
+			"frame": {"x":0,"y":278,"w":48,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":89},
+			"sourceSize": {"w":48,"h":89}
+		},
+		"garden_mursu_26.png":
+		{
+			"frame": {"x":48,"y":278,"w":48,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":89},
+			"sourceSize": {"w":48,"h":89}
+		},
+		"garden_mursu_18.png":
+		{
+			"frame": {"x":342,"y":190,"w":50,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":85},
+			"sourceSize": {"w":50,"h":85}
+		},
+		"garden_mursu_4.png":
+		{
+			"frame": {"x":96,"y":278,"w":50,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":85},
+			"sourceSize": {"w":50,"h":85}
+		},
+		"garden_mursu_25.png":
+		{
+			"frame": {"x":146,"y":278,"w":48,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":81},
+			"sourceSize": {"w":48,"h":81}
+		},
+		"garden_mursu_29.png":
+		{
+			"frame": {"x":194,"y":278,"w":48,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":81},
+			"sourceSize": {"w":48,"h":81}
+		},
+		"garden_mursu_17.png":
+		{
+			"frame": {"x":242,"y":278,"w":50,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":77},
+			"sourceSize": {"w":50,"h":77}
+		},
+		"garden_mursu_3.png":
+		{
+			"frame": {"x":292,"y":278,"w":50,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":77},
+			"sourceSize": {"w":50,"h":77}
+		},
+		"garden_mursu_11.png":
+		{
+			"frame": {"x":294,"y":198,"w":25,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":51},
+			"sourceSize": {"w":25,"h":51}
+		},
+		"garden_mursu_7.png":
+		{
+			"frame": {"x":342,"y":278,"w":25,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":50},
+			"sourceSize": {"w":25,"h":50}
+		},
+		"garden_mursu_15.png":
+		{
+			"frame": {"x":392,"y":0,"w":28,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":48},
+			"sourceSize": {"w":28,"h":48}
+		},
+		"garden_mursu_22.png":
+		{
+			"frame": {"x":392,"y":48,"w":28,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":48},
+			"sourceSize": {"w":28,"h":48}
+		},
+		"garden_mursu_6.png":
+		{
+			"frame": {"x":392,"y":96,"w":25,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":46},
+			"sourceSize": {"w":25,"h":46}
+		},
+		"garden_mursu_9.png":
+		{
+			"frame": {"x":392,"y":142,"w":25,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":46},
+			"sourceSize": {"w":25,"h":46}
+		},
+		"garden_mursu_13.png":
+		{
+			"frame": {"x":392,"y":188,"w":28,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":43},
+			"sourceSize": {"w":28,"h":43}
+		},
+		"garden_mursu_24.png":
+		{
+			"frame": {"x":392,"y":231,"w":28,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":43},
+			"sourceSize": {"w":28,"h":43}
+		},
+		"garden_mursu_10.png":
+		{
+			"frame": {"x":392,"y":274,"w":25,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+			"sourceSize": {"w":25,"h":42}
+		},
+		"garden_mursu_5.png":
+		{
+			"frame": {"x":392,"y":316,"w":25,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":42},
+			"sourceSize": {"w":25,"h":42}
+		},
+		"garden_mursu_12.png":
+		{
+			"frame": {"x":0,"y":367,"w":28,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":39},
+			"sourceSize": {"w":28,"h":39}
+		},
+		"garden_mursu_20.png":
+		{
+			"frame": {"x":28,"y":367,"w":28,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":39},
+			"sourceSize": {"w":28,"h":39}
+		},
+		"garden_mursu_16.png":
+		{
+			"frame": {"x":319,"y":198,"w":18,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":29},
+			"sourceSize": {"w":18,"h":29}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r17_goldfeatherflower_sheet.png",
+		"size": {"w":71,"h":60},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r17_goldfeatherflower_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":60},
+			"sourceSize": {"w":42,"h":60}
+		},
+		"clothing_r17_goldfeatherflower_6.png":
+		{
+			"frame": {"x":42,"y":0,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		}
+	}
+}

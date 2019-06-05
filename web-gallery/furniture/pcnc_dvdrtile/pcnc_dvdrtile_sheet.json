@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "pcnc_dvdrtile_sheet.png",
+		"size": {"w":189,"h":156},
+		"scale": "1"
+	},
+	"frames": {
+		"pcnc_dvdrtile_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":123,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":123,"h":112},
+			"sourceSize": {"w":123,"h":112}
+		},
+		"pcnc_dvdrtile_7.png":
+		{
+			"frame": {"x":123,"y":0,"w":48,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":45},
+			"sourceSize": {"w":48,"h":45}
+		},
+		"pcnc_dvdrtile_10.png":
+		{
+			"frame": {"x":123,"y":45,"w":43,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":45},
+			"sourceSize": {"w":43,"h":45}
+		},
+		"pcnc_dvdrtile_15.png":
+		{
+			"frame": {"x":0,"y":112,"w":42,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":44},
+			"sourceSize": {"w":42,"h":44}
+		},
+		"pcnc_dvdrtile_8.png":
+		{
+			"frame": {"x":42,"y":112,"w":30,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":37},
+			"sourceSize": {"w":30,"h":37}
+		},
+		"pcnc_dvdrtile_13.png":
+		{
+			"frame": {"x":72,"y":112,"w":32,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":36},
+			"sourceSize": {"w":32,"h":36}
+		},
+		"pcnc_dvdrtile_12.png":
+		{
+			"frame": {"x":104,"y":112,"w":28,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":23},
+			"sourceSize": {"w":28,"h":23}
+		},
+		"pcnc_dvdrtile_6.png":
+		{
+			"frame": {"x":123,"y":90,"w":25,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":22},
+			"sourceSize": {"w":25,"h":22}
+		},
+		"pcnc_dvdrtile_14.png":
+		{
+			"frame": {"x":132,"y":112,"w":22,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":23},
+			"sourceSize": {"w":22,"h":23}
+		},
+		"pcnc_dvdrtile_9.png":
+		{
+			"frame": {"x":148,"y":90,"w":23,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+			"sourceSize": {"w":23,"h":21}
+		},
+		"pcnc_dvdrtile_11.png":
+		{
+			"frame": {"x":171,"y":0,"w":18,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":20},
+			"sourceSize": {"w":18,"h":20}
+		},
+		"pcnc_dvdrtile_16.png":
+		{
+			"frame": {"x":171,"y":20,"w":16,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":18},
+			"sourceSize": {"w":16,"h":18}
+		}
+	}
+}

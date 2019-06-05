@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "hween_c18_labcage_sheet.png",
+		"size": {"w":141,"h":122},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c18_labcage_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":65},
+			"sourceSize": {"w":61,"h":65}
+		},
+		"hween_c18_labcage_5.png":
+		{
+			"frame": {"x":61,"y":0,"w":62,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":32},
+			"sourceSize": {"w":62,"h":32}
+		},
+		"hween_c18_labcage_10.png":
+		{
+			"frame": {"x":0,"y":65,"w":39,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":57},
+			"sourceSize": {"w":39,"h":57}
+		},
+		"hween_c18_labcage_7.png":
+		{
+			"frame": {"x":39,"y":65,"w":36,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":49},
+			"sourceSize": {"w":36,"h":49}
+		},
+		"hween_c18_labcage_9.png":
+		{
+			"frame": {"x":61,"y":32,"w":22,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":33},
+			"sourceSize": {"w":22,"h":33}
+		},
+		"hween_c18_labcage_1.png":
+		{
+			"frame": {"x":83,"y":32,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		},
+		"hween_c18_labcage_11.png":
+		{
+			"frame": {"x":75,"y":65,"w":20,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":28},
+			"sourceSize": {"w":20,"h":28}
+		},
+		"hween_c18_labcage_14.png":
+		{
+			"frame": {"x":95,"y":65,"w":19,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":28},
+			"sourceSize": {"w":19,"h":28}
+		},
+		"hween_c18_labcage_13.png":
+		{
+			"frame": {"x":123,"y":0,"w":18,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":28},
+			"sourceSize": {"w":18,"h":28}
+		},
+		"hween_c18_labcage_12.png":
+		{
+			"frame": {"x":123,"y":28,"w":16,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":25},
+			"sourceSize": {"w":16,"h":25}
+		}
+	}
+}

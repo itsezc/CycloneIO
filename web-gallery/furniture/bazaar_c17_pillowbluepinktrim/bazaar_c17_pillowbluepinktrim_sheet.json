@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "bazaar_c17_pillowbluepinktrim_sheet.png",
+		"size": {"w":124,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"bazaar_c17_pillowbluepinktrim_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":36},
+			"sourceSize": {"w":62,"h":36}
+		},
+		"bazaar_c17_pillowbluepinktrim_6.png":
+		{
+			"frame": {"x":62,"y":0,"w":62,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":30},
+			"sourceSize": {"w":62,"h":30}
+		},
+		"bazaar_c17_pillowbluepinktrim_2.png":
+		{
+			"frame": {"x":0,"y":36,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		}
+	}
+}

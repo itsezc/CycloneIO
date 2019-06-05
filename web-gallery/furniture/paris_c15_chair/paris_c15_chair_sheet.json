@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "paris_c15_chair_sheet.png",
+		"size": {"w":105,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_chair_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":64},
+			"sourceSize": {"w":42,"h":64}
+		},
+		"paris_c15_chair_2.png":
+		{
+			"frame": {"x":42,"y":0,"w":25,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":62},
+			"sourceSize": {"w":25,"h":62}
+		},
+		"paris_c15_chair_1.png":
+		{
+			"frame": {"x":67,"y":0,"w":38,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":21},
+			"sourceSize": {"w":38,"h":21}
+		},
+		"paris_c15_chair_4.png":
+		{
+			"frame": {"x":67,"y":21,"w":35,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":29},
+			"sourceSize": {"w":35,"h":29}
+		},
+		"paris_c15_chair_7.png":
+		{
+			"frame": {"x":0,"y":64,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"paris_c15_chair_10.png":
+		{
+			"frame": {"x":102,"y":21,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

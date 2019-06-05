@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c17_fencecorner_sheet.png",
+		"size": {"w":129,"h":108},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_fencecorner_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":108},
+			"sourceSize": {"w":58,"h":108}
+		},
+		"xmas_c17_fencecorner_2.png":
+		{
+			"frame": {"x":58,"y":0,"w":54,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":107},
+			"sourceSize": {"w":54,"h":107}
+		},
+		"xmas_c17_fencecorner_3.png":
+		{
+			"frame": {"x":112,"y":0,"w":17,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":32},
+			"sourceSize": {"w":17,"h":32}
+		}
+	}
+}

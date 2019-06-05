@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r19_rainbowstarjumper_sheet.png",
+		"size": {"w":38,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r19_rainbowstarjumper_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_r19_rainbowstarjumper_7.png":
+		{
+			"frame": {"x":0,"y":24,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

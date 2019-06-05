@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "val12_pillar2_sheet.png",
+		"size": {"w":226,"h":257},
+		"scale": "1"
+	},
+	"frames": {
+		"val12_pillar2_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":56,"h":257},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":257},
+			"sourceSize": {"w":56,"h":257}
+		},
+		"val12_pillar2_12.png":
+		{
+			"frame": {"x":56,"y":0,"w":54,"h":254},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":254},
+			"sourceSize": {"w":54,"h":254}
+		},
+		"val12_pillar2_2.png":
+		{
+			"frame": {"x":110,"y":0,"w":44,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":166},
+			"sourceSize": {"w":44,"h":166}
+		},
+		"val12_pillar2_3.png":
+		{
+			"frame": {"x":154,"y":0,"w":44,"h":166},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":166},
+			"sourceSize": {"w":44,"h":166}
+		},
+		"val12_pillar2_8.png":
+		{
+			"frame": {"x":198,"y":0,"w":28,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":128},
+			"sourceSize": {"w":28,"h":128}
+		},
+		"val12_pillar2_10.png":
+		{
+			"frame": {"x":198,"y":128,"w":27,"h":127},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":127},
+			"sourceSize": {"w":27,"h":127}
+		},
+		"val12_pillar2_11.png":
+		{
+			"frame": {"x":154,"y":166,"w":22,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":84},
+			"sourceSize": {"w":22,"h":84}
+		},
+		"val12_pillar2_15.png":
+		{
+			"frame": {"x":176,"y":166,"w":22,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":84},
+			"sourceSize": {"w":22,"h":84}
+		},
+		"val12_pillar2_5.png":
+		{
+			"frame": {"x":110,"y":166,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		},
+		"val12_pillar2_9.png":
+		{
+			"frame": {"x":225,"y":128,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

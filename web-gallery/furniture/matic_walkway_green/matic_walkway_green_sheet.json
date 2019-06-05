@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "matic_walkway_green_sheet.png",
+		"size": {"w":193,"h":141},
+		"scale": "1"
+	},
+	"frames": {
+		"matic_walkway_green_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":57,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":141},
+			"sourceSize": {"w":57,"h":141}
+		},
+		"matic_walkway_green_5.png":
+		{
+			"frame": {"x":57,"y":0,"w":44,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":132},
+			"sourceSize": {"w":44,"h":132}
+		},
+		"matic_walkway_green_10.png":
+		{
+			"frame": {"x":101,"y":0,"w":30,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":70},
+			"sourceSize": {"w":30,"h":70}
+		},
+		"matic_walkway_green_1.png":
+		{
+			"frame": {"x":101,"y":70,"w":23,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":67},
+			"sourceSize": {"w":23,"h":67}
+		},
+		"matic_walkway_green_9.png":
+		{
+			"frame": {"x":131,"y":0,"w":62,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":31},
+			"sourceSize": {"w":62,"h":31}
+		},
+		"matic_walkway_green_4.png":
+		{
+			"frame": {"x":131,"y":31,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		},
+		"matic_walkway_green_12.png":
+		{
+			"frame": {"x":131,"y":46,"w":19,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":29},
+			"sourceSize": {"w":19,"h":29}
+		}
+	}
+}

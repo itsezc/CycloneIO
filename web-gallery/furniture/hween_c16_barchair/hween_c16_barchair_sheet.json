@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "hween_c16_barchair_sheet.png",
+		"size": {"w":91,"h":88},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c16_barchair_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":67},
+			"sourceSize": {"w":36,"h":67}
+		},
+		"hween_c16_barchair_7.png":
+		{
+			"frame": {"x":36,"y":0,"w":36,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":67},
+			"sourceSize": {"w":36,"h":67}
+		},
+		"hween_c16_barchair_2.png":
+		{
+			"frame": {"x":72,"y":0,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"hween_c16_barchair_3.png":
+		{
+			"frame": {"x":0,"y":67,"w":29,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":21},
+			"sourceSize": {"w":29,"h":21}
+		}
+	}
+}

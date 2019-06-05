@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "roombg_aurora_sheet.png",
+		"size": {"w":1516,"h":851},
+		"scale": "1"
+	},
+	"frames": {
+		"roombg_aurora_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":1516,"h":784},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1516,"h":784},
+			"sourceSize": {"w":1516,"h":784}
+		},
+		"roombg_aurora_9.png":
+		{
+			"frame": {"x":0,"y":784,"w":62,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":43},
+			"sourceSize": {"w":62,"h":43}
+		},
+		"roombg_aurora_7.png":
+		{
+			"frame": {"x":62,"y":784,"w":31,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":23},
+			"sourceSize": {"w":31,"h":23}
+		},
+		"roombg_aurora_1.png":
+		{
+			"frame": {"x":0,"y":827,"w":30,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":24},
+			"sourceSize": {"w":30,"h":24}
+		}
+	}
+}

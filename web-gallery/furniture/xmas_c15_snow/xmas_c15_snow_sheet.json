@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "xmas_c15_snow_sheet.png",
+		"size": {"w":262,"h":211},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c15_snow_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":132,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":68},
+			"sourceSize": {"w":132,"h":68}
+		},
+		"xmas_c15_snow_9.png":
+		{
+			"frame": {"x":132,"y":0,"w":130,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":66},
+			"sourceSize": {"w":130,"h":66}
+		},
+		"xmas_c15_snow_16.png":
+		{
+			"frame": {"x":0,"y":68,"w":93,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":47},
+			"sourceSize": {"w":93,"h":47}
+		},
+		"xmas_c15_snow_15.png":
+		{
+			"frame": {"x":93,"y":68,"w":92,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":44},
+			"sourceSize": {"w":92,"h":44}
+		},
+		"xmas_c15_snow_1.png":
+		{
+			"frame": {"x":0,"y":115,"w":91,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":48},
+			"sourceSize": {"w":91,"h":48}
+		},
+		"xmas_c15_snow_2.png":
+		{
+			"frame": {"x":91,"y":115,"w":89,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":48},
+			"sourceSize": {"w":89,"h":48}
+		},
+		"xmas_c15_snow_3.png":
+		{
+			"frame": {"x":0,"y":163,"w":89,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":48},
+			"sourceSize": {"w":89,"h":48}
+		},
+		"xmas_c15_snow_5.png":
+		{
+			"frame": {"x":89,"y":163,"w":84,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":84,"h":47},
+			"sourceSize": {"w":84,"h":47}
+		},
+		"xmas_c15_snow_12.png":
+		{
+			"frame": {"x":185,"y":68,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		},
+		"xmas_c15_snow_13.png":
+		{
+			"frame": {"x":132,"y":66,"w":2,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":1},
+			"sourceSize": {"w":2,"h":1}
+		},
+		"xmas_c15_snow_6.png":
+		{
+			"frame": {"x":134,"y":66,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

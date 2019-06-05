@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas10_present_sheet.png",
+		"size": {"w":161,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas10_present_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":97,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":77},
+			"sourceSize": {"w":97,"h":77}
+		},
+		"xmas10_present_7.png":
+		{
+			"frame": {"x":97,"y":0,"w":64,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":77},
+			"sourceSize": {"w":64,"h":77}
+		},
+		"xmas10_present_5.png":
+		{
+			"frame": {"x":0,"y":77,"w":33,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":39},
+			"sourceSize": {"w":33,"h":39}
+		},
+		"xmas10_present_2.png":
+		{
+			"frame": {"x":33,"y":77,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		}
+	}
+}

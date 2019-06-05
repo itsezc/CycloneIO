@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "deadduck3_sheet.png",
+		"size": {"w":92,"h":69},
+		"scale": "1"
+	},
+	"frames": {
+		"deadduck3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":42},
+			"sourceSize": {"w":61,"h":42}
+		},
+		"deadduck3_7.png":
+		{
+			"frame": {"x":61,"y":0,"w":31,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":27},
+			"sourceSize": {"w":31,"h":27}
+		},
+		"deadduck3_3.png":
+		{
+			"frame": {"x":0,"y":42,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		},
+		"deadduck3_5.png":
+		{
+			"frame": {"x":61,"y":27,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		}
+	}
+}

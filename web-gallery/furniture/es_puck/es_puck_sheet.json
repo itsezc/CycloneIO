@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "es_puck_sheet.png",
+		"size": {"w":72,"h":36},
+		"scale": "1"
+	},
+	"frames": {
+		"es_puck_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":23},
+			"sourceSize": {"w":44,"h":23}
+		},
+		"es_puck_6.png":
+		{
+			"frame": {"x":44,"y":0,"w":28,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":23},
+			"sourceSize": {"w":28,"h":23}
+		},
+		"es_puck_5.png":
+		{
+			"frame": {"x":0,"y":23,"w":16,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":13},
+			"sourceSize": {"w":16,"h":13}
+		}
+	}
+}

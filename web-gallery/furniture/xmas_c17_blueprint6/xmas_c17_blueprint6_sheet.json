@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas_c17_blueprint6_sheet.png",
+		"size": {"w":103,"h":101},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_blueprint6_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":74,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":39},
+			"sourceSize": {"w":74,"h":39}
+		},
+		"xmas_c17_blueprint6_4.png":
+		{
+			"frame": {"x":0,"y":39,"w":62,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":62},
+			"sourceSize": {"w":62,"h":62}
+		},
+		"xmas_c17_blueprint6_9.png":
+		{
+			"frame": {"x":74,"y":0,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"xmas_c17_blueprint6_1.png":
+		{
+			"frame": {"x":74,"y":30,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		}
+	}
+}

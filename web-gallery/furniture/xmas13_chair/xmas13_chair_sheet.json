@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas13_chair_sheet.png",
+		"size": {"w":72,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas13_chair_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":42},
+			"sourceSize": {"w":36,"h":42}
+		},
+		"xmas13_chair_3.png":
+		{
+			"frame": {"x":36,"y":0,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"xmas13_chair_6.png":
+		{
+			"frame": {"x":36,"y":18,"w":18,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":22},
+			"sourceSize": {"w":18,"h":22}
+		},
+		"xmas13_chair_7.png":
+		{
+			"frame": {"x":54,"y":18,"w":18,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":10},
+			"sourceSize": {"w":18,"h":10}
+		}
+	}
+}

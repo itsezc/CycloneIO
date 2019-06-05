@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "modern_c17_reads_sheet.png",
+		"size": {"w":142,"h":97},
+		"scale": "1"
+	},
+	"frames": {
+		"modern_c17_reads_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":42},
+			"sourceSize": {"w":52,"h":42}
+		},
+		"modern_c17_reads_9.png":
+		{
+			"frame": {"x":52,"y":0,"w":49,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":28},
+			"sourceSize": {"w":49,"h":28}
+		},
+		"modern_c17_reads_10.png":
+		{
+			"frame": {"x":0,"y":42,"w":49,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":26},
+			"sourceSize": {"w":49,"h":26}
+		},
+		"modern_c17_reads_6.png":
+		{
+			"frame": {"x":101,"y":0,"w":41,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":40},
+			"sourceSize": {"w":41,"h":40}
+		},
+		"modern_c17_reads_4.png":
+		{
+			"frame": {"x":0,"y":68,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

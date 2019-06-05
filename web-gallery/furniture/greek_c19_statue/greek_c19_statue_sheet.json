@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "greek_c19_statue_sheet.png",
+		"size": {"w":246,"h":204},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_c19_statue_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":94,"h":204},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":204},
+			"sourceSize": {"w":94,"h":204}
+		},
+		"greek_c19_statue_9.png":
+		{
+			"frame": {"x":94,"y":0,"w":86,"h":182},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":182},
+			"sourceSize": {"w":86,"h":182}
+		},
+		"greek_c19_statue_6.png":
+		{
+			"frame": {"x":180,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"greek_c19_statue_1.png":
+		{
+			"frame": {"x":180,"y":33,"w":15,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":29},
+			"sourceSize": {"w":15,"h":29}
+		}
+	}
+}

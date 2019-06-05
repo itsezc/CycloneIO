@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_hipoutfit1_sheet.png",
+		"size": {"w":75,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_hipoutfit1_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":102},
+			"sourceSize": {"w":39,"h":102}
+		},
+		"clothing_hipoutfit1_4.png":
+		{
+			"frame": {"x":39,"y":0,"w":36,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":18},
+			"sourceSize": {"w":36,"h":18}
+		},
+		"clothing_hipoutfit1_1.png":
+		{
+			"frame": {"x":39,"y":18,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

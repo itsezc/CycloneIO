@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "bw_ccnuts_sheet.png",
+		"size": {"w":80,"h":74},
+		"scale": "1"
+	},
+	"frames": {
+		"bw_ccnuts_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":80,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":37},
+			"sourceSize": {"w":80,"h":37}
+		},
+		"bw_ccnuts_7.png":
+		{
+			"frame": {"x":0,"y":37,"w":53,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":37},
+			"sourceSize": {"w":53,"h":37}
+		},
+		"bw_ccnuts_2.png":
+		{
+			"frame": {"x":53,"y":37,"w":27,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":19},
+			"sourceSize": {"w":27,"h":19}
+		}
+	}
+}

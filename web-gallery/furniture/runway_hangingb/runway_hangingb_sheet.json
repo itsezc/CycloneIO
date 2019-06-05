@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "runway_hangingb_sheet.png",
+		"size": {"w":122,"h":139},
+		"scale": "1"
+	},
+	"frames": {
+		"runway_hangingb_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":139},
+			"sourceSize": {"w":36,"h":139}
+		},
+		"runway_hangingb_7.png":
+		{
+			"frame": {"x":36,"y":0,"w":45,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":134},
+			"sourceSize": {"w":45,"h":134}
+		},
+		"runway_hangingb_11.png":
+		{
+			"frame": {"x":81,"y":0,"w":18,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":70},
+			"sourceSize": {"w":18,"h":70}
+		},
+		"runway_hangingb_2.png":
+		{
+			"frame": {"x":99,"y":0,"w":23,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":67},
+			"sourceSize": {"w":23,"h":67}
+		},
+		"runway_hangingb_10.png":
+		{
+			"frame": {"x":99,"y":67,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		},
+		"runway_hangingb_1.png":
+		{
+			"frame": {"x":111,"y":67,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

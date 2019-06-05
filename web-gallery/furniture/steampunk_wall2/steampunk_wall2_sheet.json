@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "steampunk_wall2_sheet.png",
+		"size": {"w":380,"h":376},
+		"scale": "1"
+	},
+	"frames": {
+		"steampunk_wall2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":242,"h":226},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":242,"h":226},
+			"sourceSize": {"w":242,"h":226}
+		},
+		"steampunk_wall2_10.png":
+		{
+			"frame": {"x":242,"y":0,"w":69,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":150},
+			"sourceSize": {"w":69,"h":150}
+		},
+		"steampunk_wall2_5.png":
+		{
+			"frame": {"x":311,"y":0,"w":69,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":150},
+			"sourceSize": {"w":69,"h":150}
+		},
+		"steampunk_wall2_6.png":
+		{
+			"frame": {"x":0,"y":226,"w":69,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":150},
+			"sourceSize": {"w":69,"h":150}
+		},
+		"steampunk_wall2_11.png":
+		{
+			"frame": {"x":311,"y":150,"w":35,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":76},
+			"sourceSize": {"w":35,"h":76}
+		},
+		"steampunk_wall2_7.png":
+		{
+			"frame": {"x":242,"y":150,"w":35,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":76},
+			"sourceSize": {"w":35,"h":76}
+		},
+		"steampunk_wall2_9.png":
+		{
+			"frame": {"x":69,"y":226,"w":35,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":76},
+			"sourceSize": {"w":35,"h":76}
+		},
+		"steampunk_wall2_2.png":
+		{
+			"frame": {"x":346,"y":150,"w":19,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":32},
+			"sourceSize": {"w":19,"h":32}
+		}
+	}
+}

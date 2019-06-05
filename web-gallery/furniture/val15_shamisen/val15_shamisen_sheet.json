@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "val15_shamisen_sheet.png",
+		"size": {"w":98,"h":106},
+		"scale": "1"
+	},
+	"frames": {
+		"val15_shamisen_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":50,"h":106},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":106},
+			"sourceSize": {"w":50,"h":106}
+		},
+		"val15_shamisen_5.png":
+		{
+			"frame": {"x":50,"y":0,"w":48,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":24},
+			"sourceSize": {"w":48,"h":24}
+		},
+		"val15_shamisen_7.png":
+		{
+			"frame": {"x":50,"y":24,"w":14,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":28},
+			"sourceSize": {"w":14,"h":28}
+		}
+	}
+}

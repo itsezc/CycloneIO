@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "elmeri_sheet.png",
+		"size": {"w":138,"h":132},
+		"scale": "1"
+	},
+	"frames": {
+		"elmeri_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":92,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":75},
+			"sourceSize": {"w":92,"h":75}
+		},
+		"elmeri_5.png":
+		{
+			"frame": {"x":92,"y":0,"w":46,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":63},
+			"sourceSize": {"w":46,"h":63}
+		},
+		"elmeri_1.png":
+		{
+			"frame": {"x":0,"y":75,"w":46,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":24},
+			"sourceSize": {"w":46,"h":24}
+		},
+		"elmeri_6.png":
+		{
+			"frame": {"x":0,"y":99,"w":23,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+			"sourceSize": {"w":23,"h":33}
+		},
+		"elmeri_8.png":
+		{
+			"frame": {"x":23,"y":99,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		},
+		"elmeri_2.png":
+		{
+			"frame": {"x":92,"y":63,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		}
+	}
+}

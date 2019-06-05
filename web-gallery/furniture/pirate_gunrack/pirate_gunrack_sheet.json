@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "pirate_gunrack_sheet.png",
+		"size": {"w":243,"h":175},
+		"scale": "1"
+	},
+	"frames": {
+		"pirate_gunrack_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":123},
+			"sourceSize": {"w":51,"h":123}
+		},
+		"pirate_gunrack_6.png":
+		{
+			"frame": {"x":51,"y":0,"w":51,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":123},
+			"sourceSize": {"w":51,"h":123}
+		},
+		"pirate_gunrack_1.png":
+		{
+			"frame": {"x":102,"y":0,"w":55,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":119},
+			"sourceSize": {"w":55,"h":119}
+		},
+		"pirate_gunrack_7.png":
+		{
+			"frame": {"x":157,"y":0,"w":86,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":43},
+			"sourceSize": {"w":86,"h":43}
+		},
+		"pirate_gunrack_11.png":
+		{
+			"frame": {"x":157,"y":43,"w":28,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":68},
+			"sourceSize": {"w":28,"h":68}
+		},
+		"pirate_gunrack_9.png":
+		{
+			"frame": {"x":185,"y":43,"w":28,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":68},
+			"sourceSize": {"w":28,"h":68}
+		},
+		"pirate_gunrack_2.png":
+		{
+			"frame": {"x":213,"y":43,"w":14,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":58},
+			"sourceSize": {"w":14,"h":58}
+		},
+		"pirate_gunrack_12.png":
+		{
+			"frame": {"x":0,"y":123,"w":43,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":22},
+			"sourceSize": {"w":43,"h":22}
+		},
+		"pirate_gunrack_3.png":
+		{
+			"frame": {"x":0,"y":145,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

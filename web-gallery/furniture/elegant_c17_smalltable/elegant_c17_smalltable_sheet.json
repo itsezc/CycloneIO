@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "elegant_c17_smalltable_sheet.png",
+		"size": {"w":86,"h":62},
+		"scale": "1"
+	},
+	"frames": {
+		"elegant_c17_smalltable_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":43,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":62},
+			"sourceSize": {"w":43,"h":62}
+		},
+		"elegant_c17_smalltable_8.png":
+		{
+			"frame": {"x":43,"y":0,"w":43,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":21},
+			"sourceSize": {"w":43,"h":21}
+		},
+		"elegant_c17_smalltable_7.png":
+		{
+			"frame": {"x":43,"y":21,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		}
+	}
+}

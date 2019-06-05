@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "hween_c16_fireplace2_sheet.png",
+		"size": {"w":215,"h":199},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c16_fireplace2_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":103},
+			"sourceSize": {"w":64,"h":103}
+		},
+		"hween_c16_fireplace2_10.png":
+		{
+			"frame": {"x":64,"y":0,"w":51,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":100},
+			"sourceSize": {"w":51,"h":100}
+		},
+		"hween_c16_fireplace2_4.png":
+		{
+			"frame": {"x":115,"y":0,"w":51,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":100},
+			"sourceSize": {"w":51,"h":100}
+		},
+		"hween_c16_fireplace2_2.png":
+		{
+			"frame": {"x":166,"y":0,"w":49,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":100},
+			"sourceSize": {"w":49,"h":100}
+		},
+		"hween_c16_fireplace2_12.png":
+		{
+			"frame": {"x":0,"y":103,"w":66,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":96},
+			"sourceSize": {"w":66,"h":96}
+		},
+		"hween_c16_fireplace2_7.png":
+		{
+			"frame": {"x":66,"y":103,"w":96,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":48},
+			"sourceSize": {"w":96,"h":48}
+		},
+		"hween_c16_fireplace2_1.png":
+		{
+			"frame": {"x":162,"y":103,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

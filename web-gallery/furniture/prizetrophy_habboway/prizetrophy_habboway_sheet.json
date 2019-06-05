@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "prizetrophy_habboway_sheet.png",
+		"size": {"w":164,"h":144},
+		"scale": "1"
+	},
+	"frames": {
+		"prizetrophy_habboway_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":116,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":116,"h":94},
+			"sourceSize": {"w":116,"h":94}
+		},
+		"prizetrophy_habboway_7.png":
+		{
+			"frame": {"x":116,"y":0,"w":48,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":94},
+			"sourceSize": {"w":48,"h":94}
+		},
+		"prizetrophy_habboway_4.png":
+		{
+			"frame": {"x":0,"y":94,"w":27,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":50},
+			"sourceSize": {"w":27,"h":50}
+		},
+		"prizetrophy_habboway_10.png":
+		{
+			"frame": {"x":27,"y":94,"w":41,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":12},
+			"sourceSize": {"w":41,"h":12}
+		},
+		"prizetrophy_habboway_6.png":
+		{
+			"frame": {"x":27,"y":106,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"prizetrophy_habboway_9.png":
+		{
+			"frame": {"x":68,"y":94,"w":24,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":8},
+			"sourceSize": {"w":24,"h":8}
+		}
+	}
+}

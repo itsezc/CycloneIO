@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "horse_stable_wall_sheet.png",
+		"size": {"w":609,"h":536},
+		"scale": "1"
+	},
+	"frames": {
+		"horse_stable_wall_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":384,"h":361},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":384,"h":361},
+			"sourceSize": {"w":384,"h":361}
+		},
+		"horse_stable_wall_14.png":
+		{
+			"frame": {"x":384,"y":0,"w":146,"h":186},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":146,"h":186},
+			"sourceSize": {"w":146,"h":186}
+		},
+		"horse_stable_wall_10.png":
+		{
+			"frame": {"x":384,"y":186,"w":80,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":175},
+			"sourceSize": {"w":80,"h":175}
+		},
+		"horse_stable_wall_12.png":
+		{
+			"frame": {"x":530,"y":0,"w":79,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":175},
+			"sourceSize": {"w":79,"h":175}
+		},
+		"horse_stable_wall_6.png":
+		{
+			"frame": {"x":530,"y":175,"w":79,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":175},
+			"sourceSize": {"w":79,"h":175}
+		},
+		"horse_stable_wall_9.png":
+		{
+			"frame": {"x":0,"y":361,"w":79,"h":175},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":175},
+			"sourceSize": {"w":79,"h":175}
+		},
+		"horse_stable_wall_15.png":
+		{
+			"frame": {"x":79,"y":361,"w":68,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":90},
+			"sourceSize": {"w":68,"h":90}
+		},
+		"horse_stable_wall_11.png":
+		{
+			"frame": {"x":464,"y":186,"w":40,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":89},
+			"sourceSize": {"w":40,"h":89}
+		},
+		"horse_stable_wall_13.png":
+		{
+			"frame": {"x":147,"y":361,"w":40,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":89},
+			"sourceSize": {"w":40,"h":89}
+		},
+		"horse_stable_wall_16.png":
+		{
+			"frame": {"x":187,"y":361,"w":40,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":89},
+			"sourceSize": {"w":40,"h":89}
+		},
+		"horse_stable_wall_8.png":
+		{
+			"frame": {"x":227,"y":361,"w":40,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":89},
+			"sourceSize": {"w":40,"h":89}
+		},
+		"horse_stable_wall_5.png":
+		{
+			"frame": {"x":504,"y":186,"w":14,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":32},
+			"sourceSize": {"w":14,"h":32}
+		}
+	}
+}

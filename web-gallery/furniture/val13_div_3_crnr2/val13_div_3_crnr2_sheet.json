@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "val13_div_3_crnr2_sheet.png",
+		"size": {"w":92,"h":70},
+		"scale": "1"
+	},
+	"frames": {
+		"val13_div_3_crnr2_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":70},
+			"sourceSize": {"w":62,"h":70}
+		},
+		"val13_div_3_crnr2_2.png":
+		{
+			"frame": {"x":62,"y":0,"w":30,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":37},
+			"sourceSize": {"w":30,"h":37}
+		},
+		"val13_div_3_crnr2_8.png":
+		{
+			"frame": {"x":62,"y":37,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "flag_morocco_sheet.png",
+		"size": {"w":175,"h":167},
+		"scale": "1"
+	},
+	"frames": {
+		"flag_morocco_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":125,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":125,"h":99},
+			"sourceSize": {"w":125,"h":99}
+		},
+		"flag_morocco_3.png":
+		{
+			"frame": {"x":125,"y":0,"w":50,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":68},
+			"sourceSize": {"w":50,"h":68}
+		},
+		"flag_morocco_9.png":
+		{
+			"frame": {"x":0,"y":99,"w":50,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":68},
+			"sourceSize": {"w":50,"h":68}
+		},
+		"flag_morocco_1.png":
+		{
+			"frame": {"x":50,"y":99,"w":25,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+			"sourceSize": {"w":25,"h":33}
+		},
+		"flag_morocco_6.png":
+		{
+			"frame": {"x":75,"y":99,"w":25,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":33},
+			"sourceSize": {"w":25,"h":33}
+		},
+		"flag_morocco_10.png":
+		{
+			"frame": {"x":125,"y":68,"w":23,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":31},
+			"sourceSize": {"w":23,"h":31}
+		}
+	}
+}

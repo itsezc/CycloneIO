@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "pirate_swordrack_sheet.png",
+		"size": {"w":246,"h":174},
+		"scale": "1"
+	},
+	"frames": {
+		"pirate_swordrack_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":57,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":122},
+			"sourceSize": {"w":57,"h":122}
+		},
+		"pirate_swordrack_6.png":
+		{
+			"frame": {"x":57,"y":0,"w":57,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":122},
+			"sourceSize": {"w":57,"h":122}
+		},
+		"pirate_swordrack_5.png":
+		{
+			"frame": {"x":114,"y":0,"w":45,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":114},
+			"sourceSize": {"w":45,"h":114}
+		},
+		"pirate_swordrack_3.png":
+		{
+			"frame": {"x":159,"y":0,"w":87,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":46},
+			"sourceSize": {"w":87,"h":46}
+		},
+		"pirate_swordrack_10.png":
+		{
+			"frame": {"x":159,"y":46,"w":31,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":62},
+			"sourceSize": {"w":31,"h":62}
+		},
+		"pirate_swordrack_11.png":
+		{
+			"frame": {"x":190,"y":46,"w":31,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":62},
+			"sourceSize": {"w":31,"h":62}
+		},
+		"pirate_swordrack_4.png":
+		{
+			"frame": {"x":221,"y":46,"w":21,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":56},
+			"sourceSize": {"w":21,"h":56}
+		},
+		"pirate_swordrack_9.png":
+		{
+			"frame": {"x":0,"y":122,"w":43,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":22},
+			"sourceSize": {"w":43,"h":22}
+		},
+		"pirate_swordrack_13.png":
+		{
+			"frame": {"x":0,"y":144,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		}
+	}
+}

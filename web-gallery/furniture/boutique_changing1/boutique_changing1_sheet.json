@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "boutique_changing1_sheet.png",
+		"size": {"w":353,"h":335},
+		"scale": "1"
+	},
+	"frames": {
+		"boutique_changing1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":225,"h":214},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":225,"h":214},
+			"sourceSize": {"w":225,"h":214}
+		},
+		"boutique_changing1_10.png":
+		{
+			"frame": {"x":225,"y":0,"w":64,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":121},
+			"sourceSize": {"w":64,"h":121}
+		},
+		"boutique_changing1_8.png":
+		{
+			"frame": {"x":289,"y":0,"w":64,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":121},
+			"sourceSize": {"w":64,"h":121}
+		},
+		"boutique_changing1_9.png":
+		{
+			"frame": {"x":0,"y":214,"w":64,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":121},
+			"sourceSize": {"w":64,"h":121}
+		},
+		"boutique_changing1_13.png":
+		{
+			"frame": {"x":289,"y":121,"w":64,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":32},
+			"sourceSize": {"w":64,"h":32}
+		},
+		"boutique_changing1_12.png":
+		{
+			"frame": {"x":289,"y":153,"w":33,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":61},
+			"sourceSize": {"w":33,"h":61}
+		},
+		"boutique_changing1_14.png":
+		{
+			"frame": {"x":225,"y":121,"w":33,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":61},
+			"sourceSize": {"w":33,"h":61}
+		},
+		"boutique_changing1_4.png":
+		{
+			"frame": {"x":64,"y":214,"w":33,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":61},
+			"sourceSize": {"w":33,"h":61}
+		},
+		"boutique_changing1_6.png":
+		{
+			"frame": {"x":322,"y":153,"w":17,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":30},
+			"sourceSize": {"w":17,"h":30}
+		},
+		"boutique_changing1_5.png":
+		{
+			"frame": {"x":322,"y":183,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		}
+	}
+}

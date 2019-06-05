@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "classic6_stool_sheet.png",
+		"size": {"w":100,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"classic6_stool_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":53},
+			"sourceSize": {"w":52,"h":53}
+		},
+		"classic6_stool_7.png":
+		{
+			"frame": {"x":52,"y":0,"w":48,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":24},
+			"sourceSize": {"w":48,"h":24}
+		},
+		"classic6_stool_6.png":
+		{
+			"frame": {"x":52,"y":24,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		}
+	}
+}

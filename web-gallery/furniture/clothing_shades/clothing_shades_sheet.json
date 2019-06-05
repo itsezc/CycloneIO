@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_shades_sheet.png",
+		"size": {"w":54,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_shades_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":42},
+			"sourceSize": {"w":26,"h":42}
+		},
+		"clothing_shades_1.png":
+		{
+			"frame": {"x":26,"y":0,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		}
+	}
+}

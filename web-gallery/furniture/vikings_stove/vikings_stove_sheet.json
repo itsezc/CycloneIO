@@ -1,0 +1,417 @@
+{
+	"meta": {
+		"image": "vikings_stove_sheet.png",
+		"size": {"w":351,"h":323},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_stove_51.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":134},
+			"sourceSize": {"w":51,"h":134}
+		},
+		"vikings_stove_47.png":
+		{
+			"frame": {"x":51,"y":0,"w":61,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":125},
+			"sourceSize": {"w":61,"h":125}
+		},
+		"vikings_stove_50.png":
+		{
+			"frame": {"x":112,"y":0,"w":51,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":122},
+			"sourceSize": {"w":51,"h":122}
+		},
+		"vikings_stove_54.png":
+		{
+			"frame": {"x":163,"y":0,"w":52,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":120},
+			"sourceSize": {"w":52,"h":120}
+		},
+		"vikings_stove_56.png":
+		{
+			"frame": {"x":215,"y":0,"w":54,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":115},
+			"sourceSize": {"w":54,"h":115}
+		},
+		"vikings_stove_16.png":
+		{
+			"frame": {"x":0,"y":134,"w":34,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":96},
+			"sourceSize": {"w":34,"h":96}
+		},
+		"vikings_stove_17.png":
+		{
+			"frame": {"x":34,"y":134,"w":34,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":96},
+			"sourceSize": {"w":34,"h":96}
+		},
+		"vikings_stove_18.png":
+		{
+			"frame": {"x":68,"y":134,"w":34,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":96},
+			"sourceSize": {"w":34,"h":96}
+		},
+		"vikings_stove_13.png":
+		{
+			"frame": {"x":102,"y":134,"w":27,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":77},
+			"sourceSize": {"w":27,"h":77}
+		},
+		"vikings_stove_11.png":
+		{
+			"frame": {"x":129,"y":134,"w":28,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":68},
+			"sourceSize": {"w":28,"h":68}
+		},
+		"vikings_stove_52.png":
+		{
+			"frame": {"x":157,"y":134,"w":26,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":68},
+			"sourceSize": {"w":26,"h":68}
+		},
+		"vikings_stove_12.png":
+		{
+			"frame": {"x":183,"y":134,"w":32,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":67},
+			"sourceSize": {"w":32,"h":67}
+		},
+		"vikings_stove_45.png":
+		{
+			"frame": {"x":215,"y":134,"w":32,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":63},
+			"sourceSize": {"w":32,"h":63}
+		},
+		"vikings_stove_46.png":
+		{
+			"frame": {"x":269,"y":0,"w":27,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":61},
+			"sourceSize": {"w":27,"h":61}
+		},
+		"vikings_stove_49.png":
+		{
+			"frame": {"x":269,"y":61,"w":27,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":61},
+			"sourceSize": {"w":27,"h":61}
+		},
+		"vikings_stove_14.png":
+		{
+			"frame": {"x":0,"y":230,"w":28,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":60},
+			"sourceSize": {"w":28,"h":60}
+		},
+		"vikings_stove_55.png":
+		{
+			"frame": {"x":28,"y":230,"w":28,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":58},
+			"sourceSize": {"w":28,"h":58}
+		},
+		"vikings_stove_24.png":
+		{
+			"frame": {"x":56,"y":230,"w":50,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":46},
+			"sourceSize": {"w":50,"h":46}
+		},
+		"vikings_stove_19.png":
+		{
+			"frame": {"x":269,"y":122,"w":16,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":47},
+			"sourceSize": {"w":16,"h":47}
+		},
+		"vikings_stove_20.png":
+		{
+			"frame": {"x":269,"y":169,"w":16,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":47},
+			"sourceSize": {"w":16,"h":47}
+		},
+		"vikings_stove_21.png":
+		{
+			"frame": {"x":247,"y":134,"w":16,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":47},
+			"sourceSize": {"w":16,"h":47}
+		},
+		"vikings_stove_23.png":
+		{
+			"frame": {"x":106,"y":230,"w":42,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":46},
+			"sourceSize": {"w":42,"h":46}
+		},
+		"vikings_stove_27.png":
+		{
+			"frame": {"x":148,"y":230,"w":37,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":46},
+			"sourceSize": {"w":37,"h":46}
+		},
+		"vikings_stove_25.png":
+		{
+			"frame": {"x":185,"y":230,"w":35,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":46},
+			"sourceSize": {"w":35,"h":46}
+		},
+		"vikings_stove_26.png":
+		{
+			"frame": {"x":220,"y":230,"w":31,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":46},
+			"sourceSize": {"w":31,"h":46}
+		},
+		"vikings_stove_2.png":
+		{
+			"frame": {"x":251,"y":230,"w":22,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":40},
+			"sourceSize": {"w":22,"h":40}
+		},
+		"vikings_stove_6.png":
+		{
+			"frame": {"x":273,"y":230,"w":21,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":39},
+			"sourceSize": {"w":21,"h":39}
+		},
+		"vikings_stove_30.png":
+		{
+			"frame": {"x":296,"y":0,"w":14,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":38},
+			"sourceSize": {"w":14,"h":38}
+		},
+		"vikings_stove_29.png":
+		{
+			"frame": {"x":296,"y":38,"w":14,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":35},
+			"sourceSize": {"w":14,"h":35}
+		},
+		"vikings_stove_31.png":
+		{
+			"frame": {"x":310,"y":0,"w":17,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+			"sourceSize": {"w":17,"h":34}
+		},
+		"vikings_stove_1.png":
+		{
+			"frame": {"x":0,"y":290,"w":23,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":33},
+			"sourceSize": {"w":23,"h":33}
+		},
+		"vikings_stove_4.png":
+		{
+			"frame": {"x":23,"y":290,"w":20,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":32},
+			"sourceSize": {"w":20,"h":32}
+		},
+		"vikings_stove_5.png":
+		{
+			"frame": {"x":43,"y":290,"w":21,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":31},
+			"sourceSize": {"w":21,"h":31}
+		},
+		"vikings_stove_22.png":
+		{
+			"frame": {"x":310,"y":34,"w":17,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":30},
+			"sourceSize": {"w":17,"h":30}
+		},
+		"vikings_stove_53.png":
+		{
+			"frame": {"x":310,"y":64,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"vikings_stove_39.png":
+		{
+			"frame": {"x":64,"y":290,"w":25,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":24},
+			"sourceSize": {"w":25,"h":24}
+		},
+		"vikings_stove_35.png":
+		{
+			"frame": {"x":89,"y":290,"w":25,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":23},
+			"sourceSize": {"w":25,"h":23}
+		},
+		"vikings_stove_48.png":
+		{
+			"frame": {"x":327,"y":0,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"vikings_stove_32.png":
+		{
+			"frame": {"x":327,"y":24,"w":18,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":23},
+			"sourceSize": {"w":18,"h":23}
+		},
+		"vikings_stove_34.png":
+		{
+			"frame": {"x":327,"y":47,"w":18,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":23},
+			"sourceSize": {"w":18,"h":23}
+		},
+		"vikings_stove_33.png":
+		{
+			"frame": {"x":327,"y":70,"w":15,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":23},
+			"sourceSize": {"w":15,"h":23}
+		},
+		"vikings_stove_43.png":
+		{
+			"frame": {"x":327,"y":93,"w":15,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":23},
+			"sourceSize": {"w":15,"h":23}
+		},
+		"vikings_stove_40.png":
+		{
+			"frame": {"x":327,"y":116,"w":11,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":15},
+			"sourceSize": {"w":11,"h":15}
+		},
+		"vikings_stove_42.png":
+		{
+			"frame": {"x":338,"y":116,"w":11,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":15},
+			"sourceSize": {"w":11,"h":15}
+		},
+		"vikings_stove_44.png":
+		{
+			"frame": {"x":327,"y":131,"w":11,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":15},
+			"sourceSize": {"w":11,"h":15}
+		},
+		"vikings_stove_37.png":
+		{
+			"frame": {"x":342,"y":70,"w":9,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":15},
+			"sourceSize": {"w":9,"h":15}
+		},
+		"vikings_stove_8.png":
+		{
+			"frame": {"x":338,"y":131,"w":13,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":12},
+			"sourceSize": {"w":13,"h":12}
+		},
+		"vikings_stove_7.png":
+		{
+			"frame": {"x":327,"y":146,"w":12,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+			"sourceSize": {"w":12,"h":12}
+		},
+		"vikings_stove_41.png":
+		{
+			"frame": {"x":339,"y":146,"w":11,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":12},
+			"sourceSize": {"w":11,"h":12}
+		},
+		"vikings_stove_36.png":
+		{
+			"frame": {"x":342,"y":85,"w":8,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":2},
+			"sourceSize": {"w":8,"h":2}
+		},
+		"vikings_stove_3.png":
+		{
+			"frame": {"x":345,"y":24,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

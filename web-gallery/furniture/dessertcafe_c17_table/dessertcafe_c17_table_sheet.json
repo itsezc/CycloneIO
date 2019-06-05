@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "dessertcafe_c17_table_sheet.png",
+		"size": {"w":128,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"dessertcafe_c17_table_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":64},
+			"sourceSize": {"w":70,"h":64}
+		},
+		"dessertcafe_c17_table_1.png":
+		{
+			"frame": {"x":70,"y":0,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"dessertcafe_c17_table_7.png":
+		{
+			"frame": {"x":70,"y":29,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		}
+	}
+}

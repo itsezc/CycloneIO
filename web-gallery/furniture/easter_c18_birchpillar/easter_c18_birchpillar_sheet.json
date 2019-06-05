@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "easter_c18_birchpillar_sheet.png",
+		"size": {"w":154,"h":188},
+		"scale": "1"
+	},
+	"frames": {
+		"easter_c18_birchpillar_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":55,"h":188},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":188},
+			"sourceSize": {"w":55,"h":188}
+		},
+		"easter_c18_birchpillar_5.png":
+		{
+			"frame": {"x":55,"y":0,"w":32,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":66},
+			"sourceSize": {"w":32,"h":66}
+		},
+		"easter_c18_birchpillar_6.png":
+		{
+			"frame": {"x":87,"y":0,"w":33,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":47},
+			"sourceSize": {"w":33,"h":47}
+		},
+		"easter_c18_birchpillar_7.png":
+		{
+			"frame": {"x":120,"y":0,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"easter_c18_birchpillar_2.png":
+		{
+			"frame": {"x":120,"y":17,"w":14,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":30},
+			"sourceSize": {"w":14,"h":30}
+		}
+	}
+}

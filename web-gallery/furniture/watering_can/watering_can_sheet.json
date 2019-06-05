@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "watering_can_sheet.png",
+		"size": {"w":103,"h":67},
+		"scale": "1"
+	},
+	"frames": {
+		"watering_can_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":68,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":47},
+			"sourceSize": {"w":68,"h":47}
+		},
+		"watering_can_3.png":
+		{
+			"frame": {"x":68,"y":0,"w":35,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":25},
+			"sourceSize": {"w":35,"h":25}
+		},
+		"watering_can_10.png":
+		{
+			"frame": {"x":68,"y":25,"w":35,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":10},
+			"sourceSize": {"w":35,"h":10}
+		},
+		"watering_can_8.png":
+		{
+			"frame": {"x":0,"y":47,"w":28,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":20},
+			"sourceSize": {"w":28,"h":20}
+		},
+		"watering_can_5.png":
+		{
+			"frame": {"x":68,"y":35,"w":18,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":6},
+			"sourceSize": {"w":18,"h":6}
+		}
+	}
+}

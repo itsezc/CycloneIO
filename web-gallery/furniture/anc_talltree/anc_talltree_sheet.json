@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "anc_talltree_sheet.png",
+		"size": {"w":483,"h":484},
+		"scale": "1"
+	},
+	"frames": {
+		"anc_talltree_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":322,"h":484},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":322,"h":484},
+			"sourceSize": {"w":322,"h":484}
+		},
+		"anc_talltree_10.png":
+		{
+			"frame": {"x":322,"y":0,"w":161,"h":228},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":161,"h":228},
+			"sourceSize": {"w":161,"h":228}
+		},
+		"anc_talltree_7.png":
+		{
+			"frame": {"x":322,"y":228,"w":63,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":134},
+			"sourceSize": {"w":63,"h":134}
+		},
+		"anc_talltree_5.png":
+		{
+			"frame": {"x":322,"y":362,"w":103,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":103,"h":49},
+			"sourceSize": {"w":103,"h":49}
+		},
+		"anc_talltree_12.png":
+		{
+			"frame": {"x":385,"y":228,"w":32,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":67},
+			"sourceSize": {"w":32,"h":67}
+		},
+		"anc_talltree_4.png":
+		{
+			"frame": {"x":417,"y":228,"w":51,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":24},
+			"sourceSize": {"w":51,"h":24}
+		},
+		"anc_talltree_3.png":
+		{
+			"frame": {"x":417,"y":252,"w":18,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":31},
+			"sourceSize": {"w":18,"h":31}
+		}
+	}
+}

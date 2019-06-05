@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "duck_afro_sheet.png",
+		"size": {"w":66,"h":58},
+		"scale": "1"
+	},
+	"frames": {
+		"duck_afro_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":22,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":34},
+			"sourceSize": {"w":22,"h":34}
+		},
+		"duck_afro_8.png":
+		{
+			"frame": {"x":22,"y":0,"w":22,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":34},
+			"sourceSize": {"w":22,"h":34}
+		},
+		"duck_afro_11.png":
+		{
+			"frame": {"x":44,"y":0,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"duck_afro_12.png":
+		{
+			"frame": {"x":0,"y":34,"w":18,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":7},
+			"sourceSize": {"w":18,"h":7}
+		},
+		"duck_afro_1.png":
+		{
+			"frame": {"x":0,"y":41,"w":12,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":17},
+			"sourceSize": {"w":12,"h":17}
+		},
+		"duck_afro_10.png":
+		{
+			"frame": {"x":12,"y":41,"w":12,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":17},
+			"sourceSize": {"w":12,"h":17}
+		},
+		"duck_afro_9.png":
+		{
+			"frame": {"x":44,"y":30,"w":8,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":3},
+			"sourceSize": {"w":8,"h":3}
+		}
+	}
+}

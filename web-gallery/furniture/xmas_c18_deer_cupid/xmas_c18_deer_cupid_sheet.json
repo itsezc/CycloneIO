@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c18_deer_cupid_sheet.png",
+		"size": {"w":94,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c18_deer_cupid_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":56,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":64},
+			"sourceSize": {"w":56,"h":64}
+		},
+		"xmas_c18_deer_cupid_3.png":
+		{
+			"frame": {"x":56,"y":0,"w":38,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":21},
+			"sourceSize": {"w":38,"h":21}
+		},
+		"xmas_c18_deer_cupid_7.png":
+		{
+			"frame": {"x":56,"y":21,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

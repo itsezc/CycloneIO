@@ -1,0 +1,1393 @@
+{
+	"meta": {
+		"image": "reef_aquarium_sheet.png",
+		"size": {"w":845,"h":775},
+		"scale": "1"
+	},
+	"frames": {
+		"reef_aquarium_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":64,"h":342},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":342},
+			"sourceSize": {"w":64,"h":342}
+		},
+		"reef_aquarium_89.png":
+		{
+			"frame": {"x":64,"y":0,"w":128,"h":311},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":311},
+			"sourceSize": {"w":128,"h":311}
+		},
+		"reef_aquarium_5.png":
+		{
+			"frame": {"x":192,"y":0,"w":202,"h":309},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":202,"h":309},
+			"sourceSize": {"w":202,"h":309}
+		},
+		"reef_aquarium_132.png":
+		{
+			"frame": {"x":394,"y":0,"w":192,"h":279},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":279},
+			"sourceSize": {"w":192,"h":279}
+		},
+		"reef_aquarium_73.png":
+		{
+			"frame": {"x":586,"y":0,"w":259,"h":247},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":259,"h":247},
+			"sourceSize": {"w":259,"h":247}
+		},
+		"reef_aquarium_160.png":
+		{
+			"frame": {"x":0,"y":342,"w":206,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":206,"h":103},
+			"sourceSize": {"w":206,"h":103}
+		},
+		"reef_aquarium_161.png":
+		{
+			"frame": {"x":206,"y":342,"w":206,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":206,"h":103},
+			"sourceSize": {"w":206,"h":103}
+		},
+		"reef_aquarium_162.png":
+		{
+			"frame": {"x":412,"y":342,"w":206,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":206,"h":103},
+			"sourceSize": {"w":206,"h":103}
+		},
+		"reef_aquarium_103.png":
+		{
+			"frame": {"x":0,"y":445,"w":33,"h":172},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":172},
+			"sourceSize": {"w":33,"h":172}
+		},
+		"reef_aquarium_171.png":
+		{
+			"frame": {"x":33,"y":445,"w":65,"h":156},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":156},
+			"sourceSize": {"w":65,"h":156}
+		},
+		"reef_aquarium_12.png":
+		{
+			"frame": {"x":98,"y":445,"w":101,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":150},
+			"sourceSize": {"w":101,"h":150}
+		},
+		"reef_aquarium_14.png":
+		{
+			"frame": {"x":199,"y":445,"w":97,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":140},
+			"sourceSize": {"w":97,"h":140}
+		},
+		"reef_aquarium_13.png":
+		{
+			"frame": {"x":296,"y":445,"w":130,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":123},
+			"sourceSize": {"w":130,"h":123}
+		},
+		"reef_aquarium_20.png":
+		{
+			"frame": {"x":426,"y":445,"w":10,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":117},
+			"sourceSize": {"w":10,"h":117}
+		},
+		"reef_aquarium_24.png":
+		{
+			"frame": {"x":436,"y":445,"w":10,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":117},
+			"sourceSize": {"w":10,"h":117}
+		},
+		"reef_aquarium_26.png":
+		{
+			"frame": {"x":446,"y":445,"w":10,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":117},
+			"sourceSize": {"w":10,"h":117}
+		},
+		"reef_aquarium_22.png":
+		{
+			"frame": {"x":456,"y":445,"w":10,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":116},
+			"sourceSize": {"w":10,"h":116}
+		},
+		"reef_aquarium_21.png":
+		{
+			"frame": {"x":466,"y":445,"w":10,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":114},
+			"sourceSize": {"w":10,"h":114}
+		},
+		"reef_aquarium_25.png":
+		{
+			"frame": {"x":476,"y":445,"w":10,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":113},
+			"sourceSize": {"w":10,"h":113}
+		},
+		"reef_aquarium_172.png":
+		{
+			"frame": {"x":586,"y":247,"w":103,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":103,"h":52},
+			"sourceSize": {"w":103,"h":52}
+		},
+		"reef_aquarium_174.png":
+		{
+			"frame": {"x":689,"y":247,"w":103,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":103,"h":52},
+			"sourceSize": {"w":103,"h":52}
+		},
+		"reef_aquarium_175.png":
+		{
+			"frame": {"x":394,"y":279,"w":103,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":103,"h":52},
+			"sourceSize": {"w":103,"h":52}
+		},
+		"reef_aquarium_92.png":
+		{
+			"frame": {"x":618,"y":342,"w":55,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":89},
+			"sourceSize": {"w":55,"h":89}
+		},
+		"reef_aquarium_93.png":
+		{
+			"frame": {"x":673,"y":342,"w":64,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":88},
+			"sourceSize": {"w":64,"h":88}
+		},
+		"reef_aquarium_95.png":
+		{
+			"frame": {"x":737,"y":342,"w":50,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":87},
+			"sourceSize": {"w":50,"h":87}
+		},
+		"reef_aquarium_98.png":
+		{
+			"frame": {"x":486,"y":445,"w":65,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":86},
+			"sourceSize": {"w":65,"h":86}
+		},
+		"reef_aquarium_99.png":
+		{
+			"frame": {"x":551,"y":445,"w":64,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":85},
+			"sourceSize": {"w":64,"h":85}
+		},
+		"reef_aquarium_94.png":
+		{
+			"frame": {"x":787,"y":342,"w":48,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":85},
+			"sourceSize": {"w":48,"h":85}
+		},
+		"reef_aquarium_96.png":
+		{
+			"frame": {"x":615,"y":445,"w":64,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":80},
+			"sourceSize": {"w":64,"h":80}
+		},
+		"reef_aquarium_97.png":
+		{
+			"frame": {"x":679,"y":445,"w":64,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":76},
+			"sourceSize": {"w":64,"h":76}
+		},
+		"reef_aquarium_152.png":
+		{
+			"frame": {"x":743,"y":445,"w":55,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":75},
+			"sourceSize": {"w":55,"h":75}
+		},
+		"reef_aquarium_150.png":
+		{
+			"frame": {"x":798,"y":445,"w":47,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":75},
+			"sourceSize": {"w":47,"h":75}
+		},
+		"reef_aquarium_155.png":
+		{
+			"frame": {"x":0,"y":617,"w":55,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":74},
+			"sourceSize": {"w":55,"h":74}
+		},
+		"reef_aquarium_46.png":
+		{
+			"frame": {"x":55,"y":617,"w":64,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":73},
+			"sourceSize": {"w":64,"h":73}
+		},
+		"reef_aquarium_156.png":
+		{
+			"frame": {"x":119,"y":617,"w":50,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":72},
+			"sourceSize": {"w":50,"h":72}
+		},
+		"reef_aquarium_47.png":
+		{
+			"frame": {"x":169,"y":617,"w":65,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":70},
+			"sourceSize": {"w":65,"h":70}
+		},
+		"reef_aquarium_157.png":
+		{
+			"frame": {"x":234,"y":617,"w":46,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":70},
+			"sourceSize": {"w":46,"h":70}
+		},
+		"reef_aquarium_44.png":
+		{
+			"frame": {"x":280,"y":617,"w":64,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":69},
+			"sourceSize": {"w":64,"h":69}
+		},
+		"reef_aquarium_45.png":
+		{
+			"frame": {"x":344,"y":617,"w":64,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+			"sourceSize": {"w":64,"h":64}
+		},
+		"reef_aquarium_49.png":
+		{
+			"frame": {"x":408,"y":617,"w":64,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":60},
+			"sourceSize": {"w":64,"h":60}
+		},
+		"reef_aquarium_50.png":
+		{
+			"frame": {"x":472,"y":617,"w":55,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":59},
+			"sourceSize": {"w":55,"h":59}
+		},
+		"reef_aquarium_48.png":
+		{
+			"frame": {"x":527,"y":617,"w":46,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":59},
+			"sourceSize": {"w":46,"h":59}
+		},
+		"reef_aquarium_53.png":
+		{
+			"frame": {"x":835,"y":342,"w":6,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":59},
+			"sourceSize": {"w":6,"h":59}
+		},
+		"reef_aquarium_75.png":
+		{
+			"frame": {"x":573,"y":617,"w":6,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":59},
+			"sourceSize": {"w":6,"h":59}
+		},
+		"reef_aquarium_56.png":
+		{
+			"frame": {"x":579,"y":617,"w":6,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":57},
+			"sourceSize": {"w":6,"h":57}
+		},
+		"reef_aquarium_58.png":
+		{
+			"frame": {"x":585,"y":617,"w":6,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":57},
+			"sourceSize": {"w":6,"h":57}
+		},
+		"reef_aquarium_67.png":
+		{
+			"frame": {"x":792,"y":247,"w":53,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":37},
+			"sourceSize": {"w":53,"h":37}
+		},
+		"reef_aquarium_69.png":
+		{
+			"frame": {"x":586,"y":299,"w":53,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":25},
+			"sourceSize": {"w":53,"h":25}
+		},
+		"reef_aquarium_68.png":
+		{
+			"frame": {"x":497,"y":279,"w":52,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":37},
+			"sourceSize": {"w":52,"h":37}
+		},
+		"reef_aquarium_57.png":
+		{
+			"frame": {"x":591,"y":617,"w":6,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":52},
+			"sourceSize": {"w":6,"h":52}
+		},
+		"reef_aquarium_70.png":
+		{
+			"frame": {"x":639,"y":299,"w":50,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":18},
+			"sourceSize": {"w":50,"h":18}
+		},
+		"reef_aquarium_55.png":
+		{
+			"frame": {"x":597,"y":617,"w":6,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":50},
+			"sourceSize": {"w":6,"h":50}
+		},
+		"reef_aquarium_72.png":
+		{
+			"frame": {"x":192,"y":309,"w":48,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":27},
+			"sourceSize": {"w":48,"h":27}
+		},
+		"reef_aquarium_71.png":
+		{
+			"frame": {"x":64,"y":311,"w":47,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":28},
+			"sourceSize": {"w":47,"h":28}
+		},
+		"reef_aquarium_148.png":
+		{
+			"frame": {"x":111,"y":311,"w":46,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":28},
+			"sourceSize": {"w":46,"h":28}
+		},
+		"reef_aquarium_65.png":
+		{
+			"frame": {"x":603,"y":617,"w":45,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":42},
+			"sourceSize": {"w":45,"h":42}
+		},
+		"reef_aquarium_62.png":
+		{
+			"frame": {"x":0,"y":691,"w":29,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":45},
+			"sourceSize": {"w":29,"h":45}
+		},
+		"reef_aquarium_86.png":
+		{
+			"frame": {"x":29,"y":691,"w":28,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":45},
+			"sourceSize": {"w":28,"h":45}
+		},
+		"reef_aquarium_59.png":
+		{
+			"frame": {"x":240,"y":309,"w":45,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":27},
+			"sourceSize": {"w":45,"h":27}
+		},
+		"reef_aquarium_64.png":
+		{
+			"frame": {"x":57,"y":691,"w":36,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":44},
+			"sourceSize": {"w":36,"h":44}
+		},
+		"reef_aquarium_84.png":
+		{
+			"frame": {"x":93,"y":691,"w":33,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":44},
+			"sourceSize": {"w":33,"h":44}
+		},
+		"reef_aquarium_85.png":
+		{
+			"frame": {"x":126,"y":691,"w":32,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":44},
+			"sourceSize": {"w":32,"h":44}
+		},
+		"reef_aquarium_87.png":
+		{
+			"frame": {"x":158,"y":691,"w":25,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":44},
+			"sourceSize": {"w":25,"h":44}
+		},
+		"reef_aquarium_60.png":
+		{
+			"frame": {"x":183,"y":691,"w":22,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":44},
+			"sourceSize": {"w":22,"h":44}
+		},
+		"reef_aquarium_82.png":
+		{
+			"frame": {"x":205,"y":691,"w":33,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":43},
+			"sourceSize": {"w":33,"h":43}
+		},
+		"reef_aquarium_88.png":
+		{
+			"frame": {"x":238,"y":691,"w":24,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":43},
+			"sourceSize": {"w":24,"h":43}
+		},
+		"reef_aquarium_81.png":
+		{
+			"frame": {"x":648,"y":617,"w":33,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":41},
+			"sourceSize": {"w":33,"h":41}
+		},
+		"reef_aquarium_146.png":
+		{
+			"frame": {"x":681,"y":617,"w":40,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":31},
+			"sourceSize": {"w":40,"h":31}
+		},
+		"reef_aquarium_1.png":
+		{
+			"frame": {"x":262,"y":691,"w":39,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":38},
+			"sourceSize": {"w":39,"h":38}
+		},
+		"reef_aquarium_80.png":
+		{
+			"frame": {"x":0,"y":736,"w":33,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":39},
+			"sourceSize": {"w":33,"h":39}
+		},
+		"reef_aquarium_111.png":
+		{
+			"frame": {"x":301,"y":691,"w":28,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":38},
+			"sourceSize": {"w":28,"h":38}
+		},
+		"reef_aquarium_117.png":
+		{
+			"frame": {"x":329,"y":691,"w":28,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":38},
+			"sourceSize": {"w":28,"h":38}
+		},
+		"reef_aquarium_112.png":
+		{
+			"frame": {"x":357,"y":691,"w":24,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":38},
+			"sourceSize": {"w":24,"h":38}
+		},
+		"reef_aquarium_51.png":
+		{
+			"frame": {"x":381,"y":691,"w":20,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":38},
+			"sourceSize": {"w":20,"h":38}
+		},
+		"reef_aquarium_139.png":
+		{
+			"frame": {"x":549,"y":279,"w":32,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":37},
+			"sourceSize": {"w":32,"h":37}
+		},
+		"reef_aquarium_115.png":
+		{
+			"frame": {"x":401,"y":691,"w":25,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":37},
+			"sourceSize": {"w":25,"h":37}
+		},
+		"reef_aquarium_127.png":
+		{
+			"frame": {"x":426,"y":691,"w":33,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":36},
+			"sourceSize": {"w":33,"h":36}
+		},
+		"reef_aquarium_106.png":
+		{
+			"frame": {"x":459,"y":691,"w":23,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":36},
+			"sourceSize": {"w":23,"h":36}
+		},
+		"reef_aquarium_141.png":
+		{
+			"frame": {"x":482,"y":691,"w":23,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":36},
+			"sourceSize": {"w":23,"h":36}
+		},
+		"reef_aquarium_128.png":
+		{
+			"frame": {"x":505,"y":691,"w":33,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":35},
+			"sourceSize": {"w":33,"h":35}
+		},
+		"reef_aquarium_142.png":
+		{
+			"frame": {"x":538,"y":691,"w":23,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":35},
+			"sourceSize": {"w":23,"h":35}
+		},
+		"reef_aquarium_3.png":
+		{
+			"frame": {"x":792,"y":284,"w":35,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":12},
+			"sourceSize": {"w":35,"h":12}
+		},
+		"reef_aquarium_129.png":
+		{
+			"frame": {"x":561,"y":691,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"reef_aquarium_145.png":
+		{
+			"frame": {"x":594,"y":691,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"reef_aquarium_130.png":
+		{
+			"frame": {"x":721,"y":617,"w":33,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":31},
+			"sourceSize": {"w":33,"h":31}
+		},
+		"reef_aquarium_163.png":
+		{
+			"frame": {"x":626,"y":691,"w":26,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":32},
+			"sourceSize": {"w":26,"h":32}
+		},
+		"reef_aquarium_34.png":
+		{
+			"frame": {"x":754,"y":617,"w":20,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":31},
+			"sourceSize": {"w":20,"h":31}
+		},
+		"reef_aquarium_4.png":
+		{
+			"frame": {"x":285,"y":309,"w":31,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":19},
+			"sourceSize": {"w":31,"h":19}
+		},
+		"reef_aquarium_9.png":
+		{
+			"frame": {"x":689,"y":299,"w":31,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":12},
+			"sourceSize": {"w":31,"h":12}
+		},
+		"reef_aquarium_131.png":
+		{
+			"frame": {"x":774,"y":617,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"reef_aquarium_133.png":
+		{
+			"frame": {"x":802,"y":617,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		},
+		"reef_aquarium_100.png":
+		{
+			"frame": {"x":157,"y":311,"w":28,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":20},
+			"sourceSize": {"w":28,"h":20}
+		},
+		"reef_aquarium_143.png":
+		{
+			"frame": {"x":316,"y":309,"w":27,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":19},
+			"sourceSize": {"w":27,"h":19}
+		},
+		"reef_aquarium_153.png":
+		{
+			"frame": {"x":343,"y":309,"w":27,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":19},
+			"sourceSize": {"w":27,"h":19}
+		},
+		"reef_aquarium_154.png":
+		{
+			"frame": {"x":586,"y":324,"w":27,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":13},
+			"sourceSize": {"w":27,"h":13}
+		},
+		"reef_aquarium_149.png":
+		{
+			"frame": {"x":720,"y":299,"w":25,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":9},
+			"sourceSize": {"w":25,"h":9}
+		},
+		"reef_aquarium_90.png":
+		{
+			"frame": {"x":497,"y":316,"w":24,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":15},
+			"sourceSize": {"w":24,"h":15}
+		},
+		"reef_aquarium_104.png":
+		{
+			"frame": {"x":521,"y":316,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		},
+		"reef_aquarium_140.png":
+		{
+			"frame": {"x":486,"y":531,"w":23,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":22},
+			"sourceSize": {"w":23,"h":22}
+		},
+		"reef_aquarium_147.png":
+		{
+			"frame": {"x":826,"y":617,"w":19,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":23},
+			"sourceSize": {"w":19,"h":23}
+		},
+		"reef_aquarium_144.png":
+		{
+			"frame": {"x":652,"y":691,"w":15,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":23},
+			"sourceSize": {"w":15,"h":23}
+		},
+		"reef_aquarium_109.png":
+		{
+			"frame": {"x":370,"y":309,"w":23,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":15},
+			"sourceSize": {"w":23,"h":15}
+		},
+		"reef_aquarium_151.png":
+		{
+			"frame": {"x":545,"y":316,"w":23,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":14},
+			"sourceSize": {"w":23,"h":14}
+		},
+		"reef_aquarium_158.png":
+		{
+			"frame": {"x":667,"y":691,"w":11,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":23},
+			"sourceSize": {"w":11,"h":23}
+		},
+		"reef_aquarium_6.png":
+		{
+			"frame": {"x":618,"y":431,"w":22,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":14},
+			"sourceSize": {"w":22,"h":14}
+		},
+		"reef_aquarium_10.png":
+		{
+			"frame": {"x":613,"y":324,"w":22,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":11},
+			"sourceSize": {"w":22,"h":11}
+		},
+		"reef_aquarium_102.png":
+		{
+			"frame": {"x":509,"y":531,"w":15,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":21},
+			"sourceSize": {"w":15,"h":21}
+		},
+		"reef_aquarium_19.png":
+		{
+			"frame": {"x":524,"y":531,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"reef_aquarium_23.png":
+		{
+			"frame": {"x":544,"y":531,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"reef_aquarium_27.png":
+		{
+			"frame": {"x":564,"y":531,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"reef_aquarium_91.png":
+		{
+			"frame": {"x":584,"y":531,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"reef_aquarium_17.png":
+		{
+			"frame": {"x":604,"y":531,"w":20,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":19},
+			"sourceSize": {"w":20,"h":19}
+		},
+		"reef_aquarium_18.png":
+		{
+			"frame": {"x":624,"y":531,"w":20,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":19},
+			"sourceSize": {"w":20,"h":19}
+		},
+		"reef_aquarium_110.png":
+		{
+			"frame": {"x":644,"y":531,"w":20,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":16},
+			"sourceSize": {"w":20,"h":16}
+		},
+		"reef_aquarium_101.png":
+		{
+			"frame": {"x":678,"y":691,"w":15,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":20},
+			"sourceSize": {"w":15,"h":20}
+		},
+		"reef_aquarium_32.png":
+		{
+			"frame": {"x":640,"y":431,"w":20,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":13},
+			"sourceSize": {"w":20,"h":13}
+		},
+		"reef_aquarium_159.png":
+		{
+			"frame": {"x":835,"y":401,"w":10,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":20},
+			"sourceSize": {"w":10,"h":20}
+		},
+		"reef_aquarium_54.png":
+		{
+			"frame": {"x":664,"y":531,"w":19,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":14},
+			"sourceSize": {"w":19,"h":14}
+		},
+		"reef_aquarium_79.png":
+		{
+			"frame": {"x":683,"y":531,"w":19,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":14},
+			"sourceSize": {"w":19,"h":14}
+		},
+		"reef_aquarium_77.png":
+		{
+			"frame": {"x":296,"y":568,"w":18,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":15},
+			"sourceSize": {"w":18,"h":15}
+		},
+		"reef_aquarium_105.png":
+		{
+			"frame": {"x":693,"y":691,"w":12,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":18},
+			"sourceSize": {"w":12,"h":18}
+		},
+		"reef_aquarium_108.png":
+		{
+			"frame": {"x":705,"y":691,"w":12,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":18},
+			"sourceSize": {"w":12,"h":18}
+		},
+		"reef_aquarium_43.png":
+		{
+			"frame": {"x":717,"y":691,"w":10,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":18},
+			"sourceSize": {"w":10,"h":18}
+		},
+		"reef_aquarium_125.png":
+		{
+			"frame": {"x":827,"y":284,"w":18,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":7},
+			"sourceSize": {"w":18,"h":7}
+		},
+		"reef_aquarium_169.png":
+		{
+			"frame": {"x":745,"y":299,"w":18,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":7},
+			"sourceSize": {"w":18,"h":7}
+		},
+		"reef_aquarium_107.png":
+		{
+			"frame": {"x":727,"y":691,"w":16,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":17},
+			"sourceSize": {"w":16,"h":17}
+		},
+		"reef_aquarium_31.png":
+		{
+			"frame": {"x":568,"y":316,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"reef_aquarium_61.png":
+		{
+			"frame": {"x":702,"y":531,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"reef_aquarium_63.png":
+		{
+			"frame": {"x":719,"y":531,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"reef_aquarium_66.png":
+		{
+			"frame": {"x":736,"y":531,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"reef_aquarium_83.png":
+		{
+			"frame": {"x":753,"y":531,"w":17,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":14},
+			"sourceSize": {"w":17,"h":14}
+		},
+		"reef_aquarium_78.png":
+		{
+			"frame": {"x":743,"y":691,"w":13,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":17},
+			"sourceSize": {"w":13,"h":17}
+		},
+		"reef_aquarium_136.png":
+		{
+			"frame": {"x":33,"y":601,"w":10,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":16},
+			"sourceSize": {"w":10,"h":16}
+		},
+		"reef_aquarium_123.png":
+		{
+			"frame": {"x":635,"y":324,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"reef_aquarium_176.png":
+		{
+			"frame": {"x":651,"y":324,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"reef_aquarium_35.png":
+		{
+			"frame": {"x":667,"y":324,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"reef_aquarium_170.png":
+		{
+			"frame": {"x":763,"y":299,"w":16,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":7},
+			"sourceSize": {"w":16,"h":7}
+		},
+		"reef_aquarium_28.png":
+		{
+			"frame": {"x":770,"y":531,"w":15,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":14},
+			"sourceSize": {"w":15,"h":14}
+		},
+		"reef_aquarium_74.png":
+		{
+			"frame": {"x":660,"y":431,"w":15,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":13},
+			"sourceSize": {"w":15,"h":13}
+		},
+		"reef_aquarium_178.png":
+		{
+			"frame": {"x":683,"y":324,"w":15,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":9},
+			"sourceSize": {"w":15,"h":9}
+		},
+		"reef_aquarium_38.png":
+		{
+			"frame": {"x":314,"y":568,"w":8,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":15},
+			"sourceSize": {"w":8,"h":15}
+		},
+		"reef_aquarium_76.png":
+		{
+			"frame": {"x":785,"y":531,"w":10,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":14},
+			"sourceSize": {"w":10,"h":14}
+		},
+		"reef_aquarium_8.png":
+		{
+			"frame": {"x":675,"y":431,"w":13,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":12},
+			"sourceSize": {"w":13,"h":12}
+		},
+		"reef_aquarium_39.png":
+		{
+			"frame": {"x":688,"y":431,"w":11,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":12},
+			"sourceSize": {"w":11,"h":12}
+		},
+		"reef_aquarium_33.png":
+		{
+			"frame": {"x":394,"y":331,"w":12,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":10},
+			"sourceSize": {"w":12,"h":10}
+		},
+		"reef_aquarium_167.png":
+		{
+			"frame": {"x":779,"y":299,"w":12,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":6},
+			"sourceSize": {"w":12,"h":6}
+		},
+		"reef_aquarium_177.png":
+		{
+			"frame": {"x":699,"y":431,"w":8,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":11},
+			"sourceSize": {"w":8,"h":11}
+		},
+		"reef_aquarium_134.png":
+		{
+			"frame": {"x":639,"y":317,"w":11,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":7},
+			"sourceSize": {"w":11,"h":7}
+		},
+		"reef_aquarium_135.png":
+		{
+			"frame": {"x":650,"y":317,"w":11,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":7},
+			"sourceSize": {"w":11,"h":7}
+		},
+		"reef_aquarium_166.png":
+		{
+			"frame": {"x":661,"y":317,"w":11,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":7},
+			"sourceSize": {"w":11,"h":7}
+		},
+		"reef_aquarium_7.png":
+		{
+			"frame": {"x":827,"y":291,"w":11,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":4},
+			"sourceSize": {"w":11,"h":4}
+		},
+		"reef_aquarium_173.png":
+		{
+			"frame": {"x":406,"y":331,"w":8,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":10},
+			"sourceSize": {"w":8,"h":10}
+		},
+		"reef_aquarium_124.png":
+		{
+			"frame": {"x":698,"y":324,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"reef_aquarium_121.png":
+		{
+			"frame": {"x":672,"y":317,"w":10,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":7},
+			"sourceSize": {"w":10,"h":7}
+		},
+		"reef_aquarium_15.png":
+		{
+			"frame": {"x":682,"y":317,"w":10,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":7},
+			"sourceSize": {"w":10,"h":7}
+		},
+		"reef_aquarium_16.png":
+		{
+			"frame": {"x":692,"y":317,"w":10,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":7},
+			"sourceSize": {"w":10,"h":7}
+		},
+		"reef_aquarium_114.png":
+		{
+			"frame": {"x":708,"y":324,"w":9,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+			"sourceSize": {"w":9,"h":8}
+		},
+		"reef_aquarium_118.png":
+		{
+			"frame": {"x":414,"y":331,"w":7,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":9},
+			"sourceSize": {"w":7,"h":9}
+		},
+		"reef_aquarium_113.png":
+		{
+			"frame": {"x":702,"y":317,"w":9,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":7},
+			"sourceSize": {"w":9,"h":7}
+		},
+		"reef_aquarium_119.png":
+		{
+			"frame": {"x":711,"y":317,"w":9,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":7},
+			"sourceSize": {"w":9,"h":7}
+		},
+		"reef_aquarium_120.png":
+		{
+			"frame": {"x":720,"y":317,"w":9,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":7},
+			"sourceSize": {"w":9,"h":7}
+		},
+		"reef_aquarium_36.png":
+		{
+			"frame": {"x":729,"y":317,"w":9,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":7},
+			"sourceSize": {"w":9,"h":7}
+		},
+		"reef_aquarium_116.png":
+		{
+			"frame": {"x":791,"y":299,"w":9,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":6},
+			"sourceSize": {"w":9,"h":6}
+		},
+		"reef_aquarium_30.png":
+		{
+			"frame": {"x":800,"y":299,"w":9,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":5},
+			"sourceSize": {"w":9,"h":5}
+		},
+		"reef_aquarium_122.png":
+		{
+			"frame": {"x":738,"y":317,"w":8,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":7},
+			"sourceSize": {"w":8,"h":7}
+		},
+		"reef_aquarium_29.png":
+		{
+			"frame": {"x":746,"y":317,"w":8,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":7},
+			"sourceSize": {"w":8,"h":7}
+		},
+		"reef_aquarium_40.png":
+		{
+			"frame": {"x":717,"y":324,"w":5,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":8},
+			"sourceSize": {"w":5,"h":8}
+		},
+		"reef_aquarium_37.png":
+		{
+			"frame": {"x":722,"y":324,"w":4,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":8},
+			"sourceSize": {"w":4,"h":8}
+		},
+		"reef_aquarium_126.png":
+		{
+			"frame": {"x":754,"y":317,"w":5,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":7},
+			"sourceSize": {"w":5,"h":7}
+		},
+		"reef_aquarium_165.png":
+		{
+			"frame": {"x":689,"y":311,"w":6,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":6},
+			"sourceSize": {"w":6,"h":6}
+		},
+		"reef_aquarium_42.png":
+		{
+			"frame": {"x":695,"y":311,"w":6,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":6},
+			"sourceSize": {"w":6,"h":6}
+		},
+		"reef_aquarium_41.png":
+		{
+			"frame": {"x":838,"y":291,"w":6,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":4},
+			"sourceSize": {"w":6,"h":4}
+		},
+		"reef_aquarium_168.png":
+		{
+			"frame": {"x":792,"y":296,"w":6,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":2},
+			"sourceSize": {"w":6,"h":2}
+		}
+	}
+}

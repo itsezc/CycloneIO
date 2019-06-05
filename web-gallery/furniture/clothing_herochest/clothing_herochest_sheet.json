@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_herochest_sheet.png",
+		"size": {"w":66,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_herochest_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":68},
+			"sourceSize": {"w":36,"h":68}
+		},
+		"clothing_herochest_3.png":
+		{
+			"frame": {"x":36,"y":0,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

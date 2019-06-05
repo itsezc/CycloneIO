@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "xmas_c15_bushy1_sheet.png",
+		"size": {"w":220,"h":137},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c15_bushy1_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":78,"h":137},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":137},
+			"sourceSize": {"w":78,"h":137}
+		},
+		"xmas_c15_bushy1_7.png":
+		{
+			"frame": {"x":78,"y":0,"w":76,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":136},
+			"sourceSize": {"w":76,"h":136}
+		},
+		"xmas_c15_bushy1_2.png":
+		{
+			"frame": {"x":154,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"xmas_c15_bushy1_9.png":
+		{
+			"frame": {"x":154,"y":33,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		}
+	}
+}

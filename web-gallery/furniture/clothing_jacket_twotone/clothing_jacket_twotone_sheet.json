@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_jacket_twotone_sheet.png",
+		"size": {"w":76,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_jacket_twotone_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":24},
+			"sourceSize": {"w":38,"h":24}
+		},
+		"clothing_jacket_twotone_1.png":
+		{
+			"frame": {"x":38,"y":0,"w":38,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":19},
+			"sourceSize": {"w":38,"h":19}
+		},
+		"clothing_jacket_twotone_6.png":
+		{
+			"frame": {"x":0,"y":24,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_jacket_twotone_9.png":
+		{
+			"frame": {"x":38,"y":19,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

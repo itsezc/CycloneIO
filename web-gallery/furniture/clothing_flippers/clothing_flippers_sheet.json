@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_flippers_sheet.png",
+		"size": {"w":78,"h":37},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_flippers_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":37},
+			"sourceSize": {"w":48,"h":37}
+		},
+		"clothing_flippers_6.png":
+		{
+			"frame": {"x":48,"y":0,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

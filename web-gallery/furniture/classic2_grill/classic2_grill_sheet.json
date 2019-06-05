@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "classic2_grill_sheet.png",
+		"size": {"w":244,"h":174},
+		"scale": "1"
+	},
+	"frames": {
+		"classic2_grill_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":120,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":62},
+			"sourceSize": {"w":120,"h":62}
+		},
+		"classic2_grill_7.png":
+		{
+			"frame": {"x":0,"y":62,"w":65,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":112},
+			"sourceSize": {"w":65,"h":112}
+		},
+		"classic2_grill_1.png":
+		{
+			"frame": {"x":120,"y":0,"w":60,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":111},
+			"sourceSize": {"w":60,"h":111}
+		},
+		"classic2_grill_2.png":
+		{
+			"frame": {"x":180,"y":0,"w":64,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":109},
+			"sourceSize": {"w":64,"h":109}
+		},
+		"classic2_grill_5.png":
+		{
+			"frame": {"x":180,"y":109,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		}
+	}
+}

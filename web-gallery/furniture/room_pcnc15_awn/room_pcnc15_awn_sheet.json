@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "room_pcnc15_awn_sheet.png",
+		"size": {"w":217,"h":149},
+		"scale": "1"
+	},
+	"frames": {
+		"room_pcnc15_awn_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":140,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":140,"h":69},
+			"sourceSize": {"w":140,"h":69}
+		},
+		"room_pcnc15_awn_3.png":
+		{
+			"frame": {"x":0,"y":69,"w":87,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":80},
+			"sourceSize": {"w":87,"h":80}
+		},
+		"room_pcnc15_awn_6.png":
+		{
+			"frame": {"x":140,"y":0,"w":77,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":74},
+			"sourceSize": {"w":77,"h":74}
+		},
+		"room_pcnc15_awn_7.png":
+		{
+			"frame": {"x":140,"y":74,"w":67,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":74},
+			"sourceSize": {"w":67,"h":74}
+		},
+		"room_pcnc15_awn_4.png":
+		{
+			"frame": {"x":87,"y":69,"w":29,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":24},
+			"sourceSize": {"w":29,"h":24}
+		}
+	}
+}

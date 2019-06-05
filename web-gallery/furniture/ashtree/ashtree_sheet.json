@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ashtree_sheet.png",
+		"size": {"w":172,"h":156},
+		"scale": "1"
+	},
+	"frames": {
+		"ashtree_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":118,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":103},
+			"sourceSize": {"w":118,"h":103}
+		},
+		"ashtree_5.png":
+		{
+			"frame": {"x":118,"y":0,"w":54,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":103},
+			"sourceSize": {"w":54,"h":103}
+		},
+		"ashtree_2.png":
+		{
+			"frame": {"x":0,"y":103,"w":27,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":53},
+			"sourceSize": {"w":27,"h":53}
+		},
+		"ashtree_6.png":
+		{
+			"frame": {"x":27,"y":103,"w":37,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":14},
+			"sourceSize": {"w":37,"h":14}
+		},
+		"ashtree_3.png":
+		{
+			"frame": {"x":27,"y":117,"w":15,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":29},
+			"sourceSize": {"w":15,"h":29}
+		},
+		"ashtree_1.png":
+		{
+			"frame": {"x":64,"y":103,"w":16,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":6},
+			"sourceSize": {"w":16,"h":6}
+		}
+	}
+}

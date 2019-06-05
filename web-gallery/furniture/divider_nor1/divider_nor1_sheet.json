@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "divider_nor1_sheet.png",
+		"size": {"w":181,"h":164},
+		"scale": "1"
+	},
+	"frames": {
+		"divider_nor1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":120,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":100},
+			"sourceSize": {"w":120,"h":100}
+		},
+		"divider_nor1_5.png":
+		{
+			"frame": {"x":120,"y":0,"w":61,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":66},
+			"sourceSize": {"w":61,"h":66}
+		},
+		"divider_nor1_10.png":
+		{
+			"frame": {"x":0,"y":100,"w":59,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":64},
+			"sourceSize": {"w":59,"h":64}
+		},
+		"divider_nor1_1.png":
+		{
+			"frame": {"x":120,"y":66,"w":30,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":34},
+			"sourceSize": {"w":30,"h":34}
+		},
+		"divider_nor1_8.png":
+		{
+			"frame": {"x":150,"y":66,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		},
+		"divider_nor1_6.png":
+		{
+			"frame": {"x":59,"y":100,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		},
+		"divider_nor1_7.png":
+		{
+			"frame": {"x":87,"y":100,"w":27,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":16},
+			"sourceSize": {"w":27,"h":16}
+		}
+	}
+}

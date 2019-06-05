@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_r18_dungarees_sheet.png",
+		"size": {"w":63,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_r18_dungarees_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":100},
+			"sourceSize": {"w":36,"h":100}
+		},
+		"clothing_r18_dungarees_2.png":
+		{
+			"frame": {"x":36,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

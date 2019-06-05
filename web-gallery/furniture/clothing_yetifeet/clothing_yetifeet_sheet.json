@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_yetifeet_sheet.png",
+		"size": {"w":94,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_yetifeet_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":37},
+			"sourceSize": {"w":48,"h":37}
+		},
+		"clothing_yetifeet_1.png":
+		{
+			"frame": {"x":48,"y":0,"w":46,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":23},
+			"sourceSize": {"w":46,"h":23}
+		},
+		"clothing_yetifeet_2.png":
+		{
+			"frame": {"x":0,"y":37,"w":29,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":27},
+			"sourceSize": {"w":29,"h":27}
+		}
+	}
+}

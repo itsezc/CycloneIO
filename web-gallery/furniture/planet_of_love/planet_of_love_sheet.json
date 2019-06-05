@@ -1,0 +1,377 @@
+{
+	"meta": {
+		"image": "planet_of_love_sheet.png",
+		"size": {"w":211,"h":199},
+		"scale": "1"
+	},
+	"frames": {
+		"planet_of_love_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":145,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":138},
+			"sourceSize": {"w":145,"h":138}
+		},
+		"planet_of_love_10.png":
+		{
+			"frame": {"x":145,"y":0,"w":66,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":66},
+			"sourceSize": {"w":66,"h":66}
+		},
+		"planet_of_love_7.png":
+		{
+			"frame": {"x":145,"y":66,"w":64,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":64},
+			"sourceSize": {"w":64,"h":64}
+		},
+		"planet_of_love_5.png":
+		{
+			"frame": {"x":0,"y":138,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"planet_of_love_6.png":
+		{
+			"frame": {"x":33,"y":138,"w":33,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":33},
+			"sourceSize": {"w":33,"h":33}
+		},
+		"planet_of_love_37.png":
+		{
+			"frame": {"x":66,"y":138,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"planet_of_love_38.png":
+		{
+			"frame": {"x":92,"y":138,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"planet_of_love_39.png":
+		{
+			"frame": {"x":118,"y":138,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"planet_of_love_40.png":
+		{
+			"frame": {"x":144,"y":138,"w":26,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":26},
+			"sourceSize": {"w":26,"h":26}
+		},
+		"planet_of_love_42.png":
+		{
+			"frame": {"x":170,"y":138,"w":22,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":9},
+			"sourceSize": {"w":22,"h":9}
+		},
+		"planet_of_love_22.png":
+		{
+			"frame": {"x":170,"y":147,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_24.png":
+		{
+			"frame": {"x":185,"y":147,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_26.png":
+		{
+			"frame": {"x":0,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_28.png":
+		{
+			"frame": {"x":15,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_29.png":
+		{
+			"frame": {"x":30,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_30.png":
+		{
+			"frame": {"x":45,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_31.png":
+		{
+			"frame": {"x":60,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_33.png":
+		{
+			"frame": {"x":75,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_34.png":
+		{
+			"frame": {"x":90,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_35.png":
+		{
+			"frame": {"x":105,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_41.png":
+		{
+			"frame": {"x":120,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_43.png":
+		{
+			"frame": {"x":135,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_44.png":
+		{
+			"frame": {"x":150,"y":171,"w":15,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+			"sourceSize": {"w":15,"h":15}
+		},
+		"planet_of_love_23.png":
+		{
+			"frame": {"x":165,"y":171,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"planet_of_love_25.png":
+		{
+			"frame": {"x":178,"y":171,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"planet_of_love_27.png":
+		{
+			"frame": {"x":191,"y":171,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"planet_of_love_32.png":
+		{
+			"frame": {"x":0,"y":186,"w":13,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":13},
+			"sourceSize": {"w":13,"h":13}
+		},
+		"planet_of_love_2.png":
+		{
+			"frame": {"x":145,"y":130,"w":13,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":6},
+			"sourceSize": {"w":13,"h":6}
+		},
+		"planet_of_love_11.png":
+		{
+			"frame": {"x":192,"y":138,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_12.png":
+		{
+			"frame": {"x":200,"y":138,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_13.png":
+		{
+			"frame": {"x":200,"y":147,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_15.png":
+		{
+			"frame": {"x":13,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_16.png":
+		{
+			"frame": {"x":21,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_17.png":
+		{
+			"frame": {"x":29,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_18.png":
+		{
+			"frame": {"x":37,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_19.png":
+		{
+			"frame": {"x":45,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_20.png":
+		{
+			"frame": {"x":53,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_46.png":
+		{
+			"frame": {"x":61,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_47.png":
+		{
+			"frame": {"x":69,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_48.png":
+		{
+			"frame": {"x":77,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_9.png":
+		{
+			"frame": {"x":85,"y":186,"w":8,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":8},
+			"sourceSize": {"w":8,"h":8}
+		},
+		"planet_of_love_3.png":
+		{
+			"frame": {"x":158,"y":130,"w":8,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":4},
+			"sourceSize": {"w":8,"h":4}
+		},
+		"planet_of_love_50.png":
+		{
+			"frame": {"x":166,"y":130,"w":4,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+			"sourceSize": {"w":4,"h":4}
+		},
+		"planet_of_love_1.png":
+		{
+			"frame": {"x":170,"y":130,"w":4,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":3},
+			"sourceSize": {"w":4,"h":3}
+		},
+		"planet_of_love_36.png":
+		{
+			"frame": {"x":174,"y":130,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"planet_of_love_8.png":
+		{
+			"frame": {"x":177,"y":130,"w":3,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":1},
+			"sourceSize": {"w":3,"h":1}
+		}
+	}
+}

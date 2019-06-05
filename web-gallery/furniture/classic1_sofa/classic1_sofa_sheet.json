@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "classic1_sofa_sheet.png",
+		"size": {"w":185,"h":181},
+		"scale": "1"
+	},
+	"frames": {
+		"classic1_sofa_16.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"classic1_sofa_17.png":
+		{
+			"frame": {"x":66,"y":0,"w":57,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":71},
+			"sourceSize": {"w":57,"h":71}
+		},
+		"classic1_sofa_2.png":
+		{
+			"frame": {"x":123,"y":0,"w":62,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":65},
+			"sourceSize": {"w":62,"h":65}
+		},
+		"classic1_sofa_3.png":
+		{
+			"frame": {"x":0,"y":73,"w":41,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":63},
+			"sourceSize": {"w":41,"h":63}
+		},
+		"classic1_sofa_6.png":
+		{
+			"frame": {"x":41,"y":73,"w":62,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":61},
+			"sourceSize": {"w":62,"h":61}
+		},
+		"classic1_sofa_7.png":
+		{
+			"frame": {"x":103,"y":73,"w":42,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":55},
+			"sourceSize": {"w":42,"h":55}
+		},
+		"classic1_sofa_11.png":
+		{
+			"frame": {"x":0,"y":136,"w":42,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":45},
+			"sourceSize": {"w":42,"h":45}
+		},
+		"classic1_sofa_10.png":
+		{
+			"frame": {"x":145,"y":73,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		},
+		"classic1_sofa_1.png":
+		{
+			"frame": {"x":145,"y":96,"w":20,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":17},
+			"sourceSize": {"w":20,"h":17}
+		},
+		"classic1_sofa_15.png":
+		{
+			"frame": {"x":165,"y":96,"w":13,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":10},
+			"sourceSize": {"w":13,"h":10}
+		},
+		"classic1_sofa_13.png":
+		{
+			"frame": {"x":123,"y":65,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"classic1_sofa_14.png":
+		{
+			"frame": {"x":124,"y":65,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"classic1_sofa_5.png":
+		{
+			"frame": {"x":125,"y":65,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

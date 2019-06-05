@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "mystics_rfountain_sheet.png",
+		"size": {"w":104,"h":93},
+		"scale": "1"
+	},
+	"frames": {
+		"mystics_rfountain_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":41,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":61},
+			"sourceSize": {"w":41,"h":61}
+		},
+		"mystics_rfountain_17.png":
+		{
+			"frame": {"x":41,"y":0,"w":42,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":12},
+			"sourceSize": {"w":42,"h":12}
+		},
+		"mystics_rfountain_16.png":
+		{
+			"frame": {"x":41,"y":12,"w":20,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":41},
+			"sourceSize": {"w":20,"h":41}
+		},
+		"mystics_rfountain_11.png":
+		{
+			"frame": {"x":61,"y":12,"w":16,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":41},
+			"sourceSize": {"w":16,"h":41}
+		},
+		"mystics_rfountain_13.png":
+		{
+			"frame": {"x":83,"y":0,"w":21,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":40},
+			"sourceSize": {"w":21,"h":40}
+		},
+		"mystics_rfountain_7.png":
+		{
+			"frame": {"x":0,"y":61,"w":22,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":32},
+			"sourceSize": {"w":22,"h":32}
+		},
+		"mystics_rfountain_15.png":
+		{
+			"frame": {"x":22,"y":61,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		},
+		"mystics_rfountain_5.png":
+		{
+			"frame": {"x":83,"y":40,"w":11,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":21},
+			"sourceSize": {"w":11,"h":21}
+		},
+		"mystics_rfountain_9.png":
+		{
+			"frame": {"x":41,"y":53,"w":21,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":7},
+			"sourceSize": {"w":21,"h":7}
+		},
+		"mystics_rfountain_2.png":
+		{
+			"frame": {"x":44,"y":61,"w":11,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":19},
+			"sourceSize": {"w":11,"h":19}
+		},
+		"mystics_rfountain_6.png":
+		{
+			"frame": {"x":94,"y":40,"w":8,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":19},
+			"sourceSize": {"w":8,"h":19}
+		},
+		"mystics_rfountain_4.png":
+		{
+			"frame": {"x":102,"y":40,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

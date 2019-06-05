@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "heart_sheet.png",
+		"size": {"w":184,"h":169},
+		"scale": "1"
+	},
+	"frames": {
+		"heart_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":118,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":100},
+			"sourceSize": {"w":118,"h":100}
+		},
+		"heart_11.png":
+		{
+			"frame": {"x":118,"y":0,"w":31,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":70},
+			"sourceSize": {"w":31,"h":70}
+		},
+		"heart_1.png":
+		{
+			"frame": {"x":149,"y":0,"w":35,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":67},
+			"sourceSize": {"w":35,"h":67}
+		},
+		"heart_7.png":
+		{
+			"frame": {"x":0,"y":100,"w":52,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":34},
+			"sourceSize": {"w":52,"h":34}
+		},
+		"heart_4.png":
+		{
+			"frame": {"x":0,"y":134,"w":15,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":35},
+			"sourceSize": {"w":15,"h":35}
+		},
+		"heart_10.png":
+		{
+			"frame": {"x":149,"y":67,"w":17,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":33},
+			"sourceSize": {"w":17,"h":33}
+		},
+		"heart_8.png":
+		{
+			"frame": {"x":118,"y":70,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"heart_6.png":
+		{
+			"frame": {"x":52,"y":100,"w":26,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":17},
+			"sourceSize": {"w":26,"h":17}
+		}
+	}
+}

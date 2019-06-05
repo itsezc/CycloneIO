@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "nest_bunny_blue_sheet.png",
+		"size": {"w":76,"h":59},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_bunny_blue_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":39},
+			"sourceSize": {"w":46,"h":39}
+		},
+		"nest_bunny_blue_1.png":
+		{
+			"frame": {"x":46,"y":0,"w":30,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":25},
+			"sourceSize": {"w":30,"h":25}
+		},
+		"nest_bunny_blue_4.png":
+		{
+			"frame": {"x":0,"y":39,"w":24,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+			"sourceSize": {"w":24,"h":20}
+		},
+		"nest_bunny_blue_7.png":
+		{
+			"frame": {"x":46,"y":25,"w":15,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":13},
+			"sourceSize": {"w":15,"h":13}
+		}
+	}
+}

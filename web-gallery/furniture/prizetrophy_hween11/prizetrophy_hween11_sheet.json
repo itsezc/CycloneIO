@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "prizetrophy_hween11_sheet.png",
+		"size": {"w":138,"h":108},
+		"scale": "1"
+	},
+	"frames": {
+		"prizetrophy_hween11_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":83,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":75},
+			"sourceSize": {"w":83,"h":75}
+		},
+		"prizetrophy_hween11_10.png":
+		{
+			"frame": {"x":83,"y":0,"w":55,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":64},
+			"sourceSize": {"w":55,"h":64}
+		},
+		"prizetrophy_hween11_1.png":
+		{
+			"frame": {"x":0,"y":75,"w":28,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":33},
+			"sourceSize": {"w":28,"h":33}
+		},
+		"prizetrophy_hween11_6.png":
+		{
+			"frame": {"x":28,"y":75,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"prizetrophy_hween11_3.png":
+		{
+			"frame": {"x":83,"y":64,"w":10,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":11},
+			"sourceSize": {"w":10,"h":11}
+		},
+		"prizetrophy_hween11_9.png":
+		{
+			"frame": {"x":93,"y":64,"w":10,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":11},
+			"sourceSize": {"w":10,"h":11}
+		}
+	}
+}

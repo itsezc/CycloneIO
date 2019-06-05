@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "CFC_200_moneybag_sheet.png",
+		"size": {"w":137,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"CFC_200_moneybag_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":89,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":86},
+			"sourceSize": {"w":89,"h":86}
+		},
+		"CFC_200_moneybag_1.png":
+		{
+			"frame": {"x":89,"y":0,"w":48,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":57},
+			"sourceSize": {"w":48,"h":57}
+		},
+		"CFC_200_moneybag_7.png":
+		{
+			"frame": {"x":89,"y":57,"w":41,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":21},
+			"sourceSize": {"w":41,"h":21}
+		},
+		"CFC_200_moneybag_3.png":
+		{
+			"frame": {"x":0,"y":86,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"CFC_200_moneybag_4.png":
+		{
+			"frame": {"x":30,"y":86,"w":24,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":29},
+			"sourceSize": {"w":24,"h":29}
+		},
+		"CFC_200_moneybag_6.png":
+		{
+			"frame": {"x":89,"y":78,"w":23,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":7},
+			"sourceSize": {"w":23,"h":7}
+		}
+	}
+}

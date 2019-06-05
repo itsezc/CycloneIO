@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_hoplitehelm_sheet.png",
+		"size": {"w":65,"h":59},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_hoplitehelm_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":35,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":59},
+			"sourceSize": {"w":35,"h":59}
+		},
+		"clothing_hoplitehelm_4.png":
+		{
+			"frame": {"x":35,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_hoplitehelm_2.png":
+		{
+			"frame": {"x":35,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		},
+		"clothing_hoplitehelm_6.png":
+		{
+			"frame": {"x":61,"y":30,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

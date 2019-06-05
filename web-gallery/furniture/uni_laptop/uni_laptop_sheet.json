@@ -1,0 +1,121 @@
+{
+	"meta": {
+		"image": "uni_laptop_sheet.png",
+		"size": {"w":142,"h":101},
+		"scale": "1"
+	},
+	"frames": {
+		"uni_laptop_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":29},
+			"sourceSize": {"w":48,"h":29}
+		},
+		"uni_laptop_12.png":
+		{
+			"frame": {"x":0,"y":29,"w":47,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":39},
+			"sourceSize": {"w":47,"h":39}
+		},
+		"uni_laptop_13.png":
+		{
+			"frame": {"x":48,"y":0,"w":47,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":39},
+			"sourceSize": {"w":47,"h":39}
+		},
+		"uni_laptop_15.png":
+		{
+			"frame": {"x":95,"y":0,"w":47,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":39},
+			"sourceSize": {"w":47,"h":39}
+		},
+		"uni_laptop_14.png":
+		{
+			"frame": {"x":95,"y":39,"w":41,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":23},
+			"sourceSize": {"w":41,"h":23}
+		},
+		"uni_laptop_2.png":
+		{
+			"frame": {"x":48,"y":39,"w":41,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":23},
+			"sourceSize": {"w":41,"h":23}
+		},
+		"uni_laptop_7.png":
+		{
+			"frame": {"x":0,"y":68,"w":41,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":21},
+			"sourceSize": {"w":41,"h":21}
+		},
+		"uni_laptop_10.png":
+		{
+			"frame": {"x":41,"y":68,"w":24,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+			"sourceSize": {"w":24,"h":20}
+		},
+		"uni_laptop_11.png":
+		{
+			"frame": {"x":65,"y":68,"w":24,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+			"sourceSize": {"w":24,"h":20}
+		},
+		"uni_laptop_9.png":
+		{
+			"frame": {"x":89,"y":68,"w":24,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":20},
+			"sourceSize": {"w":24,"h":20}
+		},
+		"uni_laptop_3.png":
+		{
+			"frame": {"x":113,"y":68,"w":24,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":15},
+			"sourceSize": {"w":24,"h":15}
+		},
+		"uni_laptop_18.png":
+		{
+			"frame": {"x":0,"y":89,"w":21,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":12},
+			"sourceSize": {"w":21,"h":12}
+		},
+		"uni_laptop_8.png":
+		{
+			"frame": {"x":21,"y":89,"w":21,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":12},
+			"sourceSize": {"w":21,"h":12}
+		},
+		"uni_laptop_6.png":
+		{
+			"frame": {"x":42,"y":89,"w":21,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":11},
+			"sourceSize": {"w":21,"h":11}
+		}
+	}
+}

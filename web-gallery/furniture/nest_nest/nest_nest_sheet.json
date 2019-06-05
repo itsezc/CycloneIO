@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "nest_nest_sheet.png",
+		"size": {"w":156,"h":67},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_nest_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":94,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":67},
+			"sourceSize": {"w":94,"h":67}
+		},
+		"nest_nest_4.png":
+		{
+			"frame": {"x":94,"y":0,"w":62,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":44},
+			"sourceSize": {"w":62,"h":44}
+		},
+		"nest_nest_3.png":
+		{
+			"frame": {"x":94,"y":44,"w":32,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":23},
+			"sourceSize": {"w":32,"h":23}
+		},
+		"nest_nest_7.png":
+		{
+			"frame": {"x":126,"y":44,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		}
+	}
+}

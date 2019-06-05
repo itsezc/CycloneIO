@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "xmas14_starfish_sheet.png",
+		"size": {"w":100,"h":119},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas14_starfish_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":60,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":119},
+			"sourceSize": {"w":60,"h":119}
+		},
+		"xmas14_starfish_7.png":
+		{
+			"frame": {"x":60,"y":0,"w":40,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":90},
+			"sourceSize": {"w":40,"h":90}
+		},
+		"xmas14_starfish_6.png":
+		{
+			"frame": {"x":60,"y":90,"w":15,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":28},
+			"sourceSize": {"w":15,"h":28}
+		},
+		"xmas14_starfish_1.png":
+		{
+			"frame": {"x":75,"y":90,"w":12,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":26},
+			"sourceSize": {"w":12,"h":26}
+		},
+		"xmas14_starfish_5.png":
+		{
+			"frame": {"x":87,"y":90,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

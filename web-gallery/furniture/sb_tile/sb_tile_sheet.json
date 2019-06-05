@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "sb_tile_sheet.png",
+		"size": {"w":254,"h":206},
+		"scale": "1"
+	},
+	"frames": {
+		"sb_tile_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":254,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":254,"h":103},
+			"sourceSize": {"w":254,"h":103}
+		},
+		"sb_tile_3.png":
+		{
+			"frame": {"x":0,"y":103,"w":128,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":68},
+			"sourceSize": {"w":128,"h":68}
+		},
+		"sb_tile_5.png":
+		{
+			"frame": {"x":128,"y":103,"w":126,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":66},
+			"sourceSize": {"w":126,"h":66}
+		},
+		"sb_tile_6.png":
+		{
+			"frame": {"x":0,"y":171,"w":64,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":35},
+			"sourceSize": {"w":64,"h":35}
+		},
+		"sb_tile_1.png":
+		{
+			"frame": {"x":64,"y":171,"w":64,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":33},
+			"sourceSize": {"w":64,"h":33}
+		},
+		"sb_tile_4.png":
+		{
+			"frame": {"x":128,"y":171,"w":28,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":17},
+			"sourceSize": {"w":28,"h":17}
+		}
+	}
+}

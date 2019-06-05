@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "statue_dragon_sheet.png",
+		"size": {"w":196,"h":170},
+		"scale": "1"
+	},
+	"frames": {
+		"statue_dragon_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":145},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":145},
+			"sourceSize": {"w":66,"h":145}
+		},
+		"statue_dragon_7.png":
+		{
+			"frame": {"x":66,"y":0,"w":32,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":115},
+			"sourceSize": {"w":32,"h":115}
+		},
+		"statue_dragon_12.png":
+		{
+			"frame": {"x":98,"y":0,"w":98,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":50},
+			"sourceSize": {"w":98,"h":50}
+		},
+		"statue_dragon_10.png":
+		{
+			"frame": {"x":98,"y":50,"w":34,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":73},
+			"sourceSize": {"w":34,"h":73}
+		},
+		"statue_dragon_11.png":
+		{
+			"frame": {"x":132,"y":50,"w":16,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":57},
+			"sourceSize": {"w":16,"h":57}
+		},
+		"statue_dragon_4.png":
+		{
+			"frame": {"x":0,"y":145,"w":49,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":25},
+			"sourceSize": {"w":49,"h":25}
+		},
+		"statue_dragon_6.png":
+		{
+			"frame": {"x":148,"y":50,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

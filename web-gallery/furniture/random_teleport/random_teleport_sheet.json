@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "random_teleport_sheet.png",
+		"size": {"w":242,"h":208},
+		"scale": "1"
+	},
+	"frames": {
+		"random_teleport_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":68,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":139},
+			"sourceSize": {"w":68,"h":139}
+		},
+		"random_teleport_4.png":
+		{
+			"frame": {"x":68,"y":0,"w":60,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":131},
+			"sourceSize": {"w":60,"h":131}
+		},
+		"random_teleport_8.png":
+		{
+			"frame": {"x":128,"y":0,"w":60,"h":131},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":131},
+			"sourceSize": {"w":60,"h":131}
+		},
+		"random_teleport_15.png":
+		{
+			"frame": {"x":188,"y":0,"w":54,"h":93},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":93},
+			"sourceSize": {"w":54,"h":93}
+		},
+		"random_teleport_1.png":
+		{
+			"frame": {"x":0,"y":139,"w":36,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":69},
+			"sourceSize": {"w":36,"h":69}
+		},
+		"random_teleport_10.png":
+		{
+			"frame": {"x":36,"y":139,"w":32,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":65},
+			"sourceSize": {"w":32,"h":65}
+		},
+		"random_teleport_11.png":
+		{
+			"frame": {"x":68,"y":139,"w":32,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":65},
+			"sourceSize": {"w":32,"h":65}
+		},
+		"random_teleport_9.png":
+		{
+			"frame": {"x":188,"y":93,"w":27,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":46},
+			"sourceSize": {"w":27,"h":46}
+		},
+		"random_teleport_2.png":
+		{
+			"frame": {"x":215,"y":93,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"random_teleport_16.png":
+		{
+			"frame": {"x":235,"y":93,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"random_teleport_3.png":
+		{
+			"frame": {"x":236,"y":93,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

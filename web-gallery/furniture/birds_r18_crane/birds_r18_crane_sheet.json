@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "birds_r18_crane_sheet.png",
+		"size": {"w":212,"h":212},
+		"scale": "1"
+	},
+	"frames": {
+		"birds_r18_crane_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":120},
+			"sourceSize": {"w":53,"h":120}
+		},
+		"birds_r18_crane_5.png":
+		{
+			"frame": {"x":53,"y":0,"w":53,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":114},
+			"sourceSize": {"w":53,"h":114}
+		},
+		"birds_r18_crane_8.png":
+		{
+			"frame": {"x":106,"y":0,"w":56,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":96},
+			"sourceSize": {"w":56,"h":96}
+		},
+		"birds_r18_crane_9.png":
+		{
+			"frame": {"x":162,"y":0,"w":50,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":92},
+			"sourceSize": {"w":50,"h":92}
+		},
+		"birds_r18_crane_7.png":
+		{
+			"frame": {"x":0,"y":120,"w":49,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":92},
+			"sourceSize": {"w":49,"h":92}
+		},
+		"birds_r18_crane_12.png":
+		{
+			"frame": {"x":49,"y":120,"w":56,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":90},
+			"sourceSize": {"w":56,"h":90}
+		},
+		"birds_r18_crane_3.png":
+		{
+			"frame": {"x":105,"y":120,"w":90,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":90,"h":46},
+			"sourceSize": {"w":90,"h":46}
+		},
+		"birds_r18_crane_11.png":
+		{
+			"frame": {"x":162,"y":92,"w":43,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":21},
+			"sourceSize": {"w":43,"h":21}
+		},
+		"birds_r18_crane_14.png":
+		{
+			"frame": {"x":105,"y":166,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		},
+		"birds_r18_crane_1.png":
+		{
+			"frame": {"x":205,"y":92,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_bloodglasses_sheet.png",
+		"size": {"w":57,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_bloodglasses_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":42},
+			"sourceSize": {"w":29,"h":42}
+		},
+		"clothing_bloodglasses_3.png":
+		{
+			"frame": {"x":29,"y":0,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		}
+	}
+}

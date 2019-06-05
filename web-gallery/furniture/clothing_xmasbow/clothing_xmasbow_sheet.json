@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_xmasbow_sheet.png",
+		"size": {"w":104,"h":56},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_xmasbow_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":31},
+			"sourceSize": {"w":52,"h":31}
+		},
+		"clothing_xmasbow_3.png":
+		{
+			"frame": {"x":52,"y":0,"w":52,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":26},
+			"sourceSize": {"w":52,"h":26}
+		},
+		"clothing_xmasbow_6.png":
+		{
+			"frame": {"x":0,"y":31,"w":28,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":25},
+			"sourceSize": {"w":28,"h":25}
+		},
+		"clothing_xmasbow_7.png":
+		{
+			"frame": {"x":52,"y":26,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

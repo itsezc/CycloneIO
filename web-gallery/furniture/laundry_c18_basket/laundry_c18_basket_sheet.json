@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "laundry_c18_basket_sheet.png",
+		"size": {"w":164,"h":118},
+		"scale": "1"
+	},
+	"frames": {
+		"laundry_c18_basket_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":56,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":37},
+			"sourceSize": {"w":56,"h":37}
+		},
+		"laundry_c18_basket_6.png":
+		{
+			"frame": {"x":56,"y":0,"w":56,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":37},
+			"sourceSize": {"w":56,"h":37}
+		},
+		"laundry_c18_basket_8.png":
+		{
+			"frame": {"x":0,"y":37,"w":56,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":37},
+			"sourceSize": {"w":56,"h":37}
+		},
+		"laundry_c18_basket_3.png":
+		{
+			"frame": {"x":56,"y":37,"w":56,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":29},
+			"sourceSize": {"w":56,"h":29}
+		},
+		"laundry_c18_basket_13.png":
+		{
+			"frame": {"x":112,"y":0,"w":52,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":44},
+			"sourceSize": {"w":52,"h":44}
+		},
+		"laundry_c18_basket_7.png":
+		{
+			"frame": {"x":0,"y":74,"w":52,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":44},
+			"sourceSize": {"w":52,"h":44}
+		},
+		"laundry_c18_basket_9.png":
+		{
+			"frame": {"x":52,"y":74,"w":52,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":44},
+			"sourceSize": {"w":52,"h":44}
+		},
+		"laundry_c18_basket_4.png":
+		{
+			"frame": {"x":112,"y":44,"w":30,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":26},
+			"sourceSize": {"w":30,"h":26}
+		}
+	}
+}

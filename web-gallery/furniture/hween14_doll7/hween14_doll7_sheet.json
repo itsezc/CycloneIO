@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hween14_doll7_sheet.png",
+		"size": {"w":113,"h":91},
+		"scale": "1"
+	},
+	"frames": {
+		"hween14_doll7_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":75},
+			"sourceSize": {"w":58,"h":75}
+		},
+		"hween14_doll7_10.png":
+		{
+			"frame": {"x":58,"y":0,"w":55,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":28},
+			"sourceSize": {"w":55,"h":28}
+		},
+		"hween14_doll7_9.png":
+		{
+			"frame": {"x":58,"y":28,"w":29,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":39},
+			"sourceSize": {"w":29,"h":39}
+		},
+		"hween14_doll7_7.png":
+		{
+			"frame": {"x":0,"y":75,"w":30,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+			"sourceSize": {"w":30,"h":16}
+		},
+		"hween14_doll7_4.png":
+		{
+			"frame": {"x":87,"y":28,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		}
+	}
+}

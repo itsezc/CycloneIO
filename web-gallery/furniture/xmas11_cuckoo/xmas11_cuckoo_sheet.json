@@ -1,0 +1,185 @@
+{
+	"meta": {
+		"image": "xmas11_cuckoo_sheet.png",
+		"size": {"w":248,"h":217},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas11_cuckoo_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":180,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":180,"h":142},
+			"sourceSize": {"w":180,"h":142}
+		},
+		"xmas11_cuckoo_1.png":
+		{
+			"frame": {"x":180,"y":0,"w":45,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":75},
+			"sourceSize": {"w":45,"h":75}
+		},
+		"xmas11_cuckoo_2.png":
+		{
+			"frame": {"x":0,"y":142,"w":45,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":75},
+			"sourceSize": {"w":45,"h":75}
+		},
+		"xmas11_cuckoo_25.png":
+		{
+			"frame": {"x":45,"y":142,"w":45,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":75},
+			"sourceSize": {"w":45,"h":75}
+		},
+		"xmas11_cuckoo_26.png":
+		{
+			"frame": {"x":90,"y":142,"w":45,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":75},
+			"sourceSize": {"w":45,"h":75}
+		},
+		"xmas11_cuckoo_17.png":
+		{
+			"frame": {"x":180,"y":75,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"xmas11_cuckoo_18.png":
+		{
+			"frame": {"x":135,"y":142,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"xmas11_cuckoo_19.png":
+		{
+			"frame": {"x":158,"y":142,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"xmas11_cuckoo_6.png":
+		{
+			"frame": {"x":181,"y":142,"w":23,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":38},
+			"sourceSize": {"w":23,"h":38}
+		},
+		"xmas11_cuckoo_23.png":
+		{
+			"frame": {"x":180,"y":113,"w":32,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":18},
+			"sourceSize": {"w":32,"h":18}
+		},
+		"xmas11_cuckoo_24.png":
+		{
+			"frame": {"x":135,"y":180,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		},
+		"xmas11_cuckoo_16.png":
+		{
+			"frame": {"x":225,"y":0,"w":23,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":29},
+			"sourceSize": {"w":23,"h":29}
+		},
+		"xmas11_cuckoo_22.png":
+		{
+			"frame": {"x":165,"y":180,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"xmas11_cuckoo_8.png":
+		{
+			"frame": {"x":225,"y":29,"w":17,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":10},
+			"sourceSize": {"w":17,"h":10}
+		},
+		"xmas11_cuckoo_20.png":
+		{
+			"frame": {"x":225,"y":39,"w":15,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":16},
+			"sourceSize": {"w":15,"h":16}
+		},
+		"xmas11_cuckoo_21.png":
+		{
+			"frame": {"x":225,"y":55,"w":15,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":16},
+			"sourceSize": {"w":15,"h":16}
+		},
+		"xmas11_cuckoo_7.png":
+		{
+			"frame": {"x":225,"y":71,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"xmas11_cuckoo_9.png":
+		{
+			"frame": {"x":225,"y":81,"w":13,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":9},
+			"sourceSize": {"w":13,"h":9}
+		},
+		"xmas11_cuckoo_11.png":
+		{
+			"frame": {"x":238,"y":81,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"xmas11_cuckoo_12.png":
+		{
+			"frame": {"x":225,"y":90,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"xmas11_cuckoo_13.png":
+		{
+			"frame": {"x":242,"y":29,"w":2,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":5},
+			"sourceSize": {"w":2,"h":5}
+		},
+		"xmas11_cuckoo_3.png":
+		{
+			"frame": {"x":244,"y":29,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

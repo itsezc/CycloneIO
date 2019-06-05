@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "xm09_bauble_26_sheet.png",
+		"size": {"w":90,"h":69},
+		"scale": "1"
+	},
+	"frames": {
+		"xm09_bauble_26_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":54,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":47},
+			"sourceSize": {"w":54,"h":47}
+		},
+		"xm09_bauble_26_5.png":
+		{
+			"frame": {"x":54,"y":0,"w":18,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":31},
+			"sourceSize": {"w":18,"h":31}
+		},
+		"xm09_bauble_26_7.png":
+		{
+			"frame": {"x":72,"y":0,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		},
+		"xm09_bauble_26_1.png":
+		{
+			"frame": {"x":0,"y":47,"w":18,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":22},
+			"sourceSize": {"w":18,"h":22}
+		},
+		"xm09_bauble_26_6.png":
+		{
+			"frame": {"x":72,"y":30,"w":11,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":16},
+			"sourceSize": {"w":11,"h":16}
+		},
+		"xm09_bauble_26_10.png":
+		{
+			"frame": {"x":54,"y":31,"w":11,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":12},
+			"sourceSize": {"w":11,"h":12}
+		}
+	}
+}

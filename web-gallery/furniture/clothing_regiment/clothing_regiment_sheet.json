@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_regiment_sheet.png",
+		"size": {"w":62,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_regiment_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":33,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":68},
+			"sourceSize": {"w":33,"h":68}
+		},
+		"clothing_regiment_3.png":
+		{
+			"frame": {"x":33,"y":0,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

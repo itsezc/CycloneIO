@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hween_c18_toy1new_sheet.png",
+		"size": {"w":88,"h":54},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c18_toy1new_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":54},
+			"sourceSize": {"w":40,"h":54}
+		},
+		"hween_c18_toy1new_3.png":
+		{
+			"frame": {"x":40,"y":0,"w":21,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":29},
+			"sourceSize": {"w":21,"h":29}
+		},
+		"hween_c18_toy1new_4.png":
+		{
+			"frame": {"x":61,"y":0,"w":27,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":14},
+			"sourceSize": {"w":27,"h":14}
+		}
+	}
+}

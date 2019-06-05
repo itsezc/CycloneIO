@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_waterhelm_sheet.png",
+		"size": {"w":63,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_waterhelm_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":33,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":55},
+			"sourceSize": {"w":33,"h":55}
+		},
+		"clothing_waterhelm_5.png":
+		{
+			"frame": {"x":33,"y":0,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		},
+		"clothing_waterhelm_3.png":
+		{
+			"frame": {"x":33,"y":28,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

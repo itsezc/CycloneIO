@@ -1,0 +1,625 @@
+{
+	"meta": {
+		"image": "ads_malaco_tv_sheet.png",
+		"size": {"w":948,"h":906},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_malaco_tv_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":670,"h":634},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":670,"h":634},
+			"sourceSize": {"w":670,"h":634}
+		},
+		"ads_malaco_tv_45.png":
+		{
+			"frame": {"x":670,"y":0,"w":122,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":135},
+			"sourceSize": {"w":122,"h":135}
+		},
+		"ads_malaco_tv_73.png":
+		{
+			"frame": {"x":670,"y":135,"w":122,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":135},
+			"sourceSize": {"w":122,"h":135}
+		},
+		"ads_malaco_tv_13.png":
+		{
+			"frame": {"x":670,"y":270,"w":114,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":135},
+			"sourceSize": {"w":114,"h":135}
+		},
+		"ads_malaco_tv_8.png":
+		{
+			"frame": {"x":670,"y":405,"w":114,"h":135},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":135},
+			"sourceSize": {"w":114,"h":135}
+		},
+		"ads_malaco_tv_7.png":
+		{
+			"frame": {"x":670,"y":540,"w":106,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":106,"h":53},
+			"sourceSize": {"w":106,"h":53}
+		},
+		"ads_malaco_tv_1.png":
+		{
+			"frame": {"x":0,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_10.png":
+		{
+			"frame": {"x":78,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_11.png":
+		{
+			"frame": {"x":156,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_12.png":
+		{
+			"frame": {"x":234,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_14.png":
+		{
+			"frame": {"x":312,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_16.png":
+		{
+			"frame": {"x":390,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_17.png":
+		{
+			"frame": {"x":468,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_19.png":
+		{
+			"frame": {"x":546,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_2.png":
+		{
+			"frame": {"x":624,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_21.png":
+		{
+			"frame": {"x":702,"y":634,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_23.png":
+		{
+			"frame": {"x":792,"y":0,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_25.png":
+		{
+			"frame": {"x":792,"y":92,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_29.png":
+		{
+			"frame": {"x":792,"y":184,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_3.png":
+		{
+			"frame": {"x":792,"y":276,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_31.png":
+		{
+			"frame": {"x":792,"y":368,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_4.png":
+		{
+			"frame": {"x":792,"y":460,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_48.png":
+		{
+			"frame": {"x":792,"y":552,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_49.png":
+		{
+			"frame": {"x":0,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_5.png":
+		{
+			"frame": {"x":78,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_50.png":
+		{
+			"frame": {"x":156,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_52.png":
+		{
+			"frame": {"x":234,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_63.png":
+		{
+			"frame": {"x":312,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_65.png":
+		{
+			"frame": {"x":390,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_67.png":
+		{
+			"frame": {"x":468,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_71.png":
+		{
+			"frame": {"x":546,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_74.png":
+		{
+			"frame": {"x":624,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_75.png":
+		{
+			"frame": {"x":702,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_76.png":
+		{
+			"frame": {"x":780,"y":726,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_77.png":
+		{
+			"frame": {"x":870,"y":0,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_79.png":
+		{
+			"frame": {"x":870,"y":92,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_81.png":
+		{
+			"frame": {"x":870,"y":184,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_9.png":
+		{
+			"frame": {"x":870,"y":276,"w":78,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":92},
+			"sourceSize": {"w":78,"h":92}
+		},
+		"ads_malaco_tv_69.png":
+		{
+			"frame": {"x":870,"y":368,"w":60,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":68},
+			"sourceSize": {"w":60,"h":68}
+		},
+		"ads_malaco_tv_80.png":
+		{
+			"frame": {"x":870,"y":436,"w":60,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":68},
+			"sourceSize": {"w":60,"h":68}
+		},
+		"ads_malaco_tv_6.png":
+		{
+			"frame": {"x":870,"y":504,"w":57,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":67},
+			"sourceSize": {"w":57,"h":67}
+		},
+		"ads_malaco_tv_78.png":
+		{
+			"frame": {"x":870,"y":571,"w":57,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":67},
+			"sourceSize": {"w":57,"h":67}
+		},
+		"ads_malaco_tv_34.png":
+		{
+			"frame": {"x":870,"y":638,"w":60,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":27},
+			"sourceSize": {"w":60,"h":27}
+		},
+		"ads_malaco_tv_61.png":
+		{
+			"frame": {"x":870,"y":665,"w":60,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":27},
+			"sourceSize": {"w":60,"h":27}
+		},
+		"ads_malaco_tv_15.png":
+		{
+			"frame": {"x":870,"y":692,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_18.png":
+		{
+			"frame": {"x":908,"y":692,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_20.png":
+		{
+			"frame": {"x":870,"y":736,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_22.png":
+		{
+			"frame": {"x":908,"y":736,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_24.png":
+		{
+			"frame": {"x":792,"y":644,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_28.png":
+		{
+			"frame": {"x":830,"y":644,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_30.png":
+		{
+			"frame": {"x":0,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_32.png":
+		{
+			"frame": {"x":38,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_33.png":
+		{
+			"frame": {"x":76,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_35.png":
+		{
+			"frame": {"x":114,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_36.png":
+		{
+			"frame": {"x":152,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_37.png":
+		{
+			"frame": {"x":190,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_38.png":
+		{
+			"frame": {"x":228,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_40.png":
+		{
+			"frame": {"x":266,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_41.png":
+		{
+			"frame": {"x":304,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_43.png":
+		{
+			"frame": {"x":342,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_44.png":
+		{
+			"frame": {"x":380,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_46.png":
+		{
+			"frame": {"x":418,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_47.png":
+		{
+			"frame": {"x":456,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_51.png":
+		{
+			"frame": {"x":494,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_53.png":
+		{
+			"frame": {"x":532,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_54.png":
+		{
+			"frame": {"x":570,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_55.png":
+		{
+			"frame": {"x":608,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_56.png":
+		{
+			"frame": {"x":646,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_57.png":
+		{
+			"frame": {"x":684,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_58.png":
+		{
+			"frame": {"x":722,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_59.png":
+		{
+			"frame": {"x":760,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_60.png":
+		{
+			"frame": {"x":798,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_62.png":
+		{
+			"frame": {"x":836,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_64.png":
+		{
+			"frame": {"x":874,"y":818,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_66.png":
+		{
+			"frame": {"x":0,"y":862,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_68.png":
+		{
+			"frame": {"x":38,"y":862,"w":38,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":44},
+			"sourceSize": {"w":38,"h":44}
+		},
+		"ads_malaco_tv_39.png":
+		{
+			"frame": {"x":870,"y":780,"w":28,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":31},
+			"sourceSize": {"w":28,"h":31}
+		}
+	}
+}

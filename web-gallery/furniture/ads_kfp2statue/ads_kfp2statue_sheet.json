@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "ads_kfp2statue_sheet.png",
+		"size": {"w":316,"h":299},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_kfp2statue_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":190,"h":199},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":190,"h":199},
+			"sourceSize": {"w":190,"h":199}
+		},
+		"ads_kfp2statue_3.png":
+		{
+			"frame": {"x":190,"y":0,"w":126,"h":199},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":199},
+			"sourceSize": {"w":126,"h":199}
+		},
+		"ads_kfp2statue_6.png":
+		{
+			"frame": {"x":0,"y":199,"w":64,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":100},
+			"sourceSize": {"w":64,"h":100}
+		},
+		"ads_kfp2statue_7.png":
+		{
+			"frame": {"x":64,"y":199,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		}
+	}
+}

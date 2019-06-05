@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "bowl_sheet.png",
+		"size": {"w":49,"h":27},
+		"scale": "1"
+	},
+	"frames": {
+		"bowl_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":27,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":17},
+			"sourceSize": {"w":27,"h":17}
+		},
+		"bowl_8.png":
+		{
+			"frame": {"x":27,"y":0,"w":22,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":14},
+			"sourceSize": {"w":22,"h":14}
+		},
+		"bowl_3.png":
+		{
+			"frame": {"x":0,"y":17,"w":14,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":10},
+			"sourceSize": {"w":14,"h":10}
+		},
+		"bowl_2.png":
+		{
+			"frame": {"x":14,"y":17,"w":11,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":8},
+			"sourceSize": {"w":11,"h":8}
+		}
+	}
+}

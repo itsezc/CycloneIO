@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "nest_turtle_sheet.png",
+		"size": {"w":218,"h":183},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_turtle_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":142,"h":133},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":142,"h":133},
+			"sourceSize": {"w":142,"h":133}
+		},
+		"nest_turtle_8.png":
+		{
+			"frame": {"x":142,"y":0,"w":76,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":91},
+			"sourceSize": {"w":76,"h":91}
+		},
+		"nest_turtle_3.png":
+		{
+			"frame": {"x":0,"y":133,"w":66,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":50},
+			"sourceSize": {"w":66,"h":50}
+		},
+		"nest_turtle_9.png":
+		{
+			"frame": {"x":142,"y":91,"w":37,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":42},
+			"sourceSize": {"w":37,"h":42}
+		},
+		"nest_turtle_5.png":
+		{
+			"frame": {"x":179,"y":91,"w":35,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":25},
+			"sourceSize": {"w":35,"h":25}
+		},
+		"nest_turtle_6.png":
+		{
+			"frame": {"x":66,"y":133,"w":25,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":31},
+			"sourceSize": {"w":25,"h":31}
+		}
+	}
+}

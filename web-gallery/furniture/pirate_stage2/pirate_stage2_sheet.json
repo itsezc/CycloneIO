@@ -1,0 +1,481 @@
+{
+	"meta": {
+		"image": "pirate_stage2_sheet.png",
+		"size": {"w":307,"h":287},
+		"scale": "1"
+	},
+	"frames": {
+		"pirate_stage2_53.png":
+		{
+			"frame": {"x":0,"y":0,"w":78,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":68},
+			"sourceSize": {"w":78,"h":68}
+		},
+		"pirate_stage2_49.png":
+		{
+			"frame": {"x":78,"y":0,"w":78,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":23},
+			"sourceSize": {"w":78,"h":23}
+		},
+		"pirate_stage2_28.png":
+		{
+			"frame": {"x":0,"y":68,"w":76,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":64},
+			"sourceSize": {"w":76,"h":64}
+		},
+		"pirate_stage2_57.png":
+		{
+			"frame": {"x":76,"y":68,"w":76,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":64},
+			"sourceSize": {"w":76,"h":64}
+		},
+		"pirate_stage2_18.png":
+		{
+			"frame": {"x":78,"y":23,"w":74,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":24},
+			"sourceSize": {"w":74,"h":24}
+		},
+		"pirate_stage2_24.png":
+		{
+			"frame": {"x":0,"y":132,"w":74,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":24},
+			"sourceSize": {"w":74,"h":24}
+		},
+		"pirate_stage2_17.png":
+		{
+			"frame": {"x":156,"y":0,"w":72,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":28},
+			"sourceSize": {"w":72,"h":28}
+		},
+		"pirate_stage2_60.png":
+		{
+			"frame": {"x":156,"y":28,"w":70,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":45},
+			"sourceSize": {"w":70,"h":45}
+		},
+		"pirate_stage2_30.png":
+		{
+			"frame": {"x":156,"y":73,"w":70,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":21},
+			"sourceSize": {"w":70,"h":21}
+		},
+		"pirate_stage2_12.png":
+		{
+			"frame": {"x":156,"y":94,"w":68,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":30},
+			"sourceSize": {"w":68,"h":30}
+		},
+		"pirate_stage2_38.png":
+		{
+			"frame": {"x":156,"y":124,"w":68,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":30},
+			"sourceSize": {"w":68,"h":30}
+		},
+		"pirate_stage2_45.png":
+		{
+			"frame": {"x":0,"y":156,"w":10,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":67},
+			"sourceSize": {"w":10,"h":67}
+		},
+		"pirate_stage2_55.png":
+		{
+			"frame": {"x":10,"y":156,"w":10,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":67},
+			"sourceSize": {"w":10,"h":67}
+		},
+		"pirate_stage2_52.png":
+		{
+			"frame": {"x":20,"y":156,"w":66,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":52},
+			"sourceSize": {"w":66,"h":52}
+		},
+		"pirate_stage2_40.png":
+		{
+			"frame": {"x":86,"y":156,"w":66,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":30},
+			"sourceSize": {"w":66,"h":30}
+		},
+		"pirate_stage2_20.png":
+		{
+			"frame": {"x":78,"y":47,"w":66,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":20},
+			"sourceSize": {"w":66,"h":20}
+		},
+		"pirate_stage2_16.png":
+		{
+			"frame": {"x":74,"y":132,"w":66,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":4},
+			"sourceSize": {"w":66,"h":4}
+		},
+		"pirate_stage2_43.png":
+		{
+			"frame": {"x":152,"y":156,"w":54,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":28},
+			"sourceSize": {"w":54,"h":28}
+		},
+		"pirate_stage2_48.png":
+		{
+			"frame": {"x":228,"y":0,"w":30,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":53},
+			"sourceSize": {"w":30,"h":53}
+		},
+		"pirate_stage2_8.png":
+		{
+			"frame": {"x":228,"y":53,"w":29,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":52},
+			"sourceSize": {"w":29,"h":52}
+		},
+		"pirate_stage2_36.png":
+		{
+			"frame": {"x":258,"y":0,"w":49,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+			"sourceSize": {"w":49,"h":46}
+		},
+		"pirate_stage2_46.png":
+		{
+			"frame": {"x":258,"y":46,"w":49,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":46},
+			"sourceSize": {"w":49,"h":46}
+		},
+		"pirate_stage2_25.png":
+		{
+			"frame": {"x":258,"y":92,"w":46,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":12},
+			"sourceSize": {"w":46,"h":12}
+		},
+		"pirate_stage2_34.png":
+		{
+			"frame": {"x":258,"y":104,"w":42,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":38},
+			"sourceSize": {"w":42,"h":38}
+		},
+		"pirate_stage2_26.png":
+		{
+			"frame": {"x":258,"y":142,"w":42,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":13},
+			"sourceSize": {"w":42,"h":13}
+		},
+		"pirate_stage2_56.png":
+		{
+			"frame": {"x":258,"y":155,"w":40,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":14},
+			"sourceSize": {"w":40,"h":14}
+		},
+		"pirate_stage2_21.png":
+		{
+			"frame": {"x":258,"y":169,"w":40,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":13},
+			"sourceSize": {"w":40,"h":13}
+		},
+		"pirate_stage2_23.png":
+		{
+			"frame": {"x":258,"y":182,"w":39,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":35},
+			"sourceSize": {"w":39,"h":35}
+		},
+		"pirate_stage2_47.png":
+		{
+			"frame": {"x":0,"y":223,"w":39,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":35},
+			"sourceSize": {"w":39,"h":35}
+		},
+		"pirate_stage2_59.png":
+		{
+			"frame": {"x":39,"y":223,"w":38,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":25},
+			"sourceSize": {"w":38,"h":25}
+		},
+		"pirate_stage2_13.png":
+		{
+			"frame": {"x":74,"y":136,"w":37,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":20},
+			"sourceSize": {"w":37,"h":20}
+		},
+		"pirate_stage2_5.png":
+		{
+			"frame": {"x":111,"y":136,"w":37,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":20},
+			"sourceSize": {"w":37,"h":20}
+		},
+		"pirate_stage2_14.png":
+		{
+			"frame": {"x":86,"y":186,"w":37,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":13},
+			"sourceSize": {"w":37,"h":13}
+		},
+		"pirate_stage2_27.png":
+		{
+			"frame": {"x":123,"y":186,"w":37,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":13},
+			"sourceSize": {"w":37,"h":13}
+		},
+		"pirate_stage2_2.png":
+		{
+			"frame": {"x":77,"y":223,"w":36,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":16},
+			"sourceSize": {"w":36,"h":16}
+		},
+		"pirate_stage2_6.png":
+		{
+			"frame": {"x":20,"y":208,"w":36,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":15},
+			"sourceSize": {"w":36,"h":15}
+		},
+		"pirate_stage2_7.png":
+		{
+			"frame": {"x":0,"y":258,"w":34,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":29},
+			"sourceSize": {"w":34,"h":29}
+		},
+		"pirate_stage2_31.png":
+		{
+			"frame": {"x":113,"y":223,"w":34,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":16},
+			"sourceSize": {"w":34,"h":16}
+		},
+		"pirate_stage2_37.png":
+		{
+			"frame": {"x":160,"y":186,"w":34,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":11},
+			"sourceSize": {"w":34,"h":11}
+		},
+		"pirate_stage2_11.png":
+		{
+			"frame": {"x":300,"y":104,"w":6,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":34},
+			"sourceSize": {"w":6,"h":34}
+		},
+		"pirate_stage2_22.png":
+		{
+			"frame": {"x":297,"y":182,"w":6,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":34},
+			"sourceSize": {"w":6,"h":34}
+		},
+		"pirate_stage2_33.png":
+		{
+			"frame": {"x":258,"y":217,"w":34,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":3},
+			"sourceSize": {"w":34,"h":3}
+		},
+		"pirate_stage2_41.png":
+		{
+			"frame": {"x":228,"y":105,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"pirate_stage2_54.png":
+		{
+			"frame": {"x":228,"y":135,"w":15,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":28},
+			"sourceSize": {"w":15,"h":28}
+		},
+		"pirate_stage2_9.png":
+		{
+			"frame": {"x":243,"y":135,"w":15,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":28},
+			"sourceSize": {"w":15,"h":28}
+		},
+		"pirate_stage2_51.png":
+		{
+			"frame": {"x":228,"y":163,"w":26,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":14},
+			"sourceSize": {"w":26,"h":14}
+		},
+		"pirate_stage2_42.png":
+		{
+			"frame": {"x":228,"y":177,"w":26,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":7},
+			"sourceSize": {"w":26,"h":7}
+		},
+		"pirate_stage2_61.png":
+		{
+			"frame": {"x":228,"y":184,"w":25,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":25},
+			"sourceSize": {"w":25,"h":25}
+		},
+		"pirate_stage2_64.png":
+		{
+			"frame": {"x":34,"y":258,"w":25,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":25},
+			"sourceSize": {"w":25,"h":25}
+		},
+		"pirate_stage2_35.png":
+		{
+			"frame": {"x":228,"y":209,"w":19,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":11},
+			"sourceSize": {"w":19,"h":11}
+		},
+		"pirate_stage2_50.png":
+		{
+			"frame": {"x":206,"y":156,"w":19,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":11},
+			"sourceSize": {"w":19,"h":11}
+		},
+		"pirate_stage2_39.png":
+		{
+			"frame": {"x":298,"y":155,"w":8,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":1},
+			"sourceSize": {"w":8,"h":1}
+		},
+		"pirate_stage2_15.png":
+		{
+			"frame": {"x":300,"y":142,"w":5,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":7},
+			"sourceSize": {"w":5,"h":7}
+		},
+		"pirate_stage2_19.png":
+		{
+			"frame": {"x":298,"y":156,"w":5,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":7},
+			"sourceSize": {"w":5,"h":7}
+		},
+		"pirate_stage2_32.png":
+		{
+			"frame": {"x":304,"y":92,"w":3,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":5},
+			"sourceSize": {"w":3,"h":5}
+		},
+		"pirate_stage2_63.png":
+		{
+			"frame": {"x":304,"y":97,"w":3,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":5},
+			"sourceSize": {"w":3,"h":5}
+		},
+		"pirate_stage2_4.png":
+		{
+			"frame": {"x":300,"y":138,"w":4,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":1},
+			"sourceSize": {"w":4,"h":1}
+		},
+		"pirate_stage2_1.png":
+		{
+			"frame": {"x":304,"y":102,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"pirate_stage2_62.png":
+		{
+			"frame": {"x":305,"y":102,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

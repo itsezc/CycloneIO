@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "tile_stackmagic2_sheet.png",
+		"size": {"w":252,"h":98},
+		"scale": "1"
+	},
+	"frames": {
+		"tile_stackmagic2_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":126,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":65},
+			"sourceSize": {"w":126,"h":65}
+		},
+		"tile_stackmagic2_7.png":
+		{
+			"frame": {"x":126,"y":0,"w":126,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":65},
+			"sourceSize": {"w":126,"h":65}
+		},
+		"tile_stackmagic2_1.png":
+		{
+			"frame": {"x":0,"y":65,"w":62,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":33},
+			"sourceSize": {"w":62,"h":33}
+		},
+		"tile_stackmagic2_3.png":
+		{
+			"frame": {"x":62,"y":65,"w":62,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":33},
+			"sourceSize": {"w":62,"h":33}
+		},
+		"tile_stackmagic2_6.png":
+		{
+			"frame": {"x":124,"y":65,"w":25,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
+			"sourceSize": {"w":25,"h":29}
+		}
+	}
+}

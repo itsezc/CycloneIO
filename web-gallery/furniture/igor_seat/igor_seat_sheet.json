@@ -1,0 +1,193 @@
+{
+	"meta": {
+		"image": "igor_seat_sheet.png",
+		"size": {"w":267,"h":257},
+		"scale": "1"
+	},
+	"frames": {
+		"igor_seat_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":202,"h":164},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":202,"h":164},
+			"sourceSize": {"w":202,"h":164}
+		},
+		"igor_seat_19.png":
+		{
+			"frame": {"x":202,"y":0,"w":32,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":80},
+			"sourceSize": {"w":32,"h":80}
+		},
+		"igor_seat_12.png":
+		{
+			"frame": {"x":0,"y":164,"w":80,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":26},
+			"sourceSize": {"w":80,"h":26}
+		},
+		"igor_seat_1.png":
+		{
+			"frame": {"x":202,"y":80,"w":15,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":68},
+			"sourceSize": {"w":15,"h":68}
+		},
+		"igor_seat_4.png":
+		{
+			"frame": {"x":217,"y":80,"w":15,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":68},
+			"sourceSize": {"w":15,"h":68}
+		},
+		"igor_seat_16.png":
+		{
+			"frame": {"x":234,"y":0,"w":33,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":64},
+			"sourceSize": {"w":33,"h":64}
+		},
+		"igor_seat_6.png":
+		{
+			"frame": {"x":0,"y":190,"w":57,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":44},
+			"sourceSize": {"w":57,"h":44}
+		},
+		"igor_seat_11.png":
+		{
+			"frame": {"x":57,"y":190,"w":52,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":43},
+			"sourceSize": {"w":52,"h":43}
+		},
+		"igor_seat_20.png":
+		{
+			"frame": {"x":109,"y":190,"w":52,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":43},
+			"sourceSize": {"w":52,"h":43}
+		},
+		"igor_seat_8.png":
+		{
+			"frame": {"x":80,"y":164,"w":42,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":14},
+			"sourceSize": {"w":42,"h":14}
+		},
+		"igor_seat_3.png":
+		{
+			"frame": {"x":161,"y":190,"w":37,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":41},
+			"sourceSize": {"w":37,"h":41}
+		},
+		"igor_seat_9.png":
+		{
+			"frame": {"x":198,"y":190,"w":36,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":41},
+			"sourceSize": {"w":36,"h":41}
+		},
+		"igor_seat_10.png":
+		{
+			"frame": {"x":234,"y":64,"w":17,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":40},
+			"sourceSize": {"w":17,"h":40}
+		},
+		"igor_seat_22.png":
+		{
+			"frame": {"x":251,"y":64,"w":8,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":35},
+			"sourceSize": {"w":8,"h":35}
+		},
+		"igor_seat_25.png":
+		{
+			"frame": {"x":259,"y":64,"w":8,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":8,"h":35},
+			"sourceSize": {"w":8,"h":35}
+		},
+		"igor_seat_21.png":
+		{
+			"frame": {"x":234,"y":104,"w":17,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":32},
+			"sourceSize": {"w":17,"h":32}
+		},
+		"igor_seat_18.png":
+		{
+			"frame": {"x":234,"y":136,"w":25,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":31},
+			"sourceSize": {"w":25,"h":31}
+		},
+		"igor_seat_17.png":
+		{
+			"frame": {"x":234,"y":167,"w":29,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":22},
+			"sourceSize": {"w":29,"h":22}
+		},
+		"igor_seat_14.png":
+		{
+			"frame": {"x":234,"y":190,"w":27,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":23},
+			"sourceSize": {"w":27,"h":23}
+		},
+		"igor_seat_7.png":
+		{
+			"frame": {"x":0,"y":234,"w":27,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":23},
+			"sourceSize": {"w":27,"h":23}
+		},
+		"igor_seat_13.png":
+		{
+			"frame": {"x":27,"y":234,"w":18,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":20},
+			"sourceSize": {"w":18,"h":20}
+		},
+		"igor_seat_15.png":
+		{
+			"frame": {"x":45,"y":234,"w":18,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":20},
+			"sourceSize": {"w":18,"h":20}
+		},
+		"igor_seat_5.png":
+		{
+			"frame": {"x":251,"y":99,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

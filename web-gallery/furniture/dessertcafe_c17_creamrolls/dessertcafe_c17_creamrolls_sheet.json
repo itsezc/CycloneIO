@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "dessertcafe_c17_creamrolls_sheet.png",
+		"size": {"w":111,"h":59},
+		"scale": "1"
+	},
+	"frames": {
+		"dessertcafe_c17_creamrolls_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":31},
+			"sourceSize": {"w":37,"h":31}
+		},
+		"dessertcafe_c17_creamrolls_5.png":
+		{
+			"frame": {"x":37,"y":0,"w":37,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":30},
+			"sourceSize": {"w":37,"h":30}
+		},
+		"dessertcafe_c17_creamrolls_10.png":
+		{
+			"frame": {"x":0,"y":31,"w":37,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":28},
+			"sourceSize": {"w":37,"h":28}
+		},
+		"dessertcafe_c17_creamrolls_8.png":
+		{
+			"frame": {"x":37,"y":31,"w":37,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":27},
+			"sourceSize": {"w":37,"h":27}
+		},
+		"dessertcafe_c17_creamrolls_7.png":
+		{
+			"frame": {"x":74,"y":0,"w":37,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":20},
+			"sourceSize": {"w":37,"h":20}
+		},
+		"dessertcafe_c17_creamrolls_4.png":
+		{
+			"frame": {"x":74,"y":20,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

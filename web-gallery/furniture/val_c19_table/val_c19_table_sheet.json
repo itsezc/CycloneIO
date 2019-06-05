@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "val_c19_table_sheet.png",
+		"size": {"w":96,"h":91},
+		"scale": "1"
+	},
+	"frames": {
+		"val_c19_table_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":48},
+			"sourceSize": {"w":48,"h":48}
+		},
+		"val_c19_table_4.png":
+		{
+			"frame": {"x":48,"y":0,"w":48,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":24},
+			"sourceSize": {"w":48,"h":24}
+		},
+		"val_c19_table_6.png":
+		{
+			"frame": {"x":48,"y":24,"w":35,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":15},
+			"sourceSize": {"w":35,"h":15}
+		},
+		"val_c19_table_1.png":
+		{
+			"frame": {"x":0,"y":48,"w":35,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":13},
+			"sourceSize": {"w":35,"h":13}
+		},
+		"val_c19_table_3.png":
+		{
+			"frame": {"x":0,"y":61,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

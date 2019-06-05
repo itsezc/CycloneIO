@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ads_malaco_gu_sheet.png",
+		"size": {"w":137,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"ads_malaco_gu_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":83,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":77},
+			"sourceSize": {"w":83,"h":77}
+		},
+		"ads_malaco_gu_6.png":
+		{
+			"frame": {"x":83,"y":0,"w":35,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":77},
+			"sourceSize": {"w":35,"h":77}
+		},
+		"ads_malaco_gu_2.png":
+		{
+			"frame": {"x":118,"y":0,"w":19,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":42},
+			"sourceSize": {"w":19,"h":42}
+		},
+		"ads_malaco_gu_8.png":
+		{
+			"frame": {"x":118,"y":42,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"ads_malaco_gu_9.png":
+		{
+			"frame": {"x":0,"y":77,"w":29,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":17},
+			"sourceSize": {"w":29,"h":17}
+		},
+		"ads_malaco_gu_3.png":
+		{
+			"frame": {"x":29,"y":77,"w":15,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":10},
+			"sourceSize": {"w":15,"h":10}
+		}
+	}
+}

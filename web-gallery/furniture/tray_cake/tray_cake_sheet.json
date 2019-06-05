@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "tray_cake_sheet.png",
+		"size": {"w":151,"h":130},
+		"scale": "1"
+	},
+	"frames": {
+		"tray_cake_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":103,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":103,"h":91},
+			"sourceSize": {"w":103,"h":91}
+		},
+		"tray_cake_7.png":
+		{
+			"frame": {"x":103,"y":0,"w":48,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":73},
+			"sourceSize": {"w":48,"h":73}
+		},
+		"tray_cake_5.png":
+		{
+			"frame": {"x":0,"y":91,"w":30,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":39},
+			"sourceSize": {"w":30,"h":39}
+		},
+		"tray_cake_12.png":
+		{
+			"frame": {"x":30,"y":91,"w":25,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":39},
+			"sourceSize": {"w":25,"h":39}
+		},
+		"tray_cake_10.png":
+		{
+			"frame": {"x":55,"y":91,"w":16,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":32},
+			"sourceSize": {"w":16,"h":32}
+		},
+		"tray_cake_3.png":
+		{
+			"frame": {"x":71,"y":91,"w":21,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":24},
+			"sourceSize": {"w":21,"h":24}
+		},
+		"tray_cake_1.png":
+		{
+			"frame": {"x":103,"y":73,"w":15,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":18},
+			"sourceSize": {"w":15,"h":18}
+		},
+		"tray_cake_4.png":
+		{
+			"frame": {"x":118,"y":73,"w":9,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":11},
+			"sourceSize": {"w":9,"h":11}
+		}
+	}
+}

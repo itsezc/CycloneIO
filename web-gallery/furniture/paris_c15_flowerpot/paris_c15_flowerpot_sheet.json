@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "paris_c15_flowerpot_sheet.png",
+		"size": {"w":118,"h":78},
+		"scale": "1"
+	},
+	"frames": {
+		"paris_c15_flowerpot_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":35,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":62},
+			"sourceSize": {"w":35,"h":62}
+		},
+		"paris_c15_flowerpot_6.png":
+		{
+			"frame": {"x":35,"y":0,"w":33,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":54},
+			"sourceSize": {"w":33,"h":54}
+		},
+		"paris_c15_flowerpot_7.png":
+		{
+			"frame": {"x":68,"y":0,"w":33,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":49},
+			"sourceSize": {"w":33,"h":49}
+		},
+		"paris_c15_flowerpot_4.png":
+		{
+			"frame": {"x":0,"y":62,"w":32,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":16},
+			"sourceSize": {"w":32,"h":16}
+		},
+		"paris_c15_flowerpot_9.png":
+		{
+			"frame": {"x":101,"y":0,"w":17,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":25},
+			"sourceSize": {"w":17,"h":25}
+		}
+	}
+}

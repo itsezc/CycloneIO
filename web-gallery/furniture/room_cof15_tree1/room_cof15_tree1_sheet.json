@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "room_cof15_tree1_sheet.png",
+		"size": {"w":104,"h":89},
+		"scale": "1"
+	},
+	"frames": {
+		"room_cof15_tree1_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":65,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":89},
+			"sourceSize": {"w":65,"h":89}
+		},
+		"room_cof15_tree1_7.png":
+		{
+			"frame": {"x":65,"y":0,"w":39,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":20},
+			"sourceSize": {"w":39,"h":20}
+		},
+		"room_cof15_tree1_8.png":
+		{
+			"frame": {"x":65,"y":20,"w":35,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+			"sourceSize": {"w":35,"h":35}
+		},
+		"room_cof15_tree1_9.png":
+		{
+			"frame": {"x":65,"y":55,"w":14,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":27},
+			"sourceSize": {"w":14,"h":27}
+		},
+		"room_cof15_tree1_2.png":
+		{
+			"frame": {"x":100,"y":20,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

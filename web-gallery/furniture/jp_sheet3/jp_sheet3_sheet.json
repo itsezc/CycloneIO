@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "jp_sheet3_sheet.png",
+		"size": {"w":120,"h":115},
+		"scale": "1"
+	},
+	"frames": {
+		"jp_sheet3_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":60,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":115},
+			"sourceSize": {"w":60,"h":115}
+		},
+		"jp_sheet3_1.png":
+		{
+			"frame": {"x":60,"y":0,"w":39,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":115},
+			"sourceSize": {"w":39,"h":115}
+		},
+		"jp_sheet3_6.png":
+		{
+			"frame": {"x":99,"y":0,"w":21,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":59},
+			"sourceSize": {"w":21,"h":59}
+		},
+		"jp_sheet3_8.png":
+		{
+			"frame": {"x":99,"y":59,"w":12,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":30},
+			"sourceSize": {"w":12,"h":30}
+		}
+	}
+}

@@ -1,0 +1,241 @@
+{
+	"meta": {
+		"image": "runway_bigchr_4_sheet.png",
+		"size": {"w":412,"h":323},
+		"scale": "1"
+	},
+	"frames": {
+		"runway_bigchr_4_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":277,"h":223},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":277,"h":223},
+			"sourceSize": {"w":277,"h":223}
+		},
+		"runway_bigchr_4_33.png":
+		{
+			"frame": {"x":277,"y":0,"w":70,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":80},
+			"sourceSize": {"w":70,"h":80}
+		},
+		"runway_bigchr_4_10.png":
+		{
+			"frame": {"x":0,"y":223,"w":71,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":66},
+			"sourceSize": {"w":71,"h":66}
+		},
+		"runway_bigchr_4_9.png":
+		{
+			"frame": {"x":71,"y":223,"w":71,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":66},
+			"sourceSize": {"w":71,"h":66}
+		},
+		"runway_bigchr_4_18.png":
+		{
+			"frame": {"x":277,"y":80,"w":69,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":68},
+			"sourceSize": {"w":69,"h":68}
+		},
+		"runway_bigchr_4_17.png":
+		{
+			"frame": {"x":277,"y":148,"w":69,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":64},
+			"sourceSize": {"w":69,"h":64}
+		},
+		"runway_bigchr_4_27.png":
+		{
+			"frame": {"x":347,"y":0,"w":65,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":68},
+			"sourceSize": {"w":65,"h":68}
+		},
+		"runway_bigchr_4_29.png":
+		{
+			"frame": {"x":347,"y":68,"w":65,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":68},
+			"sourceSize": {"w":65,"h":68}
+		},
+		"runway_bigchr_4_3.png":
+		{
+			"frame": {"x":347,"y":136,"w":55,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":28},
+			"sourceSize": {"w":55,"h":28}
+		},
+		"runway_bigchr_4_31.png":
+		{
+			"frame": {"x":347,"y":164,"w":36,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":41},
+			"sourceSize": {"w":36,"h":41}
+		},
+		"runway_bigchr_4_4.png":
+		{
+			"frame": {"x":347,"y":205,"w":35,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+			"sourceSize": {"w":35,"h":35}
+		},
+		"runway_bigchr_4_15.png":
+		{
+			"frame": {"x":347,"y":240,"w":35,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":33},
+			"sourceSize": {"w":35,"h":33}
+		},
+		"runway_bigchr_4_19.png":
+		{
+			"frame": {"x":142,"y":223,"w":35,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":33},
+			"sourceSize": {"w":35,"h":33}
+		},
+		"runway_bigchr_4_30.png":
+		{
+			"frame": {"x":177,"y":223,"w":35,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":33},
+			"sourceSize": {"w":35,"h":33}
+		},
+		"runway_bigchr_4_22.png":
+		{
+			"frame": {"x":0,"y":289,"w":33,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":34},
+			"sourceSize": {"w":33,"h":34}
+		},
+		"runway_bigchr_4_25.png":
+		{
+			"frame": {"x":33,"y":289,"w":33,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":34},
+			"sourceSize": {"w":33,"h":34}
+		},
+		"runway_bigchr_4_14.png":
+		{
+			"frame": {"x":383,"y":164,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"runway_bigchr_4_12.png":
+		{
+			"frame": {"x":382,"y":205,"w":29,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":26},
+			"sourceSize": {"w":29,"h":26}
+		},
+		"runway_bigchr_4_7.png":
+		{
+			"frame": {"x":382,"y":240,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		},
+		"runway_bigchr_4_23.png":
+		{
+			"frame": {"x":212,"y":223,"w":23,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":24},
+			"sourceSize": {"w":23,"h":24}
+		},
+		"runway_bigchr_4_24.png":
+		{
+			"frame": {"x":235,"y":223,"w":23,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":24},
+			"sourceSize": {"w":23,"h":24}
+		},
+		"runway_bigchr_4_6.png":
+		{
+			"frame": {"x":382,"y":253,"w":15,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":14},
+			"sourceSize": {"w":15,"h":14}
+		},
+		"runway_bigchr_4_28.png":
+		{
+			"frame": {"x":397,"y":253,"w":12,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+			"sourceSize": {"w":12,"h":12}
+		},
+		"runway_bigchr_4_32.png":
+		{
+			"frame": {"x":347,"y":273,"w":12,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":12},
+			"sourceSize": {"w":12,"h":12}
+		},
+		"runway_bigchr_4_20.png":
+		{
+			"frame": {"x":402,"y":136,"w":10,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":9},
+			"sourceSize": {"w":10,"h":9}
+		},
+		"runway_bigchr_4_21.png":
+		{
+			"frame": {"x":402,"y":145,"w":10,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":9},
+			"sourceSize": {"w":10,"h":9}
+		},
+		"runway_bigchr_4_1.png":
+		{
+			"frame": {"x":402,"y":154,"w":4,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":3},
+			"sourceSize": {"w":4,"h":3}
+		},
+		"runway_bigchr_4_13.png":
+		{
+			"frame": {"x":406,"y":154,"w":4,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":3},
+			"sourceSize": {"w":4,"h":3}
+		},
+		"runway_bigchr_4_2.png":
+		{
+			"frame": {"x":410,"y":154,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,745 @@
+{
+	"meta": {
+		"image": "coralking_c18_tropicalfish_sheet.png",
+		"size": {"w":572,"h":564},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_c18_tropicalfish_57.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":119},
+			"sourceSize": {"w":29,"h":119}
+		},
+		"coralking_c18_tropicalfish_62.png":
+		{
+			"frame": {"x":29,"y":0,"w":21,"h":119},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":119},
+			"sourceSize": {"w":21,"h":119}
+		},
+		"coralking_c18_tropicalfish_85.png":
+		{
+			"frame": {"x":50,"y":0,"w":26,"h":118},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":118},
+			"sourceSize": {"w":26,"h":118}
+		},
+		"coralking_c18_tropicalfish_53.png":
+		{
+			"frame": {"x":76,"y":0,"w":25,"h":118},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":118},
+			"sourceSize": {"w":25,"h":118}
+		},
+		"coralking_c18_tropicalfish_61.png":
+		{
+			"frame": {"x":101,"y":0,"w":21,"h":118},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":118},
+			"sourceSize": {"w":21,"h":118}
+		},
+		"coralking_c18_tropicalfish_2.png":
+		{
+			"frame": {"x":122,"y":0,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_26.png":
+		{
+			"frame": {"x":150,"y":0,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_3.png":
+		{
+			"frame": {"x":178,"y":0,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_39.png":
+		{
+			"frame": {"x":206,"y":0,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_5.png":
+		{
+			"frame": {"x":234,"y":0,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_88.png":
+		{
+			"frame": {"x":0,"y":119,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_89.png":
+		{
+			"frame": {"x":28,"y":119,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_9.png":
+		{
+			"frame": {"x":56,"y":119,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_92.png":
+		{
+			"frame": {"x":84,"y":119,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_97.png":
+		{
+			"frame": {"x":112,"y":119,"w":28,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":117},
+			"sourceSize": {"w":28,"h":117}
+		},
+		"coralking_c18_tropicalfish_60.png":
+		{
+			"frame": {"x":140,"y":119,"w":26,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":117},
+			"sourceSize": {"w":26,"h":117}
+		},
+		"coralking_c18_tropicalfish_64.png":
+		{
+			"frame": {"x":166,"y":119,"w":26,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":117},
+			"sourceSize": {"w":26,"h":117}
+		},
+		"coralking_c18_tropicalfish_66.png":
+		{
+			"frame": {"x":192,"y":119,"w":26,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":117},
+			"sourceSize": {"w":26,"h":117}
+		},
+		"coralking_c18_tropicalfish_87.png":
+		{
+			"frame": {"x":218,"y":119,"w":25,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":117},
+			"sourceSize": {"w":25,"h":117}
+		},
+		"coralking_c18_tropicalfish_43.png":
+		{
+			"frame": {"x":262,"y":0,"w":23,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":117},
+			"sourceSize": {"w":23,"h":117}
+		},
+		"coralking_c18_tropicalfish_55.png":
+		{
+			"frame": {"x":262,"y":117,"w":23,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":117},
+			"sourceSize": {"w":23,"h":117}
+		},
+		"coralking_c18_tropicalfish_38.png":
+		{
+			"frame": {"x":285,"y":0,"w":21,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":117},
+			"sourceSize": {"w":21,"h":117}
+		},
+		"coralking_c18_tropicalfish_28.png":
+		{
+			"frame": {"x":306,"y":0,"w":30,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":116},
+			"sourceSize": {"w":30,"h":116}
+		},
+		"coralking_c18_tropicalfish_1.png":
+		{
+			"frame": {"x":306,"y":116,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_10.png":
+		{
+			"frame": {"x":336,"y":0,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_11.png":
+		{
+			"frame": {"x":336,"y":116,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_12.png":
+		{
+			"frame": {"x":0,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_13.png":
+		{
+			"frame": {"x":28,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_25.png":
+		{
+			"frame": {"x":56,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_4.png":
+		{
+			"frame": {"x":84,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_7.png":
+		{
+			"frame": {"x":112,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_75.png":
+		{
+			"frame": {"x":140,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_79.png":
+		{
+			"frame": {"x":168,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_8.png":
+		{
+			"frame": {"x":196,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_95.png":
+		{
+			"frame": {"x":224,"y":236,"w":28,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":116},
+			"sourceSize": {"w":28,"h":116}
+		},
+		"coralking_c18_tropicalfish_86.png":
+		{
+			"frame": {"x":252,"y":236,"w":27,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":116},
+			"sourceSize": {"w":27,"h":116}
+		},
+		"coralking_c18_tropicalfish_45.png":
+		{
+			"frame": {"x":279,"y":236,"w":26,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":116},
+			"sourceSize": {"w":26,"h":116}
+		},
+		"coralking_c18_tropicalfish_59.png":
+		{
+			"frame": {"x":305,"y":236,"w":26,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":116},
+			"sourceSize": {"w":26,"h":116}
+		},
+		"coralking_c18_tropicalfish_63.png":
+		{
+			"frame": {"x":331,"y":236,"w":26,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":116},
+			"sourceSize": {"w":26,"h":116}
+		},
+		"coralking_c18_tropicalfish_67.png":
+		{
+			"frame": {"x":364,"y":0,"w":26,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":116},
+			"sourceSize": {"w":26,"h":116}
+		},
+		"coralking_c18_tropicalfish_44.png":
+		{
+			"frame": {"x":364,"y":116,"w":24,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":116},
+			"sourceSize": {"w":24,"h":116}
+		},
+		"coralking_c18_tropicalfish_34.png":
+		{
+			"frame": {"x":364,"y":232,"w":23,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":116},
+			"sourceSize": {"w":23,"h":116}
+		},
+		"coralking_c18_tropicalfish_41.png":
+		{
+			"frame": {"x":390,"y":0,"w":23,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":116},
+			"sourceSize": {"w":23,"h":116}
+		},
+		"coralking_c18_tropicalfish_52.png":
+		{
+			"frame": {"x":390,"y":116,"w":23,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":116},
+			"sourceSize": {"w":23,"h":116}
+		},
+		"coralking_c18_tropicalfish_54.png":
+		{
+			"frame": {"x":390,"y":232,"w":23,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":116},
+			"sourceSize": {"w":23,"h":116}
+		},
+		"coralking_c18_tropicalfish_35.png":
+		{
+			"frame": {"x":413,"y":0,"w":22,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":116},
+			"sourceSize": {"w":22,"h":116}
+		},
+		"coralking_c18_tropicalfish_50.png":
+		{
+			"frame": {"x":413,"y":116,"w":22,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":116},
+			"sourceSize": {"w":22,"h":116}
+		},
+		"coralking_c18_tropicalfish_58.png":
+		{
+			"frame": {"x":413,"y":232,"w":22,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":116},
+			"sourceSize": {"w":22,"h":116}
+		},
+		"coralking_c18_tropicalfish_37.png":
+		{
+			"frame": {"x":285,"y":117,"w":21,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":116},
+			"sourceSize": {"w":21,"h":116}
+		},
+		"coralking_c18_tropicalfish_14.png":
+		{
+			"frame": {"x":435,"y":0,"w":28,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":115},
+			"sourceSize": {"w":28,"h":115}
+		},
+		"coralking_c18_tropicalfish_69.png":
+		{
+			"frame": {"x":435,"y":115,"w":28,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":115},
+			"sourceSize": {"w":28,"h":115}
+		},
+		"coralking_c18_tropicalfish_80.png":
+		{
+			"frame": {"x":435,"y":230,"w":28,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":115},
+			"sourceSize": {"w":28,"h":115}
+		},
+		"coralking_c18_tropicalfish_81.png":
+		{
+			"frame": {"x":463,"y":0,"w":28,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":115},
+			"sourceSize": {"w":28,"h":115}
+		},
+		"coralking_c18_tropicalfish_96.png":
+		{
+			"frame": {"x":463,"y":115,"w":28,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":115},
+			"sourceSize": {"w":28,"h":115}
+		},
+		"coralking_c18_tropicalfish_18.png":
+		{
+			"frame": {"x":463,"y":230,"w":27,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":115},
+			"sourceSize": {"w":27,"h":115}
+		},
+		"coralking_c18_tropicalfish_68.png":
+		{
+			"frame": {"x":0,"y":352,"w":27,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":115},
+			"sourceSize": {"w":27,"h":115}
+		},
+		"coralking_c18_tropicalfish_83.png":
+		{
+			"frame": {"x":27,"y":352,"w":27,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":115},
+			"sourceSize": {"w":27,"h":115}
+		},
+		"coralking_c18_tropicalfish_16.png":
+		{
+			"frame": {"x":54,"y":352,"w":26,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":115},
+			"sourceSize": {"w":26,"h":115}
+		},
+		"coralking_c18_tropicalfish_91.png":
+		{
+			"frame": {"x":80,"y":352,"w":26,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":115},
+			"sourceSize": {"w":26,"h":115}
+		},
+		"coralking_c18_tropicalfish_93.png":
+		{
+			"frame": {"x":106,"y":352,"w":26,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":115},
+			"sourceSize": {"w":26,"h":115}
+		},
+		"coralking_c18_tropicalfish_29.png":
+		{
+			"frame": {"x":132,"y":352,"w":25,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":115},
+			"sourceSize": {"w":25,"h":115}
+		},
+		"coralking_c18_tropicalfish_56.png":
+		{
+			"frame": {"x":157,"y":352,"w":25,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":115},
+			"sourceSize": {"w":25,"h":115}
+		},
+		"coralking_c18_tropicalfish_20.png":
+		{
+			"frame": {"x":182,"y":352,"w":23,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":115},
+			"sourceSize": {"w":23,"h":115}
+		},
+		"coralking_c18_tropicalfish_32.png":
+		{
+			"frame": {"x":205,"y":352,"w":23,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":115},
+			"sourceSize": {"w":23,"h":115}
+		},
+		"coralking_c18_tropicalfish_48.png":
+		{
+			"frame": {"x":228,"y":352,"w":23,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":115},
+			"sourceSize": {"w":23,"h":115}
+		},
+		"coralking_c18_tropicalfish_49.png":
+		{
+			"frame": {"x":251,"y":352,"w":23,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":115},
+			"sourceSize": {"w":23,"h":115}
+		},
+		"coralking_c18_tropicalfish_84.png":
+		{
+			"frame": {"x":274,"y":352,"w":29,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":114},
+			"sourceSize": {"w":29,"h":114}
+		},
+		"coralking_c18_tropicalfish_33.png":
+		{
+			"frame": {"x":303,"y":352,"w":28,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":114},
+			"sourceSize": {"w":28,"h":114}
+		},
+		"coralking_c18_tropicalfish_71.png":
+		{
+			"frame": {"x":331,"y":352,"w":28,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":114},
+			"sourceSize": {"w":28,"h":114}
+		},
+		"coralking_c18_tropicalfish_22.png":
+		{
+			"frame": {"x":359,"y":352,"w":27,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":114},
+			"sourceSize": {"w":27,"h":114}
+		},
+		"coralking_c18_tropicalfish_23.png":
+		{
+			"frame": {"x":386,"y":352,"w":27,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":114},
+			"sourceSize": {"w":27,"h":114}
+		},
+		"coralking_c18_tropicalfish_24.png":
+		{
+			"frame": {"x":413,"y":352,"w":26,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":114},
+			"sourceSize": {"w":26,"h":114}
+		},
+		"coralking_c18_tropicalfish_30.png":
+		{
+			"frame": {"x":439,"y":352,"w":26,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":114},
+			"sourceSize": {"w":26,"h":114}
+		},
+		"coralking_c18_tropicalfish_94.png":
+		{
+			"frame": {"x":465,"y":352,"w":26,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":114},
+			"sourceSize": {"w":26,"h":114}
+		},
+		"coralking_c18_tropicalfish_40.png":
+		{
+			"frame": {"x":491,"y":0,"w":25,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":114},
+			"sourceSize": {"w":25,"h":114}
+		},
+		"coralking_c18_tropicalfish_51.png":
+		{
+			"frame": {"x":491,"y":114,"w":24,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":114},
+			"sourceSize": {"w":24,"h":114}
+		},
+		"coralking_c18_tropicalfish_46.png":
+		{
+			"frame": {"x":491,"y":228,"w":23,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":114},
+			"sourceSize": {"w":23,"h":114}
+		},
+		"coralking_c18_tropicalfish_21.png":
+		{
+			"frame": {"x":516,"y":0,"w":28,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":113},
+			"sourceSize": {"w":28,"h":113}
+		},
+		"coralking_c18_tropicalfish_47.png":
+		{
+			"frame": {"x":516,"y":113,"w":23,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":113},
+			"sourceSize": {"w":23,"h":113}
+		},
+		"coralking_c18_tropicalfish_15.png":
+		{
+			"frame": {"x":516,"y":226,"w":28,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":112},
+			"sourceSize": {"w":28,"h":112}
+		},
+		"coralking_c18_tropicalfish_74.png":
+		{
+			"frame": {"x":516,"y":338,"w":26,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":110},
+			"sourceSize": {"w":26,"h":110}
+		},
+		"coralking_c18_tropicalfish_77.png":
+		{
+			"frame": {"x":544,"y":0,"w":28,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":108},
+			"sourceSize": {"w":28,"h":108}
+		},
+		"coralking_c18_tropicalfish_17.png":
+		{
+			"frame": {"x":544,"y":108,"w":28,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":102},
+			"sourceSize": {"w":28,"h":102}
+		},
+		"coralking_c18_tropicalfish_73.png":
+		{
+			"frame": {"x":544,"y":210,"w":26,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":100},
+			"sourceSize": {"w":26,"h":100}
+		},
+		"coralking_c18_tropicalfish_19.png":
+		{
+			"frame": {"x":544,"y":310,"w":28,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":98},
+			"sourceSize": {"w":28,"h":98}
+		},
+		"coralking_c18_tropicalfish_27.png":
+		{
+			"frame": {"x":0,"y":467,"w":28,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":97},
+			"sourceSize": {"w":28,"h":97}
+		},
+		"coralking_c18_tropicalfish_76.png":
+		{
+			"frame": {"x":28,"y":467,"w":28,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":97},
+			"sourceSize": {"w":28,"h":97}
+		},
+		"coralking_c18_tropicalfish_78.png":
+		{
+			"frame": {"x":56,"y":467,"w":28,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":96},
+			"sourceSize": {"w":28,"h":96}
+		},
+		"coralking_c18_tropicalfish_72.png":
+		{
+			"frame": {"x":84,"y":467,"w":26,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":90},
+			"sourceSize": {"w":26,"h":90}
+		},
+		"coralking_c18_tropicalfish_70.png":
+		{
+			"frame": {"x":110,"y":467,"w":26,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":86},
+			"sourceSize": {"w":26,"h":86}
+		},
+		"coralking_c18_tropicalfish_31.png":
+		{
+			"frame": {"x":136,"y":467,"w":26,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":85},
+			"sourceSize": {"w":26,"h":85}
+		},
+		"coralking_c18_tropicalfish_65.png":
+		{
+			"frame": {"x":544,"y":408,"w":26,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":27},
+			"sourceSize": {"w":26,"h":27}
+		}
+	}
+}

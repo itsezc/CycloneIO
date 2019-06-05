@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_cladyhair_sheet.png",
+		"size": {"w":64,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_cladyhair_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":45},
+			"sourceSize": {"w":34,"h":45}
+		},
+		"clothing_cladyhair_1.png":
+		{
+			"frame": {"x":34,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_cladyhair_8.png":
+		{
+			"frame": {"x":34,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		},
+		"clothing_cladyhair_7.png":
+		{
+			"frame": {"x":60,"y":30,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

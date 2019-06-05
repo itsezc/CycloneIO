@@ -1,0 +1,129 @@
+{
+	"meta": {
+		"image": "loyalty_toad_sheet.png",
+		"size": {"w":260,"h":239},
+		"scale": "1"
+	},
+	"frames": {
+		"loyalty_toad_18.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":123},
+			"sourceSize": {"w":130,"h":123}
+		},
+		"loyalty_toad_4.png":
+		{
+			"frame": {"x":130,"y":0,"w":130,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":123},
+			"sourceSize": {"w":130,"h":123}
+		},
+		"loyalty_toad_16.png":
+		{
+			"frame": {"x":0,"y":123,"w":66,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":63},
+			"sourceSize": {"w":66,"h":63}
+		},
+		"loyalty_toad_8.png":
+		{
+			"frame": {"x":66,"y":123,"w":66,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":63},
+			"sourceSize": {"w":66,"h":63}
+		},
+		"loyalty_toad_1.png":
+		{
+			"frame": {"x":132,"y":123,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"loyalty_toad_3.png":
+		{
+			"frame": {"x":0,"y":186,"w":52,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":53},
+			"sourceSize": {"w":52,"h":53}
+		},
+		"loyalty_toad_2.png":
+		{
+			"frame": {"x":52,"y":186,"w":51,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":53},
+			"sourceSize": {"w":51,"h":53}
+		},
+		"loyalty_toad_6.png":
+		{
+			"frame": {"x":103,"y":186,"w":51,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":53},
+			"sourceSize": {"w":51,"h":53}
+		},
+		"loyalty_toad_17.png":
+		{
+			"frame": {"x":198,"y":123,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"loyalty_toad_13.png":
+		{
+			"frame": {"x":154,"y":186,"w":32,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+			"sourceSize": {"w":32,"h":32}
+		},
+		"loyalty_toad_11.png":
+		{
+			"frame": {"x":132,"y":156,"w":25,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":27},
+			"sourceSize": {"w":25,"h":27}
+		},
+		"loyalty_toad_12.png":
+		{
+			"frame": {"x":157,"y":156,"w":25,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":27},
+			"sourceSize": {"w":25,"h":27}
+		},
+		"loyalty_toad_15.png":
+		{
+			"frame": {"x":182,"y":156,"w":25,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":27},
+			"sourceSize": {"w":25,"h":27}
+		},
+		"loyalty_toad_14.png":
+		{
+			"frame": {"x":232,"y":123,"w":1,"h":2},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":2},
+			"sourceSize": {"w":1,"h":2}
+		},
+		"loyalty_toad_10.png":
+		{
+			"frame": {"x":233,"y":123,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

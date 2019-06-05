@@ -1,0 +1,113 @@
+{
+	"meta": {
+		"image": "hc3_light_sheet.png",
+		"size": {"w":470,"h":346},
+		"scale": "1"
+	},
+	"frames": {
+		"hc3_light_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":316,"h":231},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":316,"h":231},
+			"sourceSize": {"w":316,"h":231}
+		},
+		"hc3_light_16.png":
+		{
+			"frame": {"x":316,"y":0,"w":154,"h":231},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":154,"h":231},
+			"sourceSize": {"w":154,"h":231}
+		},
+		"hc3_light_4.png":
+		{
+			"frame": {"x":0,"y":231,"w":77,"h":115},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":115},
+			"sourceSize": {"w":77,"h":115}
+		},
+		"hc3_light_14.png":
+		{
+			"frame": {"x":77,"y":231,"w":85,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":44},
+			"sourceSize": {"w":85,"h":44}
+		},
+		"hc3_light_10.png":
+		{
+			"frame": {"x":162,"y":231,"w":59,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":38},
+			"sourceSize": {"w":59,"h":38}
+		},
+		"hc3_light_12.png":
+		{
+			"frame": {"x":221,"y":231,"w":59,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":38},
+			"sourceSize": {"w":59,"h":38}
+		},
+		"hc3_light_5.png":
+		{
+			"frame": {"x":77,"y":275,"w":55,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":45},
+			"sourceSize": {"w":55,"h":45}
+		},
+		"hc3_light_13.png":
+		{
+			"frame": {"x":280,"y":231,"w":42,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":22},
+			"sourceSize": {"w":42,"h":22}
+		},
+		"hc3_light_2.png":
+		{
+			"frame": {"x":322,"y":231,"w":30,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":21},
+			"sourceSize": {"w":30,"h":21}
+		},
+		"hc3_light_3.png":
+		{
+			"frame": {"x":352,"y":231,"w":30,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":21},
+			"sourceSize": {"w":30,"h":21}
+		},
+		"hc3_light_17.png":
+		{
+			"frame": {"x":132,"y":275,"w":29,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":24},
+			"sourceSize": {"w":29,"h":24}
+		},
+		"hc3_light_15.png":
+		{
+			"frame": {"x":161,"y":275,"w":28,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":22},
+			"sourceSize": {"w":28,"h":22}
+		},
+		"hc3_light_1.png":
+		{
+			"frame": {"x":382,"y":231,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

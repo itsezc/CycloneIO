@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "habbo15_comp_room_sheet.png",
+		"size": {"w":104,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"habbo15_comp_room_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":55},
+			"sourceSize": {"w":40,"h":55}
+		},
+		"habbo15_comp_room_2.png":
+		{
+			"frame": {"x":40,"y":0,"w":42,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":47},
+			"sourceSize": {"w":42,"h":47}
+		},
+		"habbo15_comp_room_3.png":
+		{
+			"frame": {"x":82,"y":0,"w":22,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":29},
+			"sourceSize": {"w":22,"h":29}
+		}
+	}
+}

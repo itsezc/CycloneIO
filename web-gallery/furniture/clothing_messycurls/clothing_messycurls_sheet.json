@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_messycurls_sheet.png",
+		"size": {"w":64,"h":44},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_messycurls_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":44},
+			"sourceSize": {"w":34,"h":44}
+		},
+		"clothing_messycurls_7.png":
+		{
+			"frame": {"x":34,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

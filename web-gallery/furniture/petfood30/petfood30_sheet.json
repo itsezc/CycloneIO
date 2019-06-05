@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "petfood30_sheet.png",
+		"size": {"w":48,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"petfood30_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"petfood30_10.png":
+		{
+			"frame": {"x":24,"y":0,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"petfood30_2.png":
+		{
+			"frame": {"x":0,"y":16,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"petfood30_4.png":
+		{
+			"frame": {"x":24,"y":16,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"petfood30_6.png":
+		{
+			"frame": {"x":0,"y":32,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		},
+		"petfood30_7.png":
+		{
+			"frame": {"x":24,"y":32,"w":24,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":16},
+			"sourceSize": {"w":24,"h":16}
+		}
+	}
+}

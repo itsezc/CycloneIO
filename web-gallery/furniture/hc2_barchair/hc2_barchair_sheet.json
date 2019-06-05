@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "hc2_barchair_sheet.png",
+		"size": {"w":191,"h":130},
+		"scale": "1"
+	},
+	"frames": {
+		"hc2_barchair_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":107,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":107,"h":98},
+			"sourceSize": {"w":107,"h":98}
+		},
+		"hc2_barchair_4.png":
+		{
+			"frame": {"x":107,"y":0,"w":42,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":68},
+			"sourceSize": {"w":42,"h":68}
+		},
+		"hc2_barchair_6.png":
+		{
+			"frame": {"x":149,"y":0,"w":42,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":61},
+			"sourceSize": {"w":42,"h":61}
+		},
+		"hc2_barchair_8.png":
+		{
+			"frame": {"x":149,"y":61,"w":23,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":35},
+			"sourceSize": {"w":23,"h":35}
+		},
+		"hc2_barchair_12.png":
+		{
+			"frame": {"x":0,"y":98,"w":23,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":32},
+			"sourceSize": {"w":23,"h":32}
+		},
+		"hc2_barchair_9.png":
+		{
+			"frame": {"x":172,"y":61,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"hc2_barchair_7.png":
+		{
+			"frame": {"x":107,"y":68,"w":22,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":21},
+			"sourceSize": {"w":22,"h":21}
+		},
+		"hc2_barchair_13.png":
+		{
+			"frame": {"x":129,"y":68,"w":13,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+			"sourceSize": {"w":13,"h":11}
+		},
+		"hc2_barchair_2.png":
+		{
+			"frame": {"x":172,"y":91,"w":3,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":1},
+			"sourceSize": {"w":3,"h":1}
+		}
+	}
+}

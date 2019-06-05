@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "pcnc_carrot_sheet.png",
+		"size": {"w":57,"h":41},
+		"scale": "1"
+	},
+	"frames": {
+		"pcnc_carrot_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":19,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":34},
+			"sourceSize": {"w":19,"h":34}
+		},
+		"pcnc_carrot_2.png":
+		{
+			"frame": {"x":19,"y":0,"w":19,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":29},
+			"sourceSize": {"w":19,"h":29}
+		},
+		"pcnc_carrot_7.png":
+		{
+			"frame": {"x":38,"y":0,"w":19,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":11},
+			"sourceSize": {"w":19,"h":11}
+		},
+		"pcnc_carrot_5.png":
+		{
+			"frame": {"x":38,"y":11,"w":10,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":18},
+			"sourceSize": {"w":10,"h":18}
+		},
+		"pcnc_carrot_6.png":
+		{
+			"frame": {"x":0,"y":34,"w":10,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":7},
+			"sourceSize": {"w":10,"h":7}
+		}
+	}
+}

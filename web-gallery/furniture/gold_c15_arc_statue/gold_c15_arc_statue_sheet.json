@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "gold_c15_arc_statue_sheet.png",
+		"size": {"w":72,"h":109},
+		"scale": "1"
+	},
+	"frames": {
+		"gold_c15_arc_statue_14.png":
+		{
+			"frame": {"x":0,"y":0,"w":54,"h":109},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":109},
+			"sourceSize": {"w":54,"h":109}
+		},
+		"gold_c15_arc_statue_7.png":
+		{
+			"frame": {"x":54,"y":0,"w":18,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":33},
+			"sourceSize": {"w":18,"h":33}
+		},
+		"gold_c15_arc_statue_4.png":
+		{
+			"frame": {"x":54,"y":33,"w":11,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":11},
+			"sourceSize": {"w":11,"h":11}
+		},
+		"gold_c15_arc_statue_5.png":
+		{
+			"frame": {"x":54,"y":44,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"gold_c15_arc_statue_8.png":
+		{
+			"frame": {"x":65,"y":33,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"gold_c15_arc_statue_9.png":
+		{
+			"frame": {"x":63,"y":44,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"gold_c15_arc_statue_1.png":
+		{
+			"frame": {"x":54,"y":53,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"gold_c15_arc_statue_2.png":
+		{
+			"frame": {"x":65,"y":40,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"gold_c15_arc_statue_3.png":
+		{
+			"frame": {"x":68,"y":40,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

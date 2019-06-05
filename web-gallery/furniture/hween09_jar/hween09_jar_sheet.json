@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "hween09_jar_sheet.png",
+		"size": {"w":160,"h":142},
+		"scale": "1"
+	},
+	"frames": {
+		"hween09_jar_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":92},
+			"sourceSize": {"w":128,"h":92}
+		},
+		"hween09_jar_12.png":
+		{
+			"frame": {"x":128,"y":0,"w":32,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":50},
+			"sourceSize": {"w":32,"h":50}
+		},
+		"hween09_jar_13.png":
+		{
+			"frame": {"x":0,"y":92,"w":32,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":50},
+			"sourceSize": {"w":32,"h":50}
+		},
+		"hween09_jar_6.png":
+		{
+			"frame": {"x":32,"y":92,"w":32,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":50},
+			"sourceSize": {"w":32,"h":50}
+		},
+		"hween09_jar_9.png":
+		{
+			"frame": {"x":64,"y":92,"w":32,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":50},
+			"sourceSize": {"w":32,"h":50}
+		},
+		"hween09_jar_15.png":
+		{
+			"frame": {"x":128,"y":50,"w":32,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":16},
+			"sourceSize": {"w":32,"h":16}
+		},
+		"hween09_jar_1.png":
+		{
+			"frame": {"x":128,"y":66,"w":17,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":26},
+			"sourceSize": {"w":17,"h":26}
+		},
+		"hween09_jar_2.png":
+		{
+			"frame": {"x":96,"y":92,"w":17,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":26},
+			"sourceSize": {"w":17,"h":26}
+		},
+		"hween09_jar_3.png":
+		{
+			"frame": {"x":113,"y":92,"w":17,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":26},
+			"sourceSize": {"w":17,"h":26}
+		},
+		"hween09_jar_5.png":
+		{
+			"frame": {"x":130,"y":92,"w":17,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":26},
+			"sourceSize": {"w":17,"h":26}
+		},
+		"hween09_jar_14.png":
+		{
+			"frame": {"x":96,"y":118,"w":17,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":9},
+			"sourceSize": {"w":17,"h":9}
+		}
+	}
+}

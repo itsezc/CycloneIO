@@ -1,0 +1,233 @@
+{
+	"meta": {
+		"image": "hween_c15_altar_sheet.png",
+		"size": {"w":395,"h":297},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c15_altar_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":85,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":150},
+			"sourceSize": {"w":85,"h":150}
+		},
+		"hween_c15_altar_21.png":
+		{
+			"frame": {"x":85,"y":0,"w":80,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":150},
+			"sourceSize": {"w":80,"h":150}
+		},
+		"hween_c15_altar_16.png":
+		{
+			"frame": {"x":165,"y":0,"w":82,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":149},
+			"sourceSize": {"w":82,"h":149}
+		},
+		"hween_c15_altar_24.png":
+		{
+			"frame": {"x":247,"y":0,"w":82,"h":149},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":149},
+			"sourceSize": {"w":82,"h":149}
+		},
+		"hween_c15_altar_33.png":
+		{
+			"frame": {"x":0,"y":150,"w":80,"h":147},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":147},
+			"sourceSize": {"w":80,"h":147}
+		},
+		"hween_c15_altar_32.png":
+		{
+			"frame": {"x":80,"y":150,"w":77,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":143},
+			"sourceSize": {"w":77,"h":143}
+		},
+		"hween_c15_altar_8.png":
+		{
+			"frame": {"x":157,"y":150,"w":80,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":80},
+			"sourceSize": {"w":80,"h":80}
+		},
+		"hween_c15_altar_14.png":
+		{
+			"frame": {"x":237,"y":150,"w":72,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":72},
+			"sourceSize": {"w":72,"h":72}
+		},
+		"hween_c15_altar_12.png":
+		{
+			"frame": {"x":329,"y":0,"w":66,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":66},
+			"sourceSize": {"w":66,"h":66}
+		},
+		"hween_c15_altar_30.png":
+		{
+			"frame": {"x":329,"y":66,"w":63,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":63},
+			"sourceSize": {"w":63,"h":63}
+		},
+		"hween_c15_altar_28.png":
+		{
+			"frame": {"x":329,"y":129,"w":57,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":57},
+			"sourceSize": {"w":57,"h":57}
+		},
+		"hween_c15_altar_2.png":
+		{
+			"frame": {"x":329,"y":186,"w":42,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":35},
+			"sourceSize": {"w":42,"h":35}
+		},
+		"hween_c15_altar_29.png":
+		{
+			"frame": {"x":329,"y":221,"w":42,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":35},
+			"sourceSize": {"w":42,"h":35}
+		},
+		"hween_c15_altar_3.png":
+		{
+			"frame": {"x":329,"y":256,"w":42,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":35},
+			"sourceSize": {"w":42,"h":35}
+		},
+		"hween_c15_altar_31.png":
+		{
+			"frame": {"x":157,"y":230,"w":42,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":35},
+			"sourceSize": {"w":42,"h":35}
+		},
+		"hween_c15_altar_4.png":
+		{
+			"frame": {"x":199,"y":230,"w":42,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":35},
+			"sourceSize": {"w":42,"h":35}
+		},
+		"hween_c15_altar_26.png":
+		{
+			"frame": {"x":241,"y":230,"w":42,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":23},
+			"sourceSize": {"w":42,"h":23}
+		},
+		"hween_c15_altar_5.png":
+		{
+			"frame": {"x":157,"y":265,"w":30,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":25},
+			"sourceSize": {"w":30,"h":25}
+		},
+		"hween_c15_altar_20.png":
+		{
+			"frame": {"x":283,"y":230,"w":25,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":13},
+			"sourceSize": {"w":25,"h":13}
+		},
+		"hween_c15_altar_22.png":
+		{
+			"frame": {"x":371,"y":186,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		},
+		"hween_c15_altar_6.png":
+		{
+			"frame": {"x":371,"y":198,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		},
+		"hween_c15_altar_17.png":
+		{
+			"frame": {"x":371,"y":221,"w":23,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":14},
+			"sourceSize": {"w":23,"h":14}
+		},
+		"hween_c15_altar_18.png":
+		{
+			"frame": {"x":371,"y":235,"w":21,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":16},
+			"sourceSize": {"w":21,"h":16}
+		},
+		"hween_c15_altar_13.png":
+		{
+			"frame": {"x":371,"y":256,"w":19,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":16},
+			"sourceSize": {"w":19,"h":16}
+		},
+		"hween_c15_altar_15.png":
+		{
+			"frame": {"x":371,"y":272,"w":15,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":12},
+			"sourceSize": {"w":15,"h":12}
+		},
+		"hween_c15_altar_7.png":
+		{
+			"frame": {"x":386,"y":129,"w":9,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":8},
+			"sourceSize": {"w":9,"h":8}
+		},
+		"hween_c15_altar_9.png":
+		{
+			"frame": {"x":386,"y":137,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"hween_c15_altar_27.png":
+		{
+			"frame": {"x":392,"y":66,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

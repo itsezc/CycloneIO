@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "xmas_c17_doll2_sheet.png",
+		"size": {"w":62,"h":62},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_doll2_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":33,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":62},
+			"sourceSize": {"w":33,"h":62}
+		},
+		"xmas_c17_doll2_2.png":
+		{
+			"frame": {"x":33,"y":0,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"xmas_c17_doll2_3.png":
+		{
+			"frame": {"x":33,"y":30,"w":29,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":14},
+			"sourceSize": {"w":29,"h":14}
+		}
+	}
+}

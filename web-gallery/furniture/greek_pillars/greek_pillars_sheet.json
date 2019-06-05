@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "greek_pillars_sheet.png",
+		"size": {"w":310,"h":263},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_pillars_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":201,"h":196},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":201,"h":196},
+			"sourceSize": {"w":201,"h":196}
+		},
+		"greek_pillars_3.png":
+		{
+			"frame": {"x":201,"y":0,"w":55,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":130},
+			"sourceSize": {"w":55,"h":130}
+		},
+		"greek_pillars_8.png":
+		{
+			"frame": {"x":256,"y":0,"w":54,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":130},
+			"sourceSize": {"w":54,"h":130}
+		},
+		"greek_pillars_6.png":
+		{
+			"frame": {"x":0,"y":196,"w":32,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":67},
+			"sourceSize": {"w":32,"h":67}
+		},
+		"greek_pillars_7.png":
+		{
+			"frame": {"x":32,"y":196,"w":32,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":67},
+			"sourceSize": {"w":32,"h":67}
+		},
+		"greek_pillars_4.png":
+		{
+			"frame": {"x":256,"y":130,"w":28,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":66},
+			"sourceSize": {"w":28,"h":66}
+		},
+		"greek_pillars_9.png":
+		{
+			"frame": {"x":201,"y":130,"w":28,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":66},
+			"sourceSize": {"w":28,"h":66}
+		},
+		"greek_pillars_11.png":
+		{
+			"frame": {"x":284,"y":130,"w":22,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":28},
+			"sourceSize": {"w":22,"h":28}
+		}
+	}
+}

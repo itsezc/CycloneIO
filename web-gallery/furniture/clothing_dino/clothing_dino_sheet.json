@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_dino_sheet.png",
+		"size": {"w":195,"h":131},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_dino_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":101},
+			"sourceSize": {"w":39,"h":101}
+		},
+		"clothing_dino_4.png":
+		{
+			"frame": {"x":39,"y":0,"w":39,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":101},
+			"sourceSize": {"w":39,"h":101}
+		},
+		"clothing_dino_5.png":
+		{
+			"frame": {"x":78,"y":0,"w":39,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":101},
+			"sourceSize": {"w":39,"h":101}
+		},
+		"clothing_dino_7.png":
+		{
+			"frame": {"x":117,"y":0,"w":39,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":101},
+			"sourceSize": {"w":39,"h":101}
+		},
+		"clothing_dino_9.png":
+		{
+			"frame": {"x":156,"y":0,"w":39,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":101},
+			"sourceSize": {"w":39,"h":101}
+		},
+		"clothing_dino_8.png":
+		{
+			"frame": {"x":0,"y":101,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_dino_11.png":
+		{
+			"frame": {"x":30,"y":101,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

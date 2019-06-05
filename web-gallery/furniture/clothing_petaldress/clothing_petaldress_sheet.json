@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_petaldress_sheet.png",
+		"size": {"w":72,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_petaldress_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":68},
+			"sourceSize": {"w":42,"h":68}
+		},
+		"clothing_petaldress_5.png":
+		{
+			"frame": {"x":42,"y":0,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

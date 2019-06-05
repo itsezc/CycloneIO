@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hween13_thorndiv2_sheet.png",
+		"size": {"w":140,"h":112},
+		"scale": "1"
+	},
+	"frames": {
+		"hween13_thorndiv2_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":74,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":66},
+			"sourceSize": {"w":74,"h":66}
+		},
+		"hween13_thorndiv2_2.png":
+		{
+			"frame": {"x":74,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"hween13_thorndiv2_3.png":
+		{
+			"frame": {"x":74,"y":33,"w":37,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":33},
+			"sourceSize": {"w":37,"h":33}
+		},
+		"hween13_thorndiv2_10.png":
+		{
+			"frame": {"x":0,"y":66,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"hween13_thorndiv2_7.png":
+		{
+			"frame": {"x":0,"y":83,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "sb_rail_sheet.png",
+		"size": {"w":106,"h":67},
+		"scale": "1"
+	},
+	"frames": {
+		"sb_rail_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":70,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":49},
+			"sourceSize": {"w":70,"h":49}
+		},
+		"sb_rail_9.png":
+		{
+			"frame": {"x":70,"y":0,"w":36,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":32},
+			"sourceSize": {"w":36,"h":32}
+		},
+		"sb_rail_6.png":
+		{
+			"frame": {"x":0,"y":49,"w":34,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":18},
+			"sourceSize": {"w":34,"h":18}
+		},
+		"sb_rail_2.png":
+		{
+			"frame": {"x":70,"y":32,"w":19,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":17},
+			"sourceSize": {"w":19,"h":17}
+		},
+		"sb_rail_1.png":
+		{
+			"frame": {"x":89,"y":32,"w":17,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":9},
+			"sourceSize": {"w":17,"h":9}
+		}
+	}
+}

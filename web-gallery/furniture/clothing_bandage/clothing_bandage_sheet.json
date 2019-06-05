@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_bandage_sheet.png",
+		"size": {"w":55,"h":43},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_bandage_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":28,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":43},
+			"sourceSize": {"w":28,"h":43}
+		},
+		"clothing_bandage_5.png":
+		{
+			"frame": {"x":28,"y":0,"w":27,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":29},
+			"sourceSize": {"w":27,"h":29}
+		}
+	}
+}

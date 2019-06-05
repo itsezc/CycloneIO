@@ -1,0 +1,241 @@
+{
+	"meta": {
+		"image": "hal_cauldron_sheet.png",
+		"size": {"w":346,"h":274},
+		"scale": "1"
+	},
+	"frames": {
+		"hal_cauldron_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":247,"h":171},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":247,"h":171},
+			"sourceSize": {"w":247,"h":171}
+		},
+		"hal_cauldron_22.png":
+		{
+			"frame": {"x":247,"y":0,"w":99,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":103},
+			"sourceSize": {"w":99,"h":103}
+		},
+		"hal_cauldron_25.png":
+		{
+			"frame": {"x":0,"y":171,"w":99,"h":103},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":103},
+			"sourceSize": {"w":99,"h":103}
+		},
+		"hal_cauldron_19.png":
+		{
+			"frame": {"x":247,"y":103,"w":66,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":68},
+			"sourceSize": {"w":66,"h":68}
+		},
+		"hal_cauldron_27.png":
+		{
+			"frame": {"x":99,"y":171,"w":56,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":31},
+			"sourceSize": {"w":56,"h":31}
+		},
+		"hal_cauldron_11.png":
+		{
+			"frame": {"x":99,"y":202,"w":49,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":52},
+			"sourceSize": {"w":49,"h":52}
+		},
+		"hal_cauldron_12.png":
+		{
+			"frame": {"x":148,"y":202,"w":49,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":52},
+			"sourceSize": {"w":49,"h":52}
+		},
+		"hal_cauldron_32.png":
+		{
+			"frame": {"x":155,"y":171,"w":37,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":16},
+			"sourceSize": {"w":37,"h":16}
+		},
+		"hal_cauldron_29.png":
+		{
+			"frame": {"x":192,"y":171,"w":37,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":15},
+			"sourceSize": {"w":37,"h":15}
+		},
+		"hal_cauldron_30.png":
+		{
+			"frame": {"x":229,"y":171,"w":37,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":15},
+			"sourceSize": {"w":37,"h":15}
+		},
+		"hal_cauldron_31.png":
+		{
+			"frame": {"x":266,"y":171,"w":37,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":15},
+			"sourceSize": {"w":37,"h":15}
+		},
+		"hal_cauldron_1.png":
+		{
+			"frame": {"x":197,"y":202,"w":34,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":35},
+			"sourceSize": {"w":34,"h":35}
+		},
+		"hal_cauldron_24.png":
+		{
+			"frame": {"x":313,"y":103,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"hal_cauldron_21.png":
+		{
+			"frame": {"x":313,"y":133,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		},
+		"hal_cauldron_13.png":
+		{
+			"frame": {"x":313,"y":149,"w":18,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":8},
+			"sourceSize": {"w":18,"h":8}
+		},
+		"hal_cauldron_15.png":
+		{
+			"frame": {"x":313,"y":157,"w":18,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":8},
+			"sourceSize": {"w":18,"h":8}
+		},
+		"hal_cauldron_16.png":
+		{
+			"frame": {"x":303,"y":171,"w":18,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":8},
+			"sourceSize": {"w":18,"h":8}
+		},
+		"hal_cauldron_17.png":
+		{
+			"frame": {"x":321,"y":171,"w":18,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":7},
+			"sourceSize": {"w":18,"h":7}
+		},
+		"hal_cauldron_10.png":
+		{
+			"frame": {"x":155,"y":187,"w":9,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":10},
+			"sourceSize": {"w":9,"h":10}
+		},
+		"hal_cauldron_9.png":
+		{
+			"frame": {"x":164,"y":187,"w":9,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":10},
+			"sourceSize": {"w":9,"h":10}
+		},
+		"hal_cauldron_23.png":
+		{
+			"frame": {"x":173,"y":187,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"hal_cauldron_6.png":
+		{
+			"frame": {"x":182,"y":187,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"hal_cauldron_8.png":
+		{
+			"frame": {"x":191,"y":187,"w":9,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":9},
+			"sourceSize": {"w":9,"h":9}
+		},
+		"hal_cauldron_14.png":
+		{
+			"frame": {"x":341,"y":103,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"hal_cauldron_2.png":
+		{
+			"frame": {"x":341,"y":108,"w":4,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":5},
+			"sourceSize": {"w":4,"h":5}
+		},
+		"hal_cauldron_20.png":
+		{
+			"frame": {"x":341,"y":113,"w":4,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":5},
+			"sourceSize": {"w":4,"h":5}
+		},
+		"hal_cauldron_26.png":
+		{
+			"frame": {"x":341,"y":118,"w":4,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":5},
+			"sourceSize": {"w":4,"h":5}
+		},
+		"hal_cauldron_28.png":
+		{
+			"frame": {"x":341,"y":123,"w":4,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":5},
+			"sourceSize": {"w":4,"h":5}
+		},
+		"hal_cauldron_7.png":
+		{
+			"frame": {"x":345,"y":108,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

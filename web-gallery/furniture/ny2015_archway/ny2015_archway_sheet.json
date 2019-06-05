@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "ny2015_archway_sheet.png",
+		"size": {"w":253,"h":242},
+		"scale": "1"
+	},
+	"frames": {
+		"ny2015_archway_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":78,"h":195},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":195},
+			"sourceSize": {"w":78,"h":195}
+		},
+		"ny2015_archway_1.png":
+		{
+			"frame": {"x":78,"y":0,"w":78,"h":192},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":192},
+			"sourceSize": {"w":78,"h":192}
+		},
+		"ny2015_archway_2.png":
+		{
+			"frame": {"x":156,"y":0,"w":42,"h":169},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":169},
+			"sourceSize": {"w":42,"h":169}
+		},
+		"ny2015_archway_9.png":
+		{
+			"frame": {"x":198,"y":0,"w":55,"h":168},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":168},
+			"sourceSize": {"w":55,"h":168}
+		},
+		"ny2015_archway_7.png":
+		{
+			"frame": {"x":0,"y":195,"w":95,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":95,"h":47},
+			"sourceSize": {"w":95,"h":47}
+		},
+		"ny2015_archway_8.png":
+		{
+			"frame": {"x":95,"y":195,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		}
+	}
+}

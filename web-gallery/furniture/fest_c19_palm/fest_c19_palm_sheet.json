@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "fest_c19_palm_sheet.png",
+		"size": {"w":385,"h":283},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_palm_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":143,"h":283},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":143,"h":283},
+			"sourceSize": {"w":143,"h":283}
+		},
+		"fest_c19_palm_6.png":
+		{
+			"frame": {"x":143,"y":0,"w":122,"h":225},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":225},
+			"sourceSize": {"w":122,"h":225}
+		},
+		"fest_c19_palm_10.png":
+		{
+			"frame": {"x":265,"y":0,"w":120,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":80},
+			"sourceSize": {"w":120,"h":80}
+		},
+		"fest_c19_palm_9.png":
+		{
+			"frame": {"x":265,"y":80,"w":19,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":29},
+			"sourceSize": {"w":19,"h":29}
+		},
+		"fest_c19_palm_1.png":
+		{
+			"frame": {"x":284,"y":80,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

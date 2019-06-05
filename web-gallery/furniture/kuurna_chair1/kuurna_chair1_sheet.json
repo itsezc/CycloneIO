@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "kuurna_chair1_sheet.png",
+		"size": {"w":234,"h":199},
+		"scale": "1"
+	},
+	"frames": {
+		"kuurna_chair1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":157,"h":137},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":157,"h":137},
+			"sourceSize": {"w":157,"h":137}
+		},
+		"kuurna_chair1_10.png":
+		{
+			"frame": {"x":157,"y":0,"w":50,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":75},
+			"sourceSize": {"w":50,"h":75}
+		},
+		"kuurna_chair1_2.png":
+		{
+			"frame": {"x":157,"y":75,"w":50,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":62},
+			"sourceSize": {"w":50,"h":62}
+		},
+		"kuurna_chair1_7.png":
+		{
+			"frame": {"x":0,"y":137,"w":30,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":62},
+			"sourceSize": {"w":30,"h":62}
+		},
+		"kuurna_chair1_12.png":
+		{
+			"frame": {"x":30,"y":137,"w":54,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":28},
+			"sourceSize": {"w":54,"h":28}
+		},
+		"kuurna_chair1_9.png":
+		{
+			"frame": {"x":207,"y":0,"w":27,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":39},
+			"sourceSize": {"w":27,"h":39}
+		},
+		"kuurna_chair1_8.png":
+		{
+			"frame": {"x":207,"y":39,"w":27,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":34},
+			"sourceSize": {"w":27,"h":34}
+		},
+		"kuurna_chair1_14.png":
+		{
+			"frame": {"x":207,"y":73,"w":17,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":34},
+			"sourceSize": {"w":17,"h":34}
+		},
+		"kuurna_chair1_6.png":
+		{
+			"frame": {"x":207,"y":107,"w":23,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":32},
+			"sourceSize": {"w":23,"h":32}
+		},
+		"kuurna_chair1_15.png":
+		{
+			"frame": {"x":84,"y":137,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		},
+		"kuurna_chair1_1.png":
+		{
+			"frame": {"x":224,"y":73,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

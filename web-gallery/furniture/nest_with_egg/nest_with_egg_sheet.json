@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "nest_with_egg_sheet.png",
+		"size": {"w":80,"h":49},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_with_egg_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":49},
+			"sourceSize": {"w":53,"h":49}
+		},
+		"nest_with_egg_1.png":
+		{
+			"frame": {"x":53,"y":0,"w":27,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":25},
+			"sourceSize": {"w":27,"h":25}
+		}
+	}
+}

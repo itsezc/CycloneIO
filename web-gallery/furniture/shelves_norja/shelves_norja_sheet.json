@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "shelves_norja_sheet.png",
+		"size": {"w":238,"h":189},
+		"scale": "1"
+	},
+	"frames": {
+		"shelves_norja_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":166,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":166,"h":111},
+			"sourceSize": {"w":166,"h":111}
+		},
+		"shelves_norja_4.png":
+		{
+			"frame": {"x":166,"y":0,"w":49,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":111},
+			"sourceSize": {"w":49,"h":111}
+		},
+		"shelves_norja_11.png":
+		{
+			"frame": {"x":0,"y":111,"w":44,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":78},
+			"sourceSize": {"w":44,"h":78}
+		},
+		"shelves_norja_9.png":
+		{
+			"frame": {"x":44,"y":111,"w":26,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":56},
+			"sourceSize": {"w":26,"h":56}
+		},
+		"shelves_norja_10.png":
+		{
+			"frame": {"x":70,"y":111,"w":47,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":23},
+			"sourceSize": {"w":47,"h":23}
+		},
+		"shelves_norja_13.png":
+		{
+			"frame": {"x":215,"y":0,"w":23,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":42},
+			"sourceSize": {"w":23,"h":42}
+		},
+		"shelves_norja_3.png":
+		{
+			"frame": {"x":215,"y":42,"w":15,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":32},
+			"sourceSize": {"w":15,"h":32}
+		},
+		"shelves_norja_6.png":
+		{
+			"frame": {"x":215,"y":74,"w":23,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":11},
+			"sourceSize": {"w":23,"h":11}
+		},
+		"shelves_norja_12.png":
+		{
+			"frame": {"x":215,"y":85,"w":11,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":22},
+			"sourceSize": {"w":11,"h":22}
+		}
+	}
+}

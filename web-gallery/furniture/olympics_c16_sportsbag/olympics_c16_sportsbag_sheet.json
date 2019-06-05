@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "olympics_c16_sportsbag_sheet.png",
+		"size": {"w":200,"h":155},
+		"scale": "1"
+	},
+	"frames": {
+		"olympics_c16_sportsbag_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":59},
+			"sourceSize": {"w":53,"h":59}
+		},
+		"olympics_c16_sportsbag_7.png":
+		{
+			"frame": {"x":53,"y":0,"w":53,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":49},
+			"sourceSize": {"w":53,"h":49}
+		},
+		"olympics_c16_sportsbag_12.png":
+		{
+			"frame": {"x":106,"y":0,"w":51,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":52},
+			"sourceSize": {"w":51,"h":52}
+		},
+		"olympics_c16_sportsbag_10.png":
+		{
+			"frame": {"x":0,"y":59,"w":50,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":48},
+			"sourceSize": {"w":50,"h":48}
+		},
+		"olympics_c16_sportsbag_16.png":
+		{
+			"frame": {"x":50,"y":59,"w":50,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":50,"h":26},
+			"sourceSize": {"w":50,"h":26}
+		},
+		"olympics_c16_sportsbag_8.png":
+		{
+			"frame": {"x":0,"y":107,"w":47,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":48},
+			"sourceSize": {"w":47,"h":48}
+		},
+		"olympics_c16_sportsbag_6.png":
+		{
+			"frame": {"x":100,"y":59,"w":46,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":26},
+			"sourceSize": {"w":46,"h":26}
+		},
+		"olympics_c16_sportsbag_5.png":
+		{
+			"frame": {"x":47,"y":107,"w":45,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":26},
+			"sourceSize": {"w":45,"h":26}
+		},
+		"olympics_c16_sportsbag_11.png":
+		{
+			"frame": {"x":157,"y":0,"w":43,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":34},
+			"sourceSize": {"w":43,"h":34}
+		},
+		"olympics_c16_sportsbag_9.png":
+		{
+			"frame": {"x":157,"y":34,"w":41,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":22},
+			"sourceSize": {"w":41,"h":22}
+		},
+		"olympics_c16_sportsbag_14.png":
+		{
+			"frame": {"x":157,"y":56,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

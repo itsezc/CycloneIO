@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "CF_10_coin_gold_sheet.png",
+		"size": {"w":83,"h":47},
+		"scale": "1"
+	},
+	"frames": {
+		"CF_10_coin_gold_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":29},
+			"sourceSize": {"w":53,"h":29}
+		},
+		"CF_10_coin_gold_8.png":
+		{
+			"frame": {"x":53,"y":0,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		},
+		"CF_10_coin_gold_1.png":
+		{
+			"frame": {"x":0,"y":29,"w":23,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":18},
+			"sourceSize": {"w":23,"h":18}
+		},
+		"CF_10_coin_gold_7.png":
+		{
+			"frame": {"x":23,"y":29,"w":13,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":10},
+			"sourceSize": {"w":13,"h":10}
+		}
+	}
+}

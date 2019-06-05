@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "coralking_r18_turtleride_sheet.png",
+		"size": {"w":156,"h":133},
+		"scale": "1"
+	},
+	"frames": {
+		"coralking_r18_turtleride_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":51,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":71},
+			"sourceSize": {"w":51,"h":71}
+		},
+		"coralking_r18_turtleride_6.png":
+		{
+			"frame": {"x":51,"y":0,"w":54,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":61},
+			"sourceSize": {"w":54,"h":61}
+		},
+		"coralking_r18_turtleride_9.png":
+		{
+			"frame": {"x":0,"y":71,"w":52,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":32},
+			"sourceSize": {"w":52,"h":32}
+		},
+		"coralking_r18_turtleride_2.png":
+		{
+			"frame": {"x":52,"y":71,"w":51,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":28},
+			"sourceSize": {"w":51,"h":28}
+		},
+		"coralking_r18_turtleride_4.png":
+		{
+			"frame": {"x":105,"y":0,"w":51,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":28},
+			"sourceSize": {"w":51,"h":28}
+		},
+		"coralking_r18_turtleride_5.png":
+		{
+			"frame": {"x":105,"y":28,"w":51,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":28},
+			"sourceSize": {"w":51,"h":28}
+		},
+		"coralking_r18_turtleride_8.png":
+		{
+			"frame": {"x":105,"y":56,"w":51,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":28},
+			"sourceSize": {"w":51,"h":28}
+		},
+		"coralking_r18_turtleride_1.png":
+		{
+			"frame": {"x":0,"y":103,"w":31,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":30},
+			"sourceSize": {"w":31,"h":30}
+		}
+	}
+}

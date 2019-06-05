@@ -1,0 +1,497 @@
+{
+	"meta": {
+		"image": "xmas14_sunbeams_sheet.png",
+		"size": {"w":1183,"h":1160},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas14_sunbeams_40.png":
+		{
+			"frame": {"x":0,"y":0,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_41.png":
+		{
+			"frame": {"x":85,"y":0,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_47.png":
+		{
+			"frame": {"x":170,"y":0,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_49.png":
+		{
+			"frame": {"x":255,"y":0,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_52.png":
+		{
+			"frame": {"x":340,"y":0,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_53.png":
+		{
+			"frame": {"x":425,"y":0,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_54.png":
+		{
+			"frame": {"x":510,"y":0,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_55.png":
+		{
+			"frame": {"x":0,"y":287,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_56.png":
+		{
+			"frame": {"x":85,"y":287,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_57.png":
+		{
+			"frame": {"x":170,"y":287,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_59.png":
+		{
+			"frame": {"x":255,"y":287,"w":85,"h":287},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":287},
+			"sourceSize": {"w":85,"h":287}
+		},
+		"xmas14_sunbeams_58.png":
+		{
+			"frame": {"x":340,"y":287,"w":83,"h":285},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":285},
+			"sourceSize": {"w":83,"h":285}
+		},
+		"xmas14_sunbeams_13.png":
+		{
+			"frame": {"x":423,"y":287,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_20.png":
+		{
+			"frame": {"x":595,"y":0,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_21.png":
+		{
+			"frame": {"x":595,"y":275,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_23.png":
+		{
+			"frame": {"x":682,"y":0,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_25.png":
+		{
+			"frame": {"x":682,"y":275,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_27.png":
+		{
+			"frame": {"x":769,"y":0,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_28.png":
+		{
+			"frame": {"x":769,"y":275,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_31.png":
+		{
+			"frame": {"x":0,"y":574,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_34.png":
+		{
+			"frame": {"x":87,"y":574,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_35.png":
+		{
+			"frame": {"x":174,"y":574,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_37.png":
+		{
+			"frame": {"x":261,"y":574,"w":87,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":275},
+			"sourceSize": {"w":87,"h":275}
+		},
+		"xmas14_sunbeams_30.png":
+		{
+			"frame": {"x":348,"y":574,"w":86,"h":275},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":275},
+			"sourceSize": {"w":86,"h":275}
+		},
+		"xmas14_sunbeams_11.png":
+		{
+			"frame": {"x":510,"y":287,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_12.png":
+		{
+			"frame": {"x":434,"y":574,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_14.png":
+		{
+			"frame": {"x":517,"y":574,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_15.png":
+		{
+			"frame": {"x":600,"y":574,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_17.png":
+		{
+			"frame": {"x":683,"y":574,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_19.png":
+		{
+			"frame": {"x":766,"y":574,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_22.png":
+		{
+			"frame": {"x":856,"y":0,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_24.png":
+		{
+			"frame": {"x":856,"y":270,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_26.png":
+		{
+			"frame": {"x":856,"y":540,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_36.png":
+		{
+			"frame": {"x":939,"y":0,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_38.png":
+		{
+			"frame": {"x":939,"y":270,"w":83,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":83,"h":270},
+			"sourceSize": {"w":83,"h":270}
+		},
+		"xmas14_sunbeams_16.png":
+		{
+			"frame": {"x":939,"y":540,"w":81,"h":270},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":270},
+			"sourceSize": {"w":81,"h":270}
+		},
+		"xmas14_sunbeams_1.png":
+		{
+			"frame": {"x":1022,"y":0,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_2.png":
+		{
+			"frame": {"x":1022,"y":249,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_32.png":
+		{
+			"frame": {"x":1022,"y":498,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_33.png":
+		{
+			"frame": {"x":0,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_4.png":
+		{
+			"frame": {"x":79,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_45.png":
+		{
+			"frame": {"x":158,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_48.png":
+		{
+			"frame": {"x":237,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_5.png":
+		{
+			"frame": {"x":316,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_6.png":
+		{
+			"frame": {"x":395,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_8.png":
+		{
+			"frame": {"x":474,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_9.png":
+		{
+			"frame": {"x":553,"y":849,"w":79,"h":249},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":249},
+			"sourceSize": {"w":79,"h":249}
+		},
+		"xmas14_sunbeams_10.png":
+		{
+			"frame": {"x":632,"y":849,"w":78,"h":248},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":248},
+			"sourceSize": {"w":78,"h":248}
+		},
+		"xmas14_sunbeams_61.png":
+		{
+			"frame": {"x":710,"y":849,"w":203,"h":204},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":203,"h":204},
+			"sourceSize": {"w":203,"h":204}
+		},
+		"xmas14_sunbeams_65.png":
+		{
+			"frame": {"x":913,"y":849,"w":85,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":124},
+			"sourceSize": {"w":85,"h":124}
+		},
+		"xmas14_sunbeams_66.png":
+		{
+			"frame": {"x":998,"y":849,"w":82,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":124},
+			"sourceSize": {"w":82,"h":124}
+		},
+		"xmas14_sunbeams_64.png":
+		{
+			"frame": {"x":1101,"y":0,"w":82,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":121},
+			"sourceSize": {"w":82,"h":121}
+		},
+		"xmas14_sunbeams_62.png":
+		{
+			"frame": {"x":1101,"y":121,"w":67,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":121},
+			"sourceSize": {"w":67,"h":121}
+		},
+		"xmas14_sunbeams_63.png":
+		{
+			"frame": {"x":1101,"y":242,"w":79,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":79,"h":99},
+			"sourceSize": {"w":79,"h":99}
+		},
+		"xmas14_sunbeams_42.png":
+		{
+			"frame": {"x":913,"y":973,"w":92,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":62},
+			"sourceSize": {"w":92,"h":62}
+		},
+		"xmas14_sunbeams_43.png":
+		{
+			"frame": {"x":1005,"y":973,"w":92,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":62},
+			"sourceSize": {"w":92,"h":62}
+		},
+		"xmas14_sunbeams_44.png":
+		{
+			"frame": {"x":0,"y":1098,"w":92,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":62},
+			"sourceSize": {"w":92,"h":62}
+		},
+		"xmas14_sunbeams_46.png":
+		{
+			"frame": {"x":92,"y":1098,"w":92,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":62},
+			"sourceSize": {"w":92,"h":62}
+		},
+		"xmas14_sunbeams_50.png":
+		{
+			"frame": {"x":184,"y":1098,"w":92,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":62},
+			"sourceSize": {"w":92,"h":62}
+		},
+		"xmas14_sunbeams_51.png":
+		{
+			"frame": {"x":276,"y":1098,"w":92,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":62},
+			"sourceSize": {"w":92,"h":62}
+		},
+		"xmas14_sunbeams_60.png":
+		{
+			"frame": {"x":1101,"y":341,"w":32,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":30},
+			"sourceSize": {"w":32,"h":30}
+		}
+	}
+}

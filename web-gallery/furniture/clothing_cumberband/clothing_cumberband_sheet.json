@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_cumberband_sheet.png",
+		"size": {"w":55,"h":68},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_cumberband_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":27,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":68},
+			"sourceSize": {"w":27,"h":68}
+		},
+		"clothing_cumberband_6.png":
+		{
+			"frame": {"x":27,"y":0,"w":28,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":25},
+			"sourceSize": {"w":28,"h":25}
+		},
+		"clothing_cumberband_2.png":
+		{
+			"frame": {"x":27,"y":25,"w":24,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":14},
+			"sourceSize": {"w":24,"h":14}
+		}
+	}
+}

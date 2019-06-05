@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "cowbox_sheet.png",
+		"size": {"w":134,"h":87},
+		"scale": "1"
+	},
+	"frames": {
+		"cowbox_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":67,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":87},
+			"sourceSize": {"w":67,"h":87}
+		},
+		"cowbox_2.png":
+		{
+			"frame": {"x":67,"y":0,"w":67,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":33},
+			"sourceSize": {"w":67,"h":33}
+		},
+		"cowbox_6.png":
+		{
+			"frame": {"x":67,"y":33,"w":29,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":32},
+			"sourceSize": {"w":29,"h":32}
+		}
+	}
+}

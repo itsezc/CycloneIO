@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "lon_skyline_sheet.png",
+		"size": {"w":683,"h":553},
+		"scale": "1"
+	},
+	"frames": {
+		"lon_skyline_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":488,"h":338},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":488,"h":338},
+			"sourceSize": {"w":488,"h":338}
+		},
+		"lon_skyline_9.png":
+		{
+			"frame": {"x":488,"y":0,"w":195,"h":338},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":195,"h":338},
+			"sourceSize": {"w":195,"h":338}
+		},
+		"lon_skyline_5.png":
+		{
+			"frame": {"x":0,"y":338,"w":195,"h":215},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":195,"h":215},
+			"sourceSize": {"w":195,"h":215}
+		},
+		"lon_skyline_6.png":
+		{
+			"frame": {"x":195,"y":338,"w":98,"h":165},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":165},
+			"sourceSize": {"w":98,"h":165}
+		},
+		"lon_skyline_7.png":
+		{
+			"frame": {"x":293,"y":338,"w":98,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":108},
+			"sourceSize": {"w":98,"h":108}
+		},
+		"lon_skyline_4.png":
+		{
+			"frame": {"x":391,"y":338,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

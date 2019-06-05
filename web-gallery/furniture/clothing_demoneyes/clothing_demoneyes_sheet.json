@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_demoneyes_sheet.png",
+		"size": {"w":56,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_demoneyes_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":42},
+			"sourceSize": {"w":26,"h":42}
+		},
+		"clothing_demoneyes_4.png":
+		{
+			"frame": {"x":26,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

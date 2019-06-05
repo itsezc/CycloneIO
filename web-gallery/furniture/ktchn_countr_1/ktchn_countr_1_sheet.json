@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "ktchn_countr_1_sheet.png",
+		"size": {"w":165,"h":119},
+		"scale": "1"
+	},
+	"frames": {
+		"ktchn_countr_1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":99,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":94},
+			"sourceSize": {"w":99,"h":94}
+		},
+		"ktchn_countr_1_2.png":
+		{
+			"frame": {"x":99,"y":0,"w":66,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":62},
+			"sourceSize": {"w":66,"h":62}
+		},
+		"ktchn_countr_1_4.png":
+		{
+			"frame": {"x":99,"y":62,"w":33,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":32},
+			"sourceSize": {"w":33,"h":32}
+		},
+		"ktchn_countr_1_9.png":
+		{
+			"frame": {"x":132,"y":62,"w":33,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":32},
+			"sourceSize": {"w":33,"h":32}
+		},
+		"ktchn_countr_1_5.png":
+		{
+			"frame": {"x":0,"y":94,"w":26,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":25},
+			"sourceSize": {"w":26,"h":25}
+		}
+	}
+}

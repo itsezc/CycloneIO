@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "st_uni_poster_sheet.png",
+		"size": {"w":169,"h":153},
+		"scale": "1"
+	},
+	"frames": {
+		"st_uni_poster_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":99,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":99,"h":102},
+			"sourceSize": {"w":99,"h":102}
+		},
+		"st_uni_poster_10.png":
+		{
+			"frame": {"x":99,"y":0,"w":35,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":102},
+			"sourceSize": {"w":35,"h":102}
+		},
+		"st_uni_poster_9.png":
+		{
+			"frame": {"x":134,"y":0,"w":35,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":102},
+			"sourceSize": {"w":35,"h":102}
+		},
+		"st_uni_poster_2.png":
+		{
+			"frame": {"x":0,"y":102,"w":18,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":51},
+			"sourceSize": {"w":18,"h":51}
+		},
+		"st_uni_poster_4.png":
+		{
+			"frame": {"x":18,"y":102,"w":18,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":51},
+			"sourceSize": {"w":18,"h":51}
+		},
+		"st_uni_poster_5.png":
+		{
+			"frame": {"x":36,"y":102,"w":11,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":24},
+			"sourceSize": {"w":11,"h":24}
+		}
+	}
+}

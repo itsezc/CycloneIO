@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "bling_c15_chandalier_sheet.png",
+		"size": {"w":247,"h":147},
+		"scale": "1"
+	},
+	"frames": {
+		"bling_c15_chandalier_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":68,"h":114},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":114},
+			"sourceSize": {"w":68,"h":114}
+		},
+		"bling_c15_chandalier_4.png":
+		{
+			"frame": {"x":68,"y":0,"w":111,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":111,"h":111},
+			"sourceSize": {"w":111,"h":111}
+		},
+		"bling_c15_chandalier_9.png":
+		{
+			"frame": {"x":179,"y":0,"w":68,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":92},
+			"sourceSize": {"w":68,"h":92}
+		},
+		"bling_c15_chandalier_5.png":
+		{
+			"frame": {"x":0,"y":114,"w":64,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":33},
+			"sourceSize": {"w":64,"h":33}
+		},
+		"bling_c15_chandalier_6.png":
+		{
+			"frame": {"x":64,"y":114,"w":13,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":29},
+			"sourceSize": {"w":13,"h":29}
+		},
+		"bling_c15_chandalier_2.png":
+		{
+			"frame": {"x":179,"y":92,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "tokyo_c18_lanterns_sheet.png",
+		"size": {"w":319,"h":219},
+		"scale": "1"
+	},
+	"frames": {
+		"tokyo_c18_lanterns_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":117,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":117,"h":82},
+			"sourceSize": {"w":117,"h":82}
+		},
+		"tokyo_c18_lanterns_2.png":
+		{
+			"frame": {"x":117,"y":0,"w":117,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":117,"h":82},
+			"sourceSize": {"w":117,"h":82}
+		},
+		"tokyo_c18_lanterns_4.png":
+		{
+			"frame": {"x":0,"y":82,"w":106,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":106,"h":94},
+			"sourceSize": {"w":106,"h":94}
+		},
+		"tokyo_c18_lanterns_8.png":
+		{
+			"frame": {"x":106,"y":82,"w":106,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":106,"h":94},
+			"sourceSize": {"w":106,"h":94}
+		},
+		"tokyo_c18_lanterns_14.png":
+		{
+			"frame": {"x":0,"y":176,"w":87,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":43},
+			"sourceSize": {"w":87,"h":43}
+		},
+		"tokyo_c18_lanterns_9.png":
+		{
+			"frame": {"x":87,"y":176,"w":87,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":43},
+			"sourceSize": {"w":87,"h":43}
+		},
+		"tokyo_c18_lanterns_10.png":
+		{
+			"frame": {"x":234,"y":0,"w":85,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":52},
+			"sourceSize": {"w":85,"h":52}
+		},
+		"tokyo_c18_lanterns_3.png":
+		{
+			"frame": {"x":234,"y":52,"w":85,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":52},
+			"sourceSize": {"w":85,"h":52}
+		},
+		"tokyo_c18_lanterns_7.png":
+		{
+			"frame": {"x":234,"y":104,"w":26,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":28},
+			"sourceSize": {"w":26,"h":28}
+		}
+	}
+}

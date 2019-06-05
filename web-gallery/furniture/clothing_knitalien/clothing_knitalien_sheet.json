@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_knitalien_sheet.png",
+		"size": {"w":108,"h":96},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_knitalien_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":27,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":48},
+			"sourceSize": {"w":27,"h":48}
+		},
+		"clothing_knitalien_11.png":
+		{
+			"frame": {"x":27,"y":0,"w":27,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":48},
+			"sourceSize": {"w":27,"h":48}
+		},
+		"clothing_knitalien_12.png":
+		{
+			"frame": {"x":54,"y":0,"w":27,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":48},
+			"sourceSize": {"w":27,"h":48}
+		},
+		"clothing_knitalien_6.png":
+		{
+			"frame": {"x":81,"y":0,"w":27,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":48},
+			"sourceSize": {"w":27,"h":48}
+		},
+		"clothing_knitalien_7.png":
+		{
+			"frame": {"x":0,"y":48,"w":27,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":48},
+			"sourceSize": {"w":27,"h":48}
+		},
+		"clothing_knitalien_2.png":
+		{
+			"frame": {"x":27,"y":48,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		},
+		"clothing_knitalien_8.png":
+		{
+			"frame": {"x":54,"y":48,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

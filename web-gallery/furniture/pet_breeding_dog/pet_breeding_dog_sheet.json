@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "pet_breeding_dog_sheet.png",
+		"size": {"w":279,"h":218},
+		"scale": "1"
+	},
+	"frames": {
+		"pet_breeding_dog_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":81,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":73},
+			"sourceSize": {"w":81,"h":73}
+		},
+		"pet_breeding_dog_12.png":
+		{
+			"frame": {"x":81,"y":0,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"pet_breeding_dog_14.png":
+		{
+			"frame": {"x":0,"y":73,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"pet_breeding_dog_16.png":
+		{
+			"frame": {"x":66,"y":73,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"pet_breeding_dog_17.png":
+		{
+			"frame": {"x":147,"y":0,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"pet_breeding_dog_4.png":
+		{
+			"frame": {"x":147,"y":73,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"pet_breeding_dog_6.png":
+		{
+			"frame": {"x":213,"y":0,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"pet_breeding_dog_7.png":
+		{
+			"frame": {"x":213,"y":73,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"pet_breeding_dog_13.png":
+		{
+			"frame": {"x":0,"y":146,"w":66,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":72},
+			"sourceSize": {"w":66,"h":72}
+		},
+		"pet_breeding_dog_2.png":
+		{
+			"frame": {"x":66,"y":146,"w":65,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":71},
+			"sourceSize": {"w":65,"h":71}
+		},
+		"pet_breeding_dog_1.png":
+		{
+			"frame": {"x":131,"y":146,"w":65,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":68},
+			"sourceSize": {"w":65,"h":68}
+		},
+		"pet_breeding_dog_10.png":
+		{
+			"frame": {"x":196,"y":146,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		}
+	}
+}

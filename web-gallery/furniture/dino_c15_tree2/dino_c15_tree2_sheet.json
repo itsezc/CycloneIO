@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "dino_c15_tree2_sheet.png",
+		"size": {"w":310,"h":290},
+		"scale": "1"
+	},
+	"frames": {
+		"dino_c15_tree2_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":191,"h":156},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":191,"h":156},
+			"sourceSize": {"w":191,"h":156}
+		},
+		"dino_c15_tree2_4.png":
+		{
+			"frame": {"x":191,"y":0,"w":119,"h":150},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":119,"h":150},
+			"sourceSize": {"w":119,"h":150}
+		},
+		"dino_c15_tree2_2.png":
+		{
+			"frame": {"x":0,"y":156,"w":136,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":136,"h":134},
+			"sourceSize": {"w":136,"h":134}
+		},
+		"dino_c15_tree2_9.png":
+		{
+			"frame": {"x":136,"y":156,"w":85,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":43},
+			"sourceSize": {"w":85,"h":43}
+		},
+		"dino_c15_tree2_5.png":
+		{
+			"frame": {"x":221,"y":156,"w":16,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":30},
+			"sourceSize": {"w":16,"h":30}
+		}
+	}
+}

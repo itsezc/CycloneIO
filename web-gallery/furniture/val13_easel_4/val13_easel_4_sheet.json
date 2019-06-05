@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "val13_easel_4_sheet.png",
+		"size": {"w":134,"h":99},
+		"scale": "1"
+	},
+	"frames": {
+		"val13_easel_4_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":99},
+			"sourceSize": {"w":61,"h":99}
+		},
+		"val13_easel_4_10.png":
+		{
+			"frame": {"x":61,"y":0,"w":33,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":52},
+			"sourceSize": {"w":33,"h":52}
+		},
+		"val13_easel_4_5.png":
+		{
+			"frame": {"x":94,"y":0,"w":40,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":14},
+			"sourceSize": {"w":40,"h":14}
+		},
+		"val13_easel_4_3.png":
+		{
+			"frame": {"x":94,"y":14,"w":17,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
+			"sourceSize": {"w":17,"h":29}
+		},
+		"val13_easel_4_7.png":
+		{
+			"frame": {"x":111,"y":14,"w":21,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":6},
+			"sourceSize": {"w":21,"h":6}
+		}
+	}
+}

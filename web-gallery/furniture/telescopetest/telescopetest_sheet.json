@@ -1,0 +1,281 @@
+{
+	"meta": {
+		"image": "telescopetest_sheet.png",
+		"size": {"w":321,"h":258},
+		"scale": "1"
+	},
+	"frames": {
+		"telescopetest_18.png":
+		{
+			"frame": {"x":0,"y":0,"w":96,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":49},
+			"sourceSize": {"w":96,"h":49}
+		},
+		"telescopetest_27.png":
+		{
+			"frame": {"x":96,"y":0,"w":96,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":49},
+			"sourceSize": {"w":96,"h":49}
+		},
+		"telescopetest_35.png":
+		{
+			"frame": {"x":0,"y":49,"w":65,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":88},
+			"sourceSize": {"w":65,"h":88}
+		},
+		"telescopetest_39.png":
+		{
+			"frame": {"x":65,"y":49,"w":65,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":88},
+			"sourceSize": {"w":65,"h":88}
+		},
+		"telescopetest_5.png":
+		{
+			"frame": {"x":192,"y":0,"w":65,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":81},
+			"sourceSize": {"w":65,"h":81}
+		},
+		"telescopetest_9.png":
+		{
+			"frame": {"x":0,"y":137,"w":65,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":81},
+			"sourceSize": {"w":65,"h":81}
+		},
+		"telescopetest_31.png":
+		{
+			"frame": {"x":65,"y":137,"w":64,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":78},
+			"sourceSize": {"w":64,"h":78}
+		},
+		"telescopetest_38.png":
+		{
+			"frame": {"x":129,"y":137,"w":64,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":78},
+			"sourceSize": {"w":64,"h":78}
+		},
+		"telescopetest_29.png":
+		{
+			"frame": {"x":193,"y":137,"w":64,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":73},
+			"sourceSize": {"w":64,"h":73}
+		},
+		"telescopetest_36.png":
+		{
+			"frame": {"x":257,"y":0,"w":64,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":73},
+			"sourceSize": {"w":64,"h":73}
+		},
+		"telescopetest_19.png":
+		{
+			"frame": {"x":257,"y":73,"w":47,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":24},
+			"sourceSize": {"w":47,"h":24}
+		},
+		"telescopetest_32.png":
+		{
+			"frame": {"x":257,"y":97,"w":47,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":24},
+			"sourceSize": {"w":47,"h":24}
+		},
+		"telescopetest_33.png":
+		{
+			"frame": {"x":257,"y":121,"w":46,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":24},
+			"sourceSize": {"w":46,"h":24}
+		},
+		"telescopetest_34.png":
+		{
+			"frame": {"x":257,"y":145,"w":46,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":24},
+			"sourceSize": {"w":46,"h":24}
+		},
+		"telescopetest_1.png":
+		{
+			"frame": {"x":257,"y":169,"w":33,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":44},
+			"sourceSize": {"w":33,"h":44}
+		},
+		"telescopetest_20.png":
+		{
+			"frame": {"x":192,"y":81,"w":33,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":44},
+			"sourceSize": {"w":33,"h":44}
+		},
+		"telescopetest_30.png":
+		{
+			"frame": {"x":130,"y":49,"w":35,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":40},
+			"sourceSize": {"w":35,"h":40}
+		},
+		"telescopetest_7.png":
+		{
+			"frame": {"x":130,"y":89,"w":35,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":40},
+			"sourceSize": {"w":35,"h":40}
+		},
+		"telescopetest_11.png":
+		{
+			"frame": {"x":225,"y":81,"w":32,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":40},
+			"sourceSize": {"w":32,"h":40}
+		},
+		"telescopetest_4.png":
+		{
+			"frame": {"x":0,"y":218,"w":32,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":40},
+			"sourceSize": {"w":32,"h":40}
+		},
+		"telescopetest_26.png":
+		{
+			"frame": {"x":32,"y":218,"w":33,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":37},
+			"sourceSize": {"w":33,"h":37}
+		},
+		"telescopetest_6.png":
+		{
+			"frame": {"x":65,"y":218,"w":33,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":37},
+			"sourceSize": {"w":33,"h":37}
+		},
+		"telescopetest_10.png":
+		{
+			"frame": {"x":98,"y":218,"w":32,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+			"sourceSize": {"w":32,"h":32}
+		},
+		"telescopetest_25.png":
+		{
+			"frame": {"x":130,"y":218,"w":32,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":32},
+			"sourceSize": {"w":32,"h":32}
+		},
+		"telescopetest_3.png":
+		{
+			"frame": {"x":290,"y":169,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"telescopetest_22.png":
+		{
+			"frame": {"x":304,"y":73,"w":6,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":6,"h":10},
+			"sourceSize": {"w":6,"h":10}
+		},
+		"telescopetest_23.png":
+		{
+			"frame": {"x":310,"y":73,"w":7,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":9},
+			"sourceSize": {"w":7,"h":9}
+		},
+		"telescopetest_12.png":
+		{
+			"frame": {"x":304,"y":83,"w":7,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":8},
+			"sourceSize": {"w":7,"h":8}
+		},
+		"telescopetest_24.png":
+		{
+			"frame": {"x":311,"y":83,"w":7,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":8},
+			"sourceSize": {"w":7,"h":8}
+		},
+		"telescopetest_13.png":
+		{
+			"frame": {"x":317,"y":73,"w":4,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":6},
+			"sourceSize": {"w":4,"h":6}
+		},
+		"telescopetest_15.png":
+		{
+			"frame": {"x":304,"y":91,"w":4,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":5},
+			"sourceSize": {"w":4,"h":5}
+		},
+		"telescopetest_17.png":
+		{
+			"frame": {"x":308,"y":91,"w":4,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":5},
+			"sourceSize": {"w":4,"h":5}
+		},
+		"telescopetest_14.png":
+		{
+			"frame": {"x":312,"y":91,"w":4,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+			"sourceSize": {"w":4,"h":4}
+		},
+		"telescopetest_2.png":
+		{
+			"frame": {"x":317,"y":79,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

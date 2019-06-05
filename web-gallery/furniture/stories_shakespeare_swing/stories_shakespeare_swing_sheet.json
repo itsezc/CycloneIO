@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "stories_shakespeare_swing_sheet.png",
+		"size": {"w":259,"h":210},
+		"scale": "1"
+	},
+	"frames": {
+		"stories_shakespeare_swing_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":210},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":210},
+			"sourceSize": {"w":53,"h":210}
+		},
+		"stories_shakespeare_swing_6.png":
+		{
+			"frame": {"x":53,"y":0,"w":52,"h":202},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":202},
+			"sourceSize": {"w":52,"h":202}
+		},
+		"stories_shakespeare_swing_5.png":
+		{
+			"frame": {"x":105,"y":0,"w":32,"h":202},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":202},
+			"sourceSize": {"w":32,"h":202}
+		},
+		"stories_shakespeare_swing_7.png":
+		{
+			"frame": {"x":137,"y":0,"w":26,"h":105},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":105},
+			"sourceSize": {"w":26,"h":105}
+		},
+		"stories_shakespeare_swing_2.png":
+		{
+			"frame": {"x":137,"y":105,"w":24,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":101},
+			"sourceSize": {"w":24,"h":101}
+		},
+		"stories_shakespeare_swing_8.png":
+		{
+			"frame": {"x":163,"y":0,"w":14,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":101},
+			"sourceSize": {"w":14,"h":101}
+		},
+		"stories_shakespeare_swing_10.png":
+		{
+			"frame": {"x":177,"y":0,"w":82,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":42},
+			"sourceSize": {"w":82,"h":42}
+		},
+		"stories_shakespeare_swing_4.png":
+		{
+			"frame": {"x":177,"y":42,"w":42,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":21},
+			"sourceSize": {"w":42,"h":21}
+		},
+		"stories_shakespeare_swing_13.png":
+		{
+			"frame": {"x":177,"y":63,"w":25,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":32},
+			"sourceSize": {"w":25,"h":32}
+		}
+	}
+}

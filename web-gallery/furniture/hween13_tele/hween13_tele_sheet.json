@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "hween13_tele_sheet.png",
+		"size": {"w":348,"h":244},
+		"scale": "1"
+	},
+	"frames": {
+		"hween13_tele_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":106,"h":162},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":106,"h":162},
+			"sourceSize": {"w":106,"h":162}
+		},
+		"hween13_tele_1.png":
+		{
+			"frame": {"x":106,"y":0,"w":98,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":151},
+			"sourceSize": {"w":98,"h":151}
+		},
+		"hween13_tele_13.png":
+		{
+			"frame": {"x":204,"y":0,"w":72,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":132},
+			"sourceSize": {"w":72,"h":132}
+		},
+		"hween13_tele_14.png":
+		{
+			"frame": {"x":276,"y":0,"w":72,"h":132},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":132},
+			"sourceSize": {"w":72,"h":132}
+		},
+		"hween13_tele_15.png":
+		{
+			"frame": {"x":0,"y":162,"w":51,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":82},
+			"sourceSize": {"w":51,"h":82}
+		},
+		"hween13_tele_8.png":
+		{
+			"frame": {"x":51,"y":162,"w":47,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":76},
+			"sourceSize": {"w":47,"h":76}
+		},
+		"hween13_tele_10.png":
+		{
+			"frame": {"x":98,"y":162,"w":38,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":67},
+			"sourceSize": {"w":38,"h":67}
+		},
+		"hween13_tele_11.png":
+		{
+			"frame": {"x":136,"y":162,"w":38,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":67},
+			"sourceSize": {"w":38,"h":67}
+		},
+		"hween13_tele_5.png":
+		{
+			"frame": {"x":276,"y":132,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"hween13_tele_6.png":
+		{
+			"frame": {"x":306,"y":132,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

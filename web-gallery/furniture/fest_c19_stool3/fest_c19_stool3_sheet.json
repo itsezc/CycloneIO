@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "fest_c19_stool3_sheet.png",
+		"size": {"w":124,"h":63},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_stool3_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":62,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":41},
+			"sourceSize": {"w":62,"h":41}
+		},
+		"fest_c19_stool3_2.png":
+		{
+			"frame": {"x":62,"y":0,"w":62,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":29},
+			"sourceSize": {"w":62,"h":29}
+		},
+		"fest_c19_stool3_1.png":
+		{
+			"frame": {"x":0,"y":41,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		}
+	}
+}

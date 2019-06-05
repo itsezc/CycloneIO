@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "prizetrophy_frank_sheet.png",
+		"size": {"w":220,"h":155},
+		"scale": "1"
+	},
+	"frames": {
+		"prizetrophy_frank_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":123,"h":123},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":123,"h":123},
+			"sourceSize": {"w":123,"h":123}
+		},
+		"prizetrophy_frank_4.png":
+		{
+			"frame": {"x":123,"y":0,"w":48,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":96},
+			"sourceSize": {"w":48,"h":96}
+		},
+		"prizetrophy_frank_2.png":
+		{
+			"frame": {"x":171,"y":0,"w":49,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":60},
+			"sourceSize": {"w":49,"h":60}
+		},
+		"prizetrophy_frank_9.png":
+		{
+			"frame": {"x":171,"y":60,"w":26,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":50},
+			"sourceSize": {"w":26,"h":50}
+		},
+		"prizetrophy_frank_5.png":
+		{
+			"frame": {"x":0,"y":123,"w":27,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":32},
+			"sourceSize": {"w":27,"h":32}
+		},
+		"prizetrophy_frank_10.png":
+		{
+			"frame": {"x":123,"y":96,"w":30,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":27},
+			"sourceSize": {"w":30,"h":27}
+		}
+	}
+}

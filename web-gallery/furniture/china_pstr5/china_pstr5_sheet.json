@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "china_pstr5_sheet.png",
+		"size": {"w":304,"h":211},
+		"scale": "1"
+	},
+	"frames": {
+		"china_pstr5_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":176,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":176,"h":141},
+			"sourceSize": {"w":176,"h":141}
+		},
+		"china_pstr5_1.png":
+		{
+			"frame": {"x":176,"y":0,"w":64,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":141},
+			"sourceSize": {"w":64,"h":141}
+		},
+		"china_pstr5_10.png":
+		{
+			"frame": {"x":240,"y":0,"w":64,"h":141},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":141},
+			"sourceSize": {"w":64,"h":141}
+		},
+		"china_pstr5_4.png":
+		{
+			"frame": {"x":0,"y":141,"w":32,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":70},
+			"sourceSize": {"w":32,"h":70}
+		},
+		"china_pstr5_6.png":
+		{
+			"frame": {"x":32,"y":141,"w":32,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":70},
+			"sourceSize": {"w":32,"h":70}
+		},
+		"china_pstr5_5.png":
+		{
+			"frame": {"x":64,"y":141,"w":16,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":32},
+			"sourceSize": {"w":16,"h":32}
+		}
+	}
+}

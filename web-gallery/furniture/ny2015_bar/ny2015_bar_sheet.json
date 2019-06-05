@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "ny2015_bar_sheet.png",
+		"size": {"w":143,"h":87},
+		"scale": "1"
+	},
+	"frames": {
+		"ny2015_bar_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":87},
+			"sourceSize": {"w":53,"h":87}
+		},
+		"ny2015_bar_7.png":
+		{
+			"frame": {"x":53,"y":0,"w":62,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":74},
+			"sourceSize": {"w":62,"h":74}
+		},
+		"ny2015_bar_4.png":
+		{
+			"frame": {"x":115,"y":0,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"ny2015_bar_5.png":
+		{
+			"frame": {"x":115,"y":30,"w":15,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":19},
+			"sourceSize": {"w":15,"h":19}
+		},
+		"ny2015_bar_6.png":
+		{
+			"frame": {"x":130,"y":30,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

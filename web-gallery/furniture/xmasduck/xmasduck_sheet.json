@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "xmasduck_sheet.png",
+		"size": {"w":78,"h":62},
+		"scale": "1"
+	},
+	"frames": {
+		"xmasduck_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":56,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":34},
+			"sourceSize": {"w":56,"h":34}
+		},
+		"xmasduck_8.png":
+		{
+			"frame": {"x":56,"y":0,"w":22,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":28},
+			"sourceSize": {"w":22,"h":28}
+		},
+		"xmasduck_9.png":
+		{
+			"frame": {"x":0,"y":34,"w":22,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":28},
+			"sourceSize": {"w":22,"h":28}
+		},
+		"xmasduck_10.png":
+		{
+			"frame": {"x":56,"y":28,"w":18,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":6},
+			"sourceSize": {"w":18,"h":6}
+		},
+		"xmasduck_6.png":
+		{
+			"frame": {"x":22,"y":34,"w":12,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":15},
+			"sourceSize": {"w":12,"h":15}
+		},
+		"xmasduck_5.png":
+		{
+			"frame": {"x":34,"y":34,"w":7,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":3},
+			"sourceSize": {"w":7,"h":3}
+		}
+	}
+}

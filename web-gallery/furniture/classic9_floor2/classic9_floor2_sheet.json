@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "classic9_floor2_sheet.png",
+		"size": {"w":128,"h":94},
+		"scale": "1"
+	},
+	"frames": {
+		"classic9_floor2_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":67},
+			"sourceSize": {"w":128,"h":67}
+		},
+		"classic9_floor2_3.png":
+		{
+			"frame": {"x":0,"y":67,"w":54,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":27},
+			"sourceSize": {"w":54,"h":27}
+		},
+		"classic9_floor2_2.png":
+		{
+			"frame": {"x":54,"y":67,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		}
+	}
+}

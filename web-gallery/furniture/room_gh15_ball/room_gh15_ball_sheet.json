@@ -1,0 +1,169 @@
+{
+	"meta": {
+		"image": "room_gh15_ball_sheet.png",
+		"size": {"w":131,"h":122},
+		"scale": "1"
+	},
+	"frames": {
+		"room_gh15_ball_22.png":
+		{
+			"frame": {"x":0,"y":0,"w":38,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+			"sourceSize": {"w":38,"h":38}
+		},
+		"room_gh15_ball_25.png":
+		{
+			"frame": {"x":38,"y":0,"w":38,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":38},
+			"sourceSize": {"w":38,"h":38}
+		},
+		"room_gh15_ball_24.png":
+		{
+			"frame": {"x":0,"y":38,"w":34,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":34},
+			"sourceSize": {"w":34,"h":34}
+		},
+		"room_gh15_ball_4.png":
+		{
+			"frame": {"x":34,"y":38,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"room_gh15_ball_5.png":
+		{
+			"frame": {"x":76,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"room_gh15_ball_3.png":
+		{
+			"frame": {"x":76,"y":30,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"room_gh15_ball_7.png":
+		{
+			"frame": {"x":0,"y":72,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		},
+		"room_gh15_ball_8.png":
+		{
+			"frame": {"x":29,"y":72,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		},
+		"room_gh15_ball_2.png":
+		{
+			"frame": {"x":57,"y":72,"w":27,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":26},
+			"sourceSize": {"w":27,"h":26}
+		},
+		"room_gh15_ball_1.png":
+		{
+			"frame": {"x":106,"y":0,"w":25,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":24},
+			"sourceSize": {"w":25,"h":24}
+		},
+		"room_gh15_ball_21.png":
+		{
+			"frame": {"x":106,"y":24,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"room_gh15_ball_12.png":
+		{
+			"frame": {"x":106,"y":48,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"room_gh15_ball_17.png":
+		{
+			"frame": {"x":106,"y":68,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"room_gh15_ball_18.png":
+		{
+			"frame": {"x":84,"y":72,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"room_gh15_ball_19.png":
+		{
+			"frame": {"x":0,"y":102,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"room_gh15_ball_20.png":
+		{
+			"frame": {"x":20,"y":102,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"room_gh15_ball_6.png":
+		{
+			"frame": {"x":40,"y":102,"w":20,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":20},
+			"sourceSize": {"w":20,"h":20}
+		},
+		"room_gh15_ball_14.png":
+		{
+			"frame": {"x":106,"y":88,"w":16,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":8},
+			"sourceSize": {"w":16,"h":8}
+		},
+		"room_gh15_ball_23.png":
+		{
+			"frame": {"x":130,"y":24,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"room_gh15_ball_9.png":
+		{
+			"frame": {"x":130,"y":25,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

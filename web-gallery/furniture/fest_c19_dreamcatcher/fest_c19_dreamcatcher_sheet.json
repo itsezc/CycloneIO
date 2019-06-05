@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "fest_c19_dreamcatcher_sheet.png",
+		"size": {"w":85,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_dreamcatcher_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":53,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":100},
+			"sourceSize": {"w":53,"h":100}
+		},
+		"fest_c19_dreamcatcher_6.png":
+		{
+			"frame": {"x":53,"y":0,"w":32,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":17},
+			"sourceSize": {"w":32,"h":17}
+		},
+		"fest_c19_dreamcatcher_3.png":
+		{
+			"frame": {"x":53,"y":17,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		}
+	}
+}

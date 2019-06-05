@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "fest_c19_parasol1_sheet.png",
+		"size": {"w":266,"h":179},
+		"scale": "1"
+	},
+	"frames": {
+		"fest_c19_parasol1_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":141,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":141,"h":55},
+			"sourceSize": {"w":141,"h":55}
+		},
+		"fest_c19_parasol1_7.png":
+		{
+			"frame": {"x":0,"y":55,"w":136,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":136,"h":64},
+			"sourceSize": {"w":136,"h":64}
+		},
+		"fest_c19_parasol1_8.png":
+		{
+			"frame": {"x":141,"y":0,"w":125,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":125,"h":70},
+			"sourceSize": {"w":125,"h":70}
+		},
+		"fest_c19_parasol1_5.png":
+		{
+			"frame": {"x":0,"y":119,"w":12,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":60},
+			"sourceSize": {"w":12,"h":60}
+		},
+		"fest_c19_parasol1_4.png":
+		{
+			"frame": {"x":141,"y":70,"w":25,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":29},
+			"sourceSize": {"w":25,"h":29}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "test_ltd2_sheet.png",
+		"size": {"w":132,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"test_ltd2_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":53},
+			"sourceSize": {"w":66,"h":53}
+		},
+		"test_ltd2_7.png":
+		{
+			"frame": {"x":66,"y":0,"w":66,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":53},
+			"sourceSize": {"w":66,"h":53}
+		},
+		"test_ltd2_2.png":
+		{
+			"frame": {"x":0,"y":53,"w":19,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":19},
+			"sourceSize": {"w":19,"h":19}
+		}
+	}
+}

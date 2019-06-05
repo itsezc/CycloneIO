@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "leprechaun_box_sheet.png",
+		"size": {"w":99,"h":110},
+		"scale": "1"
+	},
+	"frames": {
+		"leprechaun_box_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":110},
+			"sourceSize": {"w":66,"h":110}
+		},
+		"leprechaun_box_5.png":
+		{
+			"frame": {"x":66,"y":0,"w":33,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":56},
+			"sourceSize": {"w":33,"h":56}
+		},
+		"leprechaun_box_7.png":
+		{
+			"frame": {"x":66,"y":56,"w":18,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":31},
+			"sourceSize": {"w":18,"h":31}
+		}
+	}
+}

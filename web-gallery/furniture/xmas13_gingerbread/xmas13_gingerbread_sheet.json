@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "xmas13_gingerbread_sheet.png",
+		"size": {"w":74,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas13_gingerbread_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":42},
+			"sourceSize": {"w":46,"h":42}
+		},
+		"xmas13_gingerbread_5.png":
+		{
+			"frame": {"x":46,"y":0,"w":28,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":21},
+			"sourceSize": {"w":28,"h":21}
+		}
+	}
+}

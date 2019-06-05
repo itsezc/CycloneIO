@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "grunge_radiator_sheet.png",
+		"size": {"w":142,"h":107},
+		"scale": "1"
+	},
+	"frames": {
+		"grunge_radiator_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":101,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":59},
+			"sourceSize": {"w":101,"h":59}
+		},
+		"grunge_radiator_6.png":
+		{
+			"frame": {"x":101,"y":0,"w":41,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":59},
+			"sourceSize": {"w":41,"h":59}
+		},
+		"grunge_radiator_10.png":
+		{
+			"frame": {"x":0,"y":59,"w":39,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":18},
+			"sourceSize": {"w":39,"h":18}
+		},
+		"grunge_radiator_2.png":
+		{
+			"frame": {"x":0,"y":77,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"grunge_radiator_7.png":
+		{
+			"frame": {"x":21,"y":77,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"grunge_radiator_4.png":
+		{
+			"frame": {"x":39,"y":59,"w":22,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":10},
+			"sourceSize": {"w":22,"h":10}
+		}
+	}
+}

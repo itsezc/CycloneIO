@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "classic1_gate_sheet.png",
+		"size": {"w":143,"h":112},
+		"scale": "1"
+	},
+	"frames": {
+		"classic1_gate_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":82},
+			"sourceSize": {"w":42,"h":82}
+		},
+		"classic1_gate_4.png":
+		{
+			"frame": {"x":42,"y":0,"w":59,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":75},
+			"sourceSize": {"w":59,"h":75}
+		},
+		"classic1_gate_6.png":
+		{
+			"frame": {"x":101,"y":0,"w":42,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":63},
+			"sourceSize": {"w":42,"h":63}
+		},
+		"classic1_gate_8.png":
+		{
+			"frame": {"x":0,"y":82,"w":25,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":30},
+			"sourceSize": {"w":25,"h":30}
+		}
+	}
+}

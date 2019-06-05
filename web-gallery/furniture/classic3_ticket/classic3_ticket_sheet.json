@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "classic3_ticket_sheet.png",
+		"size": {"w":63,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"classic3_ticket_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":25,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":72},
+			"sourceSize": {"w":25,"h":72}
+		},
+		"classic3_ticket_8.png":
+		{
+			"frame": {"x":25,"y":0,"w":24,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":72},
+			"sourceSize": {"w":24,"h":72}
+		},
+		"classic3_ticket_5.png":
+		{
+			"frame": {"x":49,"y":0,"w":14,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":21},
+			"sourceSize": {"w":14,"h":21}
+		}
+	}
+}

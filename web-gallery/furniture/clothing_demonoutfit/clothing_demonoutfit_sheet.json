@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_demonoutfit_sheet.png",
+		"size": {"w":69,"h":102},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_demonoutfit_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":39,"h":102},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":102},
+			"sourceSize": {"w":39,"h":102}
+		},
+		"clothing_demonoutfit_5.png":
+		{
+			"frame": {"x":39,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

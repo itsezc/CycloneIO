@@ -1,0 +1,1385 @@
+{
+	"meta": {
+		"image": "party_tube_lava_sheet.png",
+		"size": {"w":952,"h":886},
+		"scale": "1"
+	},
+	"frames": {
+		"party_tube_lava_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":641,"h":641},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":641,"h":641},
+			"sourceSize": {"w":641,"h":641}
+		},
+		"party_tube_lava_109.png":
+		{
+			"frame": {"x":641,"y":0,"w":60,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":108},
+			"sourceSize": {"w":60,"h":108}
+		},
+		"party_tube_lava_117.png":
+		{
+			"frame": {"x":641,"y":108,"w":60,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":108},
+			"sourceSize": {"w":60,"h":108}
+		},
+		"party_tube_lava_122.png":
+		{
+			"frame": {"x":641,"y":216,"w":60,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":108},
+			"sourceSize": {"w":60,"h":108}
+		},
+		"party_tube_lava_126.png":
+		{
+			"frame": {"x":641,"y":324,"w":60,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":108},
+			"sourceSize": {"w":60,"h":108}
+		},
+		"party_tube_lava_59.png":
+		{
+			"frame": {"x":641,"y":432,"w":38,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":99},
+			"sourceSize": {"w":38,"h":99}
+		},
+		"party_tube_lava_51.png":
+		{
+			"frame": {"x":641,"y":531,"w":57,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":84},
+			"sourceSize": {"w":57,"h":84}
+		},
+		"party_tube_lava_46.png":
+		{
+			"frame": {"x":701,"y":0,"w":36,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":84},
+			"sourceSize": {"w":36,"h":84}
+		},
+		"party_tube_lava_48.png":
+		{
+			"frame": {"x":701,"y":84,"w":36,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":84},
+			"sourceSize": {"w":36,"h":84}
+		},
+		"party_tube_lava_50.png":
+		{
+			"frame": {"x":701,"y":168,"w":36,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":84},
+			"sourceSize": {"w":36,"h":84}
+		},
+		"party_tube_lava_52.png":
+		{
+			"frame": {"x":701,"y":252,"w":36,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":84},
+			"sourceSize": {"w":36,"h":84}
+		},
+		"party_tube_lava_45.png":
+		{
+			"frame": {"x":0,"y":641,"w":56,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":83},
+			"sourceSize": {"w":56,"h":83}
+		},
+		"party_tube_lava_53.png":
+		{
+			"frame": {"x":56,"y":641,"w":56,"h":83},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":83},
+			"sourceSize": {"w":56,"h":83}
+		},
+		"party_tube_lava_142.png":
+		{
+			"frame": {"x":112,"y":641,"w":56,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":82},
+			"sourceSize": {"w":56,"h":82}
+		},
+		"party_tube_lava_145.png":
+		{
+			"frame": {"x":168,"y":641,"w":56,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":82},
+			"sourceSize": {"w":56,"h":82}
+		},
+		"party_tube_lava_49.png":
+		{
+			"frame": {"x":224,"y":641,"w":56,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":82},
+			"sourceSize": {"w":56,"h":82}
+		},
+		"party_tube_lava_61.png":
+		{
+			"frame": {"x":280,"y":641,"w":56,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":82},
+			"sourceSize": {"w":56,"h":82}
+		},
+		"party_tube_lava_63.png":
+		{
+			"frame": {"x":336,"y":641,"w":56,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":82},
+			"sourceSize": {"w":56,"h":82}
+		},
+		"party_tube_lava_72.png":
+		{
+			"frame": {"x":392,"y":641,"w":56,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":82},
+			"sourceSize": {"w":56,"h":82}
+		},
+		"party_tube_lava_148.png":
+		{
+			"frame": {"x":448,"y":641,"w":56,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":81},
+			"sourceSize": {"w":56,"h":81}
+		},
+		"party_tube_lava_8.png":
+		{
+			"frame": {"x":504,"y":641,"w":56,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":81},
+			"sourceSize": {"w":56,"h":81}
+		},
+		"party_tube_lava_47.png":
+		{
+			"frame": {"x":560,"y":641,"w":56,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":80},
+			"sourceSize": {"w":56,"h":80}
+		},
+		"party_tube_lava_65.png":
+		{
+			"frame": {"x":616,"y":641,"w":56,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":80},
+			"sourceSize": {"w":56,"h":80}
+		},
+		"party_tube_lava_143.png":
+		{
+			"frame": {"x":672,"y":641,"w":56,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":79},
+			"sourceSize": {"w":56,"h":79}
+		},
+		"party_tube_lava_57.png":
+		{
+			"frame": {"x":737,"y":0,"w":56,"h":78},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":78},
+			"sourceSize": {"w":56,"h":78}
+		},
+		"party_tube_lava_67.png":
+		{
+			"frame": {"x":737,"y":78,"w":56,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":77},
+			"sourceSize": {"w":56,"h":77}
+		},
+		"party_tube_lava_56.png":
+		{
+			"frame": {"x":793,"y":0,"w":57,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":76},
+			"sourceSize": {"w":57,"h":76}
+		},
+		"party_tube_lava_35.png":
+		{
+			"frame": {"x":793,"y":76,"w":38,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":74},
+			"sourceSize": {"w":38,"h":74}
+		},
+		"party_tube_lava_36.png":
+		{
+			"frame": {"x":793,"y":150,"w":38,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":74},
+			"sourceSize": {"w":38,"h":74}
+		},
+		"party_tube_lava_37.png":
+		{
+			"frame": {"x":793,"y":224,"w":38,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":74},
+			"sourceSize": {"w":38,"h":74}
+		},
+		"party_tube_lava_38.png":
+		{
+			"frame": {"x":793,"y":298,"w":38,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":74},
+			"sourceSize": {"w":38,"h":74}
+		},
+		"party_tube_lava_144.png":
+		{
+			"frame": {"x":793,"y":372,"w":56,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":73},
+			"sourceSize": {"w":56,"h":73}
+		},
+		"party_tube_lava_153.png":
+		{
+			"frame": {"x":793,"y":445,"w":56,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":73},
+			"sourceSize": {"w":56,"h":73}
+		},
+		"party_tube_lava_55.png":
+		{
+			"frame": {"x":793,"y":518,"w":56,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":73},
+			"sourceSize": {"w":56,"h":73}
+		},
+		"party_tube_lava_54.png":
+		{
+			"frame": {"x":793,"y":591,"w":56,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":70},
+			"sourceSize": {"w":56,"h":70}
+		},
+		"party_tube_lava_156.png":
+		{
+			"frame": {"x":737,"y":155,"w":56,"h":69},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":69},
+			"sourceSize": {"w":56,"h":69}
+		},
+		"party_tube_lava_152.png":
+		{
+			"frame": {"x":737,"y":224,"w":56,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":68},
+			"sourceSize": {"w":56,"h":68}
+		},
+		"party_tube_lava_151.png":
+		{
+			"frame": {"x":737,"y":292,"w":56,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":66},
+			"sourceSize": {"w":56,"h":66}
+		},
+		"party_tube_lava_159.png":
+		{
+			"frame": {"x":737,"y":358,"w":56,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":66},
+			"sourceSize": {"w":56,"h":66}
+		},
+		"party_tube_lava_58.png":
+		{
+			"frame": {"x":737,"y":424,"w":56,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":66},
+			"sourceSize": {"w":56,"h":66}
+		},
+		"party_tube_lava_157.png":
+		{
+			"frame": {"x":737,"y":490,"w":42,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":64},
+			"sourceSize": {"w":42,"h":64}
+		},
+		"party_tube_lava_164.png":
+		{
+			"frame": {"x":737,"y":554,"w":42,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":64},
+			"sourceSize": {"w":42,"h":64}
+		},
+		"party_tube_lava_166.png":
+		{
+			"frame": {"x":737,"y":618,"w":42,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":64},
+			"sourceSize": {"w":42,"h":64}
+		},
+		"party_tube_lava_150.png":
+		{
+			"frame": {"x":793,"y":661,"w":56,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":63},
+			"sourceSize": {"w":56,"h":63}
+		},
+		"party_tube_lava_160.png":
+		{
+			"frame": {"x":0,"y":724,"w":56,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":62},
+			"sourceSize": {"w":56,"h":62}
+		},
+		"party_tube_lava_23.png":
+		{
+			"frame": {"x":701,"y":336,"w":33,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":61},
+			"sourceSize": {"w":33,"h":61}
+		},
+		"party_tube_lava_34.png":
+		{
+			"frame": {"x":701,"y":397,"w":33,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":61},
+			"sourceSize": {"w":33,"h":61}
+		},
+		"party_tube_lava_149.png":
+		{
+			"frame": {"x":56,"y":724,"w":56,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":60},
+			"sourceSize": {"w":56,"h":60}
+		},
+		"party_tube_lava_73.png":
+		{
+			"frame": {"x":112,"y":724,"w":56,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":60},
+			"sourceSize": {"w":56,"h":60}
+		},
+		"party_tube_lava_22.png":
+		{
+			"frame": {"x":701,"y":458,"w":32,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":60},
+			"sourceSize": {"w":32,"h":60}
+		},
+		"party_tube_lava_24.png":
+		{
+			"frame": {"x":701,"y":518,"w":32,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":60},
+			"sourceSize": {"w":32,"h":60}
+		},
+		"party_tube_lava_161.png":
+		{
+			"frame": {"x":168,"y":724,"w":56,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":59},
+			"sourceSize": {"w":56,"h":59}
+		},
+		"party_tube_lava_123.png":
+		{
+			"frame": {"x":701,"y":578,"w":32,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":59},
+			"sourceSize": {"w":32,"h":59}
+		},
+		"party_tube_lava_127.png":
+		{
+			"frame": {"x":224,"y":724,"w":32,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":59},
+			"sourceSize": {"w":32,"h":59}
+		},
+		"party_tube_lava_16.png":
+		{
+			"frame": {"x":256,"y":724,"w":32,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":59},
+			"sourceSize": {"w":32,"h":59}
+		},
+		"party_tube_lava_21.png":
+		{
+			"frame": {"x":288,"y":724,"w":32,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":59},
+			"sourceSize": {"w":32,"h":59}
+		},
+		"party_tube_lava_33.png":
+		{
+			"frame": {"x":320,"y":724,"w":32,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":59},
+			"sourceSize": {"w":32,"h":59}
+		},
+		"party_tube_lava_114.png":
+		{
+			"frame": {"x":352,"y":724,"w":32,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":58},
+			"sourceSize": {"w":32,"h":58}
+		},
+		"party_tube_lava_71.png":
+		{
+			"frame": {"x":384,"y":724,"w":32,"h":58},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":58},
+			"sourceSize": {"w":32,"h":58}
+		},
+		"party_tube_lava_15.png":
+		{
+			"frame": {"x":416,"y":724,"w":32,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":57},
+			"sourceSize": {"w":32,"h":57}
+		},
+		"party_tube_lava_32.png":
+		{
+			"frame": {"x":448,"y":724,"w":32,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":57},
+			"sourceSize": {"w":32,"h":57}
+		},
+		"party_tube_lava_154.png":
+		{
+			"frame": {"x":480,"y":724,"w":56,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":56},
+			"sourceSize": {"w":56,"h":56}
+		},
+		"party_tube_lava_162.png":
+		{
+			"frame": {"x":536,"y":724,"w":56,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":56},
+			"sourceSize": {"w":56,"h":56}
+		},
+		"party_tube_lava_74.png":
+		{
+			"frame": {"x":592,"y":724,"w":56,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":56},
+			"sourceSize": {"w":56,"h":56}
+		},
+		"party_tube_lava_163.png":
+		{
+			"frame": {"x":648,"y":724,"w":56,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":53},
+			"sourceSize": {"w":56,"h":53}
+		},
+		"party_tube_lava_68.png":
+		{
+			"frame": {"x":704,"y":724,"w":56,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":53},
+			"sourceSize": {"w":56,"h":53}
+		},
+		"party_tube_lava_171.png":
+		{
+			"frame": {"x":760,"y":724,"w":56,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":52},
+			"sourceSize": {"w":56,"h":52}
+		},
+		"party_tube_lava_165.png":
+		{
+			"frame": {"x":0,"y":786,"w":56,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":49},
+			"sourceSize": {"w":56,"h":49}
+		},
+		"party_tube_lava_69.png":
+		{
+			"frame": {"x":56,"y":786,"w":56,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":49},
+			"sourceSize": {"w":56,"h":49}
+		},
+		"party_tube_lava_172.png":
+		{
+			"frame": {"x":112,"y":786,"w":56,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":48},
+			"sourceSize": {"w":56,"h":48}
+		},
+		"party_tube_lava_174.png":
+		{
+			"frame": {"x":168,"y":786,"w":56,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":46},
+			"sourceSize": {"w":56,"h":46}
+		},
+		"party_tube_lava_167.png":
+		{
+			"frame": {"x":224,"y":786,"w":56,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":45},
+			"sourceSize": {"w":56,"h":45}
+		},
+		"party_tube_lava_70.png":
+		{
+			"frame": {"x":280,"y":786,"w":56,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":45},
+			"sourceSize": {"w":56,"h":45}
+		},
+		"party_tube_lava_173.png":
+		{
+			"frame": {"x":336,"y":786,"w":56,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":44},
+			"sourceSize": {"w":56,"h":44}
+		},
+		"party_tube_lava_175.png":
+		{
+			"frame": {"x":392,"y":786,"w":56,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":44},
+			"sourceSize": {"w":56,"h":44}
+		},
+		"party_tube_lava_104.png":
+		{
+			"frame": {"x":448,"y":786,"w":56,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":43},
+			"sourceSize": {"w":56,"h":43}
+		},
+		"party_tube_lava_118.png":
+		{
+			"frame": {"x":850,"y":0,"w":32,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":55},
+			"sourceSize": {"w":32,"h":55}
+		},
+		"party_tube_lava_31.png":
+		{
+			"frame": {"x":882,"y":0,"w":33,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":54},
+			"sourceSize": {"w":33,"h":54}
+		},
+		"party_tube_lava_17.png":
+		{
+			"frame": {"x":882,"y":54,"w":32,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":54},
+			"sourceSize": {"w":32,"h":54}
+		},
+		"party_tube_lava_155.png":
+		{
+			"frame": {"x":882,"y":108,"w":30,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":54},
+			"sourceSize": {"w":30,"h":54}
+		},
+		"party_tube_lava_29.png":
+		{
+			"frame": {"x":882,"y":162,"w":33,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":52},
+			"sourceSize": {"w":33,"h":52}
+		},
+		"party_tube_lava_101.png":
+		{
+			"frame": {"x":0,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_106.png":
+		{
+			"frame": {"x":37,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_107.png":
+		{
+			"frame": {"x":74,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_108.png":
+		{
+			"frame": {"x":111,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_110.png":
+		{
+			"frame": {"x":148,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_111.png":
+		{
+			"frame": {"x":185,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_112.png":
+		{
+			"frame": {"x":222,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_113.png":
+		{
+			"frame": {"x":259,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_116.png":
+		{
+			"frame": {"x":296,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_120.png":
+		{
+			"frame": {"x":333,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_124.png":
+		{
+			"frame": {"x":370,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_138.png":
+		{
+			"frame": {"x":407,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_140.png":
+		{
+			"frame": {"x":444,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_158.png":
+		{
+			"frame": {"x":481,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_60.png":
+		{
+			"frame": {"x":518,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_62.png":
+		{
+			"frame": {"x":555,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_64.png":
+		{
+			"frame": {"x":592,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_66.png":
+		{
+			"frame": {"x":629,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_76.png":
+		{
+			"frame": {"x":666,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_77.png":
+		{
+			"frame": {"x":703,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_79.png":
+		{
+			"frame": {"x":740,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_86.png":
+		{
+			"frame": {"x":777,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_93.png":
+		{
+			"frame": {"x":814,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_97.png":
+		{
+			"frame": {"x":851,"y":835,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_98.png":
+		{
+			"frame": {"x":915,"y":0,"w":37,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":51},
+			"sourceSize": {"w":37,"h":51}
+		},
+		"party_tube_lava_25.png":
+		{
+			"frame": {"x":915,"y":51,"w":20,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":50},
+			"sourceSize": {"w":20,"h":50}
+		},
+		"party_tube_lava_135.png":
+		{
+			"frame": {"x":915,"y":101,"w":32,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":49},
+			"sourceSize": {"w":32,"h":49}
+		},
+		"party_tube_lava_28.png":
+		{
+			"frame": {"x":915,"y":150,"w":32,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":49},
+			"sourceSize": {"w":32,"h":49}
+		},
+		"party_tube_lava_92.png":
+		{
+			"frame": {"x":915,"y":199,"w":32,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":49},
+			"sourceSize": {"w":32,"h":49}
+		},
+		"party_tube_lava_133.png":
+		{
+			"frame": {"x":915,"y":248,"w":32,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+			"sourceSize": {"w":32,"h":46}
+		},
+		"party_tube_lava_27.png":
+		{
+			"frame": {"x":915,"y":294,"w":32,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+			"sourceSize": {"w":32,"h":46}
+		},
+		"party_tube_lava_89.png":
+		{
+			"frame": {"x":915,"y":340,"w":32,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":45},
+			"sourceSize": {"w":32,"h":45}
+		},
+		"party_tube_lava_131.png":
+		{
+			"frame": {"x":915,"y":385,"w":32,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":43},
+			"sourceSize": {"w":32,"h":43}
+		},
+		"party_tube_lava_26.png":
+		{
+			"frame": {"x":915,"y":428,"w":32,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":42},
+			"sourceSize": {"w":32,"h":42}
+		},
+		"party_tube_lava_85.png":
+		{
+			"frame": {"x":915,"y":470,"w":32,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":42},
+			"sourceSize": {"w":32,"h":42}
+		},
+		"party_tube_lava_11.png":
+		{
+			"frame": {"x":737,"y":682,"w":42,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":20},
+			"sourceSize": {"w":42,"h":20}
+		},
+		"party_tube_lava_4.png":
+		{
+			"frame": {"x":915,"y":512,"w":18,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":40},
+			"sourceSize": {"w":18,"h":40}
+		},
+		"party_tube_lava_5.png":
+		{
+			"frame": {"x":933,"y":512,"w":18,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":40},
+			"sourceSize": {"w":18,"h":40}
+		},
+		"party_tube_lava_6.png":
+		{
+			"frame": {"x":915,"y":552,"w":18,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":40},
+			"sourceSize": {"w":18,"h":40}
+		},
+		"party_tube_lava_7.png":
+		{
+			"frame": {"x":933,"y":552,"w":18,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":40},
+			"sourceSize": {"w":18,"h":40}
+		},
+		"party_tube_lava_129.png":
+		{
+			"frame": {"x":915,"y":592,"w":32,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":39},
+			"sourceSize": {"w":32,"h":39}
+		},
+		"party_tube_lava_82.png":
+		{
+			"frame": {"x":915,"y":631,"w":32,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":39},
+			"sourceSize": {"w":32,"h":39}
+		},
+		"party_tube_lava_103.png":
+		{
+			"frame": {"x":915,"y":670,"w":32,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":37},
+			"sourceSize": {"w":32,"h":37}
+		},
+		"party_tube_lava_141.png":
+		{
+			"frame": {"x":915,"y":707,"w":32,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":36},
+			"sourceSize": {"w":32,"h":36}
+		},
+		"party_tube_lava_9.png":
+		{
+			"frame": {"x":915,"y":743,"w":32,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":36},
+			"sourceSize": {"w":32,"h":36}
+		},
+		"party_tube_lava_1.png":
+		{
+			"frame": {"x":915,"y":779,"w":20,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":36},
+			"sourceSize": {"w":20,"h":36}
+		},
+		"party_tube_lava_2.png":
+		{
+			"frame": {"x":915,"y":815,"w":20,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":36},
+			"sourceSize": {"w":20,"h":36}
+		},
+		"party_tube_lava_3.png":
+		{
+			"frame": {"x":882,"y":214,"w":20,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":36},
+			"sourceSize": {"w":20,"h":36}
+		},
+		"party_tube_lava_30.png":
+		{
+			"frame": {"x":882,"y":250,"w":20,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":36},
+			"sourceSize": {"w":20,"h":36}
+		},
+		"party_tube_lava_100.png":
+		{
+			"frame": {"x":915,"y":851,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"party_tube_lava_12.png":
+		{
+			"frame": {"x":882,"y":286,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"party_tube_lava_139.png":
+		{
+			"frame": {"x":882,"y":319,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"party_tube_lava_10.png":
+		{
+			"frame": {"x":882,"y":352,"w":32,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":30},
+			"sourceSize": {"w":32,"h":30}
+		},
+		"party_tube_lava_137.png":
+		{
+			"frame": {"x":882,"y":382,"w":32,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":30},
+			"sourceSize": {"w":32,"h":30}
+		},
+		"party_tube_lava_44.png":
+		{
+			"frame": {"x":882,"y":412,"w":32,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":29},
+			"sourceSize": {"w":32,"h":29}
+		},
+		"party_tube_lava_136.png":
+		{
+			"frame": {"x":882,"y":441,"w":32,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":26},
+			"sourceSize": {"w":32,"h":26}
+		},
+		"party_tube_lava_20.png":
+		{
+			"frame": {"x":882,"y":467,"w":32,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":25},
+			"sourceSize": {"w":32,"h":25}
+		},
+		"party_tube_lava_41.png":
+		{
+			"frame": {"x":882,"y":492,"w":32,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":25},
+			"sourceSize": {"w":32,"h":25}
+		},
+		"party_tube_lava_115.png":
+		{
+			"frame": {"x":882,"y":517,"w":32,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":22},
+			"sourceSize": {"w":32,"h":22}
+		},
+		"party_tube_lava_43.png":
+		{
+			"frame": {"x":882,"y":539,"w":32,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":22},
+			"sourceSize": {"w":32,"h":22}
+		},
+		"party_tube_lava_18.png":
+		{
+			"frame": {"x":882,"y":561,"w":32,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":21},
+			"sourceSize": {"w":32,"h":21}
+		},
+		"party_tube_lava_40.png":
+		{
+			"frame": {"x":882,"y":582,"w":32,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":21},
+			"sourceSize": {"w":32,"h":21}
+		},
+		"party_tube_lava_42.png":
+		{
+			"frame": {"x":882,"y":603,"w":32,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":20},
+			"sourceSize": {"w":32,"h":20}
+		},
+		"party_tube_lava_119.png":
+		{
+			"frame": {"x":882,"y":623,"w":32,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":19},
+			"sourceSize": {"w":32,"h":19}
+		},
+		"party_tube_lava_13.png":
+		{
+			"frame": {"x":935,"y":51,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		},
+		"party_tube_lava_132.png":
+		{
+			"frame": {"x":935,"y":779,"w":15,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":28},
+			"sourceSize": {"w":15,"h":28}
+		},
+		"party_tube_lava_168.png":
+		{
+			"frame": {"x":935,"y":815,"w":15,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":28},
+			"sourceSize": {"w":15,"h":28}
+		},
+		"party_tube_lava_130.png":
+		{
+			"frame": {"x":882,"y":642,"w":14,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":27},
+			"sourceSize": {"w":14,"h":27}
+		},
+		"party_tube_lava_134.png":
+		{
+			"frame": {"x":896,"y":642,"w":14,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":27},
+			"sourceSize": {"w":14,"h":27}
+		},
+		"party_tube_lava_169.png":
+		{
+			"frame": {"x":882,"y":669,"w":14,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":27},
+			"sourceSize": {"w":14,"h":27}
+		},
+		"party_tube_lava_170.png":
+		{
+			"frame": {"x":896,"y":669,"w":14,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":27},
+			"sourceSize": {"w":14,"h":27}
+		},
+		"party_tube_lava_105.png":
+		{
+			"frame": {"x":882,"y":696,"w":15,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":25},
+			"sourceSize": {"w":15,"h":25}
+		},
+		"party_tube_lava_128.png":
+		{
+			"frame": {"x":897,"y":696,"w":15,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":25},
+			"sourceSize": {"w":15,"h":25}
+		},
+		"party_tube_lava_147.png":
+		{
+			"frame": {"x":882,"y":721,"w":14,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":24},
+			"sourceSize": {"w":14,"h":24}
+		},
+		"party_tube_lava_87.png":
+		{
+			"frame": {"x":896,"y":721,"w":14,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":24},
+			"sourceSize": {"w":14,"h":24}
+		},
+		"party_tube_lava_121.png":
+		{
+			"frame": {"x":882,"y":745,"w":15,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":22},
+			"sourceSize": {"w":15,"h":22}
+		},
+		"party_tube_lava_90.png":
+		{
+			"frame": {"x":897,"y":745,"w":15,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":22},
+			"sourceSize": {"w":15,"h":22}
+		},
+		"party_tube_lava_125.png":
+		{
+			"frame": {"x":882,"y":767,"w":14,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":21},
+			"sourceSize": {"w":14,"h":21}
+		},
+		"party_tube_lava_80.png":
+		{
+			"frame": {"x":896,"y":767,"w":14,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":21},
+			"sourceSize": {"w":14,"h":21}
+		},
+		"party_tube_lava_83.png":
+		{
+			"frame": {"x":935,"y":81,"w":14,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+			"sourceSize": {"w":14,"h":19}
+		},
+		"party_tube_lava_84.png":
+		{
+			"frame": {"x":882,"y":788,"w":14,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":19},
+			"sourceSize": {"w":14,"h":19}
+		},
+		"party_tube_lava_99.png":
+		{
+			"frame": {"x":896,"y":788,"w":14,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":18},
+			"sourceSize": {"w":14,"h":18}
+		},
+		"party_tube_lava_146.png":
+		{
+			"frame": {"x":882,"y":807,"w":18,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":9},
+			"sourceSize": {"w":18,"h":9}
+		},
+		"party_tube_lava_81.png":
+		{
+			"frame": {"x":882,"y":816,"w":15,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":17},
+			"sourceSize": {"w":15,"h":17}
+		},
+		"party_tube_lava_102.png":
+		{
+			"frame": {"x":897,"y":816,"w":14,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":16},
+			"sourceSize": {"w":14,"h":16}
+		},
+		"party_tube_lava_91.png":
+		{
+			"frame": {"x":850,"y":55,"w":14,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":16},
+			"sourceSize": {"w":14,"h":16}
+		},
+		"party_tube_lava_88.png":
+		{
+			"frame": {"x":864,"y":55,"w":15,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":14},
+			"sourceSize": {"w":15,"h":14}
+		},
+		"party_tube_lava_94.png":
+		{
+			"frame": {"x":850,"y":71,"w":14,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":14},
+			"sourceSize": {"w":14,"h":14}
+		},
+		"party_tube_lava_96.png":
+		{
+			"frame": {"x":864,"y":71,"w":14,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":12},
+			"sourceSize": {"w":14,"h":12}
+		},
+		"party_tube_lava_95.png":
+		{
+			"frame": {"x":850,"y":85,"w":14,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":11},
+			"sourceSize": {"w":14,"h":11}
+		},
+		"party_tube_lava_75.png":
+		{
+			"frame": {"x":900,"y":807,"w":14,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":9},
+			"sourceSize": {"w":14,"h":9}
+		}
+	}
+}

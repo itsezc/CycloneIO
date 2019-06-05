@@ -1,0 +1,185 @@
+{
+	"meta": {
+		"image": "garden_jungle_sheet.png",
+		"size": {"w":339,"h":331},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_jungle_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":230,"h":204},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":230,"h":204},
+			"sourceSize": {"w":230,"h":204}
+		},
+		"garden_jungle_17.png":
+		{
+			"frame": {"x":230,"y":0,"w":81,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":91},
+			"sourceSize": {"w":81,"h":91}
+		},
+		"garden_jungle_12.png":
+		{
+			"frame": {"x":230,"y":91,"w":63,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":44},
+			"sourceSize": {"w":63,"h":44}
+		},
+		"garden_jungle_9.png":
+		{
+			"frame": {"x":230,"y":135,"w":63,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":39},
+			"sourceSize": {"w":63,"h":39}
+		},
+		"garden_jungle_26.png":
+		{
+			"frame": {"x":0,"y":204,"w":58,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":54},
+			"sourceSize": {"w":58,"h":54}
+		},
+		"garden_jungle_25.png":
+		{
+			"frame": {"x":58,"y":204,"w":58,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":40},
+			"sourceSize": {"w":58,"h":40}
+		},
+		"garden_jungle_3.png":
+		{
+			"frame": {"x":0,"y":258,"w":57,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":44},
+			"sourceSize": {"w":57,"h":44}
+		},
+		"garden_jungle_4.png":
+		{
+			"frame": {"x":116,"y":204,"w":51,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":40},
+			"sourceSize": {"w":51,"h":40}
+		},
+		"garden_jungle_24.png":
+		{
+			"frame": {"x":167,"y":204,"w":44,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":32},
+			"sourceSize": {"w":44,"h":32}
+		},
+		"garden_jungle_2.png":
+		{
+			"frame": {"x":230,"y":174,"w":44,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":25},
+			"sourceSize": {"w":44,"h":25}
+		},
+		"garden_jungle_22.png":
+		{
+			"frame": {"x":211,"y":204,"w":43,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":25},
+			"sourceSize": {"w":43,"h":25}
+		},
+		"garden_jungle_18.png":
+		{
+			"frame": {"x":254,"y":204,"w":42,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":22},
+			"sourceSize": {"w":42,"h":22}
+		},
+		"garden_jungle_6.png":
+		{
+			"frame": {"x":57,"y":258,"w":39,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":22},
+			"sourceSize": {"w":39,"h":22}
+		},
+		"garden_jungle_5.png":
+		{
+			"frame": {"x":311,"y":0,"w":28,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":34},
+			"sourceSize": {"w":28,"h":34}
+		},
+		"garden_jungle_19.png":
+		{
+			"frame": {"x":274,"y":174,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		},
+		"garden_jungle_13.png":
+		{
+			"frame": {"x":0,"y":302,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		},
+		"garden_jungle_20.png":
+		{
+			"frame": {"x":96,"y":258,"w":29,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":20},
+			"sourceSize": {"w":29,"h":20}
+		},
+		"garden_jungle_21.png":
+		{
+			"frame": {"x":125,"y":258,"w":29,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":17},
+			"sourceSize": {"w":29,"h":17}
+		},
+		"garden_jungle_11.png":
+		{
+			"frame": {"x":311,"y":34,"w":27,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":20},
+			"sourceSize": {"w":27,"h":20}
+		},
+		"garden_jungle_16.png":
+		{
+			"frame": {"x":311,"y":54,"w":23,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":14},
+			"sourceSize": {"w":23,"h":14}
+		},
+		"garden_jungle_8.png":
+		{
+			"frame": {"x":311,"y":68,"w":21,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":21},
+			"sourceSize": {"w":21,"h":21}
+		},
+		"garden_jungle_7.png":
+		{
+			"frame": {"x":311,"y":89,"w":21,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":13},
+			"sourceSize": {"w":21,"h":13}
+		}
+	}
+}

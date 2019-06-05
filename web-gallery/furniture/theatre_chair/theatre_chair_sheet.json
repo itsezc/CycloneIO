@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "theatre_chair_sheet.png",
+		"size": {"w":106,"h":99},
+		"scale": "1"
+	},
+	"frames": {
+		"theatre_chair_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":54,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":60},
+			"sourceSize": {"w":54,"h":60}
+		},
+		"theatre_chair_10.png":
+		{
+			"frame": {"x":54,"y":0,"w":52,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":26},
+			"sourceSize": {"w":52,"h":26}
+		},
+		"theatre_chair_1.png":
+		{
+			"frame": {"x":0,"y":60,"w":38,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":39},
+			"sourceSize": {"w":38,"h":39}
+		},
+		"theatre_chair_7.png":
+		{
+			"frame": {"x":54,"y":26,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		},
+		"theatre_chair_3.png":
+		{
+			"frame": {"x":38,"y":60,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		},
+		"theatre_chair_9.png":
+		{
+			"frame": {"x":82,"y":26,"w":20,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":19},
+			"sourceSize": {"w":20,"h":19}
+		}
+	}
+}

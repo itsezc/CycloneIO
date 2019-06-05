@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "modern_c17_plant_sheet.png",
+		"size": {"w":100,"h":83},
+		"scale": "1"
+	},
+	"frames": {
+		"modern_c17_plant_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":44,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":53},
+			"sourceSize": {"w":44,"h":53}
+		},
+		"modern_c17_plant_7.png":
+		{
+			"frame": {"x":44,"y":0,"w":28,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":45},
+			"sourceSize": {"w":28,"h":45}
+		},
+		"modern_c17_plant_6.png":
+		{
+			"frame": {"x":72,"y":0,"w":28,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":38},
+			"sourceSize": {"w":28,"h":38}
+		},
+		"modern_c17_plant_1.png":
+		{
+			"frame": {"x":0,"y":53,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

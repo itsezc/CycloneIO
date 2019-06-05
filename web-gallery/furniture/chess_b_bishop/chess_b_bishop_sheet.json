@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "chess_b_bishop_sheet.png",
+		"size": {"w":192,"h":191},
+		"scale": "1"
+	},
+	"frames": {
+		"chess_b_bishop_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":138},
+			"sourceSize": {"w":48,"h":138}
+		},
+		"chess_b_bishop_5.png":
+		{
+			"frame": {"x":48,"y":0,"w":48,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":138},
+			"sourceSize": {"w":48,"h":138}
+		},
+		"chess_b_bishop_2.png":
+		{
+			"frame": {"x":96,"y":0,"w":48,"h":137},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":137},
+			"sourceSize": {"w":48,"h":137}
+		},
+		"chess_b_bishop_3.png":
+		{
+			"frame": {"x":144,"y":0,"w":48,"h":137},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":137},
+			"sourceSize": {"w":48,"h":137}
+		},
+		"chess_b_bishop_10.png":
+		{
+			"frame": {"x":0,"y":138,"w":46,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":25},
+			"sourceSize": {"w":46,"h":25}
+		},
+		"chess_b_bishop_11.png":
+		{
+			"frame": {"x":0,"y":163,"w":17,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":28},
+			"sourceSize": {"w":17,"h":28}
+		}
+	}
+}

@@ -1,0 +1,313 @@
+{
+	"meta": {
+		"image": "garden_caterpillar_sheet.png",
+		"size": {"w":413,"h":358},
+		"scale": "1"
+	},
+	"frames": {
+		"garden_caterpillar_12.png":
+		{
+			"frame": {"x":0,"y":0,"w":138,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":138,"h":60},
+			"sourceSize": {"w":138,"h":60}
+		},
+		"garden_caterpillar_6.png":
+		{
+			"frame": {"x":0,"y":60,"w":61,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":125},
+			"sourceSize": {"w":61,"h":125}
+		},
+		"garden_caterpillar_8.png":
+		{
+			"frame": {"x":61,"y":60,"w":61,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":125},
+			"sourceSize": {"w":61,"h":125}
+		},
+		"garden_caterpillar_14.png":
+		{
+			"frame": {"x":138,"y":0,"w":82,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":124},
+			"sourceSize": {"w":82,"h":124}
+		},
+		"garden_caterpillar_10.png":
+		{
+			"frame": {"x":220,"y":0,"w":61,"h":124},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":124},
+			"sourceSize": {"w":61,"h":124}
+		},
+		"garden_caterpillar_2.png":
+		{
+			"frame": {"x":281,"y":0,"w":61,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":122},
+			"sourceSize": {"w":61,"h":122}
+		},
+		"garden_caterpillar_9.png":
+		{
+			"frame": {"x":0,"y":185,"w":61,"h":122},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":122},
+			"sourceSize": {"w":61,"h":122}
+		},
+		"garden_caterpillar_1.png":
+		{
+			"frame": {"x":61,"y":185,"w":61,"h":117},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":117},
+			"sourceSize": {"w":61,"h":117}
+		},
+		"garden_caterpillar_22.png":
+		{
+			"frame": {"x":122,"y":185,"w":81,"h":71},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":81,"h":71},
+			"sourceSize": {"w":81,"h":71}
+		},
+		"garden_caterpillar_17.png":
+		{
+			"frame": {"x":138,"y":124,"w":80,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":80,"h":55},
+			"sourceSize": {"w":80,"h":55}
+		},
+		"garden_caterpillar_29.png":
+		{
+			"frame": {"x":203,"y":185,"w":72,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":39},
+			"sourceSize": {"w":72,"h":39}
+		},
+		"garden_caterpillar_31.png":
+		{
+			"frame": {"x":122,"y":256,"w":72,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":39},
+			"sourceSize": {"w":72,"h":39}
+		},
+		"garden_caterpillar_35.png":
+		{
+			"frame": {"x":194,"y":256,"w":72,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":39},
+			"sourceSize": {"w":72,"h":39}
+		},
+		"garden_caterpillar_39.png":
+		{
+			"frame": {"x":266,"y":256,"w":71,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":39},
+			"sourceSize": {"w":71,"h":39}
+		},
+		"garden_caterpillar_43.png":
+		{
+			"frame": {"x":342,"y":0,"w":71,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":39},
+			"sourceSize": {"w":71,"h":39}
+		},
+		"garden_caterpillar_41.png":
+		{
+			"frame": {"x":342,"y":39,"w":70,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":39},
+			"sourceSize": {"w":70,"h":39}
+		},
+		"garden_caterpillar_7.png":
+		{
+			"frame": {"x":342,"y":78,"w":69,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":30},
+			"sourceSize": {"w":69,"h":30}
+		},
+		"garden_caterpillar_36.png":
+		{
+			"frame": {"x":342,"y":108,"w":32,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":63},
+			"sourceSize": {"w":32,"h":63}
+		},
+		"garden_caterpillar_38.png":
+		{
+			"frame": {"x":374,"y":108,"w":32,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":63},
+			"sourceSize": {"w":32,"h":63}
+		},
+		"garden_caterpillar_42.png":
+		{
+			"frame": {"x":342,"y":171,"w":32,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":63},
+			"sourceSize": {"w":32,"h":63}
+		},
+		"garden_caterpillar_19.png":
+		{
+			"frame": {"x":342,"y":234,"w":41,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":62},
+			"sourceSize": {"w":41,"h":62}
+		},
+		"garden_caterpillar_30.png":
+		{
+			"frame": {"x":374,"y":171,"w":32,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":61},
+			"sourceSize": {"w":32,"h":61}
+		},
+		"garden_caterpillar_33.png":
+		{
+			"frame": {"x":281,"y":122,"w":32,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":60},
+			"sourceSize": {"w":32,"h":60}
+		},
+		"garden_caterpillar_28.png":
+		{
+			"frame": {"x":220,"y":124,"w":32,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":59},
+			"sourceSize": {"w":32,"h":59}
+		},
+		"garden_caterpillar_37.png":
+		{
+			"frame": {"x":0,"y":307,"w":55,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":51},
+			"sourceSize": {"w":55,"h":51}
+		},
+		"garden_caterpillar_40.png":
+		{
+			"frame": {"x":55,"y":307,"w":55,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":51},
+			"sourceSize": {"w":55,"h":51}
+		},
+		"garden_caterpillar_27.png":
+		{
+			"frame": {"x":275,"y":185,"w":39,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":27},
+			"sourceSize": {"w":39,"h":27}
+		},
+		"garden_caterpillar_15.png":
+		{
+			"frame": {"x":203,"y":224,"w":36,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":20},
+			"sourceSize": {"w":36,"h":20}
+		},
+		"garden_caterpillar_26.png":
+		{
+			"frame": {"x":239,"y":224,"w":36,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":20},
+			"sourceSize": {"w":36,"h":20}
+		},
+		"garden_caterpillar_23.png":
+		{
+			"frame": {"x":110,"y":307,"w":35,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":33},
+			"sourceSize": {"w":35,"h":33}
+		},
+		"garden_caterpillar_16.png":
+		{
+			"frame": {"x":275,"y":224,"w":35,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":20},
+			"sourceSize": {"w":35,"h":20}
+		},
+		"garden_caterpillar_18.png":
+		{
+			"frame": {"x":145,"y":307,"w":34,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":20},
+			"sourceSize": {"w":34,"h":20}
+		},
+		"garden_caterpillar_20.png":
+		{
+			"frame": {"x":179,"y":307,"w":34,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":20},
+			"sourceSize": {"w":34,"h":20}
+		},
+		"garden_caterpillar_21.png":
+		{
+			"frame": {"x":213,"y":307,"w":34,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":20},
+			"sourceSize": {"w":34,"h":20}
+		},
+		"garden_caterpillar_13.png":
+		{
+			"frame": {"x":383,"y":234,"w":23,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":30},
+			"sourceSize": {"w":23,"h":30}
+		},
+		"garden_caterpillar_3.png":
+		{
+			"frame": {"x":383,"y":264,"w":29,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":25},
+			"sourceSize": {"w":29,"h":25}
+		},
+		"garden_caterpillar_4.png":
+		{
+			"frame": {"x":313,"y":122,"w":29,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":25},
+			"sourceSize": {"w":29,"h":25}
+		},
+		"garden_caterpillar_11.png":
+		{
+			"frame": {"x":412,"y":39,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

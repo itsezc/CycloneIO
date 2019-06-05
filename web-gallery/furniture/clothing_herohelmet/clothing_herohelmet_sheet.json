@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_herohelmet_sheet.png",
+		"size": {"w":53,"h":46},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_herohelmet_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":29,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":46},
+			"sourceSize": {"w":29,"h":46}
+		},
+		"clothing_herohelmet_7.png":
+		{
+			"frame": {"x":29,"y":0,"w":24,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":29},
+			"sourceSize": {"w":24,"h":29}
+		}
+	}
+}

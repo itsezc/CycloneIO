@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "xmas_c17_tree_sheet.png",
+		"size": {"w":248,"h":162},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_tree_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":115,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":115,"h":92},
+			"sourceSize": {"w":115,"h":92}
+		},
+		"xmas_c17_tree_5.png":
+		{
+			"frame": {"x":115,"y":0,"w":114,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":114,"h":91},
+			"sourceSize": {"w":114,"h":91}
+		},
+		"xmas_c17_tree_12.png":
+		{
+			"frame": {"x":0,"y":92,"w":96,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":70},
+			"sourceSize": {"w":96,"h":70}
+		},
+		"xmas_c17_tree_3.png":
+		{
+			"frame": {"x":229,"y":0,"w":19,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":81},
+			"sourceSize": {"w":19,"h":81}
+		},
+		"xmas_c17_tree_13.png":
+		{
+			"frame": {"x":96,"y":92,"w":22,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":32},
+			"sourceSize": {"w":22,"h":32}
+		},
+		"xmas_c17_tree_9.png":
+		{
+			"frame": {"x":118,"y":92,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"xmas_c17_tree_6.png":
+		{
+			"frame": {"x":139,"y":92,"w":21,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":16},
+			"sourceSize": {"w":21,"h":16}
+		},
+		"xmas_c17_tree_1.png":
+		{
+			"frame": {"x":229,"y":81,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

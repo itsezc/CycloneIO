@@ -1,0 +1,529 @@
+{
+	"meta": {
+		"image": "jp_irori_sheet.png",
+		"size": {"w":351,"h":206},
+		"scale": "1"
+	},
+	"frames": {
+		"jp_irori_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":211,"h":153},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":211,"h":153},
+			"sourceSize": {"w":211,"h":153}
+		},
+		"jp_irori_64.png":
+		{
+			"frame": {"x":211,"y":0,"w":140,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":140,"h":89},
+			"sourceSize": {"w":140,"h":89}
+		},
+		"jp_irori_32.png":
+		{
+			"frame": {"x":211,"y":89,"w":140,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":140,"h":40},
+			"sourceSize": {"w":140,"h":40}
+		},
+		"jp_irori_21.png":
+		{
+			"frame": {"x":0,"y":153,"w":71,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":71,"h":44},
+			"sourceSize": {"w":71,"h":44}
+		},
+		"jp_irori_65.png":
+		{
+			"frame": {"x":211,"y":129,"w":70,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":20},
+			"sourceSize": {"w":70,"h":20}
+		},
+		"jp_irori_22.png":
+		{
+			"frame": {"x":281,"y":129,"w":29,"h":20},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":20},
+			"sourceSize": {"w":29,"h":20}
+		},
+		"jp_irori_36.png":
+		{
+			"frame": {"x":310,"y":129,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_37.png":
+		{
+			"frame": {"x":71,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_39.png":
+		{
+			"frame": {"x":93,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_41.png":
+		{
+			"frame": {"x":115,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_43.png":
+		{
+			"frame": {"x":137,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_45.png":
+		{
+			"frame": {"x":159,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_47.png":
+		{
+			"frame": {"x":181,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_49.png":
+		{
+			"frame": {"x":203,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_50.png":
+		{
+			"frame": {"x":225,"y":153,"w":22,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":12},
+			"sourceSize": {"w":22,"h":12}
+		},
+		"jp_irori_19.png":
+		{
+			"frame": {"x":332,"y":129,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"jp_irori_67.png":
+		{
+			"frame": {"x":247,"y":153,"w":16,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":10},
+			"sourceSize": {"w":16,"h":10}
+		},
+		"jp_irori_20.png":
+		{
+			"frame": {"x":263,"y":153,"w":14,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":10},
+			"sourceSize": {"w":14,"h":10}
+		},
+		"jp_irori_68.png":
+		{
+			"frame": {"x":277,"y":153,"w":14,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":10},
+			"sourceSize": {"w":14,"h":10}
+		},
+		"jp_irori_18.png":
+		{
+			"frame": {"x":71,"y":165,"w":9,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":14},
+			"sourceSize": {"w":9,"h":14}
+		},
+		"jp_irori_66.png":
+		{
+			"frame": {"x":80,"y":165,"w":9,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":14},
+			"sourceSize": {"w":9,"h":14}
+		},
+		"jp_irori_40.png":
+		{
+			"frame": {"x":291,"y":153,"w":12,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":10},
+			"sourceSize": {"w":12,"h":10}
+		},
+		"jp_irori_13.png":
+		{
+			"frame": {"x":89,"y":165,"w":7,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":12},
+			"sourceSize": {"w":7,"h":12}
+		},
+		"jp_irori_44.png":
+		{
+			"frame": {"x":96,"y":165,"w":7,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":12},
+			"sourceSize": {"w":7,"h":12}
+		},
+		"jp_irori_42.png":
+		{
+			"frame": {"x":310,"y":141,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_53.png":
+		{
+			"frame": {"x":322,"y":141,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_55.png":
+		{
+			"frame": {"x":334,"y":141,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_57.png":
+		{
+			"frame": {"x":303,"y":153,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_58.png":
+		{
+			"frame": {"x":315,"y":153,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_59.png":
+		{
+			"frame": {"x":327,"y":153,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_60.png":
+		{
+			"frame": {"x":339,"y":153,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_61.png":
+		{
+			"frame": {"x":103,"y":165,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_62.png":
+		{
+			"frame": {"x":115,"y":165,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_63.png":
+		{
+			"frame": {"x":127,"y":165,"w":12,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":7},
+			"sourceSize": {"w":12,"h":7}
+		},
+		"jp_irori_12.png":
+		{
+			"frame": {"x":71,"y":179,"w":7,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":11},
+			"sourceSize": {"w":7,"h":11}
+		},
+		"jp_irori_46.png":
+		{
+			"frame": {"x":78,"y":179,"w":7,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":11},
+			"sourceSize": {"w":7,"h":11}
+		},
+		"jp_irori_69.png":
+		{
+			"frame": {"x":85,"y":179,"w":7,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":11},
+			"sourceSize": {"w":7,"h":11}
+		},
+		"jp_irori_15.png":
+		{
+			"frame": {"x":139,"y":165,"w":11,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":6},
+			"sourceSize": {"w":11,"h":6}
+		},
+		"jp_irori_24.png":
+		{
+			"frame": {"x":150,"y":165,"w":11,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":11,"h":6},
+			"sourceSize": {"w":11,"h":6}
+		},
+		"jp_irori_11.png":
+		{
+			"frame": {"x":92,"y":179,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"jp_irori_4.png":
+		{
+			"frame": {"x":102,"y":179,"w":10,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":8},
+			"sourceSize": {"w":10,"h":8}
+		},
+		"jp_irori_14.png":
+		{
+			"frame": {"x":112,"y":179,"w":10,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":7},
+			"sourceSize": {"w":10,"h":7}
+		},
+		"jp_irori_48.png":
+		{
+			"frame": {"x":122,"y":179,"w":10,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":7},
+			"sourceSize": {"w":10,"h":7}
+		},
+		"jp_irori_17.png":
+		{
+			"frame": {"x":132,"y":179,"w":9,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":7},
+			"sourceSize": {"w":9,"h":7}
+		},
+		"jp_irori_54.png":
+		{
+			"frame": {"x":141,"y":179,"w":9,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":7},
+			"sourceSize": {"w":9,"h":7}
+		},
+		"jp_irori_10.png":
+		{
+			"frame": {"x":0,"y":197,"w":5,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":9},
+			"sourceSize": {"w":5,"h":9}
+		},
+		"jp_irori_33.png":
+		{
+			"frame": {"x":5,"y":197,"w":5,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":9},
+			"sourceSize": {"w":5,"h":9}
+		},
+		"jp_irori_52.png":
+		{
+			"frame": {"x":10,"y":197,"w":5,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":8},
+			"sourceSize": {"w":5,"h":8}
+		},
+		"jp_irori_6.png":
+		{
+			"frame": {"x":15,"y":197,"w":5,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":8},
+			"sourceSize": {"w":5,"h":8}
+		},
+		"jp_irori_7.png":
+		{
+			"frame": {"x":150,"y":179,"w":7,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":7},
+			"sourceSize": {"w":7,"h":7}
+		},
+		"jp_irori_2.png":
+		{
+			"frame": {"x":161,"y":165,"w":7,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":7,"h":6},
+			"sourceSize": {"w":7,"h":6}
+		},
+		"jp_irori_16.png":
+		{
+			"frame": {"x":346,"y":141,"w":5,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":7},
+			"sourceSize": {"w":5,"h":7}
+		},
+		"jp_irori_5.png":
+		{
+			"frame": {"x":157,"y":179,"w":5,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":7},
+			"sourceSize": {"w":5,"h":7}
+		},
+		"jp_irori_30.png":
+		{
+			"frame": {"x":168,"y":165,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"jp_irori_31.png":
+		{
+			"frame": {"x":173,"y":165,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"jp_irori_51.png":
+		{
+			"frame": {"x":178,"y":165,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"jp_irori_9.png":
+		{
+			"frame": {"x":183,"y":165,"w":5,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":5,"h":5},
+			"sourceSize": {"w":5,"h":5}
+		},
+		"jp_irori_26.png":
+		{
+			"frame": {"x":348,"y":129,"w":3,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":4},
+			"sourceSize": {"w":3,"h":4}
+		},
+		"jp_irori_3.png":
+		{
+			"frame": {"x":348,"y":133,"w":3,"h":4},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":4},
+			"sourceSize": {"w":3,"h":4}
+		},
+		"jp_irori_27.png":
+		{
+			"frame": {"x":211,"y":149,"w":4,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":3},
+			"sourceSize": {"w":4,"h":3}
+		},
+		"jp_irori_56.png":
+		{
+			"frame": {"x":215,"y":149,"w":4,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":4,"h":3},
+			"sourceSize": {"w":4,"h":3}
+		},
+		"jp_irori_28.png":
+		{
+			"frame": {"x":219,"y":149,"w":3,"h":3},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":3,"h":3},
+			"sourceSize": {"w":3,"h":3}
+		},
+		"jp_irori_29.png":
+		{
+			"frame": {"x":348,"y":137,"w":2,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":2,"h":1},
+			"sourceSize": {"w":2,"h":1}
+		},
+		"jp_irori_38.png":
+		{
+			"frame": {"x":350,"y":137,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		},
+		"jp_irori_8.png":
+		{
+			"frame": {"x":348,"y":138,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

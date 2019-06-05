@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "netari_carpet_sheet.png",
+		"size": {"w":524,"h":193},
+		"scale": "1"
+	},
+	"frames": {
+		"netari_carpet_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":262,"h":193},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":262,"h":193},
+			"sourceSize": {"w":262,"h":193}
+		},
+		"netari_carpet_2.png":
+		{
+			"frame": {"x":262,"y":0,"w":262,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":262,"h":129},
+			"sourceSize": {"w":262,"h":129}
+		},
+		"netari_carpet_1.png":
+		{
+			"frame": {"x":262,"y":129,"w":131,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":131,"h":64},
+			"sourceSize": {"w":131,"h":64}
+		},
+		"netari_carpet_3.png":
+		{
+			"frame": {"x":393,"y":129,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "pixel_plantpink_sheet.png",
+		"size": {"w":129,"h":81},
+		"scale": "1"
+	},
+	"frames": {
+		"pixel_plantpink_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":87,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":53},
+			"sourceSize": {"w":87,"h":53}
+		},
+		"pixel_plantpink_5.png":
+		{
+			"frame": {"x":87,"y":0,"w":42,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":53},
+			"sourceSize": {"w":42,"h":53}
+		},
+		"pixel_plantpink_2.png":
+		{
+			"frame": {"x":0,"y":53,"w":21,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":28},
+			"sourceSize": {"w":21,"h":28}
+		},
+		"pixel_plantpink_1.png":
+		{
+			"frame": {"x":21,"y":53,"w":24,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":13},
+			"sourceSize": {"w":24,"h":13}
+		},
+		"pixel_plantpink_8.png":
+		{
+			"frame": {"x":45,"y":53,"w":13,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":7},
+			"sourceSize": {"w":13,"h":7}
+		}
+	}
+}

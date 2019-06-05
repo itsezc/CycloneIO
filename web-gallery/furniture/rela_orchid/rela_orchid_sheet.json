@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "rela_orchid_sheet.png",
+		"size": {"w":163,"h":139},
+		"scale": "1"
+	},
+	"frames": {
+		"rela_orchid_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":92,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":92},
+			"sourceSize": {"w":92,"h":92}
+		},
+		"rela_orchid_1.png":
+		{
+			"frame": {"x":92,"y":0,"w":42,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":92},
+			"sourceSize": {"w":42,"h":92}
+		},
+		"rela_orchid_7.png":
+		{
+			"frame": {"x":134,"y":0,"w":29,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":51},
+			"sourceSize": {"w":29,"h":51}
+		},
+		"rela_orchid_10.png":
+		{
+			"frame": {"x":0,"y":92,"w":21,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":47},
+			"sourceSize": {"w":21,"h":47}
+		},
+		"rela_orchid_4.png":
+		{
+			"frame": {"x":134,"y":51,"w":15,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":32},
+			"sourceSize": {"w":15,"h":32}
+		},
+		"rela_orchid_6.png":
+		{
+			"frame": {"x":149,"y":51,"w":14,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":24},
+			"sourceSize": {"w":14,"h":24}
+		}
+	}
+}

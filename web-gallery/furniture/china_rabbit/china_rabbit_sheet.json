@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "china_rabbit_sheet.png",
+		"size": {"w":178,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"china_rabbit_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":89,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":100},
+			"sourceSize": {"w":89,"h":100}
+		},
+		"china_rabbit_8.png":
+		{
+			"frame": {"x":89,"y":0,"w":58,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":100},
+			"sourceSize": {"w":58,"h":100}
+		},
+		"china_rabbit_4.png":
+		{
+			"frame": {"x":147,"y":0,"w":31,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":52},
+			"sourceSize": {"w":31,"h":52}
+		},
+		"china_rabbit_3.png":
+		{
+			"frame": {"x":147,"y":52,"w":18,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":26},
+			"sourceSize": {"w":18,"h":26}
+		}
+	}
+}

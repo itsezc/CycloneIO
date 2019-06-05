@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "val_c17_rosedivider_sheet.png",
+		"size": {"w":115,"h":57},
+		"scale": "1"
+	},
+	"frames": {
+		"val_c17_rosedivider_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":31,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":57},
+			"sourceSize": {"w":31,"h":57}
+		},
+		"val_c17_rosedivider_2.png":
+		{
+			"frame": {"x":31,"y":0,"w":31,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":57},
+			"sourceSize": {"w":31,"h":57}
+		},
+		"val_c17_rosedivider_10.png":
+		{
+			"frame": {"x":62,"y":0,"w":53,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":53,"h":22},
+			"sourceSize": {"w":53,"h":22}
+		},
+		"val_c17_rosedivider_5.png":
+		{
+			"frame": {"x":62,"y":22,"w":17,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":30},
+			"sourceSize": {"w":17,"h":30}
+		},
+		"val_c17_rosedivider_11.png":
+		{
+			"frame": {"x":79,"y":22,"w":23,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":21},
+			"sourceSize": {"w":23,"h":21}
+		},
+		"val_c17_rosedivider_9.png":
+		{
+			"frame": {"x":102,"y":22,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "clothing_mutton2_sheet.png",
+		"size": {"w":84,"h":84},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_mutton2_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":28,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":42},
+			"sourceSize": {"w":28,"h":42}
+		},
+		"clothing_mutton2_4.png":
+		{
+			"frame": {"x":28,"y":0,"w":28,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":42},
+			"sourceSize": {"w":28,"h":42}
+		},
+		"clothing_mutton2_5.png":
+		{
+			"frame": {"x":56,"y":0,"w":28,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":42},
+			"sourceSize": {"w":28,"h":42}
+		},
+		"clothing_mutton2_6.png":
+		{
+			"frame": {"x":0,"y":42,"w":28,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":42},
+			"sourceSize": {"w":28,"h":42}
+		},
+		"clothing_mutton2_7.png":
+		{
+			"frame": {"x":28,"y":42,"w":28,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":42},
+			"sourceSize": {"w":28,"h":42}
+		},
+		"clothing_mutton2_13.png":
+		{
+			"frame": {"x":56,"y":42,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		},
+		"clothing_mutton2_10.png":
+		{
+			"frame": {"x":56,"y":70,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		},
+		"clothing_mutton2_8.png":
+		{
+			"frame": {"x":83,"y":42,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

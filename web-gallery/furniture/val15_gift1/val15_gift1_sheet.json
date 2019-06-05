@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "val15_gift1_sheet.png",
+		"size": {"w":67,"h":64},
+		"scale": "1"
+	},
+	"frames": {
+		"val15_gift1_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":45,"h":64},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":64},
+			"sourceSize": {"w":45,"h":64}
+		},
+		"val15_gift1_2.png":
+		{
+			"frame": {"x":45,"y":0,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

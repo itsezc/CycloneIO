@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "xmas08_snowpl_sheet.png",
+		"size": {"w":162,"h":125},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas08_snowpl_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":108,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":108,"h":82},
+			"sourceSize": {"w":108,"h":82}
+		},
+		"xmas08_snowpl_5.png":
+		{
+			"frame": {"x":108,"y":0,"w":54,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":43},
+			"sourceSize": {"w":54,"h":43}
+		},
+		"xmas08_snowpl_9.png":
+		{
+			"frame": {"x":0,"y":82,"w":54,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":43},
+			"sourceSize": {"w":54,"h":43}
+		},
+		"xmas08_snowpl_2.png":
+		{
+			"frame": {"x":108,"y":43,"w":54,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":17},
+			"sourceSize": {"w":54,"h":17}
+		},
+		"xmas08_snowpl_11.png":
+		{
+			"frame": {"x":108,"y":60,"w":28,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":22},
+			"sourceSize": {"w":28,"h":22}
+		},
+		"xmas08_snowpl_6.png":
+		{
+			"frame": {"x":54,"y":82,"w":28,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":22},
+			"sourceSize": {"w":28,"h":22}
+		},
+		"xmas08_snowpl_7.png":
+		{
+			"frame": {"x":82,"y":82,"w":28,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":9},
+			"sourceSize": {"w":28,"h":9}
+		}
+	}
+}

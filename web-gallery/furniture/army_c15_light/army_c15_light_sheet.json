@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "army_c15_light_sheet.png",
+		"size": {"w":127,"h":118},
+		"scale": "1"
+	},
+	"frames": {
+		"army_c15_light_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":34,"h":94},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":94},
+			"sourceSize": {"w":34,"h":94}
+		},
+		"army_c15_light_2.png":
+		{
+			"frame": {"x":34,"y":0,"w":93,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":93,"h":68},
+			"sourceSize": {"w":93,"h":68}
+		},
+		"army_c15_light_5.png":
+		{
+			"frame": {"x":34,"y":68,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		},
+		"army_c15_light_1.png":
+		{
+			"frame": {"x":0,"y":94,"w":17,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":24},
+			"sourceSize": {"w":17,"h":24}
+		},
+		"army_c15_light_10.png":
+		{
+			"frame": {"x":60,"y":68,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

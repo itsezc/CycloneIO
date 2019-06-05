@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "xmas12_bardesk_sheet.png",
+		"size": {"w":170,"h":145},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas12_bardesk_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":102,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":102,"h":96},
+			"sourceSize": {"w":102,"h":96}
+		},
+		"xmas12_bardesk_6.png":
+		{
+			"frame": {"x":102,"y":0,"w":68,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":30},
+			"sourceSize": {"w":68,"h":30}
+		},
+		"xmas12_bardesk_1.png":
+		{
+			"frame": {"x":102,"y":30,"w":66,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":66},
+			"sourceSize": {"w":66,"h":66}
+		},
+		"xmas12_bardesk_3.png":
+		{
+			"frame": {"x":0,"y":96,"w":34,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":16},
+			"sourceSize": {"w":34,"h":16}
+		},
+		"xmas12_bardesk_9.png":
+		{
+			"frame": {"x":0,"y":112,"w":32,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":33},
+			"sourceSize": {"w":32,"h":33}
+		},
+		"xmas12_bardesk_2.png":
+		{
+			"frame": {"x":32,"y":112,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

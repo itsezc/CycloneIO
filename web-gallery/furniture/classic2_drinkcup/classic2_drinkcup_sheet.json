@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "classic2_drinkcup_sheet.png",
+		"size": {"w":28,"h":39},
+		"scale": "1"
+	},
+	"frames": {
+		"classic2_drinkcup_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":14,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":39},
+			"sourceSize": {"w":14,"h":39}
+		},
+		"classic2_drinkcup_2.png":
+		{
+			"frame": {"x":14,"y":0,"w":14,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":23},
+			"sourceSize": {"w":14,"h":23}
+		},
+		"classic2_drinkcup_7.png":
+		{
+			"frame": {"x":14,"y":23,"w":10,"h":6},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":10,"h":6},
+			"sourceSize": {"w":10,"h":6}
+		}
+	}
+}

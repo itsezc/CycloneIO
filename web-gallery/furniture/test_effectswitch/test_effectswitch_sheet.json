@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "test_effectswitch_sheet.png",
+		"size": {"w":150,"h":117},
+		"scale": "1"
+	},
+	"frames": {
+		"test_effectswitch_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":61,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":48},
+			"sourceSize": {"w":61,"h":48}
+		},
+		"test_effectswitch_9.png":
+		{
+			"frame": {"x":61,"y":0,"w":58,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":42},
+			"sourceSize": {"w":58,"h":42}
+		},
+		"test_effectswitch_5.png":
+		{
+			"frame": {"x":0,"y":48,"w":55,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":48},
+			"sourceSize": {"w":55,"h":48}
+		},
+		"test_effectswitch_6.png":
+		{
+			"frame": {"x":55,"y":48,"w":55,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":48},
+			"sourceSize": {"w":55,"h":48}
+		},
+		"test_effectswitch_1.png":
+		{
+			"frame": {"x":119,"y":0,"w":31,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":24},
+			"sourceSize": {"w":31,"h":24}
+		},
+		"test_effectswitch_4.png":
+		{
+			"frame": {"x":119,"y":24,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		},
+		"test_effectswitch_11.png":
+		{
+			"frame": {"x":119,"y":43,"w":28,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":24},
+			"sourceSize": {"w":28,"h":24}
+		},
+		"test_effectswitch_12.png":
+		{
+			"frame": {"x":119,"y":67,"w":28,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":24},
+			"sourceSize": {"w":28,"h":24}
+		},
+		"test_effectswitch_3.png":
+		{
+			"frame": {"x":0,"y":96,"w":27,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":21},
+			"sourceSize": {"w":27,"h":21}
+		}
+	}
+}

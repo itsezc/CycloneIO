@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "room_noob_exit_sheet.png",
+		"size": {"w":70,"h":39},
+		"scale": "1"
+	},
+	"frames": {
+		"room_noob_exit_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":35,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":21},
+			"sourceSize": {"w":35,"h":21}
+		},
+		"room_noob_exit_7.png":
+		{
+			"frame": {"x":35,"y":0,"w":35,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":21},
+			"sourceSize": {"w":35,"h":21}
+		},
+		"room_noob_exit_5.png":
+		{
+			"frame": {"x":0,"y":21,"w":29,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":18},
+			"sourceSize": {"w":29,"h":18}
+		},
+		"room_noob_exit_10.png":
+		{
+			"frame": {"x":29,"y":21,"w":18,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":11},
+			"sourceSize": {"w":18,"h":11}
+		},
+		"room_noob_exit_4.png":
+		{
+			"frame": {"x":47,"y":21,"w":18,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":11},
+			"sourceSize": {"w":18,"h":11}
+		}
+	}
+}

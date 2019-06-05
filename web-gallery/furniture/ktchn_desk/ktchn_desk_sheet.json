@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "ktchn_desk_sheet.png",
+		"size": {"w":268,"h":221},
+		"scale": "1"
+	},
+	"frames": {
+		"ktchn_desk_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":178,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":178,"h":136},
+			"sourceSize": {"w":178,"h":136}
+		},
+		"ktchn_desk_6.png":
+		{
+			"frame": {"x":178,"y":0,"w":90,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":90,"h":47},
+			"sourceSize": {"w":90,"h":47}
+		},
+		"ktchn_desk_9.png":
+		{
+			"frame": {"x":178,"y":47,"w":69,"h":59},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":59},
+			"sourceSize": {"w":69,"h":59}
+		},
+		"ktchn_desk_2.png":
+		{
+			"frame": {"x":0,"y":136,"w":59,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":56},
+			"sourceSize": {"w":59,"h":56}
+		},
+		"ktchn_desk_5.png":
+		{
+			"frame": {"x":178,"y":106,"w":44,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":23},
+			"sourceSize": {"w":44,"h":23}
+		},
+		"ktchn_desk_7.png":
+		{
+			"frame": {"x":222,"y":106,"w":44,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":23},
+			"sourceSize": {"w":44,"h":23}
+		},
+		"ktchn_desk_11.png":
+		{
+			"frame": {"x":59,"y":136,"w":33,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":30},
+			"sourceSize": {"w":33,"h":30}
+		},
+		"ktchn_desk_12.png":
+		{
+			"frame": {"x":92,"y":136,"w":33,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":30},
+			"sourceSize": {"w":33,"h":30}
+		},
+		"ktchn_desk_3.png":
+		{
+			"frame": {"x":125,"y":136,"w":30,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":25},
+			"sourceSize": {"w":30,"h":25}
+		},
+		"ktchn_desk_1.png":
+		{
+			"frame": {"x":0,"y":192,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		},
+		"ktchn_desk_10.png":
+		{
+			"frame": {"x":29,"y":192,"w":29,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":29},
+			"sourceSize": {"w":29,"h":29}
+		}
+	}
+}

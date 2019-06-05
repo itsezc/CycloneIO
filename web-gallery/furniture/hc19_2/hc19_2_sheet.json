@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "hc19_2_sheet.png",
+		"size": {"w":108,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"hc19_2_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":54,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":72},
+			"sourceSize": {"w":54,"h":72}
+		},
+		"hc19_2_4.png":
+		{
+			"frame": {"x":54,"y":0,"w":54,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":28},
+			"sourceSize": {"w":54,"h":28}
+		},
+		"hc19_2_3.png":
+		{
+			"frame": {"x":54,"y":28,"w":17,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":17,"h":28},
+			"sourceSize": {"w":17,"h":28}
+		}
+	}
+}

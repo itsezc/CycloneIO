@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "clothing_elegantponytail_sheet.png",
+		"size": {"w":70,"h":48},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_elegantponytail_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":48},
+			"sourceSize": {"w":40,"h":48}
+		},
+		"clothing_elegantponytail_2.png":
+		{
+			"frame": {"x":40,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_elegantponytail_5.png":
+		{
+			"frame": {"x":40,"y":30,"w":26,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":13},
+			"sourceSize": {"w":26,"h":13}
+		}
+	}
+}

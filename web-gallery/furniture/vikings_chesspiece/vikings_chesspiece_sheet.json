@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "vikings_chesspiece_sheet.png",
+		"size": {"w":226,"h":156},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_chesspiece_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":75,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":128},
+			"sourceSize": {"w":75,"h":128}
+		},
+		"vikings_chesspiece_3.png":
+		{
+			"frame": {"x":75,"y":0,"w":75,"h":128},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":75,"h":128},
+			"sourceSize": {"w":75,"h":128}
+		},
+		"vikings_chesspiece_5.png":
+		{
+			"frame": {"x":150,"y":0,"w":38,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+			"sourceSize": {"w":38,"h":65}
+		},
+		"vikings_chesspiece_8.png":
+		{
+			"frame": {"x":188,"y":0,"w":38,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":65},
+			"sourceSize": {"w":38,"h":65}
+		},
+		"vikings_chesspiece_2.png":
+		{
+			"frame": {"x":0,"y":128,"w":56,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":28},
+			"sourceSize": {"w":56,"h":28}
+		},
+		"vikings_chesspiece_9.png":
+		{
+			"frame": {"x":188,"y":65,"w":19,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":30},
+			"sourceSize": {"w":19,"h":30}
+		},
+		"vikings_chesspiece_7.png":
+		{
+			"frame": {"x":188,"y":95,"w":29,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":14},
+			"sourceSize": {"w":29,"h":14}
+		}
+	}
+}

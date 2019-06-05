@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "org_chairblk_sheet.png",
+		"size": {"w":206,"h":205},
+		"scale": "1"
+	},
+	"frames": {
+		"org_chairblk_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":140,"h":136},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":140,"h":136},
+			"sourceSize": {"w":140,"h":136}
+		},
+		"org_chairblk_5.png":
+		{
+			"frame": {"x":140,"y":0,"w":66,"h":73},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":73},
+			"sourceSize": {"w":66,"h":73}
+		},
+		"org_chairblk_12.png":
+		{
+			"frame": {"x":140,"y":73,"w":41,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":62},
+			"sourceSize": {"w":41,"h":62}
+		},
+		"org_chairblk_14.png":
+		{
+			"frame": {"x":0,"y":136,"w":62,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":31},
+			"sourceSize": {"w":62,"h":31}
+		},
+		"org_chairblk_9.png":
+		{
+			"frame": {"x":0,"y":167,"w":33,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":38},
+			"sourceSize": {"w":33,"h":38}
+		},
+		"org_chairblk_7.png":
+		{
+			"frame": {"x":33,"y":167,"w":31,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":38},
+			"sourceSize": {"w":31,"h":38}
+		},
+		"org_chairblk_2.png":
+		{
+			"frame": {"x":64,"y":167,"w":28,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":32},
+			"sourceSize": {"w":28,"h":32}
+		},
+		"org_chairblk_1.png":
+		{
+			"frame": {"x":181,"y":73,"w":22,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":32},
+			"sourceSize": {"w":22,"h":32}
+		},
+		"org_chairblk_10.png":
+		{
+			"frame": {"x":62,"y":136,"w":30,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":15},
+			"sourceSize": {"w":30,"h":15}
+		},
+		"org_chairblk_11.png":
+		{
+			"frame": {"x":181,"y":105,"w":15,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":19},
+			"sourceSize": {"w":15,"h":19}
+		},
+		"org_chairblk_15.png":
+		{
+			"frame": {"x":203,"y":73,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

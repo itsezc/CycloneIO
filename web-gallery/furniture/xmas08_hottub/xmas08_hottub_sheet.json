@@ -1,0 +1,625 @@
+{
+	"meta": {
+		"image": "xmas08_hottub_sheet.png",
+		"size": {"w":641,"h":559},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas08_hottub_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":465,"h":370},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":465,"h":370},
+			"sourceSize": {"w":465,"h":370}
+		},
+		"xmas08_hottub_25.png":
+		{
+			"frame": {"x":0,"y":370,"w":128,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":32},
+			"sourceSize": {"w":128,"h":32}
+		},
+		"xmas08_hottub_56.png":
+		{
+			"frame": {"x":128,"y":370,"w":113,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":113,"h":28},
+			"sourceSize": {"w":113,"h":28}
+		},
+		"xmas08_hottub_36.png":
+		{
+			"frame": {"x":0,"y":402,"w":100,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":100,"h":38},
+			"sourceSize": {"w":100,"h":38}
+		},
+		"xmas08_hottub_14.png":
+		{
+			"frame": {"x":465,"y":0,"w":98,"h":99},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":99},
+			"sourceSize": {"w":98,"h":99}
+		},
+		"xmas08_hottub_13.png":
+		{
+			"frame": {"x":465,"y":99,"w":98,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":98},
+			"sourceSize": {"w":98,"h":98}
+		},
+		"xmas08_hottub_10.png":
+		{
+			"frame": {"x":465,"y":197,"w":98,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":97},
+			"sourceSize": {"w":98,"h":97}
+		},
+		"xmas08_hottub_11.png":
+		{
+			"frame": {"x":465,"y":294,"w":98,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":97},
+			"sourceSize": {"w":98,"h":97}
+		},
+		"xmas08_hottub_12.png":
+		{
+			"frame": {"x":0,"y":440,"w":98,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":97},
+			"sourceSize": {"w":98,"h":97}
+		},
+		"xmas08_hottub_8.png":
+		{
+			"frame": {"x":98,"y":440,"w":98,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":97},
+			"sourceSize": {"w":98,"h":97}
+		},
+		"xmas08_hottub_9.png":
+		{
+			"frame": {"x":196,"y":440,"w":98,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":97},
+			"sourceSize": {"w":98,"h":97}
+		},
+		"xmas08_hottub_15.png":
+		{
+			"frame": {"x":465,"y":391,"w":92,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":32},
+			"sourceSize": {"w":92,"h":32}
+		},
+		"xmas08_hottub_16.png":
+		{
+			"frame": {"x":100,"y":402,"w":92,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":32},
+			"sourceSize": {"w":92,"h":32}
+		},
+		"xmas08_hottub_17.png":
+		{
+			"frame": {"x":192,"y":402,"w":92,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":32},
+			"sourceSize": {"w":92,"h":32}
+		},
+		"xmas08_hottub_19.png":
+		{
+			"frame": {"x":284,"y":402,"w":92,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":32},
+			"sourceSize": {"w":92,"h":32}
+		},
+		"xmas08_hottub_21.png":
+		{
+			"frame": {"x":294,"y":440,"w":92,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":32},
+			"sourceSize": {"w":92,"h":32}
+		},
+		"xmas08_hottub_22.png":
+		{
+			"frame": {"x":386,"y":440,"w":92,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":32},
+			"sourceSize": {"w":92,"h":32}
+		},
+		"xmas08_hottub_66.png":
+		{
+			"frame": {"x":294,"y":472,"w":92,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":92,"h":32},
+			"sourceSize": {"w":92,"h":32}
+		},
+		"xmas08_hottub_31.png":
+		{
+			"frame": {"x":241,"y":370,"w":91,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":22},
+			"sourceSize": {"w":91,"h":22}
+		},
+		"xmas08_hottub_33.png":
+		{
+			"frame": {"x":332,"y":370,"w":91,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":22},
+			"sourceSize": {"w":91,"h":22}
+		},
+		"xmas08_hottub_34.png":
+		{
+			"frame": {"x":386,"y":472,"w":91,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":22},
+			"sourceSize": {"w":91,"h":22}
+		},
+		"xmas08_hottub_35.png":
+		{
+			"frame": {"x":294,"y":504,"w":91,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":22},
+			"sourceSize": {"w":91,"h":22}
+		},
+		"xmas08_hottub_38.png":
+		{
+			"frame": {"x":385,"y":504,"w":91,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":22},
+			"sourceSize": {"w":91,"h":22}
+		},
+		"xmas08_hottub_59.png":
+		{
+			"frame": {"x":0,"y":537,"w":91,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":22},
+			"sourceSize": {"w":91,"h":22}
+		},
+		"xmas08_hottub_60.png":
+		{
+			"frame": {"x":91,"y":537,"w":91,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":22},
+			"sourceSize": {"w":91,"h":22}
+		},
+		"xmas08_hottub_18.png":
+		{
+			"frame": {"x":563,"y":0,"w":78,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":42},
+			"sourceSize": {"w":78,"h":42}
+		},
+		"xmas08_hottub_62.png":
+		{
+			"frame": {"x":563,"y":42,"w":64,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":18},
+			"sourceSize": {"w":64,"h":18}
+		},
+		"xmas08_hottub_46.png":
+		{
+			"frame": {"x":563,"y":60,"w":62,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":34},
+			"sourceSize": {"w":62,"h":34}
+		},
+		"xmas08_hottub_1.png":
+		{
+			"frame": {"x":563,"y":94,"w":62,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":29},
+			"sourceSize": {"w":62,"h":29}
+		},
+		"xmas08_hottub_44.png":
+		{
+			"frame": {"x":563,"y":123,"w":57,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":17},
+			"sourceSize": {"w":57,"h":17}
+		},
+		"xmas08_hottub_51.png":
+		{
+			"frame": {"x":563,"y":140,"w":51,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":14},
+			"sourceSize": {"w":51,"h":14}
+		},
+		"xmas08_hottub_52.png":
+		{
+			"frame": {"x":563,"y":154,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"xmas08_hottub_53.png":
+		{
+			"frame": {"x":563,"y":203,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"xmas08_hottub_54.png":
+		{
+			"frame": {"x":563,"y":252,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"xmas08_hottub_55.png":
+		{
+			"frame": {"x":563,"y":301,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"xmas08_hottub_57.png":
+		{
+			"frame": {"x":563,"y":350,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"xmas08_hottub_58.png":
+		{
+			"frame": {"x":563,"y":399,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"xmas08_hottub_64.png":
+		{
+			"frame": {"x":563,"y":448,"w":49,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":49},
+			"sourceSize": {"w":49,"h":49}
+		},
+		"xmas08_hottub_23.png":
+		{
+			"frame": {"x":563,"y":497,"w":45,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":12},
+			"sourceSize": {"w":45,"h":12}
+		},
+		"xmas08_hottub_26.png":
+		{
+			"frame": {"x":563,"y":509,"w":45,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":12},
+			"sourceSize": {"w":45,"h":12}
+		},
+		"xmas08_hottub_27.png":
+		{
+			"frame": {"x":563,"y":521,"w":45,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":12},
+			"sourceSize": {"w":45,"h":12}
+		},
+		"xmas08_hottub_28.png":
+		{
+			"frame": {"x":563,"y":533,"w":45,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":12},
+			"sourceSize": {"w":45,"h":12}
+		},
+		"xmas08_hottub_29.png":
+		{
+			"frame": {"x":563,"y":545,"w":45,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":12},
+			"sourceSize": {"w":45,"h":12}
+		},
+		"xmas08_hottub_30.png":
+		{
+			"frame": {"x":465,"y":423,"w":45,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":12},
+			"sourceSize": {"w":45,"h":12}
+		},
+		"xmas08_hottub_7.png":
+		{
+			"frame": {"x":510,"y":423,"w":45,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":12},
+			"sourceSize": {"w":45,"h":12}
+		},
+		"xmas08_hottub_40.png":
+		{
+			"frame": {"x":376,"y":402,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_41.png":
+		{
+			"frame": {"x":420,"y":402,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_42.png":
+		{
+			"frame": {"x":376,"y":413,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_43.png":
+		{
+			"frame": {"x":420,"y":413,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_47.png":
+		{
+			"frame": {"x":478,"y":440,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_48.png":
+		{
+			"frame": {"x":478,"y":451,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_49.png":
+		{
+			"frame": {"x":477,"y":472,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_67.png":
+		{
+			"frame": {"x":477,"y":483,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_68.png":
+		{
+			"frame": {"x":476,"y":504,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_69.png":
+		{
+			"frame": {"x":476,"y":515,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_70.png":
+		{
+			"frame": {"x":294,"y":526,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_71.png":
+		{
+			"frame": {"x":338,"y":526,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_72.png":
+		{
+			"frame": {"x":382,"y":526,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_74.png":
+		{
+			"frame": {"x":426,"y":526,"w":44,"h":11},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":11},
+			"sourceSize": {"w":44,"h":11}
+		},
+		"xmas08_hottub_65.png":
+		{
+			"frame": {"x":423,"y":370,"w":35,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":22},
+			"sourceSize": {"w":35,"h":22}
+		},
+		"xmas08_hottub_79.png":
+		{
+			"frame": {"x":182,"y":537,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		},
+		"xmas08_hottub_4.png":
+		{
+			"frame": {"x":608,"y":497,"w":30,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":8},
+			"sourceSize": {"w":30,"h":8}
+		},
+		"xmas08_hottub_5.png":
+		{
+			"frame": {"x":608,"y":509,"w":30,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":8},
+			"sourceSize": {"w":30,"h":8}
+		},
+		"xmas08_hottub_6.png":
+		{
+			"frame": {"x":608,"y":521,"w":30,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":8},
+			"sourceSize": {"w":30,"h":8}
+		},
+		"xmas08_hottub_76.png":
+		{
+			"frame": {"x":608,"y":533,"w":30,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":8},
+			"sourceSize": {"w":30,"h":8}
+		},
+		"xmas08_hottub_77.png":
+		{
+			"frame": {"x":608,"y":545,"w":30,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":8},
+			"sourceSize": {"w":30,"h":8}
+		},
+		"xmas08_hottub_78.png":
+		{
+			"frame": {"x":376,"y":424,"w":30,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":8},
+			"sourceSize": {"w":30,"h":8}
+		},
+		"xmas08_hottub_80.png":
+		{
+			"frame": {"x":406,"y":424,"w":30,"h":8},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":8},
+			"sourceSize": {"w":30,"h":8}
+		},
+		"xmas08_hottub_24.png":
+		{
+			"frame": {"x":612,"y":154,"w":27,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":17},
+			"sourceSize": {"w":27,"h":17}
+		},
+		"xmas08_hottub_81.png":
+		{
+			"frame": {"x":614,"y":140,"w":27,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":14},
+			"sourceSize": {"w":27,"h":14}
+		},
+		"xmas08_hottub_61.png":
+		{
+			"frame": {"x":627,"y":42,"w":14,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":5},
+			"sourceSize": {"w":14,"h":5}
+		},
+		"xmas08_hottub_63.png":
+		{
+			"frame": {"x":627,"y":47,"w":14,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":5},
+			"sourceSize": {"w":14,"h":5}
+		},
+		"xmas08_hottub_73.png":
+		{
+			"frame": {"x":627,"y":52,"w":14,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":5},
+			"sourceSize": {"w":14,"h":5}
+		},
+		"xmas08_hottub_75.png":
+		{
+			"frame": {"x":625,"y":60,"w":14,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":5},
+			"sourceSize": {"w":14,"h":5}
+		},
+		"xmas08_hottub_32.png":
+		{
+			"frame": {"x":625,"y":65,"w":13,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":5},
+			"sourceSize": {"w":13,"h":5}
+		},
+		"xmas08_hottub_37.png":
+		{
+			"frame": {"x":625,"y":70,"w":13,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":5},
+			"sourceSize": {"w":13,"h":5}
+		},
+		"xmas08_hottub_39.png":
+		{
+			"frame": {"x":625,"y":75,"w":13,"h":5},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":5},
+			"sourceSize": {"w":13,"h":5}
+		}
+	}
+}

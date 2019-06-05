@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "pirate_poseidon_sheet.png",
+		"size": {"w":250,"h":143},
+		"scale": "1"
+	},
+	"frames": {
+		"pirate_poseidon_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":82,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":143},
+			"sourceSize": {"w":82,"h":143}
+		},
+		"pirate_poseidon_8.png":
+		{
+			"frame": {"x":82,"y":0,"w":82,"h":143},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":82,"h":143},
+			"sourceSize": {"w":82,"h":143}
+		},
+		"pirate_poseidon_2.png":
+		{
+			"frame": {"x":164,"y":0,"w":43,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":72},
+			"sourceSize": {"w":43,"h":72}
+		},
+		"pirate_poseidon_6.png":
+		{
+			"frame": {"x":207,"y":0,"w":43,"h":72},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":72},
+			"sourceSize": {"w":43,"h":72}
+		},
+		"pirate_poseidon_10.png":
+		{
+			"frame": {"x":207,"y":72,"w":28,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":30},
+			"sourceSize": {"w":28,"h":30}
+		}
+	}
+}

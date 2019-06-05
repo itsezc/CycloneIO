@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "hygge_c18_cushion_sheet.png",
+		"size": {"w":180,"h":136},
+		"scale": "1"
+	},
+	"frames": {
+		"hygge_c18_cushion_2.png":
+		{
+			"frame": {"x":0,"y":0,"w":120,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":120,"h":62},
+			"sourceSize": {"w":120,"h":62}
+		},
+		"hygge_c18_cushion_13.png":
+		{
+			"frame": {"x":0,"y":62,"w":72,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":36},
+			"sourceSize": {"w":72,"h":36}
+		},
+		"hygge_c18_cushion_6.png":
+		{
+			"frame": {"x":120,"y":0,"w":60,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":47},
+			"sourceSize": {"w":60,"h":47}
+		},
+		"hygge_c18_cushion_1.png":
+		{
+			"frame": {"x":120,"y":47,"w":59,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":47},
+			"sourceSize": {"w":59,"h":47}
+		},
+		"hygge_c18_cushion_4.png":
+		{
+			"frame": {"x":0,"y":98,"w":47,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":38},
+			"sourceSize": {"w":47,"h":38}
+		},
+		"hygge_c18_cushion_9.png":
+		{
+			"frame": {"x":72,"y":62,"w":46,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":31},
+			"sourceSize": {"w":46,"h":31}
+		},
+		"hygge_c18_cushion_11.png":
+		{
+			"frame": {"x":47,"y":98,"w":44,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":26},
+			"sourceSize": {"w":44,"h":26}
+		},
+		"hygge_c18_cushion_3.png":
+		{
+			"frame": {"x":91,"y":98,"w":30,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":23},
+			"sourceSize": {"w":30,"h":23}
+		}
+	}
+}

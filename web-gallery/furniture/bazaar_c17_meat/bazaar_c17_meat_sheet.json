@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "bazaar_c17_meat_sheet.png",
+		"size": {"w":98,"h":66},
+		"scale": "1"
+	},
+	"frames": {
+		"bazaar_c17_meat_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":49,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":32},
+			"sourceSize": {"w":49,"h":32}
+		},
+		"bazaar_c17_meat_9.png":
+		{
+			"frame": {"x":49,"y":0,"w":49,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":29},
+			"sourceSize": {"w":49,"h":29}
+		},
+		"bazaar_c17_meat_5.png":
+		{
+			"frame": {"x":0,"y":32,"w":44,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":19},
+			"sourceSize": {"w":44,"h":19}
+		},
+		"bazaar_c17_meat_2.png":
+		{
+			"frame": {"x":44,"y":32,"w":43,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":18},
+			"sourceSize": {"w":43,"h":18}
+		},
+		"bazaar_c17_meat_7.png":
+		{
+			"frame": {"x":0,"y":51,"w":25,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":15},
+			"sourceSize": {"w":25,"h":15}
+		}
+	}
+}

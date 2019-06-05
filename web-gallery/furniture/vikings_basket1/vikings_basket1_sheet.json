@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "vikings_basket1_sheet.png",
+		"size": {"w":86,"h":49},
+		"scale": "1"
+	},
+	"frames": {
+		"vikings_basket1_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":56,"h":40},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":40},
+			"sourceSize": {"w":56,"h":40}
+		},
+		"vikings_basket1_3.png":
+		{
+			"frame": {"x":56,"y":0,"w":30,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":18},
+			"sourceSize": {"w":30,"h":18}
+		},
+		"vikings_basket1_5.png":
+		{
+			"frame": {"x":56,"y":18,"w":29,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":21},
+			"sourceSize": {"w":29,"h":21}
+		},
+		"vikings_basket1_6.png":
+		{
+			"frame": {"x":0,"y":40,"w":16,"h":9},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":9},
+			"sourceSize": {"w":16,"h":9}
+		}
+	}
+}

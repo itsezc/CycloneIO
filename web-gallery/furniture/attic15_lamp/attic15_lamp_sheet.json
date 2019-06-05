@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "attic15_lamp_sheet.png",
+		"size": {"w":137,"h":87},
+		"scale": "1"
+	},
+	"frames": {
+		"attic15_lamp_11.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":87},
+			"sourceSize": {"w":66,"h":87}
+		},
+		"attic15_lamp_5.png":
+		{
+			"frame": {"x":66,"y":0,"w":41,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":63},
+			"sourceSize": {"w":41,"h":63}
+		},
+		"attic15_lamp_6.png":
+		{
+			"frame": {"x":107,"y":0,"w":30,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":29},
+			"sourceSize": {"w":30,"h":29}
+		},
+		"attic15_lamp_4.png":
+		{
+			"frame": {"x":107,"y":29,"w":19,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":28},
+			"sourceSize": {"w":19,"h":28}
+		},
+		"attic15_lamp_8.png":
+		{
+			"frame": {"x":107,"y":57,"w":18,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":10},
+			"sourceSize": {"w":18,"h":10}
+		},
+		"attic15_lamp_9.png":
+		{
+			"frame": {"x":126,"y":29,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

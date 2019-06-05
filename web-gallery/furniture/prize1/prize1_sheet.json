@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "prize1_sheet.png",
+		"size": {"w":84,"h":71},
+		"scale": "1"
+	},
+	"frames": {
+		"prize1_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":48,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":47},
+			"sourceSize": {"w":48,"h":47}
+		},
+		"prize1_6.png":
+		{
+			"frame": {"x":48,"y":0,"w":22,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":47},
+			"sourceSize": {"w":22,"h":47}
+		},
+		"prize1_7.png":
+		{
+			"frame": {"x":70,"y":0,"w":14,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":30},
+			"sourceSize": {"w":14,"h":30}
+		},
+		"prize1_2.png":
+		{
+			"frame": {"x":0,"y":47,"w":12,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":24},
+			"sourceSize": {"w":12,"h":24}
+		}
+	}
+}

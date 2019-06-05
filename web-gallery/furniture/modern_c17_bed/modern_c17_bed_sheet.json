@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "modern_c17_bed_sheet.png",
+		"size": {"w":288,"h":217},
+		"scale": "1"
+	},
+	"frames": {
+		"modern_c17_bed_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":161,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":161,"h":81},
+			"sourceSize": {"w":161,"h":81}
+		},
+		"modern_c17_bed_1.png":
+		{
+			"frame": {"x":0,"y":81,"w":130,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":76},
+			"sourceSize": {"w":130,"h":76}
+		},
+		"modern_c17_bed_7.png":
+		{
+			"frame": {"x":161,"y":0,"w":127,"h":67},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":127,"h":67},
+			"sourceSize": {"w":127,"h":67}
+		},
+		"modern_c17_bed_10.png":
+		{
+			"frame": {"x":161,"y":67,"w":68,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":68,"h":53},
+			"sourceSize": {"w":68,"h":53}
+		},
+		"modern_c17_bed_9.png":
+		{
+			"frame": {"x":0,"y":157,"w":66,"h":60},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":60},
+			"sourceSize": {"w":66,"h":60}
+		},
+		"modern_c17_bed_11.png":
+		{
+			"frame": {"x":229,"y":67,"w":26,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":21},
+			"sourceSize": {"w":26,"h":21}
+		}
+	}
+}

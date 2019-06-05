@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "val_c18_wardrobe_sheet.png",
+		"size": {"w":262,"h":210},
+		"scale": "1"
+	},
+	"frames": {
+		"val_c18_wardrobe_13.png":
+		{
+			"frame": {"x":0,"y":0,"w":69,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":129},
+			"sourceSize": {"w":69,"h":129}
+		},
+		"val_c18_wardrobe_8.png":
+		{
+			"frame": {"x":69,"y":0,"w":69,"h":129},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":69,"h":129},
+			"sourceSize": {"w":69,"h":129}
+		},
+		"val_c18_wardrobe_12.png":
+		{
+			"frame": {"x":138,"y":0,"w":39,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":116},
+			"sourceSize": {"w":39,"h":116}
+		},
+		"val_c18_wardrobe_9.png":
+		{
+			"frame": {"x":177,"y":0,"w":39,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":116},
+			"sourceSize": {"w":39,"h":116}
+		},
+		"val_c18_wardrobe_15.png":
+		{
+			"frame": {"x":0,"y":129,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"val_c18_wardrobe_2.png":
+		{
+			"frame": {"x":98,"y":129,"w":98,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":98,"h":49},
+			"sourceSize": {"w":98,"h":49}
+		},
+		"val_c18_wardrobe_4.png":
+		{
+			"frame": {"x":0,"y":178,"w":70,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":32},
+			"sourceSize": {"w":70,"h":32}
+		},
+		"val_c18_wardrobe_5.png":
+		{
+			"frame": {"x":70,"y":178,"w":70,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":70,"h":32},
+			"sourceSize": {"w":70,"h":32}
+		},
+		"val_c18_wardrobe_1.png":
+		{
+			"frame": {"x":140,"y":178,"w":46,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":27},
+			"sourceSize": {"w":46,"h":27}
+		},
+		"val_c18_wardrobe_10.png":
+		{
+			"frame": {"x":216,"y":0,"w":46,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":27},
+			"sourceSize": {"w":46,"h":27}
+		},
+		"val_c18_wardrobe_11.png":
+		{
+			"frame": {"x":216,"y":27,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

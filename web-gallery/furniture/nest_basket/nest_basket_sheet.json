@@ -1,0 +1,73 @@
+{
+	"meta": {
+		"image": "nest_basket_sheet.png",
+		"size": {"w":185,"h":121},
+		"scale": "1"
+	},
+	"frames": {
+		"nest_basket_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":126,"h":80},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":126,"h":80},
+			"sourceSize": {"w":126,"h":80}
+		},
+		"nest_basket_11.png":
+		{
+			"frame": {"x":0,"y":80,"w":63,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":41},
+			"sourceSize": {"w":63,"h":41}
+		},
+		"nest_basket_12.png":
+		{
+			"frame": {"x":63,"y":80,"w":63,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":63,"h":41},
+			"sourceSize": {"w":63,"h":41}
+		},
+		"nest_basket_9.png":
+		{
+			"frame": {"x":126,"y":0,"w":59,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":59,"h":18},
+			"sourceSize": {"w":59,"h":18}
+		},
+		"nest_basket_6.png":
+		{
+			"frame": {"x":126,"y":18,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"nest_basket_8.png":
+		{
+			"frame": {"x":126,"y":39,"w":33,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":21},
+			"sourceSize": {"w":33,"h":21}
+		},
+		"nest_basket_4.png":
+		{
+			"frame": {"x":126,"y":60,"w":31,"h":10},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":10},
+			"sourceSize": {"w":31,"h":10}
+		},
+		"nest_basket_1.png":
+		{
+			"frame": {"x":126,"y":70,"w":29,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":19},
+			"sourceSize": {"w":29,"h":19}
+		}
+	}
+}

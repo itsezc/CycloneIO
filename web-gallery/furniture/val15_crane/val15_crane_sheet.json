@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "val15_crane_sheet.png",
+		"size": {"w":88,"h":111},
+		"scale": "1"
+	},
+	"frames": {
+		"val15_crane_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":46,"h":111},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":111},
+			"sourceSize": {"w":46,"h":111}
+		},
+		"val15_crane_1.png":
+		{
+			"frame": {"x":46,"y":0,"w":42,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":25},
+			"sourceSize": {"w":42,"h":25}
+		},
+		"val15_crane_4.png":
+		{
+			"frame": {"x":46,"y":25,"w":18,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":30},
+			"sourceSize": {"w":18,"h":30}
+		}
+	}
+}

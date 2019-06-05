@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "tokyo_c18_floor_sheet.png",
+		"size": {"w":128,"h":114},
+		"scale": "1"
+	},
+	"frames": {
+		"tokyo_c18_floor_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":128,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":65},
+			"sourceSize": {"w":128,"h":65}
+		},
+		"tokyo_c18_floor_7.png":
+		{
+			"frame": {"x":0,"y":65,"w":128,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":33},
+			"sourceSize": {"w":128,"h":33}
+		},
+		"tokyo_c18_floor_1.png":
+		{
+			"frame": {"x":0,"y":98,"w":28,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":16},
+			"sourceSize": {"w":28,"h":16}
+		}
+	}
+}

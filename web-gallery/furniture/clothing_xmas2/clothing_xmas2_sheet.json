@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_xmas2_sheet.png",
+		"size": {"w":36,"h":53},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_xmas2_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":23},
+			"sourceSize": {"w":36,"h":23}
+		},
+		"clothing_xmas2_2.png":
+		{
+			"frame": {"x":0,"y":23,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

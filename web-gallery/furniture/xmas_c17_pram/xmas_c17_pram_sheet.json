@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "xmas_c17_pram_sheet.png",
+		"size": {"w":261,"h":247},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas_c17_pram_5.png":
+		{
+			"frame": {"x":0,"y":0,"w":87,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":108},
+			"sourceSize": {"w":87,"h":108}
+		},
+		"xmas_c17_pram_15.png":
+		{
+			"frame": {"x":87,"y":0,"w":87,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":107},
+			"sourceSize": {"w":87,"h":107}
+		},
+		"xmas_c17_pram_1.png":
+		{
+			"frame": {"x":174,"y":0,"w":87,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":89},
+			"sourceSize": {"w":87,"h":89}
+		},
+		"xmas_c17_pram_2.png":
+		{
+			"frame": {"x":0,"y":108,"w":87,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":87,"h":86},
+			"sourceSize": {"w":87,"h":86}
+		},
+		"xmas_c17_pram_10.png":
+		{
+			"frame": {"x":87,"y":108,"w":77,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":39},
+			"sourceSize": {"w":77,"h":39}
+		},
+		"xmas_c17_pram_9.png":
+		{
+			"frame": {"x":164,"y":108,"w":77,"h":39},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":77,"h":39},
+			"sourceSize": {"w":77,"h":39}
+		},
+		"xmas_c17_pram_7.png":
+		{
+			"frame": {"x":0,"y":194,"w":66,"h":53},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":53},
+			"sourceSize": {"w":66,"h":53}
+		},
+		"xmas_c17_pram_8.png":
+		{
+			"frame": {"x":66,"y":194,"w":45,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":45,"h":51},
+			"sourceSize": {"w":45,"h":51}
+		},
+		"xmas_c17_pram_16.png":
+		{
+			"frame": {"x":87,"y":147,"w":41,"h":41},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":41},
+			"sourceSize": {"w":41,"h":41}
+		},
+		"xmas_c17_pram_13.png":
+		{
+			"frame": {"x":128,"y":147,"w":29,"h":38},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":38},
+			"sourceSize": {"w":29,"h":38}
+		},
+		"xmas_c17_pram_3.png":
+		{
+			"frame": {"x":157,"y":147,"w":24,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":30},
+			"sourceSize": {"w":24,"h":30}
+		}
+	}
+}

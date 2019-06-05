@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "cubie_decklight_p_sheet.png",
+		"size": {"w":248,"h":172},
+		"scale": "1"
+	},
+	"frames": {
+		"cubie_decklight_p_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":132,"h":125},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":132,"h":125},
+			"sourceSize": {"w":132,"h":125}
+		},
+		"cubie_decklight_p_11.png":
+		{
+			"frame": {"x":132,"y":0,"w":78,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":78,"h":100},
+			"sourceSize": {"w":78,"h":100}
+		},
+		"cubie_decklight_p_7.png":
+		{
+			"frame": {"x":0,"y":125,"w":54,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":47},
+			"sourceSize": {"w":54,"h":47}
+		},
+		"cubie_decklight_p_6.png":
+		{
+			"frame": {"x":210,"y":0,"w":38,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":38,"h":50},
+			"sourceSize": {"w":38,"h":50}
+		},
+		"cubie_decklight_p_5.png":
+		{
+			"frame": {"x":210,"y":50,"w":28,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":25},
+			"sourceSize": {"w":28,"h":25}
+		},
+		"cubie_decklight_p_8.png":
+		{
+			"frame": {"x":210,"y":75,"w":27,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":24},
+			"sourceSize": {"w":27,"h":24}
+		},
+		"cubie_decklight_p_3.png":
+		{
+			"frame": {"x":238,"y":50,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "greek_c19_chair_sheet.png",
+		"size": {"w":104,"h":72},
+		"scale": "1"
+	},
+	"frames": {
+		"greek_c19_chair_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":56,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":56,"h":47},
+			"sourceSize": {"w":56,"h":47}
+		},
+		"greek_c19_chair_6.png":
+		{
+			"frame": {"x":56,"y":0,"w":48,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":25},
+			"sourceSize": {"w":48,"h":25}
+		},
+		"greek_c19_chair_1.png":
+		{
+			"frame": {"x":0,"y":47,"w":28,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":25},
+			"sourceSize": {"w":28,"h":25}
+		}
+	}
+}

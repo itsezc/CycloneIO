@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "rare_daffodil_rug_sheet.png",
+		"size": {"w":345,"h":254},
+		"scale": "1"
+	},
+	"frames": {
+		"rare_daffodil_rug_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":215,"h":190},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":215,"h":190},
+			"sourceSize": {"w":215,"h":190}
+		},
+		"rare_daffodil_rug_14.png":
+		{
+			"frame": {"x":215,"y":0,"w":130,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":68},
+			"sourceSize": {"w":130,"h":68}
+		},
+		"rare_daffodil_rug_8.png":
+		{
+			"frame": {"x":215,"y":68,"w":128,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":32},
+			"sourceSize": {"w":128,"h":32}
+		},
+		"rare_daffodil_rug_4.png":
+		{
+			"frame": {"x":215,"y":100,"w":85,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":85,"h":50},
+			"sourceSize": {"w":85,"h":50}
+		},
+		"rare_daffodil_rug_16.png":
+		{
+			"frame": {"x":215,"y":150,"w":74,"h":36},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":74,"h":36},
+			"sourceSize": {"w":74,"h":36}
+		},
+		"rare_daffodil_rug_15.png":
+		{
+			"frame": {"x":0,"y":190,"w":65,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":35},
+			"sourceSize": {"w":65,"h":35}
+		},
+		"rare_daffodil_rug_2.png":
+		{
+			"frame": {"x":65,"y":190,"w":64,"h":16},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":16},
+			"sourceSize": {"w":64,"h":16}
+		},
+		"rare_daffodil_rug_1.png":
+		{
+			"frame": {"x":300,"y":100,"w":43,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":26},
+			"sourceSize": {"w":43,"h":26}
+		},
+		"rare_daffodil_rug_6.png":
+		{
+			"frame": {"x":300,"y":126,"w":39,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":19},
+			"sourceSize": {"w":39,"h":19}
+		},
+		"rare_daffodil_rug_11.png":
+		{
+			"frame": {"x":289,"y":150,"w":30,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":19},
+			"sourceSize": {"w":30,"h":19}
+		},
+		"rare_daffodil_rug_12.png":
+		{
+			"frame": {"x":0,"y":225,"w":28,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":29},
+			"sourceSize": {"w":28,"h":29}
+		},
+		"rare_daffodil_rug_7.png":
+		{
+			"frame": {"x":28,"y":225,"w":16,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":21},
+			"sourceSize": {"w":16,"h":21}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "tokyo_c18_toy3_sheet.png",
+		"size": {"w":83,"h":55},
+		"scale": "1"
+	},
+	"frames": {
+		"tokyo_c18_toy3_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":43,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":55},
+			"sourceSize": {"w":43,"h":55}
+		},
+		"tokyo_c18_toy3_7.png":
+		{
+			"frame": {"x":43,"y":0,"w":40,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":17},
+			"sourceSize": {"w":40,"h":17}
+		},
+		"tokyo_c18_toy3_5.png":
+		{
+			"frame": {"x":43,"y":17,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

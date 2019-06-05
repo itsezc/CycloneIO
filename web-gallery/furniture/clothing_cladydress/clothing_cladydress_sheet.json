@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "clothing_cladydress_sheet.png",
+		"size": {"w":72,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_cladydress_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":36,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":100},
+			"sourceSize": {"w":36,"h":100}
+		},
+		"clothing_cladydress_2.png":
+		{
+			"frame": {"x":36,"y":0,"w":36,"h":19},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":36,"h":19},
+			"sourceSize": {"w":36,"h":19}
+		},
+		"clothing_cladydress_3.png":
+		{
+			"frame": {"x":36,"y":19,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		},
+		"clothing_cladydress_7.png":
+		{
+			"frame": {"x":66,"y":19,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

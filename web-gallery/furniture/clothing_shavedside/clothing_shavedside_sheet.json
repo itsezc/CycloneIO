@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "clothing_shavedside_sheet.png",
+		"size": {"w":96,"h":92},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_shavedside_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+			"sourceSize": {"w":32,"h":46}
+		},
+		"clothing_shavedside_11.png":
+		{
+			"frame": {"x":32,"y":0,"w":32,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+			"sourceSize": {"w":32,"h":46}
+		},
+		"clothing_shavedside_12.png":
+		{
+			"frame": {"x":64,"y":0,"w":32,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+			"sourceSize": {"w":32,"h":46}
+		},
+		"clothing_shavedside_5.png":
+		{
+			"frame": {"x":0,"y":46,"w":32,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+			"sourceSize": {"w":32,"h":46}
+		},
+		"clothing_shavedside_6.png":
+		{
+			"frame": {"x":32,"y":46,"w":32,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":46},
+			"sourceSize": {"w":32,"h":46}
+		},
+		"clothing_shavedside_1.png":
+		{
+			"frame": {"x":64,"y":46,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		},
+		"clothing_shavedside_8.png":
+		{
+			"frame": {"x":91,"y":46,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

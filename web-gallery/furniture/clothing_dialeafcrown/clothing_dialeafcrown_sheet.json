@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_dialeafcrown_sheet.png",
+		"size": {"w":66,"h":44},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_dialeafcrown_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":37,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":37,"h":44},
+			"sourceSize": {"w":37,"h":44}
+		},
+		"clothing_dialeafcrown_5.png":
+		{
+			"frame": {"x":37,"y":0,"w":29,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":28},
+			"sourceSize": {"w":29,"h":28}
+		}
+	}
+}

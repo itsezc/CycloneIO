@@ -1,0 +1,89 @@
+{
+	"meta": {
+		"image": "xmas12_wall_out_sheet.png",
+		"size": {"w":1052,"h":947},
+		"scale": "1"
+	},
+	"frames": {
+		"xmas12_wall_out_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":629,"h":568},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":629,"h":568},
+			"sourceSize": {"w":629,"h":568}
+		},
+		"xmas12_wall_out_12.png":
+		{
+			"frame": {"x":629,"y":0,"w":145,"h":379},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":379},
+			"sourceSize": {"w":145,"h":379}
+		},
+		"xmas12_wall_out_7.png":
+		{
+			"frame": {"x":774,"y":0,"w":145,"h":379},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":145,"h":379},
+			"sourceSize": {"w":145,"h":379}
+		},
+		"xmas12_wall_out_11.png":
+		{
+			"frame": {"x":919,"y":0,"w":133,"h":379},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":379},
+			"sourceSize": {"w":133,"h":379}
+		},
+		"xmas12_wall_out_5.png":
+		{
+			"frame": {"x":0,"y":568,"w":133,"h":379},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":133,"h":379},
+			"sourceSize": {"w":133,"h":379}
+		},
+		"xmas12_wall_out_1.png":
+		{
+			"frame": {"x":919,"y":379,"w":73,"h":189},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":189},
+			"sourceSize": {"w":73,"h":189}
+		},
+		"xmas12_wall_out_9.png":
+		{
+			"frame": {"x":774,"y":379,"w":73,"h":189},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":73,"h":189},
+			"sourceSize": {"w":73,"h":189}
+		},
+		"xmas12_wall_out_3.png":
+		{
+			"frame": {"x":847,"y":379,"w":67,"h":189},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":189},
+			"sourceSize": {"w":67,"h":189}
+		},
+		"xmas12_wall_out_8.png":
+		{
+			"frame": {"x":629,"y":379,"w":67,"h":189},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":189},
+			"sourceSize": {"w":67,"h":189}
+		},
+		"xmas12_wall_out_13.png":
+		{
+			"frame": {"x":992,"y":379,"w":29,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":30},
+			"sourceSize": {"w":29,"h":30}
+		}
+	}
+}

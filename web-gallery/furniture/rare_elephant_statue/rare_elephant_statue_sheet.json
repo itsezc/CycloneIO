@@ -1,0 +1,121 @@
+{
+	"meta": {
+		"image": "rare_elephant_statue_sheet.png",
+		"size": {"w":190,"h":169},
+		"scale": "1"
+	},
+	"frames": {
+		"rare_elephant_statue_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":127,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":127,"h":121},
+			"sourceSize": {"w":127,"h":121}
+		},
+		"rare_elephant_statue_18.png":
+		{
+			"frame": {"x":127,"y":0,"w":43,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":50},
+			"sourceSize": {"w":43,"h":50}
+		},
+		"rare_elephant_statue_4.png":
+		{
+			"frame": {"x":127,"y":50,"w":43,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":49},
+			"sourceSize": {"w":43,"h":49}
+		},
+		"rare_elephant_statue_3.png":
+		{
+			"frame": {"x":0,"y":121,"w":41,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":41,"h":48},
+			"sourceSize": {"w":41,"h":48}
+		},
+		"rare_elephant_statue_17.png":
+		{
+			"frame": {"x":41,"y":121,"w":39,"h":47},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":47},
+			"sourceSize": {"w":39,"h":47}
+		},
+		"rare_elephant_statue_12.png":
+		{
+			"frame": {"x":127,"y":99,"w":42,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":14},
+			"sourceSize": {"w":42,"h":14}
+		},
+		"rare_elephant_statue_10.png":
+		{
+			"frame": {"x":80,"y":121,"w":39,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":14},
+			"sourceSize": {"w":39,"h":14}
+		},
+		"rare_elephant_statue_2.png":
+		{
+			"frame": {"x":80,"y":135,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"rare_elephant_statue_11.png":
+		{
+			"frame": {"x":106,"y":135,"w":22,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":26},
+			"sourceSize": {"w":22,"h":26}
+		},
+		"rare_elephant_statue_7.png":
+		{
+			"frame": {"x":128,"y":135,"w":22,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":25},
+			"sourceSize": {"w":22,"h":25}
+		},
+		"rare_elephant_statue_9.png":
+		{
+			"frame": {"x":150,"y":135,"w":19,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":19,"h":24},
+			"sourceSize": {"w":19,"h":24}
+		},
+		"rare_elephant_statue_15.png":
+		{
+			"frame": {"x":170,"y":0,"w":20,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":23},
+			"sourceSize": {"w":20,"h":23}
+		},
+		"rare_elephant_statue_6.png":
+		{
+			"frame": {"x":127,"y":113,"w":21,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":7},
+			"sourceSize": {"w":21,"h":7}
+		},
+		"rare_elephant_statue_1.png":
+		{
+			"frame": {"x":170,"y":23,"w":20,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":7},
+			"sourceSize": {"w":20,"h":7}
+		}
+	}
+}

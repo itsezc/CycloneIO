@@ -1,0 +1,385 @@
+{
+	"meta": {
+		"image": "wildwest_bgtrain_sheet.png",
+		"size": {"w":2063,"h":1732},
+		"scale": "1"
+	},
+	"frames": {
+		"wildwest_bgtrain_19.png":
+		{
+			"frame": {"x":0,"y":0,"w":575,"h":317},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":575,"h":317},
+			"sourceSize": {"w":575,"h":317}
+		},
+		"wildwest_bgtrain_31.png":
+		{
+			"frame": {"x":575,"y":0,"w":544,"h":282},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":544,"h":282},
+			"sourceSize": {"w":544,"h":282}
+		},
+		"wildwest_bgtrain_15.png":
+		{
+			"frame": {"x":0,"y":317,"w":544,"h":278},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":544,"h":278},
+			"sourceSize": {"w":544,"h":278}
+		},
+		"wildwest_bgtrain_2.png":
+		{
+			"frame": {"x":544,"y":317,"w":544,"h":276},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":544,"h":276},
+			"sourceSize": {"w":544,"h":276}
+		},
+		"wildwest_bgtrain_25.png":
+		{
+			"frame": {"x":0,"y":595,"w":544,"h":274},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":544,"h":274},
+			"sourceSize": {"w":544,"h":274}
+		},
+		"wildwest_bgtrain_29.png":
+		{
+			"frame": {"x":544,"y":595,"w":544,"h":266},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":544,"h":266},
+			"sourceSize": {"w":544,"h":266}
+		},
+		"wildwest_bgtrain_12.png":
+		{
+			"frame": {"x":1119,"y":0,"w":528,"h":277},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":528,"h":277},
+			"sourceSize": {"w":528,"h":277}
+		},
+		"wildwest_bgtrain_34.png":
+		{
+			"frame": {"x":1119,"y":277,"w":507,"h":107},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":507,"h":107},
+			"sourceSize": {"w":507,"h":107}
+		},
+		"wildwest_bgtrain_37.png":
+		{
+			"frame": {"x":1119,"y":384,"w":501,"h":266},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":501,"h":266},
+			"sourceSize": {"w":501,"h":266}
+		},
+		"wildwest_bgtrain_4.png":
+		{
+			"frame": {"x":0,"y":869,"w":448,"h":294},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":448,"h":294},
+			"sourceSize": {"w":448,"h":294}
+		},
+		"wildwest_bgtrain_36.png":
+		{
+			"frame": {"x":1119,"y":650,"w":447,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":447,"h":100},
+			"sourceSize": {"w":447,"h":100}
+		},
+		"wildwest_bgtrain_30.png":
+		{
+			"frame": {"x":448,"y":869,"w":384,"h":294},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":384,"h":294},
+			"sourceSize": {"w":384,"h":294}
+		},
+		"wildwest_bgtrain_41.png":
+		{
+			"frame": {"x":1119,"y":750,"w":384,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":384,"h":101},
+			"sourceSize": {"w":384,"h":101}
+		},
+		"wildwest_bgtrain_44.png":
+		{
+			"frame": {"x":832,"y":869,"w":320,"h":280},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":320,"h":280},
+			"sourceSize": {"w":320,"h":280}
+		},
+		"wildwest_bgtrain_16.png":
+		{
+			"frame": {"x":1152,"y":869,"w":307,"h":84},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":307,"h":84},
+			"sourceSize": {"w":307,"h":84}
+		},
+		"wildwest_bgtrain_28.png":
+		{
+			"frame": {"x":1152,"y":953,"w":288,"h":126},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":288,"h":126},
+			"sourceSize": {"w":288,"h":126}
+		},
+		"wildwest_bgtrain_24.png":
+		{
+			"frame": {"x":0,"y":1163,"w":287,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":287,"h":159},
+			"sourceSize": {"w":287,"h":159}
+		},
+		"wildwest_bgtrain_17.png":
+		{
+			"frame": {"x":287,"y":1163,"w":272,"h":142},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":272,"h":142},
+			"sourceSize": {"w":272,"h":142}
+		},
+		"wildwest_bgtrain_32.png":
+		{
+			"frame": {"x":559,"y":1163,"w":272,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":272,"h":139},
+			"sourceSize": {"w":272,"h":139}
+		},
+		"wildwest_bgtrain_3.png":
+		{
+			"frame": {"x":831,"y":1163,"w":272,"h":138},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":272,"h":138},
+			"sourceSize": {"w":272,"h":138}
+		},
+		"wildwest_bgtrain_43.png":
+		{
+			"frame": {"x":0,"y":1322,"w":261,"h":266},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":261,"h":266},
+			"sourceSize": {"w":261,"h":266}
+		},
+		"wildwest_bgtrain_33.png":
+		{
+			"frame": {"x":261,"y":1322,"w":265,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":265,"h":139},
+			"sourceSize": {"w":265,"h":139}
+		},
+		"wildwest_bgtrain_50.png":
+		{
+			"frame": {"x":1647,"y":0,"w":192,"h":258},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":258},
+			"sourceSize": {"w":192,"h":258}
+		},
+		"wildwest_bgtrain_8.png":
+		{
+			"frame": {"x":0,"y":1588,"w":256,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":256,"h":144},
+			"sourceSize": {"w":256,"h":144}
+		},
+		"wildwest_bgtrain_18.png":
+		{
+			"frame": {"x":1152,"y":1079,"w":256,"h":54},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":256,"h":54},
+			"sourceSize": {"w":256,"h":54}
+		},
+		"wildwest_bgtrain_13.png":
+		{
+			"frame": {"x":1103,"y":1163,"w":249,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":249,"h":134},
+			"sourceSize": {"w":249,"h":134}
+		},
+		"wildwest_bgtrain_49.png":
+		{
+			"frame": {"x":1647,"y":258,"w":128,"h":237},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":237},
+			"sourceSize": {"w":128,"h":237}
+		},
+		"wildwest_bgtrain_47.png":
+		{
+			"frame": {"x":1352,"y":1163,"w":232,"h":95},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":232,"h":95},
+			"sourceSize": {"w":232,"h":95}
+		},
+		"wildwest_bgtrain_11.png":
+		{
+			"frame": {"x":1839,"y":0,"w":224,"h":148},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":224,"h":148},
+			"sourceSize": {"w":224,"h":148}
+		},
+		"wildwest_bgtrain_27.png":
+		{
+			"frame": {"x":1839,"y":148,"w":224,"h":49},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":224,"h":49},
+			"sourceSize": {"w":224,"h":49}
+		},
+		"wildwest_bgtrain_42.png":
+		{
+			"frame": {"x":1839,"y":197,"w":64,"h":194},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":194},
+			"sourceSize": {"w":64,"h":194}
+		},
+		"wildwest_bgtrain_48.png":
+		{
+			"frame": {"x":1839,"y":391,"w":193,"h":108},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":193,"h":108},
+			"sourceSize": {"w":193,"h":108}
+		},
+		"wildwest_bgtrain_39.png":
+		{
+			"frame": {"x":1839,"y":499,"w":192,"h":148},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":148},
+			"sourceSize": {"w":192,"h":148}
+		},
+		"wildwest_bgtrain_52.png":
+		{
+			"frame": {"x":1839,"y":647,"w":192,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":51},
+			"sourceSize": {"w":192,"h":51}
+		},
+		"wildwest_bgtrain_7.png":
+		{
+			"frame": {"x":1903,"y":197,"w":160,"h":140},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":160,"h":140},
+			"sourceSize": {"w":160,"h":140}
+		},
+		"wildwest_bgtrain_10.png":
+		{
+			"frame": {"x":1903,"y":337,"w":153,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":153,"h":42},
+			"sourceSize": {"w":153,"h":42}
+		},
+		"wildwest_bgtrain_5.png":
+		{
+			"frame": {"x":1839,"y":698,"w":130,"h":134},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":134},
+			"sourceSize": {"w":130,"h":134}
+		},
+		"wildwest_bgtrain_51.png":
+		{
+			"frame": {"x":1839,"y":832,"w":96,"h":130},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":130},
+			"sourceSize": {"w":96,"h":130}
+		},
+		"wildwest_bgtrain_14.png":
+		{
+			"frame": {"x":1935,"y":832,"w":128,"h":112},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":128,"h":112},
+			"sourceSize": {"w":128,"h":112}
+		},
+		"wildwest_bgtrain_23.png":
+		{
+			"frame": {"x":1969,"y":698,"w":64,"h":120},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":120},
+			"sourceSize": {"w":64,"h":120}
+		},
+		"wildwest_bgtrain_6.png":
+		{
+			"frame": {"x":1839,"y":962,"w":117,"h":48},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":117,"h":48},
+			"sourceSize": {"w":117,"h":48}
+		},
+		"wildwest_bgtrain_35.png":
+		{
+			"frame": {"x":2031,"y":499,"w":32,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":97},
+			"sourceSize": {"w":32,"h":97}
+		},
+		"wildwest_bgtrain_45.png":
+		{
+			"frame": {"x":1839,"y":1010,"w":96,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":55},
+			"sourceSize": {"w":96,"h":55}
+		},
+		"wildwest_bgtrain_22.png":
+		{
+			"frame": {"x":1839,"y":1065,"w":64,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":56},
+			"sourceSize": {"w":64,"h":56}
+		},
+		"wildwest_bgtrain_9.png":
+		{
+			"frame": {"x":2032,"y":391,"w":31,"h":57},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":57},
+			"sourceSize": {"w":31,"h":57}
+		},
+		"wildwest_bgtrain_38.png":
+		{
+			"frame": {"x":2032,"y":448,"w":30,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":24},
+			"sourceSize": {"w":30,"h":24}
+		},
+		"wildwest_bgtrain_1.png":
+		{
+			"frame": {"x":2031,"y":596,"w":16,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":29},
+			"sourceSize": {"w":16,"h":29}
+		}
+	}
+}

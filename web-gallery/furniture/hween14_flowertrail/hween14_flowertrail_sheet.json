@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hween14_flowertrail_sheet.png",
+		"size": {"w":81,"h":39},
+		"scale": "1"
+	},
+	"frames": {
+		"hween14_flowertrail_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":42,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":25},
+			"sourceSize": {"w":42,"h":25}
+		},
+		"hween14_flowertrail_4.png":
+		{
+			"frame": {"x":42,"y":0,"w":39,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":25},
+			"sourceSize": {"w":39,"h":25}
+		},
+		"hween14_flowertrail_3.png":
+		{
+			"frame": {"x":0,"y":25,"w":22,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":14},
+			"sourceSize": {"w":22,"h":14}
+		},
+		"hween14_flowertrail_9.png":
+		{
+			"frame": {"x":22,"y":25,"w":22,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":14},
+			"sourceSize": {"w":22,"h":14}
+		},
+		"hween14_flowertrail_8.png":
+		{
+			"frame": {"x":44,"y":25,"w":20,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":14},
+			"sourceSize": {"w":20,"h":14}
+		}
+	}
+}

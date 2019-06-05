@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "pixel_table_pink_sheet.png",
+		"size": {"w":224,"h":172},
+		"scale": "1"
+	},
+	"frames": {
+		"pixel_table_pink_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":130,"h":66},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":66},
+			"sourceSize": {"w":130,"h":66}
+		},
+		"pixel_table_pink_2.png":
+		{
+			"frame": {"x":0,"y":66,"w":130,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":62},
+			"sourceSize": {"w":130,"h":62}
+		},
+		"pixel_table_pink_6.png":
+		{
+			"frame": {"x":130,"y":0,"w":65,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":65,"h":32},
+			"sourceSize": {"w":65,"h":32}
+		},
+		"pixel_table_pink_5.png":
+		{
+			"frame": {"x":130,"y":32,"w":64,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":33},
+			"sourceSize": {"w":64,"h":33}
+		},
+		"pixel_table_pink_3.png":
+		{
+			"frame": {"x":130,"y":65,"w":62,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":62},
+			"sourceSize": {"w":62,"h":62}
+		},
+		"pixel_table_pink_8.png":
+		{
+			"frame": {"x":0,"y":128,"w":62,"h":44},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":62,"h":44},
+			"sourceSize": {"w":62,"h":44}
+		},
+		"pixel_table_pink_4.png":
+		{
+			"frame": {"x":62,"y":128,"w":30,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":31},
+			"sourceSize": {"w":30,"h":31}
+		},
+		"pixel_table_pink_1.png":
+		{
+			"frame": {"x":92,"y":128,"w":30,"h":22},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":22},
+			"sourceSize": {"w":30,"h":22}
+		},
+		"pixel_table_pink_7.png":
+		{
+			"frame": {"x":195,"y":0,"w":29,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":24},
+			"sourceSize": {"w":29,"h":24}
+		}
+	}
+}

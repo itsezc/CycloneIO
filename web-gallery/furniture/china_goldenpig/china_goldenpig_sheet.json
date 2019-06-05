@@ -1,0 +1,33 @@
+{
+	"meta": {
+		"image": "china_goldenpig_sheet.png",
+		"size": {"w":106,"h":100},
+		"scale": "1"
+	},
+	"frames": {
+		"china_goldenpig_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":100},
+			"sourceSize": {"w":52,"h":100}
+		},
+		"china_goldenpig_2.png":
+		{
+			"frame": {"x":52,"y":0,"w":54,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":28},
+			"sourceSize": {"w":54,"h":28}
+		},
+		"china_goldenpig_4.png":
+		{
+			"frame": {"x":52,"y":28,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

@@ -1,0 +1,321 @@
+{
+	"meta": {
+		"image": "wildwest_wagon_sheet.png",
+		"size": {"w":578,"h":425},
+		"scale": "1"
+	},
+	"frames": {
+		"wildwest_wagon_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":113,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":113,"h":183},
+			"sourceSize": {"w":113,"h":183}
+		},
+		"wildwest_wagon_8.png":
+		{
+			"frame": {"x":113,"y":0,"w":113,"h":183},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":113,"h":183},
+			"sourceSize": {"w":113,"h":183}
+		},
+		"wildwest_wagon_37.png":
+		{
+			"frame": {"x":226,"y":0,"w":105,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":105,"h":144},
+			"sourceSize": {"w":105,"h":144}
+		},
+		"wildwest_wagon_39.png":
+		{
+			"frame": {"x":0,"y":183,"w":105,"h":144},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":105,"h":144},
+			"sourceSize": {"w":105,"h":144}
+		},
+		"wildwest_wagon_2.png":
+		{
+			"frame": {"x":105,"y":183,"w":130,"h":65},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":130,"h":65},
+			"sourceSize": {"w":130,"h":65}
+		},
+		"wildwest_wagon_19.png":
+		{
+			"frame": {"x":331,"y":0,"w":118,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":110},
+			"sourceSize": {"w":118,"h":110}
+		},
+		"wildwest_wagon_20.png":
+		{
+			"frame": {"x":331,"y":110,"w":118,"h":110},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":118,"h":110},
+			"sourceSize": {"w":118,"h":110}
+		},
+		"wildwest_wagon_38.png":
+		{
+			"frame": {"x":331,"y":220,"w":101,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":98},
+			"sourceSize": {"w":101,"h":98}
+		},
+		"wildwest_wagon_40.png":
+		{
+			"frame": {"x":0,"y":327,"w":101,"h":98},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":101,"h":98},
+			"sourceSize": {"w":101,"h":98}
+		},
+		"wildwest_wagon_43.png":
+		{
+			"frame": {"x":101,"y":327,"w":58,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":92},
+			"sourceSize": {"w":58,"h":92}
+		},
+		"wildwest_wagon_44.png":
+		{
+			"frame": {"x":159,"y":327,"w":58,"h":92},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":92},
+			"sourceSize": {"w":58,"h":92}
+		},
+		"wildwest_wagon_14.png":
+		{
+			"frame": {"x":217,"y":327,"w":67,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":89},
+			"sourceSize": {"w":67,"h":89}
+		},
+		"wildwest_wagon_16.png":
+		{
+			"frame": {"x":284,"y":327,"w":67,"h":89},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":67,"h":89},
+			"sourceSize": {"w":67,"h":89}
+		},
+		"wildwest_wagon_34.png":
+		{
+			"frame": {"x":351,"y":327,"w":57,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":85},
+			"sourceSize": {"w":57,"h":85}
+		},
+		"wildwest_wagon_36.png":
+		{
+			"frame": {"x":449,"y":0,"w":57,"h":85},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":57,"h":85},
+			"sourceSize": {"w":57,"h":85}
+		},
+		"wildwest_wagon_4.png":
+		{
+			"frame": {"x":506,"y":0,"w":72,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":82},
+			"sourceSize": {"w":72,"h":82}
+		},
+		"wildwest_wagon_5.png":
+		{
+			"frame": {"x":506,"y":82,"w":72,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":82},
+			"sourceSize": {"w":72,"h":82}
+		},
+		"wildwest_wagon_12.png":
+		{
+			"frame": {"x":506,"y":164,"w":66,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":81},
+			"sourceSize": {"w":66,"h":81}
+		},
+		"wildwest_wagon_13.png":
+		{
+			"frame": {"x":506,"y":245,"w":66,"h":81},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":81},
+			"sourceSize": {"w":66,"h":81}
+		},
+		"wildwest_wagon_6.png":
+		{
+			"frame": {"x":506,"y":326,"w":54,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":74},
+			"sourceSize": {"w":54,"h":74}
+		},
+		"wildwest_wagon_9.png":
+		{
+			"frame": {"x":449,"y":85,"w":54,"h":74},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":74},
+			"sourceSize": {"w":54,"h":74}
+		},
+		"wildwest_wagon_42.png":
+		{
+			"frame": {"x":226,"y":144,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"wildwest_wagon_27.png":
+		{
+			"frame": {"x":235,"y":183,"w":60,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":55},
+			"sourceSize": {"w":60,"h":55}
+		},
+		"wildwest_wagon_30.png":
+		{
+			"frame": {"x":105,"y":248,"w":60,"h":55},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":60,"h":55},
+			"sourceSize": {"w":60,"h":55}
+		},
+		"wildwest_wagon_32.png":
+		{
+			"frame": {"x":449,"y":159,"w":49,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":50},
+			"sourceSize": {"w":49,"h":50}
+		},
+		"wildwest_wagon_33.png":
+		{
+			"frame": {"x":449,"y":209,"w":49,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":49,"h":50},
+			"sourceSize": {"w":49,"h":50}
+		},
+		"wildwest_wagon_1.png":
+		{
+			"frame": {"x":449,"y":259,"w":35,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":45},
+			"sourceSize": {"w":35,"h":45}
+		},
+		"wildwest_wagon_10.png":
+		{
+			"frame": {"x":449,"y":304,"w":35,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":45},
+			"sourceSize": {"w":35,"h":45}
+		},
+		"wildwest_wagon_29.png":
+		{
+			"frame": {"x":449,"y":349,"w":29,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":43},
+			"sourceSize": {"w":29,"h":43}
+		},
+		"wildwest_wagon_31.png":
+		{
+			"frame": {"x":295,"y":183,"w":29,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":43},
+			"sourceSize": {"w":29,"h":43}
+		},
+		"wildwest_wagon_24.png":
+		{
+			"frame": {"x":165,"y":248,"w":30,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":42},
+			"sourceSize": {"w":30,"h":42}
+		},
+		"wildwest_wagon_25.png":
+		{
+			"frame": {"x":195,"y":248,"w":30,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":42},
+			"sourceSize": {"w":30,"h":42}
+		},
+		"wildwest_wagon_21.png":
+		{
+			"frame": {"x":478,"y":349,"w":25,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":37},
+			"sourceSize": {"w":25,"h":37}
+		},
+		"wildwest_wagon_22.png":
+		{
+			"frame": {"x":225,"y":248,"w":25,"h":37},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":37},
+			"sourceSize": {"w":25,"h":37}
+		},
+		"wildwest_wagon_11.png":
+		{
+			"frame": {"x":449,"y":392,"w":30,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":28},
+			"sourceSize": {"w":30,"h":28}
+		},
+		"wildwest_wagon_26.png":
+		{
+			"frame": {"x":479,"y":392,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		},
+		"wildwest_wagon_28.png":
+		{
+			"frame": {"x":292,"y":144,"w":23,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":26},
+			"sourceSize": {"w":23,"h":26}
+		},
+		"wildwest_wagon_35.png":
+		{
+			"frame": {"x":560,"y":326,"w":12,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":14},
+			"sourceSize": {"w":12,"h":14}
+		},
+		"wildwest_wagon_18.png":
+		{
+			"frame": {"x":572,"y":164,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

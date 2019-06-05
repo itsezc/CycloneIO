@@ -1,0 +1,161 @@
+{
+	"meta": {
+		"image": "st_uni_solarsystem_sheet.png",
+		"size": {"w":355,"h":288},
+		"scale": "1"
+	},
+	"frames": {
+		"st_uni_solarsystem_12.png":
+		{
+			"frame": {"x":0,"y":0,"w":91,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":91,"h":151},
+			"sourceSize": {"w":91,"h":151}
+		},
+		"st_uni_solarsystem_11.png":
+		{
+			"frame": {"x":91,"y":0,"w":89,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":101},
+			"sourceSize": {"w":89,"h":101}
+		},
+		"st_uni_solarsystem_13.png":
+		{
+			"frame": {"x":180,"y":0,"w":89,"h":101},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":89,"h":101},
+			"sourceSize": {"w":89,"h":101}
+		},
+		"st_uni_solarsystem_16.png":
+		{
+			"frame": {"x":0,"y":151,"w":86,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":86},
+			"sourceSize": {"w":86,"h":86}
+		},
+		"st_uni_solarsystem_18.png":
+		{
+			"frame": {"x":86,"y":151,"w":86,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":86},
+			"sourceSize": {"w":86,"h":86}
+		},
+		"st_uni_solarsystem_19.png":
+		{
+			"frame": {"x":172,"y":151,"w":86,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":86},
+			"sourceSize": {"w":86,"h":86}
+		},
+		"st_uni_solarsystem_21.png":
+		{
+			"frame": {"x":269,"y":0,"w":86,"h":86},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":86,"h":86},
+			"sourceSize": {"w":86,"h":86}
+		},
+		"st_uni_solarsystem_1.png":
+		{
+			"frame": {"x":269,"y":86,"w":47,"h":77},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":77},
+			"sourceSize": {"w":47,"h":77}
+		},
+		"st_uni_solarsystem_2.png":
+		{
+			"frame": {"x":269,"y":163,"w":46,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":51},
+			"sourceSize": {"w":46,"h":51}
+		},
+		"st_uni_solarsystem_3.png":
+		{
+			"frame": {"x":0,"y":237,"w":46,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":51},
+			"sourceSize": {"w":46,"h":51}
+		},
+		"st_uni_solarsystem_4.png":
+		{
+			"frame": {"x":180,"y":101,"w":48,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":24},
+			"sourceSize": {"w":48,"h":24}
+		},
+		"st_uni_solarsystem_14.png":
+		{
+			"frame": {"x":91,"y":101,"w":43,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":43},
+			"sourceSize": {"w":43,"h":43}
+		},
+		"st_uni_solarsystem_15.png":
+		{
+			"frame": {"x":134,"y":101,"w":43,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":43},
+			"sourceSize": {"w":43,"h":43}
+		},
+		"st_uni_solarsystem_17.png":
+		{
+			"frame": {"x":46,"y":237,"w":43,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":43},
+			"sourceSize": {"w":43,"h":43}
+		},
+		"st_uni_solarsystem_20.png":
+		{
+			"frame": {"x":89,"y":237,"w":43,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":43},
+			"sourceSize": {"w":43,"h":43}
+		},
+		"st_uni_solarsystem_22.png":
+		{
+			"frame": {"x":132,"y":237,"w":43,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":43},
+			"sourceSize": {"w":43,"h":43}
+		},
+		"st_uni_solarsystem_23.png":
+		{
+			"frame": {"x":175,"y":237,"w":43,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":43},
+			"sourceSize": {"w":43,"h":43}
+		},
+		"st_uni_solarsystem_6.png":
+		{
+			"frame": {"x":316,"y":86,"w":24,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":24},
+			"sourceSize": {"w":24,"h":24}
+		},
+		"st_uni_solarsystem_7.png":
+		{
+			"frame": {"x":316,"y":110,"w":24,"h":12},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":24,"h":12},
+			"sourceSize": {"w":24,"h":12}
+		}
+	}
+}

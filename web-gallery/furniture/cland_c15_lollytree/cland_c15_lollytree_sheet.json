@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "cland_c15_lollytree_sheet.png",
+		"size": {"w":197,"h":189},
+		"scale": "1"
+	},
+	"frames": {
+		"cland_c15_lollytree_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":97,"h":189},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":189},
+			"sourceSize": {"w":97,"h":189}
+		},
+		"cland_c15_lollytree_3.png":
+		{
+			"frame": {"x":97,"y":0,"w":46,"h":90},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":46,"h":90},
+			"sourceSize": {"w":46,"h":90}
+		},
+		"cland_c15_lollytree_6.png":
+		{
+			"frame": {"x":143,"y":0,"w":54,"h":68},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":68},
+			"sourceSize": {"w":54,"h":68}
+		},
+		"cland_c15_lollytree_7.png":
+		{
+			"frame": {"x":143,"y":68,"w":15,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":29},
+			"sourceSize": {"w":15,"h":29}
+		},
+		"cland_c15_lollytree_10.png":
+		{
+			"frame": {"x":158,"y":68,"w":27,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":14},
+			"sourceSize": {"w":27,"h":14}
+		}
+	}
+}

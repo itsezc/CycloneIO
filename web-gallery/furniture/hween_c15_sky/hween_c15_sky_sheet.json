@@ -1,0 +1,209 @@
+{
+	"meta": {
+		"image": "hween_c15_sky_sheet.png",
+		"size": {"w":1010,"h":866},
+		"scale": "1"
+	},
+	"frames": {
+		"hween_c15_sky_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":626,"h":552},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":626,"h":552},
+			"sourceSize": {"w":626,"h":552}
+		},
+		"hween_c15_sky_11.png":
+		{
+			"frame": {"x":626,"y":0,"w":96,"h":464},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":464},
+			"sourceSize": {"w":96,"h":464}
+		},
+		"hween_c15_sky_13.png":
+		{
+			"frame": {"x":722,"y":0,"w":96,"h":464},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":464},
+			"sourceSize": {"w":96,"h":464}
+		},
+		"hween_c15_sky_15.png":
+		{
+			"frame": {"x":818,"y":0,"w":96,"h":464},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":464},
+			"sourceSize": {"w":96,"h":464}
+		},
+		"hween_c15_sky_10.png":
+		{
+			"frame": {"x":0,"y":552,"w":97,"h":314},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":97,"h":314},
+			"sourceSize": {"w":97,"h":314}
+		},
+		"hween_c15_sky_12.png":
+		{
+			"frame": {"x":97,"y":552,"w":94,"h":240},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":94,"h":240},
+			"sourceSize": {"w":94,"h":240}
+		},
+		"hween_c15_sky_14.png":
+		{
+			"frame": {"x":191,"y":552,"w":72,"h":211},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":72,"h":211},
+			"sourceSize": {"w":72,"h":211}
+		},
+		"hween_c15_sky_17.png":
+		{
+			"frame": {"x":263,"y":552,"w":51,"h":178},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":178},
+			"sourceSize": {"w":51,"h":178}
+		},
+		"hween_c15_sky_23.png":
+		{
+			"frame": {"x":314,"y":552,"w":31,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":113},
+			"sourceSize": {"w":31,"h":113}
+		},
+		"hween_c15_sky_25.png":
+		{
+			"frame": {"x":345,"y":552,"w":31,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":113},
+			"sourceSize": {"w":31,"h":113}
+		},
+		"hween_c15_sky_26.png":
+		{
+			"frame": {"x":376,"y":552,"w":31,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":113},
+			"sourceSize": {"w":31,"h":113}
+		},
+		"hween_c15_sky_9.png":
+		{
+			"frame": {"x":407,"y":552,"w":31,"h":113},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":31,"h":113},
+			"sourceSize": {"w":31,"h":113}
+		},
+		"hween_c15_sky_18.png":
+		{
+			"frame": {"x":438,"y":552,"w":35,"h":100},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":35,"h":100},
+			"sourceSize": {"w":35,"h":100}
+		},
+		"hween_c15_sky_21.png":
+		{
+			"frame": {"x":473,"y":552,"w":96,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":97},
+			"sourceSize": {"w":96,"h":97}
+		},
+		"hween_c15_sky_22.png":
+		{
+			"frame": {"x":569,"y":552,"w":96,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":97},
+			"sourceSize": {"w":96,"h":97}
+		},
+		"hween_c15_sky_20.png":
+		{
+			"frame": {"x":665,"y":552,"w":96,"h":96},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":96},
+			"sourceSize": {"w":96,"h":96}
+		},
+		"hween_c15_sky_24.png":
+		{
+			"frame": {"x":761,"y":552,"w":96,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":91},
+			"sourceSize": {"w":96,"h":91}
+		},
+		"hween_c15_sky_4.png":
+		{
+			"frame": {"x":818,"y":464,"w":96,"h":88},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":88},
+			"sourceSize": {"w":96,"h":88}
+		},
+		"hween_c15_sky_3.png":
+		{
+			"frame": {"x":722,"y":464,"w":96,"h":87},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":87},
+			"sourceSize": {"w":96,"h":87}
+		},
+		"hween_c15_sky_6.png":
+		{
+			"frame": {"x":626,"y":464,"w":96,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":82},
+			"sourceSize": {"w":96,"h":82}
+		},
+		"hween_c15_sky_2.png":
+		{
+			"frame": {"x":914,"y":0,"w":96,"h":79},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":79},
+			"sourceSize": {"w":96,"h":79}
+		},
+		"hween_c15_sky_5.png":
+		{
+			"frame": {"x":914,"y":79,"w":96,"h":76},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":96,"h":76},
+			"sourceSize": {"w":96,"h":76}
+		},
+		"hween_c15_sky_19.png":
+		{
+			"frame": {"x":914,"y":155,"w":12,"h":56},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":12,"h":56},
+			"sourceSize": {"w":12,"h":56}
+		},
+		"hween_c15_sky_8.png":
+		{
+			"frame": {"x":926,"y":155,"w":20,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":30},
+			"sourceSize": {"w":20,"h":30}
+		},
+		"hween_c15_sky_7.png":
+		{
+			"frame": {"x":946,"y":155,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

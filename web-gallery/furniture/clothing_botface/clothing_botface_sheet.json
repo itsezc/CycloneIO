@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_botface_sheet.png",
+		"size": {"w":53,"h":42},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_botface_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":26,"h":42},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":42},
+			"sourceSize": {"w":26,"h":42}
+		},
+		"clothing_botface_5.png":
+		{
+			"frame": {"x":26,"y":0,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		}
+	}
+}

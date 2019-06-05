@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "val13_gond_post_sheet.png",
+		"size": {"w":53,"h":139},
+		"scale": "1"
+	},
+	"frames": {
+		"val13_gond_post_9.png":
+		{
+			"frame": {"x":0,"y":0,"w":25,"h":139},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":139},
+			"sourceSize": {"w":25,"h":139}
+		},
+		"val13_gond_post_4.png":
+		{
+			"frame": {"x":25,"y":0,"w":13,"h":70},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":70},
+			"sourceSize": {"w":13,"h":70}
+		},
+		"val13_gond_post_6.png":
+		{
+			"frame": {"x":38,"y":0,"w":15,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":15,"h":30},
+			"sourceSize": {"w":15,"h":30}
+		},
+		"val13_gond_post_1.png":
+		{
+			"frame": {"x":38,"y":30,"w":13,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":13,"h":30},
+			"sourceSize": {"w":13,"h":30}
+		},
+		"val13_gond_post_7.png":
+		{
+			"frame": {"x":38,"y":60,"w":9,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":9,"h":15},
+			"sourceSize": {"w":9,"h":15}
+		},
+		"val13_gond_post_8.png":
+		{
+			"frame": {"x":51,"y":30,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}

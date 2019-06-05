@@ -1,0 +1,41 @@
+{
+	"meta": {
+		"image": "hc_arab_teamk_sheet.png",
+		"size": {"w":158,"h":116},
+		"scale": "1"
+	},
+	"frames": {
+		"hc_arab_teamk_8.png":
+		{
+			"frame": {"x":0,"y":0,"w":58,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":116},
+			"sourceSize": {"w":58,"h":116}
+		},
+		"hc_arab_teamk_9.png":
+		{
+			"frame": {"x":58,"y":0,"w":58,"h":116},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":116},
+			"sourceSize": {"w":58,"h":116}
+		},
+		"hc_arab_teamk_1.png":
+		{
+			"frame": {"x":116,"y":0,"w":42,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":42,"h":21},
+			"sourceSize": {"w":42,"h":21}
+		},
+		"hc_arab_teamk_6.png":
+		{
+			"frame": {"x":116,"y":21,"w":27,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":28},
+			"sourceSize": {"w":27,"h":28}
+		}
+	}
+}

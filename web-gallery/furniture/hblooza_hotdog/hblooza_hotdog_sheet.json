@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "hblooza_hotdog_sheet.png",
+		"size": {"w":174,"h":121},
+		"scale": "1"
+	},
+	"frames": {
+		"hblooza_hotdog_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":76,"h":121},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":76,"h":121},
+			"sourceSize": {"w":76,"h":121}
+		},
+		"hblooza_hotdog_5.png":
+		{
+			"frame": {"x":76,"y":0,"w":40,"h":61},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":61},
+			"sourceSize": {"w":40,"h":61}
+		},
+		"hblooza_hotdog_1.png":
+		{
+			"frame": {"x":116,"y":0,"w":58,"h":29},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":58,"h":29},
+			"sourceSize": {"w":58,"h":29}
+		},
+		"hblooza_hotdog_7.png":
+		{
+			"frame": {"x":116,"y":29,"w":21,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":21,"h":30},
+			"sourceSize": {"w":21,"h":30}
+		},
+		"hblooza_hotdog_2.png":
+		{
+			"frame": {"x":137,"y":29,"w":29,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":29,"h":13},
+			"sourceSize": {"w":29,"h":13}
+		}
+	}
+}

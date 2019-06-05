@@ -1,0 +1,105 @@
+{
+	"meta": {
+		"image": "wf_act_reset_timers_sheet.png",
+		"size": {"w":286,"h":237},
+		"scale": "1"
+	},
+	"frames": {
+		"wf_act_reset_timers_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":192,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":192,"h":159},
+			"sourceSize": {"w":192,"h":159}
+		},
+		"wf_act_reset_timers_11.png":
+		{
+			"frame": {"x":192,"y":0,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_reset_timers_12.png":
+		{
+			"frame": {"x":192,"y":51,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_reset_timers_15.png":
+		{
+			"frame": {"x":192,"y":102,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_reset_timers_16.png":
+		{
+			"frame": {"x":0,"y":159,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_reset_timers_2.png":
+		{
+			"frame": {"x":64,"y":159,"w":64,"h":51},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":64,"h":51},
+			"sourceSize": {"w":64,"h":51}
+		},
+		"wf_act_reset_timers_1.png":
+		{
+			"frame": {"x":128,"y":159,"w":32,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":27},
+			"sourceSize": {"w":32,"h":27}
+		},
+		"wf_act_reset_timers_10.png":
+		{
+			"frame": {"x":160,"y":159,"w":32,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":27},
+			"sourceSize": {"w":32,"h":27}
+		},
+		"wf_act_reset_timers_13.png":
+		{
+			"frame": {"x":192,"y":159,"w":32,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":27},
+			"sourceSize": {"w":32,"h":27}
+		},
+		"wf_act_reset_timers_14.png":
+		{
+			"frame": {"x":224,"y":159,"w":32,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":27},
+			"sourceSize": {"w":32,"h":27}
+		},
+		"wf_act_reset_timers_3.png":
+		{
+			"frame": {"x":0,"y":210,"w":32,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":27},
+			"sourceSize": {"w":32,"h":27}
+		},
+		"wf_act_reset_timers_4.png":
+		{
+			"frame": {"x":256,"y":0,"w":30,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":30},
+			"sourceSize": {"w":30,"h":30}
+		}
+	}
+}

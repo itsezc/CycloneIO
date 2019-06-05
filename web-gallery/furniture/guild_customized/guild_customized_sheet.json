@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "guild_customized_sheet.png",
+		"size": {"w":98,"h":97},
+		"scale": "1"
+	},
+	"frames": {
+		"guild_customized_7.png":
+		{
+			"frame": {"x":0,"y":0,"w":47,"h":97},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":47,"h":97},
+			"sourceSize": {"w":47,"h":97}
+		},
+		"guild_customized_8.png":
+		{
+			"frame": {"x":47,"y":0,"w":51,"h":26},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":51,"h":26},
+			"sourceSize": {"w":51,"h":26}
+		},
+		"guild_customized_6.png":
+		{
+			"frame": {"x":47,"y":26,"w":25,"h":50},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":50},
+			"sourceSize": {"w":25,"h":50}
+		},
+		"guild_customized_4.png":
+		{
+			"frame": {"x":72,"y":26,"w":16,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":31},
+			"sourceSize": {"w":16,"h":31}
+		},
+		"guild_customized_2.png":
+		{
+			"frame": {"x":72,"y":57,"w":25,"h":13},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":25,"h":13},
+			"sourceSize": {"w":25,"h":13}
+		}
+	}
+}

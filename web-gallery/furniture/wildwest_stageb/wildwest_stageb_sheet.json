@@ -1,0 +1,49 @@
+{
+	"meta": {
+		"image": "wildwest_stageb_sheet.png",
+		"size": {"w":132,"h":84},
+		"scale": "1"
+	},
+	"frames": {
+		"wildwest_stageb_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":66,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":43},
+			"sourceSize": {"w":66,"h":43}
+		},
+		"wildwest_stageb_3.png":
+		{
+			"frame": {"x":66,"y":0,"w":66,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":66,"h":33},
+			"sourceSize": {"w":66,"h":33}
+		},
+		"wildwest_stageb_2.png":
+		{
+			"frame": {"x":0,"y":43,"w":34,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":23},
+			"sourceSize": {"w":34,"h":23}
+		},
+		"wildwest_stageb_5.png":
+		{
+			"frame": {"x":34,"y":43,"w":34,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":17},
+			"sourceSize": {"w":34,"h":17}
+		},
+		"wildwest_stageb_6.png":
+		{
+			"frame": {"x":0,"y":66,"w":26,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":18},
+			"sourceSize": {"w":26,"h":18}
+		}
+	}
+}

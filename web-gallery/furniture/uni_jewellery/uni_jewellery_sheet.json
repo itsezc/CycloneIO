@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "uni_jewellery_sheet.png",
+		"size": {"w":50,"h":52},
+		"scale": "1"
+	},
+	"frames": {
+		"uni_jewellery_1.png":
+		{
+			"frame": {"x":0,"y":0,"w":32,"h":52},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":32,"h":52},
+			"sourceSize": {"w":32,"h":52}
+		},
+		"uni_jewellery_5.png":
+		{
+			"frame": {"x":32,"y":0,"w":18,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":28},
+			"sourceSize": {"w":18,"h":28}
+		}
+	}
+}

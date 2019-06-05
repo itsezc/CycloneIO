@@ -1,0 +1,25 @@
+{
+	"meta": {
+		"image": "clothing_maidband_sheet.png",
+		"size": {"w":54,"h":45},
+		"scale": "1"
+	},
+	"frames": {
+		"clothing_maidband_6.png":
+		{
+			"frame": {"x":0,"y":0,"w":27,"h":45},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":45},
+			"sourceSize": {"w":27,"h":45}
+		},
+		"clothing_maidband_1.png":
+		{
+			"frame": {"x":27,"y":0,"w":27,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":30},
+			"sourceSize": {"w":27,"h":30}
+		}
+	}
+}

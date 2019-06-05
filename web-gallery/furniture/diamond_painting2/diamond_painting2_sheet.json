@@ -1,0 +1,57 @@
+{
+	"meta": {
+		"image": "diamond_painting2_sheet.png",
+		"size": {"w":549,"h":272},
+		"scale": "1"
+	},
+	"frames": {
+		"diamond_painting2_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":305,"h":272},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":305,"h":272},
+			"sourceSize": {"w":305,"h":272}
+		},
+		"diamond_painting2_2.png":
+		{
+			"frame": {"x":305,"y":0,"w":122,"h":181},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":181},
+			"sourceSize": {"w":122,"h":181}
+		},
+		"diamond_painting2_6.png":
+		{
+			"frame": {"x":427,"y":0,"w":122,"h":181},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":122,"h":181},
+			"sourceSize": {"w":122,"h":181}
+		},
+		"diamond_painting2_4.png":
+		{
+			"frame": {"x":427,"y":181,"w":61,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":91},
+			"sourceSize": {"w":61,"h":91}
+		},
+		"diamond_painting2_8.png":
+		{
+			"frame": {"x":488,"y":181,"w":61,"h":91},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":61,"h":91},
+			"sourceSize": {"w":61,"h":91}
+		},
+		"diamond_painting2_10.png":
+		{
+			"frame": {"x":305,"y":181,"w":22,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":30},
+			"sourceSize": {"w":22,"h":30}
+		}
+	}
+}

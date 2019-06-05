@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "hween14_food_sheet.png",
+		"size": {"w":147,"h":114},
+		"scale": "1"
+	},
+	"frames": {
+		"hween14_food_3.png":
+		{
+			"frame": {"x":0,"y":0,"w":54,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":35},
+			"sourceSize": {"w":54,"h":35}
+		},
+		"hween14_food_2.png":
+		{
+			"frame": {"x":54,"y":0,"w":54,"h":34},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":54,"h":34},
+			"sourceSize": {"w":54,"h":34}
+		},
+		"hween14_food_1.png":
+		{
+			"frame": {"x":0,"y":35,"w":40,"h":43},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":43},
+			"sourceSize": {"w":40,"h":43}
+		},
+		"hween14_food_4.png":
+		{
+			"frame": {"x":40,"y":35,"w":43,"h":33},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":43,"h":33},
+			"sourceSize": {"w":43,"h":33}
+		},
+		"hween14_food_5.png":
+		{
+			"frame": {"x":108,"y":0,"w":39,"h":35},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":35},
+			"sourceSize": {"w":39,"h":35}
+		},
+		"hween14_food_8.png":
+		{
+			"frame": {"x":108,"y":35,"w":28,"h":28},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+			"sourceSize": {"w":28,"h":28}
+		},
+		"hween14_food_13.png":
+		{
+			"frame": {"x":0,"y":78,"w":28,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":18},
+			"sourceSize": {"w":28,"h":18}
+		},
+		"hween14_food_10.png":
+		{
+			"frame": {"x":28,"y":78,"w":27,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":18},
+			"sourceSize": {"w":27,"h":18}
+		},
+		"hween14_food_14.png":
+		{
+			"frame": {"x":83,"y":35,"w":20,"h":23},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":23},
+			"sourceSize": {"w":20,"h":23}
+		},
+		"hween14_food_11.png":
+		{
+			"frame": {"x":55,"y":78,"w":23,"h":17},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":17},
+			"sourceSize": {"w":23,"h":17}
+		},
+		"hween14_food_15.png":
+		{
+			"frame": {"x":0,"y":96,"w":20,"h":18},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":18},
+			"sourceSize": {"w":20,"h":18}
+		}
+	}
+}

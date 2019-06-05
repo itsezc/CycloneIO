@@ -1,0 +1,65 @@
+{
+	"meta": {
+		"image": "horse_saddle2_sheet.png",
+		"size": {"w":112,"h":107},
+		"scale": "1"
+	},
+	"frames": {
+		"horse_saddle2_4.png":
+		{
+			"frame": {"x":0,"y":0,"w":52,"h":62},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":52,"h":62},
+			"sourceSize": {"w":52,"h":62}
+		},
+		"horse_saddle2_12.png":
+		{
+			"frame": {"x":52,"y":0,"w":33,"h":46},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":33,"h":46},
+			"sourceSize": {"w":33,"h":46}
+		},
+		"horse_saddle2_9.png":
+		{
+			"frame": {"x":0,"y":62,"w":44,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":44,"h":21},
+			"sourceSize": {"w":44,"h":21}
+		},
+		"horse_saddle2_10.png":
+		{
+			"frame": {"x":85,"y":0,"w":27,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":32},
+			"sourceSize": {"w":27,"h":32}
+		},
+		"horse_saddle2_6.png":
+		{
+			"frame": {"x":85,"y":32,"w":27,"h":32},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":27,"h":32},
+			"sourceSize": {"w":27,"h":32}
+		},
+		"horse_saddle2_3.png":
+		{
+			"frame": {"x":0,"y":83,"w":18,"h":24},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":18,"h":24},
+			"sourceSize": {"w":18,"h":24}
+		},
+		"horse_saddle2_11.png":
+		{
+			"frame": {"x":85,"y":64,"w":14,"h":7},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":14,"h":7},
+			"sourceSize": {"w":14,"h":7}
+		}
+	}
+}

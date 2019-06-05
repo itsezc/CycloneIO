@@ -1,0 +1,81 @@
+{
+	"meta": {
+		"image": "steampunk_gear_2_sheet.png",
+		"size": {"w":100,"h":79},
+		"scale": "1"
+	},
+	"frames": {
+		"steampunk_gear_2_10.png":
+		{
+			"frame": {"x":0,"y":0,"w":40,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":27},
+			"sourceSize": {"w":40,"h":27}
+		},
+		"steampunk_gear_2_14.png":
+		{
+			"frame": {"x":40,"y":0,"w":40,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":27},
+			"sourceSize": {"w":40,"h":27}
+		},
+		"steampunk_gear_2_8.png":
+		{
+			"frame": {"x":0,"y":27,"w":40,"h":25},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":40,"h":25},
+			"sourceSize": {"w":40,"h":25}
+		},
+		"steampunk_gear_2_11.png":
+		{
+			"frame": {"x":0,"y":52,"w":39,"h":27},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":39,"h":27},
+			"sourceSize": {"w":39,"h":27}
+		},
+		"steampunk_gear_2_12.png":
+		{
+			"frame": {"x":40,"y":27,"w":30,"h":21},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":30,"h":21},
+			"sourceSize": {"w":30,"h":21}
+		},
+		"steampunk_gear_2_2.png":
+		{
+			"frame": {"x":39,"y":52,"w":22,"h":14},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":22,"h":14},
+			"sourceSize": {"w":22,"h":14}
+		},
+		"steampunk_gear_2_1.png":
+		{
+			"frame": {"x":80,"y":0,"w":20,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":15},
+			"sourceSize": {"w":20,"h":15}
+		},
+		"steampunk_gear_2_3.png":
+		{
+			"frame": {"x":80,"y":15,"w":20,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":15},
+			"sourceSize": {"w":20,"h":15}
+		},
+		"steampunk_gear_2_5.png":
+		{
+			"frame": {"x":80,"y":30,"w":20,"h":15},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":20,"h":15},
+			"sourceSize": {"w":20,"h":15}
+		}
+	}
+}

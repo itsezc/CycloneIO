@@ -1,0 +1,97 @@
+{
+	"meta": {
+		"image": "teleport_dragon_sheet.png",
+		"size": {"w":358,"h":310},
+		"scale": "1"
+	},
+	"frames": {
+		"teleport_dragon_sheet.png":
+		{
+			"frame": {"x":0,"y":0,"w":248,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":248,"h":159},
+			"sourceSize": {"w":248,"h":159}
+		},
+		"teleport_dragon_3.png":
+		{
+			"frame": {"x":248,"y":0,"w":55,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":159},
+			"sourceSize": {"w":55,"h":159}
+		},
+		"teleport_dragon_9.png":
+		{
+			"frame": {"x":303,"y":0,"w":55,"h":159},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":55,"h":159},
+			"sourceSize": {"w":55,"h":159}
+		},
+		"teleport_dragon_8.png":
+		{
+			"frame": {"x":0,"y":159,"w":48,"h":151},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":48,"h":151},
+			"sourceSize": {"w":48,"h":151}
+		},
+		"teleport_dragon_12.png":
+		{
+			"frame": {"x":48,"y":159,"w":28,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":82},
+			"sourceSize": {"w":28,"h":82}
+		},
+		"teleport_dragon_15.png":
+		{
+			"frame": {"x":76,"y":159,"w":28,"h":82},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":28,"h":82},
+			"sourceSize": {"w":28,"h":82}
+		},
+		"teleport_dragon_10.png":
+		{
+			"frame": {"x":104,"y":159,"w":23,"h":75},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":23,"h":75},
+			"sourceSize": {"w":23,"h":75}
+		},
+		"teleport_dragon_5.png":
+		{
+			"frame": {"x":127,"y":159,"w":34,"h":63},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":34,"h":63},
+			"sourceSize": {"w":34,"h":63}
+		},
+		"teleport_dragon_14.png":
+		{
+			"frame": {"x":161,"y":159,"w":16,"h":31},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":16,"h":31},
+			"sourceSize": {"w":16,"h":31}
+		},
+		"teleport_dragon_13.png":
+		{
+			"frame": {"x":177,"y":159,"w":26,"h":30},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":26,"h":30},
+			"sourceSize": {"w":26,"h":30}
+		},
+		"teleport_dragon_4.png":
+		{
+			"frame": {"x":203,"y":159,"w":1,"h":1},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+			"sourceSize": {"w":1,"h":1}
+		}
+	}
+}
