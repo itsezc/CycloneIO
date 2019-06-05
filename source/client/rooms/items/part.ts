@@ -1,4 +1,4 @@
-import Phaser, { Textures } from 'phaser'
+/* import Phaser, { Textures } from 'phaser'
 
 const { Texture, Frame } = Textures
 
@@ -6,8 +6,8 @@ import GameSprite from '../../games/sprite'
 
 import Room from '../room'
 
-import { Vector } from '../../../common/types/rooms/vector'
-import { RoomModelDepth } from '../../../common/enums/rooms/models/depth'
+import Vector from '../../../common/types/rooms/vector'
+import RoomObjectDepth from '../../../common/enums/rooms/objects/depth'
 
 export default class RoomItemPart extends GameSprite {
 	
@@ -20,7 +20,7 @@ export default class RoomItemPart extends GameSprite {
 	constructor(scene: Room, coordinates: Vector, frame: string, part: string, textureName: string, resolution: string,
 		chronological: string, rot: string, state: string) 
 	{
-		super(scene, coordinates, RoomModelDepth.ITEM, textureName, frame)
+		super(scene, coordinates, RoomObjectDepth.ITEM, textureName, frame)
 		
 		this._part = Number(part)
 		this._resolution = Number(resolution)
@@ -34,4 +34,4 @@ export default class RoomItemPart extends GameSprite {
 		super.create()
 		this.setPosition(this.isometricCoords.x - 1, this.isometricCoords.y - 10)
 	}
-}
+} */

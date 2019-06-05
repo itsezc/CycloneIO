@@ -1,16 +1,11 @@
-import Phaser, { Cameras, Input } from 'phaser'
-
-const { Scene2D } = Cameras
-const { CameraManager, Camera } = Scene2D
-const { Pointer } = Input
-
 import { Vector2D } from '../../common/types/rooms/vector'
+import IGameObject from '../games/object';
 
 /**
  * RoomCamera class
  * @extends {Camera}
  */
-export default class RoomCamera extends Camera {
+export default class RoomCamera extends Phaser.Cameras.Scene2D.Camera implements IGameObject {
 
 	private cameras: Phaser.Cameras.Scene2D.CameraManager
 	private coordinates: Vector2D
