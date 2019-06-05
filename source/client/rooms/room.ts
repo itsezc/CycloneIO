@@ -145,7 +145,7 @@ export default class Room extends Scene
                 var leftTileThickness = new Phaser.Geom.Polygon(
                     [
                         new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 0),
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 7.5)
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 7.5),
                         new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16 + 7.5),
                         new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16)
                     ]
