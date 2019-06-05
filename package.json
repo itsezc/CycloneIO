@@ -10,7 +10,7 @@
     "desktop": "electron ./resources/desktop/index.js",
     "dev:housekeeping": "webpack-dev-server --host 0.0.0.0 --open --config ./source/housekeeping/webpack.config.babel.js",
     "dev:ui:r63b:cypress": "cypress open",
-    "swf:utils:furniture": "babel-watch source/utils/swf3/index.js",
+    "swf:utils:furniture": "babel-watch source/utils/swf/index.js",
     "dev:web": "webpack-dev-server --host 0.0.0.0 --config ./source/web/webpack.config.babel.js",
     "dev:ui:r26": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r26/webpack.config.babel.js",
     "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r63b/webpack.config.babel.js",
