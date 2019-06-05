@@ -14,30 +14,31 @@ export default class Moderation extends Component {
 	render() {
 		return(
 			<div className='illumina dialog moderation' id='moderation'>
-				<div className='header'>
+				<div className='header' id='moderation_header'>
 					<p>Mod Tools</p>
 
 					<svg className='close'>
-						<path stroke='#666666' strokeWidth="3" fill="none" d="M0.25,0.25,9.75,9.75"></path>
-						<path stroke='#666666' strokeWidth="3" fill="none" d="M0.25,9.75,9.75,0.25"></path>
+						<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,0.25,9.75,9.75'></path>
+						<path stroke='#666666' strokeWidth='3' fill='none' d='M0.25,9.75,9.75,0.25'></path>
 					</svg>
 				</div>
+
 				<div className='content'>
 					<ul className='options'>
 						<li>
-							<img src='http://habboemotion.com/resources/images/icons/room_3.gif' />
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579665088965771300/modtool_test.png' />
 							<span>Room tool for this Room</span>
 						</li>
 						<li>
-							<img src='https://www.habborator.org/archive/icons/mini/tab_icon_03_community.gif' />	
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579664994380021780/modtool_test.png' />	
 							<span>Chatlog for this Room</span>
 						</li>
 						<li>
-							<img src='http://habboemotion.com/resources/images/icons/welcome.gif' />
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579665181488054302/modtool_test.png' />
 							<span>User info: EZ-C</span>
 						</li>
 						<li>
-							<img src='http://habboemotion.com/resources/images/icons/tab_icon_08_hep.gif' />
+							<img src='https://media.discordapp.net/attachments/571637525295398913/579665505388855309/modtool_test.png' />
 							<span>Ticket Browser</span>
 						</li>
 					</ul>	

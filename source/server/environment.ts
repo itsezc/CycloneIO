@@ -8,6 +8,7 @@ import Server from './network/server'
 
 //import RoomManager from './hotel/rooms/manager'
 
+
 /**
  * Environment class
 */
@@ -40,7 +41,7 @@ export default class Environment
 		try 
 		{
 			console.clear()
-			Rainbow.rainbow('_________              .__                        ').start().render()
+			Rainbow.rainbow('_________              .__                        ').render()
 			Rainbow.rainbow('\\_   ___ \\___.__. ____ |  |   ____   ____   ____  ').render()
 			Rainbow.rainbow('/    \\  \\<   |  |/ ___\\|  |  /  _ \\ /    \\_/ __ \\ ').render()
 			Rainbow.rainbow('\\     \\___\\___  \\  \\___|  |_(  <_> )   |  \\  ___/ ').render()
