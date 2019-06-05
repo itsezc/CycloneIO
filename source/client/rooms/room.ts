@@ -140,19 +140,29 @@ export default class Room extends Scene
                 tile.fillPoints(topTileSurface.points)
 
                 tile.lineStyle(0.5, 0x8E8E5E)
-                tile.strokePoints(topTileSurface.points)
+                tile.strokePoints(topTileSurface.points, true)
 
+                var leftTileThickness = new Phaser.Geom.Polygon(
+                    [
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 0),
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 7.5)
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16 + 7.5),
+                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16)
+                    ]
+                )
 
+                tile.fillStyle(0x838357)
+                tile.fillPoints(leftTileThickness.points)
 
-                /***
-                 * 
-                 */
-                //keeps map behind objects
+                tile.lineStyle(0.5, 0x7A7A51)
+                tile.strokePoints(leftTileThickness.points, true)
 
                 tile.depth = 0
                 tile.setData('id', tileId)
             }
         }
+
+        this.camera.setZoom(1) // Zoom out (0.5). max: 10
 
         /* this.registerInputEvents()
 
