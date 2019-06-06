@@ -1,3 +1,5 @@
+import TileImager from '../../../imager/tile' 
+
 const Routes = [{
 		method: 'GET',
 		path: '/{param*}',
@@ -21,6 +23,11 @@ const Routes = [{
 		handler: (request: any, h: any) => {
 			return h.file('./web-build/dist/housekeeping.html')
 		}
+	},
+	{
+		method: 'GET',
+		path: '/imaging/tile',
+		handler: TileImager.requestHandler
 	}
 ]
 
