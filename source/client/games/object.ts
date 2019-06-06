@@ -1,19 +1,19 @@
 import Room from '../rooms/room'
-import { RoomModelDepth } from '../../common/enums/rooms/models/depth';
-import { Vector } from '../../common/types/rooms/vector';
+import RoomObjectDepth from '../../common/enums/rooms/objects/depth';
+import Vector from '../../common/types/rooms/vector';
 
-export interface IGameObject
+export default interface IGameObject
 {
 	create(): void
 }
 
-export default class GameObject extends Phaser.GameObjects.GameObject implements IGameObject
+export class GameObject extends Phaser.GameObjects.GameObject implements IGameObject
 {
 	public readonly scene: Room
 	public readonly type: string
 
 	private readonly coordinates: Vector
-	private readonly depth: RoomModelDepth
+	private readonly depth: RoomObjectDepth
 	
 	private readonly texture?: string
 	private readonly frame?: string
@@ -21,7 +21,7 @@ export default class GameObject extends Phaser.GameObjects.GameObject implements
 	private image!: Phaser.GameObjects.Image
 	private sprite!: Phaser.GameObjects.Sprite
 
-	constructor(scene: Room, type: string, coordinates: Vector, depth: RoomModelDepth, texture?: string, frame?: string)
+	constructor(scene: Room, type: string, coordinates: Vector, depth: RoomObjectDepth, texture?: string, frame?: string)
 	{
 		super(scene, type)
 

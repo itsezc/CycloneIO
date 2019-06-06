@@ -3,7 +3,7 @@ import Phaser, { Scene, GameObjects, Textures } from 'phaser'
 const { GameObject } = GameObjects
 const { Texture } = Textures
 
-import { Vector } from '../../common/types/rooms/vector'
+import Vector from '../../common/types/rooms/vector'
 import SocketIO from 'socket.io-client'
 
 import Config, { server } from '../../../config.json'
@@ -11,9 +11,9 @@ import Config, { server } from '../../../config.json'
 const { host, port } = server
 
 import RoomCamera from './camera'
-import RoomMap from './tiles/map'
+// import RoomMap from './tiles/map'
 
-import RoomItem from './items/item'
+/* import RoomItem from './items/item' */
 
 /**
  * Room class
@@ -27,18 +27,11 @@ export default class Room extends Scene
 
     private camera!: RoomCamera
     // private tileMap!: RoomTileMap
-    private item!: RoomItem
+    // private item!: RoomItem
 
     private clickTime!: number
-
-    private JSONMapData!: any
-    private tileWidth!: number
-    private tileHeight!: number
-    private halfTileWidth!: number
-    private halfTileHeight!: number
-    private mapArrayData!: any
-    private centerX!: number
-    private centerY!: number
+/* 
+    private map!: RoomMap */
 
     /**
      * @param {number} id - The room id
@@ -54,8 +47,6 @@ export default class Room extends Scene
      */
     preload()
     {
-
-        this.load.json('map', 'room/isometric-map.json')
 
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
@@ -102,36 +93,25 @@ export default class Room extends Scene
 
         this.registerInputEvents()
 
-        this.JSONMapData = this.cache.json.get('map')
+        /* this.map = new RoomMap(this, [[1, 1, 1]]) */
 
-        this.tileWidth = this.JSONMapData.tilewidth
-        this.tileHeight = this.JSONMapData.tileheight
-
-        this.halfTileWidth = this.tileWidth / 2
-        this.halfTileHeight = this.tileHeight / 2
-
-        this.mapArrayData = this.JSONMapData.layers[0].data
-
+        var map = [[1, 1, 1]]
 
         // loop for the array length and then for each sub array element length loop inside of it
 
-        for (let y = 0; y < this.mapArrayData.length; y++)
+        for (let y = 0; y < map.length; y++)
         {
-            for (let x = 0; x < this.mapArrayData[y].length; x++)
+            for (let x = 0; x < map[y].length; x++)
             {
-                var tileId = this.mapArrayData[y] - 1
-
-                // tileWidth: 64
-                // tileHeight : 8
-                var isometricTileXCoordinate = (x - y) * this.tileWidth / 2
-                var isometricTileYCoordinate = ((x + y) / 2) * this.tileWidth / 2
+                var isometricX = (x - y) * 32
+                var isometricY = ((x + y) / 2) * 32
 
                 var topTileSurface = new Phaser.Geom.Polygon(
                     [
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 0,isometricTileYCoordinate + 0),
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate -16),
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 64,isometricTileYCoordinate + 0),
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16)
+                        new Phaser.Geom.Point(isometricX + 0, isometricY + 0),
+                        new Phaser.Geom.Point(isometricX + 32, isometricY - 16),
+                        new Phaser.Geom.Point(isometricX + 64, isometricY + 0),
+                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16)
                     ])
 
                 var tile = this.add.graphics()
@@ -140,14 +120,21 @@ export default class Room extends Scene
                 tile.fillPoints(topTileSurface.points)
 
                 tile.lineStyle(0.5, 0x8E8E5E)
-                tile.strokePoints(topTileSurface.points, true)
+                tile.strokePoints(topTileSurface.points)
 
                 var leftTileThickness = new Phaser.Geom.Polygon(
                     [
+<<<<<<< HEAD
+                        new Phaser.Geom.Point(isometricX + 0, isometricY + 0),
+                        new Phaser.Geom.Point(isometricX + 0, isometricY + 7.5),
+                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16 + 7.5),
+                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16)
+=======
                         new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 0),
                         new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 7.5),
                         new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16 + 7.5),
                         new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16)
+>>>>>>> b9f7b46ec7b71e5c7383f25ef87f5467f47e3828
                     ]
                 )
 
@@ -155,14 +142,27 @@ export default class Room extends Scene
                 tile.fillPoints(leftTileThickness.points)
 
                 tile.lineStyle(0.5, 0x7A7A51)
-                tile.strokePoints(leftTileThickness.points, true)
+                tile.strokePoints(leftTileThickness.points)
+
+                var bottomTileThickness = new Phaser.Geom.Polygon(
+                    [
+                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16),
+                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16 + 7.5),
+                        new Phaser.Geom.Point(isometricX + 64, isometricY + 7.5),
+                        new Phaser.Geom.Point(isometricX + 64, isometricY)
+                    ],
+                )
+
+                tile.fillStyle(0x6F6F49)
+                tile.fillPoints(bottomTileThickness.points)
+                
+                tile.lineStyle(0.5, 0x676744)
+                tile.strokePoints(bottomTileThickness.points)
 
                 tile.depth = 0
-                tile.setData('id', tileId)
             }
         }
-
-        this.camera.setZoom(1) // Zoom out (0.5). max: 10
+        this.camera.setZoom(0.5) // Zoom out (0.5). max: 10
 
         /* this.registerInputEvents()
 
@@ -267,12 +267,12 @@ export default class Room extends Scene
     /*     public addTileMap(map: [][]): void {
             this.tileMap = new RoomTileMap(this, map)
         } */
-
+/* 
     public addItem(coordinates: Vector, textureName: string)
     {
         this.item = new RoomItem(this, textureName, 1, 1, 1, coordinates, 0, 0)
         this.item.load()
-    }
+    } */
 
     // /**
     //  * Adds a new furniture
@@ -341,6 +341,37 @@ export default class Room extends Scene
     //     // })
     //     //this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
     // }
+    /**
+	 * @param {Vector} cartesian - The cartesian coordinates of the sprite
+	 * @return {Vector} Isometric coordinates of the sprite
+	 */
+	public cartesianToIsometric(cartesian: Vector): Vector { 
+		return { x: cartesian.x - cartesian.y, y: (cartesian.x + cartesian.y) / 2, z: cartesian.z }
+	}
+
+	/**
+	 * @param {Vector} isometric - The isometric coordinates of the sprite
+	 * @return {Vector} Cartesian coordinates of the sprite
+	 */
+	public isometricToCartesian(isometric: Vector): Vector {
+		return { x: (isometric.y * 2 + isometric.x) / 2, y: (isometric.y * 2 - isometric.x) / 2, z: isometric.z }
+	}
+
+	/**
+	 * @param {Vector} coordinates - The coordinates of the sprite
+	 * @return {Vector} Cartesian coordinates of the sprite
+	 */
+	public coordsToCartesian(coordinates: Vector): Vector {
+		return { x: coordinates.x * 32, y: coordinates.y * 32, z: coordinates.z }
+	}
+
+	/**
+	 * @param {Vector} cartesian - The cartesian coordinates of the sprites
+	 * @return {Vector} Coordinates of the sprite
+	 */
+	public cartesianToCoords(cartesian: Vector): Vector {
+		return { x: Math.floor(cartesian.x / 32), y: Math.floor(cartesian.y / 32), z: cartesian.z }
+	}
 
     /**
      * The double click event

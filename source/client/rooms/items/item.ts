@@ -2,10 +2,10 @@
 
 // User -> Goes to client -> loadUserItems() from DB -> ClientItems = [] 
 // An Item exists in the inventory 
-// A RoomItem exists in the Room
+/* // A RoomItem exists in the Room
 
 import Phaser from 'phaser'
-import { Vector } from '../../../common/types/rooms/vector'
+import Vector from '../../../common/types/rooms/vector'
 
 import Room from '../room'
 
@@ -14,16 +14,8 @@ import ItemPart from './item'
 import Path from 'path'
 
 import RoomItemPart from './part'
-import { RoomModelDepth } from '../../../common/enums/rooms/models/depth'
-
 
 export default class RoomItem extends Phaser.GameObjects.Group {
-
-	/**
-	 * create() {
-	 * 
-	 * }
-	 */
 
 	public scene: Room
 	private textureName: string
@@ -44,7 +36,7 @@ export default class RoomItem extends Phaser.GameObjects.Group {
 
 	//+furniture: Furniture
 
-	constructor(scene: Room, textureName: string, id: number, owner: number, room: number, coordinates: Vector, rotation: number, state: number /* wallPosition: number */) {
+	constructor(scene: Room, textureName: string, id: number, owner: number, room: number, coordinates: Vector, rotation: number, state: number wallPosition: number) {
 
 		super(scene)
 
@@ -108,4 +100,4 @@ export default class RoomItem extends Phaser.GameObjects.Group {
 	removeDuplicates<T>(collection: T[]): T[] {
  		return [...new Set(collection)]
 	}
-}
+} */
