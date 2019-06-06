@@ -48,10 +48,11 @@ export default class Room extends Phaser.Scene
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-        this.load.image('tile', 'test/tile.png')
+		//this.load.image('tile', 'test/tile.png')
         this.load.atlas('coin','test/coin.png', 'test/coin.json')
         this.load.atlas('sofa', 'test/sofa.png', 'test/sofa.json')
 
+		this.load.svg('tile', 'room/tile.svg')
         this.load.image('tile_hover', 'room/tile_hover.png')
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
         /*      this.load.image('tile', 'room/normal_tile.png')
