@@ -185,6 +185,8 @@ export default class Room extends Phaser.Scene
         var sofa2 = this.add.image(29, 0, 'sofa', '15_hcsohva_hcsohva_64_c_2_0.png')
         var sofa3 = this.add.image(15, 23, 'sofa', '22_hcsohva_hcsohva_64_d_2_0.png')
 
+		//= false;
+
         //coin.depth = 1
         sofa.depth = 1
         sofa2.depth = 1
@@ -192,7 +194,7 @@ export default class Room extends Phaser.Scene
         //this.add.image(0, -100, 'tile')
 
 		// Zoom out (0.5). max: 10
-		this.camera.setZoom(0.55)
+		//this.camera.setZoom(0.55)
 
         /* this.registerInputEvents()
 
