@@ -8,6 +8,7 @@ import Config, { server } from '../../../config.json'
 const { host, port } = server
 
 import RoomCamera from './camera'
+
 // import RoomMap from './tiles/map'
 
 /* import RoomItem from './items/item' */
@@ -48,7 +49,6 @@ export default class Room extends Phaser.Scene
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-		//this.load.image('tile', 'test/tile.png')
         this.load.atlas('coin','test/coin.png', 'test/coin.json')
         this.load.atlas('sofa', 'test/sofa.png', 'test/sofa.json')
 
@@ -98,7 +98,7 @@ export default class Room extends Phaser.Scene
 
         /* this.map = new RoomMap(this, [[1, 1, 1]]) */
 
-        var map = [[1, 1, 1], [1, 1, 1]]
+        var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
 
         // loop for the array length and then for each sub array element length loop inside of it
         // 5.5
@@ -111,113 +111,56 @@ export default class Room extends Phaser.Scene
             for (let x = 0; x < map[y].length; x++)
             {
                 var isometricX = (x - y) * tileWidth / 2
-                var isometricY = ((x + y) / 2) * tileWidth / 2
+				var isometricY = ((x + y) / 2) * tileWidth / 2
+				
+				var tile = this.add.image(isometricX, isometricY, 'tile')
 
-                var topTileSurface = new Phaser.Geom.Polygon(
-                    [
-                        new Phaser.Geom.Point(0, 0),
-                        new Phaser.Geom.Point(tileWidth / 2, -tileWidth / 4),
-                        new Phaser.Geom.Point(tileWidth, 0),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4)
-                    ])
-                var tile = this.add.graphics()
+                // var topTileSurface = new Phaser.Geom.Polygon(
+                //     [
+                //         new Phaser.Geom.Point(0, 0),
+                //         new Phaser.Geom.Point(tileWidth / 2, -tileWidth / 4),
+                //         new Phaser.Geom.Point(tileWidth, 0),
+                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4)
+                //     ])
+                // tile = this.add.graphics()
 
-                tile.fillStyle(0x989865)
-                tile.fillPoints(topTileSurface.points)
+                // tile.fillStyle(0x989865)
+                // tile.fillPoints(topTileSurface.points)
 
-                tile.lineStyle(0.5, 0x8E8E5E)
-                tile.strokePoints(topTileSurface.points)
+                // tile.lineStyle(0.5, 0x8E8E5E)
+                // tile.strokePoints(topTileSurface.points)
 
-                var leftTileThickness = new Phaser.Geom.Polygon(
-                    [
-                        new Phaser.Geom.Point(0, thickness),
-                        new Phaser.Geom.Point(0, 0),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness)
-                    ]
-                )
+                // var leftTileThickness = new Phaser.Geom.Polygon(
+                //     [
+                //         new Phaser.Geom.Point(0, thickness),
+                //         new Phaser.Geom.Point(0, 0),
+                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
+                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness)
+                //     ]
+                // )
 
-                tile.fillStyle(0x838357)
-                tile.fillPoints(leftTileThickness.points)
+                // tile.fillStyle(0x838357)
+                // tile.fillPoints(leftTileThickness.points)
 
-                tile.lineStyle(0.5, 0x7A7A51)
-                tile.strokePoints(leftTileThickness.points)
+                // tile.lineStyle(0.5, 0x7A7A51)
+                // tile.strokePoints(leftTileThickness.points)
 
-                var bottomTileThickness = new Phaser.Geom.Polygon(
-                    [
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
-                        new Phaser.Geom.Point(tileWidth, 0),
-                        new Phaser.Geom.Point(tileWidth, thickness)
-                    ],
-                )
+                // var bottomTileThickness = new Phaser.Geom.Polygon(
+                //     [
+                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness),
+                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
+                //         new Phaser.Geom.Point(tileWidth, 0),
+                //         new Phaser.Geom.Point(tileWidth, thickness)
+                //     ],
+                // )
 
-                tile.fillStyle(0x6F6F49)
-                tile.fillPoints(bottomTileThickness.points)
+                // tile.fillStyle(0x6F6F49)
+                // tile.fillPoints(bottomTileThickness.points)
                 
-                tile.lineStyle(0.5, 0x676744)
-                tile.strokePoints(bottomTileThickness.points)
+                // tile.lineStyle(0.5, 0x676744)
+                // tile.strokePoints(bottomTileThickness.points)
 
-                tile.setInteractive(topTileSurface, Phaser.Geom.Polygon.Contains)
-
-                tile.setPosition(isometricX, isometricY)
-
-            }
-        }
-
-/*         for (let y = 0; y < map.length; y++)
-        {
-            for (let x = 0; x < map[y].length; x++)
-            {
-                var isometricX = (x - y) * tileWidth / 2
-                var isometricY = ((x + y) / 2) * tileWidth / 2
-
-                var topTileSurface = new Phaser.Geom.Polygon(
-                    [
-                        new Phaser.Geom.Point(0, 0),
-                        new Phaser.Geom.Point(tileWidth / 2, -tileWidth / 4),
-                        new Phaser.Geom.Point(tileWidth, 0),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4)
-                    ])
-                tile = this.add.graphics()
-
-                tile.fillStyle(0x989865)
-                tile.fillPoints(topTileSurface.points)
-
-                tile.lineStyle(0.5, 0x8E8E5E)
-                tile.strokePoints(topTileSurface.points)
-
-                var leftTileThickness = new Phaser.Geom.Polygon(
-                    [
-                        new Phaser.Geom.Point(0, thickness),
-                        new Phaser.Geom.Point(0, 0),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness)
-                    ]
-                )
-
-                tile.fillStyle(0x838357)
-                tile.fillPoints(leftTileThickness.points)
-
-                tile.lineStyle(0.5, 0x7A7A51)
-                tile.strokePoints(leftTileThickness.points)
-
-                var bottomTileThickness = new Phaser.Geom.Polygon(
-                    [
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness),
-                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
-                        new Phaser.Geom.Point(tileWidth, 0),
-                        new Phaser.Geom.Point(tileWidth, thickness)
-                    ],
-                )
-
-                tile.fillStyle(0x6F6F49)
-                tile.fillPoints(bottomTileThickness.points)
-                
-                tile.lineStyle(0.5, 0x676744)
-                tile.strokePoints(bottomTileThickness.points)
-
-                tile.setInteractive(topTileSurface, Phaser.Geom.Polygon.Contains)
+                // tile.setInteractive(topTileSurface, Phaser.Geom.Polygon.Contains)
 
 /*                 var tileHover: Phaser.GameObjects.Image
 
@@ -230,23 +173,24 @@ export default class Room extends Phaser.Scene
                 tile.on('pointerout', () => {
                     tileHover.destroy()
                 })
- 
-                tile.setPosition(isometricX, isometricY)
+ */
+                // tile.setPosition(isometricX, isometricY)
             }
-        } */
+        } 
 
-        var coin = this.add.image(96, 32, 'coin', '5_CF_1_coin_bronze_CF_1_coin_bronze_64_a_0_0')
+       // var coin = this.add.image(96, 32, 'coin', '5_CF_1_coin_bronze_CF_1_coin_bronze_64_a_0_0')
         var sofa = this.add.image(69, -6, 'sofa', '5_hcsohva_hcsohva_64_a_2_0.png')
         var sofa2 = this.add.image(29, 0, 'sofa', '15_hcsohva_hcsohva_64_c_2_0.png')
         var sofa3 = this.add.image(15, 23, 'sofa', '22_hcsohva_hcsohva_64_d_2_0.png')
 
-        coin.depth = 1
+        //coin.depth = 1
         sofa.depth = 1
         sofa2.depth = 1
         sofa3.depth = 1
         //this.add.image(0, -100, 'tile')
 
-        // Zoom out (0.5). max: 10
+		// Zoom out (0.5). max: 10
+		this.camera.setZoom(0.55)
 
         /* this.registerInputEvents()
 
@@ -313,7 +257,7 @@ export default class Room extends Phaser.Scene
 
     public registerScaleEvents(): void 
     {
-        this.scale.on('resize', (gameSize: any) => 
+        this.scale.on('resiome', (gameSize: any) => 
         {
             var width = gameSize.width
             var height = gameSize.height
