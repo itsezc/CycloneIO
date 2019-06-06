@@ -12,7 +12,7 @@ module.exports = (env, argv) => {
 
         entry: {
 			ui: './mobile.tsx',
-			//client: '../../client/games/game.ts'
+			client: '../../client/games/game.ts'
 		},
 
 		resolve: {
