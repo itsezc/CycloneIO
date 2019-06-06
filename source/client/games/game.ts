@@ -1,18 +1,16 @@
-import { Game, WEBGL, Scale } from 'phaser'
-
-const { ScaleModes } = Scale 
-const { RESIZE } = ScaleModes
-
 import Room from '../rooms/room'
 
 const config = {
     resolution: window.devicePixelRatio,
-    type: WEBGL,
+    type: Phaser.WEBGL,
     scene: new Room(0), // To change this on the navigator
     parent: 'game',
+    render: {
+       pixelArt: true
+    },
     disableContextMenu: false,
     scale: {
-        mode: RESIZE,
+        mode: Phaser.Scale.ScaleModes.RESIZE,
         width: window.innerWidth,
         height: window.innerHeight
     }
@@ -21,4 +19,4 @@ const config = {
 /*
     The main game class (Habbo)
 */
-const game = new Game(config)
+const game = new Phaser.Game(config)

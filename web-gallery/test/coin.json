@@ -1,0 +1,75 @@
+{
+	"frames": {
+		"4_CF_1_coin_bronze_CF_1_coin_bronze_32_a_0_0": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 13,
+				"h": 10
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 13,
+				"h": 10
+			},
+			"sourceSize": {
+				"w": 13,
+				"h": 10
+			}
+		},
+		"5_CF_1_coin_bronze_CF_1_coin_bronze_64_a_0_0": {
+			"frame": {
+				"x": 16,
+				"y": 1,
+				"w": 23,
+				"h": 18
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 23,
+				"h": 18
+			},
+			"sourceSize": {
+				"w": 23,
+				"h": 18
+			}
+		},
+		"7_CF_1_coin_bronze_CF_1_coin_bronze_icon_a": {
+			"frame": {
+				"x": 41,
+				"y": 1,
+				"w": 30,
+				"h": 29
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 30,
+				"h": 29
+			},
+			"sourceSize": {
+				"w": 30,
+				"h": 29
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 72,
+			"h": 31
+		},
+		"scale": "1"
+	}
+}

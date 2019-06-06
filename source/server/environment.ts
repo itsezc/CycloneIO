@@ -48,7 +48,7 @@ export default class Environment
 			Rainbow.rainbow(' \\______  / ____|\\___  >____/\\____/|___|  /\\___  >').render()
 			Rainbow.rainbow('        \\/\\/         \\/                 \\/     \\/ \n\n').render()
 
-			console.log(`Version: ${Chalk.magenta.bold(Config.version)} | License key : ${Chalk.magenta.bold(Config.license)}`)
+			console.log(`Version: ${Chalk.magenta.bold('1.0.0')} | License key : ${Chalk.magenta.bold(Config.license)}`)
 			console.log(`Created by ${Chalk.red.bold('EZ-C 💖  Amor')}, ${Chalk.blue.bold('Sapphire')}, ${Chalk.bold('Kychloren')} of ${Chalk.yellow.bold('Habbay')}`)
 			console.log(`Developers: ${Chalk.bold('ThePapaNoob')}, ${Chalk.bold('LeChris')} and ${Chalk.bold('TheGeneral')}`)
 			console.log(`Contributors: ${Chalk.bold('ElBuffador')}, ${Chalk.bold('Droppy')} and ${Chalk.bold('Ovflowd')}`)

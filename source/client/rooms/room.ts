@@ -1,7 +1,4 @@
-import Phaser, { Scene, GameObjects, Textures } from 'phaser'
-
-const { GameObject } = GameObjects
-const { Texture } = Textures
+import Phaser from 'phaser'
 
 import Vector from '../../common/types/rooms/vector'
 import SocketIO from 'socket.io-client'
@@ -19,7 +16,7 @@ import RoomCamera from './camera'
  * Room class
  * @extends {Scene}
  */
-export default class Room extends Scene
+export default class Room extends Phaser.Scene
 {
 
     private id: number
@@ -51,6 +48,11 @@ export default class Room extends Scene
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
+        this.load.image('tile', 'test/tile.png')
+        this.load.atlas('coin','test/coin.png', 'test/coin.json')
+        this.load.atlas('sofa', 'test/sofa.png', 'test/sofa.json')
+
+        this.load.image('tile_hover', 'room/tile_hover.png')
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
         /*      this.load.image('tile', 'room/normal_tile.png')
                 this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
@@ -95,26 +97,31 @@ export default class Room extends Scene
 
         /* this.map = new RoomMap(this, [[1, 1, 1]]) */
 
-        var map = [[1, 1, 1]]
+        var map = [[1, 1, 1], [1, 1, 1]]
 
         // loop for the array length and then for each sub array element length loop inside of it
+        // 5.5
+
+        var tileWidth = 64
+        var thickness = 7.5
+
+        var tile : Phaser.GameObjects.Graphics
 
         for (let y = 0; y < map.length; y++)
         {
             for (let x = 0; x < map[y].length; x++)
             {
-                var isometricX = (x - y) * 32
-                var isometricY = ((x + y) / 2) * 32
+                var isometricX = (x - y) * tileWidth / 2
+                var isometricY = ((x + y) / 2) * tileWidth / 2
 
                 var topTileSurface = new Phaser.Geom.Polygon(
                     [
-                        new Phaser.Geom.Point(isometricX + 0, isometricY + 0),
-                        new Phaser.Geom.Point(isometricX + 32, isometricY - 16),
-                        new Phaser.Geom.Point(isometricX + 64, isometricY + 0),
-                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16)
+                        new Phaser.Geom.Point(0, 0),
+                        new Phaser.Geom.Point(tileWidth / 2, -tileWidth / 4),
+                        new Phaser.Geom.Point(tileWidth, 0),
+                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4)
                     ])
-
-                var tile = this.add.graphics()
+                tile = this.add.graphics()
 
                 tile.fillStyle(0x989865)
                 tile.fillPoints(topTileSurface.points)
@@ -124,17 +131,10 @@ export default class Room extends Scene
 
                 var leftTileThickness = new Phaser.Geom.Polygon(
                     [
-<<<<<<< HEAD
-                        new Phaser.Geom.Point(isometricX + 0, isometricY + 0),
-                        new Phaser.Geom.Point(isometricX + 0, isometricY + 7.5),
-                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16 + 7.5),
-                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16)
-=======
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 0),
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 0, isometricTileYCoordinate + 7.5),
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16 + 7.5),
-                        new Phaser.Geom.Point(isometricTileXCoordinate + 32, isometricTileYCoordinate + 16)
->>>>>>> b9f7b46ec7b71e5c7383f25ef87f5467f47e3828
+                        new Phaser.Geom.Point(0, thickness),
+                        new Phaser.Geom.Point(0, 0),
+                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
+                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness)
                     ]
                 )
 
@@ -146,10 +146,10 @@ export default class Room extends Scene
 
                 var bottomTileThickness = new Phaser.Geom.Polygon(
                     [
-                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16),
-                        new Phaser.Geom.Point(isometricX + 32, isometricY + 16 + 7.5),
-                        new Phaser.Geom.Point(isometricX + 64, isometricY + 7.5),
-                        new Phaser.Geom.Point(isometricX + 64, isometricY)
+                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness),
+                        new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
+                        new Phaser.Geom.Point(tileWidth, 0),
+                        new Phaser.Geom.Point(tileWidth, thickness)
                     ],
                 )
 
@@ -159,10 +159,36 @@ export default class Room extends Scene
                 tile.lineStyle(0.5, 0x676744)
                 tile.strokePoints(bottomTileThickness.points)
 
-                tile.depth = 0
+                tile.setInteractive(topTileSurface, Phaser.Geom.Polygon.Contains)
+
+/*                 var tileHover: Phaser.GameObjects.Image
+
+                tile.on('pointerover', () => {
+                    tileHover = this.add.image(isometricX, isometricY, 'tile_hover')
+                    tileHover.depth = 2
+                    console.log(tile.x)
+                })
+    
+                tile.on('pointerout', () => {
+                    tileHover.destroy()
+                })
+ */
+                tile.setPosition(isometricX, isometricY)
             }
         }
-        this.camera.setZoom(0.5) // Zoom out (0.5). max: 10
+
+        var coin = this.add.image(96, 32, 'coin', '5_CF_1_coin_bronze_CF_1_coin_bronze_64_a_0_0')
+        var sofa = this.add.image(69, -6, 'sofa', '5_hcsohva_hcsohva_64_a_2_0.png')
+        var sofa2 = this.add.image(29, 0, 'sofa', '15_hcsohva_hcsohva_64_c_2_0.png')
+        var sofa3 = this.add.image(15, 23, 'sofa', '22_hcsohva_hcsohva_64_d_2_0.png')
+
+        coin.depth = 1
+        sofa.depth = 1
+        sofa2.depth = 1
+        sofa3.depth = 1
+        //this.add.image(0, -100, 'tile')
+
+        // Zoom out (0.5). max: 10
 
         /* this.registerInputEvents()
 
