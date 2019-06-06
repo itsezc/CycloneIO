@@ -1,4 +1,4 @@
-import * as Hapi from 'hapi'
+import * as Hapi from '@hapi/hapi'
 
 const Server: Hapi.Server = new Hapi.Server({
 	port: 8084

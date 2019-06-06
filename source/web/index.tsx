@@ -2,12 +2,19 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-class App extends Component {
-	render() {
+import Login from './themes/2018/login'
+
+class App extends Component
+{
+	render()
+	{
 		return (
-			<div>
-				This is the CMS
-			</div>
+			<BrowserRouter>
+				{/* location={this.props.location} */}
+                <Switch>
+                    <Route exact path='/' component={Login} />
+                </Switch>
+            </BrowserRouter>
 		)
 	}
 }
