@@ -22,7 +22,8 @@ module.exports = (env, argv) => {
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: 'client.pug'
+				template: 'client.pug',
+				inject: false
             })
         ],
 
