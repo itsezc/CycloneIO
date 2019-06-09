@@ -60,6 +60,16 @@ type Bot @pgTable(name: "bots") {
     chatDelay: Int @default(value: 4)
 }
 
+# @TODO: Create relation between CatalogPages (link -> id)
+type CatalogFeatured @pgTable(name: "catalog_featured") {
+    id: ID! @id
+    caption: String
+    image: String 
+    link: String
+    slot: Int
+    updated: DateTime @updatedAt
+}
+
 type CatalogPage @pgTable(name: "catalog_pages") {
 	id: ID! @id
 	parent: Int

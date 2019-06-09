@@ -33,6 +33,10 @@ var models = [
     embedded: false
   },
   {
+    name: "CatalogFeatured",
+    embedded: false
+  },
+  {
     name: "CatalogPage",
     embedded: false
   },
