@@ -8,6 +8,7 @@ import Config, { server } from '../../../config.json'
 const { host, port } = server
 
 import RoomCamera from './camera'
+import RoomSprite from './sprite'
 
 // import RoomMap from './tiles/map'
 
