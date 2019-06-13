@@ -5,8 +5,8 @@ import Environment from '../environment'
 import EventManager from '../core/events/manager'
 import RoomPlayer from '../hotel/rooms/player'
 
-import Hapi from 'hapi'
-import Inert from 'inert'
+import Hapi from '@hapi/hapi'
+import Inert from '@hapi/inert'
 import Routes from './http/routes'
 
 import SocketIO from 'socket.io'

@@ -1,3 +1,6 @@
+canvas 
+	zoom 150%
+
 .client 
 	background rbga(0, 0, 0, 1)
 	width 100% 
@@ -10,6 +13,116 @@
 		top 0
 		left 0
 		margin 10px
-		width 64px
-		border-radius 10px
+		width 100px
+		border-radius 18px
 		cursor pointer
+
+
+	.navigation
+		position absolute
+		margin 0
+		padding 0
+		padding-left 10px
+		left 0
+		bottom 0
+		width 100%
+		background-image linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5))
+
+		.avatar
+			width 128px
+			padding 0
+			margin 0
+			whiteborder()
+			display inline-block
+			cursor pointer
+
+		.news
+			cursor pointer
+			display inline-block
+			position absolute
+			bottom 50px
+			width 85px
+			height 95px
+			transform scale(1.4,1.4)
+			transform-origin 0 0
+			background-image url(./mobile.png)
+			background-position -245px -320px
+			background-repeat no-repeat
+
+		.navigator
+			cursor pointer
+			display inline-block
+			position absolute
+			margin-left 140px
+			bottom 50px
+			width 85px
+			height 85px
+			transform scale(1.4,1.4)
+			transform-origin 0 0
+			background-image url(./mobile.png)
+			background-position -245px -10px
+			background-repeat no-repeat
+
+		.store
+			cursor pointer
+			display inline-block
+			position absolute
+			right 350px
+			bottom 60px
+			width 80px
+			height 90px
+			transform scale(1.6,1.6)
+			transform-origin 0 0
+			background-image url(./mobile.png)
+			background-position -268px -910px
+			background-repeat no-repeat
+
+		.inventory
+			cursor pointer
+			display inline-block
+			position absolute
+			right 215px
+			margin-left 15px
+			bottom 75px
+			width 75px
+			height 95px
+			transform scale(1.6,1.6)
+			transform-origin 0 0
+			background-image url(./mobile.png)
+			background-position -330px -210px
+			background-repeat no-repeat
+
+		.friends
+			cursor pointer
+			display inline-block
+			position absolute
+			right 75px
+			margin-left 15px
+			bottom 75px
+			width 90px
+			height 95px
+			transform scale(1.6,1.6)
+			transform-origin 0 0
+			background-image url(./mobile.png)
+			background-position -240px -210px
+			background-repeat no-repeat
+
+		.center
+			display inline-block
+
+	$chatBarWidth = 300px
+	.chatbar
+		font-family 'UbuntuCondensed'
+		font-size 1.5em
+		outline 0
+		position absolute
+		left calc(50% - calc(375px / 2))
+		bottom 40px
+		border 0
+		border-radius 3px
+		box-shadow 0px -6px 0px 0px #6A6F73
+		background #CDCFCE
+		color #6D7F81
+		padding 25px
+		width $chatBarWidth
+		-webkit-appearance: none

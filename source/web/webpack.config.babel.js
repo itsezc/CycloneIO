@@ -1,4 +1,3 @@
-import Config from '../../config.json'
 import Path from 'path'
 
 import Webpack from 'webpack'
@@ -9,26 +8,38 @@ module.exports = (env, argv) => {
     return {
         target: 'web',
 
+        context: Path.resolve(__dirname),
+
         entry: {
-			web: './engine.js'
+			web: './index.tsx',
 		},
 
-		context: Path.join(__dirname),
+		resolve: {
+			extensions: ['.js', '.jsx', '.ts', '.tsx']
+		},
 
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: `./themes/${Config.hotel.theme}/structure.page`,
+                template: Path.join(__dirname, 'structure.html')
             })
         ],
 
         devServer: {
             compress: true,
-			historyApiFallback: true
+			historyApiFallback: true,
+			contentBase: './web-gallery'
 		},
 		
         module: {
             rules: [
+				{
+					test: /\.(ts|tsx)$/,
+					exclude: /node_modules/,
+					use: [
+						'ts-loader'
+					]
+				},
 				{
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,
@@ -49,12 +60,6 @@ module.exports = (env, argv) => {
 						'style-loader',
 						'css-loader?-url!postcss-loader!stylus-loader',
                         'stylus-loader'
-                    ]
-                },
-                {
-                    test: /\.(pug|page)$/,
-                    use: [
-                        'pug-loader'
                     ]
                 },
 				{
