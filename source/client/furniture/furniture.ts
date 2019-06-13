@@ -1,11 +1,13 @@
 
 //import type { FurnitureType } from '../../common/enums/furniture/type'
 import FurnitureData from './data.ts'
+import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
 
 export default class Furniture {
 
 	private data: FurnitureData.IData
+	private readonly scene: Room
 
 	// private id: number // (Furniture Number)
 	// private spriteName: string
@@ -175,7 +177,7 @@ export default class Furniture {
 
 	// PIXI.Sprite
 	// Phaser.GameObjects.
-	public getSpriteFrom(size: number|string, layer: number, direction?: number, frame?: number): Phaser.GameObjects.Sprite
+	public getSpriteFrom(size: number|string, layer: number, direction?: number, frame?: number): any
 	{
         let assetName = this.assetNameFrom(size, layer, direction, frame)
 
@@ -234,7 +236,7 @@ export default class Furniture {
             && this.data.visualization.directions[direction].layers[layer] != null
     }
 
-    private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer: FurnitureData.ILayer)
+    private doUpdateSprite(sprite: any, layer: FurnitureData.ILayer)
 	{
         if (layer.alpha != null) {
             sprite.alpha = layer.alpha / 255

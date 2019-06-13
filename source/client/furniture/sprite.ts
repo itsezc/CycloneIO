@@ -15,7 +15,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private direction: number
     private color: number
 
-    public constructor(furniture: Furniture) {
+    public constructor(furniture: any) {
         super(furniture)
 
         this.furniture = furniture
@@ -119,7 +119,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
     public updateFurnitureView()
 	{
-        this.removeChildren()
+        this.removeAll()
 
         for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
 		{
@@ -137,7 +137,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                     layerSprite.tint = color
                 }
             
-                this.addChild(layerSprite)
+                this.add(layerSprite)
             }
         }
 
