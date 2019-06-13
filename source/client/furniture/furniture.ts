@@ -1,7 +1,7 @@
 
 //import type { FurnitureType } from '../../common/enums/furniture/type'
 import FurnitureData from './data.ts'
-import { FurnitureType } from '../../common/enums/furniture/type'
+//import { FurnitureType } from '../../common/enums/furniture/type'
 
 export default class Furniture {
 
@@ -48,39 +48,38 @@ export default class Furniture {
 	// 	this.canSit = canSit
 	// }
 
-	constructor(data: FurnitureData.IData) 
+	constructor(data: FurnitureData.IData)
 	{
 		this.data = data
 	}
 
-	// User goes into the room -> RoomID -> DB / Server -> Client Furniture[] -> forEach Furniture => Furni (where Furniture class is initiated) -> Item (getFurniture(basedOnId)) 
+	// User goes into the room -> RoomID -> DB / Server -> Client Furniture[] -> forEach Furniture => Furni (where Furniture class is initiated) -> Item (getFurniture(basedOnId))
 	// public static load(id?: number): Furniture {
 	// 	return new Furniture(0, "throne", "name", "desc", FurnitureType.FLOOR, 0, 0, 0, false, true, false, false)
 	// }
-
 
 	public getLayerCount(): number
 	{
 		return this.data.visualization.layerCount
 	}
 
-	public getAngle(): number 
+	public getAngle(): number
 	{
 		return this.data.visualization.angle
 	}
 
 	public getDirections(): number[]
 	{
-		return this.data.directions.map((direction) => direction / 90 * 2)
-	}
-	
-	public hadDirection(direction: number): boolean 
-	{
-		let direction = direction / 2 * 90
-		return this.data.directions.indexOf(direction) >= 0
+		return this.data.directions.map((direction: number) => direction / 90 * 2)
 	}
 
-	public hasAnimations(): boolean 
+	public hasDirection(direction: number): boolean
+	{
+		let finalDirection = direction / 2 * 90
+		return this.data.directions.indexOf(finalDirection) >= 0
+	}
+
+	public hasAnimations(): boolean
 	{
 		return this.data.visualization.animations != null
 	}
@@ -97,12 +96,12 @@ export default class Furniture {
             && this.data.visualization.animations[animation].layers[layer] != null
     }
 
-	public getAnimations(): string[] 
+	public getAnimations(): string[]
 	{
         return Object.keys(this.data.visualization.animations)
     }
 
-	public getFrameFrom(animation: number, layer: number, frameCount: number): number 
+	public getFrameFrom(animation: number, layer: number, frameCount: number): number
 	{
         if (this.hasAnimationForLayer(animation, layer)) {
             let animationLayer = this.data.visualization.animations[animation].layers[layer]
@@ -125,15 +124,23 @@ export default class Furniture {
 		return this.data.visualization.colors != null
     }
 
-	public hasColorForLayer(color: number, layer: number): boolean 
+	public hasColor(color: number): boolean
+	{
+        return this.hasColors()
+            && this.data.visualization.colors[color] != null
+    }
+
+	public hasColorForLayer(color: number, layer: number): boolean
 	{
         return this.hasColor(color)
+			&& this.data != null
             && this.data.visualization.colors[color].layers[layer] != null
     }
 
     public getColorFrom(color: number, layer: number): number
 	{
-        if (this.hasColorForLayer(color, layer)) {
+        if (this.hasColorForLayer(color, layer))
+		{
             return this.data.visualization.colors[color].layers[layer].color
         }
 
@@ -150,7 +157,7 @@ export default class Furniture {
         return String.fromCharCode(layer + 97)
     }
 
-	private assetNameFrom(size: number|string, layer: number, direction?: number, frame?: number): string 
+	private assetNameFrom(size: number|string, layer: number, direction?: number, frame?: number): string
 	{
         let layerChar = this.layerFromNumber(layer)
         let assetName = this.data.name + "_" + size + "_" + layerChar
@@ -161,14 +168,14 @@ export default class Furniture {
         return assetName;
     }
 
-	private hasAsset(assetName: string) 
+	private hasAsset(assetName: string)
 	{
         return this.data.assets[assetName] != null
     }
 
 	// PIXI.Sprite
 	// Phaser.GameObjects.
-	public getSpriteFrom(size: number|string, layer: number, direction?: number, frame?: number): Phaser.GameObjects.Sprite 
+	public getSpriteFrom(size: number|string, layer: number, direction?: number, frame?: number): Phaser.GameObjects.Sprite
 	{
         let assetName = this.assetNameFrom(size, layer, direction, frame)
 
@@ -181,14 +188,11 @@ export default class Furniture {
 
             try {
 				// create image and then the texture name -> create sprite -> name_sourcename.png
-                let layerSprite = new Phaser.GameObjects.Sprite(this.scene, x, y, this.data.name + "_" + sourceName + ".png")
+                let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name + "_" + sourceName + ".png")
 
-                layerSprite.x = -asset.x
-                layerSprite.y = -asset.y
-                layerSprite.z = 0
-
-                if (asset.flipH) {
-                    layerSprite.scale.x = -1
+                if (asset.flipH)
+				{
+                    layerSprite.scaleX = -1
                     layerSprite.x *= -1
                 }
 
@@ -202,12 +206,12 @@ export default class Furniture {
         return null
     }
 
-	public hasLayers(): boolean 
+	public hasLayers(): boolean
 	{
         return this.data.visualization.layers != null
     }
 
-    public hasLayer(layer: number): boolean 
+    public hasLayer(layer: number): boolean
 	{
         return this.hasLayers()
             && this.data.visualization.layers[layer] != null
@@ -218,7 +222,7 @@ export default class Furniture {
         return this.data.visualization.directions != null
     }
 
-    public hasVisualDirection(direction: number): boolean 
+    public hasVisualDirection(direction: number): boolean
 	{
         return this.hasVisualDirections()
             && this.data.visualization.directions[direction] != null
@@ -230,14 +234,14 @@ export default class Furniture {
             && this.data.visualization.directions[direction].layers[layer] != null
     }
 
-    private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer:FurnitureData.ILayer) 
+    private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer: FurnitureData.ILayer)
 	{
         if (layer.alpha != null) {
             sprite.alpha = layer.alpha / 255
         }
 
-        if (layer.ink != null && PIXI.BLEND_MODES[layer.ink] != null) {
-            sprite.blendMode = PIXI.BLEND_MODES[layer.ink]
+        if (layer.ink != null && Phaser.BlendModes[layer.ink] != null) {
+            sprite.blendMode = Phaser.BlendModes[layer.ink]
         }
 
         if (layer.x != null)

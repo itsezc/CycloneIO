@@ -46,7 +46,6 @@ export default class Room extends Phaser.Scene
      */
     preload()
     {
-
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
@@ -97,6 +96,8 @@ export default class Room extends Phaser.Scene
 
         this.registerInputEvents()
 
+		//this.add(RoomSprite.furnitureContainer) <- add to scene 
+
         /* this.map = new RoomMap(this, [[1, 1, 1]]) */
 
         var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
@@ -106,8 +107,6 @@ export default class Room extends Phaser.Scene
 
         var tileWidth = 64
         var thickness = 7.5
-
-        var tile : Phaser.GameObjects.Graphics
 
         for (let y = 0; y < map.length; y++)
         {
@@ -182,16 +181,16 @@ export default class Room extends Phaser.Scene
         }
 
        // var coin = this.add.image(96, 32, 'coin', '5_CF_1_coin_bronze_CF_1_coin_bronze_64_a_0_0')
-        var sofa = this.add.image(69, -6, 'sofa', '5_hcsohva_hcsohva_64_a_2_0.png')
-        var sofa2 = this.add.image(29, 0, 'sofa', '15_hcsohva_hcsohva_64_c_2_0.png')
-        var sofa3 = this.add.image(15, 23, 'sofa', '22_hcsohva_hcsohva_64_d_2_0.png')
+        // var sofa = this.add.image(69, -6, 'sofa', '5_hcsohva_hcsohva_64_a_2_0.png')
+        // var sofa2 = this.add.image(29, 0, 'sofa', '15_hcsohva_hcsohva_64_c_2_0.png')
+        // var sofa3 = this.add.image(15, 23, 'sofa', '22_hcsohva_hcsohva_64_d_2_0.png')
 
-		//= false;
+		// //= false;
 
-        //coin.depth = 1
-        sofa.depth = 1
-        sofa2.depth = 1
-        sofa3.depth = 1
+        // //coin.depth = 1
+        // sofa.depth = 1
+        // sofa2.depth = 1
+        // sofa3.depth = 1
         //this.add.image(0, -100, 'tile')
 
 		// Zoom out (0.5). max: 10

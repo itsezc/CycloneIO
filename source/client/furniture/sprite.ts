@@ -1,6 +1,6 @@
 import Furniture from './furniture'
 
-export default class FurnitureSprite extends Phaser.GameObject.Container {
+export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private static FPS = 24
     private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
     private static DEFAULT_SIZE = 64
@@ -16,7 +16,7 @@ export default class FurnitureSprite extends Phaser.GameObject.Container {
     private color: number
 
     public constructor(furniture: Furniture) {
-        super();
+        super(furniture)
 
         this.furniture = furniture
         this.playing = false
@@ -28,20 +28,6 @@ export default class FurnitureSprite extends Phaser.GameObject.Container {
         this.setDirection(this.furniture.getDirections()[0])
         this.color = null
 	}
-	
-	/**
-	 * var timer = scene.time.addEvent({
-    delay: 500,                // ms
-    callback: callback,
-    args: [],
-    callbackScope: thisArg,
-    loop: fasle,
-    repeat: 0,
-    startAt: 0,
-    timeScale: 1,
-    paused: false
-});
-	 */
 
     public start() {
         if (!this.playing) {
@@ -155,7 +141,7 @@ export default class FurnitureSprite extends Phaser.GameObject.Container {
             }
         }
 
-        this.children.sort((a, b) => {
+        this.children.sort((a: any,  b: any) => {
             return a.z - b.z
         })
     }
