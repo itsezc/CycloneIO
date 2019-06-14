@@ -178,7 +178,7 @@ export default class Room extends Phaser.Scene
  */
                 // tile.setPosition(isometricX, isometricY)
             }
-        }
+        } 
 
        // var coin = this.add.image(96, 32, 'coin', '5_CF_1_coin_bronze_CF_1_coin_bronze_64_a_0_0')
         // var sofa = this.add.image(69, -6, 'sofa', '5_hcsohva_hcsohva_64_a_2_0.png')
