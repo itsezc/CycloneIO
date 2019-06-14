@@ -9,13 +9,16 @@ const { host, port } = server
 
 import RoomCamera from './camera'
 import RoomSprite from './sprite'
+import FurnitureSprite from '../furniture/sprite';
 
 // import RoomMap from './tiles/map'
 
 /* import RoomItem from './items/item' */
+import FurnitureData from '../furniture/data';
+import Furniture from '../furniture/furniture';
 
 /**
- * Room class
+* Room class
  * @extends {Scene}
  */
 export default class Room extends Phaser.Scene
@@ -29,13 +32,13 @@ export default class Room extends Phaser.Scene
     // private item!: RoomItem
 
     private clickTime!: number
-/* 
-    private map!: RoomMap */
+    /*
+        private map!: RoomMap */
 
     /**
      * @param {number} id - The room id
      */
-    constructor(id: number) 
+    constructor(id: number)
     {
         super({ key: 'room' })
         this.id = id
@@ -49,17 +52,22 @@ export default class Room extends Phaser.Scene
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-        this.load.atlas('coin','test/coin.png', 'test/coin.json')
-        this.load.atlas('sofa', 'test/sofa.png', 'test/sofa.json')
+        this.load.atlas('present_gen1', 'test/present_gen1.png', 'test/present_gen1_spritesheet.json')
+        this.load.json('present_gen1_data', 'test/present_gen1.json')
 
-		this.load.svg('tile', 'room/tile.svg')
+        this.load.atlas('ads_calip_fan', 'test/ads_calip_fan.png', 'test/ads_calip_fan_spritesheet.json')
+        this.load.json('ads_calip_fan_data', 'test/ads_calip_fan.json')
+
+        this.load.svg('tile', 'room/tile.svg')
+        this.load.image('floor_tile', 'room/floor_tile.png')
+        this.load.image('tile2', 'room/tile2.png')
         this.load.image('tile_hover', 'room/tile_hover.png')
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
         /*      this.load.image('tile', 'room/normal_tile.png')
                 this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
                 this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
                 this.load.image('tile_border', 'room/normal_tile_border.png')
-        
+
                 this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
                 this.load.image('tile_hover', 'room/tile_hover.png')
                 this.load.image('wall_right', 'room/wall_right.png')
@@ -79,7 +87,7 @@ export default class Room extends Phaser.Scene
     /**
      * Runs once, when the scene starts
      */
-    public init(): void 
+    public init(): void
     {
         this.socket = SocketIO(`${host}:${port}`)
         this.camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
@@ -90,32 +98,150 @@ export default class Room extends Phaser.Scene
     /**
      * Runs once, after all assets in preload are loaded
      */
-    public create(): void 
+    public create(): void
     {
         this.camera.create()
 
         this.registerInputEvents()
 
-		//this.add(RoomSprite.furnitureContainer) <- add to scene 
+        const room: FurnitureData.IRoom = {
+            heightmap: [
+                "000000XXXXXX",
+                "000000XXXXXX",
+                "000000XXXXXX",
+                "000000XXXXXX",
+                "00000000000X",
+                "00000000000X",
+                "00000000000X",
+                "00000000000X",
+                "00000000000X",
+                "XXXXXXXXXXXX"
+            ],
+            furnitures: [{
+                name: "ads_calip_fan",
+                roomX: 3,
+                roomY: 8,
+                direction: 2,
+                animation: 1
+            }, {
+                name: "ads_cllava2",
+                roomX: 0,
+                roomY: 0,
+                animation: 0
+            }, {
+                name: "ads_cllava2",
+                roomX: 1,
+                roomY: 0
+            }, {
+                name: "ads_cllava2",
+                roomX: 2,
+                roomY: 0
+            }, {
+                name: "ads_calip_pool",
+                roomX: 8,
+                roomY: 6
+            }]
+        }
+
+        //this.add(RoomSprite.furnitureContainer) <- add to scene 
 
         /* this.map = new RoomMap(this, [[1, 1, 1]]) */
 
-        var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+        var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1],
+        [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+
+
 
         // loop for the array length and then for each sub array element length loop inside of it
         // 5.5
+        /* 
+                var tiles = this.add.container(0, 0) */
 
-        var tileWidth = 64
-        var thickness = 7.5
+        let floorMaxY = room.heightmap.length;
+        let floorMaxX = room.heightmap[0].length;
 
-        for (let y = 0; y < map.length; y++)
+        let tileModules = floorMaxX;
+
+        let floorIndex = 0;
+        do
         {
-            for (let x = 0; x < map[y].length; x++)
+            let tileX = Math.floor(floorIndex % tileModules);
+            let tileY = Math.floor(floorIndex / tileModules);
+
+            let tileData = room.heightmap[tileY].charAt(tileX);
+
+            let screenX = this.getScreenX(tileX, tileY);
+            let screenY = this.getScreenY(tileX, tileY);
+
+            if (tileData != "X")
             {
-                var isometricX = (x - y) * tileWidth / 2
-				var isometricY = ((x + y) / 2) * tileWidth / 2
-				
-				var tile = this.add.image(isometricX, isometricY, 'tile')
+                /*                 if (tileX < 1) {
+                                    let leftWallSprite = new PIXI.Sprite(RoomSprite.leftWall);
+                                    leftWallSprite.x = screenX - 8;
+                                    leftWallSprite.y = screenY - 122;
+                                } */
+
+                /*                 if (tileY < 1) {
+                                    let rightWallSprite = new PIXI.Sprite(RoomSprite.rightWall);
+                
+                                    rightWallSprite.x = screenX + 32,
+                                    rightWallSprite.y = screenY - 122;
+                
+                                    container.addChild(rightWallSprite);
+                                } */
+
+                let floorSprite = this.add.image(screenX, screenY, 'floor_tile')
+            }
+        }
+        while (++floorIndex < floorMaxX * floorMaxY);
+
+        var furnitureData = this.cache.json.get(furnitureRoomData.name)
+        var roomSprite = new RoomSprite(this)
+
+        room.furnitures.forEach((furnitureRoomData) =>
+        {
+            console.log(furnitureRoomData)
+
+            //var furniture = new Furniture(this, furnitureData)
+
+            /* let furnitureSprite = new FurnitureSprite(this, furniture)
+
+            if (furnitureRoomData.animation)
+            {
+                furnitureSprite.animateAndStart(furnitureRoomData.animation);
+            }
+
+            if (furnitureRoomData.color)
+            {
+                furnitureSprite.setColor(furnitureRoomData.color);
+            }
+
+            if (furnitureRoomData.direction)
+            {
+                furnitureSprite.setDirection(furnitureRoomData.direction);
+            }
+
+            roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY); */
+
+        })
+
+        /* for (let y = 0;y < map.length;y++)
+        {
+            for (let x = 0;x < map[y].length;x++)
+            {
+/*                 // simplified version
+                var isometricCoords = this.tileToPixels(x, y)
+                var isometricCoords = this.coordsToIsometric(x, y)
+
+                var tile = this.add.image(isometricCoords.x, isometricCoords.y, 'tile')
+                tiles.add(tile)
+
+                tile.setInteractive({ pixelPerfect: true })
+
+                tile.on('pointerdown', (pointer: Phaser.Input.Pointer) =>
+                {
+
+                })
 
                 // var topTileSurface = new Phaser.Geom.Polygon(
                 //     [
@@ -158,43 +284,72 @@ export default class Room extends Phaser.Scene
 
                 // tile.fillStyle(0x6F6F49)
                 // tile.fillPoints(bottomTileThickness.points)
-                
+
                 // tile.lineStyle(0.5, 0x676744)
                 // tile.strokePoints(bottomTileThickness.points)
 
                 // tile.setInteractive(topTileSurface, Phaser.Geom.Polygon.Contains)
 
-/*                 var tileHover: Phaser.GameObjects.Image
+                /*                 var tileHover: Phaser.GameObjects.Image
 
-                tile.on('pointerover', () => {
-                    tileHover = this.add.image(isometricX, isometricY, 'tile_hover')
-                    tileHover.depth = 2
-                    console.log(tile.x)
-                })
-    
-                tile.on('pointerout', () => {
-                    tileHover.destroy()
-                })
- */
+                                tile.on('pointerover', () => {
+                                    tileHover = this.add.image(isometricX, isometricY, 'tile_hover')
+                                    tileHover.depth = 2
+                                    console.log(tile.x)
+                                })
+
+                                tile.on('pointerout', () => {
+                                    tileHover.destroy()
+                                })
+                 
                 // tile.setPosition(isometricX, isometricY)
             }
-        } 
+        } */
 
-       // var coin = this.add.image(96, 32, 'coin', '5_CF_1_coin_bronze_CF_1_coin_bronze_64_a_0_0')
-        // var sofa = this.add.image(69, -6, 'sofa', '5_hcsohva_hcsohva_64_a_2_0.png')
-        // var sofa2 = this.add.image(29, 0, 'sofa', '15_hcsohva_hcsohva_64_c_2_0.png')
-        // var sofa3 = this.add.image(15, 23, 'sofa', '22_hcsohva_hcsohva_64_d_2_0.png')
+        /*         var sofacoords = this.placeCoordsTest(5, 1)
+                var coincoords = this.placeCoordsTest(2, 2) */
 
-		// //= false;
+        /*         var presentCoords = this.coordsToIsometric(1, 2)
+                //var calipCoords = this.coordsToIsometric(0, 0)
+        
+                var presentData = this.cache.json.get('present_gen1_data')
+                //var calipData = this.cache.json.get('ads_calip_fan_data')
+        
+                var presentOffsets = presentData.assets.present_gen1_64_a_0_0
+                //var calipOffsets = calipData.assets.ads_calip_fan_64_a_2_0
+        
+                var present = this.add.image(presentCoords.x + 32, presentCoords.y + 16, 'present_gen1', 'present_gen1_present_gen1_64_a_0_0.png').setDepth(1)
+         */
+        /*         var presentData = this.cache.json.get('present_gen1_data')
+                var presentOffsets = presentData.assets.present_gen1_64_a_0_0
+                console.log(presentOffsets)
+                var present = this.add.image(0, 0, 'present_gen1', 'present_gen1_present_gen1_64_a_0_0.png').setDepth(1)
+        
+                present.x = this.getScreenX(2, 2) + 32;
+                present.y = this.getScreenY(2, 2) + 16; */
 
-        // //coin.depth = 1
-        // sofa.depth = 1
-        // sofa2.depth = 1
-        // sofa3.depth = 1
+        //var calipData = this.cache.json.get('ads_calip_fan_data')
+
+        // layer 0 -> dir 0
+        /*         var calipOffsets = calipData.assets.ads_calip_fan_64_a_2_0
+                var test = calipData.visualization.directions[0].layers[1]
+                console.log(test)
+        
+                var calip = this.add.image(0, 0, 'ads_calip_fan', 'ads_calip_fan_ads_calip_fan_64_a_2_0.png')
+        
+                calip.x = this.getScreenX(2, 2) + 32
+                calip.y = this.getScreenY(2, 2) + 16
+                
+                calip.x += test.x
+                calip.y += test.y
+        
+                calip.toggleFlipX()
+                this.camera.setZoom(1)
+         */
         //this.add.image(0, -100, 'tile')
 
-		// Zoom out (0.5). max: 10
-		//this.camera.setZoom(0.55)
+        // Zoom out (0.55). max: 10
+        //this.camera.setZoom(0.55)
 
         /* this.registerInputEvents()
 
@@ -205,7 +360,7 @@ export default class Room extends Phaser.Scene
         this.registerRoomsEvents()
 
         this.registerItemsEvents()
-        
+
         // this.moodlightPreview = this.add.graphics()
         // this.moodlightPreview.fillStyle(0x1844bd, 1)
         // this.moodlightPreview.fillRect(0, 0, 50, 60);
@@ -240,18 +395,36 @@ export default class Room extends Phaser.Scene
         // this.camera3d.transformChildren(this.transform);
     }
 
-    public registerInputEvents(): void 
+    private getScreenX(x: number, y: number): number
     {
-        this.input.on('pointermove', (pointer: any) => 
+        return x * 32 - y * 32;
+    }
+
+    private getScreenY(x: number, y: number): number
+    {
+        return x * 16 + y * 16;
+    }
+
+    coordsToIsometric(x: number, y: number)
+    {
+        var toX = (x - y) * 32
+        var toY = (x + y) * 16
+
+        return { x: toX, y: toY }
+    }
+
+    public registerInputEvents(): void
+    {
+        this.input.on('pointermove', (pointer: any) =>
         {
 
-            if (pointer.primaryDown) 
+            if (pointer.primaryDown)
             {
                 this.camera.scroll(pointer)
 
             }
 
-            else 
+            else
             {
                 this.camera.isScrolling = false
             }
@@ -259,9 +432,9 @@ export default class Room extends Phaser.Scene
         }, this)
     }
 
-    public registerScaleEvents(): void 
+    public registerScaleEvents(): void
     {
-        this.scale.on('resiome', (gameSize: any) => 
+        this.scale.on('resiome', (gameSize: any) =>
         {
             var width = gameSize.width
             var height = gameSize.height
@@ -271,14 +444,14 @@ export default class Room extends Phaser.Scene
         }, this)
     }
 
-    public emitRoom(): void 
+    public emitRoom(): void
     {
         this.socket.emit('newRoom', this.id)
     }
 
-    public registerRoomsEvents(): void 
+    public registerRoomsEvents(): void
     {
-        this.socket.on('newRoom', (map: any) => 
+        this.socket.on('newRoom', (map: any) =>
         {
             //this.addTileMap(map)
         })
@@ -299,12 +472,12 @@ export default class Room extends Phaser.Scene
     /*     public addTileMap(map: [][]): void {
             this.tileMap = new RoomTileMap(this, map)
         } */
-/* 
-    public addItem(coordinates: Vector, textureName: string)
-    {
-        this.item = new RoomItem(this, textureName, 1, 1, 1, coordinates, 0, 0)
-        this.item.load()
-    } */
+    /*
+        public addItem(coordinates: Vector, textureName: string)
+        {
+            this.item = new RoomItem(this, textureName, 1, 1, 1, coordinates, 0, 0)
+            this.item.load()
+        } */
 
     // /**
     //  * Adds a new furniture
@@ -341,15 +514,15 @@ export default class Room extends Phaser.Scene
     //     //         var facing = parts[5]
 
     //     //         return resolution == 64 && cronological === 'a' && facing == 2
-    //     //     })   
+    //     //     })
 
     //     //     console.log(defaultFrame)
 
     //     //     // x = group position
-    //     //     // 1st object x = 0 
+    //     //     // 1st object x = 0
     //     //     // 2nd object 0 - 10
     //     //     furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
-    //     //     furnitureLayer.setDepth(3, 1) // 
+    //     //     furnitureLayer.setDepth(3, 1) //
 
     //     //     // for (var i = 0; i < frames.length; i++)
     //     //     // {
@@ -359,10 +532,10 @@ export default class Room extends Phaser.Scene
     //     //     //     // var y = Phaser.Math.Between(50, 100)
 
     //     //     //     // Get layers from FurniData
-    //     //     //     // let validFurni = [8, 5] 
+    //     //     //     // let validFurni = [8, 5]
     //     //     //     // console.log(i)
 
-    //     //     //    
+    //     //     //
 
     //     //     //     // if(validFurni.includes(i)) {
     //     //     //     //     this.add.image(0, -35, texture, frames[i]).setDepth(i)
@@ -373,37 +546,40 @@ export default class Room extends Phaser.Scene
     //     // })
     //     //this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
     // }
+    /* @param {Vector} cartesian - The cartesian coordinates of the sprite
+     * @return {Vector} Isometric coordinates of the sprite
+     */
+    public cartesianToIsometric(cartesian: Vector): Vector
+    {
+        return { x: cartesian.x - cartesian.y, y: (cartesian.x + cartesian.y) / 2, z: cartesian.z }
+    }
+
     /**
-	 * @param {Vector} cartesian - The cartesian coordinates of the sprite
-	 * @return {Vector} Isometric coordinates of the sprite
-	 */
-	public cartesianToIsometric(cartesian: Vector): Vector { 
-		return { x: cartesian.x - cartesian.y, y: (cartesian.x + cartesian.y) / 2, z: cartesian.z }
-	}
+     * @param {Vector} isometric - The isometric coordinates of the sprite
+     * @return {Vector} Cartesian coordinates of the sprite
+     */
+    public isometricToCartesian(isometric: Vector): Vector
+    {
+        return { x: (isometric.y * 2 + isometric.x) / 2, y: (isometric.y * 2 - isometric.x) / 2, z: isometric.z }
+    }
 
-	/**
-	 * @param {Vector} isometric - The isometric coordinates of the sprite
-	 * @return {Vector} Cartesian coordinates of the sprite
-	 */
-	public isometricToCartesian(isometric: Vector): Vector {
-		return { x: (isometric.y * 2 + isometric.x) / 2, y: (isometric.y * 2 - isometric.x) / 2, z: isometric.z }
-	}
+    /**
+     * @param {Vector} coordinates - The coordinates of the sprite
+     * @return {Vector} Cartesian coordinates of the sprite
+     */
+    public coordsToCartesian(coordinates: Vector): Vector
+    {
+        return { x: coordinates.x * 32, y: coordinates.y * 32, z: coordinates.z }
+    }
 
-	/**
-	 * @param {Vector} coordinates - The coordinates of the sprite
-	 * @return {Vector} Cartesian coordinates of the sprite
-	 */
-	public coordsToCartesian(coordinates: Vector): Vector {
-		return { x: coordinates.x * 32, y: coordinates.y * 32, z: coordinates.z }
-	}
-
-	/**
-	 * @param {Vector} cartesian - The cartesian coordinates of the sprites
-	 * @return {Vector} Coordinates of the sprite
-	 */
-	public cartesianToCoords(cartesian: Vector): Vector {
-		return { x: Math.floor(cartesian.x / 32), y: Math.floor(cartesian.y / 32), z: cartesian.z }
-	}
+    /**
+     * @param {Vector} cartesian - The cartesian coordinates of the sprites
+     * @return {Vector} Coordinates of the sprite
+     */
+    public cartesianToCoords(cartesian: Vector): Vector
+    {
+        return { x: Math.floor(cartesian.x / 32), y: Math.floor(cartesian.y / 32), z: cartesian.z }
+    }
 
     /**
      * The double click event

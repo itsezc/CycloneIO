@@ -1,6 +1,9 @@
 import Furniture from './furniture'
+import Room from '../rooms/room';
 
-export default class FurnitureSprite extends Phaser.GameObjects.Container {
+export default class FurnitureSprite extends Phaser.GameObjects.Container
+{
+    public readonly scene: Room
     private static FPS = 24
     private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
     private static DEFAULT_SIZE = 64
@@ -11,52 +14,60 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private frameCount: number
     private totalTimeRunning: number
 
-    private animation: number
-    private direction: number
-    private color: number
+    private direction!: number
+    private animation!: number
+    private color!: number
+    private timer!: Phaser.Types.Time.TimerEventConfig
 
-    public constructor(furniture: any) {
-        super(furniture)
+    public constructor(scene: Room, furniture: Furniture)
+    {
+        super(scene)
+
+        this.scene = scene
 
         this.furniture = furniture
         this.playing = false
 
         this.frameCount = 0
         this.totalTimeRunning = 0
-        
-        this.animation = null
-        this.setDirection(this.furniture.getDirections()[0])
-        this.color = null
-	}
 
-    public start() {
-        if (!this.playing) {
+        this.setDirection(this.furniture.getDirections()[0])
+    }
+
+    public start()
+    {
+        if (!this.playing)
+        {
             this.playing = true
 
             //PIXI.ticker.shared.add(this.update, this)
-			this.timer = this.scene.time.addEvent({
-				delay: 0, 
-				callback: this.update,
-				callbackScope: this, 
-				loop: true
-			})
+            this.timer = this.scene.time.addEvent({
+                delay: 0,
+                callback: this.update,
+                callbackScope: this,
+                loop: true
+            })
         }
     }
 
-    public stop() {
-        if (this.playing) {
+    public stop()
+    {
+        if (this.playing)
+        {
             this.playing = false;
 
-            this.timer.remove()
+            //this.timer.remove()
         }
     }
 
     public animateAndStart(animation: number)
-	{
+    {
         if (this.furniture.hasAnimation(animation)
-            || animation == null) {
-            
-            if (this.animation != animation) {
+            || animation == null)
+        {
+
+            if (this.animation != animation)
+            {
                 this.animation = animation;
 
                 this.updateFurnitureView()
@@ -67,12 +78,14 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     public animateAndStop(animation: number)
-	{
+    {
         if (this.furniture.hasAnimation(animation)
-            || animation == null) {
+            || animation == null)
+        {
             this.stop();
 
-            if (this.animation != animation) {
+            if (this.animation != animation)
+            {
                 this.animation = animation
 
                 this.updateFurnitureView()
@@ -81,36 +94,36 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     public setAnimation(animation: number)
-	{
+    {
         if (this.furniture.hasAnimation(animation)) 
-		{
+        {
             this.animation = animation
         }
     }
 
     public setDirection(direction: number)
-	{
+    {
         if (this.furniture.hasDirection(direction))
-		{
+        {
             this.direction = direction
         }
     }
 
     public setColor(color: number)
-	{
+    {
         if (this.furniture.hasColor(color)
             || this.color == null) 
-		{
+        {
             this.color = color
         }
-	}
-	
+    }
+
     public update(deltaTime: number)
-	{
+    {
         this.totalTimeRunning += deltaTime
         let frameCount = Math.round(this.totalTimeRunning / FurnitureSprite.FPS_TIME_MS)
         if (this.frameCount != frameCount)
-		{
+        {
             this.frameCount = frameCount
 
             this.updateFurnitureView()
@@ -118,35 +131,38 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     public updateFurnitureView()
-	{
+    {
         this.removeAll()
 
-        for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
-		{
+        for (let layerId = 0;layerId < this.furniture.getLayerCount();layerId++)
+        {
             let frameIndex = this.furniture.getFrameFrom(this.animation, layerId, this.frameCount)
             let layerSprite = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, layerId, this.direction, frameIndex)
 
             if (layerSprite != null)
-			{
+            {
                 this.furniture.updateSpriteFrom(layerSprite, layerId)
                 this.furniture.updateSpriteFromDirection(layerSprite, this.direction, layerId)
 
-                if (this.furniture.hasColorForLayer(this.color, layerId)) {
+                if (this.furniture.hasColorForLayer(this.color, layerId))
+                {
                     let color = this.furniture.getColorFrom(this.color, layerId)
 
                     layerSprite.tint = color
                 }
-            
+
                 this.add(layerSprite)
             }
         }
 
-        this.children.sort((a: any,  b: any) => {
+        this.getAll().sort((a: any, b: any) =>
+        {
             return a.z - b.z
         })
     }
 
-    public destroy() {
+    public destroy()
+    {
         this.stop()
 
         super.destroy()

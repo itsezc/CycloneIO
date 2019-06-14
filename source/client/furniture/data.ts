@@ -1,66 +1,85 @@
-declare namespace FurnitureData {
+namespace FurnitureData
+{
 	export interface IData {
-		type: string
-		name: string
+		type: string;
+		name: string;
 		visualizationType: string;
-		logicType: string
-		spritesheet: string
-		dimensions: IDimension
-		directions: number[]
-		assets: { [key: string] : IAsset }
-		visualization: IVisualization
+		logicType: string;
+		spritesheet: string;
+		dimensions: IDimension;
+		directions: number[];
+		assets: { [key: string] : IAsset };
+		visualization: IVisualization;
 	}
-
+	
 	export interface IDimension {
-		x: number
-		y: number
-		z: number
+		x: number;
+		y: number;
+		z: number;
 	}
-
+	
 	export interface IAsset {
-		source?: string
-		x: number
-		y: number
-		flipH?: boolean
+		source?: string;
+		x: number;
+		y: number;
+		flipH?: boolean;
 	}
-
+	
 	export interface IVisualization {
-		layerCount: number
-		angle: number
-		layers?: { [key: string] : ILayer }
-		colors?: { [key: string] : IColor }
-		directions?: { [key: string] : IDirections }
-		animations?: { [key: string] : IAnimation }
+		layerCount: number;
+		angle: number;
+		layers?: { [key: string] : ILayer };
+		colors?: { [key: string] : IColor };
+		directions?: { [key: string] : IDirections };
+		animations?: { [key: string] : IAnimation };
 	}
-
+	
 	export interface ILayer {
-		x?: number
-		y?: number
-		z?: number
-		alpha?: number
-		ink?: string
-		ignoreMouse?: boolean
+		x?: number;
+		y?: number;
+		z?: number;
+		alpha?: number;
+		ink?: string;
+		ignoreMouse?: boolean;
 	}
-
+	
 	export interface IColor {
-		layers: { [key: string] : IColorLayer }
+		layers: { [key: string] : IColorLayer };
 	}
-
+	
 	export interface IColorLayer {
-		color: number
+		color: number;
 	}
-
+	
 	export interface IDirections {
-		layers: { [key: string] : ILayer }
+		layers: { [key: string] : ILayer };
 	}
-
+	
 	export interface IAnimation {
-		layers: { [key: string] : IAnimationLayer }
+		layers: { [key: string] : IAnimationLayer };
+	}
+	
+	export interface IAnimationLayer {
+		loopCount?: number;
+		frameRepeat?: number;
+		frames: number[];
 	}
 
-	export interface IAnimationLayer {
-		loopCount?: number
-		frameRepeat?: number
-		frames: number[]
+	export interface IRoom 
+	{
+		heightmap: string[]
+		furnitures: IFurniture[]
+	}
+
+	export interface IFurniture
+	{
+		name: string
+		roomX: number
+		roomY: number
+		direction?: number
+		animation?: number
+		color?: number
 	}
 }
+
+export default FurnitureData

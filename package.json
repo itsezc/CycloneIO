@@ -104,6 +104,7 @@
   "dependencies": {
     "@hapi/hapi": "^18.3.1",
     "@hapi/inert": "^5.2.0",
+    "@hapi/joi": "^15.0.3",
     "@svgdotjs/svg.js": "^3.0.12",
     "@types/react-tabs": "^2.3.1",
     "@types/socket.io": "^2.1.2",
@@ -118,6 +119,7 @@
     "fast-xml-parser": "^3.12.16",
     "graphql": "^14.3.1",
     "hapi-webpack-plugin": "^3.0.0",
+    "joi": "^14.3.1",
     "jsonwebtoken": "^8.5.1",
     "module-alias": "^2.2.0",
     "npm": "^6.9.0",

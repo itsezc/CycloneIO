@@ -7,18 +7,12 @@ const config = {
     parent: 'game',
     render: {
        pixelArt: true
-	},
-	// physics: {
-	// 	default: 'arcade',
-	// 	arcade: {
-	// 		fps: 30
-	// 	},
-	// },
+    },
     disableContextMenu: false,
     scale: {
         mode: Phaser.Scale.ScaleModes.RESIZE,
         width: window.innerWidth,
-        height: window.innerHeight
+        height: window.innerHeight,
     }
 }
 

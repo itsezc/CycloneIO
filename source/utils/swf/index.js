@@ -19,7 +19,7 @@ const downloadFurni = async (furni) => {
 			//Extract images from swf
 
 			const rawData = fs.readFileSync(path.join(__dirname, 'furni', furni.classname, `${furni.classname}.swf`));
- 
+
 			const swf = await readFromBufferP(rawData)
 			const ts = await Promise.all(extractImages(swf.tags))
 			let metaJSON = [];
@@ -35,7 +35,7 @@ const downloadFurni = async (furni) => {
 
 			spritesheet(path.join(__dirname, 'furni', furni.classname, `*.png`), { format: 'json', name: `${furni.classname}_sheet`, path: path.join(__dirname, 'furni', furni.classname)}, err => {
 				if (err) throw err;
-			   
+
 				setTimeout(() => {
 					console.log(chalk`{green [Done]} Generating Spritesheet ${furni.name} (${furni.classname})`);
 					resolve();
@@ -51,7 +51,7 @@ const downloadSWFs = async (furnis) => {
 	for (let furniId in furnis)
 	{
 		const furni = furnis[furniId];
-		
+
 		console.log(chalk`{blue [Downloading]} ${furni.name} (${furni.classname})`);
 
 		try {
@@ -69,11 +69,11 @@ Download(Config.furniDataURL, path.join(__dirname, 'raw')).then(() => {
 	const xml = fs.readFileSync(path.join(__dirname, 'raw', 'furnidata.xml'));
 
 	const {roomitemtypes, wallitemtypes} = Parser.parse(xml.toString(), {
-		attributeNamePrefix : '', 
-		ignoreAttributes: false, 
-		parseAttributeValue: true 
+		attributeNamePrefix : '',
+		ignoreAttributes: false,
+		parseAttributeValue: true
 	}).furnidata;
-	
+
 	downloadSWFs(roomitemtypes.furnitype.filter(furni => !furni.classname.includes('*')));
 	downloadSWFs(wallitemtypes.furnitype);
 });

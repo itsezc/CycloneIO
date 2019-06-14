@@ -3,11 +3,10 @@ import Config from '../../config.json'
 import Chalk from 'chalk'
 import Rainbow from 'chalk-animation'
 
-import Logger, { CycloneLogger } from '../utils/logger'
 import Server from './network/server'
 
 //import RoomManager from './hotel/rooms/manager'
-
+import Logger, { CycloneLogger } from '../utils/logger';
 
 /**
  * Environment class
