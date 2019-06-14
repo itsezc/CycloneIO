@@ -1,13 +1,76 @@
 
 //import type { FurnitureType } from '../../common/enums/furniture/type'
-import FurnitureData from './data.ts'
 import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
+export interface IData {
+	type: string
+	name: string
+	visualizationType: string;
+	logicType: string
+	spritesheet: string
+	dimensions: IDimension
+	directions: number[]
+	assets: { [key: string] : IAsset }
+	visualization: IVisualization
+}
+
+export interface IDimension {
+	x: number
+	y: number
+	z: number
+}
+
+export interface IAsset {
+	source?: string
+	x: number
+	y: number
+	flipH?: boolean
+}
+
+export interface IVisualization {
+	layerCount: number
+	angle: number
+	layers?: { [key: string] : ILayer }
+	colors?: { [key: string] : IColor }
+	directions?: { [key: string] : IDirections }
+	animations?: { [key: string] : IAnimation }
+}
+
+export interface ILayer {
+	x?: number
+	y?: number
+	z?: number
+	alpha?: number
+	ink?: string
+	ignoreMouse?: boolean
+}
+
+export interface IColor {
+	layers: { [key: string] : IColorLayer }
+}
+
+export interface IColorLayer {
+	color: number
+}
+
+export interface IDirections {
+	layers: { [key: string] : ILayer }
+}
+
+export interface IAnimation {
+	layers: { [key: string] : IAnimationLayer }
+}
+
+export interface IAnimationLayer {
+	loopCount?: number
+	frameRepeat?: number
+	frames: number[]
+}
 
 export default class Furniture {
 
-	private data: FurnitureData.IData
-	private readonly scene: Room
+	private data: IData
+	public scene: Room
 
 	// private id: number // (Furniture Number)
 	// private spriteName: string
@@ -50,8 +113,9 @@ export default class Furniture {
 	// 	this.canSit = canSit
 	// }
 
-	constructor(data: FurnitureData.IData)
+	constructor(scene: Room, data: IData)
 	{
+		this.scene = scene
 		this.data = data
 	}
 
@@ -88,14 +152,21 @@ export default class Furniture {
 
 	public hasAnimation(animation: number): boolean
 	{
-        return this.hasAnimations()
-            && this.data.visualization.animations[animation] != null
+		if(this.data !== undefined)
+		{
+			return this.hasAnimations()
+            	&& this.data.visualization.animations[animation] != null
+		}
     }
 
 	public hasAnimationForLayer(animation: number, layer: number): boolean
 	{
-        return this.hasAnimation(animation)
-            && this.data.visualization.animations[animation].layers[layer] != null
+		if(this.data !== undefined) {
+			return this.hasAnimation(animation)
+            	&& this.data.visualization.animations[animation].layers[layer] != null
+		}
+
+        return false
     }
 
 	public getAnimations(): string[]
@@ -105,8 +176,10 @@ export default class Furniture {
 
 	public getFrameFrom(animation: number, layer: number, frameCount: number): number
 	{
-        if (this.hasAnimationForLayer(animation, layer)) {
-            let animationLayer = this.data.visualization.animations[animation].layers[layer]
+        if (this.hasAnimationForLayer(animation, layer))
+		{
+
+			let animationLayer = this.data.visualization.animations[animation].layers[layer]
             if (animationLayer.frames.length < 1) {
                 return 0
             }

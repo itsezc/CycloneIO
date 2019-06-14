@@ -8,6 +8,7 @@
 		"allowJs": true,
 		"resolveJsonModule": true,
 		"strict": true,
+		"strictNullChecks": false,
         "isolatedModules": false,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
