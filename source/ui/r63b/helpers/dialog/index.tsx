@@ -5,7 +5,7 @@ import { classNames, dragElement } from '../../utils/functions';
 type DialogProps = {
     defaultPos?: []
     subHeader?: boolean
-    axis?: string
+    axis?: any
     resize?: boolean
     styles?: {}
     minHeight?: number
@@ -25,7 +25,6 @@ export default class Dialog extends Component<DialogProps, any> {
 	static defaultProps = {
         defaultPos: [64, 64],
         subHeader: false,
-        axis: null,
         resize: false
     }
 
