@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Script from 'react-load-script'
+// import Script from 'react-load-script'
 
 import '../client/index.styl'
 
@@ -21,10 +21,17 @@ export default class Room extends Component {
 		super(props)
 	}
 
+	componentWillMount()
+	{
+		const script = document.createElement('script')
+		script.src = 'http://localhost:8080/client.js'
+		document.body.appendChild(script)
+	}
+
 	render() {
 		return(
 			<div className='client'>
-				<Script url='http://localhost:8080/client.js' />
+				{/* <Script url='http://localhost:8080/client.js' /> */}
 				<Actions />
 
 				<div className='room' id='game'></div>

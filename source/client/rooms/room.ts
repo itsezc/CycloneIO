@@ -16,6 +16,7 @@ import FurnitureSprite from '../furniture/sprite';
 /* import RoomItem from './items/item' */
 import FurnitureData from '../furniture/data';
 import Furniture from '../furniture/furniture';
+import Path from 'path'
 
 /**
 * Room class
@@ -32,6 +33,8 @@ export default class Room extends Phaser.Scene
     // private item!: RoomItem
 
     private clickTime!: number
+
+    private furnitures!: FurnitureSprite[] 
     /*
         private map!: RoomMap */
 
@@ -52,29 +55,36 @@ export default class Room extends Phaser.Scene
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-        this.load.atlas('present_gen1', 'test/present_gen1.png', 'test/present_gen1_spritesheet.json')
-        this.load.json('present_gen1_data', 'test/present_gen1.json')
+        // this.load.atlas('present_gen1', 'test/present_gen1.png', 'test/present_gen1_spritesheet.json')
+        // this.load.json('present_gen1_data', 'test/present_gen1.json')
 
-        this.load.atlas('ads_calip_fan', 'test/ads_calip_fan.png', 'test/ads_calip_fan_spritesheet.json')
-        this.load.json('ads_calip_fan_data', 'test/ads_calip_fan.json')
+        // this.load.atlas('ads_calip_fan', 'test/ads_calip_fan.png', 'test/ads_calip_fan_spritesheet.json')
+        // this.load.json('ads_calip_fan_data', 'test/ads_calip_fan.json')
 
         this.load.svg('tile', 'room/tile.svg')
         this.load.image('floor_tile', 'room/floor_tile.png')
         this.load.image('tile2', 'room/tile2.png')
         this.load.image('tile_hover', 'room/tile_hover.png')
-        //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
-        /*      this.load.image('tile', 'room/normal_tile.png')
-                this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
-                this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
-                this.load.image('tile_border', 'room/normal_tile_border.png')
 
-                this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
-                this.load.image('tile_hover', 'room/tile_hover.png')
-                this.load.image('wall_right', 'room/wall_right.png')
-                this.load.image('wall_left', 'room/wall_left.png')
-                this.load.image('wall_right', 'room/wall_right.png')
-                this.load.svg('stair_top', 'room/stair_top.svg')
-                this.load.svg('stair_right', 'room/stair_right.svg') */
+        this.load.image('wall_l', 'room/wall_l.png')
+        this.load.image('wall_r', 'room/wall_r.png')
+
+        this.load.image('avatar', 'https://www.habbo.com/habbo-imaging/avatarimage?figure=ca-1815-92.sh-290-62.hd-180-1009.ch-262-64.ha-3763-63.lg-280-1193.hr-831-54&headonly=0&direction=2&head_direction=2&action=std&gesture=wlk&size=m&frame=0')
+        //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
+        /*      
+            this.load.image('tile', 'room/normal_tile.png')
+            this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
+            this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
+            this.load.image('tile_border', 'room/normal_tile_border.png')
+
+            this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
+            this.load.image('tile_hover', 'room/tile_hover.png')
+            this.load.image('wall_right', 'room/wall_right.png')
+            this.load.image('wall_left', 'room/wall_left.png')
+            this.load.image('wall_right', 'room/wall_right.png')
+            this.load.svg('stair_top', 'room/stair_top.svg')
+            this.load.svg('stair_right', 'room/stair_right.svg')
+        */
 
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
@@ -82,6 +92,8 @@ export default class Room extends Phaser.Scene
         this.load.audio('report', 'audio/report.mp3')
         this.load.audio('achievement', 'audio/achievement.mp3')
         this.load.audio('respect', 'audio/respect.mp3')
+
+        this.load.image('room_background', 'https://i.imgur.com/4co7hEz.png')
     }
 
     /**
@@ -89,7 +101,7 @@ export default class Room extends Phaser.Scene
      */
     public init(): void
     {
-        this.socket = SocketIO(`${host}:${port}`)
+        //this.socket = SocketIO(`${host}:${port}`)
         this.camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
         // this.lights.enable()
@@ -106,40 +118,37 @@ export default class Room extends Phaser.Scene
 
         const room: FurnitureData.IRoom = {
             heightmap: [
-                "000000XXXXXX",
-                "000000XXXXXX",
-                "000000XXXXXX",
-                "000000XXXXXX",
-                "00000000000X",
-                "00000000000X",
-                "00000000000X",
-                "00000000000X",
-                "00000000000X",
-                "XXXXXXXXXXXX"
+                "000000000",
+                "000000000",
+                "000000000",
+                "000000000",
+                "0000000000",
+                "000000000",
+                "000000000",
+                "000000000",
+                "000000000",
+                "000000000",
+                "000000000",
+                "000000000",
+                "000000000",
             ],
             furnitures: [{
-                name: "ads_calip_fan",
-                roomX: 3,
-                roomY: 8,
-                direction: 2,
-                animation: 1
-            }, {
-                name: "ads_cllava2",
+                name: 'CF_50_goldbar',
                 roomX: 0,
-                roomY: 0,
-                animation: 0
-            }, {
-                name: "ads_cllava2",
+                roomY: 0
+            },
+            {
+                name: 'throne',
                 roomX: 1,
-                roomY: 0
-            }, {
-                name: "ads_cllava2",
-                roomX: 2,
-                roomY: 0
-            }, {
-                name: "ads_calip_pool",
-                roomX: 8,
-                roomY: 6
+                roomY: 2,
+                direction: 0
+            },
+            {
+                name: "ads_calip_fan",
+                roomX: 1,
+                roomY: 3,
+                direction: 4,
+                animation: 1
             }]
         }
 
@@ -147,60 +156,72 @@ export default class Room extends Phaser.Scene
 
         /* this.map = new RoomMap(this, [[1, 1, 1]]) */
 
-        var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1],
-        [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
+        // var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1],
+        // [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
 
 
 
-        // loop for the array length and then for each sub array element length loop inside of it
-        // 5.5
-        /* 
-                var tiles = this.add.container(0, 0) */
 
-        let floorMaxY = room.heightmap.length;
-        let floorMaxX = room.heightmap[0].length;
+        // this.add.image(0, 0, 'room_background')
+        this.add.image(0, 0, 'avatar')
 
-        let tileModules = floorMaxX;
+        // if(roomSprite)
+        // {
+        //     roomSprite.stop()
+        // }
 
-        let floorIndex = 0;
-        do
-        {
-            let tileX = Math.floor(floorIndex % tileModules);
-            let tileY = Math.floor(floorIndex / tileModules);
+        // this.children.removeAll()
+        // var roomContainer = new Phaser.Container();
+        // roomContainer.x = Math.floor(window.innerWidth / 2);
+        // roomContainer.y = Math.floor(window.innerHeight / 2);
 
-            let tileData = room.heightmap[tileY].charAt(tileX);
-
-            let screenX = this.getScreenX(tileX, tileY);
-            let screenY = this.getScreenY(tileX, tileY);
-
-            if (tileData != "X")
-            {
-                /*                 if (tileX < 1) {
-                                    let leftWallSprite = new PIXI.Sprite(RoomSprite.leftWall);
-                                    leftWallSprite.x = screenX - 8;
-                                    leftWallSprite.y = screenY - 122;
-                                } */
-
-                /*                 if (tileY < 1) {
-                                    let rightWallSprite = new PIXI.Sprite(RoomSprite.rightWall);
-                
-                                    rightWallSprite.x = screenX + 32,
-                                    rightWallSprite.y = screenY - 122;
-                
-                                    container.addChild(rightWallSprite);
-                                } */
-
-                let floorSprite = this.add.image(screenX, screenY, 'floor_tile')
-            }
-        }
-        while (++floorIndex < floorMaxX * floorMaxY);
-
-        var roomSprite = new RoomSprite(this)
+        var roomSprite = new RoomSprite(this, room.heightmap)
 
         room.furnitures.forEach((furnitureRoomData) =>
         {
-            var furnitureData = this.cache.json.get(furnitureRoomData.name)
-            console.log(furnitureRoomData)
+            this.load.setPath(Path.join('furniture_new', furnitureRoomData.name))
+
+            this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
+
+            this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
+
+            this.load.start()
+
+            this.load.once('complete', () =>
+            {
+                console.log(furnitureRoomData.name, furnitureRoomData.direction)
+
+                var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
+
+                var furniture = new Furniture(this, furnitureData)
+                var furnitureSprite = new FurnitureSprite(this, furniture)
+
+                if (furnitureRoomData.animation !== null || furnitureRoomData.animation !== undefined)
+                {
+                    furnitureSprite.animateAndStart(furnitureRoomData.animation)
+                }
+
+                if (furnitureRoomData.color)
+                {
+                    furnitureSprite.setColor(furnitureData.color)
+                }
+
+                if (furnitureRoomData.direction)
+                {
+                    console.log(furnitureRoomData.direction)
+                    furnitureSprite.setDirection(furnitureData.direction)
+                }
+
+                roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
+            })
+
+            roomSprite.start()
+
+            this.add.existing(roomSprite)
+
+            //this.camera.setZoom(4)
+            // roomSprite => 1 instance of a furniture
+            //this.add.existing(roomSprite)
 
             //var furniture = new Furniture(this, furnitureData)
 
@@ -224,6 +245,8 @@ export default class Room extends Phaser.Scene
             roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY); */
 
         })
+
+        this.camera.setZoom(1)
 
         /* for (let y = 0;y < map.length;y++)
         {
@@ -390,19 +413,20 @@ export default class Room extends Phaser.Scene
      * Runs once per frame for the duration of the scene
      * @override
      */
-    public update(): void
+    public update(time: number, deltaTime: number): void
     {
+        //console.log(time, deltaTime)
         // this.camera3d.transformChildren(this.transform);
     }
 
     private getScreenX(x: number, y: number): number
     {
-        return x * 32 - y * 32;
+        return (x - y) * 32
     }
 
     private getScreenY(x: number, y: number): number
     {
-        return x * 16 + y * 16;
+        return (x + y) * 16
     }
 
     coordsToIsometric(x: number, y: number)

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import FriendSlot from './components/friendSlot';
+import Chatbox from '../../components/chatbox'
 
 type ToolbarProps = {
     isClient?: boolean
@@ -60,6 +61,8 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
                         {this.props.isClient && <span className="icon icon-camera"></span> }
                     </div>
                 </div>
+
+                <Chatbox />
 
                 <div className="toolbar-friends">
 

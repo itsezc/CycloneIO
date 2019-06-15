@@ -2,7 +2,8 @@
 //import type { FurnitureType } from '../../common/enums/furniture/type'
 import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
-export interface IData {
+export interface IData
+{
 	type: string
 	name: string
 	visualizationType: string;
@@ -10,58 +11,67 @@ export interface IData {
 	spritesheet: string
 	dimensions: IDimension
 	directions: number[]
-	assets: { [key: string] : IAsset }
+	assets: { [key: string]: IAsset }
 	visualization: IVisualization
 }
 
-export interface IDimension {
+export interface IDimension
+{
 	x: number
 	y: number
 	z: number
 }
 
-export interface IAsset {
+export interface IAsset
+{
 	source?: string
 	x: number
 	y: number
 	flipH?: boolean
 }
 
-export interface IVisualization {
+export interface IVisualization
+{
 	layerCount: number
 	angle: number
-	layers?: { [key: string] : ILayer }
-	colors?: { [key: string] : IColor }
-	directions?: { [key: string] : IDirections }
-	animations?: { [key: string] : IAnimation }
+	layers?: { [key: string]: ILayer }
+	colors?: { [key: string]: IColor }
+	directions?: { [key: string]: IDirections }
+	animations?: { [key: string]: IAnimation }
 }
 
-export interface ILayer {
-	x?: number
-	y?: number
-	z?: number
+export interface ILayer
+{
+	x: number
+	y: number
+	z: number
 	alpha?: number
 	ink?: number
 	ignoreMouse?: boolean
 }
 
-export interface IColor {
-	layers: { [key: string] : IColorLayer }
+export interface IColor
+{
+	layers: { [key: string]: IColorLayer }
 }
 
-export interface IColorLayer {
+export interface IColorLayer
+{
 	color: number
 }
 
-export interface IDirections {
-	layers: { [key: string] : ILayer }
+export interface IDirections
+{
+	layers: { [key: string]: ILayer }
 }
 
-export interface IAnimation {
-	layers: { [key: string] : IAnimationLayer }
+export interface IAnimation
+{
+	layers: { [key: string]: IAnimationLayer }
 }
 
-export interface IAnimationLayer {
+export interface IAnimationLayer
+{
 	loopCount?: number
 	frameRepeat?: number
 	frames: number[]
@@ -125,48 +135,46 @@ export default class Furniture
 	// 	return new Furniture(0, "throne", "name", "desc", FurnitureType.FLOOR, 0, 0, 0, false, true, false, false)
 	// }
 
-    public getLayerCount(): number {
-        return this.data.visualization.layerCount;
-    }
+	public getLayerCount(): number
+	{
+		return this.data.visualization.layerCount
+	}
 
-    public getAngle(): number {
-        return this.data.visualization.angle;
-    }
+	public getAngle(): number 
+	{
+		return this.data.visualization.angle
+	}
 
-    public getDirections(): number[] {
-        return this.data.directions.map((direction) => direction / 90 * 2);
-        // move map to actuall json data (ffconverter)
-    }
+	public getDirections(): number[]
+	{
+		return this.data.directions.map((direction) => direction / 90 * 2);
+		// move map to actuall json data (ffconverter)
+	}
 
-    public hasDirection(direction: number): boolean {
-        direction = direction / 2 * 90;
-        // move above values (see map) to actuall json data (ffconverter)
+	public hasDirection(direction: number): boolean
+	{
+		direction = direction / 2 * 90;
+		// move above values (see map) to actuall json data (ffconverter)
 
-        return this.data.directions.indexOf(direction) >= 0;
-    }
+		return this.data.directions.indexOf(direction) >= 0;
+	}
 
-	public hasAnimations(): boolean {
-        return this.data.visualization.animations != null;
-    }
+	public hasAnimations(): boolean
+	{
+		return this.data.visualization.animations != null;
+	}
 
 	public hasAnimation(animation: number): boolean
 	{
-		if(this.data !== undefined)
-		{
-			return this.hasAnimations()
-            	&& this.data.visualization.animations[animation] != null
-		}
-    }
+		return this.hasAnimations()
+            && this.data.visualization.animations[animation] != null;
+	}
 
 	public hasAnimationForLayer(animation: number, layer: number): boolean
 	{
-		if(this.data !== undefined) {
-			return this.hasAnimation(animation)
-            	&& this.data.visualization.animations[animation].layers[layer] != null
-		}
-
-        return false
-    }
+		return this.hasAnimation(animation)
+            && this.data.visualization.animations[animation].layers[layer] != null;
+	}
 
 	public getAnimations(): string[]
 	{
@@ -175,13 +183,14 @@ export default class Furniture
 
 	public getFrameFrom(animation: number, layer: number, frameCount: number): number
 	{
-        if (this.hasAnimationForLayer(animation, layer))
+		if (this.hasAnimationForLayer(animation, layer))
 		{
 
 			let animationLayer = this.data.visualization.animations[animation].layers[layer]
-            if (animationLayer.frames.length < 1) {
-                return 0
-            }
+			if (animationLayer.frames.length < 1)
+			{
+				return 0
+			}
 
 			let frameRepeat = animationLayer.frameRepeat || 1
 
@@ -247,8 +256,6 @@ export default class Furniture
 		return this.data.assets[assetName] != null
 	}
 
-	// PIXI.Sprite
-	// Phaser.GameObjects.
 	public getSpriteFrom(size: number | string, layer: number, direction?: number, frame?: number): any
 	{
 		let assetName = this.assetNameFrom(size, layer, direction, frame)
@@ -264,13 +271,16 @@ export default class Furniture
 
 			try
 			{
-				// create image and then the texture name -> create sprite -> name_sourcename.png
-				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name + "_" + sourceName + ".png")
+				// Offset / Positioning for each Layer
 
+				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name, this.data.name + '_' + sourceName + '.png')
+				layerSprite.setOrigin(0, 0)
+
+				//console.log(this.data.name + '_' + sourceName + '.png', frame)
+				
 				if (asset.flipH)
 				{
-					layerSprite.scaleX = -1
-					layerSprite.x *= -1
+					layerSprite.toggleFlipX()
 				}
 
 				return layerSprite
@@ -311,6 +321,7 @@ export default class Furniture
 		return this.hasVisualDirection(direction)
 			&& this.data.visualization.directions[direction].layers[layer] != null;
 	}
+
 	private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer: ILayer)
 	{
 		if (layer.alpha)
@@ -341,8 +352,6 @@ export default class Furniture
 		if (layer.ignoreMouse)
 		{
 			sprite.setInteractive()
-
-			//sprite.interactive = !layer.ignoreMouse
 		}
 	}
 
