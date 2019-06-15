@@ -1,9 +1,5 @@
 
 //import type { FurnitureType } from '../../common/enums/furniture/type'
-<<<<<<< HEAD
-import FurnitureData from './data'
-=======
->>>>>>> 4ad1d2e437cd3d331ffdf96ba761ad5f4744eaff
 import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
 export interface IData {
@@ -45,7 +41,7 @@ export interface ILayer {
 	y?: number
 	z?: number
 	alpha?: number
-	ink?: string
+	ink?: number
 	ignoreMouse?: boolean
 }
 
@@ -74,13 +70,8 @@ export interface IAnimationLayer {
 export default class Furniture
 {
 
-<<<<<<< HEAD
-	private readonly scene: Room
-	private data: FurnitureData.IData
-=======
 	private data: IData
 	public scene: Room
->>>>>>> 4ad1d2e437cd3d331ffdf96ba761ad5f4744eaff
 
 	// private id: number // (Furniture Number)
 	// private spriteName: string
@@ -320,7 +311,7 @@ export default class Furniture
 		return this.hasVisualDirection(direction)
 			&& this.data.visualization.directions[direction].layers[layer] != null;
 	}
-	private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer: FurnitureData.ILayer)
+	private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer: ILayer)
 	{
 		if (layer.alpha)
 		{

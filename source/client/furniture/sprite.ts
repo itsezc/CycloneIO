@@ -1,4 +1,5 @@
-import Furniture, { IData } from './furniture'
+import Furniture from './furniture'
+import Room from '../rooms/room'
 
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
     public scene: Room
@@ -17,7 +18,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private direction!: number
     private color!: number
 
-    public constructor(scene: Room, furniture: IData) {
+    public constructor(scene: Room, furniture: Furniture) {
         super(scene)
 
         this.scene = scene

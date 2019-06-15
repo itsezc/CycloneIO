@@ -195,11 +195,11 @@ export default class Room extends Phaser.Scene
         }
         while (++floorIndex < floorMaxX * floorMaxY);
 
-        var furnitureData = this.cache.json.get(furnitureRoomData.name)
         var roomSprite = new RoomSprite(this)
 
         room.furnitures.forEach((furnitureRoomData) =>
         {
+            var furnitureData = this.cache.json.get(furnitureRoomData.name)
             console.log(furnitureRoomData)
 
             //var furniture = new Furniture(this, furnitureData)
