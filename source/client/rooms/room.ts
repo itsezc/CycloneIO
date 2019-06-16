@@ -187,6 +187,11 @@ export default class Room extends Phaser.Scene
 					roomY: 8,
 					direction: 0,
 					animation: 0
+				},
+				{
+					name: "ads_calip_pool",
+					roomX: 5,
+					roomY: 9
 				}
             ]
         }

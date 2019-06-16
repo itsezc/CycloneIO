@@ -276,7 +276,7 @@ export default class Furniture
 			try
 			{
 				// Offset / Positioning for each Layer
-
+				//	console.log(sourceName)
 				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name, this.data.name + '_' + sourceName + '.png')
 				layerSprite.setOrigin(0, 0)
 
@@ -284,10 +284,8 @@ export default class Furniture
 				
 				if (asset.flipH)
 				{
-					console.log(this.data.name)
 					layerSprite.scaleX = -1
 					layerSprite.x *= -1
-					// layerSprite.toggleFlipX()
 				}
 
 				return layerSprite
