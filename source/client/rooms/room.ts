@@ -146,7 +146,34 @@ export default class Room extends Phaser.Scene
                     roomX: 3,
                     roomY: 2,
                     direction: 0
-                }
+                },
+				{
+					name: 'ads_calip_fan',
+					roomX: 1,
+					roomY: 4,
+					direction: 2,
+					animation: 1
+				},
+				{
+					name: 'ads_calip_cola',
+					roomX: 1,
+					roomY: 8,
+					direction: 2,
+					color: 4
+				},
+				{
+					name: 'ads_cllava2',
+					roomX: 1,
+					roomY: 6,
+					direction: 0
+				},
+				{
+					name: 'ads_cllava2',
+					roomX: 5,
+					roomY: 8,
+					direction: 0,
+					animation: 1
+				}
             ]
         }
 
@@ -191,7 +218,8 @@ export default class Room extends Phaser.Scene
 
             this.load.once('complete', () =>
             {
-                console.log(furnitureRoomData.name, furnitureRoomData.direction || 0)
+                console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
+				//console.log(furnitureRoomData)
 
                 var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
 
@@ -200,6 +228,7 @@ export default class Room extends Phaser.Scene
 
                 if (furnitureRoomData.animation !== null || furnitureRoomData.animation !== undefined)
                 {
+					console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
                     furnitureSprite.animateAndStart(furnitureRoomData.animation)
                 }
 
@@ -210,7 +239,6 @@ export default class Room extends Phaser.Scene
 
 
                 furnitureSprite.setDirection(furnitureRoomData.direction || 0)
-				console.log(furnitureSprite.getDirection())
                 // if (furnitureRoomData.direction)
                 // {
                 //     //console.log(furnitureRoomData.direction)

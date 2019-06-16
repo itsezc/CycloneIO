@@ -164,13 +164,13 @@ export default class Furniture
 
 	public hasAnimations(): boolean
 	{
-		return this.data.visualization.animations != null;
+		return this.data.visualization.animations != null
 	}
 
 	public hasAnimation(animation: number): boolean
 	{
 		return this.hasAnimations()
-            && this.data.visualization.animations[animation] != null;
+            && this.data.visualization.animations[animation] != null
 	}
 
 	public hasAnimationForLayer(animation: number, layer: number): boolean
