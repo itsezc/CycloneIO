@@ -10,7 +10,7 @@ type LoadingState = {
 
 export default class Loading extends Component<any, LoadingState> {
 	
-	/* private interval!: NodeJS.Timeout
+	private interval!: any
 
 	constructor(props: any) {
 		super(props)
@@ -53,5 +53,5 @@ export default class Loading extends Component<any, LoadingState> {
    				<div className='percent'>{this.state.percent}%</div>
    			</div>
    		)
-	} */
+	}
 }

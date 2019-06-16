@@ -145,7 +145,7 @@ export default class Room extends Phaser.Scene
                     name: 'throne',
                     roomX: 3,
                     roomY: 2,
-                    direction: 3
+                    direction: 0
                 }
             ]
         }
@@ -191,7 +191,7 @@ export default class Room extends Phaser.Scene
 
             this.load.once('complete', () =>
             {
-                console.log(furnitureRoomData.name, furnitureRoomData.direction)
+                console.log(furnitureRoomData.name, furnitureRoomData.direction || 0)
 
                 var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
 
@@ -208,7 +208,9 @@ export default class Room extends Phaser.Scene
                     furnitureSprite.setColor(furnitureData.color)
                 }
 
-                furnitureSprite.setDirection(furnitureData.direction)
+
+                furnitureSprite.setDirection(furnitureRoomData.direction || 0)
+				console.log(furnitureSprite.getDirection())
                 // if (furnitureRoomData.direction)
                 // {
                 //     //console.log(furnitureRoomData.direction)
