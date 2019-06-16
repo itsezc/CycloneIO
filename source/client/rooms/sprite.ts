@@ -71,7 +71,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
                     container.add(rightWallSprite);
                 }
 
-                let floorSprite = new Phaser.GameObjects.Sprite(this.scene, screenX, screenY, 'tile');
+                let floorSprite = this.scene.physics.add.image(screenX, screenY, 'tile');
                 floorSprite.setOrigin(0)
                 floorSprite.setInteractive({ pixelPerfect: true })
 
@@ -81,6 +81,15 @@ export default class RoomSprite extends Phaser.GameObjects.Container
                 {
                     floorSpriteHover = this.scene.add.image(floorSprite.x, floorSprite.y - 3, 'tile_hover')
                     floorSpriteHover.setOrigin(0, 0)
+                })
+
+                floorSprite.on('pointerdown', () => {
+                    this.scene.physics.moveTo(floorSprite, floorSprite.x, floorSprite.y - 84, 200)
+                    floorSprite.setDepth(4)
+/* 
+                    var collider = this.scene.physics.add.overlap(this.scene.avatar, floorSprite, (avatarOnBlock: any) => {
+                        avatarOnBlock.body.stop()
+                    }) */
                 })
 
                 floorSprite.on('pointerout', () =>
@@ -121,14 +130,10 @@ export default class RoomSprite extends Phaser.GameObjects.Container
         furnitureSprite.x = this.getScreenX(roomX, roomY) + 32
         furnitureSprite.y = this.getScreenY(roomX, roomY) + 16
 
-        this.furnitureContainer.setDepth(2)
+        this.furnitureContainer.setDepth(3)
         this.furnitureContainer.add(furnitureSprite)
 
         this.scene.add.existing(this.furnitureContainer)
-        //this.start()
-
-        // this.scene.add.existing(this.furnitureContainer)
-        //console.log(this.furnitureContainer.add(furnitureSprite))
     }
 
     public start()

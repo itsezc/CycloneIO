@@ -17,6 +17,7 @@ import FurnitureSprite from '../furniture/sprite';
 import FurnitureData from '../furniture/data';
 import Furniture from '../furniture/furniture';
 import Path from 'path'
+import Avatar from '../../imager/generator/avatar';
 
 /**
 * Room class
@@ -33,6 +34,8 @@ export default class Room extends Phaser.Scene
     // private item!: RoomItem
 
     private clickTime!: number
+
+    public avatar!: Phaser.GameObjects.Sprite
 
     private furnitures!: FurnitureSprite[] 
     /*
@@ -69,7 +72,7 @@ export default class Room extends Phaser.Scene
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
 
-        this.load.image('avatar', 'https://www.habbo.com/habbo-imaging/avatarimage?figure=ca-1815-92.sh-290-62.hd-180-1009.ch-262-64.ha-3763-63.lg-280-1193.hr-831-54&headonly=0&direction=2&head_direction=2&action=std&gesture=wlk&size=m&frame=0')
+        this.load.image('avatar', 'avatar/1_1_2_0.png')
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
         /*      
             this.load.image('tile', 'room/normal_tile.png')
@@ -132,26 +135,25 @@ export default class Room extends Phaser.Scene
                 "000000000",
                 "000000000",
             ],
-            furnitures: [{
-                name: 'CF_50_goldbar',
-                roomX: 0,
-                roomY: 0
-            },
-            {
-                name: 'throne',
-                roomX: 1,
-                roomY: 2,
-                direction: 0
-            },
-            {
-                name: "ads_calip_fan",
-                roomX: 1,
-                roomY: 3,
-                direction: 4,
-                animation: 1
-            }]
+            furnitures: [
+                {
+                    name: 'CF_50_goldbar',
+                    roomX: 2,
+                    roomY: 0
+                },
+                {
+                    name: 'throne',
+                    roomX: 3,
+                    roomY: 2,
+                    direction: 3
+                }
+            ]
         }
 
+        var avatarX = this.getScreenX(5, 5)
+        var avatarY = this.getScreenY(5, 5)
+
+        this.avatar = this.physics.add.sprite(avatarX, avatarY - 84, 'avatar').setDepth(4).setOrigin(0, 0)
         //this.add(RoomSprite.furnitureContainer) <- add to scene 
 
         /* this.map = new RoomMap(this, [[1, 1, 1]]) */
@@ -162,8 +164,8 @@ export default class Room extends Phaser.Scene
 
 
 
-        // this.add.image(0, 0, 'room_background')
-        this.add.image(0, 0, 'avatar')
+        //this.add.image(0, 0, 'room_background').setDepth(2)
+
 
         // if(roomSprite)
         // {
@@ -206,11 +208,12 @@ export default class Room extends Phaser.Scene
                     furnitureSprite.setColor(furnitureData.color)
                 }
 
-                if (furnitureRoomData.direction)
-                {
-                    console.log(furnitureRoomData.direction)
-                    furnitureSprite.setDirection(furnitureData.direction)
-                }
+                furnitureSprite.setDirection(furnitureData.direction)
+                // if (furnitureRoomData.direction)
+                // {
+                //     //console.log(furnitureRoomData.direction)
+                //     furnitureSprite.setDirection(furnitureData.direction)
+                // }
 
                 roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
             })

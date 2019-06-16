@@ -7,6 +7,7 @@ import RoomPlayer from '../hotel/rooms/player'
 
 import Hapi from '@hapi/hapi'
 import Inert from '@hapi/inert'
+import H2O2 from '@hapi/h2o2'
 import Routes from './http/routes'
 
 import SocketIO from 'socket.io'
@@ -54,6 +55,7 @@ export default class Server {
         try 
         {
 			await this.HTTP.register(Inert)
+			await this.HTTP.register(H2O2)
 			await this.HTTP.route(Routes)
 
 			this.webSocket = await SocketIO(this.HTTP.listener)

@@ -30,8 +30,9 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
         this.animation = null
         this.color = null
-        this.setDirection(this.furniture.getDirections()[0])
-        
+        //this.direction = furniture.animation || 0
+        //this.setDirection(this.furniture.getDirections()[furniture.animation || 0])
+
         //console.log(this.furniture.data);
 	}
 

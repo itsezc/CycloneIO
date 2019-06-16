@@ -8,6 +8,9 @@ const config = {
     render: {
        pixelArt: true
     },
+    physics: {
+        default: 'arcade'
+    },
     disableContextMenu: false,
     scale: {
         mode: Phaser.Scale.ScaleModes.RESIZE,

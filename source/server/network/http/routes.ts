@@ -28,6 +28,15 @@ const Routes = [{
 		method: 'GET',
 		path: '/imaging/tile',
 		handler: TileImager.requestHandler
+	},
+	{
+		method: 'GET',
+		path: '/imaging/figure/{figure}/{gesture}/{direction}/{frame}',
+		handler: {
+			proxy: {
+				uri: 'http://www.habbo.com/habbo-imaging/avatarimage?figure={figure}&headonly=0&direction={direction}&head_direction={direction}&action={gesture}&gesture={gesture}&size=m&frame={frame}'
+			}
+		}
 	}
 ]
 

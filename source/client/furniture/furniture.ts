@@ -83,6 +83,9 @@ export default class Furniture
 	private data: IData
 	public scene: Room
 
+	public animation!: number
+	public direction!: number
+
 	// private id: number // (Furniture Number)
 	// private spriteName: string
 	// private name: string

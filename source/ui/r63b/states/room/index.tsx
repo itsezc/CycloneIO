@@ -41,13 +41,13 @@ export default class Room extends Component {
 				{/* <Catalog /> */}
 
 				{/* <Poll question='Cyclone or Habbo' status={false} /> */}
-				<Chat
+				{/* <Chat
 					name='EZ-C'
 					avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
 					type='shout'
 					style={2}
 					message='This is an example message'
-				/>
+				/> */}
 				<Wallet />
 				<Toolbar isClient={true} />
 			</div>
