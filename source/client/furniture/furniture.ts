@@ -24,6 +24,7 @@ export interface IDimension
 
 export interface IAsset
 {
+	name?: string
 	source?: string
 	x: number
 	y: number
@@ -176,7 +177,7 @@ export default class Furniture
 	public hasAnimationForLayer(animation: number, layer: number): boolean
 	{
 		return this.hasAnimation(animation)
-            && this.data.visualization.animations[animation].layers[layer] != null;
+            && this.data.visualization.animations[animation].layers[layer] != null
 	}
 
 	public getAnimations(): string[]
@@ -283,7 +284,10 @@ export default class Furniture
 				
 				if (asset.flipH)
 				{
-					layerSprite.toggleFlipX()
+					console.log(this.data.name)
+					layerSprite.scaleX = -1
+					layerSprite.x *= -1
+					// layerSprite.toggleFlipX()
 				}
 
 				return layerSprite

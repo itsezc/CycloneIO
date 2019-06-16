@@ -31,9 +31,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         this.animation = null
         this.color = null
 
-        this.direction = 0
-        //this.setDirection(this.furniture.getDirections()[furniture.animation || 0])
-
+        this.setDirection(this.furniture.getDirections()[0])
         //console.log(this.furniture.data);
 	}
 
@@ -68,6 +66,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         if (this.furniture.hasAnimation(animation)
             || animation == null)
         {
+
+			//console.log('Animating with ', animation)
 
             if (this.animation != animation)
             {

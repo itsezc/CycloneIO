@@ -145,8 +145,22 @@ export default class Room extends Phaser.Scene
                     name: 'throne',
                     roomX: 3,
                     roomY: 2,
-                    direction: 0
+                    direction: 4
                 },
+				{
+					name: 'ads_calip_fan',
+					roomX: 6,
+					roomY: 4,
+					direction: 4,
+					animation: 1
+				},
+				{
+					name: 'ads_calip_fan',
+					roomX: 6,
+					roomY: 3,
+					direction: 0,
+					animation: 1
+				},
 				{
 					name: 'ads_calip_fan',
 					roomX: 1,
@@ -158,7 +172,7 @@ export default class Room extends Phaser.Scene
 					name: 'ads_calip_cola',
 					roomX: 1,
 					roomY: 8,
-					direction: 2,
+					direction: 0,
 					color: 4
 				},
 				{
@@ -172,7 +186,7 @@ export default class Room extends Phaser.Scene
 					roomX: 5,
 					roomY: 8,
 					direction: 0,
-					animation: 1
+					animation: 0
 				}
             ]
         }
@@ -228,7 +242,7 @@ export default class Room extends Phaser.Scene
 
                 if (furnitureRoomData.animation !== null || furnitureRoomData.animation !== undefined)
                 {
-					console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
+					//console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
                     furnitureSprite.animateAndStart(furnitureRoomData.animation)
                 }
 
