@@ -1,28 +1,33 @@
-enum banType {
+enum banType
+{
     USER
     IP
     MACHINE
 }
 
-enum banStatus {
+enum banStatus
+{
     BANNED
     APPEALING
     REJECTED
 }
 
-enum roomType {
+enum roomType
+{
 	PUBLIC
 	LOCKED
 	PASSWORD
 	HIDDEN
 }
 
-enum Gender {
+enum Gender
+{
 	M
 	F
 }
 
-type Ban @pgTable(name: "bans") {
+type Ban @pgTable(name: "bans")
+{
     id: ID! @id
     reason: String
     status: banStatus
@@ -35,13 +40,15 @@ type Ban @pgTable(name: "bans") {
     updatedAt: DateTime @updatedAt
 }
 
-type Badge @pgTable(name: "badges") {
+type Badge @pgTable(name: "badges")
+{
     id: ID! @id
     code: String! @unique
     description: String
 }
 
-type Bot @pgTable(name: "bots") {
+type Bot @pgTable(name: "bots")
+{
     id: ID! @id
     name: String
     motto: String
@@ -61,7 +68,8 @@ type Bot @pgTable(name: "bots") {
 }
 
 # @TODO: Create relation between CatalogPages (link -> id)
-type CatalogFeatured @pgTable(name: "catalog_featured") {
+type CatalogFeatured @pgTable(name: "catalog_featured")
+{
     id: ID! @id
     caption: String
     image: String 
@@ -70,7 +78,8 @@ type CatalogFeatured @pgTable(name: "catalog_featured") {
     updated: DateTime @updatedAt
 }
 
-type CatalogPage @pgTable(name: "catalog_pages") {
+type CatalogPage @pgTable(name: "catalog_pages")
+{
 	id: ID! @id
 	parent: Int
 	type: String
@@ -87,7 +96,8 @@ type CatalogPage @pgTable(name: "catalog_pages") {
 	body: String
 }
 
-type CatalogItem @pgTable(name: "catalog_items") {
+type CatalogItem @pgTable(name: "catalog_items")
+{
     id: ID! @id
     page: Int
     item: Int
@@ -100,7 +110,36 @@ type CatalogItem @pgTable(name: "catalog_items") {
     active: Boolean
 }
 
-type Room @pgTable(name: "rooms") {
+type Chatlog @pgTable(name: "chatlog")
+{
+    id: ID! @id
+    habbo: Habbo!
+    room: Room!
+    message: String
+    createdAt: DateTime @createdAt 
+}
+
+type ChatlogConsole @pgTable(name: "chatlogs_console")
+{
+    id: ID! @id
+    from: Habbo! @relation(name: "ChatlogsConsoleFromUser")
+    to: Habbo! @relation(name: "ChatlogsConsoleToUser")
+    message: String
+    createdAt: DateTime @createdAt
+}
+
+type ChatlogConsoleInvitations @pgTable(name: "chatlogs_console_invitations")
+{
+    id: ID! @id
+    from: Habbo! @relation(name: "ChatlogsConsoleInvitationsFromUser")
+    to: Habbo! @relation(name: "ChatlogsConsoleInvitationsToUser")
+    message: String
+    room: Room!
+    createdAt: DateTime @createdAt
+}
+
+type Room @pgTable(name: "rooms")
+{
 	id: ID! @id
 	name: String!
 	description: String
@@ -120,7 +159,8 @@ type Room @pgTable(name: "rooms") {
 	items: [Item] @relation(name: "Items", onDelete: CASCADE)
 }
 
-type Item @pgTable(name: "items") {
+type Item @pgTable(name: "items")
+{
     id: ID! @id
     owner: Int
     room: Room! @relation(name: "RoomItems", onDelete: SET_NULL)
@@ -144,7 +184,8 @@ type Item @pgTable(name: "items") {
 #     value: Int
 # }
 
-type News @pgTable(name: "news") {
+type News @pgTable(name: "news")
+{
 	id: ID! @id
 	title: String
 	summary: String
@@ -155,12 +196,11 @@ type News @pgTable(name: "news") {
     updatedAt: DateTime @updatedAt
 }
 
-type User @pgTable(name: "users") {
+type Habbo @pgTable(name: "habbos")
+{
     id: ID! @id
+    user: User!
     username: String! @unique
-    email: String
-    password: String
-    pin: Int
     motto: String
 	gender: Gender
     figure: String
@@ -179,6 +219,17 @@ type User @pgTable(name: "users") {
 	allowFriendRequests: Boolean @default(value: true)
 	allowBotSpeech: Boolean @default(value: true)
 	allowPetSpeech: Boolean @default(value: true)
+    createdAt: DateTime @createdAt
+    updatedAt: DateTime @updatedAt
+}
+
+type User @pgTable(name: "users")
+{
+    id: ID! @id
+    email: String
+    password: String
+    pin: Int
+    habbos: [Habbo!]!
     createdAt: DateTime @createdAt
     updatedAt: DateTime @updatedAt
 }

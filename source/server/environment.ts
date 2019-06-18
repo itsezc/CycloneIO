@@ -22,7 +22,7 @@ export default class Environment
 
 	/**
 	 * @param {JSON} config - The configuration file 
-	 */
+	*/
 	public constructor(config: any)
 	{
 		this._logger = Logger
@@ -34,7 +34,7 @@ export default class Environment
 	/**
      * The main function
      * Initialize the server
-     */
+	*/
 	public async init(): Promise<void>
 	{
 		try 

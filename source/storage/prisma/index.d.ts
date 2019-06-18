@@ -22,6 +22,12 @@ export interface Exists {
   catalogFeatured: (where?: CatalogFeaturedWhereInput) => Promise<boolean>;
   catalogItem: (where?: CatalogItemWhereInput) => Promise<boolean>;
   catalogPage: (where?: CatalogPageWhereInput) => Promise<boolean>;
+  chatlog: (where?: ChatlogWhereInput) => Promise<boolean>;
+  chatlogConsole: (where?: ChatlogConsoleWhereInput) => Promise<boolean>;
+  chatlogConsoleInvitations: (
+    where?: ChatlogConsoleInvitationsWhereInput
+  ) => Promise<boolean>;
+  habbo: (where?: HabboWhereInput) => Promise<boolean>;
   item: (where?: ItemWhereInput) => Promise<boolean>;
   news: (where?: NewsWhereInput) => Promise<boolean>;
   room: (where?: RoomWhereInput) => Promise<boolean>;
@@ -167,6 +173,86 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => CatalogPageConnectionPromise;
+  chatlog: (where: ChatlogWhereUniqueInput) => ChatlogNullablePromise;
+  chatlogs: (args?: {
+    where?: ChatlogWhereInput;
+    orderBy?: ChatlogOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<Chatlog>;
+  chatlogsConnection: (args?: {
+    where?: ChatlogWhereInput;
+    orderBy?: ChatlogOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => ChatlogConnectionPromise;
+  chatlogConsole: (
+    where: ChatlogConsoleWhereUniqueInput
+  ) => ChatlogConsoleNullablePromise;
+  chatlogConsoles: (args?: {
+    where?: ChatlogConsoleWhereInput;
+    orderBy?: ChatlogConsoleOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<ChatlogConsole>;
+  chatlogConsolesConnection: (args?: {
+    where?: ChatlogConsoleWhereInput;
+    orderBy?: ChatlogConsoleOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => ChatlogConsoleConnectionPromise;
+  chatlogConsoleInvitations: (
+    where: ChatlogConsoleInvitationsWhereUniqueInput
+  ) => ChatlogConsoleInvitationsNullablePromise;
+  chatlogConsoleInvitationses: (args?: {
+    where?: ChatlogConsoleInvitationsWhereInput;
+    orderBy?: ChatlogConsoleInvitationsOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<ChatlogConsoleInvitations>;
+  chatlogConsoleInvitationsesConnection: (args?: {
+    where?: ChatlogConsoleInvitationsWhereInput;
+    orderBy?: ChatlogConsoleInvitationsOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => ChatlogConsoleInvitationsConnectionPromise;
+  habbo: (where: HabboWhereUniqueInput) => HabboNullablePromise;
+  habboes: (args?: {
+    where?: HabboWhereInput;
+    orderBy?: HabboOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<Habbo>;
+  habboesConnection: (args?: {
+    where?: HabboWhereInput;
+    orderBy?: HabboOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => HabboConnectionPromise;
   item: (where: ItemWhereUniqueInput) => ItemNullablePromise;
   items: (args?: {
     where?: ItemWhereInput;
@@ -355,6 +441,82 @@ export interface Prisma {
   deleteManyCatalogPages: (
     where?: CatalogPageWhereInput
   ) => BatchPayloadPromise;
+  createChatlog: (data: ChatlogCreateInput) => ChatlogPromise;
+  updateChatlog: (args: {
+    data: ChatlogUpdateInput;
+    where: ChatlogWhereUniqueInput;
+  }) => ChatlogPromise;
+  updateManyChatlogs: (args: {
+    data: ChatlogUpdateManyMutationInput;
+    where?: ChatlogWhereInput;
+  }) => BatchPayloadPromise;
+  upsertChatlog: (args: {
+    where: ChatlogWhereUniqueInput;
+    create: ChatlogCreateInput;
+    update: ChatlogUpdateInput;
+  }) => ChatlogPromise;
+  deleteChatlog: (where: ChatlogWhereUniqueInput) => ChatlogPromise;
+  deleteManyChatlogs: (where?: ChatlogWhereInput) => BatchPayloadPromise;
+  createChatlogConsole: (
+    data: ChatlogConsoleCreateInput
+  ) => ChatlogConsolePromise;
+  updateChatlogConsole: (args: {
+    data: ChatlogConsoleUpdateInput;
+    where: ChatlogConsoleWhereUniqueInput;
+  }) => ChatlogConsolePromise;
+  updateManyChatlogConsoles: (args: {
+    data: ChatlogConsoleUpdateManyMutationInput;
+    where?: ChatlogConsoleWhereInput;
+  }) => BatchPayloadPromise;
+  upsertChatlogConsole: (args: {
+    where: ChatlogConsoleWhereUniqueInput;
+    create: ChatlogConsoleCreateInput;
+    update: ChatlogConsoleUpdateInput;
+  }) => ChatlogConsolePromise;
+  deleteChatlogConsole: (
+    where: ChatlogConsoleWhereUniqueInput
+  ) => ChatlogConsolePromise;
+  deleteManyChatlogConsoles: (
+    where?: ChatlogConsoleWhereInput
+  ) => BatchPayloadPromise;
+  createChatlogConsoleInvitations: (
+    data: ChatlogConsoleInvitationsCreateInput
+  ) => ChatlogConsoleInvitationsPromise;
+  updateChatlogConsoleInvitations: (args: {
+    data: ChatlogConsoleInvitationsUpdateInput;
+    where: ChatlogConsoleInvitationsWhereUniqueInput;
+  }) => ChatlogConsoleInvitationsPromise;
+  updateManyChatlogConsoleInvitationses: (args: {
+    data: ChatlogConsoleInvitationsUpdateManyMutationInput;
+    where?: ChatlogConsoleInvitationsWhereInput;
+  }) => BatchPayloadPromise;
+  upsertChatlogConsoleInvitations: (args: {
+    where: ChatlogConsoleInvitationsWhereUniqueInput;
+    create: ChatlogConsoleInvitationsCreateInput;
+    update: ChatlogConsoleInvitationsUpdateInput;
+  }) => ChatlogConsoleInvitationsPromise;
+  deleteChatlogConsoleInvitations: (
+    where: ChatlogConsoleInvitationsWhereUniqueInput
+  ) => ChatlogConsoleInvitationsPromise;
+  deleteManyChatlogConsoleInvitationses: (
+    where?: ChatlogConsoleInvitationsWhereInput
+  ) => BatchPayloadPromise;
+  createHabbo: (data: HabboCreateInput) => HabboPromise;
+  updateHabbo: (args: {
+    data: HabboUpdateInput;
+    where: HabboWhereUniqueInput;
+  }) => HabboPromise;
+  updateManyHabboes: (args: {
+    data: HabboUpdateManyMutationInput;
+    where?: HabboWhereInput;
+  }) => BatchPayloadPromise;
+  upsertHabbo: (args: {
+    where: HabboWhereUniqueInput;
+    create: HabboCreateInput;
+    update: HabboUpdateInput;
+  }) => HabboPromise;
+  deleteHabbo: (where: HabboWhereUniqueInput) => HabboPromise;
+  deleteManyHabboes: (where?: HabboWhereInput) => BatchPayloadPromise;
   createItem: (data: ItemCreateInput) => ItemPromise;
   updateItem: (args: {
     data: ItemUpdateInput;
@@ -446,6 +608,18 @@ export interface Subscription {
   catalogPage: (
     where?: CatalogPageSubscriptionWhereInput
   ) => CatalogPageSubscriptionPayloadSubscription;
+  chatlog: (
+    where?: ChatlogSubscriptionWhereInput
+  ) => ChatlogSubscriptionPayloadSubscription;
+  chatlogConsole: (
+    where?: ChatlogConsoleSubscriptionWhereInput
+  ) => ChatlogConsoleSubscriptionPayloadSubscription;
+  chatlogConsoleInvitations: (
+    where?: ChatlogConsoleInvitationsSubscriptionWhereInput
+  ) => ChatlogConsoleInvitationsSubscriptionPayloadSubscription;
+  habbo: (
+    where?: HabboSubscriptionWhereInput
+  ) => HabboSubscriptionPayloadSubscription;
   item: (
     where?: ItemSubscriptionWhereInput
   ) => ItemSubscriptionPayloadSubscription;
@@ -594,6 +768,54 @@ export type CatalogPageOrderByInput =
   | "body_ASC"
   | "body_DESC";
 
+export type Gender = "M" | "F";
+
+export type HabboOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "username_ASC"
+  | "username_DESC"
+  | "motto_ASC"
+  | "motto_DESC"
+  | "gender_ASC"
+  | "gender_DESC"
+  | "figure_ASC"
+  | "figure_DESC"
+  | "rank_ASC"
+  | "rank_DESC"
+  | "vip_ASC"
+  | "vip_DESC"
+  | "online_ASC"
+  | "online_DESC"
+  | "verified_ASC"
+  | "verified_DESC"
+  | "home_ASC"
+  | "home_DESC"
+  | "volume_ASC"
+  | "volume_DESC"
+  | "appearOffline_ASC"
+  | "appearOffline_DESC"
+  | "allowTrade_ASC"
+  | "allowTrade_DESC"
+  | "allowGifts_ASC"
+  | "allowGifts_DESC"
+  | "allowMimic_ASC"
+  | "allowMimic_DESC"
+  | "allowFollow_ASC"
+  | "allowFollow_DESC"
+  | "allowWhisper_ASC"
+  | "allowWhisper_DESC"
+  | "allowFriendRequests_ASC"
+  | "allowFriendRequests_DESC"
+  | "allowBotSpeech_ASC"
+  | "allowBotSpeech_DESC"
+  | "allowPetSpeech_ASC"
+  | "allowPetSpeech_DESC"
+  | "createdAt_ASC"
+  | "createdAt_DESC"
+  | "updatedAt_ASC"
+  | "updatedAt_DESC";
+
 export type roomType = "PUBLIC" | "LOCKED" | "PASSWORD" | "HIDDEN";
 
 export type ItemOrderByInput =
@@ -616,7 +838,29 @@ export type ItemOrderByInput =
   | "inventory_ASC"
   | "inventory_DESC";
 
-export type Gender = "M" | "F";
+export type ChatlogOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "message_ASC"
+  | "message_DESC"
+  | "createdAt_ASC"
+  | "createdAt_DESC";
+
+export type ChatlogConsoleOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "message_ASC"
+  | "message_DESC"
+  | "createdAt_ASC"
+  | "createdAt_DESC";
+
+export type ChatlogConsoleInvitationsOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "message_ASC"
+  | "message_DESC"
+  | "createdAt_ASC"
+  | "createdAt_DESC";
 
 export type NewsOrderByInput =
   | "id_ASC"
@@ -669,50 +913,12 @@ export type RoomOrderByInput =
 export type UserOrderByInput =
   | "id_ASC"
   | "id_DESC"
-  | "username_ASC"
-  | "username_DESC"
   | "email_ASC"
   | "email_DESC"
   | "password_ASC"
   | "password_DESC"
   | "pin_ASC"
   | "pin_DESC"
-  | "motto_ASC"
-  | "motto_DESC"
-  | "gender_ASC"
-  | "gender_DESC"
-  | "figure_ASC"
-  | "figure_DESC"
-  | "rank_ASC"
-  | "rank_DESC"
-  | "vip_ASC"
-  | "vip_DESC"
-  | "online_ASC"
-  | "online_DESC"
-  | "verified_ASC"
-  | "verified_DESC"
-  | "home_ASC"
-  | "home_DESC"
-  | "volume_ASC"
-  | "volume_DESC"
-  | "appearOffline_ASC"
-  | "appearOffline_DESC"
-  | "allowTrade_ASC"
-  | "allowTrade_DESC"
-  | "allowGifts_ASC"
-  | "allowGifts_DESC"
-  | "allowMimic_ASC"
-  | "allowMimic_DESC"
-  | "allowFollow_ASC"
-  | "allowFollow_DESC"
-  | "allowWhisper_ASC"
-  | "allowWhisper_DESC"
-  | "allowFriendRequests_ASC"
-  | "allowFriendRequests_DESC"
-  | "allowBotSpeech_ASC"
-  | "allowBotSpeech_DESC"
-  | "allowPetSpeech_ASC"
-  | "allowPetSpeech_DESC"
   | "createdAt_ASC"
   | "createdAt_DESC"
   | "updatedAt_ASC"
@@ -1309,9 +1515,227 @@ export interface CatalogPageWhereInput {
   NOT?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
 }
 
-export type ItemWhereUniqueInput = AtLeastOne<{
+export type ChatlogWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
+
+export interface HabboWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  user?: Maybe<UserWhereInput>;
+  username?: Maybe<String>;
+  username_not?: Maybe<String>;
+  username_in?: Maybe<String[] | String>;
+  username_not_in?: Maybe<String[] | String>;
+  username_lt?: Maybe<String>;
+  username_lte?: Maybe<String>;
+  username_gt?: Maybe<String>;
+  username_gte?: Maybe<String>;
+  username_contains?: Maybe<String>;
+  username_not_contains?: Maybe<String>;
+  username_starts_with?: Maybe<String>;
+  username_not_starts_with?: Maybe<String>;
+  username_ends_with?: Maybe<String>;
+  username_not_ends_with?: Maybe<String>;
+  motto?: Maybe<String>;
+  motto_not?: Maybe<String>;
+  motto_in?: Maybe<String[] | String>;
+  motto_not_in?: Maybe<String[] | String>;
+  motto_lt?: Maybe<String>;
+  motto_lte?: Maybe<String>;
+  motto_gt?: Maybe<String>;
+  motto_gte?: Maybe<String>;
+  motto_contains?: Maybe<String>;
+  motto_not_contains?: Maybe<String>;
+  motto_starts_with?: Maybe<String>;
+  motto_not_starts_with?: Maybe<String>;
+  motto_ends_with?: Maybe<String>;
+  motto_not_ends_with?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  gender_not?: Maybe<Gender>;
+  gender_in?: Maybe<Gender[] | Gender>;
+  gender_not_in?: Maybe<Gender[] | Gender>;
+  figure?: Maybe<String>;
+  figure_not?: Maybe<String>;
+  figure_in?: Maybe<String[] | String>;
+  figure_not_in?: Maybe<String[] | String>;
+  figure_lt?: Maybe<String>;
+  figure_lte?: Maybe<String>;
+  figure_gt?: Maybe<String>;
+  figure_gte?: Maybe<String>;
+  figure_contains?: Maybe<String>;
+  figure_not_contains?: Maybe<String>;
+  figure_starts_with?: Maybe<String>;
+  figure_not_starts_with?: Maybe<String>;
+  figure_ends_with?: Maybe<String>;
+  figure_not_ends_with?: Maybe<String>;
+  rank?: Maybe<Int>;
+  rank_not?: Maybe<Int>;
+  rank_in?: Maybe<Int[] | Int>;
+  rank_not_in?: Maybe<Int[] | Int>;
+  rank_lt?: Maybe<Int>;
+  rank_lte?: Maybe<Int>;
+  rank_gt?: Maybe<Int>;
+  rank_gte?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  vip_not?: Maybe<Int>;
+  vip_in?: Maybe<Int[] | Int>;
+  vip_not_in?: Maybe<Int[] | Int>;
+  vip_lt?: Maybe<Int>;
+  vip_lte?: Maybe<Int>;
+  vip_gt?: Maybe<Int>;
+  vip_gte?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  online_not?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  verified_not?: Maybe<Int>;
+  verified_in?: Maybe<Int[] | Int>;
+  verified_not_in?: Maybe<Int[] | Int>;
+  verified_lt?: Maybe<Int>;
+  verified_lte?: Maybe<Int>;
+  verified_gt?: Maybe<Int>;
+  verified_gte?: Maybe<Int>;
+  home?: Maybe<Int>;
+  home_not?: Maybe<Int>;
+  home_in?: Maybe<Int[] | Int>;
+  home_not_in?: Maybe<Int[] | Int>;
+  home_lt?: Maybe<Int>;
+  home_lte?: Maybe<Int>;
+  home_gt?: Maybe<Int>;
+  home_gte?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  volume_not?: Maybe<Int>;
+  volume_in?: Maybe<Int[] | Int>;
+  volume_not_in?: Maybe<Int[] | Int>;
+  volume_lt?: Maybe<Int>;
+  volume_lte?: Maybe<Int>;
+  volume_gt?: Maybe<Int>;
+  volume_gte?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  appearOffline_not?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowTrade_not?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowGifts_not?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowMimic_not?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowFollow_not?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowWhisper_not?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowFriendRequests_not?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowBotSpeech_not?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+  allowPetSpeech_not?: Maybe<Boolean>;
+  createdAt?: Maybe<DateTimeInput>;
+  createdAt_not?: Maybe<DateTimeInput>;
+  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_lt?: Maybe<DateTimeInput>;
+  createdAt_lte?: Maybe<DateTimeInput>;
+  createdAt_gt?: Maybe<DateTimeInput>;
+  createdAt_gte?: Maybe<DateTimeInput>;
+  updatedAt?: Maybe<DateTimeInput>;
+  updatedAt_not?: Maybe<DateTimeInput>;
+  updatedAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_lt?: Maybe<DateTimeInput>;
+  updatedAt_lte?: Maybe<DateTimeInput>;
+  updatedAt_gt?: Maybe<DateTimeInput>;
+  updatedAt_gte?: Maybe<DateTimeInput>;
+  AND?: Maybe<HabboWhereInput[] | HabboWhereInput>;
+  OR?: Maybe<HabboWhereInput[] | HabboWhereInput>;
+  NOT?: Maybe<HabboWhereInput[] | HabboWhereInput>;
+}
+
+export interface UserWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  email?: Maybe<String>;
+  email_not?: Maybe<String>;
+  email_in?: Maybe<String[] | String>;
+  email_not_in?: Maybe<String[] | String>;
+  email_lt?: Maybe<String>;
+  email_lte?: Maybe<String>;
+  email_gt?: Maybe<String>;
+  email_gte?: Maybe<String>;
+  email_contains?: Maybe<String>;
+  email_not_contains?: Maybe<String>;
+  email_starts_with?: Maybe<String>;
+  email_not_starts_with?: Maybe<String>;
+  email_ends_with?: Maybe<String>;
+  email_not_ends_with?: Maybe<String>;
+  password?: Maybe<String>;
+  password_not?: Maybe<String>;
+  password_in?: Maybe<String[] | String>;
+  password_not_in?: Maybe<String[] | String>;
+  password_lt?: Maybe<String>;
+  password_lte?: Maybe<String>;
+  password_gt?: Maybe<String>;
+  password_gte?: Maybe<String>;
+  password_contains?: Maybe<String>;
+  password_not_contains?: Maybe<String>;
+  password_starts_with?: Maybe<String>;
+  password_not_starts_with?: Maybe<String>;
+  password_ends_with?: Maybe<String>;
+  password_not_ends_with?: Maybe<String>;
+  pin?: Maybe<Int>;
+  pin_not?: Maybe<Int>;
+  pin_in?: Maybe<Int[] | Int>;
+  pin_not_in?: Maybe<Int[] | Int>;
+  pin_lt?: Maybe<Int>;
+  pin_lte?: Maybe<Int>;
+  pin_gt?: Maybe<Int>;
+  pin_gte?: Maybe<Int>;
+  habbos_every?: Maybe<HabboWhereInput>;
+  habbos_some?: Maybe<HabboWhereInput>;
+  habbos_none?: Maybe<HabboWhereInput>;
+  createdAt?: Maybe<DateTimeInput>;
+  createdAt_not?: Maybe<DateTimeInput>;
+  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_lt?: Maybe<DateTimeInput>;
+  createdAt_lte?: Maybe<DateTimeInput>;
+  createdAt_gt?: Maybe<DateTimeInput>;
+  createdAt_gte?: Maybe<DateTimeInput>;
+  updatedAt?: Maybe<DateTimeInput>;
+  updatedAt_not?: Maybe<DateTimeInput>;
+  updatedAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_lt?: Maybe<DateTimeInput>;
+  updatedAt_lte?: Maybe<DateTimeInput>;
+  updatedAt_gt?: Maybe<DateTimeInput>;
+  updatedAt_gte?: Maybe<DateTimeInput>;
+  AND?: Maybe<UserWhereInput[] | UserWhereInput>;
+  OR?: Maybe<UserWhereInput[] | UserWhereInput>;
+  NOT?: Maybe<UserWhereInput[] | UserWhereInput>;
+}
 
 export interface ItemWhereInput {
   id?: Maybe<ID_Input>;
@@ -1509,6 +1933,162 @@ export interface RoomWhereInput {
   NOT?: Maybe<RoomWhereInput[] | RoomWhereInput>;
 }
 
+export interface ChatlogWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  habbo?: Maybe<HabboWhereInput>;
+  room?: Maybe<RoomWhereInput>;
+  message?: Maybe<String>;
+  message_not?: Maybe<String>;
+  message_in?: Maybe<String[] | String>;
+  message_not_in?: Maybe<String[] | String>;
+  message_lt?: Maybe<String>;
+  message_lte?: Maybe<String>;
+  message_gt?: Maybe<String>;
+  message_gte?: Maybe<String>;
+  message_contains?: Maybe<String>;
+  message_not_contains?: Maybe<String>;
+  message_starts_with?: Maybe<String>;
+  message_not_starts_with?: Maybe<String>;
+  message_ends_with?: Maybe<String>;
+  message_not_ends_with?: Maybe<String>;
+  createdAt?: Maybe<DateTimeInput>;
+  createdAt_not?: Maybe<DateTimeInput>;
+  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_lt?: Maybe<DateTimeInput>;
+  createdAt_lte?: Maybe<DateTimeInput>;
+  createdAt_gt?: Maybe<DateTimeInput>;
+  createdAt_gte?: Maybe<DateTimeInput>;
+  AND?: Maybe<ChatlogWhereInput[] | ChatlogWhereInput>;
+  OR?: Maybe<ChatlogWhereInput[] | ChatlogWhereInput>;
+  NOT?: Maybe<ChatlogWhereInput[] | ChatlogWhereInput>;
+}
+
+export type ChatlogConsoleWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
+export interface ChatlogConsoleWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  from?: Maybe<HabboWhereInput>;
+  to?: Maybe<HabboWhereInput>;
+  message?: Maybe<String>;
+  message_not?: Maybe<String>;
+  message_in?: Maybe<String[] | String>;
+  message_not_in?: Maybe<String[] | String>;
+  message_lt?: Maybe<String>;
+  message_lte?: Maybe<String>;
+  message_gt?: Maybe<String>;
+  message_gte?: Maybe<String>;
+  message_contains?: Maybe<String>;
+  message_not_contains?: Maybe<String>;
+  message_starts_with?: Maybe<String>;
+  message_not_starts_with?: Maybe<String>;
+  message_ends_with?: Maybe<String>;
+  message_not_ends_with?: Maybe<String>;
+  createdAt?: Maybe<DateTimeInput>;
+  createdAt_not?: Maybe<DateTimeInput>;
+  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_lt?: Maybe<DateTimeInput>;
+  createdAt_lte?: Maybe<DateTimeInput>;
+  createdAt_gt?: Maybe<DateTimeInput>;
+  createdAt_gte?: Maybe<DateTimeInput>;
+  AND?: Maybe<ChatlogConsoleWhereInput[] | ChatlogConsoleWhereInput>;
+  OR?: Maybe<ChatlogConsoleWhereInput[] | ChatlogConsoleWhereInput>;
+  NOT?: Maybe<ChatlogConsoleWhereInput[] | ChatlogConsoleWhereInput>;
+}
+
+export type ChatlogConsoleInvitationsWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
+export interface ChatlogConsoleInvitationsWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  from?: Maybe<HabboWhereInput>;
+  to?: Maybe<HabboWhereInput>;
+  message?: Maybe<String>;
+  message_not?: Maybe<String>;
+  message_in?: Maybe<String[] | String>;
+  message_not_in?: Maybe<String[] | String>;
+  message_lt?: Maybe<String>;
+  message_lte?: Maybe<String>;
+  message_gt?: Maybe<String>;
+  message_gte?: Maybe<String>;
+  message_contains?: Maybe<String>;
+  message_not_contains?: Maybe<String>;
+  message_starts_with?: Maybe<String>;
+  message_not_starts_with?: Maybe<String>;
+  message_ends_with?: Maybe<String>;
+  message_not_ends_with?: Maybe<String>;
+  room?: Maybe<RoomWhereInput>;
+  createdAt?: Maybe<DateTimeInput>;
+  createdAt_not?: Maybe<DateTimeInput>;
+  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_lt?: Maybe<DateTimeInput>;
+  createdAt_lte?: Maybe<DateTimeInput>;
+  createdAt_gt?: Maybe<DateTimeInput>;
+  createdAt_gte?: Maybe<DateTimeInput>;
+  AND?: Maybe<
+    ChatlogConsoleInvitationsWhereInput[] | ChatlogConsoleInvitationsWhereInput
+  >;
+  OR?: Maybe<
+    ChatlogConsoleInvitationsWhereInput[] | ChatlogConsoleInvitationsWhereInput
+  >;
+  NOT?: Maybe<
+    ChatlogConsoleInvitationsWhereInput[] | ChatlogConsoleInvitationsWhereInput
+  >;
+}
+
+export type HabboWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+  username?: Maybe<String>;
+}>;
+
+export type ItemWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
 export type NewsWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
@@ -1606,191 +2186,12 @@ export interface NewsWhereInput {
   NOT?: Maybe<NewsWhereInput[] | NewsWhereInput>;
 }
 
-export interface UserWhereInput {
-  id?: Maybe<ID_Input>;
-  id_not?: Maybe<ID_Input>;
-  id_in?: Maybe<ID_Input[] | ID_Input>;
-  id_not_in?: Maybe<ID_Input[] | ID_Input>;
-  id_lt?: Maybe<ID_Input>;
-  id_lte?: Maybe<ID_Input>;
-  id_gt?: Maybe<ID_Input>;
-  id_gte?: Maybe<ID_Input>;
-  id_contains?: Maybe<ID_Input>;
-  id_not_contains?: Maybe<ID_Input>;
-  id_starts_with?: Maybe<ID_Input>;
-  id_not_starts_with?: Maybe<ID_Input>;
-  id_ends_with?: Maybe<ID_Input>;
-  id_not_ends_with?: Maybe<ID_Input>;
-  username?: Maybe<String>;
-  username_not?: Maybe<String>;
-  username_in?: Maybe<String[] | String>;
-  username_not_in?: Maybe<String[] | String>;
-  username_lt?: Maybe<String>;
-  username_lte?: Maybe<String>;
-  username_gt?: Maybe<String>;
-  username_gte?: Maybe<String>;
-  username_contains?: Maybe<String>;
-  username_not_contains?: Maybe<String>;
-  username_starts_with?: Maybe<String>;
-  username_not_starts_with?: Maybe<String>;
-  username_ends_with?: Maybe<String>;
-  username_not_ends_with?: Maybe<String>;
-  email?: Maybe<String>;
-  email_not?: Maybe<String>;
-  email_in?: Maybe<String[] | String>;
-  email_not_in?: Maybe<String[] | String>;
-  email_lt?: Maybe<String>;
-  email_lte?: Maybe<String>;
-  email_gt?: Maybe<String>;
-  email_gte?: Maybe<String>;
-  email_contains?: Maybe<String>;
-  email_not_contains?: Maybe<String>;
-  email_starts_with?: Maybe<String>;
-  email_not_starts_with?: Maybe<String>;
-  email_ends_with?: Maybe<String>;
-  email_not_ends_with?: Maybe<String>;
-  password?: Maybe<String>;
-  password_not?: Maybe<String>;
-  password_in?: Maybe<String[] | String>;
-  password_not_in?: Maybe<String[] | String>;
-  password_lt?: Maybe<String>;
-  password_lte?: Maybe<String>;
-  password_gt?: Maybe<String>;
-  password_gte?: Maybe<String>;
-  password_contains?: Maybe<String>;
-  password_not_contains?: Maybe<String>;
-  password_starts_with?: Maybe<String>;
-  password_not_starts_with?: Maybe<String>;
-  password_ends_with?: Maybe<String>;
-  password_not_ends_with?: Maybe<String>;
-  pin?: Maybe<Int>;
-  pin_not?: Maybe<Int>;
-  pin_in?: Maybe<Int[] | Int>;
-  pin_not_in?: Maybe<Int[] | Int>;
-  pin_lt?: Maybe<Int>;
-  pin_lte?: Maybe<Int>;
-  pin_gt?: Maybe<Int>;
-  pin_gte?: Maybe<Int>;
-  motto?: Maybe<String>;
-  motto_not?: Maybe<String>;
-  motto_in?: Maybe<String[] | String>;
-  motto_not_in?: Maybe<String[] | String>;
-  motto_lt?: Maybe<String>;
-  motto_lte?: Maybe<String>;
-  motto_gt?: Maybe<String>;
-  motto_gte?: Maybe<String>;
-  motto_contains?: Maybe<String>;
-  motto_not_contains?: Maybe<String>;
-  motto_starts_with?: Maybe<String>;
-  motto_not_starts_with?: Maybe<String>;
-  motto_ends_with?: Maybe<String>;
-  motto_not_ends_with?: Maybe<String>;
-  gender?: Maybe<Gender>;
-  gender_not?: Maybe<Gender>;
-  gender_in?: Maybe<Gender[] | Gender>;
-  gender_not_in?: Maybe<Gender[] | Gender>;
-  figure?: Maybe<String>;
-  figure_not?: Maybe<String>;
-  figure_in?: Maybe<String[] | String>;
-  figure_not_in?: Maybe<String[] | String>;
-  figure_lt?: Maybe<String>;
-  figure_lte?: Maybe<String>;
-  figure_gt?: Maybe<String>;
-  figure_gte?: Maybe<String>;
-  figure_contains?: Maybe<String>;
-  figure_not_contains?: Maybe<String>;
-  figure_starts_with?: Maybe<String>;
-  figure_not_starts_with?: Maybe<String>;
-  figure_ends_with?: Maybe<String>;
-  figure_not_ends_with?: Maybe<String>;
-  rank?: Maybe<Int>;
-  rank_not?: Maybe<Int>;
-  rank_in?: Maybe<Int[] | Int>;
-  rank_not_in?: Maybe<Int[] | Int>;
-  rank_lt?: Maybe<Int>;
-  rank_lte?: Maybe<Int>;
-  rank_gt?: Maybe<Int>;
-  rank_gte?: Maybe<Int>;
-  vip?: Maybe<Int>;
-  vip_not?: Maybe<Int>;
-  vip_in?: Maybe<Int[] | Int>;
-  vip_not_in?: Maybe<Int[] | Int>;
-  vip_lt?: Maybe<Int>;
-  vip_lte?: Maybe<Int>;
-  vip_gt?: Maybe<Int>;
-  vip_gte?: Maybe<Int>;
-  online?: Maybe<Boolean>;
-  online_not?: Maybe<Boolean>;
-  verified?: Maybe<Int>;
-  verified_not?: Maybe<Int>;
-  verified_in?: Maybe<Int[] | Int>;
-  verified_not_in?: Maybe<Int[] | Int>;
-  verified_lt?: Maybe<Int>;
-  verified_lte?: Maybe<Int>;
-  verified_gt?: Maybe<Int>;
-  verified_gte?: Maybe<Int>;
-  home?: Maybe<Int>;
-  home_not?: Maybe<Int>;
-  home_in?: Maybe<Int[] | Int>;
-  home_not_in?: Maybe<Int[] | Int>;
-  home_lt?: Maybe<Int>;
-  home_lte?: Maybe<Int>;
-  home_gt?: Maybe<Int>;
-  home_gte?: Maybe<Int>;
-  volume?: Maybe<Int>;
-  volume_not?: Maybe<Int>;
-  volume_in?: Maybe<Int[] | Int>;
-  volume_not_in?: Maybe<Int[] | Int>;
-  volume_lt?: Maybe<Int>;
-  volume_lte?: Maybe<Int>;
-  volume_gt?: Maybe<Int>;
-  volume_gte?: Maybe<Int>;
-  appearOffline?: Maybe<Boolean>;
-  appearOffline_not?: Maybe<Boolean>;
-  allowTrade?: Maybe<Boolean>;
-  allowTrade_not?: Maybe<Boolean>;
-  allowGifts?: Maybe<Boolean>;
-  allowGifts_not?: Maybe<Boolean>;
-  allowMimic?: Maybe<Boolean>;
-  allowMimic_not?: Maybe<Boolean>;
-  allowFollow?: Maybe<Boolean>;
-  allowFollow_not?: Maybe<Boolean>;
-  allowWhisper?: Maybe<Boolean>;
-  allowWhisper_not?: Maybe<Boolean>;
-  allowFriendRequests?: Maybe<Boolean>;
-  allowFriendRequests_not?: Maybe<Boolean>;
-  allowBotSpeech?: Maybe<Boolean>;
-  allowBotSpeech_not?: Maybe<Boolean>;
-  allowPetSpeech?: Maybe<Boolean>;
-  allowPetSpeech_not?: Maybe<Boolean>;
-  createdAt?: Maybe<DateTimeInput>;
-  createdAt_not?: Maybe<DateTimeInput>;
-  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
-  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
-  createdAt_lt?: Maybe<DateTimeInput>;
-  createdAt_lte?: Maybe<DateTimeInput>;
-  createdAt_gt?: Maybe<DateTimeInput>;
-  createdAt_gte?: Maybe<DateTimeInput>;
-  updatedAt?: Maybe<DateTimeInput>;
-  updatedAt_not?: Maybe<DateTimeInput>;
-  updatedAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
-  updatedAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
-  updatedAt_lt?: Maybe<DateTimeInput>;
-  updatedAt_lte?: Maybe<DateTimeInput>;
-  updatedAt_gt?: Maybe<DateTimeInput>;
-  updatedAt_gte?: Maybe<DateTimeInput>;
-  AND?: Maybe<UserWhereInput[] | UserWhereInput>;
-  OR?: Maybe<UserWhereInput[] | UserWhereInput>;
-  NOT?: Maybe<UserWhereInput[] | UserWhereInput>;
-}
-
 export type RoomWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
 
 export type UserWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
-  username?: Maybe<String>;
 }>;
 
 export interface BadgeCreateInput {
@@ -2024,135 +2425,22 @@ export interface CatalogPageUpdateManyMutationInput {
   body?: Maybe<String>;
 }
 
-export interface ItemCreateInput {
+export interface ChatlogCreateInput {
   id?: Maybe<ID_Input>;
-  owner?: Maybe<Int>;
-  room: RoomCreateOneWithoutItemsInput;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemCreatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
+  habbo: HabboCreateOneInput;
+  room: RoomCreateOneInput;
+  message?: Maybe<String>;
 }
 
-export interface RoomCreateOneWithoutItemsInput {
-  create?: Maybe<RoomCreateWithoutItemsInput>;
-  connect?: Maybe<RoomWhereUniqueInput>;
+export interface HabboCreateOneInput {
+  create?: Maybe<HabboCreateInput>;
+  connect?: Maybe<HabboWhereUniqueInput>;
 }
 
-export interface RoomCreateWithoutItemsInput {
+export interface HabboCreateInput {
   id?: Maybe<ID_Input>;
-  name: String;
-  description?: Maybe<String>;
-  type?: Maybe<roomType>;
-  category?: Maybe<Int>;
-  owner?: Maybe<Int>;
-  map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
-  hideWalls?: Maybe<Boolean>;
-  hideWired?: Maybe<Boolean>;
-  maxUsers?: Maybe<Int>;
-  allowPets?: Maybe<Boolean>;
-  allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomCreaterightsInput>;
-}
-
-export interface RoomCreaterightsInput {
-  set?: Maybe<Int[] | Int>;
-}
-
-export interface ItemCreatewallPositionInput {
-  set?: Maybe<Float[] | Float>;
-}
-
-export interface ItemUpdateInput {
-  owner?: Maybe<Int>;
-  room?: Maybe<RoomUpdateOneRequiredWithoutItemsInput>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
-}
-
-export interface RoomUpdateOneRequiredWithoutItemsInput {
-  create?: Maybe<RoomCreateWithoutItemsInput>;
-  update?: Maybe<RoomUpdateWithoutItemsDataInput>;
-  upsert?: Maybe<RoomUpsertWithoutItemsInput>;
-  connect?: Maybe<RoomWhereUniqueInput>;
-}
-
-export interface RoomUpdateWithoutItemsDataInput {
-  name?: Maybe<String>;
-  description?: Maybe<String>;
-  type?: Maybe<roomType>;
-  category?: Maybe<Int>;
-  owner?: Maybe<Int>;
-  map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
-  hideWalls?: Maybe<Boolean>;
-  hideWired?: Maybe<Boolean>;
-  maxUsers?: Maybe<Int>;
-  allowPets?: Maybe<Boolean>;
-  allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomUpdaterightsInput>;
-}
-
-export interface RoomUpdaterightsInput {
-  set?: Maybe<Int[] | Int>;
-}
-
-export interface RoomUpsertWithoutItemsInput {
-  update: RoomUpdateWithoutItemsDataInput;
-  create: RoomCreateWithoutItemsInput;
-}
-
-export interface ItemUpdatewallPositionInput {
-  set?: Maybe<Float[] | Float>;
-}
-
-export interface ItemUpdateManyMutationInput {
-  owner?: Maybe<Int>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
-}
-
-export interface NewsCreateInput {
-  id?: Maybe<ID_Input>;
-  title?: Maybe<String>;
-  summary?: Maybe<String>;
-  body?: Maybe<String>;
-  image?: Maybe<String>;
-  author?: Maybe<UserCreateOneInput>;
-}
-
-export interface UserCreateOneInput {
-  create?: Maybe<UserCreateInput>;
-  connect?: Maybe<UserWhereUniqueInput>;
-}
-
-export interface UserCreateInput {
-  id?: Maybe<ID_Input>;
+  user: UserCreateOneWithoutHabbosInput;
   username: String;
-  email?: Maybe<String>;
-  password?: Maybe<String>;
-  pin?: Maybe<Int>;
   motto?: Maybe<String>;
   gender?: Maybe<Gender>;
   figure?: Maybe<String>;
@@ -2173,58 +2461,21 @@ export interface UserCreateInput {
   allowPetSpeech?: Maybe<Boolean>;
 }
 
-export interface NewsUpdateInput {
-  title?: Maybe<String>;
-  summary?: Maybe<String>;
-  body?: Maybe<String>;
-  image?: Maybe<String>;
-  author?: Maybe<UserUpdateOneInput>;
-}
-
-export interface UserUpdateOneInput {
-  create?: Maybe<UserCreateInput>;
-  update?: Maybe<UserUpdateDataInput>;
-  upsert?: Maybe<UserUpsertNestedInput>;
-  delete?: Maybe<Boolean>;
-  disconnect?: Maybe<Boolean>;
+export interface UserCreateOneWithoutHabbosInput {
+  create?: Maybe<UserCreateWithoutHabbosInput>;
   connect?: Maybe<UserWhereUniqueInput>;
 }
 
-export interface UserUpdateDataInput {
-  username?: Maybe<String>;
+export interface UserCreateWithoutHabbosInput {
+  id?: Maybe<ID_Input>;
   email?: Maybe<String>;
   password?: Maybe<String>;
   pin?: Maybe<Int>;
-  motto?: Maybe<String>;
-  gender?: Maybe<Gender>;
-  figure?: Maybe<String>;
-  rank?: Maybe<Int>;
-  vip?: Maybe<Int>;
-  online?: Maybe<Boolean>;
-  verified?: Maybe<Int>;
-  home?: Maybe<Int>;
-  volume?: Maybe<Int>;
-  appearOffline?: Maybe<Boolean>;
-  allowTrade?: Maybe<Boolean>;
-  allowGifts?: Maybe<Boolean>;
-  allowMimic?: Maybe<Boolean>;
-  allowFollow?: Maybe<Boolean>;
-  allowWhisper?: Maybe<Boolean>;
-  allowFriendRequests?: Maybe<Boolean>;
-  allowBotSpeech?: Maybe<Boolean>;
-  allowPetSpeech?: Maybe<Boolean>;
 }
 
-export interface UserUpsertNestedInput {
-  update: UserUpdateDataInput;
-  create: UserCreateInput;
-}
-
-export interface NewsUpdateManyMutationInput {
-  title?: Maybe<String>;
-  summary?: Maybe<String>;
-  body?: Maybe<String>;
-  image?: Maybe<String>;
+export interface RoomCreateOneInput {
+  create?: Maybe<RoomCreateInput>;
+  connect?: Maybe<RoomWhereUniqueInput>;
 }
 
 export interface RoomCreateInput {
@@ -2247,6 +2498,10 @@ export interface RoomCreateInput {
   items?: Maybe<ItemCreateManyWithoutRoomInput>;
 }
 
+export interface RoomCreaterightsInput {
+  set?: Maybe<Int[] | Int>;
+}
+
 export interface ItemCreateManyWithoutRoomInput {
   create?: Maybe<ItemCreateWithoutRoomInput[] | ItemCreateWithoutRoomInput>;
   connect?: Maybe<ItemWhereUniqueInput[] | ItemWhereUniqueInput>;
@@ -2265,7 +2520,77 @@ export interface ItemCreateWithoutRoomInput {
   inventory?: Maybe<Boolean>;
 }
 
-export interface RoomUpdateInput {
+export interface ItemCreatewallPositionInput {
+  set?: Maybe<Float[] | Float>;
+}
+
+export interface ChatlogUpdateInput {
+  habbo?: Maybe<HabboUpdateOneRequiredInput>;
+  room?: Maybe<RoomUpdateOneRequiredInput>;
+  message?: Maybe<String>;
+}
+
+export interface HabboUpdateOneRequiredInput {
+  create?: Maybe<HabboCreateInput>;
+  update?: Maybe<HabboUpdateDataInput>;
+  upsert?: Maybe<HabboUpsertNestedInput>;
+  connect?: Maybe<HabboWhereUniqueInput>;
+}
+
+export interface HabboUpdateDataInput {
+  user?: Maybe<UserUpdateOneRequiredWithoutHabbosInput>;
+  username?: Maybe<String>;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface UserUpdateOneRequiredWithoutHabbosInput {
+  create?: Maybe<UserCreateWithoutHabbosInput>;
+  update?: Maybe<UserUpdateWithoutHabbosDataInput>;
+  upsert?: Maybe<UserUpsertWithoutHabbosInput>;
+  connect?: Maybe<UserWhereUniqueInput>;
+}
+
+export interface UserUpdateWithoutHabbosDataInput {
+  email?: Maybe<String>;
+  password?: Maybe<String>;
+  pin?: Maybe<Int>;
+}
+
+export interface UserUpsertWithoutHabbosInput {
+  update: UserUpdateWithoutHabbosDataInput;
+  create: UserCreateWithoutHabbosInput;
+}
+
+export interface HabboUpsertNestedInput {
+  update: HabboUpdateDataInput;
+  create: HabboCreateInput;
+}
+
+export interface RoomUpdateOneRequiredInput {
+  create?: Maybe<RoomCreateInput>;
+  update?: Maybe<RoomUpdateDataInput>;
+  upsert?: Maybe<RoomUpsertNestedInput>;
+  connect?: Maybe<RoomWhereUniqueInput>;
+}
+
+export interface RoomUpdateDataInput {
   name?: Maybe<String>;
   description?: Maybe<String>;
   type?: Maybe<roomType>;
@@ -2282,6 +2607,10 @@ export interface RoomUpdateInput {
   allowPetsEating?: Maybe<Boolean>;
   rights?: Maybe<RoomUpdaterightsInput>;
   items?: Maybe<ItemUpdateManyWithoutRoomInput>;
+}
+
+export interface RoomUpdaterightsInput {
+  set?: Maybe<Int[] | Int>;
 }
 
 export interface ItemUpdateManyWithoutRoomInput {
@@ -2319,6 +2648,10 @@ export interface ItemUpdateWithoutRoomDataInput {
   rotation?: Maybe<Int>;
   wallPosition?: Maybe<ItemUpdatewallPositionInput>;
   inventory?: Maybe<Boolean>;
+}
+
+export interface ItemUpdatewallPositionInput {
+  set?: Maybe<Float[] | Float>;
 }
 
 export interface ItemUpsertWithWhereUniqueWithoutRoomInput {
@@ -2428,6 +2761,516 @@ export interface ItemUpdateManyDataInput {
   inventory?: Maybe<Boolean>;
 }
 
+export interface RoomUpsertNestedInput {
+  update: RoomUpdateDataInput;
+  create: RoomCreateInput;
+}
+
+export interface ChatlogUpdateManyMutationInput {
+  message?: Maybe<String>;
+}
+
+export interface ChatlogConsoleCreateInput {
+  id?: Maybe<ID_Input>;
+  from: HabboCreateOneInput;
+  to: HabboCreateOneInput;
+  message?: Maybe<String>;
+}
+
+export interface ChatlogConsoleUpdateInput {
+  from?: Maybe<HabboUpdateOneRequiredInput>;
+  to?: Maybe<HabboUpdateOneRequiredInput>;
+  message?: Maybe<String>;
+}
+
+export interface ChatlogConsoleUpdateManyMutationInput {
+  message?: Maybe<String>;
+}
+
+export interface ChatlogConsoleInvitationsCreateInput {
+  id?: Maybe<ID_Input>;
+  from: HabboCreateOneInput;
+  to: HabboCreateOneInput;
+  message?: Maybe<String>;
+  room: RoomCreateOneInput;
+}
+
+export interface ChatlogConsoleInvitationsUpdateInput {
+  from?: Maybe<HabboUpdateOneRequiredInput>;
+  to?: Maybe<HabboUpdateOneRequiredInput>;
+  message?: Maybe<String>;
+  room?: Maybe<RoomUpdateOneRequiredInput>;
+}
+
+export interface ChatlogConsoleInvitationsUpdateManyMutationInput {
+  message?: Maybe<String>;
+}
+
+export interface HabboUpdateInput {
+  user?: Maybe<UserUpdateOneRequiredWithoutHabbosInput>;
+  username?: Maybe<String>;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface HabboUpdateManyMutationInput {
+  username?: Maybe<String>;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface ItemCreateInput {
+  id?: Maybe<ID_Input>;
+  owner?: Maybe<Int>;
+  room: RoomCreateOneWithoutItemsInput;
+  furniture?: Maybe<Int>;
+  type?: Maybe<String>;
+  x?: Maybe<Int>;
+  y?: Maybe<Int>;
+  z?: Maybe<Int>;
+  rotation?: Maybe<Int>;
+  wallPosition?: Maybe<ItemCreatewallPositionInput>;
+  inventory?: Maybe<Boolean>;
+}
+
+export interface RoomCreateOneWithoutItemsInput {
+  create?: Maybe<RoomCreateWithoutItemsInput>;
+  connect?: Maybe<RoomWhereUniqueInput>;
+}
+
+export interface RoomCreateWithoutItemsInput {
+  id?: Maybe<ID_Input>;
+  name: String;
+  description?: Maybe<String>;
+  type?: Maybe<roomType>;
+  category?: Maybe<Int>;
+  owner?: Maybe<Int>;
+  map?: Maybe<Json>;
+  floorThickness?: Maybe<Int>;
+  wallThickness?: Maybe<Int>;
+  wallHeight?: Maybe<Int>;
+  hideWalls?: Maybe<Boolean>;
+  hideWired?: Maybe<Boolean>;
+  maxUsers?: Maybe<Int>;
+  allowPets?: Maybe<Boolean>;
+  allowPetsEating?: Maybe<Boolean>;
+  rights?: Maybe<RoomCreaterightsInput>;
+}
+
+export interface ItemUpdateInput {
+  owner?: Maybe<Int>;
+  room?: Maybe<RoomUpdateOneRequiredWithoutItemsInput>;
+  furniture?: Maybe<Int>;
+  type?: Maybe<String>;
+  x?: Maybe<Int>;
+  y?: Maybe<Int>;
+  z?: Maybe<Int>;
+  rotation?: Maybe<Int>;
+  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
+  inventory?: Maybe<Boolean>;
+}
+
+export interface RoomUpdateOneRequiredWithoutItemsInput {
+  create?: Maybe<RoomCreateWithoutItemsInput>;
+  update?: Maybe<RoomUpdateWithoutItemsDataInput>;
+  upsert?: Maybe<RoomUpsertWithoutItemsInput>;
+  connect?: Maybe<RoomWhereUniqueInput>;
+}
+
+export interface RoomUpdateWithoutItemsDataInput {
+  name?: Maybe<String>;
+  description?: Maybe<String>;
+  type?: Maybe<roomType>;
+  category?: Maybe<Int>;
+  owner?: Maybe<Int>;
+  map?: Maybe<Json>;
+  floorThickness?: Maybe<Int>;
+  wallThickness?: Maybe<Int>;
+  wallHeight?: Maybe<Int>;
+  hideWalls?: Maybe<Boolean>;
+  hideWired?: Maybe<Boolean>;
+  maxUsers?: Maybe<Int>;
+  allowPets?: Maybe<Boolean>;
+  allowPetsEating?: Maybe<Boolean>;
+  rights?: Maybe<RoomUpdaterightsInput>;
+}
+
+export interface RoomUpsertWithoutItemsInput {
+  update: RoomUpdateWithoutItemsDataInput;
+  create: RoomCreateWithoutItemsInput;
+}
+
+export interface ItemUpdateManyMutationInput {
+  owner?: Maybe<Int>;
+  furniture?: Maybe<Int>;
+  type?: Maybe<String>;
+  x?: Maybe<Int>;
+  y?: Maybe<Int>;
+  z?: Maybe<Int>;
+  rotation?: Maybe<Int>;
+  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
+  inventory?: Maybe<Boolean>;
+}
+
+export interface NewsCreateInput {
+  id?: Maybe<ID_Input>;
+  title?: Maybe<String>;
+  summary?: Maybe<String>;
+  body?: Maybe<String>;
+  image?: Maybe<String>;
+  author?: Maybe<UserCreateOneInput>;
+}
+
+export interface UserCreateOneInput {
+  create?: Maybe<UserCreateInput>;
+  connect?: Maybe<UserWhereUniqueInput>;
+}
+
+export interface UserCreateInput {
+  id?: Maybe<ID_Input>;
+  email?: Maybe<String>;
+  password?: Maybe<String>;
+  pin?: Maybe<Int>;
+  habbos?: Maybe<HabboCreateManyWithoutUserInput>;
+}
+
+export interface HabboCreateManyWithoutUserInput {
+  create?: Maybe<HabboCreateWithoutUserInput[] | HabboCreateWithoutUserInput>;
+  connect?: Maybe<HabboWhereUniqueInput[] | HabboWhereUniqueInput>;
+}
+
+export interface HabboCreateWithoutUserInput {
+  id?: Maybe<ID_Input>;
+  username: String;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface NewsUpdateInput {
+  title?: Maybe<String>;
+  summary?: Maybe<String>;
+  body?: Maybe<String>;
+  image?: Maybe<String>;
+  author?: Maybe<UserUpdateOneInput>;
+}
+
+export interface UserUpdateOneInput {
+  create?: Maybe<UserCreateInput>;
+  update?: Maybe<UserUpdateDataInput>;
+  upsert?: Maybe<UserUpsertNestedInput>;
+  delete?: Maybe<Boolean>;
+  disconnect?: Maybe<Boolean>;
+  connect?: Maybe<UserWhereUniqueInput>;
+}
+
+export interface UserUpdateDataInput {
+  email?: Maybe<String>;
+  password?: Maybe<String>;
+  pin?: Maybe<Int>;
+  habbos?: Maybe<HabboUpdateManyWithoutUserInput>;
+}
+
+export interface HabboUpdateManyWithoutUserInput {
+  create?: Maybe<HabboCreateWithoutUserInput[] | HabboCreateWithoutUserInput>;
+  delete?: Maybe<HabboWhereUniqueInput[] | HabboWhereUniqueInput>;
+  connect?: Maybe<HabboWhereUniqueInput[] | HabboWhereUniqueInput>;
+  set?: Maybe<HabboWhereUniqueInput[] | HabboWhereUniqueInput>;
+  disconnect?: Maybe<HabboWhereUniqueInput[] | HabboWhereUniqueInput>;
+  update?: Maybe<
+    | HabboUpdateWithWhereUniqueWithoutUserInput[]
+    | HabboUpdateWithWhereUniqueWithoutUserInput
+  >;
+  upsert?: Maybe<
+    | HabboUpsertWithWhereUniqueWithoutUserInput[]
+    | HabboUpsertWithWhereUniqueWithoutUserInput
+  >;
+  deleteMany?: Maybe<HabboScalarWhereInput[] | HabboScalarWhereInput>;
+  updateMany?: Maybe<
+    HabboUpdateManyWithWhereNestedInput[] | HabboUpdateManyWithWhereNestedInput
+  >;
+}
+
+export interface HabboUpdateWithWhereUniqueWithoutUserInput {
+  where: HabboWhereUniqueInput;
+  data: HabboUpdateWithoutUserDataInput;
+}
+
+export interface HabboUpdateWithoutUserDataInput {
+  username?: Maybe<String>;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface HabboUpsertWithWhereUniqueWithoutUserInput {
+  where: HabboWhereUniqueInput;
+  update: HabboUpdateWithoutUserDataInput;
+  create: HabboCreateWithoutUserInput;
+}
+
+export interface HabboScalarWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  username?: Maybe<String>;
+  username_not?: Maybe<String>;
+  username_in?: Maybe<String[] | String>;
+  username_not_in?: Maybe<String[] | String>;
+  username_lt?: Maybe<String>;
+  username_lte?: Maybe<String>;
+  username_gt?: Maybe<String>;
+  username_gte?: Maybe<String>;
+  username_contains?: Maybe<String>;
+  username_not_contains?: Maybe<String>;
+  username_starts_with?: Maybe<String>;
+  username_not_starts_with?: Maybe<String>;
+  username_ends_with?: Maybe<String>;
+  username_not_ends_with?: Maybe<String>;
+  motto?: Maybe<String>;
+  motto_not?: Maybe<String>;
+  motto_in?: Maybe<String[] | String>;
+  motto_not_in?: Maybe<String[] | String>;
+  motto_lt?: Maybe<String>;
+  motto_lte?: Maybe<String>;
+  motto_gt?: Maybe<String>;
+  motto_gte?: Maybe<String>;
+  motto_contains?: Maybe<String>;
+  motto_not_contains?: Maybe<String>;
+  motto_starts_with?: Maybe<String>;
+  motto_not_starts_with?: Maybe<String>;
+  motto_ends_with?: Maybe<String>;
+  motto_not_ends_with?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  gender_not?: Maybe<Gender>;
+  gender_in?: Maybe<Gender[] | Gender>;
+  gender_not_in?: Maybe<Gender[] | Gender>;
+  figure?: Maybe<String>;
+  figure_not?: Maybe<String>;
+  figure_in?: Maybe<String[] | String>;
+  figure_not_in?: Maybe<String[] | String>;
+  figure_lt?: Maybe<String>;
+  figure_lte?: Maybe<String>;
+  figure_gt?: Maybe<String>;
+  figure_gte?: Maybe<String>;
+  figure_contains?: Maybe<String>;
+  figure_not_contains?: Maybe<String>;
+  figure_starts_with?: Maybe<String>;
+  figure_not_starts_with?: Maybe<String>;
+  figure_ends_with?: Maybe<String>;
+  figure_not_ends_with?: Maybe<String>;
+  rank?: Maybe<Int>;
+  rank_not?: Maybe<Int>;
+  rank_in?: Maybe<Int[] | Int>;
+  rank_not_in?: Maybe<Int[] | Int>;
+  rank_lt?: Maybe<Int>;
+  rank_lte?: Maybe<Int>;
+  rank_gt?: Maybe<Int>;
+  rank_gte?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  vip_not?: Maybe<Int>;
+  vip_in?: Maybe<Int[] | Int>;
+  vip_not_in?: Maybe<Int[] | Int>;
+  vip_lt?: Maybe<Int>;
+  vip_lte?: Maybe<Int>;
+  vip_gt?: Maybe<Int>;
+  vip_gte?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  online_not?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  verified_not?: Maybe<Int>;
+  verified_in?: Maybe<Int[] | Int>;
+  verified_not_in?: Maybe<Int[] | Int>;
+  verified_lt?: Maybe<Int>;
+  verified_lte?: Maybe<Int>;
+  verified_gt?: Maybe<Int>;
+  verified_gte?: Maybe<Int>;
+  home?: Maybe<Int>;
+  home_not?: Maybe<Int>;
+  home_in?: Maybe<Int[] | Int>;
+  home_not_in?: Maybe<Int[] | Int>;
+  home_lt?: Maybe<Int>;
+  home_lte?: Maybe<Int>;
+  home_gt?: Maybe<Int>;
+  home_gte?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  volume_not?: Maybe<Int>;
+  volume_in?: Maybe<Int[] | Int>;
+  volume_not_in?: Maybe<Int[] | Int>;
+  volume_lt?: Maybe<Int>;
+  volume_lte?: Maybe<Int>;
+  volume_gt?: Maybe<Int>;
+  volume_gte?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  appearOffline_not?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowTrade_not?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowGifts_not?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowMimic_not?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowFollow_not?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowWhisper_not?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowFriendRequests_not?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowBotSpeech_not?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+  allowPetSpeech_not?: Maybe<Boolean>;
+  createdAt?: Maybe<DateTimeInput>;
+  createdAt_not?: Maybe<DateTimeInput>;
+  createdAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  createdAt_lt?: Maybe<DateTimeInput>;
+  createdAt_lte?: Maybe<DateTimeInput>;
+  createdAt_gt?: Maybe<DateTimeInput>;
+  createdAt_gte?: Maybe<DateTimeInput>;
+  updatedAt?: Maybe<DateTimeInput>;
+  updatedAt_not?: Maybe<DateTimeInput>;
+  updatedAt_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_not_in?: Maybe<DateTimeInput[] | DateTimeInput>;
+  updatedAt_lt?: Maybe<DateTimeInput>;
+  updatedAt_lte?: Maybe<DateTimeInput>;
+  updatedAt_gt?: Maybe<DateTimeInput>;
+  updatedAt_gte?: Maybe<DateTimeInput>;
+  AND?: Maybe<HabboScalarWhereInput[] | HabboScalarWhereInput>;
+  OR?: Maybe<HabboScalarWhereInput[] | HabboScalarWhereInput>;
+  NOT?: Maybe<HabboScalarWhereInput[] | HabboScalarWhereInput>;
+}
+
+export interface HabboUpdateManyWithWhereNestedInput {
+  where: HabboScalarWhereInput;
+  data: HabboUpdateManyDataInput;
+}
+
+export interface HabboUpdateManyDataInput {
+  username?: Maybe<String>;
+  motto?: Maybe<String>;
+  gender?: Maybe<Gender>;
+  figure?: Maybe<String>;
+  rank?: Maybe<Int>;
+  vip?: Maybe<Int>;
+  online?: Maybe<Boolean>;
+  verified?: Maybe<Int>;
+  home?: Maybe<Int>;
+  volume?: Maybe<Int>;
+  appearOffline?: Maybe<Boolean>;
+  allowTrade?: Maybe<Boolean>;
+  allowGifts?: Maybe<Boolean>;
+  allowMimic?: Maybe<Boolean>;
+  allowFollow?: Maybe<Boolean>;
+  allowWhisper?: Maybe<Boolean>;
+  allowFriendRequests?: Maybe<Boolean>;
+  allowBotSpeech?: Maybe<Boolean>;
+  allowPetSpeech?: Maybe<Boolean>;
+}
+
+export interface UserUpsertNestedInput {
+  update: UserUpdateDataInput;
+  create: UserCreateInput;
+}
+
+export interface NewsUpdateManyMutationInput {
+  title?: Maybe<String>;
+  summary?: Maybe<String>;
+  body?: Maybe<String>;
+  image?: Maybe<String>;
+}
+
+export interface RoomUpdateInput {
+  name?: Maybe<String>;
+  description?: Maybe<String>;
+  type?: Maybe<roomType>;
+  category?: Maybe<Int>;
+  owner?: Maybe<Int>;
+  map?: Maybe<Json>;
+  floorThickness?: Maybe<Int>;
+  wallThickness?: Maybe<Int>;
+  wallHeight?: Maybe<Int>;
+  hideWalls?: Maybe<Boolean>;
+  hideWired?: Maybe<Boolean>;
+  maxUsers?: Maybe<Int>;
+  allowPets?: Maybe<Boolean>;
+  allowPetsEating?: Maybe<Boolean>;
+  rights?: Maybe<RoomUpdaterightsInput>;
+  items?: Maybe<ItemUpdateManyWithoutRoomInput>;
+}
+
 export interface RoomUpdateManyMutationInput {
   name?: Maybe<String>;
   description?: Maybe<String>;
@@ -2447,53 +3290,16 @@ export interface RoomUpdateManyMutationInput {
 }
 
 export interface UserUpdateInput {
-  username?: Maybe<String>;
   email?: Maybe<String>;
   password?: Maybe<String>;
   pin?: Maybe<Int>;
-  motto?: Maybe<String>;
-  gender?: Maybe<Gender>;
-  figure?: Maybe<String>;
-  rank?: Maybe<Int>;
-  vip?: Maybe<Int>;
-  online?: Maybe<Boolean>;
-  verified?: Maybe<Int>;
-  home?: Maybe<Int>;
-  volume?: Maybe<Int>;
-  appearOffline?: Maybe<Boolean>;
-  allowTrade?: Maybe<Boolean>;
-  allowGifts?: Maybe<Boolean>;
-  allowMimic?: Maybe<Boolean>;
-  allowFollow?: Maybe<Boolean>;
-  allowWhisper?: Maybe<Boolean>;
-  allowFriendRequests?: Maybe<Boolean>;
-  allowBotSpeech?: Maybe<Boolean>;
-  allowPetSpeech?: Maybe<Boolean>;
+  habbos?: Maybe<HabboUpdateManyWithoutUserInput>;
 }
 
 export interface UserUpdateManyMutationInput {
-  username?: Maybe<String>;
   email?: Maybe<String>;
   password?: Maybe<String>;
   pin?: Maybe<Int>;
-  motto?: Maybe<String>;
-  gender?: Maybe<Gender>;
-  figure?: Maybe<String>;
-  rank?: Maybe<Int>;
-  vip?: Maybe<Int>;
-  online?: Maybe<Boolean>;
-  verified?: Maybe<Int>;
-  home?: Maybe<Int>;
-  volume?: Maybe<Int>;
-  appearOffline?: Maybe<Boolean>;
-  allowTrade?: Maybe<Boolean>;
-  allowGifts?: Maybe<Boolean>;
-  allowMimic?: Maybe<Boolean>;
-  allowFollow?: Maybe<Boolean>;
-  allowWhisper?: Maybe<Boolean>;
-  allowFriendRequests?: Maybe<Boolean>;
-  allowBotSpeech?: Maybe<Boolean>;
-  allowPetSpeech?: Maybe<Boolean>;
 }
 
 export interface BadgeSubscriptionWhereInput {
@@ -2581,6 +3387,68 @@ export interface CatalogPageSubscriptionWhereInput {
   NOT?: Maybe<
     CatalogPageSubscriptionWhereInput[] | CatalogPageSubscriptionWhereInput
   >;
+}
+
+export interface ChatlogSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<ChatlogWhereInput>;
+  AND?: Maybe<ChatlogSubscriptionWhereInput[] | ChatlogSubscriptionWhereInput>;
+  OR?: Maybe<ChatlogSubscriptionWhereInput[] | ChatlogSubscriptionWhereInput>;
+  NOT?: Maybe<ChatlogSubscriptionWhereInput[] | ChatlogSubscriptionWhereInput>;
+}
+
+export interface ChatlogConsoleSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<ChatlogConsoleWhereInput>;
+  AND?: Maybe<
+    | ChatlogConsoleSubscriptionWhereInput[]
+    | ChatlogConsoleSubscriptionWhereInput
+  >;
+  OR?: Maybe<
+    | ChatlogConsoleSubscriptionWhereInput[]
+    | ChatlogConsoleSubscriptionWhereInput
+  >;
+  NOT?: Maybe<
+    | ChatlogConsoleSubscriptionWhereInput[]
+    | ChatlogConsoleSubscriptionWhereInput
+  >;
+}
+
+export interface ChatlogConsoleInvitationsSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<ChatlogConsoleInvitationsWhereInput>;
+  AND?: Maybe<
+    | ChatlogConsoleInvitationsSubscriptionWhereInput[]
+    | ChatlogConsoleInvitationsSubscriptionWhereInput
+  >;
+  OR?: Maybe<
+    | ChatlogConsoleInvitationsSubscriptionWhereInput[]
+    | ChatlogConsoleInvitationsSubscriptionWhereInput
+  >;
+  NOT?: Maybe<
+    | ChatlogConsoleInvitationsSubscriptionWhereInput[]
+    | ChatlogConsoleInvitationsSubscriptionWhereInput
+  >;
+}
+
+export interface HabboSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<HabboWhereInput>;
+  AND?: Maybe<HabboSubscriptionWhereInput[] | HabboSubscriptionWhereInput>;
+  OR?: Maybe<HabboSubscriptionWhereInput[] | HabboSubscriptionWhereInput>;
+  NOT?: Maybe<HabboSubscriptionWhereInput[] | HabboSubscriptionWhereInput>;
 }
 
 export interface ItemSubscriptionWhereInput {
@@ -3310,63 +4178,212 @@ export interface AggregateCatalogPageSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface Item {
+export interface Chatlog {
   id: ID_Output;
-  owner?: Int;
-  furniture?: Int;
-  type?: String;
-  x?: Int;
-  y?: Int;
-  z?: Int;
-  rotation?: Int;
-  wallPosition: Float[];
-  inventory?: Boolean;
+  message?: String;
+  createdAt?: DateTimeOutput;
 }
 
-export interface ItemPromise extends Promise<Item>, Fragmentable {
+export interface ChatlogPromise extends Promise<Chatlog>, Fragmentable {
   id: () => Promise<ID_Output>;
-  owner: () => Promise<Int>;
+  habbo: <T = HabboPromise>() => T;
   room: <T = RoomPromise>() => T;
-  furniture: () => Promise<Int>;
-  type: () => Promise<String>;
-  x: () => Promise<Int>;
-  y: () => Promise<Int>;
-  z: () => Promise<Int>;
-  rotation: () => Promise<Int>;
-  wallPosition: () => Promise<Float[]>;
-  inventory: () => Promise<Boolean>;
+  message: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
 }
 
-export interface ItemSubscription
-  extends Promise<AsyncIterator<Item>>,
+export interface ChatlogSubscription
+  extends Promise<AsyncIterator<Chatlog>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
-  owner: () => Promise<AsyncIterator<Int>>;
+  habbo: <T = HabboSubscription>() => T;
   room: <T = RoomSubscription>() => T;
-  furniture: () => Promise<AsyncIterator<Int>>;
-  type: () => Promise<AsyncIterator<String>>;
-  x: () => Promise<AsyncIterator<Int>>;
-  y: () => Promise<AsyncIterator<Int>>;
-  z: () => Promise<AsyncIterator<Int>>;
-  rotation: () => Promise<AsyncIterator<Int>>;
-  wallPosition: () => Promise<AsyncIterator<Float[]>>;
-  inventory: () => Promise<AsyncIterator<Boolean>>;
+  message: () => Promise<AsyncIterator<String>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface ItemNullablePromise
-  extends Promise<Item | null>,
+export interface ChatlogNullablePromise
+  extends Promise<Chatlog | null>,
     Fragmentable {
   id: () => Promise<ID_Output>;
-  owner: () => Promise<Int>;
+  habbo: <T = HabboPromise>() => T;
   room: <T = RoomPromise>() => T;
-  furniture: () => Promise<Int>;
-  type: () => Promise<String>;
-  x: () => Promise<Int>;
-  y: () => Promise<Int>;
-  z: () => Promise<Int>;
-  rotation: () => Promise<Int>;
-  wallPosition: () => Promise<Float[]>;
-  inventory: () => Promise<Boolean>;
+  message: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface Habbo {
+  id: ID_Output;
+  username: String;
+  motto?: String;
+  gender?: Gender;
+  figure?: String;
+  rank?: Int;
+  vip?: Int;
+  online?: Boolean;
+  verified?: Int;
+  home?: Int;
+  volume?: Int;
+  appearOffline?: Boolean;
+  allowTrade?: Boolean;
+  allowGifts?: Boolean;
+  allowMimic?: Boolean;
+  allowFollow?: Boolean;
+  allowWhisper?: Boolean;
+  allowFriendRequests?: Boolean;
+  allowBotSpeech?: Boolean;
+  allowPetSpeech?: Boolean;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
+}
+
+export interface HabboPromise extends Promise<Habbo>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  user: <T = UserPromise>() => T;
+  username: () => Promise<String>;
+  motto: () => Promise<String>;
+  gender: () => Promise<Gender>;
+  figure: () => Promise<String>;
+  rank: () => Promise<Int>;
+  vip: () => Promise<Int>;
+  online: () => Promise<Boolean>;
+  verified: () => Promise<Int>;
+  home: () => Promise<Int>;
+  volume: () => Promise<Int>;
+  appearOffline: () => Promise<Boolean>;
+  allowTrade: () => Promise<Boolean>;
+  allowGifts: () => Promise<Boolean>;
+  allowMimic: () => Promise<Boolean>;
+  allowFollow: () => Promise<Boolean>;
+  allowWhisper: () => Promise<Boolean>;
+  allowFriendRequests: () => Promise<Boolean>;
+  allowBotSpeech: () => Promise<Boolean>;
+  allowPetSpeech: () => Promise<Boolean>;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface HabboSubscription
+  extends Promise<AsyncIterator<Habbo>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  user: <T = UserSubscription>() => T;
+  username: () => Promise<AsyncIterator<String>>;
+  motto: () => Promise<AsyncIterator<String>>;
+  gender: () => Promise<AsyncIterator<Gender>>;
+  figure: () => Promise<AsyncIterator<String>>;
+  rank: () => Promise<AsyncIterator<Int>>;
+  vip: () => Promise<AsyncIterator<Int>>;
+  online: () => Promise<AsyncIterator<Boolean>>;
+  verified: () => Promise<AsyncIterator<Int>>;
+  home: () => Promise<AsyncIterator<Int>>;
+  volume: () => Promise<AsyncIterator<Int>>;
+  appearOffline: () => Promise<AsyncIterator<Boolean>>;
+  allowTrade: () => Promise<AsyncIterator<Boolean>>;
+  allowGifts: () => Promise<AsyncIterator<Boolean>>;
+  allowMimic: () => Promise<AsyncIterator<Boolean>>;
+  allowFollow: () => Promise<AsyncIterator<Boolean>>;
+  allowWhisper: () => Promise<AsyncIterator<Boolean>>;
+  allowFriendRequests: () => Promise<AsyncIterator<Boolean>>;
+  allowBotSpeech: () => Promise<AsyncIterator<Boolean>>;
+  allowPetSpeech: () => Promise<AsyncIterator<Boolean>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+  updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface HabboNullablePromise
+  extends Promise<Habbo | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  user: <T = UserPromise>() => T;
+  username: () => Promise<String>;
+  motto: () => Promise<String>;
+  gender: () => Promise<Gender>;
+  figure: () => Promise<String>;
+  rank: () => Promise<Int>;
+  vip: () => Promise<Int>;
+  online: () => Promise<Boolean>;
+  verified: () => Promise<Int>;
+  home: () => Promise<Int>;
+  volume: () => Promise<Int>;
+  appearOffline: () => Promise<Boolean>;
+  allowTrade: () => Promise<Boolean>;
+  allowGifts: () => Promise<Boolean>;
+  allowMimic: () => Promise<Boolean>;
+  allowFollow: () => Promise<Boolean>;
+  allowWhisper: () => Promise<Boolean>;
+  allowFriendRequests: () => Promise<Boolean>;
+  allowBotSpeech: () => Promise<Boolean>;
+  allowPetSpeech: () => Promise<Boolean>;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface User {
+  id: ID_Output;
+  email?: String;
+  password?: String;
+  pin?: Int;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
+}
+
+export interface UserPromise extends Promise<User>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  email: () => Promise<String>;
+  password: () => Promise<String>;
+  pin: () => Promise<Int>;
+  habbos: <T = FragmentableArray<Habbo>>(args?: {
+    where?: HabboWhereInput;
+    orderBy?: HabboOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => T;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface UserSubscription
+  extends Promise<AsyncIterator<User>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  email: () => Promise<AsyncIterator<String>>;
+  password: () => Promise<AsyncIterator<String>>;
+  pin: () => Promise<AsyncIterator<Int>>;
+  habbos: <T = Promise<AsyncIterator<HabboSubscription>>>(args?: {
+    where?: HabboWhereInput;
+    orderBy?: HabboOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => T;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+  updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface UserNullablePromise
+  extends Promise<User | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  email: () => Promise<String>;
+  password: () => Promise<String>;
+  pin: () => Promise<Int>;
+  habbos: <T = FragmentableArray<Habbo>>(args?: {
+    where?: HabboWhereInput;
+    orderBy?: HabboOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => T;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
 }
 
 export interface Room {
@@ -3476,6 +4493,362 @@ export interface RoomNullablePromise
   }) => T;
 }
 
+export interface Item {
+  id: ID_Output;
+  owner?: Int;
+  furniture?: Int;
+  type?: String;
+  x?: Int;
+  y?: Int;
+  z?: Int;
+  rotation?: Int;
+  wallPosition: Float[];
+  inventory?: Boolean;
+}
+
+export interface ItemPromise extends Promise<Item>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  owner: () => Promise<Int>;
+  room: <T = RoomPromise>() => T;
+  furniture: () => Promise<Int>;
+  type: () => Promise<String>;
+  x: () => Promise<Int>;
+  y: () => Promise<Int>;
+  z: () => Promise<Int>;
+  rotation: () => Promise<Int>;
+  wallPosition: () => Promise<Float[]>;
+  inventory: () => Promise<Boolean>;
+}
+
+export interface ItemSubscription
+  extends Promise<AsyncIterator<Item>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  owner: () => Promise<AsyncIterator<Int>>;
+  room: <T = RoomSubscription>() => T;
+  furniture: () => Promise<AsyncIterator<Int>>;
+  type: () => Promise<AsyncIterator<String>>;
+  x: () => Promise<AsyncIterator<Int>>;
+  y: () => Promise<AsyncIterator<Int>>;
+  z: () => Promise<AsyncIterator<Int>>;
+  rotation: () => Promise<AsyncIterator<Int>>;
+  wallPosition: () => Promise<AsyncIterator<Float[]>>;
+  inventory: () => Promise<AsyncIterator<Boolean>>;
+}
+
+export interface ItemNullablePromise
+  extends Promise<Item | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  owner: () => Promise<Int>;
+  room: <T = RoomPromise>() => T;
+  furniture: () => Promise<Int>;
+  type: () => Promise<String>;
+  x: () => Promise<Int>;
+  y: () => Promise<Int>;
+  z: () => Promise<Int>;
+  rotation: () => Promise<Int>;
+  wallPosition: () => Promise<Float[]>;
+  inventory: () => Promise<Boolean>;
+}
+
+export interface ChatlogConnection {
+  pageInfo: PageInfo;
+  edges: ChatlogEdge[];
+}
+
+export interface ChatlogConnectionPromise
+  extends Promise<ChatlogConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<ChatlogEdge>>() => T;
+  aggregate: <T = AggregateChatlogPromise>() => T;
+}
+
+export interface ChatlogConnectionSubscription
+  extends Promise<AsyncIterator<ChatlogConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<ChatlogEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChatlogSubscription>() => T;
+}
+
+export interface ChatlogEdge {
+  node: Chatlog;
+  cursor: String;
+}
+
+export interface ChatlogEdgePromise extends Promise<ChatlogEdge>, Fragmentable {
+  node: <T = ChatlogPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface ChatlogEdgeSubscription
+  extends Promise<AsyncIterator<ChatlogEdge>>,
+    Fragmentable {
+  node: <T = ChatlogSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateChatlog {
+  count: Int;
+}
+
+export interface AggregateChatlogPromise
+  extends Promise<AggregateChatlog>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChatlogSubscription
+  extends Promise<AsyncIterator<AggregateChatlog>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface ChatlogConsole {
+  id: ID_Output;
+  message?: String;
+  createdAt?: DateTimeOutput;
+}
+
+export interface ChatlogConsolePromise
+  extends Promise<ChatlogConsole>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  from: <T = HabboPromise>() => T;
+  to: <T = HabboPromise>() => T;
+  message: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface ChatlogConsoleSubscription
+  extends Promise<AsyncIterator<ChatlogConsole>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  from: <T = HabboSubscription>() => T;
+  to: <T = HabboSubscription>() => T;
+  message: () => Promise<AsyncIterator<String>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface ChatlogConsoleNullablePromise
+  extends Promise<ChatlogConsole | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  from: <T = HabboPromise>() => T;
+  to: <T = HabboPromise>() => T;
+  message: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface ChatlogConsoleConnection {
+  pageInfo: PageInfo;
+  edges: ChatlogConsoleEdge[];
+}
+
+export interface ChatlogConsoleConnectionPromise
+  extends Promise<ChatlogConsoleConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<ChatlogConsoleEdge>>() => T;
+  aggregate: <T = AggregateChatlogConsolePromise>() => T;
+}
+
+export interface ChatlogConsoleConnectionSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<ChatlogConsoleEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateChatlogConsoleSubscription>() => T;
+}
+
+export interface ChatlogConsoleEdge {
+  node: ChatlogConsole;
+  cursor: String;
+}
+
+export interface ChatlogConsoleEdgePromise
+  extends Promise<ChatlogConsoleEdge>,
+    Fragmentable {
+  node: <T = ChatlogConsolePromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface ChatlogConsoleEdgeSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleEdge>>,
+    Fragmentable {
+  node: <T = ChatlogConsoleSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateChatlogConsole {
+  count: Int;
+}
+
+export interface AggregateChatlogConsolePromise
+  extends Promise<AggregateChatlogConsole>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChatlogConsoleSubscription
+  extends Promise<AsyncIterator<AggregateChatlogConsole>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface ChatlogConsoleInvitations {
+  id: ID_Output;
+  message?: String;
+  createdAt?: DateTimeOutput;
+}
+
+export interface ChatlogConsoleInvitationsPromise
+  extends Promise<ChatlogConsoleInvitations>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  from: <T = HabboPromise>() => T;
+  to: <T = HabboPromise>() => T;
+  message: () => Promise<String>;
+  room: <T = RoomPromise>() => T;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface ChatlogConsoleInvitationsSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleInvitations>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  from: <T = HabboSubscription>() => T;
+  to: <T = HabboSubscription>() => T;
+  message: () => Promise<AsyncIterator<String>>;
+  room: <T = RoomSubscription>() => T;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface ChatlogConsoleInvitationsNullablePromise
+  extends Promise<ChatlogConsoleInvitations | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  from: <T = HabboPromise>() => T;
+  to: <T = HabboPromise>() => T;
+  message: () => Promise<String>;
+  room: <T = RoomPromise>() => T;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface ChatlogConsoleInvitationsConnection {
+  pageInfo: PageInfo;
+  edges: ChatlogConsoleInvitationsEdge[];
+}
+
+export interface ChatlogConsoleInvitationsConnectionPromise
+  extends Promise<ChatlogConsoleInvitationsConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<ChatlogConsoleInvitationsEdge>>() => T;
+  aggregate: <T = AggregateChatlogConsoleInvitationsPromise>() => T;
+}
+
+export interface ChatlogConsoleInvitationsConnectionSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleInvitationsConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <
+    T = Promise<AsyncIterator<ChatlogConsoleInvitationsEdgeSubscription>>
+  >() => T;
+  aggregate: <T = AggregateChatlogConsoleInvitationsSubscription>() => T;
+}
+
+export interface ChatlogConsoleInvitationsEdge {
+  node: ChatlogConsoleInvitations;
+  cursor: String;
+}
+
+export interface ChatlogConsoleInvitationsEdgePromise
+  extends Promise<ChatlogConsoleInvitationsEdge>,
+    Fragmentable {
+  node: <T = ChatlogConsoleInvitationsPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface ChatlogConsoleInvitationsEdgeSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleInvitationsEdge>>,
+    Fragmentable {
+  node: <T = ChatlogConsoleInvitationsSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateChatlogConsoleInvitations {
+  count: Int;
+}
+
+export interface AggregateChatlogConsoleInvitationsPromise
+  extends Promise<AggregateChatlogConsoleInvitations>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateChatlogConsoleInvitationsSubscription
+  extends Promise<AsyncIterator<AggregateChatlogConsoleInvitations>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface HabboConnection {
+  pageInfo: PageInfo;
+  edges: HabboEdge[];
+}
+
+export interface HabboConnectionPromise
+  extends Promise<HabboConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<HabboEdge>>() => T;
+  aggregate: <T = AggregateHabboPromise>() => T;
+}
+
+export interface HabboConnectionSubscription
+  extends Promise<AsyncIterator<HabboConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<HabboEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateHabboSubscription>() => T;
+}
+
+export interface HabboEdge {
+  node: Habbo;
+  cursor: String;
+}
+
+export interface HabboEdgePromise extends Promise<HabboEdge>, Fragmentable {
+  node: <T = HabboPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface HabboEdgeSubscription
+  extends Promise<AsyncIterator<HabboEdge>>,
+    Fragmentable {
+  node: <T = HabboSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateHabbo {
+  count: Int;
+}
+
+export interface AggregateHabboPromise
+  extends Promise<AggregateHabbo>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateHabboSubscription
+  extends Promise<AsyncIterator<AggregateHabbo>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
 export interface ItemConnection {
   pageInfo: PageInfo;
   edges: ItemEdge[];
@@ -3573,122 +4946,6 @@ export interface NewsNullablePromise
   body: () => Promise<String>;
   image: () => Promise<String>;
   author: <T = UserPromise>() => T;
-  createdAt: () => Promise<DateTimeOutput>;
-  updatedAt: () => Promise<DateTimeOutput>;
-}
-
-export interface User {
-  id: ID_Output;
-  username: String;
-  email?: String;
-  password?: String;
-  pin?: Int;
-  motto?: String;
-  gender?: Gender;
-  figure?: String;
-  rank?: Int;
-  vip?: Int;
-  online?: Boolean;
-  verified?: Int;
-  home?: Int;
-  volume?: Int;
-  appearOffline?: Boolean;
-  allowTrade?: Boolean;
-  allowGifts?: Boolean;
-  allowMimic?: Boolean;
-  allowFollow?: Boolean;
-  allowWhisper?: Boolean;
-  allowFriendRequests?: Boolean;
-  allowBotSpeech?: Boolean;
-  allowPetSpeech?: Boolean;
-  createdAt?: DateTimeOutput;
-  updatedAt?: DateTimeOutput;
-}
-
-export interface UserPromise extends Promise<User>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  username: () => Promise<String>;
-  email: () => Promise<String>;
-  password: () => Promise<String>;
-  pin: () => Promise<Int>;
-  motto: () => Promise<String>;
-  gender: () => Promise<Gender>;
-  figure: () => Promise<String>;
-  rank: () => Promise<Int>;
-  vip: () => Promise<Int>;
-  online: () => Promise<Boolean>;
-  verified: () => Promise<Int>;
-  home: () => Promise<Int>;
-  volume: () => Promise<Int>;
-  appearOffline: () => Promise<Boolean>;
-  allowTrade: () => Promise<Boolean>;
-  allowGifts: () => Promise<Boolean>;
-  allowMimic: () => Promise<Boolean>;
-  allowFollow: () => Promise<Boolean>;
-  allowWhisper: () => Promise<Boolean>;
-  allowFriendRequests: () => Promise<Boolean>;
-  allowBotSpeech: () => Promise<Boolean>;
-  allowPetSpeech: () => Promise<Boolean>;
-  createdAt: () => Promise<DateTimeOutput>;
-  updatedAt: () => Promise<DateTimeOutput>;
-}
-
-export interface UserSubscription
-  extends Promise<AsyncIterator<User>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  username: () => Promise<AsyncIterator<String>>;
-  email: () => Promise<AsyncIterator<String>>;
-  password: () => Promise<AsyncIterator<String>>;
-  pin: () => Promise<AsyncIterator<Int>>;
-  motto: () => Promise<AsyncIterator<String>>;
-  gender: () => Promise<AsyncIterator<Gender>>;
-  figure: () => Promise<AsyncIterator<String>>;
-  rank: () => Promise<AsyncIterator<Int>>;
-  vip: () => Promise<AsyncIterator<Int>>;
-  online: () => Promise<AsyncIterator<Boolean>>;
-  verified: () => Promise<AsyncIterator<Int>>;
-  home: () => Promise<AsyncIterator<Int>>;
-  volume: () => Promise<AsyncIterator<Int>>;
-  appearOffline: () => Promise<AsyncIterator<Boolean>>;
-  allowTrade: () => Promise<AsyncIterator<Boolean>>;
-  allowGifts: () => Promise<AsyncIterator<Boolean>>;
-  allowMimic: () => Promise<AsyncIterator<Boolean>>;
-  allowFollow: () => Promise<AsyncIterator<Boolean>>;
-  allowWhisper: () => Promise<AsyncIterator<Boolean>>;
-  allowFriendRequests: () => Promise<AsyncIterator<Boolean>>;
-  allowBotSpeech: () => Promise<AsyncIterator<Boolean>>;
-  allowPetSpeech: () => Promise<AsyncIterator<Boolean>>;
-  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
-  updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
-}
-
-export interface UserNullablePromise
-  extends Promise<User | null>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  username: () => Promise<String>;
-  email: () => Promise<String>;
-  password: () => Promise<String>;
-  pin: () => Promise<Int>;
-  motto: () => Promise<String>;
-  gender: () => Promise<Gender>;
-  figure: () => Promise<String>;
-  rank: () => Promise<Int>;
-  vip: () => Promise<Int>;
-  online: () => Promise<Boolean>;
-  verified: () => Promise<Int>;
-  home: () => Promise<Int>;
-  volume: () => Promise<Int>;
-  appearOffline: () => Promise<Boolean>;
-  allowTrade: () => Promise<Boolean>;
-  allowGifts: () => Promise<Boolean>;
-  allowMimic: () => Promise<Boolean>;
-  allowFollow: () => Promise<Boolean>;
-  allowWhisper: () => Promise<Boolean>;
-  allowFriendRequests: () => Promise<Boolean>;
-  allowBotSpeech: () => Promise<Boolean>;
-  allowPetSpeech: () => Promise<Boolean>;
   createdAt: () => Promise<DateTimeOutput>;
   updatedAt: () => Promise<DateTimeOutput>;
 }
@@ -4273,6 +5530,253 @@ export interface CatalogPagePreviousValuesSubscription
   body: () => Promise<AsyncIterator<String>>;
 }
 
+export interface ChatlogSubscriptionPayload {
+  mutation: MutationType;
+  node: Chatlog;
+  updatedFields: String[];
+  previousValues: ChatlogPreviousValues;
+}
+
+export interface ChatlogSubscriptionPayloadPromise
+  extends Promise<ChatlogSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = ChatlogPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = ChatlogPreviousValuesPromise>() => T;
+}
+
+export interface ChatlogSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<ChatlogSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = ChatlogSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = ChatlogPreviousValuesSubscription>() => T;
+}
+
+export interface ChatlogPreviousValues {
+  id: ID_Output;
+  message?: String;
+  createdAt?: DateTimeOutput;
+}
+
+export interface ChatlogPreviousValuesPromise
+  extends Promise<ChatlogPreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  message: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface ChatlogPreviousValuesSubscription
+  extends Promise<AsyncIterator<ChatlogPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  message: () => Promise<AsyncIterator<String>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface ChatlogConsoleSubscriptionPayload {
+  mutation: MutationType;
+  node: ChatlogConsole;
+  updatedFields: String[];
+  previousValues: ChatlogConsolePreviousValues;
+}
+
+export interface ChatlogConsoleSubscriptionPayloadPromise
+  extends Promise<ChatlogConsoleSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = ChatlogConsolePromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = ChatlogConsolePreviousValuesPromise>() => T;
+}
+
+export interface ChatlogConsoleSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = ChatlogConsoleSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = ChatlogConsolePreviousValuesSubscription>() => T;
+}
+
+export interface ChatlogConsolePreviousValues {
+  id: ID_Output;
+  message?: String;
+  createdAt?: DateTimeOutput;
+}
+
+export interface ChatlogConsolePreviousValuesPromise
+  extends Promise<ChatlogConsolePreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  message: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface ChatlogConsolePreviousValuesSubscription
+  extends Promise<AsyncIterator<ChatlogConsolePreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  message: () => Promise<AsyncIterator<String>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface ChatlogConsoleInvitationsSubscriptionPayload {
+  mutation: MutationType;
+  node: ChatlogConsoleInvitations;
+  updatedFields: String[];
+  previousValues: ChatlogConsoleInvitationsPreviousValues;
+}
+
+export interface ChatlogConsoleInvitationsSubscriptionPayloadPromise
+  extends Promise<ChatlogConsoleInvitationsSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = ChatlogConsoleInvitationsPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = ChatlogConsoleInvitationsPreviousValuesPromise>() => T;
+}
+
+export interface ChatlogConsoleInvitationsSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleInvitationsSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = ChatlogConsoleInvitationsSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <
+    T = ChatlogConsoleInvitationsPreviousValuesSubscription
+  >() => T;
+}
+
+export interface ChatlogConsoleInvitationsPreviousValues {
+  id: ID_Output;
+  message?: String;
+  createdAt?: DateTimeOutput;
+}
+
+export interface ChatlogConsoleInvitationsPreviousValuesPromise
+  extends Promise<ChatlogConsoleInvitationsPreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  message: () => Promise<String>;
+  createdAt: () => Promise<DateTimeOutput>;
+}
+
+export interface ChatlogConsoleInvitationsPreviousValuesSubscription
+  extends Promise<AsyncIterator<ChatlogConsoleInvitationsPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  message: () => Promise<AsyncIterator<String>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface HabboSubscriptionPayload {
+  mutation: MutationType;
+  node: Habbo;
+  updatedFields: String[];
+  previousValues: HabboPreviousValues;
+}
+
+export interface HabboSubscriptionPayloadPromise
+  extends Promise<HabboSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = HabboPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = HabboPreviousValuesPromise>() => T;
+}
+
+export interface HabboSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<HabboSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = HabboSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = HabboPreviousValuesSubscription>() => T;
+}
+
+export interface HabboPreviousValues {
+  id: ID_Output;
+  username: String;
+  motto?: String;
+  gender?: Gender;
+  figure?: String;
+  rank?: Int;
+  vip?: Int;
+  online?: Boolean;
+  verified?: Int;
+  home?: Int;
+  volume?: Int;
+  appearOffline?: Boolean;
+  allowTrade?: Boolean;
+  allowGifts?: Boolean;
+  allowMimic?: Boolean;
+  allowFollow?: Boolean;
+  allowWhisper?: Boolean;
+  allowFriendRequests?: Boolean;
+  allowBotSpeech?: Boolean;
+  allowPetSpeech?: Boolean;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
+}
+
+export interface HabboPreviousValuesPromise
+  extends Promise<HabboPreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  username: () => Promise<String>;
+  motto: () => Promise<String>;
+  gender: () => Promise<Gender>;
+  figure: () => Promise<String>;
+  rank: () => Promise<Int>;
+  vip: () => Promise<Int>;
+  online: () => Promise<Boolean>;
+  verified: () => Promise<Int>;
+  home: () => Promise<Int>;
+  volume: () => Promise<Int>;
+  appearOffline: () => Promise<Boolean>;
+  allowTrade: () => Promise<Boolean>;
+  allowGifts: () => Promise<Boolean>;
+  allowMimic: () => Promise<Boolean>;
+  allowFollow: () => Promise<Boolean>;
+  allowWhisper: () => Promise<Boolean>;
+  allowFriendRequests: () => Promise<Boolean>;
+  allowBotSpeech: () => Promise<Boolean>;
+  allowPetSpeech: () => Promise<Boolean>;
+  createdAt: () => Promise<DateTimeOutput>;
+  updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface HabboPreviousValuesSubscription
+  extends Promise<AsyncIterator<HabboPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  username: () => Promise<AsyncIterator<String>>;
+  motto: () => Promise<AsyncIterator<String>>;
+  gender: () => Promise<AsyncIterator<Gender>>;
+  figure: () => Promise<AsyncIterator<String>>;
+  rank: () => Promise<AsyncIterator<Int>>;
+  vip: () => Promise<AsyncIterator<Int>>;
+  online: () => Promise<AsyncIterator<Boolean>>;
+  verified: () => Promise<AsyncIterator<Int>>;
+  home: () => Promise<AsyncIterator<Int>>;
+  volume: () => Promise<AsyncIterator<Int>>;
+  appearOffline: () => Promise<AsyncIterator<Boolean>>;
+  allowTrade: () => Promise<AsyncIterator<Boolean>>;
+  allowGifts: () => Promise<AsyncIterator<Boolean>>;
+  allowMimic: () => Promise<AsyncIterator<Boolean>>;
+  allowFollow: () => Promise<AsyncIterator<Boolean>>;
+  allowWhisper: () => Promise<AsyncIterator<Boolean>>;
+  allowFriendRequests: () => Promise<AsyncIterator<Boolean>>;
+  allowBotSpeech: () => Promise<AsyncIterator<Boolean>>;
+  allowPetSpeech: () => Promise<AsyncIterator<Boolean>>;
+  createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+  updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
 export interface ItemSubscriptionPayload {
   mutation: MutationType;
   node: Item;
@@ -4513,28 +6017,9 @@ export interface UserSubscriptionPayloadSubscription
 
 export interface UserPreviousValues {
   id: ID_Output;
-  username: String;
   email?: String;
   password?: String;
   pin?: Int;
-  motto?: String;
-  gender?: Gender;
-  figure?: String;
-  rank?: Int;
-  vip?: Int;
-  online?: Boolean;
-  verified?: Int;
-  home?: Int;
-  volume?: Int;
-  appearOffline?: Boolean;
-  allowTrade?: Boolean;
-  allowGifts?: Boolean;
-  allowMimic?: Boolean;
-  allowFollow?: Boolean;
-  allowWhisper?: Boolean;
-  allowFriendRequests?: Boolean;
-  allowBotSpeech?: Boolean;
-  allowPetSpeech?: Boolean;
   createdAt?: DateTimeOutput;
   updatedAt?: DateTimeOutput;
 }
@@ -4543,28 +6028,9 @@ export interface UserPreviousValuesPromise
   extends Promise<UserPreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
-  username: () => Promise<String>;
   email: () => Promise<String>;
   password: () => Promise<String>;
   pin: () => Promise<Int>;
-  motto: () => Promise<String>;
-  gender: () => Promise<Gender>;
-  figure: () => Promise<String>;
-  rank: () => Promise<Int>;
-  vip: () => Promise<Int>;
-  online: () => Promise<Boolean>;
-  verified: () => Promise<Int>;
-  home: () => Promise<Int>;
-  volume: () => Promise<Int>;
-  appearOffline: () => Promise<Boolean>;
-  allowTrade: () => Promise<Boolean>;
-  allowGifts: () => Promise<Boolean>;
-  allowMimic: () => Promise<Boolean>;
-  allowFollow: () => Promise<Boolean>;
-  allowWhisper: () => Promise<Boolean>;
-  allowFriendRequests: () => Promise<Boolean>;
-  allowBotSpeech: () => Promise<Boolean>;
-  allowPetSpeech: () => Promise<Boolean>;
   createdAt: () => Promise<DateTimeOutput>;
   updatedAt: () => Promise<DateTimeOutput>;
 }
@@ -4573,28 +6039,9 @@ export interface UserPreviousValuesSubscription
   extends Promise<AsyncIterator<UserPreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
-  username: () => Promise<AsyncIterator<String>>;
   email: () => Promise<AsyncIterator<String>>;
   password: () => Promise<AsyncIterator<String>>;
   pin: () => Promise<AsyncIterator<Int>>;
-  motto: () => Promise<AsyncIterator<String>>;
-  gender: () => Promise<AsyncIterator<Gender>>;
-  figure: () => Promise<AsyncIterator<String>>;
-  rank: () => Promise<AsyncIterator<Int>>;
-  vip: () => Promise<AsyncIterator<Int>>;
-  online: () => Promise<AsyncIterator<Boolean>>;
-  verified: () => Promise<AsyncIterator<Int>>;
-  home: () => Promise<AsyncIterator<Int>>;
-  volume: () => Promise<AsyncIterator<Int>>;
-  appearOffline: () => Promise<AsyncIterator<Boolean>>;
-  allowTrade: () => Promise<AsyncIterator<Boolean>>;
-  allowGifts: () => Promise<AsyncIterator<Boolean>>;
-  allowMimic: () => Promise<AsyncIterator<Boolean>>;
-  allowFollow: () => Promise<AsyncIterator<Boolean>>;
-  allowWhisper: () => Promise<AsyncIterator<Boolean>>;
-  allowFriendRequests: () => Promise<AsyncIterator<Boolean>>;
-  allowBotSpeech: () => Promise<AsyncIterator<Boolean>>;
-  allowPetSpeech: () => Promise<AsyncIterator<Boolean>>;
   createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
   updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
@@ -4685,6 +6132,18 @@ export const models: Model[] = [
     embedded: false
   },
   {
+    name: "Chatlog",
+    embedded: false
+  },
+  {
+    name: "ChatlogConsole",
+    embedded: false
+  },
+  {
+    name: "ChatlogConsoleInvitations",
+    embedded: false
+  },
+  {
     name: "Room",
     embedded: false
   },
@@ -4694,6 +6153,10 @@ export const models: Model[] = [
   },
   {
     name: "News",
+    embedded: false
+  },
+  {
+    name: "Habbo",
     embedded: false
   },
   {

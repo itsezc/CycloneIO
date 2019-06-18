@@ -45,6 +45,18 @@ var models = [
     embedded: false
   },
   {
+    name: "Chatlog",
+    embedded: false
+  },
+  {
+    name: "ChatlogConsole",
+    embedded: false
+  },
+  {
+    name: "ChatlogConsoleInvitations",
+    embedded: false
+  },
+  {
     name: "Room",
     embedded: false
   },
@@ -54,6 +66,10 @@ var models = [
   },
   {
     name: "News",
+    embedded: false
+  },
+  {
+    name: "Habbo",
     embedded: false
   },
   {

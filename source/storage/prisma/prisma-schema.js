@@ -27,6 +27,22 @@ type AggregateCatalogPage {
   count: Int!
 }
 
+type AggregateChatlog {
+  count: Int!
+}
+
+type AggregateChatlogConsole {
+  count: Int!
+}
+
+type AggregateChatlogConsoleInvitations {
+  count: Int!
+}
+
+type AggregateHabbo {
+  count: Int!
+}
+
 type AggregateItem {
   count: Int!
 }
@@ -1333,11 +1349,992 @@ input CatalogPageWhereUniqueInput {
   id: ID
 }
 
+type Chatlog {
+  id: ID!
+  habbo: Habbo!
+  room: Room!
+  message: String
+  createdAt: DateTime
+}
+
+type ChatlogConnection {
+  pageInfo: PageInfo!
+  edges: [ChatlogEdge]!
+  aggregate: AggregateChatlog!
+}
+
+type ChatlogConsole {
+  id: ID!
+  from: Habbo!
+  to: Habbo!
+  message: String
+  createdAt: DateTime
+}
+
+type ChatlogConsoleConnection {
+  pageInfo: PageInfo!
+  edges: [ChatlogConsoleEdge]!
+  aggregate: AggregateChatlogConsole!
+}
+
+input ChatlogConsoleCreateInput {
+  id: ID
+  from: HabboCreateOneInput!
+  to: HabboCreateOneInput!
+  message: String
+}
+
+type ChatlogConsoleEdge {
+  node: ChatlogConsole!
+  cursor: String!
+}
+
+type ChatlogConsoleInvitations {
+  id: ID!
+  from: Habbo!
+  to: Habbo!
+  message: String
+  room: Room!
+  createdAt: DateTime
+}
+
+type ChatlogConsoleInvitationsConnection {
+  pageInfo: PageInfo!
+  edges: [ChatlogConsoleInvitationsEdge]!
+  aggregate: AggregateChatlogConsoleInvitations!
+}
+
+input ChatlogConsoleInvitationsCreateInput {
+  id: ID
+  from: HabboCreateOneInput!
+  to: HabboCreateOneInput!
+  message: String
+  room: RoomCreateOneInput!
+}
+
+type ChatlogConsoleInvitationsEdge {
+  node: ChatlogConsoleInvitations!
+  cursor: String!
+}
+
+enum ChatlogConsoleInvitationsOrderByInput {
+  id_ASC
+  id_DESC
+  message_ASC
+  message_DESC
+  createdAt_ASC
+  createdAt_DESC
+}
+
+type ChatlogConsoleInvitationsPreviousValues {
+  id: ID!
+  message: String
+  createdAt: DateTime
+}
+
+type ChatlogConsoleInvitationsSubscriptionPayload {
+  mutation: MutationType!
+  node: ChatlogConsoleInvitations
+  updatedFields: [String!]
+  previousValues: ChatlogConsoleInvitationsPreviousValues
+}
+
+input ChatlogConsoleInvitationsSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: ChatlogConsoleInvitationsWhereInput
+  AND: [ChatlogConsoleInvitationsSubscriptionWhereInput!]
+  OR: [ChatlogConsoleInvitationsSubscriptionWhereInput!]
+  NOT: [ChatlogConsoleInvitationsSubscriptionWhereInput!]
+}
+
+input ChatlogConsoleInvitationsUpdateInput {
+  from: HabboUpdateOneRequiredInput
+  to: HabboUpdateOneRequiredInput
+  message: String
+  room: RoomUpdateOneRequiredInput
+}
+
+input ChatlogConsoleInvitationsUpdateManyMutationInput {
+  message: String
+}
+
+input ChatlogConsoleInvitationsWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  from: HabboWhereInput
+  to: HabboWhereInput
+  message: String
+  message_not: String
+  message_in: [String!]
+  message_not_in: [String!]
+  message_lt: String
+  message_lte: String
+  message_gt: String
+  message_gte: String
+  message_contains: String
+  message_not_contains: String
+  message_starts_with: String
+  message_not_starts_with: String
+  message_ends_with: String
+  message_not_ends_with: String
+  room: RoomWhereInput
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_in: [DateTime!]
+  createdAt_not_in: [DateTime!]
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  AND: [ChatlogConsoleInvitationsWhereInput!]
+  OR: [ChatlogConsoleInvitationsWhereInput!]
+  NOT: [ChatlogConsoleInvitationsWhereInput!]
+}
+
+input ChatlogConsoleInvitationsWhereUniqueInput {
+  id: ID
+}
+
+enum ChatlogConsoleOrderByInput {
+  id_ASC
+  id_DESC
+  message_ASC
+  message_DESC
+  createdAt_ASC
+  createdAt_DESC
+}
+
+type ChatlogConsolePreviousValues {
+  id: ID!
+  message: String
+  createdAt: DateTime
+}
+
+type ChatlogConsoleSubscriptionPayload {
+  mutation: MutationType!
+  node: ChatlogConsole
+  updatedFields: [String!]
+  previousValues: ChatlogConsolePreviousValues
+}
+
+input ChatlogConsoleSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: ChatlogConsoleWhereInput
+  AND: [ChatlogConsoleSubscriptionWhereInput!]
+  OR: [ChatlogConsoleSubscriptionWhereInput!]
+  NOT: [ChatlogConsoleSubscriptionWhereInput!]
+}
+
+input ChatlogConsoleUpdateInput {
+  from: HabboUpdateOneRequiredInput
+  to: HabboUpdateOneRequiredInput
+  message: String
+}
+
+input ChatlogConsoleUpdateManyMutationInput {
+  message: String
+}
+
+input ChatlogConsoleWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  from: HabboWhereInput
+  to: HabboWhereInput
+  message: String
+  message_not: String
+  message_in: [String!]
+  message_not_in: [String!]
+  message_lt: String
+  message_lte: String
+  message_gt: String
+  message_gte: String
+  message_contains: String
+  message_not_contains: String
+  message_starts_with: String
+  message_not_starts_with: String
+  message_ends_with: String
+  message_not_ends_with: String
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_in: [DateTime!]
+  createdAt_not_in: [DateTime!]
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  AND: [ChatlogConsoleWhereInput!]
+  OR: [ChatlogConsoleWhereInput!]
+  NOT: [ChatlogConsoleWhereInput!]
+}
+
+input ChatlogConsoleWhereUniqueInput {
+  id: ID
+}
+
+input ChatlogCreateInput {
+  id: ID
+  habbo: HabboCreateOneInput!
+  room: RoomCreateOneInput!
+  message: String
+}
+
+type ChatlogEdge {
+  node: Chatlog!
+  cursor: String!
+}
+
+enum ChatlogOrderByInput {
+  id_ASC
+  id_DESC
+  message_ASC
+  message_DESC
+  createdAt_ASC
+  createdAt_DESC
+}
+
+type ChatlogPreviousValues {
+  id: ID!
+  message: String
+  createdAt: DateTime
+}
+
+type ChatlogSubscriptionPayload {
+  mutation: MutationType!
+  node: Chatlog
+  updatedFields: [String!]
+  previousValues: ChatlogPreviousValues
+}
+
+input ChatlogSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: ChatlogWhereInput
+  AND: [ChatlogSubscriptionWhereInput!]
+  OR: [ChatlogSubscriptionWhereInput!]
+  NOT: [ChatlogSubscriptionWhereInput!]
+}
+
+input ChatlogUpdateInput {
+  habbo: HabboUpdateOneRequiredInput
+  room: RoomUpdateOneRequiredInput
+  message: String
+}
+
+input ChatlogUpdateManyMutationInput {
+  message: String
+}
+
+input ChatlogWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  habbo: HabboWhereInput
+  room: RoomWhereInput
+  message: String
+  message_not: String
+  message_in: [String!]
+  message_not_in: [String!]
+  message_lt: String
+  message_lte: String
+  message_gt: String
+  message_gte: String
+  message_contains: String
+  message_not_contains: String
+  message_starts_with: String
+  message_not_starts_with: String
+  message_ends_with: String
+  message_not_ends_with: String
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_in: [DateTime!]
+  createdAt_not_in: [DateTime!]
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  AND: [ChatlogWhereInput!]
+  OR: [ChatlogWhereInput!]
+  NOT: [ChatlogWhereInput!]
+}
+
+input ChatlogWhereUniqueInput {
+  id: ID
+}
+
 scalar DateTime
 
 enum Gender {
   M
   F
+}
+
+type Habbo {
+  id: ID!
+  user: User!
+  username: String!
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type HabboConnection {
+  pageInfo: PageInfo!
+  edges: [HabboEdge]!
+  aggregate: AggregateHabbo!
+}
+
+input HabboCreateInput {
+  id: ID
+  user: UserCreateOneWithoutHabbosInput!
+  username: String!
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
+input HabboCreateManyWithoutUserInput {
+  create: [HabboCreateWithoutUserInput!]
+  connect: [HabboWhereUniqueInput!]
+}
+
+input HabboCreateOneInput {
+  create: HabboCreateInput
+  connect: HabboWhereUniqueInput
+}
+
+input HabboCreateWithoutUserInput {
+  id: ID
+  username: String!
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
+type HabboEdge {
+  node: Habbo!
+  cursor: String!
+}
+
+enum HabboOrderByInput {
+  id_ASC
+  id_DESC
+  username_ASC
+  username_DESC
+  motto_ASC
+  motto_DESC
+  gender_ASC
+  gender_DESC
+  figure_ASC
+  figure_DESC
+  rank_ASC
+  rank_DESC
+  vip_ASC
+  vip_DESC
+  online_ASC
+  online_DESC
+  verified_ASC
+  verified_DESC
+  home_ASC
+  home_DESC
+  volume_ASC
+  volume_DESC
+  appearOffline_ASC
+  appearOffline_DESC
+  allowTrade_ASC
+  allowTrade_DESC
+  allowGifts_ASC
+  allowGifts_DESC
+  allowMimic_ASC
+  allowMimic_DESC
+  allowFollow_ASC
+  allowFollow_DESC
+  allowWhisper_ASC
+  allowWhisper_DESC
+  allowFriendRequests_ASC
+  allowFriendRequests_DESC
+  allowBotSpeech_ASC
+  allowBotSpeech_DESC
+  allowPetSpeech_ASC
+  allowPetSpeech_DESC
+  createdAt_ASC
+  createdAt_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}
+
+type HabboPreviousValues {
+  id: ID!
+  username: String!
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+input HabboScalarWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  username: String
+  username_not: String
+  username_in: [String!]
+  username_not_in: [String!]
+  username_lt: String
+  username_lte: String
+  username_gt: String
+  username_gte: String
+  username_contains: String
+  username_not_contains: String
+  username_starts_with: String
+  username_not_starts_with: String
+  username_ends_with: String
+  username_not_ends_with: String
+  motto: String
+  motto_not: String
+  motto_in: [String!]
+  motto_not_in: [String!]
+  motto_lt: String
+  motto_lte: String
+  motto_gt: String
+  motto_gte: String
+  motto_contains: String
+  motto_not_contains: String
+  motto_starts_with: String
+  motto_not_starts_with: String
+  motto_ends_with: String
+  motto_not_ends_with: String
+  gender: Gender
+  gender_not: Gender
+  gender_in: [Gender!]
+  gender_not_in: [Gender!]
+  figure: String
+  figure_not: String
+  figure_in: [String!]
+  figure_not_in: [String!]
+  figure_lt: String
+  figure_lte: String
+  figure_gt: String
+  figure_gte: String
+  figure_contains: String
+  figure_not_contains: String
+  figure_starts_with: String
+  figure_not_starts_with: String
+  figure_ends_with: String
+  figure_not_ends_with: String
+  rank: Int
+  rank_not: Int
+  rank_in: [Int!]
+  rank_not_in: [Int!]
+  rank_lt: Int
+  rank_lte: Int
+  rank_gt: Int
+  rank_gte: Int
+  vip: Int
+  vip_not: Int
+  vip_in: [Int!]
+  vip_not_in: [Int!]
+  vip_lt: Int
+  vip_lte: Int
+  vip_gt: Int
+  vip_gte: Int
+  online: Boolean
+  online_not: Boolean
+  verified: Int
+  verified_not: Int
+  verified_in: [Int!]
+  verified_not_in: [Int!]
+  verified_lt: Int
+  verified_lte: Int
+  verified_gt: Int
+  verified_gte: Int
+  home: Int
+  home_not: Int
+  home_in: [Int!]
+  home_not_in: [Int!]
+  home_lt: Int
+  home_lte: Int
+  home_gt: Int
+  home_gte: Int
+  volume: Int
+  volume_not: Int
+  volume_in: [Int!]
+  volume_not_in: [Int!]
+  volume_lt: Int
+  volume_lte: Int
+  volume_gt: Int
+  volume_gte: Int
+  appearOffline: Boolean
+  appearOffline_not: Boolean
+  allowTrade: Boolean
+  allowTrade_not: Boolean
+  allowGifts: Boolean
+  allowGifts_not: Boolean
+  allowMimic: Boolean
+  allowMimic_not: Boolean
+  allowFollow: Boolean
+  allowFollow_not: Boolean
+  allowWhisper: Boolean
+  allowWhisper_not: Boolean
+  allowFriendRequests: Boolean
+  allowFriendRequests_not: Boolean
+  allowBotSpeech: Boolean
+  allowBotSpeech_not: Boolean
+  allowPetSpeech: Boolean
+  allowPetSpeech_not: Boolean
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_in: [DateTime!]
+  createdAt_not_in: [DateTime!]
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_in: [DateTime!]
+  updatedAt_not_in: [DateTime!]
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  AND: [HabboScalarWhereInput!]
+  OR: [HabboScalarWhereInput!]
+  NOT: [HabboScalarWhereInput!]
+}
+
+type HabboSubscriptionPayload {
+  mutation: MutationType!
+  node: Habbo
+  updatedFields: [String!]
+  previousValues: HabboPreviousValues
+}
+
+input HabboSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: HabboWhereInput
+  AND: [HabboSubscriptionWhereInput!]
+  OR: [HabboSubscriptionWhereInput!]
+  NOT: [HabboSubscriptionWhereInput!]
+}
+
+input HabboUpdateDataInput {
+  user: UserUpdateOneRequiredWithoutHabbosInput
+  username: String
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
+input HabboUpdateInput {
+  user: UserUpdateOneRequiredWithoutHabbosInput
+  username: String
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
+input HabboUpdateManyDataInput {
+  username: String
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
+input HabboUpdateManyMutationInput {
+  username: String
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
+input HabboUpdateManyWithoutUserInput {
+  create: [HabboCreateWithoutUserInput!]
+  delete: [HabboWhereUniqueInput!]
+  connect: [HabboWhereUniqueInput!]
+  set: [HabboWhereUniqueInput!]
+  disconnect: [HabboWhereUniqueInput!]
+  update: [HabboUpdateWithWhereUniqueWithoutUserInput!]
+  upsert: [HabboUpsertWithWhereUniqueWithoutUserInput!]
+  deleteMany: [HabboScalarWhereInput!]
+  updateMany: [HabboUpdateManyWithWhereNestedInput!]
+}
+
+input HabboUpdateManyWithWhereNestedInput {
+  where: HabboScalarWhereInput!
+  data: HabboUpdateManyDataInput!
+}
+
+input HabboUpdateOneRequiredInput {
+  create: HabboCreateInput
+  update: HabboUpdateDataInput
+  upsert: HabboUpsertNestedInput
+  connect: HabboWhereUniqueInput
+}
+
+input HabboUpdateWithoutUserDataInput {
+  username: String
+  motto: String
+  gender: Gender
+  figure: String
+  rank: Int
+  vip: Int
+  online: Boolean
+  verified: Int
+  home: Int
+  volume: Int
+  appearOffline: Boolean
+  allowTrade: Boolean
+  allowGifts: Boolean
+  allowMimic: Boolean
+  allowFollow: Boolean
+  allowWhisper: Boolean
+  allowFriendRequests: Boolean
+  allowBotSpeech: Boolean
+  allowPetSpeech: Boolean
+}
+
+input HabboUpdateWithWhereUniqueWithoutUserInput {
+  where: HabboWhereUniqueInput!
+  data: HabboUpdateWithoutUserDataInput!
+}
+
+input HabboUpsertNestedInput {
+  update: HabboUpdateDataInput!
+  create: HabboCreateInput!
+}
+
+input HabboUpsertWithWhereUniqueWithoutUserInput {
+  where: HabboWhereUniqueInput!
+  update: HabboUpdateWithoutUserDataInput!
+  create: HabboCreateWithoutUserInput!
+}
+
+input HabboWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  user: UserWhereInput
+  username: String
+  username_not: String
+  username_in: [String!]
+  username_not_in: [String!]
+  username_lt: String
+  username_lte: String
+  username_gt: String
+  username_gte: String
+  username_contains: String
+  username_not_contains: String
+  username_starts_with: String
+  username_not_starts_with: String
+  username_ends_with: String
+  username_not_ends_with: String
+  motto: String
+  motto_not: String
+  motto_in: [String!]
+  motto_not_in: [String!]
+  motto_lt: String
+  motto_lte: String
+  motto_gt: String
+  motto_gte: String
+  motto_contains: String
+  motto_not_contains: String
+  motto_starts_with: String
+  motto_not_starts_with: String
+  motto_ends_with: String
+  motto_not_ends_with: String
+  gender: Gender
+  gender_not: Gender
+  gender_in: [Gender!]
+  gender_not_in: [Gender!]
+  figure: String
+  figure_not: String
+  figure_in: [String!]
+  figure_not_in: [String!]
+  figure_lt: String
+  figure_lte: String
+  figure_gt: String
+  figure_gte: String
+  figure_contains: String
+  figure_not_contains: String
+  figure_starts_with: String
+  figure_not_starts_with: String
+  figure_ends_with: String
+  figure_not_ends_with: String
+  rank: Int
+  rank_not: Int
+  rank_in: [Int!]
+  rank_not_in: [Int!]
+  rank_lt: Int
+  rank_lte: Int
+  rank_gt: Int
+  rank_gte: Int
+  vip: Int
+  vip_not: Int
+  vip_in: [Int!]
+  vip_not_in: [Int!]
+  vip_lt: Int
+  vip_lte: Int
+  vip_gt: Int
+  vip_gte: Int
+  online: Boolean
+  online_not: Boolean
+  verified: Int
+  verified_not: Int
+  verified_in: [Int!]
+  verified_not_in: [Int!]
+  verified_lt: Int
+  verified_lte: Int
+  verified_gt: Int
+  verified_gte: Int
+  home: Int
+  home_not: Int
+  home_in: [Int!]
+  home_not_in: [Int!]
+  home_lt: Int
+  home_lte: Int
+  home_gt: Int
+  home_gte: Int
+  volume: Int
+  volume_not: Int
+  volume_in: [Int!]
+  volume_not_in: [Int!]
+  volume_lt: Int
+  volume_lte: Int
+  volume_gt: Int
+  volume_gte: Int
+  appearOffline: Boolean
+  appearOffline_not: Boolean
+  allowTrade: Boolean
+  allowTrade_not: Boolean
+  allowGifts: Boolean
+  allowGifts_not: Boolean
+  allowMimic: Boolean
+  allowMimic_not: Boolean
+  allowFollow: Boolean
+  allowFollow_not: Boolean
+  allowWhisper: Boolean
+  allowWhisper_not: Boolean
+  allowFriendRequests: Boolean
+  allowFriendRequests_not: Boolean
+  allowBotSpeech: Boolean
+  allowBotSpeech_not: Boolean
+  allowPetSpeech: Boolean
+  allowPetSpeech_not: Boolean
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_in: [DateTime!]
+  createdAt_not_in: [DateTime!]
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_in: [DateTime!]
+  updatedAt_not_in: [DateTime!]
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  AND: [HabboWhereInput!]
+  OR: [HabboWhereInput!]
+  NOT: [HabboWhereInput!]
+}
+
+input HabboWhereUniqueInput {
+  id: ID
+  username: String
 }
 
 type Item {
@@ -1748,6 +2745,30 @@ type Mutation {
   upsertCatalogPage(where: CatalogPageWhereUniqueInput!, create: CatalogPageCreateInput!, update: CatalogPageUpdateInput!): CatalogPage!
   deleteCatalogPage(where: CatalogPageWhereUniqueInput!): CatalogPage
   deleteManyCatalogPages(where: CatalogPageWhereInput): BatchPayload!
+  createChatlog(data: ChatlogCreateInput!): Chatlog!
+  updateChatlog(data: ChatlogUpdateInput!, where: ChatlogWhereUniqueInput!): Chatlog
+  updateManyChatlogs(data: ChatlogUpdateManyMutationInput!, where: ChatlogWhereInput): BatchPayload!
+  upsertChatlog(where: ChatlogWhereUniqueInput!, create: ChatlogCreateInput!, update: ChatlogUpdateInput!): Chatlog!
+  deleteChatlog(where: ChatlogWhereUniqueInput!): Chatlog
+  deleteManyChatlogs(where: ChatlogWhereInput): BatchPayload!
+  createChatlogConsole(data: ChatlogConsoleCreateInput!): ChatlogConsole!
+  updateChatlogConsole(data: ChatlogConsoleUpdateInput!, where: ChatlogConsoleWhereUniqueInput!): ChatlogConsole
+  updateManyChatlogConsoles(data: ChatlogConsoleUpdateManyMutationInput!, where: ChatlogConsoleWhereInput): BatchPayload!
+  upsertChatlogConsole(where: ChatlogConsoleWhereUniqueInput!, create: ChatlogConsoleCreateInput!, update: ChatlogConsoleUpdateInput!): ChatlogConsole!
+  deleteChatlogConsole(where: ChatlogConsoleWhereUniqueInput!): ChatlogConsole
+  deleteManyChatlogConsoles(where: ChatlogConsoleWhereInput): BatchPayload!
+  createChatlogConsoleInvitations(data: ChatlogConsoleInvitationsCreateInput!): ChatlogConsoleInvitations!
+  updateChatlogConsoleInvitations(data: ChatlogConsoleInvitationsUpdateInput!, where: ChatlogConsoleInvitationsWhereUniqueInput!): ChatlogConsoleInvitations
+  updateManyChatlogConsoleInvitationses(data: ChatlogConsoleInvitationsUpdateManyMutationInput!, where: ChatlogConsoleInvitationsWhereInput): BatchPayload!
+  upsertChatlogConsoleInvitations(where: ChatlogConsoleInvitationsWhereUniqueInput!, create: ChatlogConsoleInvitationsCreateInput!, update: ChatlogConsoleInvitationsUpdateInput!): ChatlogConsoleInvitations!
+  deleteChatlogConsoleInvitations(where: ChatlogConsoleInvitationsWhereUniqueInput!): ChatlogConsoleInvitations
+  deleteManyChatlogConsoleInvitationses(where: ChatlogConsoleInvitationsWhereInput): BatchPayload!
+  createHabbo(data: HabboCreateInput!): Habbo!
+  updateHabbo(data: HabboUpdateInput!, where: HabboWhereUniqueInput!): Habbo
+  updateManyHabboes(data: HabboUpdateManyMutationInput!, where: HabboWhereInput): BatchPayload!
+  upsertHabbo(where: HabboWhereUniqueInput!, create: HabboCreateInput!, update: HabboUpdateInput!): Habbo!
+  deleteHabbo(where: HabboWhereUniqueInput!): Habbo
+  deleteManyHabboes(where: HabboWhereInput): BatchPayload!
   createItem(data: ItemCreateInput!): Item!
   updateItem(data: ItemUpdateInput!, where: ItemWhereUniqueInput!): Item
   updateManyItems(data: ItemUpdateManyMutationInput!, where: ItemWhereInput): BatchPayload!
@@ -1998,6 +3019,18 @@ type Query {
   catalogPage(where: CatalogPageWhereUniqueInput!): CatalogPage
   catalogPages(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogPage]!
   catalogPagesConnection(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogPageConnection!
+  chatlog(where: ChatlogWhereUniqueInput!): Chatlog
+  chatlogs(where: ChatlogWhereInput, orderBy: ChatlogOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Chatlog]!
+  chatlogsConnection(where: ChatlogWhereInput, orderBy: ChatlogOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ChatlogConnection!
+  chatlogConsole(where: ChatlogConsoleWhereUniqueInput!): ChatlogConsole
+  chatlogConsoles(where: ChatlogConsoleWhereInput, orderBy: ChatlogConsoleOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [ChatlogConsole]!
+  chatlogConsolesConnection(where: ChatlogConsoleWhereInput, orderBy: ChatlogConsoleOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ChatlogConsoleConnection!
+  chatlogConsoleInvitations(where: ChatlogConsoleInvitationsWhereUniqueInput!): ChatlogConsoleInvitations
+  chatlogConsoleInvitationses(where: ChatlogConsoleInvitationsWhereInput, orderBy: ChatlogConsoleInvitationsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [ChatlogConsoleInvitations]!
+  chatlogConsoleInvitationsesConnection(where: ChatlogConsoleInvitationsWhereInput, orderBy: ChatlogConsoleInvitationsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ChatlogConsoleInvitationsConnection!
+  habbo(where: HabboWhereUniqueInput!): Habbo
+  habboes(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Habbo]!
+  habboesConnection(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): HabboConnection!
   item(where: ItemWhereUniqueInput!): Item
   items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item]!
   itemsConnection(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ItemConnection!
@@ -2057,6 +3090,11 @@ input RoomCreateInput {
   allowPetsEating: Boolean
   rights: RoomCreaterightsInput
   items: ItemCreateManyWithoutRoomInput
+}
+
+input RoomCreateOneInput {
+  create: RoomCreateInput
+  connect: RoomWhereUniqueInput
 }
 
 input RoomCreateOneWithoutItemsInput {
@@ -2169,6 +3207,25 @@ enum roomType {
   HIDDEN
 }
 
+input RoomUpdateDataInput {
+  name: String
+  description: String
+  type: roomType
+  category: Int
+  owner: Int
+  map: Json
+  floorThickness: Int
+  wallThickness: Int
+  wallHeight: Int
+  hideWalls: Boolean
+  hideWired: Boolean
+  maxUsers: Int
+  allowPets: Boolean
+  allowPetsEating: Boolean
+  rights: RoomUpdaterightsInput
+  items: ItemUpdateManyWithoutRoomInput
+}
+
 input RoomUpdateInput {
   name: String
   description: String
@@ -2206,6 +3263,13 @@ input RoomUpdateManyMutationInput {
   rights: RoomUpdaterightsInput
 }
 
+input RoomUpdateOneRequiredInput {
+  create: RoomCreateInput
+  update: RoomUpdateDataInput
+  upsert: RoomUpsertNestedInput
+  connect: RoomWhereUniqueInput
+}
+
 input RoomUpdateOneRequiredWithoutItemsInput {
   create: RoomCreateWithoutItemsInput
   update: RoomUpdateWithoutItemsDataInput
@@ -2233,6 +3297,11 @@ input RoomUpdateWithoutItemsDataInput {
   allowPets: Boolean
   allowPetsEating: Boolean
   rights: RoomUpdaterightsInput
+}
+
+input RoomUpsertNestedInput {
+  update: RoomUpdateDataInput!
+  create: RoomCreateInput!
 }
 
 input RoomUpsertWithoutItemsInput {
@@ -2362,6 +3431,10 @@ type Subscription {
   catalogFeatured(where: CatalogFeaturedSubscriptionWhereInput): CatalogFeaturedSubscriptionPayload
   catalogItem(where: CatalogItemSubscriptionWhereInput): CatalogItemSubscriptionPayload
   catalogPage(where: CatalogPageSubscriptionWhereInput): CatalogPageSubscriptionPayload
+  chatlog(where: ChatlogSubscriptionWhereInput): ChatlogSubscriptionPayload
+  chatlogConsole(where: ChatlogConsoleSubscriptionWhereInput): ChatlogConsoleSubscriptionPayload
+  chatlogConsoleInvitations(where: ChatlogConsoleInvitationsSubscriptionWhereInput): ChatlogConsoleInvitationsSubscriptionPayload
+  habbo(where: HabboSubscriptionWhereInput): HabboSubscriptionPayload
   item(where: ItemSubscriptionWhereInput): ItemSubscriptionPayload
   news(where: NewsSubscriptionWhereInput): NewsSubscriptionPayload
   room(where: RoomSubscriptionWhereInput): RoomSubscriptionPayload
@@ -2370,28 +3443,10 @@ type Subscription {
 
 type User {
   id: ID!
-  username: String!
   email: String
   password: String
   pin: Int
-  motto: String
-  gender: Gender
-  figure: String
-  rank: Int
-  vip: Int
-  online: Boolean
-  verified: Int
-  home: Int
-  volume: Int
-  appearOffline: Boolean
-  allowTrade: Boolean
-  allowGifts: Boolean
-  allowMimic: Boolean
-  allowFollow: Boolean
-  allowWhisper: Boolean
-  allowFriendRequests: Boolean
-  allowBotSpeech: Boolean
-  allowPetSpeech: Boolean
+  habbos(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Habbo!]
   createdAt: DateTime
   updatedAt: DateTime
 }
@@ -2404,33 +3459,27 @@ type UserConnection {
 
 input UserCreateInput {
   id: ID
-  username: String!
   email: String
   password: String
   pin: Int
-  motto: String
-  gender: Gender
-  figure: String
-  rank: Int
-  vip: Int
-  online: Boolean
-  verified: Int
-  home: Int
-  volume: Int
-  appearOffline: Boolean
-  allowTrade: Boolean
-  allowGifts: Boolean
-  allowMimic: Boolean
-  allowFollow: Boolean
-  allowWhisper: Boolean
-  allowFriendRequests: Boolean
-  allowBotSpeech: Boolean
-  allowPetSpeech: Boolean
+  habbos: HabboCreateManyWithoutUserInput
 }
 
 input UserCreateOneInput {
   create: UserCreateInput
   connect: UserWhereUniqueInput
+}
+
+input UserCreateOneWithoutHabbosInput {
+  create: UserCreateWithoutHabbosInput
+  connect: UserWhereUniqueInput
+}
+
+input UserCreateWithoutHabbosInput {
+  id: ID
+  email: String
+  password: String
+  pin: Int
 }
 
 type UserEdge {
@@ -2441,50 +3490,12 @@ type UserEdge {
 enum UserOrderByInput {
   id_ASC
   id_DESC
-  username_ASC
-  username_DESC
   email_ASC
   email_DESC
   password_ASC
   password_DESC
   pin_ASC
   pin_DESC
-  motto_ASC
-  motto_DESC
-  gender_ASC
-  gender_DESC
-  figure_ASC
-  figure_DESC
-  rank_ASC
-  rank_DESC
-  vip_ASC
-  vip_DESC
-  online_ASC
-  online_DESC
-  verified_ASC
-  verified_DESC
-  home_ASC
-  home_DESC
-  volume_ASC
-  volume_DESC
-  appearOffline_ASC
-  appearOffline_DESC
-  allowTrade_ASC
-  allowTrade_DESC
-  allowGifts_ASC
-  allowGifts_DESC
-  allowMimic_ASC
-  allowMimic_DESC
-  allowFollow_ASC
-  allowFollow_DESC
-  allowWhisper_ASC
-  allowWhisper_DESC
-  allowFriendRequests_ASC
-  allowFriendRequests_DESC
-  allowBotSpeech_ASC
-  allowBotSpeech_DESC
-  allowPetSpeech_ASC
-  allowPetSpeech_DESC
   createdAt_ASC
   createdAt_DESC
   updatedAt_ASC
@@ -2493,28 +3504,9 @@ enum UserOrderByInput {
 
 type UserPreviousValues {
   id: ID!
-  username: String!
   email: String
   password: String
   pin: Int
-  motto: String
-  gender: Gender
-  figure: String
-  rank: Int
-  vip: Int
-  online: Boolean
-  verified: Int
-  home: Int
-  volume: Int
-  appearOffline: Boolean
-  allowTrade: Boolean
-  allowGifts: Boolean
-  allowMimic: Boolean
-  allowFollow: Boolean
-  allowWhisper: Boolean
-  allowFriendRequests: Boolean
-  allowBotSpeech: Boolean
-  allowPetSpeech: Boolean
   createdAt: DateTime
   updatedAt: DateTime
 }
@@ -2538,78 +3530,23 @@ input UserSubscriptionWhereInput {
 }
 
 input UserUpdateDataInput {
-  username: String
   email: String
   password: String
   pin: Int
-  motto: String
-  gender: Gender
-  figure: String
-  rank: Int
-  vip: Int
-  online: Boolean
-  verified: Int
-  home: Int
-  volume: Int
-  appearOffline: Boolean
-  allowTrade: Boolean
-  allowGifts: Boolean
-  allowMimic: Boolean
-  allowFollow: Boolean
-  allowWhisper: Boolean
-  allowFriendRequests: Boolean
-  allowBotSpeech: Boolean
-  allowPetSpeech: Boolean
+  habbos: HabboUpdateManyWithoutUserInput
 }
 
 input UserUpdateInput {
-  username: String
   email: String
   password: String
   pin: Int
-  motto: String
-  gender: Gender
-  figure: String
-  rank: Int
-  vip: Int
-  online: Boolean
-  verified: Int
-  home: Int
-  volume: Int
-  appearOffline: Boolean
-  allowTrade: Boolean
-  allowGifts: Boolean
-  allowMimic: Boolean
-  allowFollow: Boolean
-  allowWhisper: Boolean
-  allowFriendRequests: Boolean
-  allowBotSpeech: Boolean
-  allowPetSpeech: Boolean
+  habbos: HabboUpdateManyWithoutUserInput
 }
 
 input UserUpdateManyMutationInput {
-  username: String
   email: String
   password: String
   pin: Int
-  motto: String
-  gender: Gender
-  figure: String
-  rank: Int
-  vip: Int
-  online: Boolean
-  verified: Int
-  home: Int
-  volume: Int
-  appearOffline: Boolean
-  allowTrade: Boolean
-  allowGifts: Boolean
-  allowMimic: Boolean
-  allowFollow: Boolean
-  allowWhisper: Boolean
-  allowFriendRequests: Boolean
-  allowBotSpeech: Boolean
-  allowPetSpeech: Boolean
 }
 
 input UserUpdateOneInput {
@@ -2621,9 +3558,27 @@ input UserUpdateOneInput {
   connect: UserWhereUniqueInput
 }
 
+input UserUpdateOneRequiredWithoutHabbosInput {
+  create: UserCreateWithoutHabbosInput
+  update: UserUpdateWithoutHabbosDataInput
+  upsert: UserUpsertWithoutHabbosInput
+  connect: UserWhereUniqueInput
+}
+
+input UserUpdateWithoutHabbosDataInput {
+  email: String
+  password: String
+  pin: Int
+}
+
 input UserUpsertNestedInput {
   update: UserUpdateDataInput!
   create: UserCreateInput!
+}
+
+input UserUpsertWithoutHabbosInput {
+  update: UserUpdateWithoutHabbosDataInput!
+  create: UserCreateWithoutHabbosInput!
 }
 
 input UserWhereInput {
@@ -2641,20 +3596,6 @@ input UserWhereInput {
   id_not_starts_with: ID
   id_ends_with: ID
   id_not_ends_with: ID
-  username: String
-  username_not: String
-  username_in: [String!]
-  username_not_in: [String!]
-  username_lt: String
-  username_lte: String
-  username_gt: String
-  username_gte: String
-  username_contains: String
-  username_not_contains: String
-  username_starts_with: String
-  username_not_starts_with: String
-  username_ends_with: String
-  username_not_ends_with: String
   email: String
   email_not: String
   email_in: [String!]
@@ -2691,98 +3632,9 @@ input UserWhereInput {
   pin_lte: Int
   pin_gt: Int
   pin_gte: Int
-  motto: String
-  motto_not: String
-  motto_in: [String!]
-  motto_not_in: [String!]
-  motto_lt: String
-  motto_lte: String
-  motto_gt: String
-  motto_gte: String
-  motto_contains: String
-  motto_not_contains: String
-  motto_starts_with: String
-  motto_not_starts_with: String
-  motto_ends_with: String
-  motto_not_ends_with: String
-  gender: Gender
-  gender_not: Gender
-  gender_in: [Gender!]
-  gender_not_in: [Gender!]
-  figure: String
-  figure_not: String
-  figure_in: [String!]
-  figure_not_in: [String!]
-  figure_lt: String
-  figure_lte: String
-  figure_gt: String
-  figure_gte: String
-  figure_contains: String
-  figure_not_contains: String
-  figure_starts_with: String
-  figure_not_starts_with: String
-  figure_ends_with: String
-  figure_not_ends_with: String
-  rank: Int
-  rank_not: Int
-  rank_in: [Int!]
-  rank_not_in: [Int!]
-  rank_lt: Int
-  rank_lte: Int
-  rank_gt: Int
-  rank_gte: Int
-  vip: Int
-  vip_not: Int
-  vip_in: [Int!]
-  vip_not_in: [Int!]
-  vip_lt: Int
-  vip_lte: Int
-  vip_gt: Int
-  vip_gte: Int
-  online: Boolean
-  online_not: Boolean
-  verified: Int
-  verified_not: Int
-  verified_in: [Int!]
-  verified_not_in: [Int!]
-  verified_lt: Int
-  verified_lte: Int
-  verified_gt: Int
-  verified_gte: Int
-  home: Int
-  home_not: Int
-  home_in: [Int!]
-  home_not_in: [Int!]
-  home_lt: Int
-  home_lte: Int
-  home_gt: Int
-  home_gte: Int
-  volume: Int
-  volume_not: Int
-  volume_in: [Int!]
-  volume_not_in: [Int!]
-  volume_lt: Int
-  volume_lte: Int
-  volume_gt: Int
-  volume_gte: Int
-  appearOffline: Boolean
-  appearOffline_not: Boolean
-  allowTrade: Boolean
-  allowTrade_not: Boolean
-  allowGifts: Boolean
-  allowGifts_not: Boolean
-  allowMimic: Boolean
-  allowMimic_not: Boolean
-  allowFollow: Boolean
-  allowFollow_not: Boolean
-  allowWhisper: Boolean
-  allowWhisper_not: Boolean
-  allowFriendRequests: Boolean
-  allowFriendRequests_not: Boolean
-  allowBotSpeech: Boolean
-  allowBotSpeech_not: Boolean
-  allowPetSpeech: Boolean
-  allowPetSpeech_not: Boolean
+  habbos_every: HabboWhereInput
+  habbos_some: HabboWhereInput
+  habbos_none: HabboWhereInput
   createdAt: DateTime
   createdAt_not: DateTime
   createdAt_in: [DateTime!]
@@ -2806,7 +3658,6 @@ input UserWhereInput {
 
 input UserWhereUniqueInput {
   id: ID
-  username: String
 }
 `
       }
