@@ -1,0 +1,76 @@
+$poll-width = 350px 
+
+.poll
+	position absolute
+	top 10px
+	left calc(50% - calc(350px / 2))
+	background rgba(0, 0, 0, 0.7)
+	width $poll-width
+	max-height 130px
+	text-align center
+	padding 5px
+	border-radius 6px
+
+	.question
+		display inline-block
+		font-weight 300
+		font-size 20px
+
+	.results
+		.question 
+			line-height 30px
+
+		.result
+			display inline-block
+			height 30px
+			width 30px
+			text-align center
+			border-radius 6px
+
+			p
+				font-size 16px
+				padding 6px
+				color white
+
+		.positive
+			background-color #007841
+			margin-right 5px
+			float right
+
+		.negative
+			background-color  #b32e22
+			margin-left 5px
+			float left
+			
+	.options
+		margin-top 35px
+		margin-bottom 2px
+		height 50px
+
+		.option
+			width 50px
+			height 50px
+			cursor pointer
+			display inline-block
+			border-radius 6px
+
+			&:not(:last-child)
+				margin-right 70px 
+
+			&:hover
+				transition 0.25s
+				border 1px solid rgba(255, 255, 255, 0.5)
+
+			// &:active
+			// 	box-shadow inset 0px -20px 0 0 rgba(0, 0, 0, 0.5)
+
+			img
+				display: block;
+				margin auto
+				margin-top 9px
+
+		.positive
+			background-color #007841
+
+		.negative
+			background-color  #b32e22

@@ -62,8 +62,6 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
                     </div>
                 </div>
 
-                <Chatbox />
-
                 <div className="toolbar-friends">
 
                     <div className="toolbar-icons-content">

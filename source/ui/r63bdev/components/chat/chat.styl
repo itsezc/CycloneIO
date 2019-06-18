@@ -1,0 +1,77 @@
+.chat
+	z-index 10
+	position absolute
+	//Demo
+	left 50%
+	top 2em
+
+	.bubble
+		z-index 11
+		height 24px
+		color black
+		font-size 12px
+
+
+		.avatar
+			display inline-block
+			margin 0
+			height 24px
+			width 31px
+			background url('https://bobba.io/web-gallery/assets/chat_left.png') no-repeat
+			float left
+
+			img
+				margin 2px 0 0 3px
+
+		.body
+			float left
+			display inline-block
+			margin 0
+			height 24px
+			max-height 24px
+			background url(https://bobba.io/web-gallery/assets/chat_bite.png) center repeat-x
+			font-weight normal
+
+			.wrapper
+				padding 5px 0px
+
+				.name
+					font-weight bold
+
+				.name.whisper
+					font-style italic
+					color gray
+
+				.message
+					display inline
+
+				.message.say
+					font-weight 300
+
+				.message.shout
+					font-weight bold
+
+				.message.whisper
+					font-weight 300
+					font-style italic
+					color gray
+
+		.close
+			display inline-block
+			width 10px
+			height 24px
+			background url(https://bobba.io/web-gallery/assets/chat_right.png) no-repeat
+
+	.arrow
+		z-index 12
+		display block
+		position absolute
+		margin 0
+		padding 0
+		width 9px
+		height 6px
+		margin-left 50%
+		margin-top -1px
+		background url('https://bobba.io/web-gallery/assets/chat_arrow.png')
+		background-repeat no-repeat
+		background-position center bottom

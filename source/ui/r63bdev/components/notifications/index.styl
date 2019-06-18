@@ -1,0 +1,19 @@
+.notifications
+	position fixed
+	width 190px
+	right 5px
+	top 0
+	z-index 1
+
+	.notification
+		background-color:rgba(40, 40, 40, .65)
+		border 2px solid rgba(255, 255, 255, .2)
+		border-radius 6px
+		box-shadow: 0 2px 0 0 rgba(0, 0, 0, .7), 1px 0 0 0 rgba(0, 0, 0, .7), -1px 0 0 0 rgba(0, 0, 0, .7)
+		padding 3px
+
+		@import './components/wallet/'
+		@import './components/notification/'
+
+	&>*:not(:last-child)
+		margin-bottom 5px

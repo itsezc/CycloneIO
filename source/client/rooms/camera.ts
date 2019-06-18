@@ -1,5 +1,5 @@
 import { Vector2D } from '../../common/types/rooms/vector'
-import IGameObject from '../games/object';
+import IGameObject from '../games/object'
 
 /**
  * RoomCamera class
@@ -7,10 +7,8 @@ import IGameObject from '../games/object';
  */
 export default class RoomCamera extends Phaser.Cameras.Scene2D.Camera implements IGameObject
 {
-
-	private _cameras: Phaser.Cameras.Scene2D.CameraManager
-
-	public isScrolling: boolean = false
+	private readonly _cameras: Phaser.Cameras.Scene2D.CameraManager
+	private _isScrolling: boolean
 
 	/**
 	 * @param {CameraManager} cameras - The camera manager, encapsulates all the cameras
@@ -23,6 +21,7 @@ export default class RoomCamera extends Phaser.Cameras.Scene2D.Camera implements
 		super(coordinates.x, coordinates.y, width, height)
 
 		this._cameras = cameras
+		this._isScrolling = false
 	}
 
 	/**
@@ -47,6 +46,16 @@ export default class RoomCamera extends Phaser.Cameras.Scene2D.Camera implements
 		this.scrollY += (pointer.downY - pointer.y) / this.zoom
 		pointer.downY = pointer.y
 
-		this.isScrolling = true
+		this._isScrolling = true
+	}
+
+	public get isScrolling(): boolean
+	{
+		return this._isScrolling
+	}
+
+	public set isScrolling(value: boolean)
+	{
+		this._isScrolling = value
 	}
 }
