@@ -40,10 +40,11 @@ export default class Room extends Phaser.Scene
 
     public avatar!: Phaser.Physics.Arcade.Sprite
     public avatarIsWalking: boolean
+    public avatarIsMoving: boolean = false
     public avatarRotation: number
     public tileDestination: { x: number, y: number }
     public finder: Pathfinder.AStarFinder
-    public grid: Pathfinder.Grid
+    public map: number[][]
 
     private furnitures!: FurnitureSprite[]
     /*
@@ -249,13 +250,11 @@ export default class Room extends Phaser.Scene
         // roomContainer.x = Math.floor(window.innerWidth / 2);
         // roomContainer.y = Math.floor(window.innerHeight / 2);
 
-        var map = [
+        this.map = [
             [0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0],
             [0, 0, 1, 0, 0],
         ];
-
-        this.grid = new Pathfinder.Grid(map);
 
         this.finder = new Pathfinder.AStarFinder({
             diagonalMovement: DiagonalMovement.Always,
