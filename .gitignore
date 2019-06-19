@@ -4,11 +4,6 @@ node_modules
 
 out
 
-.vscode
-prod.list*
-packages-microsoft-prod.deb*
-.stackdump
-
 config.json
 
 CREDITS.md
@@ -23,11 +18,6 @@ web-build/dist
 lerna-debug.json
 .report
 
-# Downloadables
-# habbo-imaging
-source/utils/swf3/furni
-source/utils/swf3/old
-
 # Lerna
 learna-debug.log
 
@@ -39,3 +29,4 @@ learna-debug.log
 .vscode
 prod.list*
 packages-microsoft-prod.deb*
+.stackdump

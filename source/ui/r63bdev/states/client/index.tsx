@@ -7,6 +7,8 @@ import Actions from '../../components/actions'
 import Toolbar from '../../components/toolbar'
 import Explorer from '../../components/explorer'
 
+import Messenger from '../../components/messenger'
+
 // import Notifications from '../../components/notifications'
 
 import Poll from '../../components/poll'

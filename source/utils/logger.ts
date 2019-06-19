@@ -29,7 +29,7 @@ const logger: any = createLogger({
 					break
 
 				case 'apollo':
-					levelOutput = '[⚛️ ]'
+					levelOutput = '[⚛️]'
 					break
 
 				case 'network':
