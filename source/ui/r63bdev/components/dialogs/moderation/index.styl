@@ -1,0 +1,66 @@
+.moderation
+	width 170px
+	height 170px
+	font-size 10px
+	font-weight bold
+	position absolute
+	left 1em
+	top 5em
+
+	.header
+		cursor grab
+		margin 10px 0px 15px 0px
+
+		&:active
+			cursor grabbing
+
+		p
+			display inline-block
+			padding 0px 10px
+
+		.close
+			margin -3px 5px 0px 10px
+			display inline-block
+			cursor pointer
+			height 17px
+			width 17px
+			float right
+			border 1px solid #A3A3A3
+			border-radius 6px
+			box-shadow  inset 0px 1px 0px 0px #E0E0E0,
+						inset 0px 3px 0px 0px #FFFFFF,
+						0px 1px 0px 0px #F5F5F5
+			
+			svg
+				margin 4px
+				width 100%
+				height 100%
+
+	.content
+		padding 0px 10px 10px 10px
+
+		ul.options
+			padding 0
+			list-style none
+
+			li
+				//margin-bottom 10px
+				cursor pointer
+				border 1px solid rgba(0, 0, 0, 0)
+				padding 5px
+				border-radius 6px
+				max-height 30px
+
+				&:hover
+					border 1px solid gray
+
+
+				img
+					display inline-block
+
+				span
+					display inline-block
+					position absolute
+					margin-top 9px
+					margin-left 5px
+					line-height 0px
