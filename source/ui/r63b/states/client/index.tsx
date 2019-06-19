@@ -13,7 +13,7 @@ import Poll from '../../components/poll'
 
 import Alert from '../../components/dialogs/alert'
 import Catalog from '../../components/dialogs/catalog'
-//import Navigator from '../../components/dialogs/navigator'
+import Navigator from '../../components/dialogs/navigator'
 
 import Moderation from '../../components/dialogs/moderation'
 
@@ -21,8 +21,8 @@ import Chat from '../../components/chat/bubble'
 
 import Wallet from '../../components/wallet'
 
-import ApolloClient, { gql } from 'apollo-boost' 
-import { ApolloProvider, Query } from 'react-apollo'
+import ApolloClient from 'apollo-boost' 
+import { ApolloProvider } from 'react-apollo'
 
 import './index.styl'
 
@@ -77,6 +77,11 @@ export default class Client extends Component<any, ClientState> {
 						/> */}
 
 						{/* <Moderation />*/}
+
+						<ApolloProvider client={this.database}>
+							<Navigator />
+						</ApolloProvider>
+						
 
 						<Catalog />
 

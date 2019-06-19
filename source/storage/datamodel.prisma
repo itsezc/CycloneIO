@@ -143,7 +143,7 @@ type Room @pgTable(name: "rooms")
 	id: ID! @id
 	name: String!
 	description: String
-	type: roomType
+	type: roomType @default(value: PUBLIC)
 	category: Int
 	owner: Int
 	map: Json
@@ -152,6 +152,7 @@ type Room @pgTable(name: "rooms")
 	wallHeight: Int
 	hideWalls: Boolean @default(value: false)
 	hideWired: Boolean @default(value: false)
+    currentUsers: Int @default(value: 0)
 	maxUsers: Int @default(value: 10)
 	allowPets: Boolean @default(value: false)
 	allowPetsEating: Boolean @default(value: false)

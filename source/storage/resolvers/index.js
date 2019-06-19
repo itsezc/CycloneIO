@@ -8,7 +8,7 @@ const resolvers = {
 		rooms: (parent, args, ctx, info) => ctx.db.rooms(args, info),
 		room: (parent, args, ctx, info) => ctx.db.rooms({ id: args.id }, info),
 		users: (parent, args, ctx, info) => ctx.db.users(args, info),
-		user: (parent, args, ctx) => ctx.db.users({ id: args.id }, info)
+		user: (parent, args, ctx, info) => ctx.db.users({ id: args.id }, info),
 	},
 
 	Mutation: {

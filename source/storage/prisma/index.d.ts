@@ -903,6 +903,8 @@ export type RoomOrderByInput =
   | "hideWalls_DESC"
   | "hideWired_ASC"
   | "hideWired_DESC"
+  | "currentUsers_ASC"
+  | "currentUsers_DESC"
   | "maxUsers_ASC"
   | "maxUsers_DESC"
   | "allowPets_ASC"
@@ -1913,6 +1915,14 @@ export interface RoomWhereInput {
   hideWalls_not?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
   hideWired_not?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
+  currentUsers_not?: Maybe<Int>;
+  currentUsers_in?: Maybe<Int[] | Int>;
+  currentUsers_not_in?: Maybe<Int[] | Int>;
+  currentUsers_lt?: Maybe<Int>;
+  currentUsers_lte?: Maybe<Int>;
+  currentUsers_gt?: Maybe<Int>;
+  currentUsers_gte?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   maxUsers_not?: Maybe<Int>;
   maxUsers_in?: Maybe<Int[] | Int>;
@@ -2491,6 +2501,7 @@ export interface RoomCreateInput {
   wallHeight?: Maybe<Int>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
@@ -2602,6 +2613,7 @@ export interface RoomUpdateDataInput {
   wallHeight?: Maybe<Int>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
@@ -2883,6 +2895,7 @@ export interface RoomCreateWithoutItemsInput {
   wallHeight?: Maybe<Int>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
@@ -2921,6 +2934,7 @@ export interface RoomUpdateWithoutItemsDataInput {
   wallHeight?: Maybe<Int>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
@@ -3264,6 +3278,7 @@ export interface RoomUpdateInput {
   wallHeight?: Maybe<Int>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
@@ -3283,6 +3298,7 @@ export interface RoomUpdateManyMutationInput {
   wallHeight?: Maybe<Int>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
@@ -4399,6 +4415,7 @@ export interface Room {
   wallHeight?: Int;
   hideWalls?: Boolean;
   hideWired?: Boolean;
+  currentUsers?: Int;
   maxUsers?: Int;
   allowPets?: Boolean;
   allowPetsEating?: Boolean;
@@ -4418,6 +4435,7 @@ export interface RoomPromise extends Promise<Room>, Fragmentable {
   wallHeight: () => Promise<Int>;
   hideWalls: () => Promise<Boolean>;
   hideWired: () => Promise<Boolean>;
+  currentUsers: () => Promise<Int>;
   maxUsers: () => Promise<Int>;
   allowPets: () => Promise<Boolean>;
   allowPetsEating: () => Promise<Boolean>;
@@ -4448,6 +4466,7 @@ export interface RoomSubscription
   wallHeight: () => Promise<AsyncIterator<Int>>;
   hideWalls: () => Promise<AsyncIterator<Boolean>>;
   hideWired: () => Promise<AsyncIterator<Boolean>>;
+  currentUsers: () => Promise<AsyncIterator<Int>>;
   maxUsers: () => Promise<AsyncIterator<Int>>;
   allowPets: () => Promise<AsyncIterator<Boolean>>;
   allowPetsEating: () => Promise<AsyncIterator<Boolean>>;
@@ -4478,6 +4497,7 @@ export interface RoomNullablePromise
   wallHeight: () => Promise<Int>;
   hideWalls: () => Promise<Boolean>;
   hideWired: () => Promise<Boolean>;
+  currentUsers: () => Promise<Int>;
   maxUsers: () => Promise<Int>;
   allowPets: () => Promise<Boolean>;
   allowPetsEating: () => Promise<Boolean>;
@@ -5942,6 +5962,7 @@ export interface RoomPreviousValues {
   wallHeight?: Int;
   hideWalls?: Boolean;
   hideWired?: Boolean;
+  currentUsers?: Int;
   maxUsers?: Int;
   allowPets?: Boolean;
   allowPetsEating?: Boolean;
@@ -5963,6 +5984,7 @@ export interface RoomPreviousValuesPromise
   wallHeight: () => Promise<Int>;
   hideWalls: () => Promise<Boolean>;
   hideWired: () => Promise<Boolean>;
+  currentUsers: () => Promise<Int>;
   maxUsers: () => Promise<Int>;
   allowPets: () => Promise<Boolean>;
   allowPetsEating: () => Promise<Boolean>;
@@ -5984,6 +6006,7 @@ export interface RoomPreviousValuesSubscription
   wallHeight: () => Promise<AsyncIterator<Int>>;
   hideWalls: () => Promise<AsyncIterator<Boolean>>;
   hideWired: () => Promise<AsyncIterator<Boolean>>;
+  currentUsers: () => Promise<AsyncIterator<Int>>;
   maxUsers: () => Promise<AsyncIterator<Int>>;
   allowPets: () => Promise<AsyncIterator<Boolean>>;
   allowPetsEating: () => Promise<AsyncIterator<Boolean>>;

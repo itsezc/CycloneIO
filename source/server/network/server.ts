@@ -16,10 +16,7 @@ import { typeDefs } from '../../storage/prisma/prisma-schema'
 import { resolvers } from '../../storage/resolvers/index'
 
 import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
-import { HttpLink as ApolloLink } from 'apollo-link-http'
-import { InMemoryCache } from 'apollo-cache-inmemory'
-import { ApolloClient } from 'apollo-client'
-import gql from 'graphql-tag'
+
 
 import jwt from 'jsonwebtoken'
 
@@ -32,7 +29,6 @@ export default class Server {
 	private HTTP: Hapi.Server
 	public webSocket!: SocketIO.Server
 	private eventManager!: EventManager
-	private database!: ApolloClient<any>
 	// private database: Object
 	private apolloServer!: any
 
@@ -100,33 +96,6 @@ export default class Server {
 			Environment.instance._logger.database('Connected to Prisma [GraphQL] successfully')
 
 			await this.HTTP.start()
-
-			const ApolloCache = new InMemoryCache()
-
-			this.database = new ApolloClient({
-				link: new ApolloLink({
-					uri: 'http://localhost:8081/graphql'
-				}),
-				cache: ApolloCache,
-				name: 'Database'
-			})
-
-			this.database.query({
-				query:
-				gql`
-					{
-						rooms {
-							id
-							name 
-							description
-							maxUsers
-						}
-					}
-				`
-			}).then((result: any) => {
-				console.log(result.data.rooms)
-			})
-			.catch((error: any) => console.error(error))
 
 		} catch (error) {
 			this.shutdown(error)

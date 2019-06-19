@@ -6,7 +6,13 @@ import Rainbow from 'chalk-animation'
 import Server from './network/server'
 
 //import RoomManager from './hotel/rooms/manager'
-import Logger, { CycloneLogger } from '../utils/logger';
+import Logger, { CycloneLogger } from '../utils/logger'
+
+import { HttpLink as ApolloLink } from 'apollo-link-http'
+import { InMemoryCache as ApolloCache } from 'apollo-cache-inmemory'
+import { ApolloClient } from 'apollo-client'
+import { onError as ApolloError } from 'apollo-link-error'
+import gql from 'graphql-tag'
 
 /**
  * Environment class
@@ -18,6 +24,9 @@ export default class Environment
 	public _server!: Server
 
 	public static instance: Environment
+
+	private database!: ApolloClient<any>
+
 	//roomManager: RoomManager
 
 	/**
@@ -25,10 +34,15 @@ export default class Environment
 	*/
 	public constructor(config: any)
 	{
-		this._logger = Logger
-		this._config = config
 
-		this.init()
+		this._logger = Logger
+
+		if(!config) {
+			this._logger.error('No configuration file found')
+		} else {
+			this._config = config
+			this.init()
+		}
 	}
 
 	/**
@@ -50,7 +64,7 @@ export default class Environment
 			console.log(`Version: ${Chalk.magenta.bold('1.0.0')} | License key : ${Chalk.magenta.bold(Config.license)}`)
 			console.log(`Created by ${Chalk.red.bold('EZ-C 💖  Amor')}, ${Chalk.blue.bold('Sapphire')}, ${Chalk.bold('Kychloren')} of ${Chalk.yellow.bold('Habbay')}`)
 			console.log(`Developers: ${Chalk.bold('ThePapaNoob')}, ${Chalk.bold('LeChris')} and ${Chalk.bold('TheGeneral')}`)
-			console.log(`Contributors: ${Chalk.bold('ElBuffador')}, ${Chalk.bold('Droppy')} and ${Chalk.bold('Ovflowd')}`)
+			console.log(`Contributors: ${Chalk.bold('ElBuffador')}, ${Chalk.bold('Droppy')} and ${Chalk.bold('Sonay')}`)
 			console.log(`QA: ${Chalk.hex('#5042F4').bold('Platinum')} and ${Chalk.hex('#4B0082').bold('Layne')}\n`)
 			
 			this._server = await new Server(this._config)
@@ -61,6 +75,35 @@ export default class Environment
 		{
 			this._logger.error(error)
 		}
+
+		this.database = new ApolloClient({
+			link: new ApolloLink({
+				uri: 'http://localhost:8081/graphql'
+			}),
+			cache: new ApolloCache(),
+			name: 'Database'
+		})
+
+		this.database.query({
+			query:
+			gql`
+				{
+					rooms(
+						where: {
+							currentUsers_gt: 0
+						}
+					) {
+						id
+						name
+						maxUsers
+						currentUsers
+					}
+				}
+			`
+		}).then((result: any) => {
+			console.log(result.data.rooms)
+		})
+		.catch((error: any) => console.error(error))
 	}
 
 	public get server(): Server {

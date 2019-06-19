@@ -20,7 +20,7 @@ const Routes = [{
 	{
 		method: 'GET',
 		path: '/housekeeping/{param*}',
-		handler: (request: any, h: any) => {
+		handler: (request: any, h: any) => {	
 			return h.file('./web-gallery/dist/housekeeping.html')
 		}
 	},

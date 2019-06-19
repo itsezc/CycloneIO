@@ -3059,6 +3059,7 @@ type Room {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3085,6 +3086,7 @@ input RoomCreateInput {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3119,6 +3121,7 @@ input RoomCreateWithoutItemsInput {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3155,6 +3158,8 @@ enum RoomOrderByInput {
   hideWalls_DESC
   hideWired_ASC
   hideWired_DESC
+  currentUsers_ASC
+  currentUsers_DESC
   maxUsers_ASC
   maxUsers_DESC
   allowPets_ASC
@@ -3176,6 +3181,7 @@ type RoomPreviousValues {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3219,6 +3225,7 @@ input RoomUpdateDataInput {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3238,6 +3245,7 @@ input RoomUpdateInput {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3257,6 +3265,7 @@ input RoomUpdateManyMutationInput {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3293,6 +3302,7 @@ input RoomUpdateWithoutItemsDataInput {
   wallHeight: Int
   hideWalls: Boolean
   hideWired: Boolean
+  currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
@@ -3400,6 +3410,14 @@ input RoomWhereInput {
   hideWalls_not: Boolean
   hideWired: Boolean
   hideWired_not: Boolean
+  currentUsers: Int
+  currentUsers_not: Int
+  currentUsers_in: [Int!]
+  currentUsers_not_in: [Int!]
+  currentUsers_lt: Int
+  currentUsers_lte: Int
+  currentUsers_gt: Int
+  currentUsers_gte: Int
   maxUsers: Int
   maxUsers_not: Int
   maxUsers_in: [Int!]
