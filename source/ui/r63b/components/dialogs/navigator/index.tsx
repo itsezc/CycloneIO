@@ -10,7 +10,7 @@ import { GetActiveRooms as RoomsQUERY, GetNavigatorTabs as TabsQUERY} from '../.
 
 
 type NavigatorState = {
-	defaultCategory: number
+	category: number
 }
 
 export default class Navigator extends Component <any, NavigatorState>
@@ -23,7 +23,7 @@ export default class Navigator extends Component <any, NavigatorState>
 		super(props)
 
 		this.state = {
-			defaultCategory: 1
+			category: 1
 		}
 	}
 
@@ -48,6 +48,8 @@ export default class Navigator extends Component <any, NavigatorState>
 							>
 								<Tabs
 									selectedTabClassName='active'
+									selectedIndex={this.state.category}
+									onSelect={(category: number) => this.setState({ category })}
 								></Tabs>
 								<Query<GetNavigatorTabs, GetNavigatorTabs_navigatorTabs> query={TabsQUERY} notifyOnNetworkStatusChange>
 									{({ loading, error, data }) => {
@@ -57,13 +59,13 @@ export default class Navigator extends Component <any, NavigatorState>
 											console.log(data)
 
 											return (
-												<div>
+												<TabList className='tabs'>
 												{
 													data.navigatorTabs.map(instance => (
 														<p key={instance.order}>{instance.name}</p>
 													))
 												}
-												</div>
+												</TabList>
 											)	
 										}
 									}

@@ -18,6 +18,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private direction!: number
     private color!: number
 
+    private delta!: number
+
     public constructor(scene: Room, furniture: Furniture) {
         super(scene)
 
@@ -45,8 +47,32 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                 delay: 0,
                 callback: this.update,
                 callbackScope: this,
-                loop: false
+                loop: true,
             })
+
+            setInterval(() => {
+                this.timer.args = [this.timer.elapsed]
+            }, 1000 )
+
+
+            // this.timer.args = [this.delta]
+
+            // console.log(this.timer.args)
+           
+            // this.timer = this.clock.addEvent({
+            //     delay: 0,
+            //     callback: this.update,
+            //     callbackScope: this,
+            //     loop: true
+            // }) 
+
+            // this.timer = this.clock.delayedCall(0, this.update, [], this)
+
+            //console.log(this.timer)
+
+            // setTimeout(() => {
+            //     console.log('timeout', this.timer.elapsed)
+            // }, 1000)
         }
     }
 
@@ -68,7 +94,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
 
 			//console.log('Animating with ', animation)
-
+            // Lava Lamp (1 as Animation) -> if (null != 1) -> animation = 1 
             if (this.animation != animation)
             {
                 this.animation = animation
@@ -127,9 +153,11 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         }
     }
 
-    public update(deltaTime: number)
+    public update(delta: number)
     {
-        this.totalTimeRunning += deltaTime
+        if(delta !== undefined) {
+            this.totalTimeRunning += delta
+        }
 
         let frameCount = Math.round(this.totalTimeRunning / FurnitureSprite.FPS_TIME_MS)
 
@@ -137,7 +165,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
             this.frameCount = frameCount
             this.updateFurnitureView()
-        }
+        }        
     }
 
     public updateFurnitureView()
@@ -160,11 +188,12 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
                     layerSprite.tint = color
                 }
-
+                
                 this.add(layerSprite)
             }
         }
-
+        
+        // Depth sorting for sprites inside the furniture
         this.getAll().sort((a: any,  b: any) => {
             return a.z - b.z
         })

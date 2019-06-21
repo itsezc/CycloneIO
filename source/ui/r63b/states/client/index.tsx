@@ -38,7 +38,7 @@ export default class Client extends Component<any, ClientState>
 		super(props)
 
 		this.database = new ApolloClient({
-			uri: 'http://localhost:4466'
+			uri: 'http://localhost:8081/graphql'
 		})
 
 		this.state = {

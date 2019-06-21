@@ -191,6 +191,7 @@ export default class Furniture
 		{
 
 			let animationLayer = this.data.visualization.animations[animation].layers[layer]
+			
 			if (animationLayer.frames.length < 1)
 			{
 				return 0
