@@ -30,15 +30,15 @@ type ClientState = {
 	loaded: boolean
 }
 
-export default class Client extends Component<any, ClientState> {
-
+export default class Client extends Component<any, ClientState>
+{
 	private database: ApolloClient<any>
 
 	constructor(props: any) {
 		super(props)
 
 		this.database = new ApolloClient({
-			uri: 'http://localhost:8081/graphql'
+			uri: 'http://localhost:4466'
 		})
 
 		this.state = {
@@ -83,7 +83,7 @@ export default class Client extends Component<any, ClientState> {
 						</ApolloProvider>
 						
 
-						<Catalog />
+						{/* <Catalog /> */}
 
 						{/* <Alert
 							title='Message from Habbay Hotel'

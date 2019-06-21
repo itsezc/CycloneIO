@@ -24,7 +24,7 @@ export default class Room extends Component {
 	componentWillMount()
 	{
 		const script = document.createElement('script')
-		script.src = 'http://45.76.88.170:8080/client.js'
+		script.src = 'http://localhost:8082/client.js'
 		document.body.appendChild(script)
 	}
 

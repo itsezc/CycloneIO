@@ -65,6 +65,14 @@ var models = [
     embedded: false
   },
   {
+    name: "NavigatorTab",
+    embedded: false
+  },
+  {
+    name: "NavigatorCategories",
+    embedded: false
+  },
+  {
     name: "News",
     embedded: false
   },

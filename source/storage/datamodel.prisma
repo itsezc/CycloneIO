@@ -185,6 +185,21 @@ type Item @pgTable(name: "items")
 #     value: Int
 # }
 
+type NavigatorTab @pgTable(name: "navigator_tabs")
+{
+    id: ID! @id
+    name: String
+    order: Int @unique
+    categories: [NavigatorCategories!]!
+}
+
+type NavigatorCategories @pgTable(name: "navigator_categories")
+{
+    id: ID! @id
+    name: String
+    parent: NavigatorTab!
+}
+
 type News @pgTable(name: "news")
 {
 	id: ID! @id

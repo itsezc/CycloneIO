@@ -1,9 +1,19 @@
 import React, { Component } from 'react'
-import { Query } from 'react-apollo'
-import { GetActiveRooms, GetActiveRooms_rooms } from '../../../../../storage/__generated__/types'
-import { GetActiveRooms as QUERY } from '../../../../../storage/queries'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
-export default class Navigator extends Component 
+import Dialog from '../../../helpers/dialog'
+import { dragElement } from '../../../utils/functions'
+
+import { Query } from 'react-apollo'
+import { GetActiveRooms, GetActiveRooms_rooms, GetNavigatorTabs_navigatorTabs, GetNavigatorTabs } from '../../../../../storage/__generated__/types'
+import { GetActiveRooms as RoomsQUERY, GetNavigatorTabs as TabsQUERY} from '../../../../../storage/queries'
+
+
+type NavigatorState = {
+	defaultCategory: number
+}
+
+export default class Navigator extends Component <any, NavigatorState>
 {
 
 	private query: Query 
@@ -11,6 +21,15 @@ export default class Navigator extends Component
 	constructor(props: any)
 	{
 		super(props)
+
+		this.state = {
+			defaultCategory: 1
+		}
+	}
+
+	componentDidMount()
+	{
+		dragElement(document.getElementById('navigator'))
 	}
 
 	render()
@@ -18,19 +37,48 @@ export default class Navigator extends Component
 		return(
 			<div>
 				{/* variables={{ limit: 2 }} */}
-				<Query<GetActiveRooms, GetActiveRooms_rooms> query={QUERY} notifyOnNetworkStatusChange>
+				<Query<GetActiveRooms, GetActiveRooms_rooms> query={RoomsQUERY} notifyOnNetworkStatusChange>
 					{({ loading, error, data }) => {
 						if (loading) return 'Loading..'
 						if (error) return 'Error..'
 
 						return (
-							<div>
+							<Dialog 
+								id='navigator'
+								title='Navigator'
+								resize={true}
+								axis='y'
+								width={450}
+								height={630}
+							>
+								<Tabs
+									selectedTabClassName='active'
+								></Tabs>
+								<Query<GetNavigatorTabs, GetNavigatorTabs_navigatorTabs> query={TabsQUERY} notifyOnNetworkStatusChange>
+									{({ loading, error, data }) => {
+											if (loading) return 'Loading..'
+											if (error) return 'Error..'
+
+											console.log(data)
+
+											return (
+												<div>
+												{
+													data.navigatorTabs.map(instance => (
+														<p key={instance.order}>{instance.name}</p>
+													))
+												}
+												</div>
+											)	
+										}
+									}
+								</Query>
 								{
 									data.rooms.map(room => (
-										<p key={room.id}>{room.id} : {room.name} : Current({room.currentUsers}) - {/* JSON.stringify(room.map) */}</p>
+										<p key={room.id}>{room.id} : {room.name} : Current({room.currentUsers})</p>
 									))
 								}
-							</div>
+							</Dialog>
 						)
 					}}
 				</Query>
@@ -38,142 +86,3 @@ export default class Navigator extends Component
 		)	
 	}
 }
-
-
-
-// import React, { Component } from 'react'
-// import { Query } from 'react-apollo'
-// import { gql } from 'apollo-boost'
-
-// //	https://www.apollographql.com/docs/react/features/pagination
-
-
-// // export default class Test extends Component {
-// // 	constructor(props) {
-// // 		super(props)
-
-// // 		this.database = new ApolloClient({
-// // 			uri: 'http://localhost:8081/graphql'
-// // 		})
-// 		// this.query = 
-// 		// gql`
-// 		// {
-// 		// 	rooms {
-// 		// 		id
-// 		// 		name
-// 		// 		map
-// 		// 	}
-// 		// }
-// 		// `
-// // 	}
-
-// // 	render() {
-// // 		return(
-// // 			<p>Test This is a long message jason</p>
-// // 		)
-// // 	}
-// // }
-
-// let query = 
-// gql`
-// # {
-// # 	rooms {
-// # 		id
-// # 		name
-// # 		map
-// # 	}
-// # }
-// query Rooms($limit: Int) {
-// 	rooms(first: $limit) {
-// 		id
-// 		name
-// 		map
-// 	}
-// }
-// `
-
-// const Navigator = () => (
-// 	<Query query={query} variables={{ limit: 2 }}>
-// 		{({ loading, error, data }) => {
-// 			if (loading) return 'Loading..'
-// 			if (error) return 'Error..'
-
-// 			return (
-// 				<div>
-// 					{data.rooms.map(room => (
-// 						<p key={room.id}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {room.id} : {room.name} : {JSON.stringify(room.map)}</p>
-// 					))}
-// 					</div>
-// 			)
-// 		}}
-// 	</Query>
-// )
-
-// export default Navigator
-
-
-// //	https://www.apollographql.com/docs/react/features/pagination
-
-
-// // export default class Test extends Component {
-// // 	constructor(props) {
-// // 		super(props)
-
-// // 		this.database = new ApolloClient({
-// // 			uri: 'http://localhost:8081/graphql'
-// // 		})
-// 		// this.query = 
-// 		// gql`
-// 		// {
-// 		// 	rooms {
-// 		// 		id
-// 		// 		name
-// 		// 		map
-// 		// 	}
-// 		// }
-// 		// `
-// // 	}
-
-// // 	render() {
-// // 		return(
-// // 			<p>Test This is a long message jason</p>
-// // 		)
-// // 	}
-// // }
-
-// let query = 
-// gql`
-// # {
-// # 	rooms {
-// # 		id
-// # 		name
-// # 		map
-// # 	}
-// # }
-// query Rooms($limit: Int) {
-// 	rooms(first: $limit) {
-// 		id
-// 		name
-// 		map
-// 	}
-// }
-// `
-
-// const Navigator = () => (
-// 	<Query query={query} variables={{ limit: 2 }}>
-		// {({ loading, error, data}) => {
-		// 	if (loading: any) return 'Loading..'
-		// 	if (error) return 'Error..'
-
-		// 	return (
-		// 		<div>
-		// 			{data.rooms.map(room: any => (
-		// 				<p key={room.id}>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {room.id} : {room.name} : {JSON.stringify(room.map)}</p>
-		// 			))}
-		// 			</div>
-		// 	)
-		// }}
-// 	</Query>
-// )
-
-// export default Navigator
