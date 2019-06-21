@@ -1,6 +1,7 @@
-export default class Messenger {
+export default class Messenger
+{
 	constructor()
 	{
-		
+
 	}
 }

@@ -17,14 +17,13 @@ import { resolvers } from '../../storage/resolvers/index'
 
 import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
 
-
 import jwt from 'jsonwebtoken'
 
 /**
  * Server class
  */
-export default class Server {
-
+export default class Server
+{
 	private config: any
 	private HTTP: Hapi.Server
 	public webSocket!: SocketIO.Server
@@ -39,10 +38,10 @@ export default class Server {
 	 */
 	public constructor(config: JSON) 
 	{
-        this.config = config
+		this.config = config
 
 		this.HTTP = new Hapi.Server({
-			 port: Config.server.port
+			port: Config.server.port
 		})
 
 		this.start()
@@ -51,10 +50,10 @@ export default class Server {
 	/**
 	 * Starts the server
 	 */
-	public async start(): Promise<void> {
-		
-        try 
-        {
+	public async start(): Promise<void>
+	{
+		try 
+		{
 			await this.HTTP.register(Inert)
 			await this.HTTP.route(Routes)
 
@@ -70,20 +69,20 @@ export default class Server {
 			Environment.instance._logger.apollo('Started Apollo [GraphQL] listener')
 
 			let schema = makeExecutableSchema({
-			    typeDefs,
-			    resolvers,
-			    resolverValidationOptions: { 
-			        requireResolversForResolveType: false
-			    }
+				typeDefs,
+				resolvers,
+				resolverValidationOptions: {
+					requireResolversForResolveType: false
+				}
 			})
 
 			this.apolloServer = new ApolloServer({
-			    schema,  	
+				schema,
 				context: {
 					db: prisma
 				}
 			})
-			
+
 			Environment.instance._logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
 			await this.apolloServer.applyMiddleware({
@@ -97,13 +96,15 @@ export default class Server {
 
 			await this.HTTP.start()
 
-		} catch (error) {
+		} catch (error)
+		{
 			this.shutdown(error)
-		}	
+		}
 
 		Environment.instance._logger.server(`Server running on port ${Chalk.bold(String(this.HTTP.info.port))}`)
 
-		this.webSocket.on('connection', socket => {
+		this.webSocket.on('connection', socket =>
+		{
 			this.handleConnection(socket)
 		})
 	}
@@ -112,7 +113,8 @@ export default class Server {
 	 * Handles the connection
 	 * @param {Socket} socket - The socket connection
 	 */
-	public async handleConnection(socket: SocketIO.Socket): Promise<void> {
+	public async handleConnection(socket: SocketIO.Socket): Promise<void>
+	{
 
 		Environment.instance._logger.server(`Player ${socket.id} connected`)
 
@@ -124,11 +126,14 @@ export default class Server {
 	 * Shutdown the server
 	 * @param {string} error - The error message
 	 */
-	public async shutdown(error: string): Promise<void> {
+	public async shutdown(error: string): Promise<void>
+	{
 
-		try {
+		try
+		{
 
-			if (error) {
+			if (error)
+			{
 				throw error
 			}
 
@@ -137,7 +142,7 @@ export default class Server {
 			await this.HTTP.stop({
 				timeout: 100000
 			})
-			
+
 			/*.catch((error) => void {
 				throw error
 			})*/
@@ -145,9 +150,10 @@ export default class Server {
 			Environment.instance._logger.info('Server shutted down.')
 			process.exit(0)
 
-		} catch(error) {
-		
-			Environment.instance._logger.error(error) 
+		} catch (error)
+		{
+
+			Environment.instance._logger.error(error)
 			process.exit(1)
 		}
 	}

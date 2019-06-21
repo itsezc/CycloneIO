@@ -1,5 +1,5 @@
 import SocketIO from 'socket.io'
-import Room from '../../hotel/rooms/room'
+import Room from '../../hotel/rooms/room2'
 import RoomPlayer from '../../hotel/rooms/player'
 
 /**

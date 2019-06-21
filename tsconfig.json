@@ -1,7 +1,6 @@
 {
-    "compilerOptions": {
-
-		"baseUrl": ".",
+	"compilerOptions": {
+		"baseUrl": "source",
 		"target": "esnext",
 		"module": "commonjs",
 		"moduleResolution": "node",
@@ -9,17 +8,23 @@
 		"resolveJsonModule": true,
 		"strict": true,
 		"strictNullChecks": false,
-        "isolatedModules": false,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "jsx": "react",
-        "lib": ["dom", "es2018"],
-		"paths": { 
-			"*": ["*", "./typeDefs/*"] 
+		"isolatedModules": false,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"jsx": "react",
+		"lib": [
+			"dom",
+			"es2018"
+		],
+		"paths": {
+			"*": [
+				"*",
+				"./typeDefs/*"
+			]
 		},
-        "outDir": "./build",
-    },
-    "include": [
+		"outDir": "./build",
+	},
+	"include": [
 		"./source/**/*"
 	],
 	"exclude": [

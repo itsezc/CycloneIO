@@ -1,4 +1,4 @@
-import RoomData from './room'
+import RoomData from './room2'
 
 export default class RoomManager {
 	

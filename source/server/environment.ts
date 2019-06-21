@@ -37,9 +37,13 @@ export default class Environment
 
 		this._logger = Logger
 
-		if(!config) {
+		if (!config)
+		{
 			this._logger.error('No configuration file found')
-		} else {
+		} 
+		
+		else
+		{
 			this._config = config
 			this.init()
 		}
@@ -66,11 +70,11 @@ export default class Environment
 			console.log(`Developers: ${Chalk.bold('ThePapaNoob')}, ${Chalk.bold('LeChris')} and ${Chalk.bold('TheGeneral')}`)
 			console.log(`Contributors: ${Chalk.bold('ElBuffador')}, ${Chalk.bold('Droppy')} and ${Chalk.bold('Sonay')}`)
 			console.log(`QA: ${Chalk.hex('#5042F4').bold('Platinum')} and ${Chalk.hex('#4B0082').bold('Layne')}\n`)
-			
+
 			this._server = await new Server(this._config)
 			//this.roomManager = await new RoomManager() // I will add a Game Manager in the future.
-		} 
-		
+		}
+
 		catch (error) 
 		{
 			this._logger.error(error)
@@ -86,7 +90,7 @@ export default class Environment
 
 		this.database.query({
 			query:
-			gql`
+				gql`
 				{
 					rooms(
 						where: {
@@ -100,13 +104,15 @@ export default class Environment
 					}
 				}
 			`
-		}).then((result: any) => {
+		}).then((result: any) =>
+		{
 			console.log(result.data.rooms)
 		})
-		.catch((error: any) => console.error(error))
+			.catch((error: any) => console.error(error))
 	}
 
-	public get server(): Server {
+	public get server(): Server
+	{
 		return this._server
 	}
 }
