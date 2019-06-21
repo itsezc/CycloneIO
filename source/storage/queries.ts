@@ -19,7 +19,7 @@ export const GetActiveRooms = gql`
 
 export const GetNavigatorTabs = gql`
 	query GetNavigatorTabs {
-		navigatorTabs {
+		navigatorTabs(orderBy: order_ASC) {
 			order
 			name
 		}

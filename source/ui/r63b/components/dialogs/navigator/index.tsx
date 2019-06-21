@@ -27,11 +27,6 @@ export default class Navigator extends Component <any, NavigatorState>
 		}
 	}
 
-	componentDidMount()
-	{
-		dragElement(document.getElementById('navigator'))
-	}
-
 	render()
 	{
 		return(
