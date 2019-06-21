@@ -9,6 +9,9 @@ const resolvers = {
 		room: (parent, args, ctx, info) => ctx.db.rooms({ id: args.id }, info),
 		users: (parent, args, ctx, info) => ctx.db.users(args, info),
 		user: (parent, args, ctx, info) => ctx.db.users({ id: args.id }, info),
+
+		navigatorTab: (parent, args, ctx, info) => ctx.db.navigatorTab({ id: args. id}, info),
+		navigatorTabs: (parent, args, ctx, info) => ctx.db.navigatorTabs(args, info)
 	},
 
 	Mutation: {
@@ -30,7 +33,9 @@ const resolvers = {
 		createRoom: async (parent, args, ctx, info) => ctx.db.createRoom(args, info),
 		upsertRoom: async (parent, args, ctx, info) => ctx.db.upsertRoom(args, info),
 		updateRoom: async (parent, args, ctx, info) => ctx.db.updateRoom(args, info),
-		deleteRoom: async (parent, args, ctx, info) => ctx.db.deleteRoom(args, info)
+		deleteRoom: async (parent, args, ctx, info) => ctx.db.deleteRoom(args, info),
+
+		createNavigatorTab: async (parent, args, ctx, info) => ctx.db.createNavigatorTab(args, info)
 	},
 }
 

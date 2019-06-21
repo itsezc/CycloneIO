@@ -47,6 +47,14 @@ type AggregateItem {
   count: Int!
 }
 
+type AggregateNavigatorCategories {
+  count: Int!
+}
+
+type AggregateNavigatorTab {
+  count: Int!
+}
+
 type AggregateNews {
   count: Int!
 }
@@ -2775,6 +2783,18 @@ type Mutation {
   upsertItem(where: ItemWhereUniqueInput!, create: ItemCreateInput!, update: ItemUpdateInput!): Item!
   deleteItem(where: ItemWhereUniqueInput!): Item
   deleteManyItems(where: ItemWhereInput): BatchPayload!
+  createNavigatorCategories(data: NavigatorCategoriesCreateInput!): NavigatorCategories!
+  updateNavigatorCategories(data: NavigatorCategoriesUpdateInput!, where: NavigatorCategoriesWhereUniqueInput!): NavigatorCategories
+  updateManyNavigatorCategorieses(data: NavigatorCategoriesUpdateManyMutationInput!, where: NavigatorCategoriesWhereInput): BatchPayload!
+  upsertNavigatorCategories(where: NavigatorCategoriesWhereUniqueInput!, create: NavigatorCategoriesCreateInput!, update: NavigatorCategoriesUpdateInput!): NavigatorCategories!
+  deleteNavigatorCategories(where: NavigatorCategoriesWhereUniqueInput!): NavigatorCategories
+  deleteManyNavigatorCategorieses(where: NavigatorCategoriesWhereInput): BatchPayload!
+  createNavigatorTab(data: NavigatorTabCreateInput!): NavigatorTab!
+  updateNavigatorTab(data: NavigatorTabUpdateInput!, where: NavigatorTabWhereUniqueInput!): NavigatorTab
+  updateManyNavigatorTabs(data: NavigatorTabUpdateManyMutationInput!, where: NavigatorTabWhereInput): BatchPayload!
+  upsertNavigatorTab(where: NavigatorTabWhereUniqueInput!, create: NavigatorTabCreateInput!, update: NavigatorTabUpdateInput!): NavigatorTab!
+  deleteNavigatorTab(where: NavigatorTabWhereUniqueInput!): NavigatorTab
+  deleteManyNavigatorTabs(where: NavigatorTabWhereInput): BatchPayload!
   createNews(data: NewsCreateInput!): News!
   updateNews(data: NewsUpdateInput!, where: NewsWhereUniqueInput!): News
   updateManyNewses(data: NewsUpdateManyMutationInput!, where: NewsWhereInput): BatchPayload!
@@ -2799,6 +2819,334 @@ enum MutationType {
   CREATED
   UPDATED
   DELETED
+}
+
+type NavigatorCategories {
+  id: ID!
+  name: String
+  parent: NavigatorTab!
+}
+
+type NavigatorCategoriesConnection {
+  pageInfo: PageInfo!
+  edges: [NavigatorCategoriesEdge]!
+  aggregate: AggregateNavigatorCategories!
+}
+
+input NavigatorCategoriesCreateInput {
+  id: ID
+  name: String
+  parent: NavigatorTabCreateOneWithoutCategoriesInput!
+}
+
+input NavigatorCategoriesCreateManyWithoutParentInput {
+  create: [NavigatorCategoriesCreateWithoutParentInput!]
+  connect: [NavigatorCategoriesWhereUniqueInput!]
+}
+
+input NavigatorCategoriesCreateWithoutParentInput {
+  id: ID
+  name: String
+}
+
+type NavigatorCategoriesEdge {
+  node: NavigatorCategories!
+  cursor: String!
+}
+
+enum NavigatorCategoriesOrderByInput {
+  id_ASC
+  id_DESC
+  name_ASC
+  name_DESC
+}
+
+type NavigatorCategoriesPreviousValues {
+  id: ID!
+  name: String
+}
+
+input NavigatorCategoriesScalarWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  AND: [NavigatorCategoriesScalarWhereInput!]
+  OR: [NavigatorCategoriesScalarWhereInput!]
+  NOT: [NavigatorCategoriesScalarWhereInput!]
+}
+
+type NavigatorCategoriesSubscriptionPayload {
+  mutation: MutationType!
+  node: NavigatorCategories
+  updatedFields: [String!]
+  previousValues: NavigatorCategoriesPreviousValues
+}
+
+input NavigatorCategoriesSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: NavigatorCategoriesWhereInput
+  AND: [NavigatorCategoriesSubscriptionWhereInput!]
+  OR: [NavigatorCategoriesSubscriptionWhereInput!]
+  NOT: [NavigatorCategoriesSubscriptionWhereInput!]
+}
+
+input NavigatorCategoriesUpdateInput {
+  name: String
+  parent: NavigatorTabUpdateOneRequiredWithoutCategoriesInput
+}
+
+input NavigatorCategoriesUpdateManyDataInput {
+  name: String
+}
+
+input NavigatorCategoriesUpdateManyMutationInput {
+  name: String
+}
+
+input NavigatorCategoriesUpdateManyWithoutParentInput {
+  create: [NavigatorCategoriesCreateWithoutParentInput!]
+  delete: [NavigatorCategoriesWhereUniqueInput!]
+  connect: [NavigatorCategoriesWhereUniqueInput!]
+  set: [NavigatorCategoriesWhereUniqueInput!]
+  disconnect: [NavigatorCategoriesWhereUniqueInput!]
+  update: [NavigatorCategoriesUpdateWithWhereUniqueWithoutParentInput!]
+  upsert: [NavigatorCategoriesUpsertWithWhereUniqueWithoutParentInput!]
+  deleteMany: [NavigatorCategoriesScalarWhereInput!]
+  updateMany: [NavigatorCategoriesUpdateManyWithWhereNestedInput!]
+}
+
+input NavigatorCategoriesUpdateManyWithWhereNestedInput {
+  where: NavigatorCategoriesScalarWhereInput!
+  data: NavigatorCategoriesUpdateManyDataInput!
+}
+
+input NavigatorCategoriesUpdateWithoutParentDataInput {
+  name: String
+}
+
+input NavigatorCategoriesUpdateWithWhereUniqueWithoutParentInput {
+  where: NavigatorCategoriesWhereUniqueInput!
+  data: NavigatorCategoriesUpdateWithoutParentDataInput!
+}
+
+input NavigatorCategoriesUpsertWithWhereUniqueWithoutParentInput {
+  where: NavigatorCategoriesWhereUniqueInput!
+  update: NavigatorCategoriesUpdateWithoutParentDataInput!
+  create: NavigatorCategoriesCreateWithoutParentInput!
+}
+
+input NavigatorCategoriesWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  parent: NavigatorTabWhereInput
+  AND: [NavigatorCategoriesWhereInput!]
+  OR: [NavigatorCategoriesWhereInput!]
+  NOT: [NavigatorCategoriesWhereInput!]
+}
+
+input NavigatorCategoriesWhereUniqueInput {
+  id: ID
+}
+
+type NavigatorTab {
+  id: ID!
+  name: String
+  order: Int
+  categories(where: NavigatorCategoriesWhereInput, orderBy: NavigatorCategoriesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategories!]
+}
+
+type NavigatorTabConnection {
+  pageInfo: PageInfo!
+  edges: [NavigatorTabEdge]!
+  aggregate: AggregateNavigatorTab!
+}
+
+input NavigatorTabCreateInput {
+  id: ID
+  name: String
+  order: Int
+  categories: NavigatorCategoriesCreateManyWithoutParentInput
+}
+
+input NavigatorTabCreateOneWithoutCategoriesInput {
+  create: NavigatorTabCreateWithoutCategoriesInput
+  connect: NavigatorTabWhereUniqueInput
+}
+
+input NavigatorTabCreateWithoutCategoriesInput {
+  id: ID
+  name: String
+  order: Int
+}
+
+type NavigatorTabEdge {
+  node: NavigatorTab!
+  cursor: String!
+}
+
+enum NavigatorTabOrderByInput {
+  id_ASC
+  id_DESC
+  name_ASC
+  name_DESC
+  order_ASC
+  order_DESC
+}
+
+type NavigatorTabPreviousValues {
+  id: ID!
+  name: String
+  order: Int
+}
+
+type NavigatorTabSubscriptionPayload {
+  mutation: MutationType!
+  node: NavigatorTab
+  updatedFields: [String!]
+  previousValues: NavigatorTabPreviousValues
+}
+
+input NavigatorTabSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: NavigatorTabWhereInput
+  AND: [NavigatorTabSubscriptionWhereInput!]
+  OR: [NavigatorTabSubscriptionWhereInput!]
+  NOT: [NavigatorTabSubscriptionWhereInput!]
+}
+
+input NavigatorTabUpdateInput {
+  name: String
+  order: Int
+  categories: NavigatorCategoriesUpdateManyWithoutParentInput
+}
+
+input NavigatorTabUpdateManyMutationInput {
+  name: String
+  order: Int
+}
+
+input NavigatorTabUpdateOneRequiredWithoutCategoriesInput {
+  create: NavigatorTabCreateWithoutCategoriesInput
+  update: NavigatorTabUpdateWithoutCategoriesDataInput
+  upsert: NavigatorTabUpsertWithoutCategoriesInput
+  connect: NavigatorTabWhereUniqueInput
+}
+
+input NavigatorTabUpdateWithoutCategoriesDataInput {
+  name: String
+  order: Int
+}
+
+input NavigatorTabUpsertWithoutCategoriesInput {
+  update: NavigatorTabUpdateWithoutCategoriesDataInput!
+  create: NavigatorTabCreateWithoutCategoriesInput!
+}
+
+input NavigatorTabWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  order: Int
+  order_not: Int
+  order_in: [Int!]
+  order_not_in: [Int!]
+  order_lt: Int
+  order_lte: Int
+  order_gt: Int
+  order_gte: Int
+  categories_every: NavigatorCategoriesWhereInput
+  categories_some: NavigatorCategoriesWhereInput
+  categories_none: NavigatorCategoriesWhereInput
+  AND: [NavigatorTabWhereInput!]
+  OR: [NavigatorTabWhereInput!]
+  NOT: [NavigatorTabWhereInput!]
+}
+
+input NavigatorTabWhereUniqueInput {
+  id: ID
+  order: Int
 }
 
 type News {
@@ -3034,6 +3382,12 @@ type Query {
   item(where: ItemWhereUniqueInput!): Item
   items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item]!
   itemsConnection(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ItemConnection!
+  navigatorCategories(where: NavigatorCategoriesWhereUniqueInput!): NavigatorCategories
+  navigatorCategorieses(where: NavigatorCategoriesWhereInput, orderBy: NavigatorCategoriesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategories]!
+  navigatorCategoriesesConnection(where: NavigatorCategoriesWhereInput, orderBy: NavigatorCategoriesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NavigatorCategoriesConnection!
+  navigatorTab(where: NavigatorTabWhereUniqueInput!): NavigatorTab
+  navigatorTabs(where: NavigatorTabWhereInput, orderBy: NavigatorTabOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorTab]!
+  navigatorTabsConnection(where: NavigatorTabWhereInput, orderBy: NavigatorTabOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NavigatorTabConnection!
   news(where: NewsWhereUniqueInput!): News
   newses(where: NewsWhereInput, orderBy: NewsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [News]!
   newsesConnection(where: NewsWhereInput, orderBy: NewsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NewsConnection!
@@ -3454,6 +3808,8 @@ type Subscription {
   chatlogConsoleInvitations(where: ChatlogConsoleInvitationsSubscriptionWhereInput): ChatlogConsoleInvitationsSubscriptionPayload
   habbo(where: HabboSubscriptionWhereInput): HabboSubscriptionPayload
   item(where: ItemSubscriptionWhereInput): ItemSubscriptionPayload
+  navigatorCategories(where: NavigatorCategoriesSubscriptionWhereInput): NavigatorCategoriesSubscriptionPayload
+  navigatorTab(where: NavigatorTabSubscriptionWhereInput): NavigatorTabSubscriptionPayload
   news(where: NewsSubscriptionWhereInput): NewsSubscriptionPayload
   room(where: RoomSubscriptionWhereInput): RoomSubscriptionPayload
   user(where: UserSubscriptionWhereInput): UserSubscriptionPayload
