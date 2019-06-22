@@ -1,5 +1,5 @@
 import fs from 'fs'
-import Environment from '../../environment'
+import Environment from '../../environment2'
 
 interface FurnitureData {
 	roomitemtypes: RoomItemType

@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"baseUrl": "source",
+		"baseUrl": ".",
 		"target": "esnext",
 		"module": "commonjs",
 		"moduleResolution": "node",

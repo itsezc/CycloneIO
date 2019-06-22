@@ -2,7 +2,7 @@ import RoomEntity from './entity'
 import RoomModel from './model'
 import Room from './room2'
 
-import Environment from '../../environment'
+import Environment from '../../environment2'
 import Logger from '../../../utils/logger'
 
 /**

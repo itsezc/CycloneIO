@@ -23,15 +23,24 @@
 			"vip": 0,
 			"motto": "Hmm i'm new here!",
 			"currencies": [
-				{ "name": "coins", "amount": 1000 },
-				{ "name": "duckets", "amount": 5000 },
-				{ "name": "diamonds", "amount": 5 }
+				{
+					"name": "coins",
+					"amount": 1000
+				},
+				{
+					"name": "duckets",
+					"amount": 5000
+				},
+				{
+					"name": "diamonds",
+					"amount": 5
+				}
 			]
 		}
 	},
 	"server": {
 		"host": "localhost",
-		"port": "8081"
+		"port": 8081
 	},
 	"database": {
 		"type": "",

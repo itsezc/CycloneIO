@@ -4,7 +4,7 @@ import RoomModel from './model'
 import FurnitureImager from '../furniture/imager'
 import Furniture from '../furniture/furniture'
 
-import Environment from '../../environment'
+import Environment from '../../environment2'
 
 import Item from '../furniture/item'
 

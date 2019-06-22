@@ -1,25 +1,30 @@
-import { transports, format, createLogger, Logger } from 'winston'
-const { combine, colorize, timestamp, printf } = format
+import { LoggerOptions, transports, format, createLogger, Logger } from 'winston'
 
-export interface CycloneLogger extends Logger {
+const { combine, timestamp, printf } = format
+
+export type LoggerTypeMessage = 
+{
 	server(alert: string): void,
 	database(alert: string): void,
 	network(alert: string): void,
-	apollo(alert: string): void
+	apollo(alert: string): void,
+	error(alert: string): void
 }
 
-const logger: any = createLogger({
+const Logger: any = createLogger({
 
 	format: combine(
 
 		timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
 
-		printf((info: any): string => {
+		printf((info: any): string =>
+		{
 			const { timestamp, level, message } = info
 
 			var levelOutput
 
-			switch (level) {
+			switch (level)
+			{
 				case 'server':
 					levelOutput = '[🌪 ]'
 					break
@@ -59,4 +64,4 @@ const logger: any = createLogger({
 	transports: [new transports.Console()]
 })
 
-export default logger
+export default Logger
