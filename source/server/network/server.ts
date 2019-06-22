@@ -12,17 +12,12 @@ import CycloneConfig from '../../common/types/config'
 
 import Logger from '../../utils/logger'
 
-export default class Server
-{
+export default class Server {
 	private readonly hapi: Hapi.Server
 	private readonly socketIO: SocketIO.Server
 	private readonly database: ApolloClient<any>
 
-	// User class
-	// User Auth which doesn't EXTENDS user -> getUser() { }
-	// User 
-	public constructor(private readonly config: CycloneConfig)
-	{
+	public constructor(private readonly config: CycloneConfig) {
 		const { server } = config
 		const { port } = server
 
@@ -43,17 +38,14 @@ export default class Server
 		this.run()
 	}
 
-	private async run(): Promise<void>
-	{
-		try
-		{
+	private async run(): Promise<void> {
+		try {
 			await this.hapi.register(Inert)
 			await this.hapi.route(Routes)
 			await this.socketIO
 		}
 
-		catch (error)
-		{
+		catch (error) {
 			Logger.error(error)
 		}
 	}

@@ -8,28 +8,23 @@ import Logger, { LoggerTypeMessage } from '../utils/logger'
 
 import Server from './network/server'
 
-class Environment
-{
+class Environment {
 	private readonly logger: LoggerTypeMessage
 	private server: Server
 
-	constructor(private readonly config: CycloneConfig)
-	{
+	constructor(private readonly config: CycloneConfig) {
 		this.logger = Logger
 
-		if (!this.config)
-		{
+		if (!this.config) {
 			this.logger.error('No configuration file found')
 		}
 
-		else
-		{
+		else {
 			this.init()
 		}
 	}
 
-	private async init(): Promise<void>
-	{
+	private async init(): Promise<void> {
 		console.clear()
 
 		ChalkAnimation.rainbow('_________              .__                        ').render()
@@ -39,13 +34,11 @@ class Environment
 		ChalkAnimation.rainbow(' \\______  / ____|\\___  >____/\\____/|___|  /\\___  >').render()
 		ChalkAnimation.rainbow('        \\/\\/         \\/                 \\/     \\/ \n\n').render()
 
-		try
-		{
+		try {
 			this.server = await new Server(this.config)
 		}
 
-		catch (error)
-		{
+		catch (error) {
 			this.logger.error(error)
 		}
 	}
