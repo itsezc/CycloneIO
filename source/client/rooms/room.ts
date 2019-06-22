@@ -171,19 +171,19 @@ export default class Room extends Phaser.Scene
                     roomY: 1,
                     direction: 0,
                 },
-                // {
-                //     name: 'ads_calip_fan',
-                //     roomX: 4,
-                //     roomY: 2,
-                //     direction: 2
-                // },
-                // {
-                //     name: 'ads_calip_fan',
-                //     roomX: 4,
-                //     roomY: 3,
-                //     direction: 2,
-                //     animation: 1
-                // }
+                {
+                    name: 'ads_calip_fan',
+                    roomX: 4,
+                    roomY: 2,
+                    direction: 2
+                },
+                {
+                    name: 'ads_calip_fan',
+                    roomX: 4,
+                    roomY: 3,
+                    direction: 2,
+                    animation: 1
+                }
             ]
         }
 

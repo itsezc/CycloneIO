@@ -18,8 +18,6 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private direction!: number
     private color!: number
 
-    private delta!: number
-
     public constructor(scene: Room, furniture: Furniture) {
         super(scene)
 
@@ -49,11 +47,6 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                 callbackScope: this,
                 loop: true,
             })
-
-            setInterval(() => {
-                this.timer.args = [this.timer.elapsed]
-            }, 1000 )
-
 
             // this.timer.args = [this.delta]
 
@@ -153,11 +146,9 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         }
     }
 
-    public update(delta: number)
+    public update()
     {
-        if(delta !== undefined) {
-            this.totalTimeRunning += delta
-        }
+        this.totalTimeRunning += 1
 
         let frameCount = Math.round(this.totalTimeRunning / FurnitureSprite.FPS_TIME_MS)
 
