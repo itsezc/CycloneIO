@@ -159,9 +159,34 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         }        
     }
 
+    private getDepthIndex(sprite: any) {
+        const ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+        if(this.direction === 6)
+            ALPHABET.reverse()
+
+        const frameName = sprite.frame.name
+        const fragments = frameName.split('_')
+
+        const letter = fragments[fragments.length - 3]
+        
+        return (ALPHABET.indexOf(letter.toLowerCase())) + sprite.z;          
+    }
+
+    private is64Layer(sprite: any) {
+        const frameName = sprite.frame.name
+        const fragments = frameName.split('_')
+
+        const size = parseInt(fragments[fragments.length - 4])
+
+        return size === 64
+    }
+
     public updateFurnitureView()
     {
         this.removeAll()
+
+        const layers = []
 
         for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
         {
@@ -179,15 +204,21 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
                     layerSprite.tint = color
                 }
+
+                layerSprite.depth = this.getDepthIndex(layerSprite)
                 
-                this.add(layerSprite)
+                layers.push(layerSprite)
             }
         }
         
         // Depth sorting for sprites inside the furniture
-        this.getAll().sort((a: any,  b: any) => {
-            return a.z - b.z
+        const orderedLayers = layers.sort((a: any,  b: any) => {
+            return (a.depth > b.depth ? 1 : -1)
+        }).filter((layer: any) => {
+            return this.is64Layer(layer)
         })
+
+        this.add(orderedLayers)
     }
 
     public destroy()
