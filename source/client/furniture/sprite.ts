@@ -162,9 +162,6 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private getDepthIndex(sprite: any) {
         const ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
-        if(this.direction === 6)
-            ALPHABET.reverse()
-
         const frameName = sprite.frame.name
         const fragments = frameName.split('_')
 
