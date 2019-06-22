@@ -45,8 +45,27 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                 delay: 0,
                 callback: this.update,
                 callbackScope: this,
-                loop: false
+                loop: true,
             })
+
+            // this.timer.args = [this.delta]
+
+            // console.log(this.timer.args)
+           
+            // this.timer = this.clock.addEvent({
+            //     delay: 0,
+            //     callback: this.update,
+            //     callbackScope: this,
+            //     loop: true
+            // }) 
+
+            // this.timer = this.clock.delayedCall(0, this.update, [], this)
+
+            //console.log(this.timer)
+
+            // setTimeout(() => {
+            //     console.log('timeout', this.timer.elapsed)
+            // }, 1000)
         }
     }
 
@@ -68,7 +87,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
 
 			//console.log('Animating with ', animation)
-
+            // Lava Lamp (1 as Animation) -> if (null != 1) -> animation = 1 
             if (this.animation != animation)
             {
                 this.animation = animation
@@ -127,9 +146,9 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         }
     }
 
-    public update(deltaTime: number)
+    public update()
     {
-        this.totalTimeRunning += deltaTime
+        this.totalTimeRunning += 1
 
         let frameCount = Math.round(this.totalTimeRunning / FurnitureSprite.FPS_TIME_MS)
 
@@ -137,12 +156,34 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
             this.frameCount = frameCount
             this.updateFurnitureView()
-        }
+        }        
+    }
+
+    private getDepthIndex(sprite: any) {
+        const ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+        const frameName = sprite.frame.name
+        const fragments = frameName.split('_')
+
+        const letter = fragments[fragments.length - 3]
+        
+        return (ALPHABET.indexOf(letter.toLowerCase())) + sprite.z;          
+    }
+
+    private is64Layer(sprite: any) {
+        const frameName = sprite.frame.name
+        const fragments = frameName.split('_')
+
+        const size = parseInt(fragments[fragments.length - 4])
+
+        return size === 64
     }
 
     public updateFurnitureView()
     {
         this.removeAll()
+
+        const layers = []
 
         for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
         {
@@ -161,13 +202,20 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                     layerSprite.tint = color
                 }
 
-                this.add(layerSprite)
+                layerSprite.depth = this.getDepthIndex(layerSprite)
+                
+                layers.push(layerSprite)
             }
         }
-
-        this.getAll().sort((a: any,  b: any) => {
-            return a.z - b.z
+        
+        // Depth sorting for sprites inside the furniture
+        const orderedLayers = layers.sort((a: any,  b: any) => {
+            return (a.depth > b.depth ? 1 : -1)
+        }).filter((layer: any) => {
+            return this.is64Layer(layer)
         })
+
+        this.add(orderedLayers)
     }
 
     public destroy()

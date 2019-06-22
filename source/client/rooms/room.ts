@@ -143,7 +143,8 @@ export default class Room extends Phaser.Scene
             heightmap: [
                 "00000",
                 "00000",
-                "00x00"
+                "00x00",
+                "00000"
             ],
             furnitures: [
                 {
@@ -155,7 +156,33 @@ export default class Room extends Phaser.Scene
                     name: 'throne',
                     roomX: 3,
                     roomY: 2,
-                    direction: 6
+                    direction: 2,
+                },
+                {
+                    name: 'ads_cllava2',
+                    roomX: 4,
+                    roomY: 0,
+                    direction: 0,
+                    animation: 0
+                },
+                {
+                    name: 'ads_cllava2',
+                    roomX: 4,
+                    roomY: 1,
+                    direction: 0,
+                },
+                {
+                    name: 'ads_calip_fan',
+                    roomX: 4,
+                    roomY: 2,
+                    direction: 2
+                },
+                {
+                    name: 'ads_calip_fan',
+                    roomX: 4,
+                    roomY: 3,
+                    direction: 2,
+                    animation: 1
                 }
             ]
         }
@@ -254,6 +281,7 @@ export default class Room extends Phaser.Scene
             [0, 0, 0, 0, 0],
             [0, 0, 0, 0, 0],
             [0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0]
         ];
 
         this.finder = new Pathfinder.AStarFinder({
@@ -285,10 +313,12 @@ export default class Room extends Phaser.Scene
                 var furniture = new Furniture(this, furnitureData)
                 var furnitureSprite = new FurnitureSprite(this, furniture)
 
-                if (furnitureRoomData.animation !== null || furnitureRoomData.animation !== undefined)
+                if (furnitureRoomData.animation !== undefined)
                 {
-                    //console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
+                    console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
                     furnitureSprite.animateAndStart(furnitureRoomData.animation)
+                } else {
+                    furnitureSprite.start()
                 }
 
                 if (furnitureRoomData.color)
@@ -296,13 +326,7 @@ export default class Room extends Phaser.Scene
                     furnitureSprite.setColor(furnitureData.color)
                 }
 
-
                 furnitureSprite.setDirection(furnitureRoomData.direction || 0)
-                // if (furnitureRoomData.direction)
-                // {
-                //     //console.log(furnitureRoomData.direction)
-                //     furnitureSprite.setDirection(furnitureData.direction)
-                // }
 
                 roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
             })
@@ -312,6 +336,17 @@ export default class Room extends Phaser.Scene
             this.add.existing(roomSprite)
 
             this.camera.setZoom(4)
+
+            // Furniture Rotation
+            if(this.input.enabled) {
+                this.input.keyboard.on('keydown-SHIFT', () => {
+                    roomSprite.on('pointerdown', () => {
+                        ///console.log(roomSprite)
+                    }, roomSprite)
+                })
+            }
+
+
             /* //roomSprite => 1 instance of a furniture
             this.add.existing(roomSprite)
 
