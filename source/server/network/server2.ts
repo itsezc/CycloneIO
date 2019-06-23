@@ -1,160 +1,160 @@
-import Chalk from 'chalk'
-import Config from '../../../config.json'
+// import Chalk from 'chalk'
+// import Config from '../../../config.json'
 
-import Environment from '../environment2'
-import EventManager from '../core/events/manager'
-import RoomPlayer from '../hotel/rooms/player'
+// import Environment from '../environment2'
+// import EventManager from '../core/events/manager'
+// import RoomPlayer from '../hotel/rooms/player'
 
-import Hapi from '@hapi/hapi'
-import Inert from '@hapi/inert'
-import Routes from './http/routes'
+// import Hapi from '@hapi/hapi'
+// import Inert from '@hapi/inert'
+// import Routes from './http/routes'
 
-import SocketIO from 'socket.io'
+// import SocketIO from 'socket.io'
 
-import { prisma } from '../../storage/prisma'
-import { typeDefs } from '../../storage/prisma/prisma-schema'
-import { resolvers } from '../../storage/resolvers/index'
+// import { prisma } from '../../storage/prisma'
+// import { typeDefs } from '../../storage/prisma/prisma-schema'
+// import { resolvers } from '../../storage/resolvers/index'
 
-import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
+// import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
 
-import jwt from 'jsonwebtoken'
+// import jwt from 'jsonwebtoken'
 
-/**
- * Server class
- */
-export default class Server
-{
-	private config: any
-	private HTTP: Hapi.Server
-	public webSocket!: SocketIO.Server
-	private eventManager!: EventManager
-	// private database: Object
-	private apolloServer!: any
+// /**
+//  * Server class
+//  */
+// export default class Server
+// {
+// 	private config: any
+// 	private HTTP: Hapi.Server
+// 	public webSocket!: SocketIO.Server
+// 	private eventManager!: EventManager
+// 	// private database: Object
+// 	private apolloServer!: any
 
-	//private apolloServer!: ApolloServer
+// 	//private apolloServer!: ApolloServer
 
-	/**
-	 * @param {JSON} config - The configuration file
-	 */
-	public constructor(config: JSON) 
-	{
-		this.config = config
+// 	/**
+// 	 * @param {JSON} config - The configuration file
+// 	 */
+// 	public constructor(config: JSON) 
+// 	{
+// 		this.config = config
 
-		this.HTTP = new Hapi.Server({
-			port: Config.server.port
-		})
+// 		this.HTTP = new Hapi.Server({
+// 			port: Config.server.port
+// 		})
 
-		this.start()
-	}
+// 		this.start()
+// 	}
 
-	/**
-	 * Starts the server
-	 */
-	public async start(): Promise<void>
-	{
-		try 
-		{
-			await this.HTTP.register(Inert)
-			await this.HTTP.route(Routes)
+// 	/**
+// 	 * Starts the server
+// 	 */
+// 	public async start(): Promise<void>
+// 	{
+// 		try 
+// 		{
+// 			await this.HTTP.register(Inert)
+// 			await this.HTTP.route(Routes)
 
-			this.webSocket = await SocketIO(this.HTTP.listener)
-			await this.webSocket
+// 			this.webSocket = await SocketIO(this.HTTP.listener)
+// 			await this.webSocket
 
-			Environment.instance._logger.network('Started Socket.IO listener')
+// 			Environment.instance._logger.network('Started Socket.IO listener')
 
-			// GraphQL
-			let HTTPServer = this.HTTP
-			let environment = (this.config.mode === 'development') ? true : false
+// 			// GraphQL
+// 			let HTTPServer = this.HTTP
+// 			let environment = (this.config.mode === 'development') ? true : false
 
-			Environment.instance._logger.apollo('Started Apollo [GraphQL] listener')
+// 			Environment.instance._logger.apollo('Started Apollo [GraphQL] listener')
 
-			let schema = makeExecutableSchema({
-				typeDefs,
-				resolvers,
-				resolverValidationOptions: {
-					requireResolversForResolveType: false
-				}
-			})
+// 			let schema = makeExecutableSchema({
+// 				typeDefs,
+// 				resolvers,
+// 				resolverValidationOptions: {
+// 					requireResolversForResolveType: false
+// 				}
+// 			})
 
-			this.apolloServer = new ApolloServer({
-				schema,
-				context: {
-					db: prisma
-				}
-			})
+// 			this.apolloServer = new ApolloServer({
+// 				schema,
+// 				context: {
+// 					db: prisma
+// 				}
+// 			})
 
-			Environment.instance._logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+// 			Environment.instance._logger.apollo(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-			await this.apolloServer.applyMiddleware({
-				app: HTTPServer
-			})
+// 			await this.apolloServer.applyMiddleware({
+// 				app: HTTPServer
+// 			})
 
-			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
+// 			await this.apolloServer.installSubscriptionHandlers(this.HTTP.listener)
 
-			Environment.instance._logger.database('Switched to PostgreSQL connector')
-			Environment.instance._logger.database('Connected to Prisma [GraphQL] successfully')
+// 			Environment.instance._logger.database('Switched to PostgreSQL connector')
+// 			Environment.instance._logger.database('Connected to Prisma [GraphQL] successfully')
 
-			await this.HTTP.start()
+// 			await this.HTTP.start()
 
-		} catch (error)
-		{
-			this.shutdown(error)
-		}
+// 		} catch (error)
+// 		{
+// 			this.shutdown(error)
+// 		}
 
-		Environment.instance._logger.server(`Server running on port ${Chalk.bold(String(this.HTTP.info.port))}`)
+// 		Environment.instance._logger.server(`Server running on port ${Chalk.bold(String(this.HTTP.info.port))}`)
 
-		this.webSocket.on('connection', socket =>
-		{
-			this.handleConnection(socket)
-		})
-	}
+// 		this.webSocket.on('connection', socket =>
+// 		{
+// 			this.handleConnection(socket)
+// 		})
+// 	}
 
-	/**
-	 * Handles the connection
-	 * @param {Socket} socket - The socket connection
-	 */
-	public async handleConnection(socket: SocketIO.Socket): Promise<void>
-	{
+// 	/**
+// 	 * Handles the connection
+// 	 * @param {Socket} socket - The socket connection
+// 	 */
+// 	public async handleConnection(socket: SocketIO.Socket): Promise<void>
+// 	{
 
-		Environment.instance._logger.server(`Player ${socket.id} connected`)
+// 		Environment.instance._logger.server(`Player ${socket.id} connected`)
 
-		this.eventManager = await new EventManager(socket)
-		await this.eventManager
-	}
+// 		this.eventManager = await new EventManager(socket)
+// 		await this.eventManager
+// 	}
 
-	/**
-	 * Shutdown the server
-	 * @param {string} error - The error message
-	 */
-	public async shutdown(error: string): Promise<void>
-	{
+// 	/**
+// 	 * Shutdown the server
+// 	 * @param {string} error - The error message
+// 	 */
+// 	public async shutdown(error: string): Promise<void>
+// 	{
 
-		try
-		{
+// 		try
+// 		{
 
-			if (error)
-			{
-				throw error
-			}
+// 			if (error)
+// 			{
+// 				throw error
+// 			}
 
-			this.webSocket.emit('shutdown')
+// 			this.webSocket.emit('shutdown')
 
-			await this.HTTP.stop({
-				timeout: 100000
-			})
+// 			await this.HTTP.stop({
+// 				timeout: 100000
+// 			})
 
-			/*.catch((error) => void {
-				throw error
-			})*/
+// 			/*.catch((error) => void {
+// 				throw error
+// 			})*/
 
-			Environment.instance._logger.info('Server shutted down.')
-			process.exit(0)
+// 			Environment.instance._logger.info('Server shutted down.')
+// 			process.exit(0)
 
-		} catch (error)
-		{
+// 		} catch (error)
+// 		{
 
-			Environment.instance._logger.error(error)
-			process.exit(1)
-		}
-	}
-}
+// 			Environment.instance._logger.error(error)
+// 			process.exit(1)
+// 		}
+// 	}
+// }

@@ -1,6 +1,6 @@
-import { LoggerOptions, transports, format, createLogger, Logger } from 'winston'
+import { transports, format, createLogger } from 'winston'
 
-const { combine, timestamp, printf } = format
+const { colorize, combine, timestamp, printf } = format
 
 export type LoggerTypeMessage = 
 {
@@ -14,43 +14,44 @@ export type LoggerTypeMessage =
 const Logger: any = createLogger({
 
 	format: combine(
-
+		colorize(),
 		timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
 
 		printf((info: any): string =>
 		{
-			const { timestamp, level, message } = info
+			return info.level, `${info.timestamp} ${info.level} - ${info.message}`
+			// const { timestamp, level, message } = info
 
-			var levelOutput
+			// var levelOutput
 
-			switch (level)
-			{
-				case 'server':
-					levelOutput = '[🌪 ]'
-					break
+			// switch (level)
+			// {
+			// 	case 'server':
+			// 		levelOutput = '[🌪 ]'
+			// 		break
 
-				case 'database':
-					levelOutput = '[🗄️ ]'
-					break
+			// 	case 'database':
+			// 		levelOutput = '[🗄️ ]'
+			// 		break
 
-				case 'apollo':
-					levelOutput = '[⚛️]'
-					break
+			// 	case 'apollo':
+			// 		levelOutput = '[⚛️]'
+			// 		break
 
-				case 'network':
-					levelOutput = '[⚙️]'
-					break
+			// 	case 'network':
+			// 		levelOutput = '[⚙️]'
+			// 		break
 
-				case 'error':
-					levelOutput = '[❌ ]'
-					break
-			}
+			// 	case 'error':
+			// 		levelOutput = '[❌ ]'
+			// 		break
+			// }
 
-			const ts = timestamp.slice(0, 19).replace('T', ' ')
-			return `${ts} ${levelOutput} - ${message}`
+			// const ts = timestamp.slice(0, 19).replace('T', ' ')
+			// return `${ts} ${levelOutput} - ${message}`
 		})
 	),
-	level: 'ui',
+	/* level: 'ui',
 	levels: {
 		error: 0,
 		info: 1,
@@ -60,7 +61,7 @@ const Logger: any = createLogger({
 		apollo: 5,
 		client: 6,
 		ui: 7
-	},
+	}, */
 	transports: [new transports.Console()]
 })
 

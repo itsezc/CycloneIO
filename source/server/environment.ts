@@ -1,5 +1,5 @@
-// import Chalk from 'chalk'
-import ChalkAnimation from 'chalk-animation'
+import Chalk from 'chalk'
+//import ChalkAnimation from 'chalk-animation'
 
 import CycloneConfig from '../common/types/config'
 import Config from '../../config.new.json'
@@ -15,24 +15,29 @@ class Environment {
 	constructor(private readonly config: CycloneConfig) {
 		this.logger = Logger
 
-		if (!this.config) {
+		if (!this.isConfigExisting) {
 			this.logger.error('No configuration file found')
 		}
 
 		else {
+			this.config = config
 			this.init()
 		}
+	}
+
+	private isConfigExisting(): boolean {
+		return this.config !== undefined
 	}
 
 	private async init(): Promise<void> {
 		console.clear()
 
-		ChalkAnimation.rainbow('_________              .__                        ').render()
-		ChalkAnimation.rainbow('\\_   ___ \\___.__. ____ |  |   ____   ____   ____  ').render()
-		ChalkAnimation.rainbow('/    \\  \\<   |  |/ ___\\|  |  /  _ \\ /    \\_/ __ \\ ').render()
-		ChalkAnimation.rainbow('\\     \\___\\___  \\  \\___|  |_(  <_> )   |  \\  ___/ ').render()
-		ChalkAnimation.rainbow(' \\______  / ____|\\___  >____/\\____/|___|  /\\___  >').render()
-		ChalkAnimation.rainbow('        \\/\\/         \\/                 \\/     \\/ \n\n').render()
+		console.log(Chalk.bold.blue('_________              .__                        '))
+		console.log(Chalk.bold.blue('\\_   ___ \\___.__. ____ |  |   ____   ____   ____  '))
+		console.log(Chalk.bold.blue('/    \\  \\<   |  |/ ___\\|  |  /  _ \\ /    \\_/ __ \\ '))
+		console.log(Chalk.bold.blue('\\     \\___\\___  \\  \\___|  |_(  <_> )   |  \\  ___/ '))
+		console.log(Chalk.bold.blue(' \\______  / ____|\\___  >____/\\____/|___|  /\\___  >'))
+		console.log(Chalk.bold.blue('        \\/\\/         \\/                 \\/     \\/ \n\n'))
 
 		try {
 			this.server = await new Server(this.config)

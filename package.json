@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "apollo:schema": "apollo-codegen introspect-schema http://localhost:8081/graphql --output ./source/storage/schema.json",
-    "apollo:types": "apollo-codegen generate ./source/storage/queries.ts --addTypename --schema ./source/storage/schema.json --target typescript --output ./source/storage/__generated__/types.ts",   
+    "apollo:types": "apollo-codegen generate ./source/storage/queries.ts --addTypename --schema ./source/storage/schema.json --target typescript --output ./source/storage/__generated__/types.ts",
     "build": "npm run server:build",
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",
     "build:resources": "webpack --mode=production",
@@ -117,6 +117,7 @@
     "@types/socket.io": "^2.1.2",
     "apollo-boost": "^0.3.1",
     "apollo-client": "^2.6.0-rc.3",
+    "apollo-codegen": "^0.20.2",
     "apollo-server-hapi": "^2.5.0",
     "bcryptjs": "^2.4.3",
     "chalk": "^2.4.2",

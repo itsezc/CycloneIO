@@ -8,6 +8,12 @@ import { ApolloClient } from 'apollo-client'
 import { HttpLink as ApolloLink } from 'apollo-link-http'
 import { InMemoryCache as ApolloCache } from 'apollo-cache-inmemory'
 
+import { prisma } from '../../storage/prisma'
+import { typeDefs } from '../../storage/prisma/prisma-schema'
+import { resolvers } from '../../storage/resolvers/index'
+
+import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
+
 import CycloneConfig from '../../common/types/config'
 
 import Logger from '../../utils/logger'
@@ -16,8 +22,11 @@ export default class Server {
 	private readonly hapi: Hapi.Server
 	private readonly socketIO: SocketIO.Server
 	private readonly database: ApolloClient<any>
+	private apolloServer: ApolloServer
 
 	public constructor(private readonly config: CycloneConfig) {
+		this.config = config
+
 		const { server } = config
 		const { port } = server
 
@@ -43,6 +52,40 @@ export default class Server {
 			await this.hapi.register(Inert)
 			await this.hapi.route(Routes)
 			await this.socketIO
+
+			Logger.info('Started Socket.IO listener')
+
+			var environment = (this.config.mode === 'development') ? true : false
+
+			Logger.info('Started Apollo [GraphQL] listener')
+
+			let schema = makeExecutableSchema({
+				typeDefs,
+				resolvers,
+				resolverValidationOptions: {
+					requireResolversForResolveType: false
+				}
+			})
+
+			this.apolloServer = new ApolloServer({
+				schema,
+				context: {
+					db: prisma
+				}
+			})
+
+			Logger.info(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+
+			await this.apolloServer.applyMiddleware({
+				app: this.hapi
+			})
+
+			await this.apolloServer.installSubscriptionHandlers(this.hapi.listener)
+
+			Logger.info('Switched to PostgreSQL connector')
+			Logger.info('Connected to Prisma [GraphQL] successfully')
+
+			await this.hapi.start()
 		}
 
 		catch (error) {
