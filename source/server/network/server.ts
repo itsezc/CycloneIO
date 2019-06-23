@@ -21,7 +21,7 @@ import Logger from '../../utils/logger'
 export default class Server {
 	private readonly hapi: Hapi.Server
 	private readonly socketIO: SocketIO.Server
-	private readonly database: ApolloClient<any>
+	private readonly apolloClient: ApolloClient<any>
 	private apolloServer: ApolloServer
 
 	public constructor(private readonly config: CycloneConfig) {
@@ -36,7 +36,7 @@ export default class Server {
 
 		this.socketIO = SocketIO(this.hapi.listener)
 
-		this.database = new ApolloClient({
+		this.apolloClient = new ApolloClient({
 			link: new ApolloLink({
 				uri: 'http://localhost:8081/graphql'
 			}),
@@ -59,7 +59,7 @@ export default class Server {
 
 			Logger.info('Started Apollo [GraphQL] listener')
 
-			let schema = makeExecutableSchema({
+			const schema = makeExecutableSchema({
 				typeDefs,
 				resolvers,
 				resolverValidationOptions: {
