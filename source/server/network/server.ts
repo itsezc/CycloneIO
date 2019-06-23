@@ -14,6 +14,8 @@ import { resolvers } from '../../storage/resolvers/index'
 
 import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
 
+import gql from 'graphql-tag'
+
 import CycloneConfig from '../../common/types/config'
 
 import Logger from '../../utils/logger'
@@ -91,5 +93,24 @@ export default class Server {
 		catch (error) {
 			Logger.error(error)
 		}
+
+		this.apolloClient.query({
+			query:
+				gql`
+							{
+								rooms(
+									where: {
+										currentUsers_gt: 0
+									}
+								) {
+									id
+									name
+									maxUsers
+									currentUsers
+								}
+							}
+						`
+		}).then((result: any) => console.log(result.data.rooms))
+			.catch((error: any) => console.error(error))
 	}
 }
