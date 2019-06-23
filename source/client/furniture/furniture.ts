@@ -330,30 +330,18 @@ export default class Furniture
 
 	private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer: ILayer)
 	{
-		if (layer.alpha)
-		{
-			sprite.alpha = layer.alpha / 255
-		}
+		sprite.alpha = layer.alpha ? layer.alpha / 255 : 1
 
 		if (layer.ink && Phaser.BlendModes[layer.ink])
 		{
 			sprite.blendMode = Phaser.BlendModes[layer.ink]
 		}
 
-		if (layer.x)
-		{
-			sprite.x += layer.x
-		}
+		sprite.x += layer.x ? layer.x : 0
 
-		if (layer.y)
-		{
-			sprite.y += layer.y
-		}
+		sprite.y += layer.y ? layer.y : 0
 
-		if (layer.z)
-		{
-			sprite.z = layer.z
-		}
+		sprite.z += layer.z ? layer.z : 0
 
 		if (layer.ignoreMouse)
 		{

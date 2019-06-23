@@ -170,13 +170,13 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         return (ALPHABET.indexOf(letter.toLowerCase())) + sprite.z;          
     }
 
-    private is64Layer(sprite: any) {
+    private isCorrectSizeLayer(sprite: any) {
         const frameName = sprite.frame.name
         const fragments = frameName.split('_')
 
         const size = parseInt(fragments[fragments.length - 4])
 
-        return size === 64
+        return size === FurnitureSprite.DEFAULT_SIZE
     }
 
     public updateFurnitureView()
@@ -212,7 +212,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         const orderedLayers = layers.sort((a: any,  b: any) => {
             return (a.depth > b.depth ? 1 : -1)
         }).filter((layer: any) => {
-            return this.is64Layer(layer)
+            return this.isCorrectSizeLayer(layer)
         })
 
         this.add(orderedLayers)

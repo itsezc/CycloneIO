@@ -154,8 +154,8 @@ export default class Room extends Phaser.Scene
                 },
                 {
                     name: 'throne',
-                    roomX: 3,
-                    roomY: 2,
+                    roomX: 0,
+                    roomY: 3,
                     direction: 2,
                 },
                 {
