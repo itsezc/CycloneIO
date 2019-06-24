@@ -390,6 +390,12 @@ export default class Room extends Phaser.Scene
             this.avatar = this.avatars[playerId]
         })
 
+        this._socket.on('currentPlayers', (players: any) => {
+            console.log('Players: ', players)
+        })
+
+
+
 
         /* for (let y = 0;y < map.length;y++)
         {

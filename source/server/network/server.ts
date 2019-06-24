@@ -168,17 +168,33 @@ export default class Server {
 			// }
 
 			Socket.on('requestRoom', (roomId: number) => {
-				Logger.info(`User ${Socket.id} requested room(${roomId})`)
-				Socket.emit('joinRoom', (roomId: number, playerId: number) => {
-					console.log('User', Socket.id, ' joined room(', roomId, ')')
-				})
+				this.requestRoom(Socket, roomId)
 			})
-
 
 			// Socket.on('tileClick', (mapTiles: any, destination: any) => {
 			// 	this.movePlayer(Socket, mapTiles, player, destination)
 			// })
 		})
+	}
+
+	private requestRoom(Socket: any, roomId: number) {
+		Logger.info(`User ${Socket.id} requested room(${roomId})`)
+
+		let room = 'roomID-' + roomId
+
+		// Join SocketIO room
+		Socket.join(room)
+
+		this.players[Socket.id] = {
+			inRoom: roomId
+		}
+
+		Socket.emit('joinRoom', (roomId: number, playerId: number) => {
+			console.log('User', Socket.id, ' joined room(', roomId, ')')
+		})
+
+		// console.log('Players', this.players)
+		Socket.emit('currentPlayers', this.getAllPlayers())
 	}
 
 	/**
@@ -208,6 +224,7 @@ export default class Server {
 	 * Returns all the players
 	 */
 	getAllPlayers() {
+		console.log('Players', this.players)
 		return this.players
 	}
 
