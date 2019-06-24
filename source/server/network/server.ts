@@ -149,12 +149,12 @@ export default class Server {
 	private enterRoom(socket: SocketIO.Socket, roomId: number) {
 		this.rooms[roomId] = {
 			id: roomId
-		};
-		socket.join('room' + roomId);
+		}
+		socket.join('room' + roomId)
 
-		roomPlayer.getPlayerById(socket.id).roomJoined = room.id;
+		roomPlayer.getPlayerById(socket.id).roomJoined = roomId
 
-		Logger.info(`Player ${socket.id} joined in room: ${room.id}`);
+		Logger.info(`Player ${socket.id} joined in room: ${roomId}`);
 
 		socket.emit('currentPlayers', roomPlayer.getAllPlayers());
 		socket.broadcast.in(roomId).emit('newPlayer', roomPlayer.getPlayerById(socket.id));
