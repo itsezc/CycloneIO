@@ -1,4 +1,4 @@
-import Room from './room2'
+/* import Room from './room2'
 
 export default class RoomModel {
 
@@ -7,4 +7,4 @@ export default class RoomModel {
 	public constructor(map: number[][]) {
 		this.map = map
 	}
-}
+} */

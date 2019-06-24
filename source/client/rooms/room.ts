@@ -26,7 +26,7 @@ import Pathfinder, { DiagonalMovement } from 'pathfinding'
 /**
 * Room class
  * @extends {Scene}
- */
+*/
 export default class Room extends Phaser.Scene
 {
     private readonly id: number
@@ -38,6 +38,7 @@ export default class Room extends Phaser.Scene
 
     private _clickTime!: number
 
+    public avatars!: { [id: string ]: Phaser.Physics.Arcade.Sprite }
     public avatar!: Phaser.Physics.Arcade.Sprite
     public avatarIsWalking: boolean
     public avatarIsMoving: boolean = false
@@ -122,7 +123,7 @@ export default class Room extends Phaser.Scene
      */
     public init(): void
     {
-        //this.socket = SocketIO(`${host}:${port}`)
+        this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
         // this.lights.enable()
@@ -156,41 +157,38 @@ export default class Room extends Phaser.Scene
                     name: 'throne',
                     roomX: 0,
                     roomY: 3,
-                    direction: 2,
-                },
-                {
-                    name: 'ads_cllava2',
-                    roomX: 4,
-                    roomY: 0,
-                    direction: 0,
-                    animation: 0
-                },
-                {
-                    name: 'ads_cllava2',
-                    roomX: 4,
-                    roomY: 1,
-                    direction: 0,
-                },
-                {
-                    name: 'ads_calip_fan',
-                    roomX: 4,
-                    roomY: 2,
                     direction: 2
-                },
-                {
-                    name: 'ads_calip_fan',
-                    roomX: 4,
-                    roomY: 3,
-                    direction: 2,
-                    animation: 1
                 }
+                // {
+                //     name: 'ads_cllava2',
+                //     roomX: 4,
+                //     roomY: 0,
+                //     direction: 0,
+                //     animation: 0
+                // },
+                // {
+                //     name: 'ads_cllava2',
+                //     roomX: 4,
+                //     roomY: 1,
+                //     direction: 0,
+                // },
+                // {
+                //     name: 'ads_calip_fan',
+                //     roomX: 4,
+                //     roomY: 2,
+                //     direction: 2
+                // },
+                // {
+                //     name: 'ads_calip_fan',
+                //     roomX: 4,
+                //     roomY: 3,
+                //     direction: 2,
+                //     animation: 1
+                // }
             ]
         }
 
-        var avatarX = this.getScreenX(0, 0)
-        var avatarY = this.getScreenY(0, 0)
-
-        this.avatar = this.physics.add.sprite(avatarX, avatarY - 84, 'avatar').setDepth(3).setOrigin(0, 0)
+        
 
         /*         var frames: Phaser.Types.Animations.AnimationFrame[] = []
         
@@ -374,6 +372,19 @@ export default class Room extends Phaser.Scene
         })
 
         this._camera.setZoom(1)
+
+        this._socket.on('joinRoom', (roomId: number, playerId: number) => {
+            console.log('Joined!')
+
+            console.log(roomId, playerId)
+            
+            var avatarX = this.getScreenX(0, 0)
+            var avatarY = this.getScreenY(0, 0)
+
+            this.avatars[playerId] = this.physics.add.sprite(avatarX, avatarY - 84, 'avatar').setDepth(3).setOrigin(0, 0)
+            this.avatar = this.avatars[playerId]
+            console.log('added player ')
+        })
 
         /* for (let y = 0;y < map.length;y++)
         {
