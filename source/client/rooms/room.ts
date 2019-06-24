@@ -158,7 +158,7 @@ export default class Room extends Phaser.Scene
                     roomX: 0,
                     roomY: 3,
                     direction: 2
-                }
+                },
                 // {
                 //     name: 'ads_cllava2',
                 //     roomX: 4,
@@ -187,8 +187,7 @@ export default class Room extends Phaser.Scene
                 // }
             ]
         }
-
-        
+      
 
         /*         var frames: Phaser.Types.Animations.AnimationFrame[] = []
         
@@ -373,18 +372,30 @@ export default class Room extends Phaser.Scene
 
         this._camera.setZoom(1)
 
-        this._socket.on('joinRoom', (roomId: number, playerId: number) => {
-            console.log('Joined!')
+        this._socket.emit('requestRoom', 0)
 
-            console.log(roomId, playerId)
+        let genRandom = (min: number, max: number) =>// min and max included
+        {
+            return Math.floor(Math.random()*(max-min+1)+min)
+        }
+
+        this._socket.on('joinRoom', (roomId: number, playerId: number) => {
+
+            console.log('Joined', roomId, playerId)
             
             var avatarX = this.getScreenX(0, 0)
-            var avatarY = this.getScreenY(0, 0)
+            var avatarY = this.getScreenY(0, genRandom(0, 5))
 
             this.avatars[playerId] = this.physics.add.sprite(avatarX, avatarY - 84, 'avatar').setDepth(3).setOrigin(0, 0)
             this.avatar = this.avatars[playerId]
-            console.log('added player ')
         })
+
+        this._socket.on('currentPlayers', (players: any) => {
+            console.log('Players: ', players)
+        })
+
+
+
 
         /* for (let y = 0;y < map.length;y++)
         {

@@ -16,7 +16,7 @@
     "swf:utils:furniture": "babel-watch source/utils/swf/index.js",
     "swf:utils:imager": "babel-watch source/utils/imager/index.js",
     "dev:ui:r26": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r26/webpack.config.babel.js",
-    "dev:ui:r63b": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/r63b/webpack.config.babel.js",
+    "dev:ui:r63b": "webpack-dev-server --public=http://localhost:8082 --host 0.0.0.0 --open --config ./source/ui/r63b/webpack.config.babel.js",
     "dev:ui:mobile": "webpack-dev-server --host 0.0.0.0 --open --config ./source/ui/mobile/webpack.config.babel.js",
     "dev:ui:mobile:ios": "cd source/mobile && react-native run-ios --simulator=\"iPhone10\"",
     "dev:server": "babel-watch --watch source/server source/server/environment.ts --extensions \".ts,.tsx\"",

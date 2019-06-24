@@ -23,7 +23,7 @@ export default class App extends React.Component {
 					scalesPageToFit={true}
 					bounces={false}
 					scrollEnabled={false}
-					source={{ uri: 'http://192.168.0.14:8080/inroom' }} 
+					source={{ uri: 'http://192.168.0.17:8080/inroom' }} 
 					originWhitelist={['*']}
 					style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
 				/>

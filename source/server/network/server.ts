@@ -18,16 +18,23 @@ import gql from 'graphql-tag'
 
 import CycloneConfig from '../../common/types/config'
 
+// import roomPlayer from '../hotel/players/player'
+
 import Logger from '../../utils/logger'
 import { Socket } from 'net';
 
 export default class Server {
 	private readonly hapi: Hapi.Server
-	private readonly socketIO: SocketIO.Server
+	// private readonly socketIO: SocketIO.Server
+	private readonly socketIO: any
 	private readonly apolloClient: ApolloClient<any>
 	private apolloServer: ApolloServer
 
-	private rooms: { [roomId: number]: { id: number } }
+	private players: any
+	private roomId: number
+
+	// private rooms: { [roomId: number]: { id: number } }
+	private rooms: any
 
 	public constructor(private readonly config: CycloneConfig) {
 		this.config = config
@@ -38,6 +45,29 @@ export default class Server {
 		this.hapi = new Hapi.Server({
 			port: port
 		})
+
+		this.roomId = 0
+		this.rooms = [
+			{
+				id: 0,
+				name: 'Welcome Room',
+				map: [
+					'00000',
+					'00000',
+					'00x00',
+					'00000'
+				]
+			},
+			{
+				id: 1,
+				name: 'Second Room',
+				map: [
+					'00000',
+					'00000'
+				]
+			}
+		]
+		this.players = []
 
 		this.socketIO = SocketIO(this.hapi.listener)
 
@@ -122,23 +152,49 @@ export default class Server {
 	}
 
 	private connect() {
-		this.socketIO.on('connection', (socket: SocketIO.Socket) => {
-
-			const roomId = 0
+		this.socketIO.on('connection', (Socket: any) => {
 
 			Logger.info(`Connected - ${Socket.id}`)
 
-			this.enterRoom(socket, roomId)
+			//this.enterRoom(Socket, this.roomId)
 
-			socket.on('disconnect', function () {
-				this.disconnectPlayer(socket);
+			Socket.on('disconnect', () => {
+				this.disconnectPlayer(Socket, Socket.id)
 			})
 
-			socket.on('tileClick', (mapTiles, destination) => {
-				movePlayer(socket, mapTiles, destination);
-			});
+			// let player = {
+			// 	x: 0,
+			// 	y: 0
+			// }
 
+			Socket.on('requestRoom', (roomId: number) => {
+				this.requestRoom(Socket, roomId)
+			})
+
+			// Socket.on('tileClick', (mapTiles: any, destination: any) => {
+			// 	this.movePlayer(Socket, mapTiles, player, destination)
+			// })
 		})
+	}
+
+	private requestRoom(Socket: any, roomId: number) {
+		Logger.info(`User ${Socket.id} requested room(${roomId})`)
+
+		let room = 'roomID-' + roomId
+
+		// Join SocketIO room
+		Socket.join(room)
+
+		this.players[Socket.id] = {
+			inRoom: roomId
+		}
+
+		Socket.emit('joinRoom', (roomId: number, playerId: number) => {
+			console.log('User', Socket.id, ' joined room(', roomId, ')')
+		})
+
+		// console.log('Players', this.players)
+		Socket.emit('currentPlayers', this.getAllPlayers())
 	}
 
 	/**
@@ -146,25 +202,30 @@ export default class Server {
 	 * @param {object} socket - The socket connection
 	 * @param {object} room - The room to join
 	 */
-	private enterRoom(socket: SocketIO.Socket, roomId: number) {
+	private enterRoom(Socket: any, roomId: number) {
+
 		this.rooms[roomId] = {
 			id: roomId
 		}
-		socket.join('room' + roomId)
 
-		roomPlayer.getPlayerById(socket.id).roomJoined = roomId
+		Socket.join('room' + roomId)
 
-		Logger.info(`Player ${socket.id} joined in room: ${roomId}`);
+		this.players[Socket.id] = {
+			roomjoined: roomId 
+		}
 
-		socket.emit('currentPlayers', roomPlayer.getAllPlayers());
-		socket.broadcast.in(roomId).emit('newPlayer', roomPlayer.getPlayerById(socket.id));
+		Logger.info(`Player ${Socket.id} joined in room: ${this.roomId}`)
+
+		Socket.emit('currentPlayers', this.getAllPlayers())
+		Socket.broadcast.in(roomId).emit('newPlayer', this.getPlayerById(Socket.id))
 	}
 
 	/**
 	 * Returns all the players
 	 */
 	getAllPlayers() {
-		return this.players;
+		console.log('Players', this.players)
+		return this.players
 	}
 
 	/**
@@ -179,12 +240,12 @@ export default class Server {
 	 * Creates a player
 	 * @param {object} socket - The socket connection
 	 */
-	createPlayer(socket) {
-		players[socket.id] = {
+	createPlayer(Socket: any) {
+		this.players[Socket.id] = {
 			rotation: 0,
 			x: 0,
 			y: 0,
-			playerId: socket.id,
+			playerId: Socket.id,
 			roomJoined: -1
 		};
 	};
@@ -194,30 +255,28 @@ export default class Server {
 	 * @param {object} socket - The socket connection
 	 * @param {object} player - The player to disconnect
 	 */
-	disconnectPlayer(socket: SocketIO.Socket, player: any) {
-		delete this.players[socket.id];
-		socket.broadcast.in(player.roomJoined).emit('playerDisconnected', socket.id);
-		Logger.info(`User ${socket.id} disconnected`);
+	disconnectPlayer(Socket: SocketIO.Socket, player: any) {
+		delete this.players[Socket.id]
+		Socket.broadcast.in(player.roomJoined).emit('playerDisconnected', Socket.id)
+		Logger.info(`User ${Socket.id} disconnected`);
 	}
 
-	movePlayer(io, mapTiles, player, destination) {
+	movePlayer(Socket: SocketIO.Socket, mapTiles: any, player: any, destination: any) {
 		var oldPlayerCoordinates = {
 			x: player.x,
 			y: player.y
 		};
 
-		if (player.x !== destination.x || player.y !== destination.y) {
-			// TODO: player movements
-			player.x = destination.x;
-			player.y = destination.y;
-			// TODO: player rotation
+		// if (player.x !== destination.x || player.y !== destination.y) {
+		// 	// TODO: player movements
+		// 	player.x = destination.x;
+		// 	player.y = destination.y;
+		// 	// TODO: player rotation
 
-			var grid = gameMap.createMapGrid(mapTiles);
-			var path = gameMap.finder.findPath(oldPlayerCoordinates.x, oldPlayerCoordinates.y, player.x, player.y, grid);
+		// 	var grid = gameMap.createMapGrid(mapTiles);
+		// 	var path = gameMap.finder.findPath(oldPlayerCoordinates.x, oldPlayerCoordinates.y, player.x, player.y, grid);
 
-			io.sockets.emit('playerMoved', player, path, oldPlayerCoordinates, destination);
-		}
-	};
-
-
+		// 	socket.sockets.emit('playerMoved', player, path, oldPlayerCoordinates, destination)
+		// }
+	}
 }
