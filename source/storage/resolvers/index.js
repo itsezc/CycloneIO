@@ -1,4 +1,6 @@
+import { find, filter } from 'lodash'
 import Bcrypt from 'bcryptjs'
+
 
 const resolvers = {
 
@@ -10,8 +12,10 @@ const resolvers = {
 		users: (parent, args, ctx, info) => ctx.db.users(args, info),
 		user: (parent, args, ctx, info) => ctx.db.users({ id: args.id }, info),
 
-		navigatorTab: (parent, args, ctx, info) => ctx.db.navigatorTab({ id: args. id}, info),
-		navigatorTabs: (parent, args, ctx, info) => ctx.db.navigatorTabs(args, info)
+		navigatorTab: (obj, args, ctx, info) => ctx.db.navigatorTab({ id: args.id }),
+		navigatorTabs: (parent, args, ctx, info) => ctx.db.navigatorTabs(args, info),
+		navigatorCategory: (parent, args, ctx, info) => ctx.db.navigatorCategory({ id: args.id }, info),
+		navigatorCategories: (obj, args, { db }) => db.navigatorCategories(args)
 	},
 
 	Mutation: {
@@ -37,6 +41,12 @@ const resolvers = {
 
 		createNavigatorTab: async (parent, args, ctx, info) => ctx.db.createNavigatorTab(args, info)
 	},
+
+	
+	NavigatorCategory: {
+		parent: navigatorTab => navigatorTab
+	},
+	
 }
 
 export { resolvers }

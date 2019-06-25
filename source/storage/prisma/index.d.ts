@@ -29,9 +29,7 @@ export interface Exists {
   ) => Promise<boolean>;
   habbo: (where?: HabboWhereInput) => Promise<boolean>;
   item: (where?: ItemWhereInput) => Promise<boolean>;
-  navigatorCategories: (
-    where?: NavigatorCategoriesWhereInput
-  ) => Promise<boolean>;
+  navigatorCategory: (where?: NavigatorCategoryWhereInput) => Promise<boolean>;
   navigatorTab: (where?: NavigatorTabWhereInput) => Promise<boolean>;
   news: (where?: NewsWhereInput) => Promise<boolean>;
   room: (where?: RoomWhereInput) => Promise<boolean>;
@@ -276,27 +274,27 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => ItemConnectionPromise;
-  navigatorCategories: (
-    where: NavigatorCategoriesWhereUniqueInput
-  ) => NavigatorCategoriesNullablePromise;
-  navigatorCategorieses: (args?: {
-    where?: NavigatorCategoriesWhereInput;
-    orderBy?: NavigatorCategoriesOrderByInput;
+  navigatorCategory: (
+    where: NavigatorCategoryWhereUniqueInput
+  ) => NavigatorCategoryNullablePromise;
+  navigatorCategories: (args?: {
+    where?: NavigatorCategoryWhereInput;
+    orderBy?: NavigatorCategoryOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
     first?: Int;
     last?: Int;
-  }) => FragmentableArray<NavigatorCategories>;
-  navigatorCategoriesesConnection: (args?: {
-    where?: NavigatorCategoriesWhereInput;
-    orderBy?: NavigatorCategoriesOrderByInput;
+  }) => FragmentableArray<NavigatorCategory>;
+  navigatorCategoriesConnection: (args?: {
+    where?: NavigatorCategoryWhereInput;
+    orderBy?: NavigatorCategoryOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
     first?: Int;
     last?: Int;
-  }) => NavigatorCategoriesConnectionPromise;
+  }) => NavigatorCategoryConnectionPromise;
   navigatorTab: (
     where: NavigatorTabWhereUniqueInput
   ) => NavigatorTabNullablePromise;
@@ -579,27 +577,27 @@ export interface Prisma {
   }) => ItemPromise;
   deleteItem: (where: ItemWhereUniqueInput) => ItemPromise;
   deleteManyItems: (where?: ItemWhereInput) => BatchPayloadPromise;
-  createNavigatorCategories: (
-    data: NavigatorCategoriesCreateInput
-  ) => NavigatorCategoriesPromise;
-  updateNavigatorCategories: (args: {
-    data: NavigatorCategoriesUpdateInput;
-    where: NavigatorCategoriesWhereUniqueInput;
-  }) => NavigatorCategoriesPromise;
-  updateManyNavigatorCategorieses: (args: {
-    data: NavigatorCategoriesUpdateManyMutationInput;
-    where?: NavigatorCategoriesWhereInput;
+  createNavigatorCategory: (
+    data: NavigatorCategoryCreateInput
+  ) => NavigatorCategoryPromise;
+  updateNavigatorCategory: (args: {
+    data: NavigatorCategoryUpdateInput;
+    where: NavigatorCategoryWhereUniqueInput;
+  }) => NavigatorCategoryPromise;
+  updateManyNavigatorCategories: (args: {
+    data: NavigatorCategoryUpdateManyMutationInput;
+    where?: NavigatorCategoryWhereInput;
   }) => BatchPayloadPromise;
-  upsertNavigatorCategories: (args: {
-    where: NavigatorCategoriesWhereUniqueInput;
-    create: NavigatorCategoriesCreateInput;
-    update: NavigatorCategoriesUpdateInput;
-  }) => NavigatorCategoriesPromise;
-  deleteNavigatorCategories: (
-    where: NavigatorCategoriesWhereUniqueInput
-  ) => NavigatorCategoriesPromise;
-  deleteManyNavigatorCategorieses: (
-    where?: NavigatorCategoriesWhereInput
+  upsertNavigatorCategory: (args: {
+    where: NavigatorCategoryWhereUniqueInput;
+    create: NavigatorCategoryCreateInput;
+    update: NavigatorCategoryUpdateInput;
+  }) => NavigatorCategoryPromise;
+  deleteNavigatorCategory: (
+    where: NavigatorCategoryWhereUniqueInput
+  ) => NavigatorCategoryPromise;
+  deleteManyNavigatorCategories: (
+    where?: NavigatorCategoryWhereInput
   ) => BatchPayloadPromise;
   createNavigatorTab: (data: NavigatorTabCreateInput) => NavigatorTabPromise;
   updateNavigatorTab: (args: {
@@ -711,9 +709,9 @@ export interface Subscription {
   item: (
     where?: ItemSubscriptionWhereInput
   ) => ItemSubscriptionPayloadSubscription;
-  navigatorCategories: (
-    where?: NavigatorCategoriesSubscriptionWhereInput
-  ) => NavigatorCategoriesSubscriptionPayloadSubscription;
+  navigatorCategory: (
+    where?: NavigatorCategorySubscriptionWhereInput
+  ) => NavigatorCategorySubscriptionPayloadSubscription;
   navigatorTab: (
     where?: NavigatorTabSubscriptionWhereInput
   ) => NavigatorTabSubscriptionPayloadSubscription;
@@ -956,11 +954,13 @@ export type ChatlogConsoleInvitationsOrderByInput =
   | "createdAt_ASC"
   | "createdAt_DESC";
 
-export type NavigatorCategoriesOrderByInput =
+export type NavigatorCategoryOrderByInput =
   | "id_ASC"
   | "id_DESC"
   | "name_ASC"
-  | "name_DESC";
+  | "name_DESC"
+  | "order_ASC"
+  | "order_DESC";
 
 export type NavigatorTabOrderByInput =
   | "id_ASC"
@@ -2207,11 +2207,11 @@ export type ItemWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
 
-export type NavigatorCategoriesWhereUniqueInput = AtLeastOne<{
+export type NavigatorCategoryWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
 
-export interface NavigatorCategoriesWhereInput {
+export interface NavigatorCategoryWhereInput {
   id?: Maybe<ID_Input>;
   id_not?: Maybe<ID_Input>;
   id_in?: Maybe<ID_Input[] | ID_Input>;
@@ -2240,10 +2240,18 @@ export interface NavigatorCategoriesWhereInput {
   name_not_starts_with?: Maybe<String>;
   name_ends_with?: Maybe<String>;
   name_not_ends_with?: Maybe<String>;
+  order?: Maybe<Int>;
+  order_not?: Maybe<Int>;
+  order_in?: Maybe<Int[] | Int>;
+  order_not_in?: Maybe<Int[] | Int>;
+  order_lt?: Maybe<Int>;
+  order_lte?: Maybe<Int>;
+  order_gt?: Maybe<Int>;
+  order_gte?: Maybe<Int>;
   parent?: Maybe<NavigatorTabWhereInput>;
-  AND?: Maybe<NavigatorCategoriesWhereInput[] | NavigatorCategoriesWhereInput>;
-  OR?: Maybe<NavigatorCategoriesWhereInput[] | NavigatorCategoriesWhereInput>;
-  NOT?: Maybe<NavigatorCategoriesWhereInput[] | NavigatorCategoriesWhereInput>;
+  AND?: Maybe<NavigatorCategoryWhereInput[] | NavigatorCategoryWhereInput>;
+  OR?: Maybe<NavigatorCategoryWhereInput[] | NavigatorCategoryWhereInput>;
+  NOT?: Maybe<NavigatorCategoryWhereInput[] | NavigatorCategoryWhereInput>;
 }
 
 export interface NavigatorTabWhereInput {
@@ -2283,9 +2291,9 @@ export interface NavigatorTabWhereInput {
   order_lte?: Maybe<Int>;
   order_gt?: Maybe<Int>;
   order_gte?: Maybe<Int>;
-  categories_every?: Maybe<NavigatorCategoriesWhereInput>;
-  categories_some?: Maybe<NavigatorCategoriesWhereInput>;
-  categories_none?: Maybe<NavigatorCategoriesWhereInput>;
+  categories_every?: Maybe<NavigatorCategoryWhereInput>;
+  categories_some?: Maybe<NavigatorCategoryWhereInput>;
+  categories_none?: Maybe<NavigatorCategoryWhereInput>;
   AND?: Maybe<NavigatorTabWhereInput[] | NavigatorTabWhereInput>;
   OR?: Maybe<NavigatorTabWhereInput[] | NavigatorTabWhereInput>;
   NOT?: Maybe<NavigatorTabWhereInput[] | NavigatorTabWhereInput>;
@@ -3155,10 +3163,11 @@ export interface ItemUpdateManyMutationInput {
   inventory?: Maybe<Boolean>;
 }
 
-export interface NavigatorCategoriesCreateInput {
+export interface NavigatorCategoryCreateInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
-  parent: NavigatorTabCreateOneWithoutCategoriesInput;
+  order?: Maybe<Int>;
+  parent?: Maybe<NavigatorTabCreateOneWithoutCategoriesInput>;
 }
 
 export interface NavigatorTabCreateOneWithoutCategoriesInput {
@@ -3172,15 +3181,18 @@ export interface NavigatorTabCreateWithoutCategoriesInput {
   order?: Maybe<Int>;
 }
 
-export interface NavigatorCategoriesUpdateInput {
+export interface NavigatorCategoryUpdateInput {
   name?: Maybe<String>;
-  parent?: Maybe<NavigatorTabUpdateOneRequiredWithoutCategoriesInput>;
+  order?: Maybe<Int>;
+  parent?: Maybe<NavigatorTabUpdateOneWithoutCategoriesInput>;
 }
 
-export interface NavigatorTabUpdateOneRequiredWithoutCategoriesInput {
+export interface NavigatorTabUpdateOneWithoutCategoriesInput {
   create?: Maybe<NavigatorTabCreateWithoutCategoriesInput>;
   update?: Maybe<NavigatorTabUpdateWithoutCategoriesDataInput>;
   upsert?: Maybe<NavigatorTabUpsertWithoutCategoriesInput>;
+  delete?: Maybe<Boolean>;
+  disconnect?: Maybe<Boolean>;
   connect?: Maybe<NavigatorTabWhereUniqueInput>;
 }
 
@@ -3194,88 +3206,91 @@ export interface NavigatorTabUpsertWithoutCategoriesInput {
   create: NavigatorTabCreateWithoutCategoriesInput;
 }
 
-export interface NavigatorCategoriesUpdateManyMutationInput {
+export interface NavigatorCategoryUpdateManyMutationInput {
   name?: Maybe<String>;
+  order?: Maybe<Int>;
 }
 
 export interface NavigatorTabCreateInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
   order?: Maybe<Int>;
-  categories?: Maybe<NavigatorCategoriesCreateManyWithoutParentInput>;
+  categories?: Maybe<NavigatorCategoryCreateManyWithoutParentInput>;
 }
 
-export interface NavigatorCategoriesCreateManyWithoutParentInput {
+export interface NavigatorCategoryCreateManyWithoutParentInput {
   create?: Maybe<
-    | NavigatorCategoriesCreateWithoutParentInput[]
-    | NavigatorCategoriesCreateWithoutParentInput
+    | NavigatorCategoryCreateWithoutParentInput[]
+    | NavigatorCategoryCreateWithoutParentInput
   >;
   connect?: Maybe<
-    NavigatorCategoriesWhereUniqueInput[] | NavigatorCategoriesWhereUniqueInput
+    NavigatorCategoryWhereUniqueInput[] | NavigatorCategoryWhereUniqueInput
   >;
 }
 
-export interface NavigatorCategoriesCreateWithoutParentInput {
+export interface NavigatorCategoryCreateWithoutParentInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
+  order?: Maybe<Int>;
 }
 
 export interface NavigatorTabUpdateInput {
   name?: Maybe<String>;
   order?: Maybe<Int>;
-  categories?: Maybe<NavigatorCategoriesUpdateManyWithoutParentInput>;
+  categories?: Maybe<NavigatorCategoryUpdateManyWithoutParentInput>;
 }
 
-export interface NavigatorCategoriesUpdateManyWithoutParentInput {
+export interface NavigatorCategoryUpdateManyWithoutParentInput {
   create?: Maybe<
-    | NavigatorCategoriesCreateWithoutParentInput[]
-    | NavigatorCategoriesCreateWithoutParentInput
+    | NavigatorCategoryCreateWithoutParentInput[]
+    | NavigatorCategoryCreateWithoutParentInput
   >;
   delete?: Maybe<
-    NavigatorCategoriesWhereUniqueInput[] | NavigatorCategoriesWhereUniqueInput
+    NavigatorCategoryWhereUniqueInput[] | NavigatorCategoryWhereUniqueInput
   >;
   connect?: Maybe<
-    NavigatorCategoriesWhereUniqueInput[] | NavigatorCategoriesWhereUniqueInput
+    NavigatorCategoryWhereUniqueInput[] | NavigatorCategoryWhereUniqueInput
   >;
   set?: Maybe<
-    NavigatorCategoriesWhereUniqueInput[] | NavigatorCategoriesWhereUniqueInput
+    NavigatorCategoryWhereUniqueInput[] | NavigatorCategoryWhereUniqueInput
   >;
   disconnect?: Maybe<
-    NavigatorCategoriesWhereUniqueInput[] | NavigatorCategoriesWhereUniqueInput
+    NavigatorCategoryWhereUniqueInput[] | NavigatorCategoryWhereUniqueInput
   >;
   update?: Maybe<
-    | NavigatorCategoriesUpdateWithWhereUniqueWithoutParentInput[]
-    | NavigatorCategoriesUpdateWithWhereUniqueWithoutParentInput
+    | NavigatorCategoryUpdateWithWhereUniqueWithoutParentInput[]
+    | NavigatorCategoryUpdateWithWhereUniqueWithoutParentInput
   >;
   upsert?: Maybe<
-    | NavigatorCategoriesUpsertWithWhereUniqueWithoutParentInput[]
-    | NavigatorCategoriesUpsertWithWhereUniqueWithoutParentInput
+    | NavigatorCategoryUpsertWithWhereUniqueWithoutParentInput[]
+    | NavigatorCategoryUpsertWithWhereUniqueWithoutParentInput
   >;
   deleteMany?: Maybe<
-    NavigatorCategoriesScalarWhereInput[] | NavigatorCategoriesScalarWhereInput
+    NavigatorCategoryScalarWhereInput[] | NavigatorCategoryScalarWhereInput
   >;
   updateMany?: Maybe<
-    | NavigatorCategoriesUpdateManyWithWhereNestedInput[]
-    | NavigatorCategoriesUpdateManyWithWhereNestedInput
+    | NavigatorCategoryUpdateManyWithWhereNestedInput[]
+    | NavigatorCategoryUpdateManyWithWhereNestedInput
   >;
 }
 
-export interface NavigatorCategoriesUpdateWithWhereUniqueWithoutParentInput {
-  where: NavigatorCategoriesWhereUniqueInput;
-  data: NavigatorCategoriesUpdateWithoutParentDataInput;
+export interface NavigatorCategoryUpdateWithWhereUniqueWithoutParentInput {
+  where: NavigatorCategoryWhereUniqueInput;
+  data: NavigatorCategoryUpdateWithoutParentDataInput;
 }
 
-export interface NavigatorCategoriesUpdateWithoutParentDataInput {
+export interface NavigatorCategoryUpdateWithoutParentDataInput {
   name?: Maybe<String>;
+  order?: Maybe<Int>;
 }
 
-export interface NavigatorCategoriesUpsertWithWhereUniqueWithoutParentInput {
-  where: NavigatorCategoriesWhereUniqueInput;
-  update: NavigatorCategoriesUpdateWithoutParentDataInput;
-  create: NavigatorCategoriesCreateWithoutParentInput;
+export interface NavigatorCategoryUpsertWithWhereUniqueWithoutParentInput {
+  where: NavigatorCategoryWhereUniqueInput;
+  update: NavigatorCategoryUpdateWithoutParentDataInput;
+  create: NavigatorCategoryCreateWithoutParentInput;
 }
 
-export interface NavigatorCategoriesScalarWhereInput {
+export interface NavigatorCategoryScalarWhereInput {
   id?: Maybe<ID_Input>;
   id_not?: Maybe<ID_Input>;
   id_in?: Maybe<ID_Input[] | ID_Input>;
@@ -3304,24 +3319,33 @@ export interface NavigatorCategoriesScalarWhereInput {
   name_not_starts_with?: Maybe<String>;
   name_ends_with?: Maybe<String>;
   name_not_ends_with?: Maybe<String>;
+  order?: Maybe<Int>;
+  order_not?: Maybe<Int>;
+  order_in?: Maybe<Int[] | Int>;
+  order_not_in?: Maybe<Int[] | Int>;
+  order_lt?: Maybe<Int>;
+  order_lte?: Maybe<Int>;
+  order_gt?: Maybe<Int>;
+  order_gte?: Maybe<Int>;
   AND?: Maybe<
-    NavigatorCategoriesScalarWhereInput[] | NavigatorCategoriesScalarWhereInput
+    NavigatorCategoryScalarWhereInput[] | NavigatorCategoryScalarWhereInput
   >;
   OR?: Maybe<
-    NavigatorCategoriesScalarWhereInput[] | NavigatorCategoriesScalarWhereInput
+    NavigatorCategoryScalarWhereInput[] | NavigatorCategoryScalarWhereInput
   >;
   NOT?: Maybe<
-    NavigatorCategoriesScalarWhereInput[] | NavigatorCategoriesScalarWhereInput
+    NavigatorCategoryScalarWhereInput[] | NavigatorCategoryScalarWhereInput
   >;
 }
 
-export interface NavigatorCategoriesUpdateManyWithWhereNestedInput {
-  where: NavigatorCategoriesScalarWhereInput;
-  data: NavigatorCategoriesUpdateManyDataInput;
+export interface NavigatorCategoryUpdateManyWithWhereNestedInput {
+  where: NavigatorCategoryScalarWhereInput;
+  data: NavigatorCategoryUpdateManyDataInput;
 }
 
-export interface NavigatorCategoriesUpdateManyDataInput {
+export interface NavigatorCategoryUpdateManyDataInput {
   name?: Maybe<String>;
+  order?: Maybe<Int>;
 }
 
 export interface NavigatorTabUpdateManyMutationInput {
@@ -3849,23 +3873,23 @@ export interface ItemSubscriptionWhereInput {
   NOT?: Maybe<ItemSubscriptionWhereInput[] | ItemSubscriptionWhereInput>;
 }
 
-export interface NavigatorCategoriesSubscriptionWhereInput {
+export interface NavigatorCategorySubscriptionWhereInput {
   mutation_in?: Maybe<MutationType[] | MutationType>;
   updatedFields_contains?: Maybe<String>;
   updatedFields_contains_every?: Maybe<String[] | String>;
   updatedFields_contains_some?: Maybe<String[] | String>;
-  node?: Maybe<NavigatorCategoriesWhereInput>;
+  node?: Maybe<NavigatorCategoryWhereInput>;
   AND?: Maybe<
-    | NavigatorCategoriesSubscriptionWhereInput[]
-    | NavigatorCategoriesSubscriptionWhereInput
+    | NavigatorCategorySubscriptionWhereInput[]
+    | NavigatorCategorySubscriptionWhereInput
   >;
   OR?: Maybe<
-    | NavigatorCategoriesSubscriptionWhereInput[]
-    | NavigatorCategoriesSubscriptionWhereInput
+    | NavigatorCategorySubscriptionWhereInput[]
+    | NavigatorCategorySubscriptionWhereInput
   >;
   NOT?: Maybe<
-    | NavigatorCategoriesSubscriptionWhereInput[]
-    | NavigatorCategoriesSubscriptionWhereInput
+    | NavigatorCategorySubscriptionWhereInput[]
+    | NavigatorCategorySubscriptionWhereInput
   >;
 }
 
@@ -5331,32 +5355,36 @@ export interface AggregateItemSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface NavigatorCategories {
+export interface NavigatorCategory {
   id: ID_Output;
   name?: String;
+  order?: Int;
 }
 
-export interface NavigatorCategoriesPromise
-  extends Promise<NavigatorCategories>,
+export interface NavigatorCategoryPromise
+  extends Promise<NavigatorCategory>,
     Fragmentable {
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
+  order: () => Promise<Int>;
   parent: <T = NavigatorTabPromise>() => T;
 }
 
-export interface NavigatorCategoriesSubscription
-  extends Promise<AsyncIterator<NavigatorCategories>>,
+export interface NavigatorCategorySubscription
+  extends Promise<AsyncIterator<NavigatorCategory>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
   name: () => Promise<AsyncIterator<String>>;
+  order: () => Promise<AsyncIterator<Int>>;
   parent: <T = NavigatorTabSubscription>() => T;
 }
 
-export interface NavigatorCategoriesNullablePromise
-  extends Promise<NavigatorCategories | null>,
+export interface NavigatorCategoryNullablePromise
+  extends Promise<NavigatorCategory | null>,
     Fragmentable {
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
+  order: () => Promise<Int>;
   parent: <T = NavigatorTabPromise>() => T;
 }
 
@@ -5372,9 +5400,9 @@ export interface NavigatorTabPromise
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
   order: () => Promise<Int>;
-  categories: <T = FragmentableArray<NavigatorCategories>>(args?: {
-    where?: NavigatorCategoriesWhereInput;
-    orderBy?: NavigatorCategoriesOrderByInput;
+  categories: <T = FragmentableArray<NavigatorCategory>>(args?: {
+    where?: NavigatorCategoryWhereInput;
+    orderBy?: NavigatorCategoryOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
@@ -5390,10 +5418,10 @@ export interface NavigatorTabSubscription
   name: () => Promise<AsyncIterator<String>>;
   order: () => Promise<AsyncIterator<Int>>;
   categories: <
-    T = Promise<AsyncIterator<NavigatorCategoriesSubscription>>
+    T = Promise<AsyncIterator<NavigatorCategorySubscription>>
   >(args?: {
-    where?: NavigatorCategoriesWhereInput;
-    orderBy?: NavigatorCategoriesOrderByInput;
+    where?: NavigatorCategoryWhereInput;
+    orderBy?: NavigatorCategoryOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
@@ -5408,9 +5436,9 @@ export interface NavigatorTabNullablePromise
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
   order: () => Promise<Int>;
-  categories: <T = FragmentableArray<NavigatorCategories>>(args?: {
-    where?: NavigatorCategoriesWhereInput;
-    orderBy?: NavigatorCategoriesOrderByInput;
+  categories: <T = FragmentableArray<NavigatorCategory>>(args?: {
+    where?: NavigatorCategoryWhereInput;
+    orderBy?: NavigatorCategoryOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
@@ -5419,60 +5447,58 @@ export interface NavigatorTabNullablePromise
   }) => T;
 }
 
-export interface NavigatorCategoriesConnection {
+export interface NavigatorCategoryConnection {
   pageInfo: PageInfo;
-  edges: NavigatorCategoriesEdge[];
+  edges: NavigatorCategoryEdge[];
 }
 
-export interface NavigatorCategoriesConnectionPromise
-  extends Promise<NavigatorCategoriesConnection>,
+export interface NavigatorCategoryConnectionPromise
+  extends Promise<NavigatorCategoryConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<NavigatorCategoriesEdge>>() => T;
-  aggregate: <T = AggregateNavigatorCategoriesPromise>() => T;
+  edges: <T = FragmentableArray<NavigatorCategoryEdge>>() => T;
+  aggregate: <T = AggregateNavigatorCategoryPromise>() => T;
 }
 
-export interface NavigatorCategoriesConnectionSubscription
-  extends Promise<AsyncIterator<NavigatorCategoriesConnection>>,
+export interface NavigatorCategoryConnectionSubscription
+  extends Promise<AsyncIterator<NavigatorCategoryConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <
-    T = Promise<AsyncIterator<NavigatorCategoriesEdgeSubscription>>
-  >() => T;
-  aggregate: <T = AggregateNavigatorCategoriesSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<NavigatorCategoryEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateNavigatorCategorySubscription>() => T;
 }
 
-export interface NavigatorCategoriesEdge {
-  node: NavigatorCategories;
+export interface NavigatorCategoryEdge {
+  node: NavigatorCategory;
   cursor: String;
 }
 
-export interface NavigatorCategoriesEdgePromise
-  extends Promise<NavigatorCategoriesEdge>,
+export interface NavigatorCategoryEdgePromise
+  extends Promise<NavigatorCategoryEdge>,
     Fragmentable {
-  node: <T = NavigatorCategoriesPromise>() => T;
+  node: <T = NavigatorCategoryPromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface NavigatorCategoriesEdgeSubscription
-  extends Promise<AsyncIterator<NavigatorCategoriesEdge>>,
+export interface NavigatorCategoryEdgeSubscription
+  extends Promise<AsyncIterator<NavigatorCategoryEdge>>,
     Fragmentable {
-  node: <T = NavigatorCategoriesSubscription>() => T;
+  node: <T = NavigatorCategorySubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface AggregateNavigatorCategories {
+export interface AggregateNavigatorCategory {
   count: Int;
 }
 
-export interface AggregateNavigatorCategoriesPromise
-  extends Promise<AggregateNavigatorCategories>,
+export interface AggregateNavigatorCategoryPromise
+  extends Promise<AggregateNavigatorCategory>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateNavigatorCategoriesSubscription
-  extends Promise<AsyncIterator<AggregateNavigatorCategories>>,
+export interface AggregateNavigatorCategorySubscription
+  extends Promise<AsyncIterator<AggregateNavigatorCategory>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
@@ -6475,48 +6501,51 @@ export interface ItemPreviousValuesSubscription
   inventory: () => Promise<AsyncIterator<Boolean>>;
 }
 
-export interface NavigatorCategoriesSubscriptionPayload {
+export interface NavigatorCategorySubscriptionPayload {
   mutation: MutationType;
-  node: NavigatorCategories;
+  node: NavigatorCategory;
   updatedFields: String[];
-  previousValues: NavigatorCategoriesPreviousValues;
+  previousValues: NavigatorCategoryPreviousValues;
 }
 
-export interface NavigatorCategoriesSubscriptionPayloadPromise
-  extends Promise<NavigatorCategoriesSubscriptionPayload>,
+export interface NavigatorCategorySubscriptionPayloadPromise
+  extends Promise<NavigatorCategorySubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = NavigatorCategoriesPromise>() => T;
+  node: <T = NavigatorCategoryPromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = NavigatorCategoriesPreviousValuesPromise>() => T;
+  previousValues: <T = NavigatorCategoryPreviousValuesPromise>() => T;
 }
 
-export interface NavigatorCategoriesSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<NavigatorCategoriesSubscriptionPayload>>,
+export interface NavigatorCategorySubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<NavigatorCategorySubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = NavigatorCategoriesSubscription>() => T;
+  node: <T = NavigatorCategorySubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = NavigatorCategoriesPreviousValuesSubscription>() => T;
+  previousValues: <T = NavigatorCategoryPreviousValuesSubscription>() => T;
 }
 
-export interface NavigatorCategoriesPreviousValues {
+export interface NavigatorCategoryPreviousValues {
   id: ID_Output;
   name?: String;
+  order?: Int;
 }
 
-export interface NavigatorCategoriesPreviousValuesPromise
-  extends Promise<NavigatorCategoriesPreviousValues>,
+export interface NavigatorCategoryPreviousValuesPromise
+  extends Promise<NavigatorCategoryPreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
+  order: () => Promise<Int>;
 }
 
-export interface NavigatorCategoriesPreviousValuesSubscription
-  extends Promise<AsyncIterator<NavigatorCategoriesPreviousValues>>,
+export interface NavigatorCategoryPreviousValuesSubscription
+  extends Promise<AsyncIterator<NavigatorCategoryPreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
   name: () => Promise<AsyncIterator<String>>;
+  order: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface NavigatorTabSubscriptionPayload {
@@ -6880,7 +6909,7 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "NavigatorCategories",
+    name: "NavigatorCategory",
     embedded: false
   },
   {

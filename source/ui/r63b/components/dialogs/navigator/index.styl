@@ -1,0 +1,47 @@
+.navigator
+	.tabs
+		display: flex
+		justify-content: center
+		width: 100%
+		padding: 0
+		margin-top: 5px
+		margin-bottom: 0
+		overflow: hidden
+		color: black
+		list-style: none
+
+		.tab
+			display: inline
+			float: left
+			border-top-left-radius: 6px
+			border-top-right-radius: 6px
+			border: 1px solid #4D4C49
+			border-bottom: 0
+			font-weight: 300
+			padding: 7px 0
+			min-width 90px
+			text-align: center
+			background: #C3C2B9
+			cursor: pointer
+			outline none
+
+			&:hover
+				background: #F6F5F0
+				box-shadow inset -2px 0 0 0 #FFFFFF,
+							inset 0 2px 0 0 #FFFFFF,
+							inset 2px 0 0 0 #FFFFFF
+
+		.active
+			background: #ECEAE1
+			border: 2px solid #000000
+			border-bottom: 0
+			box-shadow inset -2px 0 0 0 #FFFFFF,
+						inset 0 2px 0 0 #FFFFFF,
+						inset 2px 0 0 0 #FFFFFF
+
+			&:hover
+				background: inherit
+
+			a
+				display block
+				text-align: center

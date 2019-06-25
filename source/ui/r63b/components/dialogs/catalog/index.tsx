@@ -157,13 +157,13 @@ export default class Alert extends Component<any, AlertState> {
         return (
             <Dialog
 				id='catalog'
-                title="Shop"
+                title='Shop'
                 resize={true}
-                axis="y"
+                axis='y'
 				width={570}
 				height={630}>
 
-                    <div className="catalog">
+                    <div className='catalog'>
 
                         <Tabs
                             selectedTabClassName='active'

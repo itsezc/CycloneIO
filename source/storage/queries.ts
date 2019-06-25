@@ -20,8 +20,20 @@ export const GetActiveRooms = gql`
 export const GetNavigatorTabs = gql`
 	query GetNavigatorTabs {
 		navigatorTabs(orderBy: order_ASC) {
-			order
+			id
 			name
+		}
+	}
+`
+
+export const GetNavigatorCategories = gql`
+	query GetNavigatorCategories {
+		navigatorCategories(orderBy: order_ASC) {
+			id
+			name
+			parent {
+				id
+			}
 		}
 	}
 `

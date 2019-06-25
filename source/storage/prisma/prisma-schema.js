@@ -47,7 +47,7 @@ type AggregateItem {
   count: Int!
 }
 
-type AggregateNavigatorCategories {
+type AggregateNavigatorCategory {
   count: Int!
 }
 
@@ -2783,12 +2783,12 @@ type Mutation {
   upsertItem(where: ItemWhereUniqueInput!, create: ItemCreateInput!, update: ItemUpdateInput!): Item!
   deleteItem(where: ItemWhereUniqueInput!): Item
   deleteManyItems(where: ItemWhereInput): BatchPayload!
-  createNavigatorCategories(data: NavigatorCategoriesCreateInput!): NavigatorCategories!
-  updateNavigatorCategories(data: NavigatorCategoriesUpdateInput!, where: NavigatorCategoriesWhereUniqueInput!): NavigatorCategories
-  updateManyNavigatorCategorieses(data: NavigatorCategoriesUpdateManyMutationInput!, where: NavigatorCategoriesWhereInput): BatchPayload!
-  upsertNavigatorCategories(where: NavigatorCategoriesWhereUniqueInput!, create: NavigatorCategoriesCreateInput!, update: NavigatorCategoriesUpdateInput!): NavigatorCategories!
-  deleteNavigatorCategories(where: NavigatorCategoriesWhereUniqueInput!): NavigatorCategories
-  deleteManyNavigatorCategorieses(where: NavigatorCategoriesWhereInput): BatchPayload!
+  createNavigatorCategory(data: NavigatorCategoryCreateInput!): NavigatorCategory!
+  updateNavigatorCategory(data: NavigatorCategoryUpdateInput!, where: NavigatorCategoryWhereUniqueInput!): NavigatorCategory
+  updateManyNavigatorCategories(data: NavigatorCategoryUpdateManyMutationInput!, where: NavigatorCategoryWhereInput): BatchPayload!
+  upsertNavigatorCategory(where: NavigatorCategoryWhereUniqueInput!, create: NavigatorCategoryCreateInput!, update: NavigatorCategoryUpdateInput!): NavigatorCategory!
+  deleteNavigatorCategory(where: NavigatorCategoryWhereUniqueInput!): NavigatorCategory
+  deleteManyNavigatorCategories(where: NavigatorCategoryWhereInput): BatchPayload!
   createNavigatorTab(data: NavigatorTabCreateInput!): NavigatorTab!
   updateNavigatorTab(data: NavigatorTabUpdateInput!, where: NavigatorTabWhereUniqueInput!): NavigatorTab
   updateManyNavigatorTabs(data: NavigatorTabUpdateManyMutationInput!, where: NavigatorTabWhereInput): BatchPayload!
@@ -2821,52 +2821,58 @@ enum MutationType {
   DELETED
 }
 
-type NavigatorCategories {
+type NavigatorCategory {
   id: ID!
   name: String
-  parent: NavigatorTab!
+  order: Int
+  parent: NavigatorTab
 }
 
-type NavigatorCategoriesConnection {
+type NavigatorCategoryConnection {
   pageInfo: PageInfo!
-  edges: [NavigatorCategoriesEdge]!
-  aggregate: AggregateNavigatorCategories!
+  edges: [NavigatorCategoryEdge]!
+  aggregate: AggregateNavigatorCategory!
 }
 
-input NavigatorCategoriesCreateInput {
+input NavigatorCategoryCreateInput {
   id: ID
   name: String
-  parent: NavigatorTabCreateOneWithoutCategoriesInput!
+  order: Int
+  parent: NavigatorTabCreateOneWithoutCategoriesInput
 }
 
-input NavigatorCategoriesCreateManyWithoutParentInput {
-  create: [NavigatorCategoriesCreateWithoutParentInput!]
-  connect: [NavigatorCategoriesWhereUniqueInput!]
+input NavigatorCategoryCreateManyWithoutParentInput {
+  create: [NavigatorCategoryCreateWithoutParentInput!]
+  connect: [NavigatorCategoryWhereUniqueInput!]
 }
 
-input NavigatorCategoriesCreateWithoutParentInput {
+input NavigatorCategoryCreateWithoutParentInput {
   id: ID
   name: String
+  order: Int
 }
 
-type NavigatorCategoriesEdge {
-  node: NavigatorCategories!
+type NavigatorCategoryEdge {
+  node: NavigatorCategory!
   cursor: String!
 }
 
-enum NavigatorCategoriesOrderByInput {
+enum NavigatorCategoryOrderByInput {
   id_ASC
   id_DESC
   name_ASC
   name_DESC
+  order_ASC
+  order_DESC
 }
 
-type NavigatorCategoriesPreviousValues {
+type NavigatorCategoryPreviousValues {
   id: ID!
   name: String
+  order: Int
 }
 
-input NavigatorCategoriesScalarWhereInput {
+input NavigatorCategoryScalarWhereInput {
   id: ID
   id_not: ID
   id_in: [ID!]
@@ -2895,75 +2901,87 @@ input NavigatorCategoriesScalarWhereInput {
   name_not_starts_with: String
   name_ends_with: String
   name_not_ends_with: String
-  AND: [NavigatorCategoriesScalarWhereInput!]
-  OR: [NavigatorCategoriesScalarWhereInput!]
-  NOT: [NavigatorCategoriesScalarWhereInput!]
+  order: Int
+  order_not: Int
+  order_in: [Int!]
+  order_not_in: [Int!]
+  order_lt: Int
+  order_lte: Int
+  order_gt: Int
+  order_gte: Int
+  AND: [NavigatorCategoryScalarWhereInput!]
+  OR: [NavigatorCategoryScalarWhereInput!]
+  NOT: [NavigatorCategoryScalarWhereInput!]
 }
 
-type NavigatorCategoriesSubscriptionPayload {
+type NavigatorCategorySubscriptionPayload {
   mutation: MutationType!
-  node: NavigatorCategories
+  node: NavigatorCategory
   updatedFields: [String!]
-  previousValues: NavigatorCategoriesPreviousValues
+  previousValues: NavigatorCategoryPreviousValues
 }
 
-input NavigatorCategoriesSubscriptionWhereInput {
+input NavigatorCategorySubscriptionWhereInput {
   mutation_in: [MutationType!]
   updatedFields_contains: String
   updatedFields_contains_every: [String!]
   updatedFields_contains_some: [String!]
-  node: NavigatorCategoriesWhereInput
-  AND: [NavigatorCategoriesSubscriptionWhereInput!]
-  OR: [NavigatorCategoriesSubscriptionWhereInput!]
-  NOT: [NavigatorCategoriesSubscriptionWhereInput!]
+  node: NavigatorCategoryWhereInput
+  AND: [NavigatorCategorySubscriptionWhereInput!]
+  OR: [NavigatorCategorySubscriptionWhereInput!]
+  NOT: [NavigatorCategorySubscriptionWhereInput!]
 }
 
-input NavigatorCategoriesUpdateInput {
+input NavigatorCategoryUpdateInput {
   name: String
-  parent: NavigatorTabUpdateOneRequiredWithoutCategoriesInput
+  order: Int
+  parent: NavigatorTabUpdateOneWithoutCategoriesInput
 }
 
-input NavigatorCategoriesUpdateManyDataInput {
+input NavigatorCategoryUpdateManyDataInput {
   name: String
+  order: Int
 }
 
-input NavigatorCategoriesUpdateManyMutationInput {
+input NavigatorCategoryUpdateManyMutationInput {
   name: String
+  order: Int
 }
 
-input NavigatorCategoriesUpdateManyWithoutParentInput {
-  create: [NavigatorCategoriesCreateWithoutParentInput!]
-  delete: [NavigatorCategoriesWhereUniqueInput!]
-  connect: [NavigatorCategoriesWhereUniqueInput!]
-  set: [NavigatorCategoriesWhereUniqueInput!]
-  disconnect: [NavigatorCategoriesWhereUniqueInput!]
-  update: [NavigatorCategoriesUpdateWithWhereUniqueWithoutParentInput!]
-  upsert: [NavigatorCategoriesUpsertWithWhereUniqueWithoutParentInput!]
-  deleteMany: [NavigatorCategoriesScalarWhereInput!]
-  updateMany: [NavigatorCategoriesUpdateManyWithWhereNestedInput!]
+input NavigatorCategoryUpdateManyWithoutParentInput {
+  create: [NavigatorCategoryCreateWithoutParentInput!]
+  delete: [NavigatorCategoryWhereUniqueInput!]
+  connect: [NavigatorCategoryWhereUniqueInput!]
+  set: [NavigatorCategoryWhereUniqueInput!]
+  disconnect: [NavigatorCategoryWhereUniqueInput!]
+  update: [NavigatorCategoryUpdateWithWhereUniqueWithoutParentInput!]
+  upsert: [NavigatorCategoryUpsertWithWhereUniqueWithoutParentInput!]
+  deleteMany: [NavigatorCategoryScalarWhereInput!]
+  updateMany: [NavigatorCategoryUpdateManyWithWhereNestedInput!]
 }
 
-input NavigatorCategoriesUpdateManyWithWhereNestedInput {
-  where: NavigatorCategoriesScalarWhereInput!
-  data: NavigatorCategoriesUpdateManyDataInput!
+input NavigatorCategoryUpdateManyWithWhereNestedInput {
+  where: NavigatorCategoryScalarWhereInput!
+  data: NavigatorCategoryUpdateManyDataInput!
 }
 
-input NavigatorCategoriesUpdateWithoutParentDataInput {
+input NavigatorCategoryUpdateWithoutParentDataInput {
   name: String
+  order: Int
 }
 
-input NavigatorCategoriesUpdateWithWhereUniqueWithoutParentInput {
-  where: NavigatorCategoriesWhereUniqueInput!
-  data: NavigatorCategoriesUpdateWithoutParentDataInput!
+input NavigatorCategoryUpdateWithWhereUniqueWithoutParentInput {
+  where: NavigatorCategoryWhereUniqueInput!
+  data: NavigatorCategoryUpdateWithoutParentDataInput!
 }
 
-input NavigatorCategoriesUpsertWithWhereUniqueWithoutParentInput {
-  where: NavigatorCategoriesWhereUniqueInput!
-  update: NavigatorCategoriesUpdateWithoutParentDataInput!
-  create: NavigatorCategoriesCreateWithoutParentInput!
+input NavigatorCategoryUpsertWithWhereUniqueWithoutParentInput {
+  where: NavigatorCategoryWhereUniqueInput!
+  update: NavigatorCategoryUpdateWithoutParentDataInput!
+  create: NavigatorCategoryCreateWithoutParentInput!
 }
 
-input NavigatorCategoriesWhereInput {
+input NavigatorCategoryWhereInput {
   id: ID
   id_not: ID
   id_in: [ID!]
@@ -2992,13 +3010,21 @@ input NavigatorCategoriesWhereInput {
   name_not_starts_with: String
   name_ends_with: String
   name_not_ends_with: String
+  order: Int
+  order_not: Int
+  order_in: [Int!]
+  order_not_in: [Int!]
+  order_lt: Int
+  order_lte: Int
+  order_gt: Int
+  order_gte: Int
   parent: NavigatorTabWhereInput
-  AND: [NavigatorCategoriesWhereInput!]
-  OR: [NavigatorCategoriesWhereInput!]
-  NOT: [NavigatorCategoriesWhereInput!]
+  AND: [NavigatorCategoryWhereInput!]
+  OR: [NavigatorCategoryWhereInput!]
+  NOT: [NavigatorCategoryWhereInput!]
 }
 
-input NavigatorCategoriesWhereUniqueInput {
+input NavigatorCategoryWhereUniqueInput {
   id: ID
 }
 
@@ -3006,7 +3032,7 @@ type NavigatorTab {
   id: ID!
   name: String
   order: Int
-  categories(where: NavigatorCategoriesWhereInput, orderBy: NavigatorCategoriesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategories!]
+  categories(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategory!]
 }
 
 type NavigatorTabConnection {
@@ -3019,7 +3045,7 @@ input NavigatorTabCreateInput {
   id: ID
   name: String
   order: Int
-  categories: NavigatorCategoriesCreateManyWithoutParentInput
+  categories: NavigatorCategoryCreateManyWithoutParentInput
 }
 
 input NavigatorTabCreateOneWithoutCategoriesInput {
@@ -3074,7 +3100,7 @@ input NavigatorTabSubscriptionWhereInput {
 input NavigatorTabUpdateInput {
   name: String
   order: Int
-  categories: NavigatorCategoriesUpdateManyWithoutParentInput
+  categories: NavigatorCategoryUpdateManyWithoutParentInput
 }
 
 input NavigatorTabUpdateManyMutationInput {
@@ -3082,10 +3108,12 @@ input NavigatorTabUpdateManyMutationInput {
   order: Int
 }
 
-input NavigatorTabUpdateOneRequiredWithoutCategoriesInput {
+input NavigatorTabUpdateOneWithoutCategoriesInput {
   create: NavigatorTabCreateWithoutCategoriesInput
   update: NavigatorTabUpdateWithoutCategoriesDataInput
   upsert: NavigatorTabUpsertWithoutCategoriesInput
+  delete: Boolean
+  disconnect: Boolean
   connect: NavigatorTabWhereUniqueInput
 }
 
@@ -3136,9 +3164,9 @@ input NavigatorTabWhereInput {
   order_lte: Int
   order_gt: Int
   order_gte: Int
-  categories_every: NavigatorCategoriesWhereInput
-  categories_some: NavigatorCategoriesWhereInput
-  categories_none: NavigatorCategoriesWhereInput
+  categories_every: NavigatorCategoryWhereInput
+  categories_some: NavigatorCategoryWhereInput
+  categories_none: NavigatorCategoryWhereInput
   AND: [NavigatorTabWhereInput!]
   OR: [NavigatorTabWhereInput!]
   NOT: [NavigatorTabWhereInput!]
@@ -3382,9 +3410,9 @@ type Query {
   item(where: ItemWhereUniqueInput!): Item
   items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item]!
   itemsConnection(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ItemConnection!
-  navigatorCategories(where: NavigatorCategoriesWhereUniqueInput!): NavigatorCategories
-  navigatorCategorieses(where: NavigatorCategoriesWhereInput, orderBy: NavigatorCategoriesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategories]!
-  navigatorCategoriesesConnection(where: NavigatorCategoriesWhereInput, orderBy: NavigatorCategoriesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NavigatorCategoriesConnection!
+  navigatorCategory(where: NavigatorCategoryWhereUniqueInput!): NavigatorCategory
+  navigatorCategories(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategory]!
+  navigatorCategoriesConnection(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NavigatorCategoryConnection!
   navigatorTab(where: NavigatorTabWhereUniqueInput!): NavigatorTab
   navigatorTabs(where: NavigatorTabWhereInput, orderBy: NavigatorTabOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorTab]!
   navigatorTabsConnection(where: NavigatorTabWhereInput, orderBy: NavigatorTabOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NavigatorTabConnection!
@@ -3808,7 +3836,7 @@ type Subscription {
   chatlogConsoleInvitations(where: ChatlogConsoleInvitationsSubscriptionWhereInput): ChatlogConsoleInvitationsSubscriptionPayload
   habbo(where: HabboSubscriptionWhereInput): HabboSubscriptionPayload
   item(where: ItemSubscriptionWhereInput): ItemSubscriptionPayload
-  navigatorCategories(where: NavigatorCategoriesSubscriptionWhereInput): NavigatorCategoriesSubscriptionPayload
+  navigatorCategory(where: NavigatorCategorySubscriptionWhereInput): NavigatorCategorySubscriptionPayload
   navigatorTab(where: NavigatorTabSubscriptionWhereInput): NavigatorTabSubscriptionPayload
   news(where: NewsSubscriptionWhereInput): NewsSubscriptionPayload
   room(where: RoomSubscriptionWhereInput): RoomSubscriptionPayload

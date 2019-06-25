@@ -1,6 +1,5 @@
-
-
 /* tslint:disable */
+/* eslint-disable */
 // This file was automatically generated and should not be edited.
 
 // ====================================================
@@ -19,8 +18,8 @@ export interface GetActiveRooms {
   rooms: (GetActiveRooms_rooms | null)[];
 }
 
-
 /* tslint:disable */
+/* eslint-disable */
 // This file was automatically generated and should not be edited.
 
 // ====================================================
@@ -29,7 +28,7 @@ export interface GetActiveRooms {
 
 export interface GetNavigatorTabs_navigatorTabs {
   __typename: "NavigatorTab";
-  order: number | null;
+  id: string;
   name: string | null;
 }
 
@@ -38,6 +37,31 @@ export interface GetNavigatorTabs {
 }
 
 /* tslint:disable */
+/* eslint-disable */
+// This file was automatically generated and should not be edited.
+
+// ====================================================
+// GraphQL query operation: GetNavigatorCategories
+// ====================================================
+
+export interface GetNavigatorCategories_navigatorCategories_parent {
+  __typename: "NavigatorTab";
+  id: string;
+}
+
+export interface GetNavigatorCategories_navigatorCategories {
+  __typename: "NavigatorCategory";
+  id: string;
+  name: string | null;
+  parent: GetNavigatorCategories_navigatorCategories_parent | null;
+}
+
+export interface GetNavigatorCategories {
+  navigatorCategories: (GetNavigatorCategories_navigatorCategories | null)[];
+}
+
+/* tslint:disable */
+/* eslint-disable */
 // This file was automatically generated and should not be edited.
 
 //==============================================================

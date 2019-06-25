@@ -69,7 +69,7 @@ var models = [
     embedded: false
   },
   {
-    name: "NavigatorCategories",
+    name: "NavigatorCategory",
     embedded: false
   },
   {

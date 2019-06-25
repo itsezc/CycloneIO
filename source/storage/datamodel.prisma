@@ -190,14 +190,15 @@ type NavigatorTab @pgTable(name: "navigator_tabs")
     id: ID! @id
     name: String
     order: Int @unique
-    categories: [NavigatorCategories!]!
+    categories: [NavigatorCategory!]!
 }
 
-type NavigatorCategories @pgTable(name: "navigator_categories")
+type NavigatorCategory @pgTable(name: "navigator_categories")
 {
     id: ID! @id
     name: String
-    parent: NavigatorTab!
+    order: Int @unqiue
+    parent: NavigatorTab
 }
 
 type News @pgTable(name: "news")

@@ -12,6 +12,7 @@ type DialogProps = {
     minWidth?: number
     show?: boolean
     className?: string
+    background?: string
 
     id: string
     title: string
@@ -160,7 +161,7 @@ export default class Dialog extends Component<DialogProps, any> {
 						{this.props.children}
 
 						{this.props.resize &&
-							<i className="dialog-resizehandle" onMouseDown={this.handleResizing.bind(this)}></i>
+							<i className='dialog-resizehandle' onMouseDown={this.handleResizing.bind(this)}></i>
 						}
 					</div>
 				</section>
