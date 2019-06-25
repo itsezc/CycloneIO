@@ -21,9 +21,8 @@ import CycloneConfig from '../../common/types/config'
 // import roomPlayer from '../hotel/players/player'
 
 import Logger from '../../utils/logger'
-import { Socket } from 'net';
 
-import Pathfinder, { AStarFinder, DiagonalMovement, Heuristic, Grid } from 'pathfinding'
+import { AStarFinder, DiagonalMovement, Heuristic, Grid } from 'pathfinding'
 
 export default class Server {
 	private readonly hapi: Hapi.Server
@@ -208,7 +207,10 @@ export default class Server {
 			id: roomId
 		}
 
-		this.socketIO.sockets.emit('joinRoom', this.players[Socket.id])
+		var playerId = Socket.id
+		var player = this.players[playerId]
+
+		this.socketIO.sockets.emit('joinRoom', playerId, player.x, player.y)
 
 		// console.log('Players', this.players)
 		//Socket.emit('currentPlayers', this.getAllPlayers())
@@ -296,7 +298,7 @@ export default class Server {
 			var grid = this.createMapGrid(mapTiles);
 			var path = this.finder.findPath(oldPlayerCoordinates.x, oldPlayerCoordinates.y, this.players[playerId].x, this.players[playerId].y, grid);
 
-			this.socketIO.sockets.emit('playerMoved', this.players[playerId], path, oldPlayerCoordinates, destination)
+			this.socketIO.sockets.emit('playerMoved', playerId, path, destination)
 			console.log('moved')
 		}
 	}

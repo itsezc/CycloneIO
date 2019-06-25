@@ -23,6 +23,7 @@ import Avatar from '../../imager/generator/avatar';
 
 import Pathfinder, { DiagonalMovement } from 'pathfinding'
 import RoomPlayer from '../players/player';
+import { thisTypeAnnotation } from 'babel-types';
 
 /**
 * Room class
@@ -47,6 +48,8 @@ export default class Room extends Phaser.Scene {
     public finder: Pathfinder.AStarFinder
     public map: number[][]
     public roomPlayer!: RoomPlayer
+
+    public avatarId!: number
 
     private furnitures!: FurnitureSprite[]
     /*
@@ -156,6 +159,13 @@ export default class Room extends Phaser.Scene {
                     roomY: 3,
                     direction: 2
                 },
+                {
+                    name: 'diamond_dragon',
+                    roomX: 3,
+                    roomY: 2,
+                    direction: 2,
+                    animation: 2
+                }
                // {
                //     name: 'ads_cllava2',
                //     roomX: 4,
@@ -163,13 +173,13 @@ export default class Room extends Phaser.Scene {
                //     direction: 0,
                //     animation: 0
                // },
-                {
-                    name: 'holo_nelly',
-                    roomX: 2,
-                    roomY: 0,
-                    direction: 0,
-                    animation: 1
-                },
+               // {
+               //    name: 'holo_nelly',
+               //    roomX: 2,
+               //    roomY: 0,
+               //    direction: 0,
+               //    animation: 1
+               // },
                // {
                //     name: 'diamond_dragon',
                //     roomX: 4,
@@ -360,8 +370,6 @@ export default class Room extends Phaser.Scene {
             this._socket.emit('requestRoom', 0)
         })
 
-
-
         let genRandom = (min: number, max: number) =>// min and max included
         {
             return Math.floor(Math.random() * (max - min + 1) + min)
@@ -378,8 +386,14 @@ export default class Room extends Phaser.Scene {
         //             this.avatar = this.avatars[playerId] */
         //         }) */
 
-        this._socket.on('joinRoom', (player: any) => {
-            this.roomPlayer.addPlayerToRoom(player)
+        this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
+            console.log({ playerId: playerId, playerX: playerX, playerY: playerY })
+            this.roomPlayer.addPlayerToRoom(playerId, playerX, playerY)
+        })
+
+        this._socket.on('playerMoved', (playerId: any, path: any, destination: any) => {
+            console.log('moving player, current data: \n' + JSON.stringify({ playerId: playerId, path: path, destination: destination }))
+            this.roomPlayer.movePlayer(playerId, path, destination)
         })
         /*         this._socket.on('currentPlayers', (players: any) => {
                     Object.keys(players).forEach((playerId) => {
@@ -558,16 +572,24 @@ export default class Room extends Phaser.Scene {
      * @override
      */
     public update(time: number, deltaTime: number): void {
-        // if (this.tileDestination)
-        // {
-        //     if (Math.round(this.avatar.x) === this.tileDestination.x && Math.round(this.avatar.y) === this.tileDestination.y)
-        //     {
-        //         this.avatar.body.stop()
-        //         this.avatar.anims.stop()
-        //         this.avatar.setTexture('avatar')
-        //         this.avatar.setFrame(`std_${this.avatarRotation}.png`)
-        //     }
-        // }
+        if (this.tileDestination)
+        {
+            var player = this.roomPlayer.players[this.avatarId]
+
+            console.log({ tileDestination: this.tileDestination, playerX: player.x, playerY: player.y,
+                roundedPlayerX: Math.round(player.x), roundedPlayerY: Math.round(player.y) })
+
+            if (Math.round(player.x) === this.tileDestination.x 
+                && Math.round(player.y) === this.tileDestination.y)
+            {
+                player.body.stop()
+                player.anims.stop()
+
+                this.tileDestination = undefined
+                // player.setTexture('avatar')
+                // player.setFrame(`std_${this.avatarRotation}.png`)
+            }
+        }
         /* 
                  */
         /*         if (this.avatarIsWalking)

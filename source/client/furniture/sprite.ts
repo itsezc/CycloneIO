@@ -195,6 +195,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                 this.furniture.updateSpriteFrom(layerSprite, layerId)
                 this.furniture.updateSpriteFromDirection(layerSprite, this.direction, layerId)
 
+                this.setInteractions()
+
                 if (this.furniture.hasColorForLayer(this.color, layerId))
                 {
                     let color = this.furniture.getColorFrom(this.color, layerId)
@@ -223,6 +225,12 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         })
 
         this.add(orderedLayers)
+    }
+
+    private setInteractions() {
+        this.on('pointerdown', () => {
+            console.log('xd');
+        })
     }
 
     public destroy()

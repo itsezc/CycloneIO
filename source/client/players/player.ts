@@ -8,11 +8,11 @@ import RoomObjectDepth from '../../common/enums/rooms/objects/depth'
  */
 export default class RoomPlayer {
 	private scene: Room
-	private players: Phaser.GameObjects.Group
+	public players: { [id: string]: Phaser.Physics.Arcade.Sprite }
 
 	constructor(scene: Room) {
-		this.scene = scene;
-		this.players = this.scene.add.group();
+		this.scene = scene
+		this.players = {}
 	}
 
 	/**
@@ -20,16 +20,11 @@ export default class RoomPlayer {
 	 * @param {object} player - The player to add
 	 * TODO: player walking animation
 	 */
-	addPlayerToRoom(player: any) {
-		console.log(player)
-		var xLocation = this.scene.getScreenX(player.x, player.y)
-		var yLocation = this.scene.getScreenY(player.x, player.y)
+	addPlayerToRoom(playerId: any, playerX: any, playerY: any) {
+		var xLocation = this.scene.getScreenX(playerX, playerY)
+		var yLocation = this.scene.getScreenY(playerX, playerY)
 
-		this.players.create(
-			xLocation + 32,
-			yLocation - 28,
-			'avatar',
-		).setData({ playerId: player.playerId }).setDepth(RoomObjectDepth.FIGURE)
+		this.players[playerId] = this.scene.physics.add.sprite(xLocation + 32, yLocation - 28, 'avatar').setDepth(RoomObjectDepth.FIGURE)
 	}
 
 	/**
@@ -37,10 +32,89 @@ export default class RoomPlayer {
 	 * @param {object} playerId - The socket Id
 	 */
 	removePlayerFromRoom(playerId: number) {
-		const player = this.players.getChildren().find(p => p.getData('playerId') === playerId)
+		var player = this.players[playerId]
 
 		if (player) {
 			player.destroy()
 		}
+	}
+
+	movePlayer(playerId: any, path: any, destination: any) {
+		for (var i = 1;i < path.length;i++) {
+			var nextTileX = path[i][0]
+			var nextTileY = path[i][1]
+
+			var nextTile = { x: nextTileX, y: nextTileY }
+
+			/* var deltaCoords = { x: player.x - nextTile.x, y: player.y - nextTile.y }
+
+			if (deltaCoords.x === 0 && deltaCoords.y > 0) {
+				this.scene.avatarRotation = 0
+				this.scene.avatar.play('wlk_0')
+			}
+
+			if (deltaCoords.x === 0 && deltaCoords.y < 0) {
+				this.scene.avatarRotation = 4
+				this.scene.avatar.play('wlk_4')
+			}
+
+			if (deltaCoords.x > 0 && deltaCoords.y === 0) {
+				this.scene.avatarRotation = 6
+				this.scene.avatar.play('wlk_6')
+			}
+
+			if (deltaCoords.x < 0 && deltaCoords.y === 0) {
+				this.scene.avatarRotation = 2
+
+				this.scene.avatar.play('wlk_2')
+			}
+
+			if (deltaCoords.x > 0 && deltaCoords.y < 0) {
+				this.scene.avatarRotation = 5
+				this.scene.avatar.play('wlk_5')
+			}
+
+			if (deltaCoords.x < 0 && deltaCoords.y > 0) {
+				this.scene.avatarRotation = 1
+				this.scene.avatar.play('wlk_1')
+			}
+
+			if (deltaCoords.x < 0 && deltaCoords.y < 0) {
+				this.scene.avatarRotation = 3
+				this.scene.avatar.play('wlk_3')
+			}
+
+			if (deltaCoords.x > 0 && deltaCoords.y > 0) {
+				this.scene.avatarRotation = 7
+				this.scene.avatar.play('wlk_7')
+			} */
+
+			var isoNextTileX = this.scene.getScreenX(nextTileX, nextTileX)
+			var isoNextTileY = this.scene.getScreenY(nextTileX, nextTileY)
+
+			console.log({ nextTileX: nextTileX, nextTileY: nextTileY, isoNextTileX: isoNextTileX, isoNextTileY: isoNextTileY })
+
+			var isoDestination = { x: isoNextTileX + 84, y: isoNextTileY - 16 }
+
+			if (!this.scene.avatarIsMoving) {
+				this.scene.physics.moveTo(this.players[playerId], isoDestination.x, isoDestination.y, 70)
+			}
+
+			this.scene.avatarIsMoving = true
+
+			this.scene.avatarId = playerId
+
+			this.scene.time.addEvent(
+				{
+					delay: 500,
+					callback: () => {
+						this.scene.avatarIsMoving = false
+					}
+				}
+			)
+
+			this.scene.tileDestination = { x: isoNextTileX, y: isoNextTileY}
+		}
+
 	}
 }
