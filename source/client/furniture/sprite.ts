@@ -192,6 +192,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
             if (layerSprite != null)
             {
+                this.setEventsFor(layerSprite)
+
                 this.furniture.updateSpriteFrom(layerSprite, layerId)
                 this.furniture.updateSpriteFromDirection(layerSprite, this.direction, layerId)
 
@@ -227,9 +229,9 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         this.add(orderedLayers)
     }
 
-    private setInteractions() {
-        this.on('pointerdown', () => {
-            console.log('xd');
+    private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
+        sprite.on('rotate', (s: Phaser.GameObjects.Sprite) => {
+            this.direction = this.furniture.getNewDirectionFor(s, this.direction)
         })
     }
 
