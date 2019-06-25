@@ -23,6 +23,8 @@ import CycloneConfig from '../../common/types/config'
 import Logger from '../../utils/logger'
 import { Socket } from 'net';
 
+import Pathfinder, { AStarFinder, DiagonalMovement, Heuristic, Grid } from 'pathfinding'
+
 export default class Server {
 	private readonly hapi: Hapi.Server
 	// private readonly socketIO: SocketIO.Server
@@ -35,6 +37,11 @@ export default class Server {
 
 	// private rooms: { [roomId: number]: { id: number } }
 	private rooms: any
+
+	private finder: AStarFinder = new AStarFinder({
+		diagonalMovement: DiagonalMovement.Always,
+		heuristic: Heuristic.manhattan
+	})
 
 	public constructor(private readonly config: CycloneConfig) {
 		this.config = config
@@ -171,6 +178,16 @@ export default class Server {
 				this.requestRoom(Socket, roomId)
 			})
 
+			Socket.on('movePlayer', (destination: any) => {
+				this.movePlayer(
+					[
+						[0, 0, 0, 0, 0],
+						[0, 0, 0, 0, 0],
+						[0, 0, 1, 0, 0],
+						[0, 0, 0, 0, 0]
+					], Socket.id, destination)
+			})
+
 			// Socket.on('tileClick', (mapTiles: any, destination: any) => {
 			// 	this.movePlayer(Socket, mapTiles, player, destination)
 			// })
@@ -178,23 +195,23 @@ export default class Server {
 	}
 
 	private requestRoom(Socket: any, roomId: number) {
-		Logger.info(`User ${Socket.id} requested room(${roomId})`)
+		Logger.info(`Player ${Socket.id} requested room ${roomId}`)
 
 		let room = 'roomID-' + roomId
+
+		this.createPlayer(Socket, roomId)
 
 		// Join SocketIO room
 		Socket.join(room)
 
-		this.players[Socket.id] = {
-			inRoom: roomId
+		this.rooms[roomId] = {
+			id: roomId
 		}
 
-		Socket.emit('joinRoom', (roomId: number, playerId: number) => {
-			console.log('User', Socket.id, ' joined room(', roomId, ')')
-		})
+		this.socketIO.sockets.emit('joinRoom', this.players[Socket.id])
 
 		// console.log('Players', this.players)
-		Socket.emit('currentPlayers', this.getAllPlayers())
+		//Socket.emit('currentPlayers', this.getAllPlayers())
 	}
 
 	/**
@@ -202,29 +219,28 @@ export default class Server {
 	 * @param {object} socket - The socket connection
 	 * @param {object} room - The room to join
 	 */
-	private enterRoom(Socket: any, roomId: number) {
+	// private enterRoom(Socket: any, roomId: number) {
 
-		this.rooms[roomId] = {
-			id: roomId
-		}
+	// 	this.rooms[roomId] = {
+	// 		id: roomId
+	// 	}
 
-		Socket.join('room' + roomId)
+	// 	Socket.join('room' + roomId)
 
-		this.players[Socket.id] = {
-			roomjoined: roomId 
-		}
+	// 	this.players[Socket.id] = {
+	// 		roomjoined: roomId 
+	// 	}
 
-		Logger.info(`Player ${Socket.id} joined in room: ${this.roomId}`)
+	// 	Logger.info(`Player ${Socket.id} joined in room: ${this.roomId}`)
 
-		Socket.emit('currentPlayers', this.getAllPlayers())
-		Socket.broadcast.in(roomId).emit('newPlayer', this.getPlayerById(Socket.id))
-	}
+	// 	Socket.emit('currentPlayers', this.getAllPlayers())
+	// 	Socket.broadcast.in(roomId).emit('newPlayer', this.getPlayerById(Socket.id))
+	// }
 
 	/**
 	 * Returns all the players
 	 */
 	getAllPlayers() {
-		console.log('Players', this.players)
 		return this.players
 	}
 
@@ -240,13 +256,13 @@ export default class Server {
 	 * Creates a player
 	 * @param {object} socket - The socket connection
 	 */
-	createPlayer(Socket: any) {
+	createPlayer(Socket: any, roomToJoin: any) {
 		this.players[Socket.id] = {
 			rotation: 0,
 			x: 0,
 			y: 0,
 			playerId: Socket.id,
-			roomJoined: -1
+			roomJoined: roomToJoin
 		};
 	};
 
@@ -258,25 +274,40 @@ export default class Server {
 	disconnectPlayer(Socket: SocketIO.Socket, player: any) {
 		delete this.players[Socket.id]
 		Socket.broadcast.in(player.roomJoined).emit('playerDisconnected', Socket.id)
-		Logger.info(`User ${Socket.id} disconnected`);
+		Logger.info(`User ${Socket.id} disconnected`)
 	}
 
-	movePlayer(Socket: SocketIO.Socket, mapTiles: any, player: any, destination: any) {
+	movePlayer(mapTiles: any, playerId: any, destination: any) {
+		console.log(mapTiles)
+
 		var oldPlayerCoordinates = {
-			x: player.x,
-			y: player.y
-		};
+			x: this.players[playerId].x,
+			y: this.players[playerId].y
+		}
 
-		// if (player.x !== destination.x || player.y !== destination.y) {
-		// 	// TODO: player movements
-		// 	player.x = destination.x;
-		// 	player.y = destination.y;
-		// 	// TODO: player rotation
+		console.log('player coordinates ' + JSON.stringify(oldPlayerCoordinates))
 
-		// 	var grid = gameMap.createMapGrid(mapTiles);
-		// 	var path = gameMap.finder.findPath(oldPlayerCoordinates.x, oldPlayerCoordinates.y, player.x, player.y, grid);
+		console.log('destination ' + JSON.stringify(destination))
 
-		// 	socket.sockets.emit('playerMoved', player, path, oldPlayerCoordinates, destination)
-		// }
+		if (this.players[playerId].x !== destination.x || this.players[playerId].y !== destination.y) {
+			this.players[playerId].x = destination.x;
+			this.players[playerId].y = destination.y;
+
+			var grid = this.createMapGrid(mapTiles);
+			var path = this.finder.findPath(oldPlayerCoordinates.x, oldPlayerCoordinates.y, this.players[playerId].x, this.players[playerId].y, grid);
+
+			this.socketIO.sockets.emit('playerMoved', this.players[playerId], path, oldPlayerCoordinates, destination)
+			console.log('moved')
+		}
 	}
+
+	/**
+	 * Creates the map grid
+	 * @param {object} gameMapTiles - The game map tiles
+	 */
+	createMapGrid(gameMapTiles: any) {
+		var grid = new Grid(gameMapTiles)
+		return grid
+	}
+
 }

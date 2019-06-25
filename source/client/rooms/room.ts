@@ -22,13 +22,13 @@ import Path from 'path'
 import Avatar from '../../imager/generator/avatar';
 
 import Pathfinder, { DiagonalMovement } from 'pathfinding'
+import RoomPlayer from '../players/player';
 
 /**
 * Room class
  * @extends {Scene}
 */
-export default class Room extends Phaser.Scene
-{
+export default class Room extends Phaser.Scene {
     private readonly id: number
 
     private _socket!: SocketIOClient.Socket
@@ -38,7 +38,7 @@ export default class Room extends Phaser.Scene
 
     private _clickTime!: number
 
-    public avatars!: { [id: string ]: Phaser.Physics.Arcade.Sprite }
+    public avatars!: { [id: string]: Phaser.Physics.Arcade.Sprite }
     public avatar!: Phaser.Physics.Arcade.Sprite
     public avatarIsWalking: boolean
     public avatarIsMoving: boolean = false
@@ -46,6 +46,7 @@ export default class Room extends Phaser.Scene
     public tileDestination: { x: number, y: number }
     public finder: Pathfinder.AStarFinder
     public map: number[][]
+    public roomPlayer!: RoomPlayer
 
     private furnitures!: FurnitureSprite[]
     /*
@@ -54,8 +55,7 @@ export default class Room extends Phaser.Scene
     /**
      * @param {number} id - The room id
      */
-    constructor(id: number)
-    {
+    constructor(id: number) {
         super({ key: 'room' })
         this.id = id
     }
@@ -63,8 +63,7 @@ export default class Room extends Phaser.Scene
     /**
      * Runs once, loads up assets like images and audio
      */
-    preload()
-    {
+    preload() {
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
@@ -121,8 +120,7 @@ export default class Room extends Phaser.Scene
     /**
      * Runs once, when the scene starts
      */
-    public init(): void
-    {
+    public init(): void {
         this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
@@ -132,8 +130,7 @@ export default class Room extends Phaser.Scene
     /**
      * Runs once, after all assets in preload are loaded
      */
-    public create(): void
-    {
+    public create(): void {
         this._camera.create()
 
         this.registerInputEvents()
@@ -187,7 +184,7 @@ export default class Room extends Phaser.Scene
                 // }
             ]
         }
-      
+
 
         /*         var frames: Phaser.Types.Animations.AnimationFrame[] = []
         
@@ -258,10 +255,7 @@ export default class Room extends Phaser.Scene
         // var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1],
         // [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
 
-
-
-
-        //this.add.image(0, 0, 'room_background').setDepth(2)
+        //        this.add.image(0, 0, 'room_background').setDepth(2)
 
 
         // if(roomSprite)
@@ -274,24 +268,11 @@ export default class Room extends Phaser.Scene
         // roomContainer.x = Math.floor(window.innerWidth / 2);
         // roomContainer.y = Math.floor(window.innerHeight / 2);
 
-        this.map = [
-            [0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0],
-            [0, 0, 1, 0, 0],
-            [0, 0, 0, 0, 0]
-        ];
-
-        this.finder = new Pathfinder.AStarFinder({
-            diagonalMovement: DiagonalMovement.Always,
-            heuristic: Pathfinder.Heuristic.manhattan
-        })
-
         var roomSprite = new RoomSprite(this, room.heightmap)
 
         this.add.existing(roomSprite)
 
-        room.furnitures.forEach((furnitureRoomData) =>
-        {
+        room.furnitures.forEach((furnitureRoomData) => {
             this.load.setPath(Path.join('furniture_new', furnitureRoomData.name))
 
             this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
@@ -300,8 +281,7 @@ export default class Room extends Phaser.Scene
 
             this.load.start()
 
-            this.load.once('complete', () =>
-            {
+            this.load.once('complete', () => {
                 //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
                 //console.log(furnitureRoomData)
 
@@ -310,16 +290,14 @@ export default class Room extends Phaser.Scene
                 var furniture = new Furniture(this, furnitureData)
                 var furnitureSprite = new FurnitureSprite(this, furniture)
 
-                if (furnitureRoomData.animation !== undefined)
-                {
+                if (furnitureRoomData.animation !== undefined) {
                     console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
                     furnitureSprite.animateAndStart(furnitureRoomData.animation)
                 } else {
                     furnitureSprite.start()
                 }
 
-                if (furnitureRoomData.color)
-                {
+                if (furnitureRoomData.color) {
                     furnitureSprite.setColor(furnitureData.color)
                 }
 
@@ -335,7 +313,7 @@ export default class Room extends Phaser.Scene
             this.camera.setZoom(4)
 
             // Furniture Rotation
-            if(this.input.enabled) {
+            if (this.input.enabled) {
                 this.input.keyboard.on('keydown-SHIFT', () => {
                     roomSprite.on('pointerdown', () => {
                         ///console.log(roomSprite)
@@ -373,26 +351,41 @@ export default class Room extends Phaser.Scene
         this._camera.setZoom(1)
 
         this._socket.emit('requestRoom', 0)
+        this.roomPlayer = new RoomPlayer(this);
+
+        this._socket.on('connect', () => {
+            console.log(`Server connected on ${window.location.hostname}`);
+            this._socket.emit('requestRoom', 0)
+        })
+
+
 
         let genRandom = (min: number, max: number) =>// min and max included
         {
-            return Math.floor(Math.random()*(max-min+1)+min)
+            return Math.floor(Math.random() * (max - min + 1) + min)
         }
 
-        this._socket.on('joinRoom', (roomId: number, playerId: number) => {
+        // /*         this._socket.on('joinRoom', (roomId: number, playerId: number) => {
 
-            console.log('Joined', roomId, playerId)
-            
-            var avatarX = this.getScreenX(0, 0)
-            var avatarY = this.getScreenY(0, genRandom(0, 5))
+        //             console.log('Joined', roomId, playerId)
 
-            this.avatars[playerId] = this.physics.add.sprite(avatarX, avatarY - 84, 'avatar').setDepth(3).setOrigin(0, 0)
-            this.avatar = this.avatars[playerId]
+        // /*             var avatarX = this.getScreenX(0, 0)
+        //             var avatarY = this.getScreenY(0, genRandom(0, 5))
+
+        //             this.avatars[playerId] = this.physics.add.sprite(avatarX, avatarY - 84, 'avatar').setDepth(3).setOrigin(0, 0)
+        //             this.avatar = this.avatars[playerId] */
+        //         }) */
+
+        this._socket.on('joinRoom', (player: any) => {
+            this.roomPlayer.addPlayerToRoom(player)
         })
-
-        this._socket.on('currentPlayers', (players: any) => {
-            console.log('Players: ', players)
-        })
+        /*         this._socket.on('currentPlayers', (players: any) => {
+                    Object.keys(players).forEach((playerId) => {
+                        var player = players[playerId];
+                        this.roomPlayer.addPlayerToRoom(player);
+                      });
+                  
+                }) */
 
 
 
@@ -562,18 +555,17 @@ export default class Room extends Phaser.Scene
      * Runs once per frame for the duration of the scene
      * @override
      */
-    public update(time: number, deltaTime: number): void
-    {
-        if (this.tileDestination)
-        {
-            if (Math.round(this.avatar.x) === this.tileDestination.x && Math.round(this.avatar.y) === this.tileDestination.y)
-            {
-                this.avatar.body.stop()
-                this.avatar.anims.stop()
-                this.avatar.setTexture('avatar')
-                this.avatar.setFrame(`std_${this.avatarRotation}.png`)
-            }
-        }
+    public update(time: number, deltaTime: number): void {
+        // if (this.tileDestination)
+        // {
+        //     if (Math.round(this.avatar.x) === this.tileDestination.x && Math.round(this.avatar.y) === this.tileDestination.y)
+        //     {
+        //         this.avatar.body.stop()
+        //         this.avatar.anims.stop()
+        //         this.avatar.setTexture('avatar')
+        //         this.avatar.setFrame(`std_${this.avatarRotation}.png`)
+        //     }
+        // }
         /* 
                  */
         /*         if (this.avatarIsWalking)
@@ -585,45 +577,36 @@ export default class Room extends Phaser.Scene
         // this.camera3d.transformChildren(this.transform);
     }
 
-    private getScreenX(x: number, y: number): number
-    {
+    public getScreenX(x: number, y: number): number {
         return (x - y) * 32
     }
 
-    private getScreenY(x: number, y: number): number
-    {
+    public getScreenY(x: number, y: number): number {
         return (x + y) * 16
     }
 
-    coordsToIsometric(x: number, y: number)
-    {
+    coordsToIsometric(x: number, y: number) {
         var toX = (x - y) * 32
         var toY = (x + y) * 16
 
         return { x: toX, y: toY }
     }
 
-    public registerInputEvents(): void
-    {
-        this.input.on('pointermove', (pointer: Phaser.Input.Pointer) =>
-        {
-            if (pointer.primaryDown)
-            {
+    public registerInputEvents(): void {
+        this.input.on('pointermove', (pointer: Phaser.Input.Pointer) => {
+            if (pointer.primaryDown) {
                 this._camera.scroll(pointer)
             }
 
-            else
-            {
+            else {
                 this._camera.isScrolling = false
             }
 
         }, this)
     }
 
-    public registerScaleEvents(): void
-    {
-        this.scale.on('resize', (gameSize: { width: number, height: number }) =>
-        {
+    public registerScaleEvents(): void {
+        this.scale.on('resize', (gameSize: { width: number, height: number }) => {
             var width = gameSize.width
             var height = gameSize.height
 
@@ -632,21 +615,17 @@ export default class Room extends Phaser.Scene
         }, this)
     }
 
-    public emitRoom(): void
-    {
+    public emitRoom(): void {
         this._socket.emit('newRoom', this.id)
     }
 
-    public registerRoomsEvents(): void
-    {
-        this._socket.on('newRoom', (map: any) =>
-        {
+    public registerRoomsEvents(): void {
+        this._socket.on('newRoom', (map: any) => {
             //this.addTileMap(map)
         })
     }
 
-    public registerItemsEvents(): void
-    {
+    public registerItemsEvents(): void {
 
         /*         this.socket.on('newItem', (item: any) => {
                     this.addItem({ x: 0, y: 0, z: 0 }, item)
@@ -737,8 +716,7 @@ export default class Room extends Phaser.Scene
     /* @param {Vector} cartesian - The cartesian coordinates of the sprite
      * @return {Vector} Isometric coordinates of the sprite
      */
-    public cartesianToIsometric(cartesian: Vector): Vector
-    {
+    public cartesianToIsometric(cartesian: Vector): Vector {
         return { x: cartesian.x - cartesian.y, y: (cartesian.x + cartesian.y) / 2, z: cartesian.z }
     }
 
@@ -746,8 +724,7 @@ export default class Room extends Phaser.Scene
      * @param {Vector} isometric - The isometric coordinates of the sprite
      * @return {Vector} Cartesian coordinates of the sprite
      */
-    public isometricToCartesian(isometric: Vector): Vector
-    {
+    public isometricToCartesian(isometric: Vector): Vector {
         return { x: (isometric.y * 2 + isometric.x) / 2, y: (isometric.y * 2 - isometric.x) / 2, z: isometric.z }
     }
 
@@ -755,8 +732,7 @@ export default class Room extends Phaser.Scene
      * @param {Vector} coordinates - The coordinates of the sprite
      * @return {Vector} Cartesian coordinates of the sprite
      */
-    public coordsToCartesian(coordinates: Vector): Vector
-    {
+    public coordsToCartesian(coordinates: Vector): Vector {
         return { x: coordinates.x * 32, y: coordinates.y * 32, z: coordinates.z }
     }
 
@@ -764,8 +740,7 @@ export default class Room extends Phaser.Scene
      * @param {Vector} cartesian - The cartesian coordinates of the sprites
      * @return {Vector} Coordinates of the sprite
      */
-    public cartesianToCoords(cartesian: Vector): Vector
-    {
+    public cartesianToCoords(cartesian: Vector): Vector {
         return { x: Math.floor(cartesian.x / 32), y: Math.floor(cartesian.y / 32), z: cartesian.z }
     }
 
@@ -775,16 +750,12 @@ export default class Room extends Phaser.Scene
      * @param {function} callback - The callback function
      * @param {any} args - The extra arguments
      */
-    public onDoubleClick(object: Phaser.GameObjects.GameObject, callback: (...n: any) => any, ...args: any): void
-    {
+    public onDoubleClick(object: Phaser.GameObjects.GameObject, callback: (...n: any) => any, ...args: any): void {
 
-        object.on('pointerdown', (pointer: Phaser.Input.Pointer) =>
-        {
+        object.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
 
-            if (pointer.downTime - this._clickTime < 500)
-            {
-                if (pointer.primaryDown)
-                {
+            if (pointer.downTime - this._clickTime < 500) {
+                if (pointer.primaryDown) {
                     callback(...args)
                 }
             }
@@ -793,8 +764,11 @@ export default class Room extends Phaser.Scene
         })
     }
 
-    public get camera(): RoomCamera 
-    {
+    public get socket(): SocketIOClient.Socket {
+        return this._socket
+    }
+
+    public get camera(): RoomCamera {
         return this._camera
     }
 }
