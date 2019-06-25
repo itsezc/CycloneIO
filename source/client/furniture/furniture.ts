@@ -378,7 +378,9 @@ export default class Furniture
 		sprite.setInteractive()
 
 		sprite.on('pointerdown', (e: Phaser.Input.Pointer) => {
-			sprite.emit('rotate', sprite)
+			if (e.event.shiftKey) {
+				sprite.emit('rotate', sprite)
+			}
 		}, this)
 	}
 	
