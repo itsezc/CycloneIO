@@ -165,9 +165,9 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         const frameName = sprite.frame.name
         const fragments = frameName.split('_')
 
-        const letter = fragments[fragments.length - 3]
+        const layer = fragments[fragments.length - 3]
         
-        return (ALPHABET.indexOf(letter.toLowerCase())) + sprite.z;          
+        return (ALPHABET.indexOf(layer.toLowerCase())) + sprite.z;          
     }
 
     private isCorrectSizeLayer(sprite: any) {
@@ -188,7 +188,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
         {
             let frameIndex = this.furniture.getFrameFrom(this.animation, layerId, this.frameCount)
-            let layerSprite = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, layerId, this.direction, frameIndex)
+            let layerSprite = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, false, this.direction, layerId, frameIndex)
 
             if (layerSprite != null)
             {
@@ -206,6 +206,13 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                 
                 layers.push(layerSprite)
             }
+        }
+
+        // Shadow
+        const shadowLayer = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, true, this.direction)
+
+        if(shadowLayer != null) {
+            layers.push(shadowLayer)
         }
         
         // Depth sorting for sprites inside the furniture

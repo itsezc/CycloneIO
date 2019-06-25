@@ -241,7 +241,7 @@ export default class Furniture
 
 	private layerFromNumber(layer: number): string
 	{
-		return String.fromCharCode(layer + 97)
+		return layer === -1 ? 'sd' : String.fromCharCode(layer + 97)
 	}
 
 	private assetNameFrom(size: number | string, layer: number, direction?: number, frame?: number): string
@@ -261,9 +261,9 @@ export default class Furniture
 		return this.data.assets[assetName] != null
 	}
 
-	public getSpriteFrom(size: number | string, layer: number, direction?: number, frame?: number): any
+	public getSpriteFrom(size: number | string, shadow: boolean, direction?: number, layer?: number, frame?: number): any
 	{
-		let assetName = this.assetNameFrom(size, layer, direction, frame)
+		let assetName = shadow ? this.assetNameFrom(size, -1, direction, 0) : this.assetNameFrom(size, layer, direction, frame)
 
 		if (this.hasAsset(assetName))
 		{
@@ -282,6 +282,10 @@ export default class Furniture
 				layerSprite.setOrigin(0, 0)
 
 				//console.log(this.data.name + '_' + sourceName + '.png', frame)
+
+				if (shadow) {
+					layerSprite.alpha = 0.1
+				}
 				
 				if (asset.flipH)
 				{
