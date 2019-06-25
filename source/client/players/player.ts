@@ -37,10 +37,10 @@ export default class RoomPlayer {
 	 * @param {object} playerId - The socket Id
 	 */
 	removePlayerFromRoom(playerId: number) {
-		this.players.getChildren().forEach(player => {
-			if (player.getData('playerId') === playerId) {
-				player.destroy()
-			}
-		})
+		const player = this.players.getChildren().find(p => p.getData('playerId') === playerId)
+
+		if (player) {
+			player.destroy()
+		}
 	}
 }
