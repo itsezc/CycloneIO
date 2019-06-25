@@ -211,12 +211,7 @@ export default class Server {
 		this.socketIO.sockets.emit('joinRoom', this.players[Socket.id])
 
 		// console.log('Players', this.players)
-<<<<<<< HEAD
-		Socket.emit('currentPlayers', this.getAllPlayers())
-		Socket
-=======
 		//Socket.emit('currentPlayers', this.getAllPlayers())
->>>>>>> next
 	}
 
 	/**
