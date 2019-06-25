@@ -197,7 +197,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                 this.furniture.updateSpriteFrom(layerSprite, layerId)
                 this.furniture.updateSpriteFromDirection(layerSprite, this.direction, layerId)
 
-                this.setInteractions()
+                //this.setInteractions()
 
                 if (this.furniture.hasColorForLayer(this.color, layerId))
                 {
