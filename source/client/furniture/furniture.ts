@@ -7,7 +7,7 @@ export interface IData
 	type: string
 	name: string
 	visualizationType: string;
-	logicType: string
+	logicType: string;
 	spritesheet: string
 	dimensions: IDimension
 	directions: number[]
