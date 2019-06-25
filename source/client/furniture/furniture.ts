@@ -80,7 +80,6 @@ export interface IAnimationLayer
 
 export default class Furniture
 {
-
 	private data: IData
 	public scene: Room
 
@@ -281,6 +280,8 @@ export default class Furniture
 				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name, this.data.name + '_' + sourceName + '.png')
 				layerSprite.setOrigin(0, 0)
 
+				this.setInteractionsFor(layerSprite)
+
 				if (layerSprite.frame.name !== this.data.name + '_' + sourceName + '.png') {
 					return undefined
 				}
@@ -373,5 +374,22 @@ export default class Furniture
 		}
 	}
 
+	private setInteractionsFor(sprite: Phaser.GameObjects.Sprite) {
+		sprite.setInteractive()
+
+		sprite.on('pointerdown', (e: Phaser.Input.Pointer) => {
+			sprite.emit('rotate', sprite)
+		}, this)
+	}
+	
+    public getNewDirectionFor(sprite: Phaser.GameObjects.Sprite, direction: number): number {
+		let newDirection = direction + 2
+
+		if (this.data.directions.find(d => d === newDirection / 2 * 90) == null) {
+			newDirection = 0
+		}
+		
+		return newDirection
+    }
 }
 
