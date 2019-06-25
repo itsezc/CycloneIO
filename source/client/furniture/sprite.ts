@@ -18,6 +18,9 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private direction!: number
     private color!: number
 
+    private lastClick: number = 0
+    private doubleClick: boolean = false
+
     public constructor(scene: Room, furniture: Furniture) {
         super(scene)
 
@@ -232,6 +235,23 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
         sprite.on('rotate', (s: Phaser.GameObjects.Sprite) => {
             this.direction = this.furniture.getNewDirectionFor(s, this.direction)
+        })
+
+        sprite.on('click', (s: Phaser.GameObjects.Sprite) => {
+            if (this.frameCount - this.lastClick <= 35 && this.lastClick !== 0) {
+                if(!this.doubleClick) {
+                    this.doubleClick = true
+                } else {
+                    this.animation = this.furniture.getNewAnimationFor(s, this.animation)
+                    this.doubleClick = false
+                }
+
+                this.lastClick = 0
+            } else {
+                this.doubleClick = false
+            }
+
+            this.lastClick = this.frameCount
         })
     }
 

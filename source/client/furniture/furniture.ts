@@ -377,9 +377,13 @@ export default class Furniture
 	private setInteractionsFor(sprite: Phaser.GameObjects.Sprite) {
 		sprite.setInteractive()
 
+		sprite.input.cursor = 'pointer'
+
 		sprite.on('pointerdown', (e: Phaser.Input.Pointer) => {
 			if (e.event.shiftKey) {
 				sprite.emit('rotate', sprite)
+			} else {
+				sprite.emit('click', sprite)
 			}
 		}, this)
 	}
@@ -392,6 +396,16 @@ export default class Furniture
 		}
 		
 		return newDirection
+	}
+	
+	public getNewAnimationFor(sprite: Phaser.GameObjects.Sprite, animation: number): number {
+		let newAnimation = ++animation
+
+		if (!this.hasAnimation(newAnimation)) {
+			newAnimation = -1
+		}
+		
+		return newAnimation
     }
 }
 
