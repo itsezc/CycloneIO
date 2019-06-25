@@ -6,7 +6,7 @@
   "scripts": {
     "apollo:schema": "apollo client:download-schema --endpoint http://localhost:8081/graphql ./source/storage/schema.json",
     "apollo:types": "apollo client:codegen --includes ./source/storage/queries.ts --localSchemaFile ./source/storage/schema.json --target typescript --outputFlat ./source/storage/__generated__/types.ts",
-    "build": "npm run server:build",  
+    "build": "npm run server:build",
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",
     "build:resources": "webpack --mode=production",
     "desktop": "electron ./resources/desktop/index.js",

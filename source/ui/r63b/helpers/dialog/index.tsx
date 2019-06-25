@@ -33,12 +33,17 @@ export default class Dialog extends Component<DialogProps, any> {
     private minHeight: number
     private minWidth: number
 
+    private screenHeight: number
+    private screenWidth: number
+
 	constructor(props: DialogProps) {
 		super(props);
 
 		this.styles = props.styles || {}
 		this.minHeight = props.minHeight || props.height;
-		this.minWidth = props.minWidth || props.width;
+        this.minWidth = props.minWidth || props.width;
+        
+        this.handleScreenResize();
 
 		this.state = {
 			isShow: props.show || true,
@@ -55,16 +60,25 @@ export default class Dialog extends Component<DialogProps, any> {
 		}
 	}
 
-	componentDidUpdate(props: any, state: any){
+	componentWillMount(){
 
-        if ((this.state.isDragging && !state.isDragging)  || (this.state.isResizing && !state.isResizing)) {
-            document.addEventListener('mousemove', this.handleMouse)
-            document.addEventListener('mouseup', this.mouseStopEvent)
-            
-        } else if (!this.state.isDragging && state.isDragging) {
-            document.removeEventListener('mousemove', this.handleMouse)
-            document.removeEventListener('mouseup', this.mouseStopEvent)
-        }
+        document.addEventListener('mousemove', this.handleMouse)
+        document.addEventListener('mouseup', this.mouseStopEvent)
+        window.addEventListener('resize', this.handleScreenResize)
+    }
+
+    componentWillUnmount(){
+
+        document.removeEventListener('mousemove', this.handleMouse)
+        document.removeEventListener('mouseup', this.mouseStopEvent)
+        window.removeEventListener('resize', this.handleScreenResize)
+    }
+
+    handleScreenResize = () => {
+
+        console.log("update");
+        this.screenHeight = window.innerHeight;
+        this.screenWidth = window.innerWidth;
     }
 
 	handleDragging = () => {
@@ -102,11 +116,17 @@ export default class Dialog extends Component<DialogProps, any> {
 
         if(this.state.isDragging){
 
+            const top = this.state.style.top + e.movementY
+            const left =  this.state.style.left + e.movementX
+
+            if( top <= 0 || top >= this.screenHeight - this.state.style.height || 
+                left <= 0 || left >= this.screenWidth - this.state.style.width) return
+
             this.setState({...this.state,
                 style: {
                     ...this.state.style,
-                    top: this.state.style.top + e.movementY,
-                    left: this.state.style.left + e.movementX
+                    top,
+                    left
                 }
             })
 
@@ -114,13 +134,13 @@ export default class Dialog extends Component<DialogProps, any> {
             
             var width, height;
 
-            var constraintX = this.props.axis == 'x' || this.props.axis == 'both';
-            var constraintY = this.props.axis == 'y' || this.props.axis == 'both';
+            var constraintX = this.props.axis == 'x' || this.props.axis == 'both'
+            var constraintY = this.props.axis == 'y' || this.props.axis == 'both'
 
-            width = this.state.style.width + e.movementX;
+            width = this.state.style.width + e.movementX
 			if(width < this.minWidth) return
 
-            height = this.state.style.height + e.movementY;
+            height = this.state.style.height + e.movementY
 			if(height < this.minHeight) return
 			
 

@@ -1,7 +1,7 @@
 .wallet
 	position fixed
 	width 190px
-	right 5px
+	right 4px
 	top 0
 	z-index 1
 	background-color:rgba(40, 40, 40, .65)
@@ -44,6 +44,7 @@
 					float right
 					width 15px
 					height 15px
+					margin-left 3px
 
 				&.icon-credit::before
 					background-image url('hotelview/notifications/icons/credit.png')
@@ -88,7 +89,7 @@
 		justify-content center
 		align-items center
 		border-radius 8px
-		background #403830
+		background alpha(#403830, .8)
 		width 48px
 		margin 0 6px
 		color #03babd
@@ -107,7 +108,7 @@
 		display flex
 		flex-direction column
 		justify-content space-between
-		border-left 1px solid rgba(75, 75, 75, .25)
+		border-left 1px solid alpha(#403830, .7)
 		padding-left 6px
 
 		&>*
