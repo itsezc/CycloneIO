@@ -147,7 +147,7 @@ export default class Room extends Phaser.Scene {
             furnitures: [
                 {
                     name: 'CF_50_goldbar',
-                    roomX: 1,
+                    roomX: 0,
                     roomY: 1
                 },
                 {
@@ -156,32 +156,34 @@ export default class Room extends Phaser.Scene {
                     roomY: 3,
                     direction: 2
                 },
-                // {
-                //     name: 'ads_cllava2',
-                //     roomX: 4,
-                //     roomY: 0,
-                //     direction: 0,
-                //     animation: 0
-                // },
-                // {
-                //     name: 'ads_cllava2',
-                //     roomX: 4,
-                //     roomY: 1,
-                //     direction: 0,
-                // },
-                // {
-                //     name: 'ads_calip_fan',
-                //     roomX: 4,
-                //     roomY: 2,
-                //     direction: 2
-                // },
-                // {
-                //     name: 'ads_calip_fan',
-                //     roomX: 4,
-                //     roomY: 3,
-                //     direction: 2,
-                //     animation: 1
-                // }
+               // {
+               //     name: 'ads_cllava2',
+               //     roomX: 4,
+               //     roomY: 0,
+               //     direction: 0,
+               //     animation: 0
+               // },
+                {
+                    name: 'holo_nelly',
+                    roomX: 2,
+                    roomY: 0,
+                    direction: 0,
+                    animation: 1
+                },
+               // {
+               //     name: 'diamond_dragon',
+               //     roomX: 4,
+               //     roomY: 3,
+               //     direction: 2,
+               //     animation: 2
+               // },
+               // {
+               //     name: 'ads_calip_fan',
+               //     roomX: 4,
+               //     roomY: 3,
+               //     direction: 2,
+               //     animation: 1
+               // }
             ]
         }
 

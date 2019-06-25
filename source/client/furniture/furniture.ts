@@ -281,6 +281,10 @@ export default class Furniture
 				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name, this.data.name + '_' + sourceName + '.png')
 				layerSprite.setOrigin(0, 0)
 
+				if (layerSprite.frame.name !== this.data.name + '_' + sourceName + '.png') {
+					return undefined
+				}
+
 				//console.log(this.data.name + '_' + sourceName + '.png', frame)
 
 				if (shadow) {
