@@ -21,10 +21,13 @@ export default class RoomPlayer {
 	 * TODO: player walking animation
 	 */
 	addPlayerToRoom(playerId: any, playerX: any, playerY: any) {
+		console.log(playerX, playerY)
 		var xLocation = this.scene.getScreenX(playerX, playerY)
 		var yLocation = this.scene.getScreenY(playerX, playerY)
 
 		this.players[playerId] = this.scene.physics.add.sprite(xLocation + 32, yLocation - 28, 'avatar').setDepth(RoomObjectDepth.FIGURE)
+
+		console.log(xLocation, yLocation)
 	}
 
 	/**
@@ -40,6 +43,12 @@ export default class RoomPlayer {
 	}
 
 	movePlayer(playerId: any, path: any, destination: any) {
+		var isoDestinationX = this.scene.getScreenX(destination.x, destination.y)
+		var isoDestinationY = this.scene.getScreenY(destination.x, destination.y)
+
+		this.players[playerId].play('wlk_2')
+
+		var tweens = []
 		for (var i = 1;i < path.length;i++) {
 			var nextTileX = path[i][0]
 			var nextTileY = path[i][1]
@@ -94,15 +103,25 @@ export default class RoomPlayer {
 
 			console.log({ nextTileX: nextTileX, nextTileY: nextTileY, isoNextTileX: isoNextTileX, isoNextTileY: isoNextTileY })
 
-			var isoDestination = { x: isoNextTileX + 84, y: isoNextTileY - 16 }
+			var isoNextTile = { x: isoNextTileX + 64, y: isoNextTileY - 28 }
+
+			console.log(isoNextTile)
 
 			if (!this.scene.avatarIsMoving) {
-				this.scene.physics.moveTo(this.players[playerId], isoDestination.x, isoDestination.y, 70)
+				tweens.push({
+					targets: this.players[playerId],
+					x: { value: this.scene.getScreenX(nextTileX, nextTileY) + 30, duration: 450 },
+					y: { value: this.scene.getScreenY(nextTileX, nextTileY) - 30, duration: 450 }
+				});
+
+				//this.scene.physics.moveTo(this.players[playerId], isoNextTile.x, isoNextTile.y, 70)
 			}
 
-			this.scene.avatarIsMoving = true
+			// this.scene.add.sprite(isoNextTile.x, isoNextTile.y, 'avatar')
 
-			this.scene.avatarId = playerId
+			// this.scene.avatarIsMoving = true
+
+			// this.scene.avatarId = playerId
 
 			this.scene.time.addEvent(
 				{
@@ -112,9 +131,18 @@ export default class RoomPlayer {
 					}
 				}
 			)
-
-			this.scene.tileDestination = { x: isoNextTileX, y: isoNextTileY}
 		}
+
+		this.scene.tweens.timeline({
+			tweens: tweens,
+			onComplete: () => {
+				this.players[playerId].anims.stop()
+				this.players[playerId].setTexture('avatar')
+				this.players[playerId].setFrame(`std_2.png`)
+			}
+		})
+
+		this.scene.tileDestination = { x: isoDestinationX, y: isoDestinationY }
 
 	}
 }

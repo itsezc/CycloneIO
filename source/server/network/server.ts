@@ -73,7 +73,7 @@ export default class Server {
 				]
 			}
 		]
-		this.players = []
+		this.players = {}
 
 		this.socketIO = SocketIO(this.hapi.listener)
 
@@ -210,7 +210,12 @@ export default class Server {
 		var playerId = Socket.id
 		var player = this.players[playerId]
 
-		this.socketIO.sockets.emit('joinRoom', playerId, player.x, player.y)
+		Socket.broadcast.emit('joinRoom', playerId, player.x, player.y)
+
+		var players = this.getAllPlayers()
+		console.log(players)
+
+		Socket.emit('currentPlayers', players)
 
 		// console.log('Players', this.players)
 		//Socket.emit('currentPlayers', this.getAllPlayers())
@@ -275,7 +280,7 @@ export default class Server {
 	 */
 	disconnectPlayer(Socket: SocketIO.Socket, player: any) {
 		delete this.players[Socket.id]
-		Socket.broadcast.in(player.roomJoined).emit('playerDisconnected', Socket.id)
+		Socket.broadcast.emit('playerDisconnected', Socket.id)
 		Logger.info(`User ${Socket.id} disconnected`)
 	}
 

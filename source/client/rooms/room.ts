@@ -161,39 +161,39 @@ export default class Room extends Phaser.Scene {
                 },
                 {
                     name: 'diamond_dragon',
-                    roomX: 3,
-                    roomY: 2,
-                    direction: 2,
+                    roomX: 2,
+                    roomY: 3,
+                    direction: 3,
                     animation: 2
                 }
-               // {
-               //     name: 'ads_cllava2',
-               //     roomX: 4,
-               //     roomY: 0,
-               //     direction: 0,
-               //     animation: 0
-               // },
-               // {
-               //    name: 'holo_nelly',
-               //    roomX: 2,
-               //    roomY: 0,
-               //    direction: 0,
-               //    animation: 1
-               // },
-               // {
-               //     name: 'diamond_dragon',
-               //     roomX: 4,
-               //     roomY: 3,
-               //     direction: 2,
-               //     animation: 2
-               // },
-               // {
-               //     name: 'ads_calip_fan',
-               //     roomX: 4,
-               //     roomY: 3,
-               //     direction: 2,
-               //     animation: 1
-               // }
+                // {
+                //     name: 'ads_cllava2',
+                //     roomX: 4,
+                //     roomY: 0,
+                //     direction: 0,
+                //     animation: 0
+                // },
+                // {
+                //    name: 'holo_nelly',
+                //    roomX: 2,
+                //    roomY: 0,
+                //    direction: 0,
+                //    animation: 1
+                // },
+                // {
+                //     name: 'diamond_dragon',
+                //     roomX: 4,
+                //     roomY: 3,
+                //     direction: 2,
+                //     animation: 2
+                // },
+                // {
+                //     name: 'ads_calip_fan',
+                //     roomX: 4,
+                //     roomY: 3,
+                //     direction: 2,
+                //     animation: 1
+                // }
             ]
         }
 
@@ -395,6 +395,19 @@ export default class Room extends Phaser.Scene {
             console.log('moving player, current data: \n' + JSON.stringify({ playerId: playerId, path: path, destination: destination }))
             this.roomPlayer.movePlayer(playerId, path, destination)
         })
+
+        this._socket.on('currentPlayers', (players: any) => {
+            Object.keys(players).forEach((playerId: any) => {
+                var player = players[playerId]
+                this.roomPlayer.addPlayerToRoom(playerId, player.x, player.y);
+            })
+        })
+
+        this._socket.on('playerDisconnected', (playerId:any) => {
+            this.roomPlayer.removePlayerFromRoom(playerId);
+          });
+        
+
         /*         this._socket.on('currentPlayers', (players: any) => {
                     Object.keys(players).forEach((playerId) => {
                         var player = players[playerId];
@@ -572,24 +585,25 @@ export default class Room extends Phaser.Scene {
      * @override
      */
     public update(time: number, deltaTime: number): void {
-        if (this.tileDestination)
-        {
-            var player = this.roomPlayer.players[this.avatarId]
+        // if (this.tileDestination)
+        // {
+        //     var player = this.roomPlayer.players[this.avatarId]
 
-            console.log({ tileDestination: this.tileDestination, playerX: player.x, playerY: player.y,
-                roundedPlayerX: Math.round(player.x), roundedPlayerY: Math.round(player.y) })
+        //     console.log({ tileDestinationX: this.tileDestination.x, tileDestinationY: this.tileDestination.y, playerX: Math.round(player.x) - 32, playerY: Math.round(player.y) + 27 })
+        //     var playerXCoordinates = player.x - 32
+        //     var playerYCoordinates = player.y + 27
 
-            if (Math.round(player.x) === this.tileDestination.x 
-                && Math.round(player.y) === this.tileDestination.y)
-            {
-                player.body.stop()
-                player.anims.stop()
+        //     if (playerXCoordinates == this.tileDestination.x && playerYCoordinates == this.tileDestination.y)
+        //     {
+        //         console.log('stopped')
+        //         player.body.stop()
+        //         player.anims.stop()
 
-                this.tileDestination = undefined
-                // player.setTexture('avatar')
-                // player.setFrame(`std_${this.avatarRotation}.png`)
-            }
-        }
+        //         this.tileDestination = undefined
+        //         // player.setTexture('avatar')
+        //         // player.setFrame(`std_${this.avatarRotation}.png`)
+        //     }
+        // }
         /* 
                  */
         /*         if (this.avatarIsWalking)
@@ -600,6 +614,14 @@ export default class Room extends Phaser.Scene {
         //console.log(time, deltaTime)
         // this.camera3d.transformChildren(this.transform);
     }
+
+    public mapToIsometric(mapCoordinates: any) {
+        var isometricCoordinates = new Phaser.Geom.Point()
+        isometricCoordinates.x = (mapCoordinates.x - mapCoordinates.y) * 32
+        isometricCoordinates.y = (mapCoordinates.x + mapCoordinates.y) * 16
+        return (isometricCoordinates)
+    }
+
 
     public getScreenX(x: number, y: number): number {
         return (x - y) * 32
