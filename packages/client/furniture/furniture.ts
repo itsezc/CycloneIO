@@ -260,6 +260,12 @@ export default class Furniture
 		return this.data.assets[assetName] != null
 	}
 
+	private frameExists(frameName: string) {
+		const frames = Object.keys(this.scene.textures.get(this.data.name).frames)
+
+		return frames.find(f => f === frameName) != null
+	}
+
 	public getSpriteFrom(size: number | string, shadow: boolean, direction?: number, layer?: number, frame?: number): any
 	{
 		let assetName = shadow ? this.assetNameFrom(size, -1, direction, 0) : this.assetNameFrom(size, layer, direction, frame)
@@ -277,14 +283,21 @@ export default class Furniture
 			{
 				// Offset / Positioning for each Layer
 				//	console.log(sourceName)
-				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name, this.data.name + '_' + sourceName + '.png')
+				const frameName = this.data.name + '_' + sourceName + '.png'
+
+				if (!this.frameExists(frameName)) {
+					return undefined
+				}
+
+				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name, frameName)
 				layerSprite.setOrigin(0, 0)
 
 				this.setInteractionsFor(layerSprite)
 
-				if (layerSprite.frame.name !== this.data.name + '_' + sourceName + '.png') {
+				if (layerSprite.frame.name !== frameName) {
 					return undefined
 				}
+
 
 				//console.log(this.data.name + '_' + sourceName + '.png', frame)
 
