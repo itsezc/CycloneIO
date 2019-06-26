@@ -1,0 +1,18 @@
+
+@import './styles/main';
+
+@import './states/loading/index';
+@import './states/hotel/index';
+@import './states/room/index';
+
+@import './modules/toolbar/index';
+@import './modules/profile-panel/index';
+@import './modules/informations-panel/index';
+@import './modules/web-action/index';
+@import './modules/chat-box/index';
+@import './modules/chat-bubble/index';
+@import './modules/room-details/index';
+@import './modules/click-infos/index';
+
+@import './styles/components/more';
+@import './components/scrollbar/index';

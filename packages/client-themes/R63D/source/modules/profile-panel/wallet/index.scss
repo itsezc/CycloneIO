@@ -1,0 +1,113 @@
+.wallet {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+    
+    .icon{
+        filter: drop-shadow(0 1px 0 rgba(0, 0, 0, .3));
+    }
+
+    .wallet-currencies, .wallet-actions{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wallet-currencies{
+
+        span{
+            height: 19px;
+            width: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: right;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            text-shadow: 0 1px rgba(0, 0, 0, .3);
+            cursor: pointer;
+
+            &.currency-diamond{
+                color: #37c9ea;
+
+                &:hover{
+                    color: #84fefe;
+
+                    .icon-diamond:before{
+                        background-image: url('/icons/diamond_glow.png');
+                    }
+                }
+            }
+
+            &.currency-credit{
+                color: #d4ae21;
+
+                &:hover{
+                    color: #f1e966;
+
+                    .icon-credit:before{
+                        background-image: url('/icons/credit_glow.png');
+                    }
+                }
+            }
+
+            &.currency-ducket{
+                color: #cd81c9;
+
+                &:hover{
+                    color: #fed3fe;
+
+                    .icon-ducket:before{
+                        background-image: url('/icons/ducket_glow.png');
+                    }
+                }
+            }
+
+            .icon{
+                margin-left: 5px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .wallet-club{
+        margin: 0 5px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 4px;
+        width: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #06b4b6;
+        cursor: pointer;
+
+        .icon-hc{
+            margin-bottom: 4px;
+        }
+
+        &:hover{
+            color: #4cfefe;
+
+            .icon-hc:before{
+                background-image: url('/icons/hc_glow.png');
+            }
+        }
+    }
+
+    .wallet-actions{
+        padding-left: 5px;
+        border-left: 1px solid rgba(40, 40, 40, .15);
+
+        &>*{
+            width: 61px;
+            text-align: center;
+        }
+    }
+}

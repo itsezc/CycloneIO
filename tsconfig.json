@@ -25,7 +25,7 @@
 		"outDir": "./build",
 	},
 	"include": [
-		"./source/**/*"
+		"./packages/**/*"
 	],
 	"exclude": [
 		"node_modules"

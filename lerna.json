@@ -1,6 +1,10 @@
 {
   "packages": [
-    "source/*"
+	"packages/server",
+	"packages/housekeeping",
+	"packages/desktop",
+	"packages/mobile",
+	"packages/client-themes/*"
   ],
   "npmClient": "npm",
   "command": {

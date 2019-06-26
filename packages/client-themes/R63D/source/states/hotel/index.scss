@@ -1,0 +1,12 @@
+.hotel {
+    height: calc(100vh - 50px);
+    background:
+        url('http://habboo-a.akamaihd.net/c_images/reception/may19_background_left.png'), 
+		url('http://habboo-a.akamaihd.net/c_images/reception/background_right_easter2016.png'),
+		url('/hotelview/drape.png'),
+        url('http://habboo-a.akamaihd.net/c_images/reception/jan19_background_gradient.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
+	background-position: left bottom, right bottom, 125px top;
+    background-size: auto, auto, auto, 1% 100%;
+    image-rendering: pixelated;
+}

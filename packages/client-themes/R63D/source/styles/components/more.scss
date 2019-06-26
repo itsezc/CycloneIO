@@ -1,0 +1,35 @@
+.more {
+    display: block;
+    height: 100%;
+    width: 14px;
+	background-color: #3a3832;
+	border-radius: 8px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+    
+    &.is-invert {
+        @include flip;
+    }
+
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 4px;
+		background-image: url('/hotelview/toolbar/arrow.png');
+		image-rendering: pixelated;
+		margin-top: -50%;
+		height: 8px;
+        width: 6px;
+    }
+
+	&.is-close{
+		&::after {
+			@include flip;
+        }
+    }
+}

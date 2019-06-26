@@ -1,0 +1,8 @@
+{
+    "name": "@cyclone/client-theme-r26",
+    "author": "Cyclone team",
+    "main": "source/app.js",
+    "scripts": {
+        "dev": "webpack-dev-server --host 0.0.0.0 --open"
+    }
+}

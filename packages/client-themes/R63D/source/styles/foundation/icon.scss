@@ -1,0 +1,288 @@
+.icon{
+    display: inline-flex;
+    align-items: center;
+    font-style: normal;
+
+    &:before{
+        display: inline-block;
+        image-rendering: pixelated;
+        content: '';
+    }
+
+    $icons: (
+        inventory: (
+            image: 'hotelview/toolbar/icons/inventory.png',
+            width: 44,
+            height: 41
+        ),
+
+        catalog: (
+            image: 'hotelview/toolbar/icons/catalog.png',
+            width: 37,
+            height: 37
+        ),
+
+        buildersclub: (
+            image: 'hotelview/toolbar/icons/buildersclub.png',
+            width: 32,
+            height: 33
+        ),
+
+        rooms: (
+            image: 'hotelview/toolbar/icons/rooms.png',
+            width: 44,
+            height: 30
+        ),
+
+        house: (
+            image: 'hotelview/toolbar/icons/house.png',
+            width: 32,
+            height: 30
+        ),
+
+        friendall: (
+            image: 'hotelview/toolbar/icons/friend_all.png',
+            width: 32,
+            height: 33
+        ),
+
+        friendsearch: (
+            image: 'hotelview/toolbar/icons/friend_search.png',
+            width: 29,
+            height: 33
+        ),
+
+        sendmessage: (
+            image: 'hotelview/toolbar/icons/sendmessage.png',
+            width: 20,
+            height: 21
+        ),
+
+        profile: (
+            image: 'hotelview/toolbar/icons/profile.png',
+            width: 21,
+            height: 21,
+
+            small: (
+                image: 'icons/small_profile.png',
+                width: 13,
+                height: 11
+            ),
+
+            hover: (
+                image: 'icons/small_profile_glow.png'
+            )
+        ),
+
+        joinroom: (
+            image: 'hotelview/toolbar/icons/joinroom.png',
+            width: 21,
+            height: 21
+        ),
+
+        habbo: (
+            image: 'hotelview/toolbar/icons/habbo.png',
+            width: 28,
+            height: 28,
+            
+            small: (
+                image: 'icons/small_habbo.png',
+                height: 16,
+                width: 16
+            )
+        ),
+
+        camera: (
+            image: 'hotelview/toolbar/icons/camera.png',
+            width: 38,
+            height: 45
+        ),
+
+        disable-fs: (
+            image: 'icons/disable_fs.png',
+            width: 15,
+            height: 14,
+        ),
+
+        fs: (
+            image: 'icons/fullscreen.png',
+            width: 15,
+            height: 14,
+        ),
+
+        diamond: (
+            image: 'icons/diamond.png',
+            width: 15,
+            height: 15
+        ),
+
+        credit: (
+            image: 'icons/credit.png',
+            width: 15,
+            height: 15
+        ),
+
+        ducket: (
+            image: 'icons/ducket.png',
+            width: 15,
+            height: 15
+        ),
+
+        hc: (
+            image: 'icons/hc.png',
+            width: 15,
+            height: 15
+        ),
+
+        exit: (
+            image: 'icons/exit.svg',
+            width: 13,
+            height: 11
+        ),
+
+        gear: (
+            image: 'icons/gear.svg',
+            width: 12,
+            height: 12
+        ),
+
+        help: (
+            image: 'icons/question-icon.svg',
+            width: 5,
+            height: 9
+        ),
+
+        talents: (
+            image: 'icons/talents.png',
+            width: 31,
+            height: 30
+        ),
+
+        achievements: (
+            image: 'icons/achievements.png',
+            width: 31,
+            height: 30
+        ),
+
+        minimail: (
+            image: 'icons/minimail.png',
+            width: 32,
+            height: 26
+        ),
+
+        myprofile : (
+            image: 'icons/myprofile.png',
+            width: 32,
+            height: 30
+        ),
+
+        myrooms: (
+            image: 'icons/myrooms.png',
+            width: 30,
+            height: 30
+        ),
+
+        clothes: (
+            image: 'icons/clothes.png',
+            width: 27,
+            height: 30
+        ),
+
+        forums: (
+            image: 'icons/forums.png',
+            width: 32,
+            height: 30
+        ),
+
+        carret-down: (
+            image: 'icons/carret_down.png',
+            width: 10,
+            height: 5
+        ),
+
+        messages: (
+            image: 'icons/messages.png',
+            width: 17,
+            height: 19,
+            
+            small: (
+                image: 'icons/small_messages.png',
+                height: 20,
+                width: 17
+            )
+        ),
+
+        gear-detailed: (
+            image: 'icons/gear_detailed.png',
+            width: 21,
+            height: 21
+        ),
+
+        zoom: (
+            image: 'icons/zoom.png',
+            width: 13,
+            height: 21
+        ),
+
+        arrow-right: (
+            image: 'icons/arrow_right.png',
+            width: 16,
+            height: 13
+        ),
+
+        close: (
+            image: 'icons/close.svg',
+            width: 9,
+            height: 9
+        ),
+
+        close-thin: (
+            image: 'icons/close_thin.svg',
+            width: 7,
+            height: 7
+        )
+    );
+
+    @each $iconName, $iconData in $icons {
+
+        &.icon-#{$iconName}{
+
+            &:before {
+                background-image: url('/#{map-get($iconData, "image")}');
+                width: map-get($iconData, "width") + unquote("px");
+                height: map-get($iconData, "height") + unquote("px");
+            }
+
+            @if (map-has-key($iconData, "small")){
+                &.icon-small:before {
+                    background-image: url('/#{map-get(map-get($iconData, "small"), "image")}');
+                    width: map-get(map-get($iconData, "small"), "width") + unquote("px");
+                    height: map-get(map-get($iconData, "small"), "height") + unquote("px");
+                }
+            }
+
+            @if (map-has-key($iconData, "hover")){
+                &:hover {
+                    cursor: pointer;
+                    
+                    &:before {
+                        background-image: url('/#{map-get(map-get($iconData, "hover"), "image")}');
+                    }
+                }
+            }
+        }
+    }
+
+    &.icon-message{
+        
+        &.is-unsee::before{
+            background-image: url('/hotelview/toolbar/icons/message_unsee.gif')
+        }
+
+		&:before{
+			background-image: url('/hotelview/toolbar/icons/message.png');
+			width: 26px;
+            height: 31px;
+        }
+    }
+}
