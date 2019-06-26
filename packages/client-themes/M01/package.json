@@ -1,0 +1,10 @@
+{
+    "name": "@cyclone/client-theme-m01",
+    "author": "Cyclone team",
+    "main": "source/mobile.tsx",
+    "scripts": {
+        "dev": "webpack-dev-server --host 0.0.0.0 --open",
+        "android": "npm run dev",
+        "ios": "npm run dev"
+    }
+}
