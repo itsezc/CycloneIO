@@ -290,81 +290,81 @@ export default class Room extends Phaser.Scene {
 
         this.add.existing(roomSprite)
 
-        room.furnitures.forEach((furnitureRoomData) => {
-            this.load.setPath(Path.join('furniture_new', furnitureRoomData.name))
+//         room.furnitures.forEach((furnitureRoomData) => {
+//             this.load.setPath(Path.join('furniture_new', furnitureRoomData.name))
 
-            this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
+//             this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
 
-            this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
+//             this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
 
-            this.load.start()
+//             this.load.start()
 
-            this.load.once('complete', () => {
-                //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
-                //console.log(furnitureRoomData)
+//             this.load.once('complete', () => {
+//                 //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
+//                 //console.log(furnitureRoomData)
 
-                var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
+//                 var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
 
-                var furniture = new Furniture(this, furnitureData)
-                var furnitureSprite = new FurnitureSprite(this, furniture)
+//                 var furniture = new Furniture(this, furnitureData)
+//                 var furnitureSprite = new FurnitureSprite(this, furniture)
 
-                if (furnitureRoomData.animation !== undefined) {
-                    console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
-                    furnitureSprite.animateAndStart(furnitureRoomData.animation)
-                } else {
-                    furnitureSprite.start()
-                }
+//                 if (furnitureRoomData.animation !== undefined) {
+//                     console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
+//                     furnitureSprite.animateAndStart(furnitureRoomData.animation)
+//                 } else {
+//                     furnitureSprite.start()
+//                 }
 
-                if (furnitureRoomData.color) {
-                    furnitureSprite.setColor(furnitureData.color)
-                }
+//                 if (furnitureRoomData.color) {
+//                     furnitureSprite.setColor(furnitureData.color)
+//                 }
 
-                furnitureSprite.setDirection(furnitureRoomData.direction || 0)
+//                 furnitureSprite.setDirection(furnitureRoomData.direction || 0)
 
-                roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
-            })
+//                 roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
+//             })
 
-            roomSprite.start()
+//             roomSprite.start()
 
-            this.add.existing(roomSprite)
+//             this.add.existing(roomSprite)
 
-            this.camera.setZoom(4)
+//             this.camera.setZoom(4)
 
-            // Furniture Rotation
-            if (this.input.enabled) {
-                this.input.keyboard.on('keydown-SHIFT', () => {
-                    roomSprite.on('pointerdown', () => {
-                        ///console.log(roomSprite)
-                    }, roomSprite)
-                })
-            }
+//             // Furniture Rotation
+//             if (this.input.enabled) {
+//                 this.input.keyboard.on('keydown-SHIFT', () => {
+//                     roomSprite.on('pointerdown', () => {
+//                         ///console.log(roomSprite)
+//                     }, roomSprite)
+//                 })
+//             }
 
 
-            /* //roomSprite => 1 instance of a furniture
-            this.add.existing(roomSprite)
+//             /* //roomSprite => 1 instance of a furniture
+//             this.add.existing(roomSprite)
 
-            var furniture = new Furniture(this, furnitureData)
+//             var furniture = new Furniture(this, furnitureData)
 
-            let furnitureSprite = new FurnitureSprite(this, furniture)
+//             let furnitureSprite = new FurnitureSprite(this, furniture)
 
-            if (furnitureRoomData.animation)
-            {
-                furnitureSprite.animateAndStart(furnitureRoomData.animation);
-            }
+//             if (furnitureRoomData.animation)
+//             {
+//                 furnitureSprite.animateAndStart(furnitureRoomData.animation);
+//             }
 
-            if (furnitureRoomData.color)
-            {
-                furnitureSprite.setColor(furnitureRoomData.color);
-            }
+//             if (furnitureRoomData.color)
+//             {
+//                 furnitureSprite.setColor(furnitureRoomData.color);
+//             }
 
-            if (furnitureRoomData.direction)
-            {
-                furnitureSprite.setDirection(furnitureRoomData.direction);
-            }
+//             if (furnitureRoomData.direction)
+//             {
+//                 furnitureSprite.setDirection(furnitureRoomData.direction);
+//             }
 
-            roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY); 
- */
-        })
+//             roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY); 
+//  */
+//         })
 
         this._camera.setZoom(1)
 
@@ -591,25 +591,28 @@ export default class Room extends Phaser.Scene {
      * @override
      */
     public update(time: number, deltaTime: number): void {
-        // if (this.tileDestination)
-        // {
-        //     var player = this.roomPlayer.players[this.avatarId]
+        if (this.tileDestination)
+        {
+            var player = this.roomPlayer.players[this.avatarId]
 
-        //     console.log({ tileDestinationX: this.tileDestination.x, tileDestinationY: this.tileDestination.y, playerX: Math.round(player.x) - 32, playerY: Math.round(player.y) + 27 })
-        //     var playerXCoordinates = player.x - 32
-        //     var playerYCoordinates = player.y + 27
+            
+            var playerXCoordinates = Math.floor(player.x - 30)
+            var playerYCoordinates = Math.floor(player.y + 30)
 
-        //     if (playerXCoordinates == this.tileDestination.x && playerYCoordinates == this.tileDestination.y)
-        //     {
-        //         console.log('stopped')
-        //         player.body.stop()
-        //         player.anims.stop()
+            //console.log({ tileDestinationX: this.tileDestination.x, tileDestinationY: this.tileDestination.y, 
+              //  playerX: playerXCoordinates, playerY: playerYCoordinates })
 
-        //         this.tileDestination = undefined
-        //         // player.setTexture('avatar')
-        //         // player.setFrame(`std_${this.avatarRotation}.png`)
-        //     }
-        // }
+            if (playerXCoordinates === this.tileDestination.x && playerYCoordinates === this.tileDestination.y)
+            {
+
+                player.body.stop()
+                player.anims.stop()
+
+                this.tileDestination = undefined
+                player.setTexture('avatar')
+                player.setFrame(`std_2.png`)
+            }
+        }
         /* 
                  */
         /*         if (this.avatarIsWalking)
