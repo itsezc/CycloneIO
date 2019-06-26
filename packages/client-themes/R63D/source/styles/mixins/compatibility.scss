@@ -1,0 +1,16 @@
+@mixin flip {
+    -moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+@mixin userdrag($value) {
+	-webkit-user-drag: $value;
+	-khtml-user-drag: $value;
+	-moz-user-drag: $value;
+	-o-user-drag: $value;
+	user-drag: $value;
+}

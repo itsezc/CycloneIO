@@ -1,0 +1,59 @@
+import React from 'react';
+
+export default class RoomDetails extends React.PureComponent {
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            isOpen: false,
+            isInformationsOpen: true
+        }
+    }
+
+    componentWillMount = () => {
+        this.startTimerCloseInformations();
+    }
+
+    startTimerCloseInformations = () => {
+
+        setTimeout(() => {
+            this.setState({ isInformationsOpen: false });
+        }, 2000);
+    }
+
+    toggleOpen = () => {
+        
+        this.setState({ isOpen: !this.state.isOpen }, () => {
+            
+            if(this.state.isOpen){
+                this.setState({ isInformationsOpen: true }, this.startTimerCloseInformations);
+            }
+        });
+    }
+
+    render(){
+        return (
+            <div className={"room-details" + (this.state.isOpen ? " is-open": "")}>
+                <i className={"more"  + (!this.state.isOpen ? " is-close" : '')} onClick={this.toggleOpen}></i>
+
+                <div className="room-details-actions">
+                    <a href="#"><i className="icon icon-gear-detailed"></i>Settings</a>
+                    <a href="#"><i className="icon icon-zoom"></i>Zoom</a>
+                    <a href="#"><i className="icon icon-small icon-messages"></i>Chat history</a>
+                    <a href="#"><i className="icon icon-arrow-right"></i>Link to this room</a>
+
+                    <div className="room-details-history">
+                        <span className="history-btn history-previous"></span>
+                        <span className="history-btn history-next"></span>
+                    </div>
+                </div>
+
+                <div className={"room-details-informations" + (this.state.isInformationsOpen ? " is-open": "")}>
+                    <h2>!!!</h2>
+                    <small>by EZ-C2</small>
+                </div>
+            </div>
+        )
+    }
+}

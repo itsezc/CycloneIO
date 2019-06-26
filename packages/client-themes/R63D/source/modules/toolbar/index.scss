@@ -1,0 +1,152 @@
+.toolbar {
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 2px 0;
+	height: 50px;
+	border-top: 2px solid;
+	border-bottom: 1px solid;
+	border-color: #53524f;
+	background-color: #2e2e2c;
+	box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .6);
+
+	.toolbar-actions, .toolbar-friends{
+		.icon, .user img{
+			cursor: pointer;
+			filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, .20))
+		}
+	}
+
+	.toolbar-actions, .toolbar-friends, .toolbar-friends-content, .toolbar-icons-content{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.toolbar-actions{
+		border-right: 1px solid #454442;
+
+		.user{
+			height: 100%;
+			width: 58px;
+			margin-left: -10px;
+			
+			img{
+				height: 100%;
+				width: 64px;
+				display: block;
+				object-fit: none;
+				object-position: 50% -20px;
+			}
+		}
+	}
+
+	.toolbar-user-actions {
+		display: none;
+		position: absolute;
+		height: 54px;
+		width: 500px;
+		background-color: #2a2823;
+		border: 1px solid #000;
+		left: 4px;
+		top: -53px;
+		flex-direction: row;
+		justify-content: space-around;
+		box-shadow: inset 0 0 0 2px #3a3832, 0 1px 0 0 #000;
+		border-radius: 4px;
+		padding: 4px 0;
+		z-index: 2;
+
+		&.is-active {
+			display: flex;
+		}
+
+		span.icon {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 9px;
+
+			&:hover{
+				color: #21b9d8;
+
+				&:before{
+					-webkit-filter: none;
+					filter: none;
+				}
+			}
+
+			&:before {
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+			}
+		}
+	}
+
+	.toolbar-icons-content{
+		padding: 0 14px;
+		height: 100%;
+
+		&>*{
+			position: relative;
+			transition: all .12s;
+			bottom: 0;
+
+			&:active{
+				opacity: .65;
+				bottom: 0!important;
+			}
+
+			&:hover{
+				bottom: 2px;
+
+				&:before, img{
+					filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, .40))
+				}
+			}
+
+			&:not(:last-child){
+				margin-right: 15px;
+			}
+		}
+
+
+		.notification{
+			position: absolute;
+			top: 0;
+			right: -3px;
+			height: 17px;
+			min-width: 17px;
+			background-color: #ac1d19;
+			color: #fff;
+			border-radius: 5px;
+			font-style: normal;
+			font-weight: 100;
+			font-size: 10px;
+			text-align: center;
+			line-height: 15px;
+			border: 1px solid #000;
+			box-shadow: inset 0 0 0 1px #ed2823, 0 1px 0 0 #000;
+			z-index: 1;
+		}
+	}
+
+	.toolbar-friends {
+		border-left: 1px solid #454442;
+
+		@import './friendSlot/index';
+
+		.toolbar-friends-content{
+			margin-right: 14px;
+			align-items: flex-end;
+			height: 35px;
+		}
+	}
+}

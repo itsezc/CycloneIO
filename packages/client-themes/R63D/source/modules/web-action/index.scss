@@ -1,0 +1,109 @@
+.web_actions{
+    position: fixed;
+    left: 14px;
+    top: 14px;
+    z-index: 10;
+	display: flex;
+	flex-direction: row;
+
+	.action-item {
+		height: 30px;
+		background: #FFB900;
+		border: 2px solid #FFEA00;
+		border-radius: 5px;
+		box-shadow: 0 3px 0 1px rgba(0,0,0,.3);
+		outline: none;
+		cursor: pointer;
+		padding: 0 6px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		&:first-child{
+			border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+		&:last-child{
+			border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+	
+		&:not(:last-child){
+            margin-right: 4px;
+        }
+
+		&:hover{
+			border-color: #FFFD70;
+			background: #FFD400;
+
+			.action-item-expand{
+				width: 32px;
+                padding-left: 6px;
+            }
+        }
+
+		&:active{
+			box-shadow: 0 1px 0 1px rgba(0,0,0,.3);
+			margin-top: 2px;
+			background-color: #f89400;
+            border-color: #ffce37;
+        }
+
+		&.action-item-arrow{
+			border-radius: 0 5px 5px 0;
+			border-width: 2px 2px 2px 1px;
+			margin-left: 15px;
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;
+			box-shadow: none;
+			filter: drop-shadow(-1px 4px 0 rgba(0, 0, 0, .3));
+
+			&:active {
+				&:before {
+                    border-color: transparent #ffce37 transparent transparent;
+                }
+
+				&:after {
+                    border-color: transparent #f89400 transparent transparent;
+                }
+            }
+
+			&:hover:not(:active) {
+				&:before {
+                    border-color: transparent #fffd70 transparent transparent;
+                }
+
+				&:after {
+                    border-color: transparent #ffd400 transparent transparent;
+                }
+            }
+
+			&:before, &:after {
+				content: '';
+				position: absolute;
+                border-style: solid;
+            }
+
+			&:before {
+				border-width: 15px 15px 15px 0;
+				border-color: transparent #ffea00 transparent transparent;
+                left: -16px;
+            }
+			
+			&:after {
+                border-width: 13px 13px 13px 0;
+				border-color: transparent #FFB900 transparent transparent;
+                left: -13px;
+            }
+        }
+			
+		.action-item-expand {
+			width: 0;
+			overflow: hidden;
+			transition: all .15s ease-out;
+			font-size: 11px;
+            color: #000;
+        }
+    }
+}

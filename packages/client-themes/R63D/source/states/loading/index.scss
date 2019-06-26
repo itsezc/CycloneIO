@@ -1,0 +1,50 @@
+.loading{
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    .loading-photo{
+        background-image: url('/loading/stack.png');
+        height: 434px;
+        width: 500px;
+        position: relative;
+        margin-bottom: 16px;
+        
+        img{
+            height: 320px;
+            width: 320px;
+            overflow: hidden;
+            object-fit: cover;
+            position: absolute;
+            top: 51px;
+            left: 96px;
+        }
+    }
+
+    .loading-progress{
+        width: 400px;
+        height: 30px;
+        background-color: #000;
+        border: 1px solid #fff;
+        padding: 4px;
+        border-radius: 2px;
+        margin: 24px 0;
+
+        .progress-bar{
+            height: 100%;
+            background-color: #bacad3;
+            box-shadow: inset 0 -10px 0 0#8ca1ad;
+        }
+    }
+
+    small{
+        color: #8d8e8e;
+        font-weight: bold;
+        font-size: 15px;
+    }
+}

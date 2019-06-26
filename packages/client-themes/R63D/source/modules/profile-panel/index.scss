@@ -1,0 +1,16 @@
+.profile-panel{
+    width: $rightCol-width;
+    position: fixed;
+    right: 14px;
+    top: 0;
+
+    @import './wallet/index';
+
+    .notifications{
+        margin-top: 10px;
+
+        &>*:not(:last-child){
+            margin-bottom: 8px;
+        }
+    }
+}

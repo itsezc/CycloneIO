@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class InformationsPanel extends React.Component {
 
-    constructor(props: any){
+    constructor(props){
         super(props);
     }
 

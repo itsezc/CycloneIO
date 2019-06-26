@@ -35,6 +35,7 @@
 
     "lerna:dev:ui:r26": "lerna run dev --parallel --scope @cyclone/client-theme-r26",
     "lerna:dev:ui:r63b": "lerna run dev --parallel --scope @cyclone/client-theme-r63b",
+    "lerna:dev:ui:r63d": "lerna run dev --parallel --scope @cyclone/client-theme-r63d",
     "lerna:dev:ui:mobile": "lerna run dev --parallel --scope @cyclone/client-theme-m01"
   },
   "repository": {

@@ -1,0 +1,33 @@
+.ui-100 {
+    background-color: #3b3b3b;
+    padding: 10px;
+    border-radius: 8px;
+
+    .ui-100-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #333333;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+
+        .btn {
+            background-color: #000;
+            height: 13px;
+            width: 13px;
+            border: 1px solid #fff;
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+    }
+
+    .ui-100-footer {
+        border-top: 1px solid #333333;
+        padding-top: 5px;
+        margin-top: 10px;
+    }
+}
