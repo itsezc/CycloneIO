@@ -1,14 +1,15 @@
 import Chalk from 'chalk'
 //import ChalkAnimation from 'chalk-animation'
 
-import CycloneConfig from '../common/types/config'
-import Config from '../../config.new.json'
+import CycloneConfig from '../../common/types/config'
+import Config from '../../../config.new.json'
 
-import Logger, { LoggerTypeMessage } from '../utils/logger'
+import Logger, { LoggerTypeMessage } from '../../utils/logger'
 
 import Server from './network/server'
 
 class Environment {
+	
 	private readonly logger: LoggerTypeMessage
 	private server: Server
 

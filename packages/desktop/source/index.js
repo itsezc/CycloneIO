@@ -1,10 +1,5 @@
-const Config = require('../../config.json')
-const {
-	app,
-	Menu,
-	BrowserWindow,
-	session
-} = require('electron')
+const config = require('../../../config.json')
+const { app, Menu, BrowserWindow } = require('electron')
 
 let window
 
@@ -13,11 +8,11 @@ let createWindow = () => {
 		width: 1280,
 		height: 720,
 		frame: false,
-		title: Config.hotel.name
+		title: config.hotel.name
 	})
 	Menu.setApplicationMenu(null)
 	window.maximize()
-	window.loadURL(Config.hotel.url[0] + '/client')
+	window.loadURL(config.hotel.url[0] + '/client')
 
 	window.on('close', () => {
 		window = null

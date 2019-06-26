@@ -8,19 +8,19 @@ import { ApolloClient } from 'apollo-client'
 import { HttpLink as ApolloLink } from 'apollo-link-http'
 import { InMemoryCache as ApolloCache } from 'apollo-cache-inmemory'
 
-import { prisma } from '../../storage/prisma'
-import { typeDefs } from '../../storage/prisma/prisma-schema'
-import { resolvers } from '../../storage/resolvers/index'
+import { prisma } from '../../../storage/prisma'
+import { typeDefs } from '../../../storage/prisma/prisma-schema'
+import { resolvers } from '../../../storage/resolvers/index'
 
 import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
 
 import gql from 'graphql-tag'
 
-import CycloneConfig from '../../common/types/config'
+import CycloneConfig from '../../../common/types/config'
 
 // import roomPlayer from '../hotel/players/player'
 
-import Logger from '../../utils/logger'
+import Logger from '../../../utils/logger'
 
 import { AStarFinder, DiagonalMovement, Heuristic, Grid } from 'pathfinding'
 

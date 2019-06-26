@@ -1,0 +1,15 @@
+{
+    "name": "@cyclone/desktop",
+    "author": "Cyclone team",
+    "version": "1.0.0",
+    "description": "",
+    "main": "source/index.js",
+    "scripts": {
+        "dev": "electron source/index.js"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "dependencies": {
+        "electron": "^5.0.5"
+    }
+}

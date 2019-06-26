@@ -1,6 +1,8 @@
 {
   "packages": [
-    "source/*"
+	"packages/server",
+	"packages/housekeeping",
+	"packages/desktop"
   ],
   "npmClient": "npm",
   "command": {
