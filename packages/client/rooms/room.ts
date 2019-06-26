@@ -19,8 +19,6 @@ import Furniture from '../furniture/furniture'
 
 import Path from 'path'
 
-import Avatar from '../../imager/generator/avatar';
-
 import Pathfinder, { DiagonalMovement } from 'pathfinding'
 import RoomPlayer from '../players/player';
 import { thisTypeAnnotation } from 'babel-types';

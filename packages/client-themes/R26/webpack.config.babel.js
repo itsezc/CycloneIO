@@ -1,7 +1,4 @@
 import Path from 'path'
-
-import Webpack from 'webpack'
-
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 module.exports = (env, argv) => {
@@ -10,19 +7,19 @@ module.exports = (env, argv) => {
 
         context: Path.resolve(__dirname),
 
-        entry: './app.js',
+        entry: './source/app.js',
 
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: 'client.pug'
+                template: './source/client.pug'
             })
         ],
 
         devServer: {
             compress: true,
 			historyApiFallback: true,
-			contentBase: './web-gallery'
+			contentBase: Path.resolve(__dirname, '../../../web-gallery')
 		},
 		
         module: {

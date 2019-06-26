@@ -3,7 +3,8 @@
 	"packages/server",
 	"packages/housekeeping",
 	"packages/desktop",
-	"packages/mobile"
+	"packages/mobile",
+	"packages/client-themes/*"
   ],
   "npmClient": "npm",
   "command": {

@@ -10,7 +10,7 @@ import {
 	GetActiveRooms as RoomsQUERY, 
 	GetNavigatorTabs as TabsQUERY,
 	GetNavigatorCategories as CategoriesQUERY
-} from '../../../../../storage/queries'
+} from '../../../../../../storage/queries'
 
 import { 
 	GetActiveRooms, 
@@ -19,7 +19,7 @@ import {
 	GetNavigatorTabs,
 	GetNavigatorCategories,
 	GetNavigatorCategories_navigatorCategories 
-} from '../../../../../storage/__generated__/types'
+} from '../../../../../../storage/__generated__/types'
 
 type NavigatorState = {
 	category: number

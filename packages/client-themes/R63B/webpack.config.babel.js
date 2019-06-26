@@ -1,17 +1,15 @@
 import Path from 'path'
-
-import Webpack from 'webpack'
-
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 module.exports = (env, argv) => {
+
     return {
         target: 'web',
 
         context: Path.resolve(__dirname),
 
         entry: {
-			ui: './app.tsx',
+			ui: './source/app.tsx',
 			client: '../../client/games/game.ts'
 		},
 
@@ -22,7 +20,7 @@ module.exports = (env, argv) => {
         plugins: [
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-				template: 'client.pug',
+				template: './source/client.pug',
 				inject: false
             })
         ],
@@ -30,7 +28,7 @@ module.exports = (env, argv) => {
         devServer: {
             compress: true,
 			historyApiFallback: true,
-			contentBase: './web-gallery',
+			contentBase: Path.resolve(__dirname, '../../../web-gallery'),
 			port: 8082
 		},
 		
