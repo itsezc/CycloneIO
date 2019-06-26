@@ -2,7 +2,8 @@
   "packages": [
 	"packages/server",
 	"packages/housekeeping",
-	"packages/desktop"
+	"packages/desktop",
+	"packages/mobile"
   ],
   "npmClient": "npm",
   "command": {

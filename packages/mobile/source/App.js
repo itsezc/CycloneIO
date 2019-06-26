@@ -1,15 +1,9 @@
 import React from 'react'
-import { 
-	StatusBar, 
-	StyleSheet, 
-	View, 
-	Dimensions, 
-	WebView 
-} from 'react-native'
+import { StatusBar, StyleSheet, View, WebView } from 'react-native'
 import { ScreenOrientation } from 'expo'
 
 export default class App extends React.Component {
-
+	
 	componentDidMount() {
 		ScreenOrientation.allowAsync(ScreenOrientation.Orientation.LANDSCAPE)
  	}

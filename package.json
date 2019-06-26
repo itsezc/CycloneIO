@@ -28,7 +28,8 @@
     "ref:": "tsc ./packages/server/environment.ts --noEmit",
     "lerna:dev:server": "lerna run dev --parallel --scope @cyclone/server",
     "lerna:dev:housekeeping": "lerna run dev --parallel --scope @cyclone/housekeeping",
-    "lerna:dev:desktop": "lerna run dev --parallel --scope @cyclone/desktop"
+    "lerna:dev:desktop": "lerna run dev --parallel --scope @cyclone/desktop",
+    "lerna:dev:mobile": "lerna run android --parallel --scope @cyclone/mobile && npm run dev:ui:mobile"
   },
   "repository": {
     "type": "git",
