@@ -26,11 +26,9 @@
     "lerna:test": "lerna run test",
     "test": "jest --watchAll",
     "ref:": "tsc ./packages/server/environment.ts --noEmit",
-
     "lerna:dev:server": "lerna run dev --parallel --scope @cyclone/server",
     "lerna:dev:housekeeping": "lerna run dev --parallel --scope @cyclone/housekeeping",
     "lerna:dev:desktop": "lerna run dev --parallel --scope @cyclone/desktop",
-    
     "lerna:dev:mobile": "lerna run android --parallel --scope @cyclone/mobile --scope @cyclone/client-theme-m01",
     "lerna:dev:mobile:ios": "lerna run ios --parallel --scope @cyclone/mobile --scope @cyclone/client-theme-m01",
     "lerna:dev:ui:r26": "lerna run dev --parallel --scope @cyclone/client-theme-r26",
@@ -104,6 +102,7 @@
     "react": "^16.8.6",
     "react-accessible-accordion": "^3.0.0",
     "react-dom": "^16.8.6",
+    "react-dropdown": "^1.6.4",
     "react-load-script": "0.0.6",
     "react-router-dom": "^5.0.0",
     "react-tabs": "^3.0.0",
@@ -117,6 +116,7 @@
     "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
+    "@hapi/hapi": "^18.3.1",
     "@svgdotjs/svg.js": "^3.0.12",
     "@types/react-tabs": "^2.3.1",
     "@types/socket.io": "^2.1.2",
