@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList } from 'react-tabs'
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion'
 
 import Dialog from '../../../helpers/dialog'
+import Dropdown from '../../../helpers/dropdown'
 import { dragElement } from '../../../utils/functions'
 
 import { Query } from 'react-apollo'
@@ -137,13 +138,16 @@ export default class Navigator extends Component <any, NavigatorState>
 				title='Navigator'
 				resize={true}
 				axis='y'
-				width={450}
-				height={630}
+				width={425}
+				height={530}
 				background='#FFFFFF'
 			>
 				{/* variables={{ limit: 2 }} */}
 				<div className='navigator'>
 					{ this.getTabs() }
+					<Dropdown
+						options={[ 'Anything', 'Two' ]} 
+					/>
 					{ this.getCategories() }
 				</div>
 			</Dialog>
