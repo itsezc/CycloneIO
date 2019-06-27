@@ -28,7 +28,7 @@ export default class FriendSlot extends PureComponent {
 
                     <div className="toolbar-friends-slot-content">
                         <p>Looking for new friend ? Search for Habbos.</p>
-                        <button className='btn btn-primary'>Go get friends</button>
+                        <button className='btn btn-r63b btn-bold'>Go get friends</button>
                     </div>
                 </div>
             ); 

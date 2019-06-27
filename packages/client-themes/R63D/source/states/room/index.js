@@ -32,11 +32,11 @@ export default class Room extends React.Component {
                 </div>
 
                 <div style={{position: 'fixed', top: '50%', left: '45%'}}>
-                    <button className="btn btn-action btn-red">
+                    <button className="btn btn-r63b btn-action btn-red">
                         <i className="icon icon-close"></i>
                     </button>
 
-                    <button className="btn btn-action btn-blue">
+                    <button className="btn btn-r63b btn-action btn-blue">
                         <i className="icon icon-help"></i>
                     </button>
                 </div>

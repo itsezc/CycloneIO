@@ -6,10 +6,10 @@
 
 @import './foundation/variables';
 @import './foundation/typography';
-@import './foundation/icon';
-@import './foundation/ui/200';
-@import './foundation/ui/100';
 
 @import './components/more';
 @import './components/progressbar.scss';
 @import './components/button';
+@import './components/icon';
+@import './components/frames/200';
+@import './components/frames/100';

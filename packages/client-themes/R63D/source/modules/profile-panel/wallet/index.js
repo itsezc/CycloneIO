@@ -7,9 +7,9 @@ export default class Wallet extends React.Component {
             <div className="wallet ui-200">
 
                 <div className="wallet-currencies">
-                    <span className="currency-diamond">0<i className="icon icon-diamond"></i></span>
-                    <span className="currency-credit">0<i className="icon icon-credit"></i></span>
-                    <span className="currency-ducket">898<i className="icon icon-ducket"></i></span>
+                    <i className="icon icon-diamond">0</i>
+                    <i className="icon icon-credit">0</i>
+                    <i className="icon icon-ducket">898</i>
                 </div>
 
                 <div className="wallet-club">
@@ -17,9 +17,9 @@ export default class Wallet extends React.Component {
                 </div>
 
                 <div className="wallet-actions">
-                    <button className="btn btn-small btn-flat btn-blue">Help</button>
-                    <button className="btn btn-small btn-flat btn-red"><i className="icon icon-exit"></i></button>
-                    <button className="btn btn-small btn-flat btn-gray"><i className="icon icon-gear"></i></button>
+                    <button className="btn btn-flat-stripe btn-blue">Help</button>
+                    <button className="btn btn-flat-stripe btn-danger"><i className="icon icon-exit"></i></button>
+                    <button className="btn btn-flat-stripe btn-info"><i className="icon icon-gear"></i></button>
                 </div>
             </div>
         )
