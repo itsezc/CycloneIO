@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
+
 import { Tab, Tabs, TabList } from 'react-tabs'
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion'
+import Dropdown from 'react-dropdown'
 
 import Dialog from '../../../helpers/dialog'
-import Dropdown from '../../../helpers/dropdown'
 import { dragElement } from '../../../utils/functions'
 
 import { Query } from 'react-apollo'
@@ -32,7 +33,6 @@ export default class Navigator extends Component <any, NavigatorState>
 
 	private query: Query
 	
-
 	constructor(props: any)
 	{
 		super(props)
@@ -146,7 +146,10 @@ export default class Navigator extends Component <any, NavigatorState>
 				<div className='navigator'>
 					{ this.getTabs() }
 					<Dropdown
+						className='dropdown'
 						options={[ 'Anything', 'Two' ]} 
+						defaukt={'Anything'}
+						placeholder='Dropdown'
 					/>
 					{ this.getCategories() }
 				</div>
