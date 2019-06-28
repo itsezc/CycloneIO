@@ -159,7 +159,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
             this.frameCount = frameCount
             this.updateFurnitureView()
-        }        
+        }
     }
 
     private getDepthIndex(sprite: any) {
@@ -173,7 +173,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         return (ALPHABET.indexOf(layer.toLowerCase())) + sprite.z;          
     }
 
-    private isCorrectSizeLayer(sprite: any) {
+    private isCorrectSizeSprite(sprite: any) {
         const frameName = sprite.frame.name
         const fragments = frameName.split('_')
 
@@ -185,6 +185,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     public updateFurnitureView()
     {
         this.removeAll()
+        this.removeInteractive()
 
         const layers = []
 
@@ -225,11 +226,16 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         // Depth sorting for sprites inside the furniture
         const orderedLayers = layers.sort((a: any,  b: any) => {
             return (a.depth > b.depth ? 1 : -1)
-        }).filter((layer: any) => {
-            return this.isCorrectSizeLayer(layer)
+        }).filter((sprite: Phaser.GameObjects.Sprite) => {
+            return this.isCorrectSizeSprite(sprite)
+        })
+
+        const clickableLayers = orderedLayers.filter((sprite: any) => {
+            return sprite.isClickable
         })
 
         this.add(orderedLayers)
+        this.setInteractive()
     }
 
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
@@ -238,7 +244,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         })
 
         sprite.on('click', (s: Phaser.GameObjects.Sprite) => {
-            if (this.frameCount - this.lastClick <= 35 && this.lastClick !== 0) {
+            if (this.frameCount - this.lastClick <= 45 && this.lastClick !== 0) {
                 if(!this.doubleClick) {
                     this.doubleClick = true
                 } else {

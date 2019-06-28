@@ -22,6 +22,7 @@ import Path from 'path'
 import Pathfinder, { DiagonalMovement } from 'pathfinding'
 import RoomPlayer from '../players/player';
 import { thisTypeAnnotation } from 'babel-types';
+import { generateBlendMode } from '../core/blendMode';
 
 /**
 * Room class
@@ -132,6 +133,10 @@ export default class Room extends Phaser.Scene {
      * Runs once, after all assets in preload are loaded
      */
     public create(): void {
+        const renderer = this.game.renderer
+
+        generateBlendMode(renderer)
+
         this._camera.create()
 
         this.registerInputEvents()
@@ -140,50 +145,53 @@ export default class Room extends Phaser.Scene {
 
         const room: FurnitureData.IRoom = {
             heightmap: [
-                "00000",
-                "00000",
-                "00x00",
-                "00000"
+                "0000000",
+                "0000000",
+                "0000x00",
+                "0000000",
+                "0000000",
+                "0000000",
+                "0000000"
             ],
             furnitures: [
+               // {
+               //     name: 'CF_50_goldbar',
+               //     roomX: 0,
+               //     roomY: 1
+               // },
+               // {
+               //     name: 'throne',
+               //     roomX: 0,
+               //     roomY: 3,
+               //     direction: 2
+               // },
+               // {
+               //     name: 'diamond_dragon',
+               //     roomX: 2,
+               //     roomY: 3,
+               //     direction: 3,
+               //     animation: 2
+               // },
                 {
-                    name: 'CF_50_goldbar',
-                    roomX: 0,
-                    roomY: 1
-                },
-                {
-                    name: 'throne',
-                    roomX: 0,
-                    roomY: 3,
-                    direction: 2
-                },
-                {
-                    name: 'diamond_dragon',
-                    roomX: 2,
-                    roomY: 3,
-                    direction: 3,
-                    animation: 2
-                },
-                {
-                    name: 'ads_cllava2',
+                    name: 'party_tube_lava',
                     roomX: 4,
                     roomY: 0,
                     direction: 0,
                     animation: 0
                 },
-                {
-                    name: 'party_tube_lava',
-                    roomX: 2,
-                    roomY: 0,
-                    direction: 0
-                },
                // {
-               //    name: 'holo_nelly',
-               //    roomX: 2,
-               //    roomY: 0,
-               //    direction: 0,
-               //    animation: 1
+               //     name: 'ads_cllava2',
+               //     roomX: 2,
+               //     roomY: 0,
+               //     direction: 0
                // },
+                {
+                   name: 'urban_lamp',
+                   roomX: 2,
+                   roomY: 0,
+                   direction: 4,
+                   animation: 1
+                },
                // {
                //     name: 'diamond_dragon',
                //     roomX: 4,
@@ -191,13 +199,13 @@ export default class Room extends Phaser.Scene {
                //     direction: 2,
                //     animation: 2
                // },
-               // {
-               //     name: 'ads_calip_fan',
-               //     roomX: 4,
-               //     roomY: 3,
-               //     direction: 2,
-               //     animation: 1
-               // }
+                {
+                    name: 'ads_cllava2',
+                    roomX: 0,
+                    roomY: 6,
+                    direction: 2,
+                    animation: 0
+                },
             ]
         }
 
