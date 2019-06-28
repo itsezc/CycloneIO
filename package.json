@@ -26,13 +26,11 @@
     "lerna:test": "lerna run test",
     "test": "jest --watchAll",
     "ref:": "tsc ./packages/server/environment.ts --noEmit",
-
     "lerna:dev:server": "lerna run dev --parallel --scope @cyclone/server",
     "lerna:dev:housekeeping": "lerna run dev --parallel --scope @cyclone/housekeeping",
     "lerna:dev:desktop": "lerna run dev --parallel --scope @cyclone/desktop",
     "lerna:dev:mobile": "lerna run android --parallel --scope @cyclone/mobile --scope @cyclone/client-theme-m01",
     "lerna:dev:mobile:ios": "lerna run ios --parallel --scope @cyclone/mobile --scope @cyclone/client-theme-m01",
-
     "lerna:dev:ui:r26": "lerna run dev --parallel --scope @cyclone/client-theme-r26",
     "lerna:dev:ui:r63b": "lerna run dev --parallel --scope @cyclone/client-theme-r63b",
     "lerna:dev:ui:r63d": "lerna run dev --parallel --scope @cyclone/client-theme-r63d",

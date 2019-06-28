@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<animation name="fx.517" desc="Sign 0">
+	<sprite id="fx517_1" member="std_fx517_1_1" directions="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+
+
+
+	<frame>
+		<bodypart id="leftarm" action="Wave" frame="0" dx="0" dy="0" dd="0" />
+		<fx id="fx517_1" action="Default" frame="0" />
+	</frame>
+	
+</animation>

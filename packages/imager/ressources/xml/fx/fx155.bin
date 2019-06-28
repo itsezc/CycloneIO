@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<animation name="fx.155" desc="bcrystal FX">
+	<sprite id="fx155_1" member="std_fx155_1_1" directions="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<sprite id="fx155_2" member="std_fx155_2_1" directions="1">
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<remove id="rc" />
+	<remove id="rh" />
+	<remove id="rs" />
+
+	<frame>
+		<bodypart id="body" />
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<fx id="fx155_1" action="Default" frame="0" />
+		<fx id="fx155_2" action="Default" frame="0" />
+	</frame>
+	
+</animation>

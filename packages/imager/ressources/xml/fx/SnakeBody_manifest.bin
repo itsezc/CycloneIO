@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<manifest><library id="SnakeBody" version="0.1">
+  <assets>
+    <asset name="h_std_fx134_1_1_7_0" mimeType="image/png">
+      <param key="offset" value="-22,47"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-21,50"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-8,50"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-7,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-10,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_7_1" mimeType="image/png">
+      <param key="offset" value="-17,47"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_3_1" mimeType="image/png">
+      <param key="offset" value="-21,50"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_2_1" mimeType="image/png">
+      <param key="offset" value="-6,52"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_1_1" mimeType="image/png">
+      <param key="offset" value="-6,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_0_1" mimeType="image/png">
+      <param key="offset" value="-10,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_7_2" mimeType="image/png">
+      <param key="offset" value="-17,46"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_3_2" mimeType="image/png">
+      <param key="offset" value="-19,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_2_2" mimeType="image/png">
+      <param key="offset" value="-20,51"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_1_2" mimeType="image/png">
+      <param key="offset" value="-12,48"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_0_2" mimeType="image/png">
+      <param key="offset" value="-12,48"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_7_3" mimeType="image/png">
+      <param key="offset" value="-22,47"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_3_3" mimeType="image/png">
+      <param key="offset" value="-16,50"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_2_3" mimeType="image/png">
+      <param key="offset" value="-11,52"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_1_3" mimeType="image/png">
+      <param key="offset" value="-9,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_0_3" mimeType="image/png">
+      <param key="offset" value="-14,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_7_4" mimeType="image/png">
+      <param key="offset" value="-20,46"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_3_4" mimeType="image/png">
+      <param key="offset" value="-13,49"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_2_4" mimeType="image/png">
+      <param key="offset" value="-5,51"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_1_4" mimeType="image/png">
+      <param key="offset" value="-8,48"/>
+    </asset>
+    <asset name="h_std_fx134_1_1_0_4" mimeType="image/png">
+      <param key="offset" value="-13,48"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_std_sh_fx134_1_0_0" link="h_std_fx134_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_sh_fx134_1_1_0" link="h_std_fx134_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_sh_fx134_1_2_0" link="h_std_fx134_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_sh_fx134_1_3_0" link="h_std_fx134_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_std_sh_fx134_1_7_0" link="h_std_fx134_1_1_7_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_0_0" link="h_std_fx134_1_1_0_1" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_0_1" link="h_std_fx134_1_1_0_2" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_0_2" link="h_std_fx134_1_1_0_3" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_0_3" link="h_std_fx134_1_1_0_4" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_1_0" link="h_std_fx134_1_1_1_1" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_1_1" link="h_std_fx134_1_1_1_2" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_1_2" link="h_std_fx134_1_1_1_3" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_1_3" link="h_std_fx134_1_1_1_4" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_2_0" link="h_std_fx134_1_1_2_1" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_2_1" link="h_std_fx134_1_1_2_2" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_2_2" link="h_std_fx134_1_1_2_3" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_2_3" link="h_std_fx134_1_1_2_4" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_3_0" link="h_std_fx134_1_1_3_1" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_3_1" link="h_std_fx134_1_1_3_2" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_3_2" link="h_std_fx134_1_1_3_3" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_3_3" link="h_std_fx134_1_1_3_4" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_7_0" link="h_std_fx134_1_1_7_1" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_7_1" link="h_std_fx134_1_1_7_2" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_7_2" link="h_std_fx134_1_1_7_3" fliph="0" flipv="0"/>
+    <alias name="h_wlk_sh_fx134_1_7_3" link="h_std_fx134_1_1_7_4" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

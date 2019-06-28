@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<animation name="fx.186" desc="MagicWand">
+	<sprite id="fx186_2" ink="33" member="std_fx186_2_1" >
+		<direction id="0" dz="2" />
+		<direction id="1" dx="-6" dy="2" dz="2" />
+		<direction id="2" dx="-17" dy="10" dz="2" />
+		<direction id="3" dx="-25" dy="9" dz="2" />ooh
+		<direction id="4" dx="-38" dy="3" dz="2" />
+		<direction id="5" dx="-32" dy="2" dz="2" />
+		<direction id="6" dx="-21" dy="1" dz="-1" />
+		<direction id="7" dx="-11" dy="1" dz="-1" />
+	</sprite>
+	<sprite id="fx186_3" ink="36" member="std_fx186_3_1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dx="-6" dy="2" dz="1" />
+		<direction id="2" dx="-17" dy="10" dz="1" />
+		<direction id="3" dx="-25" dy="9" dz="1" />
+		<direction id="4" dx="-38" dy="3" dz="1" />
+		<direction id="5" dx="-32" dy="2" dz="-2" />
+		<direction id="6" dx="-21" dy="1" dz="-2" />
+		<direction id="7" dx="-11" dy="1" dz="-2" />
+	</sprite>
+	<add id="ri" align="rightitem" base="fx186_1" />
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="rightitem" action="CarryItem" frame="0" base="fx186_1" />
+		<fx id="fx186_2" action="Default" frame="0" />
+		<fx id="fx186_3" action="Default" frame="0" />
+	</frame>
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="rightitem" action="CarryItem" frame="0" base="fx186_1" />
+		<fx id="fx186_2" action="Default" frame="1" />
+		<fx id="fx186_3" action="Default" frame="1" />
+	</frame>
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="rightitem" action="CarryItem" frame="0" base="fx186_1" />
+		<fx id="fx186_2" action="Default" frame="0" />
+		<fx id="fx186_3" action="Default" frame="2" />
+	</frame>
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="rightitem" action="CarryItem" frame="0" base="fx186_1" />
+		<fx id="fx186_2" action="Default" frame="1" />
+		<fx id="fx186_3" action="Default" frame="1" />
+	</frame>
+	
+</animation>

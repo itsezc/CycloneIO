@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_face_U_carrot" version="0.1">
+    <assets>
+      <asset name="h_spk_fa_2239_0_0" mimeType="image/png">
+        <param key="offset" value="-45,62"/>
+      </asset>
+      <asset name="h_spk_fa_2239_1_0" mimeType="image/png">
+        <param key="offset" value="-41,60"/>
+      </asset>
+      <asset name="h_spk_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="-37,58"/>
+      </asset>
+      <asset name="h_spk_fa_2239_3_0" mimeType="image/png">
+        <param key="offset" value="-29,56"/>
+      </asset>
+      <asset name="h_spk_fa_2239_7_0" mimeType="image/png">
+        <param key="offset" value="-33,73"/>
+      </asset>
+      <asset name="h_std_fa_2239_0_0" mimeType="image/png">
+        <param key="offset" value="-45,61"/>
+      </asset>
+      <asset name="h_std_fa_2239_1_0" mimeType="image/png">
+        <param key="offset" value="-41,59"/>
+      </asset>
+      <asset name="h_std_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="-37,57"/>
+      </asset>
+      <asset name="h_std_fa_2239_3_0" mimeType="image/png">
+        <param key="offset" value="-29,55"/>
+      </asset>
+      <asset name="h_std_fa_2239_7_0" mimeType="image/png">
+        <param key="offset" value="-33,72"/>
+      </asset>
+      <asset name="h_lay_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="1,39"/>
+      </asset>
+      <asset name="h_lsp_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="-62,-121"/>
+      </asset>
+      <asset name="sh_lsp_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="-31,-62"/>
+      </asset>
+      <asset name="sh_spk_fa_2239_0_0" mimeType="image/png">
+        <param key="offset" value="-23,31"/>
+      </asset>
+      <asset name="sh_spk_fa_2239_1_0" mimeType="image/png">
+        <param key="offset" value="-21,30"/>
+      </asset>
+      <asset name="sh_spk_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="-17,28"/>
+      </asset>
+      <asset name="sh_spk_fa_2239_3_0" mimeType="image/png">
+        <param key="offset" value="-14,27"/>
+      </asset>
+      <asset name="sh_std_fa_2239_0_0" mimeType="image/png">
+        <param key="offset" value="-23,31"/>
+      </asset>
+      <asset name="sh_std_fa_2239_1_0" mimeType="image/png">
+        <param key="offset" value="-21,30"/>
+      </asset>
+      <asset name="sh_std_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="-17,28"/>
+      </asset>
+      <asset name="sh_std_fa_2239_3_0" mimeType="image/png">
+        <param key="offset" value="-14,27"/>
+      </asset>
+      <asset name="sh_std_fa_2239_7_0" mimeType="image/png">
+        <param key="offset" value="-16,30"/>
+      </asset>
+      <asset name="sh_lay_fa_2239_2_0" mimeType="image/png">
+        <param key="offset" value="1,18"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<animation name="fx.137" desc="Gold Spotlight FX">
+	<sprite id="fx137_1" ink="33" member="std_fx137_1_1" staticY="1">
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<sprite id="fx137_2" ink="33" member="std_fx137_2_1" staticY="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+</animation>

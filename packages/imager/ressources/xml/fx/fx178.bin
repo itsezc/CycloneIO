@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+<animation name="fx.178" desc="Ambassador FX">
+	<sprite id="fx178_1" ink="33" member="std_fx178_1_1" staticY="1">		<direction id="0" dz="0" />		<direction id="1" dz="0" />		<direction id="2" dz="0" />		<direction id="3" dz="0" />		<direction id="4" dz="0" />		<direction id="5" dz="0" />		<direction id="6" dz="0" />		<direction id="7" dz="0" />	</sprite>
+	<sprite id="fx178_2" ink="8" member="std_fx178_2_1" staticY="1">		<direction id="0" dz="1" />		<direction id="1" dz="1" />		<direction id="2" dz="1" />		<direction id="3" dz="1" />		<direction id="4" dz="1" />		<direction id="5" dz="1" />		<direction id="6" dz="1" />		<direction id="7" dz="1" />	</sprite>	<frame repeats="2">		<fx id="fx178_1" action="Default" frame="0" />
+		<fx id="fx178_2" action="Default" frame="0" />	</frame>
+	<frame repeats="2">		<fx id="fx178_1" action="Default" frame="1" />
+		<fx id="fx178_2" action="Default" frame="0" />	</frame>
+	<frame repeats="2">		<fx id="fx178_1" action="Default" frame="2" />
+		<fx id="fx178_2" action="Default" frame="0" />	</frame>
+	<frame repeats="2">		<fx id="fx178_1" action="Default" frame="3" />
+		<fx id="fx178_2" action="Default" frame="0" />	</frame>
+</animation>

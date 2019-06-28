@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<animation name="fx.101" desc="Bang Gun">
+	
+	<add id="ri" align="rightitem" base="fx101_1" />
+	
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="rightitem" action="Default" frame="0" base="fx101_1" >
+			<item id="ri" base="fx101_1"/>
+		</bodypart>
+	</frame>
+
+	<override name="wave_bang" override="wave">
+		<frame>		
+			<bodypart id="rightarm" action="CarryItem" frame="0"/>		
+			<bodypart id="rightitem" action="Default" frame="1" base="fx101_1" >
+				<item id="ri" base="fx101_1"/>
+			</bodypart>
+		</frame>
+		<frame>		
+			<bodypart id="rightarm" action="CarryItem" frame="0"/>		
+			<bodypart id="rightitem" action="CarryItem" frame="1" base="fx101_1">
+				<item id="ri" base="fx101_1"/>
+			</bodypart>
+		</frame>
+		<frame>		
+			<bodypart id="rightarm" action="CarryItem" frame="0"/>		
+			<bodypart id="rightitem" action="Default" frame="1" base="fx101_1" >
+				<item id="ri" base="fx101_1"/>
+			</bodypart>
+		</frame>
+		<frame>		
+			<bodypart id="rightarm" action="CarryItem" frame="0"/>		
+			<bodypart id="rightitem" action="CarryItem" frame="1" base="fx101_1">
+				<item id="ri" base="fx101_1"/>
+			</bodypart>
+		</frame>
+	</override>
+
+</animation>

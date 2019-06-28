@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_face_U_bear11" version="0.1">
+    <assets>
+      <asset name="h_lay_fa_4823_2_0" mimeType="image/png">
+        <param key="offset" value="10,29"/>
+      </asset>
+      <asset name="h_lsp_fa_4823_2_0" mimeType="image/png">
+        <param key="offset" value="-54,-131"/>
+      </asset>
+      <asset name="h_spk_fa_4823_3_0" mimeType="image/png">
+        <param key="offset" value="-21,58"/>
+      </asset>
+      <asset name="h_spk_fa_4823_2_0" mimeType="image/png">
+        <param key="offset" value="-24,58"/>
+      </asset>
+      <asset name="h_spk_fa_4823_1_0" mimeType="image/png">
+        <param key="offset" value="-24,57"/>
+      </asset>
+      <asset name="h_spk_fa_4823_0_0" mimeType="image/png">
+        <param key="offset" value="-20,55"/>
+      </asset>
+      <asset name="h_std_fa_4823_0_0" mimeType="image/png">
+        <param key="offset" value="-20,55"/>
+      </asset>
+      <asset name="h_std_fa_4823_2_0" mimeType="image/png">
+        <param key="offset" value="-24,57"/>
+      </asset>
+      <asset name="h_std_fa_4823_1_0" mimeType="image/png">
+        <param key="offset" value="-24,56"/>
+      </asset>
+      <asset name="h_std_fa_4823_3_0" mimeType="image/png">
+        <param key="offset" value="-21,57"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

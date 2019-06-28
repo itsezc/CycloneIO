@@ -1,0 +1,2791 @@
+<?xml version='1.0'?>
+<manifest>
+
+    <library name='hh_human_50_item' version='0.1'>
+    <assets>
+
+      <asset name="sh_crr_ri_140_0_0" mimeType="image/png">
+        <param key="offset" value="-23,26"/>
+      </asset>
+      <asset name="sh_crr_ri_140_1_0" mimeType="image/png">
+        <param key="offset" value="-20,23"/>
+      </asset>
+      <asset name="sh_crr_ri_140_2_0" mimeType="image/png">
+        <param key="offset" value="-14,20"/>
+      </asset>
+      <asset name="sh_crr_ri_140_3_0" mimeType="image/png">
+        <param key="offset" value="-11,20"/>
+      </asset>
+      <asset name="sh_crr_ri_140_4_0" mimeType="image/png">
+        <param key="offset" value="-2,24"/>
+      </asset>
+      <asset name="sh_crr_ri_140_5_0" mimeType="image/png">
+        <param key="offset" value="-3,24"/>
+      </asset>
+      <asset name="sh_crr_ri_140_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_140_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+
+   <asset name="sh_crr_ri_139_0_0" mimeType="image/png">
+        <param key="offset" value="-25,22"/>
+      </asset>
+      <asset name="sh_crr_ri_139_1_0" mimeType="image/png">
+        <param key="offset" value="-23,20"/>
+      </asset>
+      <asset name="sh_crr_ri_139_2_0" mimeType="image/png">
+        <param key="offset" value="-16,17"/>
+      </asset>
+      <asset name="sh_crr_ri_139_3_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+      <asset name="sh_crr_ri_139_4_0" mimeType="image/png">
+        <param key="offset" value="-6,20"/>
+      </asset>
+      <asset name="sh_crr_ri_139_5_0" mimeType="image/png">
+        <param key="offset" value="-4,21"/>
+      </asset>
+      <asset name="sh_crr_ri_139_6_0" mimeType="image/png">
+        <param key="offset" value="-13,29"/>
+      </asset>
+      <asset name="sh_crr_ri_139_7_0" mimeType="image/png">
+        <param key="offset" value="-16,30"/>
+      </asset>
+
+	<asset name="sh_crr_ri_138_0_0" mimeType="image/png">
+        <param key="offset" value="-27,24"/>
+      </asset>
+      <asset name="sh_crr_ri_138_1_0" mimeType="image/png">
+        <param key="offset" value="-23,22"/>
+      </asset>
+      <asset name="sh_crr_ri_138_2_0" mimeType="image/png">
+        <param key="offset" value="-17,18"/>
+      </asset>
+      <asset name="sh_crr_ri_138_3_0" mimeType="image/png">
+        <param key="offset" value="-13,19"/>
+      </asset>
+      <asset name="sh_crr_ri_138_4_0" mimeType="image/png">
+        <param key="offset" value="-1,22"/>
+      </asset>
+      <asset name="sh_crr_ri_138_5_0" mimeType="image/png">
+        <param key="offset" value="-2,23"/>
+      </asset>
+      <asset name="sh_crr_ri_138_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_138_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+	 <asset name="sh_crr_ri_137_0_0" mimeType="image/png">
+        <param key="offset" value="-23,21"/>
+      </asset>
+      <asset name="sh_crr_ri_137_1_0" mimeType="image/png">
+        <param key="offset" value="-21,19"/>
+      </asset>
+      <asset name="sh_crr_ri_137_2_0" mimeType="image/png">
+        <param key="offset" value="-15,16"/>
+      </asset>
+      <asset name="sh_crr_ri_137_3_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+      <asset name="sh_crr_ri_137_4_0" mimeType="image/png">
+        <param key="offset" value="-5,18"/>
+      </asset>
+      <asset name="sh_crr_ri_137_5_0" mimeType="image/png">
+        <param key="offset" value="-4,20"/>
+      </asset>
+      <asset name="sh_crr_ri_137_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_137_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+
+      <asset name="sh_drk_ri_136_0_0" mimeType="image/png">
+        <param key="offset" value="-23,40"/>
+      </asset>
+      <asset name="sh_drk_ri_136_1_0" mimeType="image/png">
+        <param key="offset" value="-21,31"/>
+      </asset>
+      <asset name="sh_drk_ri_136_2_0" mimeType="image/png">
+        <param key="offset" value="-15,29"/>
+      </asset>
+      <asset name="sh_drk_ri_136_3_0" mimeType="image/png">
+        <param key="offset" value="-11,31"/>
+      </asset>
+      <asset name="sh_drk_ri_136_4_0" mimeType="image/png">
+        <param key="offset" value="4,29"/>
+      </asset>
+      <asset name="sh_drk_ri_136_5_0" mimeType="image/png">
+        <param key="offset" value="9,31"/>
+      </asset>
+      <asset name="sh_drk_ri_136_6_0" mimeType="image/png">
+        <param key="offset" value="2,41"/>
+      </asset>
+      <asset name="sh_drk_ri_136_7_0" mimeType="image/png">
+        <param key="offset" value="-21,26"/>
+      </asset>
+      <asset name="sh_crr_ri_136_0_0" mimeType="image/png">
+        <param key="offset" value="-25,25"/>
+      </asset>
+      <asset name="sh_crr_ri_136_1_0" mimeType="image/png">
+        <param key="offset" value="-22,23"/>
+      </asset>
+      <asset name="sh_crr_ri_136_2_0" mimeType="image/png">
+        <param key="offset" value="-15,20"/>
+      </asset>
+      <asset name="sh_crr_ri_136_3_0" mimeType="image/png">
+        <param key="offset" value="-10,21"/>
+      </asset>
+      <asset name="sh_crr_ri_136_4_0" mimeType="image/png">
+        <param key="offset" value="-4,24"/>
+      </asset>
+      <asset name="sh_crr_ri_136_5_0" mimeType="image/png">
+        <param key="offset" value="-5,24"/>
+      </asset>
+      <asset name="sh_crr_ri_136_6_0" mimeType="image/png">
+        <param key="offset" value="-20,19"/>
+      </asset>
+      <asset name="sh_crr_ri_136_7_0" mimeType="image/png">
+        <param key="offset" value="-22,22"/>
+      </asset>
+
+      <asset name="sh_crr_ri_135_0_0" mimeType="image/png">
+        <param key="offset" value="-22,23"/>
+      </asset>
+      <asset name="sh_crr_ri_135_1_0" mimeType="image/png">
+        <param key="offset" value="-19,21"/>
+      </asset>
+      <asset name="sh_crr_ri_135_2_0" mimeType="image/png">
+        <param key="offset" value="-14,18"/>
+      </asset>
+      <asset name="sh_crr_ri_135_4_0" mimeType="image/png">
+        <param key="offset" value="-4,20"/>
+      </asset>
+      <asset name="sh_crr_ri_135_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_135_7_0" mimeType="image/png">
+        <param key="offset" value="-17,21"/>
+      </asset>
+      <asset name="sh_crr_ri_135_5_0" mimeType="image/png">
+        <param key="offset" value="-4,22"/>
+      </asset>
+      <asset name="sh_crr_ri_135_6_0" mimeType="image/png">
+        <param key="offset" value="-14,22"/>
+      </asset>
+
+      <asset name="sh_crr_ri_134_0_0" mimeType="image/png">
+        <param key="offset" value="-23,22"/>
+      </asset>
+      <asset name="sh_crr_ri_134_1_0" mimeType="image/png">
+        <param key="offset" value="-21,19"/>
+      </asset>
+      <asset name="sh_crr_ri_134_2_0" mimeType="image/png">
+        <param key="offset" value="-15,15"/>
+      </asset>
+      <asset name="sh_crr_ri_134_3_0" mimeType="image/png">
+        <param key="offset" value="-10,16"/>
+      </asset>
+      <asset name="sh_crr_ri_134_4_0" mimeType="image/png">
+        <param key="offset" value="-4,20"/>
+      </asset>
+      <asset name="sh_crr_ri_134_5_0" mimeType="image/png">
+        <param key="offset" value="-4,20"/>
+      </asset>
+      <asset name="sh_crr_ri_134_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_134_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+
+      <asset name="sh_crr_ri_133_0_0" mimeType="image/png">
+        <param key="offset" value="-24,26"/>
+      </asset>
+      <asset name="sh_crr_ri_133_1_0" mimeType="image/png">
+        <param key="offset" value="-20,25"/>
+      </asset>
+      <asset name="sh_crr_ri_133_2_0" mimeType="image/png">
+        <param key="offset" value="-14,21"/>
+      </asset>
+      <asset name="sh_crr_ri_133_3_0" mimeType="image/png">
+        <param key="offset" value="-11,22"/>
+      </asset>
+      <asset name="sh_crr_ri_133_4_0" mimeType="image/png">
+        <param key="offset" value="-2,25"/>
+      </asset>
+      <asset name="sh_crr_ri_133_5_0" mimeType="image/png">
+        <param key="offset" value="-3,26"/>
+      </asset>
+      <asset name="sh_crr_ri_133_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_133_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+
+	<asset name="sh_crr_ri_132_0_0" mimeType="image/png">
+        <param key="offset" value="-24,26"/>
+      </asset>
+      <asset name="sh_crr_ri_132_1_0" mimeType="image/png">
+        <param key="offset" value="-20,25"/>
+      </asset>
+      <asset name="sh_crr_ri_132_2_0" mimeType="image/png">
+        <param key="offset" value="-14,21"/>
+      </asset>
+      <asset name="sh_crr_ri_132_3_0" mimeType="image/png">
+        <param key="offset" value="-11,22"/>
+      </asset>
+      <asset name="sh_crr_ri_132_4_0" mimeType="image/png">
+        <param key="offset" value="-2,25"/>
+      </asset>
+      <asset name="sh_crr_ri_132_5_0" mimeType="image/png">
+        <param key="offset" value="-3,26"/>
+      </asset>
+      <asset name="sh_crr_ri_132_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_132_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+	      
+      <asset name="sh_crr_ri_131_0_0" mimeType="image/png">
+        <param key="offset" value="-23,23"/>
+      </asset>
+      <asset name="sh_crr_ri_131_1_0" mimeType="image/png">
+        <param key="offset" value="-20,22"/>
+      </asset>
+      <asset name="sh_crr_ri_131_2_0" mimeType="image/png">
+        <param key="offset" value="-14,18"/>
+      </asset>
+      <asset name="sh_crr_ri_131_4_0" mimeType="image/png">
+        <param key="offset" value="-4,21"/>
+      </asset>
+      <asset name="sh_crr_ri_131_7_0" mimeType="image/png">
+        <param key="offset" value="-20,17"/>
+      </asset>
+      <asset name="sh_crr_ri_131_6_0" mimeType="image/png">
+        <param key="offset" value="-20,18"/>
+      </asset>
+      <asset name="sh_crr_ri_131_3_0" mimeType="image/png">
+        <param key="offset" value="-10,20"/>
+      </asset>
+      <asset name="sh_crr_ri_131_5_0" mimeType="image/png">
+        <param key="offset" value="-4,22"/>
+      </asset>
+
+
+      <asset name="sh_crr_ri_130_0_0" mimeType="image/png">
+        <param key="offset" value="-25,23"/>
+      </asset>
+      <asset name="sh_crr_ri_130_1_0" mimeType="image/png">
+        <param key="offset" value="-22,21"/>
+      </asset>
+      <asset name="sh_crr_ri_130_2_0" mimeType="image/png">
+        <param key="offset" value="-16,17"/>
+      </asset>
+      <asset name="sh_crr_ri_130_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_130_4_0" mimeType="image/png">
+        <param key="offset" value="-3,20"/>
+      </asset>
+      <asset name="sh_crr_ri_130_5_0" mimeType="image/png">
+        <param key="offset" value="-5,20"/>
+      </asset>
+      <asset name="sh_crr_ri_130_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_130_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+      <asset name="sh_crr_ri_129_0_0" mimeType="image/png">
+        <param key="offset" value="-25,23"/>
+      </asset>
+      <asset name="sh_crr_ri_129_1_0" mimeType="image/png">
+        <param key="offset" value="-22,21"/>
+      </asset>
+      <asset name="sh_crr_ri_129_2_0" mimeType="image/png">
+        <param key="offset" value="-16,17"/>
+      </asset>
+      <asset name="sh_crr_ri_129_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_129_4_0" mimeType="image/png">
+        <param key="offset" value="-3,20"/>
+      </asset>
+      <asset name="sh_crr_ri_129_5_0" mimeType="image/png">
+        <param key="offset" value="-5,20"/>
+      </asset>
+      <asset name="sh_crr_ri_129_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_129_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+      <asset name="sh_crr_ri_128_0_0" mimeType="image/png">
+        <param key="offset" value="-25,23"/>
+      </asset>
+      <asset name="sh_crr_ri_128_1_0" mimeType="image/png">
+        <param key="offset" value="-22,21"/>
+      </asset>
+      <asset name="sh_crr_ri_128_2_0" mimeType="image/png">
+        <param key="offset" value="-16,17"/>
+      </asset>
+      <asset name="sh_crr_ri_128_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_128_4_0" mimeType="image/png">
+        <param key="offset" value="-3,20"/>
+      </asset>
+      <asset name="sh_crr_ri_128_5_0" mimeType="image/png">
+        <param key="offset" value="-5,20"/>
+      </asset>
+      <asset name="sh_crr_ri_128_6_0" mimeType="image/png">
+        <param key="offset" value="-18,10"/>
+      </asset>
+      <asset name="sh_crr_ri_128_7_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+
+      <asset name="sh_crr_ri_127_0_0" mimeType="image/png">
+        <param key="offset" value="-24,22"/>
+      </asset>
+      <asset name="sh_crr_ri_127_1_0" mimeType="image/png">
+        <param key="offset" value="-21,22"/>
+      </asset>
+      <asset name="sh_crr_ri_127_2_0" mimeType="image/png">
+        <param key="offset" value="-15,18"/>
+      </asset>
+      <asset name="sh_crr_ri_127_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_127_4_0" mimeType="image/png">
+        <param key="offset" value="-3,22"/>
+      </asset>
+      <asset name="sh_crr_ri_127_5_0" mimeType="image/png">
+        <param key="offset" value="-4,22"/>
+      </asset>
+		
+      <asset name="sh_crr_ri_126_0_0" mimeType="image/png">
+        <param key="offset" value="-26,23"/>
+      </asset>
+      <asset name="sh_crr_ri_126_1_0" mimeType="image/png">
+        <param key="offset" value="-23,21"/>
+      </asset>
+      <asset name="sh_crr_ri_126_2_0" mimeType="image/png">
+        <param key="offset" value="-16,18"/>
+      </asset>
+      <asset name="sh_crr_ri_126_3_0" mimeType="image/png">
+        <param key="offset" value="-11,18"/>
+      </asset>
+      <asset name="sh_crr_ri_126_4_0" mimeType="image/png">
+        <param key="offset" value="0,21"/>
+      </asset>
+      <asset name="sh_crr_ri_126_5_0" mimeType="image/png">
+        <param key="offset" value="-1,22"/>
+      </asset>
+		
+      <asset name="sh_crr_ri_125_0_0" mimeType="image/png">
+        <param key="offset" value="-25,22"/>
+      </asset>
+      <asset name="sh_crr_ri_125_1_0" mimeType="image/png">
+        <param key="offset" value="-22,20"/>
+      </asset>
+      <asset name="sh_crr_ri_125_2_0" mimeType="image/png">
+        <param key="offset" value="-15,17"/>
+      </asset>
+      <asset name="sh_crr_ri_125_3_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+      <asset name="sh_crr_ri_125_4_0" mimeType="image/png">
+        <param key="offset" value="-2,21"/>
+      </asset>
+      <asset name="sh_crr_ri_125_5_0" mimeType="image/png">
+        <param key="offset" value="-3,22"/>
+      </asset>
+		
+      <asset name="sh_crr_ri_124_0_0" mimeType="image/png">
+        <param key="offset" value="-24,19"/>
+      </asset>
+      <asset name="sh_crr_ri_124_1_0" mimeType="image/png">
+        <param key="offset" value="-20,17"/>
+      </asset>
+      <asset name="sh_crr_ri_124_2_0" mimeType="image/png">
+        <param key="offset" value="-13,14"/>
+      </asset>
+      <asset name="sh_crr_ri_124_3_0" mimeType="image/png">
+        <param key="offset" value="-8,15"/>
+      </asset>
+      <asset name="sh_crr_ri_124_4_0" mimeType="image/png">
+        <param key="offset" value="-2,18"/>
+      </asset>
+      <asset name="sh_crr_ri_124_5_0" mimeType="image/png">
+        <param key="offset" value="-3,18"/>
+      </asset>
+	  
+      <asset name="sh_crr_ri_123_0_0" mimeType="image/png">
+        <param key="offset" value="-24,20"/>
+      </asset>
+      <asset name="sh_crr_ri_123_1_0" mimeType="image/png">
+        <param key="offset" value="-20,19"/>
+      </asset>
+      <asset name="sh_crr_ri_123_2_0" mimeType="image/png">
+        <param key="offset" value="-14,16"/>
+      </asset>
+      <asset name="sh_crr_ri_123_3_0" mimeType="image/png">
+        <param key="offset" value="-9,17"/>
+      </asset>
+      <asset name="sh_crr_ri_123_4_0" mimeType="image/png">
+        <param key="offset" value="-3,20"/>
+      </asset>
+      <asset name="sh_crr_ri_123_5_0" mimeType="image/png">
+        <param key="offset" value="-4,21"/>
+      </asset>
+		
+      <asset name="sh_crr_ri_122_0_0" mimeType="image/png">
+        <param key="offset" value="-25,21"/>
+      </asset>
+      <asset name="sh_crr_ri_122_1_0" mimeType="image/png">
+        <param key="offset" value="-21,20"/>
+      </asset>
+      <asset name="sh_crr_ri_122_2_0" mimeType="image/png">
+        <param key="offset" value="-15,17"/>
+      </asset>
+      <asset name="sh_crr_ri_122_3_0" mimeType="image/png">
+        <param key="offset" value="-10,18"/>
+      </asset>
+      <asset name="sh_crr_ri_122_4_0" mimeType="image/png">
+        <param key="offset" value="-2,21"/>
+      </asset>
+      <asset name="sh_crr_ri_122_5_0" mimeType="image/png">
+        <param key="offset" value="-4,21"/>
+      </asset>
+		
+      <asset name="sh_crr_ri_121_0_0" mimeType="image/png">
+        <param key="offset" value="-20,20"/>
+      </asset>
+      <asset name="sh_crr_ri_121_1_0" mimeType="image/png">
+        <param key="offset" value="-16,20"/>
+      </asset>
+      <asset name="sh_crr_ri_121_2_0" mimeType="image/png">
+        <param key="offset" value="-10,16"/>
+      </asset>
+      <asset name="sh_crr_ri_121_3_0" mimeType="image/png">
+        <param key="offset" value="-5,16"/>
+      </asset>
+      <asset name="sh_crr_ri_121_4_0" mimeType="image/png">
+        <param key="offset" value="-2,19"/>
+      </asset>
+      <asset name="sh_crr_ri_121_5_0" mimeType="image/png">
+        <param key="offset" value="0,20"/>
+      </asset>
+		
+      <asset name="sh_crr_ri_120_0_0" mimeType="image/png">
+        <param key="offset" value="-25,23"/>
+      </asset>
+      <asset name="sh_crr_ri_120_1_0" mimeType="image/png">
+        <param key="offset" value="-22,21"/>
+      </asset>
+      <asset name="sh_crr_ri_120_2_0" mimeType="image/png">
+        <param key="offset" value="-16,18"/>
+      </asset>
+      <asset name="sh_crr_ri_120_3_0" mimeType="image/png">
+        <param key="offset" value="-11,18"/>
+      </asset>
+      <asset name="sh_crr_ri_120_4_0" mimeType="image/png">
+        <param key="offset" value="-2,21"/>
+      </asset>
+      <asset name="sh_crr_ri_120_5_0" mimeType="image/png">
+        <param key="offset" value="-2,22"/>
+      </asset>
+	  
+      <asset name="sh_crr_ri_119_0_0" mimeType="image/png">
+        <param key="offset" value="-24,22"/>
+      </asset>
+      <asset name="sh_crr_ri_119_1_0" mimeType="image/png">
+        <param key="offset" value="-21,21"/>
+      </asset>
+      <asset name="sh_crr_ri_119_2_0" mimeType="image/png">
+        <param key="offset" value="-16,17"/>
+      </asset>
+      <asset name="sh_crr_ri_119_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_119_4_0" mimeType="image/png">
+        <param key="offset" value="-3,21"/>
+      </asset>
+      <asset name="sh_crr_ri_119_5_0" mimeType="image/png">
+        <param key="offset" value="-4,22"/>
+      </asset>
+
+      <asset name="sh_crr_ri_118_4_0" mimeType="image/png">
+        <param key="offset" value="-3,24"/>
+      </asset>
+      <asset name="sh_crr_ri_118_1_0" mimeType="image/png">
+        <param key="offset" value="-19,24"/>
+      </asset>
+      <asset name="sh_crr_ri_118_5_0" mimeType="image/png">
+        <param key="offset" value="-6,24"/>
+      </asset>
+      <asset name="sh_crr_ri_118_2_0" mimeType="image/png">
+        <param key="offset" value="-13,20"/>
+      </asset>
+      <asset name="sh_crr_ri_118_0_0" mimeType="image/png">
+        <param key="offset" value="-22,24"/>
+      </asset>
+      <asset name="sh_crr_ri_118_3_0" mimeType="image/png">
+        <param key="offset" value="-8,23"/>
+      </asset>
+      <asset name="sh_crr_ri_118_6_0" mimeType="image/png">
+        <param key="offset" value="-20,16"/>
+      </asset>
+      <asset name="sh_crr_ri_118_7_0" mimeType="image/png">
+        <param key="offset" value="-22,14"/>
+      </asset>
+
+      <asset name="sh_crr_ri_117_2_0" mimeType="image/png">
+        <param key="offset" value="-13,18"/>
+      </asset>
+      <asset name="sh_crr_ri_117_4_0" mimeType="image/png">
+        <param key="offset" value="-1,20"/>
+      </asset>
+      <asset name="sh_crr_ri_117_1_0" mimeType="image/png">
+        <param key="offset" value="-19,21"/>
+      </asset>
+      <asset name="sh_crr_ri_117_5_0" mimeType="image/png">
+        <param key="offset" value="0,22"/>
+      </asset>
+      <asset name="sh_crr_ri_117_3_0" mimeType="image/png">
+        <param key="offset" value="-10,20"/>
+      </asset>
+      <asset name="sh_crr_ri_117_0_0" mimeType="image/png">
+        <param key="offset" value="-20,22"/>
+      </asset>
+      <asset name="sh_crr_ri_117_6_0" mimeType="image/png">
+        <param key="offset" value="-20,16"/>
+      </asset>
+      <asset name="sh_crr_ri_117_7_0" mimeType="image/png">
+        <param key="offset" value="-22,14"/>
+      </asset>
+
+      <asset name="sh_crr_ri_116_4_0" mimeType="image/png">
+        <param key="offset" value="-3,21"/>
+      </asset>
+      <asset name="sh_crr_ri_116_0_0" mimeType="image/png">
+        <param key="offset" value="-23,21"/>
+      </asset>
+      <asset name="sh_crr_ri_116_1_0" mimeType="image/png">
+        <param key="offset" value="-19,20"/>
+      </asset>
+      <asset name="sh_crr_ri_116_5_0" mimeType="image/png">
+        <param key="offset" value="-4,21"/>
+      </asset>
+      <asset name="sh_crr_ri_116_2_0" mimeType="image/png">
+        <param key="offset" value="-14,17"/>
+      </asset>
+      <asset name="sh_crr_ri_116_3_0" mimeType="image/png">
+        <param key="offset" value="-10,18"/>
+      </asset>
+      <asset name="sh_crr_ri_116_6_0" mimeType="image/png">
+        <param key="offset" value="-20,16"/>
+      </asset>
+      <asset name="sh_crr_ri_116_7_0" mimeType="image/png">
+        <param key="offset" value="-22,14"/>
+      </asset>
+
+      <asset name="sh_crr_ri_115_6_0" mimeType="image/png">
+        <param key="offset" value="-20,16"/>
+      </asset>
+      <asset name="sh_crr_ri_115_0_0" mimeType="image/png">
+        <param key="offset" value="-24,22"/>
+      </asset>
+      <asset name="sh_crr_ri_115_2_0" mimeType="image/png">
+        <param key="offset" value="-14,18"/>
+      </asset>
+      <asset name="sh_crr_ri_115_4_0" mimeType="image/png">
+        <param key="offset" value="-5,21"/>
+      </asset>
+      <asset name="sh_crr_ri_115_1_0" mimeType="image/png">
+        <param key="offset" value="-20,21"/>
+      </asset>
+      <asset name="sh_crr_ri_115_5_0" mimeType="image/png">
+        <param key="offset" value="-7,22"/>
+      </asset>
+      <asset name="sh_crr_ri_115_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_115_7_0" mimeType="image/png">
+        <param key="offset" value="-22,14"/>
+      </asset>
+
+      <asset name="sh_crr_ri_114_6_0" mimeType="image/png">
+        <param key="offset" value="-20,16"/>
+      </asset>
+      <asset name="sh_crr_ri_114_2_0" mimeType="image/png">
+        <param key="offset" value="-13,17"/>
+      </asset>
+      <asset name="sh_crr_ri_114_4_0" mimeType="image/png">
+        <param key="offset" value="0,21"/>
+      </asset>
+      <asset name="sh_crr_ri_114_1_0" mimeType="image/png">
+        <param key="offset" value="-20,22"/>
+      </asset>
+      <asset name="sh_crr_ri_114_0_0" mimeType="image/png">
+        <param key="offset" value="-22,23"/>
+      </asset>
+      <asset name="sh_crr_ri_114_3_0" mimeType="image/png">
+        <param key="offset" value="-8,19"/>
+      </asset>
+      <asset name="sh_crr_ri_114_7_0" mimeType="image/png">
+        <param key="offset" value="-15,21"/>
+      </asset>
+      <asset name="sh_crr_ri_114_5_0" mimeType="image/png">
+        <param key="offset" value="-3,23"/>
+      </asset>
+
+      <asset name="sh_crr_ri_113_5_0" mimeType="image/png">
+        <param key="offset" value="-4,24"/>
+      </asset>
+      <asset name="sh_crr_ri_113_0_0" mimeType="image/png">
+        <param key="offset" value="-22,23"/>
+      </asset>
+      <asset name="sh_crr_ri_113_2_0" mimeType="image/png">
+        <param key="offset" value="-13,18"/>
+      </asset>
+      <asset name="sh_crr_ri_113_4_0" mimeType="image/png">
+        <param key="offset" value="-2,22"/>
+      </asset>
+      <asset name="sh_crr_ri_113_1_0" mimeType="image/png">
+        <param key="offset" value="-18,23"/>
+      </asset>
+      <asset name="sh_crr_ri_113_3_0" mimeType="image/png">
+        <param key="offset" value="-9,19"/>
+      </asset>
+      <asset name="sh_crr_ri_113_6_0" mimeType="image/png">
+        <param key="offset" value="-20,16"/>
+      </asset>
+      <asset name="sh_crr_ri_113_7_0" mimeType="image/png">
+        <param key="offset" value="-22,14"/>
+      </asset>
+
+      <asset name="sh_crr_ri_112_6_0" mimeType="image/png">
+        <param key="offset" value="-20,16"/>
+      </asset>
+      <asset name="sh_crr_ri_112_5_0" mimeType="image/png">
+        <param key="offset" value="-4,22"/>
+      </asset>
+      <asset name="sh_crr_ri_112_7_0" mimeType="image/png">
+        <param key="offset" value="-22,14"/>
+      </asset>
+      <asset name="sh_crr_ri_112_3_0" mimeType="image/png">
+        <param key="offset" value="-8,20"/>
+      </asset>
+      <asset name="sh_crr_ri_112_4_0" mimeType="image/png">
+        <param key="offset" value="-5,22"/>
+      </asset>
+      <asset name="sh_crr_ri_112_2_0" mimeType="image/png">
+        <param key="offset" value="-12,18"/>
+      </asset>
+      <asset name="sh_crr_ri_112_1_0" mimeType="image/png">
+        <param key="offset" value="-17,21"/>
+      </asset>
+      <asset name="sh_crr_ri_112_0_0" mimeType="image/png">
+        <param key="offset" value="-21,23"/>
+      </asset>
+
+      <asset name="sh_crr_ri_111_0_0" mimeType="image/png">
+        <param key="offset" value="-22,28"/>
+      </asset>
+      <asset name="sh_crr_ri_111_1_0" mimeType="image/png">
+        <param key="offset" value="-18,27"/>
+      </asset>
+      <asset name="sh_crr_ri_111_2_0" mimeType="image/png">
+        <param key="offset" value="-12,24"/>
+      </asset>
+      <asset name="sh_crr_ri_111_4_0" mimeType="image/png">
+        <param key="offset" value="-2,27"/>
+      </asset>
+      <asset name="sh_crr_ri_111_5_0" mimeType="image/png">
+        <param key="offset" value="-2,28"/>
+      </asset>
+      <asset name="sh_crr_ri_111_3_0" mimeType="image/png">
+        <param key="offset" value="-7,24"/>
+      </asset>
+      <asset name="sh_crr_ri_111_6_0" mimeType="image/png">
+        <param key="offset" value="-20,20"/>
+      </asset>
+      <asset name="sh_crr_ri_111_7_0" mimeType="image/png">
+        <param key="offset" value="-22,19"/>
+      </asset>
+
+      <asset name="sh_crr_ri_110_0_0" mimeType="image/png">
+        <param key="offset" value="-25,24"/>
+      </asset>
+      <asset name="sh_crr_ri_110_1_0" mimeType="image/png">
+        <param key="offset" value="-21,23"/>
+      </asset>
+      <asset name="sh_crr_ri_110_2_0" mimeType="image/png">
+        <param key="offset" value="-15,19"/>
+      </asset>
+      <asset name="sh_crr_ri_110_3_0" mimeType="image/png">
+        <param key="offset" value="-10,20"/>
+      </asset>
+      <asset name="sh_crr_ri_110_4_0" mimeType="image/png">
+        <param key="offset" value="-5,22"/>
+      </asset>
+      <asset name="sh_crr_ri_110_5_0" mimeType="image/png">
+        <param key="offset" value="-5,23"/>
+      </asset>
+      <asset name="sh_crr_ri_110_6_0" mimeType="image/png">
+        <param key="offset" value="-20,20"/>
+      </asset>
+      <asset name="sh_crr_ri_110_7_0" mimeType="image/png">
+        <param key="offset" value="-22,19"/>
+      </asset>
+		
+      <asset name="sh_crr_ri_107_0_0" mimeType="image/png">
+        <param key="offset" value="-23,23"/>
+      </asset>
+      <asset name="sh_crr_ri_107_1_0" mimeType="image/png">
+        <param key="offset" value="-21,22"/>
+      </asset>
+      <asset name="sh_crr_ri_107_2_0" mimeType="image/png">
+        <param key="offset" value="-14,19"/>
+      </asset>
+      <asset name="sh_crr_ri_107_3_0" mimeType="image/png">
+        <param key="offset" value="-11,19"/>
+      </asset>
+      <asset name="sh_crr_ri_107_4_0" mimeType="image/png">
+        <param key="offset" value="0,21"/>
+      </asset>
+      <asset name="sh_crr_ri_107_5_0" mimeType="image/png">
+        <param key="offset" value="-1,23"/>
+      </asset>
+      <asset name="sh_crr_ri_107_6_0" mimeType="image/png">
+        <param key="offset" value="31,23"/>
+      </asset>
+      <asset name="sh_crr_ri_107_7_0" mimeType="image/png">
+        <param key="offset" value="-16,69"/>
+      </asset>
+      <asset name="sh_crr_ri_108_0_0" mimeType="image/png">
+        <param key="offset" value="-18,41"/>
+      </asset>
+      <asset name="sh_crr_ri_108_4_0" mimeType="image/png">
+        <param key="offset" value="0,41"/>
+      </asset>
+      <asset name="sh_crr_ri_108_6_0" mimeType="image/png">
+        <param key="offset" value="-14,41"/>
+      </asset>
+      <asset name="sh_crr_ri_108_5_0" mimeType="image/png">
+        <param key="offset" value="-1,40"/>
+      </asset>
+      <asset name="sh_crr_ri_108_7_0" mimeType="image/png">
+        <param key="offset" value="-4,41"/>
+      </asset>
+      <asset name="sh_crr_ri_108_3_0" mimeType="image/png">
+        <param key="offset" value="-5,39"/>
+      </asset>
+      <asset name="sh_crr_ri_108_1_0" mimeType="image/png">
+        <param key="offset" value="-16,41"/>
+      </asset>
+      <asset name="sh_crr_ri_108_2_0" mimeType="image/png">
+        <param key="offset" value="-10,39"/>
+      </asset>
+
+	    <asset name='sh_crr_ri_109_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,19' />
+            </asset>
+            <asset name='sh_crr_ri_109_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,19' />
+            </asset>
+            <asset name='sh_crr_ri_109_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_109_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_109_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,19' />
+            </asset>
+            <asset name='sh_crr_ri_109_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,20' />
+            </asset>
+            <asset name='sh_crr_ri_109_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_109_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+		
+
+            <asset name='sh_crr_ri_1_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,19' />
+            </asset>
+            <asset name='sh_crr_ri_1_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,18' />
+            </asset>
+            <asset name='sh_crr_ri_1_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,15' />
+            </asset>
+            <asset name='sh_crr_ri_1_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,16' />
+            </asset>
+            <asset name='sh_crr_ri_1_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,18' />
+            </asset>
+            <asset name='sh_crr_ri_1_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,19' />
+            </asset>
+            <asset name='sh_crr_ri_1_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_1_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_2_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,23' />
+            </asset>
+            <asset name='sh_crr_ri_2_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,23' />
+            </asset>
+            <asset name='sh_crr_ri_2_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,18' />
+            </asset>
+            <asset name='sh_crr_ri_2_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,19' />
+            </asset>
+            <asset name='sh_crr_ri_2_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,23' />
+            </asset>
+            <asset name='sh_crr_ri_2_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,23' />
+            </asset>
+            <asset name='sh_crr_ri_2_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_2_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_drk_ri_2_0_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_3_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,23' />
+            </asset>
+            <asset name='sh_crr_ri_3_1_0' mimeType='image/png' >
+                <param key='offset' value='-22,21' />
+            </asset>
+            <asset name='sh_crr_ri_3_2_0' mimeType='image/png' >
+                <param key='offset' value='-16,17' />
+            </asset>
+            <asset name='sh_crr_ri_3_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,19' />
+            </asset>
+            <asset name='sh_crr_ri_3_4_0' mimeType='image/png' >
+                <param key='offset' value='-3,20' />
+            </asset>
+            <asset name='sh_crr_ri_3_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,20' />
+            </asset>
+            <asset name='sh_crr_ri_3_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_3_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_4_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,23' />
+            </asset>
+            <asset name='sh_crr_ri_4_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,21' />
+            </asset>
+            <asset name='sh_crr_ri_4_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,19' />
+            </asset>
+            <asset name='sh_crr_ri_4_3_0' mimeType='image/png' >
+                <param key='offset' value='-9,18' />
+            </asset>
+            <asset name='sh_crr_ri_4_4_0' mimeType='image/png' >
+                <param key='offset' value='-3,20' />
+            </asset>
+            <asset name='sh_crr_ri_4_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,22' />
+            </asset>
+            <asset name='sh_crr_ri_4_6_0' mimeType='image/png' >
+                <param key='offset' value='-11,11' />
+            </asset>
+            <asset name='sh_crr_ri_4_7_0' mimeType='image/png' >
+                <param key='offset' value='-12,13' />
+            </asset>
+            <asset name='sh_crr_ri_5_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,22' />
+            </asset>
+            <asset name='sh_crr_ri_5_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,21' />
+            </asset>
+            <asset name='sh_crr_ri_5_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_5_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,18' />
+            </asset>
+            <asset name='sh_crr_ri_5_4_0' mimeType='image/png' >
+                <param key='offset' value='-3,20' />
+            </asset>
+            <asset name='sh_crr_ri_5_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,21' />
+            </asset>
+            <asset name='sh_crr_ri_5_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_5_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_6_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,22' />
+            </asset>
+            <asset name='sh_crr_ri_6_1_0' mimeType='image/png' >
+                <param key='offset' value='-22,20' />
+            </asset>
+            <asset name='sh_crr_ri_6_2_0' mimeType='image/png' >
+                <param key='offset' value='-16,17' />
+            </asset>
+            <asset name='sh_crr_ri_6_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,16' />
+            </asset>
+            <asset name='sh_crr_ri_6_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,20' />
+            </asset>
+            <asset name='sh_crr_ri_6_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,20' />
+            </asset>
+            <asset name='sh_crr_ri_6_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_6_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_9_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,22' />
+            </asset>
+            <asset name='sh_crr_ri_9_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,21' />
+            </asset>
+            <asset name='sh_crr_ri_9_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_9_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,18' />
+            </asset>
+            <asset name='sh_crr_ri_9_4_0' mimeType='image/png' >
+                <param key='offset' value='-3,20' />
+            </asset>
+            <asset name='sh_crr_ri_9_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,21' />
+            </asset>
+            <asset name='sh_crr_ri_9_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_9_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_667_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,23' />
+            </asset>
+            <asset name='sh_crr_ri_667_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,21' />
+            </asset>
+            <asset name='sh_crr_ri_667_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,18' />
+            </asset>
+            <asset name='sh_crr_ri_667_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_667_4_0' mimeType='image/png' >
+                <param key='offset' value='-2,21' />
+            </asset>
+            <asset name='sh_crr_ri_667_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,21' />
+            </asset>
+            <asset name='sh_crr_ri_667_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_667_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='s_popcorn_0' mimeType='image/png' >
+                <param key='offset' value='-24,24' />
+            </asset>
+            <asset name='s_popcorn_1' mimeType='image/png' >
+                <param key='offset' value='-21,21' />
+            </asset>
+            <asset name='s_popcorn_2' mimeType='image/png' >
+                <param key='offset' value='-15,19' />
+            </asset>
+            <asset name='s_popcorn_3' mimeType='image/png' >
+                <param key='offset' value='-10,20' />
+            </asset>
+            <asset name='s_popcorn_4' mimeType='image/png' >
+                <param key='offset' value='-2,21' />
+            </asset>
+            <asset name='s_popcorn_5' mimeType='image/png' >
+                <param key='offset' value='-3,23' />
+            </asset>
+            <asset name='s_popcorn_6' mimeType='image/png' >
+                <param key='offset' value='-5,10' />
+            </asset>
+            <asset name='s_popcorn_7' mimeType='image/png' >
+                <param key='offset' value='-6,12' />
+            </asset>
+            <asset name='sh_crr_ri_33_0_0' mimeType='image/png' >
+                <param key='offset' value='-26,23' />
+            </asset>
+            <asset name='sh_crr_ri_33_1_0' mimeType='image/png' >
+                <param key='offset' value='-23,21' />
+            </asset>
+            <asset name='sh_crr_ri_33_2_0' mimeType='image/png' >
+                <param key='offset' value='-17,17' />
+            </asset>
+            <asset name='sh_crr_ri_33_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,19' />
+            </asset>
+            <asset name='sh_crr_ri_33_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,20' />
+            </asset>
+            <asset name='sh_crr_ri_33_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,20' />
+            </asset>
+            <asset name='sh_crr_ri_33_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_33_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_43_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,19' />
+            </asset>
+            <asset name='sh_crr_ri_43_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,18' />
+            </asset>
+            <asset name='sh_crr_ri_43_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,15' />
+            </asset>
+            <asset name='sh_crr_ri_43_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,16' />
+            </asset>
+            <asset name='sh_crr_ri_43_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,18' />
+            </asset>
+            <asset name='sh_crr_ri_43_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,19' />
+            </asset>
+            <asset name='sh_crr_ri_43_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_43_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_44_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,19' />
+            </asset>
+            <asset name='sh_crr_ri_44_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,18' />
+            </asset>
+            <asset name='sh_crr_ri_44_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,15' />
+            </asset>
+            <asset name='sh_crr_ri_44_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,16' />
+            </asset>
+            <asset name='sh_crr_ri_44_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,18' />
+            </asset>
+            <asset name='sh_crr_ri_44_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,19' />
+            </asset>
+            <asset name='sh_crr_ri_44_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_44_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_45_0_0' mimeType='image/png' >
+                <param key='offset' value='-23,27' />
+            </asset>
+            <asset name='sh_crr_ri_45_1_0' mimeType='image/png' >
+                <param key='offset' value='-19,26' />
+            </asset>
+            <asset name='sh_crr_ri_45_2_0' mimeType='image/png' >
+                <param key='offset' value='-13,23' />
+            </asset>
+            <asset name='sh_crr_ri_45_3_0' mimeType='image/png' >
+                <param key='offset' value='-8,24' />
+            </asset>
+            <asset name='sh_crr_ri_45_4_0' mimeType='image/png' >
+                <param key='offset' value='-3,26' />
+            </asset>
+            <asset name='sh_crr_ri_45_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,27' />
+            </asset>
+            <asset name='sh_crr_ri_45_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_45_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_46_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,21' />
+            </asset>
+            <asset name='sh_crr_ri_46_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,20' />
+            </asset>
+            <asset name='sh_crr_ri_46_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_46_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_46_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,20' />
+            </asset>
+            <asset name='sh_crr_ri_46_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,21' />
+            </asset>
+            <asset name='sh_crr_ri_46_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_46_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_47_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,23' />
+            </asset>
+            <asset name='sh_crr_ri_47_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,21' />
+            </asset>
+            <asset name='sh_crr_ri_47_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,18' />
+            </asset>
+            <asset name='sh_crr_ri_47_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_47_4_0' mimeType='image/png' >
+                <param key='offset' value='-2,21' />
+            </asset>
+            <asset name='sh_crr_ri_47_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,21' />
+            </asset>
+            <asset name='sh_crr_ri_47_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_47_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_50_0_0' mimeType='image/png' >
+                <param key='offset' value='-26,21' />
+            </asset>
+            <asset name='sh_crr_ri_50_1_0' mimeType='image/png' >
+                <param key='offset' value='-23,20' />
+            </asset>
+            <asset name='sh_crr_ri_50_2_0' mimeType='image/png' >
+                <param key='offset' value='-17,16' />
+            </asset>
+            <asset name='sh_crr_ri_50_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_50_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,19' />
+            </asset>
+            <asset name='sh_crr_ri_50_5_0' mimeType='image/png' >
+                <param key='offset' value='-2,20' />
+            </asset>
+            <asset name='sh_crr_ri_50_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_450_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_51_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,21' />
+            </asset>
+            <asset name='sh_crr_ri_51_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,19' />
+            </asset>
+            <asset name='sh_crr_ri_51_2_0' mimeType='image/png' >
+                <param key='offset' value='-16,16' />
+            </asset>
+            <asset name='sh_crr_ri_51_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,16' />
+            </asset>
+            <asset name='sh_crr_ri_51_4_0' mimeType='image/png' >
+                <param key='offset' value='0,20' />
+            </asset>
+            <asset name='sh_crr_ri_51_5_0' mimeType='image/png' >
+                <param key='offset' value='-1,20' />
+            </asset>
+            <asset name='sh_crr_ri_51_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_51_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_52_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,21' />
+            </asset>
+            <asset name='sh_crr_ri_52_1_0' mimeType='image/png' >
+                <param key='offset' value='-22,19' />
+            </asset>
+            <asset name='sh_crr_ri_52_2_0' mimeType='image/png' >
+                <param key='offset' value='-17,16' />
+            </asset>
+            <asset name='sh_crr_ri_52_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,16' />
+            </asset>
+            <asset name='sh_crr_ri_52_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,20' />
+            </asset>
+            <asset name='sh_crr_ri_52_5_0' mimeType='image/png' >
+                <param key='offset' value='-2,20' />
+            </asset>
+            <asset name='sh_crr_ri_52_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_52_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_53_0_0' mimeType='image/png' >
+                <param key='offset' value='-26,21' />
+            </asset>
+            <asset name='sh_crr_ri_53_1_0' mimeType='image/png' >
+                <param key='offset' value='-23,20' />
+            </asset>
+            <asset name='sh_crr_ri_53_2_0' mimeType='image/png' >
+                <param key='offset' value='-17,16' />
+            </asset>
+            <asset name='sh_crr_ri_53_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_53_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,19' />
+            </asset>
+            <asset name='sh_crr_ri_53_5_0' mimeType='image/png' >
+                <param key='offset' value='-2,20' />
+            </asset>
+            <asset name='sh_crr_ri_53_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_53_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_54_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,23' />
+            </asset>
+            <asset name='sh_crr_ri_54_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,21' />
+            </asset>
+            <asset name='sh_crr_ri_54_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,18' />
+            </asset>
+            <asset name='sh_crr_ri_54_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_54_4_0' mimeType='image/png' >
+                <param key='offset' value='-2,21' />
+            </asset>
+            <asset name='sh_crr_ri_54_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,21' />
+            </asset>
+            <asset name='sh_crr_ri_54_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_54_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_48_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,19' />
+            </asset>
+            <asset name='sh_crr_ri_48_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,19' />
+            </asset>
+            <asset name='sh_crr_ri_48_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_48_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_48_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,19' />
+            </asset>
+            <asset name='sh_crr_ri_48_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,20' />
+            </asset>
+            <asset name='sh_crr_ri_48_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_48_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_55_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,19' />
+            </asset>
+            <asset name='sh_crr_ri_55_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,19' />
+            </asset>
+            <asset name='sh_crr_ri_55_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_55_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_55_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,19' />
+            </asset>
+            <asset name='sh_crr_ri_55_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,20' />
+            </asset>
+            <asset name='sh_crr_ri_55_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_55_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_56_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,19' />
+            </asset>
+            <asset name='sh_crr_ri_56_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,19' />
+            </asset>
+            <asset name='sh_crr_ri_56_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_56_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_56_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,19' />
+            </asset>
+            <asset name='sh_crr_ri_56_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,20' />
+            </asset>
+            <asset name='sh_crr_ri_56_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_56_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_57_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,21' />
+            </asset>
+            <asset name='sh_crr_ri_57_1_0' mimeType='image/png' >
+                <param key='offset' value='-22,19' />
+            </asset>
+            <asset name='sh_crr_ri_57_2_0' mimeType='image/png' >
+                <param key='offset' value='-17,16' />
+            </asset>
+            <asset name='sh_crr_ri_57_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,16' />
+            </asset>
+            <asset name='sh_crr_ri_57_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,20' />
+            </asset>
+            <asset name='sh_crr_ri_57_5_0' mimeType='image/png' >
+                <param key='offset' value='-2,20' />
+            </asset>
+            <asset name='sh_crr_ri_57_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_57_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_58_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,21' />
+            </asset>
+            <asset name='sh_crr_ri_58_1_0' mimeType='image/png' >
+                <param key='offset' value='-22,19' />
+            </asset>
+            <asset name='sh_crr_ri_58_2_0' mimeType='image/png' >
+                <param key='offset' value='-17,16' />
+            </asset>
+            <asset name='sh_crr_ri_58_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,16' />
+            </asset>
+            <asset name='sh_crr_ri_58_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,20' />
+            </asset>
+            <asset name='sh_crr_ri_58_5_0' mimeType='image/png' >
+                <param key='offset' value='-2,20' />
+            </asset>
+            <asset name='sh_crr_ri_58_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_58_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_59_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,21' />
+            </asset>
+            <asset name='sh_crr_ri_59_1_0' mimeType='image/png' >
+                <param key='offset' value='-22,19' />
+            </asset>
+            <asset name='sh_crr_ri_59_2_0' mimeType='image/png' >
+                <param key='offset' value='-17,16' />
+            </asset>
+            <asset name='sh_crr_ri_59_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,16' />
+            </asset>
+            <asset name='sh_crr_ri_59_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,20' />
+            </asset>
+            <asset name='sh_crr_ri_59_5_0' mimeType='image/png' >
+                <param key='offset' value='-2,20' />
+            </asset>
+            <asset name='sh_crr_ri_59_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_59_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_60_0_0' mimeType='image/png' >
+                <param key='offset' value='-23,22' />
+            </asset>
+            <asset name='sh_crr_ri_60_1_0' mimeType='image/png' >
+                <param key='offset' value='-20,22' />
+            </asset>
+            <asset name='sh_crr_ri_60_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,19' />
+            </asset>
+            <asset name='sh_crr_ri_60_3_0' mimeType='image/png' >
+                <param key='offset' value='-9,20' />
+            </asset>
+            <asset name='sh_crr_ri_60_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,22' />
+            </asset>
+            <asset name='sh_crr_ri_60_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,23' />
+            </asset>
+            <asset name='sh_crr_ri_60_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_60_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_61_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,20' />
+            </asset>
+            <asset name='sh_crr_ri_61_1_0' mimeType='image/png' >
+                <param key='offset' value='-20,19' />
+            </asset>
+            <asset name='sh_crr_ri_61_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,16' />
+            </asset>
+            <asset name='sh_crr_ri_61_3_0' mimeType='image/png' >
+                <param key='offset' value='-9,17' />
+            </asset>
+            <asset name='sh_crr_ri_61_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,19' />
+            </asset>
+            <asset name='sh_crr_ri_61_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,20' />
+            </asset>
+            <asset name='sh_crr_ri_61_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_61_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_62_0_0' mimeType='image/png' >
+                <param key='offset' value='-23,21' />
+            </asset>
+            <asset name='sh_crr_ri_62_1_0' mimeType='image/png' >
+                <param key='offset' value='-20,21' />
+            </asset>
+            <asset name='sh_crr_ri_62_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,18' />
+            </asset>
+            <asset name='sh_crr_ri_62_3_0' mimeType='image/png' >
+                <param key='offset' value='-9,19' />
+            </asset>
+            <asset name='sh_crr_ri_62_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,21' />
+            </asset>
+            <asset name='sh_crr_ri_62_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,22' />
+            </asset>
+            <asset name='sh_crr_ri_62_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_62_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_63_0_0' mimeType='image/png' >
+                <param key='offset' value='-23,22' />
+            </asset>
+            <asset name='sh_crr_ri_63_1_0' mimeType='image/png' >
+                <param key='offset' value='-19,21' />
+            </asset>
+            <asset name='sh_crr_ri_63_2_0' mimeType='image/png' >
+                <param key='offset' value='-13,18' />
+            </asset>
+            <asset name='sh_crr_ri_63_3_0' mimeType='image/png' >
+                <param key='offset' value='-7,19' />
+            </asset>
+            <asset name='sh_crr_ri_63_4_0' mimeType='image/png' >
+                <param key='offset' value='-3,21' />
+            </asset>
+            <asset name='sh_crr_ri_63_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,22' />
+            </asset>
+            <asset name='sh_crr_ri_63_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_63_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_64_0_0' mimeType='image/png' >
+                <param key='offset' value='-23,22' />
+            </asset>
+            <asset name='sh_crr_ri_64_1_0' mimeType='image/png' >
+                <param key='offset' value='-19,21' />
+            </asset>
+            <asset name='sh_crr_ri_64_2_0' mimeType='image/png' >
+                <param key='offset' value='-13,18' />
+            </asset>
+            <asset name='sh_crr_ri_64_3_0' mimeType='image/png' >
+                <param key='offset' value='-6,19' />
+            </asset>
+            <asset name='sh_crr_ri_64_4_0' mimeType='image/png' >
+                <param key='offset' value='-3,21' />
+            </asset>
+            <asset name='sh_crr_ri_64_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,22' />
+            </asset>
+            <asset name='sh_crr_ri_64_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_64_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_65_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,21' />
+            </asset>
+            <asset name='sh_crr_ri_65_1_0' mimeType='image/png' >
+                <param key='offset' value='-20,19' />
+            </asset>
+            <asset name='sh_crr_ri_65_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,16' />
+            </asset>
+            <asset name='sh_crr_ri_65_3_0' mimeType='image/png' >
+                <param key='offset' value='-9,17' />
+            </asset>
+            <asset name='sh_crr_ri_65_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,19' />
+            </asset>
+            <asset name='sh_crr_ri_65_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,20' />
+            </asset>
+            <asset name='sh_crr_ri_65_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_65_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_66_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,21' />
+            </asset>
+            <asset name='sh_crr_ri_66_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,20' />
+            </asset>
+            <asset name='sh_crr_ri_66_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,15' />
+            </asset>
+            <asset name='sh_crr_ri_66_3_0' mimeType='image/png' >
+                <param key='offset' value='-9,17' />
+            </asset>
+            <asset name='sh_crr_ri_66_4_0' mimeType='image/png' >
+                <param key='offset' value='-2,19' />
+            </asset>
+            <asset name='sh_crr_ri_66_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,20' />
+            </asset>
+            <asset name='sh_crr_ri_66_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_66_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_67_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,24' />
+            </asset>
+            <asset name='sh_crr_ri_67_1_0' mimeType='image/png' >
+                <param key='offset' value='-20,23' />
+            </asset>
+            <asset name='sh_crr_ri_67_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,20' />
+            </asset>
+            <asset name='sh_crr_ri_67_3_0' mimeType='image/png' >
+                <param key='offset' value='-7,21' />
+            </asset>
+            <asset name='sh_crr_ri_67_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,23' />
+            </asset>
+            <asset name='sh_crr_ri_67_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,24' />
+            </asset>
+            <asset name='sh_crr_ri_67_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_67_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_68_0_0' mimeType='image/png' >
+                <param key='offset' value='-23,21' />
+            </asset>
+            <asset name='sh_crr_ri_68_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,20' />
+            </asset>
+            <asset name='sh_crr_ri_68_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,15' />
+            </asset>
+            <asset name='sh_crr_ri_68_3_0' mimeType='image/png' >
+                <param key='offset' value='-8,19' />
+            </asset>
+            <asset name='sh_crr_ri_68_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,20' />
+            </asset>
+            <asset name='sh_crr_ri_68_5_0' mimeType='image/png' >
+                <param key='offset' value='-3,20' />
+            </asset>
+            <asset name='sh_crr_ri_68_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_68_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_69_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,22' />
+            </asset>
+            <asset name='sh_crr_ri_69_1_0' mimeType='image/png' >
+                <param key='offset' value='-20,21' />
+            </asset>
+            <asset name='sh_crr_ri_69_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,18' />
+            </asset>
+            <asset name='sh_crr_ri_69_3_0' mimeType='image/png' >
+                <param key='offset' value='-7,19' />
+            </asset>
+            <asset name='sh_crr_ri_69_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,21' />
+            </asset>
+            <asset name='sh_crr_ri_69_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,22' />
+            </asset>
+            <asset name='sh_crr_ri_69_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_69_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_70_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,23' />
+            </asset>
+            <asset name='sh_crr_ri_70_1_0' mimeType='image/png' >
+                <param key='offset' value='-20,21' />
+            </asset>
+            <asset name='sh_crr_ri_70_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,18' />
+            </asset>
+            <asset name='sh_crr_ri_70_3_0' mimeType='image/png' >
+                <param key='offset' value='-9,19' />
+            </asset>
+            <asset name='sh_crr_ri_70_4_0' mimeType='image/png' >
+                <param key='offset' value='-4,21' />
+            </asset>
+            <asset name='sh_crr_ri_70_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,22' />
+            </asset>
+            <asset name='sh_crr_ri_70_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_70_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+			<asset name='sh_crr_ri_71_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,19' />
+            </asset>
+            <asset name='sh_crr_ri_71_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,19' />
+            </asset>
+            <asset name='sh_crr_ri_71_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_71_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_71_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,19' />
+            </asset>
+            <asset name='sh_crr_ri_71_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,20' />
+            </asset>
+            <asset name='sh_crr_ri_71_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_71_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_72_0_0' mimeType='image/png' >
+                <param key='offset' value='-23,21' />
+            </asset>
+            <asset name='sh_crr_ri_72_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,20' />
+            </asset>
+            <asset name='sh_crr_ri_72_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,15' />
+            </asset>
+            <asset name='sh_crr_ri_72_3_0' mimeType='image/png' >
+                <param key='offset' value='-8,19' />
+            </asset>
+            <asset name='sh_crr_ri_72_4_0' mimeType='image/png' >
+                <param key='offset' value='-1,20' />
+            </asset>
+            <asset name='sh_crr_ri_72_5_0' mimeType='image/png' >
+                <param key='offset' value='-3,20' />
+            </asset>
+            <asset name='sh_crr_ri_72_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_72_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_73_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,23' />
+            </asset>
+            <asset name='sh_crr_ri_73_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,22' />
+            </asset>
+            <asset name='sh_crr_ri_73_2_0' mimeType='image/png' >
+                <param key='offset' value='-14,18' />
+            </asset>
+            <asset name='sh_crr_ri_73_3_0' mimeType='image/png' >
+                <param key='offset' value='-11,19' />
+            </asset>
+            <asset name='sh_crr_ri_73_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,20' />
+            </asset>
+            <asset name='sh_crr_ri_73_5_0' mimeType='image/png' >
+                <param key='offset' value='-4,21' />
+            </asset>
+            <asset name='sh_crr_ri_73_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_73_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_74_0_0' mimeType='image/png' >
+                <param key='offset' value='-25,21' />
+            </asset>
+            <asset name='sh_crr_ri_74_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,20' />
+            </asset>
+            <asset name='sh_crr_ri_74_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,17' />
+            </asset>
+            <asset name='sh_crr_ri_74_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,18' />
+            </asset>
+            <asset name='sh_crr_ri_74_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,20' />
+            </asset>
+            <asset name='sh_crr_ri_74_5_0' mimeType='image/png' >
+                <param key='offset' value='-5,21' />
+            </asset>
+            <asset name='sh_crr_ri_74_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_74_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+            <asset name='sh_crr_ri_75_0_0' mimeType='image/png' >
+                <param key='offset' value='-24,19' />
+            </asset>
+            <asset name='sh_crr_ri_75_1_0' mimeType='image/png' >
+                <param key='offset' value='-21,19' />
+            </asset>
+            <asset name='sh_crr_ri_75_2_0' mimeType='image/png' >
+                <param key='offset' value='-15,16' />
+            </asset>
+            <asset name='sh_crr_ri_75_3_0' mimeType='image/png' >
+                <param key='offset' value='-10,17' />
+            </asset>
+            <asset name='sh_crr_ri_75_4_0' mimeType='image/png' >
+                <param key='offset' value='-5,19' />
+            </asset>
+            <asset name='sh_crr_ri_75_5_0' mimeType='image/png' >
+                <param key='offset' value='-6,20' />
+            </asset>
+            <asset name='sh_crr_ri_75_6_0' mimeType='image/png' >
+                <param key='offset' value='-18,10' />
+            </asset>
+            <asset name='sh_crr_ri_75_7_0' mimeType='image/png' >
+                <param key='offset' value='-11,17' />
+            </asset>
+	 <asset name="sh_crr_ri_76_1_0" mimeType="image/png">
+        <param key="offset" value="-18,26"/>
+      </asset>
+      <asset name="sh_crr_ri_76_2_0" mimeType="image/png">
+        <param key="offset" value="-12,23"/>
+      </asset>
+      <asset name="sh_crr_ri_76_0_0" mimeType="image/png">
+        <param key="offset" value="-21,27"/>
+      </asset>
+      <asset name="sh_crr_ri_76_3_0" mimeType="image/png">
+        <param key="offset" value="-8,25"/>
+      </asset>
+      <asset name="sh_crr_ri_76_4_0" mimeType="image/png">
+        <param key="offset" value="-3,28"/>
+      </asset>
+      <asset name="sh_crr_ri_76_5_0" mimeType="image/png">
+        <param key="offset" value="-4,26"/>
+      </asset>
+      <asset name="sh_crr_ri_76_6_0" mimeType="image/png">
+        <param key="offset" value="-8,26"/>
+      </asset>
+      <asset name="sh_crr_ri_76_7_0" mimeType="image/png">
+        <param key="offset" value="-15,25"/>
+      </asset>
+	 <asset name="sh_crr_ri_77_1_0" mimeType="image/png">
+        <param key="offset" value="-18,26"/>
+      </asset>
+      <asset name="sh_crr_ri_77_2_0" mimeType="image/png">
+        <param key="offset" value="-12,23"/>
+      </asset>
+      <asset name="sh_crr_ri_77_0_0" mimeType="image/png">
+        <param key="offset" value="-21,27"/>
+      </asset>
+      <asset name="sh_crr_ri_77_3_0" mimeType="image/png">
+        <param key="offset" value="-8,25"/>
+      </asset>
+      <asset name="sh_crr_ri_77_4_0" mimeType="image/png">
+        <param key="offset" value="-3,28"/>
+      </asset>
+      <asset name="sh_crr_ri_77_5_0" mimeType="image/png">
+        <param key="offset" value="-4,26"/>
+      </asset>
+      <asset name="sh_crr_ri_77_6_0" mimeType="image/png">
+        <param key="offset" value="-8,26"/>
+      </asset>
+      <asset name="sh_crr_ri_77_7_0" mimeType="image/png">
+        <param key="offset" value="-15,25"/>
+      </asset>
+      <asset name="sh_crr_ri_78_0_0" mimeType="image/png">
+        <param key="offset" value="-20,32"/>
+      </asset>
+      <asset name="sh_crr_ri_78_2_0" mimeType="image/png">
+        <param key="offset" value="-14,32"/>
+      </asset>
+      <asset name="sh_crr_ri_78_3_0" mimeType="image/png">
+        <param key="offset" value="-4,31"/>
+      </asset>
+      <asset name="sh_crr_ri_78_4_0" mimeType="image/png">
+        <param key="offset" value="0,32"/>
+      </asset>
+      <asset name="sh_crr_ri_78_1_0" mimeType="image/png">
+        <param key="offset" value="-20,32"/>
+      </asset>
+      <asset name="sh_crr_ri_78_5_0" mimeType="image/png">
+        <param key="offset" value="1,31"/>
+      </asset>
+      <asset name="sh_crr_ri_78_6_0" mimeType="image/png">
+        <param key="offset" value="-8,31"/>
+      </asset>
+      <asset name="sh_crr_ri_78_7_0" mimeType="image/png">
+        <param key="offset" value="-12,31"/>
+      </asset>
+      <asset name="sh_crr_ri_79_0_0" mimeType="image/png">
+        <param key="offset" value="-25,22"/>
+      </asset>
+      <asset name="sh_crr_ri_79_1_0" mimeType="image/png">
+        <param key="offset" value="-21,19"/>
+      </asset>
+      <asset name="sh_crr_ri_79_2_0" mimeType="image/png">
+        <param key="offset" value="-16,16"/>
+      </asset>
+      <asset name="sh_crr_ri_79_3_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+      <asset name="sh_crr_ri_79_4_0" mimeType="image/png">
+        <param key="offset" value="-1,20"/>
+      </asset>
+      <asset name="sh_crr_ri_79_5_0" mimeType="image/png">
+        <param key="offset" value="-2,19"/>
+      </asset>
+      <asset name="sh_crr_ri_80_0_0" mimeType="image/png">
+        <param key="offset" value="-25,22"/>
+      </asset>
+      <asset name="sh_crr_ri_80_1_0" mimeType="image/png">
+        <param key="offset" value="-21,19"/>
+      </asset>
+      <asset name="sh_crr_ri_80_2_0" mimeType="image/png">
+        <param key="offset" value="-16,17"/>
+      </asset>
+      <asset name="sh_crr_ri_80_3_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+      <asset name="sh_crr_ri_80_4_0" mimeType="image/png">
+        <param key="offset" value="-1,20"/>
+      </asset>
+      <asset name="sh_crr_ri_80_5_0" mimeType="image/png">
+        <param key="offset" value="-2,20"/>
+      </asset>
+      <asset name="sh_crr_ri_81_0_0" mimeType="image/png">
+        <param key="offset" value="-25,22"/>
+      </asset>
+      <asset name="sh_crr_ri_81_1_0" mimeType="image/png">
+        <param key="offset" value="-21,19"/>
+      </asset>
+      <asset name="sh_crr_ri_81_2_0" mimeType="image/png">
+        <param key="offset" value="-16,17"/>
+      </asset>
+      <asset name="sh_crr_ri_81_3_0" mimeType="image/png">
+        <param key="offset" value="-11,17"/>
+      </asset>
+      <asset name="sh_crr_ri_81_4_0" mimeType="image/png">
+        <param key="offset" value="-1,20"/>
+      </asset>
+      <asset name="sh_crr_ri_81_5_0" mimeType="image/png">
+        <param key="offset" value="-2,20"/>
+      </asset>
+      <asset name="sh_crr_ri_82_0_0" mimeType="image/png">
+        <param key="offset" value="-24,27"/>
+      </asset>
+      <asset name="sh_crr_ri_82_1_0" mimeType="image/png">
+        <param key="offset" value="-20,25"/>
+      </asset>
+      <asset name="sh_crr_ri_82_2_0" mimeType="image/png">
+        <param key="offset" value="-15,23"/>
+      </asset>
+      <asset name="sh_crr_ri_82_3_0" mimeType="image/png">
+        <param key="offset" value="-9,25"/>
+      </asset>
+      <asset name="sh_crr_ri_82_4_0" mimeType="image/png">
+        <param key="offset" value="0,26"/>
+      </asset>
+      <asset name="sh_crr_ri_82_5_0" mimeType="image/png">
+        <param key="offset" value="-2,26"/>
+      </asset>
+      <asset name="sh_crr_ri_82_6_0" mimeType="image/png">
+        <param key="offset" value="47,26"/>
+      </asset>
+      <asset name="sh_crr_ri_83_5_0" mimeType="image/png">
+        <param key="offset" value="-2,22"/>
+      </asset>
+      <asset name="sh_crr_ri_83_4_0" mimeType="image/png">
+        <param key="offset" value="-2,21"/>
+      </asset>
+      <asset name="sh_crr_ri_83_3_0" mimeType="image/png">
+        <param key="offset" value="-10,18"/>
+      </asset>
+      <asset name="sh_crr_ri_83_2_0" mimeType="image/png">
+        <param key="offset" value="-14,18"/>
+      </asset>
+      <asset name="sh_crr_ri_83_1_0" mimeType="image/png">
+        <param key="offset" value="-21,21"/>
+      </asset>
+      <asset name="sh_crr_ri_83_0_0" mimeType="image/png">
+        <param key="offset" value="-24,22"/>
+      </asset>
+      <asset name="sh_crr_ri_84_5_0" mimeType="image/png">
+        <param key="offset" value="-2,22"/>
+      </asset>
+      <asset name="sh_crr_ri_84_4_0" mimeType="image/png">
+        <param key="offset" value="-2,21"/>
+      </asset>
+      <asset name="sh_crr_ri_84_3_0" mimeType="image/png">
+        <param key="offset" value="-10,18"/>
+      </asset>
+      <asset name="sh_crr_ri_84_2_0" mimeType="image/png">
+        <param key="offset" value="-14,18"/>
+      </asset>
+      <asset name="sh_crr_ri_84_1_0" mimeType="image/png">
+        <param key="offset" value="-21,21"/>
+      </asset>
+      <asset name="sh_crr_ri_84_0_0" mimeType="image/png">
+        <param key="offset" value="-24,22"/>
+      </asset>
+      <asset name="sh_crr_ri_85_5_0" mimeType="image/png">
+        <param key="offset" value="-2,22"/>
+      </asset>
+      <asset name="sh_crr_ri_85_4_0" mimeType="image/png">
+        <param key="offset" value="-2,21"/>
+      </asset>
+      <asset name="sh_crr_ri_85_3_0" mimeType="image/png">
+        <param key="offset" value="-10,18"/>
+      </asset>
+      <asset name="sh_crr_ri_85_2_0" mimeType="image/png">
+        <param key="offset" value="-14,18"/>
+      </asset>
+      <asset name="sh_crr_ri_85_1_0" mimeType="image/png">
+        <param key="offset" value="-21,21"/>
+      </asset>
+      <asset name="sh_crr_ri_85_0_0" mimeType="image/png">
+        <param key="offset" value="-24,22"/>
+      </asset>
+      <asset name="sh_crr_ri_87_0_0" mimeType="image/png">
+        <param key="offset" value="-23,24"/>
+      </asset>
+      <asset name="sh_crr_ri_87_4_0" mimeType="image/png">
+        <param key="offset" value="-6,20"/>
+      </asset>
+      <asset name="sh_crr_ri_87_2_0" mimeType="image/png">
+        <param key="offset" value="-15,20"/>
+      </asset>
+      <asset name="sh_crr_ri_87_3_0" mimeType="image/png">
+        <param key="offset" value="-11,19"/>
+      </asset>
+      <asset name="sh_crr_ri_87_1_0" mimeType="image/png">
+        <param key="offset" value="-21,22"/>
+      </asset>
+      <asset name="sh_crr_ri_87_5_0" mimeType="image/png">
+        <param key="offset" value="-6,22"/>
+      </asset>
+      <asset name="sh_crr_ri_89_0_0" mimeType="image/png">
+        <param key="offset" value="-25,20"/>
+      </asset>
+      <asset name="sh_crr_ri_89_1_0" mimeType="image/png">
+        <param key="offset" value="-22,18"/>
+      </asset>
+      <asset name="sh_crr_ri_89_2_0" mimeType="image/png">
+        <param key="offset" value="-16,15"/>
+      </asset>
+      <asset name="sh_crr_ri_89_3_0" mimeType="image/png">
+        <param key="offset" value="-12,16"/>
+      </asset>
+      <asset name="sh_crr_ri_89_4_0" mimeType="image/png">
+        <param key="offset" value="-4,18"/>
+      </asset>
+      <asset name="sh_crr_ri_89_5_0" mimeType="image/png">
+        <param key="offset" value="-4,19"/>
+      </asset>
+      <asset name="sh_crr_ri_90_5_0" mimeType="image/png">
+        <param key="offset" value="-1,22"/>
+      </asset>
+      <asset name="sh_crr_ri_90_4_0" mimeType="image/png">
+        <param key="offset" value="0,21"/>
+      </asset>
+      <asset name="sh_crr_ri_90_3_0" mimeType="image/png">
+        <param key="offset" value="-10,21"/>
+      </asset>
+      <asset name="sh_crr_ri_90_2_0" mimeType="image/png">
+        <param key="offset" value="-15,17"/>
+      </asset>
+      <asset name="sh_crr_ri_90_1_0" mimeType="image/png">
+        <param key="offset" value="-21,21"/>
+      </asset>
+      <asset name="sh_crr_ri_90_0_0" mimeType="image/png">
+        <param key="offset" value="-25,23"/>
+      </asset>
+      <asset name="sh_crr_ri_91_7_0" mimeType="image/png">
+        <param key="offset" value="-13,17"/>
+      </asset>
+      <asset name="sh_crr_ri_91_6_0" mimeType="image/png">
+        <param key="offset" value="-12,20"/>
+      </asset>
+      <asset name="sh_crr_ri_91_5_0" mimeType="image/png">
+        <param key="offset" value="-5,19"/>
+      </asset>
+      <asset name="sh_crr_ri_91_4_0" mimeType="image/png">
+        <param key="offset" value="-1,18"/>
+      </asset>
+      <asset name="sh_crr_ri_91_3_0" mimeType="image/png">
+        <param key="offset" value="-8,15"/>
+      </asset>
+      <asset name="sh_crr_ri_91_2_0" mimeType="image/png">
+        <param key="offset" value="-12,15"/>
+      </asset>
+      <asset name="sh_crr_ri_91_1_0" mimeType="image/png">
+        <param key="offset" value="-21,17"/>
+      </asset>
+      <asset name="sh_crr_ri_91_0_0" mimeType="image/png">
+        <param key="offset" value="-22,18"/>
+      </asset>
+      <asset name="sh_crr_ri_92_0_0" mimeType="image/png">
+        <param key="offset" value="-25,19"/>
+      </asset>
+      <asset name="sh_crr_ri_92_1_0" mimeType="image/png">
+        <param key="offset" value="-22,17"/>
+      </asset>
+      <asset name="sh_crr_ri_92_2_0" mimeType="image/png">
+        <param key="offset" value="-16,15"/>
+      </asset>
+      <asset name="sh_crr_ri_92_4_0" mimeType="image/png">
+        <param key="offset" value="-4,18"/>
+      </asset>
+      <asset name="sh_crr_ri_92_5_0" mimeType="image/png">
+        <param key="offset" value="-6,19"/>
+      </asset>
+      <asset name="sh_crr_ri_92_3_0" mimeType="image/png">
+        <param key="offset" value="-11,15"/>
+      </asset>
+      <asset name="sh_crr_ri_93_0_0" mimeType="image/png">
+        <param key="offset" value="-25,19"/>
+      </asset>
+      <asset name="sh_crr_ri_93_1_0" mimeType="image/png">
+        <param key="offset" value="-22,17"/>
+      </asset>
+      <asset name="sh_crr_ri_93_2_0" mimeType="image/png">
+        <param key="offset" value="-16,15"/>
+      </asset>
+      <asset name="sh_crr_ri_93_4_0" mimeType="image/png">
+        <param key="offset" value="-4,18"/>
+      </asset>
+      <asset name="sh_crr_ri_93_5_0" mimeType="image/png">
+        <param key="offset" value="-6,19"/>
+      </asset>
+      <asset name="sh_crr_ri_93_3_0" mimeType="image/png">
+        <param key="offset" value="-11,15"/>
+      </asset>
+      <asset name="sh_crr_ri_94_0_0" mimeType="image/png">
+        <param key="offset" value="-25,19"/>
+      </asset>
+      <asset name="sh_crr_ri_94_1_0" mimeType="image/png">
+        <param key="offset" value="-22,17"/>
+      </asset>
+      <asset name="sh_crr_ri_94_2_0" mimeType="image/png">
+        <param key="offset" value="-16,15"/>
+      </asset>
+      <asset name="sh_crr_ri_94_4_0" mimeType="image/png">
+        <param key="offset" value="-4,18"/>
+      </asset>
+      <asset name="sh_crr_ri_94_5_0" mimeType="image/png">
+        <param key="offset" value="-6,19"/>
+      </asset>
+      <asset name="sh_crr_ri_94_3_0" mimeType="image/png">
+        <param key="offset" value="-11,15"/>
+      </asset>
+      <asset name="sh_crr_ri_95_5_0" mimeType="image/png">
+        <param key="offset" value="-3,26"/>
+      </asset>
+      <asset name="sh_crr_ri_95_4_0" mimeType="image/png">
+        <param key="offset" value="-2,25"/>
+      </asset>
+      <asset name="sh_crr_ri_95_3_0" mimeType="image/png">
+        <param key="offset" value="-8,23"/>
+      </asset>
+      <asset name="sh_crr_ri_95_2_0" mimeType="image/png">
+        <param key="offset" value="-15,21"/>
+      </asset>
+      <asset name="sh_crr_ri_95_1_0" mimeType="image/png">
+        <param key="offset" value="-21,25"/>
+      </asset>
+      <asset name="sh_crr_ri_95_0_0" mimeType="image/png">
+        <param key="offset" value="-23,26"/>
+      </asset>
+      <asset name="sh_crr_ri_97_5_0" mimeType="image/png">
+        <param key="offset" value="-3,29"/>
+      </asset>
+      <asset name="sh_crr_ri_97_4_0" mimeType="image/png">
+        <param key="offset" value="-2,29"/>
+      </asset>
+      <asset name="sh_crr_ri_97_3_0" mimeType="image/png">
+        <param key="offset" value="-10,25"/>
+      </asset>
+      <asset name="sh_crr_ri_97_2_0" mimeType="image/png">
+        <param key="offset" value="-15,24"/>
+      </asset>
+      <asset name="sh_crr_ri_97_1_0" mimeType="image/png">
+        <param key="offset" value="-21,27"/>
+      </asset>
+      <asset name="sh_crr_ri_97_0_0" mimeType="image/png">
+        <param key="offset" value="-24,29"/>
+      </asset>
+      <asset name="sh_crr_ri_98_5_0" mimeType="image/png">
+        <param key="offset" value="-3,29"/>
+      </asset>
+      <asset name="sh_crr_ri_98_4_0" mimeType="image/png">
+        <param key="offset" value="-2,29"/>
+      </asset>
+      <asset name="sh_crr_ri_98_3_0" mimeType="image/png">
+        <param key="offset" value="-10,25"/>
+      </asset>
+      <asset name="sh_crr_ri_98_2_0" mimeType="image/png">
+        <param key="offset" value="-15,24"/>
+      </asset>
+      <asset name="sh_crr_ri_98_1_0" mimeType="image/png">
+        <param key="offset" value="-21,27"/>
+      </asset>
+      <asset name="sh_crr_ri_98_0_0" mimeType="image/png">
+        <param key="offset" value="-24,29"/>
+      </asset>
+      <asset name="sh_crr_ri_99_0_0" mimeType="image/png">
+        <param key="offset" value="-19,25"/>
+      </asset>
+      <asset name="sh_crr_ri_99_1_0" mimeType="image/png">
+        <param key="offset" value="-16,24"/>
+      </asset>
+      <asset name="sh_crr_ri_99_2_0" mimeType="image/png">
+        <param key="offset" value="-10,21"/>
+      </asset>
+      <asset name="sh_crr_ri_99_4_0" mimeType="image/png">
+        <param key="offset" value="1,24"/>
+      </asset>
+      <asset name="sh_crr_ri_99_3_0" mimeType="image/png">
+        <param key="offset" value="-8,20"/>
+      </asset>
+      <asset name="sh_crr_ri_99_5_0" mimeType="image/png">
+        <param key="offset" value="0,25"/>
+      </asset>
+      <asset name="sh_crr_ri_100_0_0" mimeType="image/png">
+        <param key="offset" value="-24,22"/>
+      </asset>
+      <asset name="sh_crr_ri_100_1_0" mimeType="image/png">
+        <param key="offset" value="-19,20"/>
+      </asset>
+      <asset name="sh_crr_ri_100_2_0" mimeType="image/png">
+        <param key="offset" value="-14,17"/>
+      </asset>
+      <asset name="sh_crr_ri_100_3_0" mimeType="image/png">
+        <param key="offset" value="-9,17"/>
+      </asset>
+      <asset name="sh_crr_ri_100_4_0" mimeType="image/png">
+        <param key="offset" value="-1,20"/>
+      </asset>
+      <asset name="sh_crr_ri_100_5_0" mimeType="image/png">
+        <param key="offset" value="-1,21"/>
+      </asset>
+      <asset name="sh_crr_ri_101_0_0" mimeType="image/png">
+        <param key="offset" value="15,109"/>
+      </asset>
+      <asset name="sh_crr_ri_101_1_0" mimeType="image/png">
+        <param key="offset" value="-21,21"/>
+      </asset>
+      <asset name="sh_crr_ri_101_2_0" mimeType="image/png">
+        <param key="offset" value="-16,16"/>
+      </asset>
+      <asset name="sh_crr_ri_101_4_0" mimeType="image/png">
+        <param key="offset" value="-4,21"/>
+      </asset>
+      <asset name="sh_crr_ri_101_5_0" mimeType="image/png">
+        <param key="offset" value="-5,22"/>
+      </asset>
+      <asset name="sh_crr_ri_101_3_0" mimeType="image/png">
+        <param key="offset" value="-11,18"/>
+      </asset>
+      <asset name="sh_crr_ri_102_5_0" mimeType="image/png">
+        <param key="offset" value="-4,20"/>
+      </asset>
+      <asset name="sh_crr_ri_102_4_0" mimeType="image/png">
+        <param key="offset" value="1,19"/>
+      </asset>
+      <asset name="sh_crr_ri_102_3_0" mimeType="image/png">
+        <param key="offset" value="-12,17"/>
+      </asset>
+      <asset name="sh_crr_ri_102_2_0" mimeType="image/png">
+        <param key="offset" value="-17,16"/>
+      </asset>
+      <asset name="sh_crr_ri_102_1_0" mimeType="image/png">
+        <param key="offset" value="-22,20"/>
+      </asset>
+      <asset name="sh_crr_ri_102_0_0" mimeType="image/png">
+        <param key="offset" value="-23,23"/>
+      </asset>
+      <asset name="sh_crr_ri_103_5_0" mimeType="image/png">
+        <param key="offset" value="-9,22"/>
+      </asset>
+      <asset name="sh_crr_ri_103_4_0" mimeType="image/png">
+        <param key="offset" value="-5,22"/>
+      </asset>
+      <asset name="sh_crr_ri_103_3_0" mimeType="image/png">
+        <param key="offset" value="-12,20"/>
+      </asset>
+      <asset name="sh_crr_ri_103_2_0" mimeType="image/png">
+        <param key="offset" value="-16,18"/>
+      </asset>
+      <asset name="sh_crr_ri_103_1_0" mimeType="image/png">
+        <param key="offset" value="-22,21"/>
+      </asset>
+      <asset name="sh_crr_ri_103_0_0" mimeType="image/png">
+        <param key="offset" value="-26,24"/>
+      </asset>
+      <asset name="sh_crr_ri_105_5_0" mimeType="image/png">
+        <param key="offset" value="-4,22"/>
+      </asset>
+      <asset name="sh_crr_ri_105_4_0" mimeType="image/png">
+        <param key="offset" value="-2,22"/>
+      </asset>
+      <asset name="sh_crr_ri_105_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_crr_ri_105_2_0" mimeType="image/png">
+        <param key="offset" value="-15,18"/>
+      </asset>
+      <asset name="sh_crr_ri_105_1_0" mimeType="image/png">
+        <param key="offset" value="-21,22"/>
+      </asset>
+      <asset name="sh_crr_ri_105_0_0" mimeType="image/png">
+        <param key="offset" value="-25,23"/>
+      </asset>
+      <asset name="sh_crr_ri_106_0_0" mimeType="image/png">
+        <param key="offset" value="-23,22"/>
+      </asset>
+      <asset name="sh_crr_ri_106_4_0" mimeType="image/png">
+        <param key="offset" value="-2,20"/>
+      </asset>
+      <asset name="sh_crr_ri_106_2_0" mimeType="image/png">
+        <param key="offset" value="-15,17"/>
+      </asset>
+      <asset name="sh_crr_ri_106_1_0" mimeType="image/png">
+        <param key="offset" value="-21,20"/>
+      </asset>
+      <asset name="sh_crr_ri_106_5_0" mimeType="image/png">
+        <param key="offset" value="-3,21"/>
+      </asset>
+      <asset name="sh_crr_ri_106_3_0" mimeType="image/png">
+        <param key="offset" value="-11,18"/>
+      </asset>
+      <asset name="sh_sig_li_0_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_0_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_0_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_0_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_0_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_0_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_0_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_0_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_1_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_1_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_1_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_1_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_1_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_1_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_1_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_1_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_2_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_2_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_2_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_2_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_2_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_2_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_2_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_2_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_3_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_3_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_3_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_3_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_3_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_3_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_3_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_3_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_4_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_4_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_4_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_4_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_4_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_4_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_4_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_4_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_5_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_5_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_5_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_5_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_5_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_5_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_5_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_5_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_6_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_6_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_6_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_6_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_6_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_6_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_6_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_6_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_7_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_7_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_7_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_7_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_7_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_7_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_7_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_7_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_8_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_8_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_8_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_8_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_8_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_8_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_8_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_8_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_9_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_9_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_9_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_9_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_9_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_9_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_9_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_9_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_10_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_10_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_10_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_10_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_10_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_10_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_10_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_10_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_11_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_11_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_11_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_11_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_11_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_11_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_11_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_11_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_12_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_12_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_12_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_12_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_12_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_12_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_12_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_12_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_13_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_13_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_13_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_13_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_13_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_13_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_13_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_13_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_14_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_14_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_14_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_14_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_14_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_14_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_14_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_14_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_15_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_15_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_15_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_15_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_15_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_15_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_15_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_15_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_16_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_16_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_16_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_16_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_16_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_16_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_16_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_16_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+      <asset name="sh_sig_li_17_0_0" mimeType="image/png">
+        <param key="offset" value="-1,56"/>
+      </asset>
+      <asset name="sh_sig_li_17_1_0" mimeType="image/png">
+        <param key="offset" value="-18,55"/>
+      </asset>
+      <asset name="sh_sig_li_17_2_0" mimeType="image/png">
+        <param key="offset" value="-17,56"/>
+      </asset>
+      <asset name="sh_sig_li_17_3_0" mimeType="image/png">
+        <param key="offset" value="-17,53"/>
+      </asset>
+      <asset name="sh_sig_li_17_4_0" mimeType="image/png">
+        <param key="offset" value="-20,54"/>
+      </asset>
+      <asset name="sh_sig_li_17_5_0" mimeType="image/png">
+        <param key="offset" value="-12,54"/>
+      </asset>
+      <asset name="sh_sig_li_17_6_0" mimeType="image/png">
+        <param key="offset" value="1,54"/>
+      </asset>
+      <asset name="sh_sig_li_17_7_0" mimeType="image/png">
+        <param key="offset" value="1,51"/>
+      </asset>
+        </assets>
+    </library>
+</manifest>

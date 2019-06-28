@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_print_U_starter" version="0.1">
+    <assets>
+      <asset name="sh_std_cp_6725_1_0" mimeType="image/png">
+        <param key="offset" value="-18,19"/>
+      </asset>
+      <asset name="sh_std_cp_6725_2_0" mimeType="image/png">
+        <param key="offset" value="-12,19"/>
+      </asset>
+      <asset name="sh_std_cp_6725_3_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_std_cp_6725_4_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_std_cp_6725_5_0" mimeType="image/png">
+        <param key="offset" value="-10,19"/>
+      </asset>
+      <asset name="sh_lay_cp_6725_2_0" mimeType="image/png">
+        <param key="offset" value="-4,10"/>
+      </asset>
+      <asset name="sh_lay_cp_6725_4_0" mimeType="image/png">
+        <param key="offset" value="-19,11"/>
+      </asset>
+      <asset name="h_std_cp_6725_1_0" mimeType="image/png">
+        <param key="offset" value="-39,37"/>
+      </asset>
+      <asset name="h_std_cp_6725_2_0" mimeType="image/png">
+        <param key="offset" value="-27,39"/>
+      </asset>
+      <asset name="h_std_cp_6725_3_0" mimeType="image/png">
+        <param key="offset" value="-24,36"/>
+      </asset>
+      <asset name="h_std_cp_6725_4_0" mimeType="image/png">
+        <param key="offset" value="-21,38"/>
+      </asset>
+      <asset name="h_std_cp_6725_5_0" mimeType="image/png">
+        <param key="offset" value="-23,36"/>
+      </asset>
+      <asset name="h_lay_cp_6725_2_0" mimeType="image/png">
+        <param key="offset" value="-8,20"/>
+      </asset>
+      <asset name="h_lay_cp_6725_4_0" mimeType="image/png">
+        <param key="offset" value="-38,19"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="hat_U_maidband" version="0.1">
+    <assets>
+      <asset name="h_std_ha_3043_0_0" mimeType="image/png">
+        <param key="offset" value="-21,77"/>
+      </asset>
+      <asset name="h_std_ha_3043_1_0" mimeType="image/png">
+        <param key="offset" value="-24,79"/>
+      </asset>
+      <asset name="h_std_ha_3043_2_0" mimeType="image/png">
+        <param key="offset" value="-20,79"/>
+      </asset>
+      <asset name="h_std_ha_3043_3_0" mimeType="image/png">
+        <param key="offset" value="-20,78"/>
+      </asset>
+      <asset name="h_std_ha_3043_7_0" mimeType="image/png">
+        <param key="offset" value="-20,77"/>
+      </asset>
+      <asset name="h_spk_ha_3043_0_0" mimeType="image/png">
+        <param key="offset" value="-21,78"/>
+      </asset>
+      <asset name="h_spk_ha_3043_1_0" mimeType="image/png">
+        <param key="offset" value="-24,80"/>
+      </asset>
+      <asset name="h_spk_ha_3043_2_0" mimeType="image/png">
+        <param key="offset" value="-20,80"/>
+      </asset>
+      <asset name="h_spk_ha_3043_3_0" mimeType="image/png">
+        <param key="offset" value="-20,79"/>
+      </asset>
+      <asset name="h_spk_ha_3043_7_0" mimeType="image/png">
+        <param key="offset" value="-20,78"/>
+      </asset>
+      <asset name="h_lay_ha_3043_2_0" mimeType="image/png">
+        <param key="offset" value="24,33"/>
+      </asset>
+      <asset name="h_lsp_ha_3043_2_0" mimeType="image/png">
+        <param key="offset" value="-39,-126"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

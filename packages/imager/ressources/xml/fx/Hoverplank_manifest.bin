@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<manifest><library id="Hoverplank" version="0.1">
+  <assets>
+      <asset name="h_std_fx191_1_1_2_0" mimeType="image/png">
+        <param key="offset" value="-24,20"/>
+      </asset>
+      <asset name="h_std_fx191_2_1_2_0" mimeType="image/png">
+        <param key="offset" value="-14,8"/>
+      </asset>
+      <asset name="h_std_fx191_1_1_1_0" mimeType="image/png">
+        <param key="offset" value="-26,24"/>
+      </asset>
+      <asset name="h_std_fx191_2_1_1_0" mimeType="image/png">
+        <param key="offset" value="-26,6"/>
+      </asset>
+      <asset name="h_std_fx191_1_1_0_0" mimeType="image/png">
+        <param key="offset" value="-12,21"/>
+      </asset>
+      <asset name="h_std_fx191_2_1_0_0" mimeType="image/png">
+        <param key="offset" value="-36,9"/>
+      </asset>
+      <asset name="h_std_fx191_1_1_3_0" mimeType="image/png">
+        <param key="offset" value="-15,14"/>
+      </asset>
+      <asset name="h_std_fx191_2_1_3_0" mimeType="image/png">
+        <param key="offset" value="-49,-4"/>
+      </asset>
+      <asset name="h_std_fx191_1_1_7_0" mimeType="image/png">
+        <param key="offset" value="-15,14"/>
+      </asset>
+      <asset name="h_std_fx191_2_1_7_0" mimeType="image/png">
+        <param key="offset" value="-18,-4"/>
+      </asset>
+    </assets>
+  <aliases>
+    <alias name="h_std_fx191_1_1_4_0" link="h_std_fx191_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx191_1_1_5_0" link="h_std_fx191_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx191_1_1_6_0" link="h_std_fx191_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx191_2_1_4_0" link="h_std_fx191_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx191_2_1_5_0" link="h_std_fx191_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx191_2_1_6_0" link="h_std_fx191_2_1_2_0" fliph="0" flipv="0"/>
+  </aliases>
+  </library>
+</manifest>

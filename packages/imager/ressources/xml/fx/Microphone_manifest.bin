@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<manifest><library id="Microphone" version="0.1">
+  <assets>
+    <asset name="h_std_fx16_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-42,63"/>
+    </asset>
+    <asset name="h_std_fx16_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-42,56"/>
+    </asset>
+    <asset name="h_std_fx16_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-38,52"/>
+    </asset>
+    <asset name="h_std_fx16_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-29,50"/>
+    </asset>
+    <asset name="h_std_fx16_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-8,54"/>
+    </asset>
+    <asset name="h_std_fx16_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-2,56"/>
+    </asset>
+    <asset name="h_std_fx16_1_1_6_0" mimeType="image/png">
+      <param key="offset" value="-9,63"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_drk_ri_fx16_1_0_0" link="h_std_fx16_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_1_0" link="h_std_fx16_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_2_0" link="h_std_fx16_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_3_0" link="h_std_fx16_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_4_0" link="h_std_fx16_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_5_0" link="h_std_fx16_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_6_0" link="h_std_fx16_1_1_6_0" fliph="0" flipv="0"/>
+    <alias name="sh_drk_ri_fx16_1_0_0" link="sh_std_fx16_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="sh_drk_ri_fx16_1_1_0" link="sh_std_fx16_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="sh_drk_ri_fx16_1_2_0" link="sh_std_fx16_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="sh_drk_ri_fx16_1_3_0" link="sh_std_fx16_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="sh_drk_ri_fx16_1_4_0" link="sh_std_fx16_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="sh_drk_ri_fx16_1_5_0" link="sh_std_fx16_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="sh_drk_ri_fx16_1_6_0" link="sh_std_fx16_1_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_0_0" link="h_std_fx16_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_1_0" link="h_std_fx16_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_2_0" link="h_std_fx16_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_3_0" link="h_std_fx16_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_4_0" link="h_std_fx16_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_5_0" link="h_std_fx16_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_drk_ri_fx16_1_6_0" link="h_std_fx16_1_1_6_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

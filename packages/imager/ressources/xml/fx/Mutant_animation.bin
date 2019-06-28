@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<animation name="fx.167" desc="Mutant">
+	<sprite id="fx167_1" member="std_fx167_1_1" directions="1">
+		<direction id="0" dz="2" />
+		<direction id="1" dz="2" />
+		<direction id="2" dz="2" />
+		<direction id="3" dz="2" />
+		<direction id="4" dz="2" />
+		<direction id="5" dz="2" />
+		<direction id="6" dz="2" />
+		<direction id="7" dz="2" />
+	</sprite>
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="hd" />
+	<frame>
+		<bodypart id="head" />
+		<fx id="fx167_1" action="Default" frame="0" />
+	</frame>
+	
+</animation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="shirt_F_swirl" version="0.1">
+    <assets>
+      <asset name="h_lay_ch_2700_2_0" mimeType="image/png">
+        <param key="offset" value="-4,23"/>
+      </asset>
+      <asset name="h_lay_ch_2701_2_0" mimeType="image/png">
+        <param key="offset" value="-6,22"/>
+      </asset>
+      <asset name="h_std_ch_2700_0_0" mimeType="image/png">
+        <param key="offset" value="-20,38"/>
+      </asset>
+      <asset name="h_std_ch_2700_1_0" mimeType="image/png">
+        <param key="offset" value="-23,41"/>
+      </asset>
+      <asset name="h_std_ch_2700_2_0" mimeType="image/png">
+        <param key="offset" value="-22,41"/>
+      </asset>
+      <asset name="h_std_ch_2700_3_0" mimeType="image/png">
+        <param key="offset" value="-22,39"/>
+      </asset>
+      <asset name="h_std_ch_2700_7_0" mimeType="image/png">
+        <param key="offset" value="-23,31"/>
+      </asset>
+      <asset name="h_std_ch_2701_0_0" mimeType="image/png">
+        <param key="offset" value="-21,37"/>
+      </asset>
+      <asset name="h_std_ch_2701_1_0" mimeType="image/png">
+        <param key="offset" value="-24,39"/>
+      </asset>
+      <asset name="h_std_ch_2701_2_0" mimeType="image/png">
+        <param key="offset" value="-23,40"/>
+      </asset>
+      <asset name="h_std_ch_2701_3_0" mimeType="image/png">
+        <param key="offset" value="-23,38"/>
+      </asset>
+      <asset name="h_std_ch_2701_7_0" mimeType="image/png">
+        <param key="offset" value="-24,30"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

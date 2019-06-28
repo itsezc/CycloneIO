@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<manifest><library id="BBRed" version="0.1">
+  <assets>
+    <asset name="h_std_fx33_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-14,43"/>
+    </asset>
+    <asset name="h_std_fx33_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-9,62"/>
+    </asset>
+    <asset name="h_std_fx33_2_1_0_1" mimeType="image/png">
+      <param key="offset" value="-9,62"/>
+    </asset>
+    <asset name="h_std_fx33_2_1_0_2" mimeType="image/png">
+      <param key="offset" value="-9,62"/>
+    </asset>
+    <asset name="h_std_fx33_2_1_0_3" mimeType="image/png">
+      <param key="offset" value="-9,62"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_std_fx33_1_1_1_0" link="h_std_fx33_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx33_1_1_2_0" link="h_std_fx33_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx33_1_1_3_0" link="h_std_fx33_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx33_1_1_7_0" link="h_std_fx33_1_1_0_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

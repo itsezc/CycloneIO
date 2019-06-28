@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<!-- SKATEBOARD FX-->
+<animation name="fx.71">
+	<sprite id="avatar" />
+	<sprite id="fx71_1" ink="8" member="std_fx71_1_1" directions="1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<direction offset="2" />
+	<frame>
+		<fx id="avatar" frame="0" dy="-10" />
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" dy="0" />
+		<fx id="fx71_1" action="Default" frame="0" dy="10" dd="6" />
+	</frame>
+</animation>

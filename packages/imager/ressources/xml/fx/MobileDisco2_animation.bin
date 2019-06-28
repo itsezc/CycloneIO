@@ -1,0 +1,156 @@
+<?xml version='1.0'?>
+<animation name="fx.190" desc="mobileDisco2">
+
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="ey" />
+	<remove id="ea" />
+	<remove id="fa" />
+	<remove id="fc" />
+	<remove id="hd" />
+	<remove id="ca" />
+	<remove id="cc" />
+	<remove id="ch" />
+	<remove id="wa" />
+	<remove id="lh" />
+	<remove id="ls" />
+	<remove id="lc" />
+	<remove id="li" />
+	<remove id="rh" />	
+	<remove id="rc" />
+	<remove id="rs" /> 
+	<remove id="ri" />
+	<remove id="sh" />
+	<remove id="lg" />
+	<remove id="bd" />
+	<remove id="sd" />
+	<remove id="bds" />
+	<remove id="ss" />
+	<remove id="lhs" />
+	<remove id="rhs" />
+	<remove id="cp" />
+
+
+<!-- head and trouser graphic -->
+	<sprite id="fx190_1" ink="8" member="std_fx190_1_1" directions="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+<!-- shirt -->
+	<sprite id="fx190_2" ink="8" member="std_fx190_2_1" directions="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+
+		<frame>
+                   <!-- resets -->
+		   <bodypart id="head"/>
+		   <bodypart id="leftarm"/>
+		   <bodypart id="rightarm"/>
+		   <bodypart id="torso"/>
+		   <bodypart id="bottom"/>
+		   <bodypart id="behind"/>
+		   <bodypart id="leftitem"/>
+		   <bodypart id="rightitem"/>
+		   <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="0" />
+		</frame>
+		<frame>
+		   <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="1" />
+		</frame>
+		<frame>
+		   <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="2" />
+		</frame>
+		<frame>
+		   <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="3" />
+		</frame>
+		<frame>
+		   <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="2" />
+		</frame>
+		<frame>
+		   <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="1" />
+		</frame>
+<!-- overrides -->
+	<override name="sit_md" override="sit">
+		<frame>
+                   <!-- resets -->
+		   <bodypart id="head"/>
+		   <bodypart id="leftarm"/>
+		   <bodypart id="rightarm"/>
+		   <bodypart id="torso"/>
+		   <bodypart id="bottom"/>
+		   <bodypart id="behind"/>
+		   <bodypart id="leftitem"/>
+		   <bodypart id="rightitem"/>
+		   <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="0" />
+		</frame>
+	</override>
+	<override name="lay_md" override="lay">
+		<frame>
+                   <!-- resets -->
+		   <bodypart id="head"/>
+		   <bodypart id="leftarm"/>
+		   <bodypart id="rightarm"/>
+		   <bodypart id="torso"/>
+		   <bodypart id="bottom"/>
+		   <bodypart id="behind"/>
+		   <bodypart id="leftitem"/>
+		   <bodypart id="rightitem"/>
+	           <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="0" />
+		</frame>
+	</override>
+	<override name="sign_md" override="sign">
+		<frame>
+                   <!-- resets -->
+		   <bodypart id="head"/>
+		   <bodypart id="leftarm"/>
+		   <bodypart id="rightarm"/>
+		   <bodypart id="torso"/>
+		   <bodypart id="bottom"/>
+		   <bodypart id="behind"/>
+		   <bodypart id="leftitem"/>
+		   <bodypart id="rightitem"/>
+	           <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="1" />
+		</frame>
+	</override>
+	<override name="resp_md" override="respect">
+		<frame>
+                   <!-- resets -->
+		   <bodypart id="head"/>
+		   <bodypart id="leftarm"/>
+		   <bodypart id="rightarm"/>
+		   <bodypart id="torso"/>
+		   <bodypart id="bottom"/>
+		   <bodypart id="behind"/>
+		   <bodypart id="leftitem"/>
+		   <bodypart id="rightitem"/>
+	           <fx id="fx190_1" action="Default" frame="0" />
+		   <fx id="fx190_2" action="Default" frame="1" />
+		</frame>
+	</override>
+
+
+
+</animation>

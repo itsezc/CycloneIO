@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<animation name="fx.115" desc="Ringmaster">
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hrb" />
+	<remove id="wa" />
+	<remove id="fa" />
+	<remove id="ey" />
+	<remove id="ea" />
+	<remove id="ca" />
+	<remove id="cc" />
+	<remove id="ch" />
+	<remove id="lc" />
+	<remove id="rc" />
+	<remove id="ls" />
+	<remove id="rs" /> 
+	<add id="fx115_1" align="top" />
+	<sprite id="fx115_2" blend="10" ink="33" member="std_fx115_2_1" directions="1">
+		<direction id="0" dx="0" dy="0" dz="2" />
+		<direction id="1" dx="0" dy="-2" dz="2" />
+		<direction id="2" dx="3" dy="-3" dz="2" />
+		<direction id="3" dx="3" dy="-3" dz="2" />
+		<direction id="4" dx="3" dy="-3" dz="2" />
+		<direction id="5" dx="6" dy="-2" dz="2" />
+		<direction id="6" dx="6" dy="0" dz="2" />
+		<direction id="7" dx="3" dy="0" dz="2" />
+	</sprite>
+	<frame>
+		<bodypart id="head" />
+		<bodypart id="torso" />
+		<bodypart id="leftarm" action="Default" frame="0" dy="0" />
+		<bodypart id="rightarm" action="Default" frame="0" dy="0" />
+		<fx id="fx115_1" action="Default" frame="0" />
+		<fx id="fx115_2" action="Default" frame="0" />
+	</frame>
+	<override name="mv_ringmaster" override="mv">
+	<frame>
+		<bodypart id="head" />
+		<bodypart id="torso" action="Move" frame="0" />
+		<bodypart id="leftarm" action="Default" frame="0" dy="0" />
+		<bodypart id="rightarm" action="Default" frame="0" dy="0" />
+		<fx id="fx115_1" action="Default" frame="0" />
+		<fx id="fx115_2" action="Default" frame="0" />		
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<bodypart id="torso" action="Move" frame="1" />
+		<bodypart id="leftarm" action="Default" frame="0" dy="0" />
+		<bodypart id="rightarm" action="Default" frame="0" dy="0" />
+		<fx id="fx115_1" action="Default" frame="0" />
+		<fx id="fx115_2" action="Default" frame="0" />	
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<bodypart id="torso" action="Move" frame="2" />
+		<bodypart id="leftarm" action="Default" frame="0" dy="0" />
+		<bodypart id="rightarm" action="Default" frame="0" dy="0" />
+		<fx id="fx115_1" action="Default" frame="0" />
+		<fx id="fx115_2" action="Default" frame="0" />	
+	</frame>
+	<frame>
+		<bodypart id="head" />
+		<bodypart id="torso" action="Move" frame="3" />
+		<bodypart id="leftarm" action="Default" frame="0" dy="0" />
+		<bodypart id="rightarm" action="Default" frame="0" dy="0" />
+		<fx id="fx115_1" action="Default" frame="0" />
+		<fx id="fx115_2" action="Default" frame="0" />	
+	</frame>
+	</override>
+</animation>

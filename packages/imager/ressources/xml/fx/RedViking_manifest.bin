@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<manifest><library id="RedViking" version="0.1">
+  <assets>
+    <asset name="h_std_fx172_2_1_7_0" mimeType="image/png">
+      <param key="offset" value="-11,85"/>
+    </asset>
+    <asset name="h_std_fx172_3_1_7_0" mimeType="image/png">
+      <param key="offset" value="-42,50"/>
+    </asset>
+    <asset name="h_std_fx172_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-24,53"/>
+    </asset>
+    <asset name="h_std_fx172_2_1_3_0" mimeType="image/png">
+      <param key="offset" value="-11,85"/>
+    </asset>
+    <asset name="h_std_fx172_3_1_3_0" mimeType="image/png">
+      <param key="offset" value="-22,44"/>
+    </asset>
+    <asset name="h_std_fx172_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-32,54"/>
+    </asset>
+    <asset name="h_std_fx172_2_1_2_0" mimeType="image/png">
+      <param key="offset" value="-15,90"/>
+    </asset>
+    <asset name="h_std_fx172_3_1_2_0" mimeType="image/png">
+      <param key="offset" value="-32,41"/>
+    </asset>
+    <asset name="h_std_fx172_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-38,56"/>
+    </asset>
+    <asset name="h_std_fx172_2_1_1_0" mimeType="image/png">
+      <param key="offset" value="-16,92"/>
+    </asset>
+    <asset name="h_std_fx172_3_1_1_0" mimeType="image/png">
+      <param key="offset" value="-44,47"/>
+    </asset>
+    <asset name="h_std_fx172_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-39,59"/>
+    </asset>
+    <asset name="h_std_fx172_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-15,89"/>
+    </asset>
+    <asset name="h_std_fx172_3_1_0_0" mimeType="image/png">
+      <param key="offset" value="-51,50"/>
+    </asset>
+    <asset name="h_std_fx172_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-18,54"/>
+    </asset>
+    <asset name="h_std_fx172_2_1_4_0" mimeType="image/png">
+      <param key="offset" value="-16,90"/>
+    </asset>
+    <asset name="h_std_fx172_3_1_4_0" mimeType="image/png">
+      <param key="offset" value="-7,48"/>
+    </asset>
+    <asset name="h_std_fx172_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-16,56"/>
+    </asset>
+    <asset name="h_std_fx172_2_1_5_0" mimeType="image/png">
+      <param key="offset" value="-16,92"/>
+    </asset>
+    <asset name="h_std_fx172_3_1_5_0" mimeType="image/png">
+      <param key="offset" value="-14,49"/>
+    </asset>
+    <asset name="h_std_fx172_1_1_6_0" mimeType="image/png">
+      <param key="offset" value="-17,59"/>
+    </asset>
+    <asset name="h_std_fx172_2_1_6_0" mimeType="image/png">
+      <param key="offset" value="-17,89"/>
+    </asset>
+    <asset name="h_std_fx172_4_1_0_0" mimeType="image/png">
+      <param key="offset" value="-48,73"/>
+    </asset>
+    <asset name="h_std_fx172_4_1_0_1" mimeType="image/png">
+      <param key="offset" value="-48,71"/>
+    </asset>
+    <asset name="h_std_fx172_4_1_0_2" mimeType="image/png">
+      <param key="offset" value="-49,72"/>
+    </asset>
+    <asset name="h_std_fx172_4_1_0_3" mimeType="image/png">
+      <param key="offset" value="-49,73"/>
+    </asset>
+    <asset name="h_std_fx172_4_1_0_4" mimeType="image/png">
+      <param key="offset" value="-49,74"/>
+    </asset>
+    <asset name="h_std_fx172_4_1_0_5" mimeType="image/png">
+      <param key="offset" value="-48,71"/>
+    </asset>
+    <asset name="h_std_fx172_5_1_0_0" mimeType="image/png">
+      <param key="offset" value="-35,73"/>
+    </asset>
+    <asset name="h_std_fx172_5_1_0_1" mimeType="image/png">
+      <param key="offset" value="-35,74"/>
+    </asset>
+    <asset name="h_std_fx172_5_1_0_2" mimeType="image/png">
+      <param key="offset" value="-34,74"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_crr_ri_fx172_3_0_0" link="h_std_fx172_3_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx172_3_1_0" link="h_std_fx172_3_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx172_3_2_0" link="h_std_fx172_3_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx172_3_3_0" link="h_std_fx172_3_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx172_3_4_0" link="h_std_fx172_3_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx172_3_5_0" link="h_std_fx172_3_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_0_0" link="h_std_fx172_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_1_0" link="h_std_fx172_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_2_0" link="h_std_fx172_2_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_3_0" link="h_std_fx172_2_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_4_0" link="h_std_fx172_2_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_5_0" link="h_std_fx172_2_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_6_0" link="h_std_fx172_2_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx172_2_7_0" link="h_std_fx172_2_1_7_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_0_0" link="h_std_fx172_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_1_0" link="h_std_fx172_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_2_0" link="h_std_fx172_2_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_3_0" link="h_std_fx172_2_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_4_0" link="h_std_fx172_2_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_5_0" link="h_std_fx172_2_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_6_0" link="h_std_fx172_2_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx172_2_7_0" link="h_std_fx172_2_1_7_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_0_0" link="h_std_fx172_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_1_0" link="h_std_fx172_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_2_0" link="h_std_fx172_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_3_0" link="h_std_fx172_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_4_0" link="h_std_fx172_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_5_0" link="h_std_fx172_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_6_0" link="h_std_fx172_1_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fa_fx172_1_7_0" link="h_std_fx172_1_1_7_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_0_0" link="h_std_fx172_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_1_0" link="h_std_fx172_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_2_0" link="h_std_fx172_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_3_0" link="h_std_fx172_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_4_0" link="h_std_fx172_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_5_0" link="h_std_fx172_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_6_0" link="h_std_fx172_1_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_fa_fx172_1_7_0" link="h_std_fx172_1_1_7_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

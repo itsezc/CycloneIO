@@ -1,0 +1,265 @@
+<?xml version='1.0'?>
+<animation name="fx.23" desc="Totem Man FX">
+	<sprite id="avatar" />
+	<sprite id="fx23_1" ink="33" member="std_fx23_1_1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<sprite id="fx23_2" ink="33" member="std_fx23_2_1" >
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<direction offset="0" />
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="0" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="0" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="1" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="1" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="2" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="2" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="3" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="3" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="4" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="4" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="5" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="5" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="6" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="6" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="7" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="7" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="8" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="8" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="9" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="9" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="10" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="10" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="11" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="11" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="12" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="12" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="13" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="13" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="14" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="14" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx23_1" action="Default" frame="0" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="15" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx23_1" action="Default" frame="1" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="16" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx23_1" action="Default" frame="2" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="17" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-14" />
+		<fx id="fx23_1" action="Default" frame="3" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="0" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="4" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="1" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="5" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="2" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="6" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="3" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="7" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="4" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="8" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="5" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="9" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="6" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="10" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="7" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-16" />
+		<fx id="fx23_1" action="Default" frame="11" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="8" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="12" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="9" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="13" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="10" dx="6" dy="-15" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" />
+		<bodypart id="rightarm" action="Default" frame="0" />
+		<bodypart id="torso" action="Default" frame="0" />
+		<fx id="avatar" frame="0" dy="-15" />
+		<fx id="fx23_1" action="Default" frame="14" dx="5" dy="-15" />
+		<fx id="fx23_2" action="Default" frame="11" dx="6" dy="-15" />
+	</frame>
+</animation>

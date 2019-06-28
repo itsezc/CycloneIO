@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<animation name="fx.183" desc="Fossil Hammer">
+		<sprite directions="1" id="fx183_1" member="std_fx183_1_1">
+		<direction dz="1" id="0"/>
+		<direction dz="1" id="1"/>
+		<direction dz="1" id="2"/>
+		<direction dz="1" id="3"/>
+		<direction dz="1" id="4"/>
+		<direction dz="0" id="5"/>
+		<direction dz="-1" id="6"/>
+		<direction dz="-1" id="7"/>
+	</sprite>
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<fx id="fx183_1" action="Default" frame="0"/>
+	</frame>
+</animation>
+

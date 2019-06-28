@@ -7,6 +7,14 @@
 	"keywords": [],
 	"license": "ISC",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "babel-watch --watch source source/index.ts --extensions \".ts,.tsx\"",
+	},
+	"dependencies": {
+		"@hapi/hapi": "^18.3.1",
+		"jimp": "^0.6.4",
+		"xml2js": "^0.4.19"
+	},
+	"devDependencies": {
+		"@types/hapi__hapi": "^18.2.5"
 	}
 }

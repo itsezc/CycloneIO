@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<animation name="fx.136" desc="Backwalking Shoes FX">
+	<sprite id="fx136_2" ink="33" member="std_fx136_2_1" staticY="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>
+	<direction offset="4" />
+	<frame>
+		<fx action="Default" frame="0" id="fx136_2"/>
+	</frame>
+	<frame>
+		<fx action="Default" frame="1" id="fx136_2"/>
+	</frame>
+	<frame>
+		<fx action="Default" frame="2" id="fx136_2"/>
+	</frame>
+	<override name="shoeswalk" override="mv">
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="3"/>
+			<bodypart id="torso" action="Move" frame="3">
+				<item id="sh" base="fx136_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="3"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="2"/>
+			<bodypart id="torso" action="Move" frame="2">
+				<item id="sh" base="fx136_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="2"/>
+		</frame>
+				<frame>
+			<bodypart id="leftarm" action="Move" frame="2"/>
+			<bodypart id="torso" action="Move" frame="2">
+				<item id="sh" base="fx136_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="2"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="1"/>
+			<bodypart id="torso" action="Move" frame="1">
+				<item id="sh" base="fx136_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="1"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="0"/>
+			<bodypart id="torso" action="Move" frame="0">
+				<item id="sh" base="fx136_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="0"/>
+		</frame>
+		<frame>
+			<bodypart id="leftarm" action="Move" frame="0"/>
+			<bodypart id="torso" action="Move" frame="0">
+				<item id="sh" base="fx136_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Move" frame="0"/>
+		</frame>				
+	</override>
+	<override name="shoesstand" override="std">
+		<frame>
+			<bodypart id="leftarm" action="Default" frame="0"/>
+			<bodypart id="torso" action="Default" frame="0">
+				<item id="sh" base="fx136_1"/>
+			</bodypart>
+			<bodypart id="rightarm" action="Default" frame="0"/>
+		</frame>
+	</override>
+</animation>

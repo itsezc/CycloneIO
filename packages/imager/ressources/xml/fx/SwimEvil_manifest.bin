@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <library name="SwimEvil" version="0.1">
+    <assets>
+      <asset name="h_std_fx185_1_1_0_1" mimeType="image/png">
+        <param key="offset" value="-12,7"/>
+      </asset>
+      <asset name="h_std_fx185_1_1_0_2" mimeType="image/png">
+        <param key="offset" value="-13,7"/>
+      </asset>
+      <asset name="h_std_fx185_1_1_0_3" mimeType="image/png">
+        <param key="offset" value="-14,6"/>
+      </asset>
+      <asset name="h_std_fx185_1_1_0_4" mimeType="image/png">
+        <param key="offset" value="-15,6"/>
+      </asset>
+      <asset name="h_std_fx185_1_1_0_5" mimeType="image/png">
+        <param key="offset" value="-13,7"/>
+      </asset>
+      <asset name="h_std_fx185_2_1_0_1" mimeType="image/png">
+        <param key="offset" value="-11,9"/>
+      </asset>
+      <asset name="h_std_fx185_2_1_0_2" mimeType="image/png">
+        <param key="offset" value="-10,10"/>
+      </asset>
+      <asset name="h_std_fx185_2_1_0_3" mimeType="image/png">
+        <param key="offset" value="-12,8"/>
+      </asset>
+      <asset name="h_std_fx185_3_1_0_1" mimeType="image/png">
+        <param key="offset" value="-13,29"/>
+      </asset>
+      <asset name="h_std_fx185_3_1_0_2" mimeType="image/png">
+        <param key="offset" value="-13,29"/>
+      </asset>
+      <asset name="h_std_fx185_3_1_0_3" mimeType="image/png">
+        <param key="offset" value="-13,29"/>
+      </asset>
+      <asset name="h_std_fx185_3_1_0_4" mimeType="image/png">
+        <param key="offset" value="-13,29"/>
+      </asset>
+      <asset name="h_std_fx185_3_1_0_5" mimeType="image/png">
+        <param key="offset" value="-13,29"/>
+      </asset>
+    </assets>
+  <aliases/>
+  </library>
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<animation name="fx.40" desc="ES red">
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<frame>
+		<bodypart id="head" >
+			<item id="ha" base="fx40_1"/>
+		</bodypart>
+	</frame>
+</animation>

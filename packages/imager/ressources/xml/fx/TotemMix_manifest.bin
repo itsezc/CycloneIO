@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<manifest><library id="TotemMix" version="0.1">
+  <assets>
+    <asset name="h_std_fx26_3_1_0_0" mimeType="image/png">
+      <param key="offset" value="-43,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_1" mimeType="image/png">
+      <param key="offset" value="-43,102"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_2" mimeType="image/png">
+      <param key="offset" value="-43,102"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_3" mimeType="image/png">
+      <param key="offset" value="-43,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_4" mimeType="image/png">
+      <param key="offset" value="-44,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_5" mimeType="image/png">
+      <param key="offset" value="-43,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_6" mimeType="image/png">
+      <param key="offset" value="-44,104"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_7" mimeType="image/png">
+      <param key="offset" value="-44,104"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_8" mimeType="image/png">
+      <param key="offset" value="-44,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_9" mimeType="image/png">
+      <param key="offset" value="-44,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_10" mimeType="image/png">
+      <param key="offset" value="-45,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_11" mimeType="image/png">
+      <param key="offset" value="-45,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_12" mimeType="image/png">
+      <param key="offset" value="-45,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_13" mimeType="image/png">
+      <param key="offset" value="-44,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_14" mimeType="image/png">
+      <param key="offset" value="-44,103"/>
+    </asset>
+    <asset name="h_std_fx26_3_1_0_15" mimeType="image/png">
+      <param key="offset" value="-44,103"/>
+    </asset>
+    <asset name="h_std_fx26_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-29,115"/>
+    </asset>
+    <asset name="h_std_fx26_2_1_0_1" mimeType="image/png">
+      <param key="offset" value="-29,115"/>
+    </asset>
+    <asset name="h_std_fx26_2_1_0_2" mimeType="image/png">
+      <param key="offset" value="-29,115"/>
+    </asset>
+    <asset name="h_std_fx26_2_1_0_3" mimeType="image/png">
+      <param key="offset" value="-29,115"/>
+    </asset>
+    <asset name="h_std_fx26_2_1_0_4" mimeType="image/png">
+      <param key="offset" value="-29,115"/>
+    </asset>
+    <asset name="h_std_fx26_2_1_0_5" mimeType="image/png">
+      <param key="offset" value="-29,115"/>
+    </asset>
+    <asset name="h_std_fx26_4_1_0_0" mimeType="image/png">
+      <param key="offset" value="-40,104"/>
+    </asset>
+    <asset name="h_std_fx26_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-47,76"/>
+    </asset>
+    <asset name="h_std_fx26_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-42,73"/>
+    </asset>
+    <asset name="h_std_fx26_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-29,64"/>
+    </asset>
+    <asset name="h_std_fx26_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-21,70"/>
+    </asset>
+    <asset name="h_std_fx26_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-4,74"/>
+    </asset>
+    <asset name="h_std_fx26_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-9,75"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_std_fx26_4_1_2_0" link="h_std_fx26_4_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx26_4_1_1_0" link="h_std_fx26_4_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx26_4_1_3_0" link="h_std_fx26_4_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx26_4_1_7_0" link="h_std_fx26_4_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx26_1_0_0" link="h_std_fx26_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx26_1_1_0" link="h_std_fx26_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx26_1_2_0" link="h_std_fx26_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx26_1_3_0" link="h_std_fx26_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx26_1_4_0" link="h_std_fx26_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx26_1_5_0" link="h_std_fx26_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="sh_crr_ri_fx26_1_0_0" link="sh_std_fx26_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="sh_crr_ri_fx26_1_1_0" link="sh_std_fx26_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="sh_crr_ri_fx26_1_2_0" link="sh_std_fx26_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="sh_crr_ri_fx26_1_3_0" link="sh_std_fx26_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="sh_crr_ri_fx26_1_4_0" link="sh_std_fx26_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="sh_crr_ri_fx26_1_5_0" link="sh_std_fx26_1_1_5_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

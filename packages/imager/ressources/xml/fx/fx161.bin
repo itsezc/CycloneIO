@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<animation name="fx.161" desc="Pirate Crew FX">
+		<sprite directions="1" id="fx161_1" member="std_fx161_1_1">
+		<direction dz="1" id="0"/>
+		<direction dz="1" id="1"/>
+		<direction dz="1" id="2"/>
+		<direction dz="1" id="3"/>
+		<direction dz="1" id="4"/>
+		<direction dz="-1" id="5"/>
+		<direction dz="-1" id="6"/>
+		<direction dz="-1" id="7"/>
+	</sprite>
+	<remove id="hrb" />
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<fx action="Default" frame="0" id="fx161_1"/>
+		<bodypart id="head" >
+			<item id="ha" base="fx161_2"/>
+		</bodypart>
+	</frame>
+</animation>
+

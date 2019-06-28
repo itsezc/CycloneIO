@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<manifest><library id="Niko" version="0.1">
+  <assets>
+    <asset name="h_std_fx99_1_1_6_0" mimeType="image/png">
+      <param key="offset" value="-22,78"/>
+    </asset>
+    <asset name="h_std_fx99_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-33,76"/>
+    </asset>
+    <asset name="h_std_fx99_1_1_7_0" mimeType="image/png">
+      <param key="offset" value="-17,73"/>
+    </asset>
+    <asset name="h_std_fx99_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-17,75"/>
+    </asset>
+    <asset name="h_std_fx99_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-22,80"/>
+    </asset>
+    <asset name="h_std_fx99_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-18,80"/>
+    </asset>
+    <asset name="h_std_fx99_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-24,76"/>
+    </asset>
+    <asset name="h_std_fx99_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-20,78"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_6_0" mimeType="image/png">
+      <param key="offset" value="-36,33"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_5_0" mimeType="image/png">
+      <param key="offset" value="-38,38"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_7_0" mimeType="image/png">
+      <param key="offset" value="-18,33"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_3_0" mimeType="image/png">
+      <param key="offset" value="-26,73"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_4_0" mimeType="image/png">
+      <param key="offset" value="-39,43"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_2_0" mimeType="image/png">
+      <param key="offset" value="4,43"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_1_0" mimeType="image/png">
+      <param key="offset" value="6,38"/>
+    </asset>
+    <asset name="h_std_fx99_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="7,33"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_std_ha_fx99_1_0_0" link="h_std_fx99_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx99_1_1_0" link="h_std_fx99_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx99_1_2_0" link="h_std_fx99_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx99_1_3_0" link="h_std_fx99_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx99_1_4_0" link="h_std_fx99_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx99_1_5_0" link="h_std_fx99_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx99_1_6_0" link="h_std_fx99_1_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_std_ha_fx99_1_7_0" link="h_std_fx99_1_1_7_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_0_0" link="h_std_fx99_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_1_0" link="h_std_fx99_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_2_0" link="h_std_fx99_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_3_0" link="h_std_fx99_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_4_0" link="h_std_fx99_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_5_0" link="h_std_fx99_1_1_5_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_6_0" link="h_std_fx99_1_1_6_0" fliph="0" flipv="0"/>
+    <alias name="h_wlk_ha_fx99_1_7_0" link="h_std_fx99_1_1_7_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

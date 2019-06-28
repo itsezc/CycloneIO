@@ -1,0 +1,99 @@
+<?xml version='1.0'?>
+<animation name="fx.533" desc="Babydance 4">
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="4" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="4" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="4" dy="20" dd="1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="4" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="3" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="3" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="3" dy="20" dd="1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="3" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="2" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="20" dd="1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="2" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="1" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="1" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="1" dy="20" dd="1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="1" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="0" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="0" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="0" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="-1" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-1" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-1" dy="20" dd="1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="-1" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="-2" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-2" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="20" dd="1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="-2" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="-3" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="-3" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-3" dy="20" dd="0" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="-3" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="-2" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="-2" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-2" dy="20" dd="-1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="-2" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="-1" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="-1" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="-1" dy="20" dd="-1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="-1" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="0" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="0" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="20" dd="-1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="0" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="1" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="0" dx="1" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="1" dy="20" dd="-1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="1" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="2" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="2" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="2" dy="20" dd="-1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="2" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="3" dy="20" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="3" dy="0" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="3" dy="20" dd="-1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="3" dy="20" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="4" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="4" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="4" dy="20" dd="-1" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="4" dy="18" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="leftarm" action="Default" frame="0" dx="5" dy="18" dd="0" />
+		<bodypart id="torso" action="Move" frame="2" dx="5" dy="-2" dd="0" />
+		<bodypart id="head" action="Default" frame="0" dx="5" dy="20" dd="0" />
+		<bodypart id="rightarm" action="Default" frame="0" dx="5" dy="18" dd="0" />
+	</frame>
+</animation>

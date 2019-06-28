@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<manifest><library id="Hoverboard" version="0.1">
+  <assets>
+    <asset name="h_std_fx2_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-8,31"/>
+    </asset>
+    <asset name="h_std_fx2_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-8,31"/>
+    </asset>
+    <asset name="h_std_fx2_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-3,31"/>
+    </asset>
+    <asset name="h_std_fx2_2_1_2_0" mimeType="image/png">
+      <param key="offset" value="-3,31"/>
+    </asset>
+    <asset name="h_std_fx2_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-18,39"/>
+    </asset>
+    <asset name="h_std_fx2_1_1_7_0" mimeType="image/png">
+      <param key="offset" value="-18,39"/>
+    </asset>
+    <asset name="h_std_fx2_2_1_3_0" mimeType="image/png">
+      <param key="offset" value="-13,39"/>
+    </asset>
+    <asset name="h_std_fx2_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-4,30"/>
+    </asset>
+    <asset name="h_std_fx2_2_1_1_0" mimeType="image/png">
+      <param key="offset" value="1,31"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_std_fx2_1_1_4_0" link="h_std_fx2_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx2_1_1_5_0" link="h_std_fx2_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx2_1_1_6_0" link="h_std_fx2_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx2_2_1_4_0" link="h_std_fx2_2_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx2_2_1_5_0" link="h_std_fx2_2_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx2_2_1_6_0" link="h_std_fx2_2_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_std_fx2_2_1_7_0" link="h_std_fx2_2_1_3_0" fliph="0" flipv="0"/>
+    <alias name="sh_std_fx2_1_1_4_0" link="sh_std_fx2_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="sh_std_fx2_1_1_5_0" link="sh_std_fx2_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="sh_std_fx2_1_1_6_0" link="sh_std_fx2_1_1_2_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>

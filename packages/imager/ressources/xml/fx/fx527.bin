@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<animation name="fx.527" desc="Headturn">
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="1" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="2" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="2" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="3" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="3" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="4" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="4" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="-3" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="-3" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="-2" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="-2" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="-1" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="0" dd="-1" />
+	</frame>
+</animation>

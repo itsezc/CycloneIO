@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<animation name="fx.529" desc="Dance 7">
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="-4" dy="0" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="4" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="4" dy="0" dd="0" />
+	</frame>
+	<frame>
+		<bodypart id="head" action="Default" frame="0" dx="0" dy="4" dd="0" />
+	</frame>
+</animation>

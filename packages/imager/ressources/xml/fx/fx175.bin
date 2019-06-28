@@ -1,0 +1,41 @@
+<?xml version='1.0'?><animation name="fx.175" desc="Red Airplane FX">
+	<sprite id="fx175_1" member="std_fx175_1_1" directions="1" >
+		<direction id="0" dz="-1" />
+		<direction id="1" dz="-1" />
+		<direction id="2" dz="-1" />
+		<direction id="3" dz="-1" />
+		<direction id="4" dz="-1" />
+		<direction id="5" dz="-1" />
+		<direction id="6" dz="-1" />
+		<direction id="7" dz="-1" />
+	</sprite>
+	<sprite id="fx175_2" member="std_fx175_2_1" directions="1">
+		<direction id="0" dz="1" />
+		<direction id="1" dz="1" />
+		<direction id="2" dz="1" />
+		<direction id="3" dz="1" />
+		<direction id="4" dz="1" />
+		<direction id="5" dz="1" />
+		<direction id="6" dz="1" />
+		<direction id="7" dz="1" />
+	</sprite>	<sprite id="avatar" />	<default>		<!-- Define the defaults, so that the frames could just defined deviations from these, would make the configuration easier by hand.			 also this would be just an option not required. Since when omitted it's actually easier to create an tool for these... -->	</default>	<frames>		<!-- put the frames inside this node, now they are on the same level as the configuration part which is not very clear...			framecount="" speed="" etc=""			 -->	</frames>	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="leftarm" action="CarryItem" frame="0" />		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-120" />		<fx id="fx175_1" action="Default" frame="0" dy="-120"/>		<fx id="fx175_2" action="Default" frame="0" dy="-120"/>	</frame>	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="leftarm" action="CarryItem" frame="0" />		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-121" />		<bodypart id="torso" action="Sit" frame="0" />		<fx id="fx175_1" action="Default" frame="1" dy="-121" />		<fx id="fx175_2" action="Default" frame="1" dy="-121" />	</frame>	<frame>		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="leftarm" action="CarryItem" frame="0" />		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-122" />		<fx id="fx175_1" action="Default" frame="2" dy="-122" />		<fx id="fx175_2" action="Default" frame="2" dy="-122" />	</frame>
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="leftarm" action="CarryItem" frame="0" />		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-122" />		<fx id="fx175_1" action="Default" frame="0" dy="-122"/>		<fx id="fx175_2" action="Default" frame="0" dy="-122"/>	</frame>
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="leftarm" action="CarryItem" frame="0" />		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-121" />		<fx id="fx175_1" action="Default" frame="1" dy="-121"/>		<fx id="fx175_2" action="Default" frame="1" dy="-121"/>	</frame>
+	<frame>
+		<bodypart id="rightarm" action="CarryItem" frame="0" />
+		<bodypart id="leftarm" action="CarryItem" frame="0" />		<bodypart id="torso" action="Sit" frame="0" />
+		<fx id="avatar" frame="0" dy="-120" />		<fx id="fx175_1" action="Default" frame="2" dy="-120"/>		<fx id="fx175_2" action="Default" frame="2" dy="-120"/>	</frame></animation>

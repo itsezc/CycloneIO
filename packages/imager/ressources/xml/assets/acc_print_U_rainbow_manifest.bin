@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_print_U_rainbow" version="0.1">
+    <assets>
+      <asset name="h_std_cp_2529_2_0" mimeType="image/png">
+        <param key="offset" value="-28,41"/>
+      </asset>
+      <asset name="h_std_cp_2529_4_0" mimeType="image/png">
+        <param key="offset" value="-22,41"/>
+      </asset>
+      <asset name="h_std_cp_2529_3_0" mimeType="image/png">
+        <param key="offset" value="-26,42"/>
+      </asset>
+      <asset name="h_lay_cp_2529_2_0" mimeType="image/png">
+        <param key="offset" value="-2,18"/>
+      </asset>
+      <asset name="h_lay_cp_2529_4_0" mimeType="image/png">
+        <param key="offset" value="-35,18"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

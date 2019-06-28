@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?><manifest>
+  <library name="acc_eye_U_pandamask" version="0.1">
+    <assets>
+      <asset name="h_std_ea_6692_0_0" mimeType="image/png">
+        <param key="offset" value="-39,70"/>
+      </asset>
+      <asset name="h_std_ea_6692_1_0" mimeType="image/png">
+        <param key="offset" value="-28,70"/>
+      </asset>
+      <asset name="h_std_ea_6692_2_0" mimeType="image/png">
+        <param key="offset" value="-25,68"/>
+      </asset>
+      <asset name="h_std_ea_6692_3_0" mimeType="image/png">
+        <param key="offset" value="-22,71"/>
+      </asset>
+      <asset name="h_std_ea_6692_7_0" mimeType="image/png">
+        <param key="offset" value="-28,58"/>
+      </asset>
+      <asset name="h_lay_ea_6692_2_0" mimeType="image/png">
+        <param key="offset" value="17,37"/>
+      </asset>
+      <asset name="sh_std_ea_6692_0_0" mimeType="image/png">
+        <param key="offset" value="-20,34"/>
+      </asset>
+      <asset name="sh_std_ea_6692_1_0" mimeType="image/png">
+        <param key="offset" value="-15,35"/>
+      </asset>
+      <asset name="sh_std_ea_6692_2_0" mimeType="image/png">
+        <param key="offset" value="-11,34"/>
+      </asset>
+      <asset name="sh_std_ea_6692_3_0" mimeType="image/png">
+        <param key="offset" value="-10,34"/>
+      </asset>
+      <asset name="sh_std_ea_6692_7_0" mimeType="image/png">
+        <param key="offset" value="-15,30"/>
+      </asset>
+      <asset name="sh_lay_ea_6692_2_0" mimeType="image/png">
+        <param key="offset" value="8,18"/>
+      </asset>
+    </assets>
+  </library>
+</manifest>

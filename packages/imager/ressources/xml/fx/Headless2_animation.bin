@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<animation desc="Headless2" name="fx.133">
+	<remove id="ha"/>
+	<remove id="he"/>
+	<remove id="hr"/>
+	<remove id="hrb"/>
+	<remove id="ey"/>
+	<remove id="fa"/>
+	<remove id="fc"/>
+	<remove id="hd"/>
+	<sprite directions="1" id="fx133_1" member="std_fx133_1_1">
+		<direction dx="0" dy="0" dz="1" id="0"/>
+		<direction dx="0" dy="0" dz="1" id="1"/>
+		<direction dx="3" dy="-3" dz="1" id="2"/>
+		<direction dx="3" dy="-3" dz="1" id="3"/>
+		<direction dx="3" dy="-3" dz="1" id="4"/>
+		<direction dx="6" dy="0" dz="1" id="5"/>
+		<direction dx="6" dy="0" dz="1" id="6"/>
+		<direction dx="3" dy="0" dz="1" id="7"/>
+	</sprite>
+	<sprite directions="1" id="fx133_2" member="std_fx133_2_1">
+		<direction dx="0" dy="0" dz="2" id="0"/>
+		<direction dx="0" dy="-2" dz="2" id="1"/>
+		<direction dx="3" dy="-3" dz="2" id="2"/>
+		<direction dx="3" dy="-3" dz="2" id="3"/>
+		<direction dx="3" dy="-3" dz="2" id="4"/>
+		<direction dx="6" dy="-2" dz="2" id="5"/>
+		<direction dx="6" dy="0" dz="2" id="6"/>
+		<direction dx="3" dy="0" dz="2" id="7"/>
+	</sprite>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="0" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="0" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="0" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="0" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="0" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="0" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="0" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="1" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="2" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="3" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="4" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="5" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="6" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="7" id="fx133_2"/>
+	</frame>
+	<frame>
+		<bodypart id="head"/>
+		<fx action="Default" frame="0" id="fx133_1"/>
+		<fx action="Default" frame="8" id="fx133_2"/>
+	</frame>
+</animation>

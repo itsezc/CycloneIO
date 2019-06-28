@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<animation name="fx.170" desc="Duck">
+
+	<remove id="ha" />
+	<remove id="he" />
+	<remove id="hr" />
+	<remove id="hrb" />
+	<remove id="ey" />
+	<remove id="ea" />
+	<remove id="fa" />
+	<remove id="fc" />
+	<remove id="hd" />
+	<remove id="ca" />
+	<remove id="cc" />
+	<remove id="ch" />
+	<remove id="wa" />
+	<remove id="lh" />
+	<remove id="ls" />
+	<remove id="lc" />
+	<remove id="li" />
+	<remove id="rh" />	
+	<remove id="rc" />
+	<remove id="rs" /> 
+	<remove id="sh" />
+	<remove id="lg" />
+	<remove id="bd" />
+	<remove id="bds" />
+	<remove id="ss" />
+	<remove id="lhs" />
+	<remove id="rhs" />
+	<remove id="cp" />
+	<remove id="sd" />
+
+	
+	<add id="fx170_1" align="top" />
+	<override name="mv_duck" override="mv">
+		<frame>
+			<bodypart id="head"/>
+			<bodypart id="leftarm"/>
+			<bodypart id="rightarm"/>
+			<bodypart id="torso"/>
+			<bodypart id="bottom"/>
+			<bodypart id="behind"/>
+			<bodypart id="leftitem"/>
+			<bodypart id="rightitem"/>
+			<fx id="fx170_1" action="Move" frame="0" dy="-2" />
+		</frame>
+
+		<frame>
+			<bodypart id="head"/>
+			<bodypart id="leftarm"/>
+			<bodypart id="rightarm"/>
+			<bodypart id="torso"/>
+			<bodypart id="bottom"/>
+			<bodypart id="behind"/>
+			<bodypart id="leftitem"/>
+			<bodypart id="rightitem"/>
+			<fx id="fx170_1" action="Move" frame="0" dy="-2" />
+		</frame>
+		<frame>
+			<bodypart id="head"/>
+			<bodypart id="leftarm"/>
+			<bodypart id="rightarm"/>
+			<bodypart id="torso"/>
+			<bodypart id="bottom"/>
+			<bodypart id="behind"/>
+			<bodypart id="leftitem"/>
+			<bodypart id="rightitem"/>
+			<fx id="fx170_1" action="Move" frame="0" dy="0"/>
+		</frame>
+		<frame>
+			<bodypart id="head"/>
+			<bodypart id="leftarm"/>
+			<bodypart id="rightarm"/>
+			<bodypart id="torso"/>
+			<bodypart id="bottom"/>
+			<bodypart id="behind"/>
+			<bodypart id="leftitem"/>
+			<bodypart id="rightitem"/>
+			<fx id="fx170_1" action="Move" frame="0" dy="0"/>
+		</frame>
+	</override>
+	<override name="std_duck" override="std">
+		<frame>
+			<bodypart id="head"/>
+			<bodypart id="leftarm"/>
+			<bodypart id="rightarm"/>
+			<bodypart id="torso"/>
+			<bodypart id="bottom"/>
+			<bodypart id="behind"/>
+			<bodypart id="leftitem"/>
+			<bodypart id="rightitem"/>
+			<fx id="fx170_1" action="Default" frame="0" />
+		</frame>
+	</override>
+	<override name="sit_duck" override="sit">
+		<frame>
+			<fx id="fx170_1" action="Default" frame="0" dy="-30"/>
+		</frame>
+	</override>
+		<override name="lay_duck" override="lay">
+		<frame>
+			<fx id="fx170_1" action="Default" frame="0" />
+		</frame>
+	</override>
+</animation>

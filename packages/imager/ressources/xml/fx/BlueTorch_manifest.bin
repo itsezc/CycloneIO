@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<manifest><library id="BlueTorch" version="0.1">
+  <assets>
+    <asset name="h_std_fx106_1_1_0_0" mimeType="image/png">
+      <param key="offset" value="-50,42"/>
+    </asset>
+    <asset name="h_std_fx106_1_1_1_0" mimeType="image/png">
+      <param key="offset" value="-44,38"/>
+    </asset>
+    <asset name="h_std_fx106_1_1_2_0" mimeType="image/png">
+      <param key="offset" value="-32,32"/>
+    </asset>
+    <asset name="h_std_fx106_1_1_3_0" mimeType="image/png">
+      <param key="offset" value="-24,34"/>
+    </asset>
+    <asset name="h_std_fx106_1_1_4_0" mimeType="image/png">
+      <param key="offset" value="-6,37"/>
+    </asset>
+    <asset name="h_std_fx106_1_1_5_0" mimeType="image/png">
+      <param key="offset" value="-11,39"/>
+    </asset>
+    <asset name="h_std_fx106_2_1_0_0" mimeType="image/png">
+      <param key="offset" value="-37,70"/>
+    </asset>
+    <asset name="h_std_fx106_2_1_0_1" mimeType="image/png">
+      <param key="offset" value="-37,70"/>
+    </asset>
+    <asset name="h_std_fx106_2_1_0_2" mimeType="image/png">
+      <param key="offset" value="-37,70"/>
+    </asset>
+    <asset name="h_std_fx106_2_1_0_3" mimeType="image/png">
+      <param key="offset" value="-37,70"/>
+    </asset>
+    <asset name="h_std_fx106_2_1_0_4" mimeType="image/png">
+      <param key="offset" value="-37,70"/>
+    </asset>
+    <asset name="h_std_fx106_2_1_0_5" mimeType="image/png">
+      <param key="offset" value="-37,70"/>
+    </asset>
+  </assets>
+  <aliases>
+    <alias name="h_crr_ri_fx106_1_0_0" link="h_std_fx106_1_1_0_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx106_1_1_0" link="h_std_fx106_1_1_1_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx106_1_2_0" link="h_std_fx106_1_1_2_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx106_1_3_0" link="h_std_fx106_1_1_3_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx106_1_4_0" link="h_std_fx106_1_1_4_0" fliph="0" flipv="0"/>
+    <alias name="h_crr_ri_fx106_1_5_0" link="h_std_fx106_1_1_5_0" fliph="0" flipv="0"/>
+  </aliases>
+</library></manifest>
