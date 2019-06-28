@@ -185,7 +185,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     public updateFurnitureView()
     {
         this.removeAll()
-        this.removeInteractive()
+        //this.removeInteractive()
 
         const layers = []
 
@@ -235,7 +235,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         })
 
         this.add(orderedLayers)
-        this.setInteractive()
+        //this.setInteractive()
     }
 
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
