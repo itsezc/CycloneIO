@@ -22,13 +22,10 @@ export default class RoomPlayer {
 	 * TODO: player walking animation
 	 */
 	addPlayerToRoom(playerId: any, playerX: any, playerY: any) {
-		console.log(playerX, playerY)
 		var xLocation = this.scene.getScreenX(playerX, playerY)
 		var yLocation = this.scene.getScreenY(playerX, playerY)
 
 		this.players[playerId] = this.scene.physics.add.sprite(xLocation + 32, yLocation - 28, 'avatar').setDepth(RoomObjectDepth.FIGURE)
-
-		console.log(xLocation, yLocation)
 	}
 
 	/**
@@ -44,45 +41,109 @@ export default class RoomPlayer {
 	}
 
 	movePlayer(playerId: any, path: any, destination: any) {
+		var player = this.players[playerId]
+		//clearInterval(interval)
+		this.scene.anims.create({
+            key: 'wlk_2',
+            frames: this.scene.anims.generateFrameNames('wlk_2'),
+			frameRate: 12,
+			repeat: -1
+		})
+		
 		var isoDestinationX = this.scene.getScreenX(destination.x, destination.y)
 		var isoDestinationY = this.scene.getScreenY(destination.x, destination.y)
 
+		player.play('wlk_2')
 
-		this.players[playerId].play('wlk_2')
+		//var tweens = []
 
-		var tweens = []
+		var queue = new Queue<number[]>()
 
-		var queue = new Queue<any>()
-
-		path.forEach((tile: any) => {
+		path.forEach((tile: number[]) => {
 			queue.enqueue(tile)
 		})
 
-		var started = false
+		path.shift()
+		queue.removeHead()
 
-		for (let element of queue) {
-			if (element !== queue.front) {
-				if (!started) {
-					started = true
+		var p = this.runPath(path)
 
-					console.log(element)
+		this.scene.path = p
+		this.scene.pathNextValue = p.next().value
 
-					var isometricTileX = this.scene.getScreenX(element[0], element[1])
-					var isometricTileY = this.scene.getScreenY(element[0], element[1])
+		console.log('move to first tile: ' + path[0])
 
-					this.scene.physics.moveTo(this.players[playerId], isometricTileX + 30, isometricTileY - 30, 70)
-				}
+		var firstTileIsoX = this.scene.getScreenX(path[0][0], path[0][1])
+		var firstTileIsoY = this.scene.getScreenY(path[0][0], path[0][1])
 
-				setTimeout(() => {
-					var isometricTileX = this.scene.getScreenX(element[0], element[1])
-					var isometricTileY = this.scene.getScreenY(element[0], element[1])
+		this.scene.physics.moveTo(player, firstTileIsoX + 30, firstTileIsoY - 30, 70)
 
-					this.scene.physics.moveTo(this.players[playerId], isometricTileX + 30, isometricTileY - 30, 70)
-					started = false
-				}, 500)
+		// player.on('animationcomplete', () => {
+		// 	player.body.stop()
+		// 	player.setTexture('avatar')
+		// 	player.setFrame(`std_2.png`)
+		// })
 
-			}
-		}
+		this.scene.tileDestination = { x: isoDestinationX, y: isoDestinationY }
+
+		this.scene.avatarId = playerId
+
+		// var interval = setInterval(() => {
+		// 	var next = p.next()
+
+		// 	if (next.done) {
+		// 		clearInterval(interval)
+
+		// 		player.body.stop()
+        //         player.anims.stop()
+        //         player.setTexture('avatar')
+		// 		player.setFrame(`std_2.png`)
+				
+		// 		console.log('completed path!!')
+		// 	}
+
+		// 	else if (next.value !== queue.front) {
+		// 		console.log('move to next tile ' + next.value)
+
+		// 		var nextTileIsoX = this.scene.getScreenX(next.value[0], next.value[1])
+		// 		var nextTileIsoY = this.scene.getScreenY(next.value[0], next.value[1])
+
+		// 		console.log({ nextTileIsoX: nextTileIsoX, nextTileIsoY: nextTileIsoY })
+
+		// 		this.scene.physics.moveTo(player, nextTileIsoX + 30, nextTileIsoY - 30, 70)
+		// 	}
+		// }, 350)
+
+
+		// path.forEach((tile: any) => {
+		// 	queue.enqueue(tile)
+		// })
+
+		// console.log(queue)
+
+		// for (let element of queue) {
+		// 	if (element !== queue.front) {
+		// 		// if (!started) {
+		// 		// 	started = true
+
+		// 		// 	console.log(element)
+
+		// 		// 	var isometricTileX = this.scene.getScreenX(element[0], element[1])
+		// 		// 	var isometricTileY = this.scene.getScreenY(element[0], element[1])
+
+		// 		// 	this.scene.physics.moveTo(this.players[playerId], isometricTileX + 30, isometricTileY - 30, 70)
+		// 		// }
+
+		// 		// setTimeout(() => {
+		// 		// 	var isometricTileX = this.scene.getScreenX(element[0], element[1])
+		// 		// 	var isometricTileY = this.scene.getScreenY(element[0], element[1])
+
+		// 		// 	this.scene.physics.moveTo(this.players[playerId], isometricTileX + 30, isometricTileY - 30, 70)
+		// 		// 	started = false
+		// 		// }, 500)
+
+		// 	}
+		// }
 
 
 		// 	for (var i = 1;i < path.length;) {
@@ -183,5 +244,9 @@ export default class RoomPlayer {
 
 		// 	this.scene.tileDestination = { x: isoDestinationX, y: isoDestinationY }
 		// }
+	}
+
+	*runPath(path: any) {
+		yield* path
 	}
 }

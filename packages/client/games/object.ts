@@ -2,27 +2,24 @@ import Room from '../rooms/room'
 import RoomObjectDepth from '../../common/enums/rooms/objects/depth';
 import Vector from '../../common/types/rooms/vector';
 
-export default interface IGameObject
-{
+export default interface IGameObject {
 	create(): void
 }
 
-export class GameObject extends Phaser.GameObjects.GameObject implements IGameObject
-{
+export class GameObject extends Phaser.GameObjects.GameObject implements IGameObject {
 	public readonly scene: Room
 	public readonly type: string
 
 	private readonly coordinates: Vector
 	private readonly depth: RoomObjectDepth
-	
+
 	private readonly texture?: string
 	private readonly frame?: string
 
 	private image!: Phaser.GameObjects.Image
 	private sprite!: Phaser.GameObjects.Sprite
 
-	constructor(scene: Room, type: string, coordinates: Vector, depth: RoomObjectDepth, texture?: string, frame?: string)
-	{
+	constructor(scene: Room, type: string, coordinates: Vector, depth: RoomObjectDepth, texture?: string, frame?: string) {
 		super(scene, type)
 
 		this.scene = scene
@@ -35,14 +32,11 @@ export class GameObject extends Phaser.GameObjects.GameObject implements IGameOb
 		this.frame = frame
 	}
 
-	create()
-	{
-		switch (this.type)
-		{
+	create() {
+		switch (this.type) {
 			case 'image':
 				{
-					if (this.texture) 
-					{
+					if (this.texture) {
 						this.image = new Phaser.GameObjects.Image(this.scene, this.coordinates.x,
 							this.coordinates.y - this.coordinates.z, this.texture, this.frame)
 
@@ -53,8 +47,7 @@ export class GameObject extends Phaser.GameObjects.GameObject implements IGameOb
 
 			case 'sprite':
 				{
-					if (this.texture) 
-					{
+					if (this.texture) {
 						this.sprite = new Phaser.GameObjects.Sprite(this.scene, this.coordinates.x,
 							this.coordinates.y - this.coordinates.z, this.texture, this.frame)
 

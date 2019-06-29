@@ -210,12 +210,12 @@ export default class Server {
 		var playerId = Socket.id
 		var player = this.players[playerId]
 
-		Socket.broadcast.emit('joinRoom', playerId, player.x, player.y)
+		//Socket.broadcast.emit('joinRoom', playerId, player.x, player.y)
 
 		var players = this.getAllPlayers()
 		console.log(players)
 
-		Socket.emit('currentPlayers', players)
+		this.socketIO.sockets.emit('currentPlayers', players)
 
 		// console.log('Players', this.players)
 		//Socket.emit('currentPlayers', this.getAllPlayers())
