@@ -39,6 +39,7 @@ export default class Alert extends Component<AlertProps, AlertState> {
 					show={this.state.show}
 					title={this.props.title}
 					closeable={false}
+					// draggable={false}
 					width={350}
 					height={180}
 					className='alert'
