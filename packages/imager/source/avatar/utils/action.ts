@@ -2,15 +2,15 @@ import Actions from './actions'
 
 export default class Action {
 
-    private key: String;
+    private key: string;
     private description: String;
 
-    constructor(key: String, description: String) {
+    constructor(key: string, description: String) {
         this.key = key;
         this.description = description;
     }
 
-    public getKey(): String {
+    public getKey(): string {
         return this.key
     }
 

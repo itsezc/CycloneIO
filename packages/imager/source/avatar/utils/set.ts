@@ -11,7 +11,7 @@ export default class Set {
     private selectable: boolean;
     private preselectable: boolean;
 
-    private parts: Map<PartType, SetPart[]>;
+    private parts: Map<PartType, SetPart[]> = new Map();
     private hiddenLayers: PartType[] = [];
 
     constructor(id: number, name: String, gender: String, club: number, colorable: boolean, selectable: boolean, preselectable: boolean){

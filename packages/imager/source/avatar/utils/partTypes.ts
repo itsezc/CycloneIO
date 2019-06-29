@@ -31,16 +31,17 @@ export default class PartTypes {
     static readonly EFFECT = new PartType("fx", BodyLocation.BODY, 100);
 
     private static readonly list: PartType[] = [PartTypes.SHOES, PartTypes.LEGS, PartTypes.CHEST, PartTypes.WAIST,
-        PartTypes.CHEST_ACCESSORY, PartTypes.FACE_ACCESSORY, PartTypes.HEAD_ACCESSORY, PartTypes.HEAD_EXTRA, PartTypes.CHEST_COVER, PartTypes.CHEST_PIECE,
+        PartTypes.CHEST_ACCESSORY, PartTypes.FACE_ACCESSORY, PartTypes.EYE_ACCESSORY, PartTypes.HEAD_ACCESSORY, PartTypes.HEAD_EXTRA, PartTypes.CHEST_COVER, PartTypes.CHEST_PIECE,
         PartTypes.HEAD, PartTypes.BODY, PartTypes.FACIAL_CONTOURS, PartTypes.HAIR, PartTypes.LEFT_ARM_LARGE, PartTypes.LEFT_ARM_SMALL, PartTypes.RIGHT_ARM_LARGE,
-        PartTypes.EYE, PartTypes.RIGHT_HAND_ITEM, PartTypes.LEFT_ARM_CARRY, PartTypes.RIGHT_ARM_CARRY, PartTypes.EFFECT];
+        PartTypes.RIGHT_ARM_SMALL, PartTypes.EYE, PartTypes.LEFT_HAND_ITEM, PartTypes.HAIR_BACK, PartTypes.RIGHT_HAND_ITEM, PartTypes.LEFT_ARM_CARRY, 
+        PartTypes.RIGHT_ARM_CARRY, PartTypes.EFFECT];
 
     constructor(){
-        //PartTypes.LEFT_ARM_SMALL.rotation_offset[3] = 1
+        PartTypes.LEFT_ARM_SMALL.setRotationOffset(3, 1);
     }
 
     public static fromKey(key: String): PartType {
-        return PartTypes.list.find(part => part.getKey() == key);
+        return PartTypes.list.find(part => part.getKey() == key) || PartTypes.SHOES;
     }
 
 }
