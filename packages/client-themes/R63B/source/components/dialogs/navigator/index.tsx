@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
+
 import { Tab, Tabs, TabList } from 'react-tabs'
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion'
+import Select from 'react-select'
 
 import Dialog from '../../../helpers/dialog'
 import { dragElement } from '../../../utils/functions'
@@ -23,7 +25,9 @@ import {
 
 type NavigatorState = {
 	category: number
-	rooms: any
+	rooms: any,
+	currentFilter: any,
+	filter: {label: string, value: string}[]
 }
 
 export default class Navigator extends Component <any, NavigatorState>
@@ -31,15 +35,24 @@ export default class Navigator extends Component <any, NavigatorState>
 
 	private query: Query
 	
-
 	constructor(props: any)
 	{
 		super(props)
 
 		this.state = {
 			category: 1,
-			rooms: []
+			rooms: [],
+			currentFilter: null,
+			filter: [
+				{ label: 'Anything', value: 'anything' },
+				{ label: 'Room Name', value: 'room' },
+				{ label: 'Owner', value: 'owner' },
+				{ label: 'Tag', value: 'tag' } ,
+				{ label: 'Group', value: 'group' }
+			]
 		}
+
+		this.filter = this.filter.bind(this)
 	}
 
 	getTabs()
@@ -80,7 +93,7 @@ export default class Navigator extends Component <any, NavigatorState>
 					if (loading) return 'Loading..'
 					if (error) return 'Error..'
 				
-					console.log(data)
+					// console.log(data)
 
 					return(
 						<Accordion
@@ -128,6 +141,9 @@ export default class Navigator extends Component <any, NavigatorState>
 		)
 	}
 
+	filter(currentFilter: any) {
+		this.setState({ currentFilter })
+	}
 
 	render()
 	{
@@ -137,14 +153,27 @@ export default class Navigator extends Component <any, NavigatorState>
 				title='Navigator'
 				resize={true}
 				axis='y'
-				width={450}
-				height={630}
+				width={425}
+				height={530}
 				background='#FFFFFF'
 			>
 				{/* variables={{ limit: 2 }} */}
 				<div className='navigator'>
-					{ this.getTabs() }
-					{ this.getCategories() }
+					{ 
+						this.getTabs() 
+					}
+					<Select
+						// className='dropdown'
+						// controlClassName='dropdown-control'
+						options={this.state.filter}
+						value={this.state.currentFilter || this.state.filter[0]}
+						onChange={this.filter}
+						isMulti={false}
+						isSearchable={false}
+					/>
+					<div className='page'>
+						{ this.getCategories() }
+					</div>
 				</div>
 			</Dialog>
 		)	

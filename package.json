@@ -76,6 +76,7 @@
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
     "@types/react-router-dom": "^4.3.3",
+    "@types/react-select": "^2.0.19",
     "@types/socket.io-client": "^1.4.32",
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
@@ -102,8 +103,10 @@
     "react": "^16.8.6",
     "react-accessible-accordion": "^3.0.0",
     "react-dom": "^16.8.6",
+    "react-dropdown": "^1.6.4",
     "react-load-script": "0.0.6",
     "react-router-dom": "^5.0.0",
+    "react-select": "^3.0.4",
     "react-tabs": "^3.0.0",
     "style-loader": "^0.23.1",
     "stylus": "^0.54.5",
@@ -115,6 +118,7 @@
     "webpack-dev-server": "^3.4.1"
   },
   "dependencies": {
+    "@hapi/hapi": "^18.3.1",
     "@svgdotjs/svg.js": "^3.0.12",
     "@types/react-tabs": "^2.3.1",
     "@types/socket.io": "^2.1.2",

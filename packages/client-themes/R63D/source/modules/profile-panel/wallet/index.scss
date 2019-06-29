@@ -18,59 +18,46 @@
 
     .wallet-currencies{
 
-        span{
+        i{
             height: 19px;
             width: 50px;
             font-size: 12px;
             font-weight: 600;
             text-align: right;
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-start;
             text-shadow: 0 1px rgba(0, 0, 0, .3);
-            cursor: pointer;
 
-            &.currency-diamond{
+            &:before{
+                margin-left: 3px;
+            }
+
+            &.icon-diamond{
                 color: #37c9ea;
 
                 &:hover{
                     color: #84fefe;
-
-                    .icon-diamond:before{
-                        background-image: url('/icons/diamond_glow.png');
-                    }
                 }
             }
 
-            &.currency-credit{
+            &.icon-credit{
                 color: #d4ae21;
 
                 &:hover{
                     color: #f1e966;
-
-                    .icon-credit:before{
-                        background-image: url('/icons/credit_glow.png');
-                    }
                 }
             }
 
-            &.currency-ducket{
+            &.icon-ducket{
                 color: #cd81c9;
 
                 &:hover{
                     color: #fed3fe;
-
-                    .icon-ducket:before{
-                        background-image: url('/icons/ducket_glow.png');
-                    }
                 }
             }
 
-            .icon{
-                margin-left: 5px;
-                vertical-align: middle;
-            }
         }
     }
 

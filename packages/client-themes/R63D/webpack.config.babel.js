@@ -8,13 +8,19 @@ module.exports = (env, argv) => {
 
         context: Path.resolve(__dirname),
 
-        entry: 'source/index.js',
+        entry: './source/index.js',
+
+        output: {
+            filename: 'ui.min.js',
+        },
 
         plugins: [
             new HtmlWebpackPlugin({
-				template: './source/index.html',
+                template: './source/index.html',
+                inject: false
             })
         ],
+        
 
         devServer: {
             compress: true,

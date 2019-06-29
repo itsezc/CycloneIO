@@ -9,23 +9,30 @@ export const fullScreen = (state: boolean) => {
 
 	const document: any = window.document
 	const element: HTMLElement = document.documentElement
-
+	
+	console.log('[REQUEST] Fullscreen', state)
 
 	if(state) {
 
-		if (document.exitFullscreen) {
-			document.exitFullscreen()
-		} else if (document.mozCancelFullScreen) { /* Firefox */
-			document.mozCancelFullScreen()
-		} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-			document.webkitExitFullscreen()
-		} else if (document.msExitFullscreen) { /* IE/Edge */
-			document.msExitFullscreen()
+		if(document.fullScreen || document.webkitFullscreenElement || 
+			document.mozFullScreenElement) {
+
+			if (document.exitFullscreen) {
+				document.exitFullscreen()
+			} else if (document.mozCancelFullScreen) { /* Firefox */
+				document.mozCancelFullScreen()
+			} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+				document.webkitExitFullscreen()
+			} else if (document.msExitFullscreen) { /* IE/Edge */
+				document.msExitFullscreen()
+			}
 		}
 
+
 	} else {
-		
+
 		if (document.requestFullscreen) {
+		
 			document.requestFullscreen()
 
 		} else if (document.mozRequestFullScreen) { /* Firefox */

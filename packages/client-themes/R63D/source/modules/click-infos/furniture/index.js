@@ -10,7 +10,7 @@ export default class FurnitureInfos extends React.PureComponent {
                     <div className="ui-100-header">
                         <h3>Pure Minibar</h3>
 
-                        <button className="btn">
+                        <button className="btn btn-volter btn-close">
                             <i className="icon icon-close-thin"></i>
                         </button>
                     </div>
@@ -23,10 +23,10 @@ export default class FurnitureInfos extends React.PureComponent {
                 </div>
 
                 <div className="furniture-item-actions">
-                    <button className="btn btn-100">Move</button>
-                    <button className="btn btn-100">Rotate</button>
-                    <button className="btn btn-100">Pick up</button>
-                    <button className="btn btn-100">Use</button>
+                    <button className="btn btn-volter btn-flat">Move</button>
+                    <button className="btn btn-volter btn-flat">Rotate</button>
+                    <button className="btn btn-volter btn-flat">Pick up</button>
+                    <button className="btn btn-volter btn-flat">Use</button>
                 </div>
             </React.Fragment>
         )

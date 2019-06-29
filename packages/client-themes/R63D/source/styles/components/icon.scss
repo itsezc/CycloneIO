@@ -66,12 +66,12 @@
             small: (
                 image: 'icons/small_profile.png',
                 width: 13,
-                height: 11
-            ),
+                height: 11,
 
-            hover: (
-                image: 'icons/small_profile_glow.png'
-            )
+                hover: (
+                    image: 'icons/small_profile_glow.png'
+                )
+            ),
         ),
 
         joinroom: (
@@ -113,19 +113,31 @@
         diamond: (
             image: 'icons/diamond.png',
             width: 15,
-            height: 15
+            height: 15,
+
+            hover: (
+                image: 'icons/diamond_glow.png'
+            )
         ),
 
         credit: (
             image: 'icons/credit.png',
             width: 15,
-            height: 15
+            height: 15,
+
+            hover: (
+                image: 'icons/credit_glow.png'
+            )
         ),
 
         ducket: (
             image: 'icons/ducket.png',
             width: 15,
-            height: 15
+            height: 15,
+
+            hover: (
+                image: 'icons/ducket_glow.png'
+            )
         ),
 
         hc: (
@@ -254,10 +266,29 @@
             }
 
             @if (map-has-key($iconData, "small")){
-                &.icon-small:before {
-                    background-image: url('/#{map-get(map-get($iconData, "small"), "image")}');
-                    width: map-get(map-get($iconData, "small"), "width") + unquote("px");
-                    height: map-get(map-get($iconData, "small"), "height") + unquote("px");
+
+                $smallData: map-get($iconData, "small");
+
+                &.icon-small {
+
+                    &:before {
+                        background-image: url('/#{map-get($smallData, "image")}');
+                        width: map-get($smallData, "width") + unquote("px");
+                        height: map-get($smallData, "height") + unquote("px");
+                    }
+
+                    @if(map-has-key($smallData, "hover")) {
+                            
+                        $smallHoverData: map-get($smallData, "hover");
+
+                        &:hover {
+                            cursor: pointer;
+
+                            &:before {
+                                background-image: url('/#{map-get($smallHoverData, "image")}');
+                            }
+                        }
+                    }
                 }
             }
 
