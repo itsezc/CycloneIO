@@ -21,31 +21,41 @@ export default class Alert extends Component<AlertProps, AlertState> {
 		this.state = {
 			show: this.props.show || true
 		}
+
+		this.close.bind(this)
 	}
 
-	public close(): void{
-		//
+	close = () => {
+		this.setState({
+			show: false
+		})
 	}
 
-	public render() {
-		return (
-			<Dialog
-				id='alert'
-				show={this.state.show}
-				title={this.props.title}
-				width={200}
-				height={540}>
+	render() {
+		if(this.state.show) {
+			return (
+				<Dialog
+					id='alert'
+					show={this.state.show}
+					title={this.props.title}
+					closeable={false}
+					width={350}
+					height={180}
+					className='alert'
+				>
+						<div className='content'>
+							<img src='https://vignette.wikia.nocookie.net/habbo/images/6/62/Frank_04.gif/revision/latest?cb=20120908170058&path-prefix=en' className='image' />
+							<p>{this.props.message}</p>
+							<p className='author'>- {this.props.author}</p>
+						</div>
 
-					<div className='content'>
-						<img src='https://vignette.wikia.nocookie.net/habbo/images/6/62/Frank_04.gif/revision/latest?cb=20120908170058&path-prefix=en' className='image' />
-						<p>{this.props.message}</p>
-						<p className='author'>- {this.props.author}</p>
-					</div>
-
-					<div className='footer'>
-						<button onClick={this.close} className='button'>Close</button>
-					</div>
-			</Dialog>
-		)
+						<div className='footer'>
+							<button onClick={this.close} className='button'>Close</button>
+						</div>
+				</Dialog>
+			)
+		} else {
+			return null
+		}
 	}
 }
