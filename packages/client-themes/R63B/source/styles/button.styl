@@ -7,7 +7,6 @@
 	padding 5px 10px
 	font-weight bold
 	white-space nowrap
-	cursor pointer
 	background #E2E2E2
 	outline none
 	box-shadow
@@ -15,6 +14,9 @@
 		inset 0px 1px 0 0 #CACACA,
 		inset 1px 0px 0 0 #CACACA,
 		inset 0px -10px 0 0 #CACACA
+
+	&:not([disabled])
+		cursor pointer
 
 	&.btn-small
 		font-size 12px
@@ -46,3 +48,28 @@
 		background-color: #306686;
 		box-shadow: inset 0 0 0 1px #3986b1, inset 0 -8px 0 0 #1f5679;
 
+
+
+.btn
+
+	&.btn-history
+		height: 31px;
+		border: 1px solid #000;
+		background-color: #2a2924;
+		box-shadow: inset 0 -1px 0 0 #1b1a17, inset 0 -3px 0 0 #3a3832, inset 0 0 0 2px #3a3832;
+
+		&.btn-history-next
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+
+		&.btn-history-previous
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+
+		&[disabled]
+			opacity 0.1
+
+		&:not([disabled]):hover
+			border-color: #11110f;
+			background-color: #3b3a33;
+			box-shadow: inset 0 -1px 0 0 #2c2b26, inset 0 -3px 0 0 #4b4941, inset 0 0 0 2px #4b4941;
