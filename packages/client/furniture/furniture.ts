@@ -47,7 +47,7 @@ export interface ILayer
 	y: number
 	z: number
 	alpha?: number
-	ink?: number
+	ink?: any
 	ignoreMouse?: boolean
 }
 
@@ -82,7 +82,7 @@ export default class Furniture
 {
 	private data: IData
 	public scene: Room
-
+	
 	public animation!: number
 	public direction!: number
 
@@ -112,20 +112,6 @@ export default class Furniture
 	 * @param {boolean} canWalk - Sets whether the furniture can be walkable or not
 	 * @param {boolean} canSit - Sets whether an entity can sit on the furniture or not
 	 */
-	// constructor(id: number, spriteName: string, name: string, description: string, type: FurnitureType, width: number, length: number, height: number, canStand: boolean, canStack: boolean, canWalk: boolean, canSit: boolean) {
-	// 	this.id = id
-	// 	this.spriteName = spriteName
-	// 	this.name = name
-	// 	this.description = description
-	// 	this.type = type
-	// 	this.width = width
-	// 	this.length = length
-	// 	this.height = height
-	// 	this.canStand = canStand
-	// 	this.canStack = canStack
-	// 	this.canWalk = canWalk
-	// 	this.canSit = canSit
-	// }
 
 	constructor(scene: Room, data: IData)
 	{
@@ -292,6 +278,8 @@ export default class Furniture
 				let layerSprite = new Phaser.GameObjects.Sprite(this.scene, -asset.x, -asset.y, this.data.name, frameName)
 				layerSprite.setOrigin(0, 0)
 
+				;(layerSprite as any).isClickable = true
+
 				this.setInteractionsFor(layerSprite)
 
 				if (layerSprite.frame.name !== frameName) {
@@ -350,13 +338,14 @@ export default class Furniture
 			&& this.data.visualization.directions[direction].layers[layer] != null;
 	}
 
-	private doUpdateSprite(sprite: Phaser.GameObjects.Sprite, layer: ILayer)
+	private doUpdateSprite(sprite: any, layer: ILayer)
 	{
 		sprite.alpha = layer.alpha ? layer.alpha / 255 : 1
 
-		if (layer.ink && Phaser.BlendModes[layer.ink])
+		if (layer.ink)
 		{
-			sprite.blendMode = Phaser.BlendModes[layer.ink]
+			// 28 is our custom blendMode
+			sprite.blendMode = layer.ink === 'ADD' ? 28 : Phaser.BlendModes[layer.ink]
 		}
 
 		sprite.x += layer.x ? layer.x : 0
@@ -365,9 +354,8 @@ export default class Furniture
 
 		sprite.z += layer.z ? layer.z : 0
 
-		if (layer.ignoreMouse)
-		{
-			sprite.setInteractive()
+		if (layer.ignoreMouse) {
+			sprite.isClickable = false
 		}
 	}
 

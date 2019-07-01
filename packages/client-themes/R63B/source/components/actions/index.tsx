@@ -21,12 +21,11 @@ export default class Actions extends Component<any, ActionsState> {
 			fullScreen: !this.state.fullScreen
 		}, () => {
 
-			/*
-			if(this.state.fullScreen){
-				document.requestFullscreen();
-			}*/
+			// if(this.state.fullScreen){
+			// 	document.requestFullscreen();
+			// }
 
-			//fullScreen(this.state.fullScreen)
+			fullScreen(this.state.fullScreen)
 		})
 	}
  

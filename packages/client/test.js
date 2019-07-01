@@ -1,5 +1,5 @@
 /* activity uses path finding to lead the character to mouse click position
-using https://github.com/prettymuchbryce/easystarjs for pathfinding
+using https://github.com/prettymuchbryce/easystarjs for pathfinding 
 */
 
 var game = new Phaser.Game(600, 400, Phaser.AUTO, 'TutContainer', { preload: preload, create: create, update: update });

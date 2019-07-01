@@ -3,7 +3,7 @@ import React , {Component} from 'react'
 import { classNames, dragElement } from '../../utils/functions';
 
 type DialogProps = {
-    defaultPos?: []
+    defaultPos?: [] | string
     subHeader?: boolean
     axis?: any
     resize?: boolean
@@ -13,6 +13,7 @@ type DialogProps = {
     show?: boolean
     className?: string
     background?: string
+    closeable?: boolean
 
     id: string
     title: string
@@ -35,15 +36,18 @@ export default class Dialog extends Component<DialogProps, any> {
 
     private screenHeight: number
     private screenWidth: number
+    private closeable: boolean
 
 	constructor(props: DialogProps) {
-		super(props);
+		super(props)
 
 		this.styles = props.styles || {}
-		this.minHeight = props.minHeight || props.height;
-        this.minWidth = props.minWidth || props.width;
+		this.minHeight = props.minHeight || props.height
+        this.minWidth = props.minWidth || props.width
         
-        this.handleScreenResize();
+        this.closeable = props.closeable || false
+
+        this.handleScreenResize()
 
 		this.state = {
 			isShow: props.show || true,
@@ -54,31 +58,38 @@ export default class Dialog extends Component<DialogProps, any> {
             style: {
                 width: props.width,
                 height: props.height,
-                top: 64,
-                left: 64
+                // top: 64,
+                // left: 64
             }
-		}
-	}
+        }
+    
+    }
+    
+    closeButton() {
+        return(
+            <i className='close' onClick={this.close.bind(this)}>x</i> 
+        )
+    }
 
-	componentWillMount(){
+	componentWillMount() {
 
         document.addEventListener('mousemove', this.handleMouse)
         document.addEventListener('mouseup', this.mouseStopEvent)
         window.addEventListener('resize', this.handleScreenResize)
+    
     }
 
-    componentWillUnmount(){
+    componentWillUnmount()  {
 
         document.removeEventListener('mousemove', this.handleMouse)
         document.removeEventListener('mouseup', this.mouseStopEvent)
         window.removeEventListener('resize', this.handleScreenResize)
+    
     }
 
     handleScreenResize = () => {
-
-        console.log("update");
-        this.screenHeight = window.innerHeight;
-        this.screenWidth = window.innerWidth;
+        this.screenHeight = window.innerHeight
+        this.screenWidth = window.innerWidth
     }
 
 	handleDragging = () => {
@@ -130,7 +141,7 @@ export default class Dialog extends Component<DialogProps, any> {
                 }
             })
 
-        } else if(this.state.isResizing){
+        } else if(this.state.isResizing) {
             
             var width, height;
 
@@ -170,11 +181,11 @@ export default class Dialog extends Component<DialogProps, any> {
 		if(this.state.isShow) {
 			return (
 
-				<section className={`dialog ${this.props.className || ''}`} id={this.props.id} style={this.state.style}>
+				<dialog className={`dialog ${this.props.className || ''}`} id={this.props.id} style={this.state.style}>
 					
 					<div className='dialog-header' id={(this.props.id) ? (this.props.id).concat('_header') : undefined} onMouseDown={this.handleDragging.bind(this)}>
 						<span>{this.props.title}</span>
-						<i className='close' onClick={this.close.bind(this)}>x</i>
+                        { this.closeable ? this.closeButton() : false } 
 					</div>
 
 					<div className='dialog-body'>
@@ -184,7 +195,7 @@ export default class Dialog extends Component<DialogProps, any> {
 							<i className='dialog-resizehandle' onMouseDown={this.handleResizing.bind(this)}></i>
 						}
 					</div>
-				</section>
+				</dialog>
 			)
 		} else {
 			return null
