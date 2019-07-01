@@ -1,5 +1,6 @@
 import Furniture from './furniture'
 import Room from '../rooms/room'
+import RotationAnimation from './animations/rotation';
 
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
     public scene: Room
@@ -21,6 +22,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private lastClick: number = 0
     private doubleClick: boolean = false
 
+    private animationRotation: RotationAnimation
+
     public constructor(scene: Room, furniture: Furniture) {
         super(scene)
 
@@ -35,6 +38,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         this.color = null
 
         this.setDirection(this.furniture.getDirections()[0])
+
+        this.animationRotation = new RotationAnimation(this.rotateFurniture, this)
         //console.log(this.furniture.data);
 	}
 
@@ -159,6 +164,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
             this.frameCount = frameCount
             this.updateFurnitureView()
+
+            this.animationRotation.tick()
         }
     }
 
@@ -201,6 +208,10 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
                 this.furniture.updateSpriteFrom(layerSprite, layerId)
                 this.furniture.updateSpriteFromDirection(layerSprite, this.direction, layerId)
 
+                if (this.animationRotation.isRunning) {
+                    this.updateSpriteByRotationAnimation(layerSprite)
+                }
+
                 //this.setInteractions()
 
                 if (this.furniture.hasColorForLayer(this.color, layerId))
@@ -238,9 +249,40 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         //this.setInteractive()
     }
 
+    private animateRotation() {
+        this.animationRotation.start()
+    }
+
+    private getFirstSprite() {
+        return this.getAll().find((gameObject) => gameObject instanceof Phaser.GameObjects.Sprite) as Phaser.GameObjects.Sprite
+    }
+
+    private rotateFurniture() {
+        const firstSprite = this.getFirstSprite()
+
+        if(firstSprite != null) {
+            this.direction = this.furniture.getNewDirectionFor(firstSprite, this.direction)
+        }
+    }
+
+    private updateSpriteByRotationAnimation(sprite: Phaser.GameObjects.Sprite) {
+        const nextPosition = this.animationRotation.getNextPosition()
+
+        if (nextPosition != null) {
+            sprite.x += nextPosition.x
+            sprite.y += nextPosition.y
+        }
+    }
+
+    private canBeRotated(sprite: Phaser.GameObjects.Sprite) {
+        return this.direction !== this.furniture.getNewDirectionFor(sprite, this.direction)
+    }
+
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
         sprite.on('rotate', (s: Phaser.GameObjects.Sprite) => {
-            this.direction = this.furniture.getNewDirectionFor(s, this.direction)
+            if(this.canBeRotated(s) && !this.animationRotation.isRunning) {
+                this.animateRotation()
+            }
         })
 
         sprite.on('click', (s: Phaser.GameObjects.Sprite) => {

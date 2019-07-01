@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import FriendSlot from './components/friendSlot';
+import Friends from './components/friends';
 import Chatbox from '../../components/chatbox'
 
 type ToolbarProps = {
@@ -73,12 +73,7 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
                     </div>
 
                     {this.state.isFriendsOpen &&
-                        <div className='toolbar-friends-content'>
-                            <FriendSlot username='EZ-C' />
-                            <FriendSlot username='Myza' />
-                            <FriendSlot type='unknown' />
-                            <FriendSlot type='unknown' />
-                        </div>
+                        <Friends friends={['Markos', 'madison042', 'Phishi', 'PrettyJahanvi', 'Chaosmyyyth', 'EZ-C', 'Maegel']} />
                     }
 
                     <i className={"toolbar-more" + (!this.state.isFriendsOpen ? " is-close" : '')} onClick={this.toggleFriends.bind(this)}></i>

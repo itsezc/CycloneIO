@@ -112,20 +112,6 @@ export default class Furniture
 	 * @param {boolean} canWalk - Sets whether the furniture can be walkable or not
 	 * @param {boolean} canSit - Sets whether an entity can sit on the furniture or not
 	 */
-	// constructor(id: number, spriteName: string, name: string, description: string, type: FurnitureType, width: number, length: number, height: number, canStand: boolean, canStack: boolean, canWalk: boolean, canSit: boolean) {
-	// 	this.id = id
-	// 	this.spriteName = spriteName
-	// 	this.name = name
-	// 	this.description = description
-	// 	this.type = type
-	// 	this.width = width
-	// 	this.length = length
-	// 	this.height = height
-	// 	this.canStand = canStand
-	// 	this.canStack = canStack
-	// 	this.canWalk = canWalk
-	// 	this.canSit = canSit
-	// }
 
 	constructor(scene: Room, data: IData)
 	{
