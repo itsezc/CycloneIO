@@ -280,7 +280,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
         sprite.on('rotate', (s: Phaser.GameObjects.Sprite) => {
-            if(this.canBeRotated(s)) {
+            if(this.canBeRotated(s) && !this.animationRotation.isRunning) {
                 this.animateRotation()
             }
         })
