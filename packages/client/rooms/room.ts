@@ -85,6 +85,9 @@ export default class Room extends Phaser.Scene {
 
         this.load.atlas('avatar', 'avatar/avatar.png', 'avatar/avatar.json')
 
+
+        this.load.image('wall_placeholder', 'furniture_new/wall_placeholder.png')
+
         this.load.atlas('wlk_0', 'avatar/wlk/wlk_0.png', 'avatar/wlk/wlk_0.json')
         this.load.atlas('wlk_1', 'avatar/wlk/wlk_1.png', 'avatar/wlk/wlk_1.json')
         this.load.atlas('wlk_2', 'avatar/wlk/wlk_2.png', 'avatar/wlk/wlk_2.json')
@@ -206,6 +209,12 @@ export default class Room extends Phaser.Scene {
                     direction: 2,
                     animation: 0
                 },
+                {
+                    name: 'hrella_poster_1',
+                    roomX: 0,
+                    roomY: 0,
+                    direction: 0
+                }
             ]
         }
 
