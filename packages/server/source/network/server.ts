@@ -180,10 +180,10 @@ export default class Server {
 			Socket.on('movePlayer', (destination: any) => {
 				this.movePlayer(
 					[
-						[0, 0, 0, 0, 0],
-						[0, 0, 0, 0, 0],
-						[0, 0, 1, 0, 0],
-						[0, 0, 0, 0, 0]
+						[0, 0, 0, 0, 0, 0, 0],
+						[0, 0, 0, 0, 0, 0, 0],
+						[0, 0, 0, 0, 0, 0, 0],
+						[0, 0, 0, 0, 1, 0, 0]
 					], Socket.id, destination)
 			})
 
@@ -210,12 +210,12 @@ export default class Server {
 		var playerId = Socket.id
 		var player = this.players[playerId]
 
-		//Socket.broadcast.emit('joinRoom', playerId, player.x, player.y)
+		Socket.emit('joinRoom', playerId, player.x, player.y)
 
-		var players = this.getAllPlayers()
-		console.log(players)
+		// var players = this.getAllPlayers()
+		// console.log(players)
 
-		this.socketIO.sockets.emit('currentPlayers', players)
+		// this.socketIO.sockets.emit('currentPlayers', players)
 
 		// console.log('Players', this.players)
 		//Socket.emit('currentPlayers', this.getAllPlayers())
