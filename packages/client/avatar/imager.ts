@@ -112,10 +112,377 @@ export default class Imager {
 		activeParts.itemRight = this.getActivePartSet('itemRight')
 		activeParts.handRight = this.getActivePartSet('handRight')
 		activeParts.handLeft = this.getActivePartSet('handLeft')
-				
+		activeParts.swim = this.getActivePartSet('swim')
+
+		let drawParts = this.getDrawOrder(avatarInfo.drawOrder, avatarInfo.direction)
+		if (drawParts == null) {
+			drawParts = this.getDrawOrder('std', avatarInfo.direction)
+		}
+
+		const setParts: any = {}
+		for (let partSet of avatarInfo.figure) {
+			const parts = this.getPartColor(partSet)
+			for (let type in parts) {
+				if (setParts[type] == null) {
+					setParts[type] = []
+				}
+
+				setParts[type] = parts[type].concat(setParts[type])
+			}
+		}
+
+		if (avatarInfo.handItem > 0) {
+			setParts['ri'] = [{ 'index': 0, 'id': avatarInfo.handItem }]
+		}
+
+		const chunks: AvatarChunk[] = []
+		const offsetsPromises: Promise<void>[] = []
+
+		for (let type of drawParts) {
+			const drawableParts = setparts[type]
+
+			if (drawableParts != null) {
+				for (let drawabalePart of drawbleParts) {
+					const uniqueName = this.getPartUniqueName(type, drawablePart['id'])
+
+					if (uniqueName != null) {
+						if (setParts['hidden'].includes(type)) {
+							continue
+						}
+
+						if (activeParts.head.includes(type) && avatarInfo.isBodyOnly) {
+							continue
+						}
+
+						if (!activeParts.rect.includes(type)) {
+							continue
+						}
+
+						if (isGhost && (activeParts.gesture.includes(type) || activeParts.eyee.includes(type))) {
+							continue
+						}
+
+						let drawDirection = avatarInfo.direction
+						let drawAction = null
+
+						if (activeParts.rect.includes(type)) {
+							drawAction = avatarInfo.drawAction['body']
+						}
+
+						if (activeParts.head.includes(type)) {
+							drawDirection = avatarInfo.headDirection
+						}
+
+						if (activeParts.speak.includes(type) && avatarInfo.drawAction['speak']) {
+							drawAction avatarInfo.drawAction['speak']
+						}
+
+						if (activeParts.gesture.includes(type) && avatarInfo.drawAction['gesture']) {
+							drawAction = avatarInfo.drawAction['gesture']
+						}
+
+						if (activeParts.eye.includes(type)) {
+							drawableParts.colorable = false
+
+							if (avatarInfo.drawAction['eye']) {
+								drawAction = avatarInfo.drawAction['eye']
+							}
+						}
+
+						if (activeParts.walk.includes(type) && avatarInfo.drawAction['wlk']) {
+							drawAction = avatarInfo.drawAction['wlk']
+						}
+
+						if (activeParts.sit.includes(type) && avatarInfo.drawAction['sit']) {
+							drawAction = avatarInfo.drawAction['sit']
+						}
+
+						if (activeParts.handRight.includes(type) && avatarInfo.drawAction['handRight']) {
+							drawAction = avatarInfo.drawAction['handRight']
+						}
+
+						if (activeParts.itemRight.includes(type) && avatarInfo.drawAction['itemRight']) {
+							drawAction = avatarInfo.drawAction['itemRight']
+						}
+
+						if (activeParts.handLeft.includes(type) && avatarInfo.drawAction['handLeft']) {
+							drawAction = avatarInfo.drawAction['handLeft']
+						}
+						
+						if (activeParts.swim.includes(type) && avatarInfo.drawAction['swm']) {
+							drawAction = avatarInfo.drawAction['swm']
+						}
+
+						if (drawAction == null) {
+							continue
+						}
+
+						if (this.offsets[uniqueName] == null) {
+							this.offsets[uniqueName] = { 'promise': this.fetchOffsetAsync(uniqueName), 'data': {} }
+						}
+
+						offsetsPromises.push(this.offsets[uniqueName].promise)
+
+						const color = drawablePart.corlorable ? drawablePart.color : null 
+						const drawPartChunk = this.getPartResource(uniqueName, drawAction, type, avatarInfo.isSmall, drawablePart['id'], drawDirection, avatarInfo.frame, color)
+						chunks.push(drawPartChunk)
+					}
+				}
+			}
+		}
+	 
+		return new Promise((resolve, reject) => {
+			Promise.all(offsetPromises).then(() => {
+				let tempCanvas: any = document.createElement('canvas')
+				let tempCtx = tempCanvas.getContext('2d')
+				tempCanvas.width = avatarInfo.rectWidth
+				tempCanvas.height = avatarInfo.rectHeight
+			
+				const chunksPromises = []
+
+				for (let chunk of chunks) {
+					if (this.offsets[chunk.lib].data != null && 
+						this.offsets[chunk.lib].data[chunk.getResourceName()] != null && 
+						!this.offsets[chunk.lib].data[chunk.getResourceName()].flipped) {
+
+						chunksPromises.push(chunk.downloadAsync())
+					} else {
+						let flippedType = this.partsets.partSet[chunk.type]['flipped-set-type']
+						if (flippedType !== '') {
+							chunk.resType = flippedType
+						}
+
+						if (chunk.action === 'std' && 
+							(this.offsets[chunk.lib].data == null || 
+								this.offsets[chunk.lib].data[chunk.getResourceName()] == null || 
+								this.offsets[chunk.lib].data[chunk.getResourceName()].flipped)) {
+							chunk.resAction = 'spk'
+						}
+
+						if (this.offsets[chunk.lib].data == null || 
+							this.offsets[chunk.lib].data[chunk.getResoruceName()] == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()].flipped) 
+						{
+							chunk.isFlip = true
+							chunk.resAction = chunk.action
+
+							chunk.resDirection = 6 - chunk.direction
+						}
+
+						if (this.offsets[chunk.lib].data == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()] == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()].flipped)
+						{
+							chunk.resFrame = chunk.frame + 1
+							chunk.isFlip = false
+						}
+
+						if (this.offsets[chunk.lib].data == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()] == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()].flipped)
+						{
+							chunk.isFlip = false 
+							chunk.resFrame = chunk.frame
+							chunk.resAction = chunk.action
+
+							if (chunk.direction === 7) {
+								chunk.resDirection = 3
+							}
+
+							if (chunk.direction === 3) {
+								chunk.resDirection = 7
+							}
+						}
+
+						if (this.offsets[chunk.lib].data == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()] == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()].flipped)
+						{
+							chunk.resAction = chunk.action
+							chunk.resType = flippedType
+							chunk.resDirection = chunk.direction
+						}
+
+						if (chunk.action === 'std' &&
+							this.offsets[chunk.lib].data == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()] == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()].flipped)
+						{
+							chunk.resAction = 'spk'
+							chunk.resType = chunk.type
+						}
+
+						if (this.offsets[chunk.lib].data != null &&
+							this.offsets[chunk.lib].data[chunk.getResourceName()] != null &&
+							!this.offsets[chunk.lib].data[chunk.getResourceName()].flipped)
+						{
+							chunksPromises.push(chunk.downloadAsync())
+						} else {
+
+						}
+					}
+				}
+
+				Promise.all(chunksPromises).catch(error => {
+					reject('Error downloading chunks')
+				}).then(() => {
+					for (let chunk of chunks) {
+						if (this.offsets[chunk.lib].data != null &&
+							this.offsets[chunk.lib].data[chunk.getResourceName()] != null)
+						{
+							if (chunk.resource != null) {
+								let posX = -this.offsets[chunk.lib].data[chunk.getResourceName()].x
+								let posY = (avatarInfo.rectHeight / 2) - this.offsets[chunk.lib].data[chunk.getResourceName()].y + avatarInfo.rectHeight / 2.5
+
+								let img: any = chunk.resoruce
+								if (chunk.color != null) {
+									img = this.tintSprite(img, chunk.color, (isChat ? 170: 255))
+								}
+
+								if (chunk.isFlip) {
+									posX = -(posX + img.width - avatarInfo.rectWidth + 1)
+									img = this.flipImage(img)
+								}
+
+								if (tempCtx != null) {
+									tempCtx.drawImage(img, posX, posY)
+								}
+							} else {
+
+							}
+						}
+					}
+
+					if (avatarInfo.isDownsampled) {
+						tempCanvas - this.downsampleImage(tempCanvas)
+					}
+
+					resolve(tempCanvas)
+				})
+			})
+		})
+	
 	}
 
-	getActivePartSet() {
+	getActivePartSet(partSet: string): any {
+		const activeParts = this.partset['activePartSet'][partSet]['activePart']
 
+		if (activeParts == null || activeParts.length === 0) {
+			return null
+		}
+		
+		return activeParts
 	}
-}
+
+	getDrawOrder(action: string, direction: Direction): any {
+		const drawOrder = this.draworder[action][direction]
+
+		if (drawOrder == null || drawOrder.length === 0) {
+			return null
+		}
+
+		return drawOrder
+	}
+
+	getPartPalette(partType: string): any {
+		let partSet = this.figuredata['settype'][partType]
+		if (partSet != null) {
+			const paletteId = partSet['paletteid']
+			return this.figuredata['palette'][paletteId]
+		}
+
+		return null
+	}
+
+	getPartPaletteCount(partType: string, partId: string): number {
+		const partSet = this.getPartSet(partType)
+
+		if (partSet != null) {
+			const selectedPart = partSet[partId]
+
+			if (selectedPart != null) {
+				const chucks = selectedPart.part as any[]
+				const maxColors = Math.max.apply(Math, chunk.map(o => o.colorindex))
+				return Math.max(1, maxColors)
+			}
+		}
+
+		return 1
+	}
+
+	getPartSet(partType: string): any {
+		let partSet = this.figuredata['settype'][partType]
+		
+		if (partSet != null) {
+			return partSet.set
+		}
+
+		return null
+	}
+
+	getPartColor(figure: FigurePart): any {
+		const parts: any = {}
+
+		let partSet = this.figuredata['settype'][figure.type]
+
+		if (partSet != null) {
+			if (partSet['set'][figure.id] != null && partSet['set'][figure.id]['part'] !== null) {
+				for (let rawPart of partSet['set'][figure.id]['part']) {
+					const part: any = rawPart
+					
+					let element: any = { 
+						"index": part.index,
+						"id": part.id,
+						"colorable": part.colorable
+					}
+
+					if (part.colorable) {
+						element.color = this.getColorByPaletteId(partSet.paletteid, figure.colors[part.colorindex - 1])
+					}
+
+					if (parts[part.type] == null) {
+						parts[part.type] = [element]
+					}
+
+					else {
+						parts[part.type].push(element)
+					}
+				}
+			}
+		}
+
+		parts.hidden = []
+
+		if (partSet['set'][figure.id] != null && Array.isArray(partSet['set'][figure.id]['hidden'])) {
+			for (let partType of partSet['set'][figure.id]['hidden']) {
+				parts.hidden.push(partType)
+			}
+		}
+	}
+
+	getColorByPaletteId(paletteId: string, colorId: string): any {
+		if (this.figuredata['palette'][paletteId] != null && this.figuredata['palette'[paletteId][colorId] != null && this.figuredata['palette'][paletteId][colorId]['color'] != null) {
+			return this.figuredata['palette'][paletteId][colorId]['color']
+		}
+
+		return null
+	}
+
+	getPartUniqueName(type: string, partId: number): string {
+		let uniqueName = this.figuremap[type][partId]
+
+		if (uniqueName == null && type === "hrb") {
+			uniqueName = this.figuremap["hr"][partId]
+		}
+
+		if (uniqueName == null) {
+			uniqueName = this
+		}
+	}
+}.figurename[]ty,map[]tyepe][]1
+		
+		if ()uniqueName == null {}
+			
+		uniqueName = this.figuremap[]type[]0
+		
+		return uniqueName
