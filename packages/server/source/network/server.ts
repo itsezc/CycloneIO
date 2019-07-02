@@ -285,26 +285,22 @@ export default class Server {
 	}
 
 	movePlayer(mapTiles: any, playerId: any, destination: any) {
-		console.log(mapTiles)
 
-		var oldPlayerCoordinates = {
-			x: this.players[playerId].x,
-			y: this.players[playerId].y
+		var player = this.players[playerId]
+
+		var oldCoords = {
+			x: player.x,
+			y: player.y
 		}
 
-		console.log('player coordinates ' + JSON.stringify(oldPlayerCoordinates))
-
-		console.log('destination ' + JSON.stringify(destination))
-
-		if (this.players[playerId].x !== destination.x || this.players[playerId].y !== destination.y) {
-			this.players[playerId].x = destination.x;
-			this.players[playerId].y = destination.y;
+		if (player.x !== destination.x || player.y !== destination.y) {
+			player.x = destination.x;
+			player.y = destination.y;
 
 			var grid = this.createMapGrid(mapTiles);
-			var path = this.finder.findPath(oldPlayerCoordinates.x, oldPlayerCoordinates.y, this.players[playerId].x, this.players[playerId].y, grid);
+			var path = this.finder.findPath(oldCoords.x, oldCoords.y, player.x, player.y, grid);
 
-			this.socketIO.sockets.emit('playerMoved', playerId, path, destination)
-			console.log('moved')
+			//this.socketIO.sockets.emit('playerMoved', playerId, oldCoords, path, destination)
 		}
 	}
 

@@ -3,7 +3,7 @@ import Room from '../rooms/room'
 import RotationAnimation from './animations/rotation';
 
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
-    public scene: Room
+    public _scene: Room
     private static FPS = 24
     private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
     private static DEFAULT_SIZE = 64
@@ -27,7 +27,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     public constructor(scene: Room, furniture: Furniture) {
         super(scene)
 
-        this.scene = scene
+        this._scene = scene
         this.furniture = furniture
         this.playing = false
 
@@ -49,7 +49,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
             this.playing = true
             // Delta time = Velocity of X < -- > 
-            this.timer = this.scene.time.addEvent({ 
+            this.timer = this._scene.time.addEvent({ 
                 delay: 0,
                 callback: this.update,
                 callbackScope: this,
