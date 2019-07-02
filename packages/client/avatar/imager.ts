@@ -109,8 +109,10 @@ export default class Imager {
 		activeParts.speak = this.getActivePartSet('speak')
 		activeParts.walk = this.getActivePartSet('walk')
 		activeParts.sit = this.getActivePartSet('sit')
-		activeParts.
-		
+		activeParts.itemRight = this.getActivePartSet('itemRight')
+		activeParts.handRight = this.getActivePartSet('handRight')
+		activeParts.handLeft = this.getActivePartSet('handLeft')
+				
 	}
 
 	getActivePartSet() {
