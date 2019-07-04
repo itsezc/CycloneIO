@@ -48,13 +48,13 @@ export default class RoomSprite extends Phaser.GameObjects.Container
         let floorIndex = 0;
         do
         {
-            let tileX = Math.floor(floorIndex % tileModules);
-            let tileY = Math.floor(floorIndex / tileModules);
+            let tileX = Math.floor(floorIndex % tileModules)
+            let tileY = Math.floor(floorIndex / tileModules)
 
-            let tileData = heightmap[tileY].charAt(tileX);
+            let tileData = heightmap[tileY].charAt(tileX)
 
-            let screenX = this.getScreenX(tileX, tileY);
-            let screenY = this.getScreenY(tileX, tileY);
+            let screenX = this.getScreenX(tileX, tileY)
+            let screenY = this.getScreenY(tileX, tileY)
 
             if (tileData != "x")
             {
@@ -63,7 +63,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
                     let leftWallSprite = this._scene.add.image(screenX - 8, screenY - 122, 'wall_l')
                     leftWallSprite.setOrigin(0, 0)
 
-                    container.add(leftWallSprite);
+                    container.add(leftWallSprite)
                 }
 
                 if (tileY < 1)
@@ -71,7 +71,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
                     let rightWallSprite = this._scene.add.image(screenX + 32, screenY - 122, 'wall_r')
                     rightWallSprite.setOrigin(0, 0)
 
-                    container.add(rightWallSprite);
+                    container.add(rightWallSprite)
                 }
 
                 let floorSprite = this._scene.add.image(screenX, screenY, 'tile');
@@ -126,11 +126,17 @@ export default class RoomSprite extends Phaser.GameObjects.Container
         return this.getScreenY(x, y) - z * RoomSprite.tileWidth
     }
 
-    public addFurnitureSprite(furnitureSprite: FurnitureSprite, roomX: number, roomY: number)
+    private getScreenZ(z: number): number {
+        return z * RoomSprite.tileHeight
+    }
+
+    public addFurnitureSprite(furnitureSprite: FurnitureSprite, roomX: number, roomY: number, roomZ: number)
     {
         // Offset / Positioning of each Furniture (Container)
         furnitureSprite.x = this.getScreenX(roomX, roomY) + 32
         furnitureSprite.y = this.getScreenY(roomX, roomY) + 16
+
+        furnitureSprite.y -= this.getScreenZ(roomZ)
 
         this.furnitureContainer.setDepth(3)
         this.furnitureContainer.add(furnitureSprite)

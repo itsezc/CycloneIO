@@ -2,12 +2,14 @@
 //import type { FurnitureType } from '../../common/enums/furniture/type'
 import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
+import FurnitureData from './data'
+
 export interface IData
 {
 	type: string
 	name: string
-	visualizationType: string;
-	logicType: string;
+	visualizationType: string
+	logicType: string
 	spritesheet: string
 	dimensions: IDimension
 	directions: number[]
@@ -86,6 +88,8 @@ export default class Furniture
 	public animation!: number
 	public direction!: number
 
+	public type: FurnitureData.IFurnitureType
+
 	// private id: number // (Furniture Number)
 	// private spriteName: string
 	// private name: string
@@ -113,10 +117,12 @@ export default class Furniture
 	 * @param {boolean} canSit - Sets whether an entity can sit on the furniture or not
 	 */
 
-	constructor(scene: Room, data: IData)
+	constructor(scene: Room, data: IData, type: FurnitureData.IFurnitureType = FurnitureData.IFurnitureType.FLOOR)
 	{
 		this.scene = scene
 		this.data = data
+
+		this.type = type
 	}
 
 	// User goes into the room -> RoomID -> DB / Server -> Client Furniture[] -> forEach Furniture => Furni (where Furniture class is initiated) -> Item (getFurniture(basedOnId))

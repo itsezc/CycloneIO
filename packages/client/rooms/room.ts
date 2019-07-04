@@ -90,19 +90,19 @@ export default class Room extends Phaser.Scene {
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
 
-        this.load.atlas('avatar', 'avatar/avatar.png', 'avatar/avatar.json')
+        this.load.atlas('avatar', 'avatar_old/avatar.png', 'avatar_old/avatar.json')
 
 
-        this.load.image('wall_placeholder', 'furniture_new/wall_placeholder.png')
+        this.load.image('wall_placeholder', 'furniture/wall_placeholder.png')
 
-        this.load.atlas('wlk_0', 'avatar/wlk/wlk_0.png', 'avatar/wlk/wlk_0.json')
-        this.load.atlas('wlk_1', 'avatar/wlk/wlk_1.png', 'avatar/wlk/wlk_1.json')
-        this.load.atlas('wlk_2', 'avatar/wlk/wlk_2.png', 'avatar/wlk/wlk_2.json')
-        this.load.atlas('wlk_3', 'avatar/wlk/wlk_3.png', 'avatar/wlk/wlk_3.json')
-        this.load.atlas('wlk_4', 'avatar/wlk/wlk_4.png', 'avatar/wlk/wlk_4.json')
-        this.load.atlas('wlk_5', 'avatar/wlk/wlk_5.png', 'avatar/wlk/wlk_5.json')
-        this.load.atlas('wlk_6', 'avatar/wlk/wlk_6.png', 'avatar/wlk/wlk_6.json')
-        this.load.atlas('wlk_7', 'avatar/wlk/wlk_7.png', 'avatar/wlk/wlk_7.json')
+        this.load.atlas('wlk_0', 'avatar_old/wlk/wlk_0.png', 'avatar_old/wlk/wlk_0.json')
+        this.load.atlas('wlk_1', 'avatar_old/wlk/wlk_1.png', 'avatar_old/wlk/wlk_1.json')
+        this.load.atlas('wlk_2', 'avatar_old/wlk/wlk_2.png', 'avatar_old/wlk/wlk_2.json')
+        this.load.atlas('wlk_3', 'avatar_old/wlk/wlk_3.png', 'avatar_old/wlk/wlk_3.json')
+        this.load.atlas('wlk_4', 'avatar_old/wlk/wlk_4.png', 'avatar_old/wlk/wlk_4.json')
+        this.load.atlas('wlk_5', 'avatar_old/wlk/wlk_5.png', 'avatar_old/wlk/wlk_5.json')
+        this.load.atlas('wlk_6', 'avatar_old/wlk/wlk_6.png', 'avatar_old/wlk/wlk_6.json')
+        this.load.atlas('wlk_7', 'avatar_old/wlk/wlk_7.png', 'avatar_old/wlk/wlk_7.json')
         //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
         /*      
             this.load.image('tile', 'room/normal_tile.png')
@@ -161,64 +161,84 @@ export default class Room extends Phaser.Scene {
                 "0000x00"
             ],
             furnitures: [
-                // {
-                //     name: 'CF_50_goldbar',
-                //     roomX: 0,
-                //     roomY: 1
-                // },
-                // {
-                //     name: 'throne',
-                //     roomX: 0,
-                //     roomY: 3,
-                //     direction: 2
-                // },
-                // {
-                //     name: 'diamond_dragon',
-                //     roomX: 2,
-                //     roomY: 3,
-                //     direction: 3,
-                //     animation: 2
-                // },
-                // {
-                //     name: 'party_tube_lava',
-                //     roomX: 4,
-                //     roomY: 0,
-                //     direction: 0,
-                //     animation: 0
-                // },
-                // // {
-                // //     name: 'ads_cllava2',
-                // //     roomX: 2,
-                // //     roomY: 0,
-                // //     direction: 0
-                // // },
-                // {
-                //     name: 'urban_lamp',
-                //     roomX: 2,
-                //     roomY: 0,
-                //     direction: 4,
-                //     animation: 1
-                // },
-                // // {
-                // //     name: 'diamond_dragon',
-                // //     roomX: 4,
-                // //     roomY: 3,
-                // //     direction: 2,
-                // //     animation: 2
-                // // },
+                {
+                    name: 'CF_50_goldbar',
+                    roomX: 0,
+                    roomY: 1,
+                    roomZ: 0
+                },
+                {
+                    name: 'throne',
+                    roomX: 0,
+                    roomY: 3,
+                    roomZ: 0,
+                    direction: 2
+                },
+                //{
+                //    name: 'diamond_dragon',
+                //    roomX: 2,
+                //    roomY: 3,
+                //    direction: 3,
+                //    animation: 2
+                //},
+                {
+                    name: 'party_tube_lava',
+                    roomX: 4,
+                    roomY: 0,
+                    roomZ: 0,
+                    direction: 0,
+                    animation: 0
+                },
                 // {
                 //     name: 'ads_cllava2',
-                //     roomX: 0,
-                //     roomY: 6,
-                //     direction: 2,
-                //     animation: 0
-                // },
-                // {
-                //     name: 'hrella_poster_1',
-                //     roomX: 0,
+                //     roomX: 2,
                 //     roomY: 0,
                 //     direction: 0
-                // }
+                // },
+                {
+                    name: 'urban_lamp',
+                    roomX: 2,
+                    roomY: 0,
+                    roomZ: 0,
+                    direction: 4,
+                    animation: 1
+                },
+                // {
+                //     name: 'diamond_dragon',
+                //     roomX: 4,
+                //     roomY: 3,
+                //     direction: 2,
+                //     animation: 2
+                // },
+                //{
+                //    name: 'ads_cllava2',
+                //    roomX: 0,
+                //    roomY: 6,
+                //    direction: 2,
+                //    animation: 0
+                //},
+                {
+                    name: 'party_neon3',
+                    roomX: 3,
+                    roomY: 0,
+                    roomZ: 5,
+                    type: FurnitureData.IFurnitureType.WALL,
+                    animation: 1
+                },
+                {
+                    name: 'hrella_poster_1',
+                    roomX: 0,
+                    roomY: 2,
+                    roomZ: 6.5,
+                    type: FurnitureData.IFurnitureType.WALL
+                },
+                {
+                    name: 'hrella_poster_1',
+                    roomX: 6.25,
+                    roomY: 0,
+                    roomZ: 2.75,
+                    type: FurnitureData.IFurnitureType.WALL
+                }
             ]
         }
 
@@ -309,81 +329,94 @@ export default class Room extends Phaser.Scene {
 
         this.add.existing(roomSprite)
 
-        //          room.furnitures.forEach((furnitureRoomData) => {
-        //              this.load.setPath(Path.join('furniture_new', furnitureRoomData.name))
+        room.furnitures = this.orderFurnituresByType(room.furnitures)
 
-        //              this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
+        room.furnitures.forEach((furnitureRoomData) => {
+            if (!this.isValidCoordinateForFurniture(furnitureRoomData.roomX, furnitureRoomData.roomY, room.heightmap, furnitureRoomData.type)) {
+                console.warn('Invalid coordinates for furniture: ', furnitureRoomData.name)
 
-        //              this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
+                return
+            }
 
-        //              this.load.start()
+            if (furnitureRoomData.type === FurnitureData.IFurnitureType.WALL) {
+                furnitureRoomData.direction = this.calculateWallDirection(furnitureRoomData.roomX, furnitureRoomData.roomY)
+            }
 
-        //              this.load.once('complete', () => {
-        //                  //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
-        //                  //console.log(furnitureRoomData)
+            this.load.setPath(Path.join('furniture', furnitureRoomData.name))
 
-        //                  var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
+            this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
 
-        //                  var furniture = new Furniture(this, furnitureData)
-        //                  var furnitureSprite = new FurnitureSprite(this, furniture)
+            this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
 
-        //                  if (furnitureRoomData.animation !== undefined) {
-        //                      console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
-        //                      furnitureSprite.animateAndStart(furnitureRoomData.animation)
-        //                  } else {
-        //                      furnitureSprite.start()
-        //                  }
+            this.load.start()
 
-        //                  if (furnitureRoomData.color) {
-        //                      furnitureSprite.setColor(furnitureData.color)
-        //                  }
+            this.load.once('complete', () => {
+                //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
+                //console.log(furnitureRoomData)
 
-        //                  furnitureSprite.setDirection(furnitureRoomData.direction || 0)
+                var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
 
-        //                  roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
-        //              })
+                var furniture = new Furniture(this, furnitureData, furnitureRoomData.type)
 
-        //              roomSprite.start()
+                var furnitureSprite = new FurnitureSprite(this, furniture)
 
-        //              this.add.existing(roomSprite)
+                if (furnitureRoomData.animation !== undefined) {
+                    console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
+                    furnitureSprite.animateAndStart(furnitureRoomData.animation)
+                } else {
+                    furnitureSprite.start()
+                }
 
-        //              this.camera.setZoom(4)
+                if (furnitureRoomData.color) {
+                    furnitureSprite.setColor(furnitureData.color)
+                }
 
-        //              // Furniture Rotation
-        //              if (this.input.enabled) {
-        //                  this.input.keyboard.on('keydown-SHIFT', () => {
-        //                      roomSprite.on('pointerdown', () => {
-        //                          ///console.log(roomSprite)
-        //                      }, roomSprite)
-        //                  })
-        //              }
+                furnitureSprite.setDirection(furnitureRoomData.direction || 0)
+
+                roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY, furnitureRoomData.roomZ)
+            })
+
+            roomSprite.start()
+
+            this.add.existing(roomSprite)
+
+            this.camera.setZoom(4)
+
+            // Furniture Rotation
+            if (this.input.enabled) {
+                this.input.keyboard.on('keydown-SHIFT', () => {
+                    roomSprite.on('pointerdown', () => {
+                        ///console.log(roomSprite)
+                    }, roomSprite)
+                })
+            }
 
 
-        //              /* //roomSprite => 1 instance of a furniture
-        //              this.add.existing(roomSprite)
+            /* //roomSprite => 1 instance of a furniture
+            this.add.existing(roomSprite)
 
-        //              var furniture = new Furniture(this, furnitureData)
+            var furniture = new Furniture(this, furnitureData)
 
-        //              let furnitureSprite = new FurnitureSprite(this, furniture)
+            let furnitureSprite = new FurnitureSprite(this, furniture)
 
-        //              if (furnitureRoomData.animation)
-        //              {
-        //                  furnitureSprite.animateAndStart(furnitureRoomData.animation);
-        //              }
+            if (furnitureRoomData.animation)
+            {
+                furnitureSprite.animateAndStart(furnitureRoomData.animation);
+            }
 
-        //              if (furnitureRoomData.color)
-        //              {
-        //                  furnitureSprite.setColor(furnitureRoomData.color);
-        //              }
+            if (furnitureRoomData.color)
+            {
+                furnitureSprite.setColor(furnitureRoomData.color);
+            }
 
-        //              if (furnitureRoomData.direction)
-        //              {
-        //                  furnitureSprite.setDirection(furnitureRoomData.direction);
-        //              }
+            if (furnitureRoomData.direction)
+            {
+                furnitureSprite.setDirection(furnitureRoomData.direction);
+            }
 
-        //              roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY); 
-        //   */
-        //          })
+            roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY);
+ */
+        })
 
         this._camera.setZoom(1)
 
@@ -564,6 +597,57 @@ export default class Room extends Phaser.Scene {
 
         // this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
         // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
+    }
+    private orderFurnituresByType(furnitures: FurnitureData.IFurniture[]): FurnitureData.IFurniture[] {
+        return furnitures.sort((a: FurnitureData.IFurniture, b: FurnitureData.IFurniture) => {
+            if (a.type === FurnitureData.IFurnitureType.WALL) return -1
+            else return 1
+        })
+    }
+
+    private isValidCoordinateForFurniture(x: number, y: number, heightmap: string[], type: FurnitureData.IFurnitureType = FurnitureData.IFurnitureType.FLOOR) {
+        if (type === FurnitureData.IFurnitureType.FLOOR) {
+            const height = this.getHeightByCoords(x, y, heightmap)
+
+            return height != null && height != 'x'
+        } else if (type === FurnitureData.IFurnitureType.WALL) {
+            return this.isValidWallPosition(x, y, heightmap)
+        }
+    }
+
+    private getHeightByCoords(x: number, y: number, heightmap: string[]) {
+        const row = heightmap[y];
+
+        if (row == null)
+            return null
+
+        const points = row.split('')
+        const point = points[x]
+
+        if (point == null) 
+            return null
+
+        
+        return point
+    }
+
+    private isValidWallPosition(x: number, y: number, heightmap: string[]) {
+        const realX = Math.floor(x)
+        const realY = Math.floor(y)
+
+        const height = this.getHeightByCoords(realX, realY, heightmap)
+
+        if (height == 'x')
+            return false
+
+        if((x === 0 && y === 0) || (x > 0 && y > 0))
+            return false
+        else 
+            return true
+    }
+
+    private calculateWallDirection(x: number, y: number) {
+        return x > 0 ? 4 : 0
     }
 
     /**

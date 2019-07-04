@@ -26,19 +26,19 @@ export default class Moderation extends Component {
 				<div className='content'>
 					<ul className='options'>
 						<li>
-							<img src='./moderation/room.png' />
+							<img src='./r63b/moderation/room.png' />
 							<span>Room tool for this Room</span>
 						</li>
 						<li>
-							<img src='./moderation/chatlog.png' />	
+							<img src='./r63b/moderation/chatlog.png' />	
 							<span>Chatlog for this Room</span>
 						</li>
 						<li>
-							<img src='./moderation/user.png' />
+							<img src='./r63b/moderation/user.png' />
 							<span>User info: EZ-C</span>
 						</li>
 						<li>
-							<img src='./moderation/ticket.png' />
+							<img src='./r63b/moderation/ticket.png' />
 							<span>Ticket Browser</span>
 						</li>
 					</ul>	
