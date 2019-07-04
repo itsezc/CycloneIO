@@ -23,6 +23,8 @@ import Pathfinder, { DiagonalMovement } from 'pathfinding'
 import { generateBlendMode } from '../core/blendMode';
 import RoomAvatar from '../avatar/avatar'
 
+import Imager from '../avatar/imager'
+
 /**
 * Room class
  * @extends {Scene}
@@ -58,6 +60,8 @@ export default class Room extends Phaser.Scene {
     public players: { [id: string]: RoomAvatar }
 
     private furnitures!: FurnitureSprite[]
+
+    public avatarImager: Imager
     /*
         private map!: RoomMap */
 
@@ -67,6 +71,8 @@ export default class Room extends Phaser.Scene {
     constructor(id: number) {
         super({ key: 'room' })
         this.id = id
+
+        this.avatarImager = new Imager()
     }
 
     /**
@@ -90,7 +96,7 @@ export default class Room extends Phaser.Scene {
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
 
-        this.load.atlas('avatar', 'avatar_old/avatar.png', 'avatar_old/avatar.json')
+        //this.load.atlas('avatar', 'avatar_old/avatar.png', 'avatar_old/avatar.json')
 
 
         this.load.image('wall_placeholder', 'furniture/wall_placeholder.png')
@@ -135,6 +141,8 @@ export default class Room extends Phaser.Scene {
     public init(): void {
         this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
+
+        this.avatarImager.initialize().then(() => console.log('imager initialized'))
 
         // this.lights.enable()
     }
@@ -452,7 +460,6 @@ export default class Room extends Phaser.Scene {
         this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
 
             if (this.roomPlayer) {
-                this.roomPlayer.play('wlk_2')
                 this.roomPlayer.moveToDestination(oldPlayerCoordinates, path, destination)
             }
         })
@@ -656,7 +663,7 @@ export default class Room extends Phaser.Scene {
      */
     public update(time: number, delta: number): void {
         if (this.roomPlayer) {
-            this.roomPlayer.Update(delta)
+            this.roomPlayer.update(delta)
         }
     }
 

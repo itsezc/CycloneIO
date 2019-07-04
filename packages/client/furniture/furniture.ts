@@ -90,19 +90,6 @@ export default class Furniture
 
 	public type: FurnitureData.IFurnitureType
 
-	// private id: number // (Furniture Number)
-	// private spriteName: string
-	// private name: string
-	// private description: string
-	// private type: FurnitureType
-	// private width: number
-	// private length: number
-	// private height: number
-	// private canStand: boolean
-	// private canStack: boolean
-	// private canWalk: boolean
-	// private canSit: boolean
-
 	/**
 	 * @param {number} id - The furniture ID
 	 * @param {string} spriteName - The furniture file name
@@ -115,7 +102,7 @@ export default class Furniture
 	 * @param {boolean} canStack - Sets whether the furniture can be stackable or not
 	 * @param {boolean} canWalk - Sets whether the furniture can be walkable or not
 	 * @param {boolean} canSit - Sets whether an entity can sit on the furniture or not
-	 */
+	*/
 
 	constructor(scene: Room, data: IData, type: FurnitureData.IFurnitureType = FurnitureData.IFurnitureType.FLOOR)
 	{
@@ -124,11 +111,6 @@ export default class Furniture
 
 		this.type = type
 	}
-
-	// User goes into the room -> RoomID -> DB / Server -> Client Furniture[] -> forEach Furniture => Furni (where Furniture class is initiated) -> Item (getFurniture(basedOnId))
-	// public static load(id?: number): Furniture {
-	// 	return new Furniture(0, "throne", "name", "desc", FurnitureType.FLOOR, 0, 0, 0, false, true, false, false)
-	// }
 
 	public getLayerCount(): number
 	{
@@ -351,7 +333,8 @@ export default class Furniture
 		if (layer.ink)
 		{
 			// 28 is our custom blendMode
-			sprite.blendMode = layer.ink === 'ADD' ? 28 : Phaser.BlendModes[layer.ink]
+			sprite.setBlendMode(Phaser.BlendModes.ADD);
+			//sprite.blendMode = layer.ink === 'ADD' ? 28 : Phaser.BlendModes[layer.ink]
 		}
 
 		sprite.x += layer.x ? layer.x : 0

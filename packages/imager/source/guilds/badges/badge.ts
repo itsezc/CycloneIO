@@ -2,6 +2,7 @@ import BadgePart from './parts/part'
 import { LinkedList } from 'typescript-collections'
 
 export default class GuildBadge {
+
 	public constructor(private base: BadgePart, private readonly symbols: LinkedList<BadgePart>,
 					   private readonly colors: LinkedList<number>, private readonly points: LinkedList<number>) {
 		this.base = base
