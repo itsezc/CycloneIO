@@ -16,7 +16,6 @@ export const GetActiveRooms = gql`
 	}
 `
 
-
 export const GetNavigatorTabs = gql`
 	query GetNavigatorTabs {
 		navigatorTabs(orderBy: order_ASC) {

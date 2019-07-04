@@ -336,7 +336,7 @@ export default class Imager {
 
 								let img: any = chunk.resoruce
 								if (chunk.color != null) {
-									img = this.tintSprite(img, chunk.color, (isChat ? 170: 255))
+									img = this.tintSprite(img, chunk.color, (isGhost ? 170: 255))
 								}
 
 								if (chunk.isFlip) {
@@ -355,7 +355,7 @@ export default class Imager {
 					}
 
 					if (avatarInfo.isDownsampled) {
-						tempCanvas - this.downsampleImage(tempCanvas)
+						tempCanvas = this.downsampleImage(tempCanvas)
 					}
 
 					resolve(tempCanvas)
@@ -490,10 +490,10 @@ export default class Imager {
 		return uniqueName
 	}
 
-	getPartResource(uniqueName: string, action: string, type: string, isSmall, partId: number, direction: Direction, frame: numnber, color: string) {
+	getPartResource(uniqueName: string, action: string, type: string, isSmall: boolean, partId: number, direction: Direction, frame: number, color: string) {
 		let partFrame = this.getFrameNumber(type, action, frame)
-		let chunk = new AvatarChunk(uniqueMap, action, type, isSmall, partId, direction, partFrame, color)
-		let resoruceName = chunk.getResourceName()
+		let chunk = new AvatarChunk(uniqueName, action, type, isSmall, partId, direction, partFrame, color)
+		let resourceName = chunk.getResourceName()
 
 		if(this.chunks[resourceName] != null && this.chunks[resourceName].resource != null) {
 			chunk.resource = this.chunks[resourceName].resource

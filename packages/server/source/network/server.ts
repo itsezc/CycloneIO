@@ -135,26 +135,24 @@ export default class Server {
 			Logger.error(error)
 		}
 
-		/* 		this.apolloClient.query({
-					query:
-						gql`
-									{
-										rooms(
-											where: {
-												currentUsers_gt: 0
-											}
-										) {
-											id
-											name
-											maxUsers
-											currentUsers
-										}
-									}
-								`
-				}).then((result: any) => console.log(result.data.rooms))
-				  .catch((error: any) => console.error(error)) */
-
-
+		// this.apolloClient.query({
+		// 	query:
+		// 		gql`
+		// 					{
+		// 						rooms(
+		// 							where: {
+		// 								currentUsers_gt: 0
+		// 							}
+		// 						) {
+		// 							id
+		// 							name
+		// 							maxUsers
+		// 							currentUsers
+		// 						}
+		// 					}
+		// 				`
+		// }).then((result: any) => console.log(result.data.rooms))
+		// 	.catch((error: any) => console.error(error))
 	}
 
 	private connect() {
