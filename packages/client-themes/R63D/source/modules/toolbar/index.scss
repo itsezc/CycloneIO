@@ -90,6 +90,21 @@
 		}
 	}
 
+	.toolbar-friends-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-right: 14px;
+
+		.btn-history-previous {
+			border-right-width: 0;
+		}
+
+		.btn-history-next {
+			border-left-width: 0;
+		}
+	}
+
 	.toolbar-icons-content{
 		padding: 0 14px;
 		height: 100%;
@@ -144,7 +159,7 @@
 		@import './friendSlot/index';
 
 		.toolbar-friends-content{
-			margin-right: 14px;
+			padding: 0;
 			align-items: flex-end;
 			height: 35px;
 		}

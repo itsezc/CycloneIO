@@ -4,23 +4,13 @@ export default class FriendSlot extends PureComponent {
 
     constructor(props){
         super(props);
-
-        this.state = {
-            isOpen: false
-        }
-    }
-
-    toggleOpen(){
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
     }
 
     render() {
 
-        if(this.props.type == 'unknown'){
+        if(this.props.type === 'unknown'){
             return (
-                <div className={"toolbar-friends-slot is-unknown" + (this.state.isOpen ? " is-open" : '')} onClick={this.toggleOpen.bind(this)}>
+                <div className={"toolbar-friends-slot is-unknown" + (this.props.isOpen ? " is-open" : '')} onClick={this.props.toggleSlot}>
                     <div className='toolbar-friends-slot-header'>
                         <img src="/hotelview/toolbar/icons/friend_head.png" />
                         Find new <br /> friends
@@ -34,7 +24,7 @@ export default class FriendSlot extends PureComponent {
             ); 
         } else {
             return (
-                <div className={"toolbar-friends-slot" + (this.state.isOpen ? " is-open" : '')} onClick={this.toggleOpen.bind(this)}>
+                <div className={"toolbar-friends-slot" + (this.props.isOpen ? " is-open" : '')} onClick={this.props.toggleSlot}>
                     <div className='toolbar-friends-slot-header'>
                         <img src={`https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=${this.props.username}&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m`} />
                         {this.props.username}

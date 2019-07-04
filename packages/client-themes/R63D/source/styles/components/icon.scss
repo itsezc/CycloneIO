@@ -206,7 +206,7 @@
             height: 30
         ),
 
-        carret-down: (
+        carret-down-gray: (
             image: 'icons/carret_down.png',
             width: 10,
             height: 5
@@ -252,6 +252,26 @@
             image: 'icons/close_thin.svg',
             width: 7,
             height: 7
+        ),
+
+        carret-right: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10
+        ),
+
+        carret-left: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10,
+            flipH: true
+        ),
+
+        carret-down: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10,
+            rotate: 90,
         )
     );
 
@@ -263,9 +283,21 @@
                 background-image: url('/#{map-get($iconData, "image")}');
                 width: map-get($iconData, "width") + unquote("px");
                 height: map-get($iconData, "height") + unquote("px");
+
+                @if(map-has-key($iconData, "flipH")) {
+                    @include flipH;
+                }
+
+                @if(map-has-key($iconData, "flipHV")) {
+                    @include flipHV;
+                }
+
+                @if(map-has-key($iconData, "rotate")) {
+                    transform: rotate(map-get($iconData, "rotate") + unquote("deg"));
+                }
             }
 
-            @if (map-has-key($iconData, "small")){
+            @if (map-has-key($iconData, "small")) {
 
                 $smallData: map-get($iconData, "small");
 

@@ -58,8 +58,7 @@ export default class Toolbar extends React.Component {
 
                         {this.props.isRoom && <span className="icon icon-camera"></span> }
                     </div>
-                    
-                    
+
                     <div class={"toolbar-user-actions" + (this.state.isUserActionsOpen ? " is-active": "")}>
                         <span className="icon icon-talents">Talents</span>
                         <span className="icon icon-achievements">Achievements</span>
@@ -82,7 +81,7 @@ export default class Toolbar extends React.Component {
                     </div>
 
                     {this.state.isFriendsOpen &&
-                        <Friends />
+                        <Friends friends={['Markos', 'madison042', 'Phishi', 'PrettyJahanvi', 'Chaosmyyyth', 'EZ-C', 'Maegel']} />
                     }
 
                     <i className={"more is-invert" + (!this.state.isFriendsOpen ? " is-close" : '')} onClick={this.toggleFriends.bind(this)}></i>
