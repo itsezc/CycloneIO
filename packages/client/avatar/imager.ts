@@ -98,7 +98,7 @@ export default class Imager {
 		return this.getTypeColorId(figure, 'ch')
 	}
 
-	generateGeneric(avatarInfo: Avatar, isGhost: boolean): Promise(<HTMLCanvasElement>)
+	generateGeneric(avatarInfo: Avatar, isGhost: boolean): Promise<HTMLCanvasElement>
 	{
 		const activeParts: any = {}
 
@@ -139,11 +139,11 @@ export default class Imager {
 		const offsetsPromises: Promise<void>[] = []
 
 		for (let type of drawParts) {
-			const drawableParts = setparts[type]
+			const drawableParts = setParts[type]
 
 			if (drawableParts != null) {
-				for (let drawabalePart of drawbleParts) {
-					const uniqueName = this.getPartUniqueName(type, drawablePart['id'])
+				for (let drawabalePart of drawableParts) {
+					const uniqueName = this.getPartUniqueName(type, drawableParts['id'])
 
 					if (uniqueName != null) {
 						if (setParts['hidden'].includes(type)) {
@@ -174,7 +174,7 @@ export default class Imager {
 						}
 
 						if (activeParts.speak.includes(type) && avatarInfo.drawAction['speak']) {
-							drawAction avatarInfo.drawAction['speak']
+							drawAction = avatarInfo.drawAction['speak']
 						}
 
 						if (activeParts.gesture.includes(type) && avatarInfo.drawAction['gesture']) {
@@ -223,8 +223,8 @@ export default class Imager {
 
 						offsetsPromises.push(this.offsets[uniqueName].promise)
 
-						const color = drawablePart.corlorable ? drawablePart.color : null 
-						const drawPartChunk = this.getPartResource(uniqueName, drawAction, type, avatarInfo.isSmall, drawablePart['id'], drawDirection, avatarInfo.frame, color)
+						const color = drawableParts.corlorable ? drawableParts.color : null 
+						const drawPartChunk = this.getPartResource(uniqueName, drawAction, type, avatarInfo.isSmall, drawableParts['id'], drawDirection, avatarInfo.frame, color)
 						chunks.push(drawPartChunk)
 					}
 				}
@@ -232,7 +232,7 @@ export default class Imager {
 		}
 	 
 		return new Promise((resolve, reject) => {
-			Promise.all(offsetPromises).then(() => {
+			Promise.all(offsetsPromises).then(() => {
 				let tempCanvas: any = document.createElement('canvas')
 				let tempCtx = tempCanvas.getContext('2d')
 				tempCanvas.width = avatarInfo.rectWidth
@@ -347,6 +347,7 @@ export default class Imager {
 								if (tempCtx != null) {
 									tempCtx.drawImage(img, posX, posY)
 								}
+								
 							} else {
 
 							}
@@ -365,7 +366,7 @@ export default class Imager {
 	}
 
 	getActivePartSet(partSet: string): any {
-		const activeParts = this.partset['activePartSet'][partSet]['activePart']
+		const activeParts = this.partsets['activePartSet'][partSet]['activePart']
 
 		if (activeParts == null || activeParts.length === 0) {
 			return null
@@ -402,7 +403,7 @@ export default class Imager {
 
 			if (selectedPart != null) {
 				const chucks = selectedPart.part as any[]
-				const maxColors = Math.max.apply(Math, chunk.map(o => o.colorindex))
+				const maxColors = Math.max.apply(Math, chucks.map(o => o.colorindex))
 				return Math.max(1, maxColors)
 			}
 		}
@@ -461,7 +462,10 @@ export default class Imager {
 	}
 
 	getColorByPaletteId(paletteId: string, colorId: string): any {
-		if (this.figuredata['palette'][paletteId] != null && this.figuredata['palette'[paletteId][colorId] != null && this.figuredata['palette'][paletteId][colorId]['color'] != null) {
+		if (this.figuredata['palette'][paletteId] != null && 
+			this.figuredata['palette'][paletteId][colorId] != null && 
+			this.figuredata['palette'][paletteId][colorId]['color'] != null) 
+		{
 			return this.figuredata['palette'][paletteId][colorId]['color']
 		}
 
@@ -471,18 +475,129 @@ export default class Imager {
 	getPartUniqueName(type: string, partId: number): string {
 		let uniqueName = this.figuremap[type][partId]
 
-		if (uniqueName == null && type === "hrb") {
-			uniqueName = this.figuremap["hr"][partId]
+		if (uniqueName == null && type === 'hrb') {
+			uniqueName = this.figuremap['hr'][partId]
 		}
 
 		if (uniqueName == null) {
-			uniqueName = this
+			uniqueName = this.figuremap[type][1]
 		}
-	}
-}.figurename[]ty,map[]tyepe][]1
-		
-		if ()uniqueName == null {}
-			
-		uniqueName = this.figuremap[]type[]0
-		
+
+		if (uniqueName == null) {
+			uniqueName = this.figuremap[type][0]
+		}
+
 		return uniqueName
+	}
+
+	getPartResource(uniqueName: string, action: string, type: string, isSmall, partId: number, direction: Direction, frame: numnber, color: string) {
+		let partFrame = this.getFrameNumber(type, action, frame)
+		let chunk = new AvatarChunk(uniqueMap, action, type, isSmall, partId, direction, partFrame, color)
+		let resoruceName = chunk.getResourceName()
+
+		if(this.chunks[resourceName] != null && this.chunks[resourceName].resource != null) {
+			chunk.resource = this.chunks[resourceName].resource
+			chunk.promise = this.chunks[resourceName].promise
+		} else {
+			this.chunks[resourceName] = chunk		
+		}
+
+		return chunk
+	}
+	
+	getFrameNumber(type: string, action: string, frame: number) {
+		const translations: any = { "wav": "Wave", "wlk": "Move", "spk": "Talk" };
+        if (translations[action] != null) {
+            if (this.animation[translations[action]].part[type] != null) {
+                const count = this.animation[translations[action]].part[type].length;
+                if (this.animation[translations[action]].part[type][frame % count] != null) {
+                    return this.animation[translations[action]].part[type][frame % count].number;
+                }
+            }
+        }
+        return 0;
+	}
+
+
+	tintSprite(img: HTMLCanvasElement | HTMLImageElement, color: string, alpha: number): HTMLCanvasElement | null {
+		let element = document.createElement('canvas');
+        let c = element.getContext("2d");
+        if (c == null)
+            return null;
+
+        let rgb = this.hex2rgb(color);
+
+        let width = img.width;
+        let height = img.height;
+
+        element.width = width;
+        element.height = height;
+
+        c.drawImage(img, 0, 0);
+        let imageData = c.getImageData(0, 0, width, height);
+        for (let y = 0; y < height; y++) {
+            let inpos = y * width * 4;
+            for (let x = 0; x < width; x++) {
+                inpos++; //r
+                inpos++; //g
+                inpos++; //b
+                let pa = imageData.data[inpos++];
+                if (pa !== 0) {
+                    imageData.data[inpos - 1] = alpha; //A
+                    imageData.data[inpos - 2] = Math.round(rgb.b * imageData.data[inpos - 2] / 255); //B
+                    imageData.data[inpos - 3] = Math.round(rgb.g * imageData.data[inpos - 3] / 255); //G
+                    imageData.data[inpos - 4] = Math.round(rgb.r * imageData.data[inpos - 4] / 255); //R
+                }
+            }
+        }
+        c.putImageData(imageData, 0, 0);
+        return element
+	}
+
+	hex2rgb(hex: string): any {
+        const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16)
+        } : null;
+	}
+	
+	flipImage(img: HTMLCanvasElement | HTMLImageElement): HTMLCanvasElement | null {
+        let element = document.createElement('canvas');
+        let c = element.getContext("2d");
+        if (c == null)
+            return null;
+
+        let width = img.width;
+        let height = img.height;
+        element.width = width;
+        element.height = height;
+
+        c.save();
+        c.scale(-1, 1);
+        c.drawImage(img, 0, 0, width * -1, height);
+        c.restore();
+
+        return element;
+    }
+
+    downsampleImage(img: HTMLCanvasElement | HTMLImageElement): HTMLCanvasElement | null {
+        let element = document.createElement('canvas');
+        let c = element.getContext("2d");
+        if (c == null)
+            return null;
+
+        let width = img.width;
+        let height = img.height;
+        element.width = width;
+        element.height = height;
+
+        c.save();
+        c.scale(0.5, 0.5);
+        c.drawImage(img, 0, 0);
+        c.restore();
+
+        return element;
+    }	
+}

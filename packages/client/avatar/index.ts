@@ -37,14 +37,14 @@ export default class Avatar
 	
 	constructor(
 		figure: string,
-		private readonly direction: Direction,
-		private readonly headDirection: Direction,
-		private readonly action: string[],
-		private readonly gesture: string,
-		private readonly frame: number,
-		private readonly isHeadOnly: boolean,
-		private readonly isBodyOnly: boolean,
-		private readonly scale: Scale
+		public readonly direction: Direction,
+		public readonly headDirection: Direction,
+		public readonly action: string[],
+		public readonly gesture: string,
+		public readonly frame: number,
+		public readonly isHeadOnly: boolean,
+		public readonly isBodyOnly: boolean,
+		public readonly scale: Scale
 	) {
 		switch(this.scale) {
 			case 'l':
