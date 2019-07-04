@@ -20,9 +20,8 @@ import Furniture from '../furniture/furniture'
 import Path from 'path'
 
 import Pathfinder, { DiagonalMovement } from 'pathfinding'
-import RoomPlayer from '../players/player';
-import { thisTypeAnnotation } from 'babel-types';
 import { generateBlendMode } from '../core/blendMode';
+import RoomAvatar from '../avatar/avatar'
 
 /**
 * Room class
@@ -40,17 +39,23 @@ export default class Room extends Phaser.Scene {
 
     public avatars!: { [id: string]: Phaser.Physics.Arcade.Sprite }
     public avatar!: Phaser.Physics.Arcade.Sprite
+
     public avatarIsWalking: boolean
     public avatarIsMoving: boolean = false
     public avatarRotation: number
-    public tileDestination: { x: number, y: number }
+
+    public destination: { x: number, y: number }
+    public tileFrom: { x: number, y: number }
+
     public finder: Pathfinder.AStarFinder
     public map: number[][]
-    public roomPlayer!: RoomPlayer
+    public roomPlayer!: RoomAvatar
 
     public avatarId!: number
     public path!: any
     public pathNextValue!: any
+
+    public players: { [id: string]: RoomAvatar }
 
     private furnitures!: FurnitureSprite[]
     /*
@@ -152,71 +157,68 @@ export default class Room extends Phaser.Scene {
             heightmap: [
                 "0000000",
                 "0000000",
-                "0000x00",
                 "0000000",
-                "0000000",
-                "0000000",
-                "0000000"
+                "0000x00"
             ],
             furnitures: [
-               // {
-               //     name: 'CF_50_goldbar',
-               //     roomX: 0,
-               //     roomY: 1
-               // },
-               // {
-               //     name: 'throne',
-               //     roomX: 0,
-               //     roomY: 3,
-               //     direction: 2
-               // },
-               // {
-               //     name: 'diamond_dragon',
-               //     roomX: 2,
-               //     roomY: 3,
-               //     direction: 3,
-               //     animation: 2
-               // },
-                {
-                    name: 'party_tube_lava',
-                    roomX: 4,
-                    roomY: 0,
-                    direction: 0,
-                    animation: 0
-                },
-               // {
-               //     name: 'ads_cllava2',
-               //     roomX: 2,
-               //     roomY: 0,
-               //     direction: 0
-               // },
-                {
-                   name: 'urban_lamp',
-                   roomX: 2,
-                   roomY: 0,
-                   direction: 4,
-                   animation: 1
-                },
-               // {
-               //     name: 'diamond_dragon',
-               //     roomX: 4,
-               //     roomY: 3,
-               //     direction: 2,
-               //     animation: 2
-               // },
-                {
-                    name: 'ads_cllava2',
-                    roomX: 0,
-                    roomY: 6,
-                    direction: 2,
-                    animation: 0
-                },
-                {
-                    name: 'hrella_poster_1',
-                    roomX: 0,
-                    roomY: 0,
-                    direction: 0
-                }
+                // {
+                //     name: 'CF_50_goldbar',
+                //     roomX: 0,
+                //     roomY: 1
+                // },
+                // {
+                //     name: 'throne',
+                //     roomX: 0,
+                //     roomY: 3,
+                //     direction: 2
+                // },
+                // {
+                //     name: 'diamond_dragon',
+                //     roomX: 2,
+                //     roomY: 3,
+                //     direction: 3,
+                //     animation: 2
+                // },
+                // {
+                //     name: 'party_tube_lava',
+                //     roomX: 4,
+                //     roomY: 0,
+                //     direction: 0,
+                //     animation: 0
+                // },
+                // // {
+                // //     name: 'ads_cllava2',
+                // //     roomX: 2,
+                // //     roomY: 0,
+                // //     direction: 0
+                // // },
+                // {
+                //     name: 'urban_lamp',
+                //     roomX: 2,
+                //     roomY: 0,
+                //     direction: 4,
+                //     animation: 1
+                // },
+                // // {
+                // //     name: 'diamond_dragon',
+                // //     roomX: 4,
+                // //     roomY: 3,
+                // //     direction: 2,
+                // //     animation: 2
+                // // },
+                // {
+                //     name: 'ads_cllava2',
+                //     roomX: 0,
+                //     roomY: 6,
+                //     direction: 2,
+                //     animation: 0
+                // },
+                // {
+                //     name: 'hrella_poster_1',
+                //     roomX: 0,
+                //     roomY: 0,
+                //     direction: 0
+                // }
             ]
         }
 
@@ -242,7 +244,12 @@ export default class Room extends Phaser.Scene {
             repeat: -1
         })
 
-
+        this.anims.create({
+            key: 'wlk_2',
+            frames: this.anims.generateFrameNames('wlk_2'),
+            frameRate: 12,
+            repeat: -1
+        })
 
         this.anims.create({
             key: 'wlk_3',
@@ -302,86 +309,85 @@ export default class Room extends Phaser.Scene {
 
         this.add.existing(roomSprite)
 
-        //         room.furnitures.forEach((furnitureRoomData) => {
-        //             this.load.setPath(Path.join('furniture_new', furnitureRoomData.name))
+        //          room.furnitures.forEach((furnitureRoomData) => {
+        //              this.load.setPath(Path.join('furniture_new', furnitureRoomData.name))
 
-        //             this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
+        //              this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
 
-        //             this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
+        //              this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
 
-        //             this.load.start()
+        //              this.load.start()
 
-        //             this.load.once('complete', () => {
-        //                 //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
-        //                 //console.log(furnitureRoomData)
+        //              this.load.once('complete', () => {
+        //                  //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
+        //                  //console.log(furnitureRoomData)
 
-        //                 var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
+        //                  var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
 
-        //                 var furniture = new Furniture(this, furnitureData)
-        //                 var furnitureSprite = new FurnitureSprite(this, furniture)
+        //                  var furniture = new Furniture(this, furnitureData)
+        //                  var furnitureSprite = new FurnitureSprite(this, furniture)
 
-        //                 if (furnitureRoomData.animation !== undefined) {
-        //                     console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
-        //                     furnitureSprite.animateAndStart(furnitureRoomData.animation)
-        //                 } else {
-        //                     furnitureSprite.start()
-        //                 }
+        //                  if (furnitureRoomData.animation !== undefined) {
+        //                      console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
+        //                      furnitureSprite.animateAndStart(furnitureRoomData.animation)
+        //                  } else {
+        //                      furnitureSprite.start()
+        //                  }
 
-        //                 if (furnitureRoomData.color) {
-        //                     furnitureSprite.setColor(furnitureData.color)
-        //                 }
+        //                  if (furnitureRoomData.color) {
+        //                      furnitureSprite.setColor(furnitureData.color)
+        //                  }
 
-        //                 furnitureSprite.setDirection(furnitureRoomData.direction || 0)
+        //                  furnitureSprite.setDirection(furnitureRoomData.direction || 0)
 
-        //                 roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
-        //             })
+        //                  roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY)
+        //              })
 
-        //             roomSprite.start()
+        //              roomSprite.start()
 
-        //             this.add.existing(roomSprite)
+        //              this.add.existing(roomSprite)
 
-        //             this.camera.setZoom(4)
+        //              this.camera.setZoom(4)
 
-        //             // Furniture Rotation
-        //             if (this.input.enabled) {
-        //                 this.input.keyboard.on('keydown-SHIFT', () => {
-        //                     roomSprite.on('pointerdown', () => {
-        //                         ///console.log(roomSprite)
-        //                     }, roomSprite)
-        //                 })
-        //             }
+        //              // Furniture Rotation
+        //              if (this.input.enabled) {
+        //                  this.input.keyboard.on('keydown-SHIFT', () => {
+        //                      roomSprite.on('pointerdown', () => {
+        //                          ///console.log(roomSprite)
+        //                      }, roomSprite)
+        //                  })
+        //              }
 
 
-        //             /* //roomSprite => 1 instance of a furniture
-        //             this.add.existing(roomSprite)
+        //              /* //roomSprite => 1 instance of a furniture
+        //              this.add.existing(roomSprite)
 
-        //             var furniture = new Furniture(this, furnitureData)
+        //              var furniture = new Furniture(this, furnitureData)
 
-        //             let furnitureSprite = new FurnitureSprite(this, furniture)
+        //              let furnitureSprite = new FurnitureSprite(this, furniture)
 
-        //             if (furnitureRoomData.animation)
-        //             {
-        //                 furnitureSprite.animateAndStart(furnitureRoomData.animation);
-        //             }
+        //              if (furnitureRoomData.animation)
+        //              {
+        //                  furnitureSprite.animateAndStart(furnitureRoomData.animation);
+        //              }
 
-        //             if (furnitureRoomData.color)
-        //             {
-        //                 furnitureSprite.setColor(furnitureRoomData.color);
-        //             }
+        //              if (furnitureRoomData.color)
+        //              {
+        //                  furnitureSprite.setColor(furnitureRoomData.color);
+        //              }
 
-        //             if (furnitureRoomData.direction)
-        //             {
-        //                 furnitureSprite.setDirection(furnitureRoomData.direction);
-        //             }
+        //              if (furnitureRoomData.direction)
+        //              {
+        //                  furnitureSprite.setDirection(furnitureRoomData.direction);
+        //              }
 
-        //             roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY); 
-        //  */
-        //         })
+        //              roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY); 
+        //   */
+        //          })
 
         this._camera.setZoom(1)
 
         this._socket.emit('requestRoom', 0)
-        this.roomPlayer = new RoomPlayer(this);
 
         this._socket.on('connect', () => {
             console.log(`Server connected on ${window.location.hostname}`);
@@ -405,24 +411,28 @@ export default class Room extends Phaser.Scene {
         //         }) */
 
         this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
-            console.log({ playerId: playerId, playerX: playerX, playerY: playerY })
-            this.roomPlayer.addPlayerToRoom(playerId, playerX, playerY)
+            this.roomPlayer = new RoomAvatar(this, playerX, playerY, 0)
+            this.roomPlayer.x = this.roomPlayer.RenderPos.x
+            this.roomPlayer.y = this.roomPlayer.RenderPos.y
         })
 
-        this._socket.on('playerMoved', (playerId: any, path: any, destination: any) => {
-            console.log('moving player, current data: \n' + JSON.stringify({ playerId: playerId, path: path, destination: destination }))
-            this.roomPlayer.movePlayer(playerId, path, destination)
+        this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
+
+            if (this.roomPlayer) {
+                this.roomPlayer.play('wlk_2')
+                this.roomPlayer.moveToDestination(oldPlayerCoordinates, path, destination)
+            }
         })
 
-        this._socket.on('currentPlayers', (players: any) => {
-            Object.keys(players).forEach((playerId: any) => {
-                var player = players[playerId]
-                this.roomPlayer.addPlayerToRoom(playerId, player.x, player.y);
-            })
-        })
+        // this._socket.on('currentPlayers', (players: any) => {
+        //     Object.keys(players).forEach((playerId: any) => {
+        //         var player = players[playerId]
+        //         this.roomPlayer.addPlayerToRoom(playerId, player.x, player.y);
+        //     })
+        // })
 
         this._socket.on('playerDisconnected', (playerId: any) => {
-            this.roomPlayer.removePlayerFromRoom(playerId);
+            this.roomPlayer.removeFromRoom();
         });
 
 
@@ -518,48 +528,6 @@ export default class Room extends Phaser.Scene {
             }
         } */
 
-        /*         var sofacoords = this.placeCoordsTest(5, 1)
-                var coincoords = this.placeCoordsTest(2, 2) */
-
-        /*         var presentCoords = this.coordsToIsometric(1, 2)
-                //var calipCoords = this.coordsToIsometric(0, 0)
-        
-                var presentData = this.cache.json.get('present_gen1_data')
-                //var calipData = this.cache.json.get('ads_calip_fan_data')
-        
-                var presentOffsets = presentData.assets.present_gen1_64_a_0_0
-                //var calipOffsets = calipData.assets.ads_calip_fan_64_a_2_0
-        
-                var present = this.add.image(presentCoords.x + 32, presentCoords.y + 16, 'present_gen1', 'present_gen1_present_gen1_64_a_0_0.png').setDepth(1)
-         */
-        /*         var presentData = this.cache.json.get('present_gen1_data')
-                var presentOffsets = presentData.assets.present_gen1_64_a_0_0
-                console.log(presentOffsets)
-                var present = this.add.image(0, 0, 'present_gen1', 'present_gen1_present_gen1_64_a_0_0.png').setDepth(1)
-        
-                present.x = this.getScreenX(2, 2) + 32;
-                present.y = this.getScreenY(2, 2) + 16; */
-
-        //var calipData = this.cache.json.get('ads_calip_fan_data')
-
-        // layer 0 -> dir 0
-        /*         var calipOffsets = calipData.assets.ads_calip_fan_64_a_2_0
-                var test = calipData.visualization.directions[0].layers[1]
-                console.log(test)
-        
-                var calip = this.add.image(0, 0, 'ads_calip_fan', 'ads_calip_fan_ads_calip_fan_64_a_2_0.png')
-        
-                calip.x = this.getScreenX(2, 2) + 32
-                calip.y = this.getScreenY(2, 2) + 16
-                
-                calip.x += test.x
-                calip.y += test.y
-        
-                calip.toggleFlipX()
-                this.camera.setZoom(1)
-         */
-        //this.add.image(0, -100, 'tile')
-
         // Zoom out (0.55). max: 10
         //this.camera.setZoom(0.55)
 
@@ -602,59 +570,24 @@ export default class Room extends Phaser.Scene {
      * Runs once per frame for the duration of the scene
      * @override
      */
-    public update(time: number, deltaTime: number): void {
-        if (this.tileDestination) {
-            
-            var player = this.roomPlayer.players[this.avatarId]
-
-            var playerXCoordinates = Math.round(player.x - 30)
-            var playerYCoordinates = Math.round(player.y + 30)
-            
-            console.log({ playerX: playerXCoordinates, playerY: playerYCoordinates })
-
-            if (playerXCoordinates === this.tileDestination.x && playerYCoordinates === this.tileDestination.y) {
-                player.body.stop()
-                player.anims.stop()
-                player.setTexture('avatar')
-                player.setFrame(`std_2.png`)
-
-                this.tileDestination = undefined
-            }
-
-            if (this.pathNextValue) {
-                //console.log({ pathNextValueX: this.pathNextValue[0], pathNextValueY: this.pathNextValue[1] })
-                var isoPathValueX = this.getScreenX(this.pathNextValue[0], this.pathNextValue[1])
-                var isoPathValueY = this.getScreenY(this.pathNextValue[0], this.pathNextValue[1])
-
-                console.log( { isoPathValueX: isoPathValueX, isoPathValueY: isoPathValueY })
-
-                if (playerXCoordinates === isoPathValueX && playerYCoordinates === isoPathValueY) {
-                    this.pathNextValue = this.path.next().value
-                    console.log(this.pathNextValue)
-                    // isoPathValueX = this.getScreenX(this.pathNextValue[0], this.pathNextValue[1]) + 30
-                    // isoPathValueY = this.getScreenY(this.pathNextValue[0], this.pathNextValue[1]) - 30
-                }
-
-                if (!this.avatarIsMoving) {
-                    console.log('tile destination ' + JSON.stringify(this.tileDestination))
-                    this.physics.moveTo(player, isoPathValueX + 30, isoPathValueY - 30, 70)
-                    this.avatarIsMoving = true
-                }
-
-                //console.log({ isoPathValueX: isoPathValueX, isoPathValueY: isoPathValueY})
-
-                
-            }
+    public update(time: number, delta: number): void {
+        if (this.roomPlayer) {
+            this.roomPlayer.Update(delta)
         }
-        /* 
-                 */
-        /*         if (this.avatarIsWalking)
-                {
-                    this.avatar.x += 1.0
-                    this.avatar.y -= 0.5
-                } */
-        //console.log(time, deltaTime)
-        // this.camera3d.transformChildren(this.transform);
+    }
+
+    public TileToScreenCoords(x: number, y: number) {
+        let screenX = 0 + (1 + x - y) * 32;
+        let screenY = 0 + (1 + x + y) * 16;
+
+        return { x: screenX, y: screenY };
+    }
+
+    public TileToPixels(x: number, y: number) {
+        let toX = (1 + x - y) * 32;
+        let toY = (1 + x + y) * 16;
+
+        return { x: toX, y: toY };
     }
 
     public mapToIsometric(mapCoordinates: any) {

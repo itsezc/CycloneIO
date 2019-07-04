@@ -7,7 +7,7 @@ export default interface IGameObject {
 }
 
 export class GameObject extends Phaser.GameObjects.GameObject implements IGameObject {
-	public readonly scene: Room
+	public readonly _scene: Room
 	public readonly type: string
 
 	private readonly coordinates: Vector
@@ -22,7 +22,7 @@ export class GameObject extends Phaser.GameObjects.GameObject implements IGameOb
 	constructor(scene: Room, type: string, coordinates: Vector, depth: RoomObjectDepth, texture?: string, frame?: string) {
 		super(scene, type)
 
-		this.scene = scene
+		this._scene = scene
 		this.type = type
 
 		this.coordinates = coordinates
@@ -37,7 +37,7 @@ export class GameObject extends Phaser.GameObjects.GameObject implements IGameOb
 			case 'image':
 				{
 					if (this.texture) {
-						this.image = new Phaser.GameObjects.Image(this.scene, this.coordinates.x,
+						this.image = new Phaser.GameObjects.Image(this._scene, this.coordinates.x,
 							this.coordinates.y - this.coordinates.z, this.texture, this.frame)
 
 						this.image.setDepth(this.depth)
@@ -48,7 +48,7 @@ export class GameObject extends Phaser.GameObjects.GameObject implements IGameOb
 			case 'sprite':
 				{
 					if (this.texture) {
-						this.sprite = new Phaser.GameObjects.Sprite(this.scene, this.coordinates.x,
+						this.sprite = new Phaser.GameObjects.Sprite(this._scene, this.coordinates.x,
 							this.coordinates.y - this.coordinates.z, this.texture, this.frame)
 
 						this.sprite.setDepth(this.depth)
@@ -62,6 +62,6 @@ export class GameObject extends Phaser.GameObjects.GameObject implements IGameOb
 				}
 		}
 
-		this.scene.add.existing(this)
+		this._scene.add.existing(this)
 	}
 }

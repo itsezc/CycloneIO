@@ -135,26 +135,24 @@ export default class Server {
 			Logger.error(error)
 		}
 
-		/* 		this.apolloClient.query({
-					query:
-						gql`
-									{
-										rooms(
-											where: {
-												currentUsers_gt: 0
-											}
-										) {
-											id
-											name
-											maxUsers
-											currentUsers
-										}
-									}
-								`
-				}).then((result: any) => console.log(result.data.rooms))
-				  .catch((error: any) => console.error(error)) */
-
-
+		// this.apolloClient.query({
+		// 	query:
+		// 		gql`
+		// 					{
+		// 						rooms(
+		// 							where: {
+		// 								currentUsers_gt: 0
+		// 							}
+		// 						) {
+		// 							id
+		// 							name
+		// 							maxUsers
+		// 							currentUsers
+		// 						}
+		// 					}
+		// 				`
+		// }).then((result: any) => console.log(result.data.rooms))
+		// 	.catch((error: any) => console.error(error))
 	}
 
 	private connect() {
@@ -180,10 +178,10 @@ export default class Server {
 			Socket.on('movePlayer', (destination: any) => {
 				this.movePlayer(
 					[
-						[0, 0, 0, 0, 0],
-						[0, 0, 0, 0, 0],
-						[0, 0, 1, 0, 0],
-						[0, 0, 0, 0, 0]
+						[0, 0, 0, 0, 0, 0, 0],
+						[0, 0, 0, 0, 0, 0, 0],
+						[0, 0, 0, 0, 0, 0, 0],
+						[0, 0, 0, 0, 1, 0, 0]
 					], Socket.id, destination)
 			})
 
@@ -210,12 +208,12 @@ export default class Server {
 		var playerId = Socket.id
 		var player = this.players[playerId]
 
-		//Socket.broadcast.emit('joinRoom', playerId, player.x, player.y)
+		Socket.emit('joinRoom', playerId, player.x, player.y)
 
-		var players = this.getAllPlayers()
-		console.log(players)
+		// var players = this.getAllPlayers()
+		// console.log(players)
 
-		this.socketIO.sockets.emit('currentPlayers', players)
+		// this.socketIO.sockets.emit('currentPlayers', players)
 
 		// console.log('Players', this.players)
 		//Socket.emit('currentPlayers', this.getAllPlayers())
@@ -285,26 +283,22 @@ export default class Server {
 	}
 
 	movePlayer(mapTiles: any, playerId: any, destination: any) {
-		console.log(mapTiles)
 
-		var oldPlayerCoordinates = {
-			x: this.players[playerId].x,
-			y: this.players[playerId].y
+		var player = this.players[playerId]
+
+		var oldCoords = {
+			x: player.x,
+			y: player.y
 		}
 
-		console.log('player coordinates ' + JSON.stringify(oldPlayerCoordinates))
-
-		console.log('destination ' + JSON.stringify(destination))
-
-		if (this.players[playerId].x !== destination.x || this.players[playerId].y !== destination.y) {
-			this.players[playerId].x = destination.x;
-			this.players[playerId].y = destination.y;
+		if (player.x !== destination.x || player.y !== destination.y) {
+			player.x = destination.x;
+			player.y = destination.y;
 
 			var grid = this.createMapGrid(mapTiles);
-			var path = this.finder.findPath(oldPlayerCoordinates.x, oldPlayerCoordinates.y, this.players[playerId].x, this.players[playerId].y, grid);
+			var path = this.finder.findPath(oldCoords.x, oldCoords.y, player.x, player.y, grid);
 
-			this.socketIO.sockets.emit('playerMoved', playerId, path, destination)
-			console.log('moved')
+			//this.socketIO.sockets.emit('playerMoved', playerId, oldCoords, path, destination)
 		}
 	}
 

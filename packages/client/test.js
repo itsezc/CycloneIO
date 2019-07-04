@@ -270,17 +270,17 @@ function aiWalk()
 {
 	if (path.length == 0)
 	{//path has ended
-		if (heroMapTile.x == destination.x && heroMapTile.y == destination.y)
+		if (heroMapTile.x == this.destination.x && heroMapTile.y == destination.y)
 		{
 			dX = 0;
 			dY = 0;
-			//console.log("ret "+destination.x+" ; "+destination.y+"-"+heroMapTile.x+" ; "+heroMapTile.y);
+			//console.log("ret "+this.destination.x+" ; "+destination.y+"-"+heroMapTile.x+" ; "+heroMapTile.y);
 			isWalking = false;
 			return;
 		}
 	}
 	isWalking = true;
-	if (heroMapTile.x == destination.x && heroMapTile.y == destination.y)
+	if (heroMapTile.x == this.destination.x && heroMapTile.y == destination.y)
 	{//reached current destination, set new, change direction
 		//wait till we are few steps into the tile before we turn
 		stepsTaken++;
@@ -297,10 +297,10 @@ function aiWalk()
 
 		stepsTaken = 0;
 		destination = path.pop();//whats next tile in path
-		if (heroMapTile.x < destination.x)
+		if (heroMapTile.x < this.destination.x)
 		{
 			dX = 1;
-		} else if (heroMapTile.x > destination.x)
+		} else if (heroMapTile.x > this.destination.x)
 		{
 			dX = -1;
 		} else
@@ -317,7 +317,7 @@ function aiWalk()
 		{
 			dY = 0;
 		}
-		if (heroMapTile.x == destination.x)
+		if (heroMapTile.x == this.destination.x)
 		{//top or bottom
 			dX = 0;
 		} else if (heroMapTile.y == destination.y)
