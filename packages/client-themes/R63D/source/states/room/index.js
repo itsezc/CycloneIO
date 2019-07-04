@@ -3,6 +3,7 @@ import React from 'react';
 import ChatBubble from '../../modules/chat-bubble';
 import ChatBox from '../../modules/chat-box';
 import RoomDetails from '../../modules/room-details';
+import ClickActions from '../../modules/click-actions';
 
 import FurnitureInfo from '../../modules/click-infos/furniture';
 
@@ -31,7 +32,11 @@ export default class Room extends React.Component {
                     </ScrollBar>
                 </div>
 
-                <div style={{position: 'fixed', top: '50%', left: '45%'}}>
+                <div style={{backgroundColor: 'blue', padding: 32, position: 'fixed', top: '0%', left: '45%'}}>
+                    <ClickActions />
+
+                    <div style={{height: 64}}></div>
+
                     <button className="btn btn-r63b btn-action btn-red">
                         <i className="icon icon-close"></i>
                     </button>

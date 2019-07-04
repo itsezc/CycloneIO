@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
             compress: true,
 			historyApiFallback: true,
 			contentBase: Path.resolve(__dirname, '../../../web-gallery'),
-			port: 8082
+			port: 8083
 		},
 		
         module: {

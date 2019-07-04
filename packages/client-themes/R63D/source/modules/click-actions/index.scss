@@ -1,0 +1,83 @@
+.click-actions {
+    min-width: 103px;
+    border: 1px solid #000;
+    border-radius: 4px;
+
+    .click-actions-header , .click-actions-footer {
+        background-color: #4f4c48;
+        border: 1px solid #6d6a66;
+        border-radius: inherit;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .click-actions-header {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 28px;
+        border-bottom: none;
+        box-shadow: 0 1px 0 0 #000;
+        margin-bottom: 1px;
+        font-size: 12px;
+    }
+
+    .click-actions-content {
+        display: flex;
+        flex-direction: column;
+
+        &>a {
+            background: linear-gradient(#2a2725 50%, #262321 50%, #1c1a18 100%);
+            box-shadow: inset 1px 0 0 0 #262321, inset -1px 0 0 0 #262321;
+            color: #fff;
+            height: 27px;
+            line-height: 27px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+            white-space: nowrap;
+            font-size: 11px;
+
+            &:hover {
+                background: linear-gradient(#2c2926 50%, #292623 50%, #292623 100%);
+                box-shadow: inset 1px 0 0 0 #292623, inset -1px 0 0 0 #292623;
+            }
+
+            &:active {
+                background: linear-gradient(#272422 50%, #1c1a18 50%, #1c1a18 100%);
+                box-shadow: inset 1px 0 0 0 #1c1a18, inset -1px 0 0 0 #1c1a18;
+                cursor: default;
+            }
+        }
+    }
+
+    .click-actions-footer {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        height: 16px;
+        border-top: none;
+        position: relative;
+        filter: drop-shadow(0 2px 0 #000);
+
+        &:before, &:after {
+            position: absolute;
+            content: '';
+        }
+
+        &:before {
+            
+            bottom: -11px;
+            border-top: solid 11px #6d6a66;
+            border-left: solid 11px transparent;
+            border-right: solid 11px transparent;
+        }
+
+        &:after {
+            bottom: -10px;
+            border-top: solid 10px #4f4c48;
+            border-left: solid 10px transparent;
+            border-right: solid 10px transparent;
+        }
+    }
+}

@@ -23,7 +23,7 @@ export default class ChatBox extends React.Component {
                 <div className="chat-style-picker">
 
                     <div className="chat-style-picker-button" onClick={this.toggleOpen.bind(this)}>
-                        <i className="icon icon-carret-down"></i>
+                        <i className="icon icon-carret-down-gray"></i>
                         <i className="icon icon-messages"></i>
 
                         <div className="chat-style-picker-arrow"></div>
