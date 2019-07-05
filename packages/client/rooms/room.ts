@@ -82,22 +82,16 @@ export default class Room extends Phaser.Scene {
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-        // this.load.atlas('present_gen1', 'test/present_gen1.png', 'test/present_gen1_spritesheet.json')
-        // this.load.json('present_gen1_data', 'test/present_gen1.json')
-
-        // this.load.atlas('ads_calip_fan', 'test/ads_calip_fan.png', 'test/ads_calip_fan_spritesheet.json')
-        // this.load.json('ads_calip_fan_data', 'test/ads_calip_fan.json')
-
         this.load.svg('tile', 'room/tile.svg')
         this.load.image('floor_tile', 'room/floor_tile.png')
         this.load.image('tile2', 'room/tile2.png')
         this.load.image('tile_hover', 'room/tile_hover.png')
 
+        this.load.image('door', 'room/door.png')
+        this.load.image('door_floor', 'room/door_floor.png')
+
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
-
-        //this.load.atlas('avatar', 'avatar_old/avatar.png', 'avatar_old/avatar.json')
-
 
         this.load.image('wall_placeholder', 'furniture/wall_placeholder.png')
 
@@ -109,21 +103,6 @@ export default class Room extends Phaser.Scene {
         this.load.atlas('wlk_5', 'avatar_old/wlk/wlk_5.png', 'avatar_old/wlk/wlk_5.json')
         this.load.atlas('wlk_6', 'avatar_old/wlk/wlk_6.png', 'avatar_old/wlk/wlk_6.json')
         this.load.atlas('wlk_7', 'avatar_old/wlk/wlk_7.png', 'avatar_old/wlk/wlk_7.json')
-        //this.load.atlas('tile', 'room/tile.png', 'room/tile.json')
-        /*      
-            this.load.image('tile', 'room/normal_tile.png')
-            this.load.image('tile_left_edge', 'room/normal_tile_left_edge.png')
-            this.load.image('tile_right_edge', 'room/normal_tile_right_edge.png')
-            this.load.image('tile_border', 'room/normal_tile_border.png')
-
-            this.load.atlas('wall', 'room/wall.png', 'room/wall.json')
-            this.load.image('tile_hover', 'room/tile_hover.png')
-            this.load.image('wall_right', 'room/wall_right.png')
-            this.load.image('wall_left', 'room/wall_left.png')
-            this.load.image('wall_right', 'room/wall_right.png')
-            this.load.svg('stair_top', 'room/stair_top.svg')
-            this.load.svg('stair_right', 'room/stair_right.svg')
-        */
 
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
@@ -132,7 +111,7 @@ export default class Room extends Phaser.Scene {
         this.load.audio('achievement', 'audio/achievement.mp3')
         this.load.audio('respect', 'audio/respect.mp3')
 
-        this.load.image('room_background', 'https://i.imgur.com/4co7hEz.png')
+        // this.load.image('room_background', 'https://i.imgur.com/4co7hEz.png')
     }
 
     /**
@@ -162,11 +141,14 @@ export default class Room extends Phaser.Scene {
         this.registerScaleEvents()
 
         const room: FurnitureData.IRoom = {
+            door: [0, 3],
             heightmap: [
-                "0000000",
-                "0000000",
-                "0000000",
-                "0000x00"
+                '0000000',
+                '0000000',
+                '0000000',
+                '0000000',
+                '0000000',
+                '0000x00'
             ],
             furnitures: [
                 {
@@ -178,7 +160,7 @@ export default class Room extends Phaser.Scene {
                 {
                     name: 'throne',
                     roomX: 0,
-                    roomY: 3,
+                    roomY: 4,
                     roomZ: 0,
                     direction: 2
                 },
@@ -233,13 +215,13 @@ export default class Room extends Phaser.Scene {
                     type: FurnitureData.IFurnitureType.WALL,
                     animation: 1
                 },
-                {
-                    name: 'hrella_poster_1',
-                    roomX: 0,
-                    roomY: 2,
-                    roomZ: 6.5,
-                    type: FurnitureData.IFurnitureType.WALL
-                },
+                // {
+                //     name: 'hrella_poster_1',
+                //     roomX: 0,
+                //     roomY: 2,
+                //     roomZ: 6.5,
+                //     type: FurnitureData.IFurnitureType.WALL
+                // },
                 {
                     name: 'hrella_poster_1',
                     roomX: 6.25,
@@ -333,7 +315,7 @@ export default class Room extends Phaser.Scene {
         // roomContainer.x = Math.floor(window.innerWidth / 2);
         // roomContainer.y = Math.floor(window.innerHeight / 2);
 
-        var roomSprite = new RoomSprite(this, room.heightmap)
+        var roomSprite = new RoomSprite(this, room.heightmap, room.door)
 
         this.add.existing(roomSprite)
 
