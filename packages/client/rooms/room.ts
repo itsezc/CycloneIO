@@ -865,4 +865,10 @@ export default class Room extends Phaser.Scene {
     public get camera(): RoomCamera {
         return this._camera
     }
+
+    public convertOldToNewHeightMap(heightMap: string[]) {
+        let newHeightMap: any = []
+        heightMap.forEach(row => newHeightMap.push(row.split('')))
+        return newHeightMap[0].map((column: any, index: any) => newHeightMap.map((row: any) => Number(row[index].replace('0', 1).replace('x', 0))).reverse())
+    }    
 }
