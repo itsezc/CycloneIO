@@ -19,6 +19,10 @@ export interface DrawAction {
     swm?: string
 }
 
+export interface TextureDictionary {
+    [id: string]: Phaser.Textures.Texture;
+}
+
 export default class Avatar 
 {
 	figure: FigurePart[]

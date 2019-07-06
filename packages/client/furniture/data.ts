@@ -67,6 +67,7 @@ namespace FurnitureData
 
 	export interface IRoom 
 	{
+		door: [number, number]
 		heightmap: string[]
 		furnitures: IFurniture[]
 	}
@@ -76,9 +77,16 @@ namespace FurnitureData
 		name: string
 		roomX: number
 		roomY: number
+		roomZ: number
 		direction?: number
 		animation?: number
 		color?: number
+		type?: IFurnitureType
+	}
+
+	export enum IFurnitureType {
+		FLOOR,
+		WALL
 	}
 }
 

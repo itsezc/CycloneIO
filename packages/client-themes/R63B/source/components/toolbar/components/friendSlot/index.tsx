@@ -10,13 +10,13 @@ export default class FriendSlot extends PureComponent<any, any> {
 
         if(this.props.type == 'unknown'){
             return (
-                <div className={"toolbar-friends-slot is-unknown " + (this.props.isOpen ? " is-open" : '')} onClick={this.props.toggleSlot}>
+                <div className={'toolbar-friends-slot is-unknown ' + (this.props.isOpen ? ' is-open' : '')} onClick={this.props.toggleSlot}>
                     <div className='toolbar-friends-slot-header'>
-                        <img src="hotelview/toolbar/icons/friend_head.png" />
+                        <img src='r63b/toolbar/icons/friend_head.png' />
                         Find new {this.props._key} <br /> friends
                     </div>
 
-                    <div className="toolbar-friends-slot-content">
+                    <div className='toolbar-friends-slot-content'>
                         <p>Looking for new friend ? Search for Habbos.</p>
                         <button className='btn btn-small'>Go get friends</button>
                     </div>

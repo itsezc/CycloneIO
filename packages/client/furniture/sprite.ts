@@ -2,6 +2,8 @@ import Furniture from './furniture'
 import Room from '../rooms/room'
 import RotationAnimation from './animations/rotation';
 
+import FurnitureData from '../furniture/data'
+
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
     public _scene: Room
     private static FPS = 24
