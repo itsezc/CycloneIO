@@ -10,10 +10,16 @@ class Tile {
 
 	constructor(
 		private readonly type: string, 
-		private readonly options: {}
+		private readonly options: {
+			sprite ?: {
+				width ?: number
+				height ?: number
+				viewBox ?: string 
+				rendering ?: string
+			}
+		}
 	) {
-		
-		this.spriteWidth = options.sprite.width ? options.sprite.width : 65
+		this.spriteWidth= options.sprite.width ? options.sprite.width : 65
 		this.spriteHeight = options.sprite.height ? options.sprite.height : 40
 		this.viewBox = options.sprite.viewBox ? options.sprite.viewBox : '0 -0.5 65 40'
 		this.rendering = options.sprite.rendering ? options.sprite.rendering : 'crispEdges'
@@ -48,7 +54,7 @@ class Tile {
 
 }
 
-var normal = new Tile({
+var normal = new Tile('tile', {
 	sprite: {
 		width: 65,
 		height: 40
