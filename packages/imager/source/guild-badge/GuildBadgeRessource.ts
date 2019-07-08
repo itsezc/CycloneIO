@@ -1,7 +1,4 @@
 import fs from 'fs';
-import gd from 'node-gd';
-import BadgePart from './BadgePart';
-import BadgePartType from './BadgePartType';
 
 export default class GuildBadgeRessource {
 

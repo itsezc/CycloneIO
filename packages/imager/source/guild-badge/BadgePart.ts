@@ -1,6 +1,5 @@
 import gd from 'node-gd';
 import GuildBadgeRessource from './GuildBadgeRessource';
-import BadgePartSymbol from './BadgePartSymbol';
 
 export default abstract class BadgePart {
     
