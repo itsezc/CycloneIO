@@ -10,6 +10,7 @@ import Catalog from '../../components/dialogs/catalog'
 
 import Actions from '../../components/actions'
 import Chat from '../../components/chat/bubble'
+import Chatbox from '../../components/chatbox'
 
 import Moderation from '../../components/dialogs/moderation'
 
@@ -37,7 +38,8 @@ export default class Room extends Component {
 				<div className='room' id='game'></div>
 
 				<Moderation />
-
+				<Chatbox />
+				
 				{/* <Catalog /> */}
 
 				{/* <Poll question='Cyclone or Habbo' status={false} /> */}

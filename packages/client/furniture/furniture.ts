@@ -2,12 +2,14 @@
 //import type { FurnitureType } from '../../common/enums/furniture/type'
 import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
+import FurnitureData from './data'
+
 export interface IData
 {
 	type: string
 	name: string
-	visualizationType: string;
-	logicType: string;
+	visualizationType: string
+	logicType: string
 	spritesheet: string
 	dimensions: IDimension
 	directions: number[]
@@ -86,18 +88,7 @@ export default class Furniture
 	public animation!: number
 	public direction!: number
 
-	// private id: number // (Furniture Number)
-	// private spriteName: string
-	// private name: string
-	// private description: string
-	// private type: FurnitureType
-	// private width: number
-	// private length: number
-	// private height: number
-	// private canStand: boolean
-	// private canStack: boolean
-	// private canWalk: boolean
-	// private canSit: boolean
+	public type: FurnitureData.IFurnitureType
 
 	/**
 	 * @param {number} id - The furniture ID
@@ -111,18 +102,15 @@ export default class Furniture
 	 * @param {boolean} canStack - Sets whether the furniture can be stackable or not
 	 * @param {boolean} canWalk - Sets whether the furniture can be walkable or not
 	 * @param {boolean} canSit - Sets whether an entity can sit on the furniture or not
-	 */
+	*/
 
-	constructor(scene: Room, data: IData)
+	constructor(scene: Room, data: IData, type: FurnitureData.IFurnitureType = FurnitureData.IFurnitureType.FLOOR)
 	{
 		this.scene = scene
 		this.data = data
-	}
 
-	// User goes into the room -> RoomID -> DB / Server -> Client Furniture[] -> forEach Furniture => Furni (where Furniture class is initiated) -> Item (getFurniture(basedOnId))
-	// public static load(id?: number): Furniture {
-	// 	return new Furniture(0, "throne", "name", "desc", FurnitureType.FLOOR, 0, 0, 0, false, true, false, false)
-	// }
+		this.type = type
+	}
 
 	public getLayerCount(): number
 	{
@@ -345,7 +333,8 @@ export default class Furniture
 		if (layer.ink)
 		{
 			// 28 is our custom blendMode
-			sprite.blendMode = layer.ink === 'ADD' ? 28 : Phaser.BlendModes[layer.ink]
+			sprite.setBlendMode(Phaser.BlendModes.ADD);
+			//sprite.blendMode = layer.ink === 'ADD' ? 28 : Phaser.BlendModes[layer.ink]
 		}
 
 		sprite.x += layer.x ? layer.x : 0

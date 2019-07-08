@@ -1,6 +1,7 @@
 import Avatar, { Direction, FigurePart } from './index'
+import AvatarChunk from './chunk';
 
-export const LOCAL_RESOURCES = '//localhost:8082/web-gallery/avatar/'
+export const LOCAL_RESOURCES = '//localhost:8082/avatar/'
 
 export default class Imager {
 	ready: boolean = false
@@ -260,7 +261,7 @@ export default class Imager {
 						}
 
 						if (this.offsets[chunk.lib].data == null || 
-							this.offsets[chunk.lib].data[chunk.getResoruceName()] == null ||
+							this.offsets[chunk.lib].data[chunk.getResourceName()] == null ||
 							this.offsets[chunk.lib].data[chunk.getResourceName()].flipped) 
 						{
 							chunk.isFlip = true
@@ -334,7 +335,7 @@ export default class Imager {
 								let posX = -this.offsets[chunk.lib].data[chunk.getResourceName()].x
 								let posY = (avatarInfo.rectHeight / 2) - this.offsets[chunk.lib].data[chunk.getResourceName()].y + avatarInfo.rectHeight / 2.5
 
-								let img: any = chunk.resoruce
+								let img: any = chunk.resource
 								if (chunk.color != null) {
 									img = this.tintSprite(img, chunk.color, (isGhost ? 170: 255))
 								}
