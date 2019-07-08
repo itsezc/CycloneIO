@@ -72,10 +72,10 @@ export default abstract class BadgePart {
         const imageData: Object = this.getResourceData(guildBadgeRessource);
         if(imageData === undefined) throw new Error('Ressource undefined : ' + this.elementIndex + ' on path : ' + this.getResourcePath(guildBadgeRessource));
 
-
         const resourcePath: string = this.getResourcePath(guildBadgeRessource) + '/';
 
         const colors: number[] = guildBadgeRessource.getColor(this.colorIndex);
+        if(colors === undefined) throw new Error('Colors undefined with key : ' + this.colorIndex);
         
         if(imageData.hasOwnProperty('image')) {
 

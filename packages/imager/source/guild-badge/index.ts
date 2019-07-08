@@ -8,7 +8,7 @@ var guildBadgeRessource = new GuildBadgeRessource();
 var start = new Date()
 var hrstart = process.hrtime()
 
-
+/*
 let base: BadgePartBase = new BadgePartBase("06", "13", 4);
 
 let symbols: BadgePartSymbol[] = [
@@ -18,7 +18,12 @@ let symbols: BadgePartSymbol[] = [
 
 let guildBadge = new GuildBadge(base, symbols);
 guildBadge.generate(guildBadgeRessource);
+*/
 
+const badge = GuildBadge.parsing("b06134t09010a4872f64ad6a5743cc3ba72069e03d3a");
+const badgeImage = badge.generate(guildBadgeRessource);
+
+badgeImage.savePng('output_badge.png', 1, (err) => (err) ? console.log(err) : '');
 
 let end = new Date() - start;
 let hrend = process.hrtime(hrstart);
