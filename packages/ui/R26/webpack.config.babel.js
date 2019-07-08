@@ -7,7 +7,14 @@ module.exports = (env, argv) => {
 
         context: Path.resolve(__dirname),
 
-        entry: './source/app.js',
+        entry: {
+            ui: './source/app.tsx',
+            client: '../../client/games/game.ts'
+        },
+
+        resolve: {
+			extensions: ['.js', '.jsx', '.ts', '.tsx']
+		},
 
         plugins: [
             new HtmlWebpackPlugin({
@@ -18,12 +25,20 @@ module.exports = (env, argv) => {
 
         devServer: {
             compress: true,
+            port: 8082,
 			historyApiFallback: true,
 			contentBase: Path.resolve(__dirname, '../../../web-gallery')
 		},
 		
         module: {
             rules: [
+                {
+					test: /\.(ts|tsx)$/,
+					exclude: /node_modules/,
+					use: [
+						'ts-loader'
+					]
+				},
 				{
                     test: /\.(js|jsx)$/,
                     exclude: /node_modules/,

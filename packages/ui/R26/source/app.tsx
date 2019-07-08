@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Client from './states/client/client.jsx'
+import Room from './states/room'
 
-class App extends Component {
+class App extends Component<any, any>{
     render() {
         return (
             <BrowserRouter>
@@ -12,6 +13,7 @@ class App extends Component {
                     <Route exact path='/' component={Client} />
 					<Route exact path='/hotel' component={Client} />
 					<Route exact path='/client' component={Client} />
+                    <Route exact path='/inroom' component={Room} />
                 </Switch>
             </BrowserRouter>
         )
