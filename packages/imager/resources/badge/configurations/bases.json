@@ -1,0 +1,80 @@
+{
+    "01": {"image": "basic_1.png"},
+    "02": {"image": "basic_2.png"},
+    "03": {"image": "basic_3.png"},
+    "04": {"image": "basic_4.png"},
+    "05": {"image": "basic_5.png"},
+
+    "06": {"image": "advanced_1.png"},
+    "07": {"image": "advanced_2.png"},
+    "08": {"image": "advanced_3.png"},
+    "09": {"image": "advanced_4.png"},
+    "10": {
+        "layers": [
+            {"image": "gold_1_part_2.png"},
+            {"image": "gold_1_part_1.png"}
+        ]
+    },
+
+    "11": {
+        "layers": [
+            {"image": "gold_2_part_2.png"},
+            {"image": "gold_2_part_1.png"}
+        ]
+    },
+    "12": {
+        "layers": [
+            {"image": "pin_part_2.png"},
+            {"image": "pin_part_1.png"}
+        ]
+    },
+    "13": {"image": "gradient_1.png"},
+    "14": {"image": "gradient_2.png"},
+    "15": {"image": "cirlces_1.png"},
+
+    "16": {"image": "circles_2.png"},
+    "17": {
+        "layers": [
+            {"image": "ornament_1_part_2.png"},
+            {"image": "ornament_1_part_1.png"}
+        ]
+    },
+    "18": {
+        "layers": [
+            {"image": "ornament_2_part_2.png"},
+            {"image": "ornament_2_part_1.png"}
+        ]
+    },
+    "19": {
+        "layers": [
+            {"image": "misc_1_part_2.png"},
+            {"image": "misc_1_part_1.png"}
+        ]
+    },
+    "20": {"image": "misc_2.png"},
+
+    "21": {
+        "layers": [
+            {"image": "beams_part_2.png"},
+            {"image": "beams_part_1.png"}
+        ]
+    },
+    "22": {"image": "ring.png"},
+    "23": {
+        "layers": [
+            {"image": "simplestar_part_2.png"},
+            {"image": "simplestar_part_1.png"}
+        ]
+    },
+    "24": {"image": "spiral.png"},
+    "25": {"image": "book.png"},
+
+    "26": {"image": "egg.png"},
+    "27": {"image": "ornament.png"},
+    "28": {
+        "layers": [
+            {"image": "shield_part_2.png"},
+            {"image": "shield_part_1.png"}
+        ]
+    }
+}
