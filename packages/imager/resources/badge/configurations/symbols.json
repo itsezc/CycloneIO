@@ -1,0 +1,395 @@
+{
+    "01": {"image": "background_1.png"},
+    "02": {"image": "background_2.png"},
+    "03": {
+        "layers": [
+            {"image": "background_3_part_1.png"},
+            {"image": "background_3_part_2.png"}
+        ]
+    },
+    "04": {
+        "layers": [
+            {"image": "ball_1_part_1.png"},
+            {"image": "ball_1_part_2.png"}
+        ]
+    },
+    "05": {
+        "layers": [
+            {"image": "ball_2_part_1.png"},
+            {"image": "ball_2_part_2.png"}
+        ]
+    },
+    "06": {"image": "bobba.png"},
+    "07": {
+        "layers": [
+            {"image": "bomb_part_1.png"},
+            {"image": "bomb_part_2.png"}
+        ]
+    },
+    "08": {"image": "bow.png"},
+    "09": {"image": "box_1.png"},
+    "10": {"image": "box_2.png"},
+    "11": {"image": "bunting_1.png"},
+    "12": {"image": "bunting_2.png"},
+    "13": {
+        "layers": [
+            {"image": "butterfly_part_1.png"},
+            {"image": "butterfly_part_2.png"}
+        ]
+    },
+    "14": {
+        "layers": [
+            {"image": "cowskull_part_1.png"},
+            {"image": "cowskull_part_2.png"}
+        ]
+    },
+    "15": {"image": "cross.png"},
+    "16": {"image": "diamond.png"},
+    "17": {"image": "AWARDD"},
+    "18": {
+        "layers": [
+            {"image": "eyeball_part_1.png"},
+            {"image": "eyeball_part_2.png"}
+        ]
+    },
+    "19": {"image": "fist.png"},
+    "20": {"image": "flame_1.png"},
+    "21": {"image": "flame_2.png"},
+    "22": {"image": "flash.png"},
+    "23": {
+        "layers": [
+            {"image": "flower_1_part_1.png"},
+            {"image": "flower_1_part_2.png"}
+        ]
+    },
+
+    "24": {"image": "flower_2.png"},
+    "25": {"image": "flower_3.png"},
+    "26": {"image": "flower_4.png"},
+    "27": {"image": "football.png"},
+    "28": {
+        "layers": [
+            {"image": "heart_1_part_1.png"},
+            {"image": "heart_1_part_2.png"}
+        ]
+    },
+    "29": {
+        "layers": [
+            {"image": "heart_2_part_1.png"},
+            {"image": "heart_2_part_2.png"}
+        ]
+    },
+    "30": {
+        "layers": [
+            {"image": "jingjang_part_1.png"},
+            {"image": "jingjang_part_2.png"}
+        ]
+    },
+    "31": {
+        "layers": [
+            {"image": "lips_part_1.png"},
+            {"image": "lips_part_2.png"}
+        ]
+    },
+    "32": {"image": "note.png"},
+    "33": {"image": "peace.png"},
+    "34": {
+        "layers": [
+            {"image": "planet_part_1.png"},
+            {"image": "planet_part_2.png"}
+        ]
+    },
+    "35": {
+        "layers": [
+            {"image": "rainbow_part_1.png"},
+            {"image": "rainbow_part_2.png"}
+        ]
+    },
+    "36": {"image": "rosete.png"},
+    "37": {"image": "shape.png"},
+    "38": {"image": "star_1.png"},
+    "39": {"image": "star_2.png"},
+    "40": {
+        "layers": [
+            {"image": "sword_1_part_1.png"},
+            {"image": "sword_1_part_2.png"}
+        ]
+    },
+    "41": {
+        "layers": [
+            {"image": "sword_2_part_1.png"},
+            {"image": "sword_2_part_2.png"}
+        ]
+    },
+    "42": {
+        "layers": [
+            {"image": "sword_3_part_1.png"},
+            {"image": "sword_3_part_2.png"}
+        ]
+    },
+    "43": {"image": "wings_1.png"},
+    "44": {"image": "wings_2.png"},
+    "45": {"image": "arrow_down.png"},
+    "46": {"image": "arrow_left.png"},
+    "47": {"image": "arrow_right.png"},
+    "48": {"image": "arrow_up.png"},
+    "49": {"image": "arrowbig_up.png"},
+
+    "50": {
+        "layers": [
+            {"image": "axe_part_1.png"},
+            {"image": "axe_part_2.png"}
+        ]
+    },
+    "51": {
+        "layers": [
+            {"image": "bug_part_1.png"},
+            {"image": "bug_part_2.png"}
+        ]
+    },
+    "52": {
+        "layers": [
+            {"image": "capsbig_part_1.png"},
+            {"image": "capsbig_part_2.png"}
+        ]
+    },
+    "53": {
+        "layers": [
+            {"image": "capssmall_part_1.png"},
+            {"image": "capssmall_part_2.png"}
+        ]
+    },
+    "54": {"image": "cloud.png"},
+    "55": {
+        "layers": [
+            {"image": "crown_part_1.png"},
+            {"image": "crown_part_2.png"}
+        ]
+    },
+    "56": {"image": "diamsmall_1.png"},
+    "57": {"image": "diamsmall_2.png"},
+    "58": {"image": "drop.png"},
+    "59": {"image": "fingersheavy.png"},
+    "60": {"image": "fingersv.png"},
+    "61": {
+        "layers": [
+            {"image": "gtr_part_1.png"},
+            {"image": "gtr_part_2.png"}
+        ]
+    },
+    "62": {"image": "hat.png"},
+    "63": {
+        "layers": [
+            {"image": "oval_part_1.png"},
+            {"image": "oval_part_2.png"}
+        ]
+    },
+    "64": {"image": "pawprint.png"},
+    "65": {"image": "screw.png"},
+    "66": {
+        "layers": [
+            {"image": "stickL_part_1.png"},
+            {"image": "stickL_part_2.png"}
+        ]
+    },
+    "67": {
+        "layers": [
+            {"image": "stickR_part_1.png"},
+            {"image": "stickR_part_2.png"}
+        ]
+    },
+    "68": {"image": "alligator.png"},
+    "69": {
+        "layers": [
+            {"image": "americanfootball_part_1.png"},
+            {"image": "americanfootball_part_2.png"}
+        ]
+    },
+    "70": {
+        "layers": [
+            {"image": "award_part_1.png"},
+            {"image": "award_part_2.png"}
+        ]
+    },
+    "71": {"image": "bananapeel.png"},
+    "72": {"image": "battleball.png"},
+    "73": {"image": "biohazard.png"},
+    "74": {"image": "bird.png"},
+    "75": {"image": "bishop.png"},
+    "76": {"image": "coalion.png"},
+    "77": {"image": "cocoamug.png"},
+    "78": {"image": "dashflag.png"},
+    "79": {
+        "layers": [
+            {"image": "diamondring_part_1.png"},
+            {"image": "diamondring_part_2.png"}
+        ]
+    },
+    "80": {
+        "layers": [
+            {"image": "discoball_part_1.png"},
+            {"image": "discoball_part_2.png"}
+        ]
+    },
+    "81": {"image": "dog.png"},
+    "82": {
+        "layers": [
+            {"image": "electricguitarh_part_1.png"},
+            {"image": "electricguitarh_part_2.png"}
+        ]
+    },
+    "83": {
+        "layers": [
+            {"image": "electricguitarv_part_1.png"},
+            {"image": "electricguitarv_part_2.png"}
+        ]
+    },
+    "84": {"image": "film.png"},
+    "85": {
+        "layers": [
+            {"image": "flame_part_1.png"},
+            {"image": "flame_part_2.png"}
+        ]
+    },
+    "86": {"image": "gamepad.png"},
+    "87": {
+        "layers": [
+            {"image": "gem_1_part_1.png"},
+            {"image": "gem_1_part_2.png"}
+        ]
+    },
+    "88": {
+        "layers": [
+            {"image": "gem_2_part_1.png"},
+            {"image": "gem_2_part_2.png"}
+        ]
+    },
+    "89": {
+        "layers": [
+            {"image": "gem_3_part_1.png"},
+            {"image": "gem_3_part_2.png"}
+        ]
+    },
+    "90": {"image": "hawk.png"},
+    "91": {"image": "hearts_down.png"},
+    "92": {"image": "hearts_up.png"},
+    "93": {"image": "horsehoe.png"},
+    "94": {"image": "inksplatter.png"},
+    "95": {"image": "leaf.png"},
+    "96": {"image": "micstand.png"},
+    "97": {
+        "layers": [
+            {"image": "mirror_part_1.png"},
+            {"image": "mirror_part_2.png"}
+        ]
+    },
+    "98": {"image": "monkeywrench.png"},
+    "99": {"image": "notes_1.png"},
+    "100": {"image": "notes_2.png"},
+
+    "101": {"image": "notes_3.png"},
+    "102": {"image": "nursecross.png"},
+    "103": {
+        "layers": [
+            {"image": "pencil_part_1.png"},
+            {"image": "pencil_part_2.png"}
+        ]
+    },
+    "104": {"image": "queen.png"},
+    "105": {"image": "rock.png"},
+    "106": {"image": "rook.png"},
+    "107": {"image": "skate.png"},
+    "108": {
+        "layers": [
+            {"image": "smallring_part_1.png"},
+            {"image": "smallring_part_2.png"}
+        ]
+    },
+    "109": {
+        "layers": [
+            {"image": "snowstorm_part_1.png"},
+            {"image": "snowstorm_part_2.png"}
+        ]
+    },
+    "110": {"image": "sphere.png"},
+    "111": {
+        "layers": [
+            {"image": "sprayscan_part_1.png"},
+            {"image": "sprayscan_part_2.png"}
+        ]
+    },
+    "112": {"image": "stars_1.png"},
+    "113": {"image": "stars_2.png"},
+    "114": {"image": "stars_3.png"},
+    "115": {"image": "stars_4.png"},
+    "116": {"image": "stars_5.png"},
+    "117": {
+        "layers": [
+            {"image": "waterdrop_part_1.png"},
+            {"image": "waterdrop_part_2.png"}
+        ]
+    },
+    "118": {"image": "wolverine.png"},
+
+    "119": {"image": "number_0.png"},
+    "120": {"image": "number_1.png"},
+    "121": {"image": "number_2.png"},
+    "122": {"image": "number_3.png"},
+    "123": {"image": "number_4.png"},
+    "124": {"image": "number_5.png"},
+    "125": {"image": "number_6.png"},
+    "126": {"image": "number_7.png"},
+    "127": {"image": "number_8.png"},
+    "128": {"image": "number_9.png"},
+    "129": {"image": "letter_A.png"},
+    "130": {"image": "letter_B.png"},
+    "131": {"image": "letter_C.png"},
+    "132": {"image": "letter_D.png"},
+    "133": {"image": "letter_E.png"},
+    "134": {"image": "letter_F.png"},
+    "135": {"image": "letter_G.png"},
+    "136": {"image": "letter_H.png"},
+    "137": {"image": "letter_I.png"},
+    "138": {"image": "letter_J.png"},
+    "139": {"image": "letter_K.png"},
+    "140": {"image": "letter_L.png"},
+    "141": {"image": "letter_M.png"},
+    "142": {"image": "letter_N.png"},
+    "143": {"image": "letter_O.png"},
+    "144": {"image": "letter_P.png"},
+    "145": {"image": "letter_Q.png"},
+    "146": {"image": "letter_R.png"},
+    "147": {"image": "letter_S.png"},
+    "148": {"image": "letter_T.png"},
+    "149": {"image": "letter_U.png"},
+    "150": {"image": "letter_V.png"},
+    "151": {"image": "letter_W.png"},
+    "152": {"image": "letter_X.png"},
+    "153": {"image": "letter_Y.png"},
+    "154": {"image": "letter_Z.png"},
+
+    "155": {
+        "layers": [
+            {"image": "pixel_part_1.png"},
+            {"image": "pixel_part_2.png"}
+        ]
+    },
+    "156": {
+        "layers": [
+            {"image": "credit_part_1.png"},
+            {"image": "credit_part_2.png"}
+        ]
+    },
+    "157": {
+        "layers": [
+            {"image": "hc_part_1.png"},
+            {"image": "hc_part_2.png"}
+        ]
+    },
+    "158": {
+        "layers": [
+            {"image": "vip_part_1.png"},
+            {"image": "vip_part_2.png"}
+        ]
+    }
+}

@@ -1,10 +1,13 @@
-FROM node:8.11.4
+FROM node:12
 
-WORKDIR /app/website
+WORKDIR /usr/src/app
 
-EXPOSE 3000 35729
-COPY ./docs /app/docs
-COPY ./website /app/website
-RUN yarn install
+COPY package*.json ./
 
-CMD ["yarn", "start"]
+RUN npm install 
+
+COPY . .
+
+EXPOSE 8085
+
+CMD ["npm", "run", "lerna:dev:badge"]
