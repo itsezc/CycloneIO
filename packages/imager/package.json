@@ -1,0 +1,16 @@
+{
+	"name": "@cyclone/habbo-imaging",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"badge": "babel-watch --watch source/guild-badge source/guild-badge/index.ts --extensions \".ts,.tsx\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-gd": "^1.5.4",
+		"sharp": "^0.22.1"
+	}
+}
