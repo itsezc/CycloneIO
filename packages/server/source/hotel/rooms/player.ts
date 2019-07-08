@@ -43,3 +43,7 @@
 
 // // RoomPlayer.list = {}
 // // RoomPlayer.list[0] = {}
+
+export default class RoomPlayer {
+	
+}
