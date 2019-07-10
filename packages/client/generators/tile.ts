@@ -1,4 +1,5 @@
 import SVG from 'svg.js'
+import Base64 from 'svg-to-dataurl'
 
 export default class Tile {
 
@@ -19,11 +20,11 @@ export default class Tile {
 			}
 		}
 	) {
-		this.spriteWidth= options.sprite.width ? options.sprite.width : 65
+		this.spriteWidth = options.sprite.width ? options.sprite.width : 65
 		this.spriteHeight = options.sprite.height ? options.sprite.height : 40
 		this.viewBox = options.sprite.viewBox ? options.sprite.viewBox : '0 -0.5 65 40'
 		this.rendering = options.sprite.rendering ? options.sprite.rendering : 'crispEdges'
-     }
+	}
      
 	generate() {
 		this.result = SVG('app').attr({ 
@@ -51,7 +52,6 @@ export default class Tile {
         // Left Thickness
 		this.result.path('M1 18h2M1 19h4M1 20h6M1 21h8M1 22h10M1 23h12M1 24h14M2 25h15M4 26h15M6 27h15M8 28h15M10 29h15M12 30h15M14 31h15M16 32h15M18 33h14M20 34h12M22 35h10M24 36h8M26 37h6M28 38h4M30 39h2').stroke('#838357')
 		
-		return this.result.svg()
+		return Base64(this.result.svg())
 	}
-
 }
