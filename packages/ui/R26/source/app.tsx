@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Client from './states/client/client.jsx'
-import Room from './states/room'
+import Room from './states/room/index.jsx'
 
 class App extends Component<any, any>{
     render() {

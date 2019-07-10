@@ -9,11 +9,8 @@ const { host, port } = server
 
 import RoomCamera from './camera'
 import RoomSprite from './sprite'
-import FurnitureSprite from '../furniture/sprite';
+import FurnitureSprite from '../furniture/sprite'
 
-// import RoomMap from './tiles/map'
-
-/* import RoomItem from './items/item' */
 import FurnitureData from '../furniture/data'
 import Furniture from '../furniture/furniture'
 
@@ -24,6 +21,10 @@ import { generateBlendMode } from '../core/blendMode';
 import RoomAvatar from '../avatar/avatar'
 
 import Imager from '../avatar/imager'
+
+import TileGenerator from '../generators/tile'
+import FPSMeter from 'fpsmeter'
+import Tile from '../generators/tile';
 
 /**
 * Room class
@@ -56,6 +57,8 @@ export default class Room extends Phaser.Scene {
     public avatarId!: number
     public path!: any
     public pathNextValue!: any
+
+    private currentFPS: Number
 
     public players: { [id: string]: RoomAvatar }
 
@@ -130,6 +133,16 @@ export default class Room extends Phaser.Scene {
      * Runs once, after all assets in preload are loaded
      */
     public create(): void {
+
+        let TileExample = new TileGenerator('tile', {
+            sprite: {
+                width: 65,
+                height: 40
+            }
+        })
+        let TileExample2 = TileExample.generate()
+        console.log(TileExample2)
+
         const renderer = this.game.renderer
 
         generateBlendMode(renderer)
@@ -586,7 +599,10 @@ export default class Room extends Phaser.Scene {
 
         // this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
         // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
+
+        // this.add.text(100, 100, `FPS: ${this.currentFPS || 'undefined'}`, { color: '#00ff00' })
     }
+
     private orderFurnituresByType(furnitures: FurnitureData.IFurniture[]): FurnitureData.IFurniture[] {
         return furnitures.sort((a: FurnitureData.IFurniture, b: FurnitureData.IFurniture) => {
             if (a.type === FurnitureData.IFurnitureType.WALL) return -1
@@ -647,6 +663,9 @@ export default class Room extends Phaser.Scene {
         if (this.roomPlayer) {
             this.roomPlayer.update(delta)
         }
+
+        this.currentFPS = this.game.loop.actualFps
+        // console.log('FPS', this.currentFPS)
     }
 
     public TileToScreenCoords(x: number, y: number) {

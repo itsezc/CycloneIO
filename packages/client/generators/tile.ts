@@ -1,6 +1,6 @@
 import SVG from 'svg.js'
 
-class Tile {
+export default class Tile {
 
 	spriteWidth: number
 	spriteHeight: number
@@ -26,11 +26,12 @@ class Tile {
      }
      
 	generate() {
-		this.result = SVG('drawing').attr({ 
+		this.result = SVG('app').attr({ 
 			width: this.spriteWidth, 
 			height: this.spriteHeight, 
 			viewBox: this.viewBox, 
-			'shape-rendering': this.rendering 
+			'shape-rendering': this.rendering,
+			'xmlns:svgjs': null
 		})
         // Top Left and Right Border
 		this.result.path('M31 0h2M29 1h2M33 1h2M27 2h2M35 2h2M25 3h2M37 3h2M23 4h2M39 4h2M21 5h2M41 5h2M19 6h2M43 6h2M17 7h2M45 7h2M15 8h2M47 8h2M13 9h2M49 9h2M11 10h2M51 10h2M9 11h2M53 11h2M7 12h2M55 12h2M5 13h2M57 13h2M3 14h2M59 14h2M1 15h2M61 15h2M0 16h1M63 16h1').stroke('#8e8e5e')
@@ -49,15 +50,8 @@ class Tile {
         
         // Left Thickness
 		this.result.path('M1 18h2M1 19h4M1 20h6M1 21h8M1 22h10M1 23h12M1 24h14M2 25h15M4 26h15M6 27h15M8 28h15M10 29h15M12 30h15M14 31h15M16 32h15M18 33h14M20 34h12M22 35h10M24 36h8M26 37h6M28 38h4M30 39h2').stroke('#838357')
-		return this.result
+		
+		return this.result.svg()
 	}
 
 }
-
-var normal = new Tile('tile', {
-	sprite: {
-		width: 65,
-		height: 40
-	}
-})
-normal.generate()

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
+import ScrollBar from '../../helpers/scrollbar'
 import ProgressBar from '../../helpers/progress/bar'
 
 import Actions from '../../components/actions'
@@ -37,9 +38,9 @@ export default class Client extends Component<any, ClientState>
 	constructor(props: any) {
 		super(props)
 
-		this.database = new ApolloClient({
-			uri: 'http://localhost:8081/graphql'
-		})
+		// this.database = new ApolloClient({
+		// 	uri: 'http://localhost:8081/graphql'
+		// })
 
 		this.state = {
 			loaded: true
@@ -78,15 +79,14 @@ export default class Client extends Component<any, ClientState>
 
 						{/* <Moderation />*/}
 
-						<ApolloProvider client={this.database}>
-							<Navigator />
-						</ApolloProvider>
-						
+						{/* <ApolloProvider client={this.database}> */}
+							{/* <Navigator /> */}
 
-						{/* <Catalog /> */}
+							<Catalog />
+						{/* </ApolloProvider> */}
 
 						<Alert
-							title='Message from Habbay Hotel'
+							title='Message from Cyclone Hotel'
 							message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'
 							author='EZ-C'
 						/>

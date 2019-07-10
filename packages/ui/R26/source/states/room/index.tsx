@@ -8,12 +8,12 @@ import Toolbar from '../../components/toolbar/toolbar.jsx'
 
 export default class Client extends Component {
 
-	componentWillMount()
-	{
-		const script = document.createElement('script')
-		script.src = 'http://localhost:8082/client.js'
-		document.body.appendChild(script)
-	}
+	// componentWillMount()
+	// {
+	// 	const script = document.createElement('script')
+	// 	script.src = 'http://localhost:8082/client.js'
+	// 	document.body.appendChild(script)
+	// }
 
 	render() {
 		return(
@@ -22,7 +22,7 @@ export default class Client extends Component {
 
 				{/* <div className='hotel'>
 				
-					<div className='drape'>
+					<div className='drape'>`
 						<div className='border'>
 							<div className='inner'>
 								<img src='https://t6.rbxcdn.com/6435cc11a0a3ce1764c8e825a0bbc539' />
