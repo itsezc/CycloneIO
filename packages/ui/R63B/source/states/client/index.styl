@@ -62,3 +62,67 @@ canvas
 			.subscribe
 				float right
 				margin 8px 5px 0px 0px
+
+	.illumina-button
+		padding: 5px;
+		padding-left: 20px;
+		text-align: center;
+		padding-right: 20px;
+		border: 1px solid #919191;
+		border-radius: 6px;
+		cursor: pointer;
+		font-weight: 600;
+		font-size: 11px;
+		text-shadow: 1px 1px 1px #FFF;
+		background-image linear-gradient(to top, #D9D9D9 50%, #E2E2E2 50%)
+		color: #000;
+		box-shadow 0px 1px 0px 0px #FFFFFF
+
+	.campaigns
+		width 890px
+		margin-left 275px
+		height 100%
+		z-index 2
+		overflow-x auto
+		margin-top 100px
+	
+		.campaign
+			color #ffffff
+			float left
+			width 60%
+			position relative
+			display inline-block
+			margin-bottom 100px 
+
+			&.small 
+				width 40%
+
+				.content
+					margin-left 0
+
+			img 
+				float left
+			
+			.content
+				max-width 255px 
+				float left
+				margin-top 10px
+				margin-left 40px
+
+				span
+					// height 100px
+					margin 0
+					display block
+
+				h1
+					font-weight 600
+					display block 
+					font-size 18px
+					line-height 18px
+					margin-bottom 5px
+
+				p
+					font-weight 400
+					font-size 12px
+					line-height 14px
+					margin-bottom 10px

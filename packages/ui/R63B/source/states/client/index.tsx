@@ -72,6 +72,54 @@ export default class Client extends Component<any, ClientState>
 							</div>
 						</div>
 
+						<div className='campaigns'>
+
+							<div className='campaign'>
+								<img src='/hotelview/campaigns/spromo_Celestial_Bundle.png' />
+								<div className='content'>
+									<span>
+										<h1>Open Your Summer Calendar!</h1>
+										<p>Between the 1st and 31st of July, every day you will receive a free gift from your summer Calendar. Open yours now!</p>
+									</span>
+									<button className='illumina button'>Open it!</button>
+								</div>
+							</div>
+
+							<div className='campaign small'>
+								<div className='content'>
+									<span>
+										<h1>NEW: Celestial Bundle</h1>
+										<p>We're extremely happy to present the brand new, 100% exclusive Celestial Bundle! Comes with exclusive badge.</p>
+									</span>
+									<button className='illumina button'>See the bundle!</button>
+								</div>
+							</div>
+
+
+							<div className='campaign'>
+								<img src='/hotelview/campaigns/spromo_pride19_celestedress.png' />
+								<div className='content'>
+									<span>
+										<h1>RARE Celestial Dress!</h1>
+										<p>Star Gazers! You NEED to go and check out the new Celestial Dress rare. Never to be sold again, exclusive badge included!</p>
+									</span>
+									<button className='illumina button'>See the rare!</button>
+								</div>
+							</div>
+
+
+							<div className='campaign small'>
+								<div className='content'>
+									<span>
+										<h1>NEW: Pride Furni!</h1>
+										<p>To celeberate Pride in Cyclone, we're releasing a set of rainbow-coloured bedroom furni for you all!</p>
+									</span>
+									<button className='illumina button'>See the furni!</button>
+								</div>
+							</div>
+
+						</div>
+
 						{/* <Poll 
 							question='Habbo or Cyclone'
 							status={false}
