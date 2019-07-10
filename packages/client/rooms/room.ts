@@ -85,9 +85,18 @@ export default class Room extends Phaser.Scene {
         //this.add.plugin(PhaserWebWorkers.plugin)
         //this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-        this.load.svg('tile', 'room/tile.svg')
-        this.load.image('floor_tile', 'room/floor_tile.png')
-        this.load.image('tile2', 'room/tile2.png')
+        let TileExample = new TileGenerator('tile', {
+            sprite: {
+                width: 65,
+                height: 40
+            }
+        })
+        let TileExample2 = TileExample.generate()
+        this.textures.addBase64('tile', TileExample2)
+
+        // this.load.svg('tile', 'room/tile.svg')
+        // this.load.image('floor_tile', 'room/floor_tile.png')
+        // this.load.image('tile2', 'room/tile2.png')
         this.load.image('tile_hover', 'room/tile_hover.png')
 
         this.load.image('door', 'room/door.png')
@@ -133,15 +142,6 @@ export default class Room extends Phaser.Scene {
      * Runs once, after all assets in preload are loaded
      */
     public create(): void {
-
-        let TileExample = new TileGenerator('tile', {
-            sprite: {
-                width: 65,
-                height: 40
-            }
-        })
-        let TileExample2 = TileExample.generate()
-        console.log(TileExample2)
 
         const renderer = this.game.renderer
 
