@@ -34,7 +34,8 @@ export default class Tile {
 			'shape-rendering': this.rendering,
 			'xmlns:svgjs': null
 		})
-        // Top Left and Right Border
+ 
+		// Top Left and Right Border
 		this.result.path('M31 0h2M29 1h2M33 1h2M27 2h2M35 2h2M25 3h2M37 3h2M23 4h2M39 4h2M21 5h2M41 5h2M19 6h2M43 6h2M17 7h2M45 7h2M15 8h2M47 8h2M13 9h2M49 9h2M11 10h2M51 10h2M9 11h2M53 11h2M7 12h2M55 12h2M5 13h2M57 13h2M3 14h2M59 14h2M1 15h2M61 15h2M0 16h1M63 16h1').stroke('#8e8e5e')
         
         // Top Square
