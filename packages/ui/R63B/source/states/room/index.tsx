@@ -16,6 +16,7 @@ import Moderation from '../../components/dialogs/moderation'
 
 import Poll from '../../components/poll'
 
+
 export default class Room extends Component {
 
 	constructor(props: any) {

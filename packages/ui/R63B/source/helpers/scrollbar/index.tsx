@@ -35,7 +35,7 @@ export default class Scrollbar extends Component <Props, State>
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
 
         this.trackHeight = this.trackRef.clientHeight;
 

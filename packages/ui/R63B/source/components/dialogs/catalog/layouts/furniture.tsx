@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import ScrollBar from '../../../../helpers/scrollbar'
 import Navgiation from '../components/navigation'
 
 export default class CatalogFurniPage extends Component {

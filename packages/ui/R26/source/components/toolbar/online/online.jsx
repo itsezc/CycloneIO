@@ -8,7 +8,7 @@ export default class OnlineCount extends Component {
 	render() {
 		return(
 			<div className='online'>
-				5 members online
+				0 members online
 			</div>
 		)
 	}
