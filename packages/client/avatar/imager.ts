@@ -143,8 +143,8 @@ export default class Imager {
 			const drawableParts = setParts[type]
 
 			if (drawableParts != null) {
-				for (let drawabalePart of drawableParts) {
-					const uniqueName = this.getPartUniqueName(type, drawableParts['id'])
+				for (let drawablePart of drawableParts) {
+					const uniqueName = this.getPartUniqueName(type, drawablePart['id'])
 
 					if (uniqueName != null) {
 						if (setParts['hidden'].includes(type)) {
@@ -183,7 +183,7 @@ export default class Imager {
 						}
 
 						if (activeParts.eye.includes(type)) {
-							drawableParts.colorable = false
+							drawablePart.colorable = false
 
 							if (avatarInfo.drawAction['eye']) {
 								drawAction = avatarInfo.drawAction['eye']
@@ -224,8 +224,9 @@ export default class Imager {
 
 						offsetsPromises.push(this.offsets[uniqueName].promise)
 
-						const color = drawableParts.corlorable ? drawableParts.color : null 
-						const drawPartChunk = this.getPartResource(uniqueName, drawAction, type, avatarInfo.isSmall, drawableParts['id'], drawDirection, avatarInfo.frame, color)
+						const color = drawablePart.corlorable ? drawablePart.color : null 
+						const drawPartChunk = this.getPartResource(uniqueName, drawAction, type, avatarInfo.isSmall, drawablePart['id'], drawDirection, avatarInfo.frame, color)
+												
 						chunks.push(drawPartChunk)
 					}
 				}
@@ -236,6 +237,7 @@ export default class Imager {
 			Promise.all(offsetsPromises).then(() => {
 				let tempCanvas: any = document.createElement('canvas')
 				let tempCtx = tempCanvas.getContext('2d')
+
 				tempCanvas.width = avatarInfo.rectWidth
 				tempCanvas.height = avatarInfo.rectHeight
 			
@@ -460,6 +462,8 @@ export default class Imager {
 				parts.hidden.push(partType)
 			}
 		}
+
+		return parts
 	}
 
 	getColorByPaletteId(paletteId: string, colorId: string): any {
