@@ -26,6 +26,11 @@ enum Gender
 	F
 }
 
+enum FurniType
+{
+    WALL
+}
+
 type Ban @pgTable(name: "bans")
 {
     id: ID! @id
@@ -67,6 +72,10 @@ type Bot @pgTable(name: "bots")
     chatDelay: Int @default(value: 4)
 }
 
+# type Soundtracks @pgTable(name: "soundtracks") {
+
+# }
+
 # @TODO: Create relation between CatalogPages (link -> id)
 type CatalogFeatured @pgTable(name: "catalog_featured")
 {
@@ -96,19 +105,49 @@ type CatalogPage @pgTable(name: "catalog_pages")
 	body: String
 }
 
+type CatalogBundle @pgTable(name: "catalog_bundle")
+{
+	id: ID! @id
+	items: {}[]
+}
+
 type CatalogItem @pgTable(name: "catalog_items")
 {
     id: ID! @id
-    page: Int
-    item: Int
+    page: CatalogPage!
+    item: Item[]!
     name: String
     # price: Currencies
     amount: Int
+    order: Int
+    badge: Badge
     limited: Boolean
     maximum: Int @default(value: -1)
     stack: Boolean @default(value: true)
-    active: Boolean
+    active: Boolean @default(value: true)
+    offer: Boolean @default(value: true)
+    clubOnly: Boolean
 }
+
+# DROP TABLE IF EXISTS `catalog_items`;
+# CREATE TABLE IF NOT EXISTS `catalog_items` (
+#   `id` int(11) NOT NULL AUTO_INCREMENT,
+#   `page_id` int(11) NOT NULL,
+#   `item_ids` varchar(256) CHARACTER SET latin1 COLLATE latin1_bin NOT NULL,
+#   `catalog_name` varchar(40) NOT NULL,
+#   `cost_credits` int(11) NOT NULL DEFAULT '5',
+#   `cost_points` int(11) NOT NULL DEFAULT '0',
+#   `points_type` int(3) NOT NULL DEFAULT '0',
+#   `amount` int(3) NOT NULL DEFAULT '1',
+#   `song_id` int(3) unsigned NOT NULL DEFAULT '0',
+#   `limited_stack` int(5) NOT NULL DEFAULT '0',
+#   `limited_sells` int(5) NOT NULL DEFAULT '0',
+#   `extradata` varchar(256) NOT NULL DEFAULT '',
+#   `club_only` enum('0','1') NOT NULL DEFAULT '0',
+#   `have_offer` enum('0','1') NOT NULL DEFAULT '1',
+#   `offer_id` int(11) DEFAULT NULL,
+#   PRIMARY KEY (`id`)
+# ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8413 ;
 
 type Chatlog @pgTable(name: "chatlog")
 {
@@ -160,24 +199,17 @@ type Room @pgTable(name: "rooms")
 	items: [Item] @relation(name: "Items", onDelete: CASCADE)
 }
 
+
+# Furniture (Class) -> Catalog Item (Instance where its displayed on the catalog) -> Item (Instance with a User as the owner)
 type Item @pgTable(name: "items")
 {
     id: ID! @id
-    owner: Int
-    room: Room! @relation(name: "RoomItems", onDelete: SET_NULL)
-    furniture: Int
-	type: String
-    x: Int
-    y: Int
-    z: Int
-    rotation: Int
-    wallPosition: [Float] @scalarList(strategy: RELATION)
-	inventory: Boolean
+    name: String
+    public: String
+    type 
+    createdAt: DateTime @createdAt
+    updatedAt: DateTime @updatedAt
 }
-
-#3 Types
-
-# Furniture (Class) -> Catalog Item (Instance where its displayed on the catalog) -> Item (Instance with a User as the owner)
 
 # type Currencies {
 #     id: ID! @id

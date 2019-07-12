@@ -1,0 +1,40 @@
+@import '../../fonts'
+@import '../../variables'
+
+body
+	margin 0
+	padding 0
+	background rgba(0, 0, 0, 1)
+	overflow hidden
+	font-size 12px
+	font-family Arial
+
+.client
+	width 100%
+	height 100%
+
+	.hotel
+		position absolute
+		top 33px
+		width 100%
+		height 100%
+		background url(https://www.habborator.org/hotels/view_ru_wide.png)
+		background-position 10% center
+		background-repeat no-repeat
+		background-size contain
+
+		.drape
+			filter drop-shadow(15px 10px 0px rgba(0, 0, 0, 0.5))
+
+			.border
+				border-right 1px solid rgba(0, 0, 0, 1)
+				border-bottom 1px solid rgba(0, 0, 0, 1)
+
+				.inner
+					position absolute
+					background #F7CD46
+					clip-path polygon(0 0, 100% 0, 100% 50%, 0% 100%)
+					padding 10px 25px 15px 25px
+
+
+@import '../../components/index.styl'

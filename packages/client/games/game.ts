@@ -6,7 +6,7 @@ const config = {
     scene: new Room(0), // To change this on the navigator
     parent: 'game',
     render: {
-       pixelArt: true
+        pixelArt: true
     },
     physics: {
         default: 'arcade'

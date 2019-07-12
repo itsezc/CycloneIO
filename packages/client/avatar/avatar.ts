@@ -81,12 +81,17 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         return avatarImager.generateGeneric(new Avatar(this.look, this.rot, this.headRot, ["std"], 'std', this.frame, true, false, "n"), false)
             .then(image => {
+                console.log(image)
                 this.headTextures[this.getHeadTextureKey(this.headRot, 'std', this.frame)] = this.getTextureFromImage(image)
             });
     }
     
     getTextureFromImage(image: HTMLCanvasElement): Phaser.Textures.Texture {
-        return new Phaser.Textures.Texture(this.scene.game.textures, `avatar_${Math.round(Math.random() * 10000)}`, image)
+        const textureKey = `avatar_${Math.round(Math.random() * 10000)}`
+
+        const texture = new Phaser.Textures.Texture(this.scene.game.textures, textureKey, image)
+
+        return texture
     }
 
 	/**

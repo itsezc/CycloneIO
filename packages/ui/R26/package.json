@@ -1,0 +1,8 @@
+{
+    "name": "@cyclone/ui-r26",
+    "author": "The Cyclone Team",
+    "main": "source/app.js",
+    "scripts": {
+        "dev": "webpack-dev-server --host 0.0.0.0 --open"
+    }
+}

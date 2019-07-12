@@ -1,0 +1,10 @@
+{
+    "name": "@cyclone/ui-m01",
+    "author": "The Cyclone Team",
+    "main": "source/mobile.tsx",
+    "scripts": {
+        "dev": "webpack-dev-server --host 0.0.0.0 --open",
+        "android": "npm run dev",
+        "ios": "npm run dev"
+    }
+}
