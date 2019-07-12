@@ -40,8 +40,7 @@ export default class Room extends Phaser.Scene {
 
     private _clickTime!: number
 
-    public avatars!: { [id: string]: Phaser.Physics.Arcade.Sprite }
-    public avatar!: Phaser.Physics.Arcade.Sprite
+    public avatars!: { [id: string]: RoomAvatar }
 
     public avatarIsWalking: boolean
     public avatarIsMoving: boolean = false
@@ -127,8 +126,6 @@ export default class Room extends Phaser.Scene {
     public init(): void {
         this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
-
-        this.avatarImager.initialize().then(() => console.log('imager initialized'))
 
         // this.lights.enable()
     }
@@ -248,61 +245,61 @@ export default class Room extends Phaser.Scene {
                     frames[i - 1] = this.anims.generateFrameNames('avatar')[i]
                 } */
         //console.log(this.scene.anims.generateFrameNames('avatar')[0])
-        this.anims.create({
-            key: 'wlk_0',
-            frames: this.anims.generateFrameNames('wlk_0'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_1',
-            frames: this.anims.generateFrameNames('wlk_1'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_2',
-            frames: this.anims.generateFrameNames('wlk_2'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_3',
-            frames: this.anims.generateFrameNames('wlk_3'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_4',
-            frames: this.anims.generateFrameNames('wlk_4'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_5',
-            frames: this.anims.generateFrameNames('wlk_5'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_6',
-            frames: this.anims.generateFrameNames('wlk_6'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_7',
-            frames: this.anims.generateFrameNames('wlk_7'),
-            frameRate: 12,
-            repeat: -1
-        })
+        //this.anims.create({
+        //    key: 'wlk_0',
+        //    frames: this.anims.generateFrameNames('wlk_0'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
+//
+        //this.anims.create({
+        //    key: 'wlk_1',
+        //    frames: this.anims.generateFrameNames('wlk_1'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
+//
+        //this.anims.create({
+        //    key: 'wlk_2',
+        //    frames: this.anims.generateFrameNames('wlk_2'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
+//
+        //this.anims.create({
+        //    key: 'wlk_3',
+        //    frames: this.anims.generateFrameNames('wlk_3'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
+//
+        //this.anims.create({
+        //    key: 'wlk_4',
+        //    frames: this.anims.generateFrameNames('wlk_4'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
+//
+        //this.anims.create({
+        //    key: 'wlk_5',
+        //    frames: this.anims.generateFrameNames('wlk_5'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
+//
+        //this.anims.create({
+        //    key: 'wlk_6',
+        //    frames: this.anims.generateFrameNames('wlk_6'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
+//
+        //this.anims.create({
+        //    key: 'wlk_7',
+        //    frames: this.anims.generateFrameNames('wlk_7'),
+        //    frameRate: 12,
+        //    repeat: -1
+        //})
         //this.add(RoomSprite.furnitureContainer) <- add to scene 
 
         /* this.map = new RoomMap(this, [[1, 1, 1]]) */
@@ -441,11 +438,11 @@ export default class Room extends Phaser.Scene {
         //             this.avatar = this.avatars[playerId] */
         //         }) */
 
-        this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
-            this.roomPlayer = new RoomAvatar(this, playerX, playerY, 0)
+        //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
+            this.roomPlayer = new RoomAvatar(this, 0, 0, 0, 0)
             this.roomPlayer.x = this.roomPlayer.RenderPos.x
             this.roomPlayer.y = this.roomPlayer.RenderPos.y
-        })
+        //})
 
         this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
 
