@@ -285,7 +285,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     }
 
     updateAvatarView() {
-        this.removeAll()
+        this.removeAll(true)
 
         let action = ["std"];
         let gesture = "std";
