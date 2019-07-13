@@ -33,7 +33,7 @@ import Tile from '../generators/tile';
 export default class Room extends Phaser.Scene {
     private readonly id: number
 
-    private _socket!: SocketIOClient.Socket
+    // private _socket!: SocketIOClient.Socket
     private _camera!: RoomCamera
     // private tileMap!: RoomTileMap
     // private item!: RoomItem
@@ -124,7 +124,7 @@ export default class Room extends Phaser.Scene {
      * Runs once, when the scene starts
      */
     public init(): void {
-        this._socket = SocketIO(`${host}:${port}`)
+        // this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
 
         // this.lights.enable()
@@ -345,12 +345,12 @@ export default class Room extends Phaser.Scene {
 
         this._camera.setZoom(1)
 
-        this._socket.emit('requestRoom', 0)
+        // this._socket.emit('requestRoom', 0)
 
-        this._socket.on('connect', () => {
-            console.log(`Server connected on ${window.location.hostname}`);
-            this._socket.emit('requestRoom', 0)
-        })
+        // this._socket.on('connect', () => {
+        //     console.log(`Server connected on ${window.location.hostname}`);
+        //     this._socket.emit('requestRoom', 0)
+        // })
 
         let genRandom = (min: number, max: number) =>// min and max included
         {
@@ -374,12 +374,12 @@ export default class Room extends Phaser.Scene {
             this.roomPlayer.y = this.roomPlayer.RenderPos.y
         //})
 
-        this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
+        // this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
 
-            if (this.roomPlayer) {
-                this.roomPlayer.moveToDestination(oldPlayerCoordinates, path, destination)
-            }
-        })
+        //     if (this.roomPlayer) {
+        //         this.roomPlayer.moveToDestination(oldPlayerCoordinates, path, destination)
+        //     }
+        // })
 
         // this._socket.on('currentPlayers', (players: any) => {
         //     Object.keys(players).forEach((playerId: any) => {
@@ -388,9 +388,9 @@ export default class Room extends Phaser.Scene {
         //     })
         // })
 
-        this._socket.on('playerDisconnected', (playerId: any) => {
-            this.roomPlayer.removeFromRoom();
-        });
+        // this._socket.on('playerDisconnected', (playerId: any) => {
+        //     this.roomPlayer.removeFromRoom();
+        // });
 
 
         /*         this._socket.on('currentPlayers', (players: any) => {
@@ -650,15 +650,15 @@ export default class Room extends Phaser.Scene {
         }, this)
     }
 
-    public emitRoom(): void {
-        this._socket.emit('newRoom', this.id)
-    }
+    // public emitRoom(): void {
+    //     this._socket.emit('newRoom', this.id)
+    // }
 
-    public registerRoomsEvents(): void {
-        this._socket.on('newRoom', (map: any) => {
-            //this.addTileMap(map)
-        })
-    }
+    // public registerRoomsEvents(): void {
+    //     this._socket.on('newRoom', (map: any) => {
+    //         //this.addTileMap(map)
+    //     })
+    // }
 
     public registerItemsEvents(): void {
 
@@ -799,9 +799,9 @@ export default class Room extends Phaser.Scene {
         })
     }
 
-    public get socket(): SocketIOClient.Socket {
-        return this._socket
-    }
+    // public get socket(): SocketIOClient.Socket {
+    //     return this._socket
+    // }
 
     public get camera(): RoomCamera {
         return this._camera
