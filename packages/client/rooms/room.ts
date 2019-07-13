@@ -220,13 +220,55 @@ export default class Room extends Phaser.Scene {
                     type: FurnitureData.IFurnitureType.WALL,
                     animation: 1
                 },
-                // {
-                //     name: 'hrella_poster_1',
-                //     roomX: 0,
-                //     roomY: 2,
-                //     roomZ: 6.5,
-                //     type: FurnitureData.IFurnitureType.WALL
-                // },
+                {
+                    name: 'es_tile',
+                    roomX: 0,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 0
+                },
+                {
+                    name: 'holo_nelly',
+                    roomX: 1,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 1
+                },
+                {
+                    name: 'bb_counter',
+                    roomX: 2,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 0
+                },
+                {
+                    name: 'bb_score_g',
+                    roomX: 3,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 0
+                },
+                {
+                    name: 'bb_patch1',
+                    roomX: 4,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 6
+                },
+                {
+                    name: 'bb_patch1',
+                    roomX: 4,
+                    roomY: 3,
+                    roomZ: 0,
+                    animation: 7
+                },
+                {
+                    name: 'bb_patch1',
+                    roomX: 4,
+                    roomY: 4,
+                    roomZ: 0,
+                    animation: 8
+                },
                 {
                     name: 'hrella_poster_1',
                     roomX: 6.25,
@@ -237,88 +279,7 @@ export default class Room extends Phaser.Scene {
             ]
         }
 
-
-        /*         var frames: Phaser.Types.Animations.AnimationFrame[] = []
-        
-                for (var i = 1;i < this.avatar.texture.frameTotal - 1;i++)
-                {
-                    frames[i - 1] = this.anims.generateFrameNames('avatar')[i]
-                } */
-        //console.log(this.scene.anims.generateFrameNames('avatar')[0])
-        //this.anims.create({
-        //    key: 'wlk_0',
-        //    frames: this.anims.generateFrameNames('wlk_0'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-//
-        //this.anims.create({
-        //    key: 'wlk_1',
-        //    frames: this.anims.generateFrameNames('wlk_1'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-//
-        //this.anims.create({
-        //    key: 'wlk_2',
-        //    frames: this.anims.generateFrameNames('wlk_2'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-//
-        //this.anims.create({
-        //    key: 'wlk_3',
-        //    frames: this.anims.generateFrameNames('wlk_3'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-//
-        //this.anims.create({
-        //    key: 'wlk_4',
-        //    frames: this.anims.generateFrameNames('wlk_4'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-//
-        //this.anims.create({
-        //    key: 'wlk_5',
-        //    frames: this.anims.generateFrameNames('wlk_5'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-//
-        //this.anims.create({
-        //    key: 'wlk_6',
-        //    frames: this.anims.generateFrameNames('wlk_6'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-//
-        //this.anims.create({
-        //    key: 'wlk_7',
-        //    frames: this.anims.generateFrameNames('wlk_7'),
-        //    frameRate: 12,
-        //    repeat: -1
-        //})
-        //this.add(RoomSprite.furnitureContainer) <- add to scene 
-
-        /* this.map = new RoomMap(this, [[1, 1, 1]]) */
-
-        // var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1],
-        // [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
-
         //        this.add.image(0, 0, 'room_background').setDepth(2)
-
-
-        // if(roomSprite)
-        // {
-        //     roomSprite.stop()
-        // }
-
-        // this.children.removeAll()
-        // var roomContainer = new Phaser.Container();
-        // roomContainer.x = Math.floor(window.innerWidth / 2);
-        // roomContainer.y = Math.floor(window.innerHeight / 2);
 
         var roomSprite = new RoomSprite(this, room.heightmap, room.door)
 
