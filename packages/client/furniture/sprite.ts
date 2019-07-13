@@ -193,7 +193,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
     public updateFurnitureView()
     {
-        this.removeAll()
+        this.removeAll(true)
         //this.removeInteractive()
 
         const layers = []
