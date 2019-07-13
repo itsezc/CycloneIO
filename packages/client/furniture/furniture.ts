@@ -1,4 +1,3 @@
-
 //import type { FurnitureType } from '../../common/enums/furniture/type'
 import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
@@ -78,6 +77,11 @@ export interface IAnimationLayer
 	loopCount?: number
 	frameRepeat?: number
 	frames: number[]
+}
+
+export enum IFurnitureType {
+	FLOOR,
+	WALL
 }
 
 export default class Furniture
@@ -220,10 +224,10 @@ export default class Furniture
 	private assetNameFrom(size: number | string, layer: number, direction?: number, frame?: number): string
 	{
 		let layerChar = this.layerFromNumber(layer)
-		let assetName = this.data.name + "_" + size + "_" + layerChar
+		let assetName = this.data.name + '_' + size + '_' + layerChar
 		if (direction != undefined && frame != undefined)
 		{
-			assetName += "_" + direction + "_" + frame
+			assetName += '_' + direction + '_' + frame
 		}
 
 		return assetName;
@@ -240,7 +244,7 @@ export default class Furniture
 		return frames.find(f => f === frameName) != null
 	}
 
-	public getSpriteFrom(size: number | string, shadow: boolean, direction?: number, layer?: number, frame?: number): any
+	public getSpriteFrom(size: number | string, shadow: boolean, /* type: IFurnitureType, */ direction?: number, layer?: number, frame?: number): any
 	{
 		let assetName = shadow ? this.assetNameFrom(size, -1, direction, 0) : this.assetNameFrom(size, layer, direction, frame)
 
@@ -268,12 +272,13 @@ export default class Furniture
 
 				;(layerSprite as any).isClickable = true
 
-				this.setInteractionsFor(layerSprite)
+				if(this.type !== IFurnitureType.WALL) {
+					this.setInteractionsFor(layerSprite)
+				} 	
 
 				if (layerSprite.frame.name !== frameName) {
 					return undefined
 				}
-
 
 				//console.log(this.data.name + '_' + sourceName + '.png', frame)
 

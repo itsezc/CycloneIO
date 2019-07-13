@@ -377,16 +377,6 @@ export default class Room extends Phaser.Scene {
 
             this.camera.setZoom(4)
 
-            // Furniture Rotation
-            if (this.input.enabled) {
-                this.input.keyboard.on('keydown-SHIFT', () => {
-                    roomSprite.on('pointerdown', () => {
-                        ///console.log(roomSprite)
-                    }, roomSprite)
-                })
-            }
-
-
             /* //roomSprite => 1 instance of a furniture
             this.add.existing(roomSprite)
 
