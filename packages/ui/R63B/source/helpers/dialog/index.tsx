@@ -20,6 +20,8 @@ type DialogProps = {
     children?: any
     width: number
     height: number
+
+    centered?: boolean
 }
 
 export default class Dialog extends Component<DialogProps, any> {
@@ -58,8 +60,8 @@ export default class Dialog extends Component<DialogProps, any> {
             style: {
                 width: props.width,
                 height: props.height,
-                // top: 64,
-                // left: 64
+                top: props.centered || 64,
+                left: props.centered || 64
             }
         }
     

@@ -21,6 +21,14 @@ var models = [
     embedded: false
   },
   {
+    name: "FurniType",
+    embedded: false
+  },
+  {
+    name: "CatalogPageLayout",
+    embedded: false
+  },
+  {
     name: "Ban",
     embedded: false
   },
@@ -41,7 +49,7 @@ var models = [
     embedded: false
   },
   {
-    name: "CatalogItem",
+    name: "Rank",
     embedded: false
   },
   {
@@ -58,10 +66,6 @@ var models = [
   },
   {
     name: "Room",
-    embedded: false
-  },
-  {
-    name: "Item",
     embedded: false
   },
   {

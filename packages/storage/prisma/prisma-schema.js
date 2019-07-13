@@ -19,10 +19,6 @@ type AggregateCatalogFeatured {
   count: Int!
 }
 
-type AggregateCatalogItem {
-  count: Int!
-}
-
 type AggregateCatalogPage {
   count: Int!
 }
@@ -43,10 +39,6 @@ type AggregateHabbo {
   count: Int!
 }
 
-type AggregateItem {
-  count: Int!
-}
-
 type AggregateNavigatorCategory {
   count: Int!
 }
@@ -56,6 +48,10 @@ type AggregateNavigatorTab {
 }
 
 type AggregateNews {
+  count: Int!
+}
+
+type AggregateRank {
   count: Int!
 }
 
@@ -728,7 +724,7 @@ type CatalogFeatured {
   id: ID!
   caption: String
   image: String
-  link: String
+  link: CatalogPage
   slot: Int
   updated: DateTime
 }
@@ -743,7 +739,7 @@ input CatalogFeaturedCreateInput {
   id: ID
   caption: String
   image: String
-  link: String
+  link: CatalogPageCreateOneInput
   slot: Int
 }
 
@@ -759,8 +755,6 @@ enum CatalogFeaturedOrderByInput {
   caption_DESC
   image_ASC
   image_DESC
-  link_ASC
-  link_DESC
   slot_ASC
   slot_DESC
   updated_ASC
@@ -771,7 +765,6 @@ type CatalogFeaturedPreviousValues {
   id: ID!
   caption: String
   image: String
-  link: String
   slot: Int
   updated: DateTime
 }
@@ -797,14 +790,13 @@ input CatalogFeaturedSubscriptionWhereInput {
 input CatalogFeaturedUpdateInput {
   caption: String
   image: String
-  link: String
+  link: CatalogPageUpdateOneInput
   slot: Int
 }
 
 input CatalogFeaturedUpdateManyMutationInput {
   caption: String
   image: String
-  link: String
   slot: Int
 }
 
@@ -851,20 +843,7 @@ input CatalogFeaturedWhereInput {
   image_not_starts_with: String
   image_ends_with: String
   image_not_ends_with: String
-  link: String
-  link_not: String
-  link_in: [String!]
-  link_not_in: [String!]
-  link_lt: String
-  link_lte: String
-  link_gt: String
-  link_gte: String
-  link_contains: String
-  link_not_contains: String
-  link_starts_with: String
-  link_not_starts_with: String
-  link_ends_with: String
-  link_not_ends_with: String
+  link: CatalogPageWhereInput
   slot: Int
   slot_not: Int
   slot_in: [Int!]
@@ -890,172 +869,10 @@ input CatalogFeaturedWhereUniqueInput {
   id: ID
 }
 
-type CatalogItem {
-  id: ID!
-  page: CatalogPage!
-  item: Item!
-  name: String
-  amount: Int
-  limited: Boolean
-  maximum: Int
-  stack: Boolean
-  active: Boolean
-}
-
-type CatalogItemConnection {
-  pageInfo: PageInfo!
-  edges: [CatalogItemEdge]!
-  aggregate: AggregateCatalogItem!
-}
-
-input CatalogItemCreateInput {
-  id: ID
-  page: CatalogPageCreateOneInput!
-  item: ItemCreateOneInput!
-  name: String
-  amount: Int
-  limited: Boolean
-  maximum: Int
-  stack: Boolean
-  active: Boolean
-}
-
-type CatalogItemEdge {
-  node: CatalogItem!
-  cursor: String!
-}
-
-enum CatalogItemOrderByInput {
-  id_ASC
-  id_DESC
-  name_ASC
-  name_DESC
-  amount_ASC
-  amount_DESC
-  limited_ASC
-  limited_DESC
-  maximum_ASC
-  maximum_DESC
-  stack_ASC
-  stack_DESC
-  active_ASC
-  active_DESC
-}
-
-type CatalogItemPreviousValues {
-  id: ID!
-  name: String
-  amount: Int
-  limited: Boolean
-  maximum: Int
-  stack: Boolean
-  active: Boolean
-}
-
-type CatalogItemSubscriptionPayload {
-  mutation: MutationType!
-  node: CatalogItem
-  updatedFields: [String!]
-  previousValues: CatalogItemPreviousValues
-}
-
-input CatalogItemSubscriptionWhereInput {
-  mutation_in: [MutationType!]
-  updatedFields_contains: String
-  updatedFields_contains_every: [String!]
-  updatedFields_contains_some: [String!]
-  node: CatalogItemWhereInput
-  AND: [CatalogItemSubscriptionWhereInput!]
-  OR: [CatalogItemSubscriptionWhereInput!]
-  NOT: [CatalogItemSubscriptionWhereInput!]
-}
-
-input CatalogItemUpdateInput {
-  page: CatalogPageUpdateOneRequiredInput
-  item: ItemUpdateOneRequiredInput
-  name: String
-  amount: Int
-  limited: Boolean
-  maximum: Int
-  stack: Boolean
-  active: Boolean
-}
-
-input CatalogItemUpdateManyMutationInput {
-  name: String
-  amount: Int
-  limited: Boolean
-  maximum: Int
-  stack: Boolean
-  active: Boolean
-}
-
-input CatalogItemWhereInput {
-  id: ID
-  id_not: ID
-  id_in: [ID!]
-  id_not_in: [ID!]
-  id_lt: ID
-  id_lte: ID
-  id_gt: ID
-  id_gte: ID
-  id_contains: ID
-  id_not_contains: ID
-  id_starts_with: ID
-  id_not_starts_with: ID
-  id_ends_with: ID
-  id_not_ends_with: ID
-  page: CatalogPageWhereInput
-  item: ItemWhereInput
-  name: String
-  name_not: String
-  name_in: [String!]
-  name_not_in: [String!]
-  name_lt: String
-  name_lte: String
-  name_gt: String
-  name_gte: String
-  name_contains: String
-  name_not_contains: String
-  name_starts_with: String
-  name_not_starts_with: String
-  name_ends_with: String
-  name_not_ends_with: String
-  amount: Int
-  amount_not: Int
-  amount_in: [Int!]
-  amount_not_in: [Int!]
-  amount_lt: Int
-  amount_lte: Int
-  amount_gt: Int
-  amount_gte: Int
-  limited: Boolean
-  limited_not: Boolean
-  maximum: Int
-  maximum_not: Int
-  maximum_in: [Int!]
-  maximum_not_in: [Int!]
-  maximum_lt: Int
-  maximum_lte: Int
-  maximum_gt: Int
-  maximum_gte: Int
-  stack: Boolean
-  stack_not: Boolean
-  active: Boolean
-  active_not: Boolean
-  AND: [CatalogItemWhereInput!]
-  OR: [CatalogItemWhereInput!]
-  NOT: [CatalogItemWhereInput!]
-}
-
-input CatalogItemWhereUniqueInput {
-  id: ID
-}
-
 type CatalogPage {
   id: ID!
-  parent: Int
-  type: String
+  parent: CatalogPage
+  layout: CatalogPageLayout
   order: Int
   name: String!
   caption: String
@@ -1077,8 +894,8 @@ type CatalogPageConnection {
 
 input CatalogPageCreateInput {
   id: ID
-  parent: Int
-  type: String
+  parent: CatalogPageCreateOneInput
+  layout: CatalogPageLayout
   order: Int
   name: String!
   caption: String
@@ -1102,13 +919,37 @@ type CatalogPageEdge {
   cursor: String!
 }
 
+enum CatalogPageLayout {
+  DEFAULT
+  FRONTPAGE
+  CLUB_BUY
+  CLUB_GIFT
+  RECYCLER
+  RECYCLER_INFO
+  RECYCLER_PRIZES
+  TROPHIES
+  PLASTO
+  MARKETPLACE
+  MARKETPLACE_OWN_ITEMS
+  PETS
+  SPACES
+  SOUNDMACHINE
+  GUILDS
+  INFO_DUCKETS
+  INFO_RENTABLES
+  INFO_PETS
+  ROOMADS
+  SINGLE_BUNDLE
+  SOLD_LTD_ITEMS
+  BADGE_DISPLAY
+  BOTS
+}
+
 enum CatalogPageOrderByInput {
   id_ASC
   id_DESC
-  parent_ASC
-  parent_DESC
-  type_ASC
-  type_DESC
+  layout_ASC
+  layout_DESC
   order_ASC
   order_DESC
   name_ASC
@@ -1135,8 +976,7 @@ enum CatalogPageOrderByInput {
 
 type CatalogPagePreviousValues {
   id: ID!
-  parent: Int
-  type: String
+  layout: CatalogPageLayout
   order: Int
   name: String!
   caption: String
@@ -1169,8 +1009,8 @@ input CatalogPageSubscriptionWhereInput {
 }
 
 input CatalogPageUpdateDataInput {
-  parent: Int
-  type: String
+  parent: CatalogPageUpdateOneInput
+  layout: CatalogPageLayout
   order: Int
   name: String
   caption: String
@@ -1185,8 +1025,8 @@ input CatalogPageUpdateDataInput {
 }
 
 input CatalogPageUpdateInput {
-  parent: Int
-  type: String
+  parent: CatalogPageUpdateOneInput
+  layout: CatalogPageLayout
   order: Int
   name: String
   caption: String
@@ -1201,8 +1041,7 @@ input CatalogPageUpdateInput {
 }
 
 input CatalogPageUpdateManyMutationInput {
-  parent: Int
-  type: String
+  layout: CatalogPageLayout
   order: Int
   name: String
   caption: String
@@ -1216,10 +1055,12 @@ input CatalogPageUpdateManyMutationInput {
   body: String
 }
 
-input CatalogPageUpdateOneRequiredInput {
+input CatalogPageUpdateOneInput {
   create: CatalogPageCreateInput
   update: CatalogPageUpdateDataInput
   upsert: CatalogPageUpsertNestedInput
+  delete: Boolean
+  disconnect: Boolean
   connect: CatalogPageWhereUniqueInput
 }
 
@@ -1243,28 +1084,11 @@ input CatalogPageWhereInput {
   id_not_starts_with: ID
   id_ends_with: ID
   id_not_ends_with: ID
-  parent: Int
-  parent_not: Int
-  parent_in: [Int!]
-  parent_not_in: [Int!]
-  parent_lt: Int
-  parent_lte: Int
-  parent_gt: Int
-  parent_gte: Int
-  type: String
-  type_not: String
-  type_in: [String!]
-  type_not_in: [String!]
-  type_lt: String
-  type_lte: String
-  type_gt: String
-  type_gte: String
-  type_contains: String
-  type_not_contains: String
-  type_starts_with: String
-  type_not_starts_with: String
-  type_ends_with: String
-  type_not_ends_with: String
+  parent: CatalogPageWhereInput
+  layout: CatalogPageLayout
+  layout_not: CatalogPageLayout
+  layout_in: [CatalogPageLayout!]
+  layout_not_in: [CatalogPageLayout!]
   order: Int
   order_not: Int
   order_in: [Int!]
@@ -2163,6 +1987,15 @@ input HabboUpdateManyWithWhereNestedInput {
   data: HabboUpdateManyDataInput!
 }
 
+input HabboUpdateOneInput {
+  create: HabboCreateInput
+  update: HabboUpdateDataInput
+  upsert: HabboUpsertNestedInput
+  delete: Boolean
+  disconnect: Boolean
+  connect: HabboWhereUniqueInput
+}
+
 input HabboUpdateOneRequiredInput {
   create: HabboCreateInput
   update: HabboUpdateDataInput
@@ -2356,403 +2189,6 @@ input HabboWhereUniqueInput {
   username: String
 }
 
-type Item {
-  id: ID!
-  owner: Int
-  room: Room!
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: [Float!]!
-  inventory: Boolean
-}
-
-type ItemConnection {
-  pageInfo: PageInfo!
-  edges: [ItemEdge]!
-  aggregate: AggregateItem!
-}
-
-input ItemCreateInput {
-  id: ID
-  owner: Int
-  room: RoomCreateOneWithoutItemsInput!
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: ItemCreatewallPositionInput
-  inventory: Boolean
-}
-
-input ItemCreateManyWithoutRoomInput {
-  create: [ItemCreateWithoutRoomInput!]
-  connect: [ItemWhereUniqueInput!]
-}
-
-input ItemCreateOneInput {
-  create: ItemCreateInput
-  connect: ItemWhereUniqueInput
-}
-
-input ItemCreatewallPositionInput {
-  set: [Float!]
-}
-
-input ItemCreateWithoutRoomInput {
-  id: ID
-  owner: Int
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: ItemCreatewallPositionInput
-  inventory: Boolean
-}
-
-type ItemEdge {
-  node: Item!
-  cursor: String!
-}
-
-enum ItemOrderByInput {
-  id_ASC
-  id_DESC
-  owner_ASC
-  owner_DESC
-  furniture_ASC
-  furniture_DESC
-  type_ASC
-  type_DESC
-  x_ASC
-  x_DESC
-  y_ASC
-  y_DESC
-  z_ASC
-  z_DESC
-  rotation_ASC
-  rotation_DESC
-  inventory_ASC
-  inventory_DESC
-}
-
-type ItemPreviousValues {
-  id: ID!
-  owner: Int
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: [Float!]!
-  inventory: Boolean
-}
-
-input ItemScalarWhereInput {
-  id: ID
-  id_not: ID
-  id_in: [ID!]
-  id_not_in: [ID!]
-  id_lt: ID
-  id_lte: ID
-  id_gt: ID
-  id_gte: ID
-  id_contains: ID
-  id_not_contains: ID
-  id_starts_with: ID
-  id_not_starts_with: ID
-  id_ends_with: ID
-  id_not_ends_with: ID
-  owner: Int
-  owner_not: Int
-  owner_in: [Int!]
-  owner_not_in: [Int!]
-  owner_lt: Int
-  owner_lte: Int
-  owner_gt: Int
-  owner_gte: Int
-  furniture: Int
-  furniture_not: Int
-  furniture_in: [Int!]
-  furniture_not_in: [Int!]
-  furniture_lt: Int
-  furniture_lte: Int
-  furniture_gt: Int
-  furniture_gte: Int
-  type: String
-  type_not: String
-  type_in: [String!]
-  type_not_in: [String!]
-  type_lt: String
-  type_lte: String
-  type_gt: String
-  type_gte: String
-  type_contains: String
-  type_not_contains: String
-  type_starts_with: String
-  type_not_starts_with: String
-  type_ends_with: String
-  type_not_ends_with: String
-  x: Int
-  x_not: Int
-  x_in: [Int!]
-  x_not_in: [Int!]
-  x_lt: Int
-  x_lte: Int
-  x_gt: Int
-  x_gte: Int
-  y: Int
-  y_not: Int
-  y_in: [Int!]
-  y_not_in: [Int!]
-  y_lt: Int
-  y_lte: Int
-  y_gt: Int
-  y_gte: Int
-  z: Int
-  z_not: Int
-  z_in: [Int!]
-  z_not_in: [Int!]
-  z_lt: Int
-  z_lte: Int
-  z_gt: Int
-  z_gte: Int
-  rotation: Int
-  rotation_not: Int
-  rotation_in: [Int!]
-  rotation_not_in: [Int!]
-  rotation_lt: Int
-  rotation_lte: Int
-  rotation_gt: Int
-  rotation_gte: Int
-  inventory: Boolean
-  inventory_not: Boolean
-  AND: [ItemScalarWhereInput!]
-  OR: [ItemScalarWhereInput!]
-  NOT: [ItemScalarWhereInput!]
-}
-
-type ItemSubscriptionPayload {
-  mutation: MutationType!
-  node: Item
-  updatedFields: [String!]
-  previousValues: ItemPreviousValues
-}
-
-input ItemSubscriptionWhereInput {
-  mutation_in: [MutationType!]
-  updatedFields_contains: String
-  updatedFields_contains_every: [String!]
-  updatedFields_contains_some: [String!]
-  node: ItemWhereInput
-  AND: [ItemSubscriptionWhereInput!]
-  OR: [ItemSubscriptionWhereInput!]
-  NOT: [ItemSubscriptionWhereInput!]
-}
-
-input ItemUpdateDataInput {
-  owner: Int
-  room: RoomUpdateOneRequiredWithoutItemsInput
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: ItemUpdatewallPositionInput
-  inventory: Boolean
-}
-
-input ItemUpdateInput {
-  owner: Int
-  room: RoomUpdateOneRequiredWithoutItemsInput
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: ItemUpdatewallPositionInput
-  inventory: Boolean
-}
-
-input ItemUpdateManyDataInput {
-  owner: Int
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: ItemUpdatewallPositionInput
-  inventory: Boolean
-}
-
-input ItemUpdateManyMutationInput {
-  owner: Int
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: ItemUpdatewallPositionInput
-  inventory: Boolean
-}
-
-input ItemUpdateManyWithoutRoomInput {
-  create: [ItemCreateWithoutRoomInput!]
-  delete: [ItemWhereUniqueInput!]
-  connect: [ItemWhereUniqueInput!]
-  set: [ItemWhereUniqueInput!]
-  disconnect: [ItemWhereUniqueInput!]
-  update: [ItemUpdateWithWhereUniqueWithoutRoomInput!]
-  upsert: [ItemUpsertWithWhereUniqueWithoutRoomInput!]
-  deleteMany: [ItemScalarWhereInput!]
-  updateMany: [ItemUpdateManyWithWhereNestedInput!]
-}
-
-input ItemUpdateManyWithWhereNestedInput {
-  where: ItemScalarWhereInput!
-  data: ItemUpdateManyDataInput!
-}
-
-input ItemUpdateOneRequiredInput {
-  create: ItemCreateInput
-  update: ItemUpdateDataInput
-  upsert: ItemUpsertNestedInput
-  connect: ItemWhereUniqueInput
-}
-
-input ItemUpdatewallPositionInput {
-  set: [Float!]
-}
-
-input ItemUpdateWithoutRoomDataInput {
-  owner: Int
-  furniture: Int
-  type: String
-  x: Int
-  y: Int
-  z: Int
-  rotation: Int
-  wallPosition: ItemUpdatewallPositionInput
-  inventory: Boolean
-}
-
-input ItemUpdateWithWhereUniqueWithoutRoomInput {
-  where: ItemWhereUniqueInput!
-  data: ItemUpdateWithoutRoomDataInput!
-}
-
-input ItemUpsertNestedInput {
-  update: ItemUpdateDataInput!
-  create: ItemCreateInput!
-}
-
-input ItemUpsertWithWhereUniqueWithoutRoomInput {
-  where: ItemWhereUniqueInput!
-  update: ItemUpdateWithoutRoomDataInput!
-  create: ItemCreateWithoutRoomInput!
-}
-
-input ItemWhereInput {
-  id: ID
-  id_not: ID
-  id_in: [ID!]
-  id_not_in: [ID!]
-  id_lt: ID
-  id_lte: ID
-  id_gt: ID
-  id_gte: ID
-  id_contains: ID
-  id_not_contains: ID
-  id_starts_with: ID
-  id_not_starts_with: ID
-  id_ends_with: ID
-  id_not_ends_with: ID
-  owner: Int
-  owner_not: Int
-  owner_in: [Int!]
-  owner_not_in: [Int!]
-  owner_lt: Int
-  owner_lte: Int
-  owner_gt: Int
-  owner_gte: Int
-  room: RoomWhereInput
-  furniture: Int
-  furniture_not: Int
-  furniture_in: [Int!]
-  furniture_not_in: [Int!]
-  furniture_lt: Int
-  furniture_lte: Int
-  furniture_gt: Int
-  furniture_gte: Int
-  type: String
-  type_not: String
-  type_in: [String!]
-  type_not_in: [String!]
-  type_lt: String
-  type_lte: String
-  type_gt: String
-  type_gte: String
-  type_contains: String
-  type_not_contains: String
-  type_starts_with: String
-  type_not_starts_with: String
-  type_ends_with: String
-  type_not_ends_with: String
-  x: Int
-  x_not: Int
-  x_in: [Int!]
-  x_not_in: [Int!]
-  x_lt: Int
-  x_lte: Int
-  x_gt: Int
-  x_gte: Int
-  y: Int
-  y_not: Int
-  y_in: [Int!]
-  y_not_in: [Int!]
-  y_lt: Int
-  y_lte: Int
-  y_gt: Int
-  y_gte: Int
-  z: Int
-  z_not: Int
-  z_in: [Int!]
-  z_not_in: [Int!]
-  z_lt: Int
-  z_lte: Int
-  z_gt: Int
-  z_gte: Int
-  rotation: Int
-  rotation_not: Int
-  rotation_in: [Int!]
-  rotation_not_in: [Int!]
-  rotation_lt: Int
-  rotation_lte: Int
-  rotation_gt: Int
-  rotation_gte: Int
-  inventory: Boolean
-  inventory_not: Boolean
-  AND: [ItemWhereInput!]
-  OR: [ItemWhereInput!]
-  NOT: [ItemWhereInput!]
-}
-
-input ItemWhereUniqueInput {
-  id: ID
-}
-
 scalar Json
 
 scalar Long
@@ -2782,12 +2218,6 @@ type Mutation {
   upsertCatalogFeatured(where: CatalogFeaturedWhereUniqueInput!, create: CatalogFeaturedCreateInput!, update: CatalogFeaturedUpdateInput!): CatalogFeatured!
   deleteCatalogFeatured(where: CatalogFeaturedWhereUniqueInput!): CatalogFeatured
   deleteManyCatalogFeatureds(where: CatalogFeaturedWhereInput): BatchPayload!
-  createCatalogItem(data: CatalogItemCreateInput!): CatalogItem!
-  updateCatalogItem(data: CatalogItemUpdateInput!, where: CatalogItemWhereUniqueInput!): CatalogItem
-  updateManyCatalogItems(data: CatalogItemUpdateManyMutationInput!, where: CatalogItemWhereInput): BatchPayload!
-  upsertCatalogItem(where: CatalogItemWhereUniqueInput!, create: CatalogItemCreateInput!, update: CatalogItemUpdateInput!): CatalogItem!
-  deleteCatalogItem(where: CatalogItemWhereUniqueInput!): CatalogItem
-  deleteManyCatalogItems(where: CatalogItemWhereInput): BatchPayload!
   createCatalogPage(data: CatalogPageCreateInput!): CatalogPage!
   updateCatalogPage(data: CatalogPageUpdateInput!, where: CatalogPageWhereUniqueInput!): CatalogPage
   updateManyCatalogPages(data: CatalogPageUpdateManyMutationInput!, where: CatalogPageWhereInput): BatchPayload!
@@ -2818,12 +2248,6 @@ type Mutation {
   upsertHabbo(where: HabboWhereUniqueInput!, create: HabboCreateInput!, update: HabboUpdateInput!): Habbo!
   deleteHabbo(where: HabboWhereUniqueInput!): Habbo
   deleteManyHabboes(where: HabboWhereInput): BatchPayload!
-  createItem(data: ItemCreateInput!): Item!
-  updateItem(data: ItemUpdateInput!, where: ItemWhereUniqueInput!): Item
-  updateManyItems(data: ItemUpdateManyMutationInput!, where: ItemWhereInput): BatchPayload!
-  upsertItem(where: ItemWhereUniqueInput!, create: ItemCreateInput!, update: ItemUpdateInput!): Item!
-  deleteItem(where: ItemWhereUniqueInput!): Item
-  deleteManyItems(where: ItemWhereInput): BatchPayload!
   createNavigatorCategory(data: NavigatorCategoryCreateInput!): NavigatorCategory!
   updateNavigatorCategory(data: NavigatorCategoryUpdateInput!, where: NavigatorCategoryWhereUniqueInput!): NavigatorCategory
   updateManyNavigatorCategories(data: NavigatorCategoryUpdateManyMutationInput!, where: NavigatorCategoryWhereInput): BatchPayload!
@@ -2842,6 +2266,12 @@ type Mutation {
   upsertNews(where: NewsWhereUniqueInput!, create: NewsCreateInput!, update: NewsUpdateInput!): News!
   deleteNews(where: NewsWhereUniqueInput!): News
   deleteManyNewses(where: NewsWhereInput): BatchPayload!
+  createRank(data: RankCreateInput!): Rank!
+  updateRank(data: RankUpdateInput!, where: RankWhereUniqueInput!): Rank
+  updateManyRanks(data: RankUpdateManyMutationInput!, where: RankWhereInput): BatchPayload!
+  upsertRank(where: RankWhereUniqueInput!, create: RankCreateInput!, update: RankUpdateInput!): Rank!
+  deleteRank(where: RankWhereUniqueInput!): Rank
+  deleteManyRanks(where: RankWhereInput): BatchPayload!
   createRoom(data: RoomCreateInput!): Room!
   updateRoom(data: RoomUpdateInput!, where: RoomWhereUniqueInput!): Room
   updateManyRooms(data: RoomUpdateManyMutationInput!, where: RoomWhereInput): BatchPayload!
@@ -3430,9 +2860,6 @@ type Query {
   catalogFeatured(where: CatalogFeaturedWhereUniqueInput!): CatalogFeatured
   catalogFeatureds(where: CatalogFeaturedWhereInput, orderBy: CatalogFeaturedOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogFeatured]!
   catalogFeaturedsConnection(where: CatalogFeaturedWhereInput, orderBy: CatalogFeaturedOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogFeaturedConnection!
-  catalogItem(where: CatalogItemWhereUniqueInput!): CatalogItem
-  catalogItems(where: CatalogItemWhereInput, orderBy: CatalogItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogItem]!
-  catalogItemsConnection(where: CatalogItemWhereInput, orderBy: CatalogItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogItemConnection!
   catalogPage(where: CatalogPageWhereUniqueInput!): CatalogPage
   catalogPages(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogPage]!
   catalogPagesConnection(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogPageConnection!
@@ -3448,9 +2875,6 @@ type Query {
   habbo(where: HabboWhereUniqueInput!): Habbo
   habboes(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Habbo]!
   habboesConnection(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): HabboConnection!
-  item(where: ItemWhereUniqueInput!): Item
-  items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item]!
-  itemsConnection(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ItemConnection!
   navigatorCategory(where: NavigatorCategoryWhereUniqueInput!): NavigatorCategory
   navigatorCategories(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategory]!
   navigatorCategoriesConnection(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NavigatorCategoryConnection!
@@ -3460,6 +2884,9 @@ type Query {
   news(where: NewsWhereUniqueInput!): News
   newses(where: NewsWhereInput, orderBy: NewsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [News]!
   newsesConnection(where: NewsWhereInput, orderBy: NewsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NewsConnection!
+  rank(where: RankWhereUniqueInput!): Rank
+  ranks(where: RankWhereInput, orderBy: RankOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Rank]!
+  ranksConnection(where: RankWhereInput, orderBy: RankOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): RankConnection!
   room(where: RoomWhereUniqueInput!): Room
   rooms(where: RoomWhereInput, orderBy: RoomOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Room]!
   roomsConnection(where: RoomWhereInput, orderBy: RoomOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): RoomConnection!
@@ -3469,25 +2896,135 @@ type Query {
   node(id: ID!): Node
 }
 
+type Rank {
+  id: ID!
+  order: Int!
+  name: String!
+}
+
+type RankConnection {
+  pageInfo: PageInfo!
+  edges: [RankEdge]!
+  aggregate: AggregateRank!
+}
+
+input RankCreateInput {
+  id: ID
+  order: Int!
+  name: String!
+}
+
+type RankEdge {
+  node: Rank!
+  cursor: String!
+}
+
+enum RankOrderByInput {
+  id_ASC
+  id_DESC
+  order_ASC
+  order_DESC
+  name_ASC
+  name_DESC
+}
+
+type RankPreviousValues {
+  id: ID!
+  order: Int!
+  name: String!
+}
+
+type RankSubscriptionPayload {
+  mutation: MutationType!
+  node: Rank
+  updatedFields: [String!]
+  previousValues: RankPreviousValues
+}
+
+input RankSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: RankWhereInput
+  AND: [RankSubscriptionWhereInput!]
+  OR: [RankSubscriptionWhereInput!]
+  NOT: [RankSubscriptionWhereInput!]
+}
+
+input RankUpdateInput {
+  order: Int
+  name: String
+}
+
+input RankUpdateManyMutationInput {
+  order: Int
+  name: String
+}
+
+input RankWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  order: Int
+  order_not: Int
+  order_in: [Int!]
+  order_not_in: [Int!]
+  order_lt: Int
+  order_lte: Int
+  order_gt: Int
+  order_gte: Int
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  AND: [RankWhereInput!]
+  OR: [RankWhereInput!]
+  NOT: [RankWhereInput!]
+}
+
+input RankWhereUniqueInput {
+  id: ID
+}
+
 type Room {
   id: ID!
   name: String!
   description: String
   type: roomType
   category: Int
-  owner: Int
+  owner: Habbo
   map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
+  floorThickness: Float
+  wallThickness: Float
+  wallHeight: Float
   hideWalls: Boolean
   hideWired: Boolean
   currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
-  rights: [Int!]!
-  items(where: ItemWhereInput, orderBy: ItemOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Item!]
 }
 
 type RoomConnection {
@@ -3502,53 +3039,22 @@ input RoomCreateInput {
   description: String
   type: roomType
   category: Int
-  owner: Int
+  owner: HabboCreateOneInput
   map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
+  floorThickness: Float
+  wallThickness: Float
+  wallHeight: Float
   hideWalls: Boolean
   hideWired: Boolean
   currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
-  rights: RoomCreaterightsInput
-  items: ItemCreateManyWithoutRoomInput
 }
 
 input RoomCreateOneInput {
   create: RoomCreateInput
   connect: RoomWhereUniqueInput
-}
-
-input RoomCreateOneWithoutItemsInput {
-  create: RoomCreateWithoutItemsInput
-  connect: RoomWhereUniqueInput
-}
-
-input RoomCreaterightsInput {
-  set: [Int!]
-}
-
-input RoomCreateWithoutItemsInput {
-  id: ID
-  name: String!
-  description: String
-  type: roomType
-  category: Int
-  owner: Int
-  map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
-  hideWalls: Boolean
-  hideWired: Boolean
-  currentUsers: Int
-  maxUsers: Int
-  allowPets: Boolean
-  allowPetsEating: Boolean
-  rights: RoomCreaterightsInput
 }
 
 type RoomEdge {
@@ -3567,8 +3073,6 @@ enum RoomOrderByInput {
   type_DESC
   category_ASC
   category_DESC
-  owner_ASC
-  owner_DESC
   map_ASC
   map_DESC
   floorThickness_ASC
@@ -3597,18 +3101,16 @@ type RoomPreviousValues {
   description: String
   type: roomType
   category: Int
-  owner: Int
   map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
+  floorThickness: Float
+  wallThickness: Float
+  wallHeight: Float
   hideWalls: Boolean
   hideWired: Boolean
   currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
-  rights: [Int!]!
 }
 
 type RoomSubscriptionPayload {
@@ -3641,19 +3143,17 @@ input RoomUpdateDataInput {
   description: String
   type: roomType
   category: Int
-  owner: Int
+  owner: HabboUpdateOneInput
   map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
+  floorThickness: Float
+  wallThickness: Float
+  wallHeight: Float
   hideWalls: Boolean
   hideWired: Boolean
   currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
-  rights: RoomUpdaterightsInput
-  items: ItemUpdateManyWithoutRoomInput
 }
 
 input RoomUpdateInput {
@@ -3661,19 +3161,17 @@ input RoomUpdateInput {
   description: String
   type: roomType
   category: Int
-  owner: Int
+  owner: HabboUpdateOneInput
   map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
+  floorThickness: Float
+  wallThickness: Float
+  wallHeight: Float
   hideWalls: Boolean
   hideWired: Boolean
   currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
-  rights: RoomUpdaterightsInput
-  items: ItemUpdateManyWithoutRoomInput
 }
 
 input RoomUpdateManyMutationInput {
@@ -3681,18 +3179,16 @@ input RoomUpdateManyMutationInput {
   description: String
   type: roomType
   category: Int
-  owner: Int
   map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
+  floorThickness: Float
+  wallThickness: Float
+  wallHeight: Float
   hideWalls: Boolean
   hideWired: Boolean
   currentUsers: Int
   maxUsers: Int
   allowPets: Boolean
   allowPetsEating: Boolean
-  rights: RoomUpdaterightsInput
 }
 
 input RoomUpdateOneRequiredInput {
@@ -3702,44 +3198,9 @@ input RoomUpdateOneRequiredInput {
   connect: RoomWhereUniqueInput
 }
 
-input RoomUpdateOneRequiredWithoutItemsInput {
-  create: RoomCreateWithoutItemsInput
-  update: RoomUpdateWithoutItemsDataInput
-  upsert: RoomUpsertWithoutItemsInput
-  connect: RoomWhereUniqueInput
-}
-
-input RoomUpdaterightsInput {
-  set: [Int!]
-}
-
-input RoomUpdateWithoutItemsDataInput {
-  name: String
-  description: String
-  type: roomType
-  category: Int
-  owner: Int
-  map: Json
-  floorThickness: Int
-  wallThickness: Int
-  wallHeight: Int
-  hideWalls: Boolean
-  hideWired: Boolean
-  currentUsers: Int
-  maxUsers: Int
-  allowPets: Boolean
-  allowPetsEating: Boolean
-  rights: RoomUpdaterightsInput
-}
-
 input RoomUpsertNestedInput {
   update: RoomUpdateDataInput!
   create: RoomCreateInput!
-}
-
-input RoomUpsertWithoutItemsInput {
-  update: RoomUpdateWithoutItemsDataInput!
-  create: RoomCreateWithoutItemsInput!
 }
 
 input RoomWhereInput {
@@ -3797,38 +3258,31 @@ input RoomWhereInput {
   category_lte: Int
   category_gt: Int
   category_gte: Int
-  owner: Int
-  owner_not: Int
-  owner_in: [Int!]
-  owner_not_in: [Int!]
-  owner_lt: Int
-  owner_lte: Int
-  owner_gt: Int
-  owner_gte: Int
-  floorThickness: Int
-  floorThickness_not: Int
-  floorThickness_in: [Int!]
-  floorThickness_not_in: [Int!]
-  floorThickness_lt: Int
-  floorThickness_lte: Int
-  floorThickness_gt: Int
-  floorThickness_gte: Int
-  wallThickness: Int
-  wallThickness_not: Int
-  wallThickness_in: [Int!]
-  wallThickness_not_in: [Int!]
-  wallThickness_lt: Int
-  wallThickness_lte: Int
-  wallThickness_gt: Int
-  wallThickness_gte: Int
-  wallHeight: Int
-  wallHeight_not: Int
-  wallHeight_in: [Int!]
-  wallHeight_not_in: [Int!]
-  wallHeight_lt: Int
-  wallHeight_lte: Int
-  wallHeight_gt: Int
-  wallHeight_gte: Int
+  owner: HabboWhereInput
+  floorThickness: Float
+  floorThickness_not: Float
+  floorThickness_in: [Float!]
+  floorThickness_not_in: [Float!]
+  floorThickness_lt: Float
+  floorThickness_lte: Float
+  floorThickness_gt: Float
+  floorThickness_gte: Float
+  wallThickness: Float
+  wallThickness_not: Float
+  wallThickness_in: [Float!]
+  wallThickness_not_in: [Float!]
+  wallThickness_lt: Float
+  wallThickness_lte: Float
+  wallThickness_gt: Float
+  wallThickness_gte: Float
+  wallHeight: Float
+  wallHeight_not: Float
+  wallHeight_in: [Float!]
+  wallHeight_not_in: [Float!]
+  wallHeight_lt: Float
+  wallHeight_lte: Float
+  wallHeight_gt: Float
+  wallHeight_gte: Float
   hideWalls: Boolean
   hideWalls_not: Boolean
   hideWired: Boolean
@@ -3853,9 +3307,6 @@ input RoomWhereInput {
   allowPets_not: Boolean
   allowPetsEating: Boolean
   allowPetsEating_not: Boolean
-  items_every: ItemWhereInput
-  items_some: ItemWhereInput
-  items_none: ItemWhereInput
   AND: [RoomWhereInput!]
   OR: [RoomWhereInput!]
   NOT: [RoomWhereInput!]
@@ -3870,16 +3321,15 @@ type Subscription {
   ban(where: BanSubscriptionWhereInput): BanSubscriptionPayload
   bot(where: BotSubscriptionWhereInput): BotSubscriptionPayload
   catalogFeatured(where: CatalogFeaturedSubscriptionWhereInput): CatalogFeaturedSubscriptionPayload
-  catalogItem(where: CatalogItemSubscriptionWhereInput): CatalogItemSubscriptionPayload
   catalogPage(where: CatalogPageSubscriptionWhereInput): CatalogPageSubscriptionPayload
   chatlog(where: ChatlogSubscriptionWhereInput): ChatlogSubscriptionPayload
   chatlogConsole(where: ChatlogConsoleSubscriptionWhereInput): ChatlogConsoleSubscriptionPayload
   chatlogConsoleInvitations(where: ChatlogConsoleInvitationsSubscriptionWhereInput): ChatlogConsoleInvitationsSubscriptionPayload
   habbo(where: HabboSubscriptionWhereInput): HabboSubscriptionPayload
-  item(where: ItemSubscriptionWhereInput): ItemSubscriptionPayload
   navigatorCategory(where: NavigatorCategorySubscriptionWhereInput): NavigatorCategorySubscriptionPayload
   navigatorTab(where: NavigatorTabSubscriptionWhereInput): NavigatorTabSubscriptionPayload
   news(where: NewsSubscriptionWhereInput): NewsSubscriptionPayload
+  rank(where: RankSubscriptionWhereInput): RankSubscriptionPayload
   room(where: RoomSubscriptionWhereInput): RoomSubscriptionPayload
   user(where: UserSubscriptionWhereInput): UserSubscriptionPayload
 }

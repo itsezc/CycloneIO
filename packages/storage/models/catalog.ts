@@ -1,4 +1,4 @@
-export enum CatalogPageLayouts {
+export enum CatalogPageLayout {
 	DEFAULT,
 	FRONTPAGE,
 	CLUB_BUY,
