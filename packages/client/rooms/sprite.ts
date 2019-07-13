@@ -62,7 +62,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
 
             if (tileData != 'x')
             {
-                
+
                 if (tileX === door[0] && tileY === door[1]) {
                     // console.log(tileX, tileY)
                     let door = this._scene.add.image(screenX, screenY - 122, 'door')
@@ -73,19 +73,19 @@ export default class RoomSprite extends Phaser.GameObjects.Container
 
                     container.add(doorFloor)
                     container.add(door)
-                    
+
                 } else {
                     if (tileX < 1)
                     {
                         let leftWallSprite = this._scene.add.image(screenX - 8, screenY - 122, 'wall_l')
                         leftWallSprite.setOrigin(0, 0)
-    
+
                         container.add(leftWallSprite)
                     }
 
                     if (tileY < 1)
                     {
-                   
+
                         let rightWallSprite = this._scene.add.image(screenX + 32, screenY - 122, 'wall_r')
                         rightWallSprite.setOrigin(0, 0)
 
@@ -93,7 +93,6 @@ export default class RoomSprite extends Phaser.GameObjects.Container
                     }
                 }
 
-                
                 let floorSprite = this._scene.add.image(screenX, screenY, 'tile');
                 floorSprite.setOrigin(0, 0)
                 floorSprite.setInteractive({ pixelPerfect: true })
