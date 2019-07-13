@@ -272,9 +272,7 @@ export default class Furniture
 
 				;(layerSprite as any).isClickable = true
 
-				if(this.type !== IFurnitureType.WALL) {
-					this.setInteractionsFor(layerSprite)
-				} 	
+				this.setInteractionsFor(layerSprite)	
 
 				if (layerSprite.frame.name !== frameName) {
 					return undefined
@@ -376,7 +374,9 @@ export default class Furniture
 
 		sprite.on('pointerdown', (e: Phaser.Input.Pointer) => {
 			if (e.event.shiftKey) {
-				sprite.emit('rotate', sprite)
+				if(this.type !== IFurnitureType.WALL) {
+					sprite.emit('rotate', sprite)
+				}
 			} else {
 				sprite.emit('click', sprite)
 			}
