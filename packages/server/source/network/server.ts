@@ -1,8 +1,10 @@
 import Hapi from '@hapi/hapi'
 import Inert from '@hapi/inert'
-import Routes from './http/routes'
+import Routes from './socket/routes'
 
 import SocketIO from 'socket.io'
+import Moment from 'moment'
+
 
 import { ApolloClient } from 'apollo-client'
 import { HttpLink as ApolloLink } from 'apollo-link-http'
@@ -11,8 +13,6 @@ import { InMemoryCache as ApolloCache } from 'apollo-cache-inmemory'
 import { prisma } from '../../../storage/prisma'
 import { typeDefs } from '../../../storage/prisma/prisma-schema'
 import { resolvers } from '../../../storage/resolvers/index'
-
-import { ApolloServer, makeExecutableSchema } from 'apollo-server-hapi'
 
 import gql from 'graphql-tag'
 
@@ -24,12 +24,17 @@ import Logger from '../../../utils/logger'
 
 import { AStarFinder, DiagonalMovement, Heuristic, Grid } from 'pathfinding'
 
+import createAPIServer from './api/APIServer'
+import createEmulatorServer from './socket/SocketServer'
+
+import fs from 'fs'
+import path from 'path'
+
 export default class Server {
-	private readonly hapi: Hapi.Server
-	// private readonly socketIO: SocketIO.Server
-	private readonly socketIO: any
+	private Emulator: Hapi.Server
+	private API: Hapi.Server
+	private socketIO: SocketIO.Server
 	private readonly apolloClient: ApolloClient<any>
-	private apolloServer: ApolloServer
 
 	private players: any
 	private roomId: number
@@ -47,10 +52,6 @@ export default class Server {
 
 		const { server } = config
 		const { port } = server
-
-		this.hapi = new Hapi.Server({
-			port: port
-		})
 
 		this.roomId = 0
 		this.rooms = [
@@ -75,8 +76,6 @@ export default class Server {
 		]
 		this.players = {}
 
-		this.socketIO = SocketIO(this.hapi.listener)
-
 		// this.apolloClient = new ApolloClient({
 		// 	link: new ApolloLink({
 		// 		uri: 'http://localhost:8081/graphql'
@@ -90,45 +89,27 @@ export default class Server {
 
 	private async run(): Promise<void> {
 		try {
-			await this.hapi.register(Inert)
-			await this.hapi.route(Routes)
+			
+			this.Emulator = await createEmulatorServer(this.config)
+			this.socketIO = SocketIO(this.Emulator.listener)
 
 			await this.socketIO
-			await this.connect()
+			await this.loadSocketEvents()
 
 			Logger.info('Started Socket.IO listener')
 
 			var environment = (this.config.mode === 'development') ? true : false
 
-			// Logger.info('Started Apollo [GraphQL] listener')
+			this.API = await createAPIServer(this.config)
 
-			// const schema = makeExecutableSchema({
-			// 	typeDefs,
-			// 	resolvers,
-			// 	resolverValidationOptions: {
-			// 		requireResolversForResolveType: false
-			// 	}
-			// })
+			Logger.info('Started Apollo [GraphQL] listener')
+			Logger.info(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+			Logger.info('Switched to PostgreSQL connector')
+			Logger.info('Connected to Prisma [GraphQL] successfully')
 
-			// this.apolloServer = new ApolloServer({
-			// 	schema,
-			// 	context: {
-			// 		db: prisma
-			// 	}
-			// })
+			await this.Emulator.start()
+			await this.API.start()
 
-			// Logger.info(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
-
-			// await this.apolloServer.applyMiddleware({
-			// 	app: this.hapi
-			// })
-
-			// await this.apolloServer.installSubscriptionHandlers(this.hapi.listener)
-
-			// Logger.info('Switched to PostgreSQL connector')
-			// Logger.info('Connected to Prisma [GraphQL] successfully')
-
-			await this.hapi.start()
 		}
 
 		catch (error) {
@@ -155,40 +136,48 @@ export default class Server {
 		// 	.catch((error: any) => console.error(error))
 	}
 
-	private connect() {
-		this.socketIO.on('connection', (Socket: any) => {
+	private loadSocketEvents() {
 
-			Logger.info(`Connected - ${Socket.id}`)
+		this.socketIO.on('connection', (socket) => {
+			//Event loader
+			fs.readdirSync(path.join(__dirname, "socket/events")).forEach((name) =>{
+				//socket.on(<filename without extension>, callback)
+				socket.on(/(.+)\.ts/i.exec(name)[1], (data: any) => {
+					require(`./socket/events/${name}`).default(socket, data)
+					Logger.info(`Event executed from ${socket.id}: ${name}`)
+				});
+			});
+
+
+			Logger.info(`${Moment().format('h:mm:ss a')} New connection from - ${socket.id}`)
 
 			//this.enterRoom(Socket, this.roomId)
 
-			Socket.on('disconnect', () => {
-				this.disconnectPlayer(Socket, Socket.id)
-			})
 
-			// let player = {
-			// 	x: 0,
-			// 	y: 0
-			// }
+			// Socket.on('disconnect', () => {
+			// 	this.disconnectPlayer(Socket, Socket.id)
+			// })
 
-			Socket.on('requestRoom', (roomId: number) => {
-				this.requestRoom(Socket, roomId)
-			})
+			// Socket.on('requestRoom', (roomId: number) => {
+			// 	this.requestRoom(Socket, roomId)
+			// })
 
-			Socket.on('movePlayer', (destination: any) => {
-				this.movePlayer(
-					[
-						[0, 0, 0, 0, 0, 0, 0],
-						[0, 0, 0, 0, 0, 0, 0],
-						[0, 0, 0, 0, 0, 0, 0],
-						[0, 0, 0, 0, 1, 0, 0]
-					], Socket.id, destination)
-			})
+			// Socket.on('movePlayer', (destination: any) => {
+			// 	this.movePlayer(
+			// 		[
+			// 			[0, 0, 0, 0, 0, 0, 0],
+			// 			[0, 0, 0, 0, 0, 0, 0],
+			// 			[0, 0, 0, 0, 0, 0, 0],
+			// 			[0, 0, 0, 0, 1, 0, 0]
+			// 		], Socket.id, destination)
+			// })
 
 			// Socket.on('tileClick', (mapTiles: any, destination: any) => {
 			// 	this.movePlayer(Socket, mapTiles, player, destination)
 			// })
-		})
+		});
+
+	
 	}
 
 	private requestRoom(Socket: any, roomId: number) {

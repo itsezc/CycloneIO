@@ -110,7 +110,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
                     var cartTileCoords = this._scene.isometricToCartesian({ x: floorSprite.x, y: floorSprite.y, z: 0 })
                     var destination = this._scene.cartesianToCoords(cartTileCoords)
 
-                    this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                    // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
                 })
 
                 floorSprite.on('pointerout', () =>
