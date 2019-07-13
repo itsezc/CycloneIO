@@ -77,13 +77,13 @@ export default class Server {
 
 		this.socketIO = SocketIO(this.hapi.listener)
 
-		this.apolloClient = new ApolloClient({
-			link: new ApolloLink({
-				uri: 'http://localhost:8081/graphql'
-			}),
-			cache: new ApolloCache(),
-			name: 'Database'
-		})
+		// this.apolloClient = new ApolloClient({
+		// 	link: new ApolloLink({
+		// 		uri: 'http://localhost:8081/graphql'
+		// 	}),
+		// 	cache: new ApolloCache(),
+		// 	name: 'Database'
+		// })
 
 		this.run()
 	}
@@ -100,33 +100,33 @@ export default class Server {
 
 			var environment = (this.config.mode === 'development') ? true : false
 
-			Logger.info('Started Apollo [GraphQL] listener')
+			// Logger.info('Started Apollo [GraphQL] listener')
 
-			const schema = makeExecutableSchema({
-				typeDefs,
-				resolvers,
-				resolverValidationOptions: {
-					requireResolversForResolveType: false
-				}
-			})
+			// const schema = makeExecutableSchema({
+			// 	typeDefs,
+			// 	resolvers,
+			// 	resolverValidationOptions: {
+			// 		requireResolversForResolveType: false
+			// 	}
+			// })
 
-			this.apolloServer = new ApolloServer({
-				schema,
-				context: {
-					db: prisma
-				}
-			})
+			// this.apolloServer = new ApolloServer({
+			// 	schema,
+			// 	context: {
+			// 		db: prisma
+			// 	}
+			// })
 
-			Logger.info(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
+			// Logger.info(`${this.config.mode.charAt(0).toUpperCase() + this.config.mode.slice(1)} environment detected, playground and introspection ${environment ? 'enabled' : 'disabled'}`)
 
-			await this.apolloServer.applyMiddleware({
-				app: this.hapi
-			})
+			// await this.apolloServer.applyMiddleware({
+			// 	app: this.hapi
+			// })
 
-			await this.apolloServer.installSubscriptionHandlers(this.hapi.listener)
+			// await this.apolloServer.installSubscriptionHandlers(this.hapi.listener)
 
-			Logger.info('Switched to PostgreSQL connector')
-			Logger.info('Connected to Prisma [GraphQL] successfully')
+			// Logger.info('Switched to PostgreSQL connector')
+			// Logger.info('Connected to Prisma [GraphQL] successfully')
 
 			await this.hapi.start()
 		}

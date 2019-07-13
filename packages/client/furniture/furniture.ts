@@ -244,7 +244,7 @@ export default class Furniture
 		return frames.find(f => f === frameName) != null
 	}
 
-	public getSpriteFrom(size: number | string, shadow: boolean, /* type: IFurnitureType, */ direction?: number, layer?: number, frame?: number): any
+	public getSpriteFrom(size: number | string, shadow: boolean, direction?: number, layer?: number, frame?: number): any
 	{
 		let assetName = shadow ? this.assetNameFrom(size, -1, direction, 0) : this.assetNameFrom(size, layer, direction, frame)
 
@@ -336,7 +336,7 @@ export default class Furniture
 		if (layer.ink)
 		{
 			// 28 is our custom blendMode
-			sprite.setBlendMode(Phaser.BlendModes.ADD);
+			sprite.setBlendMode(Phaser.BlendModes.ADD)
 			//sprite.blendMode = layer.ink === 'ADD' ? 28 : Phaser.BlendModes[layer.ink]
 		}
 
@@ -401,6 +401,6 @@ export default class Furniture
 		}
 		
 		return newAnimation
-    }
+	}
 }
 

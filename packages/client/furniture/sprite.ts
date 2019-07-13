@@ -42,7 +42,6 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         this.setDirection(this.furniture.getDirections()[0])
 
         this.animationRotation = new RotationAnimation(this.rotateFurniture, this)
-        //console.log(this.furniture.data);
 	}
 
     public start()
@@ -50,32 +49,12 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         if (!this.playing)
         {
             this.playing = true
-            // Delta time = Velocity of X < -- > 
             this.timer = this._scene.time.addEvent({ 
                 delay: 0,
                 callback: this.update,
                 callbackScope: this,
                 loop: true,
             })
-
-            // this.timer.args = [this.delta]
-
-            // console.log(this.timer.args)
-           
-            // this.timer = this.clock.addEvent({
-            //     delay: 0,
-            //     callback: this.update,
-            //     callbackScope: this,
-            //     loop: true
-            // }) 
-
-            // this.timer = this.clock.delayedCall(0, this.update, [], this)
-
-            //console.log(this.timer)
-
-            // setTimeout(() => {
-            //     console.log('timeout', this.timer.elapsed)
-            // }, 1000)
         }
     }
 
@@ -97,7 +76,6 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
         {
 
 			//console.log('Animating with ', animation)
-            // Lava Lamp (1 as Animation) -> if (null != 1) -> animation = 1 
             if (this.animation != animation)
             {
                 this.animation = animation

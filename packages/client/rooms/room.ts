@@ -270,6 +270,12 @@ export default class Room extends Phaser.Scene {
                     animation: 8
                 },
                 {
+                    name: 'exe_icecream',
+                    roomX: 1,
+                    roomY: 4,
+                    roomZ: 0,
+                },
+                {
                     name: 'hrella_poster_1',
                     roomX: 6.25,
                     roomY: 0,
@@ -335,33 +341,6 @@ export default class Room extends Phaser.Scene {
             roomSprite.start()
 
             this.add.existing(roomSprite)
-
-            this.camera.setZoom(4)
-
-            /* //roomSprite => 1 instance of a furniture
-            this.add.existing(roomSprite)
-
-            var furniture = new Furniture(this, furnitureData)
-
-            let furnitureSprite = new FurnitureSprite(this, furniture)
-
-            if (furnitureRoomData.animation)
-            {
-                furnitureSprite.animateAndStart(furnitureRoomData.animation);
-            }
-
-            if (furnitureRoomData.color)
-            {
-                furnitureSprite.setColor(furnitureRoomData.color);
-            }
-
-            if (furnitureRoomData.direction)
-            {
-                furnitureSprite.setDirection(furnitureRoomData.direction);
-            }
-
-            roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY);
- */
         })
 
         this._camera.setZoom(1)
