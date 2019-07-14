@@ -1,4 +1,6 @@
-export const requestHotelView = (socket: any, data: any) => {
+import SocketIO from 'socket.io'
+
+export const requestHotelView = (socket: SocketIO.Socket, data: any) => {
     socket.emit('renderHotelView')
 }
 

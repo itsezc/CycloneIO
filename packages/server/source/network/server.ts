@@ -27,13 +27,13 @@ import { AStarFinder, DiagonalMovement, Heuristic, Grid } from 'pathfinding'
 import createAPIServer from './api/APIServer'
 import createEmulatorServer from './socket/SocketServer'
 
-import fs from 'fs'
+import IO from 'fs'
 import path from 'path'
 
 export default class Server {
-	private Emulator: Hapi.Server
+	private emulator: Hapi.Server
 	private API: Hapi.Server
-	private socketIO: SocketIO.Server
+	private socket: SocketIO.Server
 	private readonly apolloClient: ApolloClient<any>
 
 	private players: any
@@ -89,12 +89,12 @@ export default class Server {
 
 	private async run(): Promise<void> {
 		try {
-			
-			this.Emulator = await createEmulatorServer(this.config)
-			this.socketIO = SocketIO(this.Emulator.listener)
 
-			await this.socketIO
-			await this.loadSocketEvents()
+			this.emulator = await createEmulatorServer(this.config)
+			this.socket = SocketIO(this.emulator.listener)
+
+			await this.socket
+			await this.socket.on('connection', this.loadSocketEvents)
 
 			Logger.info('Started Socket.IO listener')
 
@@ -107,7 +107,7 @@ export default class Server {
 			Logger.info('Switched to PostgreSQL connector')
 			Logger.info('Connected to Prisma [GraphQL] successfully')
 
-			await this.Emulator.start()
+			await this.emulator.start()
 			await this.API.start()
 
 		}
@@ -136,48 +136,44 @@ export default class Server {
 		// 	.catch((error: any) => console.error(error))
 	}
 
-	private loadSocketEvents() {
+	private loadSocketEvents(socket: SocketIO.Socket) {
 
-		this.socketIO.on('connection', (socket) => {
-			//Event loader
-			fs.readdirSync(path.join(__dirname, "socket/events")).forEach((name) =>{
-				//socket.on(<filename without extension>, callback)
-				socket.on(/(.+)\.ts/i.exec(name)[1], (data: any) => {
-					require(`./socket/events/${name}`).default(socket, data)
-					Logger.info(`Event executed from ${socket.id}: ${name}`)
-				});
+		//Event loader
+		IO.readdirSync(path.join(__dirname, 'socket/events')).forEach((name) => {
+			//socket.on(<filename without extension>, callback)
+			socket.on(/(.+)\.ts/i.exec(name)[1], (data: any) => {
+				require(`./socket/events/${name}`).default(socket, data)
+				Logger.info(`Event executed from ${socket.id}: ${name}`)
 			});
-
-
-			Logger.info(`${Moment().format('h:mm:ss a')} New connection from - ${socket.id}`)
-
-			//this.enterRoom(Socket, this.roomId)
-
-
-			// Socket.on('disconnect', () => {
-			// 	this.disconnectPlayer(Socket, Socket.id)
-			// })
-
-			// Socket.on('requestRoom', (roomId: number) => {
-			// 	this.requestRoom(Socket, roomId)
-			// })
-
-			// Socket.on('movePlayer', (destination: any) => {
-			// 	this.movePlayer(
-			// 		[
-			// 			[0, 0, 0, 0, 0, 0, 0],
-			// 			[0, 0, 0, 0, 0, 0, 0],
-			// 			[0, 0, 0, 0, 0, 0, 0],
-			// 			[0, 0, 0, 0, 1, 0, 0]
-			// 		], Socket.id, destination)
-			// })
-
-			// Socket.on('tileClick', (mapTiles: any, destination: any) => {
-			// 	this.movePlayer(Socket, mapTiles, player, destination)
-			// })
 		});
 
-	
+		Logger.info(`New connection from ${socket.id}`)
+
+		//this.enterRoom(Socket, this.roomId)
+
+
+		// Socket.on('disconnect', () => {
+		// 	this.disconnectPlayer(Socket, Socket.id)
+		// })
+
+		// Socket.on('requestRoom', (roomId: number) => {
+		// 	this.requestRoom(Socket, roomId)
+		// })
+
+		// Socket.on('movePlayer', (destination: any) => {
+		// 	this.movePlayer(
+		// 		[
+		// 			[0, 0, 0, 0, 0, 0, 0],
+		// 			[0, 0, 0, 0, 0, 0, 0],
+		// 			[0, 0, 0, 0, 0, 0, 0],
+		// 			[0, 0, 0, 0, 1, 0, 0]
+		// 		], Socket.id, destination)
+		// })
+
+		// Socket.on('tileClick', (mapTiles: any, destination: any) => {
+		// 	this.movePlayer(Socket, mapTiles, player, destination)
+		// })
+
 	}
 
 	private requestRoom(Socket: any, roomId: number) {

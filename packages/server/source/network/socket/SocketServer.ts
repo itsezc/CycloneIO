@@ -3,9 +3,8 @@ import Inert from '@hapi/inert'
 import Routes from './routes'
 import CycloneConfig from '../../../../common/types/config'
 
-
 export const createEmulatorServer = async (config: CycloneConfig): Promise<Hapi.Server> => {
-    
+
     const { server } = config
     const { port } = server
 

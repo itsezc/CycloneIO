@@ -38,8 +38,7 @@ import CycloneConfig from '../../../../common/types/config'
 
     await apolloServer.installSubscriptionHandlers(api.listener)
 
-
-    return api;
+    return api
  }
 
  export default createAPIServer
