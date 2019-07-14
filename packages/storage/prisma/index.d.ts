@@ -832,20 +832,20 @@ export type CatalogFeaturedOrderByInput =
 export type CatalogPageOrderByInput =
   | "id_ASC"
   | "id_DESC"
+  | "link_ASC"
+  | "link_DESC"
   | "layout_ASC"
   | "layout_DESC"
   | "order_ASC"
   | "order_DESC"
   | "name_ASC"
   | "name_DESC"
-  | "caption_ASC"
-  | "caption_DESC"
   | "description_ASC"
   | "description_DESC"
   | "icon_ASC"
   | "icon_DESC"
-  | "headline_ASC"
-  | "headline_DESC"
+  | "banner_ASC"
+  | "banner_DESC"
   | "teaser_ASC"
   | "teaser_DESC"
   | "visible_ASC"
@@ -858,8 +858,8 @@ export type CatalogPageOrderByInput =
   | "club_DESC"
   | "vip_ASC"
   | "vip_DESC"
-  | "meta_ASC"
-  | "meta_DESC"
+  | "body_ASC"
+  | "body_DESC"
   | "product_ASC"
   | "product_DESC";
 
@@ -1412,6 +1412,20 @@ export interface CatalogPageWhereInput {
   id_not_starts_with?: Maybe<ID_Input>;
   id_ends_with?: Maybe<ID_Input>;
   id_not_ends_with?: Maybe<ID_Input>;
+  link?: Maybe<String>;
+  link_not?: Maybe<String>;
+  link_in?: Maybe<String[] | String>;
+  link_not_in?: Maybe<String[] | String>;
+  link_lt?: Maybe<String>;
+  link_lte?: Maybe<String>;
+  link_gt?: Maybe<String>;
+  link_gte?: Maybe<String>;
+  link_contains?: Maybe<String>;
+  link_not_contains?: Maybe<String>;
+  link_starts_with?: Maybe<String>;
+  link_not_starts_with?: Maybe<String>;
+  link_ends_with?: Maybe<String>;
+  link_not_ends_with?: Maybe<String>;
   parent?: Maybe<CatalogPageWhereInput>;
   layout?: Maybe<CatalogPageLayout>;
   layout_not?: Maybe<CatalogPageLayout>;
@@ -1440,20 +1454,6 @@ export interface CatalogPageWhereInput {
   name_ends_with?: Maybe<String>;
   name_not_ends_with?: Maybe<String>;
   language?: Maybe<LanguageWhereInput>;
-  caption?: Maybe<String>;
-  caption_not?: Maybe<String>;
-  caption_in?: Maybe<String[] | String>;
-  caption_not_in?: Maybe<String[] | String>;
-  caption_lt?: Maybe<String>;
-  caption_lte?: Maybe<String>;
-  caption_gt?: Maybe<String>;
-  caption_gte?: Maybe<String>;
-  caption_contains?: Maybe<String>;
-  caption_not_contains?: Maybe<String>;
-  caption_starts_with?: Maybe<String>;
-  caption_not_starts_with?: Maybe<String>;
-  caption_ends_with?: Maybe<String>;
-  caption_not_ends_with?: Maybe<String>;
   description?: Maybe<String>;
   description_not?: Maybe<String>;
   description_in?: Maybe<String[] | String>;
@@ -1482,20 +1482,20 @@ export interface CatalogPageWhereInput {
   icon_not_starts_with?: Maybe<String>;
   icon_ends_with?: Maybe<String>;
   icon_not_ends_with?: Maybe<String>;
-  headline?: Maybe<String>;
-  headline_not?: Maybe<String>;
-  headline_in?: Maybe<String[] | String>;
-  headline_not_in?: Maybe<String[] | String>;
-  headline_lt?: Maybe<String>;
-  headline_lte?: Maybe<String>;
-  headline_gt?: Maybe<String>;
-  headline_gte?: Maybe<String>;
-  headline_contains?: Maybe<String>;
-  headline_not_contains?: Maybe<String>;
-  headline_starts_with?: Maybe<String>;
-  headline_not_starts_with?: Maybe<String>;
-  headline_ends_with?: Maybe<String>;
-  headline_not_ends_with?: Maybe<String>;
+  banner?: Maybe<String>;
+  banner_not?: Maybe<String>;
+  banner_in?: Maybe<String[] | String>;
+  banner_not_in?: Maybe<String[] | String>;
+  banner_lt?: Maybe<String>;
+  banner_lte?: Maybe<String>;
+  banner_gt?: Maybe<String>;
+  banner_gte?: Maybe<String>;
+  banner_contains?: Maybe<String>;
+  banner_not_contains?: Maybe<String>;
+  banner_starts_with?: Maybe<String>;
+  banner_not_starts_with?: Maybe<String>;
+  banner_ends_with?: Maybe<String>;
+  banner_not_ends_with?: Maybe<String>;
   teaser?: Maybe<String>;
   teaser_not?: Maybe<String>;
   teaser_in?: Maybe<String[] | String>;
@@ -1597,6 +1597,7 @@ export interface LanguageWhereInput {
 
 export type CatalogPageWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
+  link?: Maybe<String>;
 }>;
 
 export type ChatlogWhereUniqueInput = AtLeastOne<{
@@ -2476,22 +2477,22 @@ export interface CatalogPageCreateOneInput {
 
 export interface CatalogPageCreateInput {
   id?: Maybe<ID_Input>;
+  link: String;
   parent?: Maybe<CatalogPageCreateOneInput>;
   layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
-  name: String;
+  name?: Maybe<String>;
   language?: Maybe<LanguageCreateOneInput>;
-  caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
-  headline?: Maybe<String>;
+  banner?: Maybe<String>;
   teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  meta?: Maybe<Json>;
+  body?: Maybe<Json>;
   product?: Maybe<Json>;
 }
 
@@ -2525,22 +2526,22 @@ export interface CatalogPageUpdateOneInput {
 }
 
 export interface CatalogPageUpdateDataInput {
+  link?: Maybe<String>;
   parent?: Maybe<CatalogPageUpdateOneInput>;
   layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
   language?: Maybe<LanguageUpdateOneInput>;
-  caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
-  headline?: Maybe<String>;
+  banner?: Maybe<String>;
   teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  meta?: Maybe<Json>;
+  body?: Maybe<Json>;
   product?: Maybe<Json>;
 }
 
@@ -2577,40 +2578,40 @@ export interface CatalogFeaturedUpdateManyMutationInput {
 }
 
 export interface CatalogPageUpdateInput {
+  link?: Maybe<String>;
   parent?: Maybe<CatalogPageUpdateOneInput>;
   layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
   language?: Maybe<LanguageUpdateOneInput>;
-  caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
-  headline?: Maybe<String>;
+  banner?: Maybe<String>;
   teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  meta?: Maybe<Json>;
+  body?: Maybe<Json>;
   product?: Maybe<Json>;
 }
 
 export interface CatalogPageUpdateManyMutationInput {
+  link?: Maybe<String>;
   layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
-  caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
-  headline?: Maybe<String>;
+  banner?: Maybe<String>;
   teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  meta?: Maybe<Json>;
+  body?: Maybe<Json>;
   product?: Maybe<Json>;
 }
 
@@ -4069,41 +4070,41 @@ export interface CatalogFeaturedNullablePromise
 
 export interface CatalogPage {
   id: ID_Output;
+  link: String;
   layout?: CatalogPageLayout;
   order?: Int;
-  name: String;
-  caption?: String;
+  name?: String;
   description?: String;
   icon?: String;
-  headline?: String;
+  banner?: String;
   teaser?: String;
   visible?: Boolean;
   enabled?: Boolean;
   rank?: Int;
   club?: Boolean;
   vip?: Boolean;
-  meta?: Json;
+  body?: Json;
   product?: Json;
 }
 
 export interface CatalogPagePromise extends Promise<CatalogPage>, Fragmentable {
   id: () => Promise<ID_Output>;
+  link: () => Promise<String>;
   parent: <T = CatalogPagePromise>() => T;
   layout: () => Promise<CatalogPageLayout>;
   order: () => Promise<Int>;
   name: () => Promise<String>;
   language: <T = LanguagePromise>() => T;
-  caption: () => Promise<String>;
   description: () => Promise<String>;
   icon: () => Promise<String>;
-  headline: () => Promise<String>;
+  banner: () => Promise<String>;
   teaser: () => Promise<String>;
   visible: () => Promise<Boolean>;
   enabled: () => Promise<Boolean>;
   rank: () => Promise<Int>;
   club: () => Promise<Boolean>;
   vip: () => Promise<Boolean>;
-  meta: () => Promise<Json>;
+  body: () => Promise<Json>;
   product: () => Promise<Json>;
 }
 
@@ -4111,22 +4112,22 @@ export interface CatalogPageSubscription
   extends Promise<AsyncIterator<CatalogPage>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
+  link: () => Promise<AsyncIterator<String>>;
   parent: <T = CatalogPageSubscription>() => T;
   layout: () => Promise<AsyncIterator<CatalogPageLayout>>;
   order: () => Promise<AsyncIterator<Int>>;
   name: () => Promise<AsyncIterator<String>>;
   language: <T = LanguageSubscription>() => T;
-  caption: () => Promise<AsyncIterator<String>>;
   description: () => Promise<AsyncIterator<String>>;
   icon: () => Promise<AsyncIterator<String>>;
-  headline: () => Promise<AsyncIterator<String>>;
+  banner: () => Promise<AsyncIterator<String>>;
   teaser: () => Promise<AsyncIterator<String>>;
   visible: () => Promise<AsyncIterator<Boolean>>;
   enabled: () => Promise<AsyncIterator<Boolean>>;
   rank: () => Promise<AsyncIterator<Int>>;
   club: () => Promise<AsyncIterator<Boolean>>;
   vip: () => Promise<AsyncIterator<Boolean>>;
-  meta: () => Promise<AsyncIterator<Json>>;
+  body: () => Promise<AsyncIterator<Json>>;
   product: () => Promise<AsyncIterator<Json>>;
 }
 
@@ -4134,22 +4135,22 @@ export interface CatalogPageNullablePromise
   extends Promise<CatalogPage | null>,
     Fragmentable {
   id: () => Promise<ID_Output>;
+  link: () => Promise<String>;
   parent: <T = CatalogPagePromise>() => T;
   layout: () => Promise<CatalogPageLayout>;
   order: () => Promise<Int>;
   name: () => Promise<String>;
   language: <T = LanguagePromise>() => T;
-  caption: () => Promise<String>;
   description: () => Promise<String>;
   icon: () => Promise<String>;
-  headline: () => Promise<String>;
+  banner: () => Promise<String>;
   teaser: () => Promise<String>;
   visible: () => Promise<Boolean>;
   enabled: () => Promise<Boolean>;
   rank: () => Promise<Int>;
   club: () => Promise<Boolean>;
   vip: () => Promise<Boolean>;
-  meta: () => Promise<Json>;
+  body: () => Promise<Json>;
   product: () => Promise<Json>;
 }
 
@@ -5736,20 +5737,20 @@ export interface CatalogPageSubscriptionPayloadSubscription
 
 export interface CatalogPagePreviousValues {
   id: ID_Output;
+  link: String;
   layout?: CatalogPageLayout;
   order?: Int;
-  name: String;
-  caption?: String;
+  name?: String;
   description?: String;
   icon?: String;
-  headline?: String;
+  banner?: String;
   teaser?: String;
   visible?: Boolean;
   enabled?: Boolean;
   rank?: Int;
   club?: Boolean;
   vip?: Boolean;
-  meta?: Json;
+  body?: Json;
   product?: Json;
 }
 
@@ -5757,20 +5758,20 @@ export interface CatalogPagePreviousValuesPromise
   extends Promise<CatalogPagePreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
+  link: () => Promise<String>;
   layout: () => Promise<CatalogPageLayout>;
   order: () => Promise<Int>;
   name: () => Promise<String>;
-  caption: () => Promise<String>;
   description: () => Promise<String>;
   icon: () => Promise<String>;
-  headline: () => Promise<String>;
+  banner: () => Promise<String>;
   teaser: () => Promise<String>;
   visible: () => Promise<Boolean>;
   enabled: () => Promise<Boolean>;
   rank: () => Promise<Int>;
   club: () => Promise<Boolean>;
   vip: () => Promise<Boolean>;
-  meta: () => Promise<Json>;
+  body: () => Promise<Json>;
   product: () => Promise<Json>;
 }
 
@@ -5778,20 +5779,20 @@ export interface CatalogPagePreviousValuesSubscription
   extends Promise<AsyncIterator<CatalogPagePreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
+  link: () => Promise<AsyncIterator<String>>;
   layout: () => Promise<AsyncIterator<CatalogPageLayout>>;
   order: () => Promise<AsyncIterator<Int>>;
   name: () => Promise<AsyncIterator<String>>;
-  caption: () => Promise<AsyncIterator<String>>;
   description: () => Promise<AsyncIterator<String>>;
   icon: () => Promise<AsyncIterator<String>>;
-  headline: () => Promise<AsyncIterator<String>>;
+  banner: () => Promise<AsyncIterator<String>>;
   teaser: () => Promise<AsyncIterator<String>>;
   visible: () => Promise<AsyncIterator<Boolean>>;
   enabled: () => Promise<AsyncIterator<Boolean>>;
   rank: () => Promise<AsyncIterator<Int>>;
   club: () => Promise<AsyncIterator<Boolean>>;
   vip: () => Promise<AsyncIterator<Boolean>>;
-  meta: () => Promise<AsyncIterator<Json>>;
+  body: () => Promise<AsyncIterator<Json>>;
   product: () => Promise<AsyncIterator<Json>>;
 }
 

@@ -875,22 +875,22 @@ input CatalogFeaturedWhereUniqueInput {
 
 type CatalogPage {
   id: ID!
+  link: String!
   parent: CatalogPage
   layout: CatalogPageLayout
   order: Int
-  name: String!
+  name: String
   language: Language
-  caption: String
   description: String
   icon: String
-  headline: String
+  banner: String
   teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  meta: Json
+  body: Json
   product: Json
 }
 
@@ -902,22 +902,22 @@ type CatalogPageConnection {
 
 input CatalogPageCreateInput {
   id: ID
+  link: String!
   parent: CatalogPageCreateOneInput
   layout: CatalogPageLayout
   order: Int
-  name: String!
+  name: String
   language: LanguageCreateOneInput
-  caption: String
   description: String
   icon: String
-  headline: String
+  banner: String
   teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  meta: Json
+  body: Json
   product: Json
 }
 
@@ -960,20 +960,20 @@ enum CatalogPageLayout {
 enum CatalogPageOrderByInput {
   id_ASC
   id_DESC
+  link_ASC
+  link_DESC
   layout_ASC
   layout_DESC
   order_ASC
   order_DESC
   name_ASC
   name_DESC
-  caption_ASC
-  caption_DESC
   description_ASC
   description_DESC
   icon_ASC
   icon_DESC
-  headline_ASC
-  headline_DESC
+  banner_ASC
+  banner_DESC
   teaser_ASC
   teaser_DESC
   visible_ASC
@@ -986,28 +986,28 @@ enum CatalogPageOrderByInput {
   club_DESC
   vip_ASC
   vip_DESC
-  meta_ASC
-  meta_DESC
+  body_ASC
+  body_DESC
   product_ASC
   product_DESC
 }
 
 type CatalogPagePreviousValues {
   id: ID!
+  link: String!
   layout: CatalogPageLayout
   order: Int
-  name: String!
-  caption: String
+  name: String
   description: String
   icon: String
-  headline: String
+  banner: String
   teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  meta: Json
+  body: Json
   product: Json
 }
 
@@ -1030,60 +1030,60 @@ input CatalogPageSubscriptionWhereInput {
 }
 
 input CatalogPageUpdateDataInput {
+  link: String
   parent: CatalogPageUpdateOneInput
   layout: CatalogPageLayout
   order: Int
   name: String
   language: LanguageUpdateOneInput
-  caption: String
   description: String
   icon: String
-  headline: String
+  banner: String
   teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  meta: Json
+  body: Json
   product: Json
 }
 
 input CatalogPageUpdateInput {
+  link: String
   parent: CatalogPageUpdateOneInput
   layout: CatalogPageLayout
   order: Int
   name: String
   language: LanguageUpdateOneInput
-  caption: String
   description: String
   icon: String
-  headline: String
+  banner: String
   teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  meta: Json
+  body: Json
   product: Json
 }
 
 input CatalogPageUpdateManyMutationInput {
+  link: String
   layout: CatalogPageLayout
   order: Int
   name: String
-  caption: String
   description: String
   icon: String
-  headline: String
+  banner: String
   teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  meta: Json
+  body: Json
   product: Json
 }
 
@@ -1116,6 +1116,20 @@ input CatalogPageWhereInput {
   id_not_starts_with: ID
   id_ends_with: ID
   id_not_ends_with: ID
+  link: String
+  link_not: String
+  link_in: [String!]
+  link_not_in: [String!]
+  link_lt: String
+  link_lte: String
+  link_gt: String
+  link_gte: String
+  link_contains: String
+  link_not_contains: String
+  link_starts_with: String
+  link_not_starts_with: String
+  link_ends_with: String
+  link_not_ends_with: String
   parent: CatalogPageWhereInput
   layout: CatalogPageLayout
   layout_not: CatalogPageLayout
@@ -1144,20 +1158,6 @@ input CatalogPageWhereInput {
   name_ends_with: String
   name_not_ends_with: String
   language: LanguageWhereInput
-  caption: String
-  caption_not: String
-  caption_in: [String!]
-  caption_not_in: [String!]
-  caption_lt: String
-  caption_lte: String
-  caption_gt: String
-  caption_gte: String
-  caption_contains: String
-  caption_not_contains: String
-  caption_starts_with: String
-  caption_not_starts_with: String
-  caption_ends_with: String
-  caption_not_ends_with: String
   description: String
   description_not: String
   description_in: [String!]
@@ -1186,20 +1186,20 @@ input CatalogPageWhereInput {
   icon_not_starts_with: String
   icon_ends_with: String
   icon_not_ends_with: String
-  headline: String
-  headline_not: String
-  headline_in: [String!]
-  headline_not_in: [String!]
-  headline_lt: String
-  headline_lte: String
-  headline_gt: String
-  headline_gte: String
-  headline_contains: String
-  headline_not_contains: String
-  headline_starts_with: String
-  headline_not_starts_with: String
-  headline_ends_with: String
-  headline_not_ends_with: String
+  banner: String
+  banner_not: String
+  banner_in: [String!]
+  banner_not_in: [String!]
+  banner_lt: String
+  banner_lte: String
+  banner_gt: String
+  banner_gte: String
+  banner_contains: String
+  banner_not_contains: String
+  banner_starts_with: String
+  banner_not_starts_with: String
+  banner_ends_with: String
+  banner_not_ends_with: String
   teaser: String
   teaser_not: String
   teaser_in: [String!]
@@ -1237,6 +1237,7 @@ input CatalogPageWhereInput {
 
 input CatalogPageWhereUniqueInput {
   id: ID
+  link: String
 }
 
 type Chatlog {
