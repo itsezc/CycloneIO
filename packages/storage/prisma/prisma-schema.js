@@ -39,6 +39,10 @@ type AggregateHabbo {
   count: Int!
 }
 
+type AggregateLanguage {
+  count: Int!
+}
+
 type AggregateNavigatorCategory {
   count: Int!
 }
@@ -875,15 +879,19 @@ type CatalogPage {
   layout: CatalogPageLayout
   order: Int
   name: String!
+  language: Language
   caption: String
   description: String
   icon: String
+  headline: String
+  teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  body: String
+  meta: Json
+  product: Json
 }
 
 type CatalogPageConnection {
@@ -898,15 +906,19 @@ input CatalogPageCreateInput {
   layout: CatalogPageLayout
   order: Int
   name: String!
+  language: LanguageCreateOneInput
   caption: String
   description: String
   icon: String
+  headline: String
+  teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  body: String
+  meta: Json
+  product: Json
 }
 
 input CatalogPageCreateOneInput {
@@ -960,6 +972,10 @@ enum CatalogPageOrderByInput {
   description_DESC
   icon_ASC
   icon_DESC
+  headline_ASC
+  headline_DESC
+  teaser_ASC
+  teaser_DESC
   visible_ASC
   visible_DESC
   enabled_ASC
@@ -970,8 +986,10 @@ enum CatalogPageOrderByInput {
   club_DESC
   vip_ASC
   vip_DESC
-  body_ASC
-  body_DESC
+  meta_ASC
+  meta_DESC
+  product_ASC
+  product_DESC
 }
 
 type CatalogPagePreviousValues {
@@ -982,12 +1000,15 @@ type CatalogPagePreviousValues {
   caption: String
   description: String
   icon: String
+  headline: String
+  teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  body: String
+  meta: Json
+  product: Json
 }
 
 type CatalogPageSubscriptionPayload {
@@ -1013,15 +1034,19 @@ input CatalogPageUpdateDataInput {
   layout: CatalogPageLayout
   order: Int
   name: String
+  language: LanguageUpdateOneInput
   caption: String
   description: String
   icon: String
+  headline: String
+  teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  body: String
+  meta: Json
+  product: Json
 }
 
 input CatalogPageUpdateInput {
@@ -1029,15 +1054,19 @@ input CatalogPageUpdateInput {
   layout: CatalogPageLayout
   order: Int
   name: String
+  language: LanguageUpdateOneInput
   caption: String
   description: String
   icon: String
+  headline: String
+  teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  body: String
+  meta: Json
+  product: Json
 }
 
 input CatalogPageUpdateManyMutationInput {
@@ -1047,12 +1076,15 @@ input CatalogPageUpdateManyMutationInput {
   caption: String
   description: String
   icon: String
+  headline: String
+  teaser: String
   visible: Boolean
   enabled: Boolean
   rank: Int
   club: Boolean
   vip: Boolean
-  body: String
+  meta: Json
+  product: Json
 }
 
 input CatalogPageUpdateOneInput {
@@ -1111,6 +1143,7 @@ input CatalogPageWhereInput {
   name_not_starts_with: String
   name_ends_with: String
   name_not_ends_with: String
+  language: LanguageWhereInput
   caption: String
   caption_not: String
   caption_in: [String!]
@@ -1153,6 +1186,34 @@ input CatalogPageWhereInput {
   icon_not_starts_with: String
   icon_ends_with: String
   icon_not_ends_with: String
+  headline: String
+  headline_not: String
+  headline_in: [String!]
+  headline_not_in: [String!]
+  headline_lt: String
+  headline_lte: String
+  headline_gt: String
+  headline_gte: String
+  headline_contains: String
+  headline_not_contains: String
+  headline_starts_with: String
+  headline_not_starts_with: String
+  headline_ends_with: String
+  headline_not_ends_with: String
+  teaser: String
+  teaser_not: String
+  teaser_in: [String!]
+  teaser_not_in: [String!]
+  teaser_lt: String
+  teaser_lte: String
+  teaser_gt: String
+  teaser_gte: String
+  teaser_contains: String
+  teaser_not_contains: String
+  teaser_starts_with: String
+  teaser_not_starts_with: String
+  teaser_ends_with: String
+  teaser_not_ends_with: String
   visible: Boolean
   visible_not: Boolean
   enabled: Boolean
@@ -1169,20 +1230,6 @@ input CatalogPageWhereInput {
   club_not: Boolean
   vip: Boolean
   vip_not: Boolean
-  body: String
-  body_not: String
-  body_in: [String!]
-  body_not_in: [String!]
-  body_lt: String
-  body_lte: String
-  body_gt: String
-  body_gte: String
-  body_contains: String
-  body_not_contains: String
-  body_starts_with: String
-  body_not_starts_with: String
-  body_ends_with: String
-  body_not_ends_with: String
   AND: [CatalogPageWhereInput!]
   OR: [CatalogPageWhereInput!]
   NOT: [CatalogPageWhereInput!]
@@ -2191,6 +2238,181 @@ input HabboWhereUniqueInput {
 
 scalar Json
 
+type Language {
+  id: ID!
+  name: String
+  native: String
+  code: String!
+  enabled: Boolean
+}
+
+type LanguageConnection {
+  pageInfo: PageInfo!
+  edges: [LanguageEdge]!
+  aggregate: AggregateLanguage!
+}
+
+input LanguageCreateInput {
+  id: ID
+  name: String
+  native: String
+  code: String!
+  enabled: Boolean
+}
+
+input LanguageCreateOneInput {
+  create: LanguageCreateInput
+  connect: LanguageWhereUniqueInput
+}
+
+type LanguageEdge {
+  node: Language!
+  cursor: String!
+}
+
+enum LanguageOrderByInput {
+  id_ASC
+  id_DESC
+  name_ASC
+  name_DESC
+  native_ASC
+  native_DESC
+  code_ASC
+  code_DESC
+  enabled_ASC
+  enabled_DESC
+}
+
+type LanguagePreviousValues {
+  id: ID!
+  name: String
+  native: String
+  code: String!
+  enabled: Boolean
+}
+
+type LanguageSubscriptionPayload {
+  mutation: MutationType!
+  node: Language
+  updatedFields: [String!]
+  previousValues: LanguagePreviousValues
+}
+
+input LanguageSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: LanguageWhereInput
+  AND: [LanguageSubscriptionWhereInput!]
+  OR: [LanguageSubscriptionWhereInput!]
+  NOT: [LanguageSubscriptionWhereInput!]
+}
+
+input LanguageUpdateDataInput {
+  name: String
+  native: String
+  code: String
+  enabled: Boolean
+}
+
+input LanguageUpdateInput {
+  name: String
+  native: String
+  code: String
+  enabled: Boolean
+}
+
+input LanguageUpdateManyMutationInput {
+  name: String
+  native: String
+  code: String
+  enabled: Boolean
+}
+
+input LanguageUpdateOneInput {
+  create: LanguageCreateInput
+  update: LanguageUpdateDataInput
+  upsert: LanguageUpsertNestedInput
+  delete: Boolean
+  disconnect: Boolean
+  connect: LanguageWhereUniqueInput
+}
+
+input LanguageUpsertNestedInput {
+  update: LanguageUpdateDataInput!
+  create: LanguageCreateInput!
+}
+
+input LanguageWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  native: String
+  native_not: String
+  native_in: [String!]
+  native_not_in: [String!]
+  native_lt: String
+  native_lte: String
+  native_gt: String
+  native_gte: String
+  native_contains: String
+  native_not_contains: String
+  native_starts_with: String
+  native_not_starts_with: String
+  native_ends_with: String
+  native_not_ends_with: String
+  code: String
+  code_not: String
+  code_in: [String!]
+  code_not_in: [String!]
+  code_lt: String
+  code_lte: String
+  code_gt: String
+  code_gte: String
+  code_contains: String
+  code_not_contains: String
+  code_starts_with: String
+  code_not_starts_with: String
+  code_ends_with: String
+  code_not_ends_with: String
+  enabled: Boolean
+  enabled_not: Boolean
+  AND: [LanguageWhereInput!]
+  OR: [LanguageWhereInput!]
+  NOT: [LanguageWhereInput!]
+}
+
+input LanguageWhereUniqueInput {
+  id: ID
+  code: String
+}
+
 scalar Long
 
 type Mutation {
@@ -2248,6 +2470,12 @@ type Mutation {
   upsertHabbo(where: HabboWhereUniqueInput!, create: HabboCreateInput!, update: HabboUpdateInput!): Habbo!
   deleteHabbo(where: HabboWhereUniqueInput!): Habbo
   deleteManyHabboes(where: HabboWhereInput): BatchPayload!
+  createLanguage(data: LanguageCreateInput!): Language!
+  updateLanguage(data: LanguageUpdateInput!, where: LanguageWhereUniqueInput!): Language
+  updateManyLanguages(data: LanguageUpdateManyMutationInput!, where: LanguageWhereInput): BatchPayload!
+  upsertLanguage(where: LanguageWhereUniqueInput!, create: LanguageCreateInput!, update: LanguageUpdateInput!): Language!
+  deleteLanguage(where: LanguageWhereUniqueInput!): Language
+  deleteManyLanguages(where: LanguageWhereInput): BatchPayload!
   createNavigatorCategory(data: NavigatorCategoryCreateInput!): NavigatorCategory!
   updateNavigatorCategory(data: NavigatorCategoryUpdateInput!, where: NavigatorCategoryWhereUniqueInput!): NavigatorCategory
   updateManyNavigatorCategories(data: NavigatorCategoryUpdateManyMutationInput!, where: NavigatorCategoryWhereInput): BatchPayload!
@@ -2503,6 +2731,7 @@ type NavigatorTab {
   id: ID!
   name: String
   order: Int
+  language: Language
   categories(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategory!]
 }
 
@@ -2516,6 +2745,7 @@ input NavigatorTabCreateInput {
   id: ID
   name: String
   order: Int
+  language: LanguageCreateOneInput
   categories: NavigatorCategoryCreateManyWithoutParentInput
 }
 
@@ -2528,6 +2758,7 @@ input NavigatorTabCreateWithoutCategoriesInput {
   id: ID
   name: String
   order: Int
+  language: LanguageCreateOneInput
 }
 
 type NavigatorTabEdge {
@@ -2571,6 +2802,7 @@ input NavigatorTabSubscriptionWhereInput {
 input NavigatorTabUpdateInput {
   name: String
   order: Int
+  language: LanguageUpdateOneInput
   categories: NavigatorCategoryUpdateManyWithoutParentInput
 }
 
@@ -2591,6 +2823,7 @@ input NavigatorTabUpdateOneWithoutCategoriesInput {
 input NavigatorTabUpdateWithoutCategoriesDataInput {
   name: String
   order: Int
+  language: LanguageUpdateOneInput
 }
 
 input NavigatorTabUpsertWithoutCategoriesInput {
@@ -2635,6 +2868,7 @@ input NavigatorTabWhereInput {
   order_lte: Int
   order_gt: Int
   order_gte: Int
+  language: LanguageWhereInput
   categories_every: NavigatorCategoryWhereInput
   categories_some: NavigatorCategoryWhereInput
   categories_none: NavigatorCategoryWhereInput
@@ -2645,7 +2879,6 @@ input NavigatorTabWhereInput {
 
 input NavigatorTabWhereUniqueInput {
   id: ID
-  order: Int
 }
 
 type News {
@@ -2875,6 +3108,9 @@ type Query {
   habbo(where: HabboWhereUniqueInput!): Habbo
   habboes(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Habbo]!
   habboesConnection(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): HabboConnection!
+  language(where: LanguageWhereUniqueInput!): Language
+  languages(where: LanguageWhereInput, orderBy: LanguageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Language]!
+  languagesConnection(where: LanguageWhereInput, orderBy: LanguageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): LanguageConnection!
   navigatorCategory(where: NavigatorCategoryWhereUniqueInput!): NavigatorCategory
   navigatorCategories(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [NavigatorCategory]!
   navigatorCategoriesConnection(where: NavigatorCategoryWhereInput, orderBy: NavigatorCategoryOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): NavigatorCategoryConnection!
@@ -3326,6 +3562,7 @@ type Subscription {
   chatlogConsole(where: ChatlogConsoleSubscriptionWhereInput): ChatlogConsoleSubscriptionPayload
   chatlogConsoleInvitations(where: ChatlogConsoleInvitationsSubscriptionWhereInput): ChatlogConsoleInvitationsSubscriptionPayload
   habbo(where: HabboSubscriptionWhereInput): HabboSubscriptionPayload
+  language(where: LanguageSubscriptionWhereInput): LanguageSubscriptionPayload
   navigatorCategory(where: NavigatorCategorySubscriptionWhereInput): NavigatorCategorySubscriptionPayload
   navigatorTab(where: NavigatorTabSubscriptionWhereInput): NavigatorTabSubscriptionPayload
   news(where: NewsSubscriptionWhereInput): NewsSubscriptionPayload

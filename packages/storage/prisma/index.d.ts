@@ -27,6 +27,7 @@ export interface Exists {
     where?: ChatlogConsoleInvitationsWhereInput
   ) => Promise<boolean>;
   habbo: (where?: HabboWhereInput) => Promise<boolean>;
+  language: (where?: LanguageWhereInput) => Promise<boolean>;
   navigatorCategory: (where?: NavigatorCategoryWhereInput) => Promise<boolean>;
   navigatorTab: (where?: NavigatorTabWhereInput) => Promise<boolean>;
   news: (where?: NewsWhereInput) => Promise<boolean>;
@@ -233,6 +234,25 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => HabboConnectionPromise;
+  language: (where: LanguageWhereUniqueInput) => LanguageNullablePromise;
+  languages: (args?: {
+    where?: LanguageWhereInput;
+    orderBy?: LanguageOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<Language>;
+  languagesConnection: (args?: {
+    where?: LanguageWhereInput;
+    orderBy?: LanguageOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => LanguageConnectionPromise;
   navigatorCategory: (
     where: NavigatorCategoryWhereUniqueInput
   ) => NavigatorCategoryNullablePromise;
@@ -521,6 +541,22 @@ export interface Prisma {
   }) => HabboPromise;
   deleteHabbo: (where: HabboWhereUniqueInput) => HabboPromise;
   deleteManyHabboes: (where?: HabboWhereInput) => BatchPayloadPromise;
+  createLanguage: (data: LanguageCreateInput) => LanguagePromise;
+  updateLanguage: (args: {
+    data: LanguageUpdateInput;
+    where: LanguageWhereUniqueInput;
+  }) => LanguagePromise;
+  updateManyLanguages: (args: {
+    data: LanguageUpdateManyMutationInput;
+    where?: LanguageWhereInput;
+  }) => BatchPayloadPromise;
+  upsertLanguage: (args: {
+    where: LanguageWhereUniqueInput;
+    create: LanguageCreateInput;
+    update: LanguageUpdateInput;
+  }) => LanguagePromise;
+  deleteLanguage: (where: LanguageWhereUniqueInput) => LanguagePromise;
+  deleteManyLanguages: (where?: LanguageWhereInput) => BatchPayloadPromise;
   createNavigatorCategory: (
     data: NavigatorCategoryCreateInput
   ) => NavigatorCategoryPromise;
@@ -663,6 +699,9 @@ export interface Subscription {
   habbo: (
     where?: HabboSubscriptionWhereInput
   ) => HabboSubscriptionPayloadSubscription;
+  language: (
+    where?: LanguageSubscriptionWhereInput
+  ) => LanguageSubscriptionPayloadSubscription;
   navigatorCategory: (
     where?: NavigatorCategorySubscriptionWhereInput
   ) => NavigatorCategorySubscriptionPayloadSubscription;
@@ -805,6 +844,10 @@ export type CatalogPageOrderByInput =
   | "description_DESC"
   | "icon_ASC"
   | "icon_DESC"
+  | "headline_ASC"
+  | "headline_DESC"
+  | "teaser_ASC"
+  | "teaser_DESC"
   | "visible_ASC"
   | "visible_DESC"
   | "enabled_ASC"
@@ -815,8 +858,10 @@ export type CatalogPageOrderByInput =
   | "club_DESC"
   | "vip_ASC"
   | "vip_DESC"
-  | "body_ASC"
-  | "body_DESC";
+  | "meta_ASC"
+  | "meta_DESC"
+  | "product_ASC"
+  | "product_DESC";
 
 export type Gender = "M" | "F";
 
@@ -891,6 +936,18 @@ export type ChatlogConsoleInvitationsOrderByInput =
   | "message_DESC"
   | "createdAt_ASC"
   | "createdAt_DESC";
+
+export type LanguageOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "name_ASC"
+  | "name_DESC"
+  | "native_ASC"
+  | "native_DESC"
+  | "code_ASC"
+  | "code_DESC"
+  | "enabled_ASC"
+  | "enabled_DESC";
 
 export type NavigatorCategoryOrderByInput =
   | "id_ASC"
@@ -1382,6 +1439,7 @@ export interface CatalogPageWhereInput {
   name_not_starts_with?: Maybe<String>;
   name_ends_with?: Maybe<String>;
   name_not_ends_with?: Maybe<String>;
+  language?: Maybe<LanguageWhereInput>;
   caption?: Maybe<String>;
   caption_not?: Maybe<String>;
   caption_in?: Maybe<String[] | String>;
@@ -1424,6 +1482,34 @@ export interface CatalogPageWhereInput {
   icon_not_starts_with?: Maybe<String>;
   icon_ends_with?: Maybe<String>;
   icon_not_ends_with?: Maybe<String>;
+  headline?: Maybe<String>;
+  headline_not?: Maybe<String>;
+  headline_in?: Maybe<String[] | String>;
+  headline_not_in?: Maybe<String[] | String>;
+  headline_lt?: Maybe<String>;
+  headline_lte?: Maybe<String>;
+  headline_gt?: Maybe<String>;
+  headline_gte?: Maybe<String>;
+  headline_contains?: Maybe<String>;
+  headline_not_contains?: Maybe<String>;
+  headline_starts_with?: Maybe<String>;
+  headline_not_starts_with?: Maybe<String>;
+  headline_ends_with?: Maybe<String>;
+  headline_not_ends_with?: Maybe<String>;
+  teaser?: Maybe<String>;
+  teaser_not?: Maybe<String>;
+  teaser_in?: Maybe<String[] | String>;
+  teaser_not_in?: Maybe<String[] | String>;
+  teaser_lt?: Maybe<String>;
+  teaser_lte?: Maybe<String>;
+  teaser_gt?: Maybe<String>;
+  teaser_gte?: Maybe<String>;
+  teaser_contains?: Maybe<String>;
+  teaser_not_contains?: Maybe<String>;
+  teaser_starts_with?: Maybe<String>;
+  teaser_not_starts_with?: Maybe<String>;
+  teaser_ends_with?: Maybe<String>;
+  teaser_not_ends_with?: Maybe<String>;
   visible?: Maybe<Boolean>;
   visible_not?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
@@ -1440,23 +1526,73 @@ export interface CatalogPageWhereInput {
   club_not?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
   vip_not?: Maybe<Boolean>;
-  body?: Maybe<String>;
-  body_not?: Maybe<String>;
-  body_in?: Maybe<String[] | String>;
-  body_not_in?: Maybe<String[] | String>;
-  body_lt?: Maybe<String>;
-  body_lte?: Maybe<String>;
-  body_gt?: Maybe<String>;
-  body_gte?: Maybe<String>;
-  body_contains?: Maybe<String>;
-  body_not_contains?: Maybe<String>;
-  body_starts_with?: Maybe<String>;
-  body_not_starts_with?: Maybe<String>;
-  body_ends_with?: Maybe<String>;
-  body_not_ends_with?: Maybe<String>;
   AND?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
   OR?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
   NOT?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
+}
+
+export interface LanguageWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  name?: Maybe<String>;
+  name_not?: Maybe<String>;
+  name_in?: Maybe<String[] | String>;
+  name_not_in?: Maybe<String[] | String>;
+  name_lt?: Maybe<String>;
+  name_lte?: Maybe<String>;
+  name_gt?: Maybe<String>;
+  name_gte?: Maybe<String>;
+  name_contains?: Maybe<String>;
+  name_not_contains?: Maybe<String>;
+  name_starts_with?: Maybe<String>;
+  name_not_starts_with?: Maybe<String>;
+  name_ends_with?: Maybe<String>;
+  name_not_ends_with?: Maybe<String>;
+  native?: Maybe<String>;
+  native_not?: Maybe<String>;
+  native_in?: Maybe<String[] | String>;
+  native_not_in?: Maybe<String[] | String>;
+  native_lt?: Maybe<String>;
+  native_lte?: Maybe<String>;
+  native_gt?: Maybe<String>;
+  native_gte?: Maybe<String>;
+  native_contains?: Maybe<String>;
+  native_not_contains?: Maybe<String>;
+  native_starts_with?: Maybe<String>;
+  native_not_starts_with?: Maybe<String>;
+  native_ends_with?: Maybe<String>;
+  native_not_ends_with?: Maybe<String>;
+  code?: Maybe<String>;
+  code_not?: Maybe<String>;
+  code_in?: Maybe<String[] | String>;
+  code_not_in?: Maybe<String[] | String>;
+  code_lt?: Maybe<String>;
+  code_lte?: Maybe<String>;
+  code_gt?: Maybe<String>;
+  code_gte?: Maybe<String>;
+  code_contains?: Maybe<String>;
+  code_not_contains?: Maybe<String>;
+  code_starts_with?: Maybe<String>;
+  code_not_starts_with?: Maybe<String>;
+  code_ends_with?: Maybe<String>;
+  code_not_ends_with?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
+  enabled_not?: Maybe<Boolean>;
+  AND?: Maybe<LanguageWhereInput[] | LanguageWhereInput>;
+  OR?: Maybe<LanguageWhereInput[] | LanguageWhereInput>;
+  NOT?: Maybe<LanguageWhereInput[] | LanguageWhereInput>;
 }
 
 export type CatalogPageWhereUniqueInput = AtLeastOne<{
@@ -1946,6 +2082,11 @@ export type HabboWhereUniqueInput = AtLeastOne<{
   username?: Maybe<String>;
 }>;
 
+export type LanguageWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+  code?: Maybe<String>;
+}>;
+
 export type NavigatorCategoryWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
@@ -2030,6 +2171,7 @@ export interface NavigatorTabWhereInput {
   order_lte?: Maybe<Int>;
   order_gt?: Maybe<Int>;
   order_gte?: Maybe<Int>;
+  language?: Maybe<LanguageWhereInput>;
   categories_every?: Maybe<NavigatorCategoryWhereInput>;
   categories_some?: Maybe<NavigatorCategoryWhereInput>;
   categories_none?: Maybe<NavigatorCategoryWhereInput>;
@@ -2040,7 +2182,6 @@ export interface NavigatorTabWhereInput {
 
 export type NavigatorTabWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
-  order?: Maybe<Int>;
 }>;
 
 export type NewsWhereUniqueInput = AtLeastOne<{
@@ -2339,15 +2480,32 @@ export interface CatalogPageCreateInput {
   layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name: String;
+  language?: Maybe<LanguageCreateOneInput>;
   caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  headline?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  meta?: Maybe<Json>;
+  product?: Maybe<Json>;
+}
+
+export interface LanguageCreateOneInput {
+  create?: Maybe<LanguageCreateInput>;
+  connect?: Maybe<LanguageWhereUniqueInput>;
+}
+
+export interface LanguageCreateInput {
+  id?: Maybe<ID_Input>;
+  name?: Maybe<String>;
+  native?: Maybe<String>;
+  code: String;
+  enabled?: Maybe<Boolean>;
 }
 
 export interface CatalogFeaturedUpdateInput {
@@ -2371,15 +2529,40 @@ export interface CatalogPageUpdateDataInput {
   layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
+  language?: Maybe<LanguageUpdateOneInput>;
   caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  headline?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  meta?: Maybe<Json>;
+  product?: Maybe<Json>;
+}
+
+export interface LanguageUpdateOneInput {
+  create?: Maybe<LanguageCreateInput>;
+  update?: Maybe<LanguageUpdateDataInput>;
+  upsert?: Maybe<LanguageUpsertNestedInput>;
+  delete?: Maybe<Boolean>;
+  disconnect?: Maybe<Boolean>;
+  connect?: Maybe<LanguageWhereUniqueInput>;
+}
+
+export interface LanguageUpdateDataInput {
+  name?: Maybe<String>;
+  native?: Maybe<String>;
+  code?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
+}
+
+export interface LanguageUpsertNestedInput {
+  update: LanguageUpdateDataInput;
+  create: LanguageCreateInput;
 }
 
 export interface CatalogPageUpsertNestedInput {
@@ -2398,15 +2581,19 @@ export interface CatalogPageUpdateInput {
   layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
+  language?: Maybe<LanguageUpdateOneInput>;
   caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  headline?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  meta?: Maybe<Json>;
+  product?: Maybe<Json>;
 }
 
 export interface CatalogPageUpdateManyMutationInput {
@@ -2416,12 +2603,15 @@ export interface CatalogPageUpdateManyMutationInput {
   caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  headline?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  meta?: Maybe<Json>;
+  product?: Maybe<Json>;
 }
 
 export interface ChatlogCreateInput {
@@ -2679,6 +2869,20 @@ export interface HabboUpdateManyMutationInput {
   allowPetSpeech?: Maybe<Boolean>;
 }
 
+export interface LanguageUpdateInput {
+  name?: Maybe<String>;
+  native?: Maybe<String>;
+  code?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
+}
+
+export interface LanguageUpdateManyMutationInput {
+  name?: Maybe<String>;
+  native?: Maybe<String>;
+  code?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
+}
+
 export interface NavigatorCategoryCreateInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
@@ -2695,6 +2899,7 @@ export interface NavigatorTabCreateWithoutCategoriesInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageCreateOneInput>;
 }
 
 export interface NavigatorCategoryUpdateInput {
@@ -2715,6 +2920,7 @@ export interface NavigatorTabUpdateOneWithoutCategoriesInput {
 export interface NavigatorTabUpdateWithoutCategoriesDataInput {
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageUpdateOneInput>;
 }
 
 export interface NavigatorTabUpsertWithoutCategoriesInput {
@@ -2731,6 +2937,7 @@ export interface NavigatorTabCreateInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageCreateOneInput>;
   categories?: Maybe<NavigatorCategoryCreateManyWithoutParentInput>;
 }
 
@@ -2753,6 +2960,7 @@ export interface NavigatorCategoryCreateWithoutParentInput {
 export interface NavigatorTabUpdateInput {
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageUpdateOneInput>;
   categories?: Maybe<NavigatorCategoryUpdateManyWithoutParentInput>;
 }
 
@@ -3373,6 +3581,21 @@ export interface HabboSubscriptionWhereInput {
   NOT?: Maybe<HabboSubscriptionWhereInput[] | HabboSubscriptionWhereInput>;
 }
 
+export interface LanguageSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<LanguageWhereInput>;
+  AND?: Maybe<
+    LanguageSubscriptionWhereInput[] | LanguageSubscriptionWhereInput
+  >;
+  OR?: Maybe<LanguageSubscriptionWhereInput[] | LanguageSubscriptionWhereInput>;
+  NOT?: Maybe<
+    LanguageSubscriptionWhereInput[] | LanguageSubscriptionWhereInput
+  >;
+}
+
 export interface NavigatorCategorySubscriptionWhereInput {
   mutation_in?: Maybe<MutationType[] | MutationType>;
   updatedFields_contains?: Maybe<String>;
@@ -3852,12 +4075,15 @@ export interface CatalogPage {
   caption?: String;
   description?: String;
   icon?: String;
+  headline?: String;
+  teaser?: String;
   visible?: Boolean;
   enabled?: Boolean;
   rank?: Int;
   club?: Boolean;
   vip?: Boolean;
-  body?: String;
+  meta?: Json;
+  product?: Json;
 }
 
 export interface CatalogPagePromise extends Promise<CatalogPage>, Fragmentable {
@@ -3866,15 +4092,19 @@ export interface CatalogPagePromise extends Promise<CatalogPage>, Fragmentable {
   layout: () => Promise<CatalogPageLayout>;
   order: () => Promise<Int>;
   name: () => Promise<String>;
+  language: <T = LanguagePromise>() => T;
   caption: () => Promise<String>;
   description: () => Promise<String>;
   icon: () => Promise<String>;
+  headline: () => Promise<String>;
+  teaser: () => Promise<String>;
   visible: () => Promise<Boolean>;
   enabled: () => Promise<Boolean>;
   rank: () => Promise<Int>;
   club: () => Promise<Boolean>;
   vip: () => Promise<Boolean>;
-  body: () => Promise<String>;
+  meta: () => Promise<Json>;
+  product: () => Promise<Json>;
 }
 
 export interface CatalogPageSubscription
@@ -3885,15 +4115,19 @@ export interface CatalogPageSubscription
   layout: () => Promise<AsyncIterator<CatalogPageLayout>>;
   order: () => Promise<AsyncIterator<Int>>;
   name: () => Promise<AsyncIterator<String>>;
+  language: <T = LanguageSubscription>() => T;
   caption: () => Promise<AsyncIterator<String>>;
   description: () => Promise<AsyncIterator<String>>;
   icon: () => Promise<AsyncIterator<String>>;
+  headline: () => Promise<AsyncIterator<String>>;
+  teaser: () => Promise<AsyncIterator<String>>;
   visible: () => Promise<AsyncIterator<Boolean>>;
   enabled: () => Promise<AsyncIterator<Boolean>>;
   rank: () => Promise<AsyncIterator<Int>>;
   club: () => Promise<AsyncIterator<Boolean>>;
   vip: () => Promise<AsyncIterator<Boolean>>;
-  body: () => Promise<AsyncIterator<String>>;
+  meta: () => Promise<AsyncIterator<Json>>;
+  product: () => Promise<AsyncIterator<Json>>;
 }
 
 export interface CatalogPageNullablePromise
@@ -3904,15 +4138,55 @@ export interface CatalogPageNullablePromise
   layout: () => Promise<CatalogPageLayout>;
   order: () => Promise<Int>;
   name: () => Promise<String>;
+  language: <T = LanguagePromise>() => T;
   caption: () => Promise<String>;
   description: () => Promise<String>;
   icon: () => Promise<String>;
+  headline: () => Promise<String>;
+  teaser: () => Promise<String>;
   visible: () => Promise<Boolean>;
   enabled: () => Promise<Boolean>;
   rank: () => Promise<Int>;
   club: () => Promise<Boolean>;
   vip: () => Promise<Boolean>;
-  body: () => Promise<String>;
+  meta: () => Promise<Json>;
+  product: () => Promise<Json>;
+}
+
+export interface Language {
+  id: ID_Output;
+  name?: String;
+  native?: String;
+  code: String;
+  enabled?: Boolean;
+}
+
+export interface LanguagePromise extends Promise<Language>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  native: () => Promise<String>;
+  code: () => Promise<String>;
+  enabled: () => Promise<Boolean>;
+}
+
+export interface LanguageSubscription
+  extends Promise<AsyncIterator<Language>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+  native: () => Promise<AsyncIterator<String>>;
+  code: () => Promise<AsyncIterator<String>>;
+  enabled: () => Promise<AsyncIterator<Boolean>>;
+}
+
+export interface LanguageNullablePromise
+  extends Promise<Language | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  native: () => Promise<String>;
+  code: () => Promise<String>;
+  enabled: () => Promise<Boolean>;
 }
 
 export interface CatalogFeaturedConnection {
@@ -4611,6 +4885,62 @@ export interface AggregateHabboSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
+export interface LanguageConnection {
+  pageInfo: PageInfo;
+  edges: LanguageEdge[];
+}
+
+export interface LanguageConnectionPromise
+  extends Promise<LanguageConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<LanguageEdge>>() => T;
+  aggregate: <T = AggregateLanguagePromise>() => T;
+}
+
+export interface LanguageConnectionSubscription
+  extends Promise<AsyncIterator<LanguageConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<LanguageEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateLanguageSubscription>() => T;
+}
+
+export interface LanguageEdge {
+  node: Language;
+  cursor: String;
+}
+
+export interface LanguageEdgePromise
+  extends Promise<LanguageEdge>,
+    Fragmentable {
+  node: <T = LanguagePromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface LanguageEdgeSubscription
+  extends Promise<AsyncIterator<LanguageEdge>>,
+    Fragmentable {
+  node: <T = LanguageSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateLanguage {
+  count: Int;
+}
+
+export interface AggregateLanguagePromise
+  extends Promise<AggregateLanguage>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateLanguageSubscription
+  extends Promise<AsyncIterator<AggregateLanguage>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
 export interface NavigatorCategory {
   id: ID_Output;
   name?: String;
@@ -4656,6 +4986,7 @@ export interface NavigatorTabPromise
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
   order: () => Promise<Int>;
+  language: <T = LanguagePromise>() => T;
   categories: <T = FragmentableArray<NavigatorCategory>>(args?: {
     where?: NavigatorCategoryWhereInput;
     orderBy?: NavigatorCategoryOrderByInput;
@@ -4673,6 +5004,7 @@ export interface NavigatorTabSubscription
   id: () => Promise<AsyncIterator<ID_Output>>;
   name: () => Promise<AsyncIterator<String>>;
   order: () => Promise<AsyncIterator<Int>>;
+  language: <T = LanguageSubscription>() => T;
   categories: <
     T = Promise<AsyncIterator<NavigatorCategorySubscription>>
   >(args?: {
@@ -4692,6 +5024,7 @@ export interface NavigatorTabNullablePromise
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
   order: () => Promise<Int>;
+  language: <T = LanguagePromise>() => T;
   categories: <T = FragmentableArray<NavigatorCategory>>(args?: {
     where?: NavigatorCategoryWhereInput;
     orderBy?: NavigatorCategoryOrderByInput;
@@ -5409,12 +5742,15 @@ export interface CatalogPagePreviousValues {
   caption?: String;
   description?: String;
   icon?: String;
+  headline?: String;
+  teaser?: String;
   visible?: Boolean;
   enabled?: Boolean;
   rank?: Int;
   club?: Boolean;
   vip?: Boolean;
-  body?: String;
+  meta?: Json;
+  product?: Json;
 }
 
 export interface CatalogPagePreviousValuesPromise
@@ -5427,12 +5763,15 @@ export interface CatalogPagePreviousValuesPromise
   caption: () => Promise<String>;
   description: () => Promise<String>;
   icon: () => Promise<String>;
+  headline: () => Promise<String>;
+  teaser: () => Promise<String>;
   visible: () => Promise<Boolean>;
   enabled: () => Promise<Boolean>;
   rank: () => Promise<Int>;
   club: () => Promise<Boolean>;
   vip: () => Promise<Boolean>;
-  body: () => Promise<String>;
+  meta: () => Promise<Json>;
+  product: () => Promise<Json>;
 }
 
 export interface CatalogPagePreviousValuesSubscription
@@ -5445,12 +5784,15 @@ export interface CatalogPagePreviousValuesSubscription
   caption: () => Promise<AsyncIterator<String>>;
   description: () => Promise<AsyncIterator<String>>;
   icon: () => Promise<AsyncIterator<String>>;
+  headline: () => Promise<AsyncIterator<String>>;
+  teaser: () => Promise<AsyncIterator<String>>;
   visible: () => Promise<AsyncIterator<Boolean>>;
   enabled: () => Promise<AsyncIterator<Boolean>>;
   rank: () => Promise<AsyncIterator<Int>>;
   club: () => Promise<AsyncIterator<Boolean>>;
   vip: () => Promise<AsyncIterator<Boolean>>;
-  body: () => Promise<AsyncIterator<String>>;
+  meta: () => Promise<AsyncIterator<Json>>;
+  product: () => Promise<AsyncIterator<Json>>;
 }
 
 export interface ChatlogSubscriptionPayload {
@@ -5698,6 +6040,59 @@ export interface HabboPreviousValuesSubscription
   allowPetSpeech: () => Promise<AsyncIterator<Boolean>>;
   createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
   updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface LanguageSubscriptionPayload {
+  mutation: MutationType;
+  node: Language;
+  updatedFields: String[];
+  previousValues: LanguagePreviousValues;
+}
+
+export interface LanguageSubscriptionPayloadPromise
+  extends Promise<LanguageSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = LanguagePromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = LanguagePreviousValuesPromise>() => T;
+}
+
+export interface LanguageSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<LanguageSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = LanguageSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = LanguagePreviousValuesSubscription>() => T;
+}
+
+export interface LanguagePreviousValues {
+  id: ID_Output;
+  name?: String;
+  native?: String;
+  code: String;
+  enabled?: Boolean;
+}
+
+export interface LanguagePreviousValuesPromise
+  extends Promise<LanguagePreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  native: () => Promise<String>;
+  code: () => Promise<String>;
+  enabled: () => Promise<Boolean>;
+}
+
+export interface LanguagePreviousValuesSubscription
+  extends Promise<AsyncIterator<LanguagePreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+  native: () => Promise<AsyncIterator<String>>;
+  code: () => Promise<AsyncIterator<String>>;
+  enabled: () => Promise<AsyncIterator<Boolean>>;
 }
 
 export interface NavigatorCategorySubscriptionPayload {
@@ -6130,6 +6525,10 @@ export const models: Model[] = [
   },
   {
     name: "Rank",
+    embedded: false
+  },
+  {
+    name: "Language",
     embedded: false
   },
   {
