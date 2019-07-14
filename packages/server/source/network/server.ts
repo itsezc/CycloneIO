@@ -50,9 +50,6 @@ export default class Server {
 	public constructor(private readonly config: CycloneConfig) {
 		this.config = config
 
-		const { server } = config
-		const { port } = server
-
 		this.roomId = 0
 		this.rooms = [
 			{
@@ -144,7 +141,9 @@ export default class Server {
 				//socket.on(<filename without extension>, callback)
 				socket.on(/(.+)\.ts/i.exec(name)[1], (data: any) => {
 					require(`./socket/events/${name}`).default(socket, data)
-					Logger.info(`Event executed from ${socket.id}: ${name}`)
+
+					if (this.config.mode === 'development')
+						Logger.info(`Event executed from ${socket.id}: ${name}`)
 				});
 			});
 

@@ -58,6 +58,11 @@ export default class Client extends Component<any, ClientState>
 			this.setState({ connected: true })
 		})
 
+		this.Socket.emit('getRoom', 'cjy1pitya00ik0772bhv2sglx');
+		this.Socket.on('setRoom', (data: any) => {
+			console.log(data)
+		})
+
 		this.state = {
 			loaded: true
 		}
@@ -174,7 +179,7 @@ export default class Client extends Component<any, ClientState>
 
 		} else {
 			return(
-				<div>It doesn't works</div> 
+				<div>It doesn't works or its loading idk</div> 
 			)
 		}
 

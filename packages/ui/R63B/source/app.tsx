@@ -33,7 +33,11 @@ class App extends Component<any, any> {
             <BrowserRouter>
                 <Switch location={this.props.location}>
                     <Route exact path='/' component={Loading} />
-					<Route exact path='/inroom' component={Room} />
+                    <Route 
+                        exact 
+                        path='/inroom'
+                        render={(props) => <Room {...props} />}
+                        />
                     <Route exact path='/client' component={Client} />
                     <Route 
                         exact 
