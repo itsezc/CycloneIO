@@ -5,8 +5,9 @@ export const getRoom = async (socket: any, data: any) => {
         id: data
     })
 
-    if(room)
+    if (room) {
         socket.emit('setRoom', room)
+    }
 }
 
 export default getRoom;
