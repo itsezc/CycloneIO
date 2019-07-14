@@ -33,15 +33,14 @@ import Tile from '../generators/tile';
 export default class Room extends Phaser.Scene {
     private readonly id: number
 
-    private _socket!: SocketIOClient.Socket
+    // private _socket!: SocketIOClient.Socket
     private _camera!: RoomCamera
     // private tileMap!: RoomTileMap
     // private item!: RoomItem
 
     private _clickTime!: number
 
-    public avatars!: { [id: string]: Phaser.Physics.Arcade.Sprite }
-    public avatar!: Phaser.Physics.Arcade.Sprite
+    public avatars!: { [id: string]: RoomAvatar }
 
     public avatarIsWalking: boolean
     public avatarIsMoving: boolean = false
@@ -125,10 +124,8 @@ export default class Room extends Phaser.Scene {
      * Runs once, when the scene starts
      */
     public init(): void {
-        this._socket = SocketIO(`${host}:${port}`)
+        // this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
-
-        this.avatarImager.initialize().then(() => console.log('imager initialized'))
 
         // this.lights.enable()
     }
@@ -223,13 +220,61 @@ export default class Room extends Phaser.Scene {
                     type: FurnitureData.IFurnitureType.WALL,
                     animation: 1
                 },
-                // {
-                //     name: 'hrella_poster_1',
-                //     roomX: 0,
-                //     roomY: 2,
-                //     roomZ: 6.5,
-                //     type: FurnitureData.IFurnitureType.WALL
-                // },
+                {
+                    name: 'es_tile',
+                    roomX: 0,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 0
+                },
+                {
+                    name: 'holo_nelly',
+                    roomX: 1,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 1
+                },
+                {
+                    name: 'bb_counter',
+                    roomX: 2,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 0
+                },
+                {
+                    name: 'bb_score_g',
+                    roomX: 3,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 0
+                },
+                {
+                    name: 'bb_patch1',
+                    roomX: 4,
+                    roomY: 2,
+                    roomZ: 0,
+                    animation: 6
+                },
+                {
+                    name: 'bb_patch1',
+                    roomX: 4,
+                    roomY: 3,
+                    roomZ: 0,
+                    animation: 7
+                },
+                {
+                    name: 'bb_patch1',
+                    roomX: 4,
+                    roomY: 4,
+                    roomZ: 0,
+                    animation: 8
+                },
+                {
+                    name: 'exe_icecream',
+                    roomX: 1,
+                    roomY: 4,
+                    roomZ: 0,
+                },
                 {
                     name: 'hrella_poster_1',
                     roomX: 6.25,
@@ -240,88 +285,7 @@ export default class Room extends Phaser.Scene {
             ]
         }
 
-
-        /*         var frames: Phaser.Types.Animations.AnimationFrame[] = []
-        
-                for (var i = 1;i < this.avatar.texture.frameTotal - 1;i++)
-                {
-                    frames[i - 1] = this.anims.generateFrameNames('avatar')[i]
-                } */
-        //console.log(this.scene.anims.generateFrameNames('avatar')[0])
-        this.anims.create({
-            key: 'wlk_0',
-            frames: this.anims.generateFrameNames('wlk_0'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_1',
-            frames: this.anims.generateFrameNames('wlk_1'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_2',
-            frames: this.anims.generateFrameNames('wlk_2'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_3',
-            frames: this.anims.generateFrameNames('wlk_3'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_4',
-            frames: this.anims.generateFrameNames('wlk_4'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_5',
-            frames: this.anims.generateFrameNames('wlk_5'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_6',
-            frames: this.anims.generateFrameNames('wlk_6'),
-            frameRate: 12,
-            repeat: -1
-        })
-
-        this.anims.create({
-            key: 'wlk_7',
-            frames: this.anims.generateFrameNames('wlk_7'),
-            frameRate: 12,
-            repeat: -1
-        })
-        //this.add(RoomSprite.furnitureContainer) <- add to scene 
-
-        /* this.map = new RoomMap(this, [[1, 1, 1]]) */
-
-        // var map = [[1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1],
-        // [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1]]
-
         //        this.add.image(0, 0, 'room_background').setDepth(2)
-
-
-        // if(roomSprite)
-        // {
-        //     roomSprite.stop()
-        // }
-
-        // this.children.removeAll()
-        // var roomContainer = new Phaser.Container();
-        // roomContainer.x = Math.floor(window.innerWidth / 2);
-        // roomContainer.y = Math.floor(window.innerHeight / 2);
 
         var roomSprite = new RoomSprite(this, room.heightmap, room.door)
 
@@ -377,53 +341,16 @@ export default class Room extends Phaser.Scene {
             roomSprite.start()
 
             this.add.existing(roomSprite)
-
-            this.camera.setZoom(4)
-
-            // Furniture Rotation
-            if (this.input.enabled) {
-                this.input.keyboard.on('keydown-SHIFT', () => {
-                    roomSprite.on('pointerdown', () => {
-                        ///console.log(roomSprite)
-                    }, roomSprite)
-                })
-            }
-
-
-            /* //roomSprite => 1 instance of a furniture
-            this.add.existing(roomSprite)
-
-            var furniture = new Furniture(this, furnitureData)
-
-            let furnitureSprite = new FurnitureSprite(this, furniture)
-
-            if (furnitureRoomData.animation)
-            {
-                furnitureSprite.animateAndStart(furnitureRoomData.animation);
-            }
-
-            if (furnitureRoomData.color)
-            {
-                furnitureSprite.setColor(furnitureRoomData.color);
-            }
-
-            if (furnitureRoomData.direction)
-            {
-                furnitureSprite.setDirection(furnitureRoomData.direction);
-            }
-
-            roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY);
- */
         })
 
         this._camera.setZoom(1)
 
-        this._socket.emit('requestRoom', 0)
+        // this._socket.emit('requestRoom', 0)
 
-        this._socket.on('connect', () => {
-            console.log(`Server connected on ${window.location.hostname}`);
-            this._socket.emit('requestRoom', 0)
-        })
+        // this._socket.on('connect', () => {
+        //     console.log(`Server connected on ${window.location.hostname}`);
+        //     this._socket.emit('requestRoom', 0)
+        // })
 
         let genRandom = (min: number, max: number) =>// min and max included
         {
@@ -441,18 +368,18 @@ export default class Room extends Phaser.Scene {
         //             this.avatar = this.avatars[playerId] */
         //         }) */
 
-        this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
-            this.roomPlayer = new RoomAvatar(this, playerX, playerY, 0)
+        //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
+            this.roomPlayer = new RoomAvatar(this, 0, 0, 0, 0)
             this.roomPlayer.x = this.roomPlayer.RenderPos.x
             this.roomPlayer.y = this.roomPlayer.RenderPos.y
-        })
+        //})
 
-        this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
+        // this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
 
-            if (this.roomPlayer) {
-                this.roomPlayer.moveToDestination(oldPlayerCoordinates, path, destination)
-            }
-        })
+        //     if (this.roomPlayer) {
+        //         this.roomPlayer.moveToDestination(oldPlayerCoordinates, path, destination)
+        //     }
+        // })
 
         // this._socket.on('currentPlayers', (players: any) => {
         //     Object.keys(players).forEach((playerId: any) => {
@@ -461,9 +388,9 @@ export default class Room extends Phaser.Scene {
         //     })
         // })
 
-        this._socket.on('playerDisconnected', (playerId: any) => {
-            this.roomPlayer.removeFromRoom();
-        });
+        // this._socket.on('playerDisconnected', (playerId: any) => {
+        //     this.roomPlayer.removeFromRoom();
+        // });
 
 
         /*         this._socket.on('currentPlayers', (players: any) => {
@@ -723,15 +650,15 @@ export default class Room extends Phaser.Scene {
         }, this)
     }
 
-    public emitRoom(): void {
-        this._socket.emit('newRoom', this.id)
-    }
+    // public emitRoom(): void {
+    //     this._socket.emit('newRoom', this.id)
+    // }
 
-    public registerRoomsEvents(): void {
-        this._socket.on('newRoom', (map: any) => {
-            //this.addTileMap(map)
-        })
-    }
+    // public registerRoomsEvents(): void {
+    //     this._socket.on('newRoom', (map: any) => {
+    //         //this.addTileMap(map)
+    //     })
+    // }
 
     public registerItemsEvents(): void {
 
@@ -872,9 +799,9 @@ export default class Room extends Phaser.Scene {
         })
     }
 
-    public get socket(): SocketIOClient.Socket {
-        return this._socket
-    }
+    // public get socket(): SocketIOClient.Socket {
+    //     return this._socket
+    // }
 
     public get camera(): RoomCamera {
         return this._camera

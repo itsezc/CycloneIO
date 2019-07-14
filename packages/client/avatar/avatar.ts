@@ -12,11 +12,19 @@ const PIXELS_PER_SECOND = 70 as const
  * @param {object} gameMap - The game map
  */
 export default class RoomAvatar extends Phaser.GameObjects.Container {
+    private FPS = 24
+    private FPS_TIME_MS = 60 / this.FPS
+
     public x: number
     public y: number
     public isMoving: boolean
     public destination: { x: number, y: number }
     public path: any
+
+    private frameCount: number
+    private totalTimeRunning: number
+
+    private isGhost: boolean;
     
     public rot: Direction
     public headRot: Direction
@@ -35,18 +43,26 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     solidBodyTextures: TextureDictionary;
     solidHeadTextures: TextureDictionary;
 
+    headImage: HTMLCanvasElement;
+    userInfoImage: HTMLCanvasElement;
+
+    loaded: boolean
+
     timer: Phaser.Time.TimerEvent;
 
     constructor(
         public readonly scene: Room,
-        x: number, y: number, z: number
+        x: number, y: number, z: number,
+        private readonly id: number
     ) {
         super(scene, x, y - z)
 
-        this.bodyTextures = {};
+        /*this.bodyTextures = {};
         this.headTextures = {};
         this.solidBodyTextures = {};
         this.solidHeadTextures = {};
+
+        this.isGhost = false
 
         this.look = 'hd-180-1.ch-255-66.lg-280-110.sh-305-62.ha-1012-110.hr-828-61'
 
@@ -66,7 +82,18 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.isMoving = false
 
-        this.loadGenerics()
+        this.scene.avatarImager.initialize().then(() => {
+            this.loadGenerics().then(() => {
+                console.log('avatar initialized')
+                this.loaded = true
+            })
+        })*/
+
+        const sprite = this.scene.add.sprite(0, 0, 'tile')
+
+        this.add(sprite)
+
+        scene.add.existing(this)
     }
 
     get RenderPos() {
@@ -79,20 +106,121 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     private loadGenerics() {
         const { avatarImager } = this.scene;
 
-        return avatarImager.generateGeneric(new Avatar(this.look, this.rot, this.headRot, ["std"], 'std', this.frame, true, false, "n"), false)
+        const promises: Promise<void>[] = [];
+
+        for (let i = 0; i <= 7; i++) {
+            promises.push(this._loadUniqueHeadTexture(i as Direction, "std", 0));
+            promises.push(this._loadUniqueHeadTexture(i as Direction, "eyb", 0));
+
+            promises.push(this._loadUniqueBodyTexture(i as Direction, ["std"], 0));
+            for (let j = 0; j <= 3; j++) {
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ["wlk"], j));
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ["wlk", "wav"], j));
+            }
+            for (let j = 0; j <= 1; j++) {
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ["wav"], j));
+                promises.push(this._loadUniqueHeadTexture(i as Direction, "spk", j));
+            }
+        }
+
+        for (let i = 0; i <= 7; i = i + 2) {
+            promises.push(this._loadUniqueBodyTexture(i as Direction, ["sit"], 0));
+            for (let j = 0; j <= 1; j++) {
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ["sit", "wav"], j));
+            }
+        }
+
+        promises.push(this._loadChatHeadImage());
+        promises.push(this._loadUserInfoImage());
+
+        this.colorId = avatarImager.getChatColor(this.look);
+
+        return Promise.all(promises);
+    }
+
+    _loadUniqueBodyTexture(direction: Direction, action: string[], frame: number): Promise<void> {
+        const { avatarImager } = this.scene;
+
+        return avatarImager.generateGeneric(new Avatar(this.look, direction, direction, action, "std", frame, false, true, "n"), this.isGhost)
             .then(image => {
-                console.log(image)
-                this.headTextures[this.getHeadTextureKey(this.headRot, 'std', this.frame)] = this.getTextureFromImage(image)
+                const key = this.getBodyTextureKey(direction, action, frame)
+
+                this.bodyTextures[key] = this.getTextureFromImage(image, key);
+                this.solidBodyTextures[key] = this.getTextureFromImage(this.generateSilhouette(image, 255, 255, 255), key);
+            });
+    }
+
+    _loadUniqueHeadTexture(headDirection: Direction, gesture: string, frame: number): Promise<void> {
+        const { avatarImager } = this.scene;
+
+        return avatarImager.generateGeneric(new Avatar(this.look, headDirection, headDirection, ["std"], gesture, frame, true, false, "n"), this.isGhost)
+            .then(image => {
+                const key = this.getHeadTextureKey(headDirection, gesture, frame)
+                
+                this.headTextures[key] = this.getTextureFromImage(image, key);
+                this.solidHeadTextures[key] = this.getTextureFromImage(this.generateSilhouette(image, 255, 255, 255), key);
+            });
+    }
+
+    _loadChatHeadImage(): Promise<void> {
+        const { avatarImager } = this.scene;
+
+        return avatarImager.generateGeneric(new Avatar(this.look, 2, 2, ["std"], "std", 0, true, false, "d"), this.isGhost)
+            .then(canvas => {
+                this.headImage = canvas;
+            });
+    }
+
+    _loadUserInfoImage(): Promise<void> {
+        const { avatarImager } = this.scene;
+
+        return avatarImager.generateGeneric(new Avatar(this.look, 4, 4, ["std"], "std", 0, false, false, "n"), this.isGhost)
+            .then(canvas => {
+                this.userInfoImage = canvas;
             });
     }
     
-    getTextureFromImage(image: HTMLCanvasElement): Phaser.Textures.Texture {
-        const textureKey = `avatar_${Math.round(Math.random() * 10000)}`
-
-        const texture = new Phaser.Textures.Texture(this.scene.game.textures, textureKey, image)
+    getTextureFromImage(image: HTMLCanvasElement | HTMLImageElement, key: string): Phaser.Textures.Texture {
+        const texture = new Phaser.Textures.Texture(this.scene.game.textures, key, image)
 
         return texture
     }
+
+    generateSilhouette(img: HTMLImageElement | HTMLCanvasElement, r: number, g: number, b: number): HTMLCanvasElement | HTMLImageElement {
+        const element = document.createElement('canvas');
+        const c = element.getContext("2d");
+        const { width, height } = img;
+    
+        if (c == null || width === 0 || height === 0) {
+            return img;
+        }
+    
+        element.width = width;
+        element.height = height;
+    
+        c.drawImage(img, 0, 0);
+        const imageData = c.getImageData(0, 0, width, height);
+    
+        for (let y = 0; y < height; y++) {
+            let inpos = y * width * 4;
+            for (let x = 0; x < width; x++) {
+                //const pr = imageData.data[inpos++];
+                //const pg = imageData.data[inpos++];
+                //const pb = imageData.data[inpos++];
+                inpos += 3; //////
+    
+                const pa = imageData.data[inpos++];
+                if (pa !== 0) {
+                    imageData.data[inpos - 1] = 255; //A
+                    imageData.data[inpos - 2] = b; //B
+                    imageData.data[inpos - 3] = g; //G
+                    imageData.data[inpos - 4] = r; //R
+                }
+            }
+        }
+        c.putImageData(imageData, 0, 0);
+        return element;
+    };
 
 	/**
 	 * Removes a player from the room
@@ -145,7 +273,19 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     }
 
     update(delta: number) {
-        this.removeAll()
+        this.totalTimeRunning += 1
+
+        let frameCount = Math.round(this.totalTimeRunning / this.FPS_TIME_MS)
+
+        if (this.frameCount != frameCount)
+        {
+            this.frameCount = frameCount
+            this.updateAvatarView()
+        }
+    }
+
+    updateAvatarView() {
+        this.removeAll(true)
 
         let action = ["std"];
         let gesture = "std";
@@ -157,18 +297,18 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
             bodyFrame = this.frame % 4;
         }
 
-        //if (this.loaded) {
+        if (this.loaded) {
+            this.avatarBody.texture =  this.getBodyPart(this.rot, action, bodyFrame)
             this.avatarHead.texture = this.getHeadPart(this.headRot, gesture, headFrame);
-            this.avatarBody.texture = this.getBodyPart(this.rot, action, bodyFrame);
-            
-            this.avatarHead.tint = this.colorId;
-            this.avatarBody.tint = this.colorId;
-        //} else {
-        //    this.bodySprite.texture = BobbaEnvironment.getGame().ghostTextures.getBodyTexture(this.rot, action, bodyFrame);
-        //    this.headSprite.texture = BobbaEnvironment.getGame().ghostTextures.getHeadTexture(this.headRot, gesture, headFrame);
-        //}
-        this.scene.add.existing(this.avatarHead)
-        this.scene.add.existing(this.avatarBody)
+        } else {
+            //this.avatarBody.texture = this.getBodyPart(this.rot, action, bodyFrame);
+            //this.avatarHead.texture = this.getHeadPart(this.headRot, gesture, headFrame);
+        }
+
+        if(this.loaded) {
+            this.add(this.avatarHead)
+            this.add(this.avatarBody)
+        }
     }
 
     getBodyPart(rot: number, action: string[], bodyFrame: number): Phaser.Textures.Texture | Phaser.Textures.CanvasTexture {

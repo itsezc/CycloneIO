@@ -20,7 +20,6 @@ export interface Exists {
   ban: (where?: BanWhereInput) => Promise<boolean>;
   bot: (where?: BotWhereInput) => Promise<boolean>;
   catalogFeatured: (where?: CatalogFeaturedWhereInput) => Promise<boolean>;
-  catalogItem: (where?: CatalogItemWhereInput) => Promise<boolean>;
   catalogPage: (where?: CatalogPageWhereInput) => Promise<boolean>;
   chatlog: (where?: ChatlogWhereInput) => Promise<boolean>;
   chatlogConsole: (where?: ChatlogConsoleWhereInput) => Promise<boolean>;
@@ -28,10 +27,11 @@ export interface Exists {
     where?: ChatlogConsoleInvitationsWhereInput
   ) => Promise<boolean>;
   habbo: (where?: HabboWhereInput) => Promise<boolean>;
-  item: (where?: ItemWhereInput) => Promise<boolean>;
+  language: (where?: LanguageWhereInput) => Promise<boolean>;
   navigatorCategory: (where?: NavigatorCategoryWhereInput) => Promise<boolean>;
   navigatorTab: (where?: NavigatorTabWhereInput) => Promise<boolean>;
   news: (where?: NewsWhereInput) => Promise<boolean>;
+  rank: (where?: RankWhereInput) => Promise<boolean>;
   room: (where?: RoomWhereInput) => Promise<boolean>;
   user: (where?: UserWhereInput) => Promise<boolean>;
 }
@@ -133,27 +133,6 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => CatalogFeaturedConnectionPromise;
-  catalogItem: (
-    where: CatalogItemWhereUniqueInput
-  ) => CatalogItemNullablePromise;
-  catalogItems: (args?: {
-    where?: CatalogItemWhereInput;
-    orderBy?: CatalogItemOrderByInput;
-    skip?: Int;
-    after?: String;
-    before?: String;
-    first?: Int;
-    last?: Int;
-  }) => FragmentableArray<CatalogItem>;
-  catalogItemsConnection: (args?: {
-    where?: CatalogItemWhereInput;
-    orderBy?: CatalogItemOrderByInput;
-    skip?: Int;
-    after?: String;
-    before?: String;
-    first?: Int;
-    last?: Int;
-  }) => CatalogItemConnectionPromise;
   catalogPage: (
     where: CatalogPageWhereUniqueInput
   ) => CatalogPageNullablePromise;
@@ -255,25 +234,25 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => HabboConnectionPromise;
-  item: (where: ItemWhereUniqueInput) => ItemNullablePromise;
-  items: (args?: {
-    where?: ItemWhereInput;
-    orderBy?: ItemOrderByInput;
+  language: (where: LanguageWhereUniqueInput) => LanguageNullablePromise;
+  languages: (args?: {
+    where?: LanguageWhereInput;
+    orderBy?: LanguageOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
     first?: Int;
     last?: Int;
-  }) => FragmentableArray<Item>;
-  itemsConnection: (args?: {
-    where?: ItemWhereInput;
-    orderBy?: ItemOrderByInput;
+  }) => FragmentableArray<Language>;
+  languagesConnection: (args?: {
+    where?: LanguageWhereInput;
+    orderBy?: LanguageOrderByInput;
     skip?: Int;
     after?: String;
     before?: String;
     first?: Int;
     last?: Int;
-  }) => ItemConnectionPromise;
+  }) => LanguageConnectionPromise;
   navigatorCategory: (
     where: NavigatorCategoryWhereUniqueInput
   ) => NavigatorCategoryNullablePromise;
@@ -335,6 +314,25 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => NewsConnectionPromise;
+  rank: (where: RankWhereUniqueInput) => RankNullablePromise;
+  ranks: (args?: {
+    where?: RankWhereInput;
+    orderBy?: RankOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<Rank>;
+  ranksConnection: (args?: {
+    where?: RankWhereInput;
+    orderBy?: RankOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => RankConnectionPromise;
   room: (where: RoomWhereUniqueInput) => RoomNullablePromise;
   rooms: (args?: {
     where?: RoomWhereInput;
@@ -449,24 +447,6 @@ export interface Prisma {
   deleteManyCatalogFeatureds: (
     where?: CatalogFeaturedWhereInput
   ) => BatchPayloadPromise;
-  createCatalogItem: (data: CatalogItemCreateInput) => CatalogItemPromise;
-  updateCatalogItem: (args: {
-    data: CatalogItemUpdateInput;
-    where: CatalogItemWhereUniqueInput;
-  }) => CatalogItemPromise;
-  updateManyCatalogItems: (args: {
-    data: CatalogItemUpdateManyMutationInput;
-    where?: CatalogItemWhereInput;
-  }) => BatchPayloadPromise;
-  upsertCatalogItem: (args: {
-    where: CatalogItemWhereUniqueInput;
-    create: CatalogItemCreateInput;
-    update: CatalogItemUpdateInput;
-  }) => CatalogItemPromise;
-  deleteCatalogItem: (where: CatalogItemWhereUniqueInput) => CatalogItemPromise;
-  deleteManyCatalogItems: (
-    where?: CatalogItemWhereInput
-  ) => BatchPayloadPromise;
   createCatalogPage: (data: CatalogPageCreateInput) => CatalogPagePromise;
   updateCatalogPage: (args: {
     data: CatalogPageUpdateInput;
@@ -561,22 +541,22 @@ export interface Prisma {
   }) => HabboPromise;
   deleteHabbo: (where: HabboWhereUniqueInput) => HabboPromise;
   deleteManyHabboes: (where?: HabboWhereInput) => BatchPayloadPromise;
-  createItem: (data: ItemCreateInput) => ItemPromise;
-  updateItem: (args: {
-    data: ItemUpdateInput;
-    where: ItemWhereUniqueInput;
-  }) => ItemPromise;
-  updateManyItems: (args: {
-    data: ItemUpdateManyMutationInput;
-    where?: ItemWhereInput;
+  createLanguage: (data: LanguageCreateInput) => LanguagePromise;
+  updateLanguage: (args: {
+    data: LanguageUpdateInput;
+    where: LanguageWhereUniqueInput;
+  }) => LanguagePromise;
+  updateManyLanguages: (args: {
+    data: LanguageUpdateManyMutationInput;
+    where?: LanguageWhereInput;
   }) => BatchPayloadPromise;
-  upsertItem: (args: {
-    where: ItemWhereUniqueInput;
-    create: ItemCreateInput;
-    update: ItemUpdateInput;
-  }) => ItemPromise;
-  deleteItem: (where: ItemWhereUniqueInput) => ItemPromise;
-  deleteManyItems: (where?: ItemWhereInput) => BatchPayloadPromise;
+  upsertLanguage: (args: {
+    where: LanguageWhereUniqueInput;
+    create: LanguageCreateInput;
+    update: LanguageUpdateInput;
+  }) => LanguagePromise;
+  deleteLanguage: (where: LanguageWhereUniqueInput) => LanguagePromise;
+  deleteManyLanguages: (where?: LanguageWhereInput) => BatchPayloadPromise;
   createNavigatorCategory: (
     data: NavigatorCategoryCreateInput
   ) => NavigatorCategoryPromise;
@@ -635,6 +615,22 @@ export interface Prisma {
   }) => NewsPromise;
   deleteNews: (where: NewsWhereUniqueInput) => NewsPromise;
   deleteManyNewses: (where?: NewsWhereInput) => BatchPayloadPromise;
+  createRank: (data: RankCreateInput) => RankPromise;
+  updateRank: (args: {
+    data: RankUpdateInput;
+    where: RankWhereUniqueInput;
+  }) => RankPromise;
+  updateManyRanks: (args: {
+    data: RankUpdateManyMutationInput;
+    where?: RankWhereInput;
+  }) => BatchPayloadPromise;
+  upsertRank: (args: {
+    where: RankWhereUniqueInput;
+    create: RankCreateInput;
+    update: RankUpdateInput;
+  }) => RankPromise;
+  deleteRank: (where: RankWhereUniqueInput) => RankPromise;
+  deleteManyRanks: (where?: RankWhereInput) => BatchPayloadPromise;
   createRoom: (data: RoomCreateInput) => RoomPromise;
   updateRoom: (args: {
     data: RoomUpdateInput;
@@ -688,9 +684,6 @@ export interface Subscription {
   catalogFeatured: (
     where?: CatalogFeaturedSubscriptionWhereInput
   ) => CatalogFeaturedSubscriptionPayloadSubscription;
-  catalogItem: (
-    where?: CatalogItemSubscriptionWhereInput
-  ) => CatalogItemSubscriptionPayloadSubscription;
   catalogPage: (
     where?: CatalogPageSubscriptionWhereInput
   ) => CatalogPageSubscriptionPayloadSubscription;
@@ -706,9 +699,9 @@ export interface Subscription {
   habbo: (
     where?: HabboSubscriptionWhereInput
   ) => HabboSubscriptionPayloadSubscription;
-  item: (
-    where?: ItemSubscriptionWhereInput
-  ) => ItemSubscriptionPayloadSubscription;
+  language: (
+    where?: LanguageSubscriptionWhereInput
+  ) => LanguageSubscriptionPayloadSubscription;
   navigatorCategory: (
     where?: NavigatorCategorySubscriptionWhereInput
   ) => NavigatorCategorySubscriptionPayloadSubscription;
@@ -718,6 +711,9 @@ export interface Subscription {
   news: (
     where?: NewsSubscriptionWhereInput
   ) => NewsSubscriptionPayloadSubscription;
+  rank: (
+    where?: RankSubscriptionWhereInput
+  ) => RankSubscriptionPayloadSubscription;
   room: (
     where?: RoomSubscriptionWhereInput
   ) => RoomSubscriptionPayloadSubscription;
@@ -796,6 +792,31 @@ export type BotOrderByInput =
   | "chatDelay_ASC"
   | "chatDelay_DESC";
 
+export type CatalogPageLayout =
+  | "DEFAULT"
+  | "FRONTPAGE"
+  | "CLUB_BUY"
+  | "CLUB_GIFT"
+  | "RECYCLER"
+  | "RECYCLER_INFO"
+  | "RECYCLER_PRIZES"
+  | "TROPHIES"
+  | "PLASTO"
+  | "MARKETPLACE"
+  | "MARKETPLACE_OWN_ITEMS"
+  | "PETS"
+  | "SPACES"
+  | "SOUNDMACHINE"
+  | "GUILDS"
+  | "INFO_DUCKETS"
+  | "INFO_RENTABLES"
+  | "INFO_PETS"
+  | "ROOMADS"
+  | "SINGLE_BUNDLE"
+  | "SOLD_LTD_ITEMS"
+  | "BADGE_DISPLAY"
+  | "BOTS";
+
 export type CatalogFeaturedOrderByInput =
   | "id_ASC"
   | "id_DESC"
@@ -803,68 +824,30 @@ export type CatalogFeaturedOrderByInput =
   | "caption_DESC"
   | "image_ASC"
   | "image_DESC"
-  | "link_ASC"
-  | "link_DESC"
   | "slot_ASC"
   | "slot_DESC"
   | "updated_ASC"
   | "updated_DESC";
 
-export type roomType = "PUBLIC" | "LOCKED" | "PASSWORD" | "HIDDEN";
-
-export type ItemOrderByInput =
-  | "id_ASC"
-  | "id_DESC"
-  | "owner_ASC"
-  | "owner_DESC"
-  | "furniture_ASC"
-  | "furniture_DESC"
-  | "type_ASC"
-  | "type_DESC"
-  | "x_ASC"
-  | "x_DESC"
-  | "y_ASC"
-  | "y_DESC"
-  | "z_ASC"
-  | "z_DESC"
-  | "rotation_ASC"
-  | "rotation_DESC"
-  | "inventory_ASC"
-  | "inventory_DESC";
-
-export type CatalogItemOrderByInput =
-  | "id_ASC"
-  | "id_DESC"
-  | "name_ASC"
-  | "name_DESC"
-  | "amount_ASC"
-  | "amount_DESC"
-  | "limited_ASC"
-  | "limited_DESC"
-  | "maximum_ASC"
-  | "maximum_DESC"
-  | "stack_ASC"
-  | "stack_DESC"
-  | "active_ASC"
-  | "active_DESC";
-
 export type CatalogPageOrderByInput =
   | "id_ASC"
   | "id_DESC"
-  | "parent_ASC"
-  | "parent_DESC"
-  | "type_ASC"
-  | "type_DESC"
+  | "link_ASC"
+  | "link_DESC"
+  | "layout_ASC"
+  | "layout_DESC"
   | "order_ASC"
   | "order_DESC"
   | "name_ASC"
   | "name_DESC"
-  | "caption_ASC"
-  | "caption_DESC"
   | "description_ASC"
   | "description_DESC"
   | "icon_ASC"
   | "icon_DESC"
+  | "banner_ASC"
+  | "banner_DESC"
+  | "teaser_ASC"
+  | "teaser_DESC"
   | "visible_ASC"
   | "visible_DESC"
   | "enabled_ASC"
@@ -876,7 +859,9 @@ export type CatalogPageOrderByInput =
   | "vip_ASC"
   | "vip_DESC"
   | "body_ASC"
-  | "body_DESC";
+  | "body_DESC"
+  | "product_ASC"
+  | "product_DESC";
 
 export type Gender = "M" | "F";
 
@@ -926,6 +911,8 @@ export type HabboOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
+export type roomType = "PUBLIC" | "LOCKED" | "PASSWORD" | "HIDDEN";
+
 export type ChatlogOrderByInput =
   | "id_ASC"
   | "id_DESC"
@@ -949,6 +936,18 @@ export type ChatlogConsoleInvitationsOrderByInput =
   | "message_DESC"
   | "createdAt_ASC"
   | "createdAt_DESC";
+
+export type LanguageOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "name_ASC"
+  | "name_DESC"
+  | "native_ASC"
+  | "native_DESC"
+  | "code_ASC"
+  | "code_DESC"
+  | "enabled_ASC"
+  | "enabled_DESC";
 
 export type NavigatorCategoryOrderByInput =
   | "id_ASC"
@@ -982,6 +981,14 @@ export type NewsOrderByInput =
   | "updatedAt_ASC"
   | "updatedAt_DESC";
 
+export type RankOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "order_ASC"
+  | "order_DESC"
+  | "name_ASC"
+  | "name_DESC";
+
 export type RoomOrderByInput =
   | "id_ASC"
   | "id_DESC"
@@ -993,8 +1000,6 @@ export type RoomOrderByInput =
   | "type_DESC"
   | "category_ASC"
   | "category_DESC"
-  | "owner_ASC"
-  | "owner_DESC"
   | "map_ASC"
   | "map_DESC"
   | "floorThickness_ASC"
@@ -1370,20 +1375,7 @@ export interface CatalogFeaturedWhereInput {
   image_not_starts_with?: Maybe<String>;
   image_ends_with?: Maybe<String>;
   image_not_ends_with?: Maybe<String>;
-  link?: Maybe<String>;
-  link_not?: Maybe<String>;
-  link_in?: Maybe<String[] | String>;
-  link_not_in?: Maybe<String[] | String>;
-  link_lt?: Maybe<String>;
-  link_lte?: Maybe<String>;
-  link_gt?: Maybe<String>;
-  link_gte?: Maybe<String>;
-  link_contains?: Maybe<String>;
-  link_not_contains?: Maybe<String>;
-  link_starts_with?: Maybe<String>;
-  link_not_starts_with?: Maybe<String>;
-  link_ends_with?: Maybe<String>;
-  link_not_ends_with?: Maybe<String>;
+  link?: Maybe<CatalogPageWhereInput>;
   slot?: Maybe<Int>;
   slot_not?: Maybe<Int>;
   slot_in?: Maybe<Int[] | Int>;
@@ -1405,272 +1397,6 @@ export interface CatalogFeaturedWhereInput {
   NOT?: Maybe<CatalogFeaturedWhereInput[] | CatalogFeaturedWhereInput>;
 }
 
-export type CatalogItemWhereUniqueInput = AtLeastOne<{
-  id: Maybe<ID_Input>;
-}>;
-
-export interface ItemWhereInput {
-  id?: Maybe<ID_Input>;
-  id_not?: Maybe<ID_Input>;
-  id_in?: Maybe<ID_Input[] | ID_Input>;
-  id_not_in?: Maybe<ID_Input[] | ID_Input>;
-  id_lt?: Maybe<ID_Input>;
-  id_lte?: Maybe<ID_Input>;
-  id_gt?: Maybe<ID_Input>;
-  id_gte?: Maybe<ID_Input>;
-  id_contains?: Maybe<ID_Input>;
-  id_not_contains?: Maybe<ID_Input>;
-  id_starts_with?: Maybe<ID_Input>;
-  id_not_starts_with?: Maybe<ID_Input>;
-  id_ends_with?: Maybe<ID_Input>;
-  id_not_ends_with?: Maybe<ID_Input>;
-  owner?: Maybe<Int>;
-  owner_not?: Maybe<Int>;
-  owner_in?: Maybe<Int[] | Int>;
-  owner_not_in?: Maybe<Int[] | Int>;
-  owner_lt?: Maybe<Int>;
-  owner_lte?: Maybe<Int>;
-  owner_gt?: Maybe<Int>;
-  owner_gte?: Maybe<Int>;
-  room?: Maybe<RoomWhereInput>;
-  furniture?: Maybe<Int>;
-  furniture_not?: Maybe<Int>;
-  furniture_in?: Maybe<Int[] | Int>;
-  furniture_not_in?: Maybe<Int[] | Int>;
-  furniture_lt?: Maybe<Int>;
-  furniture_lte?: Maybe<Int>;
-  furniture_gt?: Maybe<Int>;
-  furniture_gte?: Maybe<Int>;
-  type?: Maybe<String>;
-  type_not?: Maybe<String>;
-  type_in?: Maybe<String[] | String>;
-  type_not_in?: Maybe<String[] | String>;
-  type_lt?: Maybe<String>;
-  type_lte?: Maybe<String>;
-  type_gt?: Maybe<String>;
-  type_gte?: Maybe<String>;
-  type_contains?: Maybe<String>;
-  type_not_contains?: Maybe<String>;
-  type_starts_with?: Maybe<String>;
-  type_not_starts_with?: Maybe<String>;
-  type_ends_with?: Maybe<String>;
-  type_not_ends_with?: Maybe<String>;
-  x?: Maybe<Int>;
-  x_not?: Maybe<Int>;
-  x_in?: Maybe<Int[] | Int>;
-  x_not_in?: Maybe<Int[] | Int>;
-  x_lt?: Maybe<Int>;
-  x_lte?: Maybe<Int>;
-  x_gt?: Maybe<Int>;
-  x_gte?: Maybe<Int>;
-  y?: Maybe<Int>;
-  y_not?: Maybe<Int>;
-  y_in?: Maybe<Int[] | Int>;
-  y_not_in?: Maybe<Int[] | Int>;
-  y_lt?: Maybe<Int>;
-  y_lte?: Maybe<Int>;
-  y_gt?: Maybe<Int>;
-  y_gte?: Maybe<Int>;
-  z?: Maybe<Int>;
-  z_not?: Maybe<Int>;
-  z_in?: Maybe<Int[] | Int>;
-  z_not_in?: Maybe<Int[] | Int>;
-  z_lt?: Maybe<Int>;
-  z_lte?: Maybe<Int>;
-  z_gt?: Maybe<Int>;
-  z_gte?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  rotation_not?: Maybe<Int>;
-  rotation_in?: Maybe<Int[] | Int>;
-  rotation_not_in?: Maybe<Int[] | Int>;
-  rotation_lt?: Maybe<Int>;
-  rotation_lte?: Maybe<Int>;
-  rotation_gt?: Maybe<Int>;
-  rotation_gte?: Maybe<Int>;
-  inventory?: Maybe<Boolean>;
-  inventory_not?: Maybe<Boolean>;
-  AND?: Maybe<ItemWhereInput[] | ItemWhereInput>;
-  OR?: Maybe<ItemWhereInput[] | ItemWhereInput>;
-  NOT?: Maybe<ItemWhereInput[] | ItemWhereInput>;
-}
-
-export interface RoomWhereInput {
-  id?: Maybe<ID_Input>;
-  id_not?: Maybe<ID_Input>;
-  id_in?: Maybe<ID_Input[] | ID_Input>;
-  id_not_in?: Maybe<ID_Input[] | ID_Input>;
-  id_lt?: Maybe<ID_Input>;
-  id_lte?: Maybe<ID_Input>;
-  id_gt?: Maybe<ID_Input>;
-  id_gte?: Maybe<ID_Input>;
-  id_contains?: Maybe<ID_Input>;
-  id_not_contains?: Maybe<ID_Input>;
-  id_starts_with?: Maybe<ID_Input>;
-  id_not_starts_with?: Maybe<ID_Input>;
-  id_ends_with?: Maybe<ID_Input>;
-  id_not_ends_with?: Maybe<ID_Input>;
-  name?: Maybe<String>;
-  name_not?: Maybe<String>;
-  name_in?: Maybe<String[] | String>;
-  name_not_in?: Maybe<String[] | String>;
-  name_lt?: Maybe<String>;
-  name_lte?: Maybe<String>;
-  name_gt?: Maybe<String>;
-  name_gte?: Maybe<String>;
-  name_contains?: Maybe<String>;
-  name_not_contains?: Maybe<String>;
-  name_starts_with?: Maybe<String>;
-  name_not_starts_with?: Maybe<String>;
-  name_ends_with?: Maybe<String>;
-  name_not_ends_with?: Maybe<String>;
-  description?: Maybe<String>;
-  description_not?: Maybe<String>;
-  description_in?: Maybe<String[] | String>;
-  description_not_in?: Maybe<String[] | String>;
-  description_lt?: Maybe<String>;
-  description_lte?: Maybe<String>;
-  description_gt?: Maybe<String>;
-  description_gte?: Maybe<String>;
-  description_contains?: Maybe<String>;
-  description_not_contains?: Maybe<String>;
-  description_starts_with?: Maybe<String>;
-  description_not_starts_with?: Maybe<String>;
-  description_ends_with?: Maybe<String>;
-  description_not_ends_with?: Maybe<String>;
-  type?: Maybe<roomType>;
-  type_not?: Maybe<roomType>;
-  type_in?: Maybe<roomType[] | roomType>;
-  type_not_in?: Maybe<roomType[] | roomType>;
-  category?: Maybe<Int>;
-  category_not?: Maybe<Int>;
-  category_in?: Maybe<Int[] | Int>;
-  category_not_in?: Maybe<Int[] | Int>;
-  category_lt?: Maybe<Int>;
-  category_lte?: Maybe<Int>;
-  category_gt?: Maybe<Int>;
-  category_gte?: Maybe<Int>;
-  owner?: Maybe<Int>;
-  owner_not?: Maybe<Int>;
-  owner_in?: Maybe<Int[] | Int>;
-  owner_not_in?: Maybe<Int[] | Int>;
-  owner_lt?: Maybe<Int>;
-  owner_lte?: Maybe<Int>;
-  owner_gt?: Maybe<Int>;
-  owner_gte?: Maybe<Int>;
-  floorThickness?: Maybe<Int>;
-  floorThickness_not?: Maybe<Int>;
-  floorThickness_in?: Maybe<Int[] | Int>;
-  floorThickness_not_in?: Maybe<Int[] | Int>;
-  floorThickness_lt?: Maybe<Int>;
-  floorThickness_lte?: Maybe<Int>;
-  floorThickness_gt?: Maybe<Int>;
-  floorThickness_gte?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallThickness_not?: Maybe<Int>;
-  wallThickness_in?: Maybe<Int[] | Int>;
-  wallThickness_not_in?: Maybe<Int[] | Int>;
-  wallThickness_lt?: Maybe<Int>;
-  wallThickness_lte?: Maybe<Int>;
-  wallThickness_gt?: Maybe<Int>;
-  wallThickness_gte?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
-  wallHeight_not?: Maybe<Int>;
-  wallHeight_in?: Maybe<Int[] | Int>;
-  wallHeight_not_in?: Maybe<Int[] | Int>;
-  wallHeight_lt?: Maybe<Int>;
-  wallHeight_lte?: Maybe<Int>;
-  wallHeight_gt?: Maybe<Int>;
-  wallHeight_gte?: Maybe<Int>;
-  hideWalls?: Maybe<Boolean>;
-  hideWalls_not?: Maybe<Boolean>;
-  hideWired?: Maybe<Boolean>;
-  hideWired_not?: Maybe<Boolean>;
-  currentUsers?: Maybe<Int>;
-  currentUsers_not?: Maybe<Int>;
-  currentUsers_in?: Maybe<Int[] | Int>;
-  currentUsers_not_in?: Maybe<Int[] | Int>;
-  currentUsers_lt?: Maybe<Int>;
-  currentUsers_lte?: Maybe<Int>;
-  currentUsers_gt?: Maybe<Int>;
-  currentUsers_gte?: Maybe<Int>;
-  maxUsers?: Maybe<Int>;
-  maxUsers_not?: Maybe<Int>;
-  maxUsers_in?: Maybe<Int[] | Int>;
-  maxUsers_not_in?: Maybe<Int[] | Int>;
-  maxUsers_lt?: Maybe<Int>;
-  maxUsers_lte?: Maybe<Int>;
-  maxUsers_gt?: Maybe<Int>;
-  maxUsers_gte?: Maybe<Int>;
-  allowPets?: Maybe<Boolean>;
-  allowPets_not?: Maybe<Boolean>;
-  allowPetsEating?: Maybe<Boolean>;
-  allowPetsEating_not?: Maybe<Boolean>;
-  items_every?: Maybe<ItemWhereInput>;
-  items_some?: Maybe<ItemWhereInput>;
-  items_none?: Maybe<ItemWhereInput>;
-  AND?: Maybe<RoomWhereInput[] | RoomWhereInput>;
-  OR?: Maybe<RoomWhereInput[] | RoomWhereInput>;
-  NOT?: Maybe<RoomWhereInput[] | RoomWhereInput>;
-}
-
-export interface CatalogItemWhereInput {
-  id?: Maybe<ID_Input>;
-  id_not?: Maybe<ID_Input>;
-  id_in?: Maybe<ID_Input[] | ID_Input>;
-  id_not_in?: Maybe<ID_Input[] | ID_Input>;
-  id_lt?: Maybe<ID_Input>;
-  id_lte?: Maybe<ID_Input>;
-  id_gt?: Maybe<ID_Input>;
-  id_gte?: Maybe<ID_Input>;
-  id_contains?: Maybe<ID_Input>;
-  id_not_contains?: Maybe<ID_Input>;
-  id_starts_with?: Maybe<ID_Input>;
-  id_not_starts_with?: Maybe<ID_Input>;
-  id_ends_with?: Maybe<ID_Input>;
-  id_not_ends_with?: Maybe<ID_Input>;
-  page?: Maybe<CatalogPageWhereInput>;
-  item?: Maybe<ItemWhereInput>;
-  name?: Maybe<String>;
-  name_not?: Maybe<String>;
-  name_in?: Maybe<String[] | String>;
-  name_not_in?: Maybe<String[] | String>;
-  name_lt?: Maybe<String>;
-  name_lte?: Maybe<String>;
-  name_gt?: Maybe<String>;
-  name_gte?: Maybe<String>;
-  name_contains?: Maybe<String>;
-  name_not_contains?: Maybe<String>;
-  name_starts_with?: Maybe<String>;
-  name_not_starts_with?: Maybe<String>;
-  name_ends_with?: Maybe<String>;
-  name_not_ends_with?: Maybe<String>;
-  amount?: Maybe<Int>;
-  amount_not?: Maybe<Int>;
-  amount_in?: Maybe<Int[] | Int>;
-  amount_not_in?: Maybe<Int[] | Int>;
-  amount_lt?: Maybe<Int>;
-  amount_lte?: Maybe<Int>;
-  amount_gt?: Maybe<Int>;
-  amount_gte?: Maybe<Int>;
-  limited?: Maybe<Boolean>;
-  limited_not?: Maybe<Boolean>;
-  maximum?: Maybe<Int>;
-  maximum_not?: Maybe<Int>;
-  maximum_in?: Maybe<Int[] | Int>;
-  maximum_not_in?: Maybe<Int[] | Int>;
-  maximum_lt?: Maybe<Int>;
-  maximum_lte?: Maybe<Int>;
-  maximum_gt?: Maybe<Int>;
-  maximum_gte?: Maybe<Int>;
-  stack?: Maybe<Boolean>;
-  stack_not?: Maybe<Boolean>;
-  active?: Maybe<Boolean>;
-  active_not?: Maybe<Boolean>;
-  AND?: Maybe<CatalogItemWhereInput[] | CatalogItemWhereInput>;
-  OR?: Maybe<CatalogItemWhereInput[] | CatalogItemWhereInput>;
-  NOT?: Maybe<CatalogItemWhereInput[] | CatalogItemWhereInput>;
-}
-
 export interface CatalogPageWhereInput {
   id?: Maybe<ID_Input>;
   id_not?: Maybe<ID_Input>;
@@ -1686,28 +1412,25 @@ export interface CatalogPageWhereInput {
   id_not_starts_with?: Maybe<ID_Input>;
   id_ends_with?: Maybe<ID_Input>;
   id_not_ends_with?: Maybe<ID_Input>;
-  parent?: Maybe<Int>;
-  parent_not?: Maybe<Int>;
-  parent_in?: Maybe<Int[] | Int>;
-  parent_not_in?: Maybe<Int[] | Int>;
-  parent_lt?: Maybe<Int>;
-  parent_lte?: Maybe<Int>;
-  parent_gt?: Maybe<Int>;
-  parent_gte?: Maybe<Int>;
-  type?: Maybe<String>;
-  type_not?: Maybe<String>;
-  type_in?: Maybe<String[] | String>;
-  type_not_in?: Maybe<String[] | String>;
-  type_lt?: Maybe<String>;
-  type_lte?: Maybe<String>;
-  type_gt?: Maybe<String>;
-  type_gte?: Maybe<String>;
-  type_contains?: Maybe<String>;
-  type_not_contains?: Maybe<String>;
-  type_starts_with?: Maybe<String>;
-  type_not_starts_with?: Maybe<String>;
-  type_ends_with?: Maybe<String>;
-  type_not_ends_with?: Maybe<String>;
+  link?: Maybe<String>;
+  link_not?: Maybe<String>;
+  link_in?: Maybe<String[] | String>;
+  link_not_in?: Maybe<String[] | String>;
+  link_lt?: Maybe<String>;
+  link_lte?: Maybe<String>;
+  link_gt?: Maybe<String>;
+  link_gte?: Maybe<String>;
+  link_contains?: Maybe<String>;
+  link_not_contains?: Maybe<String>;
+  link_starts_with?: Maybe<String>;
+  link_not_starts_with?: Maybe<String>;
+  link_ends_with?: Maybe<String>;
+  link_not_ends_with?: Maybe<String>;
+  parent?: Maybe<CatalogPageWhereInput>;
+  layout?: Maybe<CatalogPageLayout>;
+  layout_not?: Maybe<CatalogPageLayout>;
+  layout_in?: Maybe<CatalogPageLayout[] | CatalogPageLayout>;
+  layout_not_in?: Maybe<CatalogPageLayout[] | CatalogPageLayout>;
   order?: Maybe<Int>;
   order_not?: Maybe<Int>;
   order_in?: Maybe<Int[] | Int>;
@@ -1730,20 +1453,7 @@ export interface CatalogPageWhereInput {
   name_not_starts_with?: Maybe<String>;
   name_ends_with?: Maybe<String>;
   name_not_ends_with?: Maybe<String>;
-  caption?: Maybe<String>;
-  caption_not?: Maybe<String>;
-  caption_in?: Maybe<String[] | String>;
-  caption_not_in?: Maybe<String[] | String>;
-  caption_lt?: Maybe<String>;
-  caption_lte?: Maybe<String>;
-  caption_gt?: Maybe<String>;
-  caption_gte?: Maybe<String>;
-  caption_contains?: Maybe<String>;
-  caption_not_contains?: Maybe<String>;
-  caption_starts_with?: Maybe<String>;
-  caption_not_starts_with?: Maybe<String>;
-  caption_ends_with?: Maybe<String>;
-  caption_not_ends_with?: Maybe<String>;
+  language?: Maybe<LanguageWhereInput>;
   description?: Maybe<String>;
   description_not?: Maybe<String>;
   description_in?: Maybe<String[] | String>;
@@ -1772,6 +1482,34 @@ export interface CatalogPageWhereInput {
   icon_not_starts_with?: Maybe<String>;
   icon_ends_with?: Maybe<String>;
   icon_not_ends_with?: Maybe<String>;
+  banner?: Maybe<String>;
+  banner_not?: Maybe<String>;
+  banner_in?: Maybe<String[] | String>;
+  banner_not_in?: Maybe<String[] | String>;
+  banner_lt?: Maybe<String>;
+  banner_lte?: Maybe<String>;
+  banner_gt?: Maybe<String>;
+  banner_gte?: Maybe<String>;
+  banner_contains?: Maybe<String>;
+  banner_not_contains?: Maybe<String>;
+  banner_starts_with?: Maybe<String>;
+  banner_not_starts_with?: Maybe<String>;
+  banner_ends_with?: Maybe<String>;
+  banner_not_ends_with?: Maybe<String>;
+  teaser?: Maybe<String>;
+  teaser_not?: Maybe<String>;
+  teaser_in?: Maybe<String[] | String>;
+  teaser_not_in?: Maybe<String[] | String>;
+  teaser_lt?: Maybe<String>;
+  teaser_lte?: Maybe<String>;
+  teaser_gt?: Maybe<String>;
+  teaser_gte?: Maybe<String>;
+  teaser_contains?: Maybe<String>;
+  teaser_not_contains?: Maybe<String>;
+  teaser_starts_with?: Maybe<String>;
+  teaser_not_starts_with?: Maybe<String>;
+  teaser_ends_with?: Maybe<String>;
+  teaser_not_ends_with?: Maybe<String>;
   visible?: Maybe<Boolean>;
   visible_not?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
@@ -1788,27 +1526,78 @@ export interface CatalogPageWhereInput {
   club_not?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
   vip_not?: Maybe<Boolean>;
-  body?: Maybe<String>;
-  body_not?: Maybe<String>;
-  body_in?: Maybe<String[] | String>;
-  body_not_in?: Maybe<String[] | String>;
-  body_lt?: Maybe<String>;
-  body_lte?: Maybe<String>;
-  body_gt?: Maybe<String>;
-  body_gte?: Maybe<String>;
-  body_contains?: Maybe<String>;
-  body_not_contains?: Maybe<String>;
-  body_starts_with?: Maybe<String>;
-  body_not_starts_with?: Maybe<String>;
-  body_ends_with?: Maybe<String>;
-  body_not_ends_with?: Maybe<String>;
   AND?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
   OR?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
   NOT?: Maybe<CatalogPageWhereInput[] | CatalogPageWhereInput>;
 }
 
+export interface LanguageWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  name?: Maybe<String>;
+  name_not?: Maybe<String>;
+  name_in?: Maybe<String[] | String>;
+  name_not_in?: Maybe<String[] | String>;
+  name_lt?: Maybe<String>;
+  name_lte?: Maybe<String>;
+  name_gt?: Maybe<String>;
+  name_gte?: Maybe<String>;
+  name_contains?: Maybe<String>;
+  name_not_contains?: Maybe<String>;
+  name_starts_with?: Maybe<String>;
+  name_not_starts_with?: Maybe<String>;
+  name_ends_with?: Maybe<String>;
+  name_not_ends_with?: Maybe<String>;
+  native?: Maybe<String>;
+  native_not?: Maybe<String>;
+  native_in?: Maybe<String[] | String>;
+  native_not_in?: Maybe<String[] | String>;
+  native_lt?: Maybe<String>;
+  native_lte?: Maybe<String>;
+  native_gt?: Maybe<String>;
+  native_gte?: Maybe<String>;
+  native_contains?: Maybe<String>;
+  native_not_contains?: Maybe<String>;
+  native_starts_with?: Maybe<String>;
+  native_not_starts_with?: Maybe<String>;
+  native_ends_with?: Maybe<String>;
+  native_not_ends_with?: Maybe<String>;
+  code?: Maybe<String>;
+  code_not?: Maybe<String>;
+  code_in?: Maybe<String[] | String>;
+  code_not_in?: Maybe<String[] | String>;
+  code_lt?: Maybe<String>;
+  code_lte?: Maybe<String>;
+  code_gt?: Maybe<String>;
+  code_gte?: Maybe<String>;
+  code_contains?: Maybe<String>;
+  code_not_contains?: Maybe<String>;
+  code_starts_with?: Maybe<String>;
+  code_not_starts_with?: Maybe<String>;
+  code_ends_with?: Maybe<String>;
+  code_not_ends_with?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
+  enabled_not?: Maybe<Boolean>;
+  AND?: Maybe<LanguageWhereInput[] | LanguageWhereInput>;
+  OR?: Maybe<LanguageWhereInput[] | LanguageWhereInput>;
+  NOT?: Maybe<LanguageWhereInput[] | LanguageWhereInput>;
+}
+
 export type CatalogPageWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
+  link?: Maybe<String>;
 }>;
 
 export type ChatlogWhereUniqueInput = AtLeastOne<{
@@ -2077,6 +1866,115 @@ export interface ChatlogWhereInput {
   NOT?: Maybe<ChatlogWhereInput[] | ChatlogWhereInput>;
 }
 
+export interface RoomWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  name?: Maybe<String>;
+  name_not?: Maybe<String>;
+  name_in?: Maybe<String[] | String>;
+  name_not_in?: Maybe<String[] | String>;
+  name_lt?: Maybe<String>;
+  name_lte?: Maybe<String>;
+  name_gt?: Maybe<String>;
+  name_gte?: Maybe<String>;
+  name_contains?: Maybe<String>;
+  name_not_contains?: Maybe<String>;
+  name_starts_with?: Maybe<String>;
+  name_not_starts_with?: Maybe<String>;
+  name_ends_with?: Maybe<String>;
+  name_not_ends_with?: Maybe<String>;
+  description?: Maybe<String>;
+  description_not?: Maybe<String>;
+  description_in?: Maybe<String[] | String>;
+  description_not_in?: Maybe<String[] | String>;
+  description_lt?: Maybe<String>;
+  description_lte?: Maybe<String>;
+  description_gt?: Maybe<String>;
+  description_gte?: Maybe<String>;
+  description_contains?: Maybe<String>;
+  description_not_contains?: Maybe<String>;
+  description_starts_with?: Maybe<String>;
+  description_not_starts_with?: Maybe<String>;
+  description_ends_with?: Maybe<String>;
+  description_not_ends_with?: Maybe<String>;
+  type?: Maybe<roomType>;
+  type_not?: Maybe<roomType>;
+  type_in?: Maybe<roomType[] | roomType>;
+  type_not_in?: Maybe<roomType[] | roomType>;
+  category?: Maybe<Int>;
+  category_not?: Maybe<Int>;
+  category_in?: Maybe<Int[] | Int>;
+  category_not_in?: Maybe<Int[] | Int>;
+  category_lt?: Maybe<Int>;
+  category_lte?: Maybe<Int>;
+  category_gt?: Maybe<Int>;
+  category_gte?: Maybe<Int>;
+  owner?: Maybe<HabboWhereInput>;
+  floorThickness?: Maybe<Float>;
+  floorThickness_not?: Maybe<Float>;
+  floorThickness_in?: Maybe<Float[] | Float>;
+  floorThickness_not_in?: Maybe<Float[] | Float>;
+  floorThickness_lt?: Maybe<Float>;
+  floorThickness_lte?: Maybe<Float>;
+  floorThickness_gt?: Maybe<Float>;
+  floorThickness_gte?: Maybe<Float>;
+  wallThickness?: Maybe<Float>;
+  wallThickness_not?: Maybe<Float>;
+  wallThickness_in?: Maybe<Float[] | Float>;
+  wallThickness_not_in?: Maybe<Float[] | Float>;
+  wallThickness_lt?: Maybe<Float>;
+  wallThickness_lte?: Maybe<Float>;
+  wallThickness_gt?: Maybe<Float>;
+  wallThickness_gte?: Maybe<Float>;
+  wallHeight?: Maybe<Float>;
+  wallHeight_not?: Maybe<Float>;
+  wallHeight_in?: Maybe<Float[] | Float>;
+  wallHeight_not_in?: Maybe<Float[] | Float>;
+  wallHeight_lt?: Maybe<Float>;
+  wallHeight_lte?: Maybe<Float>;
+  wallHeight_gt?: Maybe<Float>;
+  wallHeight_gte?: Maybe<Float>;
+  hideWalls?: Maybe<Boolean>;
+  hideWalls_not?: Maybe<Boolean>;
+  hideWired?: Maybe<Boolean>;
+  hideWired_not?: Maybe<Boolean>;
+  currentUsers?: Maybe<Int>;
+  currentUsers_not?: Maybe<Int>;
+  currentUsers_in?: Maybe<Int[] | Int>;
+  currentUsers_not_in?: Maybe<Int[] | Int>;
+  currentUsers_lt?: Maybe<Int>;
+  currentUsers_lte?: Maybe<Int>;
+  currentUsers_gt?: Maybe<Int>;
+  currentUsers_gte?: Maybe<Int>;
+  maxUsers?: Maybe<Int>;
+  maxUsers_not?: Maybe<Int>;
+  maxUsers_in?: Maybe<Int[] | Int>;
+  maxUsers_not_in?: Maybe<Int[] | Int>;
+  maxUsers_lt?: Maybe<Int>;
+  maxUsers_lte?: Maybe<Int>;
+  maxUsers_gt?: Maybe<Int>;
+  maxUsers_gte?: Maybe<Int>;
+  allowPets?: Maybe<Boolean>;
+  allowPets_not?: Maybe<Boolean>;
+  allowPetsEating?: Maybe<Boolean>;
+  allowPetsEating_not?: Maybe<Boolean>;
+  AND?: Maybe<RoomWhereInput[] | RoomWhereInput>;
+  OR?: Maybe<RoomWhereInput[] | RoomWhereInput>;
+  NOT?: Maybe<RoomWhereInput[] | RoomWhereInput>;
+}
+
 export type ChatlogConsoleWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
 }>;
@@ -2185,8 +2083,9 @@ export type HabboWhereUniqueInput = AtLeastOne<{
   username?: Maybe<String>;
 }>;
 
-export type ItemWhereUniqueInput = AtLeastOne<{
+export type LanguageWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
+  code?: Maybe<String>;
 }>;
 
 export type NavigatorCategoryWhereUniqueInput = AtLeastOne<{
@@ -2273,6 +2172,7 @@ export interface NavigatorTabWhereInput {
   order_lte?: Maybe<Int>;
   order_gt?: Maybe<Int>;
   order_gte?: Maybe<Int>;
+  language?: Maybe<LanguageWhereInput>;
   categories_every?: Maybe<NavigatorCategoryWhereInput>;
   categories_some?: Maybe<NavigatorCategoryWhereInput>;
   categories_none?: Maybe<NavigatorCategoryWhereInput>;
@@ -2283,7 +2183,6 @@ export interface NavigatorTabWhereInput {
 
 export type NavigatorTabWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
-  order?: Maybe<Int>;
 }>;
 
 export type NewsWhereUniqueInput = AtLeastOne<{
@@ -2381,6 +2280,52 @@ export interface NewsWhereInput {
   AND?: Maybe<NewsWhereInput[] | NewsWhereInput>;
   OR?: Maybe<NewsWhereInput[] | NewsWhereInput>;
   NOT?: Maybe<NewsWhereInput[] | NewsWhereInput>;
+}
+
+export type RankWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
+export interface RankWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  order?: Maybe<Int>;
+  order_not?: Maybe<Int>;
+  order_in?: Maybe<Int[] | Int>;
+  order_not_in?: Maybe<Int[] | Int>;
+  order_lt?: Maybe<Int>;
+  order_lte?: Maybe<Int>;
+  order_gt?: Maybe<Int>;
+  order_gte?: Maybe<Int>;
+  name?: Maybe<String>;
+  name_not?: Maybe<String>;
+  name_in?: Maybe<String[] | String>;
+  name_not_in?: Maybe<String[] | String>;
+  name_lt?: Maybe<String>;
+  name_lte?: Maybe<String>;
+  name_gt?: Maybe<String>;
+  name_gte?: Maybe<String>;
+  name_contains?: Maybe<String>;
+  name_not_contains?: Maybe<String>;
+  name_starts_with?: Maybe<String>;
+  name_not_starts_with?: Maybe<String>;
+  name_ends_with?: Maybe<String>;
+  name_not_ends_with?: Maybe<String>;
+  AND?: Maybe<RankWhereInput[] | RankWhereInput>;
+  OR?: Maybe<RankWhereInput[] | RankWhereInput>;
+  NOT?: Maybe<RankWhereInput[] | RankWhereInput>;
 }
 
 export type RoomWhereUniqueInput = AtLeastOne<{
@@ -2521,34 +2466,8 @@ export interface CatalogFeaturedCreateInput {
   id?: Maybe<ID_Input>;
   caption?: Maybe<String>;
   image?: Maybe<String>;
-  link?: Maybe<String>;
+  link?: Maybe<CatalogPageCreateOneInput>;
   slot?: Maybe<Int>;
-}
-
-export interface CatalogFeaturedUpdateInput {
-  caption?: Maybe<String>;
-  image?: Maybe<String>;
-  link?: Maybe<String>;
-  slot?: Maybe<Int>;
-}
-
-export interface CatalogFeaturedUpdateManyMutationInput {
-  caption?: Maybe<String>;
-  image?: Maybe<String>;
-  link?: Maybe<String>;
-  slot?: Maybe<Int>;
-}
-
-export interface CatalogItemCreateInput {
-  id?: Maybe<ID_Input>;
-  page: CatalogPageCreateOneInput;
-  item: ItemCreateOneInput;
-  name?: Maybe<String>;
-  amount?: Maybe<Int>;
-  limited?: Maybe<Boolean>;
-  maximum?: Maybe<Int>;
-  stack?: Maybe<Boolean>;
-  active?: Maybe<Boolean>;
 }
 
 export interface CatalogPageCreateOneInput {
@@ -2558,105 +2477,93 @@ export interface CatalogPageCreateOneInput {
 
 export interface CatalogPageCreateInput {
   id?: Maybe<ID_Input>;
-  parent?: Maybe<Int>;
-  type?: Maybe<String>;
+  link: String;
+  parent?: Maybe<CatalogPageCreateOneInput>;
+  layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
-  name: String;
-  caption?: Maybe<String>;
+  name?: Maybe<String>;
+  language?: Maybe<LanguageCreateOneInput>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  banner?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  body?: Maybe<Json>;
+  product?: Maybe<Json>;
 }
 
-export interface ItemCreateOneInput {
-  create?: Maybe<ItemCreateInput>;
-  connect?: Maybe<ItemWhereUniqueInput>;
+export interface LanguageCreateOneInput {
+  create?: Maybe<LanguageCreateInput>;
+  connect?: Maybe<LanguageWhereUniqueInput>;
 }
 
-export interface ItemCreateInput {
+export interface LanguageCreateInput {
   id?: Maybe<ID_Input>;
-  owner?: Maybe<Int>;
-  room: RoomCreateOneWithoutItemsInput;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemCreatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
-}
-
-export interface RoomCreateOneWithoutItemsInput {
-  create?: Maybe<RoomCreateWithoutItemsInput>;
-  connect?: Maybe<RoomWhereUniqueInput>;
-}
-
-export interface RoomCreateWithoutItemsInput {
-  id?: Maybe<ID_Input>;
-  name: String;
-  description?: Maybe<String>;
-  type?: Maybe<roomType>;
-  category?: Maybe<Int>;
-  owner?: Maybe<Int>;
-  map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
-  hideWalls?: Maybe<Boolean>;
-  hideWired?: Maybe<Boolean>;
-  currentUsers?: Maybe<Int>;
-  maxUsers?: Maybe<Int>;
-  allowPets?: Maybe<Boolean>;
-  allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomCreaterightsInput>;
-}
-
-export interface RoomCreaterightsInput {
-  set?: Maybe<Int[] | Int>;
-}
-
-export interface ItemCreatewallPositionInput {
-  set?: Maybe<Float[] | Float>;
-}
-
-export interface CatalogItemUpdateInput {
-  page?: Maybe<CatalogPageUpdateOneRequiredInput>;
-  item?: Maybe<ItemUpdateOneRequiredInput>;
   name?: Maybe<String>;
-  amount?: Maybe<Int>;
-  limited?: Maybe<Boolean>;
-  maximum?: Maybe<Int>;
-  stack?: Maybe<Boolean>;
-  active?: Maybe<Boolean>;
+  native?: Maybe<String>;
+  code: String;
+  enabled?: Maybe<Boolean>;
 }
 
-export interface CatalogPageUpdateOneRequiredInput {
+export interface CatalogFeaturedUpdateInput {
+  caption?: Maybe<String>;
+  image?: Maybe<String>;
+  link?: Maybe<CatalogPageUpdateOneInput>;
+  slot?: Maybe<Int>;
+}
+
+export interface CatalogPageUpdateOneInput {
   create?: Maybe<CatalogPageCreateInput>;
   update?: Maybe<CatalogPageUpdateDataInput>;
   upsert?: Maybe<CatalogPageUpsertNestedInput>;
+  delete?: Maybe<Boolean>;
+  disconnect?: Maybe<Boolean>;
   connect?: Maybe<CatalogPageWhereUniqueInput>;
 }
 
 export interface CatalogPageUpdateDataInput {
-  parent?: Maybe<Int>;
-  type?: Maybe<String>;
+  link?: Maybe<String>;
+  parent?: Maybe<CatalogPageUpdateOneInput>;
+  layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
-  caption?: Maybe<String>;
+  language?: Maybe<LanguageUpdateOneInput>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  banner?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  body?: Maybe<Json>;
+  product?: Maybe<Json>;
+}
+
+export interface LanguageUpdateOneInput {
+  create?: Maybe<LanguageCreateInput>;
+  update?: Maybe<LanguageUpdateDataInput>;
+  upsert?: Maybe<LanguageUpsertNestedInput>;
+  delete?: Maybe<Boolean>;
+  disconnect?: Maybe<Boolean>;
+  connect?: Maybe<LanguageWhereUniqueInput>;
+}
+
+export interface LanguageUpdateDataInput {
+  name?: Maybe<String>;
+  native?: Maybe<String>;
+  code?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
+}
+
+export interface LanguageUpsertNestedInput {
+  update: LanguageUpdateDataInput;
+  create: LanguageCreateInput;
 }
 
 export interface CatalogPageUpsertNestedInput {
@@ -2664,109 +2571,48 @@ export interface CatalogPageUpsertNestedInput {
   create: CatalogPageCreateInput;
 }
 
-export interface ItemUpdateOneRequiredInput {
-  create?: Maybe<ItemCreateInput>;
-  update?: Maybe<ItemUpdateDataInput>;
-  upsert?: Maybe<ItemUpsertNestedInput>;
-  connect?: Maybe<ItemWhereUniqueInput>;
-}
-
-export interface ItemUpdateDataInput {
-  owner?: Maybe<Int>;
-  room?: Maybe<RoomUpdateOneRequiredWithoutItemsInput>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
-}
-
-export interface RoomUpdateOneRequiredWithoutItemsInput {
-  create?: Maybe<RoomCreateWithoutItemsInput>;
-  update?: Maybe<RoomUpdateWithoutItemsDataInput>;
-  upsert?: Maybe<RoomUpsertWithoutItemsInput>;
-  connect?: Maybe<RoomWhereUniqueInput>;
-}
-
-export interface RoomUpdateWithoutItemsDataInput {
-  name?: Maybe<String>;
-  description?: Maybe<String>;
-  type?: Maybe<roomType>;
-  category?: Maybe<Int>;
-  owner?: Maybe<Int>;
-  map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
-  hideWalls?: Maybe<Boolean>;
-  hideWired?: Maybe<Boolean>;
-  currentUsers?: Maybe<Int>;
-  maxUsers?: Maybe<Int>;
-  allowPets?: Maybe<Boolean>;
-  allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomUpdaterightsInput>;
-}
-
-export interface RoomUpdaterightsInput {
-  set?: Maybe<Int[] | Int>;
-}
-
-export interface RoomUpsertWithoutItemsInput {
-  update: RoomUpdateWithoutItemsDataInput;
-  create: RoomCreateWithoutItemsInput;
-}
-
-export interface ItemUpdatewallPositionInput {
-  set?: Maybe<Float[] | Float>;
-}
-
-export interface ItemUpsertNestedInput {
-  update: ItemUpdateDataInput;
-  create: ItemCreateInput;
-}
-
-export interface CatalogItemUpdateManyMutationInput {
-  name?: Maybe<String>;
-  amount?: Maybe<Int>;
-  limited?: Maybe<Boolean>;
-  maximum?: Maybe<Int>;
-  stack?: Maybe<Boolean>;
-  active?: Maybe<Boolean>;
+export interface CatalogFeaturedUpdateManyMutationInput {
+  caption?: Maybe<String>;
+  image?: Maybe<String>;
+  slot?: Maybe<Int>;
 }
 
 export interface CatalogPageUpdateInput {
-  parent?: Maybe<Int>;
-  type?: Maybe<String>;
+  link?: Maybe<String>;
+  parent?: Maybe<CatalogPageUpdateOneInput>;
+  layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
-  caption?: Maybe<String>;
+  language?: Maybe<LanguageUpdateOneInput>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  banner?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  body?: Maybe<Json>;
+  product?: Maybe<Json>;
 }
 
 export interface CatalogPageUpdateManyMutationInput {
-  parent?: Maybe<Int>;
-  type?: Maybe<String>;
+  link?: Maybe<String>;
+  layout?: Maybe<CatalogPageLayout>;
   order?: Maybe<Int>;
   name?: Maybe<String>;
-  caption?: Maybe<String>;
   description?: Maybe<String>;
   icon?: Maybe<String>;
+  banner?: Maybe<String>;
+  teaser?: Maybe<String>;
   visible?: Maybe<Boolean>;
   enabled?: Maybe<Boolean>;
   rank?: Maybe<Int>;
   club?: Maybe<Boolean>;
   vip?: Maybe<Boolean>;
-  body?: Maybe<String>;
+  body?: Maybe<Json>;
+  product?: Maybe<Json>;
 }
 
 export interface ChatlogCreateInput {
@@ -2828,37 +2674,17 @@ export interface RoomCreateInput {
   description?: Maybe<String>;
   type?: Maybe<roomType>;
   category?: Maybe<Int>;
-  owner?: Maybe<Int>;
+  owner?: Maybe<HabboCreateOneInput>;
   map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
+  floorThickness?: Maybe<Float>;
+  wallThickness?: Maybe<Float>;
+  wallHeight?: Maybe<Float>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
   currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomCreaterightsInput>;
-  items?: Maybe<ItemCreateManyWithoutRoomInput>;
-}
-
-export interface ItemCreateManyWithoutRoomInput {
-  create?: Maybe<ItemCreateWithoutRoomInput[] | ItemCreateWithoutRoomInput>;
-  connect?: Maybe<ItemWhereUniqueInput[] | ItemWhereUniqueInput>;
-}
-
-export interface ItemCreateWithoutRoomInput {
-  id?: Maybe<ID_Input>;
-  owner?: Maybe<Int>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemCreatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
 }
 
 export interface ChatlogUpdateInput {
@@ -2932,163 +2758,26 @@ export interface RoomUpdateDataInput {
   description?: Maybe<String>;
   type?: Maybe<roomType>;
   category?: Maybe<Int>;
-  owner?: Maybe<Int>;
+  owner?: Maybe<HabboUpdateOneInput>;
   map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
+  floorThickness?: Maybe<Float>;
+  wallThickness?: Maybe<Float>;
+  wallHeight?: Maybe<Float>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
   currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomUpdaterightsInput>;
-  items?: Maybe<ItemUpdateManyWithoutRoomInput>;
 }
 
-export interface ItemUpdateManyWithoutRoomInput {
-  create?: Maybe<ItemCreateWithoutRoomInput[] | ItemCreateWithoutRoomInput>;
-  delete?: Maybe<ItemWhereUniqueInput[] | ItemWhereUniqueInput>;
-  connect?: Maybe<ItemWhereUniqueInput[] | ItemWhereUniqueInput>;
-  set?: Maybe<ItemWhereUniqueInput[] | ItemWhereUniqueInput>;
-  disconnect?: Maybe<ItemWhereUniqueInput[] | ItemWhereUniqueInput>;
-  update?: Maybe<
-    | ItemUpdateWithWhereUniqueWithoutRoomInput[]
-    | ItemUpdateWithWhereUniqueWithoutRoomInput
-  >;
-  upsert?: Maybe<
-    | ItemUpsertWithWhereUniqueWithoutRoomInput[]
-    | ItemUpsertWithWhereUniqueWithoutRoomInput
-  >;
-  deleteMany?: Maybe<ItemScalarWhereInput[] | ItemScalarWhereInput>;
-  updateMany?: Maybe<
-    ItemUpdateManyWithWhereNestedInput[] | ItemUpdateManyWithWhereNestedInput
-  >;
-}
-
-export interface ItemUpdateWithWhereUniqueWithoutRoomInput {
-  where: ItemWhereUniqueInput;
-  data: ItemUpdateWithoutRoomDataInput;
-}
-
-export interface ItemUpdateWithoutRoomDataInput {
-  owner?: Maybe<Int>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
-}
-
-export interface ItemUpsertWithWhereUniqueWithoutRoomInput {
-  where: ItemWhereUniqueInput;
-  update: ItemUpdateWithoutRoomDataInput;
-  create: ItemCreateWithoutRoomInput;
-}
-
-export interface ItemScalarWhereInput {
-  id?: Maybe<ID_Input>;
-  id_not?: Maybe<ID_Input>;
-  id_in?: Maybe<ID_Input[] | ID_Input>;
-  id_not_in?: Maybe<ID_Input[] | ID_Input>;
-  id_lt?: Maybe<ID_Input>;
-  id_lte?: Maybe<ID_Input>;
-  id_gt?: Maybe<ID_Input>;
-  id_gte?: Maybe<ID_Input>;
-  id_contains?: Maybe<ID_Input>;
-  id_not_contains?: Maybe<ID_Input>;
-  id_starts_with?: Maybe<ID_Input>;
-  id_not_starts_with?: Maybe<ID_Input>;
-  id_ends_with?: Maybe<ID_Input>;
-  id_not_ends_with?: Maybe<ID_Input>;
-  owner?: Maybe<Int>;
-  owner_not?: Maybe<Int>;
-  owner_in?: Maybe<Int[] | Int>;
-  owner_not_in?: Maybe<Int[] | Int>;
-  owner_lt?: Maybe<Int>;
-  owner_lte?: Maybe<Int>;
-  owner_gt?: Maybe<Int>;
-  owner_gte?: Maybe<Int>;
-  furniture?: Maybe<Int>;
-  furniture_not?: Maybe<Int>;
-  furniture_in?: Maybe<Int[] | Int>;
-  furniture_not_in?: Maybe<Int[] | Int>;
-  furniture_lt?: Maybe<Int>;
-  furniture_lte?: Maybe<Int>;
-  furniture_gt?: Maybe<Int>;
-  furniture_gte?: Maybe<Int>;
-  type?: Maybe<String>;
-  type_not?: Maybe<String>;
-  type_in?: Maybe<String[] | String>;
-  type_not_in?: Maybe<String[] | String>;
-  type_lt?: Maybe<String>;
-  type_lte?: Maybe<String>;
-  type_gt?: Maybe<String>;
-  type_gte?: Maybe<String>;
-  type_contains?: Maybe<String>;
-  type_not_contains?: Maybe<String>;
-  type_starts_with?: Maybe<String>;
-  type_not_starts_with?: Maybe<String>;
-  type_ends_with?: Maybe<String>;
-  type_not_ends_with?: Maybe<String>;
-  x?: Maybe<Int>;
-  x_not?: Maybe<Int>;
-  x_in?: Maybe<Int[] | Int>;
-  x_not_in?: Maybe<Int[] | Int>;
-  x_lt?: Maybe<Int>;
-  x_lte?: Maybe<Int>;
-  x_gt?: Maybe<Int>;
-  x_gte?: Maybe<Int>;
-  y?: Maybe<Int>;
-  y_not?: Maybe<Int>;
-  y_in?: Maybe<Int[] | Int>;
-  y_not_in?: Maybe<Int[] | Int>;
-  y_lt?: Maybe<Int>;
-  y_lte?: Maybe<Int>;
-  y_gt?: Maybe<Int>;
-  y_gte?: Maybe<Int>;
-  z?: Maybe<Int>;
-  z_not?: Maybe<Int>;
-  z_in?: Maybe<Int[] | Int>;
-  z_not_in?: Maybe<Int[] | Int>;
-  z_lt?: Maybe<Int>;
-  z_lte?: Maybe<Int>;
-  z_gt?: Maybe<Int>;
-  z_gte?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  rotation_not?: Maybe<Int>;
-  rotation_in?: Maybe<Int[] | Int>;
-  rotation_not_in?: Maybe<Int[] | Int>;
-  rotation_lt?: Maybe<Int>;
-  rotation_lte?: Maybe<Int>;
-  rotation_gt?: Maybe<Int>;
-  rotation_gte?: Maybe<Int>;
-  inventory?: Maybe<Boolean>;
-  inventory_not?: Maybe<Boolean>;
-  AND?: Maybe<ItemScalarWhereInput[] | ItemScalarWhereInput>;
-  OR?: Maybe<ItemScalarWhereInput[] | ItemScalarWhereInput>;
-  NOT?: Maybe<ItemScalarWhereInput[] | ItemScalarWhereInput>;
-}
-
-export interface ItemUpdateManyWithWhereNestedInput {
-  where: ItemScalarWhereInput;
-  data: ItemUpdateManyDataInput;
-}
-
-export interface ItemUpdateManyDataInput {
-  owner?: Maybe<Int>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
+export interface HabboUpdateOneInput {
+  create?: Maybe<HabboCreateInput>;
+  update?: Maybe<HabboUpdateDataInput>;
+  upsert?: Maybe<HabboUpsertNestedInput>;
+  delete?: Maybe<Boolean>;
+  disconnect?: Maybe<Boolean>;
+  connect?: Maybe<HabboWhereUniqueInput>;
 }
 
 export interface RoomUpsertNestedInput {
@@ -3181,29 +2870,18 @@ export interface HabboUpdateManyMutationInput {
   allowPetSpeech?: Maybe<Boolean>;
 }
 
-export interface ItemUpdateInput {
-  owner?: Maybe<Int>;
-  room?: Maybe<RoomUpdateOneRequiredWithoutItemsInput>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
+export interface LanguageUpdateInput {
+  name?: Maybe<String>;
+  native?: Maybe<String>;
+  code?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
 }
 
-export interface ItemUpdateManyMutationInput {
-  owner?: Maybe<Int>;
-  furniture?: Maybe<Int>;
-  type?: Maybe<String>;
-  x?: Maybe<Int>;
-  y?: Maybe<Int>;
-  z?: Maybe<Int>;
-  rotation?: Maybe<Int>;
-  wallPosition?: Maybe<ItemUpdatewallPositionInput>;
-  inventory?: Maybe<Boolean>;
+export interface LanguageUpdateManyMutationInput {
+  name?: Maybe<String>;
+  native?: Maybe<String>;
+  code?: Maybe<String>;
+  enabled?: Maybe<Boolean>;
 }
 
 export interface NavigatorCategoryCreateInput {
@@ -3222,6 +2900,7 @@ export interface NavigatorTabCreateWithoutCategoriesInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageCreateOneInput>;
 }
 
 export interface NavigatorCategoryUpdateInput {
@@ -3242,6 +2921,7 @@ export interface NavigatorTabUpdateOneWithoutCategoriesInput {
 export interface NavigatorTabUpdateWithoutCategoriesDataInput {
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageUpdateOneInput>;
 }
 
 export interface NavigatorTabUpsertWithoutCategoriesInput {
@@ -3258,6 +2938,7 @@ export interface NavigatorTabCreateInput {
   id?: Maybe<ID_Input>;
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageCreateOneInput>;
   categories?: Maybe<NavigatorCategoryCreateManyWithoutParentInput>;
 }
 
@@ -3280,6 +2961,7 @@ export interface NavigatorCategoryCreateWithoutParentInput {
 export interface NavigatorTabUpdateInput {
   name?: Maybe<String>;
   order?: Maybe<Int>;
+  language?: Maybe<LanguageUpdateOneInput>;
   categories?: Maybe<NavigatorCategoryUpdateManyWithoutParentInput>;
 }
 
@@ -3704,24 +3386,38 @@ export interface NewsUpdateManyMutationInput {
   image?: Maybe<String>;
 }
 
+export interface RankCreateInput {
+  id?: Maybe<ID_Input>;
+  order: Int;
+  name: String;
+}
+
+export interface RankUpdateInput {
+  order?: Maybe<Int>;
+  name?: Maybe<String>;
+}
+
+export interface RankUpdateManyMutationInput {
+  order?: Maybe<Int>;
+  name?: Maybe<String>;
+}
+
 export interface RoomUpdateInput {
   name?: Maybe<String>;
   description?: Maybe<String>;
   type?: Maybe<roomType>;
   category?: Maybe<Int>;
-  owner?: Maybe<Int>;
+  owner?: Maybe<HabboUpdateOneInput>;
   map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
+  floorThickness?: Maybe<Float>;
+  wallThickness?: Maybe<Float>;
+  wallHeight?: Maybe<Float>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
   currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomUpdaterightsInput>;
-  items?: Maybe<ItemUpdateManyWithoutRoomInput>;
 }
 
 export interface RoomUpdateManyMutationInput {
@@ -3729,18 +3425,16 @@ export interface RoomUpdateManyMutationInput {
   description?: Maybe<String>;
   type?: Maybe<roomType>;
   category?: Maybe<Int>;
-  owner?: Maybe<Int>;
   map?: Maybe<Json>;
-  floorThickness?: Maybe<Int>;
-  wallThickness?: Maybe<Int>;
-  wallHeight?: Maybe<Int>;
+  floorThickness?: Maybe<Float>;
+  wallThickness?: Maybe<Float>;
+  wallHeight?: Maybe<Float>;
   hideWalls?: Maybe<Boolean>;
   hideWired?: Maybe<Boolean>;
   currentUsers?: Maybe<Int>;
   maxUsers?: Maybe<Int>;
   allowPets?: Maybe<Boolean>;
   allowPetsEating?: Maybe<Boolean>;
-  rights?: Maybe<RoomUpdaterightsInput>;
 }
 
 export interface UserUpdateInput {
@@ -3806,23 +3500,6 @@ export interface CatalogFeaturedSubscriptionWhereInput {
   NOT?: Maybe<
     | CatalogFeaturedSubscriptionWhereInput[]
     | CatalogFeaturedSubscriptionWhereInput
-  >;
-}
-
-export interface CatalogItemSubscriptionWhereInput {
-  mutation_in?: Maybe<MutationType[] | MutationType>;
-  updatedFields_contains?: Maybe<String>;
-  updatedFields_contains_every?: Maybe<String[] | String>;
-  updatedFields_contains_some?: Maybe<String[] | String>;
-  node?: Maybe<CatalogItemWhereInput>;
-  AND?: Maybe<
-    CatalogItemSubscriptionWhereInput[] | CatalogItemSubscriptionWhereInput
-  >;
-  OR?: Maybe<
-    CatalogItemSubscriptionWhereInput[] | CatalogItemSubscriptionWhereInput
-  >;
-  NOT?: Maybe<
-    CatalogItemSubscriptionWhereInput[] | CatalogItemSubscriptionWhereInput
   >;
 }
 
@@ -3905,15 +3582,19 @@ export interface HabboSubscriptionWhereInput {
   NOT?: Maybe<HabboSubscriptionWhereInput[] | HabboSubscriptionWhereInput>;
 }
 
-export interface ItemSubscriptionWhereInput {
+export interface LanguageSubscriptionWhereInput {
   mutation_in?: Maybe<MutationType[] | MutationType>;
   updatedFields_contains?: Maybe<String>;
   updatedFields_contains_every?: Maybe<String[] | String>;
   updatedFields_contains_some?: Maybe<String[] | String>;
-  node?: Maybe<ItemWhereInput>;
-  AND?: Maybe<ItemSubscriptionWhereInput[] | ItemSubscriptionWhereInput>;
-  OR?: Maybe<ItemSubscriptionWhereInput[] | ItemSubscriptionWhereInput>;
-  NOT?: Maybe<ItemSubscriptionWhereInput[] | ItemSubscriptionWhereInput>;
+  node?: Maybe<LanguageWhereInput>;
+  AND?: Maybe<
+    LanguageSubscriptionWhereInput[] | LanguageSubscriptionWhereInput
+  >;
+  OR?: Maybe<LanguageSubscriptionWhereInput[] | LanguageSubscriptionWhereInput>;
+  NOT?: Maybe<
+    LanguageSubscriptionWhereInput[] | LanguageSubscriptionWhereInput
+  >;
 }
 
 export interface NavigatorCategorySubscriptionWhereInput {
@@ -3962,6 +3643,17 @@ export interface NewsSubscriptionWhereInput {
   AND?: Maybe<NewsSubscriptionWhereInput[] | NewsSubscriptionWhereInput>;
   OR?: Maybe<NewsSubscriptionWhereInput[] | NewsSubscriptionWhereInput>;
   NOT?: Maybe<NewsSubscriptionWhereInput[] | NewsSubscriptionWhereInput>;
+}
+
+export interface RankSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<RankWhereInput>;
+  AND?: Maybe<RankSubscriptionWhereInput[] | RankSubscriptionWhereInput>;
+  OR?: Maybe<RankSubscriptionWhereInput[] | RankSubscriptionWhereInput>;
+  NOT?: Maybe<RankSubscriptionWhereInput[] | RankSubscriptionWhereInput>;
 }
 
 export interface RoomSubscriptionWhereInput {
@@ -4339,7 +4031,6 @@ export interface CatalogFeatured {
   id: ID_Output;
   caption?: String;
   image?: String;
-  link?: String;
   slot?: Int;
   updated?: DateTimeOutput;
 }
@@ -4350,7 +4041,7 @@ export interface CatalogFeaturedPromise
   id: () => Promise<ID_Output>;
   caption: () => Promise<String>;
   image: () => Promise<String>;
-  link: () => Promise<String>;
+  link: <T = CatalogPagePromise>() => T;
   slot: () => Promise<Int>;
   updated: () => Promise<DateTimeOutput>;
 }
@@ -4361,7 +4052,7 @@ export interface CatalogFeaturedSubscription
   id: () => Promise<AsyncIterator<ID_Output>>;
   caption: () => Promise<AsyncIterator<String>>;
   image: () => Promise<AsyncIterator<String>>;
-  link: () => Promise<AsyncIterator<String>>;
+  link: <T = CatalogPageSubscription>() => T;
   slot: () => Promise<AsyncIterator<Int>>;
   updated: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
@@ -4372,9 +4063,131 @@ export interface CatalogFeaturedNullablePromise
   id: () => Promise<ID_Output>;
   caption: () => Promise<String>;
   image: () => Promise<String>;
-  link: () => Promise<String>;
+  link: <T = CatalogPagePromise>() => T;
   slot: () => Promise<Int>;
   updated: () => Promise<DateTimeOutput>;
+}
+
+export interface CatalogPage {
+  id: ID_Output;
+  link: String;
+  layout?: CatalogPageLayout;
+  order?: Int;
+  name?: String;
+  description?: String;
+  icon?: String;
+  banner?: String;
+  teaser?: String;
+  visible?: Boolean;
+  enabled?: Boolean;
+  rank?: Int;
+  club?: Boolean;
+  vip?: Boolean;
+  body?: Json;
+  product?: Json;
+}
+
+export interface CatalogPagePromise extends Promise<CatalogPage>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  link: () => Promise<String>;
+  parent: <T = CatalogPagePromise>() => T;
+  layout: () => Promise<CatalogPageLayout>;
+  order: () => Promise<Int>;
+  name: () => Promise<String>;
+  language: <T = LanguagePromise>() => T;
+  description: () => Promise<String>;
+  icon: () => Promise<String>;
+  banner: () => Promise<String>;
+  teaser: () => Promise<String>;
+  visible: () => Promise<Boolean>;
+  enabled: () => Promise<Boolean>;
+  rank: () => Promise<Int>;
+  club: () => Promise<Boolean>;
+  vip: () => Promise<Boolean>;
+  body: () => Promise<Json>;
+  product: () => Promise<Json>;
+}
+
+export interface CatalogPageSubscription
+  extends Promise<AsyncIterator<CatalogPage>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  link: () => Promise<AsyncIterator<String>>;
+  parent: <T = CatalogPageSubscription>() => T;
+  layout: () => Promise<AsyncIterator<CatalogPageLayout>>;
+  order: () => Promise<AsyncIterator<Int>>;
+  name: () => Promise<AsyncIterator<String>>;
+  language: <T = LanguageSubscription>() => T;
+  description: () => Promise<AsyncIterator<String>>;
+  icon: () => Promise<AsyncIterator<String>>;
+  banner: () => Promise<AsyncIterator<String>>;
+  teaser: () => Promise<AsyncIterator<String>>;
+  visible: () => Promise<AsyncIterator<Boolean>>;
+  enabled: () => Promise<AsyncIterator<Boolean>>;
+  rank: () => Promise<AsyncIterator<Int>>;
+  club: () => Promise<AsyncIterator<Boolean>>;
+  vip: () => Promise<AsyncIterator<Boolean>>;
+  body: () => Promise<AsyncIterator<Json>>;
+  product: () => Promise<AsyncIterator<Json>>;
+}
+
+export interface CatalogPageNullablePromise
+  extends Promise<CatalogPage | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  link: () => Promise<String>;
+  parent: <T = CatalogPagePromise>() => T;
+  layout: () => Promise<CatalogPageLayout>;
+  order: () => Promise<Int>;
+  name: () => Promise<String>;
+  language: <T = LanguagePromise>() => T;
+  description: () => Promise<String>;
+  icon: () => Promise<String>;
+  banner: () => Promise<String>;
+  teaser: () => Promise<String>;
+  visible: () => Promise<Boolean>;
+  enabled: () => Promise<Boolean>;
+  rank: () => Promise<Int>;
+  club: () => Promise<Boolean>;
+  vip: () => Promise<Boolean>;
+  body: () => Promise<Json>;
+  product: () => Promise<Json>;
+}
+
+export interface Language {
+  id: ID_Output;
+  name?: String;
+  native?: String;
+  code: String;
+  enabled?: Boolean;
+}
+
+export interface LanguagePromise extends Promise<Language>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  native: () => Promise<String>;
+  code: () => Promise<String>;
+  enabled: () => Promise<Boolean>;
+}
+
+export interface LanguageSubscription
+  extends Promise<AsyncIterator<Language>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+  native: () => Promise<AsyncIterator<String>>;
+  code: () => Promise<AsyncIterator<String>>;
+  enabled: () => Promise<AsyncIterator<Boolean>>;
+}
+
+export interface LanguageNullablePromise
+  extends Promise<Language | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  native: () => Promise<String>;
+  code: () => Promise<String>;
+  enabled: () => Promise<Boolean>;
 }
 
 export interface CatalogFeaturedConnection {
@@ -4429,354 +4242,6 @@ export interface AggregateCatalogFeaturedPromise
 
 export interface AggregateCatalogFeaturedSubscription
   extends Promise<AsyncIterator<AggregateCatalogFeatured>>,
-    Fragmentable {
-  count: () => Promise<AsyncIterator<Int>>;
-}
-
-export interface CatalogItem {
-  id: ID_Output;
-  name?: String;
-  amount?: Int;
-  limited?: Boolean;
-  maximum?: Int;
-  stack?: Boolean;
-  active?: Boolean;
-}
-
-export interface CatalogItemPromise extends Promise<CatalogItem>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  page: <T = CatalogPagePromise>() => T;
-  item: <T = ItemPromise>() => T;
-  name: () => Promise<String>;
-  amount: () => Promise<Int>;
-  limited: () => Promise<Boolean>;
-  maximum: () => Promise<Int>;
-  stack: () => Promise<Boolean>;
-  active: () => Promise<Boolean>;
-}
-
-export interface CatalogItemSubscription
-  extends Promise<AsyncIterator<CatalogItem>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  page: <T = CatalogPageSubscription>() => T;
-  item: <T = ItemSubscription>() => T;
-  name: () => Promise<AsyncIterator<String>>;
-  amount: () => Promise<AsyncIterator<Int>>;
-  limited: () => Promise<AsyncIterator<Boolean>>;
-  maximum: () => Promise<AsyncIterator<Int>>;
-  stack: () => Promise<AsyncIterator<Boolean>>;
-  active: () => Promise<AsyncIterator<Boolean>>;
-}
-
-export interface CatalogItemNullablePromise
-  extends Promise<CatalogItem | null>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  page: <T = CatalogPagePromise>() => T;
-  item: <T = ItemPromise>() => T;
-  name: () => Promise<String>;
-  amount: () => Promise<Int>;
-  limited: () => Promise<Boolean>;
-  maximum: () => Promise<Int>;
-  stack: () => Promise<Boolean>;
-  active: () => Promise<Boolean>;
-}
-
-export interface CatalogPage {
-  id: ID_Output;
-  parent?: Int;
-  type?: String;
-  order?: Int;
-  name: String;
-  caption?: String;
-  description?: String;
-  icon?: String;
-  visible?: Boolean;
-  enabled?: Boolean;
-  rank?: Int;
-  club?: Boolean;
-  vip?: Boolean;
-  body?: String;
-}
-
-export interface CatalogPagePromise extends Promise<CatalogPage>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  parent: () => Promise<Int>;
-  type: () => Promise<String>;
-  order: () => Promise<Int>;
-  name: () => Promise<String>;
-  caption: () => Promise<String>;
-  description: () => Promise<String>;
-  icon: () => Promise<String>;
-  visible: () => Promise<Boolean>;
-  enabled: () => Promise<Boolean>;
-  rank: () => Promise<Int>;
-  club: () => Promise<Boolean>;
-  vip: () => Promise<Boolean>;
-  body: () => Promise<String>;
-}
-
-export interface CatalogPageSubscription
-  extends Promise<AsyncIterator<CatalogPage>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  parent: () => Promise<AsyncIterator<Int>>;
-  type: () => Promise<AsyncIterator<String>>;
-  order: () => Promise<AsyncIterator<Int>>;
-  name: () => Promise<AsyncIterator<String>>;
-  caption: () => Promise<AsyncIterator<String>>;
-  description: () => Promise<AsyncIterator<String>>;
-  icon: () => Promise<AsyncIterator<String>>;
-  visible: () => Promise<AsyncIterator<Boolean>>;
-  enabled: () => Promise<AsyncIterator<Boolean>>;
-  rank: () => Promise<AsyncIterator<Int>>;
-  club: () => Promise<AsyncIterator<Boolean>>;
-  vip: () => Promise<AsyncIterator<Boolean>>;
-  body: () => Promise<AsyncIterator<String>>;
-}
-
-export interface CatalogPageNullablePromise
-  extends Promise<CatalogPage | null>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  parent: () => Promise<Int>;
-  type: () => Promise<String>;
-  order: () => Promise<Int>;
-  name: () => Promise<String>;
-  caption: () => Promise<String>;
-  description: () => Promise<String>;
-  icon: () => Promise<String>;
-  visible: () => Promise<Boolean>;
-  enabled: () => Promise<Boolean>;
-  rank: () => Promise<Int>;
-  club: () => Promise<Boolean>;
-  vip: () => Promise<Boolean>;
-  body: () => Promise<String>;
-}
-
-export interface Item {
-  id: ID_Output;
-  owner?: Int;
-  furniture?: Int;
-  type?: String;
-  x?: Int;
-  y?: Int;
-  z?: Int;
-  rotation?: Int;
-  wallPosition: Float[];
-  inventory?: Boolean;
-}
-
-export interface ItemPromise extends Promise<Item>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  owner: () => Promise<Int>;
-  room: <T = RoomPromise>() => T;
-  furniture: () => Promise<Int>;
-  type: () => Promise<String>;
-  x: () => Promise<Int>;
-  y: () => Promise<Int>;
-  z: () => Promise<Int>;
-  rotation: () => Promise<Int>;
-  wallPosition: () => Promise<Float[]>;
-  inventory: () => Promise<Boolean>;
-}
-
-export interface ItemSubscription
-  extends Promise<AsyncIterator<Item>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  owner: () => Promise<AsyncIterator<Int>>;
-  room: <T = RoomSubscription>() => T;
-  furniture: () => Promise<AsyncIterator<Int>>;
-  type: () => Promise<AsyncIterator<String>>;
-  x: () => Promise<AsyncIterator<Int>>;
-  y: () => Promise<AsyncIterator<Int>>;
-  z: () => Promise<AsyncIterator<Int>>;
-  rotation: () => Promise<AsyncIterator<Int>>;
-  wallPosition: () => Promise<AsyncIterator<Float[]>>;
-  inventory: () => Promise<AsyncIterator<Boolean>>;
-}
-
-export interface ItemNullablePromise
-  extends Promise<Item | null>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  owner: () => Promise<Int>;
-  room: <T = RoomPromise>() => T;
-  furniture: () => Promise<Int>;
-  type: () => Promise<String>;
-  x: () => Promise<Int>;
-  y: () => Promise<Int>;
-  z: () => Promise<Int>;
-  rotation: () => Promise<Int>;
-  wallPosition: () => Promise<Float[]>;
-  inventory: () => Promise<Boolean>;
-}
-
-export interface Room {
-  id: ID_Output;
-  name: String;
-  description?: String;
-  type?: roomType;
-  category?: Int;
-  owner?: Int;
-  map?: Json;
-  floorThickness?: Int;
-  wallThickness?: Int;
-  wallHeight?: Int;
-  hideWalls?: Boolean;
-  hideWired?: Boolean;
-  currentUsers?: Int;
-  maxUsers?: Int;
-  allowPets?: Boolean;
-  allowPetsEating?: Boolean;
-  rights: Int[];
-}
-
-export interface RoomPromise extends Promise<Room>, Fragmentable {
-  id: () => Promise<ID_Output>;
-  name: () => Promise<String>;
-  description: () => Promise<String>;
-  type: () => Promise<roomType>;
-  category: () => Promise<Int>;
-  owner: () => Promise<Int>;
-  map: () => Promise<Json>;
-  floorThickness: () => Promise<Int>;
-  wallThickness: () => Promise<Int>;
-  wallHeight: () => Promise<Int>;
-  hideWalls: () => Promise<Boolean>;
-  hideWired: () => Promise<Boolean>;
-  currentUsers: () => Promise<Int>;
-  maxUsers: () => Promise<Int>;
-  allowPets: () => Promise<Boolean>;
-  allowPetsEating: () => Promise<Boolean>;
-  rights: () => Promise<Int[]>;
-  items: <T = FragmentableArray<Item>>(args?: {
-    where?: ItemWhereInput;
-    orderBy?: ItemOrderByInput;
-    skip?: Int;
-    after?: String;
-    before?: String;
-    first?: Int;
-    last?: Int;
-  }) => T;
-}
-
-export interface RoomSubscription
-  extends Promise<AsyncIterator<Room>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  name: () => Promise<AsyncIterator<String>>;
-  description: () => Promise<AsyncIterator<String>>;
-  type: () => Promise<AsyncIterator<roomType>>;
-  category: () => Promise<AsyncIterator<Int>>;
-  owner: () => Promise<AsyncIterator<Int>>;
-  map: () => Promise<AsyncIterator<Json>>;
-  floorThickness: () => Promise<AsyncIterator<Int>>;
-  wallThickness: () => Promise<AsyncIterator<Int>>;
-  wallHeight: () => Promise<AsyncIterator<Int>>;
-  hideWalls: () => Promise<AsyncIterator<Boolean>>;
-  hideWired: () => Promise<AsyncIterator<Boolean>>;
-  currentUsers: () => Promise<AsyncIterator<Int>>;
-  maxUsers: () => Promise<AsyncIterator<Int>>;
-  allowPets: () => Promise<AsyncIterator<Boolean>>;
-  allowPetsEating: () => Promise<AsyncIterator<Boolean>>;
-  rights: () => Promise<AsyncIterator<Int[]>>;
-  items: <T = Promise<AsyncIterator<ItemSubscription>>>(args?: {
-    where?: ItemWhereInput;
-    orderBy?: ItemOrderByInput;
-    skip?: Int;
-    after?: String;
-    before?: String;
-    first?: Int;
-    last?: Int;
-  }) => T;
-}
-
-export interface RoomNullablePromise
-  extends Promise<Room | null>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  name: () => Promise<String>;
-  description: () => Promise<String>;
-  type: () => Promise<roomType>;
-  category: () => Promise<Int>;
-  owner: () => Promise<Int>;
-  map: () => Promise<Json>;
-  floorThickness: () => Promise<Int>;
-  wallThickness: () => Promise<Int>;
-  wallHeight: () => Promise<Int>;
-  hideWalls: () => Promise<Boolean>;
-  hideWired: () => Promise<Boolean>;
-  currentUsers: () => Promise<Int>;
-  maxUsers: () => Promise<Int>;
-  allowPets: () => Promise<Boolean>;
-  allowPetsEating: () => Promise<Boolean>;
-  rights: () => Promise<Int[]>;
-  items: <T = FragmentableArray<Item>>(args?: {
-    where?: ItemWhereInput;
-    orderBy?: ItemOrderByInput;
-    skip?: Int;
-    after?: String;
-    before?: String;
-    first?: Int;
-    last?: Int;
-  }) => T;
-}
-
-export interface CatalogItemConnection {
-  pageInfo: PageInfo;
-  edges: CatalogItemEdge[];
-}
-
-export interface CatalogItemConnectionPromise
-  extends Promise<CatalogItemConnection>,
-    Fragmentable {
-  pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<CatalogItemEdge>>() => T;
-  aggregate: <T = AggregateCatalogItemPromise>() => T;
-}
-
-export interface CatalogItemConnectionSubscription
-  extends Promise<AsyncIterator<CatalogItemConnection>>,
-    Fragmentable {
-  pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<CatalogItemEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateCatalogItemSubscription>() => T;
-}
-
-export interface CatalogItemEdge {
-  node: CatalogItem;
-  cursor: String;
-}
-
-export interface CatalogItemEdgePromise
-  extends Promise<CatalogItemEdge>,
-    Fragmentable {
-  node: <T = CatalogItemPromise>() => T;
-  cursor: () => Promise<String>;
-}
-
-export interface CatalogItemEdgeSubscription
-  extends Promise<AsyncIterator<CatalogItemEdge>>,
-    Fragmentable {
-  node: <T = CatalogItemSubscription>() => T;
-  cursor: () => Promise<AsyncIterator<String>>;
-}
-
-export interface AggregateCatalogItem {
-  count: Int;
-}
-
-export interface AggregateCatalogItemPromise
-  extends Promise<AggregateCatalogItem>,
-    Fragmentable {
-  count: () => Promise<Int>;
-}
-
-export interface AggregateCatalogItemSubscription
-  extends Promise<AsyncIterator<AggregateCatalogItem>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
@@ -5043,6 +4508,85 @@ export interface UserNullablePromise
   }) => T;
   createdAt: () => Promise<DateTimeOutput>;
   updatedAt: () => Promise<DateTimeOutput>;
+}
+
+export interface Room {
+  id: ID_Output;
+  name: String;
+  description?: String;
+  type?: roomType;
+  category?: Int;
+  map?: Json;
+  floorThickness?: Float;
+  wallThickness?: Float;
+  wallHeight?: Float;
+  hideWalls?: Boolean;
+  hideWired?: Boolean;
+  currentUsers?: Int;
+  maxUsers?: Int;
+  allowPets?: Boolean;
+  allowPetsEating?: Boolean;
+}
+
+export interface RoomPromise extends Promise<Room>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  description: () => Promise<String>;
+  type: () => Promise<roomType>;
+  category: () => Promise<Int>;
+  owner: <T = HabboPromise>() => T;
+  map: () => Promise<Json>;
+  floorThickness: () => Promise<Float>;
+  wallThickness: () => Promise<Float>;
+  wallHeight: () => Promise<Float>;
+  hideWalls: () => Promise<Boolean>;
+  hideWired: () => Promise<Boolean>;
+  currentUsers: () => Promise<Int>;
+  maxUsers: () => Promise<Int>;
+  allowPets: () => Promise<Boolean>;
+  allowPetsEating: () => Promise<Boolean>;
+}
+
+export interface RoomSubscription
+  extends Promise<AsyncIterator<Room>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+  description: () => Promise<AsyncIterator<String>>;
+  type: () => Promise<AsyncIterator<roomType>>;
+  category: () => Promise<AsyncIterator<Int>>;
+  owner: <T = HabboSubscription>() => T;
+  map: () => Promise<AsyncIterator<Json>>;
+  floorThickness: () => Promise<AsyncIterator<Float>>;
+  wallThickness: () => Promise<AsyncIterator<Float>>;
+  wallHeight: () => Promise<AsyncIterator<Float>>;
+  hideWalls: () => Promise<AsyncIterator<Boolean>>;
+  hideWired: () => Promise<AsyncIterator<Boolean>>;
+  currentUsers: () => Promise<AsyncIterator<Int>>;
+  maxUsers: () => Promise<AsyncIterator<Int>>;
+  allowPets: () => Promise<AsyncIterator<Boolean>>;
+  allowPetsEating: () => Promise<AsyncIterator<Boolean>>;
+}
+
+export interface RoomNullablePromise
+  extends Promise<Room | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  description: () => Promise<String>;
+  type: () => Promise<roomType>;
+  category: () => Promise<Int>;
+  owner: <T = HabboPromise>() => T;
+  map: () => Promise<Json>;
+  floorThickness: () => Promise<Float>;
+  wallThickness: () => Promise<Float>;
+  wallHeight: () => Promise<Float>;
+  hideWalls: () => Promise<Boolean>;
+  hideWired: () => Promise<Boolean>;
+  currentUsers: () => Promise<Int>;
+  maxUsers: () => Promise<Int>;
+  allowPets: () => Promise<Boolean>;
+  allowPetsEating: () => Promise<Boolean>;
 }
 
 export interface ChatlogConnection {
@@ -5342,56 +4886,58 @@ export interface AggregateHabboSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
-export interface ItemConnection {
+export interface LanguageConnection {
   pageInfo: PageInfo;
-  edges: ItemEdge[];
+  edges: LanguageEdge[];
 }
 
-export interface ItemConnectionPromise
-  extends Promise<ItemConnection>,
+export interface LanguageConnectionPromise
+  extends Promise<LanguageConnection>,
     Fragmentable {
   pageInfo: <T = PageInfoPromise>() => T;
-  edges: <T = FragmentableArray<ItemEdge>>() => T;
-  aggregate: <T = AggregateItemPromise>() => T;
+  edges: <T = FragmentableArray<LanguageEdge>>() => T;
+  aggregate: <T = AggregateLanguagePromise>() => T;
 }
 
-export interface ItemConnectionSubscription
-  extends Promise<AsyncIterator<ItemConnection>>,
+export interface LanguageConnectionSubscription
+  extends Promise<AsyncIterator<LanguageConnection>>,
     Fragmentable {
   pageInfo: <T = PageInfoSubscription>() => T;
-  edges: <T = Promise<AsyncIterator<ItemEdgeSubscription>>>() => T;
-  aggregate: <T = AggregateItemSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<LanguageEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateLanguageSubscription>() => T;
 }
 
-export interface ItemEdge {
-  node: Item;
+export interface LanguageEdge {
+  node: Language;
   cursor: String;
 }
 
-export interface ItemEdgePromise extends Promise<ItemEdge>, Fragmentable {
-  node: <T = ItemPromise>() => T;
+export interface LanguageEdgePromise
+  extends Promise<LanguageEdge>,
+    Fragmentable {
+  node: <T = LanguagePromise>() => T;
   cursor: () => Promise<String>;
 }
 
-export interface ItemEdgeSubscription
-  extends Promise<AsyncIterator<ItemEdge>>,
+export interface LanguageEdgeSubscription
+  extends Promise<AsyncIterator<LanguageEdge>>,
     Fragmentable {
-  node: <T = ItemSubscription>() => T;
+  node: <T = LanguageSubscription>() => T;
   cursor: () => Promise<AsyncIterator<String>>;
 }
 
-export interface AggregateItem {
+export interface AggregateLanguage {
   count: Int;
 }
 
-export interface AggregateItemPromise
-  extends Promise<AggregateItem>,
+export interface AggregateLanguagePromise
+  extends Promise<AggregateLanguage>,
     Fragmentable {
   count: () => Promise<Int>;
 }
 
-export interface AggregateItemSubscription
-  extends Promise<AsyncIterator<AggregateItem>>,
+export interface AggregateLanguageSubscription
+  extends Promise<AsyncIterator<AggregateLanguage>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
@@ -5441,6 +4987,7 @@ export interface NavigatorTabPromise
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
   order: () => Promise<Int>;
+  language: <T = LanguagePromise>() => T;
   categories: <T = FragmentableArray<NavigatorCategory>>(args?: {
     where?: NavigatorCategoryWhereInput;
     orderBy?: NavigatorCategoryOrderByInput;
@@ -5458,6 +5005,7 @@ export interface NavigatorTabSubscription
   id: () => Promise<AsyncIterator<ID_Output>>;
   name: () => Promise<AsyncIterator<String>>;
   order: () => Promise<AsyncIterator<Int>>;
+  language: <T = LanguageSubscription>() => T;
   categories: <
     T = Promise<AsyncIterator<NavigatorCategorySubscription>>
   >(args?: {
@@ -5477,6 +5025,7 @@ export interface NavigatorTabNullablePromise
   id: () => Promise<ID_Output>;
   name: () => Promise<String>;
   order: () => Promise<Int>;
+  language: <T = LanguagePromise>() => T;
   categories: <T = FragmentableArray<NavigatorCategory>>(args?: {
     where?: NavigatorCategoryWhereInput;
     orderBy?: NavigatorCategoryOrderByInput;
@@ -5697,6 +5246,88 @@ export interface AggregateNewsPromise
 
 export interface AggregateNewsSubscription
   extends Promise<AsyncIterator<AggregateNews>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Rank {
+  id: ID_Output;
+  order: Int;
+  name: String;
+}
+
+export interface RankPromise extends Promise<Rank>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  order: () => Promise<Int>;
+  name: () => Promise<String>;
+}
+
+export interface RankSubscription
+  extends Promise<AsyncIterator<Rank>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  order: () => Promise<AsyncIterator<Int>>;
+  name: () => Promise<AsyncIterator<String>>;
+}
+
+export interface RankNullablePromise
+  extends Promise<Rank | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  order: () => Promise<Int>;
+  name: () => Promise<String>;
+}
+
+export interface RankConnection {
+  pageInfo: PageInfo;
+  edges: RankEdge[];
+}
+
+export interface RankConnectionPromise
+  extends Promise<RankConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<RankEdge>>() => T;
+  aggregate: <T = AggregateRankPromise>() => T;
+}
+
+export interface RankConnectionSubscription
+  extends Promise<AsyncIterator<RankConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<RankEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateRankSubscription>() => T;
+}
+
+export interface RankEdge {
+  node: Rank;
+  cursor: String;
+}
+
+export interface RankEdgePromise extends Promise<RankEdge>, Fragmentable {
+  node: <T = RankPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface RankEdgeSubscription
+  extends Promise<AsyncIterator<RankEdge>>,
+    Fragmentable {
+  node: <T = RankSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateRank {
+  count: Int;
+}
+
+export interface AggregateRankPromise
+  extends Promise<AggregateRank>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateRankSubscription
+  extends Promise<AsyncIterator<AggregateRank>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
@@ -6055,7 +5686,6 @@ export interface CatalogFeaturedPreviousValues {
   id: ID_Output;
   caption?: String;
   image?: String;
-  link?: String;
   slot?: Int;
   updated?: DateTimeOutput;
 }
@@ -6066,7 +5696,6 @@ export interface CatalogFeaturedPreviousValuesPromise
   id: () => Promise<ID_Output>;
   caption: () => Promise<String>;
   image: () => Promise<String>;
-  link: () => Promise<String>;
   slot: () => Promise<Int>;
   updated: () => Promise<DateTimeOutput>;
 }
@@ -6077,68 +5706,8 @@ export interface CatalogFeaturedPreviousValuesSubscription
   id: () => Promise<AsyncIterator<ID_Output>>;
   caption: () => Promise<AsyncIterator<String>>;
   image: () => Promise<AsyncIterator<String>>;
-  link: () => Promise<AsyncIterator<String>>;
   slot: () => Promise<AsyncIterator<Int>>;
   updated: () => Promise<AsyncIterator<DateTimeOutput>>;
-}
-
-export interface CatalogItemSubscriptionPayload {
-  mutation: MutationType;
-  node: CatalogItem;
-  updatedFields: String[];
-  previousValues: CatalogItemPreviousValues;
-}
-
-export interface CatalogItemSubscriptionPayloadPromise
-  extends Promise<CatalogItemSubscriptionPayload>,
-    Fragmentable {
-  mutation: () => Promise<MutationType>;
-  node: <T = CatalogItemPromise>() => T;
-  updatedFields: () => Promise<String[]>;
-  previousValues: <T = CatalogItemPreviousValuesPromise>() => T;
-}
-
-export interface CatalogItemSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<CatalogItemSubscriptionPayload>>,
-    Fragmentable {
-  mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = CatalogItemSubscription>() => T;
-  updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = CatalogItemPreviousValuesSubscription>() => T;
-}
-
-export interface CatalogItemPreviousValues {
-  id: ID_Output;
-  name?: String;
-  amount?: Int;
-  limited?: Boolean;
-  maximum?: Int;
-  stack?: Boolean;
-  active?: Boolean;
-}
-
-export interface CatalogItemPreviousValuesPromise
-  extends Promise<CatalogItemPreviousValues>,
-    Fragmentable {
-  id: () => Promise<ID_Output>;
-  name: () => Promise<String>;
-  amount: () => Promise<Int>;
-  limited: () => Promise<Boolean>;
-  maximum: () => Promise<Int>;
-  stack: () => Promise<Boolean>;
-  active: () => Promise<Boolean>;
-}
-
-export interface CatalogItemPreviousValuesSubscription
-  extends Promise<AsyncIterator<CatalogItemPreviousValues>>,
-    Fragmentable {
-  id: () => Promise<AsyncIterator<ID_Output>>;
-  name: () => Promise<AsyncIterator<String>>;
-  amount: () => Promise<AsyncIterator<Int>>;
-  limited: () => Promise<AsyncIterator<Boolean>>;
-  maximum: () => Promise<AsyncIterator<Int>>;
-  stack: () => Promise<AsyncIterator<Boolean>>;
-  active: () => Promise<AsyncIterator<Boolean>>;
 }
 
 export interface CatalogPageSubscriptionPayload {
@@ -6168,57 +5737,63 @@ export interface CatalogPageSubscriptionPayloadSubscription
 
 export interface CatalogPagePreviousValues {
   id: ID_Output;
-  parent?: Int;
-  type?: String;
+  link: String;
+  layout?: CatalogPageLayout;
   order?: Int;
-  name: String;
-  caption?: String;
+  name?: String;
   description?: String;
   icon?: String;
+  banner?: String;
+  teaser?: String;
   visible?: Boolean;
   enabled?: Boolean;
   rank?: Int;
   club?: Boolean;
   vip?: Boolean;
-  body?: String;
+  body?: Json;
+  product?: Json;
 }
 
 export interface CatalogPagePreviousValuesPromise
   extends Promise<CatalogPagePreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
-  parent: () => Promise<Int>;
-  type: () => Promise<String>;
+  link: () => Promise<String>;
+  layout: () => Promise<CatalogPageLayout>;
   order: () => Promise<Int>;
   name: () => Promise<String>;
-  caption: () => Promise<String>;
   description: () => Promise<String>;
   icon: () => Promise<String>;
+  banner: () => Promise<String>;
+  teaser: () => Promise<String>;
   visible: () => Promise<Boolean>;
   enabled: () => Promise<Boolean>;
   rank: () => Promise<Int>;
   club: () => Promise<Boolean>;
   vip: () => Promise<Boolean>;
-  body: () => Promise<String>;
+  body: () => Promise<Json>;
+  product: () => Promise<Json>;
 }
 
 export interface CatalogPagePreviousValuesSubscription
   extends Promise<AsyncIterator<CatalogPagePreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
-  parent: () => Promise<AsyncIterator<Int>>;
-  type: () => Promise<AsyncIterator<String>>;
+  link: () => Promise<AsyncIterator<String>>;
+  layout: () => Promise<AsyncIterator<CatalogPageLayout>>;
   order: () => Promise<AsyncIterator<Int>>;
   name: () => Promise<AsyncIterator<String>>;
-  caption: () => Promise<AsyncIterator<String>>;
   description: () => Promise<AsyncIterator<String>>;
   icon: () => Promise<AsyncIterator<String>>;
+  banner: () => Promise<AsyncIterator<String>>;
+  teaser: () => Promise<AsyncIterator<String>>;
   visible: () => Promise<AsyncIterator<Boolean>>;
   enabled: () => Promise<AsyncIterator<Boolean>>;
   rank: () => Promise<AsyncIterator<Int>>;
   club: () => Promise<AsyncIterator<Boolean>>;
   vip: () => Promise<AsyncIterator<Boolean>>;
-  body: () => Promise<AsyncIterator<String>>;
+  body: () => Promise<AsyncIterator<Json>>;
+  product: () => Promise<AsyncIterator<Json>>;
 }
 
 export interface ChatlogSubscriptionPayload {
@@ -6468,72 +6043,57 @@ export interface HabboPreviousValuesSubscription
   updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
-export interface ItemSubscriptionPayload {
+export interface LanguageSubscriptionPayload {
   mutation: MutationType;
-  node: Item;
+  node: Language;
   updatedFields: String[];
-  previousValues: ItemPreviousValues;
+  previousValues: LanguagePreviousValues;
 }
 
-export interface ItemSubscriptionPayloadPromise
-  extends Promise<ItemSubscriptionPayload>,
+export interface LanguageSubscriptionPayloadPromise
+  extends Promise<LanguageSubscriptionPayload>,
     Fragmentable {
   mutation: () => Promise<MutationType>;
-  node: <T = ItemPromise>() => T;
+  node: <T = LanguagePromise>() => T;
   updatedFields: () => Promise<String[]>;
-  previousValues: <T = ItemPreviousValuesPromise>() => T;
+  previousValues: <T = LanguagePreviousValuesPromise>() => T;
 }
 
-export interface ItemSubscriptionPayloadSubscription
-  extends Promise<AsyncIterator<ItemSubscriptionPayload>>,
+export interface LanguageSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<LanguageSubscriptionPayload>>,
     Fragmentable {
   mutation: () => Promise<AsyncIterator<MutationType>>;
-  node: <T = ItemSubscription>() => T;
+  node: <T = LanguageSubscription>() => T;
   updatedFields: () => Promise<AsyncIterator<String[]>>;
-  previousValues: <T = ItemPreviousValuesSubscription>() => T;
+  previousValues: <T = LanguagePreviousValuesSubscription>() => T;
 }
 
-export interface ItemPreviousValues {
+export interface LanguagePreviousValues {
   id: ID_Output;
-  owner?: Int;
-  furniture?: Int;
-  type?: String;
-  x?: Int;
-  y?: Int;
-  z?: Int;
-  rotation?: Int;
-  wallPosition: Float[];
-  inventory?: Boolean;
+  name?: String;
+  native?: String;
+  code: String;
+  enabled?: Boolean;
 }
 
-export interface ItemPreviousValuesPromise
-  extends Promise<ItemPreviousValues>,
+export interface LanguagePreviousValuesPromise
+  extends Promise<LanguagePreviousValues>,
     Fragmentable {
   id: () => Promise<ID_Output>;
-  owner: () => Promise<Int>;
-  furniture: () => Promise<Int>;
-  type: () => Promise<String>;
-  x: () => Promise<Int>;
-  y: () => Promise<Int>;
-  z: () => Promise<Int>;
-  rotation: () => Promise<Int>;
-  wallPosition: () => Promise<Float[]>;
-  inventory: () => Promise<Boolean>;
+  name: () => Promise<String>;
+  native: () => Promise<String>;
+  code: () => Promise<String>;
+  enabled: () => Promise<Boolean>;
 }
 
-export interface ItemPreviousValuesSubscription
-  extends Promise<AsyncIterator<ItemPreviousValues>>,
+export interface LanguagePreviousValuesSubscription
+  extends Promise<AsyncIterator<LanguagePreviousValues>>,
     Fragmentable {
   id: () => Promise<AsyncIterator<ID_Output>>;
-  owner: () => Promise<AsyncIterator<Int>>;
-  furniture: () => Promise<AsyncIterator<Int>>;
-  type: () => Promise<AsyncIterator<String>>;
-  x: () => Promise<AsyncIterator<Int>>;
-  y: () => Promise<AsyncIterator<Int>>;
-  z: () => Promise<AsyncIterator<Int>>;
-  rotation: () => Promise<AsyncIterator<Int>>;
-  wallPosition: () => Promise<AsyncIterator<Float[]>>;
-  inventory: () => Promise<AsyncIterator<Boolean>>;
+  name: () => Promise<AsyncIterator<String>>;
+  native: () => Promise<AsyncIterator<String>>;
+  code: () => Promise<AsyncIterator<String>>;
+  enabled: () => Promise<AsyncIterator<Boolean>>;
 }
 
 export interface NavigatorCategorySubscriptionPayload {
@@ -6689,6 +6249,53 @@ export interface NewsPreviousValuesSubscription
   updatedAt: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
+export interface RankSubscriptionPayload {
+  mutation: MutationType;
+  node: Rank;
+  updatedFields: String[];
+  previousValues: RankPreviousValues;
+}
+
+export interface RankSubscriptionPayloadPromise
+  extends Promise<RankSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = RankPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = RankPreviousValuesPromise>() => T;
+}
+
+export interface RankSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<RankSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = RankSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = RankPreviousValuesSubscription>() => T;
+}
+
+export interface RankPreviousValues {
+  id: ID_Output;
+  order: Int;
+  name: String;
+}
+
+export interface RankPreviousValuesPromise
+  extends Promise<RankPreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  order: () => Promise<Int>;
+  name: () => Promise<String>;
+}
+
+export interface RankPreviousValuesSubscription
+  extends Promise<AsyncIterator<RankPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  order: () => Promise<AsyncIterator<Int>>;
+  name: () => Promise<AsyncIterator<String>>;
+}
+
 export interface RoomSubscriptionPayload {
   mutation: MutationType;
   node: Room;
@@ -6720,18 +6327,16 @@ export interface RoomPreviousValues {
   description?: String;
   type?: roomType;
   category?: Int;
-  owner?: Int;
   map?: Json;
-  floorThickness?: Int;
-  wallThickness?: Int;
-  wallHeight?: Int;
+  floorThickness?: Float;
+  wallThickness?: Float;
+  wallHeight?: Float;
   hideWalls?: Boolean;
   hideWired?: Boolean;
   currentUsers?: Int;
   maxUsers?: Int;
   allowPets?: Boolean;
   allowPetsEating?: Boolean;
-  rights: Int[];
 }
 
 export interface RoomPreviousValuesPromise
@@ -6742,18 +6347,16 @@ export interface RoomPreviousValuesPromise
   description: () => Promise<String>;
   type: () => Promise<roomType>;
   category: () => Promise<Int>;
-  owner: () => Promise<Int>;
   map: () => Promise<Json>;
-  floorThickness: () => Promise<Int>;
-  wallThickness: () => Promise<Int>;
-  wallHeight: () => Promise<Int>;
+  floorThickness: () => Promise<Float>;
+  wallThickness: () => Promise<Float>;
+  wallHeight: () => Promise<Float>;
   hideWalls: () => Promise<Boolean>;
   hideWired: () => Promise<Boolean>;
   currentUsers: () => Promise<Int>;
   maxUsers: () => Promise<Int>;
   allowPets: () => Promise<Boolean>;
   allowPetsEating: () => Promise<Boolean>;
-  rights: () => Promise<Int[]>;
 }
 
 export interface RoomPreviousValuesSubscription
@@ -6764,18 +6367,16 @@ export interface RoomPreviousValuesSubscription
   description: () => Promise<AsyncIterator<String>>;
   type: () => Promise<AsyncIterator<roomType>>;
   category: () => Promise<AsyncIterator<Int>>;
-  owner: () => Promise<AsyncIterator<Int>>;
   map: () => Promise<AsyncIterator<Json>>;
-  floorThickness: () => Promise<AsyncIterator<Int>>;
-  wallThickness: () => Promise<AsyncIterator<Int>>;
-  wallHeight: () => Promise<AsyncIterator<Int>>;
+  floorThickness: () => Promise<AsyncIterator<Float>>;
+  wallThickness: () => Promise<AsyncIterator<Float>>;
+  wallHeight: () => Promise<AsyncIterator<Float>>;
   hideWalls: () => Promise<AsyncIterator<Boolean>>;
   hideWired: () => Promise<AsyncIterator<Boolean>>;
   currentUsers: () => Promise<AsyncIterator<Int>>;
   maxUsers: () => Promise<AsyncIterator<Int>>;
   allowPets: () => Promise<AsyncIterator<Boolean>>;
   allowPetsEating: () => Promise<AsyncIterator<Boolean>>;
-  rights: () => Promise<AsyncIterator<Int[]>>;
 }
 
 export interface UserSubscriptionPayload {
@@ -6896,6 +6497,14 @@ export const models: Model[] = [
     embedded: false
   },
   {
+    name: "FurniType",
+    embedded: false
+  },
+  {
+    name: "CatalogPageLayout",
+    embedded: false
+  },
+  {
     name: "Ban",
     embedded: false
   },
@@ -6916,7 +6525,11 @@ export const models: Model[] = [
     embedded: false
   },
   {
-    name: "CatalogItem",
+    name: "Rank",
+    embedded: false
+  },
+  {
+    name: "Language",
     embedded: false
   },
   {
@@ -6933,10 +6546,6 @@ export const models: Model[] = [
   },
   {
     name: "Room",
-    embedded: false
-  },
-  {
-    name: "Item",
     embedded: false
   },
   {

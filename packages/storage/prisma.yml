@@ -6,3 +6,6 @@ generate:
   #   output: ./prisma/schema.graphql
   - generator: javascript-client
     output: ./prisma/
+
+seed: 
+  run: npx ts-node ./seed.ts

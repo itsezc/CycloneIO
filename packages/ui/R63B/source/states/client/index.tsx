@@ -29,18 +29,39 @@ import './index.styl'
 
 type ClientState = {
 	loaded: boolean
+	connected?: boolean
 }
 
 export default class Client extends Component<any, ClientState>
 {
-	private database: ApolloClient<any>
+	private Database: ApolloClient<any>
+	private Socket: SocketIOClient.Socket
+
+	private connected: boolean
+	private tmp: any
 
 	constructor(props: any) {
 		super(props)
 
-		// this.database = new ApolloClient({
-		// 	uri: 'http://localhost:8081/graphql'
-		// })
+		this.Database = new ApolloClient({
+			uri: 'http://localhost:8087/graphql'
+		})
+
+		this.Socket = props.socket
+		this.Socket.emit('requestHotelView')
+		this.Socket.on('renderHotelView', () => {
+			this.tmp = <Alert
+				title='Message from Cyclone Hotel'
+				message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'
+				author='EZ-C'
+			/>
+			this.setState({ connected: true })
+		})
+
+		this.Socket.emit('getRoom', 'cjy1pitya00ik0772bhv2sglx');
+		this.Socket.on('setRoom', (data: any) => {
+			console.log(data)
+		})
 
 		this.state = {
 			loaded: true
@@ -48,12 +69,8 @@ export default class Client extends Component<any, ClientState>
 	}
 
 	render() {
-
-		if (this.state.loaded == false) {
-			return (
-				<Redirect to='/' />
-			)
-		} else {
+		if(this.state.connected) 
+		{
 			return(
 				<div className='client'>
 
@@ -127,17 +144,19 @@ export default class Client extends Component<any, ClientState>
 
 						{/* <Moderation />*/}
 
-						{/* <ApolloProvider client={this.database}> */}
+						<ApolloProvider client={this.Database}>
 							{/* <Navigator /> */}
 
 							<Catalog />
-						{/* </ApolloProvider> */}
+						</ApolloProvider>
 
-						<Alert
+						{/* <Alert
 							title='Message from Cyclone Hotel'
 							message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'
 							author='EZ-C'
-						/>
+						/> */}
+
+						{this.tmp}
 
 						<Wallet />
 
@@ -157,7 +176,23 @@ export default class Client extends Component<any, ClientState>
 					<Toolbar isClient={false} />
 				</div>
 			)
+
+		} else {
+			return(
+				<div>It doesn't works or its loading idk</div> 
+			)
 		}
+
+		// // if(this.connected === true) {
+		// // 	console.log(this.tmp)
+		// 	if (this.state.loaded == false) {
+		// 		return (
+		// 			<Redirect to='/' />
+		// 		)
+		// 	} else {
+		//	}
+		
+		// }
 
 	}
 }

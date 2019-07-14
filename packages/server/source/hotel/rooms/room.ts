@@ -1,4 +1,4 @@
-export enum Type {
+export enum RoomType {
 	PUBLIC,
 	PRIVATE
 }
@@ -12,12 +12,12 @@ export enum AccessType {
 
 export default class Room {
 
-	public constructor(private readonly id: number, private readonly type: Type, 
-		
-					   private readonly owner: number, private readonly group: number, 
-					   
+	public constructor(private readonly id: number, private readonly type: RoomType,
+
+					   private readonly owner: number, private readonly group: number,
+
 					   private readonly name: string, private readonly description: string, private readonly tags: string[],
-					   
+
 					   private readonly accessType: AccessType) {
 		this.id = id
 		this.type = type
@@ -27,5 +27,9 @@ export default class Room {
 
 		this.name = name
 		this.description = description
+	}
+
+	public get Id(): number {
+		return this.id
 	}
 }
