@@ -17,7 +17,7 @@ export default abstract class BadgePart {
         return this.elementIndex;
     }
 
-    public getDrawPosition(image: any): {x: number, y: number} {
+    public getDrawPosition(image: gd.Image): {x: number, y: number} {
         
         // #TODO: Constants ? Base width, base height
         let baseWidth = 39;
@@ -46,7 +46,7 @@ export default abstract class BadgePart {
     abstract getResourcePath(guildBadgeRessource: GuildBadgeRessource): string;
     abstract getResourceData(guildBadgeRessource: GuildBadgeRessource): Object;
 
-    private colorizeImage(image: any, colors: number[]): void {
+    private colorizeImage(image: gd.Image, colors: number[]): void {
         
         for(var x = 0; x < image.width; x++){
             for(var y = 0; y < image.height; y++){
@@ -67,7 +67,7 @@ export default abstract class BadgePart {
         }
     }
 
-    public generate(guildBadgeRessource: GuildBadgeRessource): any {
+    public generate(guildBadgeRessource: GuildBadgeRessource): gd.Image {
 
         const imageData: Object = this.getResourceData(guildBadgeRessource);
         if(imageData === undefined) throw new Error('Ressource undefined : ' + this.elementIndex + ' on path : ' + this.getResourcePath(guildBadgeRessource));
@@ -94,13 +94,13 @@ export default abstract class BadgePart {
 
         const { layers } = imageData;
         
-        let image = gd.createFromPng(resourcePath + layers[0].image);
+        let image: gd.Image = gd.createFromPng(resourcePath + layers[0].image);
         this.colorizeImage(image, colors);
 
         image.saveAlpha(1);
         
         for(let l = 1; l < layers.length; l++){
-            
+
             const layerImage = gd.createFromPng(resourcePath + layers[l].image);
             layerImage.copy(image, 0, 0, 0, 0, layerImage.width, layerImage.height);
         }

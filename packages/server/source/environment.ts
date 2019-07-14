@@ -9,7 +9,7 @@ import Logger, { LoggerTypeMessage } from '../../utils/logger'
 import Server from './network/server'
 
 class Environment {
-	
+
 	private readonly logger: LoggerTypeMessage
 	private server: Server
 

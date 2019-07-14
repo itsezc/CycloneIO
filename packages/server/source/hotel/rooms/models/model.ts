@@ -2,7 +2,7 @@ import Vector, { Vector2D } from "packages/common/types/rooms/vector"
 
 import RoomTile, { State } from "../tile";
 
-export enum Type {
+export enum ModelType {
 	DYNAMIC,
 	STATIC
 }
@@ -14,7 +14,7 @@ export default class RoomModel {
 	private tiles: RoomTile[][]
 	private door: RoomTile
 
-	constructor(private readonly id: number, private readonly map: number[][], private readonly type: Type,
+	constructor(private readonly id: number, private readonly map: number[][], private readonly type: ModelType,
 
 				private readonly doorCoordinates: Vector, private readonly doorRotation: number) {
 

@@ -28,7 +28,34 @@ enum Gender
 
 enum FurniType
 {
+    FLOOR
     WALL
+}
+
+enum CatalogPageLayout {
+	DEFAULT,
+	FRONTPAGE,
+	CLUB_BUY,
+	CLUB_GIFT,
+	RECYCLER,
+	RECYCLER_INFO,
+	RECYCLER_PRIZES,
+	TROPHIES,
+	PLASTO,
+	MARKETPLACE,
+	MARKETPLACE_OWN_ITEMS,
+	PETS,
+	SPACES,
+	SOUNDMACHINE,
+	GUILDS,
+	INFO_DUCKETS,
+	INFO_RENTABLES,
+	INFO_PETS,
+	ROOMADS,
+	SINGLE_BUNDLE,
+	SOLD_LTD_ITEMS,
+	BADGE_DISPLAY,
+	BOTS
 }
 
 type Ban @pgTable(name: "bans")
@@ -82,7 +109,7 @@ type CatalogFeatured @pgTable(name: "catalog_featured")
     id: ID! @id
     caption: String
     image: String 
-    link: String
+    link: CatalogPage
     slot: Int
     updated: DateTime @updatedAt
 }
@@ -90,44 +117,64 @@ type CatalogFeatured @pgTable(name: "catalog_featured")
 type CatalogPage @pgTable(name: "catalog_pages")
 {
 	id: ID! @id
-	parent: Int
-	type: String
+    link: String! @unique
+	parent: CatalogPage
+	layout: CatalogPageLayout @default(value: DEFAULT)
 	order: Int
-	name: String!
-	caption: String
+	name: String
+    language: Language
 	description: String
 	icon: String
+    banner: String
+    teaser: String
 	visible: Boolean @default(value: true)
 	enabled: Boolean @default(value: true)
 	rank: Int @default(value: 1)
 	club: Boolean @default(value: false)
 	vip: Boolean @default(value: false)
-	body: String
+	body: Json
+    product: Json
 }
 
-type CatalogBundle @pgTable(name: "catalog_bundle")
-{
-	id: ID! @id
-	items: {}[]
-}
-
-type CatalogItem @pgTable(name: "catalog_items")
+type Rank @pgTable(name: "ranks")
 {
     id: ID! @id
-    page: CatalogPage!
-    item: Item[]!
-    name: String
-    # price: Currencies
-    amount: Int
-    order: Int
-    badge: Badge
-    limited: Boolean
-    maximum: Int @default(value: -1)
-    stack: Boolean @default(value: true)
-    active: Boolean @default(value: true)
-    offer: Boolean @default(value: true)
-    clubOnly: Boolean
+    order: Int!
+    name: String!
 }
+
+type Language @pgTable(name: "languages")
+{
+    id: ID! @id
+    name: String
+    native: String
+    code: String! @unique
+    enabled: Boolean @default(value: true)
+}
+
+# type CatalogBundle @pgTable(name: "catalog_bundle")
+# {
+# 	id: ID! @id
+# 	items: {}[]
+# }
+
+# type CatalogItem @pgTable(name: "catalog_items")
+# {
+#     id: ID! @id
+#     page: CatalogPage!
+#     item: Item[]!
+#     name: String
+#     # price: Currencies
+#     amount: Int
+#     order: Int
+#     badge: Badge
+#     limited: Boolean
+#     maximum: Int @default(value: -1)
+#     stack: Boolean @default(value: true)
+#     active: Boolean @default(value: true)
+#     offer: Boolean @default(value: true)
+#     clubOnly: Boolean
+# }
 
 # DROP TABLE IF EXISTS `catalog_items`;
 # CREATE TABLE IF NOT EXISTS `catalog_items` (
@@ -184,32 +231,32 @@ type Room @pgTable(name: "rooms")
 	description: String
 	type: roomType @default(value: PUBLIC)
 	category: Int
-	owner: Int
+	owner: Habbo
 	map: Json
-	floorThickness: Int
-	wallThickness: Int
-	wallHeight: Int
+	floorThickness: Float
+	wallThickness: Float
+	wallHeight: Float
 	hideWalls: Boolean @default(value: false)
 	hideWired: Boolean @default(value: false)
     currentUsers: Int @default(value: 0)
 	maxUsers: Int @default(value: 10)
 	allowPets: Boolean @default(value: false)
 	allowPetsEating: Boolean @default(value: false)
-	rights: [Int] @scalarList(strategy: RELATION)
-	items: [Item] @relation(name: "Items", onDelete: CASCADE)
+	# rights: [User] @scalarList(strategy: RELATION)
+	# items: [Item] @relation(name: "Items", onDelete: CASCADE)
 }
 
 
 # Furniture (Class) -> Catalog Item (Instance where its displayed on the catalog) -> Item (Instance with a User as the owner)
-type Item @pgTable(name: "items")
-{
-    id: ID! @id
-    name: String
-    public: String
-    type 
-    createdAt: DateTime @createdAt
-    updatedAt: DateTime @updatedAt
-}
+# type Item @pgTable(name: "items")
+# {
+#     id: ID! @id
+#     name: String
+#     public: String
+#     type 
+#     createdAt: DateTime @createdAt
+#     updatedAt: DateTime @updatedAt
+# }
 
 # type Currencies {
 #     id: ID! @id
@@ -221,7 +268,8 @@ type NavigatorTab @pgTable(name: "navigator_tabs")
 {
     id: ID! @id
     name: String
-    order: Int @unique
+    order: Int
+    language: Language
     categories: [NavigatorCategory!]!
 }
 

@@ -1,4 +1,3 @@
-
 //import type { FurnitureType } from '../../common/enums/furniture/type'
 import Room from '../rooms/room'
 //import { FurnitureType } from '../../common/enums/furniture/type'
@@ -78,6 +77,11 @@ export interface IAnimationLayer
 	loopCount?: number
 	frameRepeat?: number
 	frames: number[]
+}
+
+export enum IFurnitureType {
+	FLOOR,
+	WALL
 }
 
 export default class Furniture
@@ -220,10 +224,10 @@ export default class Furniture
 	private assetNameFrom(size: number | string, layer: number, direction?: number, frame?: number): string
 	{
 		let layerChar = this.layerFromNumber(layer)
-		let assetName = this.data.name + "_" + size + "_" + layerChar
+		let assetName = this.data.name + '_' + size + '_' + layerChar
 		if (direction != undefined && frame != undefined)
 		{
-			assetName += "_" + direction + "_" + frame
+			assetName += '_' + direction + '_' + frame
 		}
 
 		return assetName;
@@ -268,12 +272,11 @@ export default class Furniture
 
 				;(layerSprite as any).isClickable = true
 
-				this.setInteractionsFor(layerSprite)
+				this.setInteractionsFor(layerSprite)	
 
 				if (layerSprite.frame.name !== frameName) {
 					return undefined
 				}
-
 
 				//console.log(this.data.name + '_' + sourceName + '.png', frame)
 
@@ -333,7 +336,7 @@ export default class Furniture
 		if (layer.ink)
 		{
 			// 28 is our custom blendMode
-			sprite.setBlendMode(Phaser.BlendModes.ADD);
+			sprite.setBlendMode(Phaser.BlendModes.ADD)
 			//sprite.blendMode = layer.ink === 'ADD' ? 28 : Phaser.BlendModes[layer.ink]
 		}
 
@@ -371,7 +374,9 @@ export default class Furniture
 
 		sprite.on('pointerdown', (e: Phaser.Input.Pointer) => {
 			if (e.event.shiftKey) {
-				sprite.emit('rotate', sprite)
+				if(this.type !== IFurnitureType.WALL) {
+					sprite.emit('rotate', sprite)
+				}
 			} else {
 				sprite.emit('click', sprite)
 			}
@@ -396,6 +401,6 @@ export default class Furniture
 		}
 		
 		return newAnimation
-    }
+	}
 }
 

@@ -42,6 +42,7 @@ export default class Alert extends Component<AlertProps, AlertState> {
 					// draggable={false}
 					width={350}
 					height={180}
+					centered={true}
 					className='alert'
 				>
 						<div className='content'>

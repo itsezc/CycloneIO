@@ -1,20 +1,19 @@
-import { Dictionary } from 'typescript-collections'
-
-import RoomModel, { Type } from "./models/model"
+import Room, { RoomType, AccessType } from './room';
+import RoomModel, { ModelType } from './models/model'
 
 export default class RoomService {
-	private temporaryModel: RoomModel
-	private models: Dictionary<number, RoomModel>
+	private readonly temporaryModel: RoomModel
+	private readonly temporaryRoom: Room
 
-	public constructor(/* private readonly database: Database */) {
+	private readonly models: Map<number, RoomModel>
+	private readonly rooms: Map<number, Room>
 
-		this.temporaryModel = new RoomModel(0, [[0, 0, 0]], Type.STATIC, { x: 0, y: 0, z: 0 }, 2)
+	public constructor() {
 
-		this.models.setValue(this.temporaryModel.Id, this.temporaryModel)
-	}
+		this.temporaryModel = new RoomModel(0, [[0, 0, 0]], ModelType.STATIC, { x: 0, y: 0, z: 0 }, 2)
+		this.models.set(this.temporaryModel.Id, this.temporaryModel)
 
-	public async getRoomModel(id: number): Promise<RoomModel> {
-		// return await this.db.users.findOne({ id });
-		return await this.models.getValue(id)
+		this.temporaryRoom = new Room(0, RoomType.PUBLIC, 0, 0, 'test room', 'testing', ['test'], AccessType.OPEN)
+		this.rooms.set(this.temporaryRoom.Id, this.temporaryRoom)
 	}
 }
