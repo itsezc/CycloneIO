@@ -50,11 +50,11 @@ export default class Client extends Component<any, ClientState>
 		this.Socket = props.socket
 		this.Socket.emit('requestHotelView')
 		this.Socket.on('renderHotelView', () => {
-			this.tmp = <Alert
-				title='Message from Cyclone Hotel'
-				message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'
-				author='EZ-C'
-			/>
+			// this.tmp = <Alert
+			// 	title='Message from Cyclone Hotel'
+			// 	message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'
+			// 	author='EZ-C'
+			// />
 			this.setState({ connected: true })
 		})
 

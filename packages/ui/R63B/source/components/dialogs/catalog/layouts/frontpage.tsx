@@ -54,7 +54,7 @@ export default class CatalogFrontPage extends Component<any, any> {
 									{
 										catalogFeatureds.map(({ link, image, caption }, index) => (
 											(index !== 0) ?
-											<a>
+											<a key={index}>
 												<img src={image} />
 												<div className='caption'>
 													<h2>{caption}</h2>
