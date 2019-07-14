@@ -117,19 +117,23 @@ type CatalogFeatured @pgTable(name: "catalog_featured")
 type CatalogPage @pgTable(name: "catalog_pages")
 {
 	id: ID! @id
+    link: String! @unique
 	parent: CatalogPage
-	layout: CatalogPageLayout
+	layout: CatalogPageLayout @default(value: DEFAULT)
 	order: Int
-	name: String!
-	caption: String
+	name: String
+    language: Language
 	description: String
 	icon: String
+    banner: String
+    teaser: String
 	visible: Boolean @default(value: true)
 	enabled: Boolean @default(value: true)
-	rank: Int
+	rank: Int @default(value: 1)
 	club: Boolean @default(value: false)
 	vip: Boolean @default(value: false)
-	body: String
+	body: Json
+    product: Json
 }
 
 type Rank @pgTable(name: "ranks")
@@ -137,6 +141,15 @@ type Rank @pgTable(name: "ranks")
     id: ID! @id
     order: Int!
     name: String!
+}
+
+type Language @pgTable(name: "languages")
+{
+    id: ID! @id
+    name: String
+    native: String
+    code: String! @unique
+    enabled: Boolean @default(value: true)
 }
 
 # type CatalogBundle @pgTable(name: "catalog_bundle")
@@ -255,7 +268,8 @@ type NavigatorTab @pgTable(name: "navigator_tabs")
 {
     id: ID! @id
     name: String
-    order: Int @unique
+    order: Int
+    language: Language
     categories: [NavigatorCategory!]!
 }
 

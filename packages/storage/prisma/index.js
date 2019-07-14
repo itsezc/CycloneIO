@@ -53,6 +53,10 @@ var models = [
     embedded: false
   },
   {
+    name: "Language",
+    embedded: false
+  },
+  {
     name: "Chatlog",
     embedded: false
   },

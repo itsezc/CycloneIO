@@ -50,9 +50,6 @@ export default class Server {
 	public constructor(private readonly config: CycloneConfig) {
 		this.config = config
 
-		const { server } = config
-		const { port } = server
-
 		this.roomId = 0
 		this.rooms = [
 			{
