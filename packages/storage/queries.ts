@@ -36,3 +36,15 @@ export const GetNavigatorCategories = gql`
 		}
 	}
 `
+
+export const GetCatalogFeatureds = gql`
+	query GetCatalogFeatured {
+		catalogFeatureds(orderBy: slot_ASC) {
+			caption
+			image
+			link {
+				id
+			}
+		}
+	}
+`

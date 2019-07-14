@@ -64,6 +64,30 @@ export interface GetNavigatorCategories {
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
+// ====================================================
+// GraphQL query operation: GetCatalogFeatured
+// ====================================================
+
+export interface GetCatalogFeatured_catalogFeatureds_link {
+  __typename: "CatalogPage";
+  id: string;
+}
+
+export interface GetCatalogFeatured_catalogFeatureds {
+  __typename: "CatalogFeatured";
+  caption: string | null;
+  image: string | null;
+  link: GetCatalogFeatured_catalogFeatureds_link | null;
+}
+
+export interface GetCatalogFeatured {
+  catalogFeatureds: (GetCatalogFeatured_catalogFeatureds | null)[];
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// This file was automatically generated and should not be edited.
+
 //==============================================================
 // START Enums and Input Objects
 //==============================================================

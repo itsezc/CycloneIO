@@ -23,7 +23,7 @@ import RoomAvatar from '../avatar/avatar'
 import Imager from '../avatar/imager'
 
 import TileGenerator from '../generators/tile'
-import FPSMeter from 'fpsmeter'
+// import FPSMeter from 'fpsmeter'
 import Tile from '../generators/tile';
 
 /**
