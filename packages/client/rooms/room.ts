@@ -442,6 +442,8 @@ export default class Room extends Phaser.Scene {
             this.roomPlayer = new RoomAvatar(this, 0, 0, 0, 0)
             this.roomPlayer.x = this.roomPlayer.RenderPos.x
             this.roomPlayer.y = this.roomPlayer.RenderPos.y
+
+            this.add.existing(this.roomPlayer)
         //})
 
         this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {

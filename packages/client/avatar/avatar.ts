@@ -57,7 +57,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     ) {
         super(scene, x, y - z)
 
-        /*this.bodyTextures = {};
+        this.bodyTextures = {};
         this.headTextures = {};
         this.solidBodyTextures = {};
         this.solidHeadTextures = {};
@@ -87,13 +87,13 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
                 console.log('avatar initialized')
                 this.loaded = true
             })
-        })*/
+        })
 
-        const sprite = this.scene.add.sprite(0, 0, 'tile')
+        /*const sprite = this.scene.add.sprite(0, 0, 'tile')
 
         this.add(sprite)
 
-        scene.add.existing(this)
+        scene.add.existing(this)*/
     }
 
     get RenderPos() {
@@ -144,7 +144,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
         return avatarImager.generateGeneric(new Avatar(this.look, direction, direction, action, "std", frame, false, true, "n"), this.isGhost)
             .then(image => {
                 const key = this.getBodyTextureKey(direction, action, frame)
-
+                
                 this.bodyTextures[key] = this.getTextureFromImage(image, key);
                 this.solidBodyTextures[key] = this.getTextureFromImage(this.generateSilhouette(image, 255, 255, 255), key);
             });
@@ -182,6 +182,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     
     getTextureFromImage(image: HTMLCanvasElement | HTMLImageElement, key: string): Phaser.Textures.Texture {
         const texture = new Phaser.Textures.Texture(this.scene.game.textures, key, image)
+        //const texture = new Phaser.Textures.CanvasTexture(this.scene.game.textures, key, (image as HTMLCanvasElement), image.width, image.height)
 
         return texture
     }
@@ -297,9 +298,9 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
             bodyFrame = this.frame % 4;
         }
 
-        if (this.loaded) {
-            this.avatarBody.texture =  this.getBodyPart(this.rot, action, bodyFrame)
-            this.avatarHead.texture = this.getHeadPart(this.headRot, gesture, headFrame);
+		if (this.loaded) {
+            this.avatarBody.texture = this.getBodyPart(this.rot, action, bodyFrame)
+            this.avatarHead.texture = this.getHeadPart(this.headRot, gesture, headFrame)
         } else {
             //this.avatarBody.texture = this.getBodyPart(this.rot, action, bodyFrame);
             //this.avatarHead.texture = this.getHeadPart(this.headRot, gesture, headFrame);
