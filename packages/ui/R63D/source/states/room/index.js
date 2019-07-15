@@ -32,8 +32,10 @@ export default class Room extends React.Component {
                     </ScrollBar>
                 </div>
 
+                <ClickActions isOwn={true} style={{top: 400, left: 200}} />
+
+
                 <div style={{backgroundColor: 'blue', padding: 32, position: 'fixed', top: '0%', left: '45%'}}>
-                    <ClickActions />
 
                     <div style={{height: 64}}></div>
 

@@ -1,7 +1,8 @@
 .click-actions {
-    min-width: 103px;
     border: 1px solid #000;
     border-radius: 4px;
+    position: fixed;
+    transform: translateY(-100%) translateX(-50%);
 
     .click-actions-header , .click-actions-footer {
         background-color: #4f4c48;
@@ -34,10 +35,16 @@
             color: #fff;
             height: 27px;
             line-height: 27px;
-            text-align: center;
             border-bottom: 1px solid rgba(255, 255, 255, .2);
             white-space: nowrap;
             font-size: 11px;
+            padding: 0 20px;
+            text-align: center;
+
+            .icon {
+                margin-left: 10px;
+                filter: invert(14%) sepia(6%) saturate(147%) hue-rotate(355deg) brightness(99%) contrast(88%);
+            }
 
             &:hover {
                 background: linear-gradient(#2c2926 50%, #292623 50%, #292623 100%);
@@ -53,12 +60,15 @@
     }
 
     .click-actions-footer {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        height: 16px;
+        width: 33px;
+        height: 23px;
         border-top: none;
         position: relative;
         filter: drop-shadow(0 2px 0 #000);
+
+        &:hover .icon {
+            filter: invert(17%) sepia(44%) saturate(3960%) hue-rotate(168deg) brightness(82%) contrast(94%);
+        }   
 
         &:before, &:after {
             position: absolute;
@@ -67,17 +77,46 @@
 
         &:before {
             
-            bottom: -11px;
-            border-top: solid 11px #6d6a66;
-            border-left: solid 11px transparent;
-            border-right: solid 11px transparent;
+            bottom: -6px;
+            border-top: solid 6px #6d6a66;
+            border-left: solid 6px transparent;
+            border-right: solid 6px transparent;
         }
 
         &:after {
-            bottom: -10px;
-            border-top: solid 10px #4f4c48;
-            border-left: solid 10px transparent;
-            border-right: solid 10px transparent;
+            bottom: -5px;
+            border-top: solid 5px #4f4c48;
+            border-left: solid 5px transparent;
+            border-right: solid 5px transparent;
+        }
+    }
+
+
+    &.is-open {
+
+        .click-actions-footer {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            width: inherit;
+        }
+    }
+
+    &.is-own {
+
+        .click-actions-content {
+
+            &>a {
+
+                &:hover {
+                    background: linear-gradient(#47a3cc 50%, #4296bc 50%, #4296bc 100%);
+                    box-shadow: none;
+                }
+
+                &:active {
+                    background: linear-gradient(#3f90b4 50%, #2d6882 50%, #2d6882 100%);
+                    box-shadow: none;
+                }
+            }
         }
     }
 }

@@ -11,55 +11,55 @@
 
     $icons: (
         inventory: (
-            image: 'hotelview/toolbar/icons/inventory.png',
+            image: 'r63b/toolbar/icons/inventory.png',
             width: 44,
             height: 41
         ),
 
         catalog: (
-            image: 'hotelview/toolbar/icons/catalog.png',
+            image: 'r63b/toolbar/icons/catalog.png',
             width: 37,
             height: 37
         ),
 
         buildersclub: (
-            image: 'hotelview/toolbar/icons/buildersclub.png',
+            image: 'r63b/toolbar/icons/buildersclub.png',
             width: 32,
             height: 33
         ),
 
         rooms: (
-            image: 'hotelview/toolbar/icons/rooms.png',
+            image: 'r63b/toolbar/icons/rooms.png',
             width: 44,
             height: 30
         ),
 
         house: (
-            image: 'hotelview/toolbar/icons/house.png',
+            image: 'r63b/toolbar/icons/house.png',
             width: 32,
             height: 30
         ),
 
         friendall: (
-            image: 'hotelview/toolbar/icons/friend_all.png',
+            image: 'r63b/toolbar/icons/friend_all.png',
             width: 32,
             height: 33
         ),
 
         friendsearch: (
-            image: 'hotelview/toolbar/icons/friend_search.png',
+            image: 'r63b/toolbar/icons/friend_search.png',
             width: 29,
             height: 33
         ),
 
         sendmessage: (
-            image: 'hotelview/toolbar/icons/sendmessage.png',
+            image: 'r63b/toolbar/icons/sendmessage.png',
             width: 20,
             height: 21
         ),
 
         profile: (
-            image: 'hotelview/toolbar/icons/profile.png',
+            image: 'r63b/toolbar/icons/profile.png',
             width: 21,
             height: 21,
 
@@ -75,13 +75,13 @@
         ),
 
         joinroom: (
-            image: 'hotelview/toolbar/icons/joinroom.png',
+            image: 'r63b/toolbar/icons/joinroom.png',
             width: 21,
             height: 21
         ),
 
         habbo: (
-            image: 'hotelview/toolbar/icons/habbo.png',
+            image: 'r63b/toolbar/icons/habbo.png',
             width: 28,
             height: 28,
             
@@ -93,7 +93,7 @@
         ),
 
         camera: (
-            image: 'hotelview/toolbar/icons/camera.png',
+            image: 'r63b/toolbar/icons/camera.png',
             width: 38,
             height: 45
         ),
@@ -272,6 +272,13 @@
             width: 5,
             height: 10,
             rotate: 90,
+        ),
+
+        carret-up: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10,
+            rotate: -90
         )
     );
 
@@ -339,11 +346,11 @@
     &.icon-message{
         
         &.is-unsee::before{
-            background-image: url('/hotelview/toolbar/icons/message_unsee.gif')
+            background-image: url('/r63b/toolbar/icons/message_unsee.gif')
         }
 
 		&:before{
-			background-image: url('/hotelview/toolbar/icons/message.png');
+			background-image: url('/r63b/toolbar/icons/message.png');
 			width: 26px;
             height: 31px;
         }
