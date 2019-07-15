@@ -16,12 +16,12 @@ import Moderation from '../../components/dialogs/moderation'
 
 import Poll from '../../components/poll'
 
-import {Game} from '../../../../../client/games/game'
+import {Engine} from '../../../../../client/games/game'
 
 
 export default class Room extends Component<any, any> {
 
-	private game: Game
+	private engine: Engine
 
 	constructor(props: any) {
 		super(props)
@@ -29,14 +29,14 @@ export default class Room extends Component<any, any> {
 
 	componentDidMount()
 	{
-		this.game = new Game('game')
+		this.engine = new Engine('game')
 		//const script = document.createElement('script')
 		//script.src = 'http://localhost:8082/client.js'
 		//document.body.appendChild(script)
 	}
 
 	componentWillReceiveProps(nextProps: any) {
-		this.game.gotoRoom(nextProps.roomData)
+		this.engine.gotoRoom(nextProps.roomData)
 	}
 
 	render() {

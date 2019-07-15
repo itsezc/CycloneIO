@@ -1,3 +1,5 @@
+import { Engine } from '../games/game'
+
 export interface FigurePart { type: string, id: string, colors: string[] }
 
 export type Direction = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
@@ -42,8 +44,10 @@ export default class Avatar
     drawAction: DrawAction;
     handItem: number;
     drawOrder: string;
+    engine: Engine;
 
-    constructor(figure: string, direction: Direction, headDirection: Direction, action: string[], gesture: string, frame: number, isHeadOnly: boolean, isBodyOnly: boolean, scale: Scale) {
+    constructor(engine: Engine, figure: string, direction: Direction, headDirection: Direction, action: string[], gesture: string, frame: number, isHeadOnly: boolean, isBodyOnly: boolean, scale: Scale) {
+        this.engine = engine;
         this.direction = direction;
         this.headDirection = headDirection;
         this.isHeadOnly = isHeadOnly;
@@ -74,7 +78,7 @@ export default class Avatar
                 break;
         }
 
-        this.figure = extractFigureParts(figure);
+        this.figure = extractFigureParts(figure, this.engine);
 
         this.frame = frame;
         this.drawAction = {
@@ -187,7 +191,7 @@ export default class Avatar
 
 export interface FigurePart { type: string, id: string, colors: string[] };
 
-export const extractFigureParts = (figure: string): FigurePart[] => {
+export const extractFigureParts = (figure: string, engine: Engine): FigurePart[] => {
     const newFigure: { [id: string]: FigurePart } = {};
     const figures: FigurePart[] = [];
 
@@ -203,6 +207,8 @@ export const extractFigureParts = (figure: string): FigurePart[] => {
     for (let part in newFigure) {
         figures.push(newFigure[part]);
     }
+
+    
     return figures;
 };
 

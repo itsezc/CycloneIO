@@ -20,7 +20,7 @@ export default class Navigation extends Component<any, any> {
 						this.state.pages.map((page: any, index: number) => {
 							console.log(index, page.id, page.parent)
 							return(
-								(page.id !== page.parent.id) ?
+								(page.id === page.parent.id) ?
 									<p key={index}>
 										<img src={`./catalogue/icons/${page.icon}.png`} />
 										{page.name}

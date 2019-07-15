@@ -104,6 +104,7 @@ type Bot @pgTable(name: "bots")
 # }
 
 # @TODO: Create relation between CatalogPages (link -> id)
+
 type CatalogFeatured @pgTable(name: "catalog_featured")
 {
     id: ID! @id

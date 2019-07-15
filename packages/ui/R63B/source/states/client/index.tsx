@@ -92,7 +92,7 @@ export default class Client extends Component<any, ClientState>
 						<div className='campaigns'>
 
 							<div className='campaign'>
-								<img src='/hotelview/campaigns/spromo_Celestial_Bundle.png' />
+								<img src='/hotelview/campaigns/spromo_rainbow19_summergifts.png' />
 								<div className='content'>
 									<span>
 										<h1>Open Your Summer Calendar!</h1>
@@ -114,11 +114,11 @@ export default class Client extends Component<any, ClientState>
 
 
 							<div className='campaign'>
-								<img src='/hotelview/campaigns/spromo_pride19_celestedress.png' />
+								<img src='/hotelview/campaigns/spromo_underwater_house_bundle.png' />
 								<div className='content'>
 									<span>
-										<h1>RARE Celestial Dress!</h1>
-										<p>Star Gazers! You NEED to go and check out the new Celestial Dress rare. Never to be sold again, exclusive badge included!</p>
+										<h1>Underwater House Bundle</h1>
+										<p>Now that you've travelled all the way to the Coral Kingdom, make sure you buy a house there! Comes with exclusive badge. Bundle built by Jenneben (NL)</p>
 									</span>
 									<button className='illumina button'>See the rare!</button>
 								</div>

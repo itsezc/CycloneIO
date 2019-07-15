@@ -7,6 +7,8 @@ import Config, { server } from '../../../config.json'
 
 const { host, port } = server
 
+import { Engine } from '../games/game'
+
 import RoomCamera from './camera'
 import RoomSprite from './sprite'
 import FurnitureSprite from '../furniture/sprite'
@@ -20,8 +22,6 @@ import Pathfinder, { DiagonalMovement } from 'pathfinding'
 import { generateBlendMode } from '../core/blendMode';
 import RoomAvatar from '../avatar/avatar'
 
-import Imager from '../avatar/imager'
-
 import TileGenerator from '../generators/tile'
 // import FPSMeter from 'fpsmeter'
 import Tile from '../generators/tile';
@@ -32,6 +32,8 @@ import Tile from '../generators/tile';
 */
 export default class Room extends Phaser.Scene {
     private readonly roomData: any
+    
+    public readonly engine: Engine
 
     // private _socket!: SocketIOClient.Socket
     private _camera!: RoomCamera
@@ -62,18 +64,18 @@ export default class Room extends Phaser.Scene {
     public players: { [id: string]: RoomAvatar }
 
     private furnitures!: FurnitureSprite[]
-
-    public avatarImager: Imager
     /*
         private map!: RoomMap */
 
     /**
      * @param {number} id - The room id
      */
-    constructor(roomData: any) {
+    constructor(roomData: any, engine: Engine) {
         super({ key: 'room' })
+
         this.roomData = roomData;
-        this.avatarImager = new Imager()
+
+        this.engine = engine
     }
 
     /**

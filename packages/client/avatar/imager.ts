@@ -1,6 +1,8 @@
 import Avatar, { Direction, FigurePart } from './index'
 import AvatarChunk from './chunk';
 
+import { Engine } from '../games/game'
+
 export const LOCAL_RESOURCES = 'https://images.bobba.io/resource/'
 
 export default class Imager {
@@ -13,7 +15,7 @@ export default class Imager {
     draworder: any;
     animation: any;
 
-    constructor() {
+    constructor(private readonly engine: Engine) {
         this.ready = false;
         this.offsets = {};
         this.chunks = {};
@@ -80,7 +82,7 @@ export default class Imager {
     }
 
     getTypeColorId(figure: string, part: string): number {
-        const avatarInfo = new Avatar(figure, 0, 0, ["std"], "std", 0, false, false, "d");
+        const avatarInfo = new Avatar(this.engine, figure, 0, 0, ["std"], "std", 0, false, false, "d");
         let color = 0x000000;
 
         for (let figurePart of avatarInfo.figure) {
