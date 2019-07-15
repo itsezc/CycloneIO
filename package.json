@@ -4,7 +4,7 @@
   "description": "![](https://media.discordapp.net/attachments/557261127847772161/557591227709521922/1803003194_edd50080-e5ee-4490-8da1-b7927a8383a6.png)",
   "main": "index.js",
   "scripts": {
-    "apollo:schema": "apollo client:download-schema --endpoint http://localhost:8081/graphql ./packages/storage/schema.json",
+    "apollo:schema": "apollo client:download-schema --endpoint http://localhost:8087/graphql ./packages/storage/schema.json",
     "apollo:types": "apollo client:codegen --includes ./packages/storage/queries.ts --localSchemaFile ./packages/storage/schema.json --target typescript --outputFlat ./packages/storage/__generated__/types.ts",
     "build": "npm run server:build",
     "server:build": "babel source --out-dir dist --ignore 'source/web' --ignore 'source/client'",

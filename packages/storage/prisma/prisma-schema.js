@@ -19,6 +19,10 @@ type AggregateCatalogFeatured {
   count: Int!
 }
 
+type AggregateCatalogItems {
+  count: Int!
+}
+
 type AggregateCatalogPage {
   count: Int!
 }
@@ -32,6 +36,10 @@ type AggregateChatlogConsole {
 }
 
 type AggregateChatlogConsoleInvitations {
+  count: Int!
+}
+
+type AggregateCurrencies {
   count: Int!
 }
 
@@ -873,6 +881,170 @@ input CatalogFeaturedWhereUniqueInput {
   id: ID
 }
 
+type CatalogItems {
+  id: ID!
+  page: CatalogPage
+  name: String!
+  amount: Int
+  club: Boolean
+  available: Int
+  limit: Int
+  discount: Boolean
+}
+
+type CatalogItemsConnection {
+  pageInfo: PageInfo!
+  edges: [CatalogItemsEdge]!
+  aggregate: AggregateCatalogItems!
+}
+
+input CatalogItemsCreateInput {
+  id: ID
+  page: CatalogPageCreateOneInput
+  name: String!
+  amount: Int
+  club: Boolean
+  available: Int
+  limit: Int
+  discount: Boolean
+}
+
+type CatalogItemsEdge {
+  node: CatalogItems!
+  cursor: String!
+}
+
+enum CatalogItemsOrderByInput {
+  id_ASC
+  id_DESC
+  name_ASC
+  name_DESC
+  amount_ASC
+  amount_DESC
+  club_ASC
+  club_DESC
+  available_ASC
+  available_DESC
+  limit_ASC
+  limit_DESC
+  discount_ASC
+  discount_DESC
+}
+
+type CatalogItemsPreviousValues {
+  id: ID!
+  name: String!
+  amount: Int
+  club: Boolean
+  available: Int
+  limit: Int
+  discount: Boolean
+}
+
+type CatalogItemsSubscriptionPayload {
+  mutation: MutationType!
+  node: CatalogItems
+  updatedFields: [String!]
+  previousValues: CatalogItemsPreviousValues
+}
+
+input CatalogItemsSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: CatalogItemsWhereInput
+  AND: [CatalogItemsSubscriptionWhereInput!]
+  OR: [CatalogItemsSubscriptionWhereInput!]
+  NOT: [CatalogItemsSubscriptionWhereInput!]
+}
+
+input CatalogItemsUpdateInput {
+  page: CatalogPageUpdateOneInput
+  name: String
+  amount: Int
+  club: Boolean
+  available: Int
+  limit: Int
+  discount: Boolean
+}
+
+input CatalogItemsUpdateManyMutationInput {
+  name: String
+  amount: Int
+  club: Boolean
+  available: Int
+  limit: Int
+  discount: Boolean
+}
+
+input CatalogItemsWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  page: CatalogPageWhereInput
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  amount: Int
+  amount_not: Int
+  amount_in: [Int!]
+  amount_not_in: [Int!]
+  amount_lt: Int
+  amount_lte: Int
+  amount_gt: Int
+  amount_gte: Int
+  club: Boolean
+  club_not: Boolean
+  available: Int
+  available_not: Int
+  available_in: [Int!]
+  available_not_in: [Int!]
+  available_lt: Int
+  available_lte: Int
+  available_gt: Int
+  available_gte: Int
+  limit: Int
+  limit_not: Int
+  limit_in: [Int!]
+  limit_not_in: [Int!]
+  limit_lt: Int
+  limit_lte: Int
+  limit_gt: Int
+  limit_gte: Int
+  discount: Boolean
+  discount_not: Boolean
+  AND: [CatalogItemsWhereInput!]
+  OR: [CatalogItemsWhereInput!]
+  NOT: [CatalogItemsWhereInput!]
+}
+
+input CatalogItemsWhereUniqueInput {
+  id: ID
+}
+
 type CatalogPage {
   id: ID!
   link: String!
@@ -1592,6 +1764,118 @@ input ChatlogWhereInput {
 }
 
 input ChatlogWhereUniqueInput {
+  id: ID
+}
+
+type Currencies {
+  id: ID!
+  name: String!
+  default: Int
+}
+
+type CurrenciesConnection {
+  pageInfo: PageInfo!
+  edges: [CurrenciesEdge]!
+  aggregate: AggregateCurrencies!
+}
+
+input CurrenciesCreateInput {
+  id: ID
+  name: String!
+  default: Int
+}
+
+type CurrenciesEdge {
+  node: Currencies!
+  cursor: String!
+}
+
+enum CurrenciesOrderByInput {
+  id_ASC
+  id_DESC
+  name_ASC
+  name_DESC
+  default_ASC
+  default_DESC
+}
+
+type CurrenciesPreviousValues {
+  id: ID!
+  name: String!
+  default: Int
+}
+
+type CurrenciesSubscriptionPayload {
+  mutation: MutationType!
+  node: Currencies
+  updatedFields: [String!]
+  previousValues: CurrenciesPreviousValues
+}
+
+input CurrenciesSubscriptionWhereInput {
+  mutation_in: [MutationType!]
+  updatedFields_contains: String
+  updatedFields_contains_every: [String!]
+  updatedFields_contains_some: [String!]
+  node: CurrenciesWhereInput
+  AND: [CurrenciesSubscriptionWhereInput!]
+  OR: [CurrenciesSubscriptionWhereInput!]
+  NOT: [CurrenciesSubscriptionWhereInput!]
+}
+
+input CurrenciesUpdateInput {
+  name: String
+  default: Int
+}
+
+input CurrenciesUpdateManyMutationInput {
+  name: String
+  default: Int
+}
+
+input CurrenciesWhereInput {
+  id: ID
+  id_not: ID
+  id_in: [ID!]
+  id_not_in: [ID!]
+  id_lt: ID
+  id_lte: ID
+  id_gt: ID
+  id_gte: ID
+  id_contains: ID
+  id_not_contains: ID
+  id_starts_with: ID
+  id_not_starts_with: ID
+  id_ends_with: ID
+  id_not_ends_with: ID
+  name: String
+  name_not: String
+  name_in: [String!]
+  name_not_in: [String!]
+  name_lt: String
+  name_lte: String
+  name_gt: String
+  name_gte: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  default: Int
+  default_not: Int
+  default_in: [Int!]
+  default_not_in: [Int!]
+  default_lt: Int
+  default_lte: Int
+  default_gt: Int
+  default_gte: Int
+  AND: [CurrenciesWhereInput!]
+  OR: [CurrenciesWhereInput!]
+  NOT: [CurrenciesWhereInput!]
+}
+
+input CurrenciesWhereUniqueInput {
   id: ID
 }
 
@@ -2441,6 +2725,12 @@ type Mutation {
   upsertCatalogFeatured(where: CatalogFeaturedWhereUniqueInput!, create: CatalogFeaturedCreateInput!, update: CatalogFeaturedUpdateInput!): CatalogFeatured!
   deleteCatalogFeatured(where: CatalogFeaturedWhereUniqueInput!): CatalogFeatured
   deleteManyCatalogFeatureds(where: CatalogFeaturedWhereInput): BatchPayload!
+  createCatalogItems(data: CatalogItemsCreateInput!): CatalogItems!
+  updateCatalogItems(data: CatalogItemsUpdateInput!, where: CatalogItemsWhereUniqueInput!): CatalogItems
+  updateManyCatalogItemses(data: CatalogItemsUpdateManyMutationInput!, where: CatalogItemsWhereInput): BatchPayload!
+  upsertCatalogItems(where: CatalogItemsWhereUniqueInput!, create: CatalogItemsCreateInput!, update: CatalogItemsUpdateInput!): CatalogItems!
+  deleteCatalogItems(where: CatalogItemsWhereUniqueInput!): CatalogItems
+  deleteManyCatalogItemses(where: CatalogItemsWhereInput): BatchPayload!
   createCatalogPage(data: CatalogPageCreateInput!): CatalogPage!
   updateCatalogPage(data: CatalogPageUpdateInput!, where: CatalogPageWhereUniqueInput!): CatalogPage
   updateManyCatalogPages(data: CatalogPageUpdateManyMutationInput!, where: CatalogPageWhereInput): BatchPayload!
@@ -2465,6 +2755,12 @@ type Mutation {
   upsertChatlogConsoleInvitations(where: ChatlogConsoleInvitationsWhereUniqueInput!, create: ChatlogConsoleInvitationsCreateInput!, update: ChatlogConsoleInvitationsUpdateInput!): ChatlogConsoleInvitations!
   deleteChatlogConsoleInvitations(where: ChatlogConsoleInvitationsWhereUniqueInput!): ChatlogConsoleInvitations
   deleteManyChatlogConsoleInvitationses(where: ChatlogConsoleInvitationsWhereInput): BatchPayload!
+  createCurrencies(data: CurrenciesCreateInput!): Currencies!
+  updateCurrencies(data: CurrenciesUpdateInput!, where: CurrenciesWhereUniqueInput!): Currencies
+  updateManyCurrencieses(data: CurrenciesUpdateManyMutationInput!, where: CurrenciesWhereInput): BatchPayload!
+  upsertCurrencies(where: CurrenciesWhereUniqueInput!, create: CurrenciesCreateInput!, update: CurrenciesUpdateInput!): Currencies!
+  deleteCurrencies(where: CurrenciesWhereUniqueInput!): Currencies
+  deleteManyCurrencieses(where: CurrenciesWhereInput): BatchPayload!
   createHabbo(data: HabboCreateInput!): Habbo!
   updateHabbo(data: HabboUpdateInput!, where: HabboWhereUniqueInput!): Habbo
   updateManyHabboes(data: HabboUpdateManyMutationInput!, where: HabboWhereInput): BatchPayload!
@@ -3094,6 +3390,9 @@ type Query {
   catalogFeatured(where: CatalogFeaturedWhereUniqueInput!): CatalogFeatured
   catalogFeatureds(where: CatalogFeaturedWhereInput, orderBy: CatalogFeaturedOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogFeatured]!
   catalogFeaturedsConnection(where: CatalogFeaturedWhereInput, orderBy: CatalogFeaturedOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogFeaturedConnection!
+  catalogItems(where: CatalogItemsWhereUniqueInput!): CatalogItems
+  catalogItemses(where: CatalogItemsWhereInput, orderBy: CatalogItemsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogItems]!
+  catalogItemsesConnection(where: CatalogItemsWhereInput, orderBy: CatalogItemsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogItemsConnection!
   catalogPage(where: CatalogPageWhereUniqueInput!): CatalogPage
   catalogPages(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [CatalogPage]!
   catalogPagesConnection(where: CatalogPageWhereInput, orderBy: CatalogPageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CatalogPageConnection!
@@ -3106,6 +3405,9 @@ type Query {
   chatlogConsoleInvitations(where: ChatlogConsoleInvitationsWhereUniqueInput!): ChatlogConsoleInvitations
   chatlogConsoleInvitationses(where: ChatlogConsoleInvitationsWhereInput, orderBy: ChatlogConsoleInvitationsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [ChatlogConsoleInvitations]!
   chatlogConsoleInvitationsesConnection(where: ChatlogConsoleInvitationsWhereInput, orderBy: ChatlogConsoleInvitationsOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): ChatlogConsoleInvitationsConnection!
+  currencies(where: CurrenciesWhereUniqueInput!): Currencies
+  currencieses(where: CurrenciesWhereInput, orderBy: CurrenciesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Currencies]!
+  currenciesesConnection(where: CurrenciesWhereInput, orderBy: CurrenciesOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): CurrenciesConnection!
   habbo(where: HabboWhereUniqueInput!): Habbo
   habboes(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Habbo]!
   habboesConnection(where: HabboWhereInput, orderBy: HabboOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): HabboConnection!
@@ -3558,10 +3860,12 @@ type Subscription {
   ban(where: BanSubscriptionWhereInput): BanSubscriptionPayload
   bot(where: BotSubscriptionWhereInput): BotSubscriptionPayload
   catalogFeatured(where: CatalogFeaturedSubscriptionWhereInput): CatalogFeaturedSubscriptionPayload
+  catalogItems(where: CatalogItemsSubscriptionWhereInput): CatalogItemsSubscriptionPayload
   catalogPage(where: CatalogPageSubscriptionWhereInput): CatalogPageSubscriptionPayload
   chatlog(where: ChatlogSubscriptionWhereInput): ChatlogSubscriptionPayload
   chatlogConsole(where: ChatlogConsoleSubscriptionWhereInput): ChatlogConsoleSubscriptionPayload
   chatlogConsoleInvitations(where: ChatlogConsoleInvitationsSubscriptionWhereInput): ChatlogConsoleInvitationsSubscriptionPayload
+  currencies(where: CurrenciesSubscriptionWhereInput): CurrenciesSubscriptionPayload
   habbo(where: HabboSubscriptionWhereInput): HabboSubscriptionPayload
   language(where: LanguageSubscriptionWhereInput): LanguageSubscriptionPayload
   navigatorCategory(where: NavigatorCategorySubscriptionWhereInput): NavigatorCategorySubscriptionPayload

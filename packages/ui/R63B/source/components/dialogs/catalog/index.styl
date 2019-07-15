@@ -38,7 +38,9 @@
 			border: 1px solid #4D4C49
 			border-bottom: 0
 			font-weight: 300
-			padding: 7px 0
+			font-size 1.005em
+			padding 10px 0 5px 0
+			max-height 32px
 			width 108px
 			text-align: center
 			background: #C3C2B9
@@ -53,7 +55,8 @@
 
 		.active
 			background: #ECEAE1
-			border: 2px solid #000000
+			border 2px solid #000000
+			padding-bottom 6px
 			border-bottom: 0
 			box-shadow inset -2px 0 0 0 #FFFFFF,
 						inset 0 2px 0 0 #FFFFFF,
@@ -104,43 +107,67 @@
 
 
 	.frontpage
-		padding 5px 10px 10px 10px
+		padding 5px 7px 10px 10px
 		color black
 		display grid
 		grid-gap 7px
-		grid-template-columns: 180px auto
-		grid-template-areas: 'sidebar content'
+		grid-template-columns 180px auto
+		grid-template-areas 'sidebar content'
 
 		.sidebar
 			grid-area sidebar
 
 			img
-				max-width: 180px
+				max-width: 185px
 				height: 460px
-					
+
+			.caption
+				width 175px
+				max-width 175px
+				margin-top -58px
+									
 
 		.content
 			grid-area content
 			color #222222
 
 			img
-				max-width: 100%
-				height: 125px
-				margin-bottom: 5px
+				max-width 100%
+				height 125px
+				margin-bottom 5px
+
+			.caption
+				width 350px
+				max-width 100%
+				margin-top -41px
+
+		.sidebar,
+		.content
+
+			.caption
+				color #FFFFFF
+				background rgba(0, 0, 0, 0.3)
+				border-radius 4px
+				margin-left 5px
+				padding 5px
+				position absolute		
 
 		.voucher
 			padding 0px 10px
 
 			.container
 				border-radius: 6px
-				padding: 10px
+				padding: 5px 10px
 				background #6DB8E8
 				font-weight: 400
+				min-height 65px
 
 				p
 					padding 0
 					margin 0
-					font-weight: 300
+					margin-top 2px
+					font-weight 300
+					font-size 13px
 					margin-bottom: 3px
 					margin-left: 3px
 
@@ -148,7 +175,7 @@
 					margin 0
 					border-radius: 5px
 					width: 210px
-					height: 20px
+					height: 25px
 					border 1px solid #2B495D
 					
 					:focus
@@ -160,9 +187,12 @@
 					border solid 1px #000
 					border-bottom solid 2px #000
 					border-radius 4px
-					padding 5px 5px
-					font-weight bold
+					padding 5px 8px
+					line-height 10px
+					max-height 23px
 					cursor pointer
+					font-size 1.1em
+					text-align center
 					background #F3F3F3
 					box-shadow inset -2px 0px 0 0 #D9D9D9,
 					inset 0px 1px 0 0 #D9D9D9,

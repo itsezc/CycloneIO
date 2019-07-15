@@ -1,6 +1,18 @@
 import React, { Component } from 'react'
 
-export default class CatalogFrontPage extends Component {
+import { Query } from 'react-apollo'
+
+import { 
+	GetCatalogFeatureds as CatalogFeaturedsQUERY
+} from '../../../../../../../storage/queries'
+
+import {
+	GetCatalogFeatured,
+	GetCatalogFeatured_catalogFeatureds,
+	GetCatalogFeatured_catalogFeatureds_link
+} from '../../../../../../../storage/__generated__/types'
+
+export default class CatalogFrontPage extends Component<any, any> {
 
 	constructor(props: any) {
 		super(props)
@@ -8,26 +20,66 @@ export default class CatalogFrontPage extends Component {
 
 	render() {
 		return(
-			<div className='frontpage'>
-				<div className='sidebar'>
-					<a><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_vert_easter19_swingtree.png' /></a>
-				</div>
-				
-				<div className='content'>
-					<a><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_easter19_bun2.png' /></a>
-					<a><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_easter19_bun3.png' /></a>
-					<a><img src='https://habboo-a.akamaihd.net/c_images/catalogue/feature_cata_hort_easter19_bun4.png' /></a>
+			<Query<GetCatalogFeatured, GetCatalogFeatured_catalogFeatureds> query={CatalogFeaturedsQUERY} notifyOnNetworkStatusChange>
+				{({ loading, error, data }) => {
+						if (loading) return 'Loading..'
+						if (error) return 'Error..'
 
-					<div className='voucher'>
-						<div className='container'>
+						const { catalogFeatureds } = data
+						
+						return (
+							<div className='frontpage'>
+								<div className='sidebar'>
 
-							<p>Redeem a voucher code here:</p>
-							<input type='text' />
-							<button className='redeem'>Redeem</button>
-						</div>
-					</div>
-				</div>
-			</div>
+								{
+									catalogFeatureds.map(({ link, image, caption }, index) => (
+										(index == 0) ?
+											<a href='#' key={index}>
+												<img src={image} />
+												<div className='caption'>
+													<h2>{caption}</h2>
+												</div>
+											</a>
+										
+											:
+
+										null
+									))
+								}
+								
+								</div>
+								<div className='content'>
+
+									{
+										catalogFeatureds.map(({ link, image, caption }, index) => (
+											(index !== 0) ?
+												<a key={index}>
+													<img src={image} />
+													<div className='caption'>
+														<h2>{caption}</h2>
+													</div>
+												</a>
+											
+												:
+											
+											null
+										))
+									}
+
+									<div className='voucher'>
+										<div className='container'>
+
+											<p>Redeem a voucher code here:</p>
+											<input type='text' />
+											<button className='redeem'>Redeem</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						)
+					}
+				}
+			</Query>			
 		)
 	}
 }
