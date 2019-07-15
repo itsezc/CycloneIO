@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import { Query } from 'react-apollo'
+
 import { 
 	GetCatalogFeatureds as CatalogFeaturedsQUERY
 } from '../../../../../../../storage/queries'
@@ -13,12 +14,8 @@ import {
 
 export default class CatalogFrontPage extends Component<any, any> {
 
-	CatalogFeaturedData: any
-
 	constructor(props: any) {
 		super(props)
-
-		this.CatalogFeaturedData = null
 	}
 
 	render() {
@@ -33,6 +30,7 @@ export default class CatalogFrontPage extends Component<any, any> {
 						return (
 							<div className='frontpage'>
 								<div className='sidebar'>
+
 								{
 									catalogFeatureds.map(({ link, image, caption }, index) => (
 										(index == 0) ?
@@ -45,22 +43,25 @@ export default class CatalogFrontPage extends Component<any, any> {
 										
 											:
 
-											null
+										null
 									))
 								}
+								
 								</div>
 								<div className='content'>
-								
+
 									{
 										catalogFeatureds.map(({ link, image, caption }, index) => (
 											(index !== 0) ?
-											<a key={index}>
-												<img src={image} />
-												<div className='caption'>
-													<h2>{caption}</h2>
-												</div>
-											</a>
+												<a key={index}>
+													<img src={image} />
+													<div className='caption'>
+														<h2>{caption}</h2>
+													</div>
+												</a>
+											
 												:
+											
 											null
 										))
 									}

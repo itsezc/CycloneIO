@@ -49,6 +49,14 @@ var models = [
     embedded: false
   },
   {
+    name: "CatalogItems",
+    embedded: false
+  },
+  {
+    name: "Currencies",
+    embedded: false
+  },
+  {
     name: "Rank",
     embedded: false
   },

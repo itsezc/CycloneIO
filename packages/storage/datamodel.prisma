@@ -136,6 +136,25 @@ type CatalogPage @pgTable(name: "catalog_pages")
     product: Json
 }
 
+type CatalogItems @pgTable(name: "catalog_items")
+{
+    id: ID! @id
+    page: CatalogPage
+    name: String!
+    amount: Int @default(value: 1)
+    club: Boolean @default(value: false)
+    available: Int @default(value: 0)
+    limit: Int @default(value: 3)
+    discount: Boolean @default(value: true)
+}
+
+type Currencies @pgTable(name: "currencies")
+{
+    id: ID! @id
+    name: String!
+    default: Int
+}
+
 type Rank @pgTable(name: "ranks")
 {
     id: ID! @id

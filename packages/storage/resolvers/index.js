@@ -18,7 +18,10 @@ const resolvers = {
 		navigatorCategories: (obj, args, { db }) => db.navigatorCategories(args),
 
 		catalogFeatured: (obj, args, { db }) => db.catalogFeatured({ id: args. id }),
-		catalogFeatureds: (obj, args, { db }) => db.catalogFeatureds(args)
+		catalogFeatureds: (obj, args, { db }) => db.catalogFeatureds(args),
+
+		catalogPage: (parent, args, { db }, info) => db.catalogPage({ id: args.id }), 
+		catalogPages: (parent, args, { db }, info) => db.catalogPages(args),
 	},
 
 	Mutation: {
@@ -49,7 +52,12 @@ const resolvers = {
 	NavigatorCategory: {
 		parent: navigatorTab => navigatorTab
 	},
-	
+
+	CatalogPage: {
+		parent(catalogPage) {
+			return catalogPage
+		}
+	}
 }
 
 export { resolvers }

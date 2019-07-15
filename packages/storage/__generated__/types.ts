@@ -88,9 +88,79 @@ export interface GetCatalogFeatured {
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
+// ====================================================
+// GraphQL query operation: GetCatalogPages
+// ====================================================
+
+export interface GetCatalogPages_catalogPages_parent {
+  __typename: "CatalogPage";
+  id: string;
+}
+
+export interface GetCatalogPages_catalogPages_language {
+  __typename: "Language";
+  id: string;
+}
+
+export interface GetCatalogPages_catalogPages {
+  __typename: "CatalogPage";
+  id: string;
+  link: string;
+  parent: GetCatalogPages_catalogPages_parent | null;
+  layout: CatalogPageLayout | null;
+  order: number | null;
+  name: string | null;
+  language: GetCatalogPages_catalogPages_language | null;
+  description: string | null;
+  icon: string | null;
+  banner: string | null;
+  teaser: string | null;
+  visible: boolean | null;
+  enabled: boolean | null;
+  rank: number | null;
+  club: boolean | null;
+  vip: boolean | null;
+  body: any | null;
+  product: any | null;
+}
+
+export interface GetCatalogPages {
+  catalogPages: (GetCatalogPages_catalogPages | null)[];
+}
+
+/* tslint:disable */
+/* eslint-disable */
+// This file was automatically generated and should not be edited.
+
 //==============================================================
 // START Enums and Input Objects
 //==============================================================
+
+export enum CatalogPageLayout {
+  BADGE_DISPLAY = "BADGE_DISPLAY",
+  BOTS = "BOTS",
+  CLUB_BUY = "CLUB_BUY",
+  CLUB_GIFT = "CLUB_GIFT",
+  DEFAULT = "DEFAULT",
+  FRONTPAGE = "FRONTPAGE",
+  GUILDS = "GUILDS",
+  INFO_DUCKETS = "INFO_DUCKETS",
+  INFO_PETS = "INFO_PETS",
+  INFO_RENTABLES = "INFO_RENTABLES",
+  MARKETPLACE = "MARKETPLACE",
+  MARKETPLACE_OWN_ITEMS = "MARKETPLACE_OWN_ITEMS",
+  PETS = "PETS",
+  PLASTO = "PLASTO",
+  RECYCLER = "RECYCLER",
+  RECYCLER_INFO = "RECYCLER_INFO",
+  RECYCLER_PRIZES = "RECYCLER_PRIZES",
+  ROOMADS = "ROOMADS",
+  SINGLE_BUNDLE = "SINGLE_BUNDLE",
+  SOLD_LTD_ITEMS = "SOLD_LTD_ITEMS",
+  SOUNDMACHINE = "SOUNDMACHINE",
+  SPACES = "SPACES",
+  TROPHIES = "TROPHIES",
+}
 
 //==============================================================
 // END Enums and Input Objects

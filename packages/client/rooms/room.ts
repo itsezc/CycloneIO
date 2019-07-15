@@ -31,7 +31,7 @@ import Tile from '../generators/tile';
  * @extends {Scene}
 */
 export default class Room extends Phaser.Scene {
-    private readonly id: number
+    private readonly roomData: any
 
     // private _socket!: SocketIOClient.Socket
     private _camera!: RoomCamera
@@ -70,10 +70,9 @@ export default class Room extends Phaser.Scene {
     /**
      * @param {number} id - The room id
      */
-    constructor(id: number) {
+    constructor(roomData: any) {
         super({ key: 'room' })
-        this.id = id
-
+        this.roomData = roomData;
         this.avatarImager = new Imager()
     }
 
@@ -96,9 +95,14 @@ export default class Room extends Phaser.Scene {
         this.load.image('door', 'room/door.png')
         this.load.image('door_floor', 'room/door_floor.png')
 
+        this.load.image('stairs_left', 'room/stairs_left.png')
+        this.load.image('stairs_right', 'room/stairs_right.png')
+        this.load.image('stairs_bottom_right', 'room/stairs_bottom_right.png')
+
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
 
+        this.load.image('furniture_placeholder', 'furniture/furni_placeholder.png')
         this.load.image('wall_placeholder', 'furniture/wall_placeholder.png')
 
         this.load.atlas('wlk_0', 'avatar_old/wlk/wlk_0.png', 'avatar_old/wlk/wlk_0.json')
@@ -147,14 +151,7 @@ export default class Room extends Phaser.Scene {
 
         const room: FurnitureData.IRoom = {
             door: [0, 3],
-            heightmap: [
-                '0000000',
-                '0000000',
-                '0000000',
-                '0000000',
-                '0000000',
-                '0000x00'
-            ],
+            heightmap: this.roomData.map.room,
             furnitures: [
                 {
                     name: 'CF_50_goldbar',
@@ -357,17 +354,6 @@ export default class Room extends Phaser.Scene {
             return Math.floor(Math.random() * (max - min + 1) + min)
         }
 
-        // /*         this._socket.on('joinRoom', (roomId: number, playerId: number) => {
-
-        //             console.log('Joined', roomId, playerId)
-
-        // /*             var avatarX = this.getScreenX(0, 0)
-        //             var avatarY = this.getScreenY(0, genRandom(0, 5))
-
-        //             this.avatars[playerId] = this.physics.add.sprite(avatarX, avatarY - 84, 'avatar').setDepth(3).setOrigin(0, 0)
-        //             this.avatar = this.avatars[playerId] */
-        //         }) */
-
         //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
             this.roomPlayer = new RoomAvatar(this, 0, 0, 0, 0)
             this.roomPlayer.x = this.roomPlayer.RenderPos.x
@@ -376,129 +362,8 @@ export default class Room extends Phaser.Scene {
             this.add.existing(this.roomPlayer)
         //})
 
-        // this._socket.on('playerMoved', (playerId: any, oldPlayerCoordinates: any, path: any, destination: any) => {
-
-        //     if (this.roomPlayer) {
-        //         this.roomPlayer.moveToDestination(oldPlayerCoordinates, path, destination)
-        //     }
-        // })
-
-        // this._socket.on('currentPlayers', (players: any) => {
-        //     Object.keys(players).forEach((playerId: any) => {
-        //         var player = players[playerId]
-        //         this.roomPlayer.addPlayerToRoom(playerId, player.x, player.y);
-        //     })
-        // })
-
-        // this._socket.on('playerDisconnected', (playerId: any) => {
-        //     this.roomPlayer.removeFromRoom();
-        // });
-
-
-        /*         this._socket.on('currentPlayers', (players: any) => {
-                    Object.keys(players).forEach((playerId) => {
-                        var player = players[playerId];
-                        this.roomPlayer.addPlayerToRoom(player);
-                      });
-                  
-                }) */
-
-
-
-
-        /* for (let y = 0;y < map.length;y++)
-        {
-            for (let x = 0;x < map[y].length;x++)
-            {
-/*                 // simplified version
-                var isometricCoords = this.tileToPixels(x, y)
-                var isometricCoords = this.coordsToIsometric(x, y)
-
-                var tile = this.add.image(isometricCoords.x, isometricCoords.y, 'tile')
-                tiles.add(tile)
-
-                tile.setInteractive({ pixelPerfect: true })
-
-                tile.on('pointerdown', (pointer: Phaser.Input.Pointer) =>
-                {
-
-                })
-
-                // var topTileSurface = new Phaser.Geom.Polygon(
-                //     [
-                //         new Phaser.Geom.Point(0, 0),
-                //         new Phaser.Geom.Point(tileWidth / 2, -tileWidth / 4),
-                //         new Phaser.Geom.Point(tileWidth, 0),
-                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4)
-                //     ])
-                // tile = this.add.graphics()
-
-                // tile.fillStyle(0x989865)
-                // tile.fillPoints(topTileSurface.points)
-
-                // tile.lineStyle(0.5, 0x8E8E5E)
-                // tile.strokePoints(topTileSurface.points)
-
-                // var leftTileThickness = new Phaser.Geom.Polygon(
-                //     [
-                //         new Phaser.Geom.Point(0, thickness),
-                //         new Phaser.Geom.Point(0, 0),
-                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
-                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness)
-                //     ]
-                // )
-
-                // tile.fillStyle(0x838357)
-                // tile.fillPoints(leftTileThickness.points)
-
-                // tile.lineStyle(0.5, 0x7A7A51)
-                // tile.strokePoints(leftTileThickness.points)
-
-                // var bottomTileThickness = new Phaser.Geom.Polygon(
-                //     [
-                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4 + thickness),
-                //         new Phaser.Geom.Point(tileWidth / 2, tileWidth / 4),
-                //         new Phaser.Geom.Point(tileWidth, 0),
-                //         new Phaser.Geom.Point(tileWidth, thickness)
-                //     ],
-                // )
-
-                // tile.fillStyle(0x6F6F49)
-                // tile.fillPoints(bottomTileThickness.points)
-
-                // tile.lineStyle(0.5, 0x676744)
-                // tile.strokePoints(bottomTileThickness.points)
-
-                // tile.setInteractive(topTileSurface, Phaser.Geom.Polygon.Contains)
-
-                /*                 var tileHover: Phaser.GameObjects.Image
-
-                                tile.on('pointerover', () => {
-                                    tileHover = this.add.image(isometricX, isometricY, 'tile_hover')
-                                    tileHover.depth = 2
-                                    console.log(tile.x)
-                                })
-
-                                tile.on('pointerout', () => {
-                                    tileHover.destroy()
-                                })
-                 
-                // tile.setPosition(isometricX, isometricY)
-            }
-        } */
-
         // Zoom out (0.55). max: 10
         //this.camera.setZoom(0.55)
-
-        /* this.registerInputEvents()
-
-        this.registerScaleEvents()
-
-        this.emitRoom()
-
-        this.registerRoomsEvents()
-
-        this.registerItemsEvents()
 
         // this.moodlightPreview = this.add.graphics()
         // this.moodlightPreview.fillStyle(0x1844bd, 1)
@@ -507,10 +372,10 @@ export default class Room extends Phaser.Scene {
         // this.moodlightPreview.setDepth(4)
 
         // Zoom
-        this.camera.setZoom(1.5) // Zoom out (0.5). For render issues disable antialiasing
+        // this.camera.setZoom(1.5) // Zoom out (0.5). For render issues disable antialiasing
 
         // Room Background Color
-        this.camera.backgroundColor.setTo(0,255,255) */
+        // this.camera.backgroundColor.setTo(0,255,255)
 
         // Camera Shake
         // this.camera.shake(2000)
@@ -652,107 +517,10 @@ export default class Room extends Phaser.Scene {
         }, this)
     }
 
-    // public emitRoom(): void {
-    //     this._socket.emit('newRoom', this.id)
-    // }
-
-    // public registerRoomsEvents(): void {
-    //     this._socket.on('newRoom', (map: any) => {
-    //         //this.addTileMap(map)
-    //     })
-    // }
-
     public registerItemsEvents(): void {
 
-        /*         this.socket.on('newItem', (item: any) => {
-                    this.addItem({ x: 0, y: 0, z: 0 }, item)
-                }) */
     }
 
-    /**
-     * Adds a new tilemap
-     * @param {Object} map - The room map
-     */
-    /*     public addTileMap(map: [][]): void {
-            this.tileMap = new RoomTileMap(this, map)
-        } */
-    /*
-        public addItem(coordinates: Vector, textureName: string)
-        {
-            this.item = new RoomItem(this, textureName, 1, 1, 1, coordinates, 0, 0)
-            this.item.load()
-        } */
-
-    // /**
-    //  * Adds a new furniture
-    //  * @param {number} x - The x coordinate of the furniture
-    //  * @param {number} y - The y coordinate of the furniture
-    //  * @param {number} z - The z coordinate of the furniture
-    //  * @param {string} texture - The furniture texture
-    //  */
-    // addFurniture(x: number, y: number, z: number, texture: string): void {
-
-    //     // Testing
-    //     // var furnitureLayer = this.add.group()
-
-    //     // this.load.setPath(`furniture/${texture}/`)
-    //     // this.load.atlas({ key: texture, textureURL: texture.concat('.png'), atlasURL: texture.concat('.json') })
-    //     // this.load.start()
-
-    //     // this.load.once('complete', () => {
-
-    //     //     var furnitureTexture = this.textures.get(texture)
-
-    //     //     var frameNames = furnitureTexture.getFrameNames()
-
-    //     //     var frame1 = frameNames[5]
-    //     //     var frame2 = frameNames[8]
-
-    //     //     var totalFrames = []
-
-    //     //     var defaultFrame = frameNames.find(name => {
-    //     //         var parts = name.split('_')
-
-    //     //         var resolution = parts[3]
-    //     //         var cronological = parts[4]
-    //     //         var facing = parts[5]
-
-    //     //         return resolution == 64 && cronological === 'a' && facing == 2
-    //     //     })
-
-    //     //     console.log(defaultFrame)
-
-    //     //     // x = group position
-    //     //     // 1st object x = 0
-    //     //     // 2nd object 0 - 10
-    //     //     furnitureLayer.createMultiple({ key: texture, frame: [defaultFrame], setXY: { x: x - 1, y: y - 36, stepX: -10, stepY: 27 } } )
-    //     //     furnitureLayer.setDepth(3, 1) //
-
-    //     //     // for (var i = 0; i < frames.length; i++)
-    //     //     // {
-    //     //     //     furnitureLayer.createMultiple({ key: texture, frame: [frames[5], frames[8]] })
-    //     //     //     furnitureLayer.setDepth(0, 1)
-    //     //     //     // var x = Phaser.Math.Between(50, 200)
-    //     //     //     // var y = Phaser.Math.Between(50, 100)
-
-    //     //     //     // Get layers from FurniData
-    //     //     //     // let validFurni = [8, 5]
-    //     //     //     // console.log(i)
-
-    //     //     //
-
-    //     //     //     // if(validFurni.includes(i)) {
-    //     //     //     //     this.add.image(0, -35, texture, frames[i]).setDepth(i)
-    //     //     //     // }
-    //     //     // }
-    //     //     //furnitureLayer		console.log(this.map).createMultiple({ key: texture, frame: [0, 1, 3, 4] })
-    //     //     //this.add.sprite(x, y - 100, texture)
-    //     // })
-    //     //this.furniture.add(new RoomFurniture(this, x, y, z, texture, 2))
-    // }
-    /* @param {Vector} cartesian - The cartesian coordinates of the sprite
-     * @return {Vector} Isometric coordinates of the sprite
-     */
     public cartesianToIsometric(cartesian: Vector): Vector {
         return { x: cartesian.x - cartesian.y, y: (cartesian.x + cartesian.y) / 2, z: cartesian.z }
     }
@@ -800,10 +568,6 @@ export default class Room extends Phaser.Scene {
             this._clickTime = pointer.downTime
         })
     }
-
-    // public get socket(): SocketIOClient.Socket {
-    //     return this._socket
-    // }
 
     public get camera(): RoomCamera {
         return this._camera

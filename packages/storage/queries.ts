@@ -48,3 +48,33 @@ export const GetCatalogFeatureds = gql`
 		}
 	}
 `
+
+export const GetCatalogPages = gql`
+
+	query GetCatalogPages {
+		catalogPages {
+			id
+			link
+			parent {
+				id
+			}
+			layout
+			order
+			name
+			language {
+				id
+			}
+			description
+			icon
+			banner
+			teaser
+			visible
+			enabled
+			rank
+			club
+			vip
+			body
+			product
+		}
+	}
+`

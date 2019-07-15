@@ -20,12 +20,14 @@ export interface Exists {
   ban: (where?: BanWhereInput) => Promise<boolean>;
   bot: (where?: BotWhereInput) => Promise<boolean>;
   catalogFeatured: (where?: CatalogFeaturedWhereInput) => Promise<boolean>;
+  catalogItems: (where?: CatalogItemsWhereInput) => Promise<boolean>;
   catalogPage: (where?: CatalogPageWhereInput) => Promise<boolean>;
   chatlog: (where?: ChatlogWhereInput) => Promise<boolean>;
   chatlogConsole: (where?: ChatlogConsoleWhereInput) => Promise<boolean>;
   chatlogConsoleInvitations: (
     where?: ChatlogConsoleInvitationsWhereInput
   ) => Promise<boolean>;
+  currencies: (where?: CurrenciesWhereInput) => Promise<boolean>;
   habbo: (where?: HabboWhereInput) => Promise<boolean>;
   language: (where?: LanguageWhereInput) => Promise<boolean>;
   navigatorCategory: (where?: NavigatorCategoryWhereInput) => Promise<boolean>;
@@ -133,6 +135,27 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => CatalogFeaturedConnectionPromise;
+  catalogItems: (
+    where: CatalogItemsWhereUniqueInput
+  ) => CatalogItemsNullablePromise;
+  catalogItemses: (args?: {
+    where?: CatalogItemsWhereInput;
+    orderBy?: CatalogItemsOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<CatalogItems>;
+  catalogItemsesConnection: (args?: {
+    where?: CatalogItemsWhereInput;
+    orderBy?: CatalogItemsOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => CatalogItemsConnectionPromise;
   catalogPage: (
     where: CatalogPageWhereUniqueInput
   ) => CatalogPageNullablePromise;
@@ -215,6 +238,25 @@ export interface Prisma {
     first?: Int;
     last?: Int;
   }) => ChatlogConsoleInvitationsConnectionPromise;
+  currencies: (where: CurrenciesWhereUniqueInput) => CurrenciesNullablePromise;
+  currencieses: (args?: {
+    where?: CurrenciesWhereInput;
+    orderBy?: CurrenciesOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => FragmentableArray<Currencies>;
+  currenciesesConnection: (args?: {
+    where?: CurrenciesWhereInput;
+    orderBy?: CurrenciesOrderByInput;
+    skip?: Int;
+    after?: String;
+    before?: String;
+    first?: Int;
+    last?: Int;
+  }) => CurrenciesConnectionPromise;
   habbo: (where: HabboWhereUniqueInput) => HabboNullablePromise;
   habboes: (args?: {
     where?: HabboWhereInput;
@@ -447,6 +489,26 @@ export interface Prisma {
   deleteManyCatalogFeatureds: (
     where?: CatalogFeaturedWhereInput
   ) => BatchPayloadPromise;
+  createCatalogItems: (data: CatalogItemsCreateInput) => CatalogItemsPromise;
+  updateCatalogItems: (args: {
+    data: CatalogItemsUpdateInput;
+    where: CatalogItemsWhereUniqueInput;
+  }) => CatalogItemsPromise;
+  updateManyCatalogItemses: (args: {
+    data: CatalogItemsUpdateManyMutationInput;
+    where?: CatalogItemsWhereInput;
+  }) => BatchPayloadPromise;
+  upsertCatalogItems: (args: {
+    where: CatalogItemsWhereUniqueInput;
+    create: CatalogItemsCreateInput;
+    update: CatalogItemsUpdateInput;
+  }) => CatalogItemsPromise;
+  deleteCatalogItems: (
+    where: CatalogItemsWhereUniqueInput
+  ) => CatalogItemsPromise;
+  deleteManyCatalogItemses: (
+    where?: CatalogItemsWhereInput
+  ) => BatchPayloadPromise;
   createCatalogPage: (data: CatalogPageCreateInput) => CatalogPagePromise;
   updateCatalogPage: (args: {
     data: CatalogPageUpdateInput;
@@ -525,6 +587,22 @@ export interface Prisma {
   deleteManyChatlogConsoleInvitationses: (
     where?: ChatlogConsoleInvitationsWhereInput
   ) => BatchPayloadPromise;
+  createCurrencies: (data: CurrenciesCreateInput) => CurrenciesPromise;
+  updateCurrencies: (args: {
+    data: CurrenciesUpdateInput;
+    where: CurrenciesWhereUniqueInput;
+  }) => CurrenciesPromise;
+  updateManyCurrencieses: (args: {
+    data: CurrenciesUpdateManyMutationInput;
+    where?: CurrenciesWhereInput;
+  }) => BatchPayloadPromise;
+  upsertCurrencies: (args: {
+    where: CurrenciesWhereUniqueInput;
+    create: CurrenciesCreateInput;
+    update: CurrenciesUpdateInput;
+  }) => CurrenciesPromise;
+  deleteCurrencies: (where: CurrenciesWhereUniqueInput) => CurrenciesPromise;
+  deleteManyCurrencieses: (where?: CurrenciesWhereInput) => BatchPayloadPromise;
   createHabbo: (data: HabboCreateInput) => HabboPromise;
   updateHabbo: (args: {
     data: HabboUpdateInput;
@@ -684,6 +762,9 @@ export interface Subscription {
   catalogFeatured: (
     where?: CatalogFeaturedSubscriptionWhereInput
   ) => CatalogFeaturedSubscriptionPayloadSubscription;
+  catalogItems: (
+    where?: CatalogItemsSubscriptionWhereInput
+  ) => CatalogItemsSubscriptionPayloadSubscription;
   catalogPage: (
     where?: CatalogPageSubscriptionWhereInput
   ) => CatalogPageSubscriptionPayloadSubscription;
@@ -696,6 +777,9 @@ export interface Subscription {
   chatlogConsoleInvitations: (
     where?: ChatlogConsoleInvitationsSubscriptionWhereInput
   ) => ChatlogConsoleInvitationsSubscriptionPayloadSubscription;
+  currencies: (
+    where?: CurrenciesSubscriptionWhereInput
+  ) => CurrenciesSubscriptionPayloadSubscription;
   habbo: (
     where?: HabboSubscriptionWhereInput
   ) => HabboSubscriptionPayloadSubscription;
@@ -829,6 +913,22 @@ export type CatalogFeaturedOrderByInput =
   | "updated_ASC"
   | "updated_DESC";
 
+export type CatalogItemsOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "name_ASC"
+  | "name_DESC"
+  | "amount_ASC"
+  | "amount_DESC"
+  | "club_ASC"
+  | "club_DESC"
+  | "available_ASC"
+  | "available_DESC"
+  | "limit_ASC"
+  | "limit_DESC"
+  | "discount_ASC"
+  | "discount_DESC";
+
 export type CatalogPageOrderByInput =
   | "id_ASC"
   | "id_DESC"
@@ -936,6 +1036,14 @@ export type ChatlogConsoleInvitationsOrderByInput =
   | "message_DESC"
   | "createdAt_ASC"
   | "createdAt_DESC";
+
+export type CurrenciesOrderByInput =
+  | "id_ASC"
+  | "id_DESC"
+  | "name_ASC"
+  | "name_DESC"
+  | "default_ASC"
+  | "default_DESC";
 
 export type LanguageOrderByInput =
   | "id_ASC"
@@ -1595,6 +1703,73 @@ export interface LanguageWhereInput {
   NOT?: Maybe<LanguageWhereInput[] | LanguageWhereInput>;
 }
 
+export type CatalogItemsWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
+export interface CatalogItemsWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  page?: Maybe<CatalogPageWhereInput>;
+  name?: Maybe<String>;
+  name_not?: Maybe<String>;
+  name_in?: Maybe<String[] | String>;
+  name_not_in?: Maybe<String[] | String>;
+  name_lt?: Maybe<String>;
+  name_lte?: Maybe<String>;
+  name_gt?: Maybe<String>;
+  name_gte?: Maybe<String>;
+  name_contains?: Maybe<String>;
+  name_not_contains?: Maybe<String>;
+  name_starts_with?: Maybe<String>;
+  name_not_starts_with?: Maybe<String>;
+  name_ends_with?: Maybe<String>;
+  name_not_ends_with?: Maybe<String>;
+  amount?: Maybe<Int>;
+  amount_not?: Maybe<Int>;
+  amount_in?: Maybe<Int[] | Int>;
+  amount_not_in?: Maybe<Int[] | Int>;
+  amount_lt?: Maybe<Int>;
+  amount_lte?: Maybe<Int>;
+  amount_gt?: Maybe<Int>;
+  amount_gte?: Maybe<Int>;
+  club?: Maybe<Boolean>;
+  club_not?: Maybe<Boolean>;
+  available?: Maybe<Int>;
+  available_not?: Maybe<Int>;
+  available_in?: Maybe<Int[] | Int>;
+  available_not_in?: Maybe<Int[] | Int>;
+  available_lt?: Maybe<Int>;
+  available_lte?: Maybe<Int>;
+  available_gt?: Maybe<Int>;
+  available_gte?: Maybe<Int>;
+  limit?: Maybe<Int>;
+  limit_not?: Maybe<Int>;
+  limit_in?: Maybe<Int[] | Int>;
+  limit_not_in?: Maybe<Int[] | Int>;
+  limit_lt?: Maybe<Int>;
+  limit_lte?: Maybe<Int>;
+  limit_gt?: Maybe<Int>;
+  limit_gte?: Maybe<Int>;
+  discount?: Maybe<Boolean>;
+  discount_not?: Maybe<Boolean>;
+  AND?: Maybe<CatalogItemsWhereInput[] | CatalogItemsWhereInput>;
+  OR?: Maybe<CatalogItemsWhereInput[] | CatalogItemsWhereInput>;
+  NOT?: Maybe<CatalogItemsWhereInput[] | CatalogItemsWhereInput>;
+}
+
 export type CatalogPageWhereUniqueInput = AtLeastOne<{
   id: Maybe<ID_Input>;
   link?: Maybe<String>;
@@ -2076,6 +2251,52 @@ export interface ChatlogConsoleInvitationsWhereInput {
   NOT?: Maybe<
     ChatlogConsoleInvitationsWhereInput[] | ChatlogConsoleInvitationsWhereInput
   >;
+}
+
+export type CurrenciesWhereUniqueInput = AtLeastOne<{
+  id: Maybe<ID_Input>;
+}>;
+
+export interface CurrenciesWhereInput {
+  id?: Maybe<ID_Input>;
+  id_not?: Maybe<ID_Input>;
+  id_in?: Maybe<ID_Input[] | ID_Input>;
+  id_not_in?: Maybe<ID_Input[] | ID_Input>;
+  id_lt?: Maybe<ID_Input>;
+  id_lte?: Maybe<ID_Input>;
+  id_gt?: Maybe<ID_Input>;
+  id_gte?: Maybe<ID_Input>;
+  id_contains?: Maybe<ID_Input>;
+  id_not_contains?: Maybe<ID_Input>;
+  id_starts_with?: Maybe<ID_Input>;
+  id_not_starts_with?: Maybe<ID_Input>;
+  id_ends_with?: Maybe<ID_Input>;
+  id_not_ends_with?: Maybe<ID_Input>;
+  name?: Maybe<String>;
+  name_not?: Maybe<String>;
+  name_in?: Maybe<String[] | String>;
+  name_not_in?: Maybe<String[] | String>;
+  name_lt?: Maybe<String>;
+  name_lte?: Maybe<String>;
+  name_gt?: Maybe<String>;
+  name_gte?: Maybe<String>;
+  name_contains?: Maybe<String>;
+  name_not_contains?: Maybe<String>;
+  name_starts_with?: Maybe<String>;
+  name_not_starts_with?: Maybe<String>;
+  name_ends_with?: Maybe<String>;
+  name_not_ends_with?: Maybe<String>;
+  default?: Maybe<Int>;
+  default_not?: Maybe<Int>;
+  default_in?: Maybe<Int[] | Int>;
+  default_not_in?: Maybe<Int[] | Int>;
+  default_lt?: Maybe<Int>;
+  default_lte?: Maybe<Int>;
+  default_gt?: Maybe<Int>;
+  default_gte?: Maybe<Int>;
+  AND?: Maybe<CurrenciesWhereInput[] | CurrenciesWhereInput>;
+  OR?: Maybe<CurrenciesWhereInput[] | CurrenciesWhereInput>;
+  NOT?: Maybe<CurrenciesWhereInput[] | CurrenciesWhereInput>;
 }
 
 export type HabboWhereUniqueInput = AtLeastOne<{
@@ -2577,6 +2798,36 @@ export interface CatalogFeaturedUpdateManyMutationInput {
   slot?: Maybe<Int>;
 }
 
+export interface CatalogItemsCreateInput {
+  id?: Maybe<ID_Input>;
+  page?: Maybe<CatalogPageCreateOneInput>;
+  name: String;
+  amount?: Maybe<Int>;
+  club?: Maybe<Boolean>;
+  available?: Maybe<Int>;
+  limit?: Maybe<Int>;
+  discount?: Maybe<Boolean>;
+}
+
+export interface CatalogItemsUpdateInput {
+  page?: Maybe<CatalogPageUpdateOneInput>;
+  name?: Maybe<String>;
+  amount?: Maybe<Int>;
+  club?: Maybe<Boolean>;
+  available?: Maybe<Int>;
+  limit?: Maybe<Int>;
+  discount?: Maybe<Boolean>;
+}
+
+export interface CatalogItemsUpdateManyMutationInput {
+  name?: Maybe<String>;
+  amount?: Maybe<Int>;
+  club?: Maybe<Boolean>;
+  available?: Maybe<Int>;
+  limit?: Maybe<Int>;
+  discount?: Maybe<Boolean>;
+}
+
 export interface CatalogPageUpdateInput {
   link?: Maybe<String>;
   parent?: Maybe<CatalogPageUpdateOneInput>;
@@ -2823,6 +3074,22 @@ export interface ChatlogConsoleInvitationsUpdateInput {
 
 export interface ChatlogConsoleInvitationsUpdateManyMutationInput {
   message?: Maybe<String>;
+}
+
+export interface CurrenciesCreateInput {
+  id?: Maybe<ID_Input>;
+  name: String;
+  default?: Maybe<Int>;
+}
+
+export interface CurrenciesUpdateInput {
+  name?: Maybe<String>;
+  default?: Maybe<Int>;
+}
+
+export interface CurrenciesUpdateManyMutationInput {
+  name?: Maybe<String>;
+  default?: Maybe<Int>;
 }
 
 export interface HabboUpdateInput {
@@ -3503,6 +3770,23 @@ export interface CatalogFeaturedSubscriptionWhereInput {
   >;
 }
 
+export interface CatalogItemsSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<CatalogItemsWhereInput>;
+  AND?: Maybe<
+    CatalogItemsSubscriptionWhereInput[] | CatalogItemsSubscriptionWhereInput
+  >;
+  OR?: Maybe<
+    CatalogItemsSubscriptionWhereInput[] | CatalogItemsSubscriptionWhereInput
+  >;
+  NOT?: Maybe<
+    CatalogItemsSubscriptionWhereInput[] | CatalogItemsSubscriptionWhereInput
+  >;
+}
+
 export interface CatalogPageSubscriptionWhereInput {
   mutation_in?: Maybe<MutationType[] | MutationType>;
   updatedFields_contains?: Maybe<String>;
@@ -3568,6 +3852,23 @@ export interface ChatlogConsoleInvitationsSubscriptionWhereInput {
   NOT?: Maybe<
     | ChatlogConsoleInvitationsSubscriptionWhereInput[]
     | ChatlogConsoleInvitationsSubscriptionWhereInput
+  >;
+}
+
+export interface CurrenciesSubscriptionWhereInput {
+  mutation_in?: Maybe<MutationType[] | MutationType>;
+  updatedFields_contains?: Maybe<String>;
+  updatedFields_contains_every?: Maybe<String[] | String>;
+  updatedFields_contains_some?: Maybe<String[] | String>;
+  node?: Maybe<CurrenciesWhereInput>;
+  AND?: Maybe<
+    CurrenciesSubscriptionWhereInput[] | CurrenciesSubscriptionWhereInput
+  >;
+  OR?: Maybe<
+    CurrenciesSubscriptionWhereInput[] | CurrenciesSubscriptionWhereInput
+  >;
+  NOT?: Maybe<
+    CurrenciesSubscriptionWhereInput[] | CurrenciesSubscriptionWhereInput
   >;
 }
 
@@ -4246,6 +4547,111 @@ export interface AggregateCatalogFeaturedSubscription
   count: () => Promise<AsyncIterator<Int>>;
 }
 
+export interface CatalogItems {
+  id: ID_Output;
+  name: String;
+  amount?: Int;
+  club?: Boolean;
+  available?: Int;
+  limit?: Int;
+  discount?: Boolean;
+}
+
+export interface CatalogItemsPromise
+  extends Promise<CatalogItems>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  page: <T = CatalogPagePromise>() => T;
+  name: () => Promise<String>;
+  amount: () => Promise<Int>;
+  club: () => Promise<Boolean>;
+  available: () => Promise<Int>;
+  limit: () => Promise<Int>;
+  discount: () => Promise<Boolean>;
+}
+
+export interface CatalogItemsSubscription
+  extends Promise<AsyncIterator<CatalogItems>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  page: <T = CatalogPageSubscription>() => T;
+  name: () => Promise<AsyncIterator<String>>;
+  amount: () => Promise<AsyncIterator<Int>>;
+  club: () => Promise<AsyncIterator<Boolean>>;
+  available: () => Promise<AsyncIterator<Int>>;
+  limit: () => Promise<AsyncIterator<Int>>;
+  discount: () => Promise<AsyncIterator<Boolean>>;
+}
+
+export interface CatalogItemsNullablePromise
+  extends Promise<CatalogItems | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  page: <T = CatalogPagePromise>() => T;
+  name: () => Promise<String>;
+  amount: () => Promise<Int>;
+  club: () => Promise<Boolean>;
+  available: () => Promise<Int>;
+  limit: () => Promise<Int>;
+  discount: () => Promise<Boolean>;
+}
+
+export interface CatalogItemsConnection {
+  pageInfo: PageInfo;
+  edges: CatalogItemsEdge[];
+}
+
+export interface CatalogItemsConnectionPromise
+  extends Promise<CatalogItemsConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<CatalogItemsEdge>>() => T;
+  aggregate: <T = AggregateCatalogItemsPromise>() => T;
+}
+
+export interface CatalogItemsConnectionSubscription
+  extends Promise<AsyncIterator<CatalogItemsConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<CatalogItemsEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateCatalogItemsSubscription>() => T;
+}
+
+export interface CatalogItemsEdge {
+  node: CatalogItems;
+  cursor: String;
+}
+
+export interface CatalogItemsEdgePromise
+  extends Promise<CatalogItemsEdge>,
+    Fragmentable {
+  node: <T = CatalogItemsPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface CatalogItemsEdgeSubscription
+  extends Promise<AsyncIterator<CatalogItemsEdge>>,
+    Fragmentable {
+  node: <T = CatalogItemsSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateCatalogItems {
+  count: Int;
+}
+
+export interface AggregateCatalogItemsPromise
+  extends Promise<AggregateCatalogItems>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateCatalogItemsSubscription
+  extends Promise<AsyncIterator<AggregateCatalogItems>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
 export interface CatalogPageConnection {
   pageInfo: PageInfo;
   edges: CatalogPageEdge[];
@@ -4828,6 +5234,90 @@ export interface AggregateChatlogConsoleInvitationsPromise
 
 export interface AggregateChatlogConsoleInvitationsSubscription
   extends Promise<AsyncIterator<AggregateChatlogConsoleInvitations>>,
+    Fragmentable {
+  count: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface Currencies {
+  id: ID_Output;
+  name: String;
+  default?: Int;
+}
+
+export interface CurrenciesPromise extends Promise<Currencies>, Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  default: () => Promise<Int>;
+}
+
+export interface CurrenciesSubscription
+  extends Promise<AsyncIterator<Currencies>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+  default: () => Promise<AsyncIterator<Int>>;
+}
+
+export interface CurrenciesNullablePromise
+  extends Promise<Currencies | null>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  default: () => Promise<Int>;
+}
+
+export interface CurrenciesConnection {
+  pageInfo: PageInfo;
+  edges: CurrenciesEdge[];
+}
+
+export interface CurrenciesConnectionPromise
+  extends Promise<CurrenciesConnection>,
+    Fragmentable {
+  pageInfo: <T = PageInfoPromise>() => T;
+  edges: <T = FragmentableArray<CurrenciesEdge>>() => T;
+  aggregate: <T = AggregateCurrenciesPromise>() => T;
+}
+
+export interface CurrenciesConnectionSubscription
+  extends Promise<AsyncIterator<CurrenciesConnection>>,
+    Fragmentable {
+  pageInfo: <T = PageInfoSubscription>() => T;
+  edges: <T = Promise<AsyncIterator<CurrenciesEdgeSubscription>>>() => T;
+  aggregate: <T = AggregateCurrenciesSubscription>() => T;
+}
+
+export interface CurrenciesEdge {
+  node: Currencies;
+  cursor: String;
+}
+
+export interface CurrenciesEdgePromise
+  extends Promise<CurrenciesEdge>,
+    Fragmentable {
+  node: <T = CurrenciesPromise>() => T;
+  cursor: () => Promise<String>;
+}
+
+export interface CurrenciesEdgeSubscription
+  extends Promise<AsyncIterator<CurrenciesEdge>>,
+    Fragmentable {
+  node: <T = CurrenciesSubscription>() => T;
+  cursor: () => Promise<AsyncIterator<String>>;
+}
+
+export interface AggregateCurrencies {
+  count: Int;
+}
+
+export interface AggregateCurrenciesPromise
+  extends Promise<AggregateCurrencies>,
+    Fragmentable {
+  count: () => Promise<Int>;
+}
+
+export interface AggregateCurrenciesSubscription
+  extends Promise<AsyncIterator<AggregateCurrencies>>,
     Fragmentable {
   count: () => Promise<AsyncIterator<Int>>;
 }
@@ -5710,6 +6200,65 @@ export interface CatalogFeaturedPreviousValuesSubscription
   updated: () => Promise<AsyncIterator<DateTimeOutput>>;
 }
 
+export interface CatalogItemsSubscriptionPayload {
+  mutation: MutationType;
+  node: CatalogItems;
+  updatedFields: String[];
+  previousValues: CatalogItemsPreviousValues;
+}
+
+export interface CatalogItemsSubscriptionPayloadPromise
+  extends Promise<CatalogItemsSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = CatalogItemsPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = CatalogItemsPreviousValuesPromise>() => T;
+}
+
+export interface CatalogItemsSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<CatalogItemsSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = CatalogItemsSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = CatalogItemsPreviousValuesSubscription>() => T;
+}
+
+export interface CatalogItemsPreviousValues {
+  id: ID_Output;
+  name: String;
+  amount?: Int;
+  club?: Boolean;
+  available?: Int;
+  limit?: Int;
+  discount?: Boolean;
+}
+
+export interface CatalogItemsPreviousValuesPromise
+  extends Promise<CatalogItemsPreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  amount: () => Promise<Int>;
+  club: () => Promise<Boolean>;
+  available: () => Promise<Int>;
+  limit: () => Promise<Int>;
+  discount: () => Promise<Boolean>;
+}
+
+export interface CatalogItemsPreviousValuesSubscription
+  extends Promise<AsyncIterator<CatalogItemsPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+  amount: () => Promise<AsyncIterator<Int>>;
+  club: () => Promise<AsyncIterator<Boolean>>;
+  available: () => Promise<AsyncIterator<Int>>;
+  limit: () => Promise<AsyncIterator<Int>>;
+  discount: () => Promise<AsyncIterator<Boolean>>;
+}
+
 export interface CatalogPageSubscriptionPayload {
   mutation: MutationType;
   node: CatalogPage;
@@ -5937,6 +6486,53 @@ export interface ChatlogConsoleInvitationsPreviousValuesSubscription
   id: () => Promise<AsyncIterator<ID_Output>>;
   message: () => Promise<AsyncIterator<String>>;
   createdAt: () => Promise<AsyncIterator<DateTimeOutput>>;
+}
+
+export interface CurrenciesSubscriptionPayload {
+  mutation: MutationType;
+  node: Currencies;
+  updatedFields: String[];
+  previousValues: CurrenciesPreviousValues;
+}
+
+export interface CurrenciesSubscriptionPayloadPromise
+  extends Promise<CurrenciesSubscriptionPayload>,
+    Fragmentable {
+  mutation: () => Promise<MutationType>;
+  node: <T = CurrenciesPromise>() => T;
+  updatedFields: () => Promise<String[]>;
+  previousValues: <T = CurrenciesPreviousValuesPromise>() => T;
+}
+
+export interface CurrenciesSubscriptionPayloadSubscription
+  extends Promise<AsyncIterator<CurrenciesSubscriptionPayload>>,
+    Fragmentable {
+  mutation: () => Promise<AsyncIterator<MutationType>>;
+  node: <T = CurrenciesSubscription>() => T;
+  updatedFields: () => Promise<AsyncIterator<String[]>>;
+  previousValues: <T = CurrenciesPreviousValuesSubscription>() => T;
+}
+
+export interface CurrenciesPreviousValues {
+  id: ID_Output;
+  name: String;
+  default?: Int;
+}
+
+export interface CurrenciesPreviousValuesPromise
+  extends Promise<CurrenciesPreviousValues>,
+    Fragmentable {
+  id: () => Promise<ID_Output>;
+  name: () => Promise<String>;
+  default: () => Promise<Int>;
+}
+
+export interface CurrenciesPreviousValuesSubscription
+  extends Promise<AsyncIterator<CurrenciesPreviousValues>>,
+    Fragmentable {
+  id: () => Promise<AsyncIterator<ID_Output>>;
+  name: () => Promise<AsyncIterator<String>>;
+  default: () => Promise<AsyncIterator<Int>>;
 }
 
 export interface HabboSubscriptionPayload {
@@ -6522,6 +7118,14 @@ export const models: Model[] = [
   },
   {
     name: "CatalogPage",
+    embedded: false
+  },
+  {
+    name: "CatalogItems",
+    embedded: false
+  },
+  {
+    name: "Currencies",
     embedded: false
   },
   {

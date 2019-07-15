@@ -16,18 +16,27 @@ import Moderation from '../../components/dialogs/moderation'
 
 import Poll from '../../components/poll'
 
+import {Game} from '../../../../../client/games/game'
 
-export default class Room extends Component {
+
+export default class Room extends Component<any, any> {
+
+	private game: Game
 
 	constructor(props: any) {
 		super(props)
 	}
 
-	componentWillMount()
+	componentDidMount()
 	{
-		const script = document.createElement('script')
-		script.src = 'http://localhost:8082/client.js'
-		document.body.appendChild(script)
+		this.game = new Game('game')
+		//const script = document.createElement('script')
+		//script.src = 'http://localhost:8082/client.js'
+		//document.body.appendChild(script)
+	}
+
+	componentWillReceiveProps(nextProps: any) {
+		this.game.gotoRoom(nextProps.roomData)
 	}
 
 	render() {
