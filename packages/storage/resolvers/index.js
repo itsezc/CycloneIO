@@ -1,7 +1,6 @@
 import { find, filter } from 'lodash'
 import Bcrypt from 'bcryptjs'
 
-
 const resolvers = {
 
 	Query: {
@@ -17,11 +16,18 @@ const resolvers = {
 		navigatorCategory: (parent, args, ctx, info) => ctx.db.navigatorCategory({ id: args.id }, info),
 		navigatorCategories: (obj, args, { db }) => db.navigatorCategories(args),
 
-		catalogFeatured: (obj, args, { db }) => db.catalogFeatured({ id: args. id }),
+		catalogFeatured: (obj, args, { db }) => db.catalogFeatured({ id: args.id }),
 		catalogFeatureds: (obj, args, { db }) => db.catalogFeatureds(args),
 
-		catalogPage: (parent, args, { db }, info) => db.catalogPage({ id: args.id }), 
+		catalogPage: (parent, args, { db }, info) => db.catalogPage({ id: args. id }, info), 
+		// catalogPage(parent, args, context, info) {
+		// 	return find(catalogPages, { id: args.id })
+		// },
+		// catalogPages: (parent, args, { db }, info) => db.catalogPages(args),
 		catalogPages: (parent, args, { db }, info) => db.catalogPages(args),
+
+		language: (parent, args, { db }, info) => db.language({ id: args.id }),
+		languages: (parent, args, { db }, info) => db.languages(args),
 	},
 
 	Mutation: {
@@ -54,9 +60,13 @@ const resolvers = {
 	},
 
 	CatalogPage: {
-		parent(catalogPage) {
-			return catalogPage
-		}
+		parent: (parent, args, { db }, info) => {
+			return db.catalogPage({ id: parent. id }).parent()
+		},
+
+		language: (parent, args, { db }, info) => {
+			return db.catalogPage({ id: parent.id }).language()
+		},
 	}
 }
 
