@@ -19,13 +19,6 @@ export default class CatalogFurniPage extends Component <any, any> {
 
 	constructor(props: any) {
 		super(props)
-
-
-		// this.state = {
-		// 	testData: <div>
-		// 		<p>Some Random Text</p>
-		// 	</div>
-		// }
 	}
 
 	render() {
@@ -36,9 +29,7 @@ export default class CatalogFurniPage extends Component <any, any> {
 						if (error) return 'Error..'
 
 					const { catalogPages } = data
-
-					console.log(catalogPages)
-
+					
 					return (
 						<div className='page'>
 							<div className='sidebar'>

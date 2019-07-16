@@ -34,12 +34,14 @@ export default class CatalogFrontPage extends Component<any, any> {
 								{
 									catalogFeatureds.map(({ link, image, caption }, index) => (
 										(index == 0) ?
-											<a href='#' key={index}>
-												<img src={image} />
-												<div className='caption'>
-													<h2>{caption}</h2>
-												</div>
-											</a>
+											<div className='featured' key ={index}>
+												<a>
+													<img src={image} />
+													<div className='caption'>
+														<h2>{caption}</h2>
+													</div>
+												</a>
+											</div>
 										
 											:
 
@@ -53,12 +55,14 @@ export default class CatalogFrontPage extends Component<any, any> {
 									{
 										catalogFeatureds.map(({ link, image, caption }, index) => (
 											(index !== 0) ?
-												<a key={index}>
-													<img src={image} />
-													<div className='caption'>
-														<h2>{caption}</h2>
-													</div>
-												</a>
+												<div className='featured' key ={index}>
+													<a>
+														<img src={image} />
+														<div className='caption'>
+															<h2>{caption}</h2>
+														</div>
+													</a>
+												</div>
 											
 												:
 											

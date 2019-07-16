@@ -161,7 +161,7 @@ export default class Alert extends Component<any, AlertState> {
                 resize={true}
                 axis='y'
 				width={570}
-				height={630}>
+				height={635}>
 
                     <div className='catalog'>
 
