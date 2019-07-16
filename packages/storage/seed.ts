@@ -107,6 +107,30 @@ async function main() {
 		name: 'My World'
 	})
 
+	await prisma.createCatalogFeatured({
+		caption: 'Underwater House Bundle',
+		slot: 1,
+		image: 'https://images.habbo.com/c_images/catalogue/feature_cata_vert_coralking18_bun1.png'
+	})
+
+	await prisma.createCatalogFeatured({
+		caption: 'Wardrobe Refresh',
+		slot: 2,
+		image: 'https://images.habbo.com/c_images/catalogue/feature_cata_hort_rainbow19_newclothes.png'
+	})
+
+	await prisma.createCatalogFeatured({
+		caption: 'Pride Furni',
+		slot: 3,
+		image: 'https://images.habbo.com/c_images/catalogue/feature_cata_hort_rainbow19_newfurni.png'
+	})
+
+	await prisma.createCatalogFeatured({
+		caption: 'Become a HC Member',
+		slot: 4,
+		image: 'https://images.habbo.com/c_images/catalogue/feature_cata_hort_HC_b.png'
+	})
+
 	await prisma.createCatalogPage({
 		layout: "FRONTPAGE",
 		link: 'frontpage',
