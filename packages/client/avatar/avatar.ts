@@ -71,7 +71,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.isMoving = false
 
-        this.loadGenerics()       
+        this.loadGenerics()        
 
         /*const sprite = this.scene.add.sprite(0, 0, 'tile')
 

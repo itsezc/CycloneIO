@@ -42,7 +42,6 @@ export default class Room extends Component<any, any> {
 	render() {
 		return(
 			<div className='client'>
-				{/* <Script url='http://localhost:8080/client.js' /> */}
 				<Actions />
 
 				<div className='room' id='game'></div>
