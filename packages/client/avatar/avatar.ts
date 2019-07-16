@@ -2,6 +2,7 @@ import Room from '../rooms/room'
 import RoomObjectDepth from '../../common/enums/rooms/objects/depth'
 import { indexOf } from 'typescript-collections/dist/lib/arrays';
 
+
 import Avatar, { TextureDictionary, Direction } from '.';
 
 const PIXELS_PER_SECOND = 70 as const
@@ -70,9 +71,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.isMoving = false
 
-        this.loadGenerics().then(() => {
-            console.log('avatar initialized')
-        })        
+        this.loadGenerics()       
 
         /*const sprite = this.scene.add.sprite(0, 0, 'tile')
 
@@ -82,9 +81,18 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     }
 
     get RenderPos() {
+        // let x = this.scene.getScreenX(this.x, this.y)
+        // let y = this.scene.getScreenY(this.x, this.y)
+
+        // 16 = tile height
+        // 32 = tile width
+
+        let x = this.scene.getScreenX(this.x, this.y) + 32
+        let y = this.scene.getScreenY(this.x, this.y) - 32
+
         return {
-            x: this.scene.getScreenX(this.x, this.y),
-            y: this.scene.getScreenY(this.x, this.y) - 84,
+            x,
+            y /*- (16 * (y + 1)) */ , //Prob we'll have to change this when implementing movement
         }
     }
 

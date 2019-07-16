@@ -5,6 +5,7 @@ import RotationAnimation from './animations/rotation';
 import FurnitureData from '../furniture/data'
 
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
+    
     public _scene: Room
     private static FPS = 24
     private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
@@ -265,12 +266,12 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
             }
         })
 
-        sprite.on('click', (s: Phaser.GameObjects.Sprite) => {
+        sprite.on('click', (instance: Phaser.GameObjects.Sprite) => {
             if (this.frameCount - this.lastClick <= 45 && this.lastClick !== 0) {
                 if(!this.doubleClick) {
                     this.doubleClick = true
                 } else {
-                    this.animation = this.furniture.getNewAnimationFor(s, this.animation)
+                    this.animation = this.furniture.getNewAnimationFor(instance, this.animation)
                     this.doubleClick = false
                 }
 

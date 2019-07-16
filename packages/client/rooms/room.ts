@@ -63,6 +63,8 @@ export default class Room extends Phaser.Scene {
 
     public players: { [id: string]: RoomAvatar }
 
+    public moodlightPreview: any
+
     private furnitures!: FurnitureSprite[]
     /*
         private map!: RoomMap */
@@ -107,15 +109,6 @@ export default class Room extends Phaser.Scene {
         this.load.image('furniture_placeholder', 'furniture/furni_placeholder.png')
         this.load.image('wall_placeholder', 'furniture/wall_placeholder.png')
 
-        this.load.atlas('wlk_0', 'avatar_old/wlk/wlk_0.png', 'avatar_old/wlk/wlk_0.json')
-        this.load.atlas('wlk_1', 'avatar_old/wlk/wlk_1.png', 'avatar_old/wlk/wlk_1.json')
-        this.load.atlas('wlk_2', 'avatar_old/wlk/wlk_2.png', 'avatar_old/wlk/wlk_2.json')
-        this.load.atlas('wlk_3', 'avatar_old/wlk/wlk_3.png', 'avatar_old/wlk/wlk_3.json')
-        this.load.atlas('wlk_4', 'avatar_old/wlk/wlk_4.png', 'avatar_old/wlk/wlk_4.json')
-        this.load.atlas('wlk_5', 'avatar_old/wlk/wlk_5.png', 'avatar_old/wlk/wlk_5.json')
-        this.load.atlas('wlk_6', 'avatar_old/wlk/wlk_6.png', 'avatar_old/wlk/wlk_6.json')
-        this.load.atlas('wlk_7', 'avatar_old/wlk/wlk_7.png', 'avatar_old/wlk/wlk_7.json')
-
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
         this.load.audio('message', 'audio/message.mp3')
@@ -158,7 +151,7 @@ export default class Room extends Phaser.Scene {
                 {
                     name: 'CF_50_goldbar',
                     roomX: 0,
-                    roomY: 1,
+                    roomY: 0,
                     roomZ: 0
                 },
                 {
@@ -183,6 +176,13 @@ export default class Room extends Phaser.Scene {
                     direction: 0,
                     animation: 0
                 },
+                {
+                    name: 'ads_calip_pool',
+                    roomX: 6,
+                    roomY: 3,
+                    roomZ: 0,
+                    animation: 0
+                },
                 // {
                 //     name: 'ads_cllava2',
                 //     roomX: 2,
@@ -197,13 +197,14 @@ export default class Room extends Phaser.Scene {
                     direction: 4,
                     animation: 1
                 },
-                // {
-                //     name: 'diamond_dragon',
-                //     roomX: 4,
-                //     roomY: 3,
-                //     direction: 2,
-                //     animation: 2
-                // },
+                {
+                    name: 'diamond_dragon',
+                    roomX: 6,
+                    roomY: 3,
+                    roomZ: 0,
+                    direction: 2,
+                    animation: 2
+                },
                 //{
                 //    name: 'ads_cllava2',
                 //    roomX: 0,
@@ -358,8 +359,12 @@ export default class Room extends Phaser.Scene {
 
         //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
             this.roomPlayer = new RoomAvatar(this, 0, 0, 0, 0)
-            this.roomPlayer.x = this.roomPlayer.RenderPos.x
-            this.roomPlayer.y = this.roomPlayer.RenderPos.y
+            
+            let tmpX = this.roomPlayer.RenderPos.x
+            let tmpY = this.roomPlayer.RenderPos.y
+
+            this.roomPlayer.x = tmpX
+            this.roomPlayer.y = tmpY
 
             this.add.existing(this.roomPlayer)
         //})
@@ -369,9 +374,9 @@ export default class Room extends Phaser.Scene {
 
         // this.moodlightPreview = this.add.graphics()
         // this.moodlightPreview.fillStyle(0x1844bd, 1)
-        // this.moodlightPreview.fillRect(0, 0, 50, 60);
+        // this.moodlightPreview.fillRect(-500, -500, 1000, 1000);
         // this.moodlightPreview.setBlendMode(Phaser.BlendModes.SCREEN)
-        // this.moodlightPreview.setDepth(4)
+        // this.moodlightPreview.setDepth(10)
 
         // Zoom
         // this.camera.setZoom(1.5) // Zoom out (0.5). For render issues disable antialiasing
