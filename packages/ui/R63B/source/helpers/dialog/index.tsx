@@ -189,13 +189,13 @@ export default class Dialog extends Component<DialogProps, any> {
 						<span>{this.props.title}</span>
                         {/* { this.closeable ? this.closeButton() : false }  */}
 
-                        <button className="btn btn-r63b btn-action btn-red">
+                        {/* <button className="btn btn-r63b btn-action btn-red">
                             <i className="icon icon-close"></i>
                         </button>
 
                         <button className="btn btn-r63b btn-action btn-blue">
                             <i className="icon icon-help"></i>
-                        </button>
+                        </button> */}
 					</div>
 
 					<div className='dialog-body'>
