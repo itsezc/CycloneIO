@@ -103,6 +103,8 @@ export default class Room extends Phaser.Scene {
         this.load.image('stairs_right', 'room/stairs_right.png')
         this.load.image('stairs_bottom_right', 'room/stairs_bottom_right.png')
 
+        this.load.image('avatar_shadow', 'avatar/shadow.png')
+
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
 
@@ -148,12 +150,12 @@ export default class Room extends Phaser.Scene {
             door: [0, 3],
             heightmap: this.roomData.map.room,
             furnitures: [
-                {
-                    name: 'CF_50_goldbar',
-                    roomX: 0,
-                    roomY: 0,
-                    roomZ: 0
-                },
+                // {
+                //     name: 'CF_50_goldbar',
+                //     roomX: 0,
+                //     roomY: 0,
+                //     roomZ: 1
+                // },
                 {
                     name: 'throne',
                     roomX: 0,
@@ -316,11 +318,11 @@ export default class Room extends Phaser.Scene {
                 //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
                 //console.log(furnitureRoomData)
 
-                var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
+                const furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
 
-                var furniture = new Furniture(this, furnitureData, furnitureRoomData.type)
+                const furniture = new Furniture(this, furnitureData, furnitureRoomData.type)
 
-                var furnitureSprite = new FurnitureSprite(this, furniture)
+                const furnitureSprite = new FurnitureSprite(this, furniture)
 
                 if (furnitureRoomData.animation !== undefined) {
                     console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
@@ -358,7 +360,7 @@ export default class Room extends Phaser.Scene {
         }
 
         //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
-            this.roomPlayer = new RoomAvatar(this, 0, 0, 0, 0)
+            this.roomPlayer = new RoomAvatar(this, 8, 3, 0, 0)
             
             let tmpX = this.roomPlayer.RenderPos.x
             let tmpY = this.roomPlayer.RenderPos.y

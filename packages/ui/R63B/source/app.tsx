@@ -31,7 +31,7 @@ class App extends Component<any, any> {
             // this.Socket.emit('newConnection', 0)
         })
 
-        this.Socket.emit('getRoom', 'cjy5tjj7400520732mh5ym46b')
+        this.Socket.emit('getRoom', 'cjy663lff01kq0732twjkyxk6')
         this.setSocketEvents();
     }
 

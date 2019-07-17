@@ -76,7 +76,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
             || animation == null)
         {
 
-			//console.log('Animating with ', animation)
+			// console.log('Animating with ', animation)
             if (this.animation != animation)
             {
                 this.animation = animation
@@ -179,8 +179,10 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
         for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
         {
+
             let frameIndex = this.furniture.getFrameFrom(this.animation, layerId, this.frameCount)
             let layerSprite = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, false, this.direction, layerId, frameIndex)
+
 
             if (layerSprite != null)
             {
@@ -231,6 +233,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     private animateRotation() {
+        console.log('Rotating')
         this.animationRotation.start()
     }
 
@@ -260,8 +263,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
-        sprite.on('rotate', (s: Phaser.GameObjects.Sprite) => {
-            if(this.canBeRotated(s) && !this.animationRotation.isRunning) {
+        sprite.on('rotate', (instance: Phaser.GameObjects.Sprite) => {
+            if(this.canBeRotated(instance) && !this.animationRotation.isRunning) {
                 this.animateRotation()
             }
         })
