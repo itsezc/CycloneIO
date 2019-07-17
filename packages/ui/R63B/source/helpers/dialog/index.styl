@@ -15,7 +15,6 @@
 	overflow hidden
 	
 	.dialog-header
-		font-family: inherit
 		cursor grab
 		background #367898
 		box-shadow inset -2px 0 0 0 #408CAF,
@@ -23,36 +22,29 @@
 		   inset 2px 0 0 0 #408CAF
 		color white
 		font-weight bold
-		text-align center
 		border-bottom 1px solid black
-		padding 8px 0
 		border-top-right-radius 8px
 		border-top-left-radius 8px
+		position relative
+		height 33px
+		display flex
+		flex-direction row
+		align-items center
+		justify-content center
 
+		.dialog-header-actions
+			display flex
+			flex-direction row
+			align-items flex-end
+			position absolute
+			right 8px
+
+			&>*:not(:last-child)
+				margin-right 5px
+			
 		&:active
 			cursor grabbing
 
-		.close
-			float right
-			margin-right 15px
-			cursor pointer
-			height 15px
-			width 15px
-			border-radius 1.5px
-			border 1px solid #AF4537
-			background-color #852D21
-			box-shadow 1px 0px 0px 0px rgba(0, 0, 0, 1),
-						-1px 0px 0px 0px rgba(0, 0, 0, 1),
-						0px -1px 0px 0px rgba(0, 0, 0, 1),
-						0px 2px 0px 0px rgba(0, 0, 0, 1),
-						inset 0px 7px 0px 0px #AF4537
-			line-height 12px
-			font-style normal
-			font-weight 300
-			font-family Arial
-
-			&:hover
-				border 1px solid rgba(255, 255, 255, 1)
 	
 	.dialog-body
 		position relative
