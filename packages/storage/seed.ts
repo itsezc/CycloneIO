@@ -178,6 +178,11 @@ async function main() {
 		}
 	})
 
+	await prisma.createRoom({
+		name: 'Test',
+		map: JSON.parse('{ "room": [ "0000000", "0000000", "0000000", "0x00000", "0000000", "0000000", "0000000", "0000000", "0000000", "0000000", "0000000" ] }')
+	})
+
 	// console.log(FurniturePage)
 }
 

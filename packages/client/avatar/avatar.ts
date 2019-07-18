@@ -60,7 +60,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
         this.rot = 2
         this.headRot = 2
 
-        this.frame = 0
+        this.frame = 1
 
         this.avatarHead = new Phaser.GameObjects.Sprite(this.scene, 0, 0, null)
         this.avatarBody = new Phaser.GameObjects.Sprite(this.scene, 0, 0, null)
