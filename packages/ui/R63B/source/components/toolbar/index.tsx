@@ -47,6 +47,8 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
                             (!this.props.isClient ? <span className="icon icon-house"></span> : <span className="icon icon-habbo"></span>)
                         : null}
                         {this.state.isActionsOpen && <span className="icon icon-rooms"></span>} 
+
+                        <span className='icon icon-gamecenter'></span>
                         
                         <span className="icon icon-catalogue"></span>
                         <span className="icon icon-buildersclub"></span>
