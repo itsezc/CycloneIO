@@ -66,7 +66,12 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
         this.avatarBody = new Phaser.GameObjects.Sprite(this.scene, 0, 0, null)
 
 
-        this.avatarShadow = new Phaser.GameObjects.Sprite(this.scene, 0, this.avatarBody.height + this.avatarHead.height - 16, 'avatar_shadow');
+        this.avatarShadow = new Phaser.GameObjects.Sprite(
+								this.scene, 
+								0, 
+								this.avatarBody.height + this.avatarHead.height - 16, 
+								'avatar_shadow'
+							)
         this.avatarShadow.alpha = .8
 
         //this.scene.physics.add.existing(this)
@@ -75,21 +80,12 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.colorId = Math.floor(Math.random() * (16777215 - 1)) + 1;
 
-        this.isMoving = true
+        this.isMoving = false
 
-        this.loadGenerics()        
-
-        /*const sprite = this.scene.add.sprite(0, 0, 'tile')
-
-        this.add(sprite)
-
-        scene.add.existing(this)*/
+		this.loadGenerics()
     }
 
     get RenderPos() {
-        // 16 = tile height
-        // 32 = tile width
-
         let x = this.scene.getScreenX(this.x, this.y) + 32
         let y = this.scene.getScreenY(this.x, this.y) - 28
 

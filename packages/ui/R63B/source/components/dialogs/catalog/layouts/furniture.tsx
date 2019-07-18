@@ -35,10 +35,10 @@ export default class CatalogFurniPage extends Component <any, any> {
 							<div className='sidebar'>
 								<div className='search'>
 									<input type='text' placeholder='Search here' />
-									<Navgiation 
-										pages={catalogPages}
-									/>
 								</div>
+								<Navgiation 
+									pages={catalogPages}
+								/>
 							</div>
 							<div className='content'>
 									Test

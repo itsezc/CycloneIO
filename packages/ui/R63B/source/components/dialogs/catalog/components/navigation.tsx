@@ -20,10 +20,10 @@ export default class Navigation extends Component<any, any> {
 						this.state.pages.map((page: any, index: number) => {
 							return(
 								(page.parent) ?
-									<p key={index}>
+									<div className='option' key={index}>
 										<img src={`./catalogue/icons/${page.icon}.png`} />
-										{page.name}
-									</p>
+										<p>{page.name}</p>
+									</div>
 								:	null
 							)
 						})
