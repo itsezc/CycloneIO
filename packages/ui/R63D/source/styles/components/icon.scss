@@ -220,26 +220,42 @@
             small: (
                 image: 'icons/small_messages.png',
                 height: 20,
-                width: 17
+                width: 17,
+
+                hover: (
+                    image: 'icons/small_messages_glow.png'
+                )
             )
         ),
 
         gear-detailed: (
             image: 'icons/gear_detailed.png',
             width: 21,
-            height: 21
+            height: 21,
+
+            hover: (
+                image: 'icons/gear_detailed_glow.png'
+            )
         ),
 
         zoom: (
             image: 'icons/zoom.png',
             width: 13,
-            height: 21
+            height: 21,
+
+            hover: (
+                image: 'icons/zoom_glow.png'
+            )
         ),
 
         arrow-right: (
             image: 'icons/arrow_right.png',
             width: 16,
-            height: 13
+            height: 13,
+
+            hover: (
+                image: 'icons/arrow_right_glow.png'
+            )
         ),
 
         close: (
@@ -279,7 +295,55 @@
             width: 5,
             height: 10,
             rotate: -90
-        )
+        ),
+
+        checkbox-check: (
+            image: 'icons/checkbox_check.png',
+            width: 14,
+            height: 12
+        ),
+
+        checkbox: (
+            image: 'icons/checkbox.png',
+            width: 12,
+            height: 12
+        ),
+
+        sign-heart: (
+            image: 'icons/sign-heart.png',
+            width: 15,
+            height: 13
+        ),
+
+        sign-skull: (
+            image: 'icons/sign-skull.png',
+            width: 12,
+            height: 12
+        ),
+
+        sign-exclamation: (
+            image: 'icons/sign-exclamation.png',
+            width: 7,
+            height: 17
+        ),
+
+        sign-football: (
+            image: 'icons/sign-football.png',
+            width: 20,
+            height: 20
+        ),
+
+        sign-yellowcard: (
+            image: 'icons/sign-yellowcard.png',
+            width: 11,
+            height: 19
+        ),
+
+        sign-redcard: (
+            image: 'icons/sign-redcard.png',
+            width: 11,
+            height: 19
+        ),
     );
 
     @each $iconName, $iconData in $icons {

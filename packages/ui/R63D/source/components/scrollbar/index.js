@@ -1,4 +1,5 @@
 import React from 'react';
+import ResizeObserver from 'resize-observer-polyfill';
 
 export default class Scrollbar extends React.PureComponent {
 

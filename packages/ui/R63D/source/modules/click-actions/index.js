@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class ClickActions extends React.Component {
+export default class ClickActions extends React.PureComponent {
 
     constructor(props){
         super(props);
@@ -16,21 +16,16 @@ export default class ClickActions extends React.Component {
 
     render(){
         return (
-            <div className={"click-actions" + (this.props.isOwn ? " is-own" : '') + (this.state.isOpen ? " is-open" : '')}
+            <div className={"click-actions" + (this.props.isOwn ? " is-own" : '') + (this.state.isOpen ? " is-open" : '') + (this.props.className ? " " + this.props.className : '')}
                 style={this.props.style}>
 
                 {this.state.isOpen &&
                     <>
-                        <h3 className="click-actions-header">Sarah</h3>
+                        <h3 className="click-actions-header">{this.props.title}</h3>
                 
-                        <div className="click-actions-content">
-                            <a href="#">Ride</a>
-                            <a href="#">Anyone can ride</a>
-                            <a href="#">Scratch (3)</a>
-                            <a href="#">Train<i className="icon icon-carret-right"></i></a>
-                            <a href="#">Pick up<i className="icon icon-carret-right"></i></a>
-                            <a href="#">Remove Saddle</a>
-                        </div>
+                        <ul className="click-actions-content">
+                            {this.props.children}
+                        </ul>
                     </>
                 }
     

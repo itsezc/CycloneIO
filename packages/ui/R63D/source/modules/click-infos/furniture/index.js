@@ -8,14 +8,14 @@ export default class FurnitureInfos extends React.PureComponent {
 
                 <div className="furniture-item ui-100">
                     <div className="ui-100-header">
-                        <h3>Pure Minibar</h3>
+                        <h3>Golden Apple</h3>
 
-                        <button className="btn btn-volter btn-close">
+                        <button className="btn btn-volter btn-action">
                             <i className="icon icon-close-thin"></i>
                         </button>
                     </div>
 
-                    <img src="/minibar.png" />
+                    <img src="https://www.habbocreate.com/images/furni/cat423.gif" />
 
                     <div className="ui-100-footer">
                         <i className="icon icon-small icon-profile">Textarea</i>

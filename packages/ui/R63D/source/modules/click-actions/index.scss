@@ -2,7 +2,11 @@
     border: 1px solid #000;
     border-radius: 4px;
     position: fixed;
-    transform: translateY(-100%) translateX(-50%);
+    transform: translateY(-100%) translateX(-50.1%);
+    -webkit-filter: blur(0px);
+
+    @import './pet-own/index';
+    @import './user/index';
 
     .click-actions-header , .click-actions-footer {
         background-color: #4f4c48;
@@ -13,6 +17,7 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        padding-top: -1px;
     }
 
     .click-actions-header {
@@ -23,27 +28,63 @@
         box-shadow: 0 1px 0 0 #000;
         margin-bottom: 1px;
         font-size: 12px;
+
+        &:hover {
+            color: #47a3cc;
+        }
     }
 
     .click-actions-content {
         display: flex;
         flex-direction: column;
 
-        &>a {
-            background: linear-gradient(#2a2725 50%, #262321 50%, #1c1a18 100%);
+        &>*:not(:last-child){
+            margin-bottom: 1px;
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: #4f4c48;
+                box-shadow: inset 1px 0 0 0 rgba(255, 255, 255, .2), inset -1px 0 0 0 rgba(255, 255, 255, .2); 
+            }
+        }
+
+        &>li {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            grid-column-gap: 6px;
+
+            &>span, &>a {
+                place-self: center;
+                grid-column-start: 2;
+            }
+        }
+
+        li {
+            background: linear-gradient(#2a2725 50%, #262321 50%, #262321 100%);
             box-shadow: inset 1px 0 0 0 #262321, inset -1px 0 0 0 #262321;
             color: #fff;
             height: 27px;
-            line-height: 27px;
-            border-bottom: 1px solid rgba(255, 255, 255, .2);
             white-space: nowrap;
             font-size: 11px;
-            padding: 0 20px;
-            text-align: center;
+            cursor: pointer;
+            
+            &[disabled] {
+                color: rgba(255, 255, 255, .2);
+                cursor: pointer;
+            }
 
-            .icon {
-                margin-left: 10px;
-                filter: invert(14%) sepia(6%) saturate(147%) hue-rotate(355deg) brightness(99%) contrast(88%);
+            &>a {
+                text-decoration: underline;
+            }
+
+            .icon:first-child {
+                place-self: center end;
             }
 
             &:hover {
@@ -57,6 +98,19 @@
                 cursor: default;
             }
         }
+
+        .click-actions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1px;
+            background-color: #4f4c48;
+    
+            &>li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
     .click-actions-footer {
@@ -64,6 +118,7 @@
         height: 23px;
         border-top: none;
         position: relative;
+        margin: 0 auto;
         filter: drop-shadow(0 2px 0 #000);
 
         &:hover .icon {
@@ -93,6 +148,7 @@
 
 
     &.is-open {
+        min-width: 103px;
 
         .click-actions-footer {
             border-top-left-radius: 0;
@@ -105,7 +161,7 @@
 
         .click-actions-content {
 
-            &>a {
+            li:not([disabled]) {
 
                 &:hover {
                     background: linear-gradient(#47a3cc 50%, #4296bc 50%, #4296bc 100%);
@@ -114,9 +170,10 @@
 
                 &:active {
                     background: linear-gradient(#3f90b4 50%, #2d6882 50%, #2d6882 100%);
-                    box-shadow: none;
+                    box-shadow: inset 1px 0 0 0 #2d6882, inset -1px 0 0 0 #2d6882;
                 }
             }
         }
     }
 }
+
