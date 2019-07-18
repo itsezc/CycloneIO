@@ -57,10 +57,10 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.look = 'ca-1815-92.sh-290-62.hd-180-1009.ch-262-64.ha-3763-63.lg-280-1193.hr-831-54'
 
-        this.rot = 2
-        this.headRot = 2
+        this.rot = 4
+        this.headRot = 4
 
-        this.frame = 1
+        this.frame = 0
 
         this.avatarHead = new Phaser.GameObjects.Sprite(this.scene, 0, 0, null)
         this.avatarBody = new Phaser.GameObjects.Sprite(this.scene, 0, 0, null)
@@ -80,7 +80,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.colorId = Math.floor(Math.random() * (16777215 - 1)) + 1;
 
-        this.isMoving = false
+        this.isMoving = true
 
 		this.loadGenerics()
     }
@@ -289,7 +289,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         if (this.isMoving) {
             action = ['wlk']
-            bodyFrame =  0//this.frameCount % 4
+            bodyFrame =  0 //this.frameCount % 4
         }
 
         //avatar_shadow

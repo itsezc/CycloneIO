@@ -10,6 +10,7 @@ export class Engine {
     
     public readonly game: Phaser.Game
     public readonly avatarImager: Imager
+    private currentRoom: Room
 
     constructor(parent: string) {
 
@@ -46,9 +47,16 @@ export class Engine {
     }
 
     public gotoRoom(roomData: any) {
-        let room = new Room(roomData, this)
-        this.game.scene.add(roomData.id, room, true)
+        // this.game.scene.remove(roomData.id)
+
+        this.currentRoom = new Room(roomData, this)        
+
+        this.game.scene.add(roomData.id, this.currentRoom, true)
         this.game.scene.start(roomData.id)
+    }
+
+    public joinPlayer(playerData: any){
+        this.currentRoom.addPlayer('uwu')
     }
 
 }

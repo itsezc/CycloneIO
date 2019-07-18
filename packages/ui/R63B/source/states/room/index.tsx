@@ -21,6 +21,7 @@ import {Engine} from '../../../../../client/games/game'
 export default class Room extends Component<any, any> {
 
 	private engine: Engine
+	private roomData: any
 
 	constructor(props: any) {
 		super(props)
@@ -29,13 +30,19 @@ export default class Room extends Component<any, any> {
 	componentDidMount()
 	{
 		this.engine = new Engine('game')
-		//const script = document.createElement('script')
-		//script.src = 'http://localhost:8082/client.js'
-		//document.body.appendChild(script)
+		this.props.socket.on('playerJoined', (data: any) => {
+			this.engine.joinPlayer(data)
+		})
 	}
 
 	componentWillReceiveProps(nextProps: any) {
-		this.engine.gotoRoom(nextProps.roomData)
+
+		if(!this.roomData || this.roomData.id !== nextProps.roomData.id){
+			this.roomData = nextProps.roomData
+			this.engine.gotoRoom(nextProps.roomData)
+		}
+
+		
 	}
 
 	render() {

@@ -498,6 +498,7 @@ export default class Imager {
             }
         }
         c.putImageData(imageData, 0, 0);
+
         return element;
     }
 

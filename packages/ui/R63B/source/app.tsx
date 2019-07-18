@@ -30,12 +30,13 @@ class App extends Component<any, any> {
             console.log(`Connected to server on ${this.server}`)
         })
 
-        this.Socket.emit('getRoom', 'cjy815ny100gp0884ssbvvcn3')
+        this.Socket.emit('joinRoom', 'cjy84p6y600lr07320ly34wwf')
         this.setSocketEvents()
     }
 
     private setSocketEvents(): void {
         this.Socket.on('setRoom', (data: any) => {
+
             this.setState({
                 roomData: data
             })
@@ -50,7 +51,7 @@ class App extends Component<any, any> {
                     <Route 
                         exact 
                         path='/inroom'
-                        render={(props) => <Room {...props} roomData={this.state.roomData} />}
+                        render={(props) => <Room {...props} socket={this.Socket} roomData={this.state.roomData} />}
                         />
                     <Route exact path='/client' component={Client} />
                     <Route 

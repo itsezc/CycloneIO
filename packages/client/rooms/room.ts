@@ -26,6 +26,12 @@ import TileGenerator from '../generators/tile'
 // import FPSMeter from 'fpsmeter'
 import Tile from '../generators/tile';
 
+type RoomPlayers = {
+    id: string;
+    avatarData: string;
+    avatar?: RoomAvatar;
+}
+
 /**
 * Room class
  * @extends {Scene}
@@ -39,6 +45,8 @@ export default class Room extends Phaser.Scene {
     private _camera!: RoomCamera
     // private tileMap!: RoomTileMap
     // private item!: RoomItem
+
+    private assetsLoaded: boolean
 
     private _clickTime!: number
 
@@ -61,7 +69,8 @@ export default class Room extends Phaser.Scene {
 
     private currentFPS: Number
 
-    public players: { [id: string]: RoomAvatar }
+    public players: RoomPlayers[]
+    public playerQueue: RoomPlayers[]
 
     public moodlightPreview: any
 
@@ -75,9 +84,15 @@ export default class Room extends Phaser.Scene {
     constructor(roomData: any, engine: Engine) {
         super({ key: 'room' })
 
-        this.roomData = roomData;
+        this.roomData = roomData
 
         this.engine = engine
+
+        this.assetsLoaded = false
+
+        this.players = []
+
+        this.playerQueue = []
     }
 
     /**
@@ -357,7 +372,7 @@ export default class Room extends Phaser.Scene {
         }
 
         //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
-            this.roomPlayer = new RoomAvatar(this, 2, 3, 0, 0)
+            /* this.roomPlayer = new RoomAvatar(this, 2, 3, 0, 0)
             
             let tmpX = this.roomPlayer.RenderPos.x
             let tmpY = this.roomPlayer.RenderPos.y
@@ -365,7 +380,7 @@ export default class Room extends Phaser.Scene {
             this.roomPlayer.x = tmpX
             this.roomPlayer.y = tmpY
 
-            this.add.existing(this.roomPlayer)
+            this.add.existing(this.roomPlayer) */
         //})
 
         // Zoom out (0.55). max: 10
@@ -396,6 +411,20 @@ export default class Room extends Phaser.Scene {
         // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
 
         // this.add.text(100, 100, `FPS: ${this.currentFPS || 'undefined'}`, { color: '#00ff00' })
+
+        this.assetsLoaded = true
+
+    }
+
+    public addPlayer(id: string/*, roomAvatar: RoomAvatar*/){
+
+        let newPlayer: RoomPlayers = {
+            id,
+            avatarData: ''
+        }
+
+        this.playerQueue.push(newPlayer)        
+
     }
 
     private orderFurnituresByType(furnitures: FurnitureData.IFurniture[]): FurnitureData.IFurniture[] {
@@ -455,9 +484,35 @@ export default class Room extends Phaser.Scene {
      * @override
      */
     public update(time: number, delta: number): void {
-        if (this.roomPlayer) {
-            this.roomPlayer.update(delta)
+
+        if(this.assetsLoaded){
+            this.playerQueue.forEach((roomPlayer: RoomPlayers, index: number) => {
+
+                let randomX = Math.floor(Math.random() * 5);
+                let randomY = Math.floor(Math.random() * 5);
+
+                let newPlayer = new RoomAvatar(this, randomX, randomY, 0, 1);
+
+                let tmpX = newPlayer.RenderPos.x
+                let tmpY = newPlayer.RenderPos.y
+        
+                newPlayer.x = tmpX
+                newPlayer.y = tmpY
+
+                roomPlayer.avatar = newPlayer
+
+                this.players.push(roomPlayer)
+                this.add.existing(newPlayer)
+                this.playerQueue.splice(index, 1)
+    
+            })
         }
+
+
+        this.players.forEach((roomPlayer: RoomPlayers) => {
+            roomPlayer.avatar.update(delta)
+        })
+    
 
         this.currentFPS = this.game.loop.actualFps
         // console.log('FPS', this.currentFPS)
