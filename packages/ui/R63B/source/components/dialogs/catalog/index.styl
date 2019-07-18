@@ -77,6 +77,7 @@
 								inset 0px 1px 1px 0px rgba(0, 0, 0, 0.15)
 					width 100%
 					margin-bottom 5px
+					background url(https://game.zabbo.me/c_images/Cyclone/Pencil.png) no-repeat right 5px center, #ffffff
 
 			.navigation
 				background #D2D1CB
@@ -86,7 +87,8 @@
 					.option 
 						display block 
 						padding 2px
-						margin 2px 0px
+						// padding 0px
+						margin 2px
 						max-height 20px
 
 						img
@@ -94,9 +96,10 @@
 							float left 
 
 						p 
-							display inline-block
+							// display block
 							// float left
-							margin-left 15px
+							white-space nowrap
+							margin-left 25px
 
 		.content
 			grid-area content
@@ -194,6 +197,7 @@
 					border-radius: 5px
 					width: 210px
 					height: 25px
+					outline none
 					border 1px solid #2B495D
 					
 					:focus

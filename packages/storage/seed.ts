@@ -268,7 +268,7 @@ async function main() {
 		},
 		name: 'Wassa',
 		link: 'wassa',
-		icon: 'icon_102',
+		icon: 'icon_103',
 		order: 7,
 		banner: 'iced_1',
 		teaser: 'iced_1',

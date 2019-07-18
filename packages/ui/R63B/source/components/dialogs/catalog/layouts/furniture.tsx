@@ -34,14 +34,14 @@ export default class CatalogFurniPage extends Component <any, any> {
 						<div className='page'>
 							<div className='sidebar'>
 								<div className='search'>
-									<input type='text' placeholder='Search here' />
+									<input type='text' placeholder='Search here' maxLength={26} />
 								</div>
 								<Navgiation 
 									pages={catalogPages}
 								/>
 							</div>
 							<div className='content'>
-									Test
+									{catalogPages[6].name}
 							</div>
 						</div>
 					)

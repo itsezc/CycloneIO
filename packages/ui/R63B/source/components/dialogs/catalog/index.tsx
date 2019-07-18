@@ -9,6 +9,20 @@ import CatalogBanner from './components/banner'
 import CatalogFrontPage from './layouts/frontpage'
 import CatalogFurniPage from './layouts/furniture'
 
+import { Query } from 'react-apollo'
+import { 
+	GetCatalogPages as CatalogPagesQUERY
+} from '../../../../../../storage/queries'
+
+import {
+	GetCatalogPages,
+	GetCatalogPages_catalogPages,
+	GetCatalogPages_catalogPages_language,
+	GetCatalogPages_catalogPages_parent
+} from '../../../../../../storage/__generated__/types'
+
+
+
 type AlertState = {
     category: number
     catalogue: any[]
@@ -76,22 +90,6 @@ export default class Alert extends Component<any, AlertState> {
                     name: 'Memberships',
                     icon: '5',
                     banner: 'club',
-                    layout: 'furniture'
-                },
-                {
-                    id: 5,
-                    parent: 1,
-                    name: 'Spaces',
-                    description: 'This is an example description for spaces',
-                    icon: '6',
-                    layout: 'furniture'
-                },
-                {
-                    id: 6,
-                    parent: 1,
-                    name: 'Backgrounds',
-                    description: 'This is an example description for backgrounds',
-                    icon: '7',
                     layout: 'furniture'
                 }
             ]
