@@ -183,7 +183,7 @@ async function main() {
 			connect: FurniturePage
 		},
 		name: 'Room Bundles',
-		link: 'creditfurni',
+		link: 'roombundles',
 		icon: 'icon_206',
 		order: 2,
 		banner: 'iced_1',
@@ -204,7 +204,7 @@ async function main() {
 			connect: FurniturePage
 		},
 		name: 'Room Event',
-		link: 'creditfurni',
+		link: 'roomevents',
 		icon: 'icon_55',
 		order: 3,
 		banner: 'iced_1',
