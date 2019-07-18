@@ -1,0 +1,27 @@
+
+tile_yell.png
+size: 512,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+tile_yell_tile_yell_32_a_0_0.png
+  rotate: false
+  xy: 2, 2
+  size: 130, 65
+  orig: 130, 65
+  offset: 0, 0
+  index: -1
+tile_yell_tile_yell_64_a_0_0.png
+  rotate: false
+  xy: 2, 69
+  size: 257, 129
+  orig: 257, 129
+  offset: 0, 0
+  index: -1
+tile_yell_tile_yell_icon_a.png
+  rotate: false
+  xy: 261, 182
+  size: 30, 16
+  orig: 30, 16
+  offset: 0, 0
+  index: -1

@@ -26,6 +26,12 @@ import TileGenerator from '../generators/tile'
 // import FPSMeter from 'fpsmeter'
 import Tile from '../generators/tile';
 
+type RoomPlayers = {
+    id: string;
+    avatarData: string;
+    avatar?: RoomAvatar;
+}
+
 /**
 * Room class
  * @extends {Scene}
@@ -39,6 +45,8 @@ export default class Room extends Phaser.Scene {
     private _camera!: RoomCamera
     // private tileMap!: RoomTileMap
     // private item!: RoomItem
+
+    private assetsLoaded: boolean
 
     private _clickTime!: number
 
@@ -61,7 +69,10 @@ export default class Room extends Phaser.Scene {
 
     private currentFPS: Number
 
-    public players: { [id: string]: RoomAvatar }
+    public players: RoomPlayers[]
+    public playerQueue: RoomPlayers[]
+
+    public moodlightPreview: any
 
     private furnitures!: FurnitureSprite[]
     /*
@@ -73,9 +84,15 @@ export default class Room extends Phaser.Scene {
     constructor(roomData: any, engine: Engine) {
         super({ key: 'room' })
 
-        this.roomData = roomData;
+        this.roomData = roomData
 
         this.engine = engine
+
+        this.assetsLoaded = false
+
+        this.players = []
+
+        this.playerQueue = []
     }
 
     /**
@@ -101,20 +118,10 @@ export default class Room extends Phaser.Scene {
         this.load.image('stairs_right', 'room/stairs_right.png')
         this.load.image('stairs_bottom_right', 'room/stairs_bottom_right.png')
 
+        this.load.image('avatar_shadow', 'avatar/shadow.png')
+
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
-
-        this.load.image('furniture_placeholder', 'furniture/furni_placeholder.png')
-        this.load.image('wall_placeholder', 'furniture/wall_placeholder.png')
-
-        this.load.atlas('wlk_0', 'avatar_old/wlk/wlk_0.png', 'avatar_old/wlk/wlk_0.json')
-        this.load.atlas('wlk_1', 'avatar_old/wlk/wlk_1.png', 'avatar_old/wlk/wlk_1.json')
-        this.load.atlas('wlk_2', 'avatar_old/wlk/wlk_2.png', 'avatar_old/wlk/wlk_2.json')
-        this.load.atlas('wlk_3', 'avatar_old/wlk/wlk_3.png', 'avatar_old/wlk/wlk_3.json')
-        this.load.atlas('wlk_4', 'avatar_old/wlk/wlk_4.png', 'avatar_old/wlk/wlk_4.json')
-        this.load.atlas('wlk_5', 'avatar_old/wlk/wlk_5.png', 'avatar_old/wlk/wlk_5.json')
-        this.load.atlas('wlk_6', 'avatar_old/wlk/wlk_6.png', 'avatar_old/wlk/wlk_6.json')
-        this.load.atlas('wlk_7', 'avatar_old/wlk/wlk_7.png', 'avatar_old/wlk/wlk_7.json')
 
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
@@ -155,12 +162,12 @@ export default class Room extends Phaser.Scene {
             door: [0, 3],
             heightmap: this.roomData.map.room,
             furnitures: [
-                {
-                    name: 'CF_50_goldbar',
-                    roomX: 0,
-                    roomY: 1,
-                    roomZ: 0
-                },
+                // {
+                //     name: 'CF_50_goldbar',
+                //     roomX: 0,
+                //     roomY: 0,
+                //     roomZ: 1
+                // },
                 {
                     name: 'throne',
                     roomX: 0,
@@ -184,6 +191,13 @@ export default class Room extends Phaser.Scene {
                     animation: 0
                 },
                 // {
+                //     name: 'ads_calip_pool',
+                //     roomX: 6,
+                //     roomY: 3,
+                //     roomZ: 0,
+                //     animation: 0
+                // },
+                // {
                 //     name: 'ads_cllava2',
                 //     roomX: 2,
                 //     roomY: 0,
@@ -199,8 +213,9 @@ export default class Room extends Phaser.Scene {
                 },
                 // {
                 //     name: 'diamond_dragon',
-                //     roomX: 4,
+                //     roomX: 6,
                 //     roomY: 3,
+                //     roomZ: 0,
                 //     direction: 2,
                 //     animation: 2
                 // },
@@ -211,14 +226,14 @@ export default class Room extends Phaser.Scene {
                 //    direction: 2,
                 //    animation: 0
                 //},
-                {
-                    name: 'party_neon3',
-                    roomX: 3,
-                    roomY: 0,
-                    roomZ: 5,
-                    type: FurnitureData.IFurnitureType.WALL,
-                    animation: 1
-                },
+                // {
+                //     name: 'party_neon3',
+                //     roomX: 3,
+                //     roomY: 0,
+                //     roomZ: 5,
+                //     type: FurnitureData.IFurnitureType.WALL,
+                //     animation: 1
+                // },
                 {
                     name: 'es_tile',
                     roomX: 0,
@@ -226,27 +241,27 @@ export default class Room extends Phaser.Scene {
                     roomZ: 0,
                     animation: 0
                 },
-                {
-                    name: 'holo_nelly',
-                    roomX: 1,
-                    roomY: 2,
-                    roomZ: 0,
-                    animation: 1
-                },
-                {
-                    name: 'bb_counter',
-                    roomX: 2,
-                    roomY: 2,
-                    roomZ: 0,
-                    animation: 0
-                },
-                {
-                    name: 'bb_score_g',
-                    roomX: 3,
-                    roomY: 2,
-                    roomZ: 0,
-                    animation: 0
-                },
+                // {
+                //     name: 'holo_nelly',
+                //     roomX: 1,
+                //     roomY: 2,
+                //     roomZ: 0,
+                //     animation: 1
+                // },
+                // {
+                //     name: 'bb_counter',
+                //     roomX: 2,
+                //     roomY: 2,
+                //     roomZ: 0,
+                //     animation: 0
+                // },
+                // {
+                //     name: 'bb_score_g',
+                //     roomX: 3,
+                //     roomY: 2,
+                //     roomZ: 0,
+                //     animation: 0
+                // },
                 {
                     name: 'bb_patch1',
                     roomX: 4,
@@ -268,12 +283,12 @@ export default class Room extends Phaser.Scene {
                     roomZ: 0,
                     animation: 8
                 },
-                {
-                    name: 'exe_icecream',
-                    roomX: 1,
-                    roomY: 4,
-                    roomZ: 0,
-                },
+                // {
+                //     name: 'exe_icecream',
+                //     roomX: 1,
+                //     roomY: 4,
+                //     roomZ: 0,
+                // },
                 {
                     name: 'hrella_poster_1',
                     roomX: 6.25,
@@ -315,11 +330,11 @@ export default class Room extends Phaser.Scene {
                 //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
                 //console.log(furnitureRoomData)
 
-                var furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
+                const furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
 
-                var furniture = new Furniture(this, furnitureData, furnitureRoomData.type)
+                const furniture = new Furniture(this, furnitureData, furnitureRoomData.type)
 
-                var furnitureSprite = new FurnitureSprite(this, furniture)
+                const furnitureSprite = new FurnitureSprite(this, furniture)
 
                 if (furnitureRoomData.animation !== undefined) {
                     console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
@@ -357,11 +372,15 @@ export default class Room extends Phaser.Scene {
         }
 
         //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
-            this.roomPlayer = new RoomAvatar(this, 0, 0, 0, 0)
-            this.roomPlayer.x = this.roomPlayer.RenderPos.x
-            this.roomPlayer.y = this.roomPlayer.RenderPos.y
+            /* this.roomPlayer = new RoomAvatar(this, 2, 3, 0, 0)
+            
+            let tmpX = this.roomPlayer.RenderPos.x
+            let tmpY = this.roomPlayer.RenderPos.y
 
-            this.add.existing(this.roomPlayer)
+            this.roomPlayer.x = tmpX
+            this.roomPlayer.y = tmpY
+
+            this.add.existing(this.roomPlayer) */
         //})
 
         // Zoom out (0.55). max: 10
@@ -369,9 +388,9 @@ export default class Room extends Phaser.Scene {
 
         // this.moodlightPreview = this.add.graphics()
         // this.moodlightPreview.fillStyle(0x1844bd, 1)
-        // this.moodlightPreview.fillRect(0, 0, 50, 60);
+        // this.moodlightPreview.fillRect(-500, -500, 1000, 1000);
         // this.moodlightPreview.setBlendMode(Phaser.BlendModes.SCREEN)
-        // this.moodlightPreview.setDepth(4)
+        // this.moodlightPreview.setDepth(10)
 
         // Zoom
         // this.camera.setZoom(1.5) // Zoom out (0.5). For render issues disable antialiasing
@@ -392,6 +411,20 @@ export default class Room extends Phaser.Scene {
         // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
 
         // this.add.text(100, 100, `FPS: ${this.currentFPS || 'undefined'}`, { color: '#00ff00' })
+
+        this.assetsLoaded = true
+
+    }
+
+    public addPlayer(id: string/*, roomAvatar: RoomAvatar*/){
+
+        let newPlayer: RoomPlayers = {
+            id,
+            avatarData: ''
+        }
+
+        this.playerQueue.push(newPlayer)        
+
     }
 
     private orderFurnituresByType(furnitures: FurnitureData.IFurniture[]): FurnitureData.IFurniture[] {
@@ -451,9 +484,35 @@ export default class Room extends Phaser.Scene {
      * @override
      */
     public update(time: number, delta: number): void {
-        if (this.roomPlayer) {
-            this.roomPlayer.update(delta)
+
+        if(this.assetsLoaded){
+            this.playerQueue.forEach((roomPlayer: RoomPlayers, index: number) => {
+
+                let randomX = Math.floor(Math.random() * 5);
+                let randomY = Math.floor(Math.random() * 5);
+
+                let newPlayer = new RoomAvatar(this, randomX, randomY, 0, 1);
+
+                let tmpX = newPlayer.RenderPos.x
+                let tmpY = newPlayer.RenderPos.y
+        
+                newPlayer.x = tmpX
+                newPlayer.y = tmpY
+
+                roomPlayer.avatar = newPlayer
+
+                this.players.push(roomPlayer)
+                this.add.existing(newPlayer)
+                this.playerQueue.splice(index, 1)
+    
+            })
         }
+
+
+        this.players.forEach((roomPlayer: RoomPlayers) => {
+            roomPlayer.avatar.update(delta)
+        })
+    
 
         this.currentFPS = this.game.loop.actualFps
         // console.log('FPS', this.currentFPS)

@@ -38,16 +38,50 @@
 			inset 0px -10px 0 0 #999899
 
 
-.btn-action
-	height: 19px;
-	width: 19px;
-	border: 1px solid #000;
-	border-radius: 4px;
+.btn-r63b
+	height 20px
+	padding 0 14px
+	border 1px solid #000;
+	border-radius 3px
+	box-shadow inset 1px 0 0 0 #d9d9d9, inset -1px 0 0 0 #d9d9d9,
+				inset 0 1px 0 0 #d9d9d9, 0 1px 0 0 #000000
+	background linear-gradient(#f3f3f3 50%, #d9d9d9 50%, #d9d9d9 100%)
 
-	&.btn-blue
-		background-color: #306686;
-		box-shadow: inset 0 0 0 1px #3986b1, inset 0 -8px 0 0 #1f5679;
+	&.btn-action
+		height: 19px;
+		width: 19px;
+		padding: 0;
+		border-bottom-width: 2px;
 
+		&.btn-red
+			background: linear-gradient(#bd3b2f 50%, #91241a 50%, #91241a 100%);
+			box-shadow: inset 1px 1px 0 0 #de4537, inset -1px -1px 0 0 #de4537;
+
+			&:hover
+				box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff,
+							inset 2px 2px 0 0 #e48880, inset -2px -2px 0 0 #e48880;
+				
+			&:active 
+				background: linear-gradient(#91241a 50%, #7c0d09 50%, #7c0d09 100%);
+				box-shadow: inset 1px 1px 0 0 #551510, inset -1px -1px 0 0 #aa2a1f;
+
+		&.btn-blue 
+			background: linear-gradient(#306686 50%, #1f5679 50%, #1f5679 100%);
+			box-shadow: inset 1px 1px 0 0 #3986b1, inset -1px -1px 0 0 #3986b1;
+
+			&:hover
+				box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff,
+							inset 2px 2px 0 0 #64acd9, inset -2px -2px 0 0 #64acd9;
+				
+			&:active
+				background: linear-gradient(#1f5679 50%, #004365 50%, #004365 100%);
+				box-shadow: inset 1px 1px 0 0 #003152, inset -1px -1px 0 0 #306686;
+
+		&:active
+			border-bottom-width: 1px;
+				
+			&>*
+				filter: invert(1);
 
 
 .btn

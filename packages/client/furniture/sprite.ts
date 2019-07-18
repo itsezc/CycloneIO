@@ -5,6 +5,7 @@ import RotationAnimation from './animations/rotation';
 import FurnitureData from '../furniture/data'
 
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
+    
     public _scene: Room
     private static FPS = 24
     private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
@@ -75,7 +76,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
             || animation == null)
         {
 
-			//console.log('Animating with ', animation)
+			// console.log('Animating with ', animation)
             if (this.animation != animation)
             {
                 this.animation = animation
@@ -178,8 +179,10 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
         for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
         {
+
             let frameIndex = this.furniture.getFrameFrom(this.animation, layerId, this.frameCount)
             let layerSprite = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, false, this.direction, layerId, frameIndex)
+
 
             if (layerSprite != null)
             {
@@ -230,6 +233,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     private animateRotation() {
+        console.log('Rotating')
         this.animationRotation.start()
     }
 
@@ -259,18 +263,18 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
-        sprite.on('rotate', (s: Phaser.GameObjects.Sprite) => {
-            if(this.canBeRotated(s) && !this.animationRotation.isRunning) {
+        sprite.on('rotate', (instance: Phaser.GameObjects.Sprite) => {
+            if(this.canBeRotated(instance) && !this.animationRotation.isRunning) {
                 this.animateRotation()
             }
         })
 
-        sprite.on('click', (s: Phaser.GameObjects.Sprite) => {
+        sprite.on('click', (instance: Phaser.GameObjects.Sprite) => {
             if (this.frameCount - this.lastClick <= 45 && this.lastClick !== 0) {
                 if(!this.doubleClick) {
                     this.doubleClick = true
                 } else {
-                    this.animation = this.furniture.getNewAnimationFor(s, this.animation)
+                    this.animation = this.furniture.getNewAnimationFor(instance, this.animation)
                     this.doubleClick = false
                 }
 

@@ -15,6 +15,9 @@ type DialogProps = {
     background?: string
     closeable?: boolean
 
+    top?: any
+    left?: any
+
     id: string
     title: string
     children?: any
@@ -60,19 +63,14 @@ export default class Dialog extends Component<DialogProps, any> {
             style: {
                 width: props.width,
                 height: props.height,
-                top: props.centered || 64,
-                left: props.centered || 64
+                top: props.centered || props.top || 64,
+                left: props.centered || props.left || 64
             }
         }
     
+        this.close = this.close.bind(this)
     }
     
-    closeButton() {
-        return(
-            <i className='close' onClick={this.close.bind(this)}>x</i> 
-        )
-    }
-
 	componentWillMount() {
 
         document.addEventListener('mousemove', this.handleMouse)
@@ -94,9 +92,10 @@ export default class Dialog extends Component<DialogProps, any> {
         this.screenWidth = window.innerWidth
     }
 
-	handleDragging = () => {
+	handleDragging = (e: any) => {
+
         this.setState({
-          isDragging: true
+            isDragging: true
         })
     }
 
@@ -180,14 +179,25 @@ export default class Dialog extends Component<DialogProps, any> {
 	}
 
 	render() {
-		if(this.state.isShow) {
+		if(this.state.isShow) 
 			return (
 
 				<dialog className={`dialog ${this.props.className || ''}`} id={this.props.id} style={this.state.style}>
 					
-					<div className='dialog-header' id={(this.props.id) ? (this.props.id).concat('_header') : undefined} onMouseDown={this.handleDragging.bind(this)}>
+                    <div 
+                        className='dialog-header' 
+                        id={(this.props.id) ? (this.props.id).concat('_header') : undefined} 
+                        onMouseDown={this.handleDragging.bind(this)}
+                    >
 						<span>{this.props.title}</span>
-                        { this.closeable ? this.closeButton() : false } 
+                        
+                        <div className='dialog-header-actions'>
+                                
+                            <button className="btn btn-r63b btn-action btn-red" onClick={this.close}>
+                                <i className="icon icon-close"></i>
+                            </button>
+
+                        </div>
 					</div>
 
 					<div className='dialog-body'>
@@ -199,9 +209,7 @@ export default class Dialog extends Component<DialogProps, any> {
 					</div>
 				</dialog>
 			)
-		} else {
-			return null
-		}
-		
+        
+        return null;
 	}
 }

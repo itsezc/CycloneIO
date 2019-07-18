@@ -18,17 +18,15 @@ export default class Navigation extends Component<any, any> {
 				<div className='container'>
 					{
 						this.state.pages.map((page: any, index: number) => {
-							console.log(index, page.id, page.parent)
 							return(
-								(page.id === page.parent.id) ?
-									<p key={index}>
+								(page.parent) ?
+									<div className='option' key={index}>
 										<img src={`./catalogue/icons/${page.icon}.png`} />
-										{page.name}
-									</p>
+										<p>{page.name}</p>
+									</div>
 								:	null
 							)
 						})
-						// console.log('Navigation', this.state.pages)
 					}
 				</div>
 			</div>

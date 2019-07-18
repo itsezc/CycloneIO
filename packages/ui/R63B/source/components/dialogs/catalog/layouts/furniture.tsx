@@ -19,13 +19,6 @@ export default class CatalogFurniPage extends Component <any, any> {
 
 	constructor(props: any) {
 		super(props)
-
-
-		// this.state = {
-		// 	testData: <div>
-		// 		<p>Some Random Text</p>
-		// 	</div>
-		// }
 	}
 
 	render() {
@@ -36,21 +29,19 @@ export default class CatalogFurniPage extends Component <any, any> {
 						if (error) return 'Error..'
 
 					const { catalogPages } = data
-
-					console.log(catalogPages)
-
+					
 					return (
 						<div className='page'>
 							<div className='sidebar'>
 								<div className='search'>
-									<input type='text' placeholder='Search here' />
-									<Navgiation 
-										pages={catalogPages}
-									/>
+									<input type='text' placeholder='Search here' maxLength={26} />
 								</div>
+								<Navgiation 
+									pages={catalogPages}
+								/>
 							</div>
 							<div className='content'>
-									Test
+									{catalogPages[6].name}
 							</div>
 						</div>
 					)

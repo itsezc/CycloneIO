@@ -63,6 +63,7 @@ export const GetCatalogPages = gql`
 			name
 			language {
 				id
+				name
 			}
 			description
 			icon

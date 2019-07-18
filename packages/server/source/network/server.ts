@@ -91,7 +91,9 @@ export default class Server {
 			this.socket = SocketIO(this.emulator.listener)
 
 			await this.socket
-			await this.socket.on('connection', this.loadSocketEvents)
+			await this.socket.on('connection', (socket) => {
+				this.loadSocketEvents(socket, this.socket)
+			})
 
 			Logger.info('Started Socket.IO listener')
 
@@ -133,13 +135,13 @@ export default class Server {
 		// 	.catch((error: any) => console.error(error))
 	}
 
-	private loadSocketEvents(socket: SocketIO.Socket) {
+	private loadSocketEvents(socket: SocketIO.Socket, socketServer: SocketIO.Server) {
 
 		//Event loader
 		IO.readdirSync(path.join(__dirname, 'socket/events')).forEach((name) => {
 			//socket.on(<filename without extension>, callback)
 			socket.on(/(.+)\.ts/i.exec(name)[1], (data: any) => {
-				require(`./socket/events/${name}`).default(socket, data)
+				require(`./socket/events/${name}`).default(socket, data, socketServer)
 				Logger.info(`Event executed from ${socket.id}: ${name}`)
 			});
 		});

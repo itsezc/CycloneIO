@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import Script from 'react-load-script'
 
 import '../client/index.styl'
 
@@ -22,6 +21,7 @@ import {Engine} from '../../../../../client/games/game'
 export default class Room extends Component<any, any> {
 
 	private engine: Engine
+	private roomData: any
 
 	constructor(props: any) {
 		super(props)
@@ -30,19 +30,24 @@ export default class Room extends Component<any, any> {
 	componentDidMount()
 	{
 		this.engine = new Engine('game')
-		//const script = document.createElement('script')
-		//script.src = 'http://localhost:8082/client.js'
-		//document.body.appendChild(script)
+		this.props.socket.on('playerJoined', (data: any) => {
+			this.engine.joinPlayer(data)
+		})
 	}
 
 	componentWillReceiveProps(nextProps: any) {
-		this.engine.gotoRoom(nextProps.roomData)
+
+		if(!this.roomData || this.roomData.id !== nextProps.roomData.id){
+			this.roomData = nextProps.roomData
+			this.engine.gotoRoom(nextProps.roomData)
+		}
+
+		
 	}
 
 	render() {
 		return(
 			<div className='client'>
-				{/* <Script url='http://localhost:8080/client.js' /> */}
 				<Actions />
 
 				<div className='room' id='game'></div>

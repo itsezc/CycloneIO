@@ -36,7 +36,7 @@ export default class ChatBox extends Component {
 
                 <input type='text' className='chat-input' placeholder='Type here to say something...' autoFocus />
 
-                <button className='btn-action btn-blue'>
+                <button className='btn-r63b btn-action btn-blue'>
                     <i className='icon icon-help'></i>
                 </button>
             </div>

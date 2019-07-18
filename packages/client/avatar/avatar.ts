@@ -2,6 +2,7 @@ import Room from '../rooms/room'
 import RoomObjectDepth from '../../common/enums/rooms/objects/depth'
 import { indexOf } from 'typescript-collections/dist/lib/arrays';
 
+
 import Avatar, { TextureDictionary, Direction } from '.';
 
 const PIXELS_PER_SECOND = 70 as const
@@ -11,6 +12,7 @@ const PIXELS_PER_SECOND = 70 as const
  * @param {object} room - The room
  * @param {object} gameMap - The game map
  */
+
 export default class RoomAvatar extends Phaser.GameObjects.Container {
     private FPS = 24
     private FPS_TIME_MS = 60 / this.FPS
@@ -35,13 +37,14 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
     private avatarHead: Phaser.GameObjects.Sprite
     private avatarBody: Phaser.GameObjects.Sprite
+    private avatarShadow: Phaser.GameObjects.Sprite
 
     private look: string
 
-    headImage: HTMLCanvasElement;
-    userInfoImage: HTMLCanvasElement;
+    headImage: HTMLCanvasElement
+    userInfoImage: HTMLCanvasElement
 
-    timer: Phaser.Time.TimerEvent;
+    timer: Phaser.Time.TimerEvent
 
     constructor(
         public readonly scene: Room,
@@ -54,13 +57,22 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.look = 'ca-1815-92.sh-290-62.hd-180-1009.ch-262-64.ha-3763-63.lg-280-1193.hr-831-54'
 
-        this.rot = 2
-        this.headRot = 2
+        this.rot = 4
+        this.headRot = 4
 
         this.frame = 0
 
         this.avatarHead = new Phaser.GameObjects.Sprite(this.scene, 0, 0, null)
         this.avatarBody = new Phaser.GameObjects.Sprite(this.scene, 0, 0, null)
+
+
+        this.avatarShadow = new Phaser.GameObjects.Sprite(
+								this.scene, 
+								0, 
+								this.avatarBody.height + this.avatarHead.height - 16, 
+								'avatar_shadow'
+							)
+        this.avatarShadow.alpha = .8
 
         //this.scene.physics.add.existing(this)
 
@@ -68,23 +80,18 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.colorId = Math.floor(Math.random() * (16777215 - 1)) + 1;
 
-        this.isMoving = false
+        this.isMoving = true
 
-        this.loadGenerics().then(() => {
-            console.log('avatar initialized')
-        })        
-
-        /*const sprite = this.scene.add.sprite(0, 0, 'tile')
-
-        this.add(sprite)
-
-        scene.add.existing(this)*/
+		this.loadGenerics()
     }
 
     get RenderPos() {
+        let x = this.scene.getScreenX(this.x, this.y) + 32
+        let y = this.scene.getScreenY(this.x, this.y) - 28
+
         return {
-            x: this.scene.getScreenX(this.x, this.y),
-            y: this.scene.getScreenY(this.x, this.y) - 84,
+            x,
+            y
         }
     }
 
@@ -281,14 +288,21 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
         let headFrame = 0;
 
         if (this.isMoving) {
-            action = ["wlk"];
-            bodyFrame = this.frame % 4;
+            action = ['wlk']
+            bodyFrame =  0 //this.frameCount % 4
         }
+
+        //avatar_shadow
 
         const bodyKey = this.getBodyTextureKey(this.rot, action, bodyFrame)
         const headKey = this.getHeadTextureKey(this.headRot, gesture, headFrame)
 
-        if(this.scene.game.textures.exists(bodyKey) && this.scene.game.textures.exists(headKey)){
+        if(this.scene.game.textures.exists(bodyKey) && this.scene.game.textures.exists(headKey) && this.scene.game.textures.exists('avatar_shadow')) {
+            
+            if(!this.exists(this.avatarShadow)){
+                this.add(this.avatarShadow)
+            }
+
             this.avatarBody.setTexture(bodyKey)
 
             if (!this.exists(this.avatarBody)) {
@@ -302,6 +316,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
             if (!this.exists(this.avatarHead)) {
                 this.add(this.avatarHead)
             }
+
         }
         
         /*
@@ -325,7 +340,6 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
             }
         */
     }
-
     getBodyTextureKey(rot: number, action: string[], bodyFrame: number): string {
         let actionText = action[0];
         if (action.length > 1) {

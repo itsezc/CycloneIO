@@ -235,6 +235,7 @@ export default class Imager {
                 const chunksPromises = [];
 
                 for (let chunk of chunks) {
+
                     if (this.offsets[chunk.lib].data != null && this.offsets[chunk.lib].data[chunk.getResourceName()] != null && !this.offsets[chunk.lib].data[chunk.getResourceName()].flipped) {
                         //console.log("Found sprite: " + chunk.getResourceName());
                         chunksPromises.push(chunk.downloadAsync());
@@ -303,6 +304,7 @@ export default class Imager {
                     //console.log("drawing...");
 
                     for (let chunk of chunks) {
+
                         if (this.offsets[chunk.lib].data != null && this.offsets[chunk.lib].data[chunk.getResourceName()] != null) {
                             //console.log(chunk);
                             if (chunk.resource != null) {
@@ -496,6 +498,7 @@ export default class Imager {
             }
         }
         c.putImageData(imageData, 0, 0);
+
         return element;
     }
 
