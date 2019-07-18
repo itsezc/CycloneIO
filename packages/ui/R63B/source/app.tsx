@@ -28,11 +28,10 @@ class App extends Component<any, any> {
         this.Socket = SocketIO(this.server)
         this.Socket.on('connect', () => {
             console.log(`Connected to server on ${this.server}`)
-            // this.Socket.emit('newConnection', 0)
         })
 
-        this.Socket.emit('getRoom', 'cjy663lff01kq0732twjkyxk6')
-        this.setSocketEvents();
+        this.Socket.emit('getRoom', 'cjy815ny100gp0884ssbvvcn3')
+        this.setSocketEvents()
     }
 
     private setSocketEvents(): void {

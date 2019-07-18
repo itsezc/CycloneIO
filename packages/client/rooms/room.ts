@@ -108,9 +108,6 @@ export default class Room extends Phaser.Scene {
         this.load.image('wall_l', 'room/wall_l.png')
         this.load.image('wall_r', 'room/wall_r.png')
 
-        this.load.image('furniture_placeholder', 'furniture/furni_placeholder.png')
-        this.load.image('wall_placeholder', 'furniture/wall_placeholder.png')
-
         this.load.audio('credits', 'audio/credits.mp3')
         this.load.audio('chat', 'audio/chat.mp3')
         this.load.audio('message', 'audio/message.mp3')
@@ -178,13 +175,13 @@ export default class Room extends Phaser.Scene {
                     direction: 0,
                     animation: 0
                 },
-                {
-                    name: 'ads_calip_pool',
-                    roomX: 6,
-                    roomY: 3,
-                    roomZ: 0,
-                    animation: 0
-                },
+                // {
+                //     name: 'ads_calip_pool',
+                //     roomX: 6,
+                //     roomY: 3,
+                //     roomZ: 0,
+                //     animation: 0
+                // },
                 // {
                 //     name: 'ads_cllava2',
                 //     roomX: 2,
@@ -199,14 +196,14 @@ export default class Room extends Phaser.Scene {
                     direction: 4,
                     animation: 1
                 },
-                {
-                    name: 'diamond_dragon',
-                    roomX: 6,
-                    roomY: 3,
-                    roomZ: 0,
-                    direction: 2,
-                    animation: 2
-                },
+                // {
+                //     name: 'diamond_dragon',
+                //     roomX: 6,
+                //     roomY: 3,
+                //     roomZ: 0,
+                //     direction: 2,
+                //     animation: 2
+                // },
                 //{
                 //    name: 'ads_cllava2',
                 //    roomX: 0,
@@ -214,14 +211,14 @@ export default class Room extends Phaser.Scene {
                 //    direction: 2,
                 //    animation: 0
                 //},
-                {
-                    name: 'party_neon3',
-                    roomX: 3,
-                    roomY: 0,
-                    roomZ: 5,
-                    type: FurnitureData.IFurnitureType.WALL,
-                    animation: 1
-                },
+                // {
+                //     name: 'party_neon3',
+                //     roomX: 3,
+                //     roomY: 0,
+                //     roomZ: 5,
+                //     type: FurnitureData.IFurnitureType.WALL,
+                //     animation: 1
+                // },
                 {
                     name: 'es_tile',
                     roomX: 0,
@@ -229,27 +226,27 @@ export default class Room extends Phaser.Scene {
                     roomZ: 0,
                     animation: 0
                 },
-                {
-                    name: 'holo_nelly',
-                    roomX: 1,
-                    roomY: 2,
-                    roomZ: 0,
-                    animation: 1
-                },
-                {
-                    name: 'bb_counter',
-                    roomX: 2,
-                    roomY: 2,
-                    roomZ: 0,
-                    animation: 0
-                },
-                {
-                    name: 'bb_score_g',
-                    roomX: 3,
-                    roomY: 2,
-                    roomZ: 0,
-                    animation: 0
-                },
+                // {
+                //     name: 'holo_nelly',
+                //     roomX: 1,
+                //     roomY: 2,
+                //     roomZ: 0,
+                //     animation: 1
+                // },
+                // {
+                //     name: 'bb_counter',
+                //     roomX: 2,
+                //     roomY: 2,
+                //     roomZ: 0,
+                //     animation: 0
+                // },
+                // {
+                //     name: 'bb_score_g',
+                //     roomX: 3,
+                //     roomY: 2,
+                //     roomZ: 0,
+                //     animation: 0
+                // },
                 {
                     name: 'bb_patch1',
                     roomX: 4,
@@ -271,12 +268,12 @@ export default class Room extends Phaser.Scene {
                     roomZ: 0,
                     animation: 8
                 },
-                {
-                    name: 'exe_icecream',
-                    roomX: 1,
-                    roomY: 4,
-                    roomZ: 0,
-                },
+                // {
+                //     name: 'exe_icecream',
+                //     roomX: 1,
+                //     roomY: 4,
+                //     roomZ: 0,
+                // },
                 {
                     name: 'hrella_poster_1',
                     roomX: 6.25,
@@ -360,7 +357,7 @@ export default class Room extends Phaser.Scene {
         }
 
         //this._socket.on('joinRoom', (playerId: any, playerX: any, playerY: any) => {
-            this.roomPlayer = new RoomAvatar(this, 8, 3, 0, 0)
+            this.roomPlayer = new RoomAvatar(this, 2, 3, 0, 0)
             
             let tmpX = this.roomPlayer.RenderPos.x
             let tmpY = this.roomPlayer.RenderPos.y
