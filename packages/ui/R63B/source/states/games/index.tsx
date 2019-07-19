@@ -61,38 +61,55 @@ export default class GameCenter extends Component<any, ClientState>
 
 					<Actions />
 
-					<div className='hotel'>
+					<div className='gameparent'>
 						<Wallet />
 						
-						{/* <Moderation />*/}
+						<div className='gamecontainer'>
 
-						{/* <ApolloProvider client={this.Database}> */}
-							{/* <Navigator /> */}
+							<div className='game__container__content'>
+								<p>Ready, Set... GO!</p>
+								<img src='/games/speedway/logo.png' className='logo' />
+								<div className='description'>
+									Strap yourself in for some slotcar carnage, Race the track against friends, <br /> use a variety of power-ups to reach pole position and take some gold.
+								</div>
 
-							{/* <Catalog /> */}
-						{/* </ApolloProvider> */}
+								<button className='illumina-button'>
+									Play Now
+								</button>
+							</div>
 
-						{/* <Alert
-							title='Message from Cyclone Hotel'
-							message='This is a text message, except that it is a very long text message even so that it takes a few lines, which is pretty surprising because its our very first element, so Enjoy!'
-							author='EZ-C'
-						/> */}
-
-						{/* {this.tmp} */}
-			
-						{/* <Explorer type='furniture' name='Throne' /> */}
-
-						{/* <Chat
-							name='EZ-C'
-							avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
-							type='shout'
-							style={2}
-							message='This is an example message'
-						/> */}
-						
-						{/* <Notifications /> */}
+							<div className='banner'>
+								<img src='/games/speedway/banner.png'/>
+							</div>
+						</div>
 					</div>
-					
+					<div className='picker'>
+						<fieldset className='inner'>
+							<legend className='title'>SELECT GAME</legend>
+							<div className='content'>
+
+								<div className='game'>
+									<img src='/games/fastfood/icon.png' />
+								</div>
+
+								<div className='game'>
+									<img src='/games/snowstorm/icon.png' />
+								</div>
+
+								<div className='game'>
+									<img src='/games/speedway/icon.png' className='selected' />
+								</div>
+
+								<div className='game'>
+									<img src='/games/streetz/icon.png' />
+								</div>
+
+								<div className='game'>
+									<img src='/games/turku/icon.png' />
+								</div>
+							</div>
+						</fieldset>
+					</div>
 					<Toolbar isClient={false} />
 				</div>
 			)
