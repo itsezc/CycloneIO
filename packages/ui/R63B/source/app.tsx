@@ -7,6 +7,7 @@ import SocketIO from 'socket.io-client'
 import Loading from './states/loading'
 import Client from './states/client'
 import Room from './states/room'
+import Games from './states/games'
 
 
 class App extends Component<any, any> {
@@ -54,6 +55,7 @@ class App extends Component<any, any> {
                         render={(props) => <Room {...props} socket={this.Socket} roomData={this.state.roomData} />}
                         />
                     <Route exact path='/client' component={Client} />
+                    <Route exact path='/gamecenter' component={Games} />
                     <Route 
                         exact 
                         path='/hotel' 

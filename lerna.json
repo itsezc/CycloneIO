@@ -6,7 +6,8 @@
 	"packages/mobile",
 	"packages/imager",
 	"packages/client-themes/*",
-	"packages/ui/*"
+	"packages/ui/*",
+	"packages/importer"
   ],
   "npmClient": "npm",
   "command": {

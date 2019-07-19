@@ -1,8 +1,8 @@
 import { prisma } from '../../../../../storage/prisma'
 
-export const joinRoom = async (socket: SocketIO.Socket, data: any, IO?: SocketIO.Server) => {
+export const joinRoom = async (socket: SocketIO.Socket, id: any, IO?: SocketIO.Server) => {
     let room = await prisma.room({
-        id: data
+        id
     })
 
     // console.log(IO)

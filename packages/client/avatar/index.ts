@@ -78,16 +78,19 @@ export default class Avatar
                 break;
         }
 
-        this.figure = extractFigureParts(figure, this.engine);
+        this.figure = extractFigureParts(figure, this.engine)
 
-        this.frame = frame;
+        this.frame = frame
+
+        // console.log('Avatar Frame', this.frame)
+
         this.drawAction = {
-            body: "std",
-        }; //std, sit, lay, wlk, wav, sit-wav, swm
+            body: 'std',
+        } //std, sit, lay, wlk, wav, sit-wav, swm
 
-        this.handItem = -1;
-        this.drawOrder = "std";
-        this.gesture = gesture;
+        this.handItem = -1
+        this.drawOrder = 'std'
+        this.gesture = gesture
 
         switch (gesture) {
             case "spk":
@@ -96,11 +99,14 @@ export default class Avatar
             case "eyb":
                 this.drawAction.eye = "eyb";
                 break;
+            // case 'wlk':
+            //     this.drawAction.gesture = 'wlk'
+            //     break;
             case "":
                 this.drawAction.gesture = "std";
                 break;
             default:
-                this.drawAction.gesture = gesture;
+                this.drawAction.gesture = gesture
                 break;
         }
 
@@ -110,14 +116,14 @@ export default class Avatar
             const actionParams = value.split('=');
             switch (actionParams[0]) {
                 case "wlk":
-                    this.drawAction.wlk = "wlk";
+                    this.drawAction.wlk = "wlk"
                     break;
                 case "sit":
-                    this.drawAction.sit = "sit";
+                    this.drawAction.sit = "sit"
                     break;
                 case "lay":
-                    this.drawAction.body = "lay";
-                    this.drawAction.eye = "lay";
+                    this.drawAction.body = "lay"
+                    this.drawAction.eye = "lay"
 
                     //swap
                     const temp = this.rectWidth;

@@ -160,7 +160,9 @@ export default class Room extends Phaser.Scene {
 
         const room: FurnitureData.IRoom = {
             door: [0, 3],
-            heightmap: this.roomData.map.room,
+            heightmap: [
+                [0, 1]
+            ],
             furnitures: [
                 // {
                 //     name: 'CF_50_goldbar',
@@ -434,23 +436,23 @@ export default class Room extends Phaser.Scene {
         })
     }
 
-    private isValidCoordinateForFurniture(x: number, y: number, heightmap: string[], type: FurnitureData.IFurnitureType = FurnitureData.IFurnitureType.FLOOR) {
+    private isValidCoordinateForFurniture(x: number, y: number, heightmap: Array<Array<number>>, type: FurnitureData.IFurnitureType = FurnitureData.IFurnitureType.FLOOR) {
         if (type === FurnitureData.IFurnitureType.FLOOR) {
             const height = this.getHeightByCoords(x, y, heightmap)
 
-            return height != null && height != 'x'
+            return height != null && height !== 0
         } else if (type === FurnitureData.IFurnitureType.WALL) {
             return this.isValidWallPosition(x, y, heightmap)
         }
     }
 
-    private getHeightByCoords(x: number, y: number, heightmap: string[]) {
-        const row = heightmap[y];
+    private getHeightByCoords(x: number, y: number, heightmap: Array<Array<number>>) {
+        const row = heightmap[y]
 
         if (row == null)
             return null
 
-        const points = row.split('')
+        const points = row
         const point = points[x]
 
         if (point == null) 
@@ -460,13 +462,13 @@ export default class Room extends Phaser.Scene {
         return point
     }
 
-    private isValidWallPosition(x: number, y: number, heightmap: string[]) {
+    private isValidWallPosition(x: number, y: number, heightmap: Array<Array<number>>) {
         const realX = Math.floor(x)
         const realY = Math.floor(y)
 
         const height = this.getHeightByCoords(realX, realY, heightmap)
 
-        if (height == 'x')
+        if (height === 0)
             return false
 
         if((x === 0 && y === 0) || (x > 0 && y > 0))
@@ -636,7 +638,7 @@ export default class Room extends Phaser.Scene {
 
     public convertOldToNewHeightMap(heightMap: string[]) {
         let newHeightMap: any = []
-        heightMap.forEach(row => newHeightMap.push(row.split('')))
+        heightMap.forEach((row: any) => newHeightMap.push(row.split('')))
         return newHeightMap[0].map((column: any, index: any) => newHeightMap.map((row: any) => Number(row[index].replace('0', 1).replace('x', 0))).reverse())
     }    
 }

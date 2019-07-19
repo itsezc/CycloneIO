@@ -68,7 +68,7 @@ namespace FurnitureData
 	export interface IRoom 
 	{
 		door: [number, number]
-		heightmap: string[]
+		heightmap: Array<Array<number>>
 		furnitures: IFurniture[]
 	}
 

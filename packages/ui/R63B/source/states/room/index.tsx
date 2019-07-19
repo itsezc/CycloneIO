@@ -13,6 +13,8 @@ import Chatbox from '../../components/chatbox'
 
 import Moderation from '../../components/dialogs/moderation'
 
+import Inventory from '../../components/dialogs/inventory'
+
 import Poll from '../../components/poll'
 
 import {Engine} from '../../../../../client/games/game'
@@ -54,6 +56,8 @@ export default class Room extends Component<any, any> {
 
 				<Moderation />
 				<Chatbox />
+
+				{/* <Inventory /> */}
 				
 				{/* <Catalog /> */}
 

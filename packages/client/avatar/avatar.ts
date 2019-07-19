@@ -57,8 +57,8 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.look = 'ca-1815-92.sh-290-62.hd-180-1009.ch-262-64.ha-3763-63.lg-280-1193.hr-831-54'
 
-        this.rot = 4
-        this.headRot = 4
+        this.rot = 2
+        this.headRot = 2
 
         this.frame = 0
 
@@ -78,7 +78,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.setDepth(RoomObjectDepth.FIGURE)
 
-        this.colorId = Math.floor(Math.random() * (16777215 - 1)) + 1;
+        this.colorId = Math.floor(Math.random() * (16777215 - 1)) + 1
 
         this.isMoving = true
 
@@ -96,38 +96,38 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     }
 
     private loadGenerics() {
-        const { avatarImager } = this.scene.engine;
+        const { avatarImager } = this.scene.engine
 
-        const promises: Promise<void>[] = [];
+        const promises: Promise<void>[] = []
 
         for (let i = 0; i <= 7; i++) {
-            promises.push(this._loadUniqueHeadTexture(i as Direction, "std", 0));
-            promises.push(this._loadUniqueHeadTexture(i as Direction, "eyb", 0));
+            promises.push(this._loadUniqueHeadTexture(i as Direction, 'std', 0))
+            promises.push(this._loadUniqueHeadTexture(i as Direction, 'eyb', 0))
 
-            promises.push(this._loadUniqueBodyTexture(i as Direction, ["std"], 0));
+            promises.push(this._loadUniqueBodyTexture(i as Direction, ['std'], 0))
             for (let j = 0; j <= 3; j++) {
-                promises.push(this._loadUniqueBodyTexture(i as Direction, ["wlk"], j));
-                promises.push(this._loadUniqueBodyTexture(i as Direction, ["wlk", "wav"], j));
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ['wlk'], j))
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ['wlk', 'wav'], j))
             }
             for (let j = 0; j <= 1; j++) {
-                promises.push(this._loadUniqueBodyTexture(i as Direction, ["wav"], j));
-                promises.push(this._loadUniqueHeadTexture(i as Direction, "spk", j));
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ['wav'], j));
+                promises.push(this._loadUniqueHeadTexture(i as Direction, 'spk', j));
             }
         }
 
         for (let i = 0; i <= 7; i = i + 2) {
             promises.push(this._loadUniqueBodyTexture(i as Direction, ["sit"], 0));
             for (let j = 0; j <= 1; j++) {
-                promises.push(this._loadUniqueBodyTexture(i as Direction, ["sit", "wav"], j));
+                promises.push(this._loadUniqueBodyTexture(i as Direction, ["sit", "wav"], j))
             }
         }
 
-        promises.push(this._loadChatHeadImage());
-        promises.push(this._loadUserInfoImage());
+        promises.push(this._loadChatHeadImage())
+        promises.push(this._loadUserInfoImage())
 
-        this.colorId = avatarImager.getChatColor(this.look);
+        this.colorId = avatarImager.getChatColor(this.look)
 
-        return Promise.all(promises);
+        return Promise.all(promises)
     }
 
     async _loadUniqueBodyTexture(direction: Direction, action: string[], frame: number): Promise<void> {
@@ -289,7 +289,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         if (this.isMoving) {
             action = ['wlk']
-            bodyFrame =  0 //this.frameCount % 4
+            bodyFrame = 0//this.frameCount % 4
         }
 
         //avatar_shadow
