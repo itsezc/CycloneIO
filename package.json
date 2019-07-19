@@ -34,6 +34,7 @@
     "lerna:dev:ui:r26": "lerna run dev --parallel --scope @cyclone/ui-r26",
     "lerna:dev:ui:r63b": "lerna run dev --parallel --scope @cyclone/ui-r63b",
     "lerna:dev:ui:r63d": "lerna run dev --parallel --scope @cyclone/ui-r63d",
+    "lerna:dev:ui:destiny": "lerna run dev --parallel --scope @cyclone/ui-destiny",
     "lerna:dev:ui:mobile": "lerna run dev --parallel --scope @cyclone/ui-m01",
     "lerna:dev:importer": "lerna run start --parallel --scope @cyclone/importer"
   },
