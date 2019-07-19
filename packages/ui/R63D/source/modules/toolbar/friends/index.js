@@ -3,10 +3,10 @@ import FriendSlot from '../friendSlot';
 
 export default class Friends extends React.PureComponent {
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
-        const friendsPerPage = 3;
+        const friendsPerPage = this.computeFriendsPerPage();
         const findingNewFriendsMax = 3;
 
         let findingNewFriendsCount = (findingNewFriendsMax - props.friends.length);
@@ -24,6 +24,22 @@ export default class Friends extends React.PureComponent {
         }
     }
 
+    componentWillMount() {
+        window.addEventListener('resize', this.resizeComponent);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.resizeComponent);
+    }
+
+    computeFriendsPerPage = () => {
+        return Math.floor(( window.innerWidth * 7) / 2500 );
+    }
+
+    resizeComponent = (e) => {
+        this.setState({ friendsPerPage: this.computeFriendsPerPage() })
+    }
+
     hasMoreThanOnePage = () => {
         return this.getLastPage() !== 1;
     }
@@ -33,11 +49,13 @@ export default class Friends extends React.PureComponent {
     }
 
     previous = () => {
-        this.setState({ currentPage: this.state.currentPage - 1 });
+        this.setState({ currentPage: this.state.currentPage - 1, 
+            slotIndex: undefined });
     }
 
     next = () => {
-        this.setState({ currentPage: this.state.currentPage + 1 });
+        this.setState({ currentPage: this.state.currentPage + 1, 
+            slotIndex: undefined });
     }
 
     toggleSlot = (newSlotIndex) => {
@@ -54,6 +72,7 @@ export default class Friends extends React.PureComponent {
         const _generateFriendsSlots = Array.from(this.props.friends, (d, i) =>
             <FriendSlot key={i} username={d} isOpen={this.state.slotIndex === i} toggleSlot={this.toggleSlot.bind(this, i)} />);
 
+            
         const { currentPage, friendsPerPage } = this.state;
         const datas = _generateFriendsSlots.concat(_generateFindingNewFriendSlots);
 

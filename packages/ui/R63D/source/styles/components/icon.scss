@@ -11,55 +11,55 @@
 
     $icons: (
         inventory: (
-            image: 'hotelview/toolbar/icons/inventory.png',
+            image: 'r63b/toolbar/icons/inventory.png',
             width: 44,
             height: 41
         ),
 
         catalog: (
-            image: 'hotelview/toolbar/icons/catalog.png',
+            image: 'r63b/toolbar/icons/catalog.png',
             width: 37,
             height: 37
         ),
 
         buildersclub: (
-            image: 'hotelview/toolbar/icons/buildersclub.png',
+            image: 'r63b/toolbar/icons/buildersclub.png',
             width: 32,
             height: 33
         ),
 
         rooms: (
-            image: 'hotelview/toolbar/icons/rooms.png',
+            image: 'r63b/toolbar/icons/rooms.png',
             width: 44,
             height: 30
         ),
 
         house: (
-            image: 'hotelview/toolbar/icons/house.png',
+            image: 'r63b/toolbar/icons/house.png',
             width: 32,
             height: 30
         ),
 
         friendall: (
-            image: 'hotelview/toolbar/icons/friend_all.png',
+            image: 'r63b/toolbar/icons/friend_all.png',
             width: 32,
             height: 33
         ),
 
         friendsearch: (
-            image: 'hotelview/toolbar/icons/friend_search.png',
+            image: 'r63b/toolbar/icons/friend_search.png',
             width: 29,
             height: 33
         ),
 
         sendmessage: (
-            image: 'hotelview/toolbar/icons/sendmessage.png',
+            image: 'r63b/toolbar/icons/sendmessage.png',
             width: 20,
             height: 21
         ),
 
         profile: (
-            image: 'hotelview/toolbar/icons/profile.png',
+            image: 'r63b/toolbar/icons/profile.png',
             width: 21,
             height: 21,
 
@@ -75,13 +75,13 @@
         ),
 
         joinroom: (
-            image: 'hotelview/toolbar/icons/joinroom.png',
+            image: 'r63b/toolbar/icons/joinroom.png',
             width: 21,
             height: 21
         ),
 
         habbo: (
-            image: 'hotelview/toolbar/icons/habbo.png',
+            image: 'r63b/toolbar/icons/habbo.png',
             width: 28,
             height: 28,
             
@@ -93,7 +93,7 @@
         ),
 
         camera: (
-            image: 'hotelview/toolbar/icons/camera.png',
+            image: 'r63b/toolbar/icons/camera.png',
             width: 38,
             height: 45
         ),
@@ -220,26 +220,42 @@
             small: (
                 image: 'icons/small_messages.png',
                 height: 20,
-                width: 17
+                width: 17,
+
+                hover: (
+                    image: 'icons/small_messages_glow.png'
+                )
             )
         ),
 
         gear-detailed: (
             image: 'icons/gear_detailed.png',
             width: 21,
-            height: 21
+            height: 21,
+
+            hover: (
+                image: 'icons/gear_detailed_glow.png'
+            )
         ),
 
         zoom: (
             image: 'icons/zoom.png',
             width: 13,
-            height: 21
+            height: 21,
+
+            hover: (
+                image: 'icons/zoom_glow.png'
+            )
         ),
 
         arrow-right: (
             image: 'icons/arrow_right.png',
             width: 16,
-            height: 13
+            height: 13,
+
+            hover: (
+                image: 'icons/arrow_right_glow.png'
+            )
         ),
 
         close: (
@@ -272,7 +288,62 @@
             width: 5,
             height: 10,
             rotate: 90,
-        )
+        ),
+
+        carret-up: (
+            image: 'icons/carret_right.svg',
+            width: 5,
+            height: 10,
+            rotate: -90
+        ),
+
+        checkbox-check: (
+            image: 'icons/checkbox_check.png',
+            width: 14,
+            height: 12
+        ),
+
+        checkbox: (
+            image: 'icons/checkbox.png',
+            width: 12,
+            height: 12
+        ),
+
+        sign-heart: (
+            image: 'icons/sign-heart.png',
+            width: 15,
+            height: 13
+        ),
+
+        sign-skull: (
+            image: 'icons/sign-skull.png',
+            width: 12,
+            height: 12
+        ),
+
+        sign-exclamation: (
+            image: 'icons/sign-exclamation.png',
+            width: 7,
+            height: 17
+        ),
+
+        sign-football: (
+            image: 'icons/sign-football.png',
+            width: 20,
+            height: 20
+        ),
+
+        sign-yellowcard: (
+            image: 'icons/sign-yellowcard.png',
+            width: 11,
+            height: 19
+        ),
+
+        sign-redcard: (
+            image: 'icons/sign-redcard.png',
+            width: 11,
+            height: 19
+        ),
     );
 
     @each $iconName, $iconData in $icons {
@@ -339,11 +410,11 @@
     &.icon-message{
         
         &.is-unsee::before{
-            background-image: url('/hotelview/toolbar/icons/message_unsee.gif')
+            background-image: url('/r63b/toolbar/icons/message_unsee.gif')
         }
 
 		&:before{
-			background-image: url('/hotelview/toolbar/icons/message.png');
+			background-image: url('/r63b/toolbar/icons/message.png');
 			width: 26px;
             height: 31px;
         }

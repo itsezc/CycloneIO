@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     @include userdrag(none);
-    user-select: none;
+    @include userselect(none);
 }
 
 #app{

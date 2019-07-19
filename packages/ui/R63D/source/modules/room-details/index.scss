@@ -3,65 +3,68 @@
     bottom: 60px;
     z-index: 5;
     height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 
     &.is-open{
 
-        .room-details-informations {
-            left: 180px;
-        }
-
         .room-details-actions{
-            display: flex;
+            width: 160px;
+            padding-left: 24px;
+            margin-left: -10px;
         }
     }
 
     .room-details-actions{
         background-color: transparentize(#2e2e2c, .6);
-        position: absolute;
-        top: 0;
-        bottom: 0;
+        height: 100%;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
         overflow: hidden;
         flex-direction: column;
         justify-content: space-evenly;
-        display: none;
-        left: 6px;
-        padding: 0 20px;
-        width: 160px;
-
+        width: 0;
+        display: flex;
+        overflow: hidden;
+        transition: all .2s;
+        
         a{
             display: flex;
             flex-direction: row;
             align-items: center;
             white-space: nowrap;
+            text-decoration: underline;
             color: #999998;
             font-size: 11px;
 
-            .icon {
-                width: 25px;
-                justify-content: center;
+            &:before {
+                width: 20px!important;
+                background-repeat: no-repeat;
                 margin-right: 10px;
             }
         }
     }
 
     .room-details-informations {
-        position: absolute;
-        bottom: 0;
-        left: 28px;
+        margin-left: 14px;
         background-color: transparentize(#2e2e2c, .6);
         height: 70px;
         padding: 0 20px;
         white-space: nowrap;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         justify-content: center;
         border-radius: 8px;
-        display: none;
+        transform: translateX(-150px);
+        visibility: hidden;
+        opacity: 0;
+        transition: all .2s;
 
         &.is-open{
-            display: flex;
+            transform: translateX(0);
+            visibility: visible;
+            opacity: 1;
         }
 
         small {

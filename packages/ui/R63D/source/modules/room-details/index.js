@@ -11,7 +11,7 @@ export default class RoomDetails extends React.PureComponent {
         }
     }
 
-    componentWillMount = () => {
+    componentDidMount = () => {
         this.startTimerCloseInformations();
     }
 
@@ -38,10 +38,10 @@ export default class RoomDetails extends React.PureComponent {
                 <i className={"more"  + (!this.state.isOpen ? " is-close" : '')} onClick={this.toggleOpen}></i>
 
                 <div className="room-details-actions">
-                    <a href="#"><i className="icon icon-gear-detailed"></i>Settings</a>
-                    <a href="#"><i className="icon icon-zoom"></i>Zoom</a>
-                    <a href="#"><i className="icon icon-small icon-messages"></i>Chat history</a>
-                    <a href="#"><i className="icon icon-arrow-right"></i>Link to this room</a>
+                    <a href="#" className="icon icon-gear-detailed">Settings</a>
+                    <a href="#" className="icon icon-zoom">Zoom</a>
+                    <a href="#" className="icon icon-small icon-messages">Chat history</a>
+                    <a href="#" className="icon icon-arrow-right">Link to this room</a>
 
                     <div className="room-details-history">
                         <span className="history-btn history-previous"></span>

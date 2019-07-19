@@ -3,7 +3,12 @@ import React from 'react';
 import ChatBubble from '../../modules/chat-bubble';
 import ChatBox from '../../modules/chat-box';
 import RoomDetails from '../../modules/room-details';
-import ClickActions from '../../modules/click-actions';
+
+import UserActionsOwn from '../../modules/click-actions/user-own';
+import UserActions from '../../modules/click-actions/user';
+
+import PetActionsOwn from '../../modules/click-actions/pet-own';
+import PetActions from '../../modules/click-actions/pet';
 
 import FurnitureInfo from '../../modules/click-infos/furniture';
 
@@ -32,8 +37,17 @@ export default class Room extends React.Component {
                     </ScrollBar>
                 </div>
 
+                <UserActions title="Mya" style={{top: 400, left: 200}} />
+                <UserActionsOwn title="Chiru" style={{top: 400, left: 400}}/>
+
+                <PetActions title="BillieEilish" style={{top: 400, left: 600}} />
+                <PetActionsOwn title="Dog" style={{top: 400, left: 800}} />
+
+                <PetActions title="Horse" isRidable={true} style={{top: 400, left: 1000}} />
+                <PetActionsOwn title="HorseOwn" isRidable={true} style={{top: 400, left: 1200}} />
+
+
                 <div style={{backgroundColor: 'blue', padding: 32, position: 'fixed', top: '0%', left: '45%'}}>
-                    <ClickActions />
 
                     <div style={{height: 64}}></div>
 
