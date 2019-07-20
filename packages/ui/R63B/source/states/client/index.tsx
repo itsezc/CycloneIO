@@ -145,7 +145,7 @@ export default class Client extends Component<any, ClientState>
 
 						{/* <Moderation />*/}
 
-						{/* <Inventory /> */}
+						<Inventory />
 
 						<ApolloProvider client={this.Database}>
 							{/* <Navigator /> */}

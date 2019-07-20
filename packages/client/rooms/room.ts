@@ -26,9 +26,9 @@ import TileGenerator from '../generators/tile'
 // import FPSMeter from 'fpsmeter'
 import Tile from '../generators/tile';
 
-type RoomPlayers = {
-    id: string;
-    avatarData: string;
+type PlayerInfo = {
+    socketId: string;
+    avatarData: any;
     avatar?: RoomAvatar;
 }
 
@@ -69,8 +69,8 @@ export default class Room extends Phaser.Scene {
 
     private currentFPS: Number
 
-    public players: RoomPlayers[]
-    public playerQueue: RoomPlayers[]
+    public players: PlayerInfo[]
+    public playerQueue: PlayerInfo[]
 
     public moodlightPreview: any
 
@@ -485,15 +485,22 @@ export default class Room extends Phaser.Scene {
 
     }
 
-    public addPlayer(id: string/*, roomAvatar: RoomAvatar*/){
-
-        let newPlayer: RoomPlayers = {
-            id,
-            avatarData: ''
+    public removePlayer(socketId: string): void {
+        let playerInfo: PlayerInfo = this.players.find(player => player.socketId === socketId)
+        if(playerInfo){
+            let index = this.players.indexOf(playerInfo)
+            this.players.splice(index, 1)
+            playerInfo.avatar.destroy()
         }
+    }
 
-        this.playerQueue.push(newPlayer)        
+    public addPlayer(playerInfo: PlayerInfo): void{
+        this.playerQueue.push(playerInfo)        
 
+    }
+
+    public addPlayers(players: PlayerInfo[]): void{
+       players.forEach(player => this.playerQueue.push(player))
     }
 
     private orderFurnituresByType(furnitures: FurnitureData.IFurniture[]): FurnitureData.IFurniture[] {
@@ -555,12 +562,9 @@ export default class Room extends Phaser.Scene {
     public update(time: number, delta: number): void {
 
         if(this.assetsLoaded){
-            this.playerQueue.forEach((roomPlayer: RoomPlayers, index: number) => {
+            this.playerQueue.forEach((playerInfo: PlayerInfo, index: number) => {
 
-                let randomX = Math.floor(Math.random() * 5);
-                let randomY = Math.floor(Math.random() * 5);
-
-                let newPlayer = new RoomAvatar(this, 0, 0, 0, 1);
+                let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1);
                 newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z + 2)
 
                 let tmpX = newPlayer.RenderPos.x
@@ -569,17 +573,17 @@ export default class Room extends Phaser.Scene {
                 newPlayer.x = tmpX
                 newPlayer.y = tmpY
 
-                roomPlayer.avatar = newPlayer
+                playerInfo.avatar = newPlayer
 
-                this.players.push(roomPlayer)
-                this.add.existing(newPlayer)
-                this.playerQueue.splice(index, 1)
+                this.players.push(playerInfo)
+                this.add.existing(playerInfo.avatar)
+                this.playerQueue.splice(index, 1) 
     
             })
         }
 
 
-        this.players.forEach((roomPlayer: RoomPlayers) => {
+        this.players.forEach((roomPlayer: PlayerInfo) => {
             roomPlayer.avatar.update(delta)
         })
     

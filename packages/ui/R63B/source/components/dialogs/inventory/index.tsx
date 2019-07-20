@@ -47,13 +47,13 @@ export default class Inventory extends Component<InventoryProps, InventoryState>
 						<div className='content'>
 							<Tabs>
 								<TabList className='tabs'>
-									<Tab className='tab'>Furniture</Tab>
+									<Tab className='tab active'>Furniture</Tab>
 									<Tab className='tab'>Rentables</Tab>
 									<Tab className='tab'>Pets</Tab>
 									<Tab className='tab'>Achieved badges</Tab>
 									<Tab className='tab'>Bots</Tab>
 								</TabList>
-								<TabPanel>
+								<TabPanel className='inner'>
 									Test
 								</TabPanel>
 								<TabPanel>

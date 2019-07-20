@@ -81,7 +81,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
         this.colorId = Math.floor(Math.random() * (16777215 - 1)) + 1
 
-        this.isMoving = true
+        this.isMoving = false
 
 		this.loadGenerics()
     }
@@ -285,7 +285,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     updateAvatarView() {
         let action = ['std'];
         let gesture = "std";
-        let bodyFrame = 1;
+        let bodyFrame = 0;
         let headFrame = 0;
 
         if (this.isMoving) {

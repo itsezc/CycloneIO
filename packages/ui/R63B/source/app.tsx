@@ -33,7 +33,7 @@ class App extends Component<any, any> {
 
         this.Socket.emit('joinRoom', 'cjy84p6y600lr07320ly34wwf')
     }
-    
+
     render() {
         return (
             <BrowserRouter>
