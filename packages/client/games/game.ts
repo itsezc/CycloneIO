@@ -10,13 +10,16 @@ export class Engine {
     
     public readonly game: Phaser.Game
     public readonly avatarImager: Imager
+    private readonly socket: SocketIO.Socket
     private currentRoom: Room
 
-    constructor(parent: string) {
+    constructor(parent: string, socket: SocketIO.Socket) {
 
         if(!document.getElementById(parent)) {
             throw `${parent} is not an element.`
         }
+
+        this.socket = socket
         
         this.avatarImager = new Imager(this)
 
@@ -43,6 +46,14 @@ export class Engine {
         }
 
         this.game = new Phaser.Game(this.config)
+
+        this.socket.on('setRoom', (data: any) => {
+            this.gotoRoom(data)
+        })
+
+        this.socket.on('playerJoined', (data: any) => {
+			this.joinPlayer(data)
+		})
 
     }
 

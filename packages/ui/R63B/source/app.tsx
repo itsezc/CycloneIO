@@ -32,18 +32,8 @@ class App extends Component<any, any> {
         })
 
         this.Socket.emit('joinRoom', 'cjy84p6y600lr07320ly34wwf')
-        this.setSocketEvents()
     }
-
-    private setSocketEvents(): void {
-        this.Socket.on('setRoom', (data: any) => {
-
-            this.setState({
-                roomData: data
-            })
-        })
-    }
-
+    
     render() {
         return (
             <BrowserRouter>
@@ -52,7 +42,7 @@ class App extends Component<any, any> {
                     <Route 
                         exact 
                         path='/inroom'
-                        render={(props) => <Room {...props} socket={this.Socket} roomData={this.state.roomData} />}
+                        render={(props) => <Room {...props} socket={this.Socket}/>}
                         />
                     <Route exact path='/client' component={Client} />
                     <Route exact path='/gamecenter' component={Games} />

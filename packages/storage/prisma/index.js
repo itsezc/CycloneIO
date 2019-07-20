@@ -97,6 +97,14 @@ var models = [
     embedded: false
   },
   {
+    name: "HabboBadges",
+    embedded: false
+  },
+  {
+    name: "HabboItems",
+    embedded: false
+  },
+  {
     name: "User",
     embedded: false
   }

@@ -68,7 +68,7 @@ namespace FurnitureData
 	export interface IRoom 
 	{
 		door: [number, number]
-		heightmap: Array<Array<number>>
+		heightmap: number[][]
 		furnitures: IFurniture[]
 	}
 
@@ -82,6 +82,7 @@ namespace FurnitureData
 		animation?: number
 		color?: number
 		type?: IFurnitureType
+		depth?: number
 	}
 
 	export enum IFurnitureType {

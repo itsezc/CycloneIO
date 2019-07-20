@@ -1,5 +1,5 @@
-.alert
-	z-index 2
+.inventory
+	z-index 4
 	display: block
 	position: fixed
 	top: calc(50% - 120px)
@@ -16,41 +16,43 @@
 	font-size 12px
 	color black
 
-	.tab
-		display: inline
-		float: left
-		border-top-left-radius: 6px
-		border-top-right-radius: 6px
-		border: 1px solid #4D4C49
-		border-bottom: 0
-		font-weight: 300
-		font-size 1.005em
-		padding 10px 0 5px 0
-		max-height 32px
-		width 108px
-		text-align: center
-		background: #C3C2B9
-		cursor: pointer
-		outline none
+	.tabs
+		margin 2px 10px
 
-		&:hover
-			background: #F6F5F0
-			box-shadow inset -2px 0 0 0 #FFFFFF,
-						inset 0 2px 0 0 #FFFFFF,
-						inset 2px 0 0 0 #FFFFFF
-
-		.active
-			background: #ECEAE1
-			border 2px solid #000000
-			padding-bottom 6px
+		.tab
+			display: inline
+			float: left
+			border-top-left-radius: 6px
+			border-top-right-radius: 6px
+			border: 1px solid #4D4C49
 			border-bottom: 0
-			box-shadow inset -2px 0 0 0 #FFFFFF,
-						inset 0 2px 0 0 #FFFFFF,
-						inset 2px 0 0 0 #FFFFFF
+			font-weight: 300
+			font-size 1.005em
+			padding 10px 10px 5px 10px
+			max-height 32px
+			text-align: center
+			background: #C3C2B9
+			cursor: pointer
+			outline none
 
 			&:hover
-				background: inherit
+				background: #F6F5F0
+				box-shadow inset -2px 0 0 0 #FFFFFF,
+							inset 0 2px 0 0 #FFFFFF,
+							inset 2px 0 0 0 #FFFFFF
 
-			a
-				display block
-				text-align: center
+			.active
+				background: #ECEAE1
+				border 2px solid #000000
+				padding-bottom 6px
+				border-bottom: 0
+				box-shadow inset -2px 0 0 0 #FFFFFF,
+							inset 0 2px 0 0 #FFFFFF,
+							inset 2px 0 0 0 #FFFFFF
+
+				&:hover
+					background: inherit
+
+				a
+					display block
+					text-align: center

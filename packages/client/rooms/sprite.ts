@@ -23,7 +23,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
 
     constructor(
         scene: Room, 
-        heightmap: Array<Array<number>>,
+        heightmap: number[][],
         private readonly door: [number, number]
     )
     {
@@ -115,7 +115,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
                 }
 
                 else {
-                    floorSprite = this._scene.add.image(screenX, screenY - (tileData * 32), 'tile')
+                    floorSprite = this._scene.add.image(screenX, screenY - (tileData), 'tile')
                     floorSprite.setOrigin(0, 0)
                     floorSprite.setInteractive({ pixelPerfect: true })
                 }
@@ -263,7 +263,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container
 
         furnitureSprite.y -= this.getScreenZ(roomZ)
 
-        this.furnitureContainer.setDepth(3)
+        this.furnitureContainer.setDepth(roomX + roomY + roomZ /*3*/ )
         this.furnitureContainer.add(furnitureSprite)
 
         this._scene.add.existing(this.furnitureContainer)

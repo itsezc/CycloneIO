@@ -340,6 +340,19 @@ type Habbo @pgTable(name: "habbos")
     updatedAt: DateTime @updatedAt
 }
 
+type HabboBadges @pgTable(name: "habbos_badges") {
+    id: ID! @id
+    habbo: Habbo!
+    badge: String!
+}
+
+# Need to create a Items Table properly
+type HabboItems @pgTable(name: "habbos_items") {
+    id: ID! @id
+    habbo: Habbo!
+    item: String
+}
+
 type User @pgTable(name: "users")
 {
     id: ID! @id
@@ -350,3 +363,4 @@ type User @pgTable(name: "users")
     createdAt: DateTime @createdAt
     updatedAt: DateTime @updatedAt
 }
+

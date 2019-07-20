@@ -19,6 +19,7 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
 
     public x: number
     public y: number
+    
     public isMoving: boolean
     public destination: { x: number, y: number }
     public path: any
@@ -282,14 +283,14 @@ export default class RoomAvatar extends Phaser.GameObjects.Container {
     }
 
     updateAvatarView() {
-        let action = ["std"];
+        let action = ['std'];
         let gesture = "std";
-        let bodyFrame = 0;
+        let bodyFrame = 1;
         let headFrame = 0;
 
         if (this.isMoving) {
             action = ['wlk']
-            bodyFrame = 0//this.frameCount % 4
+            bodyFrame = 0 //this.frameCount % 4
         }
 
         //avatar_shadow

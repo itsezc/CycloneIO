@@ -17,13 +17,14 @@ import Inventory from '../../components/dialogs/inventory'
 
 import Poll from '../../components/poll'
 
+import ClickActions from '../../components/click-actions'
+
 import {Engine} from '../../../../../client/games/game'
 
 
 export default class Room extends Component<any, any> {
 
 	private engine: Engine
-	private roomData: any
 
 	constructor(props: any) {
 		super(props)
@@ -31,20 +32,7 @@ export default class Room extends Component<any, any> {
 
 	componentDidMount()
 	{
-		this.engine = new Engine('game')
-		this.props.socket.on('playerJoined', (data: any) => {
-			this.engine.joinPlayer(data)
-		})
-	}
-
-	componentWillReceiveProps(nextProps: any) {
-
-		if(!this.roomData || this.roomData.id !== nextProps.roomData.id){
-			this.roomData = nextProps.roomData
-			this.engine.gotoRoom(nextProps.roomData)
-		}
-
-		
+		this.engine = new Engine('game', this.props.socket)
 	}
 
 	render() {
@@ -57,7 +45,12 @@ export default class Room extends Component<any, any> {
 				<Moderation />
 				<Chatbox />
 
+				{/* <ClickActions
+					isOwn={true}
+				/> */}
+
 				{/* <Inventory /> */}
+				
 				
 				{/* <Catalog /> */}
 

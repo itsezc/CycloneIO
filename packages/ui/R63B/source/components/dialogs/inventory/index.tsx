@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Tab, Tabs, TabList } from 'react-tabs'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 
 import Dialog from '../../../helpers/dialog'
 
@@ -34,7 +34,7 @@ export default class Inventory extends Component<InventoryProps, InventoryState>
 		if(this.state.show) {
 			return (
 				<Dialog
-					id='alert'
+					id='inventory'
 					show={this.state.show}
 					title='Inventory'
 					closeable={false}
@@ -42,13 +42,32 @@ export default class Inventory extends Component<InventoryProps, InventoryState>
 					width={490}
 					height={342}
 					centered={true}
-					className='alert'
+					className='inventory'
 				>
 						<div className='content'>
 							<Tabs>
 								<TabList className='tabs'>
-									<Tab className='tab'>Test</Tab>
+									<Tab className='tab'>Furniture</Tab>
+									<Tab className='tab'>Rentables</Tab>
+									<Tab className='tab'>Pets</Tab>
+									<Tab className='tab'>Achieved badges</Tab>
+									<Tab className='tab'>Bots</Tab>
 								</TabList>
+								<TabPanel>
+									Test
+								</TabPanel>
+								<TabPanel>
+									Test
+								</TabPanel>
+								<TabPanel>
+									Test
+								</TabPanel>
+								<TabPanel>
+									Test
+								</TabPanel>
+								<TabPanel>
+									Test
+								</TabPanel>
 							</Tabs>
 						</div>
 				</Dialog>

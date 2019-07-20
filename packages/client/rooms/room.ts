@@ -114,9 +114,13 @@ export default class Room extends Phaser.Scene {
         this.load.image('door', 'room/door.png')
         this.load.image('door_floor', 'room/door_floor.png')
 
+        this.load.image('stairs_top_left', 'room/stairs_top_left.png')
+        this.load.image('stairs_top_right', 'room/stairs_top_right.png')
         this.load.image('stairs_left', 'room/stairs_left.png')
         this.load.image('stairs_right', 'room/stairs_right.png')
         this.load.image('stairs_bottom_right', 'room/stairs_bottom_right.png')
+        this.load.image('stairs_bottom_left', 'room/stairs_bottom_left.png')
+        this.load.image('stairs_center', 'room/stairs_center.png')
 
         this.load.image('avatar_shadow', 'avatar/shadow.png')
 
@@ -160,8 +164,19 @@ export default class Room extends Phaser.Scene {
 
         const room: FurnitureData.IRoom = {
             door: [0, 3],
-            heightmap: [
-                [0, 1]
+            heightmap: 
+            [
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 2, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 2, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
             ],
             furnitures: [
                 // {
@@ -170,13 +185,7 @@ export default class Room extends Phaser.Scene {
                 //     roomY: 0,
                 //     roomZ: 1
                 // },
-                {
-                    name: 'throne',
-                    roomX: 0,
-                    roomY: 4,
-                    roomZ: 0,
-                    direction: 2
-                },
+                /*
                 //{
                 //    name: 'diamond_dragon',
                 //    roomX: 2,
@@ -285,18 +294,47 @@ export default class Room extends Phaser.Scene {
                     roomZ: 0,
                     animation: 8
                 },
-                // {
-                //     name: 'exe_icecream',
-                //     roomX: 1,
-                //     roomY: 4,
-                //     roomZ: 0,
-                // },
+                */
+                {
+                    name: 'exe_icecream',
+                    roomX: 1,
+                    roomY: 4,
+                    roomZ: 0,
+                },
+                {
+                    name: 'edicehc',
+                    roomX: 1,
+                    roomY: 5,
+                    roomZ: 0,
+                    direction: 1
+                },
                 {
                     name: 'hrella_poster_1',
                     roomX: 6.25,
                     roomY: 0,
                     roomZ: 2.75,
                     type: FurnitureData.IFurnitureType.WALL
+                },
+                {
+                    name: 'throne',
+                    roomX: 0,
+                    roomY: 4,
+                    roomZ: 0,
+                    direction: 2
+                },
+                {
+                    name: 'edicehc',
+                    roomX: 4,
+                    roomY: 0,
+                    roomZ: 0,
+                    direction: 1
+                },
+                {
+                    name: 'edicehc',
+                    roomX: 2,
+                    roomY: 4,
+                    roomZ: 0,
+                    direction: 1
                 }
             ]
         }
@@ -309,54 +347,83 @@ export default class Room extends Phaser.Scene {
 
         room.furnitures = this.orderFurnituresByType(room.furnitures)
 
+        const furnituresSprites: FurnitureSprite[] = [];
+
+        const completedFurniPromises: Promise<void>[] = [];
+
         room.furnitures.forEach((furnitureRoomData) => {
-            if (!this.isValidCoordinateForFurniture(furnitureRoomData.roomX, furnitureRoomData.roomY, room.heightmap, furnitureRoomData.type)) {
-                console.warn('Invalid coordinates for furniture: ', furnitureRoomData.name)
 
-                return
-            }
+            completedFurniPromises.push(
+                new Promise((resolve, reject) => {
+                    if (!this.isValidCoordinateForFurniture(furnitureRoomData.roomX, furnitureRoomData.roomY, room.heightmap, furnitureRoomData.type)) {
+                        console.warn('Invalid coordinates for furniture: ', furnitureRoomData.name)
+        
+                        return
+                    }
+        
+                    if (furnitureRoomData.type === FurnitureData.IFurnitureType.WALL) {
+                        furnitureRoomData.direction = this.calculateWallDirection(furnitureRoomData.roomX, furnitureRoomData.roomY)
+                    }
+        
+                    this.load.setPath(Path.join('furniture', furnitureRoomData.name))
+        
+                    this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
+        
+                    this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
+        
+                    this.load.start()
+        
+                    this.load.once('complete', () => {
+                        //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
+                        //console.log(furnitureRoomData)
+        
+                        const furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
+        
+                        const furniture = new Furniture(this, furnitureData, furnitureRoomData.type)
+        
+                        const furnitureSprite = new FurnitureSprite(this, furniture)
+        
+                        if (furnitureRoomData.animation !== undefined) {
+                            console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
+                            furnitureSprite.animateAndStart(furnitureRoomData.animation)
+                        } else {
+                            furnitureSprite.start()
+                        }
+        
+                        if (furnitureRoomData.color) {
+                            furnitureSprite.setColor(furnitureData.color)
+                        }
+        
+                        furnitureSprite.setDirection(furnitureRoomData.direction || 0)
+        
+                        // x = 0, z = 0, y = 0
+                        // x = 10, z = 10, y = 0
+                        //furnitureSprite.depth = 1000 * furnitureRoomData.roomX - furnitureRoomData.roomZ + 1000 * furnitureRoomData.roomY + 1000
+                        furnitureSprite.depth = furnitureRoomData.roomX + furnitureRoomData.roomY + furnitureRoomData.roomZ
+                        
+                        furnitureSprite.roomX = furnitureRoomData.roomX
+                        furnitureSprite.roomZ = furnitureRoomData.roomZ
+                        furnitureSprite.roomY = furnitureRoomData.roomY
 
-            if (furnitureRoomData.type === FurnitureData.IFurnitureType.WALL) {
-                furnitureRoomData.direction = this.calculateWallDirection(furnitureRoomData.roomX, furnitureRoomData.roomY)
-            }
+                        furnituresSprites.push(furnitureSprite)
 
-            this.load.setPath(Path.join('furniture', furnitureRoomData.name))
+                        resolve();
+                    })
+        
+                    roomSprite.start()
+                })
+            )
+        })
 
-            this.load.atlas(furnitureRoomData.name, furnitureRoomData.name.concat('.png'), furnitureRoomData.name.concat('_spritesheet.json'))
-
-            this.load.json(furnitureRoomData.name.concat('_data'), furnitureRoomData.name.concat('.json'))
-
-            this.load.start()
-
-            this.load.once('complete', () => {
-                //console.log(furnitureRoomData.name, 'Direction [', furnitureRoomData.direction || 0, '] Animation [', furnitureRoomData.animation, ']')
-                //console.log(furnitureRoomData)
-
-                const furnitureData = this.cache.json.get(furnitureRoomData.name.concat('_data'))
-
-                const furniture = new Furniture(this, furnitureData, furnitureRoomData.type)
-
-                const furnitureSprite = new FurnitureSprite(this, furniture)
-
-                if (furnitureRoomData.animation !== undefined) {
-                    console.log('Animated Furni: ', furnitureRoomData.name, furnitureRoomData.animation)
-                    furnitureSprite.animateAndStart(furnitureRoomData.animation)
-                } else {
-                    furnitureSprite.start()
-                }
-
-                if (furnitureRoomData.color) {
-                    furnitureSprite.setColor(furnitureData.color)
-                }
-
-                furnitureSprite.setDirection(furnitureRoomData.direction || 0)
-
-                roomSprite.addFurnitureSprite(furnitureSprite, furnitureRoomData.roomX, furnitureRoomData.roomY, furnitureRoomData.roomZ)
+        Promise.all(completedFurniPromises).then(()=>{
+            const furnituresSorted = furnituresSprites.sort((a: FurnitureSprite,  b: FurnitureSprite) => {
+                return (a.depth >= b.depth ? 1 : -1)
             })
 
-            roomSprite.start()
+            furnituresSorted.forEach(furni => {
+                roomSprite.addFurnitureSprite(furni, furni.roomX, furni.roomY, furni.roomZ)
 
-            this.add.existing(roomSprite)
+            })
         })
 
         this._camera.setZoom(1)
@@ -395,7 +462,7 @@ export default class Room extends Phaser.Scene {
         // this.moodlightPreview.setDepth(10)
 
         // Zoom
-        // this.camera.setZoom(1.5) // Zoom out (0.5). For render issues disable antialiasing
+        this.camera.setZoom(1) // Zoom out (0.5). For render issues disable antialiasing
 
         // Room Background Color
         // this.camera.backgroundColor.setTo(0,255,255)
@@ -493,7 +560,8 @@ export default class Room extends Phaser.Scene {
                 let randomX = Math.floor(Math.random() * 5);
                 let randomY = Math.floor(Math.random() * 5);
 
-                let newPlayer = new RoomAvatar(this, randomX, randomY, 0, 1);
+                let newPlayer = new RoomAvatar(this, 0, 0, 0, 1);
+                newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z + 2)
 
                 let tmpX = newPlayer.RenderPos.x
                 let tmpY = newPlayer.RenderPos.y

@@ -54,6 +54,8 @@ export default class RotationAnimation {
 
         const lastAnimationFrame = this.animationFrames[this.animationFrames.length - 1]
 
+        // console.log('Last Animation', lastAnimationFrame)
+
         if (this.step > lastAnimationFrame.frameId) {
             this.stop()
 
@@ -61,6 +63,8 @@ export default class RotationAnimation {
         }
 
         const currentAnimationFrame = this.animationFrames.find(f => f.frameId === this.step)
+
+        // console.log('Current Animation', currentAnimationFrame)
 
         if (currentAnimationFrame != null) {
             if (currentAnimationFrame.effect) {
