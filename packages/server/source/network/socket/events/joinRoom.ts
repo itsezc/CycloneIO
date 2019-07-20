@@ -1,24 +1,50 @@
 import { prisma } from '../../../../../storage/prisma'
+import { RoomManager, RoomWithPlayers, PlayerInfo } from '../../../hotel/rooms/RoomManager' 
 
 export const joinRoom = async (socket: SocketIO.Socket, id: any, IO?: SocketIO.Server) => {
-    let room = await prisma.room({
-        id
-    })
+     
+    let manager: RoomManager = RoomManager.getInstance()
 
-    // console.log(IO)
+    let room: RoomWithPlayers = await manager.getRoom(id)
 
     if (room) {
+
+        let randomX = Math.floor(Math.random() * 5);
+        let randomY = Math.floor(Math.random() * 5);
+
         
-        // If the socket is in a room it should leave it
-        if(socket.room) {
-            socket.leave(socket.room)
+        let avatarData = {
+            x: randomX,
+            y: randomY,
+            z: 0
         }
 
-        socket.join(room.id)
+        let added = manager.addPlayer(
+            room, {
+                socketId: socket.id,
+                avatarData
+            }
+        )
 
-        socket.emit('setRoom', room)
+        if(added) {
+            // If the socket is in a room it should leave it
+            let currentRoom: string = socket.rooms[room.roomData.id]
+                    
+            if(currentRoom) {
+                socket.leave(currentRoom)
+            }
 
-        IO.to(room.id).emit('playerJoined', 'somePlayerData')
+            socket.currentRoom = room.roomData.id
+
+            socket.join(room.roomData.id)
+
+            socket.emit('setRoom', room)
+
+            IO.to(room.roomData.id).emit('playerJoined', {
+                socketId: socket.id,
+                avatarData
+            })
+        }
 
     }
 }

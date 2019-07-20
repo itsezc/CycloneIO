@@ -27,7 +27,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private animationRotation: RotationAnimation
 
     public depth: number
-    
+
     public roomX: number
     public roomY: number
     public roomZ: number

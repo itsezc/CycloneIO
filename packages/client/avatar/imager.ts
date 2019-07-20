@@ -121,7 +121,7 @@ export default class Imager {
         activeParts.swim = this.getActivePartSet("swim")
 
 
-        let drawParts = this.getDrawOrder("wlk"/*avatarInfo.drawOrder*/, avatarInfo.direction);
+        let drawParts = this.getDrawOrder(avatarInfo.drawOrder, avatarInfo.direction);
         if (drawParts == null) {
             drawParts = this.getDrawOrder("std", avatarInfo.direction);
         }
@@ -352,13 +352,13 @@ export default class Imager {
                                 }
 
                                 if (tempCtx != null) {
-                                    /*console.log(chunk.resource.src, img.toDataURL())
+                                    /*console.log(chunk.resource.src, img.toDataURL())*/
                                     
                                      
-                                    */if(chunk.resource.src.endsWith('hh_human_shirt_h_wlk_rs_1_2_2.png') && chunk.direction === 2) {
+/*                                     if(chunk.resource.src.endsWith('hh_human_shirt_h_wlk_rs_1_2_2.png') && chunk.direction === 2) {
                                         console.log(chunk)
                                         console.log(img.toDataURL())
-                                    }  
+                                    }   */
 
                                     tempCtx.drawImage(img, posX, posY);
                                 }
