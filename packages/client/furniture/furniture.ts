@@ -387,7 +387,7 @@ export default class Furniture
 		let newDirection = direction + 2
 
 		if (this.data.directions.find(d => d === newDirection / 2 * 90) == null) {
-			newDirection = 0
+			newDirection = this.data.directions[0] / 90 * 2
 		}
 		
 		return newDirection

@@ -24,9 +24,14 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
     private lastClick: number = 0
     private doubleClick: boolean = false
-
     private animationRotation: RotationAnimation
 
+    public depth: number
+
+    public roomX: number
+    public roomY: number
+    public roomZ: number
+    
     public constructor(scene: Room, furniture: Furniture) {
         super(scene)
 
@@ -233,7 +238,6 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     }
 
     private animateRotation() {
-        console.log('Rotating')
         this.animationRotation.start()
     }
 
@@ -264,6 +268,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
     private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
         sprite.on('rotate', (instance: Phaser.GameObjects.Sprite) => {
+            // console.log('Can be rotated', this.canBeRotated(instance))
             if(this.canBeRotated(instance) && !this.animationRotation.isRunning) {
                 this.animateRotation()
             }

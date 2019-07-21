@@ -10,13 +10,16 @@ export class Engine {
     
     public readonly game: Phaser.Game
     public readonly avatarImager: Imager
+    private readonly socket: SocketIO.Socket
     private currentRoom: Room
 
-    constructor(parent: string) {
+    constructor(parent: string, socket: SocketIO.Socket) {
 
         if(!document.getElementById(parent)) {
             throw `${parent} is not an element.`
         }
+
+        this.socket = socket
         
         this.avatarImager = new Imager(this)
 
@@ -44,19 +47,39 @@ export class Engine {
 
         this.game = new Phaser.Game(this.config)
 
+        this.socket.on('setRoom', (data: any) => {
+            console.log(data)
+            this.gotoRoom(data)
+        })
+
+        this.socket.on('playerJoined', (data: any) => {
+			this.joinPlayer(data)
+        })
+        
+        this.socket.on('playerLeft', (data: any) => {
+            this.removePlayer(data)
+        })
+
     }
 
-    public gotoRoom(roomData: any) {
+    public gotoRoom(roomWithPlayers: any) {
         // this.game.scene.remove(roomData.id)
 
-        this.currentRoom = new Room(roomData, this)        
+        
+        this.currentRoom = new Room(roomWithPlayers.roomData, this)        
 
-        this.game.scene.add(roomData.id, this.currentRoom, true)
-        this.game.scene.start(roomData.id)
+        this.game.scene.add(roomWithPlayers.roomData.id, this.currentRoom, true)
+        this.game.scene.start(roomWithPlayers.roomData.id)
+
+        this.currentRoom.addPlayers(roomWithPlayers.players)
     }
 
     public joinPlayer(playerData: any){
-        this.currentRoom.addPlayer('uwu')
+        this.currentRoom.addPlayer(playerData)
+    }
+
+    public removePlayer(socketId: string){
+        this.currentRoom.removePlayer(socketId)
     }
 
 }

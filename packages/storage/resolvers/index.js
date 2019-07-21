@@ -20,10 +20,6 @@ const resolvers = {
 		catalogFeatureds: (obj, args, { db }) => db.catalogFeatureds(args),
 
 		catalogPage: (parent, args, { db }, info) => db.catalogPage({ id: args. id }, info), 
-		// catalogPage(parent, args, context, info) {
-		// 	return find(catalogPages, { id: args.id })
-		// },
-		// catalogPages: (parent, args, { db }, info) => db.catalogPages(args),
 		catalogPages: (parent, args, { db }, info) => db.catalogPages(args),
 
 		language: (parent, args, { db }, info) => db.language({ id: args.id }),

@@ -22,7 +22,7 @@ export default class Imager {
         this.figuremap = {};
         this.figuredata = {};
         this.partsets = {};
-        this.draworder = {};
+        this.draworder = externalDrawOrder;
         this.animation = {};
     }
 
@@ -47,10 +47,10 @@ export default class Imager {
                 .then(data => {
                     this.partsets = data;
                 }),
-            this.fetchJsonAsync(LOCAL_RESOURCES + "draworder.json")
+/*             this.fetchJsonAsync(LOCAL_RESOURCES + "draworder.json")
                 .then(data => {
                     this.draworder = data;
-                }),
+                }), */
             this.fetchJsonAsync(LOCAL_RESOURCES + "animation.json")
                 .then(data => {
                     this.animation = data;
@@ -107,18 +107,19 @@ export default class Imager {
     }
 
     generateGeneric(avatarInfo: Avatar, isGhost: boolean): Promise<HTMLCanvasElement> {
-        const activeParts: any = {};
-        activeParts.rect = this.getActivePartSet(avatarInfo.isHeadOnly ? "head" : "figure");
-        activeParts.head = this.getActivePartSet("head");
-        activeParts.eye = this.getActivePartSet("eye");
-        activeParts.gesture = this.getActivePartSet("gesture");
-        activeParts.speak = this.getActivePartSet("speak");
-        activeParts.walk = this.getActivePartSet("walk");
-        activeParts.sit = this.getActivePartSet("sit");
-        activeParts.itemRight = this.getActivePartSet("itemRight");
-        activeParts.handRight = this.getActivePartSet("handRight");
-        activeParts.handLeft = this.getActivePartSet("handLeft");
-        activeParts.swim = this.getActivePartSet("swim");
+        const activeParts: any = {}
+        activeParts.rect = this.getActivePartSet(avatarInfo.isHeadOnly ? "head" : "figure")
+        activeParts.head = this.getActivePartSet("head")
+        activeParts.eye = this.getActivePartSet("eye")
+        activeParts.gesture = this.getActivePartSet("gesture")
+        activeParts.speak = this.getActivePartSet("speak")
+        activeParts.walk = this.getActivePartSet("walk")
+        activeParts.sit = this.getActivePartSet("sit")
+        activeParts.itemRight = this.getActivePartSet("itemRight")
+        activeParts.handRight = this.getActivePartSet("handRight")
+        activeParts.handLeft = this.getActivePartSet("handLeft")
+        activeParts.swim = this.getActivePartSet("swim")
+
 
         let drawParts = this.getDrawOrder(avatarInfo.drawOrder, avatarInfo.direction);
         if (drawParts == null) {
@@ -214,11 +215,22 @@ export default class Imager {
                         if (this.offsets[uniqueName] == null) {
                             this.offsets[uniqueName] = { 'promise': this.fetchOffsetAsync(uniqueName), 'data': {} };
                         }
-                        offsetsPromises.push(this.offsets[uniqueName].promise);
+                        offsetsPromises.push(this.offsets[uniqueName].promise)
 
-                        const color = drawablePart.colorable ? drawablePart.color : null;
-                        const drawPartChunk = this.getPartResource(uniqueName, drawAction, type, avatarInfo.isSmall, drawablePart["id"], drawDirection, avatarInfo.frame, color);
-                        chunks.push(drawPartChunk);
+                        // console.log(uniqueName)
+
+                        const color = drawablePart.colorable ? drawablePart.color : null
+
+                        const drawPartChunk = this.getPartResource(uniqueName, drawAction, type, avatarInfo.isSmall, drawablePart["id"], drawDirection, avatarInfo.frame, color)
+
+
+                        if (avatarInfo.action[0] === "wlk" && (avatarInfo.frame === 0 ) && type === "rs"){
+                            chunks.push(this.getPartResource("hh_human_shirt", "wlk", "rs", avatarInfo.isSmall, drawablePart["id"], drawDirection, 2, color))
+                        }
+
+
+                        chunks.push(drawPartChunk)
+                        
                     }
                 }
             }
@@ -240,9 +252,9 @@ export default class Imager {
                         //console.log("Found sprite: " + chunk.getResourceName());
                         chunksPromises.push(chunk.downloadAsync());
                     } else {
-                        let flippedType = this.partsets.partSet[chunk.type]['flipped-set-type'];
+                        let flippedType = this.partsets.partSet[chunk.type]['flipped-set-type']
                         if (flippedType !== "") {
-                            chunk.resType = flippedType;
+                            chunk.resType = flippedType
                         }
                         if (chunk.action === "std" && (this.offsets[chunk.lib].data == null || this.offsets[chunk.lib].data[chunk.getResourceName()] == null || this.offsets[chunk.lib].data[chunk.getResourceName()].flipped)) {
                             //console.log("Not found... " + chunk.getResourceName());
@@ -314,13 +326,40 @@ export default class Imager {
 
                                 let img: any = chunk.resource;
                                 if (chunk.color != null) {
-                                    img = this.tintSprite(img, chunk.color, (isGhost ? 170 : 255));
+                                    img = this.tintSprite(img, chunk.color, (isGhost ? 170 : 255))
+/* 
+                                    if(chunk.resource.src.endsWith('hh_human_shirt_h_wlk_rs_1_2_2.png')) {
+                                        console.log(chunk)
+                                        console.log(`color: ${chunk.color}`)
+                                    } */
+                                        
+                                        
+                                        //console.log(img.toDataURL())
                                 }
+                            
+                                /* if(chunk.resource.src.endsWith('hh_human_shirt_h_wlk_ls_1_2_0.png')) {
+                                    console.log(chunk.resource.src)
+                                }
+ */
+                                //https://images.bobba.io/resource/hh_human_shirt/hh_human_shirt_h_wlk_ls_1_2_0.png
+                                
+                                //https://images.bobba.io/resource/hh_human_shirt/hh_human_shirt_h_wlk_rs_1_2_2.png 
+                                ////88///===>(asset exists in any URL BASE)
+                                
                                 if (chunk.isFlip) {
-                                    posX = -(posX + img.width - avatarInfo.rectWidth + 1);
-                                    img = this.flipImage(img);
+                                    posX = -(posX + img.width - avatarInfo.rectWidth + 1)
+                                    img = this.flipImage(img)
                                 }
+
                                 if (tempCtx != null) {
+                                    /*console.log(chunk.resource.src, img.toDataURL())*/
+                                    
+                                     
+/*                                     if(chunk.resource.src.endsWith('hh_human_shirt_h_wlk_rs_1_2_2.png') && chunk.direction === 2) {
+                                        console.log(chunk)
+                                        console.log(img.toDataURL())
+                                    }   */
+
                                     tempCtx.drawImage(img, posX, posY);
                                 }
                             } else {
@@ -549,3 +588,860 @@ export default class Imager {
         return element;
     }
 }
+
+const externalDrawOrder = {
+    "std": [
+      [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "ri",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "rh",
+        "rs",
+        "rc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he"
+      ],
+      [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "ri",
+        "rh",
+        "rs",
+        "rc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he"
+      ],
+      [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "rh",
+        "rs",
+        "rc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri"
+      ],
+      [
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "rh",
+        "rs",
+        "rc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri"
+      ],
+      [
+        "rh",
+        "rs",
+        "rc",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "lh",
+        "ls",
+        "lc",
+        "li",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri"
+      ],
+      [
+        "rh",
+        "rs",
+        "rc",
+        "ri",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he"
+      ],
+      [
+        "rh",
+        "rs",
+        "rc",
+        "ri",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he"
+      ],
+      [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "ri",
+        "rh",
+        "rs",
+        "rc",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he"
+      ]
+    ],
+    "wlk": [
+        [
+          "li",
+          "lh",
+          "ls",
+          "lc",
+          "ri",
+          "bd",
+          "sh",
+          "lg",
+          "ch",
+          "cc",
+          "cp",
+          "wa",
+          "ca",
+          "rh",
+          "rs",
+          "rc",
+          "hd",
+          "fc",
+          "ey",
+          "hr",
+          "hrb",
+          "fa",
+          "ea",
+          "ha",
+          "he"
+        ],
+        [
+          "li",
+          "lh",
+          "ls",
+          "lc",
+          "bd",
+          "sh",
+          "lg",
+          "ch",
+          "cc",
+          "cp",
+          "wa",
+          "ca",
+          "ri",
+          "rh",
+          "rs",
+          "rc",
+          "hd",
+          "fc",
+          "ey",
+          "hr",
+          "hrb",
+          "fa",
+          "ea",
+          "ha",
+          "he"
+        ],
+        // Dir 2
+        [
+            "li",
+            "lh",
+            "ls",
+            "lc",
+            "bd",
+            "sh",
+            "lg",
+            "ch",
+            "cc",
+            "cp",
+            "wa",
+            "rh",
+            "rs",
+            "ca",
+            "rc",
+            "hd",
+            "fc",
+            "ey",
+            "hr",
+            "hrb",
+            "fa",
+            "ea",
+            "ha",
+            "he",
+            "ri",
+          ],
+        [
+          "bd",
+          "sh",
+          "lg",
+          "ch",
+          "cc",
+          "cp",
+          "wa",
+          "ca",
+          "li",
+          "lh",
+          "ls",
+          "lc",
+          "rh",
+          "rs",
+          "rc",
+          "hd",
+          "fc",
+          "ey",
+          "hr",
+          "hrb",
+          "fa",
+          "ea",
+          "ha",
+          "he",
+          "ri"
+        ],
+        [
+          "rh",
+          "rs",
+          "rc",
+          "bd",
+          "sh",
+          "lg",
+          "ch",
+          "cc",
+          "cp",
+          "wa",
+          "ca",
+          "lh",
+          "ls",
+          "lc",
+          "li",
+          "hd",
+          "fc",
+          "ey",
+          "hr",
+          "hrb",
+          "fa",
+          "ea",
+          "ha",
+          "he",
+          "ri"
+        ],
+        [
+          "rh",
+          "rs",
+          "rc",
+          "ri",
+          "bd",
+          "sh",
+          "lg",
+          "ch",
+          "cc",
+          "cp",
+          "wa",
+          "ca",
+          "li",
+          "lh",
+          "ls",
+          "lc",
+          "hd",
+          "fc",
+          "ey",
+          "hr",
+          "hrb",
+          "fa",
+          "ea",
+          "ha",
+          "he"
+        ],
+        [
+          "rh",
+          "rs",
+          "rc",
+          "ri",
+          "bd",
+          "sh",
+          "lg",
+          "ch",
+          "cc",
+          "cp",
+          "wa",
+          "ca",
+          "li",
+          "lh",
+          "ls",
+          "lc",
+          "hd",
+          "fc",
+          "ey",
+          "hr",
+          "hrb",
+          "fa",
+          "ea",
+          "ha",
+          "he"
+        ],
+        [
+          "li",
+          "lh",
+          "ls",
+          "lc",
+          "ri",
+          "rh",
+          "rs",
+          "rc",
+          "bd",
+          "sh",
+          "lg",
+          "ch",
+          "cc",
+          "cp",
+          "wa",
+          "ca",
+          "hd",
+          "fc",
+          "ey",
+          "hr",
+          "hrb",
+          "fa",
+          "ea",
+          "ha",
+          "he"
+        ]
+      ],
+    "lh-up": {
+      "4": [
+        "rh",
+        "rs",
+        "rc",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ri",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "lh",
+        "ls",
+        "lc",
+        "li"
+      ],
+      "5": [
+        "rh",
+        "rs",
+        "rc",
+        "ri",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "li",
+        "lh",
+        "ls",
+        "lc"
+      ],
+      "6": [
+        "rh",
+        "rs",
+        "rc",
+        "ri",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "li",
+        "lh",
+        "ls",
+        "lc"
+      ]
+    },
+    "rh-up": [
+      [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "ri",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "rh",
+        "rs",
+        "rc"
+      ],
+      [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "rh",
+        "rs",
+        "rc"
+      ],
+      [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "rh",
+        "rs",
+        "rc"
+      ],
+      [
+        "bd",
+        "sh",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "rh",
+        "rs",
+        "rc"
+      ]
+    ],
+    "sit": {
+      "2": [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "bd",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "rh",
+        "rs",
+        "rc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "sh"
+      ],
+      "3": [
+        "bd",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "rh",
+        "rs",
+        "rc",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "sh"
+      ],
+      "4": [
+        "rh",
+        "rs",
+        "rc",
+        "bd",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "lh",
+        "ls",
+        "lc",
+        "li",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "sh"
+      ]
+    },
+    "sit.lh-up": {
+      "4": [
+        "rh",
+        "rs",
+        "rc",
+        "bd",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ri",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "lh",
+        "ls",
+        "lc",
+        "li",
+        "sh"
+      ]
+    },
+    "sit.rh-up": {
+      "2": [
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "bd",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "rh",
+        "rs",
+        "rc",
+        "sh"
+      ],
+      "3": [
+        "bd",
+        "lg",
+        "ch",
+        "cc",
+        "cp",
+        "wa",
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "ca",
+        "hd",
+        "fc",
+        "ey",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he",
+        "ri",
+        "rh",
+        "rs",
+        "rc",
+        "sh"
+      ]
+    },
+    "lay": {
+      "2": [
+        "lh",
+        "ls",
+        "lc",
+        "li",
+        "bd",
+        "lg",
+        "sh",
+        "ch",
+        "cc",
+        "cp",
+        "hd",
+        "fc",
+        "ey",
+        "wa",
+        "ri",
+        "rh",
+        "rs",
+        "rc",
+        "ca",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he"
+      ],
+      "4": [
+        "rh",
+        "rs",
+        "rc",
+        "ri",
+        "bd",
+        "lg",
+        "sh",
+        "ch",
+        "cc",
+        "cp",
+        "hd",
+        "fc",
+        "ey",
+        "wa",
+        "li",
+        "lh",
+        "ls",
+        "lc",
+        "ca",
+        "hr",
+        "hrb",
+        "fa",
+        "ea",
+        "ha",
+        "he"
+      ]
+    }
+  }

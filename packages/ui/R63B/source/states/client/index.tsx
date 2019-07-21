@@ -15,6 +15,7 @@ import Poll from '../../components/poll'
 import Alert from '../../components/dialogs/alert'
 import Catalog from '../../components/dialogs/catalog'
 import Navigator from '../../components/dialogs/navigator'
+import Inventory from '../../components/dialogs/inventory'
 
 import Moderation from '../../components/dialogs/moderation'
 
@@ -143,6 +144,8 @@ export default class Client extends Component<any, ClientState>
 						/> */}
 
 						{/* <Moderation />*/}
+
+						<Inventory />
 
 						<ApolloProvider client={this.Database}>
 							{/* <Navigator /> */}

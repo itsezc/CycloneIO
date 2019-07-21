@@ -1,0 +1,14 @@
+{
+	"name": "@cyclone/importer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "babel-watch --watch source/ source/index.ts --extensions \".ts,.tsx\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+	}
+}
