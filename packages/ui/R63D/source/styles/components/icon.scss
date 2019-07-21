@@ -344,6 +344,16 @@
             width: 11,
             height: 19
         ),
+
+        like: (
+            image: 'icons/like.png',
+            width: 20,
+            height: 22,
+
+            hover: (
+                image: 'icons/like_glow.png'
+            )
+        )
     );
 
     @each $iconName, $iconData in $icons {

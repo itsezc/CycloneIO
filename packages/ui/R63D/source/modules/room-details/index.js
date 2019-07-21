@@ -40,7 +40,10 @@ export default class RoomDetails extends React.PureComponent {
                 <div className="room-details-actions">
                     <a href="#" className="icon icon-gear-detailed">Settings</a>
                     <a href="#" className="icon icon-zoom">Zoom</a>
-                    <a href="#" className="icon icon-small icon-messages">Chat history</a>
+                    <a href="#" className="icon icon-small icon-messages" onClick={this.props.toggleChatHistory}>Chat history</a>
+                    {this.props.isOwner &&
+                        <a href="#" className="icon icon-like">Like</a>
+                    }
                     <a href="#" className="icon icon-arrow-right">Link to this room</a>
 
                     <div className="room-details-history">

@@ -13,8 +13,21 @@ import PetActions from '../../modules/click-actions/pet';
 import FurnitureInfo from '../../modules/click-infos/furniture';
 
 import ScrollBar from '../../components/scrollbar';
+import ChatHistory from '../../modules/chat-history';
 
 export default class Room extends React.Component {
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            isChatHistoryOpen: false
+        }
+    }
+
+    toggleChatHistory = () => {
+        this.setState({ isChatHistoryOpen: !this.state.isChatHistoryOpen });
+    }
 
     render(){
         return (
@@ -37,17 +50,18 @@ export default class Room extends React.Component {
                     </ScrollBar>
                 </div>
 
-                <UserActions title="Mya" style={{top: 400, left: 200}} />
-                <UserActionsOwn title="Chiru" style={{top: 400, left: 400}}/>
+                {/*
+                    <UserActions title="Mya" style={{top: 400, left: 200}} />
+                    <UserActionsOwn title="Chiru" style={{top: 400, left: 400}}/>
 
-                <PetActions title="BillieEilish" style={{top: 400, left: 600}} />
-                <PetActionsOwn title="Dog" style={{top: 400, left: 800}} />
+                    <PetActions title="BillieEilish" style={{top: 400, left: 600}} />
+                    <PetActionsOwn title="Dog" style={{top: 400, left: 800}} />
 
-                <PetActions title="Horse" isRidable={true} style={{top: 400, left: 1000}} />
-                <PetActionsOwn title="HorseOwn" isRidable={true} style={{top: 400, left: 1200}} />
-
-
-                <div style={{backgroundColor: 'blue', padding: 32, position: 'fixed', top: '0%', left: '45%'}}>
+                    <PetActions title="Horse" isRidable={true} style={{top: 400, left: 1000}} />
+                    <PetActionsOwn title="HorseOwn" isRidable={true} style={{top: 400, left: 1200}} />
+                */}
+                
+                <div style={{display: 'none', backgroundColor: 'blue', padding: 32, position: 'fixed', top: '0%', left: '45%'}}>
 
                     <div style={{height: 64}}></div>
 
@@ -65,7 +79,11 @@ export default class Room extends React.Component {
                     <FurnitureInfo />
                 </div>
 
-                <RoomDetails />
+                {this.state.isChatHistoryOpen &&
+                    <ChatHistory close={this.toggleChatHistory} />
+                }
+                
+                <RoomDetails isOwner={true} toggleChatHistory={this.toggleChatHistory} />
 
             </section>
         )
