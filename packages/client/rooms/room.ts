@@ -708,6 +708,10 @@ export default class Room extends Phaser.Scene {
         return this._camera
     }
 
+    tileToLocal(x: number, y: number, z: number): Phaser.Geom.Point {
+        return new Phaser.Geom.Point((x - y) * 32, (x + y) * 16 - (z * 16 * 2))
+    }
+
     public convertOldToNewHeightMap(heightMap: string[]) {
         let newHeightMap: any = []
         heightMap.forEach((row: any) => newHeightMap.push(row.split('')))
