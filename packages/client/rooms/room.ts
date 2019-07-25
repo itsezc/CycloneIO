@@ -166,8 +166,17 @@ export default class Room extends Phaser.Scene {
             door: [0, 3],
             heightmap:
             [
-                [0, 1, 2],
-                [0, 1, 2]
+                [0, 0, 1, 2, 3, 0, 0, 1, 3],
+                [0, 0, 0, 0, 0],
+                [-1],
+                [0, 0],
+                [0, 1],
+                [1, 2, 3, 4, 5, 6],
+                [4, 3, 2, 1],
+                [-1],
+                [0, 0, 0],
+                [0, 1, 0],
+                [0, 0, 0]
             ],
             furnitures: [
                 // {
@@ -330,6 +339,8 @@ export default class Room extends Phaser.Scene {
             ]
         }
 
+        //this._camera.setZoom(4)
+
         //        this.add.image(0, 0, 'room_background').setDepth(2)
 
         var roomSprite = new RoomSprite(this, room.heightmap, room.door)
@@ -417,7 +428,7 @@ export default class Room extends Phaser.Scene {
             })
         })
 
-        this._camera.setZoom(1)
+        //this._camera.setZoom(4)
 
         // this._socket.emit('requestRoom', 0)
 

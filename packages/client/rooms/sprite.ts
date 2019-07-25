@@ -86,8 +86,8 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
         console.log(heightmap)
 
         for (let y = 0;y < heightmap.length;y++) {
-            // console.log(heightmap[y])
-            // console.log('next row ', heightmap[y - 1])
+            // console.log('next row -1 ', heightmap[y - 1])
+            // console.log('next row +1', heightmap[y + 1])
 
             for (let x = 0;x < heightmap[y].length;x++) {
                 const tileData = heightmap[y][x]
@@ -99,21 +99,58 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
 
                     //console.log(this.getRightTile(heightmap, y, x))
                     //console.log(this.isRightStair(tileData, heightmap, y, x))
+                    //console.log('bottom tile ', this.isTopStair(tileData, heightmap[y], x))
 
                     let floorSprite: Phaser.GameObjects.Image
-                    let stair: Phaser.GameObjects.Image
+                    let stairRight: Phaser.GameObjects.Image
+                    let stairTopRight: Phaser.GameObjects.Image
+                    let stairTopLeft: Phaser.GameObjects.Image
+                    let stairLeft: Phaser.GameObjects.Image
+                    let stairBottomLeft: Phaser.GameObjects.Image
+                    let stairCenter: Phaser.GameObjects.Image
+                    let stairBottomRight: Phaser.GameObjects.Image
 
                     if (this.isRightStair(tileData, heightmap, y, x)) {
-                        stair = this._scene.add.image(screenX, screenY - (tileData * 32) - 32, 'stairs_right')
-                        stair.setOrigin(0, 0)
-                        stair.setInteractive({ pixelPerfect: true })
+                        stairRight = this._scene.add.image(screenX, screenY - (tileData * 32) - 31, 'stairs_right')
+                        stairRight.setOrigin(0, 0)
+                        stairRight.setInteractive({ pixelPerfect: true })
                     }
 
-                    // if (this.isLeftStair(tileData, heightmap, y, x)) {
-                    //     stair = this._scene.add.image(screenX, screenY - (tileData * 32) - 32, 'stairs_left')
-                    //     stair.setOrigin(0, 0)
-                    //     stair.setInteractive({ pixelPerfect: true })
-                    // }
+                    else if (this.isLeftStair(tileData, heightmap, y, x)) {
+                        stairTopRight = this._scene.add.image(screenX + 24, screenY - (tileData * 32), 'stairs_top_right')
+                        stairTopRight.setOrigin(0, 0)
+                        stairTopRight.setInteractive({ pixelPerfect: true })
+                    }
+
+                    else if (this.isTopStair(tileData, heightmap[y], x)) {
+                        stairTopLeft = this._scene.add.image(screenX, screenY - (tileData * 32), 'stairs_top_left')
+                        stairTopLeft.setOrigin(0, 0)
+                        stairTopLeft.setInteractive({ pixelPerfect: true })
+                    }
+
+                    else if (this.isBottomStair(tileData, heightmap[y],x )) {
+                        stairLeft = this._scene.add.image(screenX - 1, screenY - (tileData * 32) - 31, 'stairs_left')
+                        stairLeft.setOrigin(0, 0)
+                        stairLeft.setInteractive({ pixelPerfect: true })
+                    }
+
+                    else if (this.isTopRightStair(tileData, heightmap, y, x)) {
+                        stairBottomLeft = this._scene.add.image(screenX, screenY - (tileData * 32) - 15, 'stairs_bottom_left')
+                        stairBottomLeft.setOrigin(0, 0)
+                        stairBottomLeft.setInteractive({ pixelPerfect: true })
+                    }
+
+                    else if (this.isTopLeftStair(tileData, heightmap, y, x)) {
+                        stairCenter = this._scene.add.image(screenX, screenY - (tileData * 32) - 32, 'stairs_center')
+                        stairCenter.setOrigin(0, 0)
+                        stairCenter.setInteractive({ pixelPerfect: true })
+                    }
+
+                    else if (this.isBottomLeftStair(tileData, heightmap, y, x)) {
+                        stairBottomRight = this._scene.add.image(screenX, screenY - (tileData * 32) - 15, 'stairs_bottom_right')
+                        stairBottomRight.setOrigin(0, 0)
+                        stairBottomRight.setInteractive({ pixelPerfect: true })
+                    }
 
                     else {
                         floorSprite = this._scene.add.image(screenX, screenY - (tileData * 32), 'tile')
@@ -151,18 +188,18 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
 
                     var floorSpriteHover: Phaser.GameObjects.Image
 
-                    if (floorSprite) {
+                    if (floorSprite !== undefined) {
                         floorSprite.on('pointerover', () => {
                             floorSpriteHover = this._scene.add.image(floorSprite.x, floorSprite.y - 3, 'tile_hover')
                             floorSpriteHover.setOrigin(0, 0)
                         })
 
-                        floorSprite.on('pointerdown', () => {
-                            var cartTileCoords = this._scene.isometricToCartesian({ x: floorSprite.x, y: floorSprite.y, z: 0 })
-                            var destination = this._scene.cartesianToCoords(cartTileCoords)
+                        // floorSprite.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: floorSprite.x, y: floorSprite.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
 
-                            // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
-                        })
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
 
                         floorSprite.on('pointerout', () => {
                             floorSpriteHover.destroy()
@@ -172,25 +209,146 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
 
                     }
 
-                    if (stair) {
+                    if (stairRight !== undefined) {
 
-                        stair.on('pointerover', () => {
-                            floorSpriteHover = this._scene.add.image(stair.x, stair.y - 3 + 32, 'tile_hover')
+                        stairRight.on('pointerover', () => {
+                            floorSpriteHover = this._scene.add.image(stairRight.x, stairRight.y - 3 + 32, 'tile_hover')
                             floorSpriteHover.setOrigin(0, 0)
                         })
 
-                        stair.on('pointerdown', () => {
-                            var cartTileCoords = this._scene.isometricToCartesian({ x: stair.x, y: stair.y, z: 0 })
-                            var destination = this._scene.cartesianToCoords(cartTileCoords)
+                        // stairRight.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: stairRight.x, y: stairRight.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
 
-                            // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
-                        })
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
 
-                        stair.on('pointerout', () => {
+                        stairRight.on('pointerout', () => {
                             floorSpriteHover.destroy()
                         })
 
-                        container.add(stair)
+                        container.add(stairRight)
+                    }
+
+                    if (stairTopRight !== undefined) {
+
+                        stairTopRight.on('pointerover', () => {
+                            floorSpriteHover = this._scene.add.image(stairTopRight.x, stairTopRight.y - 3 + 32, 'tile_hover')
+                            floorSpriteHover.setOrigin(0, 0)
+                        })
+
+                        // stairRight.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: stairRight.x, y: stairRight.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
+
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
+
+                        stairTopRight.on('pointerout', () => {
+                            floorSpriteHover.destroy()
+                        })
+
+                        container.add(stairTopRight)
+                    }
+
+                    if (stairTopLeft !== undefined) {
+                        stairTopLeft.on('pointerover', () => {
+                            floorSpriteHover = this._scene.add.image(stairTopLeft.x, stairTopLeft.y - 3, 'tile_hover')
+                            floorSpriteHover.setOrigin(0, 0)
+                        })
+
+                        // stairRight.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: stairRight.x, y: stairRight.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
+
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
+
+                        stairTopLeft.on('pointerout', () => {
+                            floorSpriteHover.destroy()
+                        })
+
+                        container.add(stairTopLeft)
+                    }
+
+                    if (stairLeft !== undefined) {
+                        stairLeft.on('pointerover', () => {
+                            floorSpriteHover = this._scene.add.image(stairLeft.x, stairLeft.y - 3 + 32, 'tile_hover')
+                            floorSpriteHover.setOrigin(0, 0)
+                        })
+
+                        // stairRight.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: stairRight.x, y: stairRight.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
+
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
+
+                        stairLeft.on('pointerout', () => {
+                            floorSpriteHover.destroy()
+                        })
+
+                        container.add(stairLeft)
+                    }
+
+                    if (stairBottomLeft !== undefined) {
+                        stairBottomLeft.on('pointerover', () => {
+                            floorSpriteHover = this._scene.add.image(stairBottomLeft.x, stairBottomLeft.y - 3 + 32, 'tile_hover')
+                            floorSpriteHover.setOrigin(0, 0)
+                        })
+
+                        // stairRight.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: stairRight.x, y: stairRight.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
+
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
+
+                        stairBottomLeft.on('pointerout', () => {
+                            floorSpriteHover.destroy()
+                        })
+
+                        container.add(stairBottomLeft)
+                    }
+
+                    if (stairCenter !== undefined) {
+                        stairCenter.on('pointerover', () => {
+                            floorSpriteHover = this._scene.add.image(stairCenter.x, stairCenter.y - 3 + 32, 'tile_hover')
+                            floorSpriteHover.setOrigin(0, 0)
+                        })
+
+                        // stairRight.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: stairRight.x, y: stairRight.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
+
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
+
+                        stairCenter.on('pointerout', () => {
+                            floorSpriteHover.destroy()
+                        })
+
+                        container.add(stairCenter)
+                    }
+
+                    if (stairBottomRight !== undefined) {
+                        stairBottomRight.on('pointerover', () => {
+                            floorSpriteHover = this._scene.add.image(stairBottomRight.x, stairBottomRight.y - 3 + 16, 'tile_hover')
+                            floorSpriteHover.setOrigin(0, 0)
+                        })
+
+                        // stairRight.on('pointerdown', () => {
+                        //     var cartTileCoords = this._scene.isometricToCartesian({ x: stairRight.x, y: stairRight.y, z: 0 })
+                        //     var destination = this._scene.cartesianToCoords(cartTileCoords)
+
+                        //     // this._scene.socket.emit('movePlayer', { x: destination.x, y: destination.y })
+                        // })
+
+                        stairBottomRight.on('pointerout', () => {
+                            floorSpriteHover.destroy()
+                        })
+
+                        container.add(stairBottomRight)
                     }
 
 
@@ -200,35 +358,106 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
 
     }
 
-    private isRightStair(currentTile: number, heightmap: number[][], currentTileRow: number, currentTileIndex: number): boolean {
-        var rightTile = this.getRightTile(heightmap, currentTileRow, currentTileIndex)
+    private isRightStair(currentTile: number, heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): boolean {
+        var rightTile = this.getRightTile(heightmap, currentTileRowNumber, currentTileIndex)
         var deltaTile = rightTile - currentTile
 
         return deltaTile === 1
     }
 
-    private getRightTile(heightmap: number[][], currentTileRow: number, currentTileIndex: number): number {
-        var rightTileRow = currentTileRow - 1
+    private getRightTile(heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): number {
+        var rightTileRow = currentTileRowNumber - 1
 
-        if (rightTileRow !== -1) {
+        if (heightmap[rightTileRow] !== undefined) {
             return heightmap[rightTileRow][currentTileIndex]
         }
     }
 
-    // private isLeftStair(currentTile: number, heightmap: number[][], currentTileRow: number, currentTileIndex: number): boolean {
-    //     var leftTile = this.getLeftTile(heightmap, currentTileRow, currentTileIndex)
-    //     var deltaTile = leftTile - currentTile
+    private isLeftStair(currentTile: number, heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): boolean {
+        var leftTile = this.getLeftTile(heightmap, currentTileRowNumber, currentTileIndex)
+        var deltaTile = leftTile - currentTile
 
-    //     return deltaTile === 1
-    // }
+        return deltaTile === 1
+    }
 
-    // private getLeftTile(heightmap: number[][], currentTileRow: number, currentTileIndex: number): number {
-    //     var leftTileRow = currentTileRow + 1
+    private getLeftTile(heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): number {
+        var leftTileRow = currentTileRowNumber + 1
 
-    //     if (leftTileRow !== -1) {
-    //         return heightmap[leftTileRow][currentTileIndex]
-    //     }
-    // }
+        if (heightmap[leftTileRow] !== undefined) {
+            return heightmap[leftTileRow][currentTileIndex]
+        }
+    }
+
+    private isTopStair(currentTile: number, currentTileRow: number[], currentTileIndex: number): boolean {
+        var topTile = this.getTopTile(currentTileRow, currentTileIndex)
+        var deltaTile = topTile - currentTile
+
+        return deltaTile === 1
+    }
+
+    private getTopTile(currentTileRow: number[], currentTileIndex: number): number {
+        if (currentTileRow !== undefined) {
+            return currentTileRow[currentTileIndex + 1]
+        }
+    }
+
+    private getBottomTile(currentTileRow: number[], currentTileIndex: number): number {
+        if (currentTileRow !== undefined) {
+            return currentTileRow[currentTileIndex - 1]
+        }
+    }
+
+    private isBottomStair(currentTile: number, currentTileRow: number[], currentTileIndex: number): boolean {
+        var bottomTile = this.getBottomTile(currentTileRow, currentTileIndex)
+        var deltaTile = bottomTile - currentTile
+
+        return deltaTile === 1
+    }
+
+    private getTopRightTile(heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): number {
+        var topRow = currentTileRowNumber - 1
+
+        if (heightmap[topRow] !== undefined) {
+            return heightmap[topRow][currentTileIndex + 1]
+        }
+    }
+
+    private isTopRightStair(currentTile: number, heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): boolean {
+        var topRightTile = this.getTopRightTile(heightmap, currentTileRowNumber, currentTileIndex)
+        var deltaTile = topRightTile - currentTile
+
+        return deltaTile === 1
+    }
+
+    private getTopLeftTile(heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): number {
+        var topRow = currentTileRowNumber - 1
+
+        if (heightmap[topRow] !== undefined) {
+            return heightmap[topRow][currentTileIndex - 1]
+        }
+    }
+
+    private isTopLeftStair(currentTile: number, heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): boolean {
+        var topLeftTile = this.getTopLeftTile(heightmap, currentTileRowNumber, currentTileIndex)
+        var deltaTile = topLeftTile - currentTile
+
+        return deltaTile === 1
+    }
+
+    private getBottomLeftTile(heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): number {
+        var topRow = currentTileRowNumber + 1
+
+        if (heightmap[topRow] !== undefined) {
+            return heightmap[topRow][currentTileIndex - 1]
+        }
+    }
+
+    private isBottomLeftStair(currentTile: number, heightmap: number[][], currentTileRowNumber: number, currentTileIndex: number): boolean {
+        var bottomLeftTile = this.getBottomLeftTile(heightmap, currentTileRowNumber, currentTileIndex)
+        var deltaTile = bottomLeftTile - currentTile
+
+        return deltaTile === 1
+    }
 
     private getScreenX(x: number, y: number): number {
         return x * RoomSprite.tileWidth - y * RoomSprite.tileWidth
