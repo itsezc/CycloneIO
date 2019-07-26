@@ -13,8 +13,8 @@ export const joinRoom = async (socket: SocketIO.Socket, id: any, IO?: SocketIO.S
         let randomY = Math.floor(Math.random() * 5);
 
         let avatarData = {
-            x: randomX,
-            y: randomY,
+            x: 0,
+            y: 0,
             z: 0
         }
 

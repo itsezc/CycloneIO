@@ -166,17 +166,10 @@ export default class Room extends Phaser.Scene {
             door: [0, 3],
             heightmap:
             [
-                [0, 0, 1, 2, 3, 0, 0, 1, 3],
                 [0, 0, 0, 0, 0],
-                [-1],
-                [0, 0],
-                [0, 1],
-                [1, 2, 3, 4, 5, 6],
-                [4, 3, 2, 1],
-                [-1],
-                [0, 0, 0],
-                [0, 1, 0],
-                [0, 0, 0]
+                [0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0]
             ],
             furnitures: [
                 // {
@@ -563,30 +556,30 @@ export default class Room extends Phaser.Scene {
      */
     public update(time: number, delta: number): void {
 
-        // if(this.assetsLoaded){
-        //     this.playerQueue.forEach((playerInfo: PlayerInfo, index: number) => {
+        if(this.assetsLoaded){
+            this.playerQueue.forEach((playerInfo: PlayerInfo, index: number) => {
 
-        //         let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1);
-        //         newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z + 2)
+                let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1);
+                newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z + 2)
 
-        //         let tmpX = newPlayer.RenderPos.x
-        //         let tmpY = newPlayer.RenderPos.y
+                let tmpX = newPlayer.RenderPos.x
+                let tmpY = newPlayer.RenderPos.y
 
-        //         newPlayer.x = tmpX
-        //         newPlayer.y = tmpY
+                newPlayer.x = tmpX
+                newPlayer.y = tmpY
 
-        //         playerInfo.avatar = newPlayer
+                playerInfo.avatar = newPlayer
 
-        //         this.players.push(playerInfo)
-        //         this.add.existing(playerInfo.avatar)
-        //         this.playerQueue.splice(index, 1)
+                this.players.push(playerInfo)
+                this.add.existing(playerInfo.avatar)
+                this.playerQueue.splice(index, 1)
 
-        //     })
-        // }
+            })
+        }
 
-        // this.players.forEach((roomPlayer: PlayerInfo) => {
-        //     roomPlayer.avatar.update(delta)
-        // })
+        this.players.forEach((roomPlayer: PlayerInfo) => {
+            roomPlayer.avatar.update(delta)
+        })
 
 
         this.currentFPS = this.game.loop.actualFps
