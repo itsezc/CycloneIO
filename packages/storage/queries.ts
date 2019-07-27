@@ -6,7 +6,7 @@ export const GetActiveRooms = gql`
 			where: {
 				currentUsers_gt: 0
 			}
-		) 
+		)
 		{
 			id
 			name

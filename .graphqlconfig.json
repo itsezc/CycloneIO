@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "cyclone": {
+      "schemaPath": "schema.graphql",
+      "extensions": {
+        "endpoints": {
+          "dev": "http://localhost:4466/graphql"
+        }
+      }
+    }
+  }
+}

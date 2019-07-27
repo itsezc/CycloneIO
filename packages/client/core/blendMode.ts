@@ -1,6 +1,6 @@
 
 export const generateBlendMode = (renderer: any, firstMode?: GLenum, secondMode?: GLenum, equation?: GLenum ): number => {
-    const { gl } = renderer 
+    const { gl } = renderer
 
     //gl.DST_COLOR
     const _firstMode = firstMode || gl.ONE
