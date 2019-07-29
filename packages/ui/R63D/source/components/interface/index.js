@@ -5,12 +5,10 @@ import Toolbar from '../../modules/toolbar';
 import ProfilePanel from '../../modules/profile-panel';
 import WebAction from '../../modules/web-action';
 
+import Dialog from '../dialog';
+
 class Interface extends React.Component {
-
-    constructor(props){
-        super(props);
-    }
-
+    
     render(){
 
         const isRoom = (this.props.location.pathname.includes('room'));
@@ -19,6 +17,8 @@ class Interface extends React.Component {
             <main className={"client" + (isRoom ? " is-room" : '')}>
 
                 {this.props.children}
+
+                <Dialog />
 
                 <WebAction isRoom={isRoom}/>
                 <ProfilePanel isRoom={isRoom}/>

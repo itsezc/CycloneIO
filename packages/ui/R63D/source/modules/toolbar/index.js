@@ -59,7 +59,7 @@ export default class Toolbar extends React.Component {
                         {this.props.isRoom && <span className="icon icon-camera"></span> }
                     </div>
 
-                    <div class={"toolbar-user-actions" + (this.state.isUserActionsOpen ? " is-active": "")}>
+                    <div className={"toolbar-user-actions" + (this.state.isUserActionsOpen ? " is-active": "")}>
                         <span className="icon icon-talents">Talents</span>
                         <span className="icon icon-achievements">Achievements</span>
                         <span className="icon icon-minimail">Minimail</span>

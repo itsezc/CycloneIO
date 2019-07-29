@@ -1,0 +1,24 @@
+.bot-infos {
+    width: $rightCol-width;
+    min-height: 222px;
+
+    .bot-infos-content {
+        display: flex;
+        align-items: center;
+        
+        margin-bottom: 10px;
+
+        .bot-infos-avatar {
+            height: 130px;
+            width: 67px;
+            display: inline-flex;
+            align-items: center;
+            background: url('/r63b/wired.png') no-repeat center, #656565;
+        }
+
+        .bot-infos-badge {
+            margin: 0 auto;   
+        }
+    }
+
+}

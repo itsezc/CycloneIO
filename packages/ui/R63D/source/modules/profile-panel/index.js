@@ -12,9 +12,9 @@ export default class ProfilePanel extends React.Component {
 
                 <div className="notifications">
                     
-                    <div className="ui-200">a</div>
-                    <div className="ui-200">b</div>
-                    <div className="ui-200">c</div>
+                    <div className="frame-200">a</div>
+                    <div className="frame-200">b</div>
+                    <div className="frame-200">c</div>
                 </div>
             </div>
         )

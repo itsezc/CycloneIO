@@ -4,7 +4,7 @@ export default class Wallet extends React.Component {
 
     render(){
         return (
-            <div className="wallet ui-200">
+            <div className="wallet frame-200">
 
                 <div className="wallet-currencies">
                     <i className="icon icon-diamond">0</i>

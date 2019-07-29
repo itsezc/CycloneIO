@@ -5,7 +5,6 @@
 
     &:before{
         display: inline-block;
-        image-rendering: pixelated;
         content: '';
     }
 
@@ -353,6 +352,30 @@
             hover: (
                 image: 'icons/like_glow.png'
             )
+        ),
+
+        relation-heart: (
+            image: 'icons/relationship-heart.png',
+            width: 13,
+            height: 13
+        ),
+
+        relation-friend: (
+            image: 'icons/relationship-friend.png',
+            width: 13,
+            height: 13
+        ),
+
+        relation-skull: (
+            image: 'icons/relationship-skull.png',
+            width: 13,
+            height: 13
+        ),
+
+        home: (
+            image: 'icons/home.svg',
+            width: 11,
+            height: 10
         )
     );
 

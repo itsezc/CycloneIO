@@ -14,3 +14,10 @@ a {
 ul {
     list-style-type: none;
 }
+
+textarea {
+
+    &:focus {
+        outline: none;
+    }
+}

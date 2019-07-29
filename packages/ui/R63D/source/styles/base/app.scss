@@ -10,11 +10,13 @@
     font-family: 'Ubuntu';
     color: #fff;
     font-size: 12px;
+    image-rendering: pixelated;
 
     .client {
         background-color: #000;
         height: 100vh;
         width: 100vw;
+        position: relative;
 
         &.is-room{
 
