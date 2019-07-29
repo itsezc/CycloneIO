@@ -4,7 +4,7 @@ import { prisma, Language, CatalogPage } from './prisma'
 
 async function main() {
 
-	// Ranks
+	// #region Ranks
 
 	await prisma.createRank({
 		order: 1,
@@ -55,8 +55,10 @@ async function main() {
 		order: 10,
 		name: 'Owner'
 	})
-	
-	// Add languages
+
+	// #endregion
+
+	// #region Languages
 	await prisma.createLanguage({
 		name: 'English',
 		native: 'English',
@@ -81,6 +83,10 @@ async function main() {
 		native: 'Français',
 		code: 'fr'
 	})
+
+	// #endregion
+
+	// #region Navigator Tabs
 
 	const English: Language = (({ id, code }) => ({ id, code }))(await prisma.language({ code: 'en' }))
 	const Italian: Language = (({ id, code }) => ({ id, code }))(await prisma.language({ code: 'it' }))
@@ -107,6 +113,10 @@ async function main() {
 		name: 'My World'
 	})
 
+	// #endregion
+
+	// #region Catalog Featured
+
 	await prisma.createCatalogFeatured({
 		caption: 'Underwater House Bundle',
 		slot: 1,
@@ -130,6 +140,10 @@ async function main() {
 		slot: 4,
 		image: 'https://images.habbo.com/c_images/catalogue/feature_cata_hort_HC_b.png'
 	})
+
+	// #endregion
+
+	// #region Catalog Pages
 
 	await prisma.createCatalogPage({
 		layout: "FRONTPAGE",
@@ -576,6 +590,8 @@ async function main() {
 			connect: English
 		}
 	})
+
+	// #endregion
 
 	await prisma.createRoom({
 		name: 'Test',

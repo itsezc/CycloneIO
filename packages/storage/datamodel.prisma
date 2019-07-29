@@ -14,8 +14,8 @@ enum banStatus
 
 enum roomType
 {
-	PUBLIC
-	LOCKED
+    PUBLIC
+    LOCKED
 	PASSWORD
 	HIDDEN
 }

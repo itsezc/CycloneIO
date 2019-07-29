@@ -7,5 +7,5 @@ generate:
   - generator: javascript-client
     output: ./prisma/
 
-seed: 
+seed:
   run: npx ts-node ./seed.ts
