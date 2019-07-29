@@ -7,6 +7,7 @@ export default class Scrollbar extends React.PureComponent {
         super(props);
 
         this.state = {
+            thumbHeight: 0,
             thumbTop: 0,
             isDragingY: null
         }
@@ -34,7 +35,7 @@ export default class Scrollbar extends React.PureComponent {
         this.trackHeight = this.trackRef.clientHeight;
         this.scrollMaxY = this.content.scrollHeight - this.content.clientHeight;
 
-        const thumbHeight = this.getThumbVerticalHeight();
+        let thumbHeight = this.getThumbVerticalHeight();
         this.thumbMaxY = this.trackHeight - thumbHeight;
 
         this.setState({ thumbHeight });
@@ -46,8 +47,11 @@ export default class Scrollbar extends React.PureComponent {
     getThumbVerticalHeight = () => {
 
         const { trackHeight } = this;
-        const { scrollHeight, clientHeight } = this.content;
+        let { scrollHeight, clientHeight } = this.content;
 
+        if(scrollHeight == 0 || clientHeight == 0) 
+            return 0;
+        
         return Math.ceil(clientHeight / scrollHeight * trackHeight);
     }
 
