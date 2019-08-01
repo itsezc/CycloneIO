@@ -1,0 +1,20 @@
+{
+  "name": "cyclone-2.0",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "svg.js": "^2.7.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.4.5",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "phaser": "^3.18.1",
+    "svg-to-dataurl": "^1.0.0"
+  }
+}
