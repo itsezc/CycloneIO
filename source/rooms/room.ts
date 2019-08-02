@@ -1,5 +1,3 @@
-import { Scene, Cameras, Input } from 'phaser'
-
 import Size from '../types/size'
 
 import Engine from '../engine'
@@ -8,9 +6,9 @@ import RoomModel from './model'
 
 import TileGenerator from '../generators/tile'
 
-export default class Room extends Scene {
+export default class Room extends Phaser.Scene {
 
-    private camera: Cameras.Scene2D.Camera
+    private camera: Phaser.Cameras.Scene2D.Camera
     private model: RoomModel
 
     public constructor(private readonly id: string, private readonly engine: Engine) {
@@ -54,18 +52,18 @@ export default class Room extends Scene {
 
             this.model = new RoomModel(this, heightmap)
 
-            console.info({ roomModel: this.model })
+            console.info({ roomModel: this.model }, 'ready')
 
         })
 
-        console.info({ tile: tile, base64: tile.generate() })
+        console.info({ tile: tile }, 'loaded')
     }
 
     private registerInputEvents(): void {
         this.input.on('pointermove', this.scrollCamera, this)
     }
 
-    private scrollCamera(pointer: Input.Pointer): void {
+    private scrollCamera(pointer: Phaser.Input.Pointer): void {
 
         const { camera } = pointer
 

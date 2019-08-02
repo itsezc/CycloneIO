@@ -1,10 +1,10 @@
 import { GameObjects } from 'phaser'
 
-import { Vector2D } from '../types/vector'
-
 import { coordinatesToIsometric } from '../utils/point'
 
 import Room from './room'
+
+import RoomObjectDepth from './objects/depth'
 
 export default class RoomModel {
 
@@ -15,6 +15,7 @@ export default class RoomModel {
         this.heightmap = heightmap
 
         this.tiles = new GameObjects.Container(this.scene)
+        this.tiles.setDepth(RoomObjectDepth.TILE)
 
         this.generate(this.heightmap)
     }

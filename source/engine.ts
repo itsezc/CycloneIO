@@ -1,10 +1,13 @@
-import { Game, Types, WEBGL, Scale } from 'phaser'
+import { Types, Game, WEBGL, Scale } from 'phaser'
 
 import Room from './rooms/room'
+
+import AvatarImager from './avatar/imager'
 
 export default class Engine {
     private readonly config: Types.Core.GameConfig
     private readonly game: Game
+    private readonly avatarImager: AvatarImager
 
     private room: Room
 
@@ -24,13 +27,19 @@ export default class Engine {
             }
         }
 
-        this.game = new Game(this.config)
+        this.game = new Phaser.Game(this.config)
 
-        console.info({ game: this.game })
+        console.info({ game: this.game }, 'ready')
 
         this.goToRoom('CdUSYdhd83HDHjsdAs8sd8')
 
-        console.info({ sceneManager: this.game.scene })
+        this.avatarImager = new AvatarImager(this)
+
+        this.avatarImager.initialize().then(() => {
+            console.info({ avatarImager: this.avatarImager }, 'ready')
+        })
+
+        console.info({ sceneManager: this.game.scene }, 'ready')
     }
 
     private goToRoom(id: string) {
