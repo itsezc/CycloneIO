@@ -111,7 +111,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
                     let stairBottomRight: Phaser.GameObjects.Image
 
                     if (this.isRightStair(tileData, heightmap, y, x)) {
-                        stairRight = this._scene.add.image(screenX, screenY - (tileData * 32) - 31, 'stairs_right')
+                        stairRight = this._scene.add.image(screenX, screenY - (tileData * 32) - 7, 'stairs_right')
                         stairRight.setOrigin(0, 0)
                         stairRight.setInteractive({ pixelPerfect: true })
                     }
@@ -129,7 +129,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
                     }
 
                     else if (this.isBottomStair(tileData, heightmap[y],x )) {
-                        stairLeft = this._scene.add.image(screenX - 1, screenY - (tileData * 32) - 31, 'stairs_left')
+                        stairLeft = this._scene.add.image(screenX - 1, screenY - (tileData * 32) - 7, 'stairs_left')
                         stairLeft.setOrigin(0, 0)
                         stairLeft.setInteractive({ pixelPerfect: true })
                     }
@@ -141,7 +141,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
                     }
 
                     else if (this.isTopLeftStair(tileData, heightmap, y, x)) {
-                        stairCenter = this._scene.add.image(screenX, screenY - (tileData * 32) - 32, 'stairs_center')
+                        stairCenter = this._scene.add.image(screenX, screenY - (tileData * 32) - 7, 'stairs_center')
                         stairCenter.setOrigin(0, 0)
                         stairCenter.setInteractive({ pixelPerfect: true })
                     }
@@ -153,7 +153,7 @@ export default class RoomSprite extends Phaser.GameObjects.Container {
                     }
 
                     else {
-                        floorSprite = this._scene.add.image(screenX, screenY - (tileData * 32), 'tile')
+                        floorSprite = this._scene.add.image(screenX, screenY - (tileData * 32) + 32, 'tile')
                         floorSprite.setOrigin(0, 0)
                         floorSprite.setInteractive({ pixelPerfect: true })
                     }

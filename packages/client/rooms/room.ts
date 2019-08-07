@@ -74,6 +74,8 @@ export default class Room extends Phaser.Scene {
 
     public moodlightPreview: any
 
+    private soundSample: Phaser.Sound.BaseSound
+
     private furnitures!: FurnitureSprite[]
     /*
         private map!: RoomMap */
@@ -141,10 +143,7 @@ export default class Room extends Phaser.Scene {
      * Runs once, when the scene starts
      */
     public init(): void {
-        // this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
-
-        // this.lights.enable()
     }
 
     /**
@@ -164,12 +163,24 @@ export default class Room extends Phaser.Scene {
 
         const room: FurnitureData.IRoom = {
             door: [0, 3],
+            // heightmap:
+            // [
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [1, 1, 1, 1, 1],
+            //     [0, 0, 0, 0, 0]
+            // ],
             heightmap:
             [
-                [0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0]
+               [1, 1, 1, 1, 1, 1, 2],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1]
             ],
             furnitures: [
                 // {
@@ -468,8 +479,8 @@ export default class Room extends Phaser.Scene {
         // Room up side down
         //this.camera.setAngle(180)
 
-        // this.soundSample = this.sound.add('credits')
-        // this.soundSample.play()
+        this.soundSample= this.sound.add('report')
+        this.soundSample.play()
 
         // this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
         // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
@@ -556,10 +567,10 @@ export default class Room extends Phaser.Scene {
      */
     public update(time: number, delta: number): void {
 
-        if(this.assetsLoaded){
+       if(this.assetsLoaded && this.playerQueue.length > 0){
             this.playerQueue.forEach((playerInfo: PlayerInfo, index: number) => {
 
-                let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1);
+                let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1)
                 newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z + 2)
 
                 let tmpX = newPlayer.RenderPos.x
@@ -580,8 +591,6 @@ export default class Room extends Phaser.Scene {
         this.players.forEach((roomPlayer: PlayerInfo) => {
             roomPlayer.avatar.update(delta)
         })
-
-
         this.currentFPS = this.game.loop.actualFps
         // console.log('FPS', this.currentFPS)
     }
