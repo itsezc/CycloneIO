@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import './index.styl'
-
 export default class Client extends Component {
 	render() {
 		return(

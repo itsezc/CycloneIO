@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import './index.styl'
-
 // import Wallet from '../../components/wallet'
 // import Toolbar from '../../components/toolbar'
 
