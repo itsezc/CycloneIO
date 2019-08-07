@@ -40,7 +40,7 @@ class App extends Component<any, any> {
                     <Route 
                         exact 
                         path='/inroom'
-                        render={(props) => <Room {...props} socket={this.Socket}/>}
+                        render={(props) => <Room {...props} socket={this.Socket} />}
                         />
                     <Route exact path='/client' component={Client} />
                     <Route exact path='/gamecenter' component={Games} />
