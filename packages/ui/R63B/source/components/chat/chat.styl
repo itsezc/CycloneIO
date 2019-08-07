@@ -1,9 +1,11 @@
 .chat
 	z-index 10
-	position absolute
-	//Demo
-	left 50%
-	top 2em
+	position relative
+
+	&:after
+		content: ''
+		clear: both
+		display: table
 
 	.bubble
 		z-index 11
@@ -32,6 +34,7 @@
 			background url(https://bobba.io/assets/normal_chat/style_normal_chat_bubble_base.png) no-repeat
 			background-size auto
 			font-weight normal
+			background white
 
 			.wrapper
 				padding 5px 0px

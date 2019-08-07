@@ -95,18 +95,30 @@
         }
     }
 
-    input {
+    form {
+        position: relative
+        background-color: #e4e4e4
+        border-radius: inherit
+        border: none
+        border-left: 1px solid #666666
+        border-top-left-radius: 2px
+        border-bottom-left-radius: 2px
+        min-width: 100%
+    }
+
+    form > input {
         border-radius: inherit;
         background-color: #e4e4e4;
         border: none;
-        border-left: 1px solid #666666;
-        position: relative;
+        position: relative
         border-top-left-radius: 2px;
         border-bottom-left-radius: 2px;
         padding-left: 10px;
+        padding-top: 8px
         flex-grow: 1;
         font-family: 'Ubuntu'
         font-weight 300
+        min-width: 100%
 
         &:hover {
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import '../client/index.styl'
+import './index.styl'
 
 import Wallet from '../../components/wallet'
 import Toolbar from '../../components/toolbar'
@@ -19,31 +19,74 @@ import Poll from '../../components/poll'
 
 import ClickActions from '../../components/click-actions'
 
-import {Engine} from '../../../../../client/games/game'
+import { Engine } from '../../../../../client/games/game'
+
+import FurnitureInfos from '../../components/click-infos/furniture'
+import UserInfos from '../../components/click-infos/user'
+import BotInfos from '../../components/click-infos/bot'
+import { Input } from 'phaser'
 
 
 export default class Room extends Component<any, any> {
 
 	private engine: Engine
 
+	private Socket: SocketIOClient.Socket
+
+	roomMessages: any
+
 	constructor(props: any) {
 		super(props)
+
+		this.state = {
+			chatbox: '',
+			messages: [],
+			roomMessages: []
+		}
+
+		this.Socket = props.socket
+
+		this.Socket.on('recieveRoomChat', (data: any) => {
+			
+			this.state.messages.push(data)
+			console.log('Got data', this.state.messages)
+
+			this.setState({
+				roomMessages: this.state.messages.map((message: any, index: number) => {
+					return (
+						<Chat
+							key={index}
+							name={message.from}
+							avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
+							type='shout'
+							style={2}
+							message={message.body}
+						/>
+					)
+				})
+			})
+		})
 	}
 
-	componentDidMount()
-	{
+	componentDidMount(){
 		this.engine = new Engine('game', this.props.socket)
 	}
 
 	render() {
 		return(
-			<div className='client'>
+			<div className='client room'>
 				<Actions />
 
 				<div className='room' id='game'></div>
 
 				<Moderation />
-				<Chatbox />
+				<Chatbox
+					socket={this.Socket}
+				/>
+
+				<div className="click-infos">
+					<UserInfos />
+				</div>
 
 				{/* <ClickActions
 					isOwn={true}
@@ -51,17 +94,14 @@ export default class Room extends Component<any, any> {
 
 				{/* <Inventory /> */}
 				
-				
+				<div className='chat__bubbles'>
+					{this.state.roomMessages}
+				</div>
+					
 				{/* <Catalog /> */}
 
 				{/* <Poll question='Cyclone or Habbo' status={false} /> */}
-				{/* <Chat
-					name='EZ-C'
-					avatar='https://cdn.discordapp.com/attachments/557261127847772161/577965083905359892/Screenshot_from_2019-05-14_23-02-49.png'
-					type='shout'
-					style={2}
-					message='This is an example message'
-				/> */}
+
 				<Wallet />
 				<Toolbar isClient={true} />
 			</div>

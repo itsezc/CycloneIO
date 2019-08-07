@@ -9,15 +9,13 @@ import Client from './states/client'
 import Room from './states/room'
 import Games from './states/games'
 
+import './app.styl'
 
 class App extends Component<any, any> {
 
     private server: string
     
-    constructor(
-        props: any,
-        private Socket: SocketIOClient.Socket
-    ) {
+    constructor(props: any, private Socket: SocketIOClient.Socket) {
         super(props)
 
         this.state = {
@@ -31,7 +29,7 @@ class App extends Component<any, any> {
             console.log(`Connected to server on ${this.server}`)
         })
 
-        this.Socket.emit('joinRoom', 'cjyf66f9j008w09857a46bjjx')
+        this.Socket.emit('joinRoom', 'cjy84p6y600lr07320ly34wwf')
     }
 
     render() {

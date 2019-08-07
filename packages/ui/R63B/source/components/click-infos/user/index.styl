@@ -1,0 +1,82 @@
+.user-infos {
+    width: $rightCol-width;
+    min-height: 303px;
+
+    .user-infos-content {
+        display: flex;
+        flex-direction: row;
+
+        .user-infos-avatar {
+            width: 67px;
+            margin-right: 6px;
+            display: flex;
+            align-items: center;
+        }
+
+        .user-infos-badges {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 3px;
+
+            .user-infos-badges-guild {
+                grid-row-start: 1;
+                grid-column-start: 2;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .user-infos-motto {
+        width: 100%;
+        padding: 2px;
+        padding-left: 22px;
+        color: #fff;
+        font-size: 9.5px;
+        resize: none;
+
+        &.is-own {
+            background: url('/r63b/motto/pencil.png') no-repeat scroll 2px 5px, #656565;
+        }
+
+        &::selection {
+            background: #000;
+        }
+    }
+
+    .user-infos-achievement {
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+
+    .user-infos-relationships {
+        margin-top: auto;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 5px;
+        margin-top: 5px;
+
+        li.icon {
+
+            u {
+                margin-right: 5px;
+                font-weight: 600;
+            }
+
+            &:before {
+                margin-right: 5px;
+            }
+
+            &.icon-relation-heart {
+                grid-row-start: 1;
+            }
+
+            &.icon-relation-friend {
+                grid-row-start: 2;
+            }
+
+            &.icon-relation-skull {
+                grid-row-start: 3;
+            }
+        }
+    }
+}

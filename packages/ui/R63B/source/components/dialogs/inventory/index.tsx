@@ -43,6 +43,8 @@ export default class Inventory extends Component<InventoryProps, InventoryState>
 					height={342}
 					centered={true}
 					className='inventory'
+					top={200}
+					left={400}
 				>
 						<div className='content'>
 							<Tabs>

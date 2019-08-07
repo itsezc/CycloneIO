@@ -26,8 +26,6 @@ import Wallet from '../../components/wallet'
 import ApolloClient from 'apollo-boost' 
 import { ApolloProvider } from 'react-apollo'
 
-import './index.styl'
-
 type ClientState = {
 	loaded: boolean
 	connected?: boolean

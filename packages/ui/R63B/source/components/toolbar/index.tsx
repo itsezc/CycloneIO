@@ -75,7 +75,7 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
                     </div>
 
                     {this.state.isFriendsOpen &&
-                        <Friends friends={['Markos', 'madison042', 'Phishi', 'PrettyJahanvi', 'Chaosmyyyth', 'EZ-C', 'Maegel']} />
+                        <Friends friends={['Fiona3.', 'EZ-C', 'Rishi', 'Kayla', 'Ankit', 'Ladka', 'Mya']} />
                     }
 
                     <i className={"toolbar-more" + (!this.state.isFriendsOpen ? " is-close" : '')} onClick={this.toggleFriends.bind(this)}></i>
