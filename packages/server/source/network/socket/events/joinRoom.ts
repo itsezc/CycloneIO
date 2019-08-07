@@ -9,8 +9,8 @@ export const joinRoom = async (socket: SocketIO.Socket, id: any, IO?: SocketIO.S
 
     if (room) {
 
-        let randomX = Math.floor(Math.random() * 5);
-        let randomY = Math.floor(Math.random() * 5);
+        let randomX = Math.floor(Math.random() * 5)
+        let randomY = Math.floor(Math.random() * 5)
 
         let avatarData = {
             x: 0,
