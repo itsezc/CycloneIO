@@ -26,6 +26,8 @@ import TileGenerator from '../generators/tile'
 // import FPSMeter from 'fpsmeter'
 import Tile from '../generators/tile';
 
+import ChatBubble from  '../chat'
+
 type PlayerInfo = {
     socketId: string;
     avatarData: any;
@@ -95,6 +97,7 @@ export default class Room extends Phaser.Scene {
         this.players = []
 
         this.playerQueue = []
+
     }
 
     /**
@@ -151,6 +154,8 @@ export default class Room extends Phaser.Scene {
      */
     public create(): void {
 
+        const buble = new ChatBubble(1, 'xd', 'xd', this)
+
         const renderer = this.game.renderer
 
         generateBlendMode(renderer)
@@ -174,7 +179,7 @@ export default class Room extends Phaser.Scene {
             // ],
             heightmap:
             [
-               [1, 1, 1, 1, 1, 1, 2],
+               [1, 1, 1, 1, 1, 1, 1],
                [1, 1, 1, 1, 1, 1, 1],
                [1, 1, 1, 1, 1, 1, 1],
                [1, 1, 1, 1, 1, 1, 1],
@@ -189,14 +194,15 @@ export default class Room extends Phaser.Scene {
                 //     roomY: 0,
                 //     roomZ: 1
                 // },
+                {
+                   name: 'diamond_dragon',
+                   roomX: 2,
+                   roomY: 3,
+                   roomZ: 0,
+                   direction: 3,
+                   animation: 2
+                },
                 /*
-                //{
-                //    name: 'diamond_dragon',
-                //    roomX: 2,
-                //    roomY: 3,
-                //    direction: 3,
-                //    animation: 2
-                //},
                 {
                     name: 'party_tube_lava',
                     roomX: 4,
@@ -327,6 +333,20 @@ export default class Room extends Phaser.Scene {
                     direction: 2
                 },
                 {
+                    name: 'throne',
+                    roomX: 0,
+                    roomY: 0,
+                    roomZ: 0,
+                    direction: 2
+                },
+                {
+                    name: 'throne',
+                    roomX: 1,
+                    roomY: 0,
+                    roomZ: 0,
+                    direction: 2
+                },
+                {
                     name: 'edicehc',
                     roomX: 4,
                     roomY: 0,
@@ -343,6 +363,7 @@ export default class Room extends Phaser.Scene {
             ]
         }
 
+        this.test = room
         //this._camera.setZoom(4)
 
         //        this.add.image(0, 0, 'room_background').setDepth(2)
@@ -406,6 +427,8 @@ export default class Room extends Phaser.Scene {
                         // x = 10, z = 10, y = 0
                         //furnitureSprite.depth = 1000 * furnitureRoomData.roomX - furnitureRoomData.roomZ + 1000 * furnitureRoomData.roomY + 1000
                         furnitureSprite.depth = furnitureRoomData.roomX + furnitureRoomData.roomY + furnitureRoomData.roomZ
+                        
+                        console.log(furnitureSprite.furniture.data.name,  furnitureSprite.depth)
 
                         furnitureSprite.roomX = furnitureRoomData.roomX
                         furnitureSprite.roomZ = furnitureRoomData.roomZ
@@ -426,7 +449,7 @@ export default class Room extends Phaser.Scene {
                 return (a.depth >= b.depth ? 1 : -1)
             })
 
-            furnituresSorted.forEach(furni => {
+            furnituresSprites.forEach(furni => {
                 roomSprite.addFurnitureSprite(furni, furni.roomX, furni.roomY, furni.roomZ)
 
             })
@@ -505,6 +528,33 @@ export default class Room extends Phaser.Scene {
 
     }
 
+    public movePlayer(data: any): void {
+        let player: PlayerInfo = this.players.find(
+            (playerInfo: PlayerInfo) =>  {
+                return playerInfo.socketId === data.socketId
+            }
+        )
+
+        if(player) {
+            player.avatar.x = data.coords.x
+            player.avatar.y = data.coords.y
+
+            player.avatar.setDepth(player.avatar.x + player.avatar.y + player.avatar.z)
+            
+            console.log(`x ${player.avatar.x}`, `y ${player.avatar.y}`, `z ${player.avatar.z}`)
+
+            let tmpX = player.avatar.RenderPos.x
+            let tmpY = player.avatar.RenderPos.y
+
+            player.avatar.x = tmpX
+            player.avatar.y = tmpY
+
+            console.log(data.socketId, player.avatar.depth)
+
+            
+        }
+    }
+
     public addPlayers(players: PlayerInfo[]): void{
        players.forEach(player => this.playerQueue.push(player))
     }
@@ -571,7 +621,7 @@ export default class Room extends Phaser.Scene {
             this.playerQueue.forEach((playerInfo: PlayerInfo, index: number) => {
 
                 let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1)
-                newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z + 2)
+                newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z)
 
                 let tmpX = newPlayer.RenderPos.x
                 let tmpY = newPlayer.RenderPos.y

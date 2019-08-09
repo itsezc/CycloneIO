@@ -15,7 +15,8 @@ export default class FurnitureBase {
     offset: Offset
     size: Size
 	assets: FurniAssetDictionary
-	states: { [id: number] : State }
+    states: { [id: number] : State }
+    itemData: any
 
 	constructor(
         id: number,

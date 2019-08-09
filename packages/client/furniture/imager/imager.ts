@@ -10,6 +10,7 @@ import {
 	Offset
 } from '../data'
 
+const LOCAL_RESOURCES_URL = 'https://images.bobba.io/hof_furni/'
 
 export default class FurniImager {
     ready: boolean
