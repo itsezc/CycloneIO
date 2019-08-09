@@ -25,15 +25,14 @@ import Wallet from '../../components/wallet'
 import ApolloClient from 'apollo-boost' 
 import { ApolloProvider } from 'react-apollo'
 
-import './index.styl'
 
 type ClientState = {
 	loaded: boolean
 	connected?: boolean
 }
 
-export default class GameCenter extends Component<any, ClientState>
-{
+export default class GameCenter extends Component<any, ClientState> {
+	
 	private Database: ApolloClient<any>
 	private Socket: SocketIOClient.Socket
 

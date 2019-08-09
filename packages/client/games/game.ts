@@ -10,7 +10,7 @@ export class Engine {
     
     public readonly game: Phaser.Game
     public readonly avatarImager: Imager
-    private readonly socket: SocketIO.Socket
+    public readonly socket: SocketIO.Socket
     private currentRoom: Room
 
     constructor(parent: string, socket: SocketIO.Socket) {
@@ -60,6 +60,10 @@ export class Engine {
             this.removePlayer(data)
         })
 
+        this.socket.on('playerMoved', (data: any) => {
+            this.movePlayer(data)
+        })
+
     }
 
     public gotoRoom(roomWithPlayers: any) {
@@ -80,6 +84,10 @@ export class Engine {
 
     public removePlayer(socketId: string){
         this.currentRoom.removePlayer(socketId)
+    }
+
+    public movePlayer(data: any) {
+        this.currentRoom.movePlayer(data)
     }
 
 }

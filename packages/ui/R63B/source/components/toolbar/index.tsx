@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { withRouter, Redirect } from 'react-router-dom'
 
 import Friends from './components/friends';
 import Chatbox from '../../components/chatbox'
 
 type ToolbarProps = {
-    isClient?: boolean
+    isClient?: boolean,
 }
 
 type ToolbarState = {
@@ -12,16 +13,19 @@ type ToolbarState = {
     isActionsOpen: boolean
 }
 
-export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
+class Toolbar extends Component<any, any, any> {
 
-	constructor(props: ToolbarProps) {
+	constructor(props: any) {
 		super(props)
 
         this.state = {
             isFriendsOpen: true,
-            isActionsOpen: true
+            isActionsOpen: true,
+            toHotelView: false,
+            toGameCenter: false
         }
-	}
+    }
+    
 
     toggleFriends(){
         this.setState({
@@ -35,7 +39,21 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
         })
     }
 
+    toHotelView() {
+        this.setState({ toHotelView: true })
+    }
+
+    toGameCenter() {
+        this.setState({ toGameCenter: true })
+    }
+
 	render() {
+        if (this.state.toHotelView === true) {
+            return <Redirect to='/hotel' />
+        }  else if (this.state.toGameCenter === true) {
+            return <Redirect to='/gamecenter' />
+        }
+
 		return (
             <section className={"toolbar" + (this.props.isClient ? " is-client" : '')}>
 
@@ -44,11 +62,11 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
 
                     <div className="toolbar-icons-content">
                         {this.state.isActionsOpen ?
-                            (!this.props.isClient ? <span className="icon icon-house"></span> : <span className="icon icon-habbo"></span>)
+                            (!this.props.isClient ? <span className="icon icon-house"></span> : <span className="icon icon-habbo" onClick={this.toHotelView.bind(this)}></span>)
                         : null}
                         {this.state.isActionsOpen && <span className="icon icon-rooms"></span>} 
 
-                        <span className='icon icon-gamecenter'></span>
+                        <span className='icon icon-gamecenter' onClick={this.toGameCenter.bind(this)}></span>
                         
                         <span className="icon icon-catalogue"></span>
                         <span className="icon icon-buildersclub"></span>
@@ -75,7 +93,7 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
                     </div>
 
                     {this.state.isFriendsOpen &&
-                        <Friends friends={['Markos', 'madison042', 'Phishi', 'PrettyJahanvi', 'Chaosmyyyth', 'EZ-C', 'Maegel']} />
+                        <Friends friends={['Fiona3.', 'EZ-C', 'Rishi', 'Kayla', 'Ankit', 'Ladka', 'Mya']} />
                     }
 
                     <i className={"toolbar-more" + (!this.state.isFriendsOpen ? " is-close" : '')} onClick={this.toggleFriends.bind(this)}></i>
@@ -84,3 +102,5 @@ export default class Toolbar extends Component<ToolbarProps, ToolbarState> {
         );
 	}
 }
+
+export default withRouter(Toolbar)

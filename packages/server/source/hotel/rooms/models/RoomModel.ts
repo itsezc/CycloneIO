@@ -1,4 +1,4 @@
-import { RoomModelEntity } from './Interface'
+import RoomModelEntity from './Interface'
 
 export default class RoomModel {
 	

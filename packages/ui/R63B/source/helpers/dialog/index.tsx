@@ -63,8 +63,8 @@ export default class Dialog extends Component<DialogProps, any> {
             style: {
                 width: props.width,
                 height: props.height,
-                top: props.centered || props.top || 64,
-                left: props.centered || props.left || 64
+                top: props.top || 64,
+                left: props.left || 64
             }
         }
     

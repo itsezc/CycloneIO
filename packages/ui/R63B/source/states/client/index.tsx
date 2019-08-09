@@ -26,8 +26,6 @@ import Wallet from '../../components/wallet'
 import ApolloClient from 'apollo-boost' 
 import { ApolloProvider } from 'react-apollo'
 
-import './index.styl'
-
 type ClientState = {
 	loaded: boolean
 	connected?: boolean
@@ -35,7 +33,7 @@ type ClientState = {
 
 export default class Client extends Component<any, ClientState>
 {
-	private Database: ApolloClient<any>
+	
 	private Socket: SocketIOClient.Socket
 
 	private connected: boolean
@@ -44,9 +42,6 @@ export default class Client extends Component<any, ClientState>
 	constructor(props: any) {
 		super(props)
 
-		this.Database = new ApolloClient({
-			uri: 'http://localhost:8087/graphql'
-		})
 
 		this.Socket = props.socket
 		this.Socket.emit('requestHotelView')
@@ -147,11 +142,10 @@ export default class Client extends Component<any, ClientState>
 
 						<Inventory />
 
-						<ApolloProvider client={this.Database}>
+						
 							{/* <Navigator /> */}
 
-							<Catalog />
-						</ApolloProvider>
+							{/* <Catalog /> */}
 
 						{/* <Alert
 							title='Message from Cyclone Hotel'

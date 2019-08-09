@@ -3,6 +3,7 @@ import Room from '../rooms/room'
 import RotationAnimation from './animations/rotation';
 
 import FurnitureData from '../furniture/data'
+import { Direction } from '../avatar';
 
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
     
@@ -24,6 +25,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
     private lastClick: number = 0
     private doubleClick: boolean = false
+
     private animationRotation: RotationAnimation
 
     public depth: number
@@ -31,6 +33,8 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     public roomX: number
     public roomY: number
     public roomZ: number
+
+    public drawAsIcon: boolean
     
     public constructor(scene: Room, furniture: Furniture) {
         super(scene)
@@ -73,6 +77,39 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
             this.timer.remove()
         }
 
+    }
+
+    updatePosition(tileX: number, tileY: number, tileZ: number, rotation: Direction, drawAsIcon:boolean) 
+    {
+        this.roomX = tileX 
+        this.roomY = tileY
+        this.roomZ = tileZ 
+        this.direction = rotation
+        this.drawAsIcon = drawAsIcon
+
+        //this.updateSpritePosition()
+    }
+
+    updateSpritePosition()
+    {
+        const local = this._scene.tileToLocal(this.x, this.y, this.z)
+        let x = local.x + 32;
+        let y = local.y + 16;
+
+        if (this.drawAsIcon) {
+            x = this.x
+            y = this.y
+        }
+
+        // for (let container of this.furniture.containers) {
+        //     container.x = x
+        //     container.y = y
+        // }
+
+        // for (let container of this.selectableContainers) {
+        //     container.x = x
+        //     container.y = y
+        // }
     }
 
     public animateAndStart(animation: number)
@@ -163,7 +200,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
 
         const layer = fragments[fragments.length - 3]
         
-        return (ALPHABET.indexOf(layer.toLowerCase())) + sprite.z;          
+        return (ALPHABET.indexOf(layer.toLowerCase())) + sprite.z
     }
 
     private isCorrectSizeSprite(sprite: any) {
@@ -272,6 +309,13 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
             if(this.canBeRotated(instance) && !this.animationRotation.isRunning) {
                 this.animateRotation()
             }
+        })
+
+        sprite.on('move', (instance: Phaser.GameObjects.Sprite) => {
+            // this.updatePosition()
+            console.log('Move Triggered')
+
+
         })
 
         sprite.on('click', (instance: Phaser.GameObjects.Sprite) => {

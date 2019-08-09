@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 
-import './loading.styl'
 //import { number } from 'joi';
 
 type LoadingState = {

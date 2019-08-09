@@ -1,109 +1,396 @@
-.btn
-	font-family: inherit
-	display inline-block
-	border solid 2px #000
-	border-bottom solid 4px #000
-	border-radius 4px
-	padding 5px 10px
-	font-weight bold
-	white-space nowrap
-	background #E2E2E2
-	outline none
-	box-shadow
-		inset -2px 0px 0 0 #CACACA,
-		inset 0px 1px 0 0 #CACACA,
-		inset 1px 0px 0 0 #CACACA,
-		inset 0px -10px 0 0 #CACACA
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
 
-	&:not([disabled])
-		cursor pointer
+    &.btn-block {
+        width: 100%;
+    }
 
-	&.btn-small
-		font-size 12px
+    &:active {
+        cursor: default;
+    }
 
-	&:hover
-		background #F3F3F3
-		box-shadow
-			inset -2px 0px 0 0 #D9D9D9,
-			inset 0px 1px 0 0 #D9D9D9,
-			inset 1px 0px 0 0 #D9D9D9,
-			inset 0px -10px 0 0 #D9D9D9
+    &.btn-flat-stripe {
+        height: 19px;
+        font-size: 11px;
+        padding: 1px 10px 2px;
+        border: solid 1px black;
+        border-radius: 3px;
+        box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.2), inset -1px 0 0 0 rgba(0,0,0,0.2);
+        font-weight: 300;
+        color: #fff;
 
-	&:active
-		background #D5D3D5
-		box-shadow
-			inset -2px 0px 0 0 #999899,
-			inset 0px 1px 0 0 #999899,
-			inset 1px 0px 0 0 #999899,
-			inset 0px -10px 0 0 #999899
+        &:hover {
+            box-shadow: inset 1px 1px 0 0 #000, inset -1px -1px 0 0 #000;
+        }
 
+        &.btn-blue {
+            background-color: #716a85;
+        }
 
-.btn-r63b
-	height 20px
-	padding 0 14px
-	border 1px solid #000;
-	border-radius 3px
-	box-shadow inset 1px 0 0 0 #d9d9d9, inset -1px 0 0 0 #d9d9d9,
-				inset 0 1px 0 0 #d9d9d9, 0 1px 0 0 #000000
-	background linear-gradient(#f3f3f3 50%, #d9d9d9 50%, #d9d9d9 100%)
+        &.btn-danger {
+            background-color: #dd5246;
+        }
 
-	&.btn-action
-		height: 19px;
-		width: 19px;
-		padding: 0;
-		border-bottom-width: 2px;
+        &.btn-info {
+            background-color: #207ab4;
+        }
 
-		&.btn-red
-			background: linear-gradient(#bd3b2f 50%, #91241a 50%, #91241a 100%);
-			box-shadow: inset 1px 1px 0 0 #de4537, inset -1px -1px 0 0 #de4537;
+        &:active{
+            box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, .25);
 
-			&:hover
-				box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff,
-							inset 2px 2px 0 0 #e48880, inset -2px -2px 0 0 #e48880;
-				
-			&:active 
-				background: linear-gradient(#91241a 50%, #7c0d09 50%, #7c0d09 100%);
-				box-shadow: inset 1px 1px 0 0 #551510, inset -1px -1px 0 0 #aa2a1f;
+            &.btn-blue {
+                background-color: #433f4f;
+            }
 
-		&.btn-blue 
-			background: linear-gradient(#306686 50%, #1f5679 50%, #1f5679 100%);
-			box-shadow: inset 1px 1px 0 0 #3986b1, inset -1px -1px 0 0 #3986b1;
+            &.btn-danger {
+                background-color: #83312a;
+            }
+            
+            &.btn-info {
+                background-color: #13496b;
+            }
+        }
+    }
 
-			&:hover
-				box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff,
-							inset 2px 2px 0 0 #64acd9, inset -2px -2px 0 0 #64acd9;
-				
-			&:active
-				background: linear-gradient(#1f5679 50%, #004365 50%, #004365 100%);
-				box-shadow: inset 1px 1px 0 0 #003152, inset -1px -1px 0 0 #306686;
+    &.btn-illumina {
+        height: 25px;
+        padding: 0px 20px 0px;
+        border: 1px solid #919191;
+        border-radius: 6px;
+        box-shadow: inset 0 3px 0 0 #fff, 0 1px 0 0 #fff;
+        background: linear-gradient(#e2e2e2 50%, #d9d9d9 50%, #d9d9d9 100%);
+        font-size: 10px;
+        font-weight: bold;
+        text-shadow: 0 1px #fff;
 
-		&:active
-			border-bottom-width: 1px;
-				
-			&>*
-				filter: invert(1);
+        &:hover {
+            box-shadow: 0 0 5px 5px rgba(255,255,255,0.09), inset 0 -10px 0 0 #d8d8d8, inset 0 3px 0 0 #f8fcf8, 0 1px 0 0 #f8fcf8;
+        }
 
+        &:active {
+            background: #e2e2e2;
+            box-shadow: inset 0 2px 0 0 #cfcfcf, 0 1px 0 0 #f8fcf8;
+        }
 
-.btn
+        &.btn-lg {
+            padding: 0 20px 0;
+            font-size: 16px;
+            height: 32px;
+        }
 
-	&.btn-history
-		height: 31px;
-		border: 1px solid #000;
-		background-color: #2a2924;
-		box-shadow: inset 0 -1px 0 0 #1b1a17, inset 0 -3px 0 0 #3a3832, inset 0 0 0 2px #3a3832;
+        .btn-icon {
+            margin-right: 6px;
+            padding-right: 10px;
+            font-style: normal;
+            border-right: 1px solid #e8e8e8;
+            box-shadow: inset -1px 0 0 0 #878787;
+        }
+    }
 
-		&.btn-history-next
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
+    &.btn-r63b {
+        height: 20px;
+        padding: 0 14px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        box-shadow: inset 1px 0 0 0 #d9d9d9, inset -1px 0 0 0 #d9d9d9,
+                    inset 0 1px 0 0 #d9d9d9, 0 1px 0 0 #000000;
+        background: linear-gradient(#f3f3f3 50%, #d9d9d9 50%, #d9d9d9 100%);
 
-		&.btn-history-previous
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
+        &:hover {
+            background: linear-gradient(#fff 50%, #eee 50%, #eee 100%);
+            box-shadow: 0 1px 0 0 #000000;
+        }
 
-		&[disabled]
-			opacity 0.1
+        &:active {
+            background: linear-gradient(#e1e1e1 50%, #a3a3a3 50%, #a3a3a3 100%);
+            box-shadow: 0 1px 0 0 #000000;
+        }
 
-		&:not([disabled]):hover
-			border-color: #11110f;
-			background-color: #3b3a33;
-			box-shadow: inset 0 -1px 0 0 #2c2b26, inset 0 -3px 0 0 #4b4941, inset 0 0 0 2px #4b4941;
+        &.btn-disabled {
+            background: #d6d6d1;
+            border: 1px solid #b2b2ad;
+            box-shadow: none;
+            cursor: default;
+            color: #a2a29e;
+            font-weight: 300;
+            box-shadow: none;
+        }
+
+        &.btn-bold {
+            height: 27px;
+            
+            border: 2px solid #000;
+
+            font-weight: bold;
+
+            &.btn-disabled {
+                border: 1px solid #b2b2ad;
+            }
+
+            &.btn-success {
+                color: #fff;
+                box-shadow: inset 2px 0 0 0 #009000, inset -2px 0 0 0 #009000,
+                            inset 0 2px 0 0 #009000, 0 1px 0 0 #000000;        
+                background: linear-gradient(#00a100 50%, #009000 50%, #009000 100%);
+
+                &:hover {
+                    background: linear-gradient(#00a900 50%, #009c00 50%, #009c00 100%);
+                    box-shadow: 0 1px 0 0 #000000;
+                }
+        
+                &:active {
+                    background: linear-gradient(#009500 50%, #006c00 50%, #006c00 100%);
+                    box-shadow: inset 2px 2px 0 0 #006c00, inset -2px 0 0 0 #006c00, 0 1px 0 0 #000000;
+                }
+            }
+
+            &.btn-warning {
+                color: #fff;
+                box-shadow: inset 2px 0 0 0 #bb8800, inset -2px 0 0 0 #bb8800,
+                            inset 0 2px 0 0 #bb8800, 0 1px 0 0 #000000;    
+                background: linear-gradient(#d19800 50%, #bb8800 50%, #bb8800 100%);
+
+                &:hover {
+                    background: linear-gradient(#dca000 50%, #ca9300 50%, #ca9300 100%);
+                    box-shadow: 0 1px 0 0 #000000;
+                }
+        
+                &:active {
+                    background: linear-gradient(#c28d00 50%, #8c6600 50%, #8c6600 100%);
+                    box-shadow: inset 2px 2px 0 0 #8c6600, inset -2px 0 0 0 #8c6600, 0 1px 0 0 #000000;
+                }
+
+                &.btn-disabled {
+                    color: #d6c596;
+                    border: 2px solid #6e5d2e;
+                    box-shadow: none;
+                    background: #ad8b2e;
+                }
+            }
+
+            &.btn-info {
+                color: #fff;
+
+                box-shadow: inset 2px 0 0 0 #0883a6, inset -2px 0 0 0 #0883a6,
+                            inset 0 2px 0 0 #0883a6, 0 1px 0 0 #000000;    
+
+                background: linear-gradient(#0993ba 50%, #0883a6 50%, #0883a6 100%);
+
+                &:hover {
+                    background: linear-gradient(#099ac4 50%, #098eb4 50%, #098eb4 100%);
+        
+                    box-shadow: 0 1px 0 0 #000000;
+                }
+        
+                &:active {
+                    background: linear-gradient(#0888ad 50%, #06627d 50%, #06627d 100%);
+        
+                    box-shadow: inset 2px 2px 0 0 #06627d, inset -2px 0 0 0 #06627d, 0 1px 0 0 #000000;
+                }
+
+                &.btn-disabled {
+                    color: #99c3ce;
+
+                    border: 2px solid #325b65;
+                    
+                    box-shadow: none;
+
+                    background: #35889e;
+                }
+            }
+
+            &.btn-lg {
+                height: 40px;
+
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+
+        &.btn-action {
+            height: 19px;
+            width: 19px;
+            padding: 0;
+            border-bottom-width: 2px;
+
+            &:active {
+                border-bottom-width: 1px;
+                
+                &>*{
+                    filter: invert(1);
+                }
+            }
+
+            &.btn-red {
+                background: linear-gradient(#bd3b2f 50%, #91241a 50%, #91241a 100%);
+                box-shadow: inset 1px 1px 0 0 #de4537, inset -1px -1px 0 0 #de4537;
+
+                &:hover {
+                    box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff,
+                                inset 2px 2px 0 0 #e48880, inset -2px -2px 0 0 #e48880;
+                }
+                
+                &:active {
+                    background: linear-gradient(#91241a 50%, #7c0d09 50%, #7c0d09 100%);
+                    box-shadow: inset 1px 1px 0 0 #551510, inset -1px -1px 0 0 #aa2a1f;
+                }
+            }
+
+            &.btn-blue {
+                background: linear-gradient(#306686 50%, #1f5679 50%, #1f5679 100%);
+                box-shadow: inset 1px 1px 0 0 #3986b1, inset -1px -1px 0 0 #3986b1;
+
+                &:hover {
+                    box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff,
+                                inset 2px 2px 0 0 #64acd9, inset -2px -2px 0 0 #64acd9;
+                }
+                
+                &:active {
+                    background: linear-gradient(#1f5679 50%, #004365 50%, #004365 100%);
+                    box-shadow: inset 1px 1px 0 0 #003152, inset -1px -1px 0 0 #306686;
+                }
+            }
+        }
+
+        &.btn-md {
+            height: 28px;
+        }
+
+        &.btn-lg {
+            height: 50px;
+
+            font-size: 14px;
+        }
+    }
+
+    &.btn-volter {
+        height: 28px;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 0 10px;
+        color: #fefefe;
+        background: linear-gradient(#4a4a4a 50%, #3f3f3f 50%, #3f3f3f 100%);
+        box-shadow: inset 1px 1px 0 0 #3f3f3f, inset -1px 0 0 0 #3f3f3f;
+
+        border: 1px solid #fff;
+        border-radius: 4px;
+
+        &.btn-flat {
+            background: #3a3a3a;
+
+            box-shadow: none;
+
+            font-size: 10px;
+
+            color: #fff;
+
+            &:hover {
+                box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff;
+            }
+
+            &:active {
+                color: #fff;
+                background: #fff;
+            }
+        }
+
+        &.btn-light {
+            height: 20px;
+
+            background: #fff;
+            color: #000;
+    
+            padding: 0 10px;
+    
+            font-size: 11px;
+    
+            box-shadow: inset 1px 1px 0 0 #cccccc, inset -1px -1px 0 0 #cccccc;
+    
+            border: 1px solid #000;
+            border-radius: 4px;
+    
+            &:hover {
+                box-shadow: inset 1px 1px 0 0 #000, inset -1px -1px 0 0 #000;
+            }
+    
+            &:active {
+                box-shadow: inset 0 1px 0 0 #535353;
+                background: #989898;
+            }
+        }
+    
+        &.btn-bordered {
+            height: 20px;
+
+            background: #fff;
+
+            color: #000;
+    
+            padding: 0 10px;
+    
+            font-size: 11px;
+            font-weight: bolder;
+    
+            border: 2px solid #000;
+            border-radius: 4px;
+    
+            background-color: #fff;
+    
+            box-shadow: inset 1px 1px 0 0 #fff, inset -1px -1px 0 0 #fff,
+                        inset 2px 2px 0 0 #ccc, inset -2px -2px 0 0 #888;
+    
+            &:hover {
+                box-shadow: inset 1px 1px 0 0 #000, inset -1px -1px 0 0 #000,
+                            inset 2px 2px 0 0 #ccc, inset -2px -2px 0 0 #888;
+            }
+    
+            &:active {
+                box-shadow: inset 0 1px 0 0 #535353;
+                background: #989898;
+            }
+        }
+
+        &.btn-action {
+            height: 13px;
+            width: 13px;
+            padding: 0;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            background: #000;
+            box-shadow: none;
+        }
+    }
+
+    &.btn-history {
+        width: 28px;
+        height: 31px;
+        border-radius: 4px;
+        border: 1px solid #000;
+        background-color: #2a2924;
+        box-shadow: inset 0 -1px 0 0 #1b1a17, inset 0 -3px 0 0 #3a3832, inset 0 0 0 2px #3a3832;
+
+        &.btn-history-next {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        &.btn-history-previous {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        &[disabled] {
+            opacity: 0.1;
+        }
+
+        &:not([disabled]):hover {
+            border-color: #11110f;
+            background-color: #3b3a33;
+            box-shadow: inset 0 -1px 0 0 #2c2b26, inset 0 -3px 0 0 #4b4941, inset 0 0 0 2px #4b4941;
+        }
+    }
+}

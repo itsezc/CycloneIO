@@ -1,6 +1,4 @@
-//import type { FurnitureType } from '../../common/enums/furniture/type'
 import Room from '../rooms/room'
-//import { FurnitureType } from '../../common/enums/furniture/type'
 import FurnitureData from './data'
 
 export interface IData

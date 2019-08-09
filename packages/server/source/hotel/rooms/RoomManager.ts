@@ -1,10 +1,15 @@
 export type RoomWithPlayers = {
     roomData: any,
     players: PlayerInfo[]
+    chat?: Message[]
 }
 
 import { prisma } from '../../../../storage/prisma'
 
+export type Message = {
+    from: string,
+    body: string
+}
 
 export type PlayerInfo = {
     socketId: string;
@@ -23,16 +28,14 @@ export class RoomManager {
         return RoomManager.instance
     }
 
-    private constructor(){
+    private constructor() {
         this.loadedRooms = []
     }
 
     public async getRoom(id: string): Promise<RoomWithPlayers> {
 
         let roomWithPlayers: RoomWithPlayers = this.findRoom(id)
-        console.log(roomWithPlayers)
-
-        if(!roomWithPlayers){
+        if(!roomWithPlayers) {
             let roomData = await prisma.room({
                 id
             })
@@ -70,6 +73,18 @@ export class RoomManager {
         }
 
         roomWithPlayers.players.push(playerInfo)
+        return true
+    }
+
+    public addChat(socketId: string, roomId: string): boolean {
+        let room: RoomWithPlayers = this.findRoom(roomId)
+
+        if(!room) {
+            return false
+        } else {
+            console.log('Chat event fired')
+        }
+
         return true
     }
 

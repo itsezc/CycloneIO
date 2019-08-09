@@ -17,6 +17,7 @@ import { resolvers } from '../../../storage/resolvers/index'
 import gql from 'graphql-tag'
 
 import CycloneConfig from '../../../common/types/config'
+import {CycloneSocket} from './socket/types/cycloneSocket'
 
 // import roomPlayer from '../hotel/players/player'
 
@@ -116,10 +117,17 @@ export default class Server {
 		}
 	}
 
-	private loadSocketEvents(socket: SocketIO.Socket, socketServer: SocketIO.Server) {
+	private loadSocketEvents(socket: CycloneSocket, socketServer: SocketIO.Server) {
 
 		//Event loader
 		IO.readdirSync(path.join(__dirname, 'socket/events')).forEach((name) => {
+
+			socket.cyclone = {
+				username: 'Elizabeth',
+				figure: 'fa-201407-96.hr-85614122-37.ch-9142006-96-96.hd-787595-2.lg-5629782-96.sh-6298462-96.ha-1026-96.he-3358-71',
+				currentRoom: null
+			}
+
 			//socket.on(<filename without extension>, callback)
 			socket.on(/(.+)\.ts/i.exec(name)[1], (data: any) => {
 				require(`./socket/events/${name}`).default(socket, data, socketServer)

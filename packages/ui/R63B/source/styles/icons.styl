@@ -1,5 +1,7 @@
 .icon
     display: inline-flex;
+    align-items: center;
+    font-style: normal;
 
     &:before
         display: inline-block;
@@ -29,4 +31,32 @@
     &.icon-carret-left:before
         transform: scaleX(-1);
 
-    
+    &.icon-close-thin:before
+        background-image: url('icons/close_thin.svg')
+        width 7px
+        height 7px;
+
+    &.icon-profile.icon-small
+
+        &:before
+            background-image: url('icons/small_profile.png')
+            width: 13px
+            height: 11px
+
+        &:hover:before
+            background-image: url('icons/small_profile_glow.png')
+        
+    &.icon-relation-skull:before
+        background-image: url('icons/relationship-skull.png')
+        width: 13px
+        height: 13px
+
+    &.icon-relation-friend:before
+        background-image: url('icons/relationship-friend.png')
+        width: 13px
+        height: 13px
+
+    &.icon-relation-heart:before
+        background-image: url('icons/relationship-heart.png')
+        width: 13px
+        height: 13px

@@ -1,0 +1,28 @@
+{
+	"username": {
+		"position": {
+			"x": 158,
+			"y": 17
+		}, 
+		"dimension": {
+			"width": 13,
+			"height": 24
+		},
+		"style": {
+			"font": "12px Ubuntu",
+			"fill": "#FFFFFF",
+			"align": "center"
+		}
+	},
+	"end": {
+		"position": {
+			"x": 170,
+			"y": 17,
+			"marge": 7
+		},
+		"dimension": {
+			"width": 6,
+			"height": 24
+		}
+	}
+}

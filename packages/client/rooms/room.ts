@@ -26,6 +26,8 @@ import TileGenerator from '../generators/tile'
 // import FPSMeter from 'fpsmeter'
 import Tile from '../generators/tile';
 
+import ChatBubble from  '../chat'
+
 type PlayerInfo = {
     socketId: string;
     avatarData: any;
@@ -74,6 +76,8 @@ export default class Room extends Phaser.Scene {
 
     public moodlightPreview: any
 
+    private soundSample: Phaser.Sound.BaseSound
+
     private furnitures!: FurnitureSprite[]
     /*
         private map!: RoomMap */
@@ -93,6 +97,7 @@ export default class Room extends Phaser.Scene {
         this.players = []
 
         this.playerQueue = []
+
     }
 
     /**
@@ -141,16 +146,15 @@ export default class Room extends Phaser.Scene {
      * Runs once, when the scene starts
      */
     public init(): void {
-        // this._socket = SocketIO(`${host}:${port}`)
         this._camera = new RoomCamera(this.cameras, { x: 0, y: 0 }, window.innerWidth, window.innerHeight)
-
-        // this.lights.enable()
     }
 
     /**
      * Runs once, after all assets in preload are loaded
      */
     public create(): void {
+
+        const buble = new ChatBubble(1, 'xd', 'xd', this)
 
         const renderer = this.game.renderer
 
@@ -164,12 +168,24 @@ export default class Room extends Phaser.Scene {
 
         const room: FurnitureData.IRoom = {
             door: [0, 3],
+            // heightmap:
+            // [
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [-1, -1, 1, 1, 1, 1, 1],
+            //     [1, 1, 1, 1, 1],
+            //     [0, 0, 0, 0, 0]
+            // ],
             heightmap:
             [
-                [0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0],
-                [0, 0, 0, 0, 0]
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1],
+               [1, 1, 1, 1, 1, 1, 1]
             ],
             furnitures: [
                 // {
@@ -178,14 +194,15 @@ export default class Room extends Phaser.Scene {
                 //     roomY: 0,
                 //     roomZ: 1
                 // },
+                {
+                   name: 'diamond_dragon',
+                   roomX: 2,
+                   roomY: 3,
+                   roomZ: 0,
+                   direction: 3,
+                   animation: 2
+                },
                 /*
-                //{
-                //    name: 'diamond_dragon',
-                //    roomX: 2,
-                //    roomY: 3,
-                //    direction: 3,
-                //    animation: 2
-                //},
                 {
                     name: 'party_tube_lava',
                     roomX: 4,
@@ -316,6 +333,20 @@ export default class Room extends Phaser.Scene {
                     direction: 2
                 },
                 {
+                    name: 'throne',
+                    roomX: 0,
+                    roomY: 0,
+                    roomZ: 0,
+                    direction: 2
+                },
+                {
+                    name: 'throne',
+                    roomX: 1,
+                    roomY: 0,
+                    roomZ: 0,
+                    direction: 2
+                },
+                {
                     name: 'edicehc',
                     roomX: 4,
                     roomY: 0,
@@ -332,6 +363,7 @@ export default class Room extends Phaser.Scene {
             ]
         }
 
+        this.test = room
         //this._camera.setZoom(4)
 
         //        this.add.image(0, 0, 'room_background').setDepth(2)
@@ -395,6 +427,8 @@ export default class Room extends Phaser.Scene {
                         // x = 10, z = 10, y = 0
                         //furnitureSprite.depth = 1000 * furnitureRoomData.roomX - furnitureRoomData.roomZ + 1000 * furnitureRoomData.roomY + 1000
                         furnitureSprite.depth = furnitureRoomData.roomX + furnitureRoomData.roomY + furnitureRoomData.roomZ
+                        
+                        console.log(furnitureSprite.furniture.data.name,  furnitureSprite.depth)
 
                         furnitureSprite.roomX = furnitureRoomData.roomX
                         furnitureSprite.roomZ = furnitureRoomData.roomZ
@@ -415,7 +449,7 @@ export default class Room extends Phaser.Scene {
                 return (a.depth >= b.depth ? 1 : -1)
             })
 
-            furnituresSorted.forEach(furni => {
+            furnituresSprites.forEach(furni => {
                 roomSprite.addFurnitureSprite(furni, furni.roomX, furni.roomY, furni.roomZ)
 
             })
@@ -468,8 +502,8 @@ export default class Room extends Phaser.Scene {
         // Room up side down
         //this.camera.setAngle(180)
 
-        // this.soundSample = this.sound.add('credits')
-        // this.soundSample.play()
+        this.soundSample= this.sound.add('report')
+        this.soundSample.play()
 
         // this.camera3d = this.cameras3d.add(100).setPosition(0, 0, 200);
         // this.transform = new Phaser.Math.Matrix4().rotateY(-0.01)
@@ -492,6 +526,33 @@ export default class Room extends Phaser.Scene {
     public addPlayer(playerInfo: PlayerInfo): void{
         this.playerQueue.push(playerInfo)
 
+    }
+
+    public movePlayer(data: any): void {
+        let player: PlayerInfo = this.players.find(
+            (playerInfo: PlayerInfo) =>  {
+                return playerInfo.socketId === data.socketId
+            }
+        )
+
+        if(player) {
+            player.avatar.x = data.coords.x
+            player.avatar.y = data.coords.y
+
+            player.avatar.setDepth(player.avatar.x + player.avatar.y + player.avatar.z)
+            
+            console.log(`x ${player.avatar.x}`, `y ${player.avatar.y}`, `z ${player.avatar.z}`)
+
+            let tmpX = player.avatar.RenderPos.x
+            let tmpY = player.avatar.RenderPos.y
+
+            player.avatar.x = tmpX
+            player.avatar.y = tmpY
+
+            console.log(data.socketId, player.avatar.depth)
+
+            
+        }
     }
 
     public addPlayers(players: PlayerInfo[]): void{
@@ -556,11 +617,11 @@ export default class Room extends Phaser.Scene {
      */
     public update(time: number, delta: number): void {
 
-        if(this.assetsLoaded){
+       if(this.assetsLoaded && this.playerQueue.length > 0){
             this.playerQueue.forEach((playerInfo: PlayerInfo, index: number) => {
 
-                let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1);
-                newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z + 2)
+                let newPlayer = new RoomAvatar(this, playerInfo.avatarData.x, playerInfo.avatarData.y, 0, 1)
+                newPlayer.setDepth(newPlayer.x + newPlayer.y + newPlayer.z)
 
                 let tmpX = newPlayer.RenderPos.x
                 let tmpY = newPlayer.RenderPos.y
@@ -580,8 +641,6 @@ export default class Room extends Phaser.Scene {
         this.players.forEach((roomPlayer: PlayerInfo) => {
             roomPlayer.avatar.update(delta)
         })
-
-
         this.currentFPS = this.game.loop.actualFps
         // console.log('FPS', this.currentFPS)
     }
@@ -700,6 +759,10 @@ export default class Room extends Phaser.Scene {
 
     public get camera(): RoomCamera {
         return this._camera
+    }
+
+    tileToLocal(x: number, y: number, z: number): Phaser.Geom.Point {
+        return new Phaser.Geom.Point((x - y) * 32, (x + y) * 16 - (z * 16 * 2))
     }
 
     public convertOldToNewHeightMap(heightMap: string[]) {
