@@ -5,7 +5,7 @@ import Toolbar from '../../modules/toolbar';
 import ProfilePanel from '../../modules/profile-panel';
 import WebAction from '../../modules/web-action';
 
-import Dialog from '../dialog';
+import Navigator from '../../dialogs/navigator';
 
 class Interface extends React.Component {
     
@@ -18,7 +18,7 @@ class Interface extends React.Component {
 
                 {this.props.children}
 
-                <Dialog />
+                <Navigator />
 
                 <WebAction isRoom={isRoom}/>
                 <ProfilePanel isRoom={isRoom}/>

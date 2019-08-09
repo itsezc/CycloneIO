@@ -1,14 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class Dragable extends React.PureComponent {
+export default class Draggable extends React.PureComponent {
 
     constructor(props){
         super(props);
 
         this.state = {
             isDragging: false,
-            x: undefined,
-            y: undefined,
+            x: 300,
+            y: 200,
         }
     }
 
@@ -23,8 +24,6 @@ export default class Dragable extends React.PureComponent {
     }
 
     startDraging = (e) => {
-
-        this.draggingRel = { x: e.pageX, y : e.pageY };
         this.setState({ isDragging: true });
     }
 
@@ -32,8 +31,8 @@ export default class Dragable extends React.PureComponent {
         
         if(!this.state.isDragging) return;
         
-        const newX = this.draggingRel.x + e.pageX;
-        const newY = this.draggingRel.y + e.pageY;
+        const newX =  this.state.x + e.movementX;
+        const newY = this.state.y + e.movementY;
 
         this.setState({ x: newX, y: newY });
     }
@@ -44,8 +43,12 @@ export default class Dragable extends React.PureComponent {
         this.setState({ isDragging: false });
     }
 
-    generateStyle = () => {
-        return { top: this.state.y, left: this.state.x };
+    render(){
+        return this.props.children({ top: this.state.y, left: this.state.x }, this.startDraging);
     }
 
 }
+
+Draggable.propTypes = {
+    children: PropTypes.func.isRequired,
+};

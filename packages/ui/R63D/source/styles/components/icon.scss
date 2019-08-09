@@ -376,6 +376,54 @@
             image: 'icons/home.svg',
             width: 11,
             height: 10
+        ),
+
+        room-plus: (
+            image: 'icons/room-plus.png',
+            width: 54,
+            height: 40
+        ),
+
+        room-swap: (
+            image: 'icons/room-swap.png',
+            width: 50,
+            height: 50
+        ),
+
+        storm: (
+            image: 'icons/storm.svg',
+            width: 6,
+            height: 10
+        ),
+
+        minus: (
+            image: 'icons/minus.svg',
+            width: 10,
+            height: 2
+        ),
+
+        plus: (
+            image: 'icons/plus.svg',
+            width: 9,
+            height: 9
+        ),
+
+        thumbnail: (
+            image: 'icons/thumbnail.svg',
+            width: 11,
+            height: 11
+        ),
+
+        search: (
+            image: 'icons/search.svg',
+            width: 9,
+            height: 9
+        ),
+
+        user: (
+            image: 'icons/user.png',
+            width: 7,
+            height: 8
         )
     );
 
@@ -385,6 +433,7 @@
 
             &:before {
                 background-image: url('/#{map-get($iconData, "image")}');
+                background-repeat: no-repeat;
                 width: map-get($iconData, "width") + unquote("px");
                 height: map-get($iconData, "height") + unquote("px");
 

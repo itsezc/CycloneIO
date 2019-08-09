@@ -1,5 +1,6 @@
 
 @import './styles/main';
+@import './styles/components/more';
 
 @import './states/loading/index';
 @import './states/hotel/index';
@@ -16,5 +17,10 @@
 @import './modules/click-actions/index';
 @import './modules/chat-history/index';
 
-@import './styles/components/more';
+
 @import './components/scrollbar/index';
+@import './components/dialog/index';
+@import './components/tab/index';
+
+
+@import './dialogs/navigator/index';

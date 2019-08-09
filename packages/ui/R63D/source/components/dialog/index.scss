@@ -1,0 +1,105 @@
+.dialog {
+    position: absolute;
+    border: 1px solid #000;
+    border-bottom-width: 2px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .dialog-header {
+        background-color: #367897;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: inherit;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        position: relative;
+        
+        h3 {
+            margin: 0 auto;
+        }
+
+        .dialog-header-actions {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            position: absolute;
+            right: 10px;
+            
+            &>*{
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .dialog-wrapper {
+        background-color: #ebe9df;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dialog-content {
+        padding: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dialog-tabs {
+        height: 34px;
+        background-color: #fff;
+        border-bottom: 1px solid #242424;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: row;
+        
+        .dialog-tabs-actions {
+            display: flex;
+            flex-direction: row;
+            align-self: flex-end;
+            flex: 1;
+            margin-bottom: -1px;
+
+            &>* {
+                background-color: #cac9c1;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 4px;
+                padding: 0 10px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                flex-grow: 1;
+                color: #000;
+                border: 1px solid #504f4e;
+                border-bottom-color: #85847c;
+                cursor: pointer;
+
+                &.is-active {
+                    border-width: 2px;
+                    border-bottom: none;
+                    border-color: #000;
+                    background-color: #ebe9df;
+                    box-shadow: inset -2px 0 0 0 #FFFFFF,
+                                inset 0 2px 0 0 #FFFFFF,
+                                inset 2px 0 0 0 #FFFFFF
+                }
+
+                &:not(.is-active):hover {
+                    border-bottom: none;
+                    background: #F6F5F0;
+				    box-shadow: inset -2px 0 0 0 #FFFFFF,
+							    inset 0 2px 0 0 #FFFFFF,
+							    inset 2px 0 0 0 #FFFFFF
+                }
+            }
+        }
+
+        .dialog-tabs-subaction {
+            margin-right: 10px;
+        }
+    }
+}

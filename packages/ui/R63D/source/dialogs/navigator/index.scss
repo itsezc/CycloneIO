@@ -1,0 +1,159 @@
+.dialog.navigator {
+    width: 425px;
+    height: 500px;
+
+    .navigator-test-content {
+        background: red;
+        max-height: 100%;
+        margin: 10px 0;
+        overflow-y: auto;
+    }
+
+    .navigator-content {
+        
+
+        .scroll-wrapper {
+            margin-right: 5px;
+        }
+
+        .navigator-group {
+            background-color: #fff;
+            padding: 4px;
+
+            .navigator-group-header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 5px;
+
+                &>i:first-child {
+                    width: 16px;
+                }
+
+                h2 {
+                    color: #12577d;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+
+                .navigator-group-header-actions {
+                    margin-left: auto;
+
+                    &>*:not(:last-child) {
+                        margin-right: 6px;
+                    }
+                }
+            }
+
+            .navigator-group-content {
+
+                .navigator-room {
+                    height: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .navigator-room-users {
+                        align-self: stretch;
+                        width: 40px;
+                        background-color: #62b061;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        .icon {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    h3 {
+                        margin-left: 5px;
+                        color: #000;
+                        font-weight: 400;
+                        font-size: 12px;
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: #d5edff;
+                    }
+                }
+            }
+
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+
+        .navigator-room {
+
+        }
+    }
+
+    .navigator-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+
+        &>* {
+            height: 60px;
+            border-radius: 6px;
+            border: 1px solid #000;
+            box-shadow: inset 0 0 0 1px #fff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+
+            &.navigator-actions-room {
+                background-color: #00b1ea;
+            }
+
+            &.navigator-actions-new {
+                background-color: #5bb639;
+            }
+
+            i {
+                z-index: 1;
+                position: relative;
+
+                &:before {
+                    width: 85px;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                height: 160px;
+                width: 160px;
+                border-radius: 100%;
+                background-color: rgba(255, 255, 255, 0.5);
+                border: 15px solid rgba(255, 255, 255, 0.25);
+                z-index: 0;
+                
+                -webkit-background-clip: padding;
+                -moz-background-clip: padding;
+                background-clip: padding-box;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                height: 7px;
+                background-color: rgba(255, 255, 255, .35);
+
+                z-index: 0;
+            }
+        }
+    }
+}

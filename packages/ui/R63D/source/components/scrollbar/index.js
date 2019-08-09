@@ -124,7 +124,7 @@ export default class Scrollbar extends React.PureComponent {
 
     render(){
         return (
-            <div className="scroll">
+            <div className={"scroll" + (this.props.className ? ' ' + this.props.className : '')}>
                 
                 <div className="scroll-wrapper">
                     <div className="scroll-wrapper-content" ref={(ref) => {this.content = ref}}>

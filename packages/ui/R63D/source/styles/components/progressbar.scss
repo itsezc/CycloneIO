@@ -12,7 +12,7 @@
         border-right: 1px solid rgba(0, 0, 0, .5);
     }
 
-    &::-webkit-progress-bar {
+    &::-webkit-progress-bar, &::-moz-progress-bar {
         background: #59534f;
     }
 

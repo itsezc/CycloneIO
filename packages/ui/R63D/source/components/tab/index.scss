@@ -1,0 +1,24 @@
+.tab-header {
+    height: 34px;
+    background-color: #fff;
+    border-bottom: 1px solid #242424;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0 10px;
+    
+    .tab-header-item {
+        background-color: #cac9c1;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 4px;
+        padding: 0 10px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        flex-grow: 1;
+        color: #000;
+        border: 1px solid #504f4e;
+        border-bottom-color: #85847c;
+        margin-bottom: -1px;
+    }
+}
