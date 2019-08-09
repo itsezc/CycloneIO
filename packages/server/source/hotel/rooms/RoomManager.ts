@@ -35,8 +35,6 @@ export class RoomManager {
     public async getRoom(id: string): Promise<RoomWithPlayers> {
 
         let roomWithPlayers: RoomWithPlayers = this.findRoom(id)
-        console.log(roomWithPlayers)
-
         if(!roomWithPlayers) {
             let roomData = await prisma.room({
                 id

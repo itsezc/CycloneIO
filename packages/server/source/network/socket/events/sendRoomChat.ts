@@ -1,7 +1,8 @@
 import { prisma } from '../../../../../storage/prisma'
 import { RoomManager, RoomWithPlayers, PlayerInfo } from '../../../hotel/rooms/RoomManager'
+import {CycloneSocket} from '../types/cycloneSocket'
 
-export const sendRoomChat = async (socket: SocketIO.Socket, data: any, IO?: SocketIO.Server) => {
+export const sendRoomChat = async (socket: CycloneSocket, data: any, IO?: SocketIO.Server) => {
 
     let manager: RoomManager = RoomManager.getInstance()
 
@@ -14,7 +15,6 @@ export const sendRoomChat = async (socket: SocketIO.Socket, data: any, IO?: Sock
     //     let added = manager.addChat(socket.id, room)
 
     //     if (added) {
-
             console.log('Chat handler', from, body)
             
             IO/*.to(roomId)*/.emit('recieveRoomChat', {

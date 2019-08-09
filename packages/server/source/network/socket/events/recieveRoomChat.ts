@@ -1,6 +1,8 @@
 import SocketIO from 'socket.io'
+import {CycloneSocket} from '../types/cycloneSocket'
 
-export const recieveRoomChat = (socket: SocketIO.Socket, data: any, IO?: SocketIO.Socket) => {
+
+export const recieveRoomChat = (socket: CycloneSocket, data: any, IO?: SocketIO.Socket) => {
 	console.log(data)
 }
 

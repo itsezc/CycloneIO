@@ -1,7 +1,8 @@
 import { prisma } from '../../../../../storage/prisma'
 import { RoomManager, RoomWithPlayers, PlayerInfo } from '../../../hotel/rooms/RoomManager'
+import {CycloneSocket} from '../types/cycloneSocket'
 
-export const joinRoom = async (socket: SocketIO.Socket, id: any, IO?: SocketIO.Server) => {
+export const joinRoom = async (socket: CycloneSocket, id: any, IO?: SocketIO.Server) => {
 
     let manager: RoomManager = RoomManager.getInstance()
 
@@ -13,8 +14,8 @@ export const joinRoom = async (socket: SocketIO.Socket, id: any, IO?: SocketIO.S
         let randomY = Math.floor(Math.random() * 5)
 
         let avatarData = {
-            x: 0,
-            y: 0,
+            x: randomX,
+            y: randomY,
             z: 0
         }
 
@@ -37,6 +38,9 @@ export const joinRoom = async (socket: SocketIO.Socket, id: any, IO?: SocketIO.S
 
             socket.join(room.roomData.id)
 
+            // We set the room object to our custom socket data
+            socket.cyclone.currentRoom = room
+            
             socket.emit('setRoom', room)
 
             IO.to(room.roomData.id).emit('playerJoined', {
