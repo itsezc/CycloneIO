@@ -1,16 +1,9 @@
 .dialog.navigator {
     width: 425px;
-    height: 500px;
-
-    .navigator-test-content {
-        background: red;
-        max-height: 100%;
-        margin: 10px 0;
-        overflow-y: auto;
-    }
+    height: 561px;
 
     .navigator-content {
-        
+        margin: 10px 0;
 
         .scroll-wrapper {
             margin-right: 5px;

@@ -1,25 +1,30 @@
 .dialog {
     position: absolute;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .25);
     border: 1px solid #000;
     border-bottom-width: 2px;
+    border-radius: 6px;
     overflow: hidden;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
 
     .dialog-header {
         background-color: #367897;
-        height: 30px;
+        min-height: 30px;
         display: flex;
         flex-direction: row;
         align-items: center;
         border-radius: inherit;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        box-shadow: inset -2px 0 0 0 rgba(255, 255, 255, .15), inset 0 2px 0 0 rgba(255, 255, 255, .15), inset 2px 0 0 0 rgba(255, 255, 255, .15);
+        border-bottom: 1px solid #000;
         position: relative;
+        
         
         h3 {
             margin: 0 auto;
+            font-size: 12.5px;
         }
 
         .dialog-header-actions {
@@ -37,25 +42,31 @@
 
     .dialog-wrapper {
         background-color: #ebe9df;
-        flex: 1;
+        height: calc(100% - 30px);
+        box-shadow: inset 0 0 0 2px #fff;
+
         display: flex;
         flex-direction: column;
     }
 
     .dialog-content {
         padding: 10px;
-        flex: 1;
+        flex-grow: 1;
+
         display: flex;
         flex-direction: column;
+        min-height: 0;
     }
 
     .dialog-tabs {
-        height: 34px;
-        background-color: #fff;
+        min-height: 34px;
+        background-color: #e9e9e1;
+        box-shadow: inset -2px 0 0 0 #fff, inset 2px 0 0 0 #fff;
         border-bottom: 1px solid #242424;
         padding: 0 10px;
         display: flex;
         flex-direction: row;
+        
         
         .dialog-tabs-actions {
             display: flex;
