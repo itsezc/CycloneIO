@@ -1,3 +1,5 @@
+type AvatarGesture = 'std' | 'sml' | 'sad' | 'agr' | 'srp' | 'eyb' | 'spk'
+
 export enum Gestures {
     STAND = 'std',
     SMILE = 'sml',
@@ -7,3 +9,5 @@ export enum Gestures {
     EYEBLINK = 'eyb',
     SPEAK = 'spk'
 }
+
+export default AvatarGesture

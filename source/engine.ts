@@ -9,8 +9,6 @@ export default class Engine {
     private readonly game: Game
     private readonly avatarImager: AvatarImager
 
-    private room: Room
-
     public constructor() {
         this.config = {
             resolution: window.devicePixelRatio,
@@ -27,27 +25,28 @@ export default class Engine {
             }
         }
 
-        this.game = new Phaser.Game(this.config)
+        this.game = new Game(this.config)
 
         console.info({ game: this.game }, 'ready')
 
         this.goToRoom('CdUSYdhd83HDHjsdAs8sd8')
 
-        this.avatarImager = new AvatarImager(this)
+        // this.avatarImager = new AvatarImager(this)
 
-        this.avatarImager.initialize().then(() => {
-            console.info({ avatarImager: this.avatarImager }, 'ready')
-        })
-
-        console.info({ sceneManager: this.game.scene }, 'ready')
+        // this.avatarImager.fetchResources().then(() => {
+        //     console.info({ avatarImager: this.avatarImager }, 'ready')
+        // })
     }
 
-    private goToRoom(id: string) {
-        this.room = new Room(id, this)
+    private goToRoom(id: string): void {
+        let room = new Room(id, this)
 
-        this.game.scene.add(id, this.room, true)
-        this.game.scene.start(id)
+        this.game.scene.add(id, room, true)
+    }
+
+    public get AvatarImager(): AvatarImager {
+        return this.avatarImager
     }
 }
 
-const engine = new Engine()
+new Engine()

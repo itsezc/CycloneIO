@@ -1,4 +1,8 @@
-export enum BodyPartTypes {
+type AvatarPart = 'hr' | 'hrb' | 'hd' | 'ha' | 'he' | 'ey' |'ea' | 'fa' | 'fc' | 'sh'
+                        | 'lg' | 'wa' | 'ch' | 'ca' | 'cc' | 'cp' | 'bd' | 'lh' | 'ls' | 'rh'
+                        | 'rs' | 'li' | 'ri' | 'lc' | 'rc' | 'fx'
+
+export enum BodyParts {
     SHOES = 'sh',
     LEGS = 'lg',
     WAIST = 'wa',
@@ -18,7 +22,7 @@ export enum BodyPartTypes {
     EFFECT = 'fx'
 }
 
-export enum HeadPartTypes {
+export enum HeadParts {
     HAIR = 'hr',
     HAIR_BACK = 'hrb',
     HEAD = 'hd',
@@ -29,3 +33,5 @@ export enum HeadPartTypes {
     FACE_ACCESSORY = 'fa',
     FACIAL_CONTOURS = 'fc'
 }
+
+export default AvatarPart

@@ -1,6 +1,6 @@
-export type Gender = 'M' | 'F'
+type AvatarGender = 'M' | 'F'
 
-enum AvatarGender {
+export enum Genders {
     MALE = 'M',
     FEMALE = 'F'
 }

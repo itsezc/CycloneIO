@@ -1,8 +1,6 @@
 import { Geom } from 'phaser'
 
-import { Vector2D } from '../types/vector'
-
-export const coordinatesToIsometric = (coordinates: Vector2D): Geom.Point => {
+export const coordinatesToIsometric = (coordinates: Geom.Point): Geom.Point => {
     const { x, y } = coordinates
 
     let isometricX = (x - y) * 32

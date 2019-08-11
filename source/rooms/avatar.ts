@@ -1,52 +1,68 @@
-import { GameObjects } from 'phaser'
+import { GameObjects, Math } from 'phaser'
 
-import Vector from '../types/vector'
+import AvatarImager from '../avatar/imager'
+import AvatarFigure from '../avatar/figure'
+
+import AvatarDirection, { AvatarPartsDirection } from '../avatar/direction'
+import AvatarGesture, { Gestures } from '../avatar/gesture'
+import { Actions } from '../avatar/action'
+import { Scales } from '../avatar/scale'
 
 import Room from './room'
 
-import RoomObjectDepth from './objects/depth'
+import RoomObjectDepth from './depth'
 
-type AvatarParts = {
-    head: GameObjects.Sprite,
-    body: GameObjects.Sprite,
-    shadow: GameObjects.Sprite
-}
+const DIRECTIONS = 8 as const
 
 export default class RoomAvatar extends GameObjects.Container {
 
-    private readonly isGhost: boolean
+    public constructor(public readonly scene: Room,
 
-    private readonly look: string
+                       private readonly coordinates: Math.Vector3,
 
-    private readonly avatar: AvatarParts
+                       private readonly look: string,
 
-    private readonly bodyRotation: number
-    private readonly headRotation: number
+                       private readonly isGhost: boolean,
 
-    private readonly frame: number
+                       private readonly frame: number,
 
-    public constructor(public readonly scene: Room, private readonly coordinates: Vector) {
+                       private readonly direction: AvatarPartsDirection) {
+
         super(scene, coordinates.x, coordinates.y - coordinates.y)
 
         this.scene = scene
 
-        this.isGhost = false
+        this.coordinates = coordinates
 
-        this.look = 'ca-1815-92.sh-290-62.hd-180-1009.ch-262-64.ha-3763-63.lg-280-1193.hr-831-54'
+        this.look = look
 
-        this.frame = 0
+        this.isGhost = isGhost
 
-        this.avatar = {
-            head: new GameObjects.Sprite(this.scene, 0, 0, null),
-            body: new GameObjects.Sprite(this.scene, 0, 0, null),
-            shadow: new GameObjects.Sprite(this.scene, 0, this.avatar.head.height + this.avatar.body.height - 16, null)
-        }
+        this.frame = frame
 
-        this.avatar.shadow.setAlpha(0.8)
+        this.direction = direction
 
         this.setDepth(RoomObjectDepth.FIGURE)
 
-        this.bodyRotation = 2
-        this.headRotation = 2
+        this.addGenericTextures()
+    }
+
+    private async addGenericTextures(): Promise<void> {
+        const { AvatarImager } = this.scene.Engine
+
+        for (let direction = 0 as AvatarDirection; direction < DIRECTIONS; direction++) {
+
+            await this.addHeadTexture(AvatarImager, direction, Gestures.STAND, 0)
+            await this.addHeadTexture(AvatarImager, direction, Gestures.EYEBLINK, 0)
+        }
+    }
+
+    private async addHeadTexture(avatarImager: AvatarImager, direction: AvatarDirection, gesture: AvatarGesture, frame: number): Promise<void> {
+        const { Engine } = this.scene
+
+        const avatar = new AvatarFigure(Engine, this.look, { head: direction, body: direction }, Actions.STAND,
+                                        null, gesture, frame, true, false, null)
+
+        const image = avatarImager.generateGenericTexture(avatar, this.isGhost)
     }
 }

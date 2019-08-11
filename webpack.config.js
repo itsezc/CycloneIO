@@ -8,8 +8,8 @@ module.exports = {
     entry: Path.resolve(__dirname, 'source/engine.ts'),
 
     output: {
-        path: Path.join(__dirname, './dist'),
-        filename: '[name].bundle.js'
+        path: Path.join(__dirname, './web-gallery/dist'),
+        filename: '[name].min.js'
     },
 
     resolve: {

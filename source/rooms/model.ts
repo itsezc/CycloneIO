@@ -1,10 +1,10 @@
-import { GameObjects } from 'phaser'
+import { GameObjects, Geom } from 'phaser'
 
 import { coordinatesToIsometric } from '../utils/point'
 
 import Room from './room'
 
-import RoomObjectDepth from './objects/depth'
+import RoomObjectDepth from './depth'
 
 export default class RoomModel {
 
@@ -25,7 +25,8 @@ export default class RoomModel {
         for (let y = 0; y < heightmap.length; y++) {
 
             for (let x = 0; x < heightmap[y].length; x++) {
-                let isometricCoordinates = coordinatesToIsometric({ x, y })
+                var coordinates = new Geom.Point(x, y)
+                var isometricCoordinates = coordinatesToIsometric(coordinates)
 
                 var tile = new GameObjects.Image(this.scene, isometricCoordinates.x, isometricCoordinates.y, 'tile')
 
