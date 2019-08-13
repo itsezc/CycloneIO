@@ -4,7 +4,7 @@ import Engine from '../engine'
 
 import RoomModel from './model'
 import RoomAvatar from './avatar'
-import RoomPet from './pets/pet'
+import RoomPet, { DEFAULT_SIZE } from './pets/pet'
 
 import TileGenerator from '../generators/tile'
 
@@ -66,19 +66,19 @@ export default class Room extends Scene {
 
             // console.info({ roomPlayer: this.player }, 'loaded')
 
-            const cat = {
+            const petData = {
                 x: 0,
                 y: -4,
                 z: 0,
                 direction: 2,
-                animation: 13
+                animation: 0
             } as const
 
-            const { x, y, z, direction, animation } = cat
+            const { x, y, z, direction, animation } = petData
 
             var coordinates = new Phaser.Math.Vector3(x, y, z)
 
-            this.pet = new RoomPet(this, 'cat', coordinates, direction, animation)
+            this.pet = new RoomPet(this, 'horse', DEFAULT_SIZE, coordinates, direction, animation)
 
             this.add.existing(this.pet)
 

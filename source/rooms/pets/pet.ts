@@ -8,7 +8,9 @@ import RoomObjectDepth from '../depth'
 
 const FPS = 24 as const
 const FPS_TIME_MS = 60 / FPS
-const DEFAULT_SIZE = 64 as const
+export const DEFAULT_SIZE = 64
+
+type Size = 64 | 32 | 1
 
 enum Directions {
     BEHIND_RIGHT,
@@ -21,23 +23,32 @@ enum Directions {
     BEHIND
 }
 
+enum CatLayers {
+    BODY,
+    HEAD,
+    TAIL,
+    EMOTICON
+}
+
 export default class RoomPet extends GameObjects.Container {
 
     private visualizationData: VisualizationRootObject
     private visualization: Visualization
     private assets: AssetsRootObject
 
+    private directions: number[]
+
     private totalTimeRunning: number = 0
     private frameCount: number = 0
 
-    public constructor(public readonly scene: Room, public readonly type: string, private readonly coordinates: Phaser.Math.Vector3,
-        private direction: number, private readonly animation: number) {
+    public constructor(public readonly scene: Room, public readonly type: string, private readonly size: Size,
+        coordinates: Phaser.Math.Vector3, private direction: number, private readonly animation: number) {
 
         super(scene, coordinates.x, coordinates.y - coordinates.z)
 
         this.scene = scene
         this.type = type
-        this.coordinates = coordinates
+        this.size = size
         this.direction = direction
         this.animation = animation
 
@@ -85,9 +96,15 @@ export default class RoomPet extends GameObjects.Container {
         const { cache, time } = this.scene
 
         this.visualizationData = cache.json.get(`${this.type}_visualization`)
-        this.visualization = this.visualizationData.visualizationData.graphics.visualization[1]
+
+        this.visualization = this.visualizationData.visualizationData.graphics.visualization
+            .find(visualization => Number(visualization.size) === this.size)
+
+        console.log({ visualization: this.visualization }, this.type)
 
         this.assets = cache.json.get(`${this.type}_assets`)
+
+        this.directions = this.getDirections()
 
         if (!this.hasDirection(this.direction)) {
             this.direction = this.directions[0]
@@ -101,20 +118,17 @@ export default class RoomPet extends GameObjects.Container {
         })
 
         console.log({ assets: this.assets }, this.type)
-        console.log({ visualization: this.visualization }, this.type)
         console.log({ postures: this.visualization.postures.posture }, this.type)
         console.log({ gestures: this.visualization.gestures.gesture }, this.type)
+        console.log({ directions: this.directions }, this.type)
+        console.log({ layerCount: this.getLayerCount() }, this.type)
     }
 
-    private get directions(): number[] {
+    private getDirections(): number[] {
         let stringDirections = Object.keys(this.visualization.directions.direction)
         let numberDirections = stringDirections.map(stringDirection => Number(stringDirection))
 
         return numberDirections
-    }
-
-    private get layerCount(): number {
-        return Number(this.visualization.layerCount)
     }
 
     private hasDirection(direction: number): boolean {
@@ -140,15 +154,12 @@ export default class RoomPet extends GameObjects.Container {
 
         var layers: GameObjects.Sprite[] = []
 
-        for (let layerId = 0; layerId < this.layerCount; layerId++) {
-            let frameIndex = this.getFrameIndex(this.animation, layerId, this.frameCount)
-            let frameOffsets = this.getFrameOffsetsFromDirection(this.animation, layerId, frameIndex, this.direction)
+        for (var layer = 0; layer < this.getLayerCount(); layer++) {
+            let frame = this.getFrame(this.animation, layer, this.frameCount)
 
-            let layerSprite = this.getSprite(DEFAULT_SIZE, false, layerId, this.direction, frameIndex, frameOffsets)
+            let layerSprite = this.getSprite(this.size, false, layer, this.direction, frame)
 
             if (layerSprite !== undefined) {
-
-                this.updateSpriteFromDirection(layerSprite, this.direction, layerId)
 
                 let depthIndex = this.getDepthIndex(layerSprite)
 
@@ -158,123 +169,86 @@ export default class RoomPet extends GameObjects.Container {
             }
         }
 
-        const shadowLayer = this.getSprite(DEFAULT_SIZE, true)
+        const shadowLayer = this.getSprite(this.size, true)
 
         if (shadowLayer !== undefined) {
             layers.push(shadowLayer)
         }
 
-        let sortedLayers = layers.sort(this.compareLayersDepth).filter(this.isCorrectSpriteSize)
+        let sortedLayers = layers.sort((a: GameObjects.Sprite, b: GameObjects.Sprite) => {
+            return a.depth > b.depth ? 1 : -1
+        })
 
         this.add(sortedLayers)
     }
 
-    private getFrameIndex(animation: number, layer: number, frameCount: number): number {
+    private getLayerCount(): number {
+        return Number(this.visualization.layerCount)
+    }
 
-        if (this.hasAnimationForLayer(animation, layer)) {
+    private getFrame(animation: number, layer: number, frameCount: number): number {
+        if (this.hasLayerForAnimation(animation, layer)) {
+            let animationLayer = this.visualization.animations.animation[animation].animationLayer[layer]
 
-            let animationLayer = this.getAnimationLayer(animation, layer)
-            let frame = this.getFrame(animation, layer)
-
-            if (frame.length === undefined) {
+            if (animationLayer.frameSequence === undefined) {
                 return 0
             }
 
-            let frameRepeat = Number(animationLayer.frameRepeat) || 1
-            let frameLoop = Number(animationLayer.frameLoop) || 0
+            if (animationLayer.frameSequence.frame.length === undefined) {
+                if (layer === 0) {
+                    return 600
+                }
 
-            let frameIndex = Math.floor(((frameCount % (frame.length * frameRepeat) / frameRepeat) ))
+                if (layer === 1) {
+                    return 301
+                }
 
-            frame = this.getFrame(animation, layer, frameIndex)
+                if (layer === 2) {
+                    return 202
+                }
 
-            if (this.hasAssetName(layer, this.direction, frame.id)) {
-                return Number(frame.id)
+                return animationLayer.frameSequence.frame.id
             }
 
-            return 0
+            let frameRepeat = Number(animationLayer.frameRepeat) || 1
+
+            let frameIndex = Math.floor((frameCount % (animationLayer.frameSequence.frame.length * frameRepeat) / frameRepeat))
+
+            return animationLayer.frameSequence.frame[frameIndex].id
         }
 
         return 0
     }
 
-    private hasAnimationForLayer(animation: number, layer: number): boolean {
-        return this.hasAnimation(animation) && this.getAnimationLayer(animation, layer) !== undefined
-    }
-
-    private hasAnimationFrameOffset(animation: number, layer: number, frameIndex: number, direction: number): boolean {
-        let offsets = this.getAnimationFrameOffsets(animation, layer, frameIndex)
-
-        if (offsets === undefined) {
-            return false
-        }
-
-        let offset = this.getAnimationFrameOffset(animation, layer, frameIndex, direction)
-
-        return offset.x !== undefined && offset.y !== undefined
+    private hasLayerForAnimation(animation: number, layer: number): boolean {
+        return this.hasAnimation(animation) && this.visualization.animations.animation[animation].animationLayer[layer] !== undefined
     }
 
     private hasAnimation(animation: number): boolean {
-        return this.hasAnimations && this.getAnimation(animation) !== undefined
+        return this.hasAnimations() && this.visualization.animations.animation[animation] !== undefined
     }
 
-    private getAnimationLayer(animationId: number, layer: number): any {
-        return this.visualization.animations.animation[animationId].animationLayer[layer]
-    }
-
-    private getFrame(animation: number, layer: number, frameIndex?: number) {
-        let frame = this.getAnimationLayer(animation, layer).frameSequence.frame
-
-        return frame[frameIndex] === undefined ? frame : frame[frameIndex]
-    }
-
-    private getAnimationFrameOffsets(animation: number, layer: number, frameIndex: number): any {
-        return this.getFrame(animation, layer, frameIndex).offsets
-    }
-
-    private getAnimationFrameOffset(animation: number, layer: number, frameIndex: number, direction: number): any {
-        return this.getAnimationFrameOffsets(animation, layer, frameIndex).offset[direction]
-    }
-
-    private get hasAnimations(): boolean {
+    private hasAnimations(): boolean {
         return this.visualization.animations.animation !== undefined
     }
 
-    private getAnimation(animation: number): Animation {
-        return this.visualization.animations.animation[animation]
-    }
-
-    private getFrameOffsetsFromDirection(animation: number, layer: number, frameIndex: number, direction: number): Geom.Point {
-
-        if (this.hasAnimationForLayer(animation, layer) && this.hasAnimationFrameOffset(animation, layer, frameIndex, direction)) {
-
-            const { x, y } = this.getAnimationFrameOffset(animation, layer, frameIndex, direction)
-
-            return new Geom.Point(Number(x), Number(y))
-        }
-    }
-
-    private getSprite(size: number, shadow: boolean, layer?: number, direction?: number, frame?: number, offsets?: Geom.Point): GameObjects.Sprite {
+    private getSprite(size: number, shadow: boolean, layer?: number, direction?: number, frame?: number): GameObjects.Sprite {
         let assetName = shadow ? this.getAssetName(size, -1, 0, 0) : this.getAssetName(size, layer, direction, frame)
 
         if (this.hasAsset(assetName)) {
             let asset = this.getAsset(assetName)
 
-            const frameName = this.type + '_' + assetName
-            const { x, y } = asset
+            const frameName = this.type + '_' + assetName + '.png'
 
             if (!this.spriteFrameExists(frameName)) {
                 return undefined
             }
 
-            if (offsets === undefined) {
-                offsets = new Geom.Point(0, 0)
-            }
+            let layerSprite = new GameObjects.Sprite(this.scene, -Number(asset.x), -Number(asset.y), this.type, frameName).setOrigin(0, 0)
 
-            let layerSprite = new GameObjects.Sprite(this.scene, -Number(x) + offsets.x, -Number(y) + offsets.y, this.type, frameName)
-
-            layerSprite.setOrigin(0, 0)
-
-            layerSprite.setTint(0xE478CF, 0x9947B3, 0xCB303C, 0x1896D5)
+            layerSprite.tint = 0x7CB6C1
+            
+            layerSprite.setBlendMode(Phaser.BlendModes.LIGHTER)
 
             if (layerSprite.frame.name !== frameName) {
                 return undefined
@@ -290,7 +264,7 @@ export default class RoomPet extends GameObjects.Container {
         return undefined
     }
 
-    private getAssetName(size: number, layer: number, direction?: number, frame?: number): string {
+    private getAssetName(size: number, layer: number, direction: number, frame: number) {
         let layerChar = this.getLayerCharFromNumber(layer)
         let assetName = this.type + '_' + size + '_' + layerChar
 
@@ -316,17 +290,6 @@ export default class RoomPet extends GameObjects.Container {
         return false
     }
 
-    private hasAssetName(layer: number, direction: number, frame: number): boolean {
-        const { textures } = this.scene
-
-        const texture = textures.get(this.type)
-
-        let assetName = this.getAssetName(DEFAULT_SIZE, layer, direction, frame)
-        let spriteName = this.type + '_' + assetName
-
-        return texture.has(spriteName)
-    }
-
     private getAsset(assetName: string): any {
         return this.assets.asset.find(asset => asset.name === assetName)
     }
@@ -340,42 +303,6 @@ export default class RoomPet extends GameObjects.Container {
         return frames.find(frame => frame === frameName) !== undefined
     }
 
-    private updateSpriteFromDirection(sprite: GameObjects.Sprite, direction: number, layer: number): void {
-        if (this.hasVisualDirectionLayer(direction, layer)) {
-
-            let visualDirectionLayer = this.getVisualDirectionLayer(direction, layer)
-
-            this.doUpdateSprite(sprite, visualDirectionLayer)
-
-        }
-    }
-
-    private hasVisualDirectionLayer(direction: number, layer: number): boolean {
-        return this.hasVisualDirection(direction) && this.getVisualDirection(direction).layer[layer] !== undefined
-    }
-
-    private hasVisualDirection(direction: number): boolean {
-        return this.hasVisualDirections && this.getVisualDirection(direction) !== undefined
-    }
-
-    private hasVisualDirections(): boolean {
-        return this.visualization.directions !== undefined
-    }
-
-    private getVisualDirection(direction: number): Direction {
-        return this.visualization.directions.direction[direction]
-    }
-
-    private getVisualDirectionLayer(direction: number, layer: number) {
-        return this.getVisualDirection(direction).layer[layer]
-    }
-
-    private doUpdateSprite(sprite: GameObjects.Sprite, visualDirectionLayer: Layer2) {
-        const { z } = visualDirectionLayer
-
-        sprite.z += Number(z) || 0
-    }
-
     private getDepthIndex(sprite: GameObjects.Sprite): number {
         const { frame, z } = sprite
         const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
@@ -384,18 +311,5 @@ export default class RoomPet extends GameObjects.Container {
         let layer = fragments[fragments.length - 3]
 
         return alphabet.indexOf(layer) + z
-    }
-
-    private isCorrectSpriteSize(sprite: GameObjects.Sprite): boolean {
-        const { frame } = sprite
-
-        let fragments = frame.name.split('_')
-        let size = Number(fragments[fragments.length - 4])
-
-        return size === DEFAULT_SIZE
-    }
-
-    private compareLayersDepth(a: GameObjects.Sprite, b: GameObjects.Sprite): number {
-        return a.depth > b.depth ? 1 : -1
     }
 }
