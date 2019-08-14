@@ -8,38 +8,38 @@ export default class ChatBubble {
 	bubble: Phaser.GameObjects.Container
 
 	constructor(
-		private style: number,
-		private message: string,
-		private username: string,
-		private type: 'normal' | 'shout' | 'whisper' = 'normal',
-		private scene: Phaser.Scene
+		// private style: number,
+		// private message: string,
+		// private username: string,
+		// private type: 'normal' | 'shout' | 'whisper' = 'normal',
+		// private scene: Phaser.Scene
 	) {
-		this.bubble = new Phaser.GameObjects.Container(this.scene)		
+		// this.bubble = new Phaser.GameObjects.Container(this.scene)		
 		
-		const bubble_asset = `/chat/${this.style}/bubble.png`
-		const bubble_meta = `/chat/${this.style}/meta.json`
+		// const bubble_asset = `/chat/${this.style}/bubble.png`
+		// const bubble_meta = `/chat/${this.style}/meta.json`
 
-		const loader = new Phaser.Loader.LoaderPlugin(this.scene)
+		// const loader = new Phaser.Loader.LoaderPlugin(this.scene)
 
-		loader.image(`chat_style_${this.style}`, bubble_asset)
-		loader.json(`chat_style_meta_${this.style}`, bubble_meta)
+		// loader.image(`chat_style_${this.style}`, bubble_asset)
+		// loader.json(`chat_style_meta_${this.style}`, bubble_meta)
 
-		loader.start()
+		// loader.start()
 
-		loader.loadComplete = () => {
-			const { width, height } = this.scene.textures.get(bubble_asset).getSourceImage()
-			const meta = this.scene.cache.json.get(`chat_style_meta_${this.style}`)
+		// loader.loadComplete = () => {
+		// 	const { width, height } = this.scene.textures.get(bubble_asset).getSourceImage()
+		// 	const meta = this.scene.cache.json.get(`chat_style_meta_${this.style}`)
 
-			const { username } = meta
-			const { style } = username
+		// 	const { username } = meta
+		// 	const { style } = username
 			
-			const message = this.scene.add.text(0, 0, this.message, style)
-			message.setOrigin(0, 0)
-			message.setPosition(0, -300)
-			message.setDepth(2)
+		// 	const message = this.scene.add.text(0, 0, this.message, style)
+		// 	message.setOrigin(0, 0)
+		// 	message.setPosition(0, -300)
+		// 	message.setDepth(2)
 
-			this.scene.add.image(0, -300, `chat_style_${this.style}`).setDepth(1)
-		}
+		// 	this.scene.add.image(0, -300, `chat_style_${this.style}`).setDepth(1)
+		// }
 	}
 
 	getStyle(id: number): ChatStyle {
@@ -87,33 +87,33 @@ export default class ChatBubble {
 			const textWidth = usernameWidth + messageWidth
 
 			bubbleCanvas.width = textMarginX + textWidth + RIGHT_WIDTH
-			bubbleCanvas.height = style.base.height
+			// bubbleCanvas.height = style.base.height
 
-			for (let i = baseStartX; i < textMarginX + textWidth; i++) {
-				bubbleContext.drawImage(
-					style.base, 
-					32, 
-					0, 
-					1, 
-					style.base.height, 
-					i, 
-					0, 
-					1,
-					style.base.height
-				)
-			}
+			// for (let i = baseStartX; i < textMarginX + textWidth; i++) {
+			// 	bubbleContext.drawImage(
+			// 		style.base, 
+			// 		32, 
+			// 		0, 
+			// 		1, 
+			// 		style.base.height, 
+			// 		i, 
+			// 		0, 
+			// 		1,
+			// 		style.base.height
+			// 	)
+			// }
 
-			bubbleContext.drawImage(
-				style.base,
-				style.base.width - RIGHT_WIDTH,
-				0,
-				RIGHT_WIDTH,
-				style.base.height,
-				textMarginX + textWidth,
-				0,
-				RIGHT_WIDTH,
-				style.base.height
-			)
+			// bubbleContext.drawImage(
+			// 	style.base,
+			// 	style.base.width - RIGHT_WIDTH,
+			// 	0,
+			// 	RIGHT_WIDTH,
+			// 	style.base.height,
+			// 	textMarginX + textWidth,
+			// 	0,
+			// 	RIGHT_WIDTH,
+			// 	style.base.height
+			// )
 			
 			bubbleContext.textBaseline = 'top'
 			bubbleContext.fillStyle = 'black'
@@ -125,8 +125,8 @@ export default class ChatBubble {
 				textMarginY
 			)
 
-			const colored = this.tint(style.color, color)
-			bubbleContext.drawImage(colored, 0, 0)
+			// const colored = this.tint(style.color, color)
+			// bubbleContext.drawImage(colored, 0, 0)
 			bubbleContext.drawImage(headImage, -3, -7)
 		}
 
