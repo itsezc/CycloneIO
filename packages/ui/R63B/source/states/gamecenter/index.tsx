@@ -93,7 +93,7 @@ export default class GameCenter extends Component<any, ClientState> {
 							</div>
 						</fieldset>
 					</div>
-					<Toolbar isClient={false} />
+					<Toolbar isClient={true} isGameCenter={true} />
 				</div>
 			)
 
