@@ -71,7 +71,7 @@ export default class Dialog extends Component<DialogProps, any> {
         this.close = this.close.bind(this)
     }
     
-	componentWillMount() {
+	componentDidMount() {
 
         document.addEventListener('mousemove', this.handleMouse)
         document.addEventListener('mouseup', this.mouseStopEvent)
