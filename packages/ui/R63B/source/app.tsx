@@ -15,7 +15,7 @@ import SocketIO from 'socket.io-client'
 import Loading from './states/loading'
 import Client from './states/client'
 import Room from './states/room'
-import Games from './states/games'
+import Games from './states/gamecenter'
 
 import './app.styl'
 
