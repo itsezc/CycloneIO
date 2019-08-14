@@ -1,5 +1,5 @@
 import BadgePart from "./BadgePart";
-import GuildBadgeRessource from './GuildBadgeRessource';
+import GuildBadgeRessource from './GuildBadgeResource';
 
 export default class BadgePartBase extends BadgePart {
 

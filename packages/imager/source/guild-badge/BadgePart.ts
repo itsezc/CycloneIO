@@ -1,11 +1,11 @@
 import gd from 'node-gd'
-import GuildBadgeRessource from './GuildBadgeRessource'
+import GuildBadgeRessource from './GuildBadgeResource'
 
 export default abstract class BadgePart {
     
-    protected elementIndex: string;
-    private colorIndex: string;
-    private positionIndex: number;
+    protected elementIndex: string
+    private colorIndex: string
+    private positionIndex: number
 
     public constructor(elementIndex: string, colorIndex: string, positionIndex: number){
         this.elementIndex = elementIndex;
