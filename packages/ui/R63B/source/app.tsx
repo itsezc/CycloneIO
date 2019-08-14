@@ -17,6 +17,9 @@ import Client from './states/client'
 import Room from './states/room'
 import Games from './states/gamecenter'
 
+import { CycloneWindow } from 'window.d.ts'
+declare let window: CycloneWindow
+
 import './app.styl'
 
 class App extends Component<any, any> {
