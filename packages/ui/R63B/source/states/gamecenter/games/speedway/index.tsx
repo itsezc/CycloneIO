@@ -13,8 +13,43 @@ export default class Speedway extends Component {
 					</div>
 
 					<button className='illumina-button'>
-						Play Now
+						Play now!
 					</button>
+
+					<div className='prizes'>
+						<div className='rewards'>
+							<h2 className='title'>The Prize of the Week</h2>
+
+							{/* <div className='timer'>
+								<div className='hand'>
+									<div className='value'>
+										05
+									</div>
+									<span>days</span>
+								</div>
+								<span className='divider'>:</span>
+								<div className='hand'>
+									<div className='value'>
+										09
+									</div>
+									<span>hrs</span>
+								</div>
+								<span className='divider'>:</span>
+								<div className='hand'>
+									<div className='value'>
+										05
+									</div>
+									<span>mins</span>
+								</div>
+							</div>								 */}
+						</div>
+						<div className='last_winner'>
+						<h2 className='title'>Previous Winner</h2>
+						</div>
+						<div className='lucky_winners'>
+							<h2 className='title'>Lucky Winners</h2>
+						</div>
+					</div>
 				</div>
 
 
@@ -34,9 +69,9 @@ export default class Speedway extends Component {
 
 				</div>
 				
-				<div className='banner'>
+				{/* <div className='banner'>
 					<img src='/games/speedway/banner.png'/>
-				</div>
+				</div> */}
 
 				
 			</div>

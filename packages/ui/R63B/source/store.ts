@@ -2,8 +2,8 @@ import { createStore, applyMiddleware, compose } from 'redux'
 
 import Reducers from './store/reducers'
 
-import { CycloneWindow } from 'window.d.ts'
-declare let window: CycloneWindow
+import { CWindow } from 'window.d.ts'
+declare let window: CWindow
 
 const Store = createStore(
 	Reducers,
