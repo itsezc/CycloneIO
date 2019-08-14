@@ -69,7 +69,7 @@ export default abstract class BadgePart {
 
     public generate(guildBadgeRessource: GuildBadgeRessource): gd.Image {
 
-        const imageData: Object = this.getResourceData(guildBadgeRessource);
+        const imageData: any = this.getResourceData(guildBadgeRessource);
         if(imageData === undefined) throw new Error('Ressource undefined : ' + this.elementIndex + ' on path : ' + this.getResourcePath(guildBadgeRessource));
 
         const resourcePath: string = this.getResourcePath(guildBadgeRessource) + '/';

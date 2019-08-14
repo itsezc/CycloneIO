@@ -8,8 +8,8 @@ export default class GuildBadgeRessource {
 
     private readonly configurationPath = this.resourcePath + '/configurations';
 
-    public symbols: Object;
-    public bases: Object;
+    public symbols: Object | any
+    public bases: Object | any
     public colors: {[key: string]: any};
 
     public constructor(){
