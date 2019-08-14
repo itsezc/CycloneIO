@@ -91,6 +91,7 @@ export default class GameCenter extends Component<any, ClientState> {
 									<img src='/games/turku/icon.png' />
 								</div>
 							</div>
+							<img className='arcade' src='./games/arcade.png' />
 						</fieldset>
 					</div>
 					<Toolbar isClient={true} isGameCenter={true} />

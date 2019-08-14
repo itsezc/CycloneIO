@@ -23,7 +23,7 @@ canvas
 		background-size 1% 100%
 
 	.illumina-button
-		margin-left 180px
+		margin-left 400px
 		margin-top 50px
 		padding: 12px;
 		padding-left: 20px;
@@ -50,16 +50,38 @@ canvas
 			position fixed 
 			bottom 167px
 
+		.game__container__leaderboards
+			display inline-block
+			margin 150px 0px 0px 0px
+			width 30%
+
+			fieldset
+				width calc(100% - 50px)
+				margin-bottom 10px
+				height 260px
+				border-radius 4px
+
+				legend
+					font-size 10px
+					margin 0 10px
+					padding 0 4px
+					font-weight 600
+					text-shadow 0 0.5px white
+					letter-spacing 0.5px
 		
 		.game__container__content
-			margin auto
-			padding 100px
-			width 50%
+			// margin auto
+			display inline-block
+			float left
+			padding 100px 0px
+			width 70%
 
-			p
+			p.slogan
 				text-align center
-				font-size 12px
+				font-size 13px
 				margin-bottom 10px
+				font-weight 600
+				text-shadow 0 1px white
 
 			.description
 				margin-top 50px
@@ -68,7 +90,7 @@ canvas
 				font-size 12px
 
 			.logo 
-				margin-left -120px
+				margin-left 100px
 
 	.picker
 		position fixed
@@ -101,6 +123,12 @@ canvas
 				margin-left 2em
 				padding 0 4px
 				display inline
+
+			.arcade
+				position absolute
+				display inline
+				right 0
+				bottom 0
 
 			.content
 				padding 6px 0px

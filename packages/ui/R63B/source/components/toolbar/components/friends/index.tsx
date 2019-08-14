@@ -13,7 +13,7 @@ export default class Friends extends React.PureComponent<Props, any> {
     constructor(props: Props){
         super(props);
 
-        const friendsPerPage = 6;
+        const friendsPerPage = 5;
 
         var findingNewFriends = (this.findingNewFriendsMax - this.props.friends.length);
         findingNewFriends = findingNewFriends <= 0 ? 1 : findingNewFriends;
