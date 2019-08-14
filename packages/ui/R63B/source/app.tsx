@@ -5,9 +5,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { Store } from './store'
 
-import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
-
+import { API } from './api'
 import SocketIO from 'socket.io-client'
 
 import Loading from './states/loading'
@@ -21,18 +20,12 @@ class App extends Component<any, any> {
 
     private server: string
     
-    public API: ApolloClient<any>
-    
     constructor(props: any, private Socket: SocketIOClient.Socket) {
         super(props)
 
         this.state = {
             roomData: {}
         };
-
-        this.API = new ApolloClient({
-			uri: 'http://localhost:8087/graphql'
-		})
 
         this.server = `${props.host}:${props.port}`
 
@@ -47,7 +40,7 @@ class App extends Component<any, any> {
     render() {
         return (
             <ApolloProvider 
-                client={this.API}
+                client={API}
             >
                 <Provider 
                     store={Store}
