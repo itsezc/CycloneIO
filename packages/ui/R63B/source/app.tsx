@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
-
-import Reducers from './store/reducers'
+import { Store } from './store'
 
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
@@ -17,9 +15,6 @@ import Client from './states/client'
 import Room from './states/room'
 import Games from './states/gamecenter'
 
-import { CycloneWindow } from 'window.d.ts'
-declare let window: CycloneWindow
-
 import './app.styl'
 
 class App extends Component<any, any> {
@@ -27,7 +22,6 @@ class App extends Component<any, any> {
     private server: string
     
     public API: ApolloClient<any>
-    public STORE: any
     
     constructor(props: any, private Socket: SocketIOClient.Socket) {
         super(props)
@@ -48,14 +42,6 @@ class App extends Component<any, any> {
         })
 
         this.Socket.emit('joinRoom', 'cjy84p6y600lr07320ly34wwf')
-
-        this.STORE = createStore(
-            Reducers,
-            {},
-            compose(
-                (typeof window.__REDUX_DEVTOOLS_EXTENSION__ !== 'undefined') ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f: any) => f
-            )
-        )
     }
 
     render() {
@@ -64,7 +50,7 @@ class App extends Component<any, any> {
                 client={this.API}
             >
                 <Provider 
-                    store={this.STORE}
+                    store={Store}
                 >
                     <BrowserRouter>
                         <Switch location={this.props.location}>
