@@ -12,7 +12,7 @@ export default class FurnitureSprite extends Phaser.GameObjects.Container {
     private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
     private static DEFAULT_SIZE = 64
 
-    private furniture: Furniture
+    public furniture: Furniture
     private playing: boolean
 
     private frameCount: number
