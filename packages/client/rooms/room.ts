@@ -154,7 +154,7 @@ export default class Room extends Phaser.Scene {
      */
     public create(): void {
 
-        const buble = new ChatBubble(1, 'xd', 'xd', this)
+        const buble = new ChatBubble(1, 'xd', 'xd', 'normal', this)
 
         const renderer = this.game.renderer
 
