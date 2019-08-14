@@ -97,6 +97,8 @@ export default class RoomPet extends GameObjects.Container {
 
         this.visualizationData = cache.json.get(`${this.type}_visualization`)
 
+        console.log(this.visualizationData)
+
         this.visualization = this.visualizationData.visualizationData.graphics.visualization
             .find(visualization => Number(visualization.size) === this.size)
 
@@ -125,10 +127,14 @@ export default class RoomPet extends GameObjects.Container {
     }
 
     private getDirections(): number[] {
-        let stringDirections = Object.keys(this.visualization.directions.direction)
-        let numberDirections = stringDirections.map(stringDirection => Number(stringDirection))
+        if (this.visualization.directions !== undefined) {
+            let stringDirections = Object.keys(this.visualization.directions.direction)
+            let numberDirections = stringDirections.map(stringDirection => Number(stringDirection))
 
-        return numberDirections
+            return numberDirections
+        }
+
+        return [0]
     }
 
     private hasDirection(direction: number): boolean {
@@ -156,8 +162,9 @@ export default class RoomPet extends GameObjects.Container {
 
         for (var layer = 0; layer < this.getLayerCount(); layer++) {
             let frame = this.getFrame(this.animation, layer, this.frameCount)
+            let frameOffset = this.getFrameOffset(this.animation, layer, frame[1], this.direction)
 
-            let layerSprite = this.getSprite(this.size, false, layer, this.direction, frame)
+            let layerSprite = this.getSprite(this.size, false, layer, this.direction, frame[0], frameOffset)
 
             if (layerSprite !== undefined) {
 
@@ -186,27 +193,15 @@ export default class RoomPet extends GameObjects.Container {
         return Number(this.visualization.layerCount)
     }
 
-    private getFrame(animation: number, layer: number, frameCount: number): number {
+    private getFrame(animation: number, layer: number, frameCount: number): number[] {
         if (this.hasLayerForAnimation(animation, layer)) {
             let animationLayer = this.visualization.animations.animation[animation].animationLayer[layer]
 
             if (animationLayer.frameSequence === undefined) {
-                return 0
+                return [0, 0]
             }
 
             if (animationLayer.frameSequence.frame.length === undefined) {
-                if (layer === 0) {
-                    return 600
-                }
-
-                if (layer === 1) {
-                    return 301
-                }
-
-                if (layer === 2) {
-                    return 202
-                }
-
                 return animationLayer.frameSequence.frame.id
             }
 
@@ -214,10 +209,40 @@ export default class RoomPet extends GameObjects.Container {
 
             let frameIndex = Math.floor((frameCount % (animationLayer.frameSequence.frame.length * frameRepeat) / frameRepeat))
 
-            return animationLayer.frameSequence.frame[frameIndex].id
+            return [animationLayer.frameSequence.frame[frameIndex].id, frameIndex]
         }
 
-        return 0
+        return [0, 0]
+    }
+
+    private getFrameOffset(animation: number, layer: number, frameId: number, direction: number): Geom.Point {
+        if (this.hasLayerForAnimation(animation, layer)) {
+            let animationLayer = this.visualization.animations.animation[animation].animationLayer[layer]
+
+            if (animationLayer.frameSequence === undefined) {
+                return new Geom.Point(0, 0)
+            }
+
+            let frame = animationLayer.frameSequence.frame[frameId]
+
+            if (frame === undefined) {
+                frame = animationLayer.frameSequence.frame
+            }
+
+            if (frame.offsets === undefined) {
+                return new Geom.Point(0, 0)
+            }
+
+            let offset = frame.offsets.offset[direction]
+
+            if (offset.x === undefined && offset.y === undefined) {
+                return new Geom.Point(0, 0)
+            }
+
+            return new Geom.Point(Number(offset.x), Number(offset.y))
+        }
+
+        return new Geom.Point(0, 0)
     }
 
     private hasLayerForAnimation(animation: number, layer: number): boolean {
@@ -232,33 +257,47 @@ export default class RoomPet extends GameObjects.Container {
         return this.visualization.animations.animation !== undefined
     }
 
-    private getSprite(size: number, shadow: boolean, layer?: number, direction?: number, frame?: number): GameObjects.Sprite {
+    private getSprite(size: number, shadow: boolean, layer?: number, direction?: number, frame?: number, offset?: Geom.Point): GameObjects.Sprite {
         let assetName = shadow ? this.getAssetName(size, -1, 0, 0) : this.getAssetName(size, layer, direction, frame)
 
         if (this.hasAsset(assetName)) {
-            let asset = this.getAsset(assetName)
+            let asset = this.getAssetFromAssets(assetName)
+            let sourceName = assetName
 
-            const frameName = this.type + '_' + assetName + '.png'
+            if (asset.source !== undefined) {
+                sourceName = asset.source
+            }
 
-            if (!this.spriteFrameExists(frameName)) {
+            try {
+                const frameName = this.type + '_' + sourceName
+
+                if (!this.spriteFrameExists(frameName)) {
+                    return undefined
+                }
+
+                if (offset === undefined) {
+                    offset = new Geom.Point(0, 0)
+                }
+
+                let layerSprite = new GameObjects.Sprite(this.scene, -Number(asset.x) + offset.x,
+                    -Number(asset.y) + offset.y, this.type, frameName).setOrigin(0, 0)
+
+                layerSprite.tint = 0xFF0000
+
+                if (layerSprite.frame.name !== frameName) {
+                    return undefined
+                }
+
+                if (shadow) {
+                    layerSprite.alpha = 0.1
+                }
+
+                return layerSprite
+            }
+
+            catch {
                 return undefined
             }
-
-            let layerSprite = new GameObjects.Sprite(this.scene, -Number(asset.x), -Number(asset.y), this.type, frameName).setOrigin(0, 0)
-
-            layerSprite.tint = 0x7CB6C1
-            
-            layerSprite.setBlendMode(Phaser.BlendModes.LIGHTER)
-
-            if (layerSprite.frame.name !== frameName) {
-                return undefined
-            }
-
-            if (shadow) {
-                layerSprite.alpha = 0.1
-            }
-
-            return layerSprite
         }
 
         return undefined
@@ -281,7 +320,7 @@ export default class RoomPet extends GameObjects.Container {
     }
 
     private hasAsset(assetName: string): boolean {
-        let asset = this.getAsset(assetName)
+        let asset = this.getAssetFromAssets(assetName)
 
         if (asset !== undefined) {
             return asset.name === assetName
@@ -290,7 +329,7 @@ export default class RoomPet extends GameObjects.Container {
         return false
     }
 
-    private getAsset(assetName: string): any {
+    private getAssetFromAssets(assetName: string): any {
         return this.assets.asset.find(asset => asset.name === assetName)
     }
 
