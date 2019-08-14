@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react'
+import { Direction } from 'cyclone.d.ts'
 
-export default class UserInfos extends React.PureComponent {
+export default class UserInfos extends Component {
 
-    render(){
+	direction: Direction
+
+	constructor(props: any) {
+		super(props)
+
+		this.direction = props.direction || 2
+	}
+
+    render() {
+		const userAvatar = `https://imager.habbo.industries/avatarimage.php?figure=fa-3276-1331.he-8394-1408.sh-725-1408.hd-600-1383.ch-691-1428.lg-710-110.ca-1815-1408.ha-3763-63.hr-834-54&action=std&gesture=std&direction=${this.direction}&head_direction=${this.direction}&size=n`
+
         return (
             <div className="user-infos frame-100">
                 
@@ -19,7 +30,7 @@ export default class UserInfos extends React.PureComponent {
                 <div className="user-infos-content">
 
                     <div className="frame-card user-infos-avatar">
-                        <img src="https://imager.habbo.industries/avatarimage.php?figure=fa-3276-1331.he-8394-1408.sh-725-1408.hd-600-1383.ch-691-1428.lg-710-110.ca-1815-1408.ha-3763-63.hr-834-54&action=std&gesture=std&direction=2&head_direction=2&size=n" />
+                        <img src={userAvatar} />
                     </div>
 
                     <div className="user-infos-badges">
