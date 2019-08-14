@@ -84,7 +84,7 @@ export enum IFurnitureType {
 
 export default class Furniture
 {
-	private data: IData
+	public data: IData
 	public scene: Room
 	
 	public animation!: number
