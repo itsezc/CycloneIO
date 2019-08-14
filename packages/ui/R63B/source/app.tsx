@@ -2,14 +2,11 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import { createStore, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
+import { Store } from './store'
 
-import Reducers from './store/reducers'
-
-import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
-
+import { API } from './api'
 import SocketIO from 'socket.io-client'
 
 import Loading from './states/loading'
@@ -17,17 +14,11 @@ import Client from './states/client'
 import Room from './states/room'
 import Games from './states/gamecenter'
 
-import { CycloneWindow } from 'window.d.ts'
-declare let window: CycloneWindow
-
 import './app.styl'
 
 class App extends Component<any, any> {
 
     private server: string
-    
-    public API: ApolloClient<any>
-    public STORE: any
     
     constructor(props: any, private Socket: SocketIOClient.Socket) {
         super(props)
@@ -36,10 +27,6 @@ class App extends Component<any, any> {
             roomData: {}
         };
 
-        this.API = new ApolloClient({
-			uri: 'http://localhost:8087/graphql'
-		})
-
         this.server = `${props.host}:${props.port}`
 
         this.Socket = SocketIO(this.server)
@@ -47,24 +34,16 @@ class App extends Component<any, any> {
             console.log(`Connected to server on ${this.server}`)
         })
 
-        this.Socket.emit('joinRoom', 'cjz7t8i23009y0721sxktkjmd')
-
-        this.STORE = createStore(
-            Reducers,
-            {},
-            compose(
-                (typeof window.__REDUX_DEVTOOLS_EXTENSION__ !== 'undefined') ? window.__REDUX_DEVTOOLS_EXTENSION__() : (f: any) => f
-            )
-        )
+        this.Socket.emit('joinRoom', 'cjy84p6y600lr07320ly34wwf')
     }
 
     render() {
         return (
             <ApolloProvider 
-                client={this.API}
+                client={API}
             >
                 <Provider 
-                    store={this.STORE}
+                    store={Store}
                 >
                     <BrowserRouter>
                         <Switch location={this.props.location}>
