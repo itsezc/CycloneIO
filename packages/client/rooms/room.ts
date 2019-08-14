@@ -361,9 +361,8 @@ export default class Room extends Phaser.Scene {
                     direction: 1
                 }
             ]
-        }
-
-        this.test = room
+		}
+		
         //this._camera.setZoom(4)
 
         //        this.add.image(0, 0, 'room_background').setDepth(2)
