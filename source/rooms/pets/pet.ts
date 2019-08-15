@@ -1,7 +1,7 @@
 import Phaser, { GameObjects, Geom } from 'phaser'
 
 import VisualizationRootObject, { Visualization, Animation, Direction, Layer2 } from './visualization'
-import AssetsRootObject from './assets'
+import AssetsRootObject, { Custompart } from './assets'
 
 import Room from '../room'
 import RoomObjectDepth from '../depth'
@@ -55,23 +55,23 @@ export default class RoomPet extends GameObjects.Container {
         this.setDepth(RoomObjectDepth.FIGURE)
 
         // Flipped directions
-        switch (this.direction) {
+        // switch (this.direction) {
 
-            case Directions.FRONT_LEFT:
-                this.direction = Directions.FRONT_RIGHT
-                this.scaleX = -1
-                break
+        //     case Directions.FRONT_LEFT:
+        //         this.direction = Directions.FRONT_RIGHT
+        //         this.scaleX = -1
+        //         break
 
-            case Directions.LEFT:
-                this.direction = Directions.RIGHT
-                this.scaleX = -1
-                break
+        //     case Directions.LEFT:
+        //         this.direction = Directions.RIGHT
+        //         this.scaleX = -1
+        //         break
 
-            case Directions.BEHIND_LEFT:
-                this.direction = Directions.BEHIND_RIGHT
-                this.scaleX = -1
-                break
-        }
+        //     case Directions.BEHIND_LEFT:
+        //         this.direction = Directions.BEHIND_RIGHT
+        //         this.scaleX = -1
+        //         break
+        // }
 
         this.load()
     }
@@ -164,7 +164,9 @@ export default class RoomPet extends GameObjects.Container {
             let frame = this.getFrame(this.animation, layer, this.frameCount)
             let frameOffset = this.getFrameOffset(this.animation, layer, frame[1], this.direction)
 
-            let layerSprite = this.getSprite(this.size, false, layer, this.direction, frame[0], frameOffset)
+            let customPart = this.getCustomPart('saddle')
+
+            let layerSprite = this.getSprite(this.size, false, layer, this.direction, frame[0], customPart, frameOffset)
 
             if (layerSprite !== undefined) {
 
@@ -209,7 +211,7 @@ export default class RoomPet extends GameObjects.Container {
 
             let frameIndex = Math.floor((frameCount % (animationLayer.frameSequence.frame.length * frameRepeat) / frameRepeat))
 
-            return [animationLayer.frameSequence.frame[frameIndex].id, frameIndex]
+            return [Number(animationLayer.frameSequence.frame[frameIndex].id), frameIndex]
         }
 
         return [0, 0]
@@ -257,8 +259,26 @@ export default class RoomPet extends GameObjects.Container {
         return this.visualization.animations.animation !== undefined
     }
 
-    private getSprite(size: number, shadow: boolean, layer?: number, direction?: number, frame?: number, offset?: Geom.Point): GameObjects.Sprite {
-        let assetName = shadow ? this.getAssetName(size, -1, 0, 0) : this.getAssetName(size, layer, direction, frame)
+    private getCustomPart(partType: string, partId?: number): Custompart {
+        if (this.assets.custompart !== undefined) {
+
+            return this.assets.custompart.find(custompart => {
+                let source = this.type + '_' + partType
+
+                if (partId !== undefined) {
+                    source += '_' + partId
+                }
+
+                return custompart.source == source
+            })
+
+        }
+
+        return undefined
+    }
+
+    private getSprite(size: number, shadow: boolean, layer?: number, direction?: number, frame?: number, customPart?: Custompart, offset?: Geom.Point): GameObjects.Sprite {
+        let assetName = shadow ? this.getAssetName(size, -1, 0, 0) : this.getAssetName(size, layer, direction, frame, customPart)
 
         if (this.hasAsset(assetName)) {
             let asset = this.getAssetFromAssets(assetName)
@@ -279,10 +299,26 @@ export default class RoomPet extends GameObjects.Container {
                     offset = new Geom.Point(0, 0)
                 }
 
-                let layerSprite = new GameObjects.Sprite(this.scene, -Number(asset.x) + offset.x,
-                    -Number(asset.y) + offset.y, this.type, frameName).setOrigin(0, 0)
+                let layerSprite = new GameObjects.Sprite(this.scene, -Number(asset.x), -Number(asset.y), this.type, frameName).setOrigin(0, 0)
 
-                layerSprite.tint = 0xFF0000
+                if (this.direction > Directions.FRONT && this.direction < Directions.BEHIND) {
+                    layerSprite.x -= offset.x
+                }
+
+                else {
+                    layerSprite.x += offset.x
+                }
+
+                layerSprite.y += offset.y
+
+                if (asset.flipH) {
+                    layerSprite.scaleX = -1
+                    layerSprite.x *= -1
+                }
+
+                if (asset.usesPalette) {
+                    layerSprite.tint = 0xFF0000
+                }
 
                 if (layerSprite.frame.name !== frameName) {
                     return undefined
@@ -303,13 +339,17 @@ export default class RoomPet extends GameObjects.Container {
         return undefined
     }
 
-    private getAssetName(size: number, layer: number, direction: number, frame: number) {
+    private getAssetName(size: number, layer: number, direction: number, frame: number, customPart?: Custompart) {
         let layerChar = this.getLayerCharFromNumber(layer)
         let assetName = this.type + '_' + size + '_' + layerChar
 
         if (direction !== undefined && frame !== undefined) {
             assetName += '_' + direction + '_' + frame
         }
+
+        // if (customPart !== undefined) {
+        //     assetName += '_' + customPart.id
+        // }
 
         return assetName
     }
