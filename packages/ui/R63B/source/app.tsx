@@ -34,7 +34,7 @@ class App extends Component<any, any> {
             console.log(`Connected to server on ${this.server}`)
         })
 
-        this.Socket.emit('joinRoom', 'cjz7t8i23009y0721sxktkjmd')
+        this.Socket.emit('joinRoom', 'cjz8dwsg3008r0791hzbktl8o')
     }
 
     render() {

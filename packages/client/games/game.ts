@@ -12,6 +12,7 @@ export class Engine {
     public readonly avatarImager: Imager
     public readonly socket: SocketIO.Socket
     private currentRoom: Room
+    // currentUser here
 
     constructor(parent: string, socket: SocketIO.Socket) {
 
