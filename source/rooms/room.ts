@@ -71,7 +71,7 @@ export default class Room extends Scene {
                 y: -4,
                 z: 0,
                 direction: 2,
-                animation: 1
+                animation: 3
             } as const
 
             const { x, y, z, direction, animation } = petData

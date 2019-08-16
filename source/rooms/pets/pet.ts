@@ -158,7 +158,7 @@ export default class RoomPet extends GameObjects.Container {
             let frame = this.getFrame(this.animation, layer, this.frameCount)
             let frameOffset = this.getFrameOffset(this.animation, layer, frame[1], this.direction)
 
-            let customParts = this.getCustomParts({ })
+            let customParts = this.getCustomParts({ tail: 1 })
 
             let layerSprite = this.getSprite(this.size, false, layer, this.direction, frame[0], customParts, frameOffset)
 
