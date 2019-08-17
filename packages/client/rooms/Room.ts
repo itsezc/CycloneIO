@@ -371,7 +371,7 @@ export default class Room extends Phaser.Scene {
 			player.avatar.y = data.coords.y
 
 			player.avatar.setDepth(player.avatar.x + player.avatar.y + player.avatar.z)
-			this.roomContainer.sort('depth')
+			this.roomContainer.spritesContainer.sort('depth')
 
 			console.log(`x ${player.avatar.x}`, `y ${player.avatar.y}`, `z ${player.avatar.z}`)
 
