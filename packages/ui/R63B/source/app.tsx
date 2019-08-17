@@ -18,61 +18,63 @@ import './app.styl'
 
 class App extends Component<any, any> {
 
-    private server: string
+	private server: string
+	private readonly Socket: SocketIOClient.Socket
     
-    constructor(props: any, private Socket: SocketIOClient.Socket) {
-        super(props)
+	public constructor(props: any, Socket: SocketIOClient.Socket) {
+		super(props)
 
-        this.state = {
-            roomData: {}
-        };
+		this.state = {
+			roomData: {}
+		};
+		
+		this.Socket = Socket;
 
-        this.server = `${props.host}:${props.port}`
+		this.server = `${props.host}:${props.port}`
 
-        this.Socket = SocketIO(this.server)
-        this.Socket.on('connect', () => {
-            console.log(`Connected to server on ${this.server}`)
-        })
+		this.Socket = SocketIO(this.server)
 
-        this.Socket.emit('joinRoom', 'cjz8dwsg3008r0791hzbktl8o')
-    }
+		this.Socket.on('connect', () => {
+			console.log(`Connected to server on ${this.server}`)
+		})
+	}
 
-    render() {
-        return (
-            <ApolloProvider 
-                client={API}
-            >
-                <Provider 
-                    store={Store}
-                >
-                    <BrowserRouter>
-                        <Switch location={this.props.location}>
-                            <Route exact path='/' component={Loading} />
-                            <Route 
-                                exact 
-                                path='/inroom'
-                                render={(props) => <Room {...props} socket={this.Socket} />}
-                                />
-                            <Route exact path='/client' component={Client} />
-                            <Route exact path='/gamecenter' component={Games} />
-                            <Route 
-                                exact 
-                                path='/hotel' 
-                                render={(props) => <Client {...props} socket={this.Socket} />}
-                            />
-                        </Switch>
-                    </BrowserRouter>
-                </Provider>
-            </ApolloProvider>
-        )
-    }
+	public render() {
+		return (
+			<ApolloProvider 
+				client={API}
+			>
+				<Provider 
+					store={Store}
+				>
+					<BrowserRouter>
+						<Switch location={this.props.location}>
+							<Route exact path='/' component={Loading} />
+							<Route 
+								exact 
+								path='/inroom'
+								render={(props) => <Room {...props} socket={this.Socket} />}
+							/>
+							<Route exact path='/client' component={Client} />
+							<Route exact path='/gamecenter' component={Games} />
+							<Route 
+								exact 
+								path='/hotel' 
+								render={(props) => <Client {...props} socket={this.Socket} />}
+							/>
+						</Switch>
+					</BrowserRouter>
+				</Provider>
+			</ApolloProvider>
+		)
+	}
 }
 
 ReactDOM.render(
     
-        <App 
-            host='localhost'
-            port={8081}
-        />
-    , document.getElementById('app')
+	<App 
+		host='localhost'
+		port={8081}
+	/>
+	, document.getElementById('app')
 )

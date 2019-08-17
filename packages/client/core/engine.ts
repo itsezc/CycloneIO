@@ -1,4 +1,4 @@
-import Room from '../rooms/room'
+import Room from '../rooms/Room'
 
 import ChatImager from '../chat/'
 import SoundManager from '../sound/manager'

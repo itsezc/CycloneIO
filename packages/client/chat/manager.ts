@@ -1,7 +1,8 @@
 import RoomChat from '../rooms/chat'
-import Room from '../rooms/room'
+import Room from '../rooms/Room'
+import Chat from "../rooms/chat";
 
-const ROLL_PERIOD: number = 5000
+const ROLL_PERIOD = 5000
 
 export default class ChatManager {
 	
@@ -10,11 +11,11 @@ export default class ChatManager {
 	private chatRolls: number = 0
 	private needsRoll: boolean = false
 
-	constructor(
+	public constructor(
 		public room: Room
 	) {}
 
-	rollChats(amount: number)
+	public rollChats(amount: number)
 	{
 
 		for (let chat of this.chats) {
@@ -26,7 +27,7 @@ export default class ChatManager {
 
 	}
 
-	addChat(
+	public addChat(
 		user: number,
 		message: string,
 		style: number
@@ -41,7 +42,7 @@ export default class ChatManager {
 		this.needsRoll = true
 	}
 
-	tick(delta: number) {
+	private tick(delta: number) {
 		
 		this.chatRolls += delta
 		

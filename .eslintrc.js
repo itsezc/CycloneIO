@@ -10,6 +10,7 @@ module.exports = {
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/explicit-function-return-type': ['off'],
 		'@typescript-eslint/interface-name-prefix': ['off'],
-		'semi': ['off']
+		'semi': ['off'],
+		'@typescript-eslint/no-parameter-properties': ['off']
    }
 }
