@@ -10,8 +10,9 @@ import Furniture from '../furniture/furniture'
 import Path from 'path'
 import {generateBlendMode} from '../core/blendMode';
 import RoomAvatar from '../avatar/avatar'
-import TileGenerator from '../generators/tile'
+import TileGenerator from '../generators/tile/TileGenerator'
 import {RoomData} from "../../common/types/client/rooms/IRoom";
+import ITileGenerator from "../generators/tile/ITileGenerator";
 
 interface PlayerInfo {
 	socketId: string;
@@ -49,6 +50,8 @@ export default class Room extends Phaser.Scene {
 
 	private roomContainer: RoomContainer;
 
+	private tileGenerator: ITileGenerator;
+
 
 	/**
      * @param roomData The actual room in json data sent by the server
@@ -67,6 +70,13 @@ export default class Room extends Phaser.Scene {
 
 		this.playerQueue = []
 
+		this.tileGenerator = new TileGenerator({
+			sprite: {
+				width: 65,
+				height: 40
+			}
+		})
+
 	}
 
 	/**
@@ -77,13 +87,7 @@ export default class Room extends Phaser.Scene {
 		//this.add.plugin(PhaserWebWorkers.plugin)
 		//this.load.scenePlugin('Camera3DPlugin', 'phaser/plugins/camera3d.min.js', 'Camera3DPlugin', 'cameras3d')
 
-		let Tile = new TileGenerator('tile', {
-			sprite: {
-				width: 65,
-				height: 40
-			}
-		})
-		this.textures.addBase64('tile', Tile.generate())
+		this.textures.addBase64('tile', this.tileGenerator.getDataURL())
 		this.load.image('tile_hover', 'room/tile_hover.png')
 
 		this.load.image('door', 'room/door.png')
