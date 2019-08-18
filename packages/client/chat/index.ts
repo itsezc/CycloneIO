@@ -1,4 +1,4 @@
-import { integerToRGB } from '../utils/color'
+import Color from '../utils/Color'
 import ChatStyle from './style'
 
 export default class ChatBubble {
@@ -144,7 +144,7 @@ export default class ChatBubble {
 			return img
 		}
 
-		let RGB = integerToRGB(color)
+		let RGB = Color.intToRGB(color)
 		let width = img.width
 		let height = img.height
 
