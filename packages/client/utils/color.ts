@@ -20,25 +20,12 @@ export default class Color {
 	}
 
 	/**
-	 * This function converts a red integer, green integer and blue integer
-	 * into a color integer.
-	 *
-	 * @param r The red component.
-	 * @param g The green component.
-	 * @param b The blue component.
-	 * @returns number The color integer.
-	 */
-	public static RGBToInt(r: number, g: number, b: number): number {
-		return (r << 16) + (g << 8) + (b);
-	}
-
-	/**
 	 * This function converts a RGB components object into a color integer.
 	 *
 	 * @param components The RGB components
 	 * @returns number The color integer.
 	 */
-	public static RGBToInt(components: RGB): number {
+	public static rgbToInt(components: RGB): number {
 		return (components.R << 16) + (components.G << 8) + (components.B);
 	}
 }
