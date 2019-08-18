@@ -5,6 +5,7 @@ import AssetsRootObject, { Custompart } from './assets'
 
 import Room from '../room'
 import RoomObjectDepth from '../depth'
+import LogicRootObject, { Direction } from './logic'
 
 const FPS = 24 as const
 const FPS_TIME_MS = 60 / FPS
@@ -48,8 +49,9 @@ export default class RoomPet extends GameObjects.Container {
     private visualizationData: VisualizationRootObject
     private visualization: Visualization
     private assets: AssetsRootObject
+    private logic: LogicRootObject
 
-    private directions: number[]
+    private directions: Direction[]
 
     private totalTimeRunning: number = 0
     private frameCount: number = 0
@@ -73,11 +75,12 @@ export default class RoomPet extends GameObjects.Container {
     private load(): void {
         const { load } = this.scene
 
-        load.setPath(`web-gallery/pets/${this.type}`)
+        load.setPath(`pets/${this.type}`)
 
         load.atlas(this.type, `${this.type}.png`, `${this.type}_spritesheet.json`)
         load.json(`${this.type}_visualization`, `${this.type}_visualization.json`)
         load.json(`${this.type}_assets`, `${this.type}_assets.json`)
+        load.json(`${this.type}_logic`, `${this.type}_logic.json`)
 
         load.start()
 
@@ -90,20 +93,22 @@ export default class RoomPet extends GameObjects.Container {
         const { cache, time } = this.scene
 
         this.visualizationData = cache.json.get(`${this.type}_visualization`)
+        this.logic = cache.json.get(`${this.type}_logic`)
 
-        console.log(this.visualizationData)
+        console.log({ visualizationData: this.visualizationData }, this.type)
+        console.log({ logic: this.logic }, this.type)
 
         this.visualization = this.visualizationData.visualizationData.graphics.visualization
             .find(visualization => Number(visualization.size) === this.size)
 
-        console.log({ visualization: this.visualization }, this.type)
+        console.log({ visualization: this.visualization }, { size: this.size }, this.type)
 
         this.assets = cache.json.get(`${this.type}_assets`)
 
-        this.directions = this.getDirections()
+        this.directions = this.logic.objectData.model.directions.direction || undefined
 
         if (!this.hasDirection(this.direction)) {
-            this.direction = this.directions[0]
+            this.direction = Number(this.directions[0].id) / 90 * 2
         }
 
         time.addEvent({
@@ -120,19 +125,8 @@ export default class RoomPet extends GameObjects.Container {
         console.log({ layerCount: this.getLayerCount() }, this.type)
     }
 
-    private getDirections(): number[] {
-        if (this.visualization.directions !== undefined) {
-            let stringDirections = Object.keys(this.visualization.directions.direction)
-            let numberDirections = stringDirections.map(stringDirection => Number(stringDirection))
-
-            return numberDirections
-        }
-
-        return [0]
-    }
-
     private hasDirection(direction: number): boolean {
-        return this.directions.indexOf(direction) >= 0
+		return Number(this.directions[direction].id) / 90 * 2 >= 0;
     }
 
     public update(): void {
@@ -158,7 +152,7 @@ export default class RoomPet extends GameObjects.Container {
             let frame = this.getFrame(this.animation, layer, this.frameCount)
             let frameOffset = this.getFrameOffset(this.animation, layer, frame[1], this.direction)
 
-            let customParts = this.getCustomParts({ tail: 1 })
+            let customParts = this.getCustomParts({ saddle: 1 })
 
             let layerSprite = this.getSprite(this.size, false, layer, this.direction, frame[0], customParts, frameOffset)
 
@@ -166,7 +160,7 @@ export default class RoomPet extends GameObjects.Container {
 
                 this.updateSpriteFromDirection(layerSprite, this.direction, layer)
 
-                let depthIndex = this.getDepthIndex(layerSprite)
+                let depthIndex = this.getDepthIndex(layerSprite, this.direction)
 
                 layerSprite.setDepth(depthIndex)
 
@@ -370,9 +364,11 @@ export default class RoomPet extends GameObjects.Container {
                 case HorseLayers.TAIL: {
                     let customPart = customParts.find(value => {
 
-                        let tags = value.tags.split(',')
+                        if (value !== undefined) {
+                            let tags = value.tags.split(',')
 
-                        return tags.includes('tail')
+                            return tags.includes('tail')
+                        }
 
                     })
 
@@ -386,7 +382,9 @@ export default class RoomPet extends GameObjects.Container {
                 case HorseLayers.SADDLE: {
 
                     let customPart = customParts.find(value => {
-                        return value.tags === 'saddle'
+                        if (value !== undefined) {
+                            return value.tags === 'saddle'
+                        }
                     })
 
                     if (customPart !== undefined) {
@@ -453,13 +451,26 @@ export default class RoomPet extends GameObjects.Container {
         sprite.z += layer.z ? Number(layer.z) : 0
     }
 
-    private getDepthIndex(sprite: GameObjects.Sprite): number {
-        const { frame, z } = sprite
+    private getDepthIndex(sprite: GameObjects.Sprite, direction: number): number {
+        const { frame } = sprite
         const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
 
         let fragments = frame.name.split('_')
-        let layer = fragments[fragments.length - 3]
+        let layer = fragments[fragments.length - fragments.length > 6 ? 4 : 3]
 
-        return alphabet.indexOf(layer) + z
+        let depth = alphabet.indexOf(layer) + sprite.z
+
+        // // 5 6 1
+        // if (direction < Directions.BEHIND_LEFT && direction > Directions.FRONT_LEFT || direction === Directions.RIGHT) {
+        //     depth -= sprite.z
+        // }
+
+        // // 7 4 3 0
+        // else if (direction === Directions.BEHIND || direction > Directions.FRONT_RIGHT && direction < Directions.LEFT
+        //     || direction === Directions.BEHIND_RIGHT) {
+        //     depth += sprite.z
+        // }
+
+        return depth
     }
 }

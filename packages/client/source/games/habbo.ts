@@ -1,10 +1,10 @@
 import { Types, Game, WEBGL, Scale } from 'phaser'
 
-import Room from './rooms/room'
+import Room from '../rooms/room'
 
-import AvatarImager from './avatar/imager'
+import AvatarImager from '../avatar/imager'
 
-export default class Engine {
+export default class HabboEngine {
     private readonly config: Types.Core.GameConfig
     private readonly game: Game
     private readonly avatarImager: AvatarImager
@@ -49,4 +49,4 @@ export default class Engine {
     }
 }
 
-new Engine()
+new HabboEngine()

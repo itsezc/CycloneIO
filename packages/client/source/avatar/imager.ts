@@ -1,4 +1,4 @@
-import Engine from '../engine'
+import HabboEngine from '../games/habbo'
 
 import AvatarFigure, { FigurePart } from './figure'
 import AvatarAction, { Actions } from './action'
@@ -27,7 +27,7 @@ export default class AvatarImager {
     private drawOrder: any
     private animations: any
 
-    public constructor(private readonly engine: Engine) {
+    public constructor(private readonly engine: HabboEngine) {
         this.engine = engine
     }
 

@@ -10,6 +10,12 @@
     "isolatedModules": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "paths": {
+      "*": [
+        "*",
+        "./types/*"
+      ]
+    },
     "outDir": "./build"
   },
   "exclude": [

@@ -1,0 +1,7 @@
+{
+  "name": "@cyclone/client",
+  "author": "Cyclone Team",
+  "scripts": {
+    "dev": "webpack-dev-server --public=http://localhost:8082 --host 0.0.0.0 --open"
+  }
+}

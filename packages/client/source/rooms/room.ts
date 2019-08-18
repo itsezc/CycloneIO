@@ -1,6 +1,6 @@
 import Phaser, { Scene, Cameras, Input, Structs } from 'phaser'
 
-import Engine from '../engine'
+import HabboEngine from '../games/habbo'
 
 import RoomModel from './model'
 import RoomAvatar from './avatar'
@@ -16,7 +16,7 @@ export default class Room extends Scene {
     private player: RoomAvatar
     private pet: RoomPet
 
-    public constructor(private readonly id: string, private readonly engine: Engine) {
+    public constructor(private readonly id: string, private readonly engine: HabboEngine) {
         super({ key: id })
 
         this.id = id
@@ -118,7 +118,7 @@ export default class Room extends Scene {
         this.cameras.resize(width, height)
     }
 
-    public get Engine(): Engine {
+    public get Engine(): HabboEngine {
         return this.engine
     }
 }
