@@ -19,7 +19,7 @@ import Poll from '../../components/poll'
 
 import ClickActions from '../../components/click-actions'
 
-import { HabboEngine } from '../../../../../client/games/HabboEngine'
+import Habbo from '../../../../../client/Habbo'
 
 import FurnitureInfos from '../../components/click-infos/furniture'
 import UserInfos from '../../components/click-infos/user'
@@ -29,7 +29,7 @@ import { Input } from 'phaser'
 
 export default class Room extends Component<any, any> {
 
-	private engine: HabboEngine
+	private engine: Habbo
 
 	private readonly Socket: SocketIOClient.Socket
 
@@ -69,12 +69,12 @@ export default class Room extends Component<any, any> {
 	}
 
 	public componentDidMount(){
-		this.engine = new HabboEngine('game', this.props.socket)
+		this.engine = new Habbo('game', this.props.socket)
 
-		this.engine.init().then(() => {
+		/*this.engine.init().then(() => {
 			console.log('Game initialized')
 			this.Socket.emit('joinRoom', 'cjyt6bnil00940791ljww2ya7')
-		})
+		})*/
 
 	}
 
