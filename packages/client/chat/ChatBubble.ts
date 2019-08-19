@@ -1,57 +1,49 @@
 import Color from '../utils/Color'
-import ChatStyle from './style'
+import ChatBubblesManager from "./ChatBubblesManager";
+import IChatBubbleStyle from "./style/IChatBubbleStyle";
 
 export default class ChatBubble {
 
-	chatStyles: ChatStyleDictionary
+	private chatBubbleStyle: IChatBubbleStyle
+	private container: Phaser.GameObjects.Container
 
-	bubble: Phaser.GameObjects.Container
-
-	constructor(
-		// private style: number,
-		// private message: string,
-		// private username: string,
-		// private type: 'normal' | 'shout' | 'whisper' = 'normal',
-		// private scene: Phaser.Scene
+	/*constructor(
+		private style: number,
+		private message: string,
+		private username: string,
+		private type: 'normal' | 'shout' | 'whisper' = 'normal',
+		private scene: Phaser.Scene
 	) {
-		// this.bubble = new Phaser.GameObjects.Container(this.scene)		
+		this.bubble = new Phaser.GameObjects.Container(this.scene)
 		
-		// const bubble_asset = `/chat/${this.style}/bubble.png`
-		// const bubble_meta = `/chat/${this.style}/meta.json`
+		const bubble_asset = `/chat/${this.style}/bubble.png`
+		const bubble_meta = `/chat/${this.style}/meta.json`
 
-		// const loader = new Phaser.Loader.LoaderPlugin(this.scene)
+		const loader = new Phaser.Loader.LoaderPlugin(this.scene)
 
-		// loader.image(`chat_style_${this.style}`, bubble_asset)
-		// loader.json(`chat_style_meta_${this.style}`, bubble_meta)
+		loader.image(`chat_style_${this.style}`, bubble_asset)
+		loader.json(`chat_style_meta_${this.style}`, bubble_meta)
 
-		// loader.start()
+		loader.start()
 
-		// loader.loadComplete = () => {
-		// 	const { width, height } = this.scene.textures.get(bubble_asset).getSourceImage()
-		// 	const meta = this.scene.cache.json.get(`chat_style_meta_${this.style}`)
+		loader.loadComplete = () => {
+			const { width, height } = this.scene.textures.get(bubble_asset).getSourceImage()
+			const meta = this.scene.cache.json.get(`chat_style_meta_${this.style}`)
 
-		// 	const { username } = meta
-		// 	const { style } = username
+			const { username } = meta
+			const { style } = username
 			
-		// 	const message = this.scene.add.text(0, 0, this.message, style)
-		// 	message.setOrigin(0, 0)
-		// 	message.setPosition(0, -300)
-		// 	message.setDepth(2)
+			const message = this.scene.add.text(0, 0, this.message, style)
+			message.setOrigin(0, 0)
+			message.setPosition(0, -300)
+			message.setDepth(2)
 
-		// 	this.scene.add.image(0, -300, `chat_style_${this.style}`).setDepth(1)
-		// }
-	}
-
-	getStyle(id: number): ChatStyle {
-	
-		const style = this.chatStyles[id]
-	
-		if (style !== null) {
-			return style
+			this.scene.add.image(0, -300, `chat_style_${this.style}`).setDepth(1)
 		}
+	}*/
 
-		return this.chatStyles[0]
-
+	public constructor(style: number, chatBubblesManager: ChatBubblesManager) {
+		this.chatBubbleStyle = chatBubblesManager.getBubbleStyle(style)
 	}
 
 	generate(
@@ -175,8 +167,4 @@ export default class ChatBubble {
 		
 		return element
 	}
-}
-
-interface ChatStyleDictionary {
-    [id: number]: ChatStyle
 }

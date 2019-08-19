@@ -77,7 +77,7 @@ export default class TileGenerator implements ITileGenerator {
 	 *
 	 * @returns string The dataURL encoded SVG.
 	 */
-	getDataURL(): string {
+	public getDataURL(): string {
 		return DataURL.svgToDataURL(this.result.svg())
 	}
 }
