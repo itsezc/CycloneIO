@@ -9,14 +9,21 @@ export default interface IUserManager {
 	getUser(id: number): IUser | undefined
 
 	/**
-	 * Adds a specific user to the users array.
+	 * Adds a specific user to the users map.
 	 *
 	 * @param user The user wanted to add
 	 */
 	addUser(user: IUser): void
 
 	/**
-	 * Removes a specific user by its id from the users array.
+	 * Adds more than one user to the users map.
+	 *
+	 * @param users The users wanted to add
+	 */
+	addUsers(users: IUser[]): void
+
+	/**
+	 * Removes a specific user by its id from the users map.
 	 *
 	 * @param id The id of the user wanted to remove
 	 * @returns boolean If removal is successful

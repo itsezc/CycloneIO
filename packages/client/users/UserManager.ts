@@ -2,7 +2,7 @@ import IUser from './IUser'
 import IUserManager from "./IUserManager";
 
 export default class UserManager implements IUserManager {
-	private users: IUser[]
+	private users: Map<number, IUser>
 
 	/**
 	 * This class is a service which is assigned to a room
@@ -11,7 +11,11 @@ export default class UserManager implements IUserManager {
 	 * @param users The starting users if there are.
 	 */
 	public constructor(users?: IUser[]) {
-		this.users = users || []
+		this.users = new Map<number, IUser>()
+
+		if (users) {
+			this.addUsers(users)
+		}
 	}
 
 	/**
@@ -20,7 +24,7 @@ export default class UserManager implements IUserManager {
 	 * @param id The id to search.
 	 */
 	public getUser(id: number): IUser | undefined {
-		return this.users.find(u => u.id === id)
+		return this.users.get(id)
 	}
 
 	/**
@@ -28,8 +32,19 @@ export default class UserManager implements IUserManager {
 	 *
 	 * @param user The user wanted to add
 	 */
-	public addUser(user: IUser) {
-		this.users.push(user)
+	public addUser(user: IUser): void {
+		this.users.set(user.id, user)
+	}
+
+	/**
+	 * Adds more than one user to the users map.
+	 *
+	 * @param users The users wanted to add
+	 */
+	public addUsers(users: IUser[]): void {
+		users.forEach(user => {
+			this.addUser(user)
+		})
 	}
 
 	/**
@@ -39,10 +54,6 @@ export default class UserManager implements IUserManager {
 	 * @returns boolean If removal is successful
 	 */
 	public removeUser(id: number): boolean {
-		const oldUserLength = this.users.length
-
-		this.users = this.users.filter(u => u.id !== id)
-
-		return oldUserLength !== this.users.length
+		return this.users.delete(id)
 	}
 }
