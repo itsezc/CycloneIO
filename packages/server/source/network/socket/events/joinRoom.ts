@@ -15,7 +15,7 @@ export const joinRoom = async (socket: CycloneSocket, id: any, IO?: SocketIO.Ser
 		let randomX = Math.floor(Math.random() * 5)
 		let randomY = Math.floor(Math.random() * 5)
 
-		let avatarData = {
+		let position = {
 			x: randomX,
 			y: randomY,
 			z: 0
@@ -24,7 +24,7 @@ export const joinRoom = async (socket: CycloneSocket, id: any, IO?: SocketIO.Ser
 		let added = manager.addPlayer(
 			room, {
 				socketId: socket.id,
-				avatarData
+				position
 			}
 		)
 
@@ -47,7 +47,7 @@ export const joinRoom = async (socket: CycloneSocket, id: any, IO?: SocketIO.Ser
 
 			IO.to(room.roomData.id).emit('playerJoined', {
 				socketId: socket.id,
-				avatarData
+				position
 			})
 		}
 

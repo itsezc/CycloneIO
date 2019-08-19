@@ -13,7 +13,7 @@ export interface Message {
 
 export interface PlayerInfo {
 	socketId: string;
-	avatarData: any
+	position: any
 }
 
 export class RoomManager {

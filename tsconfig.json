@@ -1,28 +1,31 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
-		"target": "esnext",
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"allowJs": true,
-		"resolveJsonModule": true,
-		"strict": true,
-		"strictNullChecks": false,
-		"isolatedModules": false,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"jsx": "react",
-		"lib": [
-			"dom",
-			"es2018"
-		],
-		"paths": {
-			"*": [
-				"*",
-				"./typeDefs/*"
-			]
-		},
-		"outDir": "./build",
+	"experimentalDecorators": true,
+	"emitDecoratorMetadata": true,
+    "types": ["reflect-metadata"],
+	"baseUrl": ".",
+	"target": "esnext",
+	"module": "commonjs",
+	"moduleResolution": "node",
+	"allowJs": true,
+	"resolveJsonModule": true,
+	"strict": true,
+	"strictNullChecks": false,
+	"isolatedModules": false,
+	"esModuleInterop": true,
+	"allowSyntheticDefaultImports": true,
+	"jsx": "react",
+	"lib": [
+		"dom",
+		"es2018"
+	],
+	"paths": {
+		"*": [
+			"*",
+			"./typeDefs/*"
+		]
+	},
+	"outDir": "./build",
 	},
 	"exclude": [
 		"node_modules"

@@ -1,13 +1,28 @@
+import { injectable, inject } from 'inversify'
+import * as Phaser from 'phaser'
+
+import Room from './rooms/Room'
+import ISocketManager from './communication/ISocketManager';
+
+@injectable()
 export default class Habbo {
 	private game: Phaser.Game
-	private socket: SocketIOClient.Socket
+	private currentRoom: Room
 
-	public constructor(parent: string, socket: SocketIOClient.Socket) {
-		if(!document.getElementById(parent)) {
+	public socketManager: ISocketManager
+
+	public constructor(
+		@inject('ISocketManager') socketManager: ISocketManager
+	) {
+		this.socketManager = socketManager
+	}
+
+	public init(parent: string, socket: SocketIOClient.Socket) {
+		if (!document.getElementById(parent)) {
 			throw `${parent} is not an element.`
 		}
 
-		this.socket = socket
+		this.socketManager.init(socket)
 
 		const config = {
 			resolution: window.devicePixelRatio,

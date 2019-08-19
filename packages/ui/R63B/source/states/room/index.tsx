@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 
 import './index.styl'
+import 'reflect-metadata'
 
 import Wallet from '../../components/wallet'
 import Toolbar from '../../components/toolbar'
-
-import Catalog from '../../components/dialogs/catalog'
 
 import Actions from '../../components/actions'
 import Chat from '../../components/chat/bubble'
@@ -13,18 +12,10 @@ import Chatbox from '../../components/chatbox'
 
 import Moderation from '../../components/dialogs/moderation'
 
-import Inventory from '../../components/dialogs/inventory'
-
-import Poll from '../../components/poll'
-
-import ClickActions from '../../components/click-actions'
-
 import Habbo from '../../../../../client/Habbo'
 
-import FurnitureInfos from '../../components/click-infos/furniture'
 import UserInfos from '../../components/click-infos/user'
-import BotInfos from '../../components/click-infos/bot'
-import { Input } from 'phaser'
+import HabboContainer from '../../../../../client/injectors/HabboContainer';
 
 
 export default class Room extends Component<any, any> {
@@ -69,8 +60,12 @@ export default class Room extends Component<any, any> {
 	}
 
 	public componentDidMount(){
-		this.engine = new Habbo('game', this.props.socket)
+		this.engine = HabboContainer.resolve<Habbo>(Habbo)
 
+		this.engine.init('game', this.props.socket)
+
+		this.Socket.emit('joinRoom', 'cjz8dwsg3008r0791hzbktl8o')
+		
 		/*this.engine.init().then(() => {
 			console.log('Game initialized')
 			this.Socket.emit('joinRoom', 'cjyt6bnil00940791ljww2ya7')
