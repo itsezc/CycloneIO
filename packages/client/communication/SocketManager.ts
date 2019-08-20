@@ -8,8 +8,9 @@ export default class SocketManager implements ISocketManager {
 	private socket: SocketIOClient.Socket
 	private eventsManager: IEventsManager
 
-	constructor(@inject('IEventsManager') eventsManager: IEventsManager) {
+	public constructor(@inject('IEventsManager') eventsManager: IEventsManager) {
 		this.eventsManager = eventsManager
+
 	}
 	
 	public init(socket: SocketIOClient.Socket): void {

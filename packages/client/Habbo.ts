@@ -1,23 +1,26 @@
 import { injectable, inject } from 'inversify'
 import * as Phaser from 'phaser'
 
-import Room from './rooms/Room'
 import ISocketManager from './communication/ISocketManager';
+import IRoomManager from "./rooms/IRoomManager";
+import IRoom from "./rooms/IRoom";
 
 @injectable()
 export default class Habbo {
 	private game: Phaser.Game
-	private currentRoom: Room
 
-	public socketManager: ISocketManager
+	private socketManager: ISocketManager
+	private roomManager: IRoomManager
 
 	public constructor(
-		@inject('ISocketManager') socketManager: ISocketManager
+		@inject('ISocketManager') socketManager: ISocketManager,
+		@inject('IRoomManager') roomManager: IRoomManager
 	) {
 		this.socketManager = socketManager
+		this.roomManager = roomManager
 	}
 
-	public init(parent: string, socket: SocketIOClient.Socket) {
+	public init(parent: string, socket: SocketIOClient.Socket): void {
 		if (!document.getElementById(parent)) {
 			throw `${parent} is not an element.`
 		}
@@ -43,5 +46,10 @@ export default class Habbo {
 		}
 
 		this.game = new Phaser.Game(config)
+	}
+
+	public setScene(scene: Phaser.Scene): void {
+		const key = (scene instanceof IRoom) ? 'room' : 'unknown'
+		this.game.scene.add(key, scene, true)
 	}
 }

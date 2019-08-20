@@ -1,13 +1,8 @@
 import IEvent from "../IEvent";
-import IPoint from "../../../rooms/coordinates/IPoint";
-
-interface EventData {
-    socketId: string,
-    position: IPoint
-}
+import IUserEventData from "./IUserEventData";
 
 export class PlayerJoinedEvent implements IEvent {
-    execute(data: EventData): void {
-        console.log(data)
-    }
+	public execute(data: IUserEventData): void {
+		console.log(data)
+	}
 }

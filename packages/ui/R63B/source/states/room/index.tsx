@@ -60,11 +60,11 @@ export default class Room extends Component<any, any> {
 	}
 
 	public componentDidMount(){
-		this.engine = HabboContainer.resolve<Habbo>(Habbo)
+		this.engine = HabboContainer.get<Habbo>(Habbo)
 
 		this.engine.init('game', this.props.socket)
 
-		this.Socket.emit('joinRoom', 'cjz8dwsg3008r0791hzbktl8o')
+		this.Socket.emit('joinRoom', 'cjzihfm1y009a0799bc89rcbp')
 		
 		/*this.engine.init().then(() => {
 			console.log('Game initialized')

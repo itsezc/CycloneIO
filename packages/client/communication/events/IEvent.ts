@@ -1,3 +1,3 @@
 export default interface IEvent {
-    execute(data: any): void
+	execute(data: any): void
 }

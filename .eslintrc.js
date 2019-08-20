@@ -6,5 +6,7 @@ module.exports = {
 		'@typescript-eslint/indent': ['error', 'tab'],
 		'@typescript-eslint/semi': ['off'],
 		'semi': ['off'],
-   }
+		"@typescript-eslint/interface-name-prefix": "off",
+		"@typescript-eslint/member-delimiter-style": "off"
+	}
 }
