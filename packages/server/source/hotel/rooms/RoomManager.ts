@@ -90,7 +90,11 @@ export class RoomManager {
 	}
 
 	private findRoom(id: string): RoomWithPlayers {
-		return this.loadedRooms.length > 0 ? this.loadedRooms.find((room: RoomWithPlayers) => room.roomData.id === id) : null
+		return this.loadedRooms.length > 0 ? this.loadedRooms.find((room: RoomWithPlayers) => {
+			if(room.roomData) {
+				return room.roomData.id === id
+			} else return false
+		}) : null
 	}
 
 }
