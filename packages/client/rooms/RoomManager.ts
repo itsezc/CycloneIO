@@ -2,7 +2,7 @@ import {injectable} from "inversify";
 
 import IRoomManager from "./IRoomManager";
 import IRoom from "./IRoom";
-import RoomData from "./data/IRoomData";
+import RoomData from "./data/RoomData";
 import Room from "./Room";
 import HabboContainer from "../injectors/HabboContainer";
 import Habbo from "../Habbo";

@@ -1,28 +1,23 @@
 import * as Phaser from 'phaser'
 import IRoom from "./IRoom"
-import RoomData from "./data/IRoomData";
+import RoomData from "./data/RoomData";
+import RoomMap from "./map/RoomMap";
 
 export default class Room extends IRoom {
 	private readonly id: string
+	private roomData: RoomData
+	private map: RoomMap
 
 	public constructor(roomData: RoomData) {
 		super({})
 
 		this.id = roomData.id
+		this.roomData = roomData
+
+		this.map = new RoomMap(roomData.map.room)
 	}
 
-	public preload() {
-
-	}
-
-	public create() {
-		let graphics = this.add.graphics({ fillStyle: { color: 0x00ff00 } });
-
-		let circle = new Phaser.Geom.Circle(400, 300, 150);
-		let point = new Phaser.Geom.Rectangle(0, 0, 8, 8);
-
-		graphics.clear();
-		graphics.fillRect(point.x - 4, point.y - 4, point.width, point.height);
-
+	public create(): void {
+		console.log(this.map.tiles)
 	}
 }

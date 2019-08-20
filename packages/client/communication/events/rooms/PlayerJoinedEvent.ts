@@ -1,8 +1,8 @@
 import IEvent from "../IEvent";
-import IUserEventData from "./IUserEventData";
+import UserEventData from "./data/UserEventData";
 
 export class PlayerJoinedEvent implements IEvent {
-	public execute(data: IUserEventData): void {
+	public execute(data: UserEventData): void {
 		console.log(data)
 	}
 }

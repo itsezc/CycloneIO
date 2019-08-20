@@ -1,5 +1,3 @@
-import IRoomMap from "../map/IRoomMap";
-
 export default interface RoomData {
 	allowPets: boolean
 	allowPetsEating: boolean
@@ -10,7 +8,9 @@ export default interface RoomData {
 	hideWalls: boolean
 	hideWired: boolean
 	id: string
-	map: IRoomMap
+	map: {
+		room: string[]
+	}
 	maxUsers: number
 	name: string
 	type: string
