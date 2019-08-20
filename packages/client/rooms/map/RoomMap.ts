@@ -47,8 +47,4 @@ export default class RoomMap {
 	public get tiles(): HeightMapTile[] {
 		return this.heightMap.tiles
 	}
-
-	public set tiles(value: HeightMapTile[]) {
-		this.heightMap.tiles = value
-	}
 }
