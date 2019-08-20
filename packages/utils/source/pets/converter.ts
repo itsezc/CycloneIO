@@ -1,4 +1,5 @@
-console.log('hi')
-export default class PetsConverter {
-
+export default class PetConverter {
+    public constructor() {
+        
+    }
 }

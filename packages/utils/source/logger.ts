@@ -1,13 +1,15 @@
-import { Logger, transports, format, createLogger } from 'winston'
+import { transports, format, createLogger } from 'winston'
+import { TransformableInfo } from 'logform'
 
-const { colorize, combine, timestamp, printf } = format
+const { combine, colorize, timestamp, printf } = format
 
 const Logger = createLogger({
     format: combine(
         colorize(),
         timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
-        printf((info: any): string => {
-            return info.level, `${info.timestamp} ${info.level} - ${info.message}`
+        printf((info: TransformableInfo): string => {
+            const { timestamp, level, message } = info
+            return info.level, `${timestamp} ${level} - ${message}`
         })
     ),
     transports: [new transports.Console()]
