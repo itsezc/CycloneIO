@@ -105,7 +105,7 @@ export default class PetConverter {
             if (err) {
                 throw err
             }
-    
+     
             console.log(images[0].height)
         })
 
