@@ -8,7 +8,8 @@ import Logger from '../logger'
 export const ABSOLUTE_PATH = Path.join(__dirname, '..', '..', '..', '..', 'web-gallery', 'pets')
 
 enum Messages {
-    No_New_Data = 'Everything is up-to-date!'
+    No_New_Data = 'Everything is up-to-date!',
+    New_Data = 'Downloaded new data!'
 }
 
 class PetUtility {
@@ -67,7 +68,7 @@ class PetUtility {
 
                 Promise.all(processPromises).then(() => {
                     fulfilledProcesses.length === 0 ? Logger.info(`${Messages.No_New_Data} [${petType}]`) :
-                        Logger.info(`Downloaded new data! [${petType}]`)
+                        Logger.info(`${Messages.New_Data} [${petType}]`)
                 })
             })
         })
