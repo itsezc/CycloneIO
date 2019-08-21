@@ -1,14 +1,16 @@
 version: '3'
 services:
     postgres:
-        image: postgres
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
         restart: always
+        ports:
+            - '3306:3306'
         environment:
-            POSTGRES_USER: root
-            POSTGRES_PASSWORD: cyclone129
+            MYSQL_ROOT_PASSWORD: cyclone129
 
     prisma:
-        image: prismagraphql/prisma:1.31
+        image: prismagraphql/prisma:1.34
         restart: always
         ports:
             - '4466:4466'
@@ -17,9 +19,9 @@ services:
                 port: 4466
                 databases:
                     default:
-                        connector: postgres
-                        host: postgres
-                        port: 5432
+                        connector: mysql
+                        host: mysql
+                        port: 3306
                         user: root
                         password: cyclone129
                         migrations: true
