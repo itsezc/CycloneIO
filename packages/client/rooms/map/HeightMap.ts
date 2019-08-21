@@ -1,8 +1,8 @@
 export default interface HeightMap {
-	tiles: HeightMapTile[]
+	tilePositions: HeightMapPosition[]
 }
 
-export interface HeightMapTile {
+export interface HeightMapPosition {
 	x: number,
 	y: number,
 	height: number
