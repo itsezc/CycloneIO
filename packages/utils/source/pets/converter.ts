@@ -6,7 +6,7 @@ import Path from 'path'
 
 import Spritesmith, { Result } from 'spritesmith'
 
-const ABSOLUTE_PATH = Path.join(__dirname, '..', '..', '..', '..', 'web-gallery', 'pets')
+import { ABSOLUTE_PATH } from './index'
 
 type MetaData = {
     code: number,
