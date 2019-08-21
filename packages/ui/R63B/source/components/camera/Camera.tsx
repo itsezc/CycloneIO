@@ -23,6 +23,48 @@ export default class Camera extends Component<any, any> {
 	public close() {
 		this.setState({ isOpen: false })
 	}
+
+	public snapShot() {
+
+		if(this.state.isPreview) {
+
+			this.setState({
+				isPreview: false
+			})
+
+		} else {
+
+			this.setState({
+				isPreview: true,
+				currentPhotos: this.state.currentPhotos + 1
+			})
+
+		}
+		
+	}
+
+	public gallery() {
+		console.log(this.state.currentPhotos)
+		return (
+			<div className='gallery'>
+				<div className='imageContainer active'>
+					<img />
+				</div>
+				<div className='imageContainer'>
+					<img />
+				</div>
+				<div className='imageContainer'>
+					<img />
+				</div>
+				<div className='imageContainer'>
+					<img />
+				</div>
+				<div className='imageContainer'>
+					<img />
+				</div>
+			</div>	
+		)
+	}
 	
 	public render() {
 
@@ -40,32 +82,17 @@ export default class Camera extends Component<any, any> {
 						
 						{ this.state.isPreview ? null : <span className='hud'></span> }
 
-						<span className='snap'></span>
+						<span className='snap' onClick={this.snapShot.bind(this)}></span>
 					</div>
-					<div className='gallery'>
-						<div className='imageContainer active'>
-							<img />
-						</div>
-						<div className='imageContainer'>
-							<img />
-						</div>
-						<div className='imageContainer'>
-							<img />
-						</div>
-						<div className='imageContainer'>
-							<img />
-						</div>
-						<div className='imageContainer'>
-							<img />
-						</div>
-					</div>
+
+					{ this.state.currentPhotos > 0 ? this.gallery() : null }
+
 				</div>
 			)
 		} else {
 			return null
 		}
 		
-
 	}
 
 }
