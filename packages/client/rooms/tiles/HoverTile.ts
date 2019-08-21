@@ -1,7 +1,7 @@
 import * as Phaser from 'phaser'
 import IRoom from "../IRoom";
-import Tile from "./Tile";
 import {HeightMapPosition} from "../map/HeightMap";
+import TilesContainer from "../containers/tiles/TilesContainer";
 
 export default class HoverTile extends Phaser.GameObjects.Sprite {
 
@@ -11,11 +11,11 @@ export default class HoverTile extends Phaser.GameObjects.Sprite {
 
 	public setHoverTilePosition(heightMapPosition: HeightMapPosition): void {
 		let [screenX, screenY] =  [
-			heightMapPosition.x * Tile.HEIGHT - heightMapPosition.y * Tile.HEIGHT + 600,
-			(heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 - Tile.HEIGHT_VALUE * heightMapPosition.height + 200
+			TilesContainer.getScreenX(heightMapPosition),
+			TilesContainer.getScreenY(heightMapPosition),
 		]
 
-		this.setPosition(screenX, screenY)
+		this.setPosition(screenX, screenY - 4)
 	}
 
 }

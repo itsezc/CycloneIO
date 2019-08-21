@@ -9,12 +9,11 @@ import IAssetsManager from "../assets/IAssetsManager";
 export default class Room extends IRoom {
 	private readonly id: string
 
-	public load: IAssetsManager
-
 	public roomData: RoomData
 	public map: RoomMap
 
 	private roomContainer: RoomContainer
+	private loader: IAssetsManager
 
 	public constructor(roomData: RoomData) {
 		super({})
@@ -30,15 +29,12 @@ export default class Room extends IRoom {
 		this.add.existing(this.roomContainer)
 	}
 
-	public preload(): void {
-		this.load = new RoomAssetsManager(this);
-
-		this.load.assets()
+	public async preload(): Promise<void> {
+		this.loader = new RoomAssetsManager(this.load);
+		this.loader.loadAssets()
 	}
 
 	public create(): void {
 		this.initializeContainers()
-
-		console.log(this.roomData.map)
 	}
 }

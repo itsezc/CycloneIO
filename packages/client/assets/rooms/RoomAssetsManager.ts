@@ -1,13 +1,14 @@
 import IAssetsManager from "../IAssetsManager"
-import IRoom from "../../rooms/IRoom";
 
-export default class RoomAssetsManager extends IAssetsManager {
+export default class RoomAssetsManager implements IAssetsManager {
 
-	public constructor(room: IRoom){
-		super(room)
+	private readonly roomLoader: Phaser.Loader.LoaderPlugin
+
+	public constructor(roomLoader: Phaser.Loader.LoaderPlugin){
+		this.roomLoader = roomLoader
 	}
 
-	public assets(): void {
-	    this.image('tile_hover', 'room/tile_hover.png')
+	public async loadAssets(): Promise<void> {
+	    this.roomLoader.image('tile_hover', 'room/tile_hover.png')
 	}
 }
