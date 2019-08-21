@@ -1,8 +1,9 @@
 import IRoom from "../IRoom";
 import {HeightMapPosition} from '../map/HeightMap';
 import Directions from "../map/directions/Directions";
+import TilesContainer from "../containers/tiles/TilesContainer";
 
-export default class Tile extends Phaser.GameObjects.Graphics {
+export default class Tile extends Phaser.GameObjects.Sprite {
 	public static readonly HEIGHT = 32
 	public static readonly WIDTH = 64
 
@@ -14,93 +15,54 @@ export default class Tile extends Phaser.GameObjects.Graphics {
 	private readonly floorThickness: number
 
 	public constructor(room: IRoom, heightMapPosition: HeightMapPosition) {
-		super(room, {
-			x: heightMapPosition.x * Tile.HEIGHT - heightMapPosition.y * Tile.HEIGHT + 600,
-			y: (heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 - Tile.HEIGHT_VALUE * heightMapPosition.height + 200
-		})
+		super(room,
+			  TilesContainer.getScreenX(heightMapPosition),
+			  TilesContainer.getScreenY(heightMapPosition),
+			  undefined)
 
 		this.room = room
 		this.heightMapPosition = heightMapPosition
 		this.floorThickness = room.roomData.floorThickness
 
-		this.drawTile()
-		this.setInteractive()
-
-		this.generateTexture('tile')
+		this.setTileTexture()
+		this.setInteractive({ pixelPerfect: true })
 	}
 
-	private drawTile(): void {
+	private setTileTexture() {
 		const tilesAround = this.room.map.getTilePositionsAround(this.heightMapPosition.x, this.heightMapPosition.y)
 
-		this.drawSurface()
+		let eastBorder = this.isEastBorderNeeded(tilesAround)
+		let southBorder = this.isSouthBorderNeeded(tilesAround)
 
-		if (!tilesAround[Directions.EAST]
+		const tileKey = this.getTileTexture(eastBorder, southBorder)
+
+		this.setTexture(tileKey)
+	}
+
+	private isEastBorderNeeded(tilesAround: HeightMapPosition[]): boolean {
+		return !tilesAround[Directions.EAST]
 			|| tilesAround[Directions.EAST].height !== this.heightMapPosition.height
-		) {
-			this.drawRightBorder()
+	}
+
+	private isSouthBorderNeeded(tilesAround: HeightMapPosition[]): boolean {
+		return !tilesAround[Directions.SOUTH]
+			|| tilesAround[Directions.SOUTH].height !== this.heightMapPosition.height
+	}
+
+	private getTileTexture(eastBorder: boolean, southBorder: boolean): string {
+		let key = ''
+
+		if (eastBorder && !southBorder) {
+			key = 'tile_e'
+		} else if (eastBorder && southBorder) {
+			key = 'tile_es'
+		} else if (!eastBorder && southBorder) {
+			key = 'tile_s'
+		} else {
+			key = 'tile'
 		}
 
-		if (!tilesAround[Directions.SOUTH]
-			|| tilesAround[Directions.SOUTH].height !== this.heightMapPosition.height) {
-			this.drawLeftBorder()
-		}
-	}
-
-	private drawSurface(): void {
-		const [points, strokePoints] = [[
-			{ x: 0, 			  y: -Tile.HEIGHT / 2 },
-			{ x: Tile.WIDTH / 2,  y: 0 },
-			{ x: 0, 			  y: Tile.HEIGHT / 2 },
-			{ x: -Tile.WIDTH / 2, y: 0 }
-		], [
-			// We add 0.5 because if we don't there's a little
-			// stroke overflow in the edges cause the stroke is 1.5
-			{ x: -Tile.WIDTH / 2 + 0.5, y: 0 },
-			{ x: 0, 			        y: Tile.HEIGHT / 2 },
-			{ x: Tile.WIDTH / 2 - 0.5,  y: 0 }
-		]]
-
-		this.fillStyle(0x989865)
-		this.lineStyle(1.5, 0x8e8e5e)
-
-		this.fillPoints(points)
-		this.strokePoints(strokePoints)
-	}
-
-	private drawLeftBorder(): void {
-		const [points, strokePoints] = [[
-			{ x: -Tile.WIDTH / 2, y: 0 },
-			{ x: 0, 	 		  y: Tile.HEIGHT / 2 },
-			{ x: 0, 	 		  y: Tile.HEIGHT / 2 + this.floorThickness },
-			{ x: -Tile.WIDTH / 2, y: this.floorThickness }
-		], [
-			{ x: 0, y: Tile.HEIGHT / 2 },
-			{ x: 0, y: Tile.HEIGHT / 2 + this.floorThickness }
-		]]
-
-		this.fillStyle(0x838357)
-		this.lineStyle(1, 0x7a7a51)
-
-		this.fillPoints(points, true)
-		this.strokePoints(strokePoints, true)
-	}
-
-	private drawRightBorder(): void {
-		const [points, strokePoints] = [[
-			{ x: 0, 	 		 y: Tile.HEIGHT / 2 },
-			{ x: Tile.WIDTH / 2, y: 0 },
-			{ x: Tile.WIDTH / 2, y: this.floorThickness },
-			{ x: 0, 	 		 y: Tile.HEIGHT / 2 + this.floorThickness }
-		], [
-			{ x: Tile.WIDTH / 2, y: 0 },
-			{ x: Tile.WIDTH / 2, y: this.floorThickness }
-		]]
-
-		this.fillStyle(0x6f6f49)
-		this.lineStyle(1, 0x676744)
-
-		this.fillPoints(points, true)
-		this.strokePoints(strokePoints, true)
+		return key
 	}
 
 }

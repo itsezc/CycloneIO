@@ -1,9 +1,12 @@
 import IRoom from "../../IRoom";
 import Tile from "../../tiles/Tile";
 import HoverTile from "../../tiles/HoverTile";
+import TileGenerator from "../../tiles/TileGenerator";
+import {HeightMapPosition} from "../../map/HeightMap";
 
 export default class TilesContainer extends Phaser.GameObjects.Container {
 	private readonly room: IRoom
+	private readonly tileGenerator: TileGenerator
 	private readonly tiles: Tile[]
 	private readonly hoverTile: HoverTile
 
@@ -11,6 +14,7 @@ export default class TilesContainer extends Phaser.GameObjects.Container {
 		super(room)
 
 		this.room = room
+		this.tileGenerator = new TileGenerator(room)
 
 		this.tiles = this.getTilesFromMap()
 
@@ -49,6 +53,14 @@ export default class TilesContainer extends Phaser.GameObjects.Container {
 	}
 
 	private onTileOut(tile: Tile): void {
+		this.hoverTile.setVisible(false)
+	}
 
+	public static getScreenX(heightMapPosition: HeightMapPosition): number {
+		return heightMapPosition.x * Tile.HEIGHT - heightMapPosition.y * Tile.HEIGHT + 600
+	}
+
+	public static getScreenY(heightMapPosition: HeightMapPosition): number {
+		return (heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 - Tile.HEIGHT_VALUE * heightMapPosition.height + 200
 	}
 }

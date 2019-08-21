@@ -1,63 +1,51 @@
 import IRoom from "../IRoom";
 import {HeightMapPosition} from '../map/HeightMap';
 import Directions from "../map/directions/Directions";
+import Tile from "./Tile";
+import TilesContainer from "../containers/tiles/TilesContainer";
 
-export default class Tile extends Phaser.GameObjects.Graphics {
-	public static readonly HEIGHT = 32
-	public static readonly WIDTH = 64
-
-	public static readonly HEIGHT_VALUE = 32
-
-	public readonly heightMapPosition: HeightMapPosition
-
+export default class TileGenerator extends Phaser.GameObjects.Graphics {
 	private readonly room: IRoom
 	private readonly floorThickness: number
 
-	public constructor(room: IRoom, heightMapPosition: HeightMapPosition) {
-		super(room, {
-			x: heightMapPosition.x * Tile.HEIGHT - heightMapPosition.y * Tile.HEIGHT + 600,
-			y: (heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 - Tile.HEIGHT_VALUE * heightMapPosition.height + 200
-		})
+	public constructor(room: IRoom) {
+		super(room, {x: 500, y: 500 })
 
 		this.room = room
-		this.heightMapPosition = heightMapPosition
 		this.floorThickness = room.roomData.floorThickness
 
 		this.drawTile()
-		this.setInteractive()
-
-		this.generateTexture('tile')
 	}
 
 	private drawTile(): void {
-		const tilesAround = this.room.map.getTilePositionsAround(this.heightMapPosition.x, this.heightMapPosition.y)
-
 		this.drawSurface()
+		this.generateTexture('tile', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
 
-		if (!tilesAround[Directions.EAST]
-			|| tilesAround[Directions.EAST].height !== this.heightMapPosition.height
-		) {
-			this.drawRightBorder()
-		}
+		this.drawRightBorder()
+		this.generateTexture('tile_e', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
 
-		if (!tilesAround[Directions.SOUTH]
-			|| tilesAround[Directions.SOUTH].height !== this.heightMapPosition.height) {
-			this.drawLeftBorder()
-		}
+		this.drawLeftBorder()
+		this.generateTexture('tile_es', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
+
+		// We clear cause we don't need right border for tile_l texture
+		this.clear()
+		this.drawSurface()
+		this.drawLeftBorder()
+		this.generateTexture('tile_s', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
 	}
 
 	private drawSurface(): void {
 		const [points, strokePoints] = [[
-			{ x: 0, 			  y: -Tile.HEIGHT / 2 },
-			{ x: Tile.WIDTH / 2,  y: 0 },
-			{ x: 0, 			  y: Tile.HEIGHT / 2 },
-			{ x: -Tile.WIDTH / 2, y: 0 }
+			{ x: Tile.WIDTH / 2, y: 0 },
+			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 },
+			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT },
+			{ x: 0,              y: Tile.HEIGHT / 2 }
 		], [
 			// We add 0.5 because if we don't there's a little
 			// stroke overflow in the edges cause the stroke is 1.5
-			{ x: -Tile.WIDTH / 2 + 0.5, y: 0 },
-			{ x: 0, 			        y: Tile.HEIGHT / 2 },
-			{ x: Tile.WIDTH / 2 - 0.5,  y: 0 }
+			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 },
+			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT },
+			{ x: 0,              y: Tile.HEIGHT / 2 }
 		]]
 
 		this.fillStyle(0x989865)
@@ -69,10 +57,10 @@ export default class Tile extends Phaser.GameObjects.Graphics {
 
 	private drawLeftBorder(): void {
 		const [points, strokePoints] = [[
-			{ x: -Tile.WIDTH / 2, y: 0 },
-			{ x: 0, 	 		  y: Tile.HEIGHT / 2 },
-			{ x: 0, 	 		  y: Tile.HEIGHT / 2 + this.floorThickness },
-			{ x: -Tile.WIDTH / 2, y: this.floorThickness }
+			{ x: 0,              y: Tile.HEIGHT / 2 },
+			{ x: 0,              y: Tile.HEIGHT / 2 + this.floorThickness },
+			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT + this.floorThickness },
+			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT }
 		], [
 			{ x: 0, y: Tile.HEIGHT / 2 },
 			{ x: 0, y: Tile.HEIGHT / 2 + this.floorThickness }
@@ -87,13 +75,13 @@ export default class Tile extends Phaser.GameObjects.Graphics {
 
 	private drawRightBorder(): void {
 		const [points, strokePoints] = [[
-			{ x: 0, 	 		 y: Tile.HEIGHT / 2 },
-			{ x: Tile.WIDTH / 2, y: 0 },
-			{ x: Tile.WIDTH / 2, y: this.floorThickness },
-			{ x: 0, 	 		 y: Tile.HEIGHT / 2 + this.floorThickness }
+			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT },
+			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT + this.floorThickness },
+			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 + this.floorThickness },
+			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 }
 		], [
-			{ x: Tile.WIDTH / 2, y: 0 },
-			{ x: Tile.WIDTH / 2, y: this.floorThickness }
+			{ x: Tile.WIDTH, y: Tile.HEIGHT / 2 + this.floorThickness },
+			{ x: Tile.WIDTH, y: Tile.HEIGHT / 2 }
 		]]
 
 		this.fillStyle(0x6f6f49)
