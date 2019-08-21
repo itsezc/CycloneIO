@@ -34,23 +34,17 @@ class PetUtility {
 
                 const images = await this.converter.extractImages(tags)
 
-                let imagesExists = this.converter.writeImages(petType, images)
+                this.converter.writeImages(petType, images).then(imgesExists => {
+                    imgesExists || Logger.info('Images -> DONE')
+                })
 
-                if (!imagesExists) {
-                    Logger.info('Images -> DONE')
-                }
+                this.converter.writeMetaData(petType).then(metaDataExists => {
+                    metaDataExists || Logger.info('Metadata -> DONE')
+                })
 
-                let metaDataExists = this.converter.writeMetaData(petType)
-
-                if (!metaDataExists) {
-                    Logger.info('Metadata -> DONE')
-                }
-
-                let spritesheetGenerated = this.converter.generateSpritesheet(petType)
-
-                if (spritesheetGenerated) {
-                    Logger.info('Spritesheet -> DONE')
-                }
+                this.converter.generateSpritesheet(petType).then(spritesheetGenerated => {
+                    !spritesheetGenerated || Logger.info('Spritesheet -> DONE')
+                })
             })
         })
     }
