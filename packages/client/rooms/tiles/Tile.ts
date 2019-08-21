@@ -5,19 +5,22 @@ import Directions from "../map/directions/Directions";
 export default class Tile extends Phaser.GameObjects.Graphics {
 	public static readonly HEIGHT = 32
 	public static readonly WIDTH = 64
-	public static readonly BORDER_HEIGHT = 2
+
+	public static readonly HEIGHT_VALUE = 32
 
 	private readonly room: IRoom
 	private readonly heightMapPosition: HeightMapPosition
+	private readonly floorThickness: number
 
 	public constructor(room: IRoom, heightMapPosition: HeightMapPosition) {
 		super(room, {
 			x: heightMapPosition.x * Tile.HEIGHT - heightMapPosition.y * Tile.HEIGHT + 600,
-			y: (heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 + 200
+			y: (heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 - Tile.HEIGHT_VALUE * heightMapPosition.height + 200
 		})
 
 		this.room = room
 		this.heightMapPosition = heightMapPosition
+		this.floorThickness = room.roomData.floorThickness
 
 		this.drawTile()
 	}
@@ -64,11 +67,11 @@ export default class Tile extends Phaser.GameObjects.Graphics {
 		const [points, strokePoints] = [[
 			{ x: -Tile.WIDTH / 2, y: 0 },
 			{ x: 0, 	 		  y: Tile.HEIGHT / 2 },
-			{ x: 0, 	 		  y: Tile.HEIGHT / 2 + Tile.BORDER_HEIGHT },
-			{ x: -Tile.WIDTH / 2, y: Tile.BORDER_HEIGHT }
+			{ x: 0, 	 		  y: Tile.HEIGHT / 2 + this.floorThickness },
+			{ x: -Tile.WIDTH / 2, y: this.floorThickness }
 		], [
 			{ x: 0, y: Tile.HEIGHT / 2 },
-			{ x: 0, y: Tile.HEIGHT / 2 + Tile.BORDER_HEIGHT }
+			{ x: 0, y: Tile.HEIGHT / 2 + this.floorThickness }
 		]]
 
 		this.fillStyle(0x838357)
@@ -82,11 +85,11 @@ export default class Tile extends Phaser.GameObjects.Graphics {
 		const [points, strokePoints] = [[
 			{ x: 0, 	 		 y: Tile.HEIGHT / 2 },
 			{ x: Tile.WIDTH / 2, y: 0 },
-			{ x: Tile.WIDTH / 2, y: Tile.BORDER_HEIGHT },
-			{ x: 0, 	 		 y: Tile.HEIGHT / 2 + Tile.BORDER_HEIGHT }
+			{ x: Tile.WIDTH / 2, y: this.floorThickness },
+			{ x: 0, 	 		 y: Tile.HEIGHT / 2 + this.floorThickness }
 		], [
 			{ x: Tile.WIDTH / 2, y: 0 },
-			{ x: Tile.WIDTH / 2, y: Tile.BORDER_HEIGHT }
+			{ x: Tile.WIDTH / 2, y: this.floorThickness }
 		]]
 
 		this.fillStyle(0x6f6f49)

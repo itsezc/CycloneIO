@@ -6,8 +6,8 @@ import RoomContainer from "./containers/RoomContainer"
 
 export default class Room extends IRoom {
 	private readonly id: string
-	private roomData: RoomData
 
+	public roomData: RoomData
 	public map: RoomMap
 
 	private roomContainer: RoomContainer
