@@ -64,7 +64,7 @@ export default class Room extends Component<any, any> {
 
 		this.engine.init('game', this.props.socket)
 
-		this.Socket.emit('joinRoom', 'cjzk4zt7e009d0726jmho7ea1')
+		this.Socket.emit('joinRoom', 'cjzleg61200lw0760dtkovboj')
 		
 		/*this.engine.init().then(() => {
 			console.log('Game initialized')

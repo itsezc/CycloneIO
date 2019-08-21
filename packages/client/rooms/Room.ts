@@ -3,9 +3,13 @@ import RoomData from "./data/RoomData"
 import RoomMap from "./map/RoomMap"
 
 import RoomContainer from "./containers/RoomContainer"
+import RoomAssetsManager from "../assets/rooms/RoomAssetsManager";
+import IAssetsManager from "../assets/IAssetsManager";
 
 export default class Room extends IRoom {
 	private readonly id: string
+
+	public load: IAssetsManager
 
 	public roomData: RoomData
 	public map: RoomMap
@@ -24,6 +28,12 @@ export default class Room extends IRoom {
 	private initializeContainers(): void {
 		this.roomContainer = new RoomContainer(this)
 		this.add.existing(this.roomContainer)
+	}
+
+	public preload(): void {
+		this.load = new RoomAssetsManager(this);
+
+		this.load.assets()
 	}
 
 	public create(): void {
