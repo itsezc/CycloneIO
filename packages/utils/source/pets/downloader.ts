@@ -8,50 +8,68 @@ import Config from './config.json'
 
 import Logger from '../logger'
 
+import { ABSOLUTE_PATH } from './index'
+
 type DownloadData = {
     petType: string,
     rawData: Buffer
 }
 
-type DownloadOutput = {
-    downloadPromises: Promise<(void | Buffer)[]>,
-    downloadData: DownloadData[]
-}
-
 export default class PetDownloader {
-    private readonly downloads: Promise<void | Buffer>[]
-    private readonly downloadData: DownloadData[]
+    private readonly datas: DownloadData[]
 
     public constructor() {
-        this.downloads = []
-        this.downloadData = []
+        this.datas = []
     }
 
-    public getDownloads(): DownloadOutput {
-        const { flashClientURL, SWFProduction, petAssets } = Config
+    public async getDownloads(): Promise<DownloadData[]> {
 
-        const path = Path.join(__dirname, '../../out/pets')
+        return new Promise(resolve => {
+            const { flashClientURL, SWFProduction, petAssets } = Config
 
-        Logger.info('Downloading assets...')
+            const outputPath = Path.join(__dirname, '../../out/pets')
 
-        petAssets.forEach(petAsset => {
-
-            let assetExists = FileSystem.existsSync(Path.join(path, `${petAsset}.swf`))
-
-            if (assetExists) {
-
-                let download = Download(`${flashClientURL}/${SWFProduction}/${petAsset}.swf`, path).then(data => {
-                    Logger.info(`${petAsset}.swf -> DONE`)
-                    this.downloadData.push({ petType: petAsset, rawData: data })
-                })
-
-                this.downloads.push(download)
+            if (!FileSystem.existsSync(ABSOLUTE_PATH)) {
+                FileSystem.mkdirSync(ABSOLUTE_PATH)
             }
 
+            Logger.info('Downloading new assets...')
+
+            var downloads: Promise<Buffer>[] = []
+
+            petAssets.forEach(petAsset => {
+
+                const petPath = Path.join(ABSOLUTE_PATH, petAsset)
+
+                if (!FileSystem.existsSync(petPath)) {
+                    FileSystem.mkdirSync(petPath)
+                }
+
+                const SWFPath = Path.join(outputPath, `${petAsset}.swf`)
+
+                if (!FileSystem.existsSync(SWFPath)) {
+
+                    let download = Download(`${flashClientURL}/${SWFProduction}/${petAsset}.swf`, outputPath)
+
+                    downloads.push(download)
+
+                    download.then(data => {
+                        Logger.info(`SWF -> DONE [${petAsset}]`)
+                        this.datas.push({ petType: petAsset, rawData: data })
+                    })
+
+                }
+
+                else {
+                    let data = FileSystem.readFileSync(SWFPath)
+                    this.datas.push({ petType: petAsset, rawData: data })
+                }
+
+            })
+
+            Promise.all(downloads).then(() => {
+                resolve(this.datas)
+            })
         })
-
-        let downloadPromises = Promise.all(this.downloads)
-
-        return { downloadPromises, downloadData: this.downloadData }
     }
 }
