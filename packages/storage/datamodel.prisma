@@ -58,7 +58,7 @@ enum CatalogPageLayout {
 	BOTS
 }
 
-type Ban @pgTable(name: "bans")
+type Ban @db(name: "bans")
 {
     id: ID! @id
     reason: String
@@ -72,14 +72,14 @@ type Ban @pgTable(name: "bans")
     updatedAt: DateTime @updatedAt
 }
 
-type Badge @pgTable(name: "badges")
+type Badge @db(name: "badges")
 {
     id: ID! @id
     code: String! @unique
     description: String
 }
 
-type Bot @pgTable(name: "bots")
+type Bot @db(name: "bots")
 {
     id: ID! @id
     name: String
@@ -99,13 +99,13 @@ type Bot @pgTable(name: "bots")
     chatDelay: Int @default(value: 4)
 }
 
-# type Soundtracks @pgTable(name: "soundtracks") {
+# type Soundtracks @db(name: "soundtracks") {
 
 # }
 
 # @TODO: Create relation between CatalogPages (link -> id)
 
-type CatalogFeatured @pgTable(name: "catalog_featured")
+type CatalogFeatured @db(name: "catalog_featured")
 {
     id: ID! @id
     caption: String
@@ -115,7 +115,7 @@ type CatalogFeatured @pgTable(name: "catalog_featured")
     updated: DateTime @updatedAt
 }
 
-type CatalogPage @pgTable(name: "catalog_pages")
+type CatalogPage @db(name: "catalog_pages")
 {
 	id: ID! @id
     link: String! @unique
@@ -137,7 +137,7 @@ type CatalogPage @pgTable(name: "catalog_pages")
     product: Json
 }
 
-type CatalogItems @pgTable(name: "catalog_items")
+type CatalogItems @db(name: "catalog_items")
 {
     id: ID! @id
     page: CatalogPage
@@ -149,36 +149,36 @@ type CatalogItems @pgTable(name: "catalog_items")
     discount: Boolean @default(value: true)
 }
 
-type Currencies @pgTable(name: "currencies")
+type Currencies @db(name: "currencies")
 {
     id: ID! @id
     name: String!
     default: Int
 }
 
-type Rank @pgTable(name: "ranks")
+type Rank @db(name: "ranks")
 {
     id: ID! @id
     order: Int!
     name: String!
 }
 
-type Language @pgTable(name: "languages")
+type Language @db(name: "languages")
 {
     id: ID! @id
     name: String
     native: String
-    code: String! @unique
+    code: String!
     enabled: Boolean @default(value: true)
 }
 
-# type CatalogBundle @pgTable(name: "catalog_bundle")
+# type CatalogBundle @db(name: "catalog_bundle")
 # {
 # 	id: ID! @id
 # 	items: {}[]
 # }
 
-# type CatalogItem @pgTable(name: "catalog_items")
+# type CatalogItem @db(name: "catalog_items")
 # {
 #     id: ID! @id
 #     page: CatalogPage!
@@ -216,7 +216,7 @@ type Language @pgTable(name: "languages")
 #   PRIMARY KEY (`id`)
 # ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8413 ;
 
-type Chatlog @pgTable(name: "chatlog")
+type Chatlog @db(name: "chatlog")
 {
     id: ID! @id
     habbo: Habbo!
@@ -225,7 +225,7 @@ type Chatlog @pgTable(name: "chatlog")
     createdAt: DateTime @createdAt 
 }
 
-type ChatlogConsole @pgTable(name: "chatlogs_console")
+type ChatlogConsole @db(name: "chatlogs_console")
 {
     id: ID! @id
     from: Habbo! @relation(name: "ChatlogsConsoleFromUser")
@@ -234,7 +234,7 @@ type ChatlogConsole @pgTable(name: "chatlogs_console")
     createdAt: DateTime @createdAt
 }
 
-type ChatlogConsoleInvitations @pgTable(name: "chatlogs_console_invitations")
+type ChatlogConsoleInvitations @db(name: "chatlogs_console_invitations")
 {
     id: ID! @id
     from: Habbo! @relation(name: "ChatlogsConsoleInvitationsFromUser")
@@ -244,7 +244,7 @@ type ChatlogConsoleInvitations @pgTable(name: "chatlogs_console_invitations")
     createdAt: DateTime @createdAt
 }
 
-type Room @pgTable(name: "rooms")
+type Room @db(name: "rooms")
 {
 	id: ID! @id
 	name: String!
@@ -268,7 +268,7 @@ type Room @pgTable(name: "rooms")
 
 
 # Furniture (Class) -> Catalog Item (Instance where its displayed on the catalog) -> Item (Instance with a User as the owner)
-# type Item @pgTable(name: "items")
+# type Item @db(name: "items")
 # {
 #     id: ID! @id
 #     name: String
@@ -284,7 +284,7 @@ type Room @pgTable(name: "rooms")
 #     value: Int
 # }
 
-type NavigatorTab @pgTable(name: "navigator_tabs")
+type NavigatorTab @db(name: "navigator_tabs")
 {
     id: ID! @id
     name: String
@@ -293,7 +293,7 @@ type NavigatorTab @pgTable(name: "navigator_tabs")
     categories: [NavigatorCategory!]!
 }
 
-type NavigatorCategory @pgTable(name: "navigator_categories")
+type NavigatorCategory @db(name: "navigator_categories")
 {
     id: ID! @id
     name: String
@@ -301,7 +301,7 @@ type NavigatorCategory @pgTable(name: "navigator_categories")
     parent: NavigatorTab
 }
 
-type News @pgTable(name: "news")
+type News @db(name: "news")
 {
 	id: ID! @id
 	title: String
@@ -313,7 +313,7 @@ type News @pgTable(name: "news")
     updatedAt: DateTime @updatedAt
 }
 
-type Habbo @pgTable(name: "habbos")
+type Habbo @db(name: "habbos")
 {
     id: ID! @id
     user: User!
@@ -340,20 +340,20 @@ type Habbo @pgTable(name: "habbos")
     updatedAt: DateTime @updatedAt
 }
 
-type HabboBadges @pgTable(name: "habbos_badges") {
+type HabboBadges @db(name: "habbos_badges") {
     id: ID! @id
     habbo: Habbo!
     badge: String!
 }
 
 # Need to create a Items Table properly
-type HabboItems @pgTable(name: "habbos_items") {
+type HabboItems @db(name: "habbos_items") {
     id: ID! @id
     habbo: Habbo!
     item: String
 }
 
-type User @pgTable(name: "users")
+type User @db(name: "users")
 {
     id: ID! @id
     email: String
