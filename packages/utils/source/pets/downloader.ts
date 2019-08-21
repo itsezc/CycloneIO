@@ -8,14 +8,19 @@ import Config from './config.json'
 
 import Logger from '../logger'
 
+type DownloadData = {
+    petType: string,
+    rawData: Buffer
+}
+
 type DownloadOutput = {
     downloadPromises: Promise<(void | Buffer)[]>,
-    downloadData: Buffer[]
+    downloadData: DownloadData[]
 }
 
 export default class PetDownloader {
     private readonly downloads: Promise<void | Buffer>[]
-    private readonly downloadData: Buffer[]
+    private readonly downloadData: DownloadData[]
 
     public constructor() {
         this.downloads = []
@@ -23,21 +28,21 @@ export default class PetDownloader {
     }
 
     public getDownloads(): DownloadOutput {
-        const { flashClientURL, SWFProduction, petAssets: assets } = Config
+        const { flashClientURL, SWFProduction, petAssets } = Config
 
         const path = Path.join(__dirname, '../../out/pets')
 
         Logger.info('Downloading assets...')
 
-        assets.forEach(asset => {
+        petAssets.forEach(petAsset => {
 
-            let assetExists = FileSystem.existsSync(Path.join(path, `${asset}.swf`))
+            let assetExists = FileSystem.existsSync(Path.join(path, `${petAsset}.swf`))
 
-            if (!assetExists) {
+            if (assetExists) {
 
-                let download = Download(`${flashClientURL}/${SWFProduction}/${asset}.swf`, path).then(data => {
-                    Logger.info(`${asset}.swf -> DONE`)
-                    this.downloadData.push(data)
+                let download = Download(`${flashClientURL}/${SWFProduction}/${petAsset}.swf`, path).then(data => {
+                    Logger.info(`${petAsset}.swf -> DONE`)
+                    this.downloadData.push({ petType: petAsset, rawData: data })
                 })
 
                 this.downloads.push(download)
