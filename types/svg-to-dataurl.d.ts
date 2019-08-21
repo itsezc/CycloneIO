@@ -1,5 +1,4 @@
-declare module 'svg-to-dataurl'
-{
+declare module 'svg-to-dataurl' {
 	const value: any
 	export default value
 }
