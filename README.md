@@ -1,36 +1,29 @@
 ![](https://images-ext-1.discordapp.net/external/r2UBimZGcz-rmHYTts7cSHrkb08ieKXJm80iHLlUQVc/https/i.imgur.com/RnTnqWt.png?width=200&height=200)
 
 # Cyclone
-Cyclone is a HTML5 version of Habbo Hotel created in NodeJS with a fully functional CMS
+Cyclone is a HTML5 version of Habbo Hotel created in NodeJS with a fully functional CMS, Housekeeping, Server, Client, Desktop App, Mobile App and lots of tools to run the perfect Habbo Retro.
 
 ## Features
 
-### ⚙️ (Cyclone) CMS
-Cyclone comes with a fully functional CMS which includes languages, themes, social media login, and many more features allowing you to truly create a unique Habbo Hotel that's to your liking. Cyclone is easily the most customizable CMS in the market. It has been designed with ES8 and powered by React.
-
-### 📊 Almighty Administration
-Monitor and Manage every aspect of your hotel right from the Housekeeping, whether you want to edit the CMS, rank a user, add furniture, view logs or post a news article, you can do it all from one place.
-
-### 💺 Automatic Updates
-Keep your Hotel up to date with little to no effort, Cyclone comes with powerful tools to grab all the latest badges and other elements.
-
-## Requirements
-
-The following platforms are supported by Cyclone:
-
-* Linux
-* MacOSX
-* Windows 7, 8, 10, Server 2012 and Server 2016
-
-You can run Cyclone standalone or with a docker image, it is designed to scale rapidly with kubernetes. We recommend only those with experience in NodeJS to download and use the project in production.
+- CMS : Builtin CMS with a ton of features
+- Server : Java powered server for raw performance
+- Client : HTML5 powered Client with modern practices
 
 ## Installation
 
-**To use Cyclone in production you must acquire a license key. The license key is provided for FREE by registering at https://developers.foretag.co**
+Cyclone requires docker to function
 
-To download Cyclone via npm use the following command:
-`npm install @foretag/cyclone`
+### Requirements
 
-You will need to edit `config.json` in the root directory
+- 2 GB RAM
 
-and you can start by running `npm run start:hotel`
+## Developers
+
+- EZ-C : United Kingdom
+- Levitase : Italy
+- lElectro : Spain
+- lBebe : Spain
+- lBonito : France
+- Kychloren : France
+- JayCustom : United States
+- ThePapaNoob : Germany
