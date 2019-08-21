@@ -1,33 +1,46 @@
-.camera
-	background url('./r63b/camera/base.png') no-repeat
-	height 462px
-	width 340px
-	left 400px
+.cameraContainer
+	left 400px	
 	top 0
 	position absolute
-	text-align center
 
-	.title
-		font-size 14px
-		margin-top 10px
+	.camera
+		background url('./r63b/camera/base.png') no-repeat
+		height 462px
+		width 340px
+		text-align center
 
-	.hud 
-		background url('./r63b/camera/hud.png') no-repeat
-		width 318px
-		height 318px
-		display inline-block
-		position absolute
-		left 10px
-		top 38px
+		.title
+			font-size 14px
+			padding 10px 0
 
-	.snap
-		background url('./r63b/camera/snap.png') no-repeat
-		height 86px
-		width 84px
-		position absolute
-		bottom 9px
-		left 130px
+		.cameraActions
+			display flex
+			flex-direction row
+			align-items flex-end
+			position absolute
+			right 8px
+			top 10px
 
-		&:hover
-			cursor pointer
-			filter drop-shadow(3px 1.5px 0 #fff) drop-shadow(-3px 1.5px 0 #fff) drop-shadow(0 -3px 0 #fff)
+			&>*:not(:last-child)
+				margin-right 5px
+
+		.hud 
+			background url('./r63b/camera/hud.png') no-repeat
+			width 318px
+			height 318px
+			display inline-block
+			position absolute
+			left 10px
+			top 38px
+
+		.snap
+			background url('./r63b/camera/snap.png') no-repeat
+			height 86px
+			width 84px
+			position absolute
+			bottom 9px
+			left 130px
+
+			&:hover
+				cursor pointer
+				filter drop-shadow(3px 1.5px 0 #fff) drop-shadow(-3px 1.5px 0 #fff) drop-shadow(0 -3px 0 #fff)

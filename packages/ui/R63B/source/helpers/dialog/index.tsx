@@ -1,6 +1,6 @@
 import React , {Component} from 'react'
 
-import { classNames, dragElement } from '../../utils/functions';
+import { classNames, dragElement } from '../../utils/functions'
 
 type DialogProps = {
     defaultPos?: [] | string
