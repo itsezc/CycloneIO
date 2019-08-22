@@ -13,7 +13,7 @@ import { ABSOLUTE_PATH } from './index'
 type Metadata = {
     code: number,
     characterId: number,
-    imgName: string,
+    imageName: string,
     imgType: string,
 }
 
@@ -26,7 +26,7 @@ export default class PetConverter {
         this.imagesSources = new Map<string, string[]>() // <pet name, images paths>
     }
 
-    public extractSWF(rawData: Buffer): SWF {
+    public async extractSWF(rawData: Buffer): Promise<SWF> {
         return readFromBufferP(rawData)
     }
 
@@ -34,38 +34,53 @@ export default class PetConverter {
         return Promise.all(extractImages(tags))
     }
 
-    public async getImagesNames(tags: Tag[], petType: string): Promise<Map<any, any>> {
+    public async extractImageNames(tags: Tag[], petType: string): Promise<any[]> {
 
         return new Promise(resolve => {
-            var names: Map<any, any> = new Map<any, any>()
+            var names: any[] = []
 
-            tags.map(tag => {
-                const { code, rawData } = tag
+            tags.filter(tag => {
+                return tag.code === 76
+            })
+                .map(tag => {
+                    const { rawData } = tag
 
-                if (code === 76) {
                     let rawBuffer = rawData.slice(2)
 
                     while (rawBuffer.length > 0) {
                         let humanReadableFormat = unpack('vZ+1', rawBuffer)
 
                         let characterId = humanReadableFormat[0]
-                        let name = humanReadableFormat[1]
+                        let name: string = humanReadableFormat[1]
 
-                        names.set(characterId, name)
+                        let regExp = new RegExp(`${petType}_${petType}_(32|64)`)
+                        let isValidName = regExp.test(name)
+
+                        if (isValidName) {
+                            names[characterId] = name
+                        }
 
                         rawBuffer = rawBuffer.slice(2 + name.length + 1)
                     }
-                }
-            })
+
+                    // xml files
+
+                    // if (code === 87) {
+                    //     let humanReadableFormat = rawData.toString()
+
+                    //     console.log(humanReadableFormat)
+                    // }
+
+                })
 
             resolve(names)
         })
     }
 
-    public async writeImages(petType: string, images: Image[], imagesNames: Map<any, any>): Promise<boolean> {
+    public async writeImages(petType: string, images: Image[], imagesNames: any[]): Promise<boolean> {
 
         return new Promise(resolve => {
-            var newImages: Buffer[] = []
+            var newImageData: Buffer[] = []
             var imagePathNames: string[] = []
 
             const imagesPath = Path.join(ABSOLUTE_PATH, petType, 'images')
@@ -77,23 +92,23 @@ export default class PetConverter {
             images.map(image => {
                 const { code, characterId, imgType, imgData } = image
 
-                let imageIndex = images.indexOf(image)
+                let imgName = imagesNames[characterId]
 
-                let imgName = imagesNames.get(imageIndex)
+                if (imgName !== undefined) {
+                    this.metadata.push({ code, characterId, imageName: imgName, imgType })
 
-                this.metadata.push({ code, characterId, imgName, imgType })
+                    const imagePath = Path.join(imagesPath, `${imgName}.${imgType}`)
 
-                const imagePath = Path.join(imagesPath, `${imgName}.${imgType}`)
+                    if (!FileSystem.existsSync(imagePath)) {
+                        FileSystem.writeFileSync(imagePath, imgData)
+                        newImageData.push(imgData)
+                    }
 
-                if (!FileSystem.existsSync(imagePath)) {
-                    FileSystem.writeFileSync(imagePath, imgData)
-                    newImages.push(imgData)
+                    imagePathNames.push(imagePath)
                 }
-
-                imagePathNames.push(imagePath)
             })
 
-            if (newImages.length !== 0) {
+            if (newImageData.length !== 0) {
                 resolve(false)
             }
 
@@ -108,10 +123,6 @@ export default class PetConverter {
         return new Promise((resolve, reject) => {
             const imgsPath = Path.join(ABSOLUTE_PATH, petType, 'images')
             const metadataPath = Path.join(imgsPath, 'metadata.json')
-
-            if (!FileSystem.existsSync(imgsPath)) {
-                FileSystem.mkdirSync(imgsPath)
-            }
 
             if (FileSystem.existsSync(metadataPath)) {
                 resolve(true)
