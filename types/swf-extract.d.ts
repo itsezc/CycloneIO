@@ -33,6 +33,6 @@ export type Image = {
 }
 
 declare module 'swf-extract' {
-    export function readFromBufferP(rawData: Buffer): SWF
+    export function readFromBufferP(rawData: Buffer): Promise<SWF>
     export function extractImages(tags: Tag[]): Iterable<Image>
 }
