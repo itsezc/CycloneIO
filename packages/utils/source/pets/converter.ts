@@ -6,22 +6,24 @@ import Path from 'path'
 
 import Spritesmith, { Result } from 'spritesmith'
 
+import { unpack } from 'qunpack'
+
 import { ABSOLUTE_PATH } from './index'
 
-type MetaData = {
+type Metadata = {
     code: number,
     characterId: number,
+    imgName: string,
     imgType: string,
-    imgName: string
 }
 
 export default class PetConverter {
-    private readonly metaData: MetaData[]
-    private readonly imgsSources: Map<string, string[]>
+    private readonly metadata: Metadata[]
+    private readonly imagesSources: Map<string, string[]>
 
     public constructor() {
-        this.metaData = []
-        this.imgsSources = new Map<string, string[]>() // <pet name, images paths>
+        this.metadata = []
+        this.imagesSources = new Map<string, string[]>() // <pet name, images paths>
     }
 
     public extractSWF(rawData: Buffer): SWF {
@@ -32,58 +34,94 @@ export default class PetConverter {
         return Promise.all(extractImages(tags))
     }
 
-    public async writeImages(petType: string, images: Image[]): Promise<boolean> {
+    public async getImagesNames(tags: Tag[], petType: string): Promise<Map<any, any>> {
 
         return new Promise(resolve => {
-            var newImgs: Buffer[] = []
-            var imgsPaths: string[] = []
+            var names: Map<any, any> = new Map<any, any>()
 
-            images.map(image => {
-                const { code, characterId, imgType, imgData } = image
-                const imgName = `${petType}_${characterId}.${imgType}`
+            tags.map(tag => {
+                const { code, rawData } = tag
 
-                this.metaData.push({ code, characterId, imgType, imgName })
+                if (code === 76) {
+                    let rawBuffer = rawData.slice(2)
 
-                const imgsPath = Path.join(ABSOLUTE_PATH, petType, 'images')
-                const imgPath = Path.join(imgsPath, imgName)
+                    while (rawBuffer.length > 0) {
+                        let humanReadableFormat = unpack('vZ+1', rawBuffer)
 
-                imgsPaths.push(imgPath)
+                        let characterId = humanReadableFormat[0]
+                        let name = humanReadableFormat[1]
 
-                if (!FileSystem.existsSync(imgsPath)) {
-                    FileSystem.mkdirSync(imgsPath)
-                }
+                        names.set(characterId, name)
 
-                if (!FileSystem.existsSync(imgPath)) {
-                    FileSystem.writeFileSync(imgPath, imgData)
-                    newImgs.push(imgData)
+                        rawBuffer = rawBuffer.slice(2 + name.length + 1)
+                    }
                 }
             })
 
-            if (newImgs.length !== 0) {
+            resolve(names)
+        })
+    }
+
+    public async writeImages(petType: string, images: Image[], imagesNames: Map<any, any>): Promise<boolean> {
+
+        return new Promise(resolve => {
+            var newImages: Buffer[] = []
+            var imagePathNames: string[] = []
+
+            const imagesPath = Path.join(ABSOLUTE_PATH, petType, 'images')
+
+            if (!FileSystem.existsSync(imagesPath)) {
+                FileSystem.mkdirSync(imagesPath)
+            }
+
+            images.map(image => {
+                const { code, characterId, imgType, imgData } = image
+
+                let imageIndex = images.indexOf(image)
+
+                let imgName = imagesNames.get(imageIndex)
+
+                this.metadata.push({ code, characterId, imgName, imgType })
+
+                const imagePath = Path.join(imagesPath, `${imgName}.${imgType}`)
+
+                if (!FileSystem.existsSync(imagePath)) {
+                    FileSystem.writeFileSync(imagePath, imgData)
+                    newImages.push(imgData)
+                }
+
+                imagePathNames.push(imagePath)
+            })
+
+            if (newImages.length !== 0) {
                 resolve(false)
             }
 
-            this.imgsSources.set(petType, imgsPaths)
+            this.imagesSources.set(petType, imagePathNames)
 
             resolve(true)
         })
     }
 
-    public async writeMetaData(petType: string): Promise<boolean> {
+    public async writeMetadata(petType: string): Promise<boolean> {
 
-        return new Promise(resolve => {
+        return new Promise((resolve, reject) => {
             const imgsPath = Path.join(ABSOLUTE_PATH, petType, 'images')
-            const metaDataPath = Path.join(imgsPath, 'metadata.json')
+            const metadataPath = Path.join(imgsPath, 'metadata.json')
 
             if (!FileSystem.existsSync(imgsPath)) {
                 FileSystem.mkdirSync(imgsPath)
             }
 
-            if (FileSystem.existsSync(metaDataPath)) {
+            if (FileSystem.existsSync(metadataPath)) {
                 resolve(true)
             }
 
-            FileSystem.writeFileSync(metaDataPath, JSON.stringify(this.metaData, null, 2))
+            if (this.metadata === undefined) {
+                reject(false)
+            }
+
+            FileSystem.writeFileSync(metadataPath, JSON.stringify(this.metadata, null, 2))
 
             resolve(false)
         })
@@ -93,7 +131,7 @@ export default class PetConverter {
 
         return new Promise((resolve, reject) => {
 
-            let imgsSources = this.imgsSources.get(petType)
+            let imagesSources = this.imagesSources.get(petType)
 
             const spritesheetImagePath = Path.join(ABSOLUTE_PATH, petType, `${petType}.png`)
 
@@ -101,7 +139,7 @@ export default class PetConverter {
                 resolve(false)
             }
 
-            Spritesmith.run({ src: imgsSources }, (err: string, result: Result) => {
+            Spritesmith.run({ src: imagesSources }, (err: string, result: Result) => {
                 if (err) {
                     reject(err)
                 }
