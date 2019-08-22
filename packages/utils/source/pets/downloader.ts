@@ -33,8 +33,6 @@ export default class PetDownloader {
                 FileSystem.mkdirSync(ABSOLUTE_PATH)
             }
 
-            Logger.info('Downloading new assets...')
-
             var downloads: Promise<Buffer>[] = []
 
             petAssets.forEach(petAsset => {
