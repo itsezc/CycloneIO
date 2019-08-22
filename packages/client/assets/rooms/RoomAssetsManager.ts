@@ -12,20 +12,18 @@ export default class RoomAssetsManager extends Logger implements IAssetsManager 
     }
 
     public loadAssets(): void {
-		if (Habbo.DEBUG) {
-			this.initConsoleOutput()
-		}
+		this.initConsoleOutput()
 
 		this.roomLoader.image('tile_hover', 'room/tile_hover.png')
     }
 
 	private initConsoleOutput(): void {
 		this.roomLoader.on('fileprogress', (file: Phaser.Loader.File) => {
-			this.log(`Loading file => ${file.key} | Progress => ${Math.round(this.roomLoader.progress * 100)}%`)
+			this.debug(`Loading file => ${file.key} | Progress => ${Math.round(this.roomLoader.progress * 100)}%`)
 		})
 
 		this.roomLoader.on('complete', () => {
-			this.log(`Loading files completed!`)
+			this.debug(`Loading files completed!`)
 		})
 	}
 }

@@ -1,3 +1,5 @@
+import Habbo from "../Habbo";
+
 export default abstract class Logger {
     private readonly consoleStyle: string
     private readonly className: string
@@ -9,5 +11,11 @@ export default abstract class Logger {
 
     protected log(message: string): void {
         console.log(`%c [${this.className}] ${message}`, this.consoleStyle)
+    }
+
+    protected debug(message: string): void {
+        if (Habbo.DEBUG) {
+            this.log(message)
+        }
     }
 }
