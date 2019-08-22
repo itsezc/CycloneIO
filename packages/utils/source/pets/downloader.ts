@@ -8,7 +8,7 @@ import Config from './config.json'
 
 import Logger from '../logger'
 
-import { ABSOLUTE_PATH } from './index'
+import { ABSOLUTE_PATH, OUTPUT_PATH } from './index'
 
 type DownloadData = {
     petType: string,
@@ -16,58 +16,43 @@ type DownloadData = {
 }
 
 export default class PetDownloader {
-    private readonly datas: DownloadData[]
+    private readonly data: DownloadData[]
 
     public constructor() {
-        this.datas = []
+        this.data = []
     }
 
-    public async getDownloads(): Promise<DownloadData[]> {
+    public async getDownloadData(): Promise<DownloadData[]> {
 
         return new Promise(resolve => {
-            const { flashClientURL, SWFProduction, petAssets } = Config
+            const { flashClientURL, SWFProduction, petAssets: assets } = Config
 
-            const outputPath = Path.join(__dirname, '../../out/pets')
+            assets.forEach(async asset => {
 
-            if (!FileSystem.existsSync(ABSOLUTE_PATH)) {
-                FileSystem.mkdirSync(ABSOLUTE_PATH)
-            }
-
-            var downloads: Promise<Buffer>[] = []
-
-            petAssets.forEach(petAsset => {
-
-                const petPath = Path.join(ABSOLUTE_PATH, petAsset)
+                const petPath = Path.join(ABSOLUTE_PATH, asset)
 
                 if (!FileSystem.existsSync(petPath)) {
                     FileSystem.mkdirSync(petPath)
                 }
 
-                const SWFPath = Path.join(outputPath, `${petAsset}.swf`)
+                const SWFPath = Path.join(OUTPUT_PATH, `${asset}.swf`)
 
                 if (!FileSystem.existsSync(SWFPath)) {
+                    let data = await Download(`${flashClientURL}/${SWFProduction}/${asset}.swf`, OUTPUT_PATH)
 
-                    let download = Download(`${flashClientURL}/${SWFProduction}/${petAsset}.swf`, outputPath)
+                    Logger.info(`SWF -> DONE [${asset}]`)
 
-                    downloads.push(download)
-
-                    download.then(data => {
-                        Logger.info(`SWF -> DONE [${petAsset}]`)
-                        this.datas.push({ petType: petAsset, rawData: data })
-                    })
-
+                    this.data.push({ petType: asset, rawData: data })
                 }
 
                 else {
                     let data = FileSystem.readFileSync(SWFPath)
-                    this.datas.push({ petType: petAsset, rawData: data })
+                    this.data.push({ petType: asset, rawData: data })
                 }
 
             })
 
-            Promise.all(downloads).then(() => {
-                resolve(this.datas)
-            })
+            resolve(this.data)
         })
     }
 }
