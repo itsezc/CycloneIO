@@ -7,11 +7,6 @@ import Logger from '../logger'
 
 export const ABSOLUTE_PATH = Path.join(__dirname, '..', '..', '..', '..', 'web-gallery', 'pets')
 
-enum Messages {
-    No_New_Data = 'Everything is up-to-date!',
-    New_Data = 'Downloaded new data!'
-}
-
 class PetUtility {
     private readonly downloader: PetDownloader
     private readonly converter: PetConverter
@@ -28,6 +23,7 @@ class PetUtility {
         this.downloader.getDownloads().then(datas => {
 
             datas.forEach(async (data) => {
+
                 const { petType, rawData } = data
 
                 const swf = await this.converter.extractSWF(rawData)
@@ -36,40 +32,26 @@ class PetUtility {
 
                 const images = await this.converter.extractImages(tags)
 
-                var processPromises: Promise<any>[] = []
-                var fulfilledProcesses: boolean[] = []
+                const imagesNames = await this.converter.getImagesNames(tags, petType)
 
-                let imagesPromise = this.converter.writeImages(petType, images).then(imagesExists => {
-                    if (!imagesExists) {
-                        Logger.info(`Images -> DONE [${petType}]`)
-                        fulfilledProcesses.push(imagesExists)
-                    }
-                })
+                var imagesExists = await this.converter.writeImages(petType, images, imagesNames)
 
-                processPromises.push(imagesPromise)
+                if (!imagesExists) {
+                    Logger.info(`Images -> DONE [${petType}]`)
+                }
 
-                let metaDataPromise = this.converter.writeMetaData(petType).then(metaDataExists => {
-                    if (!metaDataExists) {
-                        Logger.info(`Metadata -> DONE [${petType}]`)
-                        fulfilledProcesses.push(metaDataExists)
-                    }
-                })
+                var metaDataExists = await this.converter.writeMetadata(petType)
 
-                processPromises.push(metaDataPromise)
+                if (!metaDataExists) {
+                    Logger.info(`Metadata -> DONE [${petType}]`)
+                }
 
-                let spritesheetPromise = this.converter.generateSpritesheet(petType).then(spritesheetGenerated => {
-                    if (spritesheetGenerated) {
-                        Logger.info(`Spritesheet -> DONE [${petType}]`)
-                        fulfilledProcesses.push(spritesheetGenerated)
-                    }
-                })
+                var spritesheetGenerated = await this.converter.generateSpritesheet(petType)
 
-                processPromises.push(spritesheetPromise)
+                if (spritesheetGenerated) {
+                    Logger.info(`Spritesheet -> DONE [${petType}]`)
+                }
 
-                Promise.all(processPromises).then(() => {
-                    fulfilledProcesses.length === 0 ? Logger.info(`${Messages.No_New_Data} [${petType}]`) :
-                        Logger.info(`${Messages.New_Data} [${petType}]`)
-                })
             })
         })
     }
