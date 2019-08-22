@@ -1,4 +1,4 @@
-import IRoom from "../IRoom";
+import RoomScene from "../RoomScene";
 import {HeightMapPosition} from '../map/HeightMap';
 import Directions from "../map/directions/Directions";
 import TilesContainer from "../containers/tiles/TilesContainer";
@@ -11,10 +11,10 @@ export default class Tile extends Phaser.GameObjects.Sprite {
 
 	public readonly heightMapPosition: HeightMapPosition
 
-	private readonly room: IRoom
+	private readonly room: RoomScene
 	private readonly floorThickness: number
 
-	public constructor(room: IRoom, heightMapPosition: HeightMapPosition) {
+	public constructor(room: RoomScene, heightMapPosition: HeightMapPosition) {
 		super(room,
 			  TilesContainer.getScreenX(heightMapPosition),
 			  TilesContainer.getScreenY(heightMapPosition),

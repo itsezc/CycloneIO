@@ -1,14 +1,14 @@
-import IRoom from "../IRoom";
+import RoomScene from "../RoomScene";
 import {HeightMapPosition} from '../map/HeightMap';
 import Directions from "../map/directions/Directions";
 import Tile from "./Tile";
 import TilesContainer from "../containers/tiles/TilesContainer";
 
 export default class TileGenerator extends Phaser.GameObjects.Graphics {
-	private readonly room: IRoom
+	private readonly room: RoomScene
 	private readonly floorThickness: number
 
-	public constructor(room: IRoom) {
+	public constructor(room: RoomScene) {
 		super(room, {x: 500, y: 500 })
 
 		this.room = room

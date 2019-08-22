@@ -1,11 +1,11 @@
 import * as Phaser from 'phaser'
-import IRoom from "../IRoom";
+import RoomScene from "../RoomScene";
 import {HeightMapPosition} from "../map/HeightMap";
 import TilesContainer from "../containers/tiles/TilesContainer";
 
 export default class HoverTile extends Phaser.GameObjects.Sprite {
 
-	public constructor(room: IRoom) {
+	public constructor(room: RoomScene) {
 		super(room, 0, 0, 'tile_hover')
 	}
 

@@ -1,8 +1,8 @@
-import IRoom from "./IRoom";
+import RoomScene from "./RoomScene";
 import RoomData from "./data/RoomData";
 
 export default interface IRoomManager {
-	setRoom(room: IRoom): void
+	setRoom(room: RoomScene): void
 	leaveRoom(): void
-	createRoom(roomData: RoomData): IRoom
+	createRoom(roomData: RoomData): RoomScene
 }

@@ -1,12 +1,12 @@
 import * as Phaser from 'phaser'
 
-import IRoom from "../IRoom"
+import RoomScene from "../RoomScene"
 import TilesContainer from "./tiles/TilesContainer"
 
 export default class RoomContainer extends Phaser.GameObjects.Container {
 	private readonly tilesContainer: TilesContainer
 
-	public constructor(room: IRoom) {
+	public constructor(room: RoomScene) {
 		super(room)
 
 		this.tilesContainer = new TilesContainer(room)

@@ -3,10 +3,12 @@ import * as Phaser from 'phaser'
 
 import ISocketManager from './communication/ISocketManager';
 import IRoomManager from "./rooms/IRoomManager";
-import IRoom from "./rooms/IRoom";
+import RoomScene from "./rooms/RoomScene";
 
 @injectable()
 export default class Habbo {
+	public static readonly DEBUG = true
+
 	private game: Phaser.Game
 
 	private socketManager: ISocketManager
@@ -49,7 +51,7 @@ export default class Habbo {
 	}
 
 	public setScene(scene: Phaser.Scene): void {
-		const key = (scene instanceof IRoom) ? 'room' : 'unknown'
+		const key = (scene instanceof RoomScene) ? 'room' : 'unknown'
 		this.game.scene.add(key, scene, true)
 	}
 }

@@ -1,4 +1,4 @@
-import IRoom from "./IRoom"
+import RoomScene from "./RoomScene"
 import RoomData from "./data/RoomData"
 import RoomMap from "./map/RoomMap"
 
@@ -6,7 +6,7 @@ import RoomContainer from "./containers/RoomContainer"
 import RoomAssetsManager from "../assets/rooms/RoomAssetsManager";
 import IAssetsManager from "../assets/IAssetsManager";
 
-export default class Room extends IRoom {
+export default class Room extends RoomScene {
 	private readonly id: string
 
 	public roomData: RoomData

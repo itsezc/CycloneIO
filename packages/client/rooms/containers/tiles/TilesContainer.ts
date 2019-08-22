@@ -1,16 +1,16 @@
-import IRoom from "../../IRoom";
+import RoomScene from "../../RoomScene";
 import Tile from "../../tiles/Tile";
 import HoverTile from "../../tiles/HoverTile";
 import TileGenerator from "../../tiles/TileGenerator";
 import {HeightMapPosition} from "../../map/HeightMap";
 
 export default class TilesContainer extends Phaser.GameObjects.Container {
-	private readonly room: IRoom
+	private readonly room: RoomScene
 	private readonly tileGenerator: TileGenerator
 	private readonly tiles: Tile[]
 	private readonly hoverTile: HoverTile
 
-	public constructor(room: IRoom) {
+	public constructor(room: RoomScene) {
 		super(room)
 
 		this.room = room
@@ -23,7 +23,6 @@ export default class TilesContainer extends Phaser.GameObjects.Container {
 
 		this.add(this.tiles)
 		this.add(this.hoverTile)
-
 	}
 
 	private getTilesFromMap(): Tile[] {
