@@ -1,0 +1,25 @@
+0 silly argv {
+0 silly argv   _: [ 'run' ],
+0 silly argv   parallel: true,
+0 silly argv   scope: '@cyclone/utils',
+0 silly argv   lernaVersion: '3.16.4',
+0 silly argv   '$0': 'node_modules\\lerna\\cli.js',
+0 silly argv   script: 'dev:pets'
+0 silly argv }
+1 notice cli v3.16.4
+2 verbose rootPath c:\Users\jason\Desktop\Cyclone
+3 info versioning independent
+4 info filter [ '@cyclone/utils' ]
+5 info Executing command in 1 package: "npm run dev:pets"
+6 silly npmRunScript.stream [ 'dev:pets', [], '@cyclone/utils' ]
+7 silly getExecOpts c:\Users\jason\Desktop\Cyclone\packages\utils undefined
+8 error MaxBufferError: stdout maxBuffer exceeded
+8 error     at PassThrough.<anonymous> (c:\Users\jason\Desktop\Cyclone\node_modules\get-stream\index.js:41:19)
+8 error     at PassThrough.emit (events.js:208:15)
+8 error     at addChunk (_stream_readable.js:294:12)
+8 error     at readableAddChunk (_stream_readable.js:271:13)
+8 error     at PassThrough.Readable.push (_stream_readable.js:210:10)
+8 error     at PassThrough.Transform.push (_stream_transform.js:150:32)
+8 error     at PassThrough.afterTransform (_stream_transform.js:94:10)
+8 error     at PassThrough._transform (_stream_passthrough.js:44:3)
+8 error     at PassThrough.Transform._read (_stream_transform.js:189:10)
