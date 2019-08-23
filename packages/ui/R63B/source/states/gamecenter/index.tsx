@@ -40,7 +40,7 @@ export default class GameCenter extends Component<any, ClientState> {
 	private connected: boolean
 	private tmp: any
 
-	constructor(props: any) {
+	public constructor(props: any) {
 		super(props)
 
 		// this.Database = new ApolloClient({
@@ -53,7 +53,7 @@ export default class GameCenter extends Component<any, ClientState> {
 		}
 	}
 
-	render() {
+	public render() {
 		if(this.state.connected) 
 		{
 			return(
