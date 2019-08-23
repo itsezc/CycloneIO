@@ -27,11 +27,11 @@ export default class TilesContainer extends Phaser.GameObjects.Container {
 		this.add(this.tiles)
 		this.add(this.hoverTile)
 
-		if (Habbo.DEBUG) {
-			this.debugTextCoords = this.getDebugTextCoords()
-
-			this.add(this.debugTextCoords)
-		}
+		// if (Habbo.DEBUG) {
+		// 	this.debugTextCoords = this.getDebugTextCoords()
+		//
+		// 	this.add(this.debugTextCoords)
+		// }
 	}
 
 	private getTilesFromMap(): Tile[] {

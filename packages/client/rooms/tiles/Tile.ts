@@ -3,7 +3,7 @@ import {HeightMapPosition} from '../map/HeightMap';
 import Directions from "../map/directions/Directions";
 import TilesContainer from "../containers/tiles/TilesContainer";
 
-export default class Tile extends Phaser.GameObjects.Sprite {
+export default class Tile extends Phaser.GameObjects.Image {
 	public static readonly HEIGHT = 32
 	public static readonly WIDTH = 64
 
@@ -29,12 +29,8 @@ export default class Tile extends Phaser.GameObjects.Sprite {
 	}
 
 	private setTileTexture() {
-		const tilesAround = this.room.map.getTilePositionsAround(this.heightMapPosition.x, this.heightMapPosition.y)
 
-		let eastBorder = this.isEastBorderNeeded(tilesAround)
-		let southBorder = this.isSouthBorderNeeded(tilesAround)
-
-		const tileKey = this.getTileTexture(eastBorder, southBorder)
+		const tileKey = this.getTileTexture(true, true)
 
 		this.setTexture(tileKey)
 	}

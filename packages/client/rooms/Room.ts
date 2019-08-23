@@ -9,6 +9,7 @@ import CameraManager from './camera/CameraManager'
 import IInputManager from "../input/IInputManager";
 import RoomInputManager from "./input/RoomInputManager";
 import RoomCameraManager from "./camera/CameraManager";
+import Habbo from "../Habbo";
 
 export default class Room extends RoomScene {
 	private readonly id: string
@@ -28,7 +29,7 @@ export default class Room extends RoomScene {
 		this.id = roomData.id
 		this.roomData = roomData
 
-		this.map = new RoomMap(roomData.map.room)
+		this.map = new RoomMap(this.roomData.map.room)
 	}
 
 	private initializeContainers(): void {
@@ -36,9 +37,13 @@ export default class Room extends RoomScene {
 		this.add.existing(this.roomContainer)
 	}
 
-	public async preload(): Promise<void> {
+	public preload(): void {
 		this.loader = new RoomAssetsManager(this.load);
 		this.loader.loadAssets()
+	}
+
+	public update(time: number, delta: number): void {
+		this.updateFPSCounter()
 	}
 
 	public create(): void {
@@ -60,6 +65,12 @@ export default class Room extends RoomScene {
 
 		if (doorTile) {
 			this.roomCameraManager.centerCamera(doorTile.x, doorTile.y)
+		}
+	}
+
+	private updateFPSCounter() {
+		if (Habbo.DEBUG) {
+			this.roomContainer.debugContainer.setFPS(this.game.loop.actualFps)
 		}
 	}
 }
