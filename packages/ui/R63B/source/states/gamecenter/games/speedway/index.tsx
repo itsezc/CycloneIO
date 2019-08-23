@@ -99,10 +99,33 @@ export default class Speedway extends Component {
 						</div>
 					</fieldset>
 
-					<fieldset>
+					<fieldset className='rankings'>
 						<legend>FRIEND RANKING</legend>
 						<div>
-							
+							<div className='leaderboards__ranking'>
+								<img 
+									className='leaderboards__player'
+									src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m'
+								/>
+								<h3 className='leaderboards__ranking__name'>EZ-C</h3>
+								<p>0 points</p> 
+							</div>
+							<div className='leaderboards__ranking'>
+								<img 
+									className='leaderboards__player'
+									src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m'
+								/>
+								<h3 className='leaderboards__ranking__name'>EZ-C</h3>
+								<p>0 points</p> 
+							</div>
+							<div className='leaderboards__ranking'>
+								<img 
+									className='leaderboards__player'
+									src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m'
+								/>
+								<h3 className='leaderboards__ranking__name'>EZ-C</h3>
+								<p>0 points</p> 
+							</div>
 						</div>
 					</fieldset>
 
