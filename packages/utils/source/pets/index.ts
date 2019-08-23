@@ -38,9 +38,16 @@ class PetUtility {
             const { tags } = swf
 
             const images = await this.converter.extractImages(tags)
-            const imageNames = await this.converter.extractImageNames(tags, petType)
 
-            var imagesExists = await this.converter.writeImages(petType, images, imageNames)
+            const symbols = await this.converter.extractSymbols(tags, petType)
+
+            const writtenBinaryData = await this.converter.writeBinaryData(tags, petType)
+
+            if (writtenBinaryData) {
+                Logger.info(`Binary Data to JSON -> DONE [${petType}]`)
+            }
+
+            var imagesExists = await this.converter.writeImages(petType, images, symbols)
 
             if (!imagesExists) {
                 Logger.info(`Images -> DONE [${petType}]`)
