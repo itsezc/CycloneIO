@@ -1,8 +1,10 @@
 import { readFromBufferP, extractImages, SWF, Tag, Image } from 'swf-extract'
 
-import FileSystem from 'fs'
+import FileSystem, { existsSync } from 'fs'
 
 import Path from 'path'
+
+import Parser, { X2jOptions } from 'fast-xml-parser'
 
 import Spritesmith, { Result } from 'spritesmith'
 
@@ -13,17 +15,22 @@ import { ABSOLUTE_PATH } from './index'
 type Metadata = {
     code: number,
     characterId: number,
-    imageName: string,
+    imgName: string,
     imgType: string,
+}
+
+enum TagType {
+    DEFINE_BINARY_DATA = 87,
+    SYMBOL_CLASS = 76
 }
 
 export default class PetConverter {
     private readonly metadata: Metadata[]
-    private readonly imagesSources: Map<string, string[]>
+    private readonly imageResources: Map<string, string[]>
 
     public constructor() {
         this.metadata = []
-        this.imagesSources = new Map<string, string[]>() // <pet name, images paths>
+        this.imageResources = new Map<string, string[]>() // <pet name, images paths>
     }
 
     public async extractSWF(rawData: Buffer): Promise<SWF> {
@@ -34,13 +41,13 @@ export default class PetConverter {
         return Promise.all(extractImages(tags))
     }
 
-    public async extractImageNames(tags: Tag[], petType: string): Promise<any[]> {
+    public async extractSymbols(tags: Tag[], petType: string): Promise<string[]> {
 
         return new Promise(resolve => {
-            var names: any[] = []
+            let symbols: string[] = []
 
             tags.filter(tag => {
-                return tag.code === 76
+                return tag.code === TagType.SYMBOL_CLASS
             })
                 .map(tag => {
                     const { rawData } = tag
@@ -48,40 +55,87 @@ export default class PetConverter {
                     let rawBuffer = rawData.slice(2)
 
                     while (rawBuffer.length > 0) {
-                        let humanReadableFormat = unpack('vZ+1', rawBuffer)
+                        let data = unpack('vZ+1', rawBuffer)
 
-                        let characterId = humanReadableFormat[0]
-                        let name: string = humanReadableFormat[1]
+                        let characterId = data[0]
+                        let symbol: string = data[1]
 
                         let regExp = new RegExp(`${petType}_${petType}_(32|64)`)
-                        let isValidName = regExp.test(name)
+                        let isValidSymbol = regExp.test(symbol)
 
-                        if (isValidName) {
-                            names[characterId] = name
+                        if (isValidSymbol) {
+                            symbols[characterId] = symbol
                         }
 
-                        rawBuffer = rawBuffer.slice(2 + name.length + 1)
+                        rawBuffer = rawBuffer.slice(2 + symbol.length + 1)
                     }
-
-                    // xml files
-
-                    // if (code === 87) {
-                    //     let humanReadableFormat = rawData.toString()
-
-                    //     console.log(humanReadableFormat)
-                    // }
 
                 })
 
-            resolve(names)
+            resolve(symbols)
         })
     }
 
-    public async writeImages(petType: string, images: Image[], imagesNames: any[]): Promise<boolean> {
+    public async writeBinaryData(tags: Tag[], petType: string): Promise<boolean> {
 
         return new Promise(resolve => {
-            var newImageData: Buffer[] = []
-            var imagePathNames: string[] = []
+
+            tags.filter(tag => {
+                return tag.code === TagType.DEFINE_BINARY_DATA
+            })
+                .map(tag => {
+                    const { rawData } = tag
+
+                    let xmlData = rawData.toString()
+
+                    const jsonData = Parser.parse(xmlData, {
+                        attributeNamePrefix: '',
+                        ignoreAttributes: false,
+                        parseAttributeValue: true
+                    })
+
+                    const { assets, visualizationData, object } = jsonData
+
+                    const stringifyJSON = JSON.stringify(jsonData, null, 2)
+
+                    if (assets !== undefined) {
+                        const path = Path.join(ABSOLUTE_PATH, petType, `${petType}_assets.json`)
+
+                        if (!existsSync(path)) {
+                            FileSystem.writeFileSync(path, stringifyJSON)
+                            resolve(true)
+                        }
+                    }
+
+                    if (visualizationData !== undefined) {
+                        const path = Path.join(ABSOLUTE_PATH, petType, `${petType}_visualization.json`)
+
+                        if (!existsSync(path)) {
+                            FileSystem.writeFileSync(path, stringifyJSON)
+                            resolve(true)
+                        }
+                    }
+
+                    if (object !== undefined) {
+                        const path = Path.join(ABSOLUTE_PATH, petType, `${petType}_logic.json`)
+
+                        if (!existsSync(path)) {
+                            FileSystem.writeFileSync(path, stringifyJSON)
+                            resolve(true)
+                        }
+                    }
+
+                })
+
+            resolve(false)
+        })
+    }
+
+    public async writeImages(petType: string, images: Image[], symbols: string[]): Promise<boolean> {
+
+        return new Promise(resolve => {
+            let hasNewData = false
+            let imagePathNames: string[] = []
 
             const imagesPath = Path.join(ABSOLUTE_PATH, petType, 'images')
 
@@ -92,27 +146,27 @@ export default class PetConverter {
             images.map(image => {
                 const { code, characterId, imgType, imgData } = image
 
-                let imgName = imagesNames[characterId]
+                let imgName = symbols[characterId]
 
                 if (imgName !== undefined) {
-                    this.metadata.push({ code, characterId, imageName: imgName, imgType })
+                    this.metadata.push({ code, characterId, imgName, imgType })
 
                     const imagePath = Path.join(imagesPath, `${imgName}.${imgType}`)
 
                     if (!FileSystem.existsSync(imagePath)) {
                         FileSystem.writeFileSync(imagePath, imgData)
-                        newImageData.push(imgData)
+                        hasNewData = true
                     }
 
                     imagePathNames.push(imagePath)
                 }
             })
 
-            if (newImageData.length !== 0) {
+            if (hasNewData) {
                 resolve(false)
             }
 
-            this.imagesSources.set(petType, imagePathNames)
+            this.imageResources.set(petType, imagePathNames)
 
             resolve(true)
         })
@@ -142,7 +196,7 @@ export default class PetConverter {
 
         return new Promise((resolve, reject) => {
 
-            let imagesSources = this.imagesSources.get(petType)
+            let imageResources = this.imageResources.get(petType)
 
             const spritesheetImagePath = Path.join(ABSOLUTE_PATH, petType, `${petType}.png`)
 
@@ -150,7 +204,7 @@ export default class PetConverter {
                 resolve(false)
             }
 
-            Spritesmith.run({ src: imagesSources }, (err: string, result: Result) => {
+            Spritesmith.run({ src: imageResources }, (err: string, result: Result) => {
                 if (err) {
                     reject(err)
                 }
