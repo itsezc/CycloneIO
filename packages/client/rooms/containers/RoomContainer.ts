@@ -4,7 +4,7 @@ import RoomScene from "../RoomScene"
 import TilesContainer from "./tiles/TilesContainer"
 
 export default class RoomContainer extends Phaser.GameObjects.Container {
-	private readonly tilesContainer: TilesContainer
+	public readonly tilesContainer: TilesContainer
 
 	public constructor(room: RoomScene) {
 		super(room)
