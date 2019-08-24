@@ -4,14 +4,14 @@ import Path from 'path'
 
 import FileSystem from 'fs'
 
-import Config from './config.json'
+import Config from '../../config.json'
 
 import Logger from '../logger'
 
 import { ABSOLUTE_PATH, OUTPUT_PATH } from './index'
 
 type DownloadData = {
-    petType: string,
+    pet: string,
     rawData: Buffer
 }
 
@@ -25,9 +25,12 @@ export default class PetDownloader {
     public async getDownloadData(): Promise<DownloadData[]> {
 
         return new Promise(resolve => {
+
+            let downloads: Promise<Buffer>[] = []
+
             const { flashClientURL, SWFProduction, petAssets: assets } = Config
 
-            assets.forEach(async asset => {
+            assets.forEach(asset => {
 
                 const petPath = Path.join(ABSOLUTE_PATH, asset)
 
@@ -38,21 +41,27 @@ export default class PetDownloader {
                 const SWFPath = Path.join(OUTPUT_PATH, `${asset}.swf`)
 
                 if (!FileSystem.existsSync(SWFPath)) {
-                    let data = await Download(`${flashClientURL}/${SWFProduction}/${asset}.swf`, OUTPUT_PATH)
+                    let download = Download(`${flashClientURL}/${SWFProduction}/${asset}.swf`, OUTPUT_PATH)
 
-                    Logger.info(`SWF -> DONE [${asset}]`)
+                    download.then(data => {
+                        Logger.info(`SWF -> DONE [${asset}]`)
+                        this.data.push({ pet: asset, rawData: data })
+                    })
 
-                    this.data.push({ petType: asset, rawData: data })
+                    downloads.push(download)
+
                 }
 
                 else {
                     let data = FileSystem.readFileSync(SWFPath)
-                    this.data.push({ petType: asset, rawData: data })
+                    this.data.push({ pet: asset, rawData: data })
                 }
 
             })
 
-            resolve(this.data)
+            Promise.all(downloads).then(() => {
+                resolve(this.data)
+            })
         })
     }
 }
