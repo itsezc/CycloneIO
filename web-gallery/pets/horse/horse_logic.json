@@ -1,6 +1,6 @@
 {
   "objectData": {
-    "type": "cat",
+    "type": "horse",
     "model": {
       "dimensions": {
         "x": 1,
@@ -10,19 +10,19 @@
       "directions": {
         "direction": [
           {
+            "id": 90
+          },
+          {
+            "id": 180
+          },
+          {
             "id": 0
           },
           {
             "id": 45
           },
           {
-            "id": 90
-          },
-          {
             "id": 135
-          },
-          {
-            "id": 180
           },
           {
             "id": 225
@@ -35,6 +35,16 @@
           }
         ]
       }
+    },
+    "particlesystems": {
+      "particlesystem": [
+        {
+          "size": 64
+        },
+        {
+          "size": 32
+        }
+      ]
     }
   }
 }
