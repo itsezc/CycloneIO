@@ -1,3 +1,3 @@
 declare module 'qunpack' {
-    export function unpack(format: any, bytes: any, offset?: any): any
+    export function unpack(format: string, bytes: Buffer, offset?: any): any
 }

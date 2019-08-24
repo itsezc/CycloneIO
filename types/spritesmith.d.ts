@@ -1,5 +1,8 @@
 type Config = {
-    src: string[]
+    src: string[],
+    algorithm?: string,
+    padding?: number,
+    engine?: NodeRequire
 }
 
 export type Result = {
