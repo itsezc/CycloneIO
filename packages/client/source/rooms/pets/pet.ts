@@ -250,13 +250,13 @@ export default class RoomPet extends GameObjects.Container {
     }
 
     private getCustomParts(parts: HorseCustompart): Custompart[] {
-        if (this.assets.custompart !== undefined) {
+        if (this.assets.assets.custompart !== undefined) {
 
             let customparts: Custompart[] = []
 
             if (parts.saddle !== undefined) {
 
-                let part = this.assets.custompart.find(customPart => {
+                let part = this.assets.assets.custompart.find(customPart => {
                     let asset = this.type + '_' + 'saddle'
 
                     if (parts.saddle > 1) {
@@ -272,7 +272,7 @@ export default class RoomPet extends GameObjects.Container {
 
             if (parts.tail !== undefined) {
 
-                let part = this.assets.custompart.find(customPart => {
+                let part = this.assets.assets.custompart.find(customPart => {
                     return parts.tail > 0 ? customPart.source === this.type + '_' + 'hair' + '_' + parts.tail : false
                 })
 
@@ -417,7 +417,7 @@ export default class RoomPet extends GameObjects.Container {
     }
 
     private getAssetFromAssets(assetName: string): any {
-        return this.assets.asset.find(asset => asset.name === assetName)
+        return this.assets.assets.asset.find(asset => asset.name === assetName)
     }
 
     private spriteFrameExists(frameName: string): boolean {
