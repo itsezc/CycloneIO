@@ -71,14 +71,14 @@ export default class Room extends Scene {
                 y: -4,
                 z: 0,
                 direction: 2,
-                animation: 3
+                animation: 0
             } as const
 
             const { x, y, z, direction, animation } = petData
 
             var coordinates = new Phaser.Math.Vector3(x, y, z)
 
-            this.pet = new RoomPet(this, 'horse', DEFAULT_SIZE, coordinates, direction, animation)
+            this.pet = new RoomPet(this, 'cat', DEFAULT_SIZE, coordinates, direction, animation)
 
             this.add.existing(this.pet)
 
