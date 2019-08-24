@@ -1,34 +1,38 @@
+
 export type Asset = {
     name: string
-    x: string
-    y: string
-    usesPalette: string
+    x: number
+    y: number
+    usesPalette: number
     source: string
-    flipH: string
+    flipH?: number
 }
 
 export type Palette = {
-    id: string
+    id: number
     source: string
-    color1: string
-    color2: string
-    master: string
+    color1: any
+    color2: any
+    master: boolean
     tags: string
-    breed: string
-    colortag: string
+    breed?: number
+    colortag?: number
 }
 
 export type Custompart = {
-    id: string
+    id: number
     source: string
     tags: string
 }
 
-export type AssetsRootObject = {
+export type Assets = {
     asset: Asset[]
     palette: Palette[]
     custompart: Custompart[]
 }
 
-export default AssetsRootObject
+type AssetsRootObject = {
+    assets: Assets
+}
 
+export default AssetsRootObject
