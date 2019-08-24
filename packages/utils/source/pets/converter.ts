@@ -4,7 +4,7 @@ import FileSystem, { existsSync } from 'fs'
 
 import Path from 'path'
 
-import Parser, { X2jOptions } from 'fast-xml-parser'
+import Parser from 'fast-xml-parser'
 
 import Spritesmith, { Result } from 'spritesmith'
 
@@ -12,25 +12,63 @@ import { unpack } from 'qunpack'
 
 import { ABSOLUTE_PATH } from './index'
 
-type Metadata = {
+type ImageMetadata = {
     code: number,
     characterId: number,
     imgName: string,
     imgType: string,
 }
 
-enum TagType {
+type JSONSpritesheet = {
+    frames: Frames,
+    meta: SpritesheetMeta
+}
+
+type Frames = {
+    [frame: string]: Frame
+}
+
+type Frame = {
+    frame: Vector4,
+    rotated: boolean,
+    trimmed: boolean,
+    spriteSourceSize: Vector4,
+    sourceSize: Size
+}
+
+type Vector4 = {
+    x: number,
+    y: number,
+    w: number,
+    h: number
+}
+
+type SpritesheetMeta = {
+    app: string,
+    version: string,
+    image: string,
+    format: string,
+    size: Size,
+    scale: string
+}
+
+type Size = {
+    w: number,
+    h: number
+}
+
+enum TagCodes {
     DEFINE_BINARY_DATA = 87,
     SYMBOL_CLASS = 76
 }
 
 export default class PetConverter {
-    private readonly metadata: Metadata[]
-    private readonly imageResources: Map<string, string[]>
+    private readonly metadata: ImageMetadata[]
+    private readonly imageSources: Map<string, string[]>
 
     public constructor() {
         this.metadata = []
-        this.imageResources = new Map<string, string[]>() // <pet name, images paths>
+        this.imageSources = new Map()
     }
 
     public async extractSWF(rawData: Buffer): Promise<SWF> {
@@ -41,13 +79,13 @@ export default class PetConverter {
         return Promise.all(extractImages(tags))
     }
 
-    public async extractSymbols(tags: Tag[], petType: string): Promise<string[]> {
+    public async extractSymbols(tags: Tag[], pet: string): Promise<string[]> {
 
         return new Promise(resolve => {
             let symbols: string[] = []
 
             tags.filter(tag => {
-                return tag.code === TagType.SYMBOL_CLASS
+                return tag.code === TagCodes.SYMBOL_CLASS
             })
                 .map(tag => {
                     const { rawData } = tag
@@ -60,7 +98,7 @@ export default class PetConverter {
                         let characterId = data[0]
                         let symbol: string = data[1]
 
-                        let regExp = new RegExp(`${petType}_${petType}_(32|64)`)
+                        let regExp = new RegExp(`${pet}_${pet}_(32|64)`)
                         let isValidSymbol = regExp.test(symbol)
 
                         if (isValidSymbol) {
@@ -76,12 +114,12 @@ export default class PetConverter {
         })
     }
 
-    public async writeBinaryData(tags: Tag[], petType: string): Promise<boolean> {
+    public async writeBinaryData(tags: Tag[], pet: string): Promise<boolean> {
 
         return new Promise(resolve => {
 
             tags.filter(tag => {
-                return tag.code === TagType.DEFINE_BINARY_DATA
+                return tag.code === TagCodes.DEFINE_BINARY_DATA
             })
                 .map(tag => {
                     const { rawData } = tag
@@ -94,12 +132,12 @@ export default class PetConverter {
                         parseAttributeValue: true
                     })
 
-                    const { assets, visualizationData, object } = jsonData
+                    const { assets, visualizationData, objectData } = jsonData
 
                     const stringifyJSON = JSON.stringify(jsonData, null, 2)
 
                     if (assets !== undefined) {
-                        const path = Path.join(ABSOLUTE_PATH, petType, `${petType}_assets.json`)
+                        const path = Path.join(ABSOLUTE_PATH, pet, `${pet}_assets.json`)
 
                         if (!existsSync(path)) {
                             FileSystem.writeFileSync(path, stringifyJSON)
@@ -108,7 +146,7 @@ export default class PetConverter {
                     }
 
                     if (visualizationData !== undefined) {
-                        const path = Path.join(ABSOLUTE_PATH, petType, `${petType}_visualization.json`)
+                        const path = Path.join(ABSOLUTE_PATH, pet, `${pet}_visualization.json`)
 
                         if (!existsSync(path)) {
                             FileSystem.writeFileSync(path, stringifyJSON)
@@ -116,8 +154,8 @@ export default class PetConverter {
                         }
                     }
 
-                    if (object !== undefined) {
-                        const path = Path.join(ABSOLUTE_PATH, petType, `${petType}_logic.json`)
+                    if (objectData !== undefined) {
+                        const path = Path.join(ABSOLUTE_PATH, pet, `${pet}_logic.json`)
 
                         if (!existsSync(path)) {
                             FileSystem.writeFileSync(path, stringifyJSON)
@@ -131,13 +169,13 @@ export default class PetConverter {
         })
     }
 
-    public async writeImages(petType: string, images: Image[], symbols: string[]): Promise<boolean> {
+    public async writeImages(images: Image[], symbols: string[], pet: string): Promise<boolean> {
 
         return new Promise(resolve => {
-            let hasNewData = false
-            let imagePathNames: string[] = []
 
-            const imagesPath = Path.join(ABSOLUTE_PATH, petType, 'images')
+            let imageFilePaths: string[] = []
+
+            const imagesPath = Path.join(ABSOLUTE_PATH, pet, 'images')
 
             if (!FileSystem.existsSync(imagesPath)) {
                 FileSystem.mkdirSync(imagesPath)
@@ -155,28 +193,25 @@ export default class PetConverter {
 
                     if (!FileSystem.existsSync(imagePath)) {
                         FileSystem.writeFileSync(imagePath, imgData)
-                        hasNewData = true
+                        resolve(false)
                     }
 
-                    imagePathNames.push(imagePath)
+                    imageFilePaths.push(imagePath)
                 }
             })
 
-            if (hasNewData) {
-                resolve(false)
-            }
-
-            this.imageResources.set(petType, imagePathNames)
+            this.imageSources.set(pet, imageFilePaths)
 
             resolve(true)
         })
     }
 
-    public async writeMetadata(petType: string): Promise<boolean> {
+    public async writeMetadata(pet: string): Promise<boolean> {
 
         return new Promise((resolve, reject) => {
-            const imgsPath = Path.join(ABSOLUTE_PATH, petType, 'images')
-            const metadataPath = Path.join(imgsPath, 'metadata.json')
+
+            const imagesPath = Path.join(ABSOLUTE_PATH, pet, 'images')
+            const metadataPath = Path.join(imagesPath, 'metadata.json')
 
             if (FileSystem.existsSync(metadataPath)) {
                 resolve(true)
@@ -192,28 +227,91 @@ export default class PetConverter {
         })
     }
 
-    public async generateSpritesheet(petType: string): Promise<boolean> {
+    public async generateSpritesheet(pet: string): Promise<boolean> {
 
         return new Promise((resolve, reject) => {
 
-            let imageResources = this.imageResources.get(petType)
+            let imageSources = this.imageSources.get(pet)
 
-            const spritesheetImagePath = Path.join(ABSOLUTE_PATH, petType, `${petType}.png`)
+            const spritesheetJSONPath = Path.join(ABSOLUTE_PATH, pet, `${pet}_spritesheet.json`)
+            const spritesheetImagePath = Path.join(ABSOLUTE_PATH, pet, `${pet}.png`)
 
-            if (FileSystem.existsSync(spritesheetImagePath)) {
-                resolve(false)
-            }
+            let frames: Frames = {}
 
-            Spritesmith.run({ src: imageResources }, (err: string, result: Result) => {
+            Spritesmith.run({ src: imageSources }, (err: string, result: Result) => {
                 if (err) {
                     reject(err)
                 }
 
-                const { image } = result
+                const { coordinates, properties, image } = result
 
-                FileSystem.writeFileSync(spritesheetImagePath, image)
+                imageSources.map(source => {
+                    let coords = coordinates[source]
+                    let pieces = source.split('\\')
 
-                resolve(true)
+                    let name = pieces[pieces.length - 1]
+                    let symbol = name.split('.')[0]
+
+                    source = symbol
+
+                    const { x, y, width, height } = coords
+
+                    let frame: Frame = {
+                        frame: {
+                            x,
+                            y,
+                            w: width,
+                            h: height
+                        },
+                        rotated: false,
+                        trimmed: false,
+                        spriteSourceSize: {
+                            x: 0,
+                            y: 0,
+                            w: width,
+                            h: height
+                        },
+                        sourceSize: {
+                            w: width,
+                            h: height
+                        }
+                    }
+
+                    frames[source] = frame
+                })
+
+                const { width, height } = properties
+
+                let meta: SpritesheetMeta = {
+                    app: 'cyclone',
+                    version: '1.0',
+                    image: 'spritesheet',
+                    format: 'RGBA8888',
+                    size: {
+                        w: width,
+                        h: height
+                    },
+                    scale: '1'
+                }
+
+                let JSONSpritesheet: JSONSpritesheet = {
+                    frames,
+                    meta
+                }
+
+                var stringifyJSON = JSON.stringify(JSONSpritesheet, null, 2)
+
+                if (!FileSystem.existsSync(spritesheetJSONPath)) {
+                    FileSystem.writeFileSync(spritesheetJSONPath, stringifyJSON)
+                    resolve(true)
+                }
+
+                if (!FileSystem.existsSync(spritesheetImagePath)) {
+                    FileSystem.writeFileSync(spritesheetImagePath, image)
+                    resolve(true)
+                }
+
+                resolve(false)
             })
         })
     }
