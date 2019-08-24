@@ -29,9 +29,9 @@ class PetUtility {
 
         let data = await this.downloader.getDownloadData()
 
-        data.forEach(async (singleData) => {
+        data.forEach(async singleData => {
 
-            const { petType, rawData } = singleData
+            const { pet, rawData } = singleData
 
             const swf = await this.converter.extractSWF(rawData)
 
@@ -39,33 +39,33 @@ class PetUtility {
 
             const images = await this.converter.extractImages(tags)
 
-            const symbols = await this.converter.extractSymbols(tags, petType)
-
-            const writtenBinaryData = await this.converter.writeBinaryData(tags, petType)
+            const writtenBinaryData = await this.converter.writeBinaryData(tags, pet)
 
             if (writtenBinaryData) {
-                Logger.info(`Binary Data to JSON -> DONE [${petType}]`)
+                Logger.info(`Binary Data to JSON -> DONE [${pet}]`)
             }
 
-            var imagesExists = await this.converter.writeImages(petType, images, symbols)
+            const symbols = await this.converter.extractSymbols(tags, pet)
+
+            var imagesExists = await this.converter.writeImages(images, symbols, pet)
 
             if (!imagesExists) {
-                Logger.info(`Images -> DONE [${petType}]`)
+                Logger.info(`Images -> DONE [${pet}]`)
             }
 
-            var metadataExists = await this.converter.writeMetadata(petType)
+            var metadataExists = await this.converter.writeMetadata(pet)
 
             if (!metadataExists) {
-                Logger.info(`Metadata -> DONE [${petType}]`)
+                Logger.info(`Metadata -> DONE [${pet}]`)
             }
 
-            var spritesheetGenerated = await this.converter.generateSpritesheet(petType)
+            var spritesheetGenerated = await this.converter.generateSpritesheet(pet)
 
             if (spritesheetGenerated) {
-                Logger.info(`Spritesheet -> DONE [${petType}]`)
+                Logger.info(`Spritesheet -> DONE [${pet}]`)
             }
 
-            Logger.info(`Everything is up-to-date! [${petType}]`)
+            Logger.info(`Everything is up-to-date! [${pet}]`)
 
         })
     }
