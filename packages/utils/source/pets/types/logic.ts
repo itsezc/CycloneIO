@@ -31,8 +31,6 @@ export type ObjectData = {
     particlesystems: Particlesystems
 }
 
-type LogicRootObject = {
+export type LogicRootObject = {
     objectData: ObjectData
 }
-
-export default LogicRootObject
