@@ -24,7 +24,7 @@ export default class PetDownloader {
 
     public async getDownloadData(): Promise<DownloadData[]> {
 
-        return new Promise(resolve => {
+        return new Promise(async resolve => {
 
             let downloads: Promise<Buffer>[] = []
 
@@ -59,9 +59,9 @@ export default class PetDownloader {
 
             })
 
-            Promise.all(downloads).then(() => {
-                resolve(this.data)
-            })
+            await Promise.all(downloads)
+
+            resolve(this.data)
         })
     }
 }
