@@ -1,11 +1,11 @@
 import Phaser, { GameObjects, Geom } from 'phaser'
 
-import VisualizationRootObject, { Visualization, Layer2 } from './visualization'
-import AssetsRootObject, { Custompart } from './assets'
+import VisualizationRootObject, { Visualization, Layer2 } from '../../../../utils/source/pets/types/visualization'
+import AssetsRootObject, { Custompart } from '../../../../utils/source/pets/types/assets'
 
 import Room from '../room'
 import RoomObjectDepth from '../depth'
-import LogicRootObject, { Direction } from './logic'
+import LogicRootObject, { Direction } from '../../../../utils/source/pets/types/logic'
 
 const FPS = 24 as const
 const FPS_TIME_MS = 60 / FPS
