@@ -1,4 +1,3 @@
-
 export type Asset = {
     name: string
     x: number
@@ -31,8 +30,6 @@ export type Assets = {
     custompart: Custompart[]
 }
 
-type AssetsRootObject = {
+export type AssetsRootObject = {
     assets: Assets
 }
-
-export default AssetsRootObject
