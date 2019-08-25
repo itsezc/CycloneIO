@@ -1,6 +1,10 @@
 export type Layer = {
     id: string
-    tag: string
+    tag?: string
+    alpha: number,
+    ink?: string
+    ignoreMouse?: boolean
+    z?: number
 }
 
 type Layers = {
@@ -21,8 +25,21 @@ type Directions = {
     direction: Direction[]
 }
 
+export type Frame = {
+    id: string
+}
+
+export type FrameSequence = {
+    frame: Frame[] | Frame
+}
+
+export type AnimationLayer = {
+    id: string
+    frameSequence: FrameSequence
+}
+
 export type Animation = {
-    animationLayer: any
+    animationLayer: AnimationLayer
     id: string
 }
 
@@ -68,8 +85,6 @@ type VisualizationData = {
     type: string
 }
 
-type VisualizationRootObject =  {
+export type VisualizationRootObject =  {
     visualizationData: VisualizationData
 }
-
-export default VisualizationRootObject
