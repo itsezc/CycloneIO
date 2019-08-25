@@ -4,8 +4,14 @@ import FileSystem from 'fs'
 
 import PetDownloader from './downloader'
 import PetConverter from './converter'
+import PetMapper from './mapper'
 
 import Logger from '../logger'
+
+import { AssetsRootObject } from './types/assets'
+import { IndexRootObject } from './types'
+import { LogicRootObject } from './types/logic'
+import { VisualizationRootObject } from './types/visualization'
 
 export const ABSOLUTE_PATH = Path.join(__dirname, '..', '..', '..', '..', 'web-gallery', 'pets')
 export const OUTPUT_PATH = Path.join(__dirname, '../../out/pets')
@@ -39,11 +45,13 @@ class PetUtility {
 
             const images = await this.converter.extractImages(tags)
 
-            const writtenBinaryData = await this.converter.writeBinaryData(tags, pet)
+            let binaryData = await this.converter.extractBinaryData(tags)
 
-            if (writtenBinaryData) {
-                Logger.info(`Binary Data to JSON -> DONE [${pet}]`)
-            }
+            const { assets, index, logic, visualization } = binaryData
+
+            const mapper = new PetMapper(assets, index, logic, visualization)
+
+            mapper.generateMappedFile()
 
             const symbols = await this.converter.extractSymbols(tags, pet)
 
