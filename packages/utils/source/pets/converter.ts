@@ -10,6 +10,11 @@ import Spritesmith, { Result } from 'spritesmith'
 
 import { unpack } from 'qunpack'
 
+import { AssetsRootObject } from './types/assets'
+import { VisualizationRootObject } from './types/visualization'
+import { LogicRootObject } from './types/logic'
+import { IndexRootObject } from './types/index'
+
 import { ABSOLUTE_PATH } from './index'
 
 type ImageMetadata = {
@@ -17,6 +22,13 @@ type ImageMetadata = {
     characterId: number,
     imgName: string,
     imgType: string,
+}
+
+type BinaryData = {
+    assets?: AssetsRootObject
+    visualization?: VisualizationRootObject
+    logic?: LogicRootObject
+    index?: IndexRootObject
 }
 
 type JSONSpritesheet = {
@@ -68,7 +80,7 @@ export default class PetConverter {
 
     public constructor() {
         this.metadata = []
-        this.imageSources = new Map()
+        this.imageSources = new Map<string, string[]>()
     }
 
     public async extractSWF(rawData: Buffer): Promise<SWF> {
@@ -114,9 +126,10 @@ export default class PetConverter {
         })
     }
 
-    public async writeBinaryData(tags: Tag[], pet: string): Promise<boolean> {
+    public async extractBinaryData(tags: Tag[]): Promise<BinaryData> {
 
         return new Promise(resolve => {
+            let binaryData: BinaryData = {}
 
             tags.filter(tag => {
                 return tag.code === TagCodes.DEFINE_BINARY_DATA
@@ -132,40 +145,29 @@ export default class PetConverter {
                         parseAttributeValue: true
                     })
 
-                    const { assets, visualizationData, objectData } = jsonData
+                    const { assets, visualizationData, objectData, object } = jsonData
 
                     const stringifyJSON = JSON.stringify(jsonData, null, 2)
 
                     if (assets !== undefined) {
-                        const path = Path.join(ABSOLUTE_PATH, pet, `${pet}_assets.json`)
-
-                        if (!existsSync(path)) {
-                            FileSystem.writeFileSync(path, stringifyJSON)
-                            resolve(true)
-                        }
-                    }
-
-                    if (visualizationData !== undefined) {
-                        const path = Path.join(ABSOLUTE_PATH, pet, `${pet}_visualization.json`)
-
-                        if (!existsSync(path)) {
-                            FileSystem.writeFileSync(path, stringifyJSON)
-                            resolve(true)
-                        }
+                        binaryData.assets = JSON.parse(stringifyJSON)
                     }
 
                     if (objectData !== undefined) {
-                        const path = Path.join(ABSOLUTE_PATH, pet, `${pet}_logic.json`)
+                        binaryData.logic = JSON.parse(stringifyJSON)
+                    }
 
-                        if (!existsSync(path)) {
-                            FileSystem.writeFileSync(path, stringifyJSON)
-                            resolve(true)
-                        }
+                    if (object !== undefined) {
+                        binaryData.index = JSON.parse(stringifyJSON)
+                    }
+
+                    if (visualizationData !== undefined) {
+                        binaryData.visualization = JSON.parse(stringifyJSON)
                     }
 
                 })
 
-            resolve(false)
+            resolve(binaryData)
         })
     }
 
@@ -233,8 +235,8 @@ export default class PetConverter {
 
             let imageSources = this.imageSources.get(pet)
 
-            const spritesheetJSONPath = Path.join(ABSOLUTE_PATH, pet, `${pet}_spritesheet.json`)
-            const spritesheetImagePath = Path.join(ABSOLUTE_PATH, pet, `${pet}.png`)
+            const jsonSpritesheetPath = Path.join(ABSOLUTE_PATH, pet, `${pet}_spritesheet.json`)
+            const imageSpritesheetPath = Path.join(ABSOLUTE_PATH, pet, `${pet}.png`)
 
             let frames: Frames = {}
 
@@ -294,20 +296,20 @@ export default class PetConverter {
                     scale: '1'
                 }
 
-                let JSONSpritesheet: JSONSpritesheet = {
+                let jsonSpritesheet: JSONSpritesheet = {
                     frames,
                     meta
                 }
 
-                var stringifyJSON = JSON.stringify(JSONSpritesheet, null, 2)
+                var stringifyJSON = JSON.stringify(jsonSpritesheet, null, 2)
 
-                if (!FileSystem.existsSync(spritesheetJSONPath)) {
-                    FileSystem.writeFileSync(spritesheetJSONPath, stringifyJSON)
+                if (!FileSystem.existsSync(jsonSpritesheetPath)) {
+                    FileSystem.writeFileSync(jsonSpritesheetPath, stringifyJSON)
                     resolve(true)
                 }
 
-                if (!FileSystem.existsSync(spritesheetImagePath)) {
-                    FileSystem.writeFileSync(spritesheetImagePath, image)
+                if (!FileSystem.existsSync(imageSpritesheetPath)) {
+                    FileSystem.writeFileSync(imageSpritesheetPath, image)
                     resolve(true)
                 }
 
