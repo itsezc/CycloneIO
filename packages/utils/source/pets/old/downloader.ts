@@ -4,9 +4,9 @@ import Path from 'path'
 
 import FileSystem from 'fs'
 
-import Config from '../../config.json'
+import Config from '../../../config.json'
 
-import Logger from '../logger'
+import Logger from '../../Logger'
 
 import { ABSOLUTE_PATH, OUTPUT_PATH } from './index'
 

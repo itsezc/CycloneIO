@@ -10,10 +10,10 @@ import Spritesmith, { Result } from 'spritesmith'
 
 import { unpack } from 'qunpack'
 
-import { AssetsRootObject } from './types/assets'
-import { VisualizationRootObject } from './types/visualization'
-import { LogicRootObject } from './types/logic'
-import { IndexRootObject } from './types/index'
+import { AssetsRootObject } from '../models/assets'
+import { VisualizationRootObject } from '../models/visualization'
+import { LogicRootObject } from '../models/logic'
+import { IndexRootObject } from '../models/index'
 
 import { ABSOLUTE_PATH } from './index'
 
