@@ -6,12 +6,7 @@ import PetDownloader from './downloader'
 import PetConverter from './converter'
 import PetMapper from './mapper'
 
-import Logger from '../logger'
-
-import { AssetsRootObject } from './types/assets'
-import { IndexRootObject } from './types'
-import { LogicRootObject } from './types/logic'
-import { VisualizationRootObject } from './types/visualization'
+import Logger from '../../Logger'
 
 export const ABSOLUTE_PATH = Path.join(__dirname, '..', '..', '..', '..', 'web-gallery', 'pets')
 export const OUTPUT_PATH = Path.join(__dirname, '../../out/pets')
@@ -51,7 +46,11 @@ class PetUtility {
 
             const mapper = new PetMapper(assets, index, logic, visualization)
 
-            mapper.generateMappedFile()
+            let generatedMappedFile = await mapper.generateMappedFile(pet)
+
+            if (generatedMappedFile) {
+                Logger.info(`Logic -> DONE [${pet}]`)
+            }
 
             const symbols = await this.converter.extractSymbols(tags, pet)
 
