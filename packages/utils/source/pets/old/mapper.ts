@@ -1,9 +1,15 @@
-import { MapRootObject, MapVisualization, VisualizationSize, VisualizationLayers, Directions, DirectionLayers, Animations, AnimationLayers } from './types/map'
-import { AssetsRootObject } from './types/assets'
-import { IndexRootObject } from './types/index'
-import { LogicRootObject } from './types/logic'
-import { VisualizationRootObject, Visualization, Frame } from './types/visualization'
+import {
+    MapRootObject, MapVisualization, VisualizationSize, VisualizationLayers,
+    Directions, DirectionLayers, Animations, AnimationLayers
+} from '../models/map'
+import { AssetsRootObject } from '../models/assets'
+import { IndexRootObject } from '../models/index'
+import { LogicRootObject } from '../models/logic'
+import { VisualizationRootObject, Visualization, AnimationLayer, Frame } from '../models/visualization'
 
+import { ABSOLUTE_PATH } from './index'
+
+import Path from 'path'
 import FileSystem from 'fs';
 
 export default class PetMapper {
@@ -17,6 +23,10 @@ export default class PetMapper {
         this.visualization = visualization
 
         this.output = {
+            type: '',
+            name: '',
+            visualizationType: '',
+            spritesheet: '',
             dimentions: {},
             directions: [],
             assets: {},
@@ -24,13 +34,26 @@ export default class PetMapper {
         }
     }
 
-    public async generateMappedFile(): Promise<void> {
-        await this.mapIndex(this.index, this.output)
-        await this.mapLogic(this.logic, this.output)
-        await this.mapAssets(this.assets, this.output)
-        await this.mapVisualizations(this.visualization, this.output)
+    public async generateMappedFile(pet: string): Promise<boolean> {
 
-        //FileSystem.writeFileSync(__dirname + 'test.json', JSON.stringify(this.output, null, 4))
+        return new Promise(async resolve => {
+            await this.mapIndex(this.index, this.output)
+            await this.mapLogic(this.logic, this.output)
+            await this.mapAssets(this.assets, this.output)
+            await this.mapVisualizations(this.visualization, this.output)
+
+            const path = Path.join(ABSOLUTE_PATH, pet, `${pet}.json`)
+            const stringifyJSON = JSON.stringify(this.output, null, 4)
+
+            if (FileSystem.existsSync(path)) {
+                resolve(false)
+            }
+
+            FileSystem.writeFileSync(path, stringifyJSON)
+
+            resolve(true)
+        })
+
     }
 
     private async mapIndex(indexObject: IndexRootObject, output: MapRootObject): Promise<void> {
@@ -161,42 +184,60 @@ export default class PetMapper {
 
                 let layers: AnimationLayers = {}
 
-                let layerId = Number(animation.animationLayer.id)
+                let animationLayers = animation.animationLayer as AnimationLayer[]
 
-                let frameSequence = animation.animationLayer.frameSequence
+                if (animationLayers !== undefined && animationLayers.length > 0) {
 
-                if (frameSequence !== undefined) {
-                    let frames = frameSequence.frame as Frame[]
+                    animationLayers.forEach(layer => {
 
-                    if (frames !== undefined && frames.length >= 1) {
+                        let id = Number(layer.id)
 
-                        console.log(frames)
-                    }
+                        let frames: number[] = []
 
-                    // let frame = frameSequence.frame as Frame
+                        let frameSequence = layer.frameSequence
 
-                    // let id = frame.id
+                        if (frameSequence !== undefined) {
 
-                    // console.log(id)
+                            let visualizationFrames = frameSequence.frame as Frame[]
+
+                            if (visualizationFrames !== undefined && visualizationFrames.length > 0) {
+
+                                visualizationFrames.forEach(frame => {
+                                    let id = Number(frame.id)
+
+                                    frames.push(id)
+                                })
+                            }
+
+                            let visualizationFrame = frameSequence.frame as Frame
+
+                            let id = Number(visualizationFrame.id)
+
+                            frames.push(id)
+                        }
+
+                        let loopCount = Number(layer.loopCount) || undefined
+
+                        let frameRepeat = Number(layer.frameRepeat) || undefined
+
+                        layers[id] = {
+                            frames,
+                            loopCount,
+                            frameRepeat
+                        }
+                    })
                 }
 
-                // layers[id] = {
-
-                // }
-
-                // animations[id] = {
-                //     layers
-                // }
+                animations[id] = layers
             })
-
-            // animations
 
             let outputVisualization: MapVisualization = {
                 size,
                 layerCount,
                 angle,
                 layers,
-                directions
+                directions,
+                animations
             }
 
             output.visualizations.push(outputVisualization)
