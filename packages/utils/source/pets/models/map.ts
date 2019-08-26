@@ -76,5 +76,7 @@ export type AnimationLayers = {
 }
 
 export type AnimationLayer = {
-    frames?: number[]
+    frames?: number[],
+    loopCount?: number
+    frameRepeat?: number
 }

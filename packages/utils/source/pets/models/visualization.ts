@@ -34,12 +34,14 @@ export type FrameSequence = {
 }
 
 export type AnimationLayer = {
+    frameRepeat?: number
     id: string
+    loopCount?: number
     frameSequence: FrameSequence
 }
 
 export type Animation = {
-    animationLayer: AnimationLayer
+    animationLayer: AnimationLayer[]
     id: string
 }
 

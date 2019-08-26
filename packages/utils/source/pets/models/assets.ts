@@ -1,3 +1,13 @@
+export type AssetsRootObject = {
+    assets: Assets
+}
+
+export type Assets = {
+    asset: Asset[]
+    palette: Palette[]
+    custompart: Custompart[]
+}
+
 export type Asset = {
     name: string
     x: number
@@ -22,14 +32,4 @@ export type Custompart = {
     id: number
     source: string
     tags: string
-}
-
-export type Assets = {
-    asset: Asset[]
-    palette: Palette[]
-    custompart: Custompart[]
-}
-
-export type AssetsRootObject = {
-    assets: Assets
 }
