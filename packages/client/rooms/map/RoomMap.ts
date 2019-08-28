@@ -1,5 +1,4 @@
 import HeightMap, { HeightMapPosition } from "./HeightMap"
-import Point from "./coordinates/Point";
 import DIRECTION_OFFSETS from "./directions/DIRECTION_OFFSETS"
 
 export default class RoomMap {

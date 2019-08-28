@@ -1,9 +1,12 @@
+import * as PIXI from 'pixi.js'
+
 import RoomScene from "../RoomScene";
 import {HeightMapPosition} from '../map/HeightMap';
 import Directions from "../map/directions/Directions";
 import TilesContainer from "../containers/tiles/TilesContainer";
+import Texture = PIXI.Texture;
 
-export default class Tile extends Phaser.GameObjects.Image {
+export default class Tile extends PIXI.TilingSprite {
 	public static readonly HEIGHT = 32
 	public static readonly WIDTH = 64
 
@@ -15,24 +18,35 @@ export default class Tile extends Phaser.GameObjects.Image {
 	private readonly floorThickness: number
 
 	public constructor(room: RoomScene, heightMapPosition: HeightMapPosition) {
-		super(room,
-			  TilesContainer.getScreenX(heightMapPosition),
-			  TilesContainer.getScreenY(heightMapPosition),
-			  undefined)
+		super(Texture.from('tile'), Tile.WIDTH, Tile.HEIGHT + room.roomData.floorThickness)
 
 		this.room = room
 		this.heightMapPosition = heightMapPosition
 		this.floorThickness = room.roomData.floorThickness
 
+		const [x, y] = [
+			TilesContainer.getScreenX(heightMapPosition),
+			TilesContainer.getScreenY(heightMapPosition)
+		]
+		this.position.set(x, y)
+
 		this.setTileTexture()
-		this.setInteractive({ pixelPerfect: true })
+		this.interactive = true
 	}
 
 	private setTileTexture() {
+		const { x, y } = this.heightMapPosition
 
-		const tileKey = this.getTileTexture(true, true)
+		const tilesAround = this.room.map.getTilePositionsAround(x, y)
 
-		this.setTexture(tileKey)
+		const [eastBorder, southBorder] = [
+			this.isEastBorderNeeded(tilesAround),
+			this.isSouthBorderNeeded(tilesAround)
+		]
+
+		const tileKey = this.getTileTexture(eastBorder, southBorder)
+
+		this.texture = PIXI.utils.TextureCache[tileKey]
 	}
 
 	private isEastBorderNeeded(tilesAround: HeightMapPosition[]): boolean {

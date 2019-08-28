@@ -18,12 +18,14 @@ export default class RoomManager implements IRoomManager {
 	public setRoom(room: RoomScene): void {
 		this.currentRoom = room
 
-		const habbo = HabboContainer.get(Habbo)
-		habbo.setScene(this.currentRoom)
+		const game = HabboContainer.get(Habbo)
+		game.loadRoom(this.currentRoom)
 	}
 
 	public createRoom(roomData: RoomData): RoomScene {
-		return new Room(roomData);
+		const game = HabboContainer.get(Habbo)
+
+		return new Room(roomData, game);
 	}
 
 }
