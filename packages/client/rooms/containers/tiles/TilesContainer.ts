@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js-legacy'
 
 import RoomScene from "../../RoomScene";
 import Tile from "../../tiles/Tile";
@@ -24,7 +24,9 @@ export default class TilesContainer extends PIXI.Container {
 
 		this.tiles = this.getTilesFromMap()
 
-		this.hoverTile = new HoverTile()
+		const hoverTileTexture = this.room.resources['tile_hover'].texture
+
+		this.hoverTile = new HoverTile(hoverTileTexture)
 		this.hoverTile.visible = false
 
 		this.addChild(...this.tiles)
@@ -74,7 +76,7 @@ export default class TilesContainer extends PIXI.Container {
 			)
 
 			text.position.set(screenX, screenY)
-			text.anchor.set(0.5, 0.25)
+			text.anchor.set(-0.5, -1.5)
 
 			texts.push(text)
 		}

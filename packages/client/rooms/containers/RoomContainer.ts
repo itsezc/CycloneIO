@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js-legacy'
 
 import RoomScene from "../RoomScene"
 import TilesContainer from "./tiles/TilesContainer"

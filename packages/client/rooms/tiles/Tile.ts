@@ -1,12 +1,12 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js-legacy'
 
 import RoomScene from "../RoomScene";
 import {HeightMapPosition} from '../map/HeightMap';
 import Directions from "../map/directions/Directions";
 import TilesContainer from "../containers/tiles/TilesContainer";
-import Texture = PIXI.Texture;
+import TileGenerator from "./TileGenerator";
 
-export default class Tile extends PIXI.TilingSprite {
+export default class Tile extends PIXI.Sprite {
 	public static readonly HEIGHT = 32
 	public static readonly WIDTH = 64
 
@@ -18,7 +18,7 @@ export default class Tile extends PIXI.TilingSprite {
 	private readonly floorThickness: number
 
 	public constructor(room: RoomScene, heightMapPosition: HeightMapPosition) {
-		super(Texture.from('tile'), Tile.WIDTH, Tile.HEIGHT + room.roomData.floorThickness)
+		super(undefined)
 
 		this.room = room
 		this.heightMapPosition = heightMapPosition
@@ -28,10 +28,13 @@ export default class Tile extends PIXI.TilingSprite {
 			TilesContainer.getScreenX(heightMapPosition),
 			TilesContainer.getScreenY(heightMapPosition)
 		]
+
 		this.position.set(x, y)
 
 		this.setTileTexture()
+
 		this.interactive = true
+		this.hitArea = new PIXI.Polygon(TileGenerator.SURFACE_POINTS)
 	}
 
 	private setTileTexture() {

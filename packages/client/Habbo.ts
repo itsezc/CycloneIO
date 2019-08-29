@@ -1,5 +1,5 @@
 import { injectable, inject } from 'inversify'
-import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js-legacy'
 import { Viewport } from "pixi-viewport";
 
 import ISocketManager from './communication/ISocketManager';
@@ -36,16 +36,21 @@ export default class Habbo {
 		const config = {
 			width: window.innerWidth,
 			height: window.innerHeight,
-			resolution: window.devicePixelRatio,
-			resizeTo: parentElement
+			resolution: window.devicePixelRatio || 1,
+			resizeTo: window
 		}
+
+		PIXI.settings.ROUND_PIXELS = true
 
 		this.viewport = new Viewport()
 		this.application = new PIXI.Application(config)
 
 		this.application.stage.addChild(this.viewport)
 
-		this.viewport.drag()
+		this.viewport.drag({
+			wheel: false,
+			mouseButtons: 'left'
+		})
 
 		parentElement.appendChild(this.application.view)
 	}

@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js-legacy'
 
 import RoomScene from "../RoomScene";
 import Tile from "./Tile";
@@ -16,32 +16,34 @@ export default class TileGenerator extends PIXI.Graphics {
 		this.generateTiles()
 	}
 
-	private generateTiles(): void {
-		const scaleMode = PIXI.SCALE_MODES.LINEAR
-		const renderer = PIXI.autoDetectRenderer()
-
-		this.drawSurface()
-		const tileSurfaceTexture = renderer.generateTexture(this, scaleMode, 1)
-
-		this.drawRightBorder()
-		const tileSurfaceEastTexture = renderer.generateTexture(this, scaleMode, 1)
-
-		this.drawLeftBorder()
-		const tileSurfaceEastSouthTexture = renderer.generateTexture(this, scaleMode, 1)
-
-		// We clear cause we don't need right border for tile_l texture
-		this.clear()
-		this.drawSurface()
-		this.drawLeftBorder()
-		const tileSurfaceSouthTexture = renderer.generateTexture(this, scaleMode, 1)
-
-		PIXI.Texture.addToCache(tileSurfaceTexture, 'tile')
-		PIXI.Texture.addToCache(tileSurfaceEastTexture, 'tile_e')
-		PIXI.Texture.addToCache(tileSurfaceEastSouthTexture, 'tile_es')
-		PIXI.Texture.addToCache(tileSurfaceSouthTexture, 'tile_s')
+	// We do it by a Getter cause we need to access
+	// other static properties from Tile class
+	public static get SURFACE_POINTS(): number[] {
+		return [
+			Tile.WIDTH / 2, 0,
+			Tile.WIDTH,     Tile.HEIGHT / 2,
+			Tile.WIDTH / 2, Tile.HEIGHT,
+			0,              Tile.HEIGHT / 2,
+		]
 	}
 
-	private drawPoints(points: PIXI.Point[], strokePoints: { x: number, y: number }[]): void {
+	private generateTiles(): void {
+		const scaleMode = PIXI.SCALE_MODES.NEAREST
+		const resolution = 1
+
+		this.generateSurface(scaleMode, resolution)
+		this.clear()
+
+		this.generateSurfaceEast(scaleMode, resolution)
+		this.clear()
+
+		this.generateSurfaceSouth(scaleMode, resolution)
+		this.clear()
+
+		this.generateSurfaceEastSouth(scaleMode, resolution)
+	}
+
+	private drawPoints(points: number[], strokePoints: { x: number, y: number }[]): void {
 		this.drawPolygon(points)
 
 		strokePoints.forEach((point, index) => {
@@ -54,29 +56,24 @@ export default class TileGenerator extends PIXI.Graphics {
 	}
 
 	private drawSurface(): void {
-		const [points, strokePoints] = [[
-			new PIXI.Point(Tile.WIDTH / 2, 0),
-			new PIXI.Point(Tile.WIDTH, Tile.HEIGHT / 2),
-			new PIXI.Point(Tile.WIDTH / 2, Tile.HEIGHT),
-			new PIXI.Point(0, Tile.HEIGHT / 2)
-		], [
+		const strokePoints = [
 			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 },
 			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT },
 			{ x: 0,              y: Tile.HEIGHT / 2 }
-		]]
+		]
 
 		this.beginFill(0x989865)
-		this.lineStyle(1.5, 0x8e8e5e)
+		this.lineStyle(1, 0x8e8e5e)
 
-		this.drawPoints(points, strokePoints)
+		this.drawPoints(TileGenerator.SURFACE_POINTS, strokePoints)
 	}
 
 	private drawLeftBorder(): void {
 		const [points, strokePoints] = [[
-			new PIXI.Point(0, Tile.HEIGHT / 2),
-			new PIXI.Point(0, Tile.HEIGHT / 2 + this.floorThickness),
-			new PIXI.Point(Tile.WIDTH / 2, Tile.HEIGHT + this.floorThickness),
-			new PIXI.Point(Tile.WIDTH / 2, Tile.HEIGHT)
+			0, 				Tile.HEIGHT / 2,
+			0, 				Tile.HEIGHT / 2 + this.floorThickness,
+			Tile.WIDTH / 2, Tile.HEIGHT + this.floorThickness,
+			Tile.WIDTH / 2, Tile.HEIGHT
 		], [
 			{ x: 0, y: Tile.HEIGHT / 2 },
 			{ x: 0, y: Tile.HEIGHT / 2 + this.floorThickness }
@@ -90,10 +87,10 @@ export default class TileGenerator extends PIXI.Graphics {
 
 	private drawRightBorder(): void {
 		const [points, strokePoints] = [[
-			new PIXI.Point(Tile.WIDTH / 2, Tile.HEIGHT),
-			new PIXI.Point(Tile.WIDTH / 2, Tile.HEIGHT + this.floorThickness),
-			new PIXI.Point(Tile.WIDTH, Tile.HEIGHT / 2 + this.floorThickness),
-			new PIXI.Point(Tile.WIDTH, Tile.HEIGHT / 2)
+			Tile.WIDTH / 2, Tile.HEIGHT,
+			Tile.WIDTH / 2, Tile.HEIGHT + this.floorThickness,
+			Tile.WIDTH, 	Tile.HEIGHT / 2 + this.floorThickness,
+			Tile.WIDTH, 	Tile.HEIGHT / 2,
 		], [
 			{ x: Tile.WIDTH, y: Tile.HEIGHT / 2 + this.floorThickness },
 			{ x: Tile.WIDTH, y: Tile.HEIGHT / 2 }
@@ -105,4 +102,39 @@ export default class TileGenerator extends PIXI.Graphics {
 		this.drawPoints(points, strokePoints)
 	}
 
+	private generateSurface(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile')
+	}
+
+	private generateSurfaceEast(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+		this.drawRightBorder()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile_e')
+	}
+
+	private generateSurfaceSouth(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+		this.drawLeftBorder()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile_s')
+	}
+
+	private generateSurfaceEastSouth(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+		this.drawRightBorder()
+		this.drawLeftBorder()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile_es')
+	}
 }

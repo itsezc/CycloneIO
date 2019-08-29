@@ -1,3 +1,5 @@
+import * as PIXI from "pixi.js-legacy"
+
 import RoomScene from './RoomScene'
 import RoomData from './data/RoomData'
 import RoomMap from './map/RoomMap'
@@ -14,6 +16,7 @@ export default class Room extends RoomScene {
 	private roomContainer: RoomContainer
 	private loader: IAssetsManager
 
+	public resources: Partial<Record<string, PIXI.LoaderResource>>
 	public roomData: RoomData
 	public map: RoomMap
 
@@ -30,12 +33,16 @@ export default class Room extends RoomScene {
 
 		this.map = new RoomMap(this.roomData.map.room)
 
-		this.loader = new RoomAssetsManager();
-		this.loader.loadAssets()
+		// TODO: Preloader
 
-		this.initializeContainers()
+		this.loader = new RoomAssetsManager()
+		this.loader.loadAssets().then(resources => {
+			this.resources = resources
 
-		this.centerCamera()
+			this.initializeContainers()
+
+			this.centerCamera()
+		})
 	}
 
 	private initializeContainers(): void {
@@ -48,9 +55,7 @@ export default class Room extends RoomScene {
 		const doorTile = this.roomContainer.tilesContainer.getTileAt(0, 0)
 
 		if (doorTile) {
-			this.game.viewport.follow(doorTile, {
-				speed: 0
-			})
+			// this.game.viewport.follow(doorTile)
 		}
 	}
 }

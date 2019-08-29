@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js-legacy'
 
 import IAssetsManager from "../IAssetsManager"
 import Logger from "../../logging/Logger";
@@ -12,11 +12,13 @@ export default class RoomAssetsManager extends Logger implements IAssetsManager 
         this.roomLoader = PIXI.Loader.shared
     }
 
-    public loadAssets(): void {
+    public loadAssets(): Promise<Partial<Record<string, PIXI.LoaderResource>>> {
 		this.initConsoleOutput()
 
-		this.roomLoader.add('tile_hover', 'room/tile_hover.png')
-			.load()
+		return new Promise(resolve => {
+			this.roomLoader.add('tile_hover', 'room/tile_hover.png')
+				.load((loader, resources) => resolve(resources))
+		})
     }
 
 	private initConsoleOutput(): void {
