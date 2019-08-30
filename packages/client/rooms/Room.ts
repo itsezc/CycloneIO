@@ -1,4 +1,4 @@
-import * as PIXI from "pixi.js-legacy"
+import * as PIXI from 'pixi.js-legacy'
 
 import RoomScene from './RoomScene'
 import RoomData from './data/RoomData'
@@ -7,7 +7,7 @@ import RoomMap from './map/RoomMap'
 import RoomContainer from './containers/RoomContainer'
 import RoomAssetsManager from '../assets/rooms/RoomAssetsManager'
 import IAssetsManager from '../assets/IAssetsManager'
-import Habbo from "../Habbo";
+import Habbo from '../Habbo'
 
 export default class Room extends RoomScene {
 	private readonly id: string

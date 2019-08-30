@@ -1,11 +1,11 @@
-import Habbo from "../Habbo";
+import Habbo from '../Habbo'
 
 export default abstract class Logger {
     private readonly consoleStyle: string
     private readonly className: string
 
     protected constructor(consoleColor: string, className: string) {
-        this.consoleStyle = `color: ${consoleColor}; font-weight: bold; padding: 5px 5px 5px 0`
+        this.consoleStyle = `color: ${consoleColor} font-weight: bold padding: 5px 5px 5px 0`
         this.className = className
     }
 

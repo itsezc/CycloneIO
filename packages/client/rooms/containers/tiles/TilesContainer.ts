@@ -1,11 +1,11 @@
 import * as PIXI from 'pixi.js-legacy'
 
-import RoomScene from "../../RoomScene";
-import Tile from "../../tiles/Tile";
-import HoverTile from "../../tiles/HoverTile";
-import TileGenerator from "../../tiles/TileGenerator";
-import {HeightMapPosition} from "../../map/HeightMap";
-import Habbo from "../../../Habbo";
+import RoomScene from '../../RoomScene'
+import Tile from '../../tiles/Tile'
+import HoverTile from '../../tiles/HoverTile'
+import TileGenerator from '../../tiles/TileGenerator'
+import {HeightMapPosition} from '../../map/HeightMap'
+import Habbo from '../../../Habbo'
 
 export default class TilesContainer extends PIXI.Container {
 	private readonly room: RoomScene

@@ -1,7 +1,7 @@
 import * as PIXI from 'pixi.js-legacy'
 
-import RoomScene from "../RoomScene"
-import TilesContainer from "./tiles/TilesContainer"
+import RoomScene from '../RoomScene'
+import TilesContainer from './tiles/TilesContainer'
 
 export default class RoomContainer extends PIXI.Container {
 	public readonly tilesContainer: TilesContainer

@@ -1,9 +1,9 @@
-import { injectable } from "inversify";
+import { injectable } from 'inversify'
 
-import IEventsManager from "./IEventsManager"
-import IEvent from "./IEvent"
+import IEventsManager from './IEventsManager'
+import IEvent from './IEvent'
 
-import { PlayerJoinedEvent, SetRoomEvent } from "./eventIndex"
+import { PlayerJoinedEvent, SetRoomEvent } from './eventIndex'
 
 @injectable()
 export default class EventsManager implements IEventsManager {

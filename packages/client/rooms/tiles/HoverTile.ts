@@ -1,7 +1,7 @@
 import * as PIXI from 'pixi.js-legacy'
 
-import { HeightMapPosition } from "../map/HeightMap";
-import TilesContainer from "../containers/tiles/TilesContainer";
+import { HeightMapPosition } from '../map/HeightMap'
+import TilesContainer from '../containers/tiles/TilesContainer'
 
 export default class HoverTile extends PIXI.Sprite {
 

@@ -1,7 +1,7 @@
 import * as PIXI from 'pixi.js-legacy'
 
-import IAssetsManager from "../IAssetsManager"
-import Logger from "../../logging/Logger";
+import IAssetsManager from '../IAssetsManager'
+import Logger from '../../logging/Logger'
 
 export default class RoomAssetsManager extends Logger implements IAssetsManager {
     private readonly roomLoader: PIXI.Loader

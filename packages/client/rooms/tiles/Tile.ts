@@ -1,10 +1,10 @@
 import * as PIXI from 'pixi.js-legacy'
 
-import RoomScene from "../RoomScene";
-import {HeightMapPosition} from '../map/HeightMap';
-import Directions from "../map/directions/Directions";
-import TilesContainer from "../containers/tiles/TilesContainer";
-import TileGenerator from "./TileGenerator";
+import RoomScene from '../RoomScene'
+import {HeightMapPosition} from '../map/HeightMap'
+import Directions from '../map/directions/Directions'
+import TilesContainer from '../containers/tiles/TilesContainer'
+import TileGenerator from './TileGenerator'
 
 export default class Tile extends PIXI.Sprite {
 	public static readonly HEIGHT = 32

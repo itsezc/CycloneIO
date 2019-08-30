@@ -1,7 +1,7 @@
 import * as PIXI from 'pixi.js-legacy'
 
-import RoomScene from "../RoomScene";
-import Tile from "./Tile";
+import RoomScene from '../RoomScene'
+import Tile from './Tile'
 
 export default class TileGenerator extends PIXI.Graphics {
 	private readonly room: RoomScene
