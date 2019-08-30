@@ -2,6 +2,6 @@
     "name": "@cyclone/utils",
     "author": "The Cyclone Team",
     "scripts": {
-        "dev:pets": "babel-watch --watch source/ source/pets/index.ts --extensions \".ts,.tsx\""
+        "dev:pets": "babel-watch --watch source/ source/entry.ts --extensions \".ts,.tsx\""
     }
 }

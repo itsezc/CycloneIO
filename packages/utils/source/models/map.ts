@@ -6,36 +6,36 @@ export type MapRootObject = {
     spritesheet?: string
     dimentions?: Dimentions
     directions?: number[]
-    assets?: Assets
+    assets?: MapAssets
     visualizations?: MapVisualization[]
 }
 
-export type Dimentions = {
+type Dimentions = {
     x?: number
     y?: number
     z?: number
 }
 
-export type Assets = {
+export type MapAssets = {
     [asset: string]: Asset
 }
 
 export type MapVisualization = {
-    size?: VisualizationSize
+    size?: MapVisualizationSize
     layerCount?: number
     angle?: number
-    layers?: VisualizationLayers
-    directions?: Directions
-    animations?: Animations
+    layers?: MapVisualizationLayers
+    directions?: MapDirections
+    animations?: MapAnimations
 }
 
-export type VisualizationSize = 32 | 64
+export type MapVisualizationSize = 32 | 64
 
-export type VisualizationLayers = {
-    [layer: number]: VisualizationLayer
+export type MapVisualizationLayers = {
+    [layer: number]: MapVisualizationLayer
 }
 
-export type VisualizationLayer = {
+type MapVisualizationLayer = {
     tag?: string
     alpha?: number
     ink?: string
@@ -43,7 +43,7 @@ export type VisualizationLayer = {
     z?: number
 }
 
-export type Asset = {
+type Asset = {
     source?: string
     x: number
     y: number
@@ -51,31 +51,31 @@ export type Asset = {
     usesPalette?: number
 }
 
-export type Directions = {
+export type MapDirections = {
     [direction: number]: Direction
 }
 
-export type Direction = {
-    layers: DirectionLayers
+type Direction = {
+    layers: MapDirectionLayers
 }
 
-export type DirectionLayers = {
+export type MapDirectionLayers = {
     [layer: number]: DirectionLayer
 }
 
-export type DirectionLayer = {
+type DirectionLayer = {
     z: number
 }
 
-export type Animations = {
-    [animation: number]: AnimationLayers
+export type MapAnimations = {
+    [animation: number]: MapAnimationLayers
 }
 
-export type AnimationLayers = {
+export type MapAnimationLayers = {
     [layer: number]: AnimationLayer
 }
 
-export type AnimationLayer = {
+type AnimationLayer = {
     frames?: number[],
     loopCount?: number
     frameRepeat?: number

@@ -27,10 +27,14 @@
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
+    "@types/fs-extra": "^8.0.0",
     "download": "^7.1.0",
     "fast-xml-parser": "^3.12.20",
+    "fs-extra": "^8.1.0",
+    "inversify": "^5.0.1",
     "phaser": "^3.19.0",
     "qunpack": "^0.5.2",
+    "reflect-metadata": "^0.1.13",
     "spritesmith": "^3.3.1",
     "svg-to-dataurl": "^1.0.0",
     "swf-extract": "^1.1.0",

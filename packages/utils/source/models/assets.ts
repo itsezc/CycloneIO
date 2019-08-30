@@ -2,13 +2,13 @@ export type AssetsRootObject = {
     assets: Assets
 }
 
-export type Assets = {
+type Assets = {
     asset: Asset[]
     palette: Palette[]
     custompart: Custompart[]
 }
 
-export type Asset = {
+type Asset = {
     name: string
     x: number
     y: number
@@ -17,7 +17,7 @@ export type Asset = {
     flipH?: number
 }
 
-export type Palette = {
+type Palette = {
     id: number
     source: string
     color1: any
@@ -28,7 +28,7 @@ export type Palette = {
     colortag?: number
 }
 
-export type Custompart = {
+type Custompart = {
     id: number
     source: string
     tags: string
