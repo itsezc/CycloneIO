@@ -20,4 +20,8 @@ interface DeleteRoomAction {
 	id: string
 }
 
-export type RoomActionTypes = AddRoomAction | DeleteRoomAction
+export type NavigatorActionTypes = AddRoomAction | DeleteRoomAction
+
+export interface NavigatorState {
+	rooms: Room[]
+}
