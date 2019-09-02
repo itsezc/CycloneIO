@@ -1,9 +1,12 @@
-import RoomScene from "../RoomScene";
-import {HeightMapPosition} from '../map/HeightMap';
-import Directions from "../map/directions/Directions";
-import TilesContainer from "../containers/tiles/TilesContainer";
+import * as PIXI from 'pixi.js-legacy'
 
-export default class Tile extends Phaser.GameObjects.Image {
+import RoomScene from '../RoomScene'
+import {HeightMapPosition} from '../map/HeightMap'
+import Directions from '../map/directions/Directions'
+import TilesContainer from '../containers/tiles/TilesContainer'
+import TileGenerator from './TileGenerator'
+
+export default class Tile extends PIXI.Sprite {
 	public static readonly HEIGHT = 32
 	public static readonly WIDTH = 64
 
@@ -15,24 +18,38 @@ export default class Tile extends Phaser.GameObjects.Image {
 	private readonly floorThickness: number
 
 	public constructor(room: RoomScene, heightMapPosition: HeightMapPosition) {
-		super(room,
-			  TilesContainer.getScreenX(heightMapPosition),
-			  TilesContainer.getScreenY(heightMapPosition),
-			  undefined)
+		super(undefined)
 
 		this.room = room
 		this.heightMapPosition = heightMapPosition
 		this.floorThickness = room.roomData.floorThickness
 
+		const [x, y] = [
+			TilesContainer.getScreenX(heightMapPosition),
+			TilesContainer.getScreenY(heightMapPosition)
+		]
+
+		this.position.set(x, y)
+
 		this.setTileTexture()
-		this.setInteractive({ pixelPerfect: true })
+
+		this.interactive = true
+		this.hitArea = new PIXI.Polygon(TileGenerator.SURFACE_POINTS)
 	}
 
 	private setTileTexture() {
+		const { x, y } = this.heightMapPosition
 
-		const tileKey = this.getTileTexture(true, true)
+		const tilesAround = this.room.map.getTilePositionsAround(x, y)
 
-		this.setTexture(tileKey)
+		const [eastBorder, southBorder] = [
+			this.isEastBorderNeeded(tilesAround),
+			this.isSouthBorderNeeded(tilesAround)
+		]
+
+		const tileKey = this.getTileTexture(eastBorder, southBorder)
+
+		this.texture = PIXI.utils.TextureCache[tileKey]
 	}
 
 	private isEastBorderNeeded(tilesAround: HeightMapPosition[]): boolean {

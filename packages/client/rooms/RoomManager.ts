@@ -1,11 +1,11 @@
-import {injectable} from "inversify";
+import {injectable} from 'inversify'
 
-import IRoomManager from "./IRoomManager";
-import RoomScene from "./RoomScene";
-import RoomData from "./data/RoomData";
-import Room from "./Room";
-import HabboContainer from "../injectors/HabboContainer";
-import Habbo from "../Habbo";
+import IRoomManager from './IRoomManager'
+import RoomScene from './RoomScene'
+import RoomData from './data/RoomData'
+import Room from './Room'
+import HabboContainer from '../injectors/HabboContainer'
+import Habbo from '../Habbo'
 
 @injectable()
 export default class RoomManager implements IRoomManager {
@@ -18,12 +18,14 @@ export default class RoomManager implements IRoomManager {
 	public setRoom(room: RoomScene): void {
 		this.currentRoom = room
 
-		const habbo = HabboContainer.get(Habbo)
-		habbo.setScene(this.currentRoom)
+		const game = HabboContainer.get(Habbo)
+		game.loadRoom(this.currentRoom)
 	}
 
 	public createRoom(roomData: RoomData): RoomScene {
-		return new Room(roomData);
+		const game = HabboContainer.get(Habbo)
+
+		return new Room(roomData, game)
 	}
 
 }

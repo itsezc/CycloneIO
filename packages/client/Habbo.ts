@@ -1,57 +1,82 @@
 import { injectable, inject } from 'inversify'
-import * as Phaser from 'phaser'
+import * as PIXI from 'pixi.js-legacy'
+import { Viewport } from 'pixi-viewport'
 
-import ISocketManager from './communication/ISocketManager';
-import IRoomManager from "./rooms/IRoomManager";
-import RoomScene from "./rooms/RoomScene";
+import ISocketManager from './communication/ISocketManager'
+import IRoomManager from './rooms/IRoomManager'
+import ICullManager from './rooms/cull/ICullManager'
+
+import RoomScene from './rooms/RoomScene'
 
 @injectable()
 export default class Habbo {
-	public static readonly DEBUG = true
+	public static readonly DEBUG = false
 
-	private game: Phaser.Game
+	public application: PIXI.Application
+	public viewport: Viewport
 
 	private socketManager: ISocketManager
 	private roomManager: IRoomManager
+	private cullManager: ICullManager
 
 	public constructor(
 		@inject('ISocketManager') socketManager: ISocketManager,
-		@inject('IRoomManager') roomManager: IRoomManager
+		@inject('IRoomManager') roomManager: IRoomManager,
+		@inject('ICullManager') cullManager: ICullManager
 	) {
 		this.socketManager = socketManager
 		this.roomManager = roomManager
+		this.cullManager = cullManager
 	}
 
 	public init(parent: string, socket: SocketIOClient.Socket): void {
-		if (!document.getElementById(parent)) {
+		const parentElement = document.getElementById(parent)
+
+		if (!parentElement) {
 			throw `${parent} is not an element.`
 		}
 
 		this.socketManager.init(socket)
 
 		const config = {
-			resolution: window.devicePixelRatio,
-			type: Phaser.WEBGL,
-			parent,
-			render: {
-				pixelArt: true
-			},
-			physics: {
-				default: 'arcade'
-			},
-			disableContextMenu: false,
-			scale: {
-				mode: Phaser.Scale.ScaleModes.RESIZE,
-				width: window.innerWidth,
-				height: window.innerHeight,
-			}
+			width: window.innerWidth,
+			height: window.innerHeight,
+			resolution: window.devicePixelRatio || 1,
+			resizeTo: window
 		}
 
-		this.game = new Phaser.Game(config)
+		PIXI.settings.ROUND_PIXELS = true
+
+		this.viewport = new Viewport()
+		this.application = new PIXI.Application(config)
+
+		this.application.stage.addChild(this.viewport)
+
+		this.viewport.drag({
+			wheel: false,
+			mouseButtons: 'left'
+		})
+
+		this.cullManager.setViewport(this.viewport)
+
+		this.resizeEvents()
+
+		parentElement.appendChild(this.application.view)
 	}
 
-	public setScene(scene: Phaser.Scene): void {
-		const key = (scene instanceof RoomScene) ? 'room' : 'unknown'
-		this.game.scene.add(key, scene, true)
+	private resizeEvents(): void {
+		window.onresize = (): void => {
+			this.viewport.resize(window.innerWidth, window.innerHeight)
+
+			this.cullManager.handleMove()
+		}
+	}
+
+	public loadRoom(room: RoomScene): void {
+		this.viewport.addChildAt(room, 0)
+	}
+
+	public get loader(): PIXI.Loader {
+		return this.application.loader
 	}
 }

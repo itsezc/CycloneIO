@@ -1,12 +1,11 @@
-import * as Phaser from 'phaser'
+import * as PIXI from 'pixi.js-legacy'
 
-import RoomMap from "./map/RoomMap";
-import RoomData from "./data/RoomData";
-import RoomCameraManager from "./camera/CameraManager";
+import RoomMap from './map/RoomMap'
+import RoomData from './data/RoomData'
 
-export default abstract class RoomScene extends Phaser.Scene {
+export default abstract class RoomScene extends PIXI.Container {
+	public resources: Partial<Record<string, PIXI.LoaderResource>>
+
 	public roomData: RoomData
 	public map: RoomMap
-
-	public roomCameraManager: RoomCameraManager
 }

@@ -1,25 +1,29 @@
-import IAssetsManager from "../IAssetsManager"
-import Habbo from "../../Habbo";
-import Logger from "../../logging/Logger";
+import * as PIXI from 'pixi.js-legacy'
+
+import IAssetsManager from '../IAssetsManager'
+import Logger from '../../logging/Logger'
 
 export default class RoomAssetsManager extends Logger implements IAssetsManager {
-    private readonly roomLoader: Phaser.Loader.LoaderPlugin
+    private readonly roomLoader: PIXI.Loader
 
-    public constructor(roomLoader: Phaser.Loader.LoaderPlugin) {
+    public constructor() {
     	super('#004080', RoomAssetsManager.name)
 
-        this.roomLoader = roomLoader
+        this.roomLoader = PIXI.Loader.shared
     }
 
-    public loadAssets(): void {
+    public loadAssets(): Promise<Partial<Record<string, PIXI.LoaderResource>>> {
 		this.initConsoleOutput()
 
-		this.roomLoader.image('tile_hover', 'room/tile_hover.png')
+		return new Promise(resolve => {
+			this.roomLoader.add('tile_hover', 'room/tile_hover.png')
+				.load((loader, resources) => resolve(resources))
+		})
     }
 
 	private initConsoleOutput(): void {
-		this.roomLoader.on('fileprogress', (file: Phaser.Loader.File) => {
-			this.debug(`Loading file => ${file.key} | Progress => ${Math.round(this.roomLoader.progress * 100)}%`)
+    	this.roomLoader.on('progress', (loader: PIXI.Loader, file: PIXI.LoaderResource) => {
+			this.debug(`Loading file => ${file.name} | Progress => ${Math.round(loader.progress)}%`)
 		})
 
 		this.roomLoader.on('complete', () => {

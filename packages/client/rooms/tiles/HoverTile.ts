@@ -1,12 +1,12 @@
-import * as Phaser from 'phaser'
-import RoomScene from "../RoomScene";
-import {HeightMapPosition} from "../map/HeightMap";
-import TilesContainer from "../containers/tiles/TilesContainer";
+import * as PIXI from 'pixi.js-legacy'
 
-export default class HoverTile extends Phaser.GameObjects.Sprite {
+import { HeightMapPosition } from '../map/HeightMap'
+import TilesContainer from '../containers/tiles/TilesContainer'
 
-	public constructor(room: RoomScene) {
-		super(room, 0, 0, 'tile_hover')
+export default class HoverTile extends PIXI.Sprite {
+
+	public constructor(texture: PIXI.Texture) {
+		super(texture)
 	}
 
 	public setHoverTilePosition(heightMapPosition: HeightMapPosition): void {
@@ -15,7 +15,7 @@ export default class HoverTile extends Phaser.GameObjects.Sprite {
 			TilesContainer.getScreenY(heightMapPosition),
 		]
 
-		this.setPosition(screenX, screenY - 4)
+		this.position.set(screenX, screenY - 4)
 	}
 
 }

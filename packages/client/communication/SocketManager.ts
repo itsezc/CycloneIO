@@ -1,7 +1,7 @@
-import { injectable, inject } from "inversify"
+import { injectable, inject } from 'inversify'
 
-import ISocketManager from "./ISocketManager"
-import IEventsManager from "./events/IEventsManager";
+import ISocketManager from './ISocketManager'
+import IEventsManager from './events/IEventsManager'
 
 @injectable()
 export default class SocketManager implements ISocketManager {

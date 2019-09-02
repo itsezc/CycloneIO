@@ -1,94 +1,140 @@
-import RoomScene from "../RoomScene";
-import {HeightMapPosition} from '../map/HeightMap';
-import Directions from "../map/directions/Directions";
-import Tile from "./Tile";
-import TilesContainer from "../containers/tiles/TilesContainer";
+import * as PIXI from 'pixi.js-legacy'
 
-export default class TileGenerator extends Phaser.GameObjects.Graphics {
+import RoomScene from '../RoomScene'
+import Tile from './Tile'
+
+export default class TileGenerator extends PIXI.Graphics {
 	private readonly room: RoomScene
 	private readonly floorThickness: number
 
 	public constructor(room: RoomScene) {
-		super(room, {x: 500, y: 500 })
+		super()
 
 		this.room = room
 		this.floorThickness = room.roomData.floorThickness
 
-		this.drawTile()
+		this.generateTiles()
 	}
 
-	private drawTile(): void {
-		this.drawSurface()
-		this.generateTexture('tile', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
+	// We do it by a Getter cause we need to access
+	// other static properties from Tile class
+	public static get SURFACE_POINTS(): number[] {
+		return [
+			Tile.WIDTH / 2, 0,
+			Tile.WIDTH,     Tile.HEIGHT / 2,
+			Tile.WIDTH / 2, Tile.HEIGHT,
+			0,              Tile.HEIGHT / 2,
+		]
+	}
 
-		this.drawRightBorder()
-		this.generateTexture('tile_e', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
+	private generateTiles(): void {
+		const scaleMode = PIXI.SCALE_MODES.NEAREST
+		const resolution = 1
 
-		this.drawLeftBorder()
-		this.generateTexture('tile_es', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
-
-		// We clear cause we don't need right border for tile_l texture
+		this.generateSurface(scaleMode, resolution)
 		this.clear()
-		this.drawSurface()
-		this.drawLeftBorder()
-		this.generateTexture('tile_s', Tile.WIDTH, Tile.HEIGHT + this.floorThickness)
+
+		this.generateSurfaceEast(scaleMode, resolution)
+		this.clear()
+
+		this.generateSurfaceSouth(scaleMode, resolution)
+		this.clear()
+
+		this.generateSurfaceEastSouth(scaleMode, resolution)
+	}
+
+	private drawPoints(points: number[], strokePoints: { x: number, y: number }[]): void {
+		this.drawPolygon(points)
+
+		strokePoints.forEach((point, index) => {
+			if (index === 0) {
+				this.moveTo(point.x, point.y)
+			} else {
+				this.lineTo(point.x, point.y)
+			}
+		})
 	}
 
 	private drawSurface(): void {
-		const [points, strokePoints] = [[
-			{ x: Tile.WIDTH / 2, y: 0 },
+		const strokePoints = [
 			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 },
 			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT },
 			{ x: 0,              y: Tile.HEIGHT / 2 }
-		], [
-			// We add 0.5 because if we don't there's a little
-			// stroke overflow in the edges cause the stroke is 1.5
-			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 },
-			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT },
-			{ x: 0,              y: Tile.HEIGHT / 2 }
-		]]
+		]
 
-		this.fillStyle(0x989865)
-		this.lineStyle(1.5, 0x8e8e5e)
+		this.beginFill(0x989865)
+		this.lineStyle(1, 0x8e8e5e)
 
-		this.fillPoints(points)
-		this.strokePoints(strokePoints)
+		this.drawPoints(TileGenerator.SURFACE_POINTS, strokePoints)
 	}
 
 	private drawLeftBorder(): void {
 		const [points, strokePoints] = [[
-			{ x: 0,              y: Tile.HEIGHT / 2 },
-			{ x: 0,              y: Tile.HEIGHT / 2 + this.floorThickness },
-			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT + this.floorThickness },
-			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT }
+			0, 				Tile.HEIGHT / 2,
+			0, 				Tile.HEIGHT / 2 + this.floorThickness,
+			Tile.WIDTH / 2, Tile.HEIGHT + this.floorThickness,
+			Tile.WIDTH / 2, Tile.HEIGHT
 		], [
 			{ x: 0, y: Tile.HEIGHT / 2 },
 			{ x: 0, y: Tile.HEIGHT / 2 + this.floorThickness }
 		]]
 
-		this.fillStyle(0x838357)
+		this.beginFill(0x838357)
 		this.lineStyle(1, 0x7a7a51)
 
-		this.fillPoints(points, true)
-		this.strokePoints(strokePoints, true)
+		this.drawPoints(points, strokePoints)
 	}
 
 	private drawRightBorder(): void {
 		const [points, strokePoints] = [[
-			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT },
-			{ x: Tile.WIDTH / 2, y: Tile.HEIGHT + this.floorThickness },
-			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 + this.floorThickness },
-			{ x: Tile.WIDTH,     y: Tile.HEIGHT / 2 }
+			Tile.WIDTH / 2, Tile.HEIGHT,
+			Tile.WIDTH / 2, Tile.HEIGHT + this.floorThickness,
+			Tile.WIDTH, 	Tile.HEIGHT / 2 + this.floorThickness,
+			Tile.WIDTH, 	Tile.HEIGHT / 2,
 		], [
 			{ x: Tile.WIDTH, y: Tile.HEIGHT / 2 + this.floorThickness },
 			{ x: Tile.WIDTH, y: Tile.HEIGHT / 2 }
 		]]
 
-		this.fillStyle(0x6f6f49)
+		this.beginFill(0x6f6f49)
 		this.lineStyle(1, 0x676744)
 
-		this.fillPoints(points, true)
-		this.strokePoints(strokePoints, true)
+		this.drawPoints(points, strokePoints)
 	}
 
+	private generateSurface(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile')
+	}
+
+	private generateSurfaceEast(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+		this.drawRightBorder()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile_e')
+	}
+
+	private generateSurfaceSouth(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+		this.drawLeftBorder()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile_s')
+	}
+
+	private generateSurfaceEastSouth(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
+		this.drawSurface()
+		this.drawRightBorder()
+		this.drawLeftBorder()
+
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		PIXI.Texture.addToCache(texture, 'tile_es')
+	}
 }
