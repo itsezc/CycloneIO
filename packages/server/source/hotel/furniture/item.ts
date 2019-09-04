@@ -47,7 +47,7 @@ export default class Item {
 	Rooms[] => Room{1} 
 	Items[Rooms{}[1]] = [
 		{ id: 1, furniture: 1, x: 1, y: 1, z: 1 } //Static Normal Furni
-		{ id: 2, furntirue: 2, type: 'wall', x: 1, y: 1 } //
+		{ id: 2, furntirue: 2, type: 'walls', x: 1, y: 1 } //
 	]
 
  */

@@ -70,6 +70,14 @@ export default class RoomMap {
 		return tilePositions
 	}
 
+	public getWallPositions(): HeightMapPosition[] {
+		return this.tilePositions.filter(p => this.isValidWallPosition(p))
+	}
+
+	public isValidWallPosition(position: HeightMapPosition): boolean {
+		return true
+	}
+
 	public get tilePositions(): HeightMapPosition[] {
 		return this.heightMap.tilePositions
 	}
