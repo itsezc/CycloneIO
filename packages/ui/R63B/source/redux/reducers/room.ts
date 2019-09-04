@@ -1,10 +1,10 @@
-const Room = (state = 0 , action: object) => {
+const Room = (state = 0 , action: any) => {
 	switch (action.type) {
 		case 'ADD_ROOM':
 				
 			break	
 		default:
-				return state
+			return state
 			break
 	}
 }

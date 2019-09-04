@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 
-import Reducers from './store/reducers'
+import Reducers from './redux/reducers'
 
 import { CWindow } from 'window.d.ts'
 declare let window: CWindow
