@@ -28,6 +28,17 @@ export default class RoomMap {
 		return largestColumn.length
 	}
 
+	private getMaxAxisPositionsFromTiles(tiles: HeightMapPosition[]): { x: HeightMapPosition, y: HeightMapPosition } {
+		const maxInXAxis = tiles
+			.filter((p): boolean => p.y === 0)
+			.reduce((prev, curr): HeightMapPosition => (prev.x > curr.x) ? prev : curr)
+		const maxInYAxis = tiles
+			.filter((p): boolean => p.x === 0)
+			.reduce((prev, curr): HeightMapPosition => (prev.y > curr.y) ? prev : curr)
+
+		return { x: maxInXAxis, y: maxInYAxis }
+	}
+
 	private getHeightMap(map: string[]): HeightMap {
 		const tiles: HeightMapPosition[] = []
 
@@ -43,7 +54,13 @@ export default class RoomMap {
 			})
 		})
 
-		return { tilePositions: tiles }
+		const maxInAxis = this.getMaxAxisPositionsFromTiles(tiles)
+
+		return {
+			tilePositions: tiles,
+			maxInXAxis: maxInAxis.x,
+			maxInYAxis: maxInAxis.y
+		}
 	}
 
 	private getHeightByChar(char: string): number {
@@ -71,11 +88,20 @@ export default class RoomMap {
 	}
 
 	public getWallPositions(): HeightMapPosition[] {
-		return this.tilePositions.filter(p => this.isValidWallPosition(p))
+		return this.tilePositions.filter((p): boolean => this.isValidWallPosition(p))
 	}
 
 	public isValidWallPosition(position: HeightMapPosition): boolean {
-		return true
+		return position.x <= this.maxInXAxis.x && !this.getTilePositionAt(position.x, position.y - 1)
+			|| position.y <= this.maxInYAxis.y && !this.getTilePositionAt(position.x - 1, position.y)
+	}
+
+	private get maxInXAxis(): HeightMapPosition {
+		return this.heightMap.maxInXAxis
+	}
+
+	private get maxInYAxis(): HeightMapPosition {
+		return this.heightMap.maxInYAxis
 	}
 
 	public get tilePositions(): HeightMapPosition[] {

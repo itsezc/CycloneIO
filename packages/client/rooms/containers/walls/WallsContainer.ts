@@ -22,14 +22,10 @@ export default class WallsContainer extends PIXI.Container {
 	}
 
 	private generateWallsFromMap(): Wall[] {
-		const walls: Wall[] = []
+		const walls: Wall[] = this.room.map.getWallPositions()
+			.map((value): Wall => new Wall(value))
 
-		for (const mapTile of this.room.map.getWallPositions()) {
-			if (mapTile.height === -1)
-				continue
-
-
-		}
+		console.log(walls)
 
 		return walls
 	}

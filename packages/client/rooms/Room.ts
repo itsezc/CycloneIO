@@ -31,7 +31,13 @@ export default class Room extends RoomScene {
 		this.id = roomData.id
 		this.roomData = roomData
 
-		this.map = new RoomMap(this.roomData.map.room)
+		this.map = new RoomMap([
+			'xxxxxxxxxx0x',
+			'xxxxxxxxx00x',
+			'xx0000000000',
+			'x00000000000',
+			'000000000000',
+		])
 
 		// TODO: Preloader
 

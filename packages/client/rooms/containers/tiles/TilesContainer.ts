@@ -43,9 +43,6 @@ export default class TilesContainer extends PIXI.Container {
 		const tiles: Tile[] = []
 
 		for (const mapTile of this.room.map.tilePositions) {
-			if (mapTile.height === -1)
-				continue
-
 			const tile = new Tile(this.room, mapTile)
 			this.setTileEvents(tile)
 
