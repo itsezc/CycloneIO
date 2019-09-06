@@ -1,0 +1,7 @@
+{
+    "name": "@cyclone/utils-clothing",
+    "author": "The Cyclone Team",
+    "scripts": {
+        "dev": "babel-watch --watch source/ source/index.ts --extensions \".ts,.tsx\""
+    }
+}
