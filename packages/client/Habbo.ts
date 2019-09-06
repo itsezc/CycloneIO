@@ -1,6 +1,6 @@
-import { injectable, inject } from 'inversify'
+import {inject, injectable} from 'inversify'
 import * as PIXI from 'pixi.js-legacy'
-import { Viewport } from 'pixi-viewport'
+import {Viewport} from 'pixi-viewport'
 
 import ISocketManager from './communication/ISocketManager'
 import IRoomManager from './rooms/IRoomManager'

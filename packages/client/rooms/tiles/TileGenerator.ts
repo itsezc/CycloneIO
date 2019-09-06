@@ -13,7 +13,7 @@ export default class TileGenerator extends PIXI.Graphics {
 		this.room = room
 		this.floorThickness = room.roomData.floorThickness
 
-		this.generateTiles()
+		this.generateTileTextures()
 	}
 
 	// We do it by a Getter cause we need to access
@@ -27,7 +27,7 @@ export default class TileGenerator extends PIXI.Graphics {
 		]
 	}
 
-	private generateTiles(): void {
+	private generateTileTextures(): void {
 		const scaleMode = PIXI.SCALE_MODES.NEAREST
 		const resolution = 1
 

@@ -10,6 +10,8 @@ interface EventData {
 }
 
 export class SetRoomEvent implements IEvent {
+	private roomManager: IRoomManager
+
 	public execute(data: EventData): void {
 		const roomManager = HabboContainer.get<IRoomManager>('IRoomManager')
 		const room = roomManager.createRoom(data.roomData)
