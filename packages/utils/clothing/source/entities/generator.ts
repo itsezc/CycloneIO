@@ -51,7 +51,9 @@ export class ClothingGenerator implements IClothingGenerator {
         })
     }
 
-    generateSpritesheet(src: string[], name: string) {
+    async generateSpritesheet(src: string[], name: string) {
+        let promises: Promise<void>[][] = []
+
         run({ src }, async (err: string, result: Result) => {
             if (err) {
                 throw err
@@ -116,13 +118,17 @@ export class ClothingGenerator implements IClothingGenerator {
             const imgSpritesheetPath = join(ABSOLUTE_PATH, name, `${name}.png`)
             const jsonSpritesheetPath = join(ABSOLUTE_PATH, name, `${name}.json`)
 
-            await outputFile(imgSpritesheetPath, imgSpritesheet)
-            await outputJSON(jsonSpritesheetPath, jsonSpritesheet, {
+            let outFile = outputFile(imgSpritesheetPath, imgSpritesheet)
+            let outJSON = outputJSON(jsonSpritesheetPath, jsonSpritesheet, {
                 spaces: 4
             })
 
-            Logger.info(`${cyanBright('[GENERATING]')}${green('[DONE]')} ${name}`)
+            promises.push([outFile, outJSON])
 
         })
+
+        await Promise.all(promises.map(async outputFiles => {
+            await Promise.all(outputFiles.map(async output => { await output }))
+        }))
     }
 }

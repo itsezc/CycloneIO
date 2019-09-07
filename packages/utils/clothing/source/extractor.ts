@@ -48,13 +48,16 @@ export default class ClothingExtractor {
 
                 Logger.info(`${cyanBright('[GENERATING]')}${bgBlue('[SPRITESHEET]')} ${name}`)
 
-                this.generator.generateSpritesheet(paths, name)
+                await this.generator.generateSpritesheet(paths, name)
+
+                Logger.info(`${cyanBright('[GENERATING]')}${green('[DONE]')} ${name}`)
             }))
+
+            Logger.info(`${green('[DONE]')} Closing the ${green('Application')}...`)
         }
 
         else {
             Logger.info(`There is ${yellowBright('No Data')} to ${magenta('Download')}. Closing the ${green('Application')}...`)
-            process.exit(0)
         }
     }
 
