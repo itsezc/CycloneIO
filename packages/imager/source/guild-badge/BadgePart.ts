@@ -1,11 +1,11 @@
 import gd from 'node-gd'
-import GuildBadgeRessource from './GuildBadgeRessource'
+import GuildBadgeRessource from './GuildBadgeResource'
 
 export default abstract class BadgePart {
     
-    protected elementIndex: string;
-    private colorIndex: string;
-    private positionIndex: number;
+    protected elementIndex: string
+    private colorIndex: string
+    private positionIndex: number
 
     public constructor(elementIndex: string, colorIndex: string, positionIndex: number){
         this.elementIndex = elementIndex;
@@ -69,7 +69,7 @@ export default abstract class BadgePart {
 
     public generate(guildBadgeRessource: GuildBadgeRessource): gd.Image {
 
-        const imageData: Object = this.getResourceData(guildBadgeRessource);
+        const imageData: any = this.getResourceData(guildBadgeRessource);
         if(imageData === undefined) throw new Error('Ressource undefined : ' + this.elementIndex + ' on path : ' + this.getResourcePath(guildBadgeRessource));
 
         const resourcePath: string = this.getResourcePath(guildBadgeRessource) + '/';

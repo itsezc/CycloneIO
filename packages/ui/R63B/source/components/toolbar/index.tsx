@@ -44,7 +44,8 @@ class Toolbar extends Component<any, any, any> {
     }
 
     toGameCenter() {
-        this.setState({ toGameCenter: true })
+		this.setState({ toGameCenter: true })
+		console.log('Triggered to Game Center', this.state.toGameCenter)
     }
 
 	render() {
@@ -65,8 +66,12 @@ class Toolbar extends Component<any, any, any> {
                             (!this.props.isClient ? <span className="icon icon-house"></span> : <span className="icon icon-habbo" onClick={this.toHotelView.bind(this)}></span>)
                         : null}
                         {this.state.isActionsOpen && <span className="icon icon-rooms"></span>} 
-
-                        <span className='icon icon-gamecenter' onClick={this.toGameCenter.bind(this)}></span>
+						
+						{this.props.isGameCenter ? 
+							null
+							:
+							<span className='icon icon-gamecenter' onClick={this.toGameCenter.bind(this)}></span>
+						}
                         
                         <span className="icon icon-catalogue"></span>
                         <span className="icon icon-buildersclub"></span>
@@ -78,7 +83,11 @@ class Toolbar extends Component<any, any, any> {
                             <img src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=0&direction=2&head_direction=2&action=&gesture=&size=m' />
                         </span>
 
-                        {this.props.isClient && <span className="icon icon-camera"></span> }
+						{this.props.isGameCenter ? 
+							null
+							:
+							this.props.isClient && <span className="icon icon-camera"></span>
+						}
                     </div>
                 </div>
 

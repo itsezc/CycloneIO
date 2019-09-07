@@ -1,7 +1,7 @@
 import Avatar, { Direction, FigurePart } from './index'
 import AvatarChunk from './chunk';
 
-import { Engine } from '../games/game'
+import { HabboEngine } from '../games/HabboEngine'
 
 export const LOCAL_RESOURCES = 'https://images.bobba.io/resource/'
 
@@ -15,7 +15,7 @@ export default class Imager {
     draworder: any;
     animation: any;
 
-    constructor(private readonly engine: Engine) {
+    constructor(private readonly engine: HabboEngine) {
         this.ready = false;
         this.offsets = {};
         this.chunks = {};

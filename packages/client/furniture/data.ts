@@ -8,7 +8,7 @@ namespace FurnitureData
 		spritesheet: string;
 		dimensions: IDimension;
 		directions: number[];
-		assets: { [key: string] : IAsset };
+		assets: { [key: string]: IAsset };
 		visualization: IVisualization;
 	}
 	

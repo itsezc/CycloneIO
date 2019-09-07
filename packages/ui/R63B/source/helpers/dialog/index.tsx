@@ -1,7 +1,5 @@
 import React , {Component} from 'react'
 
-import { classNames, dragElement } from '../../utils/functions';
-
 type DialogProps = {
     defaultPos?: [] | string
     subHeader?: boolean
@@ -71,7 +69,7 @@ export default class Dialog extends Component<DialogProps, any> {
         this.close = this.close.bind(this)
     }
     
-	componentWillMount() {
+	componentDidMount() {
 
         document.addEventListener('mousemove', this.handleMouse)
         document.addEventListener('mouseup', this.mouseStopEvent)
@@ -92,20 +90,20 @@ export default class Dialog extends Component<DialogProps, any> {
         this.screenWidth = window.innerWidth
     }
 
-	handleDragging = (e: any) => {
+	public handleDragging = (e: any) => {
 
         this.setState({
             isDragging: true
         })
     }
 
-	handleResizing = () => {
+	public handleResizing() {
         this.setState({
             isResizing: true
         })
     }
 
-	mouseStopEvent = () => {
+	public mouseStopEvent = () => {
 
         if(this.state.isResizing) {
 
@@ -122,7 +120,7 @@ export default class Dialog extends Component<DialogProps, any> {
         }
     }
 
-	handleMouse = (e: MouseEvent) => {
+	public handleMouse = (e: MouseEvent) => {
         
         if (!this.state.isDragging && !this.state.isResizing) return
 

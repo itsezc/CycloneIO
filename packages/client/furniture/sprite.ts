@@ -1,5 +1,5 @@
 import Furniture from './furniture'
-import Room from '../rooms/room'
+import Room from '../rooms/Room'
 import RotationAnimation from './animations/rotation';
 
 import FurnitureData from '../furniture/data'
@@ -7,339 +7,337 @@ import { Direction } from '../avatar';
 
 export default class FurnitureSprite extends Phaser.GameObjects.Container {
     
-    public _scene: Room
-    private static FPS = 24
-    private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
-    private static DEFAULT_SIZE = 64
+	public _scene: Room
+	private static FPS = 24
+	private static FPS_TIME_MS = 60 / FurnitureSprite.FPS
+	private static DEFAULT_SIZE = 64
 
-    private furniture: Furniture
-    private playing: boolean
+	public furniture: Furniture
+	private playing: boolean
 
-    private frameCount: number
-    private totalTimeRunning: number
+	private frameCount: number
+	private totalTimeRunning: number
 
-    private timer!: Phaser.Time.TimerEvent
-    private animation!: number
-    private direction!: number
-    private color!: number
+	private timer!: Phaser.Time.TimerEvent
+	private animation!: number
+	private direction!: number
+	private color!: number
 
-    private lastClick: number = 0
-    private doubleClick: boolean = false
+	private lastClick: number = 0
+	private doubleClick: boolean = false
 
-    private animationRotation: RotationAnimation
+	private animationRotation: RotationAnimation
 
-    public depth: number
+	public roomX: number
+	public roomY: number
+	public roomZ: number
 
-    public roomX: number
-    public roomY: number
-    public roomZ: number
-
-    public drawAsIcon: boolean
+	public drawAsIcon: boolean
     
-    public constructor(scene: Room, furniture: Furniture) {
-        super(scene)
+	public constructor(scene: Room, furniture: Furniture) {
+		super(scene)
 
-        this._scene = scene
-        this.furniture = furniture
-        this.playing = false
+		this._scene = scene
+		this.furniture = furniture
+		this.playing = false
 
-        this.frameCount = 0
-        this.totalTimeRunning = 0
+		this.frameCount = 0
+		this.totalTimeRunning = 0
 
-        this.animation = null
-        this.color = null
+		this.animation = null
+		this.color = null
 
-        this.setDirection(this.furniture.getDirections()[0])
+		this.setDirection(this.furniture.getDirections()[0])
 
-        this.animationRotation = new RotationAnimation(this.rotateFurniture, this)
+		this.animationRotation = new RotationAnimation(this.rotateFurniture, this)
 	}
 
-    public start()
-    {
-        if (!this.playing)
-        {
-            this.playing = true
-            this.timer = this._scene.time.addEvent({ 
-                delay: 0,
-                callback: this.update,
-                callbackScope: this,
-                loop: true,
-            })
-        }
-    }
+	public start()
+	{
+		if (!this.playing)
+		{
+			this.playing = true
+			this.timer = this._scene.time.addEvent({ 
+				delay: 0,
+				callback: this.update,
+				callbackScope: this,
+				loop: true,
+			})
+		}
+	}
 
-    public stop()
-    {
-        if (this.playing)
-        {
-            this.playing = false
+	public stop()
+	{
+		if (this.playing)
+		{
+			this.playing = false
 
-            this.timer.remove()
-        }
+			this.timer.remove()
+		}
 
-    }
+	}
 
-    updatePosition(tileX: number, tileY: number, tileZ: number, rotation: Direction, drawAsIcon:boolean) 
-    {
-        this.roomX = tileX 
-        this.roomY = tileY
-        this.roomZ = tileZ 
-        this.direction = rotation
-        this.drawAsIcon = drawAsIcon
+	public updatePosition(tileX: number, tileY: number, tileZ: number, rotation: Direction, drawAsIcon: boolean)
+	{
+		this.roomX = tileX 
+		this.roomY = tileY
+		this.roomZ = tileZ 
+		this.direction = rotation
+		this.drawAsIcon = drawAsIcon
 
-        //this.updateSpritePosition()
-    }
+		//this.updateSpritePosition()
+	}
 
-    updateSpritePosition()
-    {
-        const local = this._scene.tileToLocal(this.x, this.y, this.z)
-        let x = local.x + 32;
-        let y = local.y + 16;
+	updateSpritePosition()
+	{
+		const local = this._scene.tileToLocal(this.x, this.y, this.z)
+		let x = local.x + 32;
+		let y = local.y + 16;
 
-        if (this.drawAsIcon) {
-            x = this.x
-            y = this.y
-        }
+		if (this.drawAsIcon) {
+			x = this.x
+			y = this.y
+		}
 
-        // for (let container of this.furniture.containers) {
-        //     container.x = x
-        //     container.y = y
-        // }
+		// for (let container of this.furniture.containers) {
+		//     container.x = x
+		//     container.y = y
+		// }
 
-        // for (let container of this.selectableContainers) {
-        //     container.x = x
-        //     container.y = y
-        // }
-    }
+		// for (let container of this.selectableContainers) {
+		//     container.x = x
+		//     container.y = y
+		// }
+	}
 
-    public animateAndStart(animation: number)
-    {
-        if (this.furniture.hasAnimation(animation)
+	public animateAndStart(animation: number)
+	{
+		if (this.furniture.hasAnimation(animation)
             || animation == null)
-        {
+		{
 
 			// console.log('Animating with ', animation)
-            if (this.animation != animation)
-            {
-                this.animation = animation
+			if (this.animation != animation)
+			{
+				this.animation = animation
 
-                this.updateFurnitureView()
-            }
+				this.updateFurnitureView()
+			}
 
-            this.start()
-        }
-    }
+			this.start()
+		}
+	}
 
-    public animateAndStop(animation: number)
-    {
+	public animateAndStop(animation: number)
+	{
 		console.log('Current animation set to ', animation)
-        if (this.furniture.hasAnimation(animation)
+		if (this.furniture.hasAnimation(animation)
             || animation == null)
-        {
-            this.stop()
+		{
+			this.stop()
 
-            if (this.animation != animation)
-            {
-                this.animation = animation
+			if (this.animation != animation)
+			{
+				this.animation = animation
 
-                this.updateFurnitureView()
-            }
-        }
-    }
+				this.updateFurnitureView()
+			}
+		}
+	}
 
-    public setAnimation(animation: number)
-    {
-        if (this.furniture.hasAnimation(animation)) 
-        {
-            this.animation = animation
-        }
-    }
+	public setAnimation(animation: number)
+	{
+		if (this.furniture.hasAnimation(animation)) 
+		{
+			this.animation = animation
+		}
+	}
 
-    public setDirection(direction: number)
-    {
-        if (this.furniture.hasDirection(direction))
-        {
-            this.direction = direction
-        }
-    }
+	public setDirection(direction: number)
+	{
+		if (this.furniture.hasDirection(direction))
+		{
+			this.direction = direction
+		}
+	}
 
 	public getDirection() 
 	{
 		return this.direction
 	}
 
-    public setColor(color: number)
-    {
-        if (this.furniture.hasColor(color)
+	public setColor(color: number)
+	{
+		if (this.furniture.hasColor(color)
             || this.color == null) 
-        {
-            this.color = color
-        }
-    }
+		{
+			this.color = color
+		}
+	}
 
-    public update()
-    {
-        this.totalTimeRunning += 1
+	public update()
+	{
+		this.totalTimeRunning += 1
 
-        let frameCount = Math.round(this.totalTimeRunning / FurnitureSprite.FPS_TIME_MS)
+		let frameCount = Math.round(this.totalTimeRunning / FurnitureSprite.FPS_TIME_MS)
 
-        if (this.frameCount != frameCount)
-        {
-            this.frameCount = frameCount
-            this.updateFurnitureView()
+		if (this.frameCount != frameCount)
+		{
+			this.frameCount = frameCount
+			this.updateFurnitureView()
 
-            this.animationRotation.tick()
-        }
-    }
+			this.animationRotation.tick()
+		}
+	}
 
-    private getDepthIndex(sprite: any) {
-        const ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
+	private getDepthIndex(sprite: any) {
+		const ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
-        const frameName = sprite.frame.name
-        const fragments = frameName.split('_')
+		const frameName = sprite.frame.name
+		const fragments = frameName.split('_')
 
-        const layer = fragments[fragments.length - 3]
+		const layer = fragments[fragments.length - 3]
         
-        return (ALPHABET.indexOf(layer.toLowerCase())) + sprite.z
-    }
+		return (ALPHABET.indexOf(layer.toLowerCase())) + sprite.z
+	}
 
-    private isCorrectSizeSprite(sprite: any) {
-        const frameName = sprite.frame.name
-        const fragments = frameName.split('_')
+	private isCorrectSizeSprite(sprite: any) {
+		const frameName = sprite.frame.name
+		const fragments = frameName.split('_')
 
-        const size = parseInt(fragments[fragments.length - 4])
+		const size = parseInt(fragments[fragments.length - 4])
 
-        return size === FurnitureSprite.DEFAULT_SIZE
-    }
+		return size === FurnitureSprite.DEFAULT_SIZE
+	}
 
-    public updateFurnitureView()
-    {
-        this.removeAll(true)
-        //this.removeInteractive()
+	public updateFurnitureView()
+	{
+		this.removeAll(true)
+		//this.removeInteractive()
 
-        const layers = []
+		const layers = []
 
-        for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
-        {
+		for (let layerId = 0; layerId < this.furniture.getLayerCount(); layerId++)
+		{
 
-            let frameIndex = this.furniture.getFrameFrom(this.animation, layerId, this.frameCount)
-            let layerSprite = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, false, this.direction, layerId, frameIndex)
+			let frameIndex = this.furniture.getFrameFrom(this.animation, layerId, this.frameCount)
+			let layerSprite = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, false, this.direction, layerId, frameIndex)
 
 
-            if (layerSprite != null)
-            {
-                this.setEventsFor(layerSprite)
+			if (layerSprite != null)
+			{
+				this.setEventsFor(layerSprite)
 
-                this.furniture.updateSpriteFrom(layerSprite, layerId)
-                this.furniture.updateSpriteFromDirection(layerSprite, this.direction, layerId)
+				this.furniture.updateSpriteFrom(layerSprite, layerId)
+				this.furniture.updateSpriteFromDirection(layerSprite, this.direction, layerId)
 
-                if (this.animationRotation.isRunning) {
-                    this.updateSpriteByRotationAnimation(layerSprite)
-                }
+				if (this.animationRotation.isRunning) {
+					this.updateSpriteByRotationAnimation(layerSprite)
+				}
 
-                //this.setInteractions()
+				//this.setInteractions()
 
-                if (this.furniture.hasColorForLayer(this.color, layerId))
-                {
-                    let color = this.furniture.getColorFrom(this.color, layerId)
+				if (this.furniture.hasColorForLayer(this.color, layerId))
+				{
+					let color = this.furniture.getColorFrom(this.color, layerId)
 
-                    layerSprite.tint = color
-                }
+					layerSprite.tint = color
+				}
 
-                layerSprite.depth = this.getDepthIndex(layerSprite)
+				layerSprite.depth = this.getDepthIndex(layerSprite)
                 
-                layers.push(layerSprite)
-            }
-        }
+				layers.push(layerSprite)
+			}
+		}
 
-        // Shadow
-        const shadowLayer = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, true, this.direction)
+		// Shadow
+		const shadowLayer = this.furniture.getSpriteFrom(FurnitureSprite.DEFAULT_SIZE, true, this.direction)
 
-        if(shadowLayer != null) {
-            layers.push(shadowLayer)
-        }
+		if(shadowLayer != null) {
+			layers.push(shadowLayer)
+		}
         
-        // Depth sorting for sprites inside the furniture
-        const orderedLayers = layers.sort((a: any,  b: any) => {
-            return (a.depth > b.depth ? 1 : -1)
-        }).filter((sprite: Phaser.GameObjects.Sprite) => {
-            return this.isCorrectSizeSprite(sprite)
-        })
+		// Depth sorting for sprites inside the furniture
+		const orderedLayers = layers.sort((a: any,  b: any) => {
+			return (a.depth > b.depth ? 1 : -1)
+		}).filter((sprite: Phaser.GameObjects.Sprite) => {
+			return this.isCorrectSizeSprite(sprite)
+		})
 
-        const clickableLayers = orderedLayers.filter((sprite: any) => {
-            return sprite.isClickable
-        })
+		const clickableLayers = orderedLayers.filter((sprite: any) => {
+			return sprite.isClickable
+		})
 
-        this.add(orderedLayers)
-        //this.setInteractive()
-    }
+		this.add(orderedLayers)
+		//this.setInteractive()
+	}
 
-    private animateRotation() {
-        this.animationRotation.start()
-    }
+	private animateRotation() {
+		this.animationRotation.start()
+	}
 
-    private getFirstSprite() {
-        return this.getAll().find((gameObject) => gameObject instanceof Phaser.GameObjects.Sprite) as Phaser.GameObjects.Sprite
-    }
+	private getFirstSprite() {
+		return this.getAll().find((gameObject) => gameObject instanceof Phaser.GameObjects.Sprite) as Phaser.GameObjects.Sprite
+	}
 
-    private rotateFurniture() {
-        const firstSprite = this.getFirstSprite()
+	private rotateFurniture() {
+		const firstSprite = this.getFirstSprite()
 
-        if(firstSprite != null) {
-            this.direction = this.furniture.getNewDirectionFor(firstSprite, this.direction)
-        }
-    }
+		if(firstSprite != null) {
+			this.direction = this.furniture.getNewDirectionFor(firstSprite, this.direction)
+		}
+	}
 
-    private updateSpriteByRotationAnimation(sprite: Phaser.GameObjects.Sprite) {
-        const nextPosition = this.animationRotation.getNextPosition()
+	private updateSpriteByRotationAnimation(sprite: Phaser.GameObjects.Sprite) {
+		const nextPosition = this.animationRotation.getNextPosition()
 
-        if (nextPosition != null) {
-            sprite.x += nextPosition.x
-            sprite.y += nextPosition.y
-        }
-    }
+		if (nextPosition != null) {
+			sprite.x += nextPosition.x
+			sprite.y += nextPosition.y
+		}
+	}
 
-    private canBeRotated(sprite: Phaser.GameObjects.Sprite) {
-        return this.direction !== this.furniture.getNewDirectionFor(sprite, this.direction)
-    }
+	private canBeRotated(sprite: Phaser.GameObjects.Sprite) {
+		return this.direction !== this.furniture.getNewDirectionFor(sprite, this.direction)
+	}
 
-    private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
-        sprite.on('rotate', (instance: Phaser.GameObjects.Sprite) => {
-            // console.log('Can be rotated', this.canBeRotated(instance))
-            if(this.canBeRotated(instance) && !this.animationRotation.isRunning) {
-                this.animateRotation()
-            }
-        })
+	private setEventsFor(sprite: Phaser.GameObjects.Sprite) {
+		sprite.on('rotate', (instance: Phaser.GameObjects.Sprite) => {
+			// console.log('Can be rotated', this.canBeRotated(instance))
+			if(this.canBeRotated(instance) && !this.animationRotation.isRunning) {
+				this.animateRotation()
+			}
+		})
 
-        sprite.on('move', (instance: Phaser.GameObjects.Sprite) => {
-            // this.updatePosition()
-            console.log('Move Triggered')
+		sprite.on('move', (instance: Phaser.GameObjects.Sprite) => {
+			// this.updatePosition()
+			console.log('Move Triggered')
 
 
-        })
+		})
 
-        sprite.on('click', (instance: Phaser.GameObjects.Sprite) => {
-            if (this.frameCount - this.lastClick <= 45 && this.lastClick !== 0) {
-                if(!this.doubleClick) {
-                    this.doubleClick = true
-                } else {
-                    this.animation = this.furniture.getNewAnimationFor(instance, this.animation)
-                    this.doubleClick = false
-                }
+		sprite.on('click', (instance: Phaser.GameObjects.Sprite) => {
+			if (this.frameCount - this.lastClick <= 45 && this.lastClick !== 0) {
+				if(!this.doubleClick) {
+					this.doubleClick = true
+				} else {
+					this.animation = this.furniture.getNewAnimationFor(instance, this.animation)
+					this.doubleClick = false
+				}
 
-                this.lastClick = 0
-            } else {
-                this.doubleClick = false
-            }
+				this.lastClick = 0
+			} else {
+				this.doubleClick = false
+			}
 
-            this.lastClick = this.frameCount
-        })
-    }
+			this.lastClick = this.frameCount
+		})
+	}
 
-    public destroy()
-    {
-        this.stop()
+	public destroy()
+	{
+		this.stop()
 
-        super.destroy()
-    }
+		super.destroy()
+	}
 }

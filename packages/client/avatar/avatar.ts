@@ -1,4 +1,4 @@
-import Room from '../rooms/room'
+import Room from '../rooms/Room'
 import RoomObjectDepth from '../../common/enums/rooms/objects/depth'
 import { indexOf } from 'typescript-collections/dist/lib/arrays';
 

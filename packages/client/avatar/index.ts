@@ -1,4 +1,4 @@
-import { Engine } from '../games/game'
+import { HabboEngine } from '../games/HabboEngine'
 
 export interface FigurePart { type: string, id: string, colors: string[] }
 
@@ -44,9 +44,9 @@ export default class Avatar
     drawAction: DrawAction;
     handItem: number;
     drawOrder: string;
-    engine: Engine;
+    engine: HabboEngine;
 
-    constructor(engine: Engine, figure: string, direction: Direction, headDirection: Direction, action: string[], gesture: string, frame: number, isHeadOnly: boolean, isBodyOnly: boolean, scale: Scale) {
+    constructor(engine: HabboEngine, figure: string, direction: Direction, headDirection: Direction, action: string[], gesture: string, frame: number, isHeadOnly: boolean, isBodyOnly: boolean, scale: Scale) {
         this.engine = engine;
         this.direction = direction;
         this.headDirection = headDirection;
@@ -197,7 +197,7 @@ export default class Avatar
 
 export interface FigurePart { type: string, id: string, colors: string[] };
 
-export const extractFigureParts = (figure: string, engine: Engine): FigurePart[] => {
+export const extractFigureParts = (figure: string, engine: HabboEngine): FigurePart[] => {
     const newFigure: { [id: string]: FigurePart } = {};
     const figures: FigurePart[] = [];
 

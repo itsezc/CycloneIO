@@ -1,5 +1,5 @@
 import GuildBadge from './GuildBadge';
-import GuildBadgeRessource from './GuildBadgeRessource';
+import GuildBadgeRessource from './GuildBadgeResource';
 import BadgePartBase from './BadgePartBase';
 import BadgePartSymbol from './BadgePartSymbol';
 

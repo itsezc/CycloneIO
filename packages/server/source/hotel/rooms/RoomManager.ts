@@ -1,95 +1,96 @@
-export type RoomWithPlayers = {
-    roomData: any,
-    players: PlayerInfo[]
-    chat?: Message[]
+export interface RoomWithPlayers {
+	roomData: any,
+	players: PlayerInfo[]
+	chat?: Message[]
 }
 
 import { prisma } from '../../../../storage/prisma'
 
-export type Message = {
-    from: string,
-    body: string
+export interface Message {
+	from: string,
+	body: string
 }
 
-export type PlayerInfo = {
-    socketId: string;
-    avatarData: any
+export interface PlayerInfo {
+	socketId: string;
+	avatarData: any
 }
 
 export class RoomManager {
-    private static instance: RoomManager
-    private loadedRooms: RoomWithPlayers[]
+	private static instance: RoomManager
+	private loadedRooms: RoomWithPlayers[]
 
-    public static getInstance(): RoomManager {
-        if (!RoomManager.instance){
-            RoomManager.instance = new RoomManager()
-        }
+	public static getInstance(): RoomManager {
+		if (!RoomManager.instance){
+			RoomManager.instance = new RoomManager()
+		}
 
-        return RoomManager.instance
-    }
+		return RoomManager.instance
+	}
 
-    private constructor() {
-        this.loadedRooms = []
-    }
+	private constructor() {
+		this.loadedRooms = []
+	}
 
-    public async getRoom(id: string): Promise<RoomWithPlayers> {
+	public async getRoom(id: string): Promise<RoomWithPlayers> {
 
-        let roomWithPlayers: RoomWithPlayers = this.findRoom(id)
-        if(!roomWithPlayers) {
-            let roomData = await prisma.room({
-                id
-            })
+		let roomWithPlayers: RoomWithPlayers = this.findRoom(id)
 
-            roomWithPlayers = {
-                roomData,
-                players: []
-            }
+		if(!roomWithPlayers) {
+			let roomData = await prisma.room({
+				id
+			})
 
-            this.loadedRooms.push(roomWithPlayers)
-        }
+			roomWithPlayers = {
+				roomData,
+				players: []
+			}
 
-        return roomWithPlayers
-    }
+			this.loadedRooms.push(roomWithPlayers)
+		}
 
-    public removePlayer(socketId: string, roomId: string): boolean{
-        const room = this.findRoom(roomId)
+		return roomWithPlayers
+	}
 
-        if(room) {
-            let playerIndex = room.players.findIndex(player => player.socketId === socketId)
-            if (playerIndex){
-                room.players.splice(playerIndex, 1)
-                return true
-            }
-        }
+	public removePlayer(socketId: string, roomId: string): boolean{
+		const room = this.findRoom(roomId)
 
-        return false
-    }
+		if(room) {
+			let playerIndex = room.players.findIndex(player => player.socketId === socketId)
+			if (playerIndex){
+				room.players.splice(playerIndex, 1)
+				return true
+			}
+		}
 
-    public addPlayer(room: RoomWithPlayers, playerInfo: PlayerInfo): boolean {
-        let roomWithPlayers: RoomWithPlayers = this.findRoom(room.roomData.id)
+		return false
+	}
 
-        if(!roomWithPlayers) {
-            return false
-        }
+	public addPlayer(room: RoomWithPlayers, playerInfo: PlayerInfo): boolean {
+		let roomWithPlayers: RoomWithPlayers = this.findRoom(room.roomData.id)
 
-        roomWithPlayers.players.push(playerInfo)
-        return true
-    }
+		if(!roomWithPlayers) {
+			return false
+		}
 
-    public addChat(socketId: string, roomId: string): boolean {
-        let room: RoomWithPlayers = this.findRoom(roomId)
+		roomWithPlayers.players.push(playerInfo)
+		return true
+	}
 
-        if(!room) {
-            return false
-        } else {
-            console.log('Chat event fired')
-        }
+	public addChat(socketId: string, roomId: string): boolean {
+		let room: RoomWithPlayers = this.findRoom(roomId)
 
-        return true
-    }
+		if(!room) {
+			return false
+		} else {
+			console.log('Chat event fired')
+		}
 
-    private findRoom(id: string): RoomWithPlayers {
-        return this.loadedRooms.find((room: RoomWithPlayers) => room.roomData.id === id)
-    }
+		return true
+	}
+
+	private findRoom(id: string): RoomWithPlayers {
+		return this.loadedRooms.length > 0 ? this.loadedRooms.find((room: RoomWithPlayers) => room.roomData.id === id) : null
+	}
 
 }

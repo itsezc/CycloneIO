@@ -1,6 +1,6 @@
-import Room from '../rooms/room'
+import Room from '../rooms/Room'
 import RoomObjectDepth from '../../common/enums/rooms/objects/depth';
-import Vector from '../../common/types/rooms/vector';
+import Vector from '../../common/types/client/rooms/vector';
 
 export default interface IGameObject {
 	create(): void

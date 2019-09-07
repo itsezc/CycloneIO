@@ -1,4 +1,4 @@
-import Room from '../rooms/room'
+import Room from '../rooms/Room'
 import FurnitureData from './data'
 
 export interface IData
@@ -84,7 +84,7 @@ export enum IFurnitureType {
 
 export default class Furniture
 {
-	private data: IData
+	public data: IData
 	public scene: Room
 	
 	public animation!: number

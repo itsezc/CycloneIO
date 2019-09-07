@@ -1,6 +1,6 @@
 // import SVG from '@svgdotjs/svg.js'
 
-// export default class Tile
+// export default class TileGenerator
 // {
 // 	private readonly _thickness: number
 // 	private readonly _leftBorder: boolean
@@ -8,7 +8,7 @@
 
 // 	public value: String
 
-// 	private instance!: Tile
+// 	private instance!: TileGenerator
 
 // 	constructor(thickness: number, leftBorder: boolean, bottomBorder: boolean) 
 // 	{

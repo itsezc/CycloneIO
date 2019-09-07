@@ -9,7 +9,7 @@ module.exports = (env, argv) => {
 
         entry: {
             ui: './source/app.tsx',
-            client: '../../client/games/game.ts'
+            client: '../../client/games/HabboEngine.ts'
         },
 
         resolve: {
