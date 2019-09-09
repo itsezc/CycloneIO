@@ -4,82 +4,66 @@ import RoomScene from '../RoomScene'
 import Directions from '../map/directions/Directions'
 
 export default class StairGenerator extends PIXI.Graphics {
-    private readonly stairThickness: number
+	private readonly room: RoomScene
 
-    constructor(private readonly room: RoomScene) {
-        super()
+	private readonly stairThickness: number
 
-        this.room = room
-        this.stairThickness = this.room.roomData.floorThickness
+	public constructor(room: RoomScene) {
+		super()
 
-        this.generateStairTextures()
-    }
+		this.room = room
+		this.stairThickness = this.room.roomData.floorThickness
 
-    private generateStairTextures() {
-        const scaleMode = PIXI.SCALE_MODES.NEAREST
-        const resolution = 1
+		this.generateStairTextures()
+	}
 
-        for (let dir = 0; dir < 5; dir++) {
-            let direction: number
+	private generateStairTextures() {
+		const scaleMode = PIXI.SCALE_MODES.NEAREST
+		const resolution = 1
 
-            switch (dir) {
-                case 0:
-                    direction = Directions.EAST
-                    break
+		const possibleDirections = [Directions.EAST, Directions.SOUTH_EAST, Directions.SOUTH, Directions.SOUTH_WEST, Directions.WEST]
 
-                case 1:
-                    direction = Directions.SOUTH_EAST
-                    break
+		Directions.forEach((direction): void => {
+			if (!possibleDirections.includes(direction)) {
+				return
+			}
 
-                case 2:
-                    direction = Directions.SOUTH
-                    break
+			this.generateSurface(scaleMode, resolution, direction)
+			this.clear()
+		})
+	}
 
-                case 3:
-                    direction = Directions.SOUTH_WEST
-                    break
+	private generateSurface(scaleMode: PIXI.SCALE_MODES, resolution: number, direction: Directions) {
+		this.drawSurface(direction)
 
-                case 4:
-                    direction = Directions.WEST
-                    break
-            }
+		const texture = this.generateCanvasTexture(scaleMode, resolution)
 
-            this.generateSurface(scaleMode, resolution, direction)
-            this.clear()
-        }
-    }
+		PIXI.Texture.addToCache(texture, `stair_${direction}`)
+	}
 
-    private generateSurface(scaleMode: PIXI.SCALE_MODES, resolution: number, direction: Directions) {
-        this.drawSurface(direction)
+	private drawSurface(direction: Directions) {
+		let points: number[],
+			color = 0x989865,
+			strokeColor = 0x8e8e5e
 
-        const texture = this.generateCanvasTexture(scaleMode, resolution)
+		switch (direction) {
+			case Directions.EAST:
+				break
+		}
 
-        PIXI.Texture.addToCache(texture, `stair_${direction}`)
-    }
+		this.beginFill(color)
+		this.lineStyle(1, strokeColor)
+	}
 
-    private drawSurface(direction: Directions) {
-        let points: number[],
-            color = 0x989865,
-            strokeColor = 0x8e8e5e
+	private drawPoints(points: number[], strokePoints: { x: number, y: number }[]) {
+		this.drawPolygon(points)
 
-        switch (direction) {
-            case Directions.EAST:
-                break
-        }
-
-        this.beginFill(color)
-        this.lineStyle(1, strokeColor)
-    }
-
-    private drawPoints(points: number[], strokePoints: { x: number, y: number }[]) {
-        this.drawPolygon(points)
-
-        strokePoints.forEach((point, index) => {
-            if (index === 0) {
-                this.moveTo(point.x, point.y)
-            } else {
-                this.lineTo(point.x, point.y)
-            }
-        })
-    }
+		strokePoints.forEach((point, index) => {
+			if (index === 0) {
+				this.moveTo(point.x, point.y)
+			} else {
+				this.lineTo(point.x, point.y)
+			}
+		})
+	}
 }

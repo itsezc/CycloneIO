@@ -51,6 +51,8 @@ export default class Habbo {
 		this.viewport = new Viewport()
 		this.application = new PIXI.Application(config)
 
+		console.log(this.application)
+
 		this.application.stage.addChild(this.viewport)
 
 		this.viewport.drag({
