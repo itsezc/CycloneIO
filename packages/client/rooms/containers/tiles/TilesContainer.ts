@@ -1,16 +1,27 @@
 import * as PIXI from 'pixi.js-legacy'
 
 import RoomScene from '../../RoomScene'
+
 import Tile from '../../tiles/Tile'
+import Stair from '../../stairs/Stair'
 import HoverTile from '../../tiles/HoverTile'
+
 import TileGenerator from '../../tiles/TileGenerator'
-import {HeightMapPosition} from '../../map/HeightMap'
+import StairGenerator from '../../stairs/StairGenerator'
+
+import { HeightMapPosition } from '../../map/HeightMap'
+
 import Habbo from '../../../Habbo'
 
 export default class TilesContainer extends PIXI.Container {
 	private readonly room: RoomScene
+
 	private readonly tileGenerator: TileGenerator
+	private readonly stairGenerator: StairGenerator
+
 	private readonly tiles: Tile[]
+	private readonly stairs: Stair[]
+
 	private readonly hoverTile: HoverTile
 
 	private readonly debugTextCoords: PIXI.Text[]
@@ -21,6 +32,7 @@ export default class TilesContainer extends PIXI.Container {
 		this.room = room
 
 		this.tileGenerator = new TileGenerator(room)
+		this.stairGenerator = new StairGenerator(room)
 
 		this.tiles = this.getTilesFromMap()
 
@@ -43,7 +55,18 @@ export default class TilesContainer extends PIXI.Container {
 		const tiles: Tile[] = []
 
 		for (const mapTile of this.room.map.tilePositions) {
-			const tile = new Tile(this.room, mapTile)
+			let tile
+
+			if (!this.room.map.isValidStairPosition(mapTile)) {
+				tile = new Tile(this.room, mapTile)
+			}
+
+			else {
+				tile = new Stair(this.room, mapTile)
+			}
+
+			console.log(this.room.map.isValidStairPosition(mapTile), mapTile)
+
 			this.setTileEvents(tile)
 
 			tiles.push(tile)

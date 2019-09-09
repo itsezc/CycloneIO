@@ -1,16 +1,17 @@
-import {inject, injectable} from 'inversify'
+import { inject, injectable } from 'inversify'
 import * as PIXI from 'pixi.js-legacy'
-import {Viewport} from 'pixi-viewport'
+import { Viewport } from 'pixi-viewport'
 
 import ISocketManager from './communication/ISocketManager'
 import IRoomManager from './rooms/IRoomManager'
 import ICullManager from './rooms/cull/ICullManager'
 
 import RoomScene from './rooms/RoomScene'
+import RoomData from './rooms/data/RoomData'
 
 @injectable()
 export default class Habbo {
-	public static readonly DEBUG = false
+	public static readonly DEBUG = true
 
 	public application: PIXI.Application
 	public viewport: Viewport
@@ -61,6 +62,8 @@ export default class Habbo {
 
 		this.resizeEvents()
 
+		this.addDefaultRoom()
+
 		parentElement.appendChild(this.application.view)
 	}
 
@@ -70,6 +73,36 @@ export default class Habbo {
 
 			this.cullManager.handleMove()
 		}
+	}
+
+	private addDefaultRoom() {
+		let data: RoomData = {
+			allowPets: false,
+			allowPetsEating: false,
+			category: null,
+			currentUsers: 1,
+			description: null,
+			floorThickness: 7,
+			hideWalls: false,
+			hideWired: false,
+			id: '09ASAS9USIdsdDUdsdBXXBb29UWa',
+			map: {
+				room: [
+					'010000',
+					'000000',
+					'000000',
+					'000000'
+				]
+			},
+			maxUsers: 25,
+			name: 'Room #1',
+			type: 'Roleplay',
+			wallHeight: 3,
+			wallThickness: 7
+		}
+
+		let room = this.roomManager.createRoom(data)
+		this.roomManager.setRoom(room)
 	}
 
 	public loadRoom(room: RoomScene): void {

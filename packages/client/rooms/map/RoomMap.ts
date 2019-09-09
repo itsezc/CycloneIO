@@ -1,5 +1,6 @@
 import HeightMap, { HeightMapPosition } from './HeightMap'
 import DIRECTION_OFFSETS from './directions/DIRECTION_OFFSETS'
+import Directions from './directions/Directions'
 
 export default class RoomMap {
 	private rows: number
@@ -23,7 +24,7 @@ export default class RoomMap {
 	}
 
 	private getColumnLength(map: string[]): number {
-		const largestColumn =  map.reduce((a, b): string => a.length > b.length ? a : b)
+		const largestColumn = map.reduce((a, b): string => a.length > b.length ? a : b)
 
 		return largestColumn.length
 	}
@@ -78,7 +79,7 @@ export default class RoomMap {
 
 		if (!tilePosition) return []
 
-		for(const directionOffset of DIRECTION_OFFSETS) {
+		for (const directionOffset of DIRECTION_OFFSETS) {
 			const tileAround = this.getTilePositionAt(x + directionOffset.x, y + directionOffset.y)
 
 			tilePositions.push(tileAround)
@@ -91,9 +92,19 @@ export default class RoomMap {
 		return this.tilePositions.filter((p): boolean => this.isValidWallPosition(p))
 	}
 
+	public getStairPositions(): HeightMapPosition[] {
+		return this.tilePositions.filter((p): boolean => this.isValidStairPosition(p))
+	}
+
 	public isValidWallPosition(position: HeightMapPosition): boolean {
 		return position.x <= this.maxInXAxis.x && !this.getTilePositionAt(position.x, position.y - 1)
 			|| position.y <= this.maxInYAxis.y && !this.getTilePositionAt(position.x - 1, position.y)
+	}
+
+	public isValidStairPosition(position: HeightMapPosition): boolean {
+		const tilesAround = this.getTilePositionsAround(position.x, position.y)
+
+		return tilesAround.some(tileAround => { return tileAround && tileAround.height === position.height + 1 })
 	}
 
 	private get maxInXAxis(): HeightMapPosition {

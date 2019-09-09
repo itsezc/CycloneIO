@@ -14,8 +14,8 @@ export default class Tile extends PIXI.Sprite {
 
 	public readonly heightMapPosition: HeightMapPosition
 
-	private readonly room: RoomScene
-	private readonly floorThickness: number
+	protected readonly room: RoomScene
+	protected floorThickness: number
 
 	public constructor(room: RoomScene, heightMapPosition: HeightMapPosition) {
 		super(undefined)

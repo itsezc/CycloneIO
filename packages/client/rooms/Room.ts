@@ -31,13 +31,15 @@ export default class Room extends RoomScene {
 		this.id = roomData.id
 		this.roomData = roomData
 
-		this.map = new RoomMap([
-			'xxxxxxxxxx0x',
-			'xxxxxxxxx00x',
-			'xx0000000000',
-			'x00000000000',
-			'000000000000',
-		])
+		this.map = new RoomMap(roomData.map.room)
+
+		// new RoomMap([
+		// 	'xxxxxxxxxx0x',
+		// 	'xxxxxxxxx00x',
+		// 	'xx0000000000',
+		// 	'x00000000000',
+		// 	'000000000000',
+		// ])
 
 		// TODO: Preloader
 
@@ -61,7 +63,7 @@ export default class Room extends RoomScene {
 		const doorTile = this.roomContainer.tilesContainer.getTileAt(0, 0)
 
 		if (doorTile) {
-			// this.game.viewport.follow(doorTile)
+			this.game.viewport.moveCenter(doorTile.position)
 		}
 	}
 }
