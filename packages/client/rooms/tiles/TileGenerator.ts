@@ -3,14 +3,22 @@ import * as PIXI from 'pixi.js-legacy'
 import RoomScene from '../RoomScene'
 import Tile from './Tile'
 
+import HabboContainer from '../../injectors/HabboContainer'
+import Habbo from '../../Habbo'
+
 export default class TileGenerator extends PIXI.Graphics {
 	private readonly room: RoomScene
+	private readonly renderer: PIXI.Renderer | PIXI.CanvasRenderer
 	private readonly floorThickness: number
 
 	public constructor(room: RoomScene) {
 		super()
 
 		this.room = room
+
+		const game = HabboContainer.get(Habbo)
+
+		this.renderer = game.renderer
 		this.floorThickness = room.roomData.floorThickness
 
 		this.generateTileTextures()
@@ -28,7 +36,7 @@ export default class TileGenerator extends PIXI.Graphics {
 	}
 
 	private generateTileTextures(): void {
-		const scaleMode = PIXI.SCALE_MODES.NEAREST
+		const scaleMode = PIXI.settings.SCALE_MODE
 		const resolution = 1
 
 		this.generateSurface(scaleMode, resolution)
@@ -41,6 +49,7 @@ export default class TileGenerator extends PIXI.Graphics {
 		this.clear()
 
 		this.generateSurfaceEastSouth(scaleMode, resolution)
+		this.clear()
 	}
 
 	private drawPoints(points: number[], strokePoints: { x: number, y: number }[]): void {
@@ -63,7 +72,7 @@ export default class TileGenerator extends PIXI.Graphics {
 		]
 
 		this.beginFill(0x989865)
-		this.lineStyle(1, 0x8e8e5e)
+		this.lineStyle(0.5, 0x8e8e5e)
 
 		this.drawPoints(TileGenerator.SURFACE_POINTS, strokePoints)
 	}
@@ -80,7 +89,7 @@ export default class TileGenerator extends PIXI.Graphics {
 		]]
 
 		this.beginFill(0x838357)
-		this.lineStyle(1, 0x7a7a51)
+		this.lineStyle(0.5, 0x7a7a51)
 
 		this.drawPoints(points, strokePoints)
 	}
@@ -97,7 +106,7 @@ export default class TileGenerator extends PIXI.Graphics {
 		]]
 
 		this.beginFill(0x6f6f49)
-		this.lineStyle(1, 0x676744)
+		this.lineStyle(0.5, 0x676744)
 
 		this.drawPoints(points, strokePoints)
 	}
@@ -105,7 +114,9 @@ export default class TileGenerator extends PIXI.Graphics {
 	private generateSurface(scaleMode: PIXI.SCALE_MODES, resolution: number): void {
 		this.drawSurface()
 
-		const texture = this.generateCanvasTexture(scaleMode, resolution)
+		const texture = this.renderer.generateTexture(this, scaleMode, resolution)
+
+		//const texture = this.generateCanvasTexture(scaleMode, resolution)
 
 		PIXI.Texture.addToCache(texture, 'tile')
 	}
@@ -114,7 +125,9 @@ export default class TileGenerator extends PIXI.Graphics {
 		this.drawSurface()
 		this.drawRightBorder()
 
-		const texture = this.generateCanvasTexture(scaleMode, resolution)
+		//const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		const texture = this.renderer.generateTexture(this, scaleMode, resolution)
 
 		PIXI.Texture.addToCache(texture, 'tile_e')
 	}
@@ -123,7 +136,9 @@ export default class TileGenerator extends PIXI.Graphics {
 		this.drawSurface()
 		this.drawLeftBorder()
 
-		const texture = this.generateCanvasTexture(scaleMode, resolution)
+		//const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		const texture = this.renderer.generateTexture(this, scaleMode, resolution)
 
 		PIXI.Texture.addToCache(texture, 'tile_s')
 	}
@@ -133,7 +148,9 @@ export default class TileGenerator extends PIXI.Graphics {
 		this.drawRightBorder()
 		this.drawLeftBorder()
 
-		const texture = this.generateCanvasTexture(scaleMode, resolution)
+		//const texture = this.generateCanvasTexture(scaleMode, resolution)
+
+		const texture = this.renderer.generateTexture(this, scaleMode, resolution)
 
 		PIXI.Texture.addToCache(texture, 'tile_es')
 	}

@@ -92,10 +92,6 @@ export default class RoomMap {
 		return this.tilePositions.filter((p): boolean => this.isValidWallPosition(p))
 	}
 
-	public getStairPositions(): HeightMapPosition[] {
-		return this.tilePositions.filter((p): boolean => this.isValidStairPosition(p))
-	}
-
 	public isValidWallPosition(position: HeightMapPosition): boolean {
 		return position.x <= this.maxInXAxis.x && !this.getTilePositionAt(position.x, position.y - 1)
 			|| position.y <= this.maxInYAxis.y && !this.getTilePositionAt(position.x - 1, position.y)

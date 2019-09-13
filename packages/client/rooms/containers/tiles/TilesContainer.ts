@@ -20,8 +20,6 @@ export default class TilesContainer extends PIXI.Container {
 	private readonly stairGenerator: StairGenerator
 
 	private readonly tiles: Tile[]
-	private readonly stairs: Stair[]
-
 	private readonly hoverTile: HoverTile
 
 	private readonly debugTextCoords: PIXI.Text[]
@@ -49,6 +47,8 @@ export default class TilesContainer extends PIXI.Container {
 
 			this.addChild(...this.debugTextCoords)
 		}
+
+		this.sortChildren()
 	}
 
 	private getTilesFromMap(): Tile[] {
@@ -58,14 +58,10 @@ export default class TilesContainer extends PIXI.Container {
 			let tile
 
 			if (!this.room.map.isValidStairPosition(mapTile)) {
-				tile = new Tile(this.room, mapTile)
+				tile = new Tile(this.room, mapTile).setTileTexture()
+			} else {
+				tile = new Stair(this.room, mapTile).setStairTexture()
 			}
-
-			else {
-				tile = new Stair(this.room, mapTile)
-			}
-
-			console.log(this.room.map.isValidStairPosition(mapTile), mapTile)
 
 			this.setTileEvents(tile)
 
@@ -84,7 +80,7 @@ export default class TilesContainer extends PIXI.Container {
 
 		for (const tile of this.tiles) {
 			const screenX = TilesContainer.getScreenX(tile.heightMapPosition)
-			const screenY = TilesContainer.getScreenY(tile.heightMapPosition) - Tile.HEIGHT * tile.heightMapPosition.height - this.room.roomData.floorThickness
+			const screenY = TilesContainer.getScreenY(tile.heightMapPosition) - this.room.roomData.floorThickness
 
 			const text = new PIXI.Text(
 				`(${tile.heightMapPosition.x},${tile.heightMapPosition.y})`,
@@ -95,6 +91,7 @@ export default class TilesContainer extends PIXI.Container {
 				}
 			)
 
+			text.zIndex = TilesContainer.getScreenIndex(tile.heightMapPosition)
 			text.position.set(screenX, screenY)
 			text.anchor.set(-0.5, -1.5)
 
@@ -111,7 +108,10 @@ export default class TilesContainer extends PIXI.Container {
 
 	private onTileHover(tile: Tile): void {
 		this.hoverTile.visible = true
+		this.hoverTile.zIndex = TilesContainer.getScreenIndex(tile.heightMapPosition) + 1
 		this.hoverTile.setHoverTilePosition(tile.heightMapPosition)
+
+		this.sortChildren()
 	}
 
 	private onTileOut(): void {
@@ -123,6 +123,10 @@ export default class TilesContainer extends PIXI.Container {
 	}
 
 	public static getScreenY(heightMapPosition: HeightMapPosition): number {
-		return (heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 - Tile.HEIGHT_VALUE * heightMapPosition.height
+		return (heightMapPosition.x * Tile.HEIGHT + heightMapPosition.y * Tile.HEIGHT) / 2 - Tile.HEIGHT * heightMapPosition.height
+	}
+
+	public static getScreenIndex(heightMapPosition: HeightMapPosition): number {
+		return heightMapPosition.x + heightMapPosition.y + heightMapPosition.height
 	}
 }

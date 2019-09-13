@@ -46,12 +46,11 @@ export default class Habbo {
 			resizeTo: window
 		}
 
+		PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.NEAREST
 		PIXI.settings.ROUND_PIXELS = true
 
 		this.viewport = new Viewport()
 		this.application = new PIXI.Application(config)
-
-		console.log(this.application)
 
 		this.application.stage.addChild(this.viewport)
 
@@ -59,6 +58,8 @@ export default class Habbo {
 			wheel: false,
 			mouseButtons: 'left'
 		})
+
+		this.viewport.setZoom(6)
 
 		this.cullManager.setViewport(this.viewport)
 
@@ -90,10 +91,8 @@ export default class Habbo {
 			id: '09ASAS9USIdsdDUdsdBXXBb29UWa',
 			map: {
 				room: [
-					'010000',
-					'000000',
-					'000000',
-					'000000'
+					'x0',
+					'1'
 				]
 			},
 			maxUsers: 25,
@@ -113,5 +112,9 @@ export default class Habbo {
 
 	public get loader(): PIXI.Loader {
 		return this.application.loader
+	}
+
+	public get renderer(): PIXI.Renderer | PIXI.CanvasRenderer {
+		return this.application.renderer
 	}
 }

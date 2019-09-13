@@ -60,7 +60,7 @@ export default class Room extends RoomScene {
 	}
 
 	private centerCamera() {
-		const doorTile = this.roomContainer.tilesContainer.getTileAt(0, 0)
+		const doorTile = this.roomContainer.tilesContainer.getTileAt(1, 0)
 
 		if (doorTile) {
 			this.game.viewport.moveCenter(doorTile.position)
