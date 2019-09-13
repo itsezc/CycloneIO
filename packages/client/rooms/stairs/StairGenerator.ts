@@ -58,33 +58,22 @@ export default class StairGenerator extends PIXI.Graphics {
 		this.lineStyle(0.5, strokeColor)
 
 		if (direction === Directions.EAST) {
-			// let firstSurface = [
-			// 	Stair.WIDTH / 2, Stair.HEIGHT / 2,
-			// 	0, Stair.HEIGHT,
-			// 	0 - Stair.HEIGHT / 4, Stair.HEIGHT - Stair.HEIGHT / 8,
-			// 	Stair.WIDTH / 2 - Stair.HEIGHT / 4, Stair.HEIGHT / 2 - Stair.HEIGHT / 8,
-			// 	0, 0,
-			// 	0 - Stair.HEIGHT / 4, 0 + Stair.HEIGHT / 8,
-			// 	Stair.WIDTH / 2 - Stair.HEIGHT / 4, Stair.HEIGHT / 2 + Stair.HEIGHT / 8,
-			// ]
-			for (let surface = 0; surface < 4; surface++) {
-				let points: number[] = [
-					// Stair.WIDTH / 2 - surface * Stair.HEIGHT / 4, Stair.HEIGHT / 2 - surface * Stair.HEIGHT / 8,
-					// 0 - surface * Stair.HEIGHT / 4, Stair.HEIGHT - surface * Stair.HEIGHT / 8, ,
-					// 0 - Stair.HEIGHT / 4 - surface * Stair.HEIGHT / 4, Stair.HEIGHT - Stair.HEIGHT / 8 - surface * Stair.HEIGHT / 8,
-					// Stair.WIDTH / 2 - Stair.HEIGHT / 4 - surface * Stair.HEIGHT / 4, Stair.HEIGHT / 2 - Stair.HEIGHT / 8 - surface * Stair.HEIGHT / 8,
-					// 0 - surface * Stair.HEIGHT / 4, 0 - surface * Stair.HEIGHT / 8, ,
-					// 0 - Stair.HEIGHT / 4 - surface * Stair.HEIGHT / 4, 0 + Stair.HEIGHT / 8 - surface * Stair.HEIGHT / 8,
-					// Stair.WIDTH / 2 - Stair.HEIGHT / 4 - surface * Stair.HEIGHT / 4, Stair.HEIGHT / 2 + Stair.HEIGHT / 8 - surface * Stair.HEIGHT / 8,
-				]
+            let size = {width : Stair.WIDTH,height : Stair.HEIGHT}
+            let margin = { x: 0, y : 0}
+            for(let i = 0; i < 4; i += 1){
+                let points = [
+                    margin.x, margin.y,
+                    margin.x + size.width / 2, margin.y + 0 + size.height / 2 ,
+                    margin.x, size.height + margin.y ,
+                    margin.x - size.width / 2, margin.y + size.height / 2 
+                ]
 
-				if (points) {
-					this.drawPoints(points, undefined)
-				}
-
-
-
-			}
+                margin.x -= size.width / 8
+                margin.y -= size.width / 8
+                size.width -= (Stair.WIDTH / 4)
+                size.height -= (Stair.HEIGHT / 4)
+                this.drawPolygon(points)
+            }
 		}
 		/*points = [
 			Stair.WIDTH / 3, Stair.HEIGHT / 2,
