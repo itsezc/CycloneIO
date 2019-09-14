@@ -6,10 +6,13 @@ export default class Draggable extends React.PureComponent {
     constructor(props){
         super(props);
 
+        let x = this.props.defaultPos ? this.props.defaultPos[0] : 300;
+        let y = this.props.defaultPos ? this.props.defaultPos[1] : 200;
+
         this.state = {
             isDragging: false,
-            x: 300,
-            y: 200,
+            x,
+            y,
         }
     }
 

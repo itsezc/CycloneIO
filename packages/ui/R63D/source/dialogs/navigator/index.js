@@ -89,7 +89,7 @@ export default class Navigator extends React.PureComponent {
                         <input className="input" placeholder="filter rooms by..." />
                     </div>
 
-                    { /* <Scrollbar className="navigator-content">
+                    <Scrollbar className="navigator-content">
 
                         <NavigatorGroup title="Most Popular Rooms" />
                         <NavigatorGroup title="Recommended For You" />
@@ -97,15 +97,8 @@ export default class Navigator extends React.PureComponent {
                         <NavigatorGroup title="Party" />
                         <NavigatorGroup title="Chat and discussion" />
                         <NavigatorGroup title="Habbo Games" />
-                    </Scrollbar> */ }
+                    </Scrollbar>
 
-                    <div className="navigator-test-content">
-                        a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a
-                        a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a
-                        a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a
-                        a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a<br/>a
-                        
-                    </div>
 
                     <div className="navigator-actions">
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 export default class Speedway extends Component {
-	render() {
+	public render() {
 		return(
 			<div className='gamecontainer'>
 
@@ -44,7 +44,7 @@ export default class Speedway extends Component {
 							</div>								 */}
 						</div>
 						<div className='last_winner'>
-						<h2 className='title'>Previous Winner</h2>
+							<h2 className='title'>Previous Winner</h2>
 						</div>
 						<div className='lucky_winners'>
 							<h2 className='title'>Lucky Winners</h2>
@@ -56,15 +56,77 @@ export default class Speedway extends Component {
 				<div className='game__container__leaderboards'>
 
 					<fieldset>
-							<legend>YOUR Speedway ACHIEVEMENTS</legend>
-						
+						<legend>YOUR Speedway ACHIEVEMENTS</legend>
+						<div className='leaderboards__achievement'>
+							<img 
+								className='leaderboards__badge'
+								src='https://vignette.wikia.nocookie.net/habbo/images/6/61/ACH_BaseJumpMissile20.gif/revision/latest?cb=20120908002715&path-prefix=en'
+							/>
+							<h3 className='leaderboards__achievement__name'>Achievement Name Placeholder</h3>
+							<p>Achievement description goes, did you know this is actually two lines long?</p>
+						</div>
+						<div className='leaderboards__achievement'>
+							<img 
+								className='leaderboards__badge'
+								src='https://vignette.wikia.nocookie.net/habbo/images/6/61/ACH_BaseJumpMissile20.gif/revision/latest?cb=20120908002715&path-prefix=en'
+							/>
+							<h3 className='leaderboards__achievement__name'>Achievement Name Placeholder</h3>
+							<p>Achievement description goes, did you know this is actually two lines long?</p>
+						</div>
+						<div className='leaderboards__achievement'>
+							<img 
+								className='leaderboards__badge'
+								src='https://vignette.wikia.nocookie.net/habbo/images/6/61/ACH_BaseJumpMissile20.gif/revision/latest?cb=20120908002715&path-prefix=en'
+							/>
+							<h3 className='leaderboards__achievement__name'>Achievement Name Placeholder</h3>
+							<p>Achievement description goes, did you know this is actually two lines long?</p>
+						</div>
+						<div className='leaderboards__achievement'>
+							<img 
+								className='leaderboards__badge'
+								src='https://vignette.wikia.nocookie.net/habbo/images/6/61/ACH_BaseJumpMissile20.gif/revision/latest?cb=20120908002715&path-prefix=en'
+							/>
+							<h3 className='leaderboards__achievement__name'>Achievement Name Placeholder</h3>
+							<p>Achievement description goes, did you know this is actually two lines long?</p>
+						</div>
+						<div className='leaderboards__achievement'>
+							<img 
+								className='leaderboards__badge'
+								src='https://vignette.wikia.nocookie.net/habbo/images/6/61/ACH_BaseJumpMissile20.gif/revision/latest?cb=20120908002715&path-prefix=en'
+							/>
+							<h3 className='leaderboards__achievement__name'>Achievement Name Placeholder</h3>
+							<p>Achievement description goes, did you know this is actually two lines long?</p>
+						</div>
 					</fieldset>
 
-					<fieldset>
-							<legend>FRIEND RANKING</legend>
-							<div>
-								
+					<fieldset className='rankings'>
+						<legend>FRIEND RANKING</legend>
+						<div>
+							<div className='leaderboards__ranking'>
+								<img 
+									className='leaderboards__player'
+									src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m'
+								/>
+								<h3 className='leaderboards__ranking__name'>EZ-C</h3>
+								<p>0 points</p> 
 							</div>
+							<div className='leaderboards__ranking'>
+								<img 
+									className='leaderboards__player'
+									src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m'
+								/>
+								<h3 className='leaderboards__ranking__name'>EZ-C</h3>
+								<p>0 points</p> 
+							</div>
+							<div className='leaderboards__ranking'>
+								<img 
+									className='leaderboards__player'
+									src='https://www.habbo.com/habbo-imaging/avatarimage?hb=image&user=EZ-C&headonly=1&direction=2&head_direction=2&action=&gesture=&size=m'
+								/>
+								<h3 className='leaderboards__ranking__name'>EZ-C</h3>
+								<p>0 points</p> 
+							</div>
+						</div>
 					</fieldset>
 
 				</div>

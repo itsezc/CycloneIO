@@ -6,6 +6,7 @@ import ProfilePanel from '../../modules/profile-panel';
 import WebAction from '../../modules/web-action';
 
 import Navigator from '../../dialogs/navigator';
+import Inventory from '../../dialogs/inventory';
 
 class Interface extends React.Component {
     
@@ -19,6 +20,7 @@ class Interface extends React.Component {
                 {this.props.children}
 
                 <Navigator />
+                <Inventory />
 
                 <WebAction isRoom={isRoom}/>
                 <ProfilePanel isRoom={isRoom}/>

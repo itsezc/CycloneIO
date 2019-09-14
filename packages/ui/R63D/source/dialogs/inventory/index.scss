@@ -1,0 +1,16 @@
+.dialog.inventory {
+    width: 490px;
+    height: 342px;
+
+    .inventory-content {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        .inventory-content-render {
+            margin-left: 10px;
+            min-width: 170px;
+        }
+    }
+}
