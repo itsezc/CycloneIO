@@ -34,12 +34,12 @@ class App extends Component<any, any> {
 
 		this.Socket = SocketIO(this.server)
 
-		this.Socket.on('connect', () => {
+		this.Socket.on('connect', (): void => {
 			console.log(`Connected to server on ${this.server}`)
 		})
 	}
 
-	public render() {
+	public render(): JSX.Element {
 		return (
 			<ApolloProvider 
 				client={API}
