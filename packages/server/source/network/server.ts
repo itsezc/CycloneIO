@@ -91,8 +91,7 @@ export default class Server {
 			this.emulator = await createEmulatorServer(this.config)
 			this.socket = SocketIO(this.emulator.listener)
 
-			await this.socket
-			await this.socket.on('connection', (socket) => {
+			this.socket.on('connection', (socket) => {
 				this.loadSocketEvents(socket, this.socket)
 			})
 
@@ -117,16 +116,16 @@ export default class Server {
 		}
 	}
 
-	private loadSocketEvents(socket: CycloneSocket, socketServer: SocketIO.Server) {
+	private loadSocketEvents(socket: SocketIO.Socket, socketServer: SocketIO.Server) {
 
 		//Event loader
 		IO.readdirSync(path.join(__dirname, 'socket/events')).forEach((name) => {
 
-			socket.cyclone = {
-				username: 'Elizabeth',
-				figure: 'fa-201407-96.hr-85614122-37.ch-9142006-96-96.hd-787595-2.lg-5629782-96.sh-6298462-96.ha-1026-96.he-3358-71',
-				currentRoom: null
-			}
+			// socket.cyclone = {
+			// 	username: 'Elizabeth',
+			// 	figure: 'fa-201407-96.hr-85614122-37.ch-9142006-96-96.hd-787595-2.lg-5629782-96.sh-6298462-96.ha-1026-96.he-3358-71',
+			// 	currentRoom: null
+			// }
 
 			//socket.on(<filename without extension>, callback)
 			socket.on(/(.+)\.ts/i.exec(name)[1], (data: any) => {

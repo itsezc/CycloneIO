@@ -58,9 +58,9 @@ export default class TilesContainer extends PIXI.Container {
 			let tile
 
 			if (!this.room.map.isValidStairPosition(mapTile)) {
-				tile = new Tile(this.room, mapTile).setTileTexture()
+				tile = new Tile(this.room, mapTile)
 			} else {
-				tile = new Stair(this.room, mapTile).setStairTexture()
+				tile = new Stair(this.room, mapTile)
 			}
 
 			this.setTileEvents(tile)
@@ -80,7 +80,7 @@ export default class TilesContainer extends PIXI.Container {
 
 		for (const tile of this.tiles) {
 			const screenX = TilesContainer.getScreenX(tile.heightMapPosition)
-			const screenY = TilesContainer.getScreenY(tile.heightMapPosition) - this.room.roomData.floorThickness
+			const screenY = TilesContainer.getScreenY(tile.heightMapPosition) - this.room.data.floorThickness
 
 			const text = new PIXI.Text(
 				`(${tile.heightMapPosition.x},${tile.heightMapPosition.y})`,

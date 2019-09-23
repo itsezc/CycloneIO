@@ -4,9 +4,6 @@ import { IClothingGenerator } from '../interfaces'
 
 import { Image } from 'swf-extract'
 
-import Logger from '../logging/logger'
-import { cyanBright, green } from 'cli-color'
-
 import { join } from 'path'
 import { outputFile, outputJSON } from 'fs-extra'
 

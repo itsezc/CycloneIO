@@ -12,7 +12,7 @@ export default class SocketManager implements ISocketManager {
 		this.eventsManager = eventsManager
 
 	}
-	
+
 	public init(socket: SocketIOClient.Socket): void {
 		this.socket = socket
 

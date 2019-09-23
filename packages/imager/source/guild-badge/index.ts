@@ -23,9 +23,9 @@ guildBadge.generate(guildBadgeRessource);
 const badge = GuildBadge.parsing("b06134t09010a4872f64ad6a5743cc3ba72069e03d3a");
 const badgeImage = badge.generate(guildBadgeRessource);
 
-badgeImage.savePng('output_badge.png', 1, (err) => (err) ? console.log(err) : '');
+badgeImage.savePng('output_badge.png', 1, (err: any) => (err) ? console.log(err) : '');
 
-let end = new Date() - start;
+let end = new Date().getTime() - start.getTime();
 let hrend = process.hrtime(hrstart);
 
 console.info('Execution time: %dms', end);

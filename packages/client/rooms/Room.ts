@@ -17,21 +17,21 @@ export default class Room extends RoomScene {
 	private loader: IAssetsManager
 
 	public resources: Partial<Record<string, PIXI.LoaderResource>>
-	public roomData: RoomData
+	public data: RoomData
 	public map: RoomMap
 
 	public constructor(
-		roomData: RoomData,
+		data: RoomData,
 		game: Habbo
 	) {
 		super()
 
 		this.game = game
 
-		this.id = roomData.id
-		this.roomData = roomData
+		this.id = data.id
+		this.data = data
 
-		this.map = new RoomMap(roomData.map.room)
+		this.map = new RoomMap(data.map.room)
 
 		// new RoomMap([
 		// 	'xxxxxxxxxx0x',
@@ -60,7 +60,7 @@ export default class Room extends RoomScene {
 	}
 
 	private centerCamera() {
-		const doorTile = this.roomContainer.tilesContainer.getTileAt(1, 0)
+		const doorTile = this.roomContainer.tilesContainer.getTileAt(0, 0)
 
 		if (doorTile) {
 			this.game.viewport.moveCenter(doorTile.position)

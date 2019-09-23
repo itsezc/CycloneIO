@@ -20,14 +20,14 @@ class App extends Component<any, any> {
 
 	private server: string
 	private readonly Socket: SocketIOClient.Socket
-    
+
 	public constructor(props: any, Socket: SocketIOClient.Socket) {
 		super(props)
 
 		this.state = {
 			roomData: {}
 		};
-		
+
 		this.Socket = Socket;
 
 		this.server = `${props.host}:${props.port}`
@@ -41,25 +41,25 @@ class App extends Component<any, any> {
 
 	public render() {
 		return (
-			<ApolloProvider 
+			<ApolloProvider
 				client={API}
 			>
-				<Provider 
+				<Provider
 					store={Store}
 				>
 					<BrowserRouter>
 						<Switch location={this.props.location}>
 							<Route exact path='/' component={Loading} />
-							<Route 
-								exact 
+							<Route
+								exact
 								path='/inroom'
 								render={(props) => <Room {...props} socket={this.Socket} />}
 							/>
 							<Route exact path='/client' component={Client} />
 							<Route exact path='/gamecenter' component={Games} />
-							<Route 
-								exact 
-								path='/hotel' 
+							<Route
+								exact
+								path='/hotel'
 								render={(props) => <Client {...props} socket={this.Socket} />}
 							/>
 						</Switch>
@@ -71,8 +71,8 @@ class App extends Component<any, any> {
 }
 
 ReactDOM.render(
-    
-	<App 
+
+	<App
 		host='localhost'
 		port={8081}
 	/>

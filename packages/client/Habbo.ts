@@ -59,7 +59,7 @@ export default class Habbo {
 			mouseButtons: 'left'
 		})
 
-		this.viewport.setZoom(6)
+		this.viewport.setZoom(5)
 
 		this.cullManager.setViewport(this.viewport)
 
@@ -91,8 +91,8 @@ export default class Habbo {
 			id: '09ASAS9USIdsdDUdsdBXXBb29UWa',
 			map: {
 				room: [
-					'x0',
-					'1'
+					'10',
+					'x'
 				]
 			},
 			maxUsers: 25,
