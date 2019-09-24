@@ -13,7 +13,7 @@ export default class Stair extends Tile {
 		super(room, heightMapPosition)
 
 		this.heightMapPosition = heightMapPosition
-		this.floorThickness = room.roomData.floorThickness
+		this.floorThickness = room.data.floorThickness
 
 		const [x, y] = [
 			TilesContainer.getScreenX(heightMapPosition),
@@ -22,17 +22,17 @@ export default class Stair extends Tile {
 
 		this.position.set(x, y)
 
+		this.setTexture()
+
 	}
 
-	public setStairTexture(): this {
+	protected setTexture(): void {
 		const { x, y } = this.heightMapPosition
 
 		const tilesAround = this.room.map.getTilePositionsAround(x, y)
 
-		const stairKey = 'stair_2'
+		const stairKey = 'stair_4'
 
 		this.texture = PIXI.utils.TextureCache[stairKey]
-
-		return this
 	}
 }

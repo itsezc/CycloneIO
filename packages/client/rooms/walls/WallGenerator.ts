@@ -15,8 +15,8 @@ export default class WallGenerator extends PIXI.Graphics {
 
 		this.room = room
 
-		this.wallHeight = room.roomData.wallHeight
-		this.wallThickness = room.roomData.wallThickness
+		this.wallHeight = room.data.wallHeight
+		this.wallThickness = room.data.wallThickness
 
 		console.log(this.wallHeight, this.wallThickness)
 

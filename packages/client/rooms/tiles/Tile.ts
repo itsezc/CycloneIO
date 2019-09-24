@@ -20,7 +20,7 @@ export default class Tile extends PIXI.Sprite {
 
 		this.room = room
 		this.heightMapPosition = heightMapPosition
-		this.floorThickness = room.roomData.floorThickness
+		this.floorThickness = room.data.floorThickness
 
 		const [x, y] = [
 			TilesContainer.getScreenX(heightMapPosition),
@@ -30,11 +30,13 @@ export default class Tile extends PIXI.Sprite {
 		this.zIndex = TilesContainer.getScreenIndex(heightMapPosition)
 		this.position.set(x, y)
 
+		this.setTexture()
+
 		this.interactive = true
 		this.hitArea = new PIXI.Polygon(TileGenerator.SURFACE_POINTS)
 	}
 
-	public setTileTexture(): this {
+	protected setTexture(): void {
 		const { x, y } = this.heightMapPosition
 
 		const tilesAround = this.room.map.getTilePositionsAround(x, y)
@@ -44,11 +46,9 @@ export default class Tile extends PIXI.Sprite {
 			this.isSouthBorderNeeded(tilesAround)
 		]
 
-		const tileKey = this.getTileTexture(eastBorder, southBorder)
+		const tileKey = this.getTexture(eastBorder, southBorder)
 
 		this.texture = PIXI.utils.TextureCache[tileKey]
-
-		return this
 	}
 
 	protected isEastBorderNeeded(tilesAround: HeightMapPosition[]): boolean {
@@ -61,7 +61,7 @@ export default class Tile extends PIXI.Sprite {
 			|| tilesAround[Directions.SOUTH].height !== this.heightMapPosition.height
 	}
 
-	private getTileTexture(eastBorder: boolean, southBorder: boolean): string {
+	protected getTexture(eastBorder: boolean, southBorder: boolean): string {
 		let key = ''
 
 		if (eastBorder && !southBorder) {

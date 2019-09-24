@@ -19,7 +19,7 @@ export default class TileGenerator extends PIXI.Graphics {
 		const game = HabboContainer.get(Habbo)
 
 		this.renderer = game.renderer
-		this.floorThickness = room.roomData.floorThickness
+		this.floorThickness = room.data.floorThickness
 
 		this.generateTileTextures()
 	}

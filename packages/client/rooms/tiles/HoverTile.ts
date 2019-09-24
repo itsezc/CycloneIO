@@ -15,7 +15,7 @@ export default class HoverTile extends PIXI.Sprite {
 			TilesContainer.getScreenY(heightMapPosition),
 		]
 
-		this.position.set(screenX, screenY - 4)
+		this.position.set(screenX - 1, screenY - 4)
 	}
 
 }
