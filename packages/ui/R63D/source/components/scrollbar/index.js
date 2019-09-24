@@ -132,9 +132,10 @@ export default class Scrollbar extends React.PureComponent {
                     </div>
                 </div>
 
-                <div className="scrollbar" >
+                <div className="scrollbar">
+
                     <button className="scrollbar-button scrollbar-button-increment" onMouseDown={this.scrollToTop}>
-                        b
+                        <i className="icon icon-carret-up"></i>
                     </button>
 
                     <div className="scrollbar-track" ref={(ref) => {this.trackRef = ref}} onMouseDown={this.moveThumbToMouse.bind(this)}>
@@ -144,7 +145,7 @@ export default class Scrollbar extends React.PureComponent {
                     </div>
 
                     <button className="scrollbar-button scrollbar-button-decrement" onMouseDown={this.scrollToBottom}>
-                        a
+                        <i className="icon icon-carret-down"></i>
                     </button>
                 </div>
             </div>
