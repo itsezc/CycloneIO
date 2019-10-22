@@ -14,7 +14,7 @@ export class TileContent extends Container {
         super()
         this.type = type
         this.hasTexture = true
-        this.graphics = new Tile({type : type, position : {x : 0, y : 0}, dimension : {width : 64, height : 32}, room : room, })
+        this.graphics = new Tile({type : type, position : {x : 0, y : 0}, coord : {x : x, y : y}, dimension : {width : 64, height : 32}, room : room, })
     }
 }
 
@@ -35,6 +35,8 @@ export class Tile extends Graphics {
         this.type = data.type
         this.x = this.position.x
         this.y = this.position.y
+        this.room = data.room
+        this.coord = data.coord
         this.POINTS = []
         this.thickness = 8
         this.settings = {
@@ -127,9 +129,10 @@ export class Tile extends Graphics {
                 0, this.dimension.height,
                 -this.dimension.width / 2, this.dimension.height / 2
             ]
-
+            this.lineStyle(0.5, 0x8e8e5e)
             this.beginFill(this.settings.surface)
             this.drawPolygon(this.POINTS)
+            this.drawBorder(this.POINTS)
             this.hitArea = new Polygon(this.POINTS)
         } else if (this.type == 'left' || this.type == 'right') {
             let heightmap = [3, 2, 1, 0]
@@ -254,7 +257,7 @@ export class Tile extends Graphics {
 
         this.on('pointerout', (event:any) => {
             this.clear()
-            this.settings.surface = 0xFF
+            this.settings.surface = 0x989865
             this.draw()
         })
 
