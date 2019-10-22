@@ -1,0 +1,27 @@
+{
+  "name": "penner",
+  "main": "penner.js",
+  "version": "0.1.3",
+  "homepage": "https://github.com/bcherny/penner",
+  "authors": [
+    "Boris Cherny <boris@performancejs.com>"
+  ],
+  "description": "Penner's easing equations, in JavaScript",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "easing",
+    "ease",
+    "transition",
+    "tween",
+    "animation",
+    "css",
+    "effects",
+    "animationframe",
+    "transform"
+  ]
+}
