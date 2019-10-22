@@ -5,157 +5,43 @@ import { Converter } from '../../utils/converter'
 import { isObject } from 'util'
 import { Room } from '../Room'
 
-const tileTexture = {
-    white: {
-        texture: new BaseTexture('floor_texture.png')
-    },
-    red: {
-        texture: new BaseTexture('floor_red.png')
-    }
-}
-
-export class TileTexture {
-    unit: any = []
-    constructor(texture: BaseTexture, split: any) {
-        if (split == 4) {
-            for (let i = 0; i < 2; i += 1) {
-                for (let a = 0; a < 2; a += 1) {
-                    this.unit.push(Sprite.from(new Texture(texture, new Rectangle(a * 32, i * 32, 32, 32))))
-                }
-            }
-        }
-
-    }
-}
-
 export class TileContent extends Container {
     texture: Sprite
     graphics: Tile
     type: any
     hasTexture: boolean
-    isometricMatrix: any = new Matrix(Math.cos(Math.PI * 26.869 / 180), Math.sin(Math.PI * 26.869 / 180), Math.cos(Math.PI * 153.131 / 180), Math.sin(Math.PI * 153.131 / 180))
     constructor(type: any, x: any, y: any, id: any, moodlight: any, room: Room) {
         super()
-
         this.type = type
         this.hasTexture = true
-        this.graphics = new Tile(type, { texture: true, type: "white" }, moodlight, { x: x, y: y }, room)
-
-        let texture = new TileTexture(tileTexture.white.texture, 4)
-        let borderLeftTexture = new Texture(tileTexture.white.texture, new Rectangle(2, 0, 32, 8))
-
-        let image
-        if (x % 2 == 1 && y % 2 == 1) {
-            image = texture.unit[0]
-        } else if (x % 2 == 0 && y % 2 == 1) {
-            image = texture.unit[1]
-        } else if (x % 2 == 0 && y % 2 == 0) {
-            image = texture.unit[2]
-        } else {
-            image = texture.unit[3]
-        }
-        if (this.graphics.type == 'normal_tile') {
-            image.tint = 0xd4d4d4
-
-            image.width = 36
-            image.height = 36
-            this.texture = image
-            if (this.graphics.type == 'normal_tile') {
-                this.addChild(image)
-                image.transform.setFromMatrix(this.isometricMatrix)
-            }
-
-            let borderLeftImage = Sprite.from(borderLeftTexture)
-            borderLeftImage.transform.setFromMatrix(new Matrix(Math.cos(Math.PI * 26.875 / 180), Math.sin(Math.PI * 26.875 / 180), Math.cos(Math.PI * 90 / 180), Math.sin(Math.PI * 90 / 180)))
-            borderLeftImage.x = -this.graphics.tile_data[2]
-            borderLeftImage.width = 36
-            borderLeftImage.height = 8
-            borderLeftImage.y = this.graphics.tile_data[3]
-
-            let borderRightImage = Sprite.from(borderLeftTexture)
-            borderRightImage.transform.setFromMatrix(new Matrix(Math.cos(Math.PI * -26.875 / 180), Math.sin(Math.PI * -26.875 / 180), Math.cos(Math.PI * 90 / 180), Math.sin(Math.PI * 90 / 180)))
-            borderRightImage.x = -this.graphics.tile_data[4]
-            borderRightImage.width = 36
-            borderLeftImage.height = 8
-            borderRightImage.y = this.graphics.tile_data[5]
-            this.addChild(borderRightImage)
-            this.addChild(borderLeftImage)
-
-        }
-
+        this.graphics = new Tile({type : type, position : {x : 0, y : 0}, dimension : {width : 64, height : 32}, room : room, })
     }
 }
 
 export class Tile extends Graphics {
-    dimension: any = {
-        width: 64, height: 32
-    }
-    TILE_POINT: any = [
-        0, 0,
-        this.dimension.width / 2, this.dimension.height / 2,
-        0, this.dimension.height,
-        -this.dimension.width / 2, this.dimension.height / 2
-    ]
-    id: any
-    coord: any
-    thickness: any = 8
-    type: any
-    room: Room
-    tile_data: any
-    settings: any = {
-        surface: 0x989865,
-        right: 0x6f6f49,
-        left: 0x838357,
-        texture: false
-    }
-    constructor(type: any, settings: any, moodlight: any, coord: any, room: any) {
+
+    constructor(data:any) {
         super()
-        this.type = type
-        this.coord = coord
-        this.room = room
+        this.position = data.position
+        this.dimension = data.dimension
+        this.type = data.type
+        this.x = this.position.x
+        this.y = this.position.y
+        this.POINTS = []
+        this.thickness = 8
+        this.settings = {
+            surface: 0x989865,
+            right: 0x6f6f49,
+            left: 0x838357,
+            texture: false
+        }
+        this.interactive = true
         this.draw()
         this.registerEvents()
-
-        if (moodlight.active) {
-            this.tint = moodlight.color
-        }
-
-
     }
 
-    clearl() {
-        this.clear()
-    }
 
-    registerEvents() {
-        this.interactive = true
-        this.on('pointerover', (event: any) => {
-            this.clear()
-            this.draw()
-            this.beginFill(0xFFFFFF)
-            this.drawPolygon(this.TILE_POINT)
-            this.endFill()
-        })
-
-        this.on('pointerout', (event: any) => {
-            this.clear()
-            this.draw()
-        })
-
-        this.on('pointertap', (event: any) => {
-            console.log(this.coord)
-            this.room.drawPath(this.coord)
-        })
-    }
-
-    drawSurface() {
-        this.beginFill(this.settings.surface)
-        this.lineStyle(0.5, 0x8e8e5e)
-        this.drawPolygon(this.TILE_POINT)
-        this.endFill()
-    }
-
-    drawBorder(points: any, center: any = false, reverse: any = false, center2: any = false) {
+    drawBorder(points:any, center:any = false, reverse:any = false, center2:any = false) {
         let borderRight, borderLeft
         if (center == false) {
             borderRight = [
@@ -222,13 +108,22 @@ export class Tile extends Graphics {
             this.drawPolygon(borderLeft)
             this.endFill()
         }
-
-
-
     }
 
-    drawStair(type: any) {
-        if (type == 'left' || type == 'right') {
+
+    drawSurface() {
+        if (this.type == 'normal_tile') {
+            this.POINTS = [
+                0, 0,
+                this.dimension.width / 2, this.dimension.height / 2,
+                0, this.dimension.height,
+                -this.dimension.width / 2, this.dimension.height / 2
+            ]
+
+            this.beginFill(this.settings.surface)
+            this.drawPolygon(this.POINTS)
+            this.hitArea = new Polygon(this.POINTS)
+        } else if (this.type == 'left' || this.type == 'right') {
             let heightmap = [3, 2, 1, 0]
             let cartSurfaceUnit = [
                 0, 0,
@@ -256,20 +151,21 @@ export class Tile extends Graphics {
 
                 this.drawPolygon(nPoint)
                 this.endFill()
-                if (type == 'left') {
+                if (this.type == 'left') {
                     this.drawBorder(nPoint, false, true)
                 } else {
                     this.drawBorder(nPoint)
                 }
-
             }
             this.tile_data = isoSurfaceUnit
+            this.hitArea = new Polygon([0, 0, this.dimension.width / 2, this.dimension.height / 2, 0, this.dimension.height, - this.dimension.width / 2, this.dimension.height / 2])
 
-            if (type == 'left') {
+            if (this.type == 'left') {
                 this.scale.x = -1
             }
-        } else if (type == 'center' || type == 'center-right' || type == 'center-left') {
+        } else if (this.type == 'center' || this.type == 'center-right' || this.type == 'center-left') {
             let components = []
+            let type = this.type
 
             if (type == 'center') {
 
@@ -337,52 +233,31 @@ export class Tile extends Graphics {
             this.tile_data = isometricComponents
 
             return components
-        } else {
-            let heightmap = [3, 2, 1, 0]
-            let cartSurfaceUnit = [
-                0, 0,
-                0, 8,
-                32, 8,
-                32, 0
-            ]
-            let isoSurfaceUnit = []
-            let count = 0
-            for (let i = 0; i < cartSurfaceUnit.length; i += 2) {
-                let isoPoint = Converter.cartesianToIsometric({ x: cartSurfaceUnit[i], y: cartSurfaceUnit[i + 1] })
-                isoSurfaceUnit.push(isoPoint.x)
-                isoSurfaceUnit.push(isoPoint.y)
-            }
-
-            for (let i = 3; i >= 0; i -= 1) {
-                this.beginFill(this.settings.surface)
-                this.lineStyle(0.5, 0x8e8e5e)
-                let nPoint = [
-                    isoSurfaceUnit[0] + (8) * i - 24, isoSurfaceUnit[1] + (8 / 2) * i + 12 - 24,
-                    isoSurfaceUnit[2] + (8) * i - 24, isoSurfaceUnit[3] + (8 / 2) * i + 12 - 24,
-                    isoSurfaceUnit[4] + (8) * i - 24, isoSurfaceUnit[5] + (8 / 2) * i + 12 - 24,
-                    isoSurfaceUnit[6] + (8) * i - 24, isoSurfaceUnit[7] + (8 / 2) * i + 12 - 24
-                ]
-                
-                this.drawPolygon(nPoint)
-                this.drawBorder(nPoint)
-                this.endFill()
-            }
-
-            if (type == 'top-left') {
-                this.scale.x = -1
-            }
         }
     }
 
+    registerEvents() {
+        this.on('pointerover', (event) => {
+            this.clear()
+            this.settings.surface = 0xFFFFFF
+            console.log('Hello')
+            this.draw()
+        })
 
+        this.on('pointerout', (event) => {
+            this.clear()
+            this.settings.surface = 0xFF
+            this.draw()
+        })
+
+        this.on('pointertap', (event) => {
+            console.log(this.x, this.y)
+            this.room.drawPath(this.coord)
+        })
+    }
 
     draw() {
-        if (this.type == 'normal_tile') {
-            this.drawSurface()
-            this.drawBorder(this.TILE_POINT)
-            this.tile_data = this.TILE_POINT
-        } else {
-            this.drawStair(this.type)
-        }
+        this.drawSurface()
     }
+
 }
