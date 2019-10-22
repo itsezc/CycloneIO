@@ -1,4 +1,4 @@
-import { Container, Graphics, Texture, Sprite, Matrix, BaseTexture, Rectangle } from 'pixi.js-legacy'
+import { Container, Graphics, Texture, Sprite, Matrix, BaseTexture, Rectangle, Polygon } from 'pixi.js-legacy'
 
 import { Converter } from '../../utils/converter'
 
@@ -19,7 +19,15 @@ export class TileContent extends Container {
 }
 
 export class Tile extends Graphics {
-
+    thickness : any
+    position : any
+    coord : any
+    dimension : any
+    POINTS : any
+    settings : any
+    type : any
+    tile_data : any
+    room :any
     constructor(data:any) {
         super()
         this.position = data.position
@@ -237,20 +245,20 @@ export class Tile extends Graphics {
     }
 
     registerEvents() {
-        this.on('pointerover', (event) => {
+        this.on('pointerover', (event:any) => {
             this.clear()
             this.settings.surface = 0xFFFFFF
             console.log('Hello')
             this.draw()
         })
 
-        this.on('pointerout', (event) => {
+        this.on('pointerout', (event:any) => {
             this.clear()
             this.settings.surface = 0xFF
             this.draw()
         })
 
-        this.on('pointertap', (event) => {
+        this.on('pointertap', (event:any) => {
             console.log(this.x, this.y)
             this.room.drawPath(this.coord)
         })
